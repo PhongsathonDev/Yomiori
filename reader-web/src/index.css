@@ -1,0 +1,268 @@
+/* ==========================================================================
+   NovelCraft Reader — Japan Muji Minimalist Design System
+   Aesthetic: Clean unbleached washi, cedar wood, sumi charcoal, organic borders
+   ========================================================================== */
+
+:root {
+  --font-muji-sans: 'IBM Plex Sans Thai', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-muji-serif: 'Sarabun', serif;
+  
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+  
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.22s cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   Theme 1: Light Muji (Unbleached Washi Paper & Light Wood) — DEFAULT
+   ========================================================================== */
+.theme-light {
+  --bg-app: #f7f5f0;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #faf8f5;
+  --bg-surface-hover: #f0ece3;
+  --bg-glass: rgba(247, 245, 240, 0.94);
+  
+  --border-subtle: #eae5dc;
+  --border-medium: #ded6cb;
+  --border-active: #b84a39;
+  
+  --text-main: #2b2825;
+  --text-muted: #686259;
+  --text-faint: #9b9487;
+  
+  --narration-text: #36322e;
+  --dialogue-text: #1d1b19;
+  
+  /* Muji Signature Terracotta Red */
+  --accent-primary: #b84a39;
+  --accent-glow: rgba(184, 74, 57, 0.1);
+  --accent-subtle: #fbeee8;
+  
+  --shadow-card: 0 1px 4px rgba(43, 40, 37, 0.04), 0 1px 1px rgba(43, 40, 37, 0.02);
+  --shadow-elevated: 0 4px 16px rgba(43, 40, 37, 0.06), 0 1px 3px rgba(43, 40, 37, 0.03);
+}
+
+/* ==========================================================================
+   Theme 2: Dark Sumi (Japanese Charcoal Ash & Natural Slate)
+   ========================================================================== */
+.theme-dark {
+  --bg-app: #181816;
+  --bg-surface: #22221f;
+  --bg-surface-elevated: #2a2a26;
+  --bg-surface-hover: #33332e;
+  --bg-glass: rgba(24, 24, 22, 0.94);
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-active: #d46957;
+  
+  --text-main: #ede9e3;
+  --text-muted: #a6a096;
+  --text-faint: #736d64;
+  
+  --narration-text: #dbd6cb;
+  --dialogue-text: #ffffff;
+  
+  --accent-primary: #d46957;
+  --accent-glow: rgba(212, 105, 87, 0.15);
+  --accent-subtle: rgba(212, 105, 87, 0.12);
+  
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --shadow-elevated: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* ==========================================================================
+   Theme 3: Warm Hinoki (Muted Cedar & Herbal Tea Paper)
+   ========================================================================== */
+.theme-sepia {
+  --bg-app: #f2ede2;
+  --bg-surface: #eae3d5;
+  --bg-surface-elevated: #dfd7c6;
+  --bg-surface-hover: #d5ccba;
+  --bg-glass: rgba(242, 237, 226, 0.94);
+  
+  --border-subtle: rgba(100, 80, 60, 0.1);
+  --border-medium: rgba(100, 80, 60, 0.18);
+  --border-active: #a16c3b;
+  
+  --text-main: #2b2219;
+  --text-muted: #645444;
+  --text-faint: #8f7f6f;
+  
+  --narration-text: #382d22;
+  --dialogue-text: #1d160f;
+  
+  --accent-primary: #a16c3b;
+  --accent-glow: rgba(161, 108, 59, 0.12);
+  --accent-subtle: #f7eedf;
+  
+  --shadow-card: 0 1px 4px rgba(43, 34, 25, 0.05);
+  --shadow-elevated: 0 4px 16px rgba(43, 34, 25, 0.08);
+}
+
+/* ==========================================================================
+   Base Elements
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-muji-sans);
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  line-height: 1.85;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Minimalist Japanese Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}
+
+/* Clean Panel without heavy blur */
+.glass-panel {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Typography styles */
+.font-prompt { font-family: var(--font-muji-sans); }
+.font-sarabun { font-family: var(--font-muji-serif); }
+.font-sans { font-family: var(--font-muji-sans); }
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.22s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideInUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Reading Progress Bar (Subtle Muji Accent) */
+.reading-progress-track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.reading-progress-bar {
+  height: 100%;
+  background-color: var(--accent-primary);
+  transition: width 0.1s ease-out;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(24, 24, 22, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal-content {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-elevated);
+  max-width: 580px;
+  width: 100%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideInUp 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Narration Block */
+.narration-block {
+  color: var(--narration-text);
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.005em;
+  text-align: justify;
+}
+
+/* Washi Dialogue Card (Option A: Subtle Washi Card) */
+.dialogue-card {
+  position: relative;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left-width: 3px;
+  border-radius: var(--radius-sm);
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 1.4rem;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-fast);
+}
+
+.dialogue-card:hover {
+  background-color: var(--bg-surface-elevated);
+  border-color: var(--border-medium);
+}
+
+.dialogue-card-compact {
+  padding: 0.85rem 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.dialogue-text {
+  color: var(--dialogue-text);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Hover Quick-Fix button */
+.quick-fix-btn {
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.dialogue-card:hover .quick-fix-btn,
+.narration-block-wrapper:hover .quick-fix-btn {
+  opacity: 1;
+}
+
