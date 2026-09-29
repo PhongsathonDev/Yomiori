@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { Character, StoryBlock } from '../types';
 import { UserCheck, BookOpen, X, Check, Save } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 interface QuickFixModalProps {
   block: StoryBlock | null;
@@ -194,7 +195,7 @@ export const QuickFixModal: React.FC<QuickFixModalProps> = ({
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
                         {char.avatarUrl ? (
                           <img
-                            src={char.avatarUrl}
+                            src={getAssetUrl(char.avatarUrl)}
                             alt={char.name}
                             style={{
                               width: '32px',

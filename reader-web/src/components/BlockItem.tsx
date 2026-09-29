@@ -1,6 +1,7 @@
 import React from 'react';
 import type { StoryBlock, Character, AvatarStyle } from '../types';
 import { UserCheck, Edit3 } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 interface BlockItemProps {
   block: StoryBlock;
@@ -106,7 +107,7 @@ export const BlockItem: React.FC<BlockItemProps> = ({
           {avatarStyle === 'avatar_with_badge' && (
             avatarUrl ? (
               <img
-                src={avatarUrl}
+                src={getAssetUrl(avatarUrl)}
                 alt={name}
                 style={{
                   width: '32px',

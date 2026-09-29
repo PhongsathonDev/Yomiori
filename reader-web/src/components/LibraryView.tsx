@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import type { Novel, Chapter, Character, ReaderTheme } from '../types';
+import { getAssetUrl } from '../utils/assets';
 import { 
   BookOpen, 
   Users, 
@@ -129,7 +130,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
             style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', cursor: 'pointer' }}
           >
             <img
-              src="/yomiori-logo.png"
+              src={getAssetUrl('/yomiori-logo.png')}
               alt="Yomiori Logo"
               style={{
                 width: '38px',
@@ -327,7 +328,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flex: 1, minWidth: '300px' }}>
               <img
-                src={lastReadNovel.coverUrl}
+                src={getAssetUrl(lastReadNovel.coverUrl)}
                 alt={lastReadNovel.title}
                 style={{
                   width: '70px',
@@ -505,7 +506,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                     }}
                   >
                     <img
-                      src={novel.coverUrl}
+                      src={getAssetUrl(novel.coverUrl)}
                       alt={novel.title}
                       style={{
                         width: '100%',
@@ -863,7 +864,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
               {/* Novel Cover */}
               <div style={{ flexShrink: 0, position: 'relative', display: 'flex', alignItems: 'center' }}>
                 <img
-                  src={currentNovel.coverUrl}
+                  src={getAssetUrl(currentNovel.coverUrl)}
                   alt={currentNovel.title}
                   style={{
                     width: '210px',
@@ -1111,7 +1112,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                   >
                     {char.avatarUrl ? (
                       <img
-                        src={char.avatarUrl}
+                        src={getAssetUrl(char.avatarUrl)}
                         alt={char.name}
                         style={{
                           width: '52px',

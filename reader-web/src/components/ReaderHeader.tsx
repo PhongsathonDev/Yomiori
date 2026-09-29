@@ -1,5 +1,6 @@
 import { BookOpen, Users, Settings, ChevronLeft, ChevronRight, Moon, Sun, Coffee, Lock, Unlock } from 'lucide-react';
 import type { Chapter, ReaderTheme } from '../types';
+import { getAssetUrl } from '../utils/assets';
 
 interface ReaderHeaderProps {
   currentChapter: Chapter;
@@ -71,7 +72,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
           onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface)')}
         >
           <img
-            src="/yomiori-logo.png"
+            src={getAssetUrl('/yomiori-logo.png')}
             alt="Yomiori"
             style={{ width: '24px', height: '24px', borderRadius: '4px', objectFit: 'contain' }}
           />

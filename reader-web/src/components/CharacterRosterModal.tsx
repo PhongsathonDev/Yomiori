@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Character } from '../types';
 import { Users, X } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 interface CharacterRosterModalProps {
   characters: Character[];
@@ -127,7 +128,7 @@ export const CharacterRosterModal: React.FC<CharacterRosterModalProps> = ({
               <div style={{ flexShrink: 0, position: 'relative' }}>
                 {char.avatarUrl ? (
                   <img
-                    src={char.avatarUrl}
+                    src={getAssetUrl(char.avatarUrl)}
                     alt={char.name}
                     style={{
                       width: '76px',
