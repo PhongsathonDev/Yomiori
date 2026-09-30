@@ -233,29 +233,6 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
         {/* Right Tools */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <button
-            onClick={onOpenRoster}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              padding: '0.45rem 0.9rem',
-              borderRadius: 'var(--radius-md)',
-              backgroundColor: 'var(--bg-surface)',
-              border: '1px solid var(--border-subtle)',
-              color: 'var(--text-main)',
-              cursor: 'pointer',
-              fontSize: '0.85rem',
-              fontWeight: 600,
-              transition: 'all var(--transition-fast)',
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface-hover)')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface)')}
-          >
-            <Users size={16} color="var(--accent-primary)" />
-            <span>ตัวละครทั้งหมด ({characters.length})</span>
-          </button>
-
-          <button
             onClick={onToggleTheme}
             title="สลับธีมสี"
             style={{
