@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route, Navigate, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { allNovels, allChapters, allCharacters } from './data';
 import type { 
   Character, 
   Chapter, 
   Novel, 
-  ViewMode, 
   StoryBlock, 
   ReaderTheme, 
   ReaderFontFamily, 
@@ -12,25 +12,319 @@ import type {
   DialogueBlock, 
   NarrationBlock 
 } from './types';
-import { ReaderHeader } from './components/ReaderHeader';
-import { BlockItem } from './components/BlockItem';
 import { QuickFixModal } from './components/QuickFixModal';
 import { CharacterRosterModal } from './components/CharacterRosterModal';
 import { TableOfContentsModal } from './components/TableOfContentsModal';
 import { SettingsModal } from './components/SettingsModal';
+import { CharacterDetailModal } from './components/CharacterDetailModal';
 import { LibraryView } from './components/LibraryView';
+import { ReaderView } from './components/ReaderView';
 import { EditNovelModal } from './components/EditNovelModal';
 import { AdminAuthModal } from './components/AdminAuthModal';
 import { saveChapterBlock } from './services/localApi';
-import { ChevronLeft, ChevronRight, Sparkles, ArrowLeft } from 'lucide-react';
+
+// Component 1: Bookshelf Page (Home - /)
+interface BookshelfPageProps {
+  novels: Novel[];
+  currentNovel: Novel;
+  chapters: Chapter[];
+  characters: Character[];
+  currentChapterId: string;
+  theme: ReaderTheme;
+  onToggleTheme: () => void;
+  onOpenSettings: () => void;
+  onOpenRoster: (novel: Novel) => void;
+  onSelectNovel: (novel: Novel) => void;
+  canEdit: boolean;
+  onEditNovel: (novel: Novel) => void;
+  onOpenAdminModal: () => void;
+  isAdminUnlocked: boolean;
+  onOpenCharacterDetail: (character: Character, novel: Novel) => void;
+}
+
+const BookshelfPage: React.FC<BookshelfPageProps> = ({
+  novels,
+  currentNovel,
+  chapters,
+  characters,
+  currentChapterId,
+  theme,
+  onToggleTheme,
+  onOpenSettings,
+  onOpenRoster,
+  onSelectNovel,
+  canEdit,
+  onEditNovel,
+  onOpenAdminModal,
+  isAdminUnlocked,
+  onOpenCharacterDetail,
+}) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = 'Yomiori (読織) - คลังนิยายไลท์โนเวล';
+    onSelectNovel(currentNovel);
+  }, [currentNovel, onSelectNovel]);
+
+  return (
+    <LibraryView
+      mode="shelf"
+      novels={novels}
+      currentNovel={currentNovel}
+      onSelectNovel={(novel) => {
+        onSelectNovel(novel);
+        navigate(`/novel/${novel.id}`);
+      }}
+      onNavigateToShelf={() => navigate('/')}
+      onNavigateToNovel={(novel) => {
+        onSelectNovel(novel);
+        navigate(`/novel/${novel.id}`);
+      }}
+      chapters={chapters}
+      characters={characters}
+      lastReadChapterId={currentChapterId}
+      theme={theme}
+      onToggleTheme={onToggleTheme}
+      onOpenSettings={onOpenSettings}
+      onOpenRoster={() => onOpenRoster(currentNovel)}
+      onOpenCharacterDetail={(char) => onOpenCharacterDetail(char, currentNovel)}
+      onSelectChapter={(chapterId, novelId) => {
+        const targetNovelId = novelId || currentNovel.id;
+        navigate(`/novel/${targetNovelId}/read/${chapterId}`);
+      }}
+      canEdit={canEdit}
+      onEditNovel={onEditNovel}
+      onOpenAdminModal={onOpenAdminModal}
+      isAdminUnlocked={isAdminUnlocked}
+    />
+  );
+};
+
+// Component 2: Novel Detail Page (/novel/:novelId)
+interface NovelDetailPageProps {
+  novels: Novel[];
+  chapters: Chapter[];
+  characters: Character[];
+  currentChapterId: string;
+  theme: ReaderTheme;
+  onToggleTheme: () => void;
+  onOpenSettings: () => void;
+  onOpenRoster: (novel: Novel) => void;
+  onSelectNovel: (novel: Novel) => void;
+  canEdit: boolean;
+  onEditNovel: (novel: Novel) => void;
+  onOpenAdminModal: () => void;
+  isAdminUnlocked: boolean;
+  onOpenCharacterDetail: (character: Character, novel: Novel) => void;
+}
+
+const NovelDetailPage: React.FC<NovelDetailPageProps> = ({
+  novels,
+  chapters,
+  characters,
+  currentChapterId,
+  theme,
+  onToggleTheme,
+  onOpenSettings,
+  onOpenRoster,
+  onSelectNovel,
+  canEdit,
+  onEditNovel,
+  onOpenAdminModal,
+  isAdminUnlocked,
+  onOpenCharacterDetail,
+}) => {
+  const { novelId } = useParams<{ novelId: string }>();
+  const navigate = useNavigate();
+  const novel = novels.find((n) => n.id === novelId);
+
+  useEffect(() => {
+    if (novel) {
+      document.title = `${novel.title} | Yomiori (読織)`;
+      onSelectNovel(novel);
+    }
+  }, [novel, onSelectNovel]);
+
+  if (!novel) {
+    return <Navigate to="/" replace />;
+  }
+
+  return (
+    <LibraryView
+      mode="detail"
+      novels={novels}
+      currentNovel={novel}
+      onSelectNovel={(n) => {
+        onSelectNovel(n);
+        navigate(`/novel/${n.id}`);
+      }}
+      onNavigateToShelf={() => navigate('/')}
+      onNavigateToNovel={(n) => {
+        onSelectNovel(n);
+        navigate(`/novel/${n.id}`);
+      }}
+      chapters={chapters}
+      characters={characters}
+      lastReadChapterId={currentChapterId}
+      theme={theme}
+      onToggleTheme={onToggleTheme}
+      onOpenSettings={onOpenSettings}
+      onOpenRoster={() => onOpenRoster(novel)}
+      onOpenCharacterDetail={(char) => onOpenCharacterDetail(char, novel)}
+      onSelectChapter={(chapterId, nId) => {
+        const targetNovelId = nId || novel.id;
+        navigate(`/novel/${targetNovelId}/read/${chapterId}`);
+      }}
+      canEdit={canEdit}
+      onEditNovel={onEditNovel}
+      onOpenAdminModal={onOpenAdminModal}
+      isAdminUnlocked={isAdminUnlocked}
+    />
+  );
+};
+
+// Component 3: Chapter Reader Page (/novel/:novelId/read/:chapterId)
+interface ReaderPageProps {
+  novels: Novel[];
+  chapters: Chapter[];
+  characters: Character[];
+  fontSize: number;
+  lineHeight: number;
+  avatarStyle: AvatarStyle;
+  canEdit: boolean;
+  theme: ReaderTheme;
+  onToggleTheme: () => void;
+  onOpenAdminModal: () => void;
+  isAdminUnlocked: boolean;
+  onChapterLoaded: (novel: Novel, chapterId: string) => void;
+  onOpenToc: (novel: Novel) => void;
+  onOpenRoster: (novel: Novel) => void;
+  onOpenSettings: () => void;
+  onOpenQuickFix: (block: StoryBlock) => void;
+  onOpenCharacterDetail: (character: Character, novel: Novel) => void;
+}
+
+const ReaderPage: React.FC<ReaderPageProps> = ({
+  novels,
+  chapters,
+  characters,
+  fontSize,
+  lineHeight,
+  avatarStyle,
+  canEdit,
+  theme,
+  onToggleTheme,
+  onOpenAdminModal,
+  isAdminUnlocked,
+  onChapterLoaded,
+  onOpenToc,
+  onOpenRoster,
+  onOpenSettings,
+  onOpenQuickFix,
+  onOpenCharacterDetail,
+}) => {
+  const { novelId, chapterId } = useParams<{ novelId: string; chapterId: string }>();
+  const navigate = useNavigate();
+  const [readingProgress, setReadingProgress] = useState(0);
+
+  const novel = novels.find((n) => n.id === novelId);
+  const novelChapters = novel ? chapters.filter((c) => c.novelId === novel.id) : [];
+  const chapterIndex = novelChapters.findIndex((c) => c.id === chapterId);
+  const currentChapter = chapterIndex !== -1 ? novelChapters[chapterIndex] : null;
+
+  // Track scroll progress for this chapter
+  useEffect(() => {
+    if (!currentChapter) return;
+
+    const handleScroll = () => {
+      const totalScroll = document.documentElement.scrollTop;
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      if (windowHeight > 0) {
+        const scrollPercent = (totalScroll / windowHeight) * 100;
+        setReadingProgress(Math.min(100, Math.max(0, scrollPercent)));
+      } else {
+        setReadingProgress(0);
+      }
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [currentChapter]);
+
+  useEffect(() => {
+    if (novel && currentChapter) {
+      document.title = `ตอนที่ ${currentChapter.chapterNumber}: ${currentChapter.title} | ${novel.title} - Yomiori (読織)`;
+      onChapterLoaded(novel, currentChapter.id);
+    }
+  }, [novel, currentChapter, onChapterLoaded]);
+
+  if (!novel) {
+    return <Navigate to="/" replace />;
+  }
+
+  if (!currentChapter) {
+    if (novelChapters.length > 0) {
+      return <Navigate to={`/novel/${novel.id}/read/${novelChapters[0].id}`} replace />;
+    }
+    return <Navigate to={`/novel/${novel.id}`} replace />;
+  }
+
+  const hasPrev = chapterIndex > 0;
+  const hasNext = chapterIndex < novelChapters.length - 1;
+
+  const handlePrev = () => {
+    if (hasPrev) {
+      navigate(`/novel/${novel.id}/read/${novelChapters[chapterIndex - 1].id}`);
+    }
+  };
+
+  const handleNext = () => {
+    if (hasNext) {
+      navigate(`/novel/${novel.id}/read/${novelChapters[chapterIndex + 1].id}`);
+    }
+  };
+
+  return (
+    <ReaderView
+      currentNovel={novel}
+      currentChapter={currentChapter}
+      currentNovelChapters={novelChapters}
+      characters={characters}
+      fontSize={fontSize}
+      lineHeight={lineHeight}
+      avatarStyle={avatarStyle}
+      canEdit={canEdit}
+      hasPrev={hasPrev}
+      hasNext={hasNext}
+      onPrevChapter={handlePrev}
+      onNextChapter={handleNext}
+      onOpenToc={() => onOpenToc(novel)}
+      onOpenRoster={() => onOpenRoster(novel)}
+      onOpenSettings={onOpenSettings}
+      onBackToLibrary={() => navigate(`/novel/${novel.id}`)}
+      onBackToShelf={() => navigate('/')}
+      theme={theme}
+      onToggleTheme={onToggleTheme}
+      onOpenAdminModal={onOpenAdminModal}
+      isAdminUnlocked={isAdminUnlocked}
+      readingProgress={readingProgress}
+      onOpenQuickFix={onOpenQuickFix}
+      onOpenCharacterDetail={(char) => onOpenCharacterDetail(char, novel)}
+    />
+  );
+};
 
 export function App() {
-  // Navigation View Mode ('library' | 'reader')
-  const [viewMode, setViewMode] = useState<ViewMode>(() => {
-    return (localStorage.getItem('novel_view_mode') as ViewMode) || 'library';
-  });
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  // Theme & Preferences
+  // Scroll to top automatically on route changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [location.pathname]);
+
+  // Theme & Reading Preferences
   const [theme, setTheme] = useState<ReaderTheme>(() => {
     return (localStorage.getItem('novel_reader_theme') as ReaderTheme) || 'light';
   });
@@ -43,7 +337,17 @@ export function App() {
   const [lineHeight, setLineHeight] = useState<number>(() => {
     return Number(localStorage.getItem('novel_reader_line_height')) || 1.85;
   });
-  const [avatarStyle, setAvatarStyle] = useState<AvatarStyle>('avatar_with_badge');
+  const [avatarStyle, setAvatarStyleState] = useState<AvatarStyle>(() => {
+    const saved = localStorage.getItem('novel_reader_dialogue_style');
+    if (saved === 'avatar_with_badge') return 'vn_card';
+    if (saved === 'badge_only') return 'washi_paper';
+    return (saved as AvatarStyle) || 'vn_card';
+  });
+
+  const setAvatarStyle = (style: AvatarStyle) => {
+    setAvatarStyleState(style);
+    localStorage.setItem('novel_reader_dialogue_style', style);
+  };
 
   // Novel Data State
   const [novels, setNovels] = useState<Novel[]>(allNovels);
@@ -54,7 +358,7 @@ export function App() {
     return localStorage.getItem('novel_admin_unlocked') === 'true';
   });
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
-  const canEdit = import.meta.env.DEV && isAdminUnlocked;
+  const canEdit = import.meta.env.DEV;
 
   const handleUnlockAdmin = () => {
     setIsAdminUnlocked(true);
@@ -75,10 +379,29 @@ export function App() {
   });
   const currentNovel = novels.find((n) => n.id === currentNovelId) || novels[0];
 
-  const [characters] = useState<Character[]>(() => {
+  const [characters, setCharacters] = useState<Character[]>(() => {
     const saved = localStorage.getItem('novel_characters');
     return saved ? JSON.parse(saved) : allCharacters;
   });
+
+  const [selectedCharacterForDetail, setSelectedCharacterForDetail] = useState<Character | null>(null);
+
+  const handleCharacterUpdated = (updatedChar: Character) => {
+    setSelectedCharacterForDetail(updatedChar);
+
+    setCharacters((prev) => {
+      const idx = prev.findIndex((c) => c.id === updatedChar.id);
+      let next: Character[];
+      if (idx >= 0) {
+        next = [...prev];
+        next[idx] = updatedChar;
+      } else {
+        next = [...prev, updatedChar];
+      }
+      localStorage.setItem('novel_characters', JSON.stringify(next));
+      return next;
+    });
+  };
 
   const [chapters, setChapters] = useState<Chapter[]>(() => {
     const saved = localStorage.getItem('novel_chapters_override');
@@ -89,21 +412,14 @@ export function App() {
     return localStorage.getItem('novel_last_chapter_id') || 'ch-01';
   });
 
-  // Filter chapters belonging to current active novel
-  const currentNovelChapters = chapters.filter((c) => c.novelId === currentNovel.id);
-
   // Modal States
   const [editingBlock, setEditingBlock] = useState<StoryBlock | null>(null);
   const [isTocOpen, setIsTocOpen] = useState(false);
   const [isRosterOpen, setIsRosterOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const [readingProgress, setReadingProgress] = useState(0);
+  const [activeNovelForModals, setActiveNovelForModals] = useState<Novel>(currentNovel);
 
   // Sync Preferences to localStorage
-  useEffect(() => {
-    localStorage.setItem('novel_view_mode', viewMode);
-  }, [viewMode]);
-
   useEffect(() => {
     localStorage.setItem('novel_current_id', currentNovelId);
   }, [currentNovelId]);
@@ -126,40 +442,7 @@ export function App() {
 
   useEffect(() => {
     localStorage.setItem('novel_last_chapter_id', currentChapterId);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentChapterId]);
-
-  // Track Scroll Progress
-  useEffect(() => {
-    if (viewMode !== 'reader') return;
-
-    const handleScroll = () => {
-      const totalScroll = document.documentElement.scrollTop;
-      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      if (windowHeight > 0) {
-        const scrollPercent = (totalScroll / windowHeight) * 100;
-        setReadingProgress(Math.min(100, Math.max(0, scrollPercent)));
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [currentChapterId, viewMode]);
-
-  // Find Current Chapter within current novel
-  const currentChapterIndex = currentNovelChapters.findIndex((c) => c.id === currentChapterId);
-  const currentChapter = currentNovelChapters[currentChapterIndex] || currentNovelChapters[0] || chapters[0];
-  const hasPrev = currentChapterIndex > 0;
-  const hasNext = currentChapterIndex < currentNovelChapters.length - 1;
-
-  // Handlers for Chapter Nav
-  const handlePrev = () => {
-    if (hasPrev) setCurrentChapterId(currentNovelChapters[currentChapterIndex - 1].id);
-  };
-
-  const handleNext = () => {
-    if (hasNext) setCurrentChapterId(currentNovelChapters[currentChapterIndex + 1].id);
-  };
 
   // Toggle Theme cycling (dark -> light -> sepia -> dark)
   const handleToggleTheme = () => {
@@ -170,22 +453,17 @@ export function App() {
     });
   };
 
-  // Enter reader from library
-  const handleSelectChapterFromLibrary = (chapterId: string) => {
-    const targetChapter = chapters.find((c) => c.id === chapterId);
-    if (targetChapter) {
-      setCurrentNovelId(targetChapter.novelId);
-    }
-    setCurrentChapterId(chapterId);
-    setViewMode('reader');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   // Quick Fix Handlers
   const handleUpdateSpeaker = (blockId: string, speakerId: string, speakerName: string) => {
+    let targetNovelId = activeNovelForModals.id;
+    let targetChapterId = currentChapterId;
+
     setChapters((prevChapters) => {
       const updated = prevChapters.map((ch) => {
-        if (ch.id !== currentChapter.id) return ch;
+        const hasBlock = ch.blocks.some((b) => b.id === blockId);
+        if (!hasBlock) return ch;
+        targetNovelId = ch.novelId;
+        targetChapterId = ch.id;
         return {
           ...ch,
           blocks: ch.blocks.map((b) => {
@@ -204,7 +482,7 @@ export function App() {
     });
 
     if (import.meta.env.DEV) {
-      saveChapterBlock(currentNovel.id, currentChapter.id, blockId, {
+      saveChapterBlock(targetNovelId, targetChapterId, blockId, {
         speakerId,
         speakerName,
       });
@@ -213,9 +491,15 @@ export function App() {
 
   const handleConvertToNarration = (blockId: string) => {
     let narrationText = '';
+    let targetNovelId = activeNovelForModals.id;
+    let targetChapterId = currentChapterId;
+
     setChapters((prevChapters) => {
       const updated = prevChapters.map((ch) => {
-        if (ch.id !== currentChapter.id) return ch;
+        const hasBlock = ch.blocks.some((b) => b.id === blockId);
+        if (!hasBlock) return ch;
+        targetNovelId = ch.novelId;
+        targetChapterId = ch.id;
         return {
           ...ch,
           blocks: ch.blocks.map((b) => {
@@ -235,7 +519,7 @@ export function App() {
     });
 
     if (import.meta.env.DEV) {
-      saveChapterBlock(currentNovel.id, currentChapter.id, blockId, {
+      saveChapterBlock(targetNovelId, targetChapterId, blockId, {
         text: narrationText,
       });
     }
@@ -247,9 +531,15 @@ export function App() {
     speakerId?: string,
     speakerName?: string
   ) => {
+    let targetNovelId = activeNovelForModals.id;
+    let targetChapterId = currentChapterId;
+
     setChapters((prevChapters) => {
       const updated = prevChapters.map((ch) => {
-        if (ch.id !== currentChapter.id) return ch;
+        const hasBlock = ch.blocks.some((b) => b.id === blockId);
+        if (!hasBlock) return ch;
+        targetNovelId = ch.novelId;
+        targetChapterId = ch.id;
         return {
           ...ch,
           blocks: ch.blocks.map((b) => {
@@ -275,13 +565,27 @@ export function App() {
     });
 
     if (import.meta.env.DEV) {
-      saveChapterBlock(currentNovel.id, currentChapter.id, blockId, {
+      saveChapterBlock(targetNovelId, targetChapterId, blockId, {
         text: newText,
         speakerId,
         speakerName,
       });
     }
   };
+
+  const handleChapterLoaded = React.useCallback((novel: Novel, chapterId: string) => {
+    setCurrentNovelId(novel.id);
+    setCurrentChapterId(chapterId);
+    setActiveNovelForModals(novel);
+  }, []);
+
+  const handleSelectNovel = React.useCallback((novel: Novel) => {
+    setCurrentNovelId(novel.id);
+    setActiveNovelForModals(novel);
+  }, []);
+
+  // Find active chapters for Table of Contents modal
+  const activeTocChapters = chapters.filter((c) => c.novelId === activeNovelForModals.id);
 
   return (
     <div
@@ -293,226 +597,97 @@ export function App() {
         transition: 'background-color var(--transition-normal)',
       }}
     >
-      {/* View Mode: Library (Home) */}
-      {viewMode === 'library' ? (
-        <LibraryView
-          novels={novels}
-          currentNovel={currentNovel}
-          onSelectNovel={(novel) => setCurrentNovelId(novel.id)}
-          chapters={chapters}
-          characters={characters}
-          lastReadChapterId={currentChapterId}
-          theme={theme}
-          onToggleTheme={handleToggleTheme}
-          onOpenSettings={() => setIsSettingsOpen(true)}
-          onOpenRoster={() => setIsRosterOpen(true)}
-          onSelectChapter={handleSelectChapterFromLibrary}
-          canEdit={canEdit}
-          onEditNovel={(novel) => setEditingNovel(novel)}
-          onOpenAdminModal={() => setIsAdminModalOpen(true)}
-          isAdminUnlocked={isAdminUnlocked}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <BookshelfPage
+              novels={novels}
+              currentNovel={currentNovel}
+              chapters={chapters}
+              characters={characters}
+              currentChapterId={currentChapterId}
+              theme={theme}
+              onToggleTheme={handleToggleTheme}
+              onOpenSettings={() => setIsSettingsOpen(true)}
+              onOpenRoster={(novel) => {
+                setActiveNovelForModals(novel);
+                setIsRosterOpen(true);
+              }}
+              onSelectNovel={handleSelectNovel}
+              canEdit={canEdit}
+              onEditNovel={(novel) => setEditingNovel(novel)}
+              onOpenAdminModal={() => setIsAdminModalOpen(true)}
+              isAdminUnlocked={isAdminUnlocked}
+              onOpenCharacterDetail={(char, novel) => {
+                setActiveNovelForModals(novel);
+                setSelectedCharacterForDetail(char);
+              }}
+            />
+          }
         />
-      ) : (
-        /* View Mode: Enhanced Reader */
-        <div>
-          {/* Top Reading Progress Bar */}
-          <div className="reading-progress-track">
-            <div className="reading-progress-bar" style={{ width: `${readingProgress}%` }} />
-          </div>
-
-          {/* Main Glass Header */}
-          <ReaderHeader
-            currentChapter={currentChapter}
-            totalChapters={currentNovelChapters.length}
-            onPrevChapter={handlePrev}
-            onNextChapter={handleNext}
-            hasPrev={hasPrev}
-            hasNext={hasNext}
-            onOpenToc={() => setIsTocOpen(true)}
-            onOpenRoster={() => setIsRosterOpen(true)}
-            onOpenSettings={() => setIsSettingsOpen(true)}
-            onBackToLibrary={() => setViewMode('library')}
-            theme={theme}
-            onToggleTheme={handleToggleTheme}
-            onOpenAdminModal={() => setIsAdminModalOpen(true)}
-            isAdminUnlocked={isAdminUnlocked}
-          />
-
-          {/* Main Reading Container */}
-          <main
-            style={{
-              maxWidth: '760px',
-              margin: '0 auto',
-              padding: '2.5rem 1.5rem 6rem 1.5rem',
-            }}
-          >
-            {/* Chapter Header Banner (Muji Book Style) */}
-            <div
-              className="animate-fade-in"
-              style={{
-                backgroundColor: 'var(--bg-surface)',
-                border: '1px solid var(--border-medium)',
-                borderRadius: 'var(--radius-md)',
-                boxShadow: 'var(--shadow-card)',
-                padding: '2.25rem 2rem',
-                marginBottom: '2.75rem',
-                textAlign: 'center',
-                position: 'relative',
+        <Route
+          path="/novel/:novelId"
+          element={
+            <NovelDetailPage
+              novels={novels}
+              chapters={chapters}
+              characters={characters}
+              currentChapterId={currentChapterId}
+              theme={theme}
+              onToggleTheme={handleToggleTheme}
+              onOpenSettings={() => setIsSettingsOpen(true)}
+              onOpenRoster={(novel) => {
+                setActiveNovelForModals(novel);
+                setIsRosterOpen(true);
               }}
-            >
-              {/* Chapter Badge */}
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '1rem' }}>
-                <span
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '5px',
-                    fontSize: '0.78rem',
-                    fontWeight: 600,
-                    letterSpacing: '0.04em',
-                    color: 'var(--accent-primary)',
-                    backgroundColor: 'var(--accent-subtle)',
-                    border: '1px solid var(--border-subtle)',
-                    padding: '3px 12px',
-                    borderRadius: 'var(--radius-xs)',
-                  }}
-                >
-                  <Sparkles size={12} />
-                  ตอนที่ {currentChapter.chapterNumber}
-                </span>
-              </div>
-
-              {/* Title */}
-              <h1
-                style={{
-                  fontSize: '1.65rem',
-                  fontWeight: 700,
-                  color: 'var(--text-main)',
-                  lineHeight: 1.45,
-                  marginBottom: '0.75rem',
-                  letterSpacing: '-0.01em',
-                }}
-              >
-                {currentChapter.title}
-              </h1>
-
-              {/* Novel Subtitle & Divider */}
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '12px',
-                  marginTop: '0.75rem',
-                }}
-              >
-                <div style={{ width: '28px', height: '1px', backgroundColor: 'var(--border-medium)' }} />
-                <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', fontWeight: 500 }}>
-                  {currentChapter.novelTitle}
-                </p>
-                <div style={{ width: '28px', height: '1px', backgroundColor: 'var(--border-medium)' }} />
-              </div>
-            </div>
-
-            {/* Story Content Blocks */}
-            <div
-              style={{
-                fontSize: `${fontSize}px`,
-                lineHeight: lineHeight,
+              onSelectNovel={handleSelectNovel}
+              canEdit={canEdit}
+              onEditNovel={(novel) => setEditingNovel(novel)}
+              onOpenAdminModal={() => setIsAdminModalOpen(true)}
+              isAdminUnlocked={isAdminUnlocked}
+              onOpenCharacterDetail={(char, novel) => {
+                setActiveNovelForModals(novel);
+                setSelectedCharacterForDetail(char);
               }}
-            >
-              {currentChapter.blocks.map((block) => (
-                <BlockItem
-                  key={block.id}
-                  block={block}
-                  characters={characters}
-                  avatarStyle={avatarStyle}
-                  onOpenQuickFix={(b) => setEditingBlock(b)}
-                />
-              ))}
-            </div>
-
-            {/* Bottom Chapter Navigation Bar */}
-            <div
-              style={{
-                marginTop: '3.5rem',
-                paddingTop: '2rem',
-                borderTop: '1px solid var(--border-subtle)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                gap: '1rem',
+            />
+          }
+        />
+        <Route
+          path="/novel/:novelId/read/:chapterId"
+          element={
+            <ReaderPage
+              novels={novels}
+              chapters={chapters}
+              characters={characters}
+              fontSize={fontSize}
+              lineHeight={lineHeight}
+              avatarStyle={avatarStyle}
+              canEdit={canEdit}
+              theme={theme}
+              onToggleTheme={handleToggleTheme}
+              onOpenAdminModal={() => setIsAdminModalOpen(true)}
+              isAdminUnlocked={isAdminUnlocked}
+              onChapterLoaded={handleChapterLoaded}
+              onOpenToc={(novel) => {
+                setActiveNovelForModals(novel);
+                setIsTocOpen(true);
               }}
-            >
-              <button
-                onClick={handlePrev}
-                disabled={!hasPrev}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  padding: '0.75rem 1.25rem',
-                  borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--border-medium)',
-                  backgroundColor: 'var(--bg-surface)',
-                  color: hasPrev ? 'var(--text-main)' : 'var(--text-faint)',
-                  cursor: hasPrev ? 'pointer' : 'not-allowed',
-                  opacity: hasPrev ? 1 : 0.4,
-                  fontWeight: 600,
-                  fontSize: '0.9rem',
-                  transition: 'all var(--transition-fast)',
-                }}
-              >
-                <ChevronLeft size={18} />
-                <span>ตอนก่อนหน้า</span>
-              </button>
-
-              <button
-                onClick={() => setViewMode('library')}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  padding: '0.75rem 1rem',
-                  borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--border-subtle)',
-                  backgroundColor: 'transparent',
-                  color: 'var(--text-muted)',
-                  cursor: 'pointer',
-                  fontWeight: 500,
-                  fontSize: '0.88rem',
-                }}
-              >
-                <ArrowLeft size={16} />
-                <span>กลับคลังนิยาย</span>
-              </button>
-
-              <button
-                onClick={handleNext}
-                disabled={!hasNext}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  padding: '0.75rem 1.25rem',
-                  borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--border-medium)',
-                  backgroundColor: hasNext ? 'var(--accent-primary)' : 'var(--bg-surface)',
-                  color: hasNext ? '#fff' : 'var(--text-faint)',
-                  cursor: hasNext ? 'pointer' : 'not-allowed',
-                  opacity: hasNext ? 1 : 0.4,
-                  fontWeight: 600,
-                  fontSize: '0.9rem',
-                  transition: 'all var(--transition-fast)',
-                }}
-              >
-                <span>ตอนถัดไป</span>
-                <ChevronRight size={18} />
-              </button>
-            </div>
-          </main>
-        </div>
-      )}
+              onOpenRoster={(novel) => {
+                setActiveNovelForModals(novel);
+                setIsRosterOpen(true);
+              }}
+              onOpenSettings={() => setIsSettingsOpen(true)}
+              onOpenQuickFix={(b) => setEditingBlock(b)}
+              onOpenCharacterDetail={(char, novel) => {
+                setActiveNovelForModals(novel);
+                setSelectedCharacterForDetail(char);
+              }}
+            />
+          }
+        />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
 
       {/* Shared Modals & Popovers */}
       <QuickFixModal
@@ -531,13 +706,14 @@ export function App() {
       />
 
       <TableOfContentsModal
-        chapters={currentNovelChapters}
+        chapters={activeTocChapters}
         currentChapterId={currentChapterId}
         isOpen={isTocOpen}
         onClose={() => setIsTocOpen(false)}
         onSelectChapter={(id) => {
           setCurrentChapterId(id);
-          setViewMode('reader');
+          navigate(`/novel/${activeNovelForModals.id}/read/${id}`);
+          setIsTocOpen(false);
         }}
       />
 
@@ -562,6 +738,15 @@ export function App() {
         onClose={() => setEditingNovel(null)}
         novel={editingNovel}
         onSaved={handleNovelSaved}
+      />
+
+      {/* Character Detail & Portrait Modal */}
+      <CharacterDetailModal
+        isOpen={!!selectedCharacterForDetail}
+        onClose={() => setSelectedCharacterForDetail(null)}
+        character={selectedCharacterForDetail}
+        novelId={activeNovelForModals.id}
+        onCharacterUpdated={handleCharacterUpdated}
       />
 
       {/* Admin PIN Unlock Modal */}

@@ -226,39 +226,89 @@ body {
   text-align: justify;
 }
 
-/* Washi Dialogue Card (Option A: Subtle Washi Card) */
+/* ==========================================================================
+   Dialogue Styles System (Visual Novel, Washi Minimal, Speech Bubble, Literary Quote)
+   ========================================================================== */
+
 .dialogue-card {
   position: relative;
+  transition: all var(--transition-normal);
+}
+
+/* 1. Visual Novel Style (Default / Flagship) */
+.dialogue-card-vn {
+  border: 1px solid var(--border-subtle);
+  border-left-width: 3.5px;
+  border-radius: var(--radius-md);
+  padding: 1rem 1.35rem 1.15rem 1.35rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.dialogue-card-vn:hover {
+  background-color: var(--bg-surface-elevated);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+/* 2. Washi Paper Minimal */
+.dialogue-card-washi {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-left-width: 3px;
   border-radius: var(--radius-sm);
-  padding: 1.1rem 1.35rem;
-  margin-bottom: 1.4rem;
+  padding: 1.05rem 1.35rem;
+  margin-bottom: 1.35rem;
   box-shadow: var(--shadow-card);
-  transition: all var(--transition-fast);
 }
 
-.dialogue-card:hover {
+.dialogue-card-washi:hover {
   background-color: var(--bg-surface-elevated);
   border-color: var(--border-medium);
 }
 
-.dialogue-card-compact {
-  padding: 0.85rem 1.15rem;
-  margin-bottom: 1rem;
+/* 3. Speech Bubble Style */
+.dialogue-card-bubble {
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 4px 18px 18px 18px;
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.dialogue-card-bubble:hover {
+  border-color: var(--border-medium);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* 4. Minimal Literary Quote */
+.dialogue-card-quote {
+  background-color: transparent;
+  border: none;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-radius: 0;
+  padding: 0.35rem 0 0.35rem 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: none;
+}
+
+.dialogue-card-quote:hover {
+  background-color: rgba(0, 0, 0, 0.015);
 }
 
 .dialogue-text {
   color: var(--dialogue-text);
   font-weight: 500;
   letter-spacing: -0.01em;
+  word-break: break-word;
 }
 
-/* Hover Quick-Fix button */
+/* Quick-Fix Trigger Button */
 .quick-fix-btn {
   opacity: 0;
-  transition: opacity var(--transition-fast);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
 .dialogue-card:hover .quick-fix-btn,

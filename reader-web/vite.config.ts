@@ -88,6 +88,57 @@ function localEditorPlugin(): Plugin {
             return sendJson(200, { success: true, count: characters.length });
           }
 
+          // 3.5 Upload Character Image (Local File Persistence)
+          if (req.url === '/api/upload-character-image' && req.method === 'POST') {
+            const { novelId, characterId, base64Data } = await getBody();
+            if (!novelId || !characterId || !base64Data) {
+              return sendJson(400, { error: 'Missing novelId, characterId, or base64Data' });
+            }
+
+            const publicDir = path.resolve(import.meta.dirname || process.cwd(), 'public');
+            const illustrationsDir = path.join(publicDir, 'illustrations');
+            if (!fs.existsSync(illustrationsDir)) {
+              fs.mkdirSync(illustrationsDir, { recursive: true });
+            }
+
+            const matches = base64Data.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
+            let buffer: Buffer;
+            let ext = '.png';
+            if (matches && matches.length === 3) {
+              const mime = matches[1];
+              if (mime.includes('jpeg') || mime.includes('jpg')) ext = '.jpg';
+              else if (mime.includes('webp')) ext = '.webp';
+              else if (mime.includes('gif')) ext = '.gif';
+              buffer = Buffer.from(matches[2], 'base64');
+            } else {
+              buffer = Buffer.from(base64Data, 'base64');
+            }
+
+            const cleanCharId = characterId.replace(/[^a-zA-Z0-9_-]/g, '_');
+            const savedFileName = `char_${novelId}_${cleanCharId}_${Date.now()}${ext}`;
+            const targetFilePath = path.join(illustrationsDir, savedFileName);
+
+            fs.writeFileSync(targetFilePath, buffer);
+            const avatarUrl = `/illustrations/${savedFileName}`;
+
+            // Automatically update characters.json if exists
+            const charPath = path.join(dataDir, 'novels', novelId, 'characters.json');
+            if (fs.existsSync(charPath)) {
+              try {
+                const characters = JSON.parse(fs.readFileSync(charPath, 'utf-8'));
+                const targetChar = characters.find((c: any) => c.id === characterId);
+                if (targetChar) {
+                  targetChar.avatarUrl = avatarUrl;
+                  fs.writeFileSync(charPath, JSON.stringify(characters, null, 2) + '\n', 'utf-8');
+                }
+              } catch (e) {
+                console.error('Failed to auto-update characters.json:', e);
+              }
+            }
+
+            return sendJson(200, { success: true, avatarUrl });
+          }
+
           // 4. Save Single Chapter Block (Quick Fix)
           if (req.url === '/api/save-chapter-block' && req.method === 'POST') {
             const { novelId, chapterId, blockId, text, speakerId, speakerName, tone } = await getBody();
@@ -170,6 +221,6 @@ function localEditorPlugin(): Plugin {
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [react(), localEditorPlugin()],
 });

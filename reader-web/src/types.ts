@@ -59,5 +59,11 @@ export interface Novel {
 export type ViewMode = 'library' | 'reader';
 export type ReaderTheme = 'dark' | 'light' | 'sepia';
 export type ReaderFontFamily = 'prompt' | 'sarabun' | 'sans';
-export type AvatarStyle = 'avatar_with_badge' | 'badge_only' | 'chat_bubble';
+export type AvatarStyle = 
+  | 'vn_card' 
+  | 'washi_paper' 
+  | 'chat_bubble' 
+  | 'minimal_quote'
+  | 'avatar_with_badge' 
+  | 'badge_only';
 

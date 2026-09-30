@@ -35,6 +35,27 @@ export async function saveNovel(novel: Novel): Promise<boolean> {
   }
 }
 
+export async function uploadCharacterImage(
+  novelId: string,
+  characterId: string,
+  base64Data: string
+): Promise<string | null> {
+  if (!isDevEnvironment) return null;
+  try {
+    const res = await fetch('/api/upload-character-image', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ novelId, characterId, base64Data }),
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.avatarUrl || null;
+  } catch (err) {
+    console.error('Failed to upload character image:', err);
+    return null;
+  }
+}
+
 export async function saveCharacters(novelId: string, characters: Character[]): Promise<boolean> {
   if (!isDevEnvironment) return false;
   try {

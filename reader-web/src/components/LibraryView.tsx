@@ -18,7 +18,10 @@ import {
   Sparkles,
   Edit3,
   Lock,
-  Unlock
+  Unlock,
+  Clock,
+  MessageSquare,
+  ArrowUpDown
 } from 'lucide-react';
 
 interface LibraryViewProps {
@@ -32,11 +35,15 @@ interface LibraryViewProps {
   onToggleTheme: () => void;
   onOpenSettings: () => void;
   onOpenRoster: () => void;
-  onSelectChapter: (chapterId: string) => void;
+  onSelectChapter: (chapterId: string, novelId?: string) => void;
   canEdit?: boolean;
   onEditNovel?: (novel: Novel) => void;
   onOpenAdminModal?: () => void;
   isAdminUnlocked?: boolean;
+  mode?: 'shelf' | 'detail';
+  onNavigateToShelf?: () => void;
+  onNavigateToNovel?: (novel: Novel) => void;
+  onOpenCharacterDetail?: (character: Character) => void;
 }
 
 export const LibraryView: React.FC<LibraryViewProps> = ({
@@ -51,13 +58,29 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
   onOpenSettings,
   onOpenRoster,
   onSelectChapter,
-  canEdit = false,
+  canEdit = import.meta.env.DEV,
   onEditNovel,
   onOpenAdminModal,
   isAdminUnlocked = false,
+  mode,
+  onNavigateToShelf,
+  onNavigateToNovel,
+  onOpenCharacterDetail,
 }) => {
   // Navigation between Bookshelf overview and Novel Detail
-  const [activeTab, setActiveTab] = useState<'shelf' | 'detail'>('shelf');
+  const [internalActiveTab, setInternalActiveTab] = useState<'shelf' | 'detail'>('shelf');
+  const activeTab = mode ?? internalActiveTab;
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
+
+  const setActiveTab = (tab: 'shelf' | 'detail') => {
+    if (tab === 'shelf' && onNavigateToShelf) {
+      onNavigateToShelf();
+    } else if (tab === 'detail' && onNavigateToNovel) {
+      onNavigateToNovel(currentNovel);
+    } else {
+      setInternalActiveTab(tab);
+    }
+  };
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string>('all');
 
@@ -79,12 +102,19 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
   const lastReadChapter = chapters.find((c) => c.id === lastReadChapterId) || novelChapters[0] || chapters[0];
   const lastReadNovel = novels.find((n) => n.id === lastReadChapter.novelId) || currentNovel;
 
-  // Filter chapters for detail view based on search query
-  const filteredChapters = novelChapters.filter(
-    (ch) =>
-      ch.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      String(ch.chapterNumber).includes(searchQuery)
-  );
+  // Filter and sort chapters for detail view based on search query and sort order
+  const filteredChapters = novelChapters
+    .filter(
+      (ch) =>
+        ch.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        String(ch.chapterNumber).includes(searchQuery)
+    )
+    .sort((a, b) => {
+      if (sortOrder === 'asc') {
+        return a.chapterNumber - b.chapterNumber;
+      }
+      return b.chapterNumber - a.chapterNumber;
+    });
 
   // Collect all unique tags across all novels for filtering
   const allTags = Array.from(new Set(novels.flatMap((n) => n.tags)));
@@ -96,7 +126,11 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
 
   const handleOpenNovelDetail = (novel: Novel) => {
     onSelectNovel(novel);
-    setActiveTab('detail');
+    if (onNavigateToNovel) {
+      onNavigateToNovel(novel);
+    } else {
+      setInternalActiveTab('detail');
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -123,18 +157,19 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
           borderBottom: '1px solid var(--border-subtle)',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-          {/* Logo */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', minWidth: 0 }}>
+          {/* Logo / Home Link */}
           <div 
             onClick={() => setActiveTab('shelf')}
-            style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', cursor: 'pointer' }}
+            title="กลับสู่หน้าชั้นวางนิยาย"
+            style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', cursor: 'pointer', flexShrink: 0 }}
           >
             <img
               src={getAssetUrl('/yomiori-logo.png')}
               alt="Yomiori Logo"
               style={{
-                width: '38px',
-                height: '38px',
+                width: '36px',
+                height: '36px',
                 borderRadius: 'var(--radius-sm)',
                 objectFit: 'contain',
                 backgroundColor: '#ffffff',
@@ -147,65 +182,52 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
               <span style={{ fontSize: '1.2rem', fontWeight: 800, letterSpacing: '-0.02em', color: 'var(--text-main)' }}>
                 Yomiori <span style={{ color: 'var(--accent-primary)', fontSize: '0.95rem', fontWeight: 600 }}>読織</span>
               </span>
-              <span style={{ fontSize: '0.72rem', color: 'var(--text-faint)', marginLeft: '8px', padding: '2px 7px', borderRadius: '4px', backgroundColor: 'var(--border-subtle)' }}>
-                มิติใหม่แห่งการอ่าน
-              </span>
+              {activeTab === 'shelf' && (
+                <span style={{ fontSize: '0.72rem', color: 'var(--text-faint)', marginLeft: '8px', padding: '2px 7px', borderRadius: '4px', backgroundColor: 'var(--border-subtle)' }}>
+                  มิติใหม่แห่งการอ่าน
+                </span>
+              )}
             </div>
           </div>
 
-          {/* View Mode Segmented Controls */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              backgroundColor: 'var(--bg-surface-elevated)',
-              padding: '3px',
-              borderRadius: 'var(--radius-md)',
-              border: '1px solid var(--border-subtle)',
-              marginLeft: '0.5rem',
-            }}
-          >
-            <button
-              onClick={() => setActiveTab('shelf')}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                padding: '5px 12px',
-                borderRadius: 'var(--radius-sm)',
-                border: 'none',
-                backgroundColor: activeTab === 'shelf' ? 'var(--accent-primary)' : 'transparent',
-                color: activeTab === 'shelf' ? '#fff' : 'var(--text-muted)',
-                fontSize: '0.8rem',
-                fontWeight: 600,
-                cursor: 'pointer',
-                transition: 'all var(--transition-fast)',
-              }}
-            >
-              <BookMarked size={14} />
-              <span>ชั้นวางหนังสือ ({novels.length})</span>
-            </button>
-            <button
-              onClick={() => setActiveTab('detail')}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                padding: '5px 12px',
-                borderRadius: 'var(--radius-sm)',
-                border: 'none',
-                backgroundColor: activeTab === 'detail' ? 'var(--accent-primary)' : 'transparent',
-                color: activeTab === 'detail' ? '#fff' : 'var(--text-muted)',
-                fontSize: '0.8rem',
-                fontWeight: 600,
-                cursor: 'pointer',
-                transition: 'all var(--transition-fast)',
-              }}
-            >
-              <BookOpen size={14} />
-              <span>สารบัญเรื่อง: {currentNovel.title.slice(0, 14)}...</span>
-            </button>
-          </div>
+          {/* Breadcrumb Path in Navbar for Detail view */}
+          {activeTab === 'detail' && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0, overflow: 'hidden' }}>
+              <ChevronRight size={15} style={{ color: 'var(--text-faint)', flexShrink: 0 }} />
+              <button
+                onClick={() => setActiveTab('shelf')}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-muted)',
+                  fontSize: '0.85rem',
+                  fontWeight: 500,
+                  cursor: 'pointer',
+                  padding: 0,
+                  flexShrink: 0,
+                  transition: 'color var(--transition-fast)',
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent-primary)')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
+              >
+                ชั้นวางนิยาย
+              </button>
+              <ChevronRight size={15} style={{ color: 'var(--text-faint)', flexShrink: 0 }} />
+              <span
+                style={{
+                  fontSize: '0.85rem',
+                  fontWeight: 600,
+                  color: 'var(--text-main)',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
+                title={currentNovel.title}
+              >
+                {currentNovel.title}
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Right Tools */}
@@ -380,7 +402,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
               <button
-                onClick={() => onSelectChapter(lastReadChapter.id)}
+                onClick={() => onSelectChapter(lastReadChapter.id, lastReadChapter.novelId)}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -709,7 +731,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                           e.stopPropagation();
                           onSelectNovel(novel);
                           if (novelChs.length > 0) {
-                            onSelectChapter(novelChs[0].id);
+                            onSelectChapter(novelChs[0].id, novel.id);
                           }
                         }}
                         style={{
@@ -783,7 +805,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
               </div>
               <div style={{ fontWeight: 800, fontSize: '1.05rem', marginBottom: '6px' }}>+ เพิ่มนิยายเรื่องใหม่</div>
               <p style={{ fontSize: '0.8rem', color: 'var(--text-faint)', maxWidth: '220px', lineHeight: 1.5 }}>
-                วางไฟล์เนื้อหาดิบในโฟลเดอร์ <code style={{ color: 'var(--accent-primary)' }}>raw_chapters/</code> แล้วสั่ง AI แปลงเข้าสู่ระบบได้ทันที
+                วางไฟล์เนื้อหาในโฟลเดอร์ <code style={{ color: 'var(--accent-primary)' }}>raw_chapters/</code> เพื่อแปลงเข้าสู่ระบบ
               </p>
             </div>
           </div>
@@ -966,7 +988,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                   {novelChapters.length > 0 ? (
                     <>
                       <button
-                        onClick={() => onSelectChapter(lastReadChapter.id)}
+                        onClick={() => onSelectChapter(lastReadChapter.id, currentNovel.id)}
                         style={{
                           display: 'flex',
                           alignItems: 'center',
@@ -990,7 +1012,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                       </button>
 
                       <button
-                        onClick={() => onSelectChapter(novelChapters[0].id)}
+                        onClick={() => onSelectChapter(novelChapters[0].id, currentNovel.id)}
                         style={{
                           display: 'flex',
                           alignItems: 'center',
@@ -1088,7 +1110,14 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                 {novelCharacters.map((char) => (
                   <div
                     key={char.id}
-                    onClick={onOpenRoster}
+                    onClick={() => {
+                      if (onOpenCharacterDetail) {
+                        onOpenCharacterDetail(char);
+                      } else {
+                        onOpenRoster();
+                      }
+                    }}
+                    title={`คลิกเพื่อดูข้อมูลและรูปตัวละคร ${char.name}`}
                     style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -1171,40 +1200,68 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
               <div>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <Layers size={20} color="var(--accent-primary)" />
-                  สารบัญรายชื่อตอน ({novelChapters.length} ตอนพร้อมอ่าน)
+                  สารบัญตอน ({novelChapters.length} ตอนพร้อมอ่าน)
                 </h3>
                 <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                  คลิกตอนที่ต้องการเพื่อเปิดอ่านในระบบ Enhanced Reader
+                  เลือกตอนที่ต้องการเพื่อเริ่มอ่าน
                 </p>
               </div>
 
-              {/* Search Box */}
-              <div
-                style={{
-                  position: 'relative',
-                  minWidth: '240px',
-                }}
-              >
-                <Search
-                  size={16}
-                  style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-faint)' }}
-                />
-                <input
-                  type="text"
-                  placeholder="ค้นหาชื่อตอน หรือเลขตอน..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+              {/* Controls: Sort Order + Search Box */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <button
+                  onClick={() => setSortOrder((prev) => (prev === 'asc' ? 'desc' : 'asc'))}
+                  title={sortOrder === 'asc' ? 'สลับเป็นตอนล่าสุดก่อน' : 'สลับเป็นตอนแรกก่อน'}
                   style={{
-                    width: '100%',
-                    padding: '0.55rem 1rem 0.55rem 2.2rem',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    padding: '0.55rem 0.95rem',
                     borderRadius: 'var(--radius-md)',
                     border: '1px solid var(--border-medium)',
                     backgroundColor: 'var(--bg-surface)',
                     color: 'var(--text-main)',
-                    fontSize: '0.85rem',
-                    outline: 'none',
+                    fontSize: '0.82rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all var(--transition-fast)',
+                    boxShadow: 'var(--shadow-card)',
                   }}
-                />
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface-hover)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface)')}
+                >
+                  <ArrowUpDown size={14} style={{ color: 'var(--accent-primary)' }} />
+                  <span>{sortOrder === 'asc' ? 'ตอนแรกก่อน (1 → ล่าสุด)' : 'ตอนล่าสุดก่อน (ล่าสุด → 1)'}</span>
+                </button>
+
+                {/* Search Box */}
+                <div
+                  style={{
+                    position: 'relative',
+                    minWidth: '220px',
+                  }}
+                >
+                  <Search
+                    size={16}
+                    style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-faint)' }}
+                  />
+                  <input
+                    type="text"
+                    placeholder="ค้นหาชื่อตอน หรือเลขตอน..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    style={{
+                      width: '100%',
+                      padding: '0.55rem 1rem 0.55rem 2.2rem',
+                      borderRadius: 'var(--radius-md)',
+                      border: '1px solid var(--border-medium)',
+                      backgroundColor: 'var(--bg-surface)',
+                      color: 'var(--text-main)',
+                      fontSize: '0.85rem',
+                      outline: 'none',
+                    }}
+                  />
+                </div>
               </div>
             </div>
 
@@ -1213,11 +1270,13 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
               {filteredChapters.map((ch) => {
                 const isLastRead = ch.id === lastReadChapterId;
                 const dialogueCount = ch.blocks.filter((b) => b.type === 'dialogue').length;
+                const totalLength = ch.blocks.reduce((acc, b) => acc + ('text' in b ? b.text.length : 0), 0);
+                const estMinutes = Math.max(1, Math.round(totalLength / 450));
 
                 return (
                   <div
                     key={ch.id}
-                    onClick={() => onSelectChapter(ch.id)}
+                    onClick={() => onSelectChapter(ch.id, currentNovel.id)}
                     style={{
                       padding: '1.25rem',
                       borderRadius: 'var(--radius-md)',
@@ -1243,64 +1302,52 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                       e.currentTarget.style.borderColor = isLastRead ? 'var(--accent-primary)' : 'var(--border-subtle)';
                     }}
                   >
-                    {isLastRead && (
-                      <div
-                        style={{
-                          position: 'absolute',
-                          top: '12px',
-                          right: '12px',
-                          fontSize: '0.7rem',
-                          fontWeight: 700,
-                          padding: '2px 8px',
-                          borderRadius: 'var(--radius-full)',
-                          backgroundColor: 'rgba(236, 72, 153, 0.15)',
-                          color: 'var(--accent-primary)',
-                          border: '1px solid var(--accent-primary)',
-                        }}
-                      >
-                        อ่านค้างไว้
-                      </div>
-                    )}
-
                     <div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
-                        <div
-                          style={{
-                            width: '28px',
-                            height: '28px',
-                            borderRadius: 'var(--radius-sm)',
-                            backgroundColor: 'var(--bg-surface-elevated)',
-                            color: 'var(--accent-primary)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            fontWeight: 700,
-                            fontSize: '0.85rem',
-                          }}
-                        >
-                          {ch.chapterNumber}
-                        </div>
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', marginBottom: '8px' }}>
                         <span
                           style={{
-                            fontSize: '0.72rem',
-                            fontWeight: 600,
-                            padding: '2px 8px',
-                            borderRadius: 'var(--radius-full)',
-                            backgroundColor: 'rgba(16, 185, 129, 0.12)',
-                            color: '#10b981',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            fontSize: '0.75rem',
+                            fontWeight: 700,
+                            color: 'var(--accent-primary)',
+                            backgroundColor: 'var(--accent-subtle)',
+                            padding: '3px 9px',
+                            borderRadius: 'var(--radius-xs)',
+                            letterSpacing: '0.02em',
                           }}
                         >
-                          ✨ Enhanced Ready
+                          ตอนที่ {ch.chapterNumber}
                         </span>
+
+                        {isLastRead && (
+                          <span
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '4px',
+                              fontSize: '0.72rem',
+                              fontWeight: 600,
+                              padding: '2px 8px',
+                              borderRadius: 'var(--radius-xs)',
+                              backgroundColor: 'rgba(236, 72, 153, 0.12)',
+                              color: 'var(--accent-primary)',
+                              border: '1px solid rgba(236, 72, 153, 0.3)',
+                            }}
+                          >
+                            <Sparkles size={11} /> อ่านค้างไว้
+                          </span>
+                        )}
                       </div>
 
                       <h4
                         style={{
-                          fontSize: '0.98rem',
+                          fontSize: '1rem',
                           fontWeight: 700,
                           color: 'var(--text-main)',
-                          lineHeight: 1.4,
-                          marginBottom: '8px',
+                          lineHeight: 1.45,
+                          marginTop: '0.65rem',
+                          marginBottom: '0.5rem',
                         }}
                       >
                         {ch.title}
@@ -1312,16 +1359,27 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-between',
-                        marginTop: '1rem',
-                        paddingTop: '0.75rem',
+                        marginTop: '1.25rem',
+                        paddingTop: '0.85rem',
                         borderTop: '1px solid var(--border-subtle)',
                         fontSize: '0.78rem',
-                        color: 'var(--text-faint)',
+                        color: 'var(--text-muted)',
                       }}
                     >
-                      <span>บทสนทนา {dialogueCount} บรรทัด</span>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--accent-primary)', fontWeight: 600 }}>
-                        <span>อ่านตอนนี้</span>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <Clock size={13} style={{ color: 'var(--text-faint)' }} />
+                          ~{estMinutes} นาที
+                        </span>
+                        <span style={{ color: 'var(--border-medium)' }}>•</span>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <MessageSquare size={13} style={{ color: 'var(--text-faint)' }} />
+                          บทสนทนา {dialogueCount} บรรทัด
+                        </span>
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '3px', color: 'var(--accent-primary)', fontWeight: 600, fontSize: '0.82rem' }}>
+                        <span>อ่าน</span>
                         <ChevronRight size={14} />
                       </div>
                     </div>

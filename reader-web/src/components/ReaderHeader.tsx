@@ -13,6 +13,7 @@ interface ReaderHeaderProps {
   onOpenRoster: () => void;
   onOpenSettings: () => void;
   onBackToLibrary: () => void;
+  onBackToShelf?: () => void;
   theme: ReaderTheme;
   onToggleTheme: () => void;
   onOpenAdminModal?: () => void;
@@ -30,6 +31,7 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
   onOpenRoster,
   onOpenSettings,
   onBackToLibrary,
+  onBackToShelf,
   theme,
   onToggleTheme,
   onOpenAdminModal,
@@ -50,15 +52,38 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
       }}
     >
       {/* Left: Home / Library Button & Table of Contents Button */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
         <button
-          onClick={onBackToLibrary}
-          title="กลับสู่หน้าคลังนิยาย Yomiori"
+          onClick={onBackToShelf || onBackToLibrary}
+          title="กลับสู่ชั้นวางนิยาย (หน้าแรก)"
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '8px',
-            padding: '0.35rem 0.85rem 0.35rem 0.5rem',
+            padding: '0.35rem 0.5rem',
+            borderRadius: 'var(--radius-md)',
+            backgroundColor: 'var(--bg-surface)',
+            border: '1px solid var(--border-subtle)',
+            cursor: 'pointer',
+            transition: 'all var(--transition-fast)',
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface-hover)')}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface)')}
+        >
+          <img
+            src={getAssetUrl('/yomiori-logo.png')}
+            alt="Yomiori"
+            style={{ width: '24px', height: '24px', borderRadius: '4px', objectFit: 'contain' }}
+          />
+        </button>
+
+        <button
+          onClick={onBackToLibrary}
+          title={`กลับสู่หน้าสารบัญเรื่อง ${currentChapter.novelTitle}`}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '5px',
+            padding: '0.45rem 0.85rem',
             borderRadius: 'var(--radius-md)',
             backgroundColor: 'var(--bg-surface)',
             border: '1px solid var(--border-subtle)',
@@ -71,13 +96,10 @@ export const ReaderHeader: React.FC<ReaderHeaderProps> = ({
           onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface-hover)')}
           onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface)')}
         >
-          <img
-            src={getAssetUrl('/yomiori-logo.png')}
-            alt="Yomiori"
-            style={{ width: '24px', height: '24px', borderRadius: '4px', objectFit: 'contain' }}
-          />
-          <span>คลังนิยาย</span>
+          <ChevronLeft size={16} />
+          <span>หน้าเรื่อง</span>
         </button>
+
         <button
           onClick={onOpenToc}
           style={{
