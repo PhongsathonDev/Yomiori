@@ -13,6 +13,11 @@ import ch12 from './ch-12.json';
 import ch13 from './ch-13.json';
 import ch14 from './ch-14.json';
 import ch15 from './ch-15.json';
+import ch16 from './ch-16.json';
+import ch17 from './ch-17.json';
+import ch18 from './ch-18.json';
+import ch19 from './ch-19.json';
+import ch20 from './ch-20.json';
 import type { Chapter } from '../../../../types';
 
 export const kyudoChapters: Chapter[] = [
@@ -31,4 +36,9 @@ export const kyudoChapters: Chapter[] = [
   ch13 as Chapter,
   ch14 as Chapter,
   ch15 as Chapter,
+  ch16 as Chapter,
+  ch17 as Chapter,
+  ch18 as Chapter,
+  ch19 as Chapter,
+  ch20 as Chapter,
 ];
