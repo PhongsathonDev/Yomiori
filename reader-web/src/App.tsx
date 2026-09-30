@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Routes, Route, Navigate, useNavigate, useParams, useLocation } from 'react-router-dom';
-import { allNovels, allChapters, allCharacters } from './data';
+import { allNovels, allChapters, allCharacters, getCharactersByNovelId } from './data';
 import type { 
   Character, 
   Chapter, 
@@ -419,6 +419,12 @@ export function App() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [activeNovelForModals, setActiveNovelForModals] = useState<Novel>(currentNovel);
 
+  const rosterCharacters = useMemo(() => {
+    const novelCharIds = new Set(getCharactersByNovelId(activeNovelForModals.id).map((c) => c.id));
+    const matched = characters.filter((c) => novelCharIds.has(c.id));
+    return matched.length > 0 ? matched : characters;
+  }, [characters, activeNovelForModals.id]);
+
   // Sync Preferences to localStorage
   useEffect(() => {
     localStorage.setItem('novel_current_id', currentNovelId);
@@ -700,9 +706,13 @@ export function App() {
       />
 
       <CharacterRosterModal
-        characters={characters}
+        characters={rosterCharacters}
+        novelTitle={activeNovelForModals.title}
         isOpen={isRosterOpen}
         onClose={() => setIsRosterOpen(false)}
+        onSelectCharacter={(char) => {
+          setSelectedCharacterForDetail(char);
+        }}
       />
 
       <TableOfContentsModal
