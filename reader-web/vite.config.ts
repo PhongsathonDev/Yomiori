@@ -221,6 +221,7 @@ function localEditorPlugin(): Plugin {
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  base: './',
   plugins: [react(), localEditorPlugin()],
 });
+

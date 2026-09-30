@@ -35,17 +35,18 @@ jobs:
         working-directory: reader-web
         run: npm ci
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Build Web App
         working-directory: reader-web
         run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'reader-web/dist'
+
 
       - name: Deploy to GitHub Pages
         id: deployment
