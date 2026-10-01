@@ -39,6 +39,38 @@ import ch37 from './ch-37.json';
 import ch38 from './ch-38.json';
 import ch39 from './ch-39.json';
 import ch40 from './ch-40.json';
+import ch41 from './ch-41.json';
+import ch42 from './ch-42.json';
+import ch43 from './ch-43.json';
+import ch44 from './ch-44.json';
+import ch45 from './ch-45.json';
+import ch46 from './ch-46.json';
+import ch47 from './ch-47.json';
+import ch48 from './ch-48.json';
+import ch49 from './ch-49.json';
+import ch50 from './ch-50.json';
+import ch51 from './ch-51.json';
+import ch52 from './ch-52.json';
+import ch53 from './ch-53.json';
+import ch54 from './ch-54.json';
+import ch55 from './ch-55.json';
+import ch56 from './ch-56.json';
+import ch57 from './ch-57.json';
+import ch58 from './ch-58.json';
+import ch59 from './ch-59.json';
+import ch60 from './ch-60.json';
+import ch61 from './ch-61.json';
+import ch62 from './ch-62.json';
+import ch63 from './ch-63.json';
+import ch64 from './ch-64.json';
+import ch65 from './ch-65.json';
+import ch66 from './ch-66.json';
+import ch67 from './ch-67.json';
+import ch68 from './ch-68.json';
+import ch69 from './ch-69.json';
+import ch70 from './ch-70.json';
+import ch71 from './ch-71.json';
+import ch72 from './ch-72.json';
 import type { Chapter } from '../../../../types';
 
 export const kyudoChapters: Chapter[] = [
@@ -83,4 +115,36 @@ export const kyudoChapters: Chapter[] = [
   ch38 as Chapter,
   ch39 as Chapter,
   ch40 as Chapter,
+  ch41 as Chapter,
+  ch42 as Chapter,
+  ch43 as Chapter,
+  ch44 as Chapter,
+  ch45 as Chapter,
+  ch46 as Chapter,
+  ch47 as Chapter,
+  ch48 as Chapter,
+  ch49 as Chapter,
+  ch50 as Chapter,
+  ch51 as Chapter,
+  ch52 as Chapter,
+  ch53 as Chapter,
+  ch54 as Chapter,
+  ch55 as Chapter,
+  ch56 as Chapter,
+  ch57 as Chapter,
+  ch58 as Chapter,
+  ch59 as Chapter,
+  ch60 as Chapter,
+  ch61 as Chapter,
+  ch62 as Chapter,
+  ch63 as Chapter,
+  ch64 as Chapter,
+  ch65 as Chapter,
+  ch66 as Chapter,
+  ch67 as Chapter,
+  ch68 as Chapter,
+  ch69 as Chapter,
+  ch70 as Chapter,
+  ch71 as Chapter,
+  ch72 as Chapter,
 ];
