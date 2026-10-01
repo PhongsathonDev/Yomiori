@@ -64,6 +64,39 @@ export async function deleteChapterOffline(novelId: string, chapterId: string): 
   }
 }
 
+export async function clearNovelOfflineStorage(novelId: string): Promise<void> {
+  const novelDir = `${NOVELS_DIR}${novelId}/`;
+  const info = await FileSystem.getInfoAsync(novelDir);
+  if (info.exists) {
+    await FileSystem.deleteAsync(novelDir, { idempotent: true });
+  }
+}
+
+export async function getNovelOfflineStats(novelId: string): Promise<{ count: number; totalBytes: number }> {
+  const novelDir = `${NOVELS_DIR}${novelId}/`;
+  const dirInfo = await FileSystem.getInfoAsync(novelDir);
+  if (!dirInfo.exists) {
+    return { count: 0, totalBytes: 0 };
+  }
+  try {
+    const files = await FileSystem.readDirectoryAsync(novelDir);
+    let totalBytes = 0;
+    let count = 0;
+    for (const f of files) {
+      if (f.endsWith('.json')) {
+        const fileInfo = await FileSystem.getInfoAsync(`${novelDir}${f}`);
+        if (fileInfo.exists && (fileInfo as any).size) {
+          totalBytes += (fileInfo as any).size;
+        }
+        count++;
+      }
+    }
+    return { count, totalBytes };
+  } catch {
+    return { count: 0, totalBytes: 0 };
+  }
+}
+
 // ======================== Settings & Progress ========================
 
 const KEY_THEME = 'yomiori_theme';

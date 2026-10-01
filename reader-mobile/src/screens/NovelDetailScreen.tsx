@@ -9,14 +9,28 @@ import {
   StatusBar,
   ActivityIndicator,
   Alert,
+  Modal,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { ArrowLeft, CheckCircle2, DownloadCloud, BookOpen, Trash2 } from 'lucide-react-native';
+import {
+  ArrowLeft,
+  Download,
+  Settings2,
+  Trash2,
+  X,
+  HardDrive,
+  Check,
+} from 'lucide-react-native';
 import { RootStackParamList, Novel, ReaderTheme } from '../types';
 import { fetchNovels, getAvailableChapterList, downloadChapterOnDemand } from '../services/api';
-import { getSavedTheme, isChapterDownloaded, deleteChapterOffline } from '../services/storage';
+import {
+  getSavedTheme,
+  isChapterDownloaded,
+  clearNovelOfflineStorage,
+  getNovelOfflineStats,
+} from '../services/storage';
 import { themes } from '../theme/colors';
 
 type DetailRouteProp = RouteProp<RootStackParamList, 'NovelDetail'>;
@@ -36,6 +50,13 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
   const [isDownloadingAll, setIsDownloadingAll] = useState(false);
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [loading, setLoading] = useState(true);
+
+  // Settings & Storage Modal State
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [storageStats, setStorageStats] = useState<{ count: number; totalBytes: number }>({
+    count: 0,
+    totalBytes: 0,
+  });
 
   const themeColors = themes[currentTheme];
 
@@ -61,7 +82,16 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
       statusMap[ch.id] = await isChapterDownloaded(novelId, ch.id);
     }
     setDownloadedMap(statusMap);
+
+    const stats = await getNovelOfflineStats(novelId);
+    setStorageStats(stats);
+
     setLoading(false);
+  };
+
+  const refreshStorageStats = async () => {
+    const stats = await getNovelOfflineStats(novelId);
+    setStorageStats(stats);
   };
 
   const handleDownloadChapter = async (chapterId: string) => {
@@ -70,19 +100,11 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
     const success = await downloadChapterOnDemand(novelId, chapterId);
     if (success) {
       setDownloadedMap((prev) => ({ ...prev, [chapterId]: true }));
+      await refreshStorageStats();
     } else {
       Alert.alert('เกิดข้อผิดพลาด', 'ไม่สามารถดาวน์โหลดตอนได้ กรุณาตรวจสอบอินเทอร์เน็ต');
     }
     setDownloadingId(null);
-  };
-
-  const handleDeleteChapter = async (chapterId: string) => {
-    if (chapterId === 'ch-01') {
-      Alert.alert('คำเตือน', 'ตอนที่ 1 เป็นตอนตั้งต้นของระบบ ไม่สามารถลบได้');
-      return;
-    }
-    await deleteChapterOffline(novelId, chapterId);
-    setDownloadedMap((prev) => ({ ...prev, [chapterId]: false }));
   };
 
   const handleDownloadAll = async () => {
@@ -101,10 +123,44 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
     }
     setDownloadingId(null);
     setIsDownloadingAll(false);
+    await refreshStorageStats();
     Alert.alert('ดาวน์โหลดสำเร็จ', `ดาวน์โหลดเพิ่ม ${count} ตอนเรียบร้อยแล้ว อ่านออฟไลน์ได้ทันที!`);
   };
 
+  const handleClearAllOffline = () => {
+    Alert.alert(
+      'ล้างข้อมูลออฟไลน์',
+      'คุณต้องการลบไฟล์ตอนทั้งหมดที่ดาวน์โหลดไว้ในเครื่องใช่หรือไม่? (ยังสามารถดาวน์โหลดใหม่ได้ตลอดเวลา)',
+      [
+        { text: 'ยกเลิก', style: 'cancel' },
+        {
+          text: 'ลบข้อมูล',
+          style: 'destructive',
+          onPress: async () => {
+            await clearNovelOfflineStorage(novelId);
+            // Re-sync status
+            const statusMap: Record<string, boolean> = {};
+            for (const ch of chapters) {
+              statusMap[ch.id] = await isChapterDownloaded(novelId, ch.id);
+            }
+            setDownloadedMap(statusMap);
+            await refreshStorageStats();
+            setShowSettingsModal(false);
+            Alert.alert('ลบข้อมูลเรียบร้อย', 'คืนพื้นที่ความจุเครื่องเรียบร้อยแล้ว');
+          },
+        },
+      ]
+    );
+  };
+
   const downloadedCount = Object.values(downloadedMap).filter(Boolean).length;
+  const remainingCount = Math.max(0, chapters.length - downloadedCount);
+
+  const formatFileSize = (bytes: number) => {
+    if (bytes === 0) return '0 KB';
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
+  };
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: themeColors.background }]}>
@@ -115,12 +171,23 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
 
       {/* Top Header */}
       <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
-        <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
+        <TouchableOpacity style={styles.iconButton} onPress={() => navigation.goBack()}>
           <ArrowLeft size={22} color={themeColors.text} />
         </TouchableOpacity>
+
         <Text style={[styles.headerTitle, { color: themeColors.text }]} numberOfLines={1}>
           {novel?.title || 'รายละเอียดนิยาย'}
         </Text>
+
+        <TouchableOpacity
+          style={styles.iconButton}
+          onPress={() => {
+            refreshStorageStats();
+            setShowSettingsModal(true);
+          }}
+        >
+          <Settings2 size={21} color={themeColors.text} />
+        </TouchableOpacity>
       </View>
 
       {loading || !novel ? (
@@ -149,40 +216,15 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
                 ผู้แปล: {novel.translator || 'ไม่ระบุ'}
               </Text>
 
-              {/* Offline stats */}
-              <View style={[styles.offlineStatusBar, { backgroundColor: themeColors.primaryBg }]}>
-                <DownloadCloud size={14} color={themeColors.primary} />
-                <Text style={[styles.offlineStatsText, { color: themeColors.primary }]}>
+              {/* Clean Offline Counter Badge */}
+              <View style={[styles.offlineStatusBar, { backgroundColor: themeColors.card, borderColor: themeColors.border }]}>
+                <HardDrive size={13} color={themeColors.textMuted} />
+                <Text style={[styles.offlineStatsText, { color: themeColors.textMuted }]}>
                   ออฟไลน์ในเครื่อง: {downloadedCount}/{chapters.length} ตอน
                 </Text>
               </View>
             </View>
           </View>
-
-          {/* Download All Button */}
-          <TouchableOpacity
-            style={[
-              styles.downloadAllBtn,
-              {
-                backgroundColor: isDownloadingAll ? themeColors.border : themeColors.primary,
-              },
-            ]}
-            onPress={handleDownloadAll}
-            disabled={isDownloadingAll || downloadedCount === chapters.length}
-          >
-            {isDownloadingAll ? (
-              <ActivityIndicator size="small" color="#ffffff" />
-            ) : (
-              <DownloadCloud size={18} color="#ffffff" />
-            )}
-            <Text style={styles.downloadAllBtnText}>
-              {downloadedCount === chapters.length
-                ? 'ดาวน์โหลดครบทุกตอนแล้ว (อ่านออฟไลน์ได้ 100%)'
-                : isDownloadingAll
-                ? `กำลังดาวน์โหลด... (${downloadingId})`
-                : 'ดาวน์โหลดทุกตอนไว้อ่านออฟไลน์'}
-            </Text>
-          </TouchableOpacity>
 
           {/* Synopsis */}
           <View style={[styles.synopsisCard, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}>
@@ -192,11 +234,14 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
             </Text>
           </View>
 
-          {/* Chapters List */}
-          <Text style={[styles.chaptersHeading, { color: themeColors.text }]}>
-            รายการตอน ({chapters.length})
-          </Text>
+          {/* Chapters List Heading */}
+          <View style={styles.chaptersHeaderRow}>
+            <Text style={[styles.chaptersHeading, { color: themeColors.text }]}>
+              สารบัญ ({chapters.length} ตอน)
+            </Text>
+          </View>
 
+          {/* Chapters Table */}
           {chapters.map((ch) => {
             const isDownloaded = downloadedMap[ch.id];
             const isDownloading = downloadingId === ch.id;
@@ -214,6 +259,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
               >
                 <TouchableOpacity
                   style={styles.chapterTouch}
+                  activeOpacity={0.7}
                   onPress={() =>
                     navigation.navigate('Reader', {
                       novelId: novel.id,
@@ -227,45 +273,128 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
                     </Text>
                   </View>
                   <View style={styles.chapterTitles}>
-                    <Text style={[styles.chapterTitle, { color: themeColors.text }]}>
-                      ตอนที่ {ch.chapterNumber}
-                    </Text>
-                    <Text style={[styles.chapterSubTitle, { color: themeColors.textMuted }]}>
-                      {isDownloaded ? 'พร้อมอ่านออฟไลน์' : 'ยังไม่ได้ดาวน์โหลด'}
+                    <Text
+                      style={[styles.chapterTitle, { color: themeColors.text }]}
+                      numberOfLines={2}
+                    >
+                      {ch.title || `ตอนที่ ${ch.chapterNumber}`}
                     </Text>
                   </View>
                 </TouchableOpacity>
 
-                {/* Download / Status Action */}
+                {/* Right Action: Show download icon only if not downloaded */}
                 <View style={styles.chapterActions}>
                   {isDownloading ? (
                     <ActivityIndicator size="small" color={themeColors.primary} />
-                  ) : isDownloaded ? (
-                    <View style={styles.downloadedGroup}>
-                      <CheckCircle2 size={20} color="#10b981" />
-                      {ch.id !== 'ch-01' && (
-                        <TouchableOpacity
-                          style={styles.deleteBtn}
-                          onPress={() => handleDeleteChapter(ch.id)}
-                        >
-                          <Trash2 size={16} color={themeColors.textMuted} />
-                        </TouchableOpacity>
-                      )}
-                    </View>
-                  ) : (
+                  ) : !isDownloaded ? (
                     <TouchableOpacity
                       style={[styles.downloadIconBtn, { backgroundColor: themeColors.primaryBg }]}
                       onPress={() => handleDownloadChapter(ch.id)}
+                      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                     >
-                      <DownloadCloud size={18} color={themeColors.primary} />
+                      <Download size={16} color={themeColors.primary} />
                     </TouchableOpacity>
-                  )}
+                  ) : null}
                 </View>
               </View>
             );
           })}
         </ScrollView>
       )}
+
+      {/* Storage & Download Management Modal */}
+      <Modal
+        visible={showSettingsModal}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setShowSettingsModal(false)}
+      >
+        <TouchableOpacity
+          style={styles.modalOverlay}
+          activeOpacity={1}
+          onPress={() => setShowSettingsModal(false)}
+        >
+          <TouchableOpacity
+            style={[styles.modalContent, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}
+            activeOpacity={1}
+          >
+            {/* Modal Header */}
+            <View style={styles.modalHeader}>
+              <View style={styles.modalHeaderLeft}>
+                <HardDrive size={18} color={themeColors.primary} />
+                <Text style={[styles.modalTitle, { color: themeColors.text }]}>จัดการข้อมูลออฟไลน์</Text>
+              </View>
+              <TouchableOpacity
+                onPress={() => setShowSettingsModal(false)}
+                style={styles.modalCloseBtn}
+              >
+                <X size={18} color={themeColors.textMuted} />
+              </TouchableOpacity>
+            </View>
+
+            {/* Storage Info Card */}
+            <View style={[styles.modalInfoBox, { backgroundColor: themeColors.background, borderColor: themeColors.border }]}>
+              <View style={styles.infoRow}>
+                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>ตอนที่บันทึกแล้ว:</Text>
+                <Text style={[styles.infoValue, { color: themeColors.text }]}>
+                  {downloadedCount} / {chapters.length} ตอน
+                </Text>
+              </View>
+              <View style={styles.infoRow}>
+                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>พื้นที่ในเครื่องที่ใช้:</Text>
+                <Text style={[styles.infoValue, { color: themeColors.text }]}>
+                  {formatFileSize(storageStats.totalBytes)}
+                </Text>
+              </View>
+            </View>
+
+            {/* Action 1: Download All */}
+            <TouchableOpacity
+              style={[
+                styles.modalActionBtn,
+                {
+                  backgroundColor: remainingCount === 0 ? themeColors.border : themeColors.primary,
+                  opacity: remainingCount === 0 || isDownloadingAll ? 0.6 : 1,
+                },
+              ]}
+              onPress={handleDownloadAll}
+              disabled={remainingCount === 0 || isDownloadingAll}
+            >
+              {isDownloadingAll ? (
+                <ActivityIndicator size="small" color="#ffffff" />
+              ) : remainingCount === 0 ? (
+                <Check size={18} color="#ffffff" />
+              ) : (
+                <Download size={18} color="#ffffff" />
+              )}
+              <Text style={styles.modalActionBtnText}>
+                {remainingCount === 0
+                  ? 'ดาวน์โหลดครบทุกตอนแล้ว'
+                  : isDownloadingAll
+                  ? `กำลังดาวน์โหลด... (${downloadingId})`
+                  : `ดาวน์โหลดทุกตอนที่เหลือ (${remainingCount} ตอน)`}
+              </Text>
+            </TouchableOpacity>
+
+            {/* Action 2: Clear Offline Storage */}
+            <TouchableOpacity
+              style={[
+                styles.modalDestructiveBtn,
+                {
+                  borderColor: '#ef444433',
+                  backgroundColor: '#ef444410',
+                  opacity: storageStats.count === 0 ? 0.4 : 1,
+                },
+              ]}
+              onPress={handleClearAllOffline}
+              disabled={storageStats.count === 0}
+            >
+              <Trash2 size={16} color="#ef4444" />
+              <Text style={styles.modalDestructiveText}>ลบไฟล์ออฟไลน์ทั้งหมดของเรื่องนี้</Text>
+            </TouchableOpacity>
+          </TouchableOpacity>
+        </TouchableOpacity>
+      </Modal>
     </SafeAreaView>
   );
 };
@@ -277,18 +406,20 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: 1,
   },
-  backButton: {
+  iconButton: {
     padding: 6,
-    marginRight: 10,
   },
   headerTitle: {
     fontSize: 16,
     fontWeight: '700',
     flex: 1,
+    marginHorizontal: 12,
+    textAlign: 'center',
   },
   loadingContainer: {
     flex: 1,
@@ -322,7 +453,7 @@ const styles = StyleSheet.create({
   },
   metaText: {
     fontSize: 13,
-    marginBottom: 2,
+    marginBottom: 3,
   },
   offlineStatusBar: {
     flexDirection: 'row',
@@ -330,26 +461,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 8,
+    borderWidth: 1,
     marginTop: 8,
+    alignSelf: 'flex-start',
     gap: 6,
   },
   offlineStatsText: {
     fontSize: 11,
-    fontWeight: '600',
-  },
-  downloadAllBtn: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingVertical: 12,
-    borderRadius: 12,
-    gap: 8,
-    marginBottom: 16,
-  },
-  downloadAllBtnText: {
-    color: '#ffffff',
-    fontSize: 14,
-    fontWeight: '600',
+    fontWeight: '500',
   },
   synopsisCard: {
     padding: 14,
@@ -366,16 +485,22 @@ const styles = StyleSheet.create({
     fontSize: 13,
     lineHeight: 20,
   },
+  chaptersHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
   chaptersHeading: {
     fontSize: 16,
     fontWeight: '700',
-    marginBottom: 12,
   },
   chapterItem: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 14,
     borderRadius: 12,
     borderWidth: 1,
     marginBottom: 8,
@@ -387,40 +512,109 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   chapterNumBadge: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
     justifyContent: 'center',
     alignItems: 'center',
   },
   chapterNumText: {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '700',
   },
   chapterTitles: {
     flex: 1,
+    paddingRight: 8,
   },
   chapterTitle: {
     fontSize: 14,
     fontWeight: '600',
-  },
-  chapterSubTitle: {
-    fontSize: 11,
-    marginTop: 2,
+    lineHeight: 19,
   },
   chapterActions: {
-    paddingLeft: 8,
-  },
-  downloadedGroup: {
-    flexDirection: 'row',
+    minWidth: 28,
     alignItems: 'center',
-    gap: 10,
-  },
-  deleteBtn: {
-    padding: 4,
+    justifyContent: 'center',
   },
   downloadIconBtn: {
-    padding: 8,
+    padding: 6,
     borderRadius: 8,
+  },
+  // Modal styles
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    padding: 20,
+  },
+  modalContent: {
+    borderRadius: 16,
+    padding: 20,
+    borderWidth: 1,
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 16,
+  },
+  modalHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  modalTitle: {
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  modalCloseBtn: {
+    padding: 4,
+  },
+  modalInfoBox: {
+    padding: 12,
+    borderRadius: 10,
+    borderWidth: 1,
+    gap: 6,
+    marginBottom: 18,
+  },
+  infoRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  infoLabel: {
+    fontSize: 13,
+  },
+  infoValue: {
+    fontSize: 13,
+    fontWeight: '600',
+  },
+  modalActionBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 12,
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  modalActionBtnText: {
+    color: '#ffffff',
+    fontSize: 14,
+    fontWeight: '600',
+  },
+  modalDestructiveBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 11,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  modalDestructiveText: {
+    color: '#ef4444',
+    fontSize: 13,
+    fontWeight: '600',
   },
 });
