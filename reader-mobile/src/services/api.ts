@@ -1,4 +1,4 @@
-import { Chapter, Character, Novel } from '../types';
+import { Chapter, Character, Novel, IllustrationItem, NovelManifest } from '../types';
 import { saveChapterOffline, loadChapterOffline, isChapterDownloaded } from './storage';
 
 // Bundled fallback data
@@ -33,6 +33,19 @@ export async function fetchCharacters(novelId: string): Promise<Character[]> {
   }
   if (novelId === 'kyudo-senpai') {
     return bundledCharacters as Character[];
+  }
+  return [];
+}
+
+export async function fetchIllustrations(novelId: string): Promise<IllustrationItem[]> {
+  try {
+    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/illustrations.json`, { cache: 'no-cache' });
+    if (res.ok) {
+      const data = await res.json();
+      return data as IllustrationItem[];
+    }
+  } catch (err) {
+    console.log('Using offline bundled illustrations data:', err);
   }
   return [];
 }
@@ -84,16 +97,7 @@ export async function downloadChapterOnDemand(novelId: string, chapterId: string
   }
 }
 
-export interface NovelManifest {
-  novelId: string;
-  totalAvailable: number;
-  chapters: Array<{
-    id: string;
-    chapterNumber: number;
-    title: string;
-  }>;
-  updatedAt: string;
-}
+// NovelManifest is imported from ../types
 
 export async function fetchNovelManifest(novelId: string): Promise<NovelManifest | null> {
   try {

@@ -35,6 +35,15 @@ export async function saveChapterOffline(chapter: Chapter): Promise<void> {
   await FileSystem.writeAsStringAsync(filePath, JSON.stringify(chapter), {
     encoding: FileSystem.EncodingType.UTF8,
   });
+
+  // Pre-cache any illustrations in this chapter
+  if (chapter.blocks) {
+    for (const b of chapter.blocks) {
+      if (b.type === 'illustration' && (b as any).src) {
+        await cacheIllustrationOffline(chapter.novelId, (b as any).src).catch(() => {});
+      }
+    }
+  }
 }
 
 export async function loadChapterOffline(novelId: string, chapterId: string): Promise<Chapter | null> {
@@ -91,9 +100,67 @@ export async function getNovelOfflineStats(novelId: string): Promise<{ count: nu
         count++;
       }
     }
+
+    // Include cached illustrations size
+    const illustDir = `${novelDir}illustrations/`;
+    const illustDirInfo = await FileSystem.getInfoAsync(illustDir);
+    if (illustDirInfo.exists) {
+      const imgFiles = await FileSystem.readDirectoryAsync(illustDir);
+      for (const img of imgFiles) {
+        const imgInfo = await FileSystem.getInfoAsync(`${illustDir}${img}`);
+        if (imgInfo.exists && (imgInfo as any).size) {
+          totalBytes += (imgInfo as any).size;
+        }
+      }
+    }
+
     return { count, totalBytes };
   } catch {
     return { count: 0, totalBytes: 0 };
+  }
+}
+
+// ======================== Illustration Assets ========================
+
+const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
+
+export function getIllustrationUrl(novelId: string, src: string): string {
+  if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('file://')) {
+    return src;
+  }
+  const clean = src.replace(/^(\/)?(illustrations\/)?/, '');
+  return `${CDN_BASE_URL}/novels/${novelId}/illustrations/${clean}`;
+}
+
+export function getIllustrationLocalPath(novelId: string, src: string): string {
+  const clean = src.replace(/^(\/)?(illustrations\/)?/, '');
+  return `${NOVELS_DIR}${novelId}/illustrations/${clean}`;
+}
+
+export async function resolveIllustrationUri(novelId: string, src: string): Promise<string> {
+  const localPath = getIllustrationLocalPath(novelId, src);
+  const info = await FileSystem.getInfoAsync(localPath);
+  if (info.exists) {
+    return info.uri;
+  }
+  return getIllustrationUrl(novelId, src);
+}
+
+export async function cacheIllustrationOffline(novelId: string, src: string): Promise<string> {
+  const localPath = getIllustrationLocalPath(novelId, src);
+  const info = await FileSystem.getInfoAsync(localPath);
+  if (info.exists) {
+    return info.uri;
+  }
+  const dir = localPath.substring(0, localPath.lastIndexOf('/') + 1);
+  await ensureDir(dir);
+  const remoteUrl = getIllustrationUrl(novelId, src);
+  try {
+    const downloadRes = await FileSystem.downloadAsync(remoteUrl, localPath);
+    return downloadRes.uri;
+  } catch (err) {
+    console.warn(`Failed to download illustration ${src}:`, err);
+    return remoteUrl;
   }
 }
 
@@ -103,7 +170,6 @@ const KEY_THEME = 'yomiori_theme';
 const KEY_FONT_SIZE = 'yomiori_font_size';
 const KEY_FONT_FAMILY = 'yomiori_font_family';
 const KEY_LINE_HEIGHT = 'yomiori_line_height';
-const KEY_LAYOUT_STYLE = 'yomiori_layout_style';
 const KEY_PROGRESS = 'yomiori_progress_';
 
 export async function getSavedTheme(): Promise<ReaderTheme> {
@@ -140,15 +206,6 @@ export async function getSavedLineHeight(): Promise<number> {
 
 export async function saveLineHeight(ratio: number): Promise<void> {
   await AsyncStorage.setItem(KEY_LINE_HEIGHT, String(ratio));
-}
-
-export async function getSavedLayoutStyle(): Promise<'modern' | 'novel'> {
-  const val = await AsyncStorage.getItem(KEY_LAYOUT_STYLE);
-  return (val as 'modern' | 'novel') || 'novel';
-}
-
-export async function saveLayoutStyle(style: 'modern' | 'novel'): Promise<void> {
-  await AsyncStorage.setItem(KEY_LAYOUT_STYLE, style);
 }
 
 export async function saveReadingProgress(novelId: string, chapterId: string, percent: number): Promise<void> {

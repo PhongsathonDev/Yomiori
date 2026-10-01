@@ -26,7 +26,7 @@ import {
   Coffee,
   Type,
 } from 'lucide-react-native';
-import { RootStackParamList, Chapter, Character, DialogueBlock, ReaderTheme } from '../types';
+import { RootStackParamList, Chapter, Character, DialogueBlock, ReaderTheme, IllustrationBlock } from '../types';
 import { getChapter, fetchCharacters, getAvailableChapterList } from '../services/api';
 import {
   getSavedTheme,
@@ -39,9 +39,11 @@ import {
   saveLineHeight,
   saveReadingProgress,
   getReadingProgress,
+  getIllustrationUrl,
 } from '../services/storage';
 import { themes } from '../theme/colors';
 import { CharacterDetailModal, getAvatarSource } from '../components/CharacterDetailModal';
+import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import {
   TypographyModal,
   FontOption,
@@ -103,6 +105,11 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
   const [showControls, setShowControls] = useState(true);
   const [showTypographyModal, setShowTypographyModal] = useState(false);
+
+  // Lightbox Modal State
+  const [lightboxVisible, setLightboxVisible] = useState(false);
+  const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
+  const [lightboxCaption, setLightboxCaption] = useState<string | undefined>();
 
   const scrollRef = useRef<ScrollView>(null);
   const hasRestoredScroll = useRef(false);
@@ -440,6 +447,50 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                   );
                 }
 
+                if (block.type === 'illustration') {
+                  const iBlock = block as IllustrationBlock;
+                  const imgUrl = getIllustrationUrl(novelId, iBlock.src);
+
+                  return (
+                    <View key={block.id} style={styles.illustrationBlockContainer}>
+                      <TouchableOpacity
+                        activeOpacity={0.88}
+                        onPress={() => {
+                          setLightboxUrl(imgUrl);
+                          setLightboxCaption(iBlock.caption);
+                          setLightboxVisible(true);
+                        }}
+                        style={[
+                          styles.illustrationCard,
+                          {
+                            backgroundColor: themeColors.card,
+                            borderColor: themeColors.cardBorder,
+                          },
+                        ]}
+                      >
+                        <Image
+                          source={{ uri: imgUrl }}
+                          style={styles.illustrationImg}
+                          resizeMode="cover"
+                        />
+                        <View style={styles.illustrationFooter}>
+                          <Text
+                            style={[
+                              styles.illustrationCaption,
+                              { color: themeColors.narrationText, fontFamily: activeFont.regular },
+                            ]}
+                          >
+                            {iBlock.caption || 'ภาพประกอบนิยาย'}
+                          </Text>
+                          <Text style={[styles.illustrationZoomHint, { color: themeColors.primary }]}>
+                            แตะเพื่อขยาย ↗
+                          </Text>
+                        </View>
+                      </TouchableOpacity>
+                    </View>
+                  );
+                }
+
                 return null;
               })}
             </Pressable>
@@ -554,6 +605,14 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
         character={selectedCharacter}
         theme={currentTheme}
         onClose={() => setSelectedCharacter(null)}
+      />
+
+      {/* Fullscreen Lightbox Zoom Modal */}
+      <ImageLightboxModal
+        visible={lightboxVisible}
+        imageUrl={lightboxUrl}
+        caption={lightboxCaption}
+        onClose={() => setLightboxVisible(false)}
       />
     </SafeAreaView>
   );
@@ -781,5 +840,37 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,0.04)',
+  },
+  illustrationBlockContainer: {
+    marginVertical: 20,
+    width: '100%',
+  },
+  illustrationCard: {
+    width: '100%',
+    borderRadius: 14,
+    borderWidth: 1,
+    overflow: 'hidden',
+  },
+  illustrationImg: {
+    width: '100%',
+    height: 340,
+    backgroundColor: 'rgba(0,0,0,0.03)',
+  },
+  illustrationFooter: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    gap: 8,
+  },
+  illustrationCaption: {
+    fontSize: 13,
+    flex: 1,
+    lineHeight: 18,
+  },
+  illustrationZoomHint: {
+    fontSize: 11.5,
+    fontWeight: '700',
   },
 });

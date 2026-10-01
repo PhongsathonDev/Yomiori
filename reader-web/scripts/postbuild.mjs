@@ -40,23 +40,24 @@ if (fs.existsSync(indexPath)) {
 const srcDataDir = path.resolve('src/data');
 const distDataDir = path.join(distDir, 'data');
 
-function copyJsonFiles(src, dest) {
+function copyDataFiles(src, dest) {
   if (!fs.existsSync(src)) return;
   if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
   const entries = fs.readdirSync(src, { withFileTypes: true });
+  const allowedExts = ['.json', '.webp', '.png', '.jpg', '.jpeg', '.svg'];
   for (const entry of entries) {
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
     if (entry.isDirectory()) {
-      copyJsonFiles(srcPath, destPath);
-    } else if (entry.isFile() && entry.name.endsWith('.json')) {
+      copyDataFiles(srcPath, destPath);
+    } else if (entry.isFile() && allowedExts.some(ext => entry.name.toLowerCase().endsWith(ext))) {
       fs.copyFileSync(srcPath, destPath);
     }
   }
 }
 
-copyJsonFiles(srcDataDir, distDataDir);
-console.log('✅ Exported JSON chapters & metadata to dist/data for Mobile App CDN.');
+copyDataFiles(srcDataDir, distDataDir);
+console.log('✅ Exported JSON chapters, images & metadata to dist/data for Mobile App CDN.');
 
 // Generate chapter manifest for each novel so mobile app can dynamically discover all available chapters
 const novelsDir = path.join(distDataDir, 'novels');
@@ -93,10 +94,32 @@ if (fs.existsSync(novelsDir)) {
           }
         }
 
+        let illustrations = [];
+        const illustJsonPath = path.join(novelsDir, n.name, 'illustrations.json');
+        if (fs.existsSync(illustJsonPath)) {
+          try {
+            illustrations = JSON.parse(fs.readFileSync(illustJsonPath, 'utf8'));
+          } catch (e) {
+            console.warn(`Failed to parse illustrations.json for ${n.name}:`, e.message);
+          }
+        }
+
+        let characters = [];
+        const charJsonPath = path.join(novelsDir, n.name, 'characters.json');
+        if (fs.existsSync(charJsonPath)) {
+          try {
+            characters = JSON.parse(fs.readFileSync(charJsonPath, 'utf8'));
+          } catch (e) {
+            console.warn(`Failed to parse characters.json for ${n.name}:`, e.message);
+          }
+        }
+
         const manifest = {
           novelId: n.name,
           totalAvailable: chapterList.length,
           chapters: chapterList,
+          illustrations,
+          characters,
           updatedAt: new Date().toISOString(),
         };
 

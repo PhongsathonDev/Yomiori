@@ -23,15 +23,27 @@ import {
   X,
   HardDrive,
   Check,
+  BookOpen,
+  Image as ImageIcon,
+  Sparkles,
+  Users,
 } from 'lucide-react-native';
-import { RootStackParamList, Novel, ReaderTheme } from '../types';
-import { fetchNovels, getAvailableChapterList, downloadChapterOnDemand } from '../services/api';
+import { RootStackParamList, Novel, ReaderTheme, IllustrationItem, Character } from '../types';
+import {
+  fetchNovels,
+  getAvailableChapterList,
+  downloadChapterOnDemand,
+  fetchIllustrations,
+  fetchCharacters,
+} from '../services/api';
 import {
   getSavedTheme,
   isChapterDownloaded,
   clearNovelOfflineStorage,
   getNovelOfflineStats,
+  getIllustrationUrl,
 } from '../services/storage';
+import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import { themes } from '../theme/colors';
 
 type DetailRouteProp = RouteProp<RootStackParamList, 'NovelDetail'>;
@@ -59,6 +71,17 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
     totalBytes: 0,
   });
 
+  // Gallery & Cast State
+  const [illustrations, setIllustrations] = useState<IllustrationItem[]>([]);
+  const [characters, setCharacters] = useState<Character[]>([]);
+  const [activeTab, setActiveTab] = useState<'chapters' | 'gallery'>('chapters');
+
+  // Lightbox Modal State
+  const [lightboxVisible, setLightboxVisible] = useState(false);
+  const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
+  const [lightboxTitle, setLightboxTitle] = useState<string | undefined>();
+  const [lightboxCaption, setLightboxCaption] = useState<string | undefined>();
+
   const themeColors = themes[currentTheme];
 
   useEffect(() => {
@@ -70,12 +93,18 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
     const theme = await getSavedTheme();
     setCurrentTheme(theme);
 
-    const novelList = await fetchNovels();
+    const [novelList, chapterList, illustList, charList] = await Promise.all([
+      fetchNovels(),
+      getAvailableChapterList(novelId),
+      fetchIllustrations(novelId),
+      fetchCharacters(novelId),
+    ]);
+
     const found = novelList.find((n) => n.id === novelId);
     setNovel(found || null);
-
-    const chapterList = await getAvailableChapterList(novelId);
     setChapters(chapterList);
+    setIllustrations(illustList);
+    setCharacters(charList);
 
     // Check offline download status for each chapter
     const statusMap: Record<string, boolean> = {};
@@ -88,6 +117,13 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
     setStorageStats(stats);
 
     setLoading(false);
+  };
+
+  const openLightbox = (url: string, title?: string, caption?: string) => {
+    setLightboxUrl(url);
+    setLightboxTitle(title);
+    setLightboxCaption(caption);
+    setLightboxVisible(true);
   };
 
   const refreshStorageStats = async () => {
@@ -238,73 +274,259 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
             </Text>
           </View>
 
-          {/* Chapters List Heading */}
-          <View style={styles.chaptersHeaderRow}>
-            <Text style={[styles.chaptersHeading, { color: themeColors.text }]}>
-              สารบัญ ({chapters.length} ตอน)
-            </Text>
-          </View>
-
-          {/* Chapters Table */}
-          {chapters.map((ch) => {
-            const isDownloaded = downloadedMap[ch.id];
-            const isDownloading = downloadingId === ch.id;
-
-            return (
-              <View
-                key={ch.id}
+          {/* Segmented Tab Switcher */}
+          <View style={[styles.tabSwitcher, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}>
+            <TouchableOpacity
+              style={[
+                styles.tabButton,
+                activeTab === 'chapters' && [styles.tabButtonActive, { backgroundColor: themeColors.primaryBg }],
+              ]}
+              onPress={() => setActiveTab('chapters')}
+              activeOpacity={0.8}
+            >
+              <BookOpen size={16} color={activeTab === 'chapters' ? themeColors.primary : themeColors.textMuted} />
+              <Text
                 style={[
-                  styles.chapterItem,
-                  {
-                    backgroundColor: themeColors.card,
-                    borderColor: themeColors.cardBorder,
-                  },
+                  styles.tabText,
+                  { color: activeTab === 'chapters' ? themeColors.primary : themeColors.textMuted },
+                  activeTab === 'chapters' && styles.tabTextActive,
                 ]}
               >
-                <TouchableOpacity
-                  style={styles.chapterTouch}
-                  activeOpacity={0.7}
-                  onPress={() =>
-                    navigation.navigate('Reader', {
-                      novelId: novel.id,
-                      chapterId: ch.id,
-                    })
-                  }
-                >
-                  <View style={[styles.chapterNumBadge, { backgroundColor: themeColors.primaryBg }]}>
-                    <Text style={[styles.chapterNumText, { color: themeColors.primary }]}>
-                      {ch.chapterNumber}
-                    </Text>
-                  </View>
-                  <View style={styles.chapterTitles}>
-                    <Text
-                      style={[styles.chapterTitle, { color: themeColors.text }]}
-                      numberOfLines={2}
-                    >
-                      {ch.title || `ตอนที่ ${ch.chapterNumber}`}
-                    </Text>
-                  </View>
-                </TouchableOpacity>
+                สารบัญ ({chapters.length})
+              </Text>
+            </TouchableOpacity>
 
-                {/* Right Action: Show download icon only if not downloaded */}
-                <View style={styles.chapterActions}>
-                  {isDownloading ? (
-                    <ActivityIndicator size="small" color={themeColors.primary} />
-                  ) : !isDownloaded ? (
+            <TouchableOpacity
+              style={[
+                styles.tabButton,
+                activeTab === 'gallery' && [styles.tabButtonActive, { backgroundColor: themeColors.primaryBg }],
+              ]}
+              onPress={() => setActiveTab('gallery')}
+              activeOpacity={0.8}
+            >
+              <ImageIcon size={16} color={activeTab === 'gallery' ? themeColors.primary : themeColors.textMuted} />
+              <Text
+                style={[
+                  styles.tabText,
+                  { color: activeTab === 'gallery' ? themeColors.primary : themeColors.textMuted },
+                  activeTab === 'gallery' && styles.tabTextActive,
+                ]}
+              >
+                ภาพ & ตัวละคร ({illustrations.length + characters.length})
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          {/* TAB 1: CHAPTERS LIST */}
+          {activeTab === 'chapters' && (
+            <View>
+              {chapters.map((ch) => {
+                const isDownloaded = downloadedMap[ch.id];
+                const isDownloading = downloadingId === ch.id;
+                const isCh0 = ch.chapterNumber === 0;
+
+                return (
+                  <View
+                    key={ch.id}
+                    style={[
+                      styles.chapterItem,
+                      {
+                        backgroundColor: themeColors.card,
+                        borderColor: isCh0 ? themeColors.primary : themeColors.cardBorder,
+                      },
+                    ]}
+                  >
                     <TouchableOpacity
-                      style={[styles.downloadIconBtn, { backgroundColor: themeColors.primaryBg }]}
-                      onPress={() => handleDownloadChapter(ch.id)}
-                      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                      style={styles.chapterTouch}
+                      activeOpacity={0.7}
+                      onPress={() =>
+                        navigation.navigate('Reader', {
+                          novelId: novel.id,
+                          chapterId: ch.id,
+                        })
+                      }
                     >
-                      <Download size={16} color={themeColors.primary} />
+                      <View
+                        style={[
+                          styles.chapterNumBadge,
+                          { backgroundColor: isCh0 ? `${themeColors.primary}20` : themeColors.primaryBg },
+                        ]}
+                      >
+                        {isCh0 ? (
+                          <Sparkles size={14} color={themeColors.primary} />
+                        ) : (
+                          <Text style={[styles.chapterNumText, { color: themeColors.primary }]}>
+                            {ch.chapterNumber}
+                          </Text>
+                        )}
+                      </View>
+                      <View style={styles.chapterTitles}>
+                        <Text
+                          style={[
+                            styles.chapterTitle,
+                            { color: isCh0 ? themeColors.primary : themeColors.text },
+                            isCh0 && { fontWeight: '700' },
+                          ]}
+                          numberOfLines={2}
+                        >
+                          {ch.title || `ตอนที่ ${ch.chapterNumber}`}
+                        </Text>
+                      </View>
                     </TouchableOpacity>
-                  ) : null}
+
+                    {/* Right Action: Show download icon only if not downloaded */}
+                    <View style={styles.chapterActions}>
+                      {isDownloading ? (
+                        <ActivityIndicator size="small" color={themeColors.primary} />
+                      ) : !isDownloaded ? (
+                        <TouchableOpacity
+                          style={[styles.downloadIconBtn, { backgroundColor: themeColors.primaryBg }]}
+                          onPress={() => handleDownloadChapter(ch.id)}
+                          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                        >
+                          <Download size={16} color={themeColors.primary} />
+                        </TouchableOpacity>
+                      ) : null}
+                    </View>
+                  </View>
+                );
+              })}
+            </View>
+          )}
+
+          {/* TAB 2: GALLERY & CHARACTERS */}
+          {activeTab === 'gallery' && (
+            <View style={styles.galleryContainer}>
+              {/* Section 1: Characters Cast */}
+              {characters.length > 0 && (
+                <View style={styles.gallerySection}>
+                  <View style={styles.sectionHeaderRow}>
+                    <Users size={16} color={themeColors.primary} />
+                    <Text style={[styles.sectionTitle, { color: themeColors.text }]}>
+                      ตัวละครหลัก ({characters.length})
+                    </Text>
+                  </View>
+
+                  <ScrollView
+                    horizontal
+                    showsHorizontalScrollIndicator={false}
+                    contentContainerStyle={styles.charactersScroll}
+                  >
+                    {characters.map((char) => {
+                      const avatarUri = char.avatarUrl
+                        ? `https://phongsathondev.github.io/Yomiori/${char.avatarUrl.replace(/^\//, '')}`
+                        : null;
+                      return (
+                        <TouchableOpacity
+                          key={char.id}
+                          style={[
+                            styles.characterCard,
+                            { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder },
+                          ]}
+                          activeOpacity={0.8}
+                          onPress={() => {
+                            if (avatarUri) {
+                              openLightbox(avatarUri, char.name, char.description || char.role);
+                            }
+                          }}
+                        >
+                          {avatarUri ? (
+                            <Image source={{ uri: avatarUri }} style={styles.charAvatar} resizeMode="cover" />
+                          ) : (
+                            <View style={[styles.charAvatarPlaceholder, { backgroundColor: `${char.color}20` }]}>
+                              <Text style={[styles.charInitial, { color: char.color }]}>
+                                {char.name.charAt(0)}
+                              </Text>
+                            </View>
+                          )}
+                          <View style={styles.charCardBody}>
+                            <Text style={[styles.charName, { color: themeColors.text }]} numberOfLines={1}>
+                              {char.name}
+                            </Text>
+                            <View style={[styles.charRoleBadge, { backgroundColor: `${char.color}18` }]}>
+                              <Text style={[styles.charRoleText, { color: char.color }]} numberOfLines={1}>
+                                {char.role}
+                              </Text>
+                            </View>
+                            {char.description ? (
+                              <Text style={[styles.charDesc, { color: themeColors.textMuted }]} numberOfLines={3}>
+                                {char.description}
+                              </Text>
+                            ) : null}
+                          </View>
+                        </TouchableOpacity>
+                      );
+                    })}
+                  </ScrollView>
+                </View>
+              )}
+
+              {/* Section 2: Official Illustrations */}
+              <View style={styles.gallerySection}>
+                <View style={styles.sectionHeaderRow}>
+                  <Sparkles size={16} color={themeColors.primary} />
+                  <Text style={[styles.sectionTitle, { color: themeColors.text }]}>
+                    ภาพประกอบนิยายทางการ ({illustrations.length})
+                  </Text>
+                </View>
+
+                <View style={styles.illustrationsGrid}>
+                  {illustrations.map((item) => {
+                    const imgUrl = getIllustrationUrl(novelId, item.filename);
+                    const typeBadge =
+                      item.type === 'color_spread'
+                        ? 'ภาพสีเปิดเล่ม'
+                        : item.type === 'cover'
+                        ? 'ภาพปก'
+                        : 'ภาพประกอบ';
+
+                    return (
+                      <TouchableOpacity
+                        key={item.id}
+                        style={[
+                          styles.illustrationGridItem,
+                          { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder },
+                        ]}
+                        activeOpacity={0.85}
+                        onPress={() => openLightbox(imgUrl, item.title, item.caption)}
+                      >
+                        <Image source={{ uri: imgUrl }} style={styles.gridImage} resizeMode="cover" />
+                        <View style={styles.gridItemOverlay}>
+                          <View style={[styles.gridTypeBadge, { backgroundColor: 'rgba(0,0,0,0.68)' }]}>
+                            <Text style={styles.gridTypeBadgeText}>{typeBadge}</Text>
+                          </View>
+                        </View>
+                        <View style={styles.gridItemBody}>
+                          <Text style={[styles.gridItemTitle, { color: themeColors.text }]} numberOfLines={1}>
+                            {item.title}
+                          </Text>
+                          {item.caption ? (
+                            <Text
+                              style={[styles.gridItemCaption, { color: themeColors.textMuted }]}
+                              numberOfLines={2}
+                            >
+                              {item.caption}
+                            </Text>
+                          ) : null}
+                        </View>
+                      </TouchableOpacity>
+                    );
+                  })}
                 </View>
               </View>
-            );
-          })}
+            </View>
+          )}
         </ScrollView>
       )}
+
+      {/* Lightbox Zoom Modal */}
+      <ImageLightboxModal
+        visible={lightboxVisible}
+        imageUrl={lightboxUrl}
+        title={lightboxTitle}
+        caption={lightboxCaption}
+        onClose={() => setLightboxVisible(false)}
+      />
 
       {/* Storage & Download Management Modal */}
       <Modal
@@ -631,5 +853,148 @@ const styles = StyleSheet.create({
     color: '#ef4444',
     fontSize: 13,
     fontWeight: '600',
+  },
+  // Segmented Tab Switcher Styles
+  tabSwitcher: {
+    flexDirection: 'row',
+    borderRadius: 12,
+    borderWidth: 1,
+    padding: 4,
+    marginVertical: 14,
+    gap: 6,
+  },
+  tabButton: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 10,
+    borderRadius: 8,
+    gap: 8,
+  },
+  tabButtonActive: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.08,
+    shadowRadius: 2,
+    elevation: 1,
+  },
+  tabText: {
+    fontSize: 13.5,
+    fontWeight: '500',
+  },
+  tabTextActive: {
+    fontWeight: '700',
+  },
+  // Gallery & Cast Styles
+  galleryContainer: {
+    paddingBottom: 24,
+  },
+  gallerySection: {
+    marginBottom: 24,
+  },
+  sectionHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 12,
+  },
+  sectionTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    letterSpacing: 0.2,
+  },
+  charactersScroll: {
+    paddingVertical: 4,
+    gap: 12,
+  },
+  characterCard: {
+    width: 175,
+    borderRadius: 14,
+    borderWidth: 1,
+    overflow: 'hidden',
+    paddingBottom: 8,
+  },
+  charAvatar: {
+    width: '100%',
+    height: 150,
+    backgroundColor: '#eee',
+  },
+  charAvatarPlaceholder: {
+    width: '100%',
+    height: 150,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  charInitial: {
+    fontSize: 36,
+    fontWeight: '700',
+  },
+  charCardBody: {
+    padding: 10,
+  },
+  charName: {
+    fontSize: 13.5,
+    fontWeight: '700',
+    marginBottom: 4,
+  },
+  charRoleBadge: {
+    alignSelf: 'flex-start',
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+    borderRadius: 6,
+    marginBottom: 6,
+  },
+  charRoleText: {
+    fontSize: 10.5,
+    fontWeight: '600',
+  },
+  charDesc: {
+    fontSize: 11.5,
+    lineHeight: 16,
+  },
+  illustrationsGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
+  illustrationGridItem: {
+    width: '48%',
+    borderRadius: 12,
+    borderWidth: 1,
+    overflow: 'hidden',
+  },
+  gridImage: {
+    width: '100%',
+    height: 135,
+    backgroundColor: '#eee',
+  },
+  gridItemOverlay: {
+    position: 'absolute',
+    top: 6,
+    left: 6,
+  },
+  gridTypeBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+  gridTypeBadgeText: {
+    color: '#ffffff',
+    fontSize: 9.5,
+    fontWeight: '600',
+  },
+  gridItemBody: {
+    padding: 8,
+  },
+  gridItemTitle: {
+    fontSize: 12,
+    fontWeight: '700',
+    marginBottom: 2,
+  },
+  gridItemCaption: {
+    fontSize: 10.5,
+    lineHeight: 14,
   },
 });

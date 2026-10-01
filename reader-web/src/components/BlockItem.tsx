@@ -85,10 +85,54 @@ export const BlockItem: React.FC<BlockItemProps> = ({
     );
   }
 
+  // Illustration Block
+  if (block.type === 'illustration') {
+    const cleanSrc = block.src.replace(/^(\/)?(illustrations\/)?/, '');
+    const imgUrl = `${import.meta.env.BASE_URL}data/novels/kyudo-senpai/illustrations/${cleanSrc}`;
+    return (
+      <div
+        style={{
+          margin: '2rem 0',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '8px',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '100%',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            boxShadow: 'var(--shadow-card)',
+            border: '1px solid var(--border-color)',
+          }}
+        >
+          <img
+            src={imgUrl}
+            alt={block.caption || 'ภาพประกอบ'}
+            style={{
+              maxWidth: '100%',
+              maxHeight: '520px',
+              display: 'block',
+              objectFit: 'contain',
+            }}
+          />
+        </div>
+        {block.caption && (
+          <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+            {block.caption}
+          </span>
+        )}
+      </div>
+    );
+  }
+
   // Dialogue Block
-  const character = characters.find((c) => c.id === block.speakerId);
+  const dBlock = block;
+  const character = characters.find((c) => c.id === dBlock.speakerId);
   const color = character?.color || 'var(--accent-primary)';
-  const name = character?.name || block.speakerName;
+  const name = character?.name || dBlock.speakerName;
   const role = character?.role;
   const avatarUrl = character?.avatarUrl;
 

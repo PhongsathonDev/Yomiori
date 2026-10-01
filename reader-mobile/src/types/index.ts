@@ -8,7 +8,7 @@ export interface Character {
   description?: string;
 }
 
-export type BlockType = 'narration' | 'dialogue' | 'scene_break';
+export type BlockType = 'narration' | 'dialogue' | 'scene_break' | 'illustration';
 
 export interface NarrationBlock {
   id: string;
@@ -31,7 +31,33 @@ export interface SceneBreakBlock {
   symbol?: string;
 }
 
-export type StoryBlock = NarrationBlock | DialogueBlock | SceneBreakBlock;
+export interface IllustrationBlock {
+  id: string;
+  type: 'illustration';
+  src: string;
+  caption?: string;
+  alt?: string;
+  aspectRatio?: number;
+}
+
+export type StoryBlock = NarrationBlock | DialogueBlock | SceneBreakBlock | IllustrationBlock;
+
+export interface IllustrationItem {
+  id: string;
+  filename: string;
+  title: string;
+  caption?: string;
+  type: 'color_spread' | 'cover' | 'insert' | 'special';
+}
+
+export interface NovelManifest {
+  novelId: string;
+  totalAvailable: number;
+  chapters: ChapterListItem[];
+  illustrations?: IllustrationItem[];
+  characters?: Character[];
+  updatedAt: string;
+}
 
 export interface Chapter {
   id: string;
