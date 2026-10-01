@@ -141,47 +141,34 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
 
       {/* Top App Header with Theme Switcher */}
       <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
-        <View>
-          <View style={styles.titleRow}>
-            <Text style={[styles.appTitle, { color: themeColors.primary }]}>Yomiori</Text>
-            <Text style={[styles.appKanji, { color: themeColors.textMuted }]}> (読織)</Text>
-          </View>
-          <Text style={[styles.appSubtitle, { color: themeColors.textMuted }]}>
-            คลังนิยายไลท์โนเวล • ฉบับพกพาออฟไลน์
-          </Text>
+        <View style={styles.titleRow}>
+          <Text style={[styles.appTitle, { color: themeColors.primary }]}>Yomiori</Text>
+          <Text style={[styles.appKanji, { color: themeColors.textMuted }]}> 読織</Text>
         </View>
 
-        <View style={styles.headerRightActions}>
-          {/* Theme Quick Toggle */}
-          <TouchableOpacity
-            style={[styles.themeBtn, { backgroundColor: themeColors.primaryBg }]}
-            onPress={handleToggleTheme}
-          >
-            {currentTheme === 'light' && <Sun size={16} color="#d97706" />}
-            {currentTheme === 'sepia' && <Coffee size={16} color="#9e432a" />}
-            {currentTheme === 'dark' && <Moon size={16} color="#e26d83" />}
-          </TouchableOpacity>
-
-          {/* Offline Ready Badge */}
-          <View style={[styles.offlineBadge, { backgroundColor: themeColors.primaryBg }]}>
-            <DownloadCloud size={13} color={themeColors.primary} />
-            <Text style={[styles.offlineBadgeText, { color: themeColors.primary }]}>Offline-Ready</Text>
-          </View>
-        </View>
+        {/* Theme Quick Toggle */}
+        <TouchableOpacity
+          style={[styles.themeBtn, { backgroundColor: themeColors.primaryBg }]}
+          onPress={handleToggleTheme}
+        >
+          {currentTheme === 'light' && <Sun size={17} color="#d97706" />}
+          {currentTheme === 'sepia' && <Coffee size={17} color="#9e432a" />}
+          {currentTheme === 'dark' && <Moon size={17} color="#e26d83" />}
+        </TouchableOpacity>
       </View>
 
       {loading ? (
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color={themeColors.primary} />
           <Text style={[styles.loadingText, { color: themeColors.textMuted }]}>
-            กำลังโหลดคลังนิยายและข้อมูลตัวละคร...
+            กำลังโหลด...
           </Text>
         </View>
       ) : (
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
-          {/* HERO: CONTINUE READING CARD (อ่านค้างไว้ล่าสุด) */}
+          {/* HERO: CONTINUE READING CARD */}
           {continueNovel && (
-            <View
+            <TouchableOpacity
               style={[
                 styles.heroCard,
                 {
@@ -189,6 +176,13 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                   borderColor: themeColors.cardBorder,
                 },
               ]}
+              activeOpacity={0.9}
+              onPress={() =>
+                navigation.navigate('Reader', {
+                  novelId: continueNovel.id,
+                  chapterId: continueChapterId,
+                })
+              }
             >
               <View style={styles.heroTopRow}>
                 <Image
@@ -198,21 +192,15 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                 />
 
                 <View style={styles.heroInfo}>
-                  <View style={styles.heroBadgeRow}>
-                    <View style={[styles.sparkleBadge, { backgroundColor: themeColors.primaryBg }]}>
-                      <Sparkles size={11} color={themeColors.primary} />
-                      <Text style={[styles.sparkleBadgeText, { color: themeColors.primary }]}>
-                        อ่านค้างไว้ล่าสุด
-                      </Text>
-                    </View>
-                  </View>
-
+                  <Text style={[styles.heroSectionLabel, { color: themeColors.primary }]}>
+                    อ่านต่อ
+                  </Text>
                   <Text style={[styles.heroNovelTitle, { color: themeColors.text }]} numberOfLines={1}>
                     {continueNovel.title.split('ผม')[0].trim()}
                   </Text>
-
                   <Text style={[styles.heroChapterTitle, { color: themeColors.textMuted }]} numberOfLines={1}>
-                    {continueChapterId.replace('ch-', 'ตอนที่ ')} • อ่านไปแล้ว {continuePercent}%
+                    {continueChapterId.replace('ch-', 'ตอนที่ ')}
+                    {continuePercent > 0 ? ` • ${continuePercent}%` : ''}
                   </Text>
 
                   {/* Reading Progress Bar */}
@@ -222,41 +210,25 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                         styles.heroProgressBarFill,
                         {
                           backgroundColor: themeColors.progressBar,
-                          width: `${Math.max(5, continuePercent)}%`,
+                          width: `${Math.max(4, continuePercent)}%`,
                         },
                       ]}
                     />
                   </View>
                 </View>
-              </View>
 
-              {/* Action Button */}
-              <TouchableOpacity
-                style={[styles.heroPlayButton, { backgroundColor: themeColors.primary }]}
-                activeOpacity={0.85}
-                onPress={() =>
-                  navigation.navigate('Reader', {
-                    novelId: continueNovel.id,
-                    chapterId: continueChapterId,
-                  })
-                }
-              >
-                <Play size={15} color="#ffffff" fill="#ffffff" />
-                <Text style={styles.heroPlayButtonText}>อ่านต่อทันที</Text>
-              </TouchableOpacity>
-            </View>
+                <View style={[styles.heroPlayButton, { backgroundColor: themeColors.primary }]}>
+                  <Play size={16} color="#ffffff" fill="#ffffff" />
+                </View>
+              </View>
+            </TouchableOpacity>
           )}
 
-          {/* SECTION HEADER & STATS */}
+          {/* SECTION HEADER */}
           <View style={styles.sectionHeaderRow}>
-            <View>
-              <Text style={[styles.sectionHeading, { color: themeColors.text }]}>
-                ชั้นวางหนังสือ (Bookshelf)
-              </Text>
-              <Text style={[styles.sectionSubHeading, { color: themeColors.textMuted }]}>
-                {novels.length} เรื่อง • พร้อมอ่าน 25 ตอนในระบบ
-              </Text>
-            </View>
+            <Text style={[styles.sectionHeading, { color: themeColors.text }]}>
+              ชั้นหนังสือ
+            </Text>
           </View>
 
           {/* HORIZONTAL TAG FILTER CHIPS */}
@@ -358,47 +330,21 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
 
                     {/* Metadata & Author */}
                     <View style={styles.authorBadgeRow}>
-                      <View style={styles.metaRow}>
-                        <Feather size={12} color={themeColors.textMuted} />
-                        <Text style={[styles.authorText, { color: themeColors.textMuted }]}>
-                          ผู้แต่ง: {novel.author}
-                        </Text>
-                      </View>
-                    </View>
-
-                    {/* Stats Badges */}
-                    <View style={styles.statsBadgesRow}>
-                      <View style={[styles.statBadge, { backgroundColor: themeColors.primaryBg }]}>
-                        <BookOpen size={11} color={themeColors.primary} />
-                        <Text style={[styles.statBadgeText, { color: themeColors.primary }]}>
-                          25 ตอน
-                        </Text>
-                      </View>
-
-                      <View
-                        style={[
-                          styles.statBadge,
-                          {
-                            backgroundColor: isFullyDownloaded
-                              ? 'rgba(16, 185, 129, 0.12)'
-                              : themeColors.primaryBg,
-                          },
-                        ]}
-                      >
-                        {isFullyDownloaded ? (
-                          <CheckCircle2 size={11} color="#10b981" />
-                        ) : (
-                          <DownloadCloud size={11} color={themeColors.primary} />
-                        )}
-                        <Text
-                          style={[
-                            styles.statBadgeText,
-                            { color: isFullyDownloaded ? '#10b981' : themeColors.primary },
-                          ]}
-                        >
-                          {downloadedCount > 0 ? `ออฟไลน์ ${downloadedCount} ตอน` : 'ยังไม่โหลด'}
-                        </Text>
-                      </View>
+                      <Text style={[styles.authorText, { color: themeColors.textMuted }]}>
+                        {novel.author}
+                      </Text>
+                      <Text style={[styles.metaDivider, { color: themeColors.border }]}>•</Text>
+                      <Text style={[styles.authorText, { color: themeColors.textMuted }]}>
+                        25 ตอน
+                      </Text>
+                      {downloadedCount > 0 && (
+                        <>
+                          <Text style={[styles.metaDivider, { color: themeColors.border }]}>•</Text>
+                          <Text style={[styles.authorText, { color: themeColors.primary }]}>
+                            ในเครื่อง {downloadedCount} ตอน
+                          </Text>
+                        </>
+                      )}
                     </View>
                   </View>
                 </View>
@@ -406,17 +352,9 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                 {/* Character Roster Avatar Stack */}
                 {chars.length > 0 && (
                   <View style={[styles.characterRosterSection, { borderTopColor: themeColors.border }]}>
-                    <View style={styles.rosterHeader}>
-                      <View style={styles.rosterHeaderLeft}>
-                        <Users size={13} color={themeColors.primary} />
-                        <Text style={[styles.rosterHeadingText, { color: themeColors.text }]}>
-                          ตัวละครหลักในเรื่อง ({chars.length})
-                        </Text>
-                      </View>
-                      <Text style={[styles.rosterHint, { color: themeColors.textMuted }]}>
-                        (แตะรูปเพื่อดูข้อมูล)
-                      </Text>
-                    </View>
+                    <Text style={[styles.rosterHeadingText, { color: themeColors.textMuted }]}>
+                      ตัวละคร
+                    </Text>
 
                     <ScrollView
                       horizontal
@@ -480,7 +418,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                   >
                     <BookOpen size={16} color="#ffffff" />
                     <Text style={styles.continueButtonText}>
-                      {progress ? `อ่านต่อ ${progress.chapterId}` : 'เริ่มอ่านตอนที่ 1'}
+                      {progress ? `อ่านต่อ ${progress.chapterId.replace('ch-', 'ตอนที่ ')}` : 'เริ่มอ่าน'}
                     </Text>
                   </TouchableOpacity>
 
@@ -493,7 +431,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                     }
                   >
                     <Text style={[styles.detailButtonText, { color: themeColors.text }]}>
-                      สารบัญ & ออฟไลน์
+                      สารบัญ
                     </Text>
                     <ChevronRight size={16} color={themeColors.textMuted} />
                   </TouchableOpacity>
@@ -596,32 +534,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 14,
-    marginBottom: 14,
   },
   heroCover: {
-    width: 58,
-    height: 84,
+    width: 52,
+    height: 74,
     borderRadius: 8,
     backgroundColor: '#ddd',
   },
   heroInfo: {
     flex: 1,
   },
-  heroBadgeRow: {
-    marginBottom: 4,
-  },
-  sparkleBadge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
-    alignSelf: 'flex-start',
-    gap: 4,
-  },
-  sparkleBadgeText: {
+  heroSectionLabel: {
     fontSize: 10,
-    fontWeight: '700',
+    fontWeight: '800',
+    letterSpacing: 1,
+    marginBottom: 2,
+    textTransform: 'uppercase',
   },
   heroNovelTitle: {
     fontSize: 15,
@@ -633,7 +561,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   heroProgressBarTrack: {
-    height: 4,
+    height: 3,
     width: '100%',
     borderRadius: 2,
     overflow: 'hidden',
@@ -643,17 +571,12 @@ const styles = StyleSheet.create({
     borderRadius: 2,
   },
   heroPlayButton: {
-    flexDirection: 'row',
+    width: 38,
+    height: 38,
+    borderRadius: 19,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 10,
-    borderRadius: 10,
-    gap: 6,
-  },
-  heroPlayButtonText: {
-    color: '#ffffff',
-    fontSize: 13,
-    fontWeight: '700',
+    marginLeft: 6,
   },
   sectionHeaderRow: {
     flexDirection: 'row',
@@ -719,33 +642,19 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   authorBadgeRow: {
-    marginTop: 6,
-  },
-  metaRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 5,
-  },
-  authorText: {
-    fontSize: 11,
-  },
-  statsBadgesRow: {
-    flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 6,
-    marginTop: 8,
-  },
-  statBadge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 7,
-    paddingVertical: 3,
-    borderRadius: 6,
+    marginTop: 6,
     gap: 4,
   },
-  statBadgeText: {
+  authorText: {
+    fontSize: 12,
+    fontWeight: '500',
+  },
+  metaDivider: {
+    marginHorizontal: 2,
     fontSize: 10,
-    fontWeight: '700',
   },
   characterRosterSection: {
     paddingHorizontal: 16,
