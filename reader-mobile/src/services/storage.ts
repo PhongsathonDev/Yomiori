@@ -103,6 +103,7 @@ const KEY_THEME = 'yomiori_theme';
 const KEY_FONT_SIZE = 'yomiori_font_size';
 const KEY_FONT_FAMILY = 'yomiori_font_family';
 const KEY_LINE_HEIGHT = 'yomiori_line_height';
+const KEY_LAYOUT_STYLE = 'yomiori_layout_style';
 const KEY_PROGRESS = 'yomiori_progress_';
 
 export async function getSavedTheme(): Promise<ReaderTheme> {
@@ -139,6 +140,15 @@ export async function getSavedLineHeight(): Promise<number> {
 
 export async function saveLineHeight(ratio: number): Promise<void> {
   await AsyncStorage.setItem(KEY_LINE_HEIGHT, String(ratio));
+}
+
+export async function getSavedLayoutStyle(): Promise<'modern' | 'novel'> {
+  const val = await AsyncStorage.getItem(KEY_LAYOUT_STYLE);
+  return (val as 'modern' | 'novel') || 'novel';
+}
+
+export async function saveLayoutStyle(style: 'modern' | 'novel'): Promise<void> {
+  await AsyncStorage.setItem(KEY_LAYOUT_STYLE, style);
 }
 
 export async function saveReadingProgress(novelId: string, chapterId: string, percent: number): Promise<void> {

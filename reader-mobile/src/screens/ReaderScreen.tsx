@@ -35,6 +35,8 @@ import {
   saveFontFamily,
   getSavedLineHeight,
   saveLineHeight,
+  getSavedLayoutStyle,
+  saveLayoutStyle,
   saveReadingProgress,
   getReadingProgress,
 } from '../services/storage';
@@ -44,6 +46,7 @@ import {
   TypographyModal,
   FontOption,
   LineHeightOption,
+  LayoutStyle,
   FONT_MAP,
 } from '../components/TypographyModal';
 
@@ -69,6 +72,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const [fontSize, setFontSize] = useState(17);
   const [fontFamily, setFontFamily] = useState<FontOption>('Sarabun');
   const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
+  const [layoutStyle, setLayoutStyle] = useState<LayoutStyle>('novel');
   const [showControls, setShowControls] = useState(true);
   const [showTypographyModal, setShowTypographyModal] = useState(false);
 
@@ -86,11 +90,22 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     setLoading(true);
     hasRestoredScroll.current = false;
 
-    const [theme, savedSize, savedFamily, savedLH, chars, chData, progress, availList] = await Promise.all([
+    const [
+      theme,
+      savedSize,
+      savedFamily,
+      savedLH,
+      savedLayout,
+      chars,
+      chData,
+      progress,
+      availList,
+    ] = await Promise.all([
       getSavedTheme(),
       getSavedFontSize(),
       getSavedFontFamily(),
       getSavedLineHeight(),
+      getSavedLayoutStyle(),
       fetchCharacters(novelId),
       getChapter(novelId, chapterId),
       getReadingProgress(novelId),
@@ -101,6 +116,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     setFontSize(savedSize);
     setFontFamily((savedFamily as FontOption) || 'Sarabun');
     setLineHeightRatio((savedLH as LineHeightOption) || 1.85);
+    setLayoutStyle(savedLayout);
     setCharacters(chars);
     setChapter(chData);
     setTotalChapters(availList.length > 0 ? availList.length : 25);
@@ -147,6 +163,11 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const handleChangeLineHeight = async (ratio: LineHeightOption) => {
     setLineHeightRatio(ratio);
     await saveLineHeight(ratio);
+  };
+
+  const handleChangeLayoutStyle = async (style: LayoutStyle) => {
+    setLayoutStyle(style);
+    await saveLayoutStyle(style);
   };
 
   // Character lookup
@@ -225,6 +246,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
           ref={scrollRef}
           contentContainerStyle={[
             styles.scrollContent,
+            { paddingHorizontal: layoutStyle === 'novel' ? 22 : 18 },
             !showControls && { paddingTop: 28 },
           ]}
           onScroll={handleScroll}
@@ -262,6 +284,9 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
           <Pressable onPress={() => setShowControls((prev) => !prev)}>
             {chapter.blocks.map((block) => {
               if (block.type === 'narration') {
+                const isNovel = layoutStyle === 'novel';
+                const displayText = isNovel ? `\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${block.text}` : block.text;
+
                 return (
                   <Text
                     key={block.id}
@@ -272,10 +297,11 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                         fontSize: fontSize,
                         fontFamily: activeFont.regular,
                         lineHeight: fontSize * lineHeightRatio,
+                        marginBottom: isNovel ? 12 : 16,
                       },
                     ]}
                   >
-                    {block.text}
+                    {displayText}
                   </Text>
                 );
               }
@@ -285,16 +311,22 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                 const char = characterMap.get(dBlock.speakerId);
                 const charColor = char?.color || themeColors.primary;
                 const avatarSrc = getAvatarSource(char?.avatarUrl);
+                const isNovel = layoutStyle === 'novel';
 
                 return (
                   <View
                     key={block.id}
                     style={[
-                      styles.dialogueCard,
-                      {
-                        backgroundColor: themeColors.dialogueBg,
-                        borderColor: themeColors.dialogueBorder,
-                      },
+                      isNovel ? styles.dialogueNovelCard : styles.dialogueCard,
+                      isNovel
+                        ? {
+                            backgroundColor: `${charColor}0a`,
+                            borderLeftColor: charColor,
+                          }
+                        : {
+                            backgroundColor: themeColors.dialogueBg,
+                            borderColor: themeColors.dialogueBorder,
+                          },
                     ]}
                   >
                     {/* Speaker Label with Avatar & Role */}
@@ -377,7 +409,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                         },
                       ]}
                     >
-                      {dBlock.text}
+                      {isNovel ? `“${dBlock.text}”` : dBlock.text}
                     </Text>
                   </View>
                 );
@@ -439,7 +471,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
             },
           ]}
         >
-          {/* Typography Settings Button (Aa) */}
+          {/* Typography & Layout Settings Button */}
           <TouchableOpacity
             style={[styles.typographyPillBtn, { backgroundColor: themeColors.primaryBg }]}
             onPress={() => setShowTypographyModal(true)}
@@ -447,7 +479,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
           >
             <Type size={16} color={themeColors.primary} />
             <Text style={[styles.typographyBtnText, { color: themeColors.primary }]}>
-              {fontFamily === 'System' ? 'ระบบ' : fontFamily} · {fontSize}
+              {layoutStyle === 'novel' ? '📖 รูปเล่ม' : '⚡ วิชวล'} · {fontFamily === 'System' ? 'ระบบ' : fontFamily}
             </Text>
           </TouchableOpacity>
 
@@ -493,9 +525,11 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
         fontSize={fontSize}
         fontFamily={fontFamily}
         lineHeightRatio={lineHeightRatio}
+        layoutStyle={layoutStyle}
         onChangeFontSize={handleChangeFontSize}
         onChangeFontFamily={handleChangeFontFamily}
         onChangeLineHeight={handleChangeLineHeight}
+        onChangeLayoutStyle={handleChangeLayoutStyle}
         onClose={() => setShowTypographyModal(false)}
       />
 
@@ -557,7 +591,6 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   scrollContent: {
-    paddingHorizontal: 18,
     paddingTop: 16,
     paddingBottom: 110,
   },
@@ -580,9 +613,18 @@ const styles = StyleSheet.create({
     lineHeight: 25,
   },
   narrationBlock: {
-    marginBottom: 16,
     letterSpacing: 0.2,
   },
+  // Classic Novel Dialogue (Soft, Left-border Accent)
+  dialogueNovelCard: {
+    borderLeftWidth: 3.5,
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    marginBottom: 12,
+  },
+  // Modern Visual Novel Dialogue (Full Border Card)
   dialogueCard: {
     borderRadius: 14,
     borderWidth: 1,
@@ -592,25 +634,25 @@ const styles = StyleSheet.create({
   speakerRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 8,
+    marginBottom: 6,
     gap: 10,
   },
   speakerAvatar: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
     borderWidth: 1.5,
   },
   speakerAvatarPlaceholder: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
+    width: 26,
+    height: 26,
+    borderRadius: 13,
     borderWidth: 1.5,
     justifyContent: 'center',
     alignItems: 'center',
   },
   speakerInitial: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '700',
   },
   speakerTextContainer: {
@@ -705,7 +747,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   typographyBtnText: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: '700',
   },
   themeGroup: {
