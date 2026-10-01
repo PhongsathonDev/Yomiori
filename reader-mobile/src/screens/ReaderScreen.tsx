@@ -36,6 +36,7 @@ import {
   getReadingProgress,
 } from '../services/storage';
 import { themes } from '../theme/colors';
+import { CharacterDetailModal, getAvatarSource } from '../components/CharacterDetailModal';
 
 type ReaderRouteProp = RouteProp<RootStackParamList, 'Reader'>;
 type ReaderNavProp = NativeStackNavigationProp<RootStackParamList, 'Reader'>;
@@ -51,6 +52,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const [characters, setCharacters] = useState<Character[]>([]);
   const [loading, setLoading] = useState(true);
   const [readingProgress, setReadingProgress] = useState(0);
+  const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
 
   // Settings
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
@@ -210,6 +212,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
               const dBlock = block as DialogueBlock;
               const char = characterMap.get(dBlock.speakerId);
               const charColor = char?.color || themeColors.primary;
+              const avatarSrc = getAvatarSource(char?.avatarUrl);
 
               return (
                 <View
@@ -222,13 +225,65 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                     },
                   ]}
                 >
-                  {/* Speaker Label with accent indicator */}
-                  <View style={styles.speakerRow}>
-                    <View style={[styles.speakerColorDot, { backgroundColor: charColor }]} />
-                    <Text style={[styles.speakerName, { color: charColor }]}>
-                      {dBlock.speakerName}
-                    </Text>
-                  </View>
+                  {/* Speaker Label with Avatar & Role */}
+                  <TouchableOpacity
+                    style={styles.speakerRow}
+                    activeOpacity={0.7}
+                    onPress={() => {
+                      if (char) {
+                        setSelectedCharacter(char);
+                      } else {
+                        setSelectedCharacter({
+                          id: dBlock.speakerId,
+                          name: dBlock.speakerName,
+                          role: 'ตัวละครประกอบ',
+                          color: charColor,
+                        });
+                      }
+                    }}
+                  >
+                    {avatarSrc ? (
+                      <Image
+                        source={avatarSrc}
+                        style={[styles.speakerAvatar, { borderColor: charColor }]}
+                        resizeMode="cover"
+                      />
+                    ) : (
+                      <View
+                        style={[
+                          styles.speakerAvatarPlaceholder,
+                          { backgroundColor: `${charColor}20`, borderColor: charColor },
+                        ]}
+                      >
+                        <Text style={[styles.speakerInitial, { color: charColor }]}>
+                          {dBlock.speakerName.charAt(0)}
+                        </Text>
+                      </View>
+                    )}
+
+                    <View style={styles.speakerTextContainer}>
+                      <View style={styles.speakerNameAndRole}>
+                        <Text style={[styles.speakerName, { color: charColor }]}>
+                          {dBlock.speakerName}
+                        </Text>
+                        {char?.role ? (
+                          <View
+                            style={[
+                              styles.speakerRoleBadge,
+                              { backgroundColor: `${charColor}15` },
+                            ]}
+                          >
+                            <Text
+                              style={[styles.speakerRoleText, { color: charColor }]}
+                              numberOfLines={1}
+                            >
+                              {char.role}
+                            </Text>
+                          </View>
+                        ) : null}
+                      </View>
+                    </View>
+                  </TouchableOpacity>
 
                   {/* Dialogue Quote Text */}
                   <Text
@@ -351,6 +406,14 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
+
+      {/* Character Profile Modal */}
+      <CharacterDetailModal
+        visible={!!selectedCharacter}
+        character={selectedCharacter}
+        theme={currentTheme}
+        onClose={() => setSelectedCharacter(null)}
+      />
     </SafeAreaView>
   );
 };
@@ -429,7 +492,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.2,
   },
   dialogueCard: {
-    borderRadius: 12,
+    borderRadius: 14,
     borderWidth: 1,
     padding: 14,
     marginBottom: 16,
@@ -437,17 +500,48 @@ const styles = StyleSheet.create({
   speakerRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 6,
-    gap: 6,
+    marginBottom: 8,
+    gap: 10,
   },
-  speakerColorDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
+  speakerAvatar: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    borderWidth: 1.5,
+  },
+  speakerAvatarPlaceholder: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    borderWidth: 1.5,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  speakerInitial: {
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  speakerTextContainer: {
+    flex: 1,
+  },
+  speakerNameAndRole: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    gap: 6,
   },
   speakerName: {
     fontSize: 13,
     fontWeight: '700',
+  },
+  speakerRoleBadge: {
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+    borderRadius: 10,
+  },
+  speakerRoleText: {
+    fontSize: 10,
+    fontWeight: '600',
   },
   dialogueText: {
     fontWeight: '500',
