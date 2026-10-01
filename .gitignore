@@ -1,6 +1,9 @@
 # Node modules
 node_modules/
 reader-web/node_modules/
+reader-mobile/node_modules/
+.expo/
+reader-mobile/.expo/
 
 # Build artifacts
 dist/

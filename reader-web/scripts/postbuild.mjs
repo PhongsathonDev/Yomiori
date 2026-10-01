@@ -35,3 +35,25 @@ if (fs.existsSync(indexPath)) {
 } else {
   console.warn('⚠️ dist/index.html not found, skipping 404.html generation.');
 }
+
+// Export raw JSON data to dist/data for Mobile App CDN
+const srcDataDir = path.resolve('src/data');
+const distDataDir = path.join(distDir, 'data');
+
+function copyJsonFiles(src, dest) {
+  if (!fs.existsSync(src)) return;
+  if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+  const entries = fs.readdirSync(src, { withFileTypes: true });
+  for (const entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+    if (entry.isDirectory()) {
+      copyJsonFiles(srcPath, destPath);
+    } else if (entry.isFile() && entry.name.endsWith('.json')) {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+}
+
+copyJsonFiles(srcDataDir, distDataDir);
+console.log('✅ Exported JSON chapters & metadata to dist/data for Mobile App CDN.');

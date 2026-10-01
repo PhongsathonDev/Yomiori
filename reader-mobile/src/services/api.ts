@@ -1,0 +1,102 @@
+import { Chapter, Character, Novel } from '../types';
+import { saveChapterOffline, loadChapterOffline, isChapterDownloaded } from './storage';
+
+// Bundled fallback data
+import bundledNovels from '../data/novels.json';
+import bundledCharacters from '../data/novels/kyudo-senpai/characters.json';
+
+// GitHub Pages Headless CDN Base URL
+export const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
+
+export async function fetchNovels(): Promise<Novel[]> {
+  try {
+    const res = await fetch(`${CDN_BASE_URL}/novels.json`, { cache: 'no-cache' });
+    if (res.ok) {
+      const data = await res.json();
+      return data as Novel[];
+    }
+  } catch (err) {
+    console.log('Using offline bundled novels data:', err);
+  }
+  return bundledNovels as Novel[];
+}
+
+export async function fetchCharacters(novelId: string): Promise<Character[]> {
+  try {
+    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/characters.json`, { cache: 'no-cache' });
+    if (res.ok) {
+      const data = await res.json();
+      return data as Character[];
+    }
+  } catch (err) {
+    console.log('Using offline bundled characters data:', err);
+  }
+  if (novelId === 'kyudo-senpai') {
+    return bundledCharacters as Character[];
+  }
+  return [];
+}
+
+/**
+ * Fetch chapter:
+ * 1. Checks if stored in offline FileSystem first (Instant & Offline-first)
+ * 2. If not offline, fetches from GitHub Pages CDN
+ * 3. Saves to offline FileSystem so subsequent reads are instant and offline-ready!
+ */
+export async function getChapter(novelId: string, chapterId: string): Promise<Chapter | null> {
+  // 1. Try offline storage first
+  const offline = await loadChapterOffline(novelId, chapterId);
+  if (offline) {
+    return offline;
+  }
+
+  // 2. Fetch from CDN
+  try {
+    const url = `${CDN_BASE_URL}/novels/${novelId}/chapters/${chapterId}.json`;
+    const res = await fetch(url);
+    if (res.ok) {
+      const chapter = (await res.json()) as Chapter;
+      // Auto-cache so it's offline for next time
+      await saveChapterOffline(chapter);
+      return chapter;
+    }
+  } catch (err) {
+    console.warn(`Failed to fetch ${chapterId} from CDN:`, err);
+  }
+
+  return null;
+}
+
+/**
+ * Explicit On-Demand download action triggered by user clicking the Download button
+ */
+export async function downloadChapterOnDemand(novelId: string, chapterId: string): Promise<boolean> {
+  try {
+    const url = `${CDN_BASE_URL}/novels/${novelId}/chapters/${chapterId}.json`;
+    const res = await fetch(url);
+    if (!res.ok) return false;
+    const chapter = (await res.json()) as Chapter;
+    await saveChapterOffline(chapter);
+    return true;
+  } catch (err) {
+    console.error(`Download error for ${chapterId}:`, err);
+    return false;
+  }
+}
+
+/**
+ * Generates the chapter list with IDs (ch-01 ... ch-25)
+ */
+export function getAvailableChapterList(novelId: string, totalCount: number = 25) {
+  const list = [];
+  for (let i = 1; i <= totalCount; i++) {
+    const numStr = String(i).padStart(2, '0');
+    list.push({
+      id: `ch-${numStr}`,
+      novelId,
+      chapterNumber: i,
+      title: `ตอนที่ ${i}`,
+    });
+  }
+  return list;
+}
