@@ -98,7 +98,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [fontSize, setFontSize] = useState(isTablet ? 19 : 17);
   const [fontFamily, setFontFamily] = useState<FontOption>('Sarabun');
-  const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
+  const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.95);
   const [showControls, setShowControls] = useState(true);
   const [showTypographyModal, setShowTypographyModal] = useState(false);
 
@@ -139,7 +139,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     setCurrentTheme(theme);
     setFontSize(savedSize);
     setFontFamily((savedFamily as FontOption) || 'Sarabun');
-    setLineHeightRatio((savedLH as LineHeightOption) || 1.85);
+    setLineHeightRatio((savedLH as LineHeightOption) || 1.95);
     setCharacters(chars);
     setChapter(chData);
     setTotalChapters(availList.length > 0 ? availList.length : 25);
@@ -215,7 +215,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
       {/* Top Header (Collapsible in Zen Mode) */}
       {showControls && (
         <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
-          <View style={[styles.centeredRow, { maxWidth: isTablet ? 720 : '100%' }]}>
+          <View style={[styles.centeredRow, { maxWidth: isTablet ? 540 : '100%' }]}>
             <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
               <ArrowLeft size={22} color={themeColors.text} />
             </TouchableOpacity>
@@ -282,8 +282,8 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
             }
           }}
         >
-          {/* Centered Book Spine: Ergonomic line length on both Phones and Tablets */}
-          <View style={[styles.bookSpine, { maxWidth: isTablet ? 720 : '100%' }]}>
+          {/* Centered Book Spine: 540px golden ratio on Tablets (matching meb layout) */}
+          <View style={[styles.bookSpine, { maxWidth: isTablet ? 540 : '100%' }]}>
             {/* Chapter Heading Banner */}
             <Pressable onPress={() => setShowControls((prev) => !prev)}>
               <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
@@ -293,7 +293,12 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                 <Text
                   style={[
                     styles.chapterHeroTitle,
-                    { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
+                    {
+                      color: themeColors.text,
+                      fontFamily: activeFont.bold || activeFont.regular,
+                      fontSize: isTablet ? 26 : 21,
+                      lineHeight: isTablet ? 36 : 28,
+                    },
                   ]}
                 >
                   {chapter.title}
@@ -315,6 +320,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                           fontSize: fontSize,
                           fontFamily: activeFont.regular,
                           lineHeight: fontSize * lineHeightRatio,
+                          marginBottom: isTablet ? 18 : 14,
                         },
                       ]}
                     >
@@ -337,6 +343,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                         {
                           backgroundColor: `${charColor}0a`,
                           borderLeftColor: charColor,
+                          marginBottom: isTablet ? 18 : 14,
                         },
                       ]}
                     >
@@ -614,8 +621,8 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   chapterHero: {
-    paddingBottom: 18,
-    marginBottom: 22,
+    paddingBottom: 24,
+    marginBottom: 28,
     borderBottomWidth: 1,
     alignItems: 'center',
   },
@@ -623,17 +630,14 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '800',
     letterSpacing: 2,
-    marginBottom: 6,
+    marginBottom: 8,
   },
   chapterHeroTitle: {
-    fontSize: 18,
     fontWeight: '800',
     textAlign: 'center',
-    lineHeight: 25,
   },
   narrationBlock: {
-    letterSpacing: 0.2,
-    marginBottom: 14,
+    letterSpacing: 0.25,
   },
   // Classic Novel Dialogue (Soft, Left-border Accent)
   dialogueNovelCard: {
