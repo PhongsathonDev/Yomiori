@@ -1,6 +1,6 @@
 import * as FileSystem from 'expo-file-system/legacy';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Chapter, ReaderTheme, ReadingProgress } from '../types';
+import { Chapter, ReaderTheme, ReadingProgress, CommentItem } from '../types';
 
 // Fallback bundled chapter 1 for initial offline test
 import bundledCh01 from '../data/novels/kyudo-senpai/chapters/ch-01.json';
@@ -225,6 +225,60 @@ export async function getReadingProgress(novelId: string): Promise<ReadingProgre
     return JSON.parse(val) as ReadingProgress;
   } catch {
     return null;
+  }
+}
+
+const KEY_COMMENTS_PREFIX = 'yomiori_user_comments_';
+const KEY_LIKED_PREFIX = 'yomiori_liked_comments_';
+
+export async function getUserComments(novelId: string, chapterId: string): Promise<CommentItem[]> {
+  try {
+    const key = `${KEY_COMMENTS_PREFIX}${novelId}_${chapterId}`;
+    const data = await AsyncStorage.getItem(key);
+    return data ? JSON.parse(data) : [];
+  } catch {
+    return [];
+  }
+}
+
+export async function saveUserComment(novelId: string, chapterId: string, comment: CommentItem): Promise<void> {
+  try {
+    const key = `${KEY_COMMENTS_PREFIX}${novelId}_${chapterId}`;
+    const existing = await getUserComments(novelId, chapterId);
+    existing.unshift(comment);
+    await AsyncStorage.setItem(key, JSON.stringify(existing));
+  } catch (err) {
+    console.warn('Failed to save user comment:', err);
+  }
+}
+
+export async function getLikedCommentIds(novelId: string, chapterId: string): Promise<string[]> {
+  try {
+    const key = `${KEY_LIKED_PREFIX}${novelId}_${chapterId}`;
+    const data = await AsyncStorage.getItem(key);
+    return data ? JSON.parse(data) : [];
+  } catch {
+    return [];
+  }
+}
+
+export async function toggleCommentLike(novelId: string, chapterId: string, commentId: string): Promise<boolean> {
+  try {
+    const key = `${KEY_LIKED_PREFIX}${novelId}_${chapterId}`;
+    const existing = await getLikedCommentIds(novelId, chapterId);
+    let isLiked = false;
+    let updated: string[];
+    if (existing.includes(commentId)) {
+      updated = existing.filter(id => id !== commentId);
+      isLiked = false;
+    } else {
+      updated = [...existing, commentId];
+      isLiked = true;
+    }
+    await AsyncStorage.setItem(key, JSON.stringify(updated));
+    return isLiked;
+  } catch {
+    return false;
   }
 }
 

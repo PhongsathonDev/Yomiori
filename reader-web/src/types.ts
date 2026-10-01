@@ -84,3 +84,20 @@ export type AvatarStyle =
   | 'avatar_with_badge' 
   | 'badge_only';
 
+export interface CommentItem {
+  id: string;
+  username: string;
+  avatarColor: string;
+  badge?: string;
+  text: string;
+  likes: number;
+  timeAgo: string;
+  isUser?: boolean;
+  userLiked?: boolean;
+}
+
+export interface ChapterCommentsData {
+  chapterId: string;
+  comments: CommentItem[];
+}
+

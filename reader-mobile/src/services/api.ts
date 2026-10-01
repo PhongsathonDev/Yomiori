@@ -141,3 +141,42 @@ export async function getAvailableChapterList(
   }
   return list;
 }
+
+// Fallback bundled comments
+import bundledComments from '../data/novels/kyudo-senpai/comments.json';
+import { getUserComments, getLikedCommentIds } from './storage';
+import { CommentItem } from '../types';
+
+export async function fetchChapterComments(novelId: string, chapterId: string): Promise<CommentItem[]> {
+  let catalog: Record<string, { comments?: CommentItem[] }> = {};
+  try {
+    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/comments.json`, { cache: 'no-cache' });
+    if (res.ok) {
+      catalog = await res.json();
+    }
+  } catch (err) {
+    console.log('Using offline comments fallback:', err);
+  }
+
+  if (!catalog || Object.keys(catalog).length === 0) {
+    if (novelId === 'kyudo-senpai') {
+      catalog = bundledComments as any;
+    }
+  }
+
+  const simulated = (catalog[chapterId]?.comments || []) as CommentItem[];
+  const likedIds = await getLikedCommentIds(novelId, chapterId);
+  const userComments = await getUserComments(novelId, chapterId);
+
+  // Map likes and liked state
+  const resolvedSimulated = simulated.map((c) => {
+    const isLiked = likedIds.includes(c.id);
+    return {
+      ...c,
+      userLiked: isLiked,
+      likes: isLiked ? c.likes + 1 : c.likes,
+    };
+  });
+
+  return [...userComments, ...resolvedSimulated];
+}

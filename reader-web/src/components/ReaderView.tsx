@@ -9,6 +9,7 @@ import type {
 } from '../types';
 import { ReaderHeader } from './ReaderHeader';
 import { BlockItem } from './BlockItem';
+import { ChapterCommentsSection } from './ChapterCommentsSection';
 import { ChevronLeft, ChevronRight, Sparkles, ArrowLeft } from 'lucide-react';
 
 export interface ReaderViewProps {
@@ -185,6 +186,12 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
             />
           ))}
         </div>
+
+        {/* Co-Reading Community Comments Section */}
+        <ChapterCommentsSection
+          novelId={currentNovel.id}
+          chapterId={currentChapter.id}
+        />
 
         {/* Bottom Chapter Navigation Bar */}
         <div

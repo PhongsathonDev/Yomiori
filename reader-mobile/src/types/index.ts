@@ -99,6 +99,23 @@ export interface ReadingProgress {
   updatedAt: number;
 }
 
+export interface CommentItem {
+  id: string;
+  username: string;
+  avatarColor: string;
+  badge?: string;
+  text: string;
+  likes: number;
+  timeAgo: string;
+  isUser?: boolean;
+  userLiked?: boolean;
+}
+
+export interface ChapterCommentsData {
+  chapterId: string;
+  comments: CommentItem[];
+}
+
 export type RootStackParamList = {
   Bookshelf: undefined;
   NovelDetail: { novelId: string };

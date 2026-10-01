@@ -44,6 +44,7 @@ import {
 import { themes } from '../theme/colors';
 import { CharacterDetailModal, getAvatarSource } from '../components/CharacterDetailModal';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
+import { ChapterCommentsSection } from '../components/ChapterCommentsSection';
 import {
   TypographyModal,
   FontOption,
@@ -494,6 +495,13 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                 return null;
               })}
             </Pressable>
+
+            {/* Co-Reading Community Comments Section */}
+            <ChapterCommentsSection
+              novelId={novelId}
+              chapterId={chapterId}
+              theme={currentTheme}
+            />
 
             {/* End of Chapter Navigation */}
             <View style={[styles.bottomChapterNav, { borderTopColor: themeColors.border }]}>
