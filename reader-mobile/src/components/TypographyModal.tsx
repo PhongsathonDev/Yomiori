@@ -7,13 +7,12 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import { X, Minus, Plus, Check, BookOpen, Layers } from 'lucide-react-native';
+import { X, Minus, Plus, Check } from 'lucide-react-native';
 import { ReaderTheme } from '../types';
 import { themes } from '../theme/colors';
 
 export type FontOption = 'Sarabun' | 'Kanit' | 'Prompt' | 'System';
 export type LineHeightOption = 1.55 | 1.85 | 2.15;
-export type LayoutStyle = 'modern' | 'novel';
 
 export const FONT_MAP: Record<FontOption, { regular: string | undefined; bold: string | undefined; label: string; desc: string }> = {
   Sarabun: {
@@ -48,11 +47,9 @@ interface Props {
   fontSize: number;
   fontFamily: FontOption;
   lineHeightRatio: LineHeightOption;
-  layoutStyle: LayoutStyle;
   onChangeFontSize: (delta: number) => void;
   onChangeFontFamily: (family: FontOption) => void;
   onChangeLineHeight: (ratio: LineHeightOption) => void;
-  onChangeLayoutStyle: (style: LayoutStyle) => void;
   onClose: () => void;
 }
 
@@ -62,11 +59,9 @@ export const TypographyModal: React.FC<Props> = ({
   fontSize,
   fontFamily,
   lineHeightRatio,
-  layoutStyle,
   onChangeFontSize,
   onChangeFontFamily,
   onChangeLineHeight,
-  onChangeLayoutStyle,
   onClose,
 }) => {
   const themeColors = themes[theme];
@@ -81,7 +76,7 @@ export const TypographyModal: React.FC<Props> = ({
         >
           {/* Header */}
           <View style={styles.header}>
-            <Text style={[styles.title, { color: themeColors.text }]}>ตั้งค่าการอ่านและจัดหน้า</Text>
+            <Text style={[styles.title, { color: themeColors.text }]}>ตั้งค่าตัวอักษรและการอ่าน</Text>
             <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
               <X size={18} color={themeColors.textMuted} />
             </TouchableOpacity>
@@ -104,76 +99,12 @@ export const TypographyModal: React.FC<Props> = ({
                   fontSize: fontSize,
                   fontFamily: activeFontMeta.regular,
                   lineHeight: fontSize * lineHeightRatio,
-                  textAlign: layoutStyle === 'novel' ? 'left' : 'center',
+                  textAlign: 'left',
                 }}
                 numberOfLines={2}
               >
-                {layoutStyle === 'novel' ? '\u00A0\u00A0\u00A0\u00A0' : ''}นี่คือตัวอย่างการแสดงผลสำหรับอ่านนิยาย &ldquo;โยมิโอริ&rdquo;
+                {'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}นี่คือตัวอย่างการแสดงผลสำหรับอ่านนิยาย &ldquo;โยมิโอริ&rdquo; ในรูปแบบรูปเล่ม
               </Text>
-            </View>
-
-            {/* Section 0: Layout Style Selection (New Feature) */}
-            <View style={styles.section}>
-              <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>รูปแบบการจัดหน้า (Layout Style)</Text>
-              <View style={styles.layoutToggleRow}>
-                {/* Novel Book Style */}
-                <TouchableOpacity
-                  style={[
-                    styles.layoutOptionCard,
-                    {
-                      backgroundColor: themeColors.background,
-                      borderColor: layoutStyle === 'novel' ? themeColors.primary : themeColors.border,
-                      borderWidth: layoutStyle === 'novel' ? 1.5 : 1,
-                    },
-                  ]}
-                  onPress={() => onChangeLayoutStyle('novel')}
-                  activeOpacity={0.7}
-                >
-                  <View style={styles.layoutOptionHeader}>
-                    <BookOpen size={16} color={layoutStyle === 'novel' ? themeColors.primary : themeColors.textMuted} />
-                    <Text
-                      style={[
-                        styles.layoutOptionTitle,
-                        { color: layoutStyle === 'novel' ? themeColors.primary : themeColors.text },
-                      ]}
-                    >
-                      รูปเล่มนิยาย (ใหม่)
-                    </Text>
-                  </View>
-                  <Text style={[styles.layoutOptionDesc, { color: themeColors.textMuted }]}>
-                    ย่อหน้าบรรทัดแรก บทสนทนานุ่มนวล สไตล์สำนักพิมพ์
-                  </Text>
-                </TouchableOpacity>
-
-                {/* Visual Novel Modern Style */}
-                <TouchableOpacity
-                  style={[
-                    styles.layoutOptionCard,
-                    {
-                      backgroundColor: themeColors.background,
-                      borderColor: layoutStyle === 'modern' ? themeColors.primary : themeColors.border,
-                      borderWidth: layoutStyle === 'modern' ? 1.5 : 1,
-                    },
-                  ]}
-                  onPress={() => onChangeLayoutStyle('modern')}
-                  activeOpacity={0.7}
-                >
-                  <View style={styles.layoutOptionHeader}>
-                    <Layers size={16} color={layoutStyle === 'modern' ? themeColors.primary : themeColors.textMuted} />
-                    <Text
-                      style={[
-                        styles.layoutOptionTitle,
-                        { color: layoutStyle === 'modern' ? themeColors.primary : themeColors.text },
-                      ]}
-                    >
-                      วิชวลโนเวล (เดิม)
-                    </Text>
-                  </View>
-                  <Text style={[styles.layoutOptionDesc, { color: themeColors.textMuted }]}>
-                    ข้อความชิดซ้าย การ์ดกล่องบทสนทนาเน้นชัดเจน
-                  </Text>
-                </TouchableOpacity>
-              </View>
             </View>
 
             {/* Section 1: Font Size */}
@@ -338,29 +269,6 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     textTransform: 'uppercase',
     letterSpacing: 0.5,
-  },
-  layoutToggleRow: {
-    flexDirection: 'row',
-    gap: 10,
-  },
-  layoutOptionCard: {
-    flex: 1,
-    padding: 12,
-    borderRadius: 12,
-  },
-  layoutOptionHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    marginBottom: 4,
-  },
-  layoutOptionTitle: {
-    fontSize: 13,
-    fontWeight: '700',
-  },
-  layoutOptionDesc: {
-    fontSize: 10.5,
-    lineHeight: 14,
   },
   fontSizeControlRow: {
     flexDirection: 'row',
