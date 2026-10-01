@@ -5,12 +5,17 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#faf8f5"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "package": "com.phongsathon.yomiori",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#faf8f5",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -31,6 +36,12 @@
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "13da1de9-adb7-457d-8992-d1649c9c83c8"
+      }
+    },
+    "owner": "mochimint"
   }
 }

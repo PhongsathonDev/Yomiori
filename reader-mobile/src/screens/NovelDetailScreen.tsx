@@ -24,7 +24,7 @@ import {
   HardDrive,
   Check,
   BookOpen,
-  Image as ImageIcon,
+  Images,
   Sparkles,
   Users,
 } from 'lucide-react-native';
@@ -304,7 +304,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
               onPress={() => setActiveTab('gallery')}
               activeOpacity={0.8}
             >
-              <ImageIcon size={16} color={activeTab === 'gallery' ? themeColors.primary : themeColors.textMuted} />
+              <Images size={16} color={activeTab === 'gallery' ? themeColors.primary : themeColors.textMuted} />
               <Text
                 style={[
                   styles.tabText,
