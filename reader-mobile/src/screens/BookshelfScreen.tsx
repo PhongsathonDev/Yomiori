@@ -141,20 +141,22 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
 
       {/* Top App Header with Theme Switcher */}
       <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
-        <View style={styles.titleRow}>
-          <Text style={[styles.appTitle, { color: themeColors.primary }]}>Yomiori</Text>
-          <Text style={[styles.appKanji, { color: themeColors.textMuted }]}> 読織</Text>
-        </View>
+        <View style={styles.headerInner}>
+          <View style={styles.titleRow}>
+            <Text style={[styles.appTitle, { color: themeColors.primary }]}>Yomiori</Text>
+            <Text style={[styles.appKanji, { color: themeColors.textMuted }]}> 読織</Text>
+          </View>
 
-        {/* Theme Quick Toggle */}
-        <TouchableOpacity
-          style={[styles.themeBtn, { backgroundColor: themeColors.primaryBg }]}
-          onPress={handleToggleTheme}
-        >
-          {currentTheme === 'light' && <Sun size={17} color="#d97706" />}
-          {currentTheme === 'sepia' && <Coffee size={17} color="#9e432a" />}
-          {currentTheme === 'dark' && <Moon size={17} color="#e26d83" />}
-        </TouchableOpacity>
+          {/* Theme Quick Toggle */}
+          <TouchableOpacity
+            style={[styles.themeBtn, { backgroundColor: themeColors.primaryBg }]}
+            onPress={handleToggleTheme}
+          >
+            {currentTheme === 'light' && <Sun size={17} color="#d97706" />}
+            {currentTheme === 'sepia' && <Coffee size={17} color="#9e432a" />}
+            {currentTheme === 'dark' && <Moon size={17} color="#e26d83" />}
+          </TouchableOpacity>
+        </View>
       </View>
 
       {loading ? (
@@ -460,10 +462,15 @@ const styles = StyleSheet.create({
   header: {
     paddingHorizontal: 20,
     paddingVertical: 14,
+    borderBottomWidth: 1,
+  },
+  headerInner: {
+    width: '100%',
+    maxWidth: 800,
+    alignSelf: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderBottomWidth: 1,
   },
   titleRow: {
     flexDirection: 'row',
@@ -507,6 +514,9 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   scrollContent: {
+    width: '100%',
+    maxWidth: 800,
+    alignSelf: 'center',
     padding: 18,
     paddingBottom: 40,
   },

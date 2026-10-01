@@ -115,9 +115,9 @@ export async function saveTheme(theme: ReaderTheme): Promise<void> {
   await AsyncStorage.setItem(KEY_THEME, theme);
 }
 
-export async function getSavedFontSize(): Promise<number> {
+export async function getSavedFontSize(defaultSize: number = 17): Promise<number> {
   const val = await AsyncStorage.getItem(KEY_FONT_SIZE);
-  return val ? Number(val) : 17;
+  return val ? Number(val) : defaultSize;
 }
 
 export async function saveFontSize(size: number): Promise<void> {

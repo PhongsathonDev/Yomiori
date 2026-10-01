@@ -171,23 +171,25 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
 
       {/* Top Header */}
       <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
-        <TouchableOpacity style={styles.iconButton} onPress={() => navigation.goBack()}>
-          <ArrowLeft size={22} color={themeColors.text} />
-        </TouchableOpacity>
+        <View style={styles.headerCenteredRow}>
+          <TouchableOpacity style={styles.iconButton} onPress={() => navigation.goBack()}>
+            <ArrowLeft size={22} color={themeColors.text} />
+          </TouchableOpacity>
 
-        <Text style={[styles.headerTitle, { color: themeColors.text }]} numberOfLines={1}>
-          {novel?.title || 'รายละเอียดนิยาย'}
-        </Text>
+          <Text style={[styles.headerTitle, { color: themeColors.text }]} numberOfLines={1}>
+            {novel?.title || 'รายละเอียดนิยาย'}
+          </Text>
 
-        <TouchableOpacity
-          style={styles.iconButton}
-          onPress={() => {
-            refreshStorageStats();
-            setShowSettingsModal(true);
-          }}
-        >
-          <Settings2 size={21} color={themeColors.text} />
-        </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.iconButton}
+            onPress={() => {
+              refreshStorageStats();
+              setShowSettingsModal(true);
+            }}
+          >
+            <Settings2 size={21} color={themeColors.text} />
+          </TouchableOpacity>
+        </View>
       </View>
 
       {loading || !novel ? (
@@ -404,12 +406,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: 1,
+  },
+  headerCenteredRow: {
+    width: '100%',
+    maxWidth: 760,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   iconButton: {
     padding: 6,
@@ -427,6 +434,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   scrollContent: {
+    width: '100%',
+    maxWidth: 760,
+    alignSelf: 'center',
     padding: 16,
     paddingBottom: 40,
   },
@@ -548,6 +558,9 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   modalContent: {
+    width: '100%',
+    maxWidth: 480,
+    alignSelf: 'center',
     borderRadius: 16,
     padding: 20,
     borderWidth: 1,

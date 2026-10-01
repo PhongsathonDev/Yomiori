@@ -229,6 +229,9 @@ const styles = StyleSheet.create({
   },
   sheet: {
     maxHeight: '85%',
+    width: '100%',
+    maxWidth: 520,
+    alignSelf: 'center',
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     borderWidth: 1,

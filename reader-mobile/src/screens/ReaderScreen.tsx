@@ -11,6 +11,7 @@ import {
   NativeSyntheticEvent,
   NativeScrollEvent,
   Image,
+  useWindowDimensions,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { RouteProp } from '@react-navigation/native';
@@ -83,6 +84,9 @@ function formatDialogueText(rawText: string): string {
 
 export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const { novelId, chapterId } = route.params;
+  const { width: windowWidth } = useWindowDimensions();
+  const isTablet = windowWidth >= 600;
+
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [characters, setCharacters] = useState<Character[]>([]);
   const [totalChapters, setTotalChapters] = useState(25);
@@ -92,7 +96,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
 
   // Settings & Immersion
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
-  const [fontSize, setFontSize] = useState(17);
+  const [fontSize, setFontSize] = useState(isTablet ? 19 : 17);
   const [fontFamily, setFontFamily] = useState<FontOption>('Sarabun');
   const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
   const [showControls, setShowControls] = useState(true);
@@ -123,7 +127,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
       availList,
     ] = await Promise.all([
       getSavedTheme(),
-      getSavedFontSize(),
+      getSavedFontSize(isTablet ? 19 : 17),
       getSavedFontFamily(),
       getSavedLineHeight(),
       fetchCharacters(novelId),
@@ -211,26 +215,28 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
       {/* Top Header (Collapsible in Zen Mode) */}
       {showControls && (
         <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
-          <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
-            <ArrowLeft size={22} color={themeColors.text} />
-          </TouchableOpacity>
+          <View style={[styles.centeredRow, { maxWidth: isTablet ? 720 : '100%' }]}>
+            <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
+              <ArrowLeft size={22} color={themeColors.text} />
+            </TouchableOpacity>
 
-          <View style={styles.headerTitles}>
-            <Text
-              style={[
-                styles.headerChapterTitle,
-                { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
-              ]}
-              numberOfLines={1}
-            >
-              {chapter ? chapter.title : `ตอนที่ ${chapterId}`}
-            </Text>
-          </View>
+            <View style={styles.headerTitles}>
+              <Text
+                style={[
+                  styles.headerChapterTitle,
+                  { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
+                ]}
+                numberOfLines={1}
+              >
+                {chapter ? chapter.title : `ตอนที่ ${chapterId}`}
+              </Text>
+            </View>
 
-          <View style={styles.progressPercentBadge}>
-            <Text style={[styles.progressPercentText, { color: themeColors.primary }]}>
-              {Math.round(readingProgress)}%
-            </Text>
+            <View style={styles.progressPercentBadge}>
+              <Text style={[styles.progressPercentText, { color: themeColors.primary }]}>
+                {Math.round(readingProgress)}%
+              </Text>
+            </View>
           </View>
         </View>
       )}
@@ -276,194 +282,197 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
             }
           }}
         >
-          {/* Chapter Heading Banner */}
-          <Pressable onPress={() => setShowControls((prev) => !prev)}>
-            <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
-              <Text style={[styles.chapterHeroNum, { color: themeColors.primary }]}>
-                CHAPTER {chapter.chapterNumber}
-              </Text>
-              <Text
-                style={[
-                  styles.chapterHeroTitle,
-                  { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
-                ]}
-              >
-                {chapter.title}
-              </Text>
-            </View>
-          </Pressable>
+          {/* Centered Book Spine: Ergonomic line length on both Phones and Tablets */}
+          <View style={[styles.bookSpine, { maxWidth: isTablet ? 720 : '100%' }]}>
+            {/* Chapter Heading Banner */}
+            <Pressable onPress={() => setShowControls((prev) => !prev)}>
+              <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
+                <Text style={[styles.chapterHeroNum, { color: themeColors.primary }]}>
+                  CHAPTER {chapter.chapterNumber}
+                </Text>
+                <Text
+                  style={[
+                    styles.chapterHeroTitle,
+                    { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
+                  ]}
+                >
+                  {chapter.title}
+                </Text>
+              </View>
+            </Pressable>
 
-          {/* Story Blocks */}
-          <Pressable onPress={() => setShowControls((prev) => !prev)}>
-            {chapter.blocks.map((block) => {
-              if (block.type === 'narration') {
-                return (
-                  <Text
-                    key={block.id}
-                    style={[
-                      styles.narrationBlock,
-                      {
-                        color: themeColors.narrationText,
-                        fontSize: fontSize,
-                        fontFamily: activeFont.regular,
-                        lineHeight: fontSize * lineHeightRatio,
-                      },
-                    ]}
-                  >
-                    {'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}{block.text}
-                  </Text>
-                );
-              }
-
-              if (block.type === 'dialogue') {
-                const dBlock = block as DialogueBlock;
-                const char = characterMap.get(dBlock.speakerId);
-                const charColor = char?.color || themeColors.primary;
-                const avatarSrc = getAvatarSource(char?.avatarUrl);
-
-                return (
-                  <View
-                    key={block.id}
-                    style={[
-                      styles.dialogueNovelCard,
-                      {
-                        backgroundColor: `${charColor}0a`,
-                        borderLeftColor: charColor,
-                      },
-                    ]}
-                  >
-                    {/* Speaker Label with Avatar & Role */}
-                    <TouchableOpacity
-                      style={styles.speakerRow}
-                      activeOpacity={0.7}
-                      onPress={() => {
-                        if (char) {
-                          setSelectedCharacter(char);
-                        } else {
-                          setSelectedCharacter({
-                            id: dBlock.speakerId,
-                            name: dBlock.speakerName,
-                            role: 'ตัวละครประกอบ',
-                            color: charColor,
-                          });
-                        }
-                      }}
-                    >
-                      {avatarSrc ? (
-                        <Image
-                          source={avatarSrc}
-                          style={[styles.speakerAvatar, { borderColor: charColor }]}
-                          resizeMode="cover"
-                        />
-                      ) : (
-                        <View
-                          style={[
-                            styles.speakerAvatarPlaceholder,
-                            { backgroundColor: `${charColor}20`, borderColor: charColor },
-                          ]}
-                        >
-                          <Text style={[styles.speakerInitial, { color: charColor }]}>
-                            {dBlock.speakerName.charAt(0)}
-                          </Text>
-                        </View>
-                      )}
-
-                      <View style={styles.speakerTextContainer}>
-                        <View style={styles.speakerNameAndRole}>
-                          <Text
-                            style={[
-                              styles.speakerName,
-                              {
-                                color: charColor,
-                                fontFamily: activeFont.bold || activeFont.regular,
-                              },
-                            ]}
-                          >
-                            {dBlock.speakerName}
-                          </Text>
-                          {char?.role ? (
-                            <View
-                              style={[
-                                styles.speakerRoleBadge,
-                                { backgroundColor: `${charColor}15` },
-                              ]}
-                            >
-                              <Text
-                                style={[styles.speakerRoleText, { color: charColor }]}
-                                numberOfLines={1}
-                              >
-                                {char.role}
-                              </Text>
-                            </View>
-                          ) : null}
-                        </View>
-                      </View>
-                    </TouchableOpacity>
-
-                    {/* Dialogue Quote Text with clean single pair of quotes */}
+            {/* Story Blocks */}
+            <Pressable onPress={() => setShowControls((prev) => !prev)}>
+              {chapter.blocks.map((block) => {
+                if (block.type === 'narration') {
+                  return (
                     <Text
+                      key={block.id}
                       style={[
-                        styles.dialogueText,
+                        styles.narrationBlock,
                         {
-                          color: themeColors.text,
+                          color: themeColors.narrationText,
                           fontSize: fontSize,
                           fontFamily: activeFont.regular,
-                          lineHeight: fontSize * (lineHeightRatio * 0.95),
+                          lineHeight: fontSize * lineHeightRatio,
                         },
                       ]}
                     >
-                      {formatDialogueText(dBlock.text)}
+                      {'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}{block.text}
                     </Text>
-                  </View>
-                );
-              }
+                  );
+                }
 
-              if (block.type === 'scene_break') {
-                return (
-                  <View key={block.id} style={styles.sceneBreakRow}>
-                    <View style={[styles.sceneBreakLine, { backgroundColor: themeColors.border }]} />
-                    <Text style={[styles.sceneBreakSymbol, { color: themeColors.textMuted }]}>◆</Text>
-                    <View style={[styles.sceneBreakLine, { backgroundColor: themeColors.border }]} />
-                  </View>
-                );
-              }
+                if (block.type === 'dialogue') {
+                  const dBlock = block as DialogueBlock;
+                  const char = characterMap.get(dBlock.speakerId);
+                  const charColor = char?.color || themeColors.primary;
+                  const avatarSrc = getAvatarSource(char?.avatarUrl);
 
-              return null;
-            })}
-          </Pressable>
+                  return (
+                    <View
+                      key={block.id}
+                      style={[
+                        styles.dialogueNovelCard,
+                        {
+                          backgroundColor: `${charColor}0a`,
+                          borderLeftColor: charColor,
+                        },
+                      ]}
+                    >
+                      {/* Speaker Label with Avatar & Role */}
+                      <TouchableOpacity
+                        style={styles.speakerRow}
+                        activeOpacity={0.7}
+                        onPress={() => {
+                          if (char) {
+                            setSelectedCharacter(char);
+                          } else {
+                            setSelectedCharacter({
+                              id: dBlock.speakerId,
+                              name: dBlock.speakerName,
+                              role: 'ตัวละครประกอบ',
+                              color: charColor,
+                            });
+                          }
+                        }}
+                      >
+                        {avatarSrc ? (
+                          <Image
+                            source={avatarSrc}
+                            style={[styles.speakerAvatar, { borderColor: charColor }]}
+                            resizeMode="cover"
+                          />
+                        ) : (
+                          <View
+                            style={[
+                              styles.speakerAvatarPlaceholder,
+                              { backgroundColor: `${charColor}20`, borderColor: charColor },
+                            ]}
+                          >
+                            <Text style={[styles.speakerInitial, { color: charColor }]}>
+                              {dBlock.speakerName.charAt(0)}
+                            </Text>
+                          </View>
+                        )}
 
-          {/* End of Chapter Navigation */}
-          <View style={[styles.bottomChapterNav, { borderTopColor: themeColors.border }]}>
-            <TouchableOpacity
-              style={[
-                styles.navChapterBtn,
-                { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder },
-                !hasPrev && { opacity: 0.4 },
-              ]}
-              disabled={!hasPrev}
-              onPress={() => goToChapter(currentChapterNum - 1)}
-            >
-              <ChevronLeft size={18} color={themeColors.text} />
-              <Text style={[styles.navChapterBtnText, { color: themeColors.text }]}>ตอนก่อนหน้า</Text>
-            </TouchableOpacity>
+                        <View style={styles.speakerTextContainer}>
+                          <View style={styles.speakerNameAndRole}>
+                            <Text
+                              style={[
+                                styles.speakerName,
+                                {
+                                  color: charColor,
+                                  fontFamily: activeFont.bold || activeFont.regular,
+                                },
+                              ]}
+                            >
+                              {dBlock.speakerName}
+                            </Text>
+                            {char?.role ? (
+                              <View
+                                style={[
+                                  styles.speakerRoleBadge,
+                                  { backgroundColor: `${charColor}15` },
+                                ]}
+                              >
+                                <Text
+                                  style={[styles.speakerRoleText, { color: charColor }]}
+                                  numberOfLines={1}
+                                >
+                                  {char.role}
+                                </Text>
+                              </View>
+                            ) : null}
+                          </View>
+                        </View>
+                      </TouchableOpacity>
 
-            <TouchableOpacity
-              style={[
-                styles.navChapterBtn,
-                { backgroundColor: themeColors.primary },
-                !hasNext && { opacity: 0.4 },
-              ]}
-              disabled={!hasNext}
-              onPress={() => goToChapter(currentChapterNum + 1)}
-            >
-              <Text style={styles.navChapterBtnNextText}>ตอนถัดไป</Text>
-              <ChevronRight size={18} color="#ffffff" />
-            </TouchableOpacity>
+                      {/* Dialogue Quote Text with clean single pair of quotes */}
+                      <Text
+                        style={[
+                          styles.dialogueText,
+                          {
+                            color: themeColors.text,
+                            fontSize: fontSize,
+                            fontFamily: activeFont.regular,
+                            lineHeight: fontSize * (lineHeightRatio * 0.95),
+                          },
+                        ]}
+                      >
+                        {formatDialogueText(dBlock.text)}
+                      </Text>
+                    </View>
+                  );
+                }
+
+                if (block.type === 'scene_break') {
+                  return (
+                    <View key={block.id} style={styles.sceneBreakRow}>
+                      <View style={[styles.sceneBreakLine, { backgroundColor: themeColors.border }]} />
+                      <Text style={[styles.sceneBreakSymbol, { color: themeColors.textMuted }]}>◆</Text>
+                      <View style={[styles.sceneBreakLine, { backgroundColor: themeColors.border }]} />
+                    </View>
+                  );
+                }
+
+                return null;
+              })}
+            </Pressable>
+
+            {/* End of Chapter Navigation */}
+            <View style={[styles.bottomChapterNav, { borderTopColor: themeColors.border }]}>
+              <TouchableOpacity
+                style={[
+                  styles.navChapterBtn,
+                  { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder },
+                  !hasPrev && { opacity: 0.4 },
+                ]}
+                disabled={!hasPrev}
+                onPress={() => goToChapter(currentChapterNum - 1)}
+              >
+                <ChevronLeft size={18} color={themeColors.text} />
+                <Text style={[styles.navChapterBtnText, { color: themeColors.text }]}>ตอนก่อนหน้า</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={[
+                  styles.navChapterBtn,
+                  { backgroundColor: themeColors.primary },
+                  !hasNext && { opacity: 0.4 },
+                ]}
+                disabled={!hasNext}
+                onPress={() => goToChapter(currentChapterNum + 1)}
+              >
+                <Text style={styles.navChapterBtnNextText}>ตอนถัดไป</Text>
+                <ChevronRight size={18} color="#ffffff" />
+              </TouchableOpacity>
+            </View>
           </View>
         </ScrollView>
       )}
 
-      {/* Floating Bottom Quick Settings Bar (Only visible when controls toggled on) */}
+      {/* Floating Bottom Quick Settings Bar (Centered on both Phones & Tablets) */}
       {showControls && (
         <View
           style={[
@@ -550,11 +559,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    flexDirection: 'row',
-    alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 10,
     borderBottomWidth: 1,
+  },
+  centeredRow: {
+    width: '100%',
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   backBtn: {
     padding: 6,
@@ -595,6 +608,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 22,
     paddingTop: 16,
     paddingBottom: 110,
+  },
+  bookSpine: {
+    width: '100%',
+    alignSelf: 'center',
   },
   chapterHero: {
     paddingBottom: 18,
@@ -719,8 +736,9 @@ const styles = StyleSheet.create({
   floatingBar: {
     position: 'absolute',
     bottom: 24,
-    left: 20,
-    right: 20,
+    alignSelf: 'center',
+    width: '90%',
+    maxWidth: 480,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
