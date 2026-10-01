@@ -23,3 +23,7 @@ pnpm-debug.log*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Scratch and temporary scripts
+scratch/
+reader-web/scratch/
