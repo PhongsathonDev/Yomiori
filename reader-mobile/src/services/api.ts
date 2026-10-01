@@ -84,12 +84,49 @@ export async function downloadChapterOnDemand(novelId: string, chapterId: string
   }
 }
 
+export interface NovelManifest {
+  novelId: string;
+  totalAvailable: number;
+  chapters: Array<{
+    id: string;
+    chapterNumber: number;
+    title: string;
+  }>;
+  updatedAt: string;
+}
+
+export async function fetchNovelManifest(novelId: string): Promise<NovelManifest | null> {
+  try {
+    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/manifest.json`, { cache: 'no-cache' });
+    if (res.ok) {
+      return (await res.json()) as NovelManifest;
+    }
+  } catch (err) {
+    console.log('Manifest fetch offline fallback:', err);
+  }
+  return null;
+}
+
 /**
- * Generates the chapter list with IDs (ch-01 ... ch-25)
+ * Generates or fetches the chapter list dynamically from manifest.json
  */
-export function getAvailableChapterList(novelId: string, totalCount: number = 25) {
+export async function getAvailableChapterList(
+  novelId: string
+): Promise<Array<{ id: string; novelId: string; chapterNumber: number; title: string }>> {
+  const manifest = await fetchNovelManifest(novelId);
+  if (manifest && manifest.chapters && manifest.chapters.length > 0) {
+    return manifest.chapters.map((c) => ({
+      id: c.id,
+      novelId,
+      chapterNumber: c.chapterNumber,
+      title: c.title,
+    }));
+  }
+
+  // Offline default fallback
+  const count = novelId === 'kyudo-senpai' ? 25 : 1;
   const list = [];
-  for (let i = 1; i <= totalCount; i++) {
+  for (let i = 1; i <= count; i++) {
     const numStr = String(i).padStart(2, '0');
     list.push({
       id: `ch-${numStr}`,

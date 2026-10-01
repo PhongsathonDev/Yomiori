@@ -81,7 +81,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
       charMap[n.id] = await fetchCharacters(n.id);
 
       // Download counts
-      const chList = getAvailableChapterList(n.id, 25);
+      const chList = await getAvailableChapterList(n.id);
       let downloaded = 0;
       for (const ch of chList) {
         if (await isChapterDownloaded(n.id, ch.id)) {

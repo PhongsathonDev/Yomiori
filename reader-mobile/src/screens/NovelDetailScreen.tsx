@@ -52,7 +52,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
     const found = novelList.find((n) => n.id === novelId);
     setNovel(found || null);
 
-    const chapterList = getAvailableChapterList(novelId, 25);
+    const chapterList = await getAvailableChapterList(novelId);
     setChapters(chapterList);
 
     // Check offline download status for each chapter
