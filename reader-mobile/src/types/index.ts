@@ -109,6 +109,8 @@ export interface CommentItem {
   timeAgo: string;
   isUser?: boolean;
   userLiked?: boolean;
+  isPinned?: boolean;
+  replies?: CommentItem[];
 }
 
 export interface ChapterCommentsData {

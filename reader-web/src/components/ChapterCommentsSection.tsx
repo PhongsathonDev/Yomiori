@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, Heart, Send } from 'lucide-react';
+import { MessageCircle, Heart, Send, Flame, CornerDownRight, ChevronDown, ChevronUp } from 'lucide-react';
 import type { CommentItem } from '../types';
 import commentsCatalog from '../data/novels/kyudo-senpai/comments.json';
 
@@ -12,8 +12,10 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId }) 
   const [comments, setComments] = useState<CommentItem[]>([]);
   const [inputVal, setInputVal] = useState('');
   const [likedIds, setLikedIds] = useState<string[]>([]);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
+    setExpanded(false);
     // 1. Load liked IDs from localStorage
     const localLikedKey = `yomiori_liked_${novelId}_${chapterId}`;
     let savedLiked: string[] = [];
@@ -37,10 +39,19 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId }) 
     const catalogData = (commentsCatalog as any)[chapterId]?.comments || [];
     const resolvedSimulated = catalogData.map((c: CommentItem) => {
       const isLiked = savedLiked.includes(c.id);
+      const mappedReplies = c.replies
+        ? c.replies.map((r) => ({
+            ...r,
+            userLiked: savedLiked.includes(r.id),
+            likes: savedLiked.includes(r.id) ? r.likes + 1 : r.likes,
+          }))
+        : undefined;
+
       return {
         ...c,
         userLiked: isLiked,
         likes: isLiked ? c.likes + 1 : c.likes,
+        replies: mappedReplies,
       };
     });
 
@@ -76,6 +87,20 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId }) 
             userLiked: isNowLiked,
             likes: newLikes,
           };
+        }
+        if (c.replies) {
+          const updatedReplies = c.replies.map((r) => {
+            if (r.id === commentId) {
+              const newLikes = isNowLiked ? r.likes + 1 : Math.max(0, r.likes - 1);
+              return {
+                ...r,
+                userLiked: isNowLiked,
+                likes: newLikes,
+              };
+            }
+            return r;
+          });
+          return { ...c, replies: updatedReplies };
         }
         return c;
       })
@@ -117,6 +142,8 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId }) 
     setComments((prev) => [newComment, ...prev]);
     setInputVal('');
   };
+
+  const displayedComments = expanded || comments.length <= 4 ? comments : comments.slice(0, 4);
 
   return (
     <section
@@ -263,7 +290,7 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId }) 
 
       {/* Comments List */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-        {comments.map((item) => {
+        {displayedComments.map((item) => {
           const isLiked = item.userLiked;
           return (
             <div
@@ -276,6 +303,24 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId }) 
                 transition: 'all var(--transition-fast)',
               }}
             >
+              {/* Pinned Badge */}
+              {item.isPinned && (
+                <div
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
+                    color: '#f97316',
+                    marginBottom: '6px',
+                  }}
+                >
+                  <Flame size={13} />
+                  <span>ความคิดเห็นยอดนิยม</span>
+                </div>
+              )}
+
               {/* Comment Header */}
               <div
                 style={{
@@ -365,9 +410,133 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId }) 
                   <span>{item.likes}</span>
                 </button>
               </div>
+
+              {/* Nested Replies */}
+              {item.replies && item.replies.length > 0 && (
+                <div
+                  style={{
+                    marginTop: '10px',
+                    marginLeft: '20px',
+                    paddingLeft: '12px',
+                    borderLeft: '2px solid var(--border-medium)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '8px',
+                  }}
+                >
+                  {item.replies.map((reply) => {
+                    const isReplyLiked = reply.userLiked;
+                    return (
+                      <div
+                        key={reply.id}
+                        style={{
+                          padding: '8px 10px',
+                          borderRadius: 'var(--radius-sm)',
+                          backgroundColor: 'var(--bg-surface)',
+                          border: '1px solid var(--border-subtle)',
+                        }}
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
+                          <CornerDownRight size={13} color="var(--text-faint)" />
+                          <div
+                            style={{
+                              width: '20px',
+                              height: '20px',
+                              borderRadius: '50%',
+                              backgroundColor: reply.avatarColor,
+                              color: '#fff',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              fontSize: '0.65rem',
+                              fontWeight: 700,
+                            }}
+                          >
+                            {reply.username.charAt(0).toUpperCase()}
+                          </div>
+                          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                            {reply.username}
+                          </span>
+                          {reply.badge && (
+                            <span
+                              style={{
+                                fontSize: '0.65rem',
+                                padding: '1px 5px',
+                                borderRadius: '4px',
+                                backgroundColor: 'var(--border-subtle)',
+                                color: 'var(--accent-primary)',
+                              }}
+                            >
+                              {reply.badge}
+                            </span>
+                          )}
+                          <span style={{ fontSize: '0.72rem', color: 'var(--text-faint)', marginLeft: 'auto' }}>
+                            {reply.timeAgo}
+                          </span>
+                        </div>
+                        <p style={{ fontSize: '0.85rem', color: 'var(--text-main)', margin: '2px 0 6px 26px' }}>
+                          {reply.text}
+                        </p>
+                        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                          <button
+                            type="button"
+                            onClick={() => handleLike(reply.id)}
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '4px',
+                              padding: '2px 6px',
+                              borderRadius: '10px',
+                              border: 'none',
+                              backgroundColor: isReplyLiked ? 'rgba(239, 68, 68, 0.12)' : 'transparent',
+                              color: isReplyLiked ? '#ef4444' : 'var(--text-muted)',
+                              cursor: 'pointer',
+                              fontSize: '0.72rem',
+                            }}
+                          >
+                            <Heart
+                              size={12}
+                              color={isReplyLiked ? '#ef4444' : 'currentColor'}
+                              fill={isReplyLiked ? '#ef4444' : 'transparent'}
+                            />
+                            <span>{reply.likes}</span>
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           );
         })}
+
+        {/* Expand / Collapse Button */}
+        {comments.length > 4 && (
+          <button
+            type="button"
+            onClick={() => setExpanded(!expanded)}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '6px',
+              padding: '10px',
+              borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--border-medium)',
+              backgroundColor: 'transparent',
+              color: 'var(--accent-primary)',
+              cursor: 'pointer',
+              fontWeight: 600,
+              fontSize: '0.85rem',
+              marginTop: '4px',
+              transition: 'all var(--transition-fast)',
+            }}
+          >
+            <span>{expanded ? 'ย่อความคิดเห็น' : `ดูความคิดเห็นทั้งหมด (${comments.length} ข้อความ)`}</span>
+            {expanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+          </button>
+        )}
       </div>
     </section>
   );

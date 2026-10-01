@@ -6,9 +6,8 @@ import {
   TextInput,
   TouchableOpacity,
   ActivityIndicator,
-  Alert,
 } from 'react-native';
-import { MessageCircle, Heart, Send, Sparkles } from 'lucide-react-native';
+import { MessageCircle, Heart, Send, Flame, CornerDownRight, ChevronDown, ChevronUp } from 'lucide-react-native';
 import { CommentItem, ReaderTheme } from '../types';
 import { themes } from '../theme/colors';
 import { fetchChapterComments } from '../services/api';
@@ -26,10 +25,12 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId, th
   const [loading, setLoading] = useState(true);
   const [inputVal, setInputVal] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     let isMounted = true;
     setLoading(true);
+    setExpanded(false);
     fetchChapterComments(novelId, chapterId)
       .then((data) => {
         if (isMounted) {
@@ -58,6 +59,20 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId, th
             likes: newLikes,
           };
         }
+        if (c.replies) {
+          const updatedReplies = c.replies.map((r) => {
+            if (r.id === commentId) {
+              const newLikes = isNowLiked ? r.likes + 1 : Math.max(0, r.likes - 1);
+              return {
+                ...r,
+                userLiked: isNowLiked,
+                likes: newLikes,
+              };
+            }
+            return r;
+          });
+          return { ...c, replies: updatedReplies };
+        }
         return c;
       })
     );
@@ -85,6 +100,8 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId, th
     setInputVal('');
     setSubmitting(false);
   };
+
+  const displayedComments = expanded || comments.length <= 4 ? comments : comments.slice(0, 4);
 
   return (
     <View style={[styles.container, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}>
@@ -144,7 +161,7 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId, th
         </View>
       ) : (
         <View style={styles.commentList}>
-          {comments.map((item) => {
+          {displayedComments.map((item) => {
             const isLiked = item.userLiked;
             return (
               <View
@@ -157,6 +174,14 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId, th
                   },
                 ]}
               >
+                {/* Pinned / Top Badge */}
+                {item.isPinned && (
+                  <View style={styles.pinnedRow}>
+                    <Flame size={12} color="#f97316" />
+                    <Text style={styles.pinnedText}>ความคิดเห็นยอดนิยม</Text>
+                  </View>
+                )}
+
                 {/* Comment Header */}
                 <View style={styles.commentHeader}>
                   <View style={[styles.avatar, { backgroundColor: item.avatarColor || '#ec4899' }]}>
@@ -206,9 +231,97 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId, th
                     </Text>
                   </TouchableOpacity>
                 </View>
+
+                {/* Nested Replies */}
+                {item.replies && item.replies.length > 0 && (
+                  <View style={styles.repliesContainer}>
+                    {item.replies.map((reply) => {
+                      const isReplyLiked = reply.userLiked;
+                      return (
+                        <View
+                          key={reply.id}
+                          style={[
+                            styles.replyCard,
+                            {
+                              backgroundColor: themeColors.card,
+                              borderColor: themeColors.cardBorder,
+                            },
+                          ]}
+                        >
+                          <View style={styles.replyHeader}>
+                            <CornerDownRight size={13} color={themeColors.textMuted} />
+                            <View style={[styles.avatarSmall, { backgroundColor: reply.avatarColor }]}>
+                              <Text style={styles.avatarLetterSmall}>
+                                {reply.username.charAt(0).toUpperCase()}
+                              </Text>
+                            </View>
+                            <Text style={[styles.replyUsername, { color: themeColors.text }]}>
+                              {reply.username}
+                            </Text>
+                            {reply.badge && (
+                              <View style={[styles.roleBadgeSmall, { backgroundColor: themeColors.primaryBg }]}>
+                                <Text style={[styles.roleBadgeTextSmall, { color: themeColors.primary }]}>
+                                  {reply.badge}
+                                </Text>
+                              </View>
+                            )}
+                            <Text style={[styles.timeAgoSmall, { color: themeColors.textMuted }]}>
+                              {reply.timeAgo}
+                            </Text>
+                          </View>
+                          <Text style={[styles.replyText, { color: themeColors.text }]}>
+                            {reply.text}
+                          </Text>
+                          <View style={styles.commentFooter}>
+                            <TouchableOpacity
+                              style={[
+                                styles.likeBtn,
+                                isReplyLiked && { backgroundColor: '#fee2e2' },
+                              ]}
+                              onPress={() => handleLike(reply.id)}
+                              activeOpacity={0.7}
+                            >
+                              <Heart
+                                size={12}
+                                color={isReplyLiked ? '#ef4444' : themeColors.textMuted}
+                                fill={isReplyLiked ? '#ef4444' : 'transparent'}
+                              />
+                              <Text
+                                style={[
+                                  styles.likeCountSmall,
+                                  { color: isReplyLiked ? '#ef4444' : themeColors.textMuted },
+                                ]}
+                              >
+                                {reply.likes}
+                              </Text>
+                            </TouchableOpacity>
+                          </View>
+                        </View>
+                      );
+                    })}
+                  </View>
+                )}
               </View>
             );
           })}
+
+          {/* Toggle Expand / Collapse button */}
+          {comments.length > 4 && (
+            <TouchableOpacity
+              style={[styles.expandBtn, { borderColor: themeColors.cardBorder }]}
+              onPress={() => setExpanded(!expanded)}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.expandBtnText, { color: themeColors.primary }]}>
+                {expanded ? 'ย่อความคิดเห็น' : `ดูความคิดเห็นทั้งหมด (${comments.length} ข้อความ)`}
+              </Text>
+              {expanded ? (
+                <ChevronUp size={16} color={themeColors.primary} />
+              ) : (
+                <ChevronDown size={16} color={themeColors.primary} />
+              )}
+            </TouchableOpacity>
+          )}
         </View>
       )}
     </View>
@@ -311,6 +424,17 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 12,
   },
+  pinnedRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    marginBottom: 8,
+  },
+  pinnedText: {
+    fontSize: 10.5,
+    fontWeight: '700',
+    color: '#f97316',
+  },
   commentHeader: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -375,6 +499,77 @@ const styles = StyleSheet.create({
   },
   likeCount: {
     fontSize: 11,
+    fontWeight: '600',
+  },
+  likeCountSmall: {
+    fontSize: 10,
+    fontWeight: '600',
+  },
+  repliesContainer: {
+    marginTop: 10,
+    paddingLeft: 12,
+    borderLeftWidth: 2,
+    borderLeftColor: 'rgba(150, 150, 150, 0.2)',
+    gap: 8,
+  },
+  replyCard: {
+    borderRadius: 8,
+    borderWidth: 1,
+    padding: 8,
+  },
+  replyHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    marginBottom: 4,
+  },
+  avatarSmall: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  avatarLetterSmall: {
+    color: '#ffffff',
+    fontSize: 10,
+    fontWeight: '700',
+  },
+  replyUsername: {
+    fontSize: 11.5,
+    fontWeight: '700',
+  },
+  roleBadgeSmall: {
+    paddingHorizontal: 4,
+    paddingVertical: 1,
+    borderRadius: 4,
+  },
+  roleBadgeTextSmall: {
+    fontSize: 9,
+    fontWeight: '600',
+  },
+  timeAgoSmall: {
+    fontSize: 9.5,
+    marginLeft: 'auto',
+  },
+  replyText: {
+    fontSize: 12.5,
+    lineHeight: 18,
+    marginLeft: 20,
+    marginBottom: 4,
+  },
+  expandBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    paddingVertical: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    marginTop: 4,
+  },
+  expandBtnText: {
+    fontSize: 12.5,
     fontWeight: '600',
   },
 });
