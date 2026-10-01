@@ -9,6 +9,7 @@ import {
   StatusBar,
   ActivityIndicator,
 } from 'react-native';
+import { NavigationBar } from 'expo-navigation-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import {
@@ -138,6 +139,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
         barStyle={themeColors.statusBar === 'dark' ? 'dark-content' : 'light-content'}
         backgroundColor={themeColors.background}
       />
+      <NavigationBar hidden={false} style={currentTheme === 'dark' ? 'dark' : 'light'} />
 
       {/* Top App Header with Theme Switcher */}
       <View style={[styles.header, { borderBottomColor: themeColors.border }]}>

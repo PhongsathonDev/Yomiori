@@ -12,7 +12,7 @@ import { ReaderTheme } from '../types';
 import { themes } from '../theme/colors';
 
 export type FontOption = 'Sarabun' | 'Kanit' | 'Prompt' | 'System';
-export type LineHeightOption = 1.75 | 1.95 | 2.25;
+export type LineHeightOption = 1.55 | 1.85 | 2.15;
 
 export const FONT_MAP: Record<FontOption, { regular: string | undefined; bold: string | undefined; label: string; desc: string }> = {
   Sarabun: {
@@ -184,9 +184,9 @@ export const TypographyModal: React.FC<Props> = ({
               <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>ระยะห่างบรรทัด</Text>
               <View style={styles.lineHeightPillsRow}>
                 {[
-                  { label: 'กระชับ', val: 1.75 as LineHeightOption },
-                  { label: 'มาตรฐาน', val: 1.95 as LineHeightOption },
-                  { label: 'โปร่งสบาย', val: 2.25 as LineHeightOption },
+                  { label: 'กระชับ', val: 1.55 as LineHeightOption },
+                  { label: 'มาตรฐาน', val: 1.85 as LineHeightOption },
+                  { label: 'โปร่งสบาย', val: 2.15 as LineHeightOption },
                 ].map((item) => {
                   const isSelected = lineHeightRatio === item.val;
                   return (

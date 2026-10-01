@@ -135,7 +135,7 @@ export async function saveFontFamily(family: string): Promise<void> {
 
 export async function getSavedLineHeight(): Promise<number> {
   const val = await AsyncStorage.getItem(KEY_LINE_HEIGHT);
-  return val ? Number(val) : 1.95;
+  return val ? Number(val) : 1.85;
 }
 
 export async function saveLineHeight(ratio: number): Promise<void> {

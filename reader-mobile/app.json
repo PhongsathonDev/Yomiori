@@ -21,6 +21,11 @@
         "INTERNET"
       ]
     },
+    "androidNavigationBar": {
+      "visible": "sticky-immersive",
+      "barStyle": "dark-content",
+      "backgroundColor": "#00000000"
+    },
     "web": {
       "favicon": "./assets/favicon.png"
     },

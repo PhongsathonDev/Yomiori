@@ -13,7 +13,8 @@ import {
   Image,
   useWindowDimensions,
 } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { NavigationBar } from 'expo-navigation-bar';
 import { RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import {
@@ -86,6 +87,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const { novelId, chapterId } = route.params;
   const { width: windowWidth } = useWindowDimensions();
   const isTablet = windowWidth >= 600;
+  const insets = useSafeAreaInsets();
 
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [characters, setCharacters] = useState<Character[]>([]);
@@ -98,7 +100,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [fontSize, setFontSize] = useState(isTablet ? 19 : 17);
   const [fontFamily, setFontFamily] = useState<FontOption>('Sarabun');
-  const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.95);
+  const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
   const [showControls, setShowControls] = useState(true);
   const [showTypographyModal, setShowTypographyModal] = useState(false);
 
@@ -139,7 +141,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     setCurrentTheme(theme);
     setFontSize(savedSize);
     setFontFamily((savedFamily as FontOption) || 'Sarabun');
-    setLineHeightRatio((savedLH as LineHeightOption) || 1.95);
+    setLineHeightRatio((savedLH as LineHeightOption) || 1.85);
     setCharacters(chars);
     setChapter(chData);
     setTotalChapters(availList.length > 0 ? availList.length : 25);
@@ -211,11 +213,12 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
         barStyle={themeColors.statusBar === 'dark' ? 'dark-content' : 'light-content'}
         backgroundColor={themeColors.background}
       />
+      <NavigationBar hidden={true} />
 
       {/* Top Header (Collapsible in Zen Mode) */}
       {showControls && (
         <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
-          <View style={[styles.centeredRow, { maxWidth: isTablet ? 540 : '100%' }]}>
+          <View style={[styles.centeredRow, { maxWidth: isTablet ? 720 : '100%' }]}>
             <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
               <ArrowLeft size={22} color={themeColors.text} />
             </TouchableOpacity>
@@ -266,6 +269,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
           ref={scrollRef}
           contentContainerStyle={[
             styles.scrollContent,
+            { paddingBottom: Math.max(110, insets.bottom + 95) },
             !showControls && { paddingTop: 28 },
           ]}
           onScroll={handleScroll}
@@ -282,8 +286,8 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
             }
           }}
         >
-          {/* Centered Book Spine: 540px golden ratio on Tablets (matching meb layout) */}
-          <View style={[styles.bookSpine, { maxWidth: isTablet ? 540 : '100%' }]}>
+          {/* Centered Book Spine: Ergonomic line length on both Phones and Tablets */}
+          <View style={[styles.bookSpine, { maxWidth: isTablet ? 720 : '100%' }]}>
             {/* Chapter Heading Banner */}
             <Pressable onPress={() => setShowControls((prev) => !prev)}>
               <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
@@ -293,12 +297,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                 <Text
                   style={[
                     styles.chapterHeroTitle,
-                    {
-                      color: themeColors.text,
-                      fontFamily: activeFont.bold || activeFont.regular,
-                      fontSize: isTablet ? 26 : 21,
-                      lineHeight: isTablet ? 36 : 28,
-                    },
+                    { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
                   ]}
                 >
                   {chapter.title}
@@ -320,7 +319,6 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                           fontSize: fontSize,
                           fontFamily: activeFont.regular,
                           lineHeight: fontSize * lineHeightRatio,
-                          marginBottom: isTablet ? 18 : 14,
                         },
                       ]}
                     >
@@ -343,7 +341,6 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                         {
                           backgroundColor: `${charColor}0a`,
                           borderLeftColor: charColor,
-                          marginBottom: isTablet ? 18 : 14,
                         },
                       ]}
                     >
@@ -487,6 +484,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
             {
               backgroundColor: themeColors.card,
               borderColor: themeColors.cardBorder,
+              bottom: Math.max(24, insets.bottom + 12),
             },
           ]}
         >
@@ -621,8 +619,8 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   chapterHero: {
-    paddingBottom: 24,
-    marginBottom: 28,
+    paddingBottom: 18,
+    marginBottom: 22,
     borderBottomWidth: 1,
     alignItems: 'center',
   },
@@ -630,14 +628,17 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '800',
     letterSpacing: 2,
-    marginBottom: 8,
+    marginBottom: 6,
   },
   chapterHeroTitle: {
+    fontSize: 18,
     fontWeight: '800',
     textAlign: 'center',
+    lineHeight: 25,
   },
   narrationBlock: {
-    letterSpacing: 0.25,
+    letterSpacing: 0.2,
+    marginBottom: 14,
   },
   // Classic Novel Dialogue (Soft, Left-border Accent)
   dialogueNovelCard: {

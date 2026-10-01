@@ -11,6 +11,7 @@ import {
   Alert,
   Modal,
 } from 'react-native';
+import { NavigationBar } from 'expo-navigation-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -168,6 +169,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
         barStyle={themeColors.statusBar === 'dark' ? 'dark-content' : 'light-content'}
         backgroundColor={themeColors.background}
       />
+      <NavigationBar hidden={false} style={currentTheme === 'dark' ? 'dark' : 'light'} />
 
       {/* Top Header */}
       <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
