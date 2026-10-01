@@ -6,10 +6,10 @@ import {
   ScrollView,
   TouchableOpacity,
   Image,
-  SafeAreaView,
   StatusBar,
   ActivityIndicator,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { BookOpen, Sparkles, DownloadCloud, ChevronRight } from 'lucide-react-native';
 import { Novel, RootStackParamList, ReaderTheme, ReadingProgress } from '../types';
