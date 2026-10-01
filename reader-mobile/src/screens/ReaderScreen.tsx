@@ -22,8 +22,7 @@ import {
   Sun,
   Moon,
   Coffee,
-  Minus,
-  Plus,
+  Type,
 } from 'lucide-react-native';
 import { RootStackParamList, Chapter, Character, DialogueBlock, ReaderTheme } from '../types';
 import { getChapter, fetchCharacters, getAvailableChapterList } from '../services/api';
@@ -32,11 +31,21 @@ import {
   saveTheme,
   getSavedFontSize,
   saveFontSize,
+  getSavedFontFamily,
+  saveFontFamily,
+  getSavedLineHeight,
+  saveLineHeight,
   saveReadingProgress,
   getReadingProgress,
 } from '../services/storage';
 import { themes } from '../theme/colors';
 import { CharacterDetailModal, getAvatarSource } from '../components/CharacterDetailModal';
+import {
+  TypographyModal,
+  FontOption,
+  LineHeightOption,
+  FONT_MAP,
+} from '../components/TypographyModal';
 
 type ReaderRouteProp = RouteProp<RootStackParamList, 'Reader'>;
 type ReaderNavProp = NativeStackNavigationProp<RootStackParamList, 'Reader'>;
@@ -58,12 +67,16 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   // Settings & Immersion
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [fontSize, setFontSize] = useState(17);
+  const [fontFamily, setFontFamily] = useState<FontOption>('Sarabun');
+  const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
   const [showControls, setShowControls] = useState(true);
+  const [showTypographyModal, setShowTypographyModal] = useState(false);
 
   const scrollRef = useRef<ScrollView>(null);
   const hasRestoredScroll = useRef(false);
   const savedProgressPercent = useRef(0);
   const themeColors = themes[currentTheme];
+  const activeFont = FONT_MAP[fontFamily] || FONT_MAP.Sarabun;
 
   useEffect(() => {
     loadChapterData();
@@ -73,9 +86,11 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     setLoading(true);
     hasRestoredScroll.current = false;
 
-    const [theme, savedSize, chars, chData, progress, availList] = await Promise.all([
+    const [theme, savedSize, savedFamily, savedLH, chars, chData, progress, availList] = await Promise.all([
       getSavedTheme(),
       getSavedFontSize(),
+      getSavedFontFamily(),
+      getSavedLineHeight(),
       fetchCharacters(novelId),
       getChapter(novelId, chapterId),
       getReadingProgress(novelId),
@@ -84,6 +99,8 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
 
     setCurrentTheme(theme);
     setFontSize(savedSize);
+    setFontFamily((savedFamily as FontOption) || 'Sarabun');
+    setLineHeightRatio((savedLH as LineHeightOption) || 1.85);
     setCharacters(chars);
     setChapter(chData);
     setTotalChapters(availList.length > 0 ? availList.length : 25);
@@ -122,6 +139,16 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     await saveFontSize(nextSize);
   };
 
+  const handleChangeFontFamily = async (family: FontOption) => {
+    setFontFamily(family);
+    await saveFontFamily(family);
+  };
+
+  const handleChangeLineHeight = async (ratio: LineHeightOption) => {
+    setLineHeightRatio(ratio);
+    await saveLineHeight(ratio);
+  };
+
   // Character lookup
   const characterMap = React.useMemo(() => {
     const map = new Map<string, Character>();
@@ -154,7 +181,13 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
           </TouchableOpacity>
 
           <View style={styles.headerTitles}>
-            <Text style={[styles.headerChapterTitle, { color: themeColors.text }]} numberOfLines={1}>
+            <Text
+              style={[
+                styles.headerChapterTitle,
+                { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
+              ]}
+              numberOfLines={1}
+            >
               {chapter ? chapter.title : `ตอนที่ ${chapterId}`}
             </Text>
           </View>
@@ -214,7 +247,12 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
               <Text style={[styles.chapterHeroNum, { color: themeColors.primary }]}>
                 CHAPTER {chapter.chapterNumber}
               </Text>
-              <Text style={[styles.chapterHeroTitle, { color: themeColors.text }]}>
+              <Text
+                style={[
+                  styles.chapterHeroTitle,
+                  { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
+                ]}
+              >
                 {chapter.title}
               </Text>
             </View>
@@ -232,7 +270,8 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                       {
                         color: themeColors.narrationText,
                         fontSize: fontSize,
-                        lineHeight: fontSize * 1.85,
+                        fontFamily: activeFont.regular,
+                        lineHeight: fontSize * lineHeightRatio,
                       },
                     ]}
                   >
@@ -296,7 +335,15 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
 
                       <View style={styles.speakerTextContainer}>
                         <View style={styles.speakerNameAndRole}>
-                          <Text style={[styles.speakerName, { color: charColor }]}>
+                          <Text
+                            style={[
+                              styles.speakerName,
+                              {
+                                color: charColor,
+                                fontFamily: activeFont.bold || activeFont.regular,
+                              },
+                            ]}
+                          >
                             {dBlock.speakerName}
                           </Text>
                           {char?.role ? (
@@ -325,7 +372,8 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                         {
                           color: themeColors.text,
                           fontSize: fontSize,
-                          lineHeight: fontSize * 1.75,
+                          fontFamily: activeFont.regular,
+                          lineHeight: fontSize * (lineHeightRatio * 0.95),
                         },
                       ]}
                     >
@@ -391,22 +439,17 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
             },
           ]}
         >
-          {/* Font Size Adjusters */}
-          <View style={styles.fontSizeGroup}>
-            <TouchableOpacity
-              style={[styles.miniBtn, { backgroundColor: themeColors.primaryBg }]}
-              onPress={() => handleChangeFontSize(-1)}
-            >
-              <Minus size={14} color={themeColors.primary} />
-            </TouchableOpacity>
-            <Text style={[styles.fontSizeLabel, { color: themeColors.text }]}>{fontSize}</Text>
-            <TouchableOpacity
-              style={[styles.miniBtn, { backgroundColor: themeColors.primaryBg }]}
-              onPress={() => handleChangeFontSize(1)}
-            >
-              <Plus size={14} color={themeColors.primary} />
-            </TouchableOpacity>
-          </View>
+          {/* Typography Settings Button (Aa) */}
+          <TouchableOpacity
+            style={[styles.typographyPillBtn, { backgroundColor: themeColors.primaryBg }]}
+            onPress={() => setShowTypographyModal(true)}
+            activeOpacity={0.7}
+          >
+            <Type size={16} color={themeColors.primary} />
+            <Text style={[styles.typographyBtnText, { color: themeColors.primary }]}>
+              {fontFamily === 'System' ? 'ระบบ' : fontFamily} · {fontSize}
+            </Text>
+          </TouchableOpacity>
 
           {/* Theme Toggles */}
           <View style={styles.themeGroup}>
@@ -442,6 +485,19 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
           </View>
         </View>
       )}
+
+      {/* Typography & Layout Settings Modal */}
+      <TypographyModal
+        visible={showTypographyModal}
+        theme={currentTheme}
+        fontSize={fontSize}
+        fontFamily={fontFamily}
+        lineHeightRatio={lineHeightRatio}
+        onChangeFontSize={handleChangeFontSize}
+        onChangeFontFamily={handleChangeFontFamily}
+        onChangeLineHeight={handleChangeLineHeight}
+        onClose={() => setShowTypographyModal(false)}
+      />
 
       {/* Character Profile Modal */}
       <CharacterDetailModal
@@ -640,23 +696,17 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     elevation: 5,
   },
-  fontSizeGroup: {
+  typographyPillBtn: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
+    gap: 6,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 16,
   },
-  miniBtn: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  fontSizeLabel: {
+  typographyBtnText: {
     fontSize: 13,
     fontWeight: '700',
-    minWidth: 18,
-    textAlign: 'center',
   },
   themeGroup: {
     flexDirection: 'row',

@@ -101,6 +101,8 @@ export async function getNovelOfflineStats(novelId: string): Promise<{ count: nu
 
 const KEY_THEME = 'yomiori_theme';
 const KEY_FONT_SIZE = 'yomiori_font_size';
+const KEY_FONT_FAMILY = 'yomiori_font_family';
+const KEY_LINE_HEIGHT = 'yomiori_line_height';
 const KEY_PROGRESS = 'yomiori_progress_';
 
 export async function getSavedTheme(): Promise<ReaderTheme> {
@@ -119,6 +121,24 @@ export async function getSavedFontSize(): Promise<number> {
 
 export async function saveFontSize(size: number): Promise<void> {
   await AsyncStorage.setItem(KEY_FONT_SIZE, String(size));
+}
+
+export async function getSavedFontFamily(): Promise<string> {
+  const val = await AsyncStorage.getItem(KEY_FONT_FAMILY);
+  return val || 'Sarabun';
+}
+
+export async function saveFontFamily(family: string): Promise<void> {
+  await AsyncStorage.setItem(KEY_FONT_FAMILY, family);
+}
+
+export async function getSavedLineHeight(): Promise<number> {
+  const val = await AsyncStorage.getItem(KEY_LINE_HEIGHT);
+  return val ? Number(val) : 1.85;
+}
+
+export async function saveLineHeight(ratio: number): Promise<void> {
+  await AsyncStorage.setItem(KEY_LINE_HEIGHT, String(ratio));
 }
 
 export async function saveReadingProgress(novelId: string, chapterId: string, percent: number): Promise<void> {
@@ -140,3 +160,4 @@ export async function getReadingProgress(novelId: string): Promise<ReadingProgre
     return null;
   }
 }
+
