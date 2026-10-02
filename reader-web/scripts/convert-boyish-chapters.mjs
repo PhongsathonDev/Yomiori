@@ -5,8 +5,9 @@ import { verifyChapter } from './verify-conversion.mjs';
 
 const NOVEL_ID = 'boyish-friend';
 const NOVEL_TITLE = '[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน';
-const RAW_DIR = path.resolve('../novels_source', NOVEL_ID, 'raw_chapters');
-const DATA_DIR = path.resolve('src/data/novels', NOVEL_ID, 'chapters');
+const SCRIPT_DIR = import.meta.dirname;
+const RAW_DIR = path.resolve(SCRIPT_DIR, '../../novels_source', NOVEL_ID, 'raw_chapters');
+const DATA_DIR = path.resolve(SCRIPT_DIR, '../src/data/novels', NOVEL_ID, 'chapters');
 
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
