@@ -63,8 +63,11 @@ export function verifyChapter(rawMdPath, jsonPath) {
 }
 
 // CLI Runner
+import { fileURLToPath } from 'node:url';
+
+const isDirectRun = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
 const args = process.argv.slice(2);
-if (args.length >= 2) {
+if (isDirectRun && args.length >= 2) {
   const result = verifyChapter(args[0], args[1]);
   if (!result.success && result.error) {
     console.error(`❌ Error: ${result.error}`);

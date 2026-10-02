@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141923" />
+      <stop offset="45%" stop-color="#1c2536" />
+      <stop offset="100%" stop-color="#341e21" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e06d3b" />
+      <stop offset="100%" stop-color="#fca311" />
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#e06d3b" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#e06d3b" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="900" fill="url(#bgGrad)" />
+  <circle cx="420" cy="280" r="320" fill="url(#glowGrad)" />
+
+  <!-- Geometric accent lines -->
+  <path d="M 0,220 L 600,340" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2" />
+  <path d="M 0,260 L 600,380" stroke="#e06d3b" stroke-opacity="0.25" stroke-width="1.5" />
+  <path d="M 60,0 L 60,900" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1" />
+  <path d="M 540,0 L 540,900" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1" />
+
+  <!-- Badge 18+ -->
+  <rect x="60" y="55" width="80" height="28" rx="6" fill="#e63946" />
+  <text x="100" y="74" font-family="'Inter', sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">R-18</text>
+
+  <rect x="150" y="55" width="130" height="28" rx="6" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.2" />
+  <text x="215" y="74" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">MATURE NOVEL</text>
+
+  <!-- Title Japanese -->
+  <text x="60" y="160" font-family="'Hiragino Kaku Gothic Pro', 'Noto Sans JP', sans-serif" font-size="16" font-weight="600" fill="#e06d3b" letter-spacing="2">クラスで２番目に可愛いボーイッシュ幼馴染の</text>
+  <text x="60" y="195" font-family="'Hiragino Kaku Gothic Pro', 'Noto Sans JP', sans-serif" font-size="24" font-weight="900" fill="#ffffff" letter-spacing="4">完全攻略神託チャート</text>
+
+  <!-- Central Visual Symbol: Compass / Divine Oracle Motif -->
+  <g transform="translate(300, 420)">
+    <circle r="120" fill="none" stroke="#e06d3b" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+    <circle r="85" fill="none" stroke="#fca311" stroke-width="2" stroke-opacity="0.5"/>
+    <circle r="50" fill="#e06d3b" fill-opacity="0.15"/>
+    
+    <!-- Stylized Compass Needle -->
+    <polygon points="0,-75 14,0 0,25 -14,0" fill="url(#accentGrad)" filter="url(#shadow)"/>
+    <polygon points="0,75 14,0 0,-25 -14,0" fill="#2d3748" filter="url(#shadow)"/>
+    <circle r="6" fill="#ffffff" />
+  </g>
+
+  <!-- English Subtitle -->
+  <text x="300" y="590" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#cbd5e1" text-anchor="middle" letter-spacing="3">THE DIVINE STRATEGY CHART TO CONQUERING</text>
+  <text x="300" y="612" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="url(#accentGrad)" text-anchor="middle" letter-spacing="2">THE BOYISH CHILDHOOD FRIEND</text>
+
+  <!-- Main Thai Title -->
+  <rect x="50" y="650" width="500" height="120" rx="14" fill="#0b0f17" fill-opacity="0.85" stroke="#e06d3b" stroke-opacity="0.3" stroke-width="1.5" />
+  <text x="300" y="692" font-family="'Prompt', 'Noto Sans Thai', sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle">
+    เพื่อนสนิทสาวบอยอิชที่น่ารักอันดับสอง
+  </text>
+  <text x="300" y="722" font-family="'Prompt', 'Noto Sans Thai', sans-serif" font-size="15" font-weight="600" fill="#fca311" text-anchor="middle">
+    กับทริปทัศนศึกษา 2 คืน 3 วันสู่การครอบครอง
+  </text>
+  <text x="300" y="750" font-family="'Prompt', 'Noto Sans Thai', sans-serif" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="middle">
+    (The Complete Divine Strategy Chart)
+  </text>
+
+  <!-- Metadata Footer -->
+  <line x1="60" y1="810" x2="540" y2="810" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  <text x="60" y="840" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">Story: <tspan fill="#ffffff" font-weight="600">月見ハク (Tsukimi Haku)</tspan></text>
+  <text x="60" y="860" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">Art / Design: <tspan fill="#ffffff" font-weight="600">あかつき聖 (Akatsuki Hijiri)</tspan></text>
+  <text x="540" y="850" font-family="'Inter', sans-serif" font-size="12" fill="#e06d3b" text-anchor="end" font-weight="700">YOMIORI NOVELS</text>
+</svg>

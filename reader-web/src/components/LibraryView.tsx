@@ -95,12 +95,16 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
     if (currentNovel.id === 'idol-neighbor') {
       return ['yuika', 'hiro'].includes(c.id);
     }
+    if (currentNovel.id === 'boyish-friend') {
+      return ['protagonist', 'aya', 'tokita', 'classmate', 'guide'].includes(c.id);
+    }
     return true;
   });
 
-  // Find last read chapter overall or default to first chapter of current novel
-  const lastReadChapter = chapters.find((c) => c.id === lastReadChapterId) || novelChapters[0] || chapters[0];
-  const lastReadNovel = novels.find((n) => n.id === lastReadChapter.novelId) || currentNovel;
+  // Find last read chapter belonging to this novel or default to first chapter of current novel
+  const lastReadChapter =
+    novelChapters.find((c) => c.id === lastReadChapterId) || novelChapters[0] || chapters[0];
+  const lastReadNovel = currentNovel;
 
   // Filter and sort chapters for detail view based on search query and sort order
   const filteredChapters = novelChapters

@@ -30,3 +30,9 @@ Thumbs.db
 # Scratch and temporary scripts
 scratch/
 reader-web/scratch/
+
+# Raw backups & text archives
+_txt_backup/
+*_backup/
+*.bak
+

@@ -381,7 +381,15 @@ export function App() {
 
   const [characters, setCharacters] = useState<Character[]>(() => {
     const saved = localStorage.getItem('novel_characters');
-    return saved ? JSON.parse(saved) : allCharacters;
+    if (!saved) return allCharacters;
+    try {
+      const parsed: Character[] = JSON.parse(saved);
+      const existingIds = new Set(parsed.map((c) => c.id));
+      const missing = allCharacters.filter((c) => !existingIds.has(c.id));
+      return missing.length > 0 ? [...parsed, ...missing] : parsed;
+    } catch {
+      return allCharacters;
+    }
   });
 
   const [selectedCharacterForDetail, setSelectedCharacterForDetail] = useState<Character | null>(null);
@@ -405,7 +413,15 @@ export function App() {
 
   const [chapters, setChapters] = useState<Chapter[]>(() => {
     const saved = localStorage.getItem('novel_chapters_override');
-    return saved ? JSON.parse(saved) : allChapters;
+    if (!saved) return allChapters;
+    try {
+      const parsed: Chapter[] = JSON.parse(saved);
+      const existingKeys = new Set(parsed.map((c) => `${c.novelId}-${c.id}`));
+      const missing = allChapters.filter((c) => !existingKeys.has(`${c.novelId}-${c.id}`));
+      return missing.length > 0 ? [...parsed, ...missing] : parsed;
+    } catch {
+      return allChapters;
+    }
   });
 
   const [currentChapterId, setCurrentChapterId] = useState<string>(() => {

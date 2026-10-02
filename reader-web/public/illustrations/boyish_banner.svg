@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGradBanner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111622" />
+      <stop offset="50%" stop-color="#182030" />
+      <stop offset="100%" stop-color="#321b20" />
+    </linearGradient>
+    <linearGradient id="accentGradBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e06d3b" />
+      <stop offset="100%" stop-color="#fca311" />
+    </linearGradient>
+    <radialGradient id="glowBanner" cx="80%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#e06d3b" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#e06d3b" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGradBanner)" />
+  <circle cx="950" cy="337" r="420" fill="url(#glowBanner)" />
+
+  <!-- Diagonal graphic accents -->
+  <path d="M 650,0 L 1200,550" stroke="#ffffff" stroke-opacity="0.04" stroke-width="3" />
+  <path d="M 700,0 L 1200,500" stroke="#e06d3b" stroke-opacity="0.15" stroke-width="2" />
+  <path d="M 750,0 L 1200,450" stroke="#fca311" stroke-opacity="0.1" stroke-width="1.5" />
+
+  <!-- Compass / Strategy Chart element on right -->
+  <g transform="translate(920, 337)">
+    <circle r="180" fill="none" stroke="#e06d3b" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="8 6"/>
+    <circle r="130" fill="none" stroke="#fca311" stroke-width="2" stroke-opacity="0.4"/>
+    <polygon points="0,-120 20,0 0,40 -20,0" fill="url(#accentGradBanner)" opacity="0.85"/>
+    <polygon points="0,120 20,0 0,-40 -20,0" fill="#2d3748" opacity="0.85"/>
+    <circle r="8" fill="#ffffff" />
+  </g>
+
+  <!-- Content left container -->
+  <g transform="translate(80, 110)">
+    <!-- Badges -->
+    <rect x="0" y="0" width="80" height="30" rx="6" fill="#e63946" />
+    <text x="40" y="20" font-family="'Inter', sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">R-18</text>
+
+    <rect x="95" y="0" width="135" height="30" rx="6" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.2" />
+    <text x="162" y="20" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">MATURE NOVEL</text>
+
+    <rect x="245" y="0" width="160" height="30" rx="6" fill="#e06d3b" fill-opacity="0.2" stroke="#e06d3b" stroke-opacity="0.4" />
+    <text x="325" y="20" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#fca311" text-anchor="middle" letter-spacing="1">BOYISH HEROINE</text>
+
+    <!-- Japanese Title -->
+    <text x="0" y="80" font-family="'Hiragino Kaku Gothic Pro', 'Noto Sans JP', sans-serif" font-size="18" font-weight="600" fill="#e06d3b" letter-spacing="2">
+      クラスで２番目に可愛いボーイッシュ幼馴染の
+    </text>
+    <text x="0" y="125" font-family="'Hiragino Kaku Gothic Pro', 'Noto Sans JP', sans-serif" font-size="32" font-weight="900" fill="#ffffff" letter-spacing="3">
+      完全攻略神託チャート
+    </text>
+
+    <!-- Thai Title -->
+    <text x="0" y="195" font-family="'Prompt', 'Noto Sans Thai', sans-serif" font-size="30" font-weight="800" fill="#ffffff">
+      เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง
+    </text>
+    <text x="0" y="240" font-family="'Prompt', 'Noto Sans Thai', sans-serif" font-size="24" font-weight="700" fill="url(#accentGradBanner)">
+      มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน
+    </text>
+
+    <!-- English Subtitle -->
+    <text x="0" y="295" font-family="'Inter', sans-serif" font-size="14" font-weight="500" fill="#94a3b8" letter-spacing="1.5">
+      The Divine Strategy Chart to Conquering the Second Cutest Boyish Childhood Friend in the Class
+    </text>
+
+    <!-- Meta Details -->
+    <line x1="0" y1="340" x2="600" y2="340" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+    <text x="0" y="380" font-family="'Inter', sans-serif" font-size="14" fill="#94a3b8">
+      Story: <tspan fill="#ffffff" font-weight="600">月見ハク (Tsukimi Haku)</tspan>　|　Character Design: <tspan fill="#ffffff" font-weight="600">あかつき聖 (Akatsuki Hijiri)</tspan>
+    </text>
+    <text x="0" y="415" font-family="'Prompt', 'Noto Sans Thai', sans-serif" font-size="13" fill="#64748b">
+      ต้นฉบับแปลไทย 99 ตอนสมบูรณ์ · ดัดแปลงสำหรับ Yomiori Reader Engine
+    </text>
+  </g>
+</svg>

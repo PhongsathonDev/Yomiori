@@ -3,22 +3,34 @@ import { saveChapterOffline, loadChapterOffline, isChapterDownloaded } from './s
 
 // Bundled fallback data
 import bundledNovels from '../data/novels.json';
-import bundledCharacters from '../data/novels/kyudo-senpai/characters.json';
+import bundledKyudoCharacters from '../data/novels/kyudo-senpai/characters.json';
+import bundledBoyishCharacters from '../data/novels/boyish-friend/characters.json';
 
 // GitHub Pages Headless CDN Base URL
 export const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
 
 export async function fetchNovels(): Promise<Novel[]> {
+  let remoteNovels: Novel[] = [];
   try {
     const res = await fetch(`${CDN_BASE_URL}/novels.json`, { cache: 'no-cache' });
     if (res.ok) {
-      const data = await res.json();
-      return data as Novel[];
+      remoteNovels = (await res.json()) as Novel[];
     }
   } catch (err) {
     console.log('Using offline bundled novels data:', err);
   }
-  return bundledNovels as Novel[];
+
+  // Merge remote novels with bundled novels so newly added novels appear immediately!
+  const merged = [...remoteNovels];
+  const existingIds = new Set(merged.map((n) => n.id));
+  for (const b of (bundledNovels as Novel[])) {
+    if (!existingIds.has(b.id)) {
+      merged.push(b);
+      existingIds.add(b.id);
+    }
+  }
+
+  return merged.length > 0 ? merged : (bundledNovels as Novel[]);
 }
 
 export async function fetchCharacters(novelId: string): Promise<Character[]> {
@@ -32,7 +44,10 @@ export async function fetchCharacters(novelId: string): Promise<Character[]> {
     console.log('Using offline bundled characters data:', err);
   }
   if (novelId === 'kyudo-senpai') {
-    return bundledCharacters as Character[];
+    return bundledKyudoCharacters as Character[];
+  }
+  if (novelId === 'boyish-friend') {
+    return bundledBoyishCharacters as Character[];
   }
   return [];
 }
@@ -128,7 +143,9 @@ export async function getAvailableChapterList(
   }
 
   // Offline default fallback
-  const count = novelId === 'kyudo-senpai' ? 25 : 1;
+  let count = 1;
+  if (novelId === 'kyudo-senpai') count = 25;
+  if (novelId === 'boyish-friend') count = 14;
   const list = [];
   for (let i = 1; i <= count; i++) {
     const numStr = String(i).padStart(2, '0');
