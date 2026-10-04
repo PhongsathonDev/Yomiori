@@ -160,7 +160,9 @@ export async function getAvailableChapterList(
 }
 
 // Fallback bundled comments
-import bundledComments from '../data/novels/kyudo-senpai/comments.json';
+import bundledKyudoComments from '../data/novels/kyudo-senpai/comments.json';
+import bundledBoyishComments from '../data/novels/boyish-friend/comments.json';
+import bundledIdolComments from '../data/novels/idol-neighbor/comments.json';
 import { getUserComments, getLikedCommentIds } from './storage';
 import { CommentItem } from '../types';
 
@@ -177,7 +179,11 @@ export async function fetchChapterComments(novelId: string, chapterId: string): 
 
   if (!catalog || Object.keys(catalog).length === 0) {
     if (novelId === 'kyudo-senpai') {
-      catalog = bundledComments as any;
+      catalog = bundledKyudoComments as any;
+    } else if (novelId === 'boyish-friend') {
+      catalog = bundledBoyishComments as any;
+    } else if (novelId === 'idol-neighbor') {
+      catalog = bundledIdolComments as any;
     }
   }
 

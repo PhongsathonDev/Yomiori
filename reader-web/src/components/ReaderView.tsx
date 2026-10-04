@@ -189,6 +189,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
 
         {/* Co-Reading Community Comments Section */}
         <ChapterCommentsSection
+          key={`${currentNovel.id}-${currentChapter.id}`}
           novelId={currentNovel.id}
           chapterId={currentChapter.id}
         />

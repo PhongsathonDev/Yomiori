@@ -1,7 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Heart, Send, Flame, CornerDownRight, ChevronDown, ChevronUp } from 'lucide-react';
 import type { CommentItem } from '../types';
-import commentsCatalog from '../data/novels/kyudo-senpai/comments.json';
+
+// Load comments for each novel dynamically
+const commentsModules = import.meta.glob<Record<string, { chapterId?: string; comments?: CommentItem[] }>>(
+  '../data/novels/*/comments.json',
+  { eager: true, import: 'default' }
+);
+
+const commentsCatalogs: Record<string, Record<string, { chapterId?: string; comments?: CommentItem[] }>> = {};
+for (const [filePath, data] of Object.entries(commentsModules)) {
+  const match = filePath.match(/\/novels\/([^/]+)\/comments\.json$/);
+  if (match) {
+    commentsCatalogs[match[1]] = data;
+  }
+}
 
 interface Props {
   novelId: string;
@@ -35,8 +48,9 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId }) 
       savedUserComments = [];
     }
 
-    // 3. Load catalog simulated comments
-    const catalogData = (commentsCatalog as any)[chapterId]?.comments || [];
+    // 3. Load catalog simulated comments for specific novel
+    const currentNovelCatalog = commentsCatalogs[novelId] || {};
+    const catalogData = currentNovelCatalog[chapterId]?.comments || [];
     const resolvedSimulated = catalogData.map((c: CommentItem) => {
       const isLiked = savedLiked.includes(c.id);
       const mappedReplies = c.replies
