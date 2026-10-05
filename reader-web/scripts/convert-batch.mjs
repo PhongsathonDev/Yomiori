@@ -74,6 +74,9 @@ export function convertChapter(chNum) {
     if (line.startsWith('#') || line.startsWith('By ') || line.startsWith('AI-POWERED')) {
       continue;
     }
+    if (rawParagraphs.length === 0 && (line === title || line.startsWith(`Ch.${chNum}`) || line.startsWith(`Ch_${chNum}`) || line.startsWith(`ตอนที่ ${chNum}`))) {
+      continue;
+    }
     currentPara.push(line);
   }
   if (currentPara.length > 0) {
