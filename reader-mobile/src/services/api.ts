@@ -150,7 +150,7 @@ export async function getAvailableChapterList(
   let count = 1;
   if (novelId === 'kyudo-senpai') count = 25;
   if (novelId === 'boyish-friend') count = 14;
-  if (novelId === 'black-cat-hangout') count = 3;
+  if (novelId === 'black-cat-hangout') count = 10;
   const list = [];
   for (let i = 1; i <= count; i++) {
     const numStr = String(i).padStart(2, '0');
