@@ -133,13 +133,23 @@ function htmlToLines(html) {
     .filter((line, i, arr) => line !== '' || (i > 0 && arr[i - 1] !== ''));
 }
 
-function sanitizeFileName(name, max = 90) {
+function truncateUtf8(str, maxBytes) {
+  let out = '';
+  for (const ch of str) {
+    if (Buffer.byteLength(out + ch, 'utf8') > maxBytes) break;
+    out += ch;
+  }
+  return out;
+}
+
+function sanitizeFileName(name, max = 90, maxBytes = 190) {
   let s = String(name || '')
     .replace(/[\u0000-\u001f]/g, ' ')
     .replace(/[\\/:*?"<>|]/g, '_')
     .replace(/\s+/g, ' ')
     .trim();
-  if (s.length > max) s = s.slice(0, max).trim();
+  if (s.length > max) s = s.slice(0, max);
+  s = truncateUtf8(s, maxBytes);
   return s.replace(/[. ]+$/, '');
 }
 
@@ -147,7 +157,8 @@ function sanitizeFileName(name, max = 90) {
 
 function chapterFileName(chapter) {
   const no = String(chapter.ChapterNo).padStart(2, '0');
-  const title = sanitizeFileName(chapter.ChapterName);
+  // Keep the whole component under Linux's 255-byte NAME_MAX with headroom.
+  const title = sanitizeFileName(chapter.ChapterName, 90, 190);
   return `Ch_${no}_${title}.md`;
 }
 
@@ -282,7 +293,7 @@ function renderChapter(chapter, novelContent, chapterNo) {
     toc,
     '',
   ].join('\n');
-  fs.writeFileSync(path.join(root, `00_${sanitizeFileName(info.projectName, 80)}.md`), overview, 'utf8');
+  fs.writeFileSync(path.join(root, `00_${sanitizeFileName(info.projectName, 80, 194)}.md`), overview, 'utf8');
 
   console.log(`\nDone → ${root}`);
 })().catch((err) => {
