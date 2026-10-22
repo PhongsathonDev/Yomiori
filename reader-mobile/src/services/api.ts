@@ -5,6 +5,7 @@ import { saveChapterOffline, loadChapterOffline, isChapterDownloaded } from './s
 import bundledNovels from '../data/novels.json';
 import bundledKyudoCharacters from '../data/novels/kyudo-senpai/characters.json';
 import bundledBoyishCharacters from '../data/novels/boyish-friend/characters.json';
+import bundledBlackCatCharacters from '../data/novels/black-cat-hangout/characters.json';
 
 // GitHub Pages Headless CDN Base URL
 export const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
@@ -48,6 +49,9 @@ export async function fetchCharacters(novelId: string): Promise<Character[]> {
   }
   if (novelId === 'boyish-friend') {
     return bundledBoyishCharacters as Character[];
+  }
+  if (novelId === 'black-cat-hangout') {
+    return bundledBlackCatCharacters as Character[];
   }
   return [];
 }
@@ -146,6 +150,7 @@ export async function getAvailableChapterList(
   let count = 1;
   if (novelId === 'kyudo-senpai') count = 25;
   if (novelId === 'boyish-friend') count = 14;
+  if (novelId === 'black-cat-hangout') count = 3;
   const list = [];
   for (let i = 1; i <= count; i++) {
     const numStr = String(i).padStart(2, '0');
@@ -163,6 +168,7 @@ export async function getAvailableChapterList(
 import bundledKyudoComments from '../data/novels/kyudo-senpai/comments.json';
 import bundledBoyishComments from '../data/novels/boyish-friend/comments.json';
 import bundledIdolComments from '../data/novels/idol-neighbor/comments.json';
+import bundledBlackCatComments from '../data/novels/black-cat-hangout/comments.json';
 import { getUserComments, getLikedCommentIds } from './storage';
 import { CommentItem } from '../types';
 
@@ -184,6 +190,8 @@ export async function fetchChapterComments(novelId: string, chapterId: string): 
       catalog = bundledBoyishComments as any;
     } else if (novelId === 'idol-neighbor') {
       catalog = bundledIdolComments as any;
+    } else if (novelId === 'black-cat-hangout') {
+      catalog = bundledBlackCatComments as any;
     }
   }
 

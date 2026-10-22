@@ -2,6 +2,7 @@ import initialNovels from './novels.json';
 import { kyudoChapters, kyudoCharacters as rawKyudoCharacters } from './novels/kyudo-senpai';
 import { idolChapters, idolCharacters as rawIdolCharacters } from './novels/idol-neighbor';
 import { boyishChapters, boyishCharacters as rawBoyishCharacters } from './novels/boyish-friend';
+import { blackCatChapters, blackCatCharacters as rawBlackCatCharacters } from './novels/black-cat-hangout';
 import type { Novel, Chapter, Character } from '../types';
 import { getAssetUrl } from '../utils/assets';
 
@@ -23,6 +24,7 @@ function normalizeCharacter(c: any): Character {
 export const kyudoCharacters: Character[] = (rawKyudoCharacters as Character[]).map(normalizeCharacter);
 export const idolCharacters: Character[] = (rawIdolCharacters as Character[]).map(normalizeCharacter);
 export const boyishCharacters: Character[] = (rawBoyishCharacters as Character[]).map(normalizeCharacter);
+export const blackCatCharacters: Character[] = (rawBlackCatCharacters as Character[]).map(normalizeCharacter);
 
 export const allNovels: Novel[] = (initialNovels as Novel[]).map(normalizeNovel);
 
@@ -30,12 +32,14 @@ export const allCharacters: Character[] = [
   ...kyudoCharacters,
   ...idolCharacters,
   ...boyishCharacters,
+  ...blackCatCharacters,
 ];
 
 export const allChapters: Chapter[] = [
   ...kyudoChapters,
   ...idolChapters,
   ...boyishChapters,
+  ...blackCatChapters,
 ];
 
 export const getNovelById = (id: string): Novel | undefined => {
@@ -50,6 +54,7 @@ export const getCharactersByNovelId = (novelId: string): Character[] => {
   if (novelId === 'kyudo-senpai') return kyudoCharacters;
   if (novelId === 'idol-neighbor') return idolCharacters;
   if (novelId === 'boyish-friend') return boyishCharacters;
+  if (novelId === 'black-cat-hangout') return blackCatCharacters;
   return allCharacters;
 };
 
