@@ -26,7 +26,7 @@ import {
   Coffee,
   Type,
 } from 'lucide-react-native';
-import { RootStackParamList, Chapter, Character, DialogueBlock, ReaderTheme, IllustrationBlock } from '../types';
+import { RootStackParamList, Chapter, Character, DialogueBlock, ReaderTheme, IllustrationBlock, ChapterListItem } from '../types';
 import { getChapter, fetchCharacters, getAvailableChapterList } from '../services/api';
 import {
   getSavedTheme,
@@ -94,7 +94,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
 
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [characters, setCharacters] = useState<Character[]>([]);
-  const [totalChapters, setTotalChapters] = useState(25);
+  const [chapterList, setChapterList] = useState<ChapterListItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [readingProgress, setReadingProgress] = useState(0);
   const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
@@ -152,7 +152,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     setLineHeightRatio((savedLH as LineHeightOption) || 1.85);
     setCharacters(chars);
     setChapter(chData);
-    setTotalChapters(availList.length > 0 ? availList.length : 25);
+    setChapterList(availList);
 
     // If reading this chapter previously, queue auto-scroll resume
     if (progress && progress.chapterId === chapterId && progress.scrollPercent > 0) {
@@ -205,14 +205,15 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     return map;
   }, [characters]);
 
-  // Navigate to other chapters dynamically
-  const currentChapterNum = chapter?.chapterNumber || 1;
-  const hasPrev = currentChapterNum > 1;
-  const hasNext = currentChapterNum < totalChapters;
+  // Navigate to other chapters using the actual available chapter list
+  const currentChapterIndex = chapterList.findIndex((c) => c.id === chapterId);
+  const hasPrev = currentChapterIndex > 0;
+  const hasNext = currentChapterIndex !== -1 && currentChapterIndex < chapterList.length - 1;
 
-  const goToChapter = (num: number) => {
-    const nextId = `ch-${String(num).padStart(2, '0')}`;
-    navigation.replace('Reader', { novelId, chapterId: nextId });
+  const goToChapterAt = (index: number) => {
+    const target = chapterList[index];
+    if (!target) return;
+    navigation.replace('Reader', { novelId, chapterId: target.id });
   };
 
   return (
@@ -512,7 +513,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                   !hasPrev && { opacity: 0.4 },
                 ]}
                 disabled={!hasPrev}
-                onPress={() => goToChapter(currentChapterNum - 1)}
+                onPress={() => goToChapterAt(currentChapterIndex - 1)}
               >
                 <ChevronLeft size={18} color={themeColors.text} />
                 <Text style={[styles.navChapterBtnText, { color: themeColors.text }]}>ตอนก่อนหน้า</Text>
@@ -525,7 +526,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
                   !hasNext && { opacity: 0.4 },
                 ]}
                 disabled={!hasNext}
-                onPress={() => goToChapter(currentChapterNum + 1)}
+                onPress={() => goToChapterAt(currentChapterIndex + 1)}
               >
                 <Text style={styles.navChapterBtnNextText}>ตอนถัดไป</Text>
                 <ChevronRight size={18} color="#ffffff" />

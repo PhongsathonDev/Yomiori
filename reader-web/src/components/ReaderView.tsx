@@ -178,6 +178,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
             <BlockItem
               key={block.id}
               block={block}
+              novelId={currentNovel.id}
               characters={characters}
               avatarStyle={avatarStyle}
               canEdit={canEdit}

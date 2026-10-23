@@ -1,0 +1,83 @@
+{
+  "id": "ch-00",
+  "novelId": "black-cat-hangout",
+  "chapterNumber": 0,
+  "title": "Ch.0 — รูปประกอบ",
+  "novelTitle": "[WN] พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว",
+  "blocks": [
+    {
+      "id": "b-0-intro",
+      "type": "narration",
+      "text": "รวมภาพวาดประกอบทั้ง 9 ภาพจากนิยายเรื่องนี้ เปิดดูภาพขนาดเต็มได้ในแท็บ “แกลเลอรี & ตัวละคร” ของหน้ารายละเอียดนิยาย"
+    },
+    {
+      "id": "b-0-break-1",
+      "type": "scene_break",
+      "symbol": "◆ ◆ ◆"
+    },
+    {
+      "id": "b-0-img-1",
+      "type": "illustration",
+      "src": "illust_01.jpg",
+      "caption": "ภาพสีเปิดเล่ม — ฮินะกับมิซึกิในชุดนักเรียน"
+    },
+    {
+      "id": "b-0-img-2",
+      "type": "illustration",
+      "src": "illust_02.jpg",
+      "caption": "ภาพประกอบ 2 — มิซึกิในชุดแมวดำ"
+    },
+    {
+      "id": "b-0-img-3",
+      "type": "illustration",
+      "src": "illust_03.jpg",
+      "caption": "ภาพประกอบ 3 — ฮินะกับมิซึกิในชุดผ้ากันเปื้อน"
+    },
+    {
+      "id": "b-0-img-4",
+      "type": "illustration",
+      "src": "illust_04.jpg",
+      "caption": "ภาพประกอบ 4 — ฮินะในชุดแมวดำ"
+    },
+    {
+      "id": "b-0-img-5",
+      "type": "illustration",
+      "src": "illust_05.jpg",
+      "caption": "ภาพประกอบ 5 — สองสาวในชุดเมดแมว"
+    },
+    {
+      "id": "b-0-img-6",
+      "type": "illustration",
+      "src": "illust_06.jpg",
+      "caption": "ภาพประกอบ 6 — ฮินะกับมิซึกิในชุดลำลอง"
+    },
+    {
+      "id": "b-0-img-7",
+      "type": "illustration",
+      "src": "illust_07.jpg",
+      "caption": "ภาพประกอบ 7 — การ์ตูนขาวดำ: ฮินะ"
+    },
+    {
+      "id": "b-0-img-8",
+      "type": "illustration",
+      "src": "illust_08.jpg",
+      "caption": "ภาพประกอบ 8 — การ์ตูนขาวดำ: มิซึกิ"
+    },
+    {
+      "id": "b-0-img-9",
+      "type": "illustration",
+      "src": "illust_09.jpg",
+      "caption": "ภาพประกอบ 9 — สองสาวในชุดนอนกับคุโรโตะ"
+    },
+    {
+      "id": "b-0-break-2",
+      "type": "scene_break",
+      "symbol": "❖ ❖ ❖"
+    },
+    {
+      "id": "b-0-outro",
+      "type": "narration",
+      "text": "ภาพประกอบทั้งหมดถูกจัดทำขึ้นเพื่อประกอบการอ่านนิยายเรื่องนี้"
+    }
+  ]
+}

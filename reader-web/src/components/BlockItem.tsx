@@ -5,6 +5,7 @@ import { getAssetUrl } from '../utils/assets';
 
 interface BlockItemProps {
   block: StoryBlock;
+  novelId: string;
   characters: Character[];
   avatarStyle: AvatarStyle;
   canEdit?: boolean;
@@ -14,6 +15,7 @@ interface BlockItemProps {
 
 export const BlockItem: React.FC<BlockItemProps> = ({
   block,
+  novelId,
   characters,
   avatarStyle,
   canEdit = import.meta.env.DEV,
@@ -88,7 +90,7 @@ export const BlockItem: React.FC<BlockItemProps> = ({
   // Illustration Block
   if (block.type === 'illustration') {
     const cleanSrc = block.src.replace(/^(\/)?(illustrations\/)?/, '');
-    const imgUrl = `${import.meta.env.BASE_URL}data/novels/kyudo-senpai/illustrations/${cleanSrc}`;
+    const imgUrl = `${import.meta.env.BASE_URL}data/novels/${novelId}/illustrations/${cleanSrc}`;
     return (
       <div
         style={{

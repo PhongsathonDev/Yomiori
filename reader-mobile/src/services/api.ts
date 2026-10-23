@@ -147,10 +147,30 @@ export async function getAvailableChapterList(
   }
 
   // Offline default fallback
+  if (novelId === 'black-cat-hangout') {
+    const list = [
+      {
+        id: 'ch-00',
+        novelId,
+        chapterNumber: 0,
+        title: 'Ch.0 — รูปประกอบ',
+      },
+    ];
+    for (let i = 1; i <= 20; i++) {
+      const numStr = String(i).padStart(2, '0');
+      list.push({
+        id: `ch-${numStr}`,
+        novelId,
+        chapterNumber: i,
+        title: `ตอนที่ ${i}`,
+      });
+    }
+    return list;
+  }
+
   let count = 1;
   if (novelId === 'kyudo-senpai') count = 25;
   if (novelId === 'boyish-friend') count = 14;
-  if (novelId === 'black-cat-hangout') count = 10;
   const list = [];
   for (let i = 1; i <= count; i++) {
     const numStr = String(i).padStart(2, '0');

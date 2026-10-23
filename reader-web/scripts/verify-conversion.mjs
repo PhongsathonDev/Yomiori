@@ -11,6 +11,9 @@ function cleanText(str) {
   return str
     .replace(/^#.*$/gm, '') // Remove Markdown headers
     .replace(/^By\s+.*$/gm, '') // Remove translator / author metadata
+    .replace(/^Published:\s.*$/gm, '') // Remove publish timestamp metadata
+    .replace(/^Source:\s.*$/gm, '') // Remove source URL metadata
+    .replace(/^Ch\.\d+\s.*$/gm, '') // Remove duplicated chapter title line
     .replace(/^AI-POWERED.*$/gm, '') // Remove badge lines
     .replace(/[\r\n\t\s]+/g, '') // Remove all whitespace
     .replace(/[“”"']/g, '') // Normalize quotes

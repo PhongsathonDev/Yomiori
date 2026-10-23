@@ -104,9 +104,12 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
     return true;
   });
 
-  // Find last read chapter belonging to this novel or default to first chapter of current novel
+  // Pick the first actual story chapter (skip illustration-only Ch.0) for defaults
+  const firstStoryChapter = novelChapters.find((c) => c.chapterNumber > 0) || novelChapters[0];
+
+  // Find last read chapter belonging to this novel or default to the first story chapter
   const lastReadChapter =
-    novelChapters.find((c) => c.id === lastReadChapterId) || novelChapters[0] || chapters[0];
+    novelChapters.find((c) => c.id === lastReadChapterId) || firstStoryChapter || chapters[0];
   const lastReadNovel = currentNovel;
 
   // Filter and sort chapters for detail view based on search query and sort order
@@ -996,7 +999,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                       </button>
 
                       <button
-                        onClick={() => onSelectChapter(novelChapters[0].id, currentNovel.id)}
+                        onClick={() => firstStoryChapter && onSelectChapter(firstStoryChapter.id, currentNovel.id)}
                         style={{
                           display: 'flex',
                           alignItems: 'center',
@@ -1215,7 +1218,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                   onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--bg-surface)')}
                 >
                   <ArrowUpDown size={14} style={{ color: 'var(--accent-primary)' }} />
-                  <span>{sortOrder === 'asc' ? 'ตอนแรกก่อน (1 → ล่าสุด)' : 'ตอนล่าสุดก่อน (ล่าสุด → 1)'}</span>
+                  <span>{sortOrder === 'asc' ? 'ตอนแรกก่อน (แรก → ล่าสุด)' : 'ตอนล่าสุดก่อน (ล่าสุด → แรก)'}</span>
                 </button>
 
                 {/* Search Box */}
