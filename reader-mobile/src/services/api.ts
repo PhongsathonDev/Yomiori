@@ -6,6 +6,7 @@ import bundledNovels from '../data/novels.json';
 import bundledKyudoCharacters from '../data/novels/kyudo-senpai/characters.json';
 import bundledBoyishCharacters from '../data/novels/boyish-friend/characters.json';
 import bundledBlackCatCharacters from '../data/novels/black-cat-hangout/characters.json';
+import { blackCatChapters } from '../data/novels/black-cat-hangout/chapters';
 
 // GitHub Pages Headless CDN Base URL
 export const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
@@ -69,11 +70,19 @@ export async function fetchIllustrations(novelId: string): Promise<IllustrationI
   return [];
 }
 
+export function getBundledChapter(novelId: string, chapterId: string): Chapter | null {
+  if (novelId === 'black-cat-hangout') {
+    return (blackCatChapters as Chapter[]).find((c) => c.id === chapterId) || null;
+  }
+  return null;
+}
+
 /**
  * Fetch chapter:
  * 1. Checks if stored in offline FileSystem first (Instant & Offline-first)
  * 2. If not offline, fetches from GitHub Pages CDN
- * 3. Saves to offline FileSystem so subsequent reads are instant and offline-ready!
+ * 3. Falls back to bundled data if CDN is missing/offline (e.g. newly added chapters)
+ * 4. Saves to offline FileSystem so subsequent reads are instant and offline-ready!
  */
 export async function getChapter(novelId: string, chapterId: string): Promise<Chapter | null> {
   // 1. Try offline storage first
@@ -96,6 +105,13 @@ export async function getChapter(novelId: string, chapterId: string): Promise<Ch
     console.warn(`Failed to fetch ${chapterId} from CDN:`, err);
   }
 
+  // 3. Fallback to bundled chapters
+  const bundled = getBundledChapter(novelId, chapterId);
+  if (bundled) {
+    await saveChapterOffline(bundled).catch(() => {});
+    return bundled;
+  }
+
   return null;
 }
 
@@ -106,14 +122,23 @@ export async function downloadChapterOnDemand(novelId: string, chapterId: string
   try {
     const url = `${CDN_BASE_URL}/novels/${novelId}/chapters/${chapterId}.json`;
     const res = await fetch(url);
-    if (!res.ok) return false;
-    const chapter = (await res.json()) as Chapter;
-    await saveChapterOffline(chapter);
-    return true;
+    if (res.ok) {
+      const chapter = (await res.json()) as Chapter;
+      await saveChapterOffline(chapter);
+      return true;
+    }
   } catch (err) {
     console.error(`Download error for ${chapterId}:`, err);
-    return false;
   }
+
+  // Fallback to bundled chapter
+  const bundled = getBundledChapter(novelId, chapterId);
+  if (bundled) {
+    await saveChapterOffline(bundled);
+    return true;
+  }
+
+  return false;
 }
 
 // NovelManifest is imported from ../types
@@ -136,9 +161,11 @@ export async function fetchNovelManifest(novelId: string): Promise<NovelManifest
 export async function getAvailableChapterList(
   novelId: string
 ): Promise<Array<{ id: string; novelId: string; chapterNumber: number; title: string }>> {
+  let list: Array<{ id: string; novelId: string; chapterNumber: number; title: string }> = [];
+
   const manifest = await fetchNovelManifest(novelId);
   if (manifest && manifest.chapters && manifest.chapters.length > 0) {
-    return manifest.chapters.map((c) => ({
+    list = manifest.chapters.map((c) => ({
       id: c.id,
       novelId,
       chapterNumber: c.chapterNumber,
@@ -146,17 +173,49 @@ export async function getAvailableChapterList(
     }));
   }
 
-  // Offline default fallback
+  // Merge bundled chapters so new chapters (such as Ch.26-30) appear immediately even if CDN manifest hasn't updated
   if (novelId === 'black-cat-hangout') {
-    const list = [
-      {
-        id: 'ch-00',
-        novelId,
-        chapterNumber: 0,
-        title: 'Ch.0 — รูปประกอบ',
-      },
-    ];
-    for (let i = 1; i <= 20; i++) {
+    const existingIds = new Set(list.map((c) => c.id));
+    for (const b of (blackCatChapters as Chapter[])) {
+      if (!existingIds.has(b.id)) {
+        list.push({
+          id: b.id,
+          novelId,
+          chapterNumber: b.chapterNumber,
+          title: b.title,
+        });
+        existingIds.add(b.id);
+      }
+    }
+  }
+
+  // Offline default fallback if list is empty
+  if (list.length === 0) {
+    if (novelId === 'black-cat-hangout') {
+      const fbList = [
+        {
+          id: 'ch-00',
+          novelId,
+          chapterNumber: 0,
+          title: 'Ch.0 — รูปประกอบ',
+        },
+      ];
+      for (let i = 1; i <= 30; i++) {
+        const numStr = String(i).padStart(2, '0');
+        fbList.push({
+          id: `ch-${numStr}`,
+          novelId,
+          chapterNumber: i,
+          title: `ตอนที่ ${i}`,
+        });
+      }
+      return fbList;
+    }
+
+    let count = 1;
+    if (novelId === 'kyudo-senpai') count = 25;
+    if (novelId === 'boyish-friend') count = 14;
+    for (let i = 1; i <= count; i++) {
       const numStr = String(i).padStart(2, '0');
       list.push({
         id: `ch-${numStr}`,
@@ -165,23 +224,9 @@ export async function getAvailableChapterList(
         title: `ตอนที่ ${i}`,
       });
     }
-    return list;
   }
 
-  let count = 1;
-  if (novelId === 'kyudo-senpai') count = 25;
-  if (novelId === 'boyish-friend') count = 14;
-  const list = [];
-  for (let i = 1; i <= count; i++) {
-    const numStr = String(i).padStart(2, '0');
-    list.push({
-      id: `ch-${numStr}`,
-      novelId,
-      chapterNumber: i,
-      title: `ตอนที่ ${i}`,
-    });
-  }
-  return list;
+  return list.sort((a, b) => a.chapterNumber - b.chapterNumber);
 }
 
 // Fallback bundled comments
