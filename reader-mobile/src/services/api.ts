@@ -200,7 +200,7 @@ export async function getAvailableChapterList(
           title: 'Ch.0 — รูปประกอบ',
         },
       ];
-      for (let i = 1; i <= 30; i++) {
+      for (let i = 1; i <= 40; i++) {
         const numStr = String(i).padStart(2, '0');
         fbList.push({
           id: `ch-${numStr}`,
