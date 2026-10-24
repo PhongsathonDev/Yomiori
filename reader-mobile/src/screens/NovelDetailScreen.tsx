@@ -10,6 +10,7 @@ import {
   ActivityIndicator,
   Alert,
   Modal,
+  RefreshControl,
 } from 'react-native';
 import { NavigationBar } from 'expo-navigation-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -82,14 +83,20 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
   const [lightboxTitle, setLightboxTitle] = useState<string | undefined>();
   const [lightboxCaption, setLightboxCaption] = useState<string | undefined>();
 
+  const [refreshing, setRefreshing] = useState(false);
+
   const themeColors = themes[currentTheme];
 
   useEffect(() => {
-    loadData();
-  }, [novelId]);
+    const unsubscribe = navigation.addListener('focus', () => {
+      loadData(false);
+    });
+    loadData(true);
+    return unsubscribe;
+  }, [navigation, novelId]);
 
-  const loadData = async () => {
-    setLoading(true);
+  const loadData = async (showLoadingSpinner = true) => {
+    if (showLoadingSpinner) setLoading(true);
     const theme = await getSavedTheme();
     setCurrentTheme(theme);
 
@@ -117,6 +124,12 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
     setStorageStats(stats);
 
     setLoading(false);
+  };
+
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    await loadData(false);
+    setRefreshing(false);
   };
 
   const openLightbox = (url: string, title?: string, caption?: string) => {
@@ -235,7 +248,18 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
           <ActivityIndicator size="large" color={themeColors.primary} />
         </View>
       ) : (
-        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        <ScrollView
+          contentContainerStyle={styles.scrollContent}
+          showsVerticalScrollIndicator={false}
+          refreshControl={
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={handleRefresh}
+              tintColor={themeColors.primary}
+              colors={[themeColors.primary]}
+            />
+          }
+        >
           {/* Novel Info Banner */}
           <View style={styles.novelInfoCard}>
             <Image

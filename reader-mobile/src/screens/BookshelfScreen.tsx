@@ -8,6 +8,7 @@ import {
   Image,
   StatusBar,
   ActivityIndicator,
+  RefreshControl,
 } from 'react-native';
 import { NavigationBar } from 'expo-navigation-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -52,18 +53,20 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
   const [selectedTag, setSelectedTag] = useState<string>('all');
   const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
 
+  const [refreshing, setRefreshing] = useState(false);
+
   const themeColors = themes[currentTheme];
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
-      loadData();
+      loadData(false);
     });
-    loadData();
+    loadData(true);
     return unsubscribe;
   }, [navigation]);
 
-  const loadData = async () => {
-    setLoading(true);
+  const loadData = async (showSpinner = true) => {
+    if (showSpinner) setLoading(true);
     const theme = await getSavedTheme();
     setCurrentTheme(theme);
 
@@ -133,6 +136,12 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
     return { uri: `https://phongsathondev.github.io/Yomiori/${coverUrl.replace(/^\//, '')}` };
   };
 
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    await loadData(false);
+    setRefreshing(false);
+  };
+
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: themeColors.background }]}>
       <StatusBar
@@ -169,7 +178,18 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
           </Text>
         </View>
       ) : (
-        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        <ScrollView
+          contentContainerStyle={styles.scrollContent}
+          showsVerticalScrollIndicator={false}
+          refreshControl={
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={handleRefresh}
+              tintColor={themeColors.primary}
+              colors={[themeColors.primary]}
+            />
+          }
+        >
           {/* HERO: CONTINUE READING CARD */}
           {continueNovel && (
             <TouchableOpacity

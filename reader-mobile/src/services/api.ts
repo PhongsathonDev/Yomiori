@@ -14,7 +14,7 @@ export const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
 export async function fetchNovels(): Promise<Novel[]> {
   let remoteNovels: Novel[] = [];
   try {
-    const res = await fetch(`${CDN_BASE_URL}/novels.json`, { cache: 'no-cache' });
+    const res = await fetch(`${CDN_BASE_URL}/novels.json?_t=${Date.now()}`);
     if (res.ok) {
       remoteNovels = (await res.json()) as Novel[];
     }
@@ -37,7 +37,7 @@ export async function fetchNovels(): Promise<Novel[]> {
 
 export async function fetchCharacters(novelId: string): Promise<Character[]> {
   try {
-    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/characters.json`, { cache: 'no-cache' });
+    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/characters.json?_t=${Date.now()}`);
     if (res.ok) {
       const data = await res.json();
       return data as Character[];
@@ -59,7 +59,7 @@ export async function fetchCharacters(novelId: string): Promise<Character[]> {
 
 export async function fetchIllustrations(novelId: string): Promise<IllustrationItem[]> {
   try {
-    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/illustrations.json`, { cache: 'no-cache' });
+    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/illustrations.json?_t=${Date.now()}`);
     if (res.ok) {
       const data = await res.json();
       return data as IllustrationItem[];
@@ -145,7 +145,7 @@ export async function downloadChapterOnDemand(novelId: string, chapterId: string
 
 export async function fetchNovelManifest(novelId: string): Promise<NovelManifest | null> {
   try {
-    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/manifest.json`, { cache: 'no-cache' });
+    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/manifest.json?_t=${Date.now()}`);
     if (res.ok) {
       return (await res.json()) as NovelManifest;
     }
