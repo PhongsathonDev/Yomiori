@@ -39,6 +39,16 @@ import ch37 from './ch-37.json';
 import ch38 from './ch-38.json';
 import ch39 from './ch-39.json';
 import ch40 from './ch-40.json';
+import ch41 from './ch-41.json';
+import ch42 from './ch-42.json';
+import ch43 from './ch-43.json';
+import ch44 from './ch-44.json';
+import ch45 from './ch-45.json';
+import ch46 from './ch-46.json';
+import ch47 from './ch-47.json';
+import ch48 from './ch-48.json';
+import ch49 from './ch-49.json';
+import ch50 from './ch-50.json';
 import type { Chapter } from '../../../../types';
 
 export const blackCatChapters = [
@@ -83,4 +93,14 @@ export const blackCatChapters = [
   ch38 as Chapter,
   ch39 as Chapter,
   ch40 as Chapter,
+  ch41 as Chapter,
+  ch42 as Chapter,
+  ch43 as Chapter,
+  ch44 as Chapter,
+  ch45 as Chapter,
+  ch46 as Chapter,
+  ch47 as Chapter,
+  ch48 as Chapter,
+  ch49 as Chapter,
+  ch50 as Chapter,
 ];
