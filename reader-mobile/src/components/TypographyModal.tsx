@@ -8,11 +8,12 @@ import {
   ScrollView,
 } from 'react-native';
 import { X, Minus, Plus, Check } from 'lucide-react-native';
-import { ReaderTheme } from '../types';
+import { ReaderTheme, ReaderFont, ReaderLineHeight } from '../types';
 import { themes } from '../theme/colors';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-export type FontOption = 'Sarabun' | 'Kanit' | 'Prompt' | 'System';
-export type LineHeightOption = 1.55 | 1.85 | 2.15;
+export type FontOption = ReaderFont;
+export type LineHeightOption = ReaderLineHeight;
 
 export const FONT_MAP: Record<FontOption, { regular: string | undefined; bold: string | undefined; label: string; desc: string }> = {
   Sarabun: {
@@ -65,19 +66,20 @@ export const TypographyModal: React.FC<Props> = ({
   onClose,
 }) => {
   const themeColors = themes[theme];
-  const activeFontMeta = FONT_MAP[fontFamily];
+  const activeFontMeta = FONT_MAP[fontFamily] || FONT_MAP.Sarabun;
+  const insets = useSafeAreaInsets();
 
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
       <TouchableOpacity style={styles.overlay} activeOpacity={1} onPress={onClose}>
         <TouchableOpacity
-          style={[styles.sheet, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}
+          style={[styles.sheet, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder, paddingBottom: Math.max(30, insets.bottom + 12) }]}
           activeOpacity={1}
         >
           {/* Header */}
           <View style={styles.header}>
             <Text style={[styles.title, { color: themeColors.text }]}>ตั้งค่าตัวอักษรและการอ่าน</Text>
-            <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
+            <TouchableOpacity accessibilityRole="button" accessibilityLabel="ปิดการตั้งค่าตัวอักษร" onPress={onClose} style={styles.closeBtn}>
               <X size={18} color={themeColors.textMuted} />
             </TouchableOpacity>
           </View>
@@ -114,6 +116,9 @@ export const TypographyModal: React.FC<Props> = ({
                 <TouchableOpacity
                   style={[styles.sizeBtn, { backgroundColor: themeColors.primaryBg }]}
                   onPress={() => onChangeFontSize(-1)}
+                  accessibilityLabel="ลดขนาดตัวอักษร"
+                  disabled={fontSize <= 14}
+                  accessibilityState={{ disabled: fontSize <= 14 }}
                 >
                   <Minus size={16} color={themeColors.primary} />
                 </TouchableOpacity>
@@ -123,6 +128,9 @@ export const TypographyModal: React.FC<Props> = ({
                 <TouchableOpacity
                   style={[styles.sizeBtn, { backgroundColor: themeColors.primaryBg }]}
                   onPress={() => onChangeFontSize(1)}
+                  accessibilityLabel="เพิ่มขนาดตัวอักษร"
+                  disabled={fontSize >= 26}
+                  accessibilityState={{ disabled: fontSize >= 26 }}
                 >
                   <Plus size={16} color={themeColors.primary} />
                 </TouchableOpacity>
@@ -149,6 +157,8 @@ export const TypographyModal: React.FC<Props> = ({
                         },
                       ]}
                       onPress={() => onChangeFontFamily(f)}
+                      accessibilityRole="radio"
+                      accessibilityState={{ selected: isSelected }}
                       activeOpacity={0.7}
                     >
                       <View style={styles.fontItemInfo}>
@@ -200,6 +210,8 @@ export const TypographyModal: React.FC<Props> = ({
                         },
                       ]}
                       onPress={() => onChangeLineHeight(item.val)}
+                      accessibilityRole="radio"
+                      accessibilityState={{ selected: isSelected }}
                     >
                       <Text
                         style={[
@@ -253,6 +265,10 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   closeBtn: {
+    minWidth: 44,
+    minHeight: 44,
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: 4,
   },
   previewBox: {

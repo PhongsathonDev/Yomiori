@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   ScrollView,
   TouchableOpacity,
   Pressable,
@@ -10,7 +9,7 @@ import {
   ActivityIndicator,
   NativeSyntheticEvent,
   NativeScrollEvent,
-  Image,
+  AppState,
   useWindowDimensions,
 } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -26,8 +25,8 @@ import {
   Coffee,
   Type,
 } from 'lucide-react-native';
-import { RootStackParamList, Chapter, Character, DialogueBlock, ReaderTheme, IllustrationBlock, ChapterListItem } from '../types';
-import { getChapter, fetchCharacters, getAvailableChapterList } from '../services/api';
+import { RootStackParamList, Chapter, Character, ReaderTheme, ChapterListItem } from '../types';
+import { getChapterForReading, fetchCharacters, getAvailableChapterList } from '../services/api';
 import {
   getSavedTheme,
   saveTheme,
@@ -37,12 +36,14 @@ import {
   saveFontFamily,
   getSavedLineHeight,
   saveLineHeight,
-  saveReadingProgress,
   getReadingProgress,
-  getIllustrationUrl,
 } from '../services/storage';
 import { themes } from '../theme/colors';
-import { CharacterDetailModal, getAvatarSource } from '../components/CharacterDetailModal';
+import { readerStyles as styles } from '../theme/readerStyles';
+import { ReaderStory } from '../components/ReaderStory';
+import { ScreenState } from '../components/ScreenState';
+import { createProgressWriter, getResumeOffset } from '../services/readingProgress';
+import { CharacterDetailModal } from '../components/CharacterDetailModal';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import { ChapterCommentsSection } from '../components/ChapterCommentsSection';
 import {
@@ -60,33 +61,11 @@ interface Props {
   navigation: ReaderNavProp;
 }
 
-/**
- * Ensures dialogue text is neatly formatted with quotes
- * without ever causing double quotes like ““...””
- */
-function formatDialogueText(rawText: string): string {
-  if (!rawText) return '';
-  const trimmed = rawText.trim();
+export const ReaderScreen: React.FC<Props> = props => (
+  <ReaderContent key={`${props.route.params.novelId}:${props.route.params.chapterId}`} {...props} />
+);
 
-  // If it already starts and ends with paired quotes, return as-is
-  if (
-    (trimmed.startsWith('“') && trimmed.endsWith('”')) ||
-    (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
-    (trimmed.startsWith('「') && trimmed.endsWith('」')) ||
-    (trimmed.startsWith('『') && trimmed.endsWith('』'))
-  ) {
-    return trimmed;
-  }
-
-  // If it has loose leading/trailing quotes, clean and neatly wrap
-  const cleaned = trimmed
-    .replace(/^[“”"「」『』]+/, '')
-    .replace(/[“”"「」『』]+$/, '')
-    .trim();
-  return `“${cleaned}”`;
-}
-
-export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
+const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const { novelId, chapterId } = route.params;
   const { width: windowWidth } = useWindowDimensions();
   const isTablet = windowWidth >= 600;
@@ -95,13 +74,17 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [characters, setCharacters] = useState<Character[]>([]);
   const [chapterList, setChapterList] = useState<ChapterListItem[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loadState, setLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
+  const [retryKey, setRetryKey] = useState(0);
+  const [cacheWarning, setCacheWarning] = useState(false);
+  const [progressWarning, setProgressWarning] = useState(false);
   const [readingProgress, setReadingProgress] = useState(0);
   const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
 
   // Settings & Immersion
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [fontSize, setFontSize] = useState(isTablet ? 19 : 17);
+  const [defaultFontSize] = useState(isTablet ? 19 : 17);
   const [fontFamily, setFontFamily] = useState<FontOption>('Sarabun');
   const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
   const [showControls, setShowControls] = useState(true);
@@ -118,88 +101,102 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const themeColors = themes[currentTheme];
   const activeFont = FONT_MAP[fontFamily] || FONT_MAP.Sarabun;
 
+  const progressWriter = useRef<ReturnType<typeof createProgressWriter> | null>(null);
+  const viewportHeight = useRef(0);
+  const contentHeight = useRef(0);
+  const userStartedReading = useRef(false);
+
   useEffect(() => {
-    loadChapterData();
-  }, [novelId, chapterId]);
-
-  const loadChapterData = async () => {
-    setLoading(true);
+    let active = true;
     hasRestoredScroll.current = false;
+    savedProgressPercent.current = 0;
+    userStartedReading.current = false;
+    viewportHeight.current = 0;
+    contentHeight.current = 0;
+    const writer = createProgressWriter(novelId, chapterId, () => {
+      if (active) setProgressWarning(true);
+    });
+    progressWriter.current = writer;
+    const blur = navigation.addListener('blur', writer.flush);
+    const appState = AppState.addEventListener('change', state => {
+      if (state !== 'active') writer.flush();
+    });
+    void Promise.all([
+      getSavedTheme(), getSavedFontSize(defaultFontSize), getSavedFontFamily(),
+      getSavedLineHeight(), getChapterForReading(novelId, chapterId), getReadingProgress(novelId),
+    ]).then(([theme, size, family, lineHeight, result, progress]) => {
+      if (!active) return;
+      setCurrentTheme(theme);
+      setFontSize(size);
+      setFontFamily(family);
+      setLineHeightRatio(lineHeight);
+      setChapter(result.chapter);
+      setCacheWarning(result.cacheWarning);
+      setProgressWarning(false);
+      if (!result.chapter) { setLoadState('error'); return; }
+      const percent = progress?.chapterId === chapterId ? progress.scrollPercent : 0;
+      savedProgressPercent.current = percent;
+      setReadingProgress(Math.round(percent));
+      setLoadState('ready');
+      writer.update(percent);
+    }).catch(() => { if (active) setLoadState('error'); });
+    // Optional metadata is independent of the reading content.
+    void fetchCharacters(novelId, true).then(data => { if (active) setCharacters(data); }).catch(() => undefined);
+    void getAvailableChapterList(novelId, true).then(data => { if (active) setChapterList(data); }).catch(() => undefined);
+    return () => {
+      active = false;
+      writer.dispose();
+      blur();
+      appState.remove();
+      if (progressWriter.current === writer) progressWriter.current = null;
+    };
+  }, [novelId, chapterId, retryKey, defaultFontSize, navigation]);
 
-    const [
-      theme,
-      savedSize,
-      savedFamily,
-      savedLH,
-      chars,
-      chData,
-      progress,
-      availList,
-    ] = await Promise.all([
-      getSavedTheme(),
-      getSavedFontSize(isTablet ? 19 : 17),
-      getSavedFontFamily(),
-      getSavedLineHeight(),
-      fetchCharacters(novelId),
-      getChapter(novelId, chapterId),
-      getReadingProgress(novelId),
-      getAvailableChapterList(novelId),
-    ]);
-
-    setCurrentTheme(theme);
-    setFontSize(savedSize);
-    setFontFamily((savedFamily as FontOption) || 'Sarabun');
-    setLineHeightRatio((savedLH as LineHeightOption) || 1.85);
-    setCharacters(chars);
-    setChapter(chData);
-    setChapterList(availList);
-
-    // If reading this chapter previously, queue auto-scroll resume
-    if (progress && progress.chapterId === chapterId && progress.scrollPercent > 0) {
-      savedProgressPercent.current = progress.scrollPercent;
-      setReadingProgress(progress.scrollPercent);
-    } else {
-      savedProgressPercent.current = 0;
-      setReadingProgress(0);
-    }
-
-    setLoading(false);
-    saveReadingProgress(novelId, chapterId, savedProgressPercent.current);
+  const retryChapter = () => { setLoadState('loading'); setRetryKey(key => key + 1); };
+  const restoreScroll = () => {
+    if (hasRestoredScroll.current || userStartedReading.current || !viewportHeight.current || !contentHeight.current) return;
+    hasRestoredScroll.current = true;
+    scrollRef.current?.scrollTo({ y: getResumeOffset(savedProgressPercent.current, contentHeight.current, viewportHeight.current), animated: false });
   };
-
   const handleScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
+    if (!hasRestoredScroll.current || !userStartedReading.current) return;
     const { contentOffset, layoutMeasurement, contentSize } = event.nativeEvent;
-    const totalScrollable = contentSize.height - layoutMeasurement.height;
-    if (totalScrollable > 0) {
-      const percent = Math.min(100, Math.max(0, (contentOffset.y / totalScrollable) * 100));
-      setReadingProgress(percent);
-      saveReadingProgress(novelId, chapterId, percent);
-    }
+    const scrollable = contentSize.height - layoutMeasurement.height;
+    const percent = scrollable > 0 ? Math.min(100, Math.max(0, contentOffset.y / scrollable * 100)) : 100;
+    const display = Math.round(percent);
+    setReadingProgress(previous => previous === display ? previous : display);
+    progressWriter.current?.update(percent);
   };
+  const toggleControls = useCallback(() => setShowControls(previous => !previous), []);
+  const openIllustration = useCallback((uri: string, caption?: string) => {
+    setLightboxUrl(uri);
+    setLightboxCaption(caption);
+    setLightboxVisible(true);
+  }, []);
 
   const handleToggleTheme = async (nextTheme: ReaderTheme) => {
     setCurrentTheme(nextTheme);
-    await saveTheme(nextTheme);
+    await saveTheme(nextTheme).catch(() => setProgressWarning(true));
   };
 
   const handleChangeFontSize = async (delta: number) => {
     const nextSize = Math.max(14, Math.min(26, fontSize + delta));
     setFontSize(nextSize);
-    await saveFontSize(nextSize);
+    await saveFontSize(nextSize).catch(() => setProgressWarning(true));
   };
 
   const handleChangeFontFamily = async (family: FontOption) => {
     setFontFamily(family);
-    await saveFontFamily(family);
+    await saveFontFamily(family).catch(() => setProgressWarning(true));
   };
 
   const handleChangeLineHeight = async (ratio: LineHeightOption) => {
     setLineHeightRatio(ratio);
-    await saveLineHeight(ratio);
+    await saveLineHeight(ratio).catch(() => setProgressWarning(true));
   };
 
   // Character lookup
-  const characterMap = React.useMemo(() => {
+  const characterMap = useMemo(() => {
     const map = new Map<string, Character>();
     characters.forEach((c) => map.set(c.id, c));
     return map;
@@ -213,6 +210,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
   const goToChapterAt = (index: number) => {
     const target = chapterList[index];
     if (!target) return;
+    progressWriter.current?.flush();
     navigation.replace('Reader', { novelId, chapterId: target.id });
   };
 
@@ -266,15 +264,19 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
         />
       </View>
 
-      {loading || !chapter ? (
+      {loadState === 'loading' ? (
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color={themeColors.primary} />
           <Text style={[styles.loadingText, { color: themeColors.textMuted }]}>
             กำลังเตรียมเนื้อหา...
           </Text>
         </View>
+      ) : loadState === 'error' || !chapter ? (
+        <ScreenState colors={themeColors} message="เปิดตอนนี้ไม่ได้ หากยังไม่ได้ดาวน์โหลดไว้ กรุณาเชื่อมต่ออินเทอร์เน็ตแล้วลองอีกครั้ง"
+          onRetry={retryChapter} onBack={() => navigation.goBack()} />
       ) : (
         <ScrollView
+          testID="reader-scroll"
           ref={scrollRef}
           contentContainerStyle={[
             styles.scrollContent,
@@ -284,21 +286,16 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
           onScroll={handleScroll}
           scrollEventThrottle={32}
           showsVerticalScrollIndicator={false}
-          onContentSizeChange={(_w, h) => {
-            // Auto-scroll resume to previous position
-            if (!hasRestoredScroll.current && savedProgressPercent.current > 0 && h > 0) {
-              const targetY = (savedProgressPercent.current / 100) * (h - 600);
-              if (targetY > 0) {
-                scrollRef.current?.scrollTo({ y: targetY, animated: false });
-              }
-              hasRestoredScroll.current = true;
-            }
-          }}
+          onLayout={event => { viewportHeight.current = event.nativeEvent.layout.height; restoreScroll(); }}
+          onContentSizeChange={(_width, height) => { contentHeight.current = height; restoreScroll(); }}
+          onScrollBeginDrag={() => { userStartedReading.current = true; hasRestoredScroll.current = true; }}
+          onScrollEndDrag={event => { handleScroll(event); progressWriter.current?.flush(); }}
+          onMomentumScrollEnd={event => { handleScroll(event); progressWriter.current?.flush(); }}
         >
           {/* Centered Book Spine: Ergonomic line length on both Phones and Tablets */}
           <View style={[styles.bookSpine, { maxWidth: isTablet ? 720 : '100%' }]}>
             {/* Chapter Heading Banner */}
-            <Pressable onPress={() => setShowControls((prev) => !prev)}>
+            <Pressable onPress={toggleControls}>
               <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
                 <Text style={[styles.chapterHeroNum, { color: themeColors.primary }]}>
                   CHAPTER {chapter.chapterNumber}
@@ -314,191 +311,18 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
               </View>
             </Pressable>
 
-            {/* Story Blocks */}
-            <Pressable onPress={() => setShowControls((prev) => !prev)}>
-              {chapter.blocks.map((block) => {
-                if (block.type === 'narration') {
-                  return (
-                    <Text
-                      key={block.id}
-                      style={[
-                        styles.narrationBlock,
-                        {
-                          color: themeColors.narrationText,
-                          fontSize: fontSize,
-                          fontFamily: activeFont.regular,
-                          lineHeight: fontSize * lineHeightRatio,
-                        },
-                      ]}
-                    >
-                      {'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}{block.text}
-                    </Text>
-                  );
-                }
-
-                if (block.type === 'dialogue') {
-                  const dBlock = block as DialogueBlock;
-                  const char = characterMap.get(dBlock.speakerId);
-                  const charColor = char?.color || themeColors.primary;
-                  const avatarSrc = getAvatarSource(char?.avatarUrl);
-
-                  return (
-                    <View
-                      key={block.id}
-                      style={[
-                        styles.dialogueNovelCard,
-                        {
-                          backgroundColor: `${charColor}0a`,
-                          borderLeftColor: charColor,
-                        },
-                      ]}
-                    >
-                      {/* Speaker Label with Avatar & Role */}
-                      <TouchableOpacity
-                        style={styles.speakerRow}
-                        activeOpacity={0.7}
-                        onPress={() => {
-                          if (char) {
-                            setSelectedCharacter(char);
-                          } else {
-                            setSelectedCharacter({
-                              id: dBlock.speakerId,
-                              name: dBlock.speakerName,
-                              role: 'ตัวละครประกอบ',
-                              color: charColor,
-                            });
-                          }
-                        }}
-                      >
-                        {avatarSrc ? (
-                          <Image
-                            source={avatarSrc}
-                            style={[styles.speakerAvatar, { borderColor: charColor }]}
-                            resizeMode="cover"
-                          />
-                        ) : (
-                          <View
-                            style={[
-                              styles.speakerAvatarPlaceholder,
-                              { backgroundColor: `${charColor}20`, borderColor: charColor },
-                            ]}
-                          >
-                            <Text style={[styles.speakerInitial, { color: charColor }]}>
-                              {dBlock.speakerName.charAt(0)}
-                            </Text>
-                          </View>
-                        )}
-
-                        <View style={styles.speakerTextContainer}>
-                          <View style={styles.speakerNameAndRole}>
-                            <Text
-                              style={[
-                                styles.speakerName,
-                                {
-                                  color: charColor,
-                                  fontFamily: activeFont.bold || activeFont.regular,
-                                },
-                              ]}
-                            >
-                              {dBlock.speakerName}
-                            </Text>
-                            {char?.role ? (
-                              <View
-                                style={[
-                                  styles.speakerRoleBadge,
-                                  { backgroundColor: `${charColor}15` },
-                                ]}
-                              >
-                                <Text
-                                  style={[styles.speakerRoleText, { color: charColor }]}
-                                  numberOfLines={1}
-                                >
-                                  {char.role}
-                                </Text>
-                              </View>
-                            ) : null}
-                          </View>
-                        </View>
-                      </TouchableOpacity>
-
-                      {/* Dialogue Quote Text with clean single pair of quotes */}
-                      <Text
-                        style={[
-                          styles.dialogueText,
-                          {
-                            color: themeColors.text,
-                            fontSize: fontSize,
-                            fontFamily: activeFont.regular,
-                            lineHeight: fontSize * (lineHeightRatio * 0.95),
-                          },
-                        ]}
-                      >
-                        {formatDialogueText(dBlock.text)}
-                      </Text>
-                    </View>
-                  );
-                }
-
-                if (block.type === 'scene_break') {
-                  return (
-                    <View key={block.id} style={styles.sceneBreakRow}>
-                      <View style={[styles.sceneBreakLine, { backgroundColor: themeColors.border }]} />
-                      <Text style={[styles.sceneBreakSymbol, { color: themeColors.textMuted }]}>◆</Text>
-                      <View style={[styles.sceneBreakLine, { backgroundColor: themeColors.border }]} />
-                    </View>
-                  );
-                }
-
-                if (block.type === 'illustration') {
-                  const iBlock = block as IllustrationBlock;
-                  const imgUrl = getIllustrationUrl(novelId, iBlock.src);
-
-                  return (
-                    <View key={block.id} style={styles.illustrationBlockContainer}>
-                      <TouchableOpacity
-                        activeOpacity={0.88}
-                        onPress={() => {
-                          setLightboxUrl(imgUrl);
-                          setLightboxCaption(iBlock.caption);
-                          setLightboxVisible(true);
-                        }}
-                        style={[
-                          styles.illustrationCard,
-                          {
-                            backgroundColor: themeColors.card,
-                            borderColor: themeColors.cardBorder,
-                          },
-                        ]}
-                      >
-                        <Image
-                          source={{ uri: imgUrl }}
-                          style={styles.illustrationImg}
-                          resizeMode="cover"
-                        />
-                        <View style={styles.illustrationFooter}>
-                          <Text
-                            style={[
-                              styles.illustrationCaption,
-                              { color: themeColors.narrationText, fontFamily: activeFont.regular },
-                            ]}
-                          >
-                            {iBlock.caption || 'ภาพประกอบนิยาย'}
-                          </Text>
-                          <Text style={[styles.illustrationZoomHint, { color: themeColors.primary }]}>
-                            แตะเพื่อขยาย ↗
-                          </Text>
-                        </View>
-                      </TouchableOpacity>
-                    </View>
-                  );
-                }
-
-                return null;
-              })}
-            </Pressable>
+            {(cacheWarning || progressWarning) && <Text accessibilityRole="alert" style={[styles.loadingText, { color: themeColors.primary }]}>
+              {cacheWarning ? 'อ่านตอนนี้ได้ แต่ยังบันทึกออฟไลน์ไม่ได้ กรุณาตรวจสอบพื้นที่เครื่องแล้วลองอีกครั้ง' : 'ยังบันทึกการอ่านหรือการตั้งค่าไม่ได้ กรุณาตรวจสอบพื้นที่เครื่อง'}
+            </Text>}
+            {cacheWarning && <Pressable accessibilityRole="button" onPress={retryChapter} style={styles.navChapterBtn}>
+              <Text style={{ color: themeColors.primary }}>ลองบันทึกออฟไลน์อีกครั้ง</Text>
+            </Pressable>}
+            <ReaderStory novelId={novelId} blocks={chapter.blocks} characterMap={characterMap} colors={themeColors}
+              fontSize={fontSize} fontFamily={fontFamily} lineHeightRatio={lineHeightRatio}
+              onToggleControls={toggleControls} onSelectCharacter={setSelectedCharacter} onOpenIllustration={openIllustration} />
 
             {/* Co-Reading Community Comments Section */}
-            <ChapterCommentsSection
+            <ChapterCommentsSection key={`${novelId}:${chapterId}`}
               novelId={novelId}
               chapterId={chapterId}
               theme={currentTheme}
@@ -555,7 +379,7 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
             activeOpacity={0.7}
           >
             <Type size={16} color={themeColors.primary} />
-            <Text style={[styles.typographyBtnText, { color: themeColors.primary }]}>
+            <Text numberOfLines={1} style={[styles.typographyBtnText, { color: themeColors.primary }]}>
               {fontFamily === 'System' ? 'ระบบ' : fontFamily} · {fontSize}
             </Text>
           </TouchableOpacity>
@@ -626,260 +450,3 @@ export const ReaderScreen: React.FC<Props> = ({ route, navigation }) => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  header: {
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderBottomWidth: 1,
-  },
-  centeredRow: {
-    width: '100%',
-    alignSelf: 'center',
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  backBtn: {
-    padding: 6,
-    marginRight: 10,
-  },
-  headerTitles: {
-    flex: 1,
-  },
-  headerChapterTitle: {
-    fontSize: 14,
-    fontWeight: '700',
-  },
-  progressPercentBadge: {
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-  },
-  progressPercentText: {
-    fontSize: 12,
-    fontWeight: '700',
-  },
-  progressBarTrack: {
-    height: 2.5,
-    width: '100%',
-  },
-  progressBarFill: {
-    height: '100%',
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  loadingText: {
-    marginTop: 12,
-    fontSize: 13,
-  },
-  scrollContent: {
-    paddingHorizontal: 22,
-    paddingTop: 16,
-    paddingBottom: 110,
-  },
-  bookSpine: {
-    width: '100%',
-    alignSelf: 'center',
-  },
-  chapterHero: {
-    paddingBottom: 18,
-    marginBottom: 22,
-    borderBottomWidth: 1,
-    alignItems: 'center',
-  },
-  chapterHeroNum: {
-    fontSize: 12,
-    fontWeight: '800',
-    letterSpacing: 2,
-    marginBottom: 6,
-  },
-  chapterHeroTitle: {
-    fontSize: 18,
-    fontWeight: '800',
-    textAlign: 'center',
-    lineHeight: 25,
-  },
-  narrationBlock: {
-    letterSpacing: 0.2,
-    marginBottom: 14,
-  },
-  // Classic Novel Dialogue (Soft, Left-border Accent)
-  dialogueNovelCard: {
-    borderLeftWidth: 3.5,
-    borderTopRightRadius: 10,
-    borderBottomRightRadius: 10,
-    paddingVertical: 10,
-    paddingHorizontal: 14,
-    marginBottom: 14,
-  },
-  speakerRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 6,
-    gap: 10,
-  },
-  speakerAvatar: {
-    width: 26,
-    height: 26,
-    borderRadius: 13,
-    borderWidth: 1.5,
-  },
-  speakerAvatarPlaceholder: {
-    width: 26,
-    height: 26,
-    borderRadius: 13,
-    borderWidth: 1.5,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  speakerInitial: {
-    fontSize: 11,
-    fontWeight: '700',
-  },
-  speakerTextContainer: {
-    flex: 1,
-  },
-  speakerNameAndRole: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-    gap: 6,
-  },
-  speakerName: {
-    fontSize: 13,
-    fontWeight: '700',
-  },
-  speakerRoleBadge: {
-    paddingHorizontal: 7,
-    paddingVertical: 2,
-    borderRadius: 10,
-  },
-  speakerRoleText: {
-    fontSize: 10,
-    fontWeight: '600',
-  },
-  dialogueText: {
-    fontWeight: '500',
-  },
-  sceneBreakRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginVertical: 20,
-    gap: 12,
-  },
-  sceneBreakLine: {
-    flex: 1,
-    height: 1,
-  },
-  sceneBreakSymbol: {
-    fontSize: 14,
-  },
-  bottomChapterNav: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingTop: 24,
-    marginTop: 20,
-    borderTopWidth: 1,
-    gap: 12,
-  },
-  navChapterBtn: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 12,
-    borderRadius: 10,
-    borderWidth: 1,
-    gap: 6,
-  },
-  navChapterBtnText: {
-    fontSize: 13,
-    fontWeight: '600',
-  },
-  navChapterBtnNextText: {
-    fontSize: 13,
-    fontWeight: '600',
-    color: '#ffffff',
-  },
-  floatingBar: {
-    position: 'absolute',
-    bottom: 24,
-    alignSelf: 'center',
-    width: '90%',
-    maxWidth: 480,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderRadius: 30,
-    borderWidth: 1,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.12,
-    shadowRadius: 10,
-    elevation: 5,
-  },
-  typographyPillBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 16,
-  },
-  typographyBtnText: {
-    fontSize: 12,
-    fontWeight: '700',
-  },
-  themeGroup: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-  },
-  themeOptionBtn: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.04)',
-  },
-  illustrationBlockContainer: {
-    marginVertical: 20,
-    width: '100%',
-  },
-  illustrationCard: {
-    width: '100%',
-    borderRadius: 14,
-    borderWidth: 1,
-    overflow: 'hidden',
-  },
-  illustrationImg: {
-    width: '100%',
-    height: 340,
-    backgroundColor: 'rgba(0,0,0,0.03)',
-  },
-  illustrationFooter: {
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    gap: 8,
-  },
-  illustrationCaption: {
-    fontSize: 13,
-    flex: 1,
-    lineHeight: 18,
-  },
-  illustrationZoomHint: {
-    fontSize: 11.5,
-    fontWeight: '700',
-  },
-});

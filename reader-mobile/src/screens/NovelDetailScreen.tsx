@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   View,
   Text,
@@ -29,7 +29,7 @@ import {
   Sparkles,
   Users,
 } from 'lucide-react-native';
-import { RootStackParamList, Novel, ReaderTheme, IllustrationItem, Character } from '../types';
+import { RootStackParamList, Novel, ReaderTheme, IllustrationItem, Character, ChapterListItem, ChapterOfflineStatus } from '../types';
 import {
   fetchNovels,
   getAvailableChapterList,
@@ -39,13 +39,16 @@ import {
 } from '../services/api';
 import {
   getSavedTheme,
-  isChapterDownloaded,
+  getChapterOfflineStatus,
+  withOfflineJob,
   clearNovelOfflineStorage,
   getNovelOfflineStats,
   getIllustrationUrl,
 } from '../services/storage';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import { themes } from '../theme/colors';
+import { ScreenState } from '../components/ScreenState';
+import { OfflineImage } from '../components/OfflineImage';
 
 type DetailRouteProp = RouteProp<RootStackParamList, 'NovelDetail'>;
 type DetailNavProp = NativeStackNavigationProp<RootStackParamList, 'NovelDetail'>;
@@ -55,13 +58,23 @@ interface Props {
   navigation: DetailNavProp;
 }
 
-export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
+export const NovelDetailScreen: React.FC<Props> = props => (
+  <NovelDetailContent key={props.route.params.novelId} {...props} />
+);
+
+const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
   const { novelId } = route.params;
   const [novel, setNovel] = useState<Novel | null>(null);
-  const [chapters, setChapters] = useState<any[]>([]);
-  const [downloadedMap, setDownloadedMap] = useState<Record<string, boolean>>({});
-  const [downloadingId, setDownloadingId] = useState<string | null>(null);
-  const [isDownloadingAll, setIsDownloadingAll] = useState(false);
+  const [chapters, setChapters] = useState<ChapterListItem[]>([]);
+  const [downloadedMap, setDownloadedMap] = useState<Record<string, ChapterOfflineStatus>>({});
+  const [job, setJob] = useState<{ kind: 'single' | 'all' | 'clear'; chapterId?: string } | null>(null);
+  const busy = useRef(false);
+  const mounted = useRef(false);
+  const requestId = useRef(0);
+  const isDownloadingAll = job?.kind === 'all';
+  const downloadingId = job?.chapterId;
+  const [error, setError] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [loading, setLoading] = useState(true);
 
@@ -83,53 +96,71 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
   const [lightboxTitle, setLightboxTitle] = useState<string | undefined>();
   const [lightboxCaption, setLightboxCaption] = useState<string | undefined>();
 
-  const [refreshing, setRefreshing] = useState(false);
-
   const themeColors = themes[currentTheme];
 
-  useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', () => {
-      loadData(false);
-    });
-    loadData(true);
-    return unsubscribe;
-  }, [navigation, novelId]);
-
-  const loadData = async (showLoadingSpinner = true) => {
-    if (showLoadingSpinner) setLoading(true);
-    const theme = await getSavedTheme();
-    setCurrentTheme(theme);
-
-    const [novelList, chapterList, illustList, charList] = await Promise.all([
-      fetchNovels(),
-      getAvailableChapterList(novelId),
-      fetchIllustrations(novelId),
-      fetchCharacters(novelId),
-    ]);
-
-    const found = novelList.find((n) => n.id === novelId);
-    setNovel(found || null);
-    setChapters(chapterList);
-    setIllustrations(illustList);
-    setCharacters(charList);
-
-    // Check offline download status for each chapter
-    const statusMap: Record<string, boolean> = {};
-    for (const ch of chapterList) {
-      statusMap[ch.id] = await isChapterDownloaded(novelId, ch.id);
+  const loadData = useCallback(async (isActive: () => boolean, preferCache = true) => {
+    try {
+      const [theme, novelList, chapterList] = await Promise.all([
+        getSavedTheme(), fetchNovels(preferCache), getAvailableChapterList(novelId, preferCache),
+      ]);
+      const statuses = await Promise.all(chapterList.map(async ch => [ch.id, await getChapterOfflineStatus(novelId, ch.id)] as const));
+      const stats = await getNovelOfflineStats(novelId);
+      if (!isActive()) return;
+      setCurrentTheme(theme);
+      setNovel(novelList.find(n => n.id === novelId) ?? null);
+      setChapters(chapterList);
+      setDownloadedMap(Object.fromEntries(statuses));
+      setStorageStats(stats);
+      setError(false);
+    } catch {
+      if (isActive()) setError(true);
+    } finally {
+      if (isActive()) setLoading(false);
     }
-    setDownloadedMap(statusMap);
+  }, [novelId]);
 
-    const stats = await getNovelOfflineStats(novelId);
-    setStorageStats(stats);
+  useEffect(() => {
+    mounted.current = true;
+    const refresh = () => {
+      if (busy.current) return;
+      const id = ++requestId.current;
+      const isActive = () => mounted.current && requestId.current === id;
+      void (async () => {
+        await loadData(isActive);
+        if (isActive() && !busy.current) await loadData(isActive, false);
+      })();
+      void fetchIllustrations(novelId).then(data => {
+        if (mounted.current && requestId.current === id) setIllustrations(data);
+      });
+      void fetchCharacters(novelId, true).then(data => {
+        if (mounted.current && requestId.current === id) setCharacters(data);
+      });
+    };
+    const unsubscribe = navigation.addListener('focus', refresh);
+    refresh();
+    return () => { mounted.current = false; unsubscribe(); };
+  }, [loadData, navigation, novelId]);
 
-    setLoading(false);
+  const retry = () => {
+    setLoading(true);
+    const id = ++requestId.current;
+    void loadData(() => mounted.current && requestId.current === id, false);
   };
 
   const handleRefresh = async () => {
+    if (refreshing || busy.current) return;
     setRefreshing(true);
-    await loadData(false);
-    setRefreshing(false);
+    const id = ++requestId.current;
+    const isActive = () => mounted.current && requestId.current === id;
+    try {
+      await Promise.all([
+        loadData(isActive, false),
+        fetchCharacters(novelId).then(data => { if (isActive()) setCharacters(data); }),
+        fetchIllustrations(novelId).then(data => { if (isActive()) setIllustrations(data); }),
+      ]);
+    } finally {
+      if (mounted.current) setRefreshing(false);
+    }
   };
 
   const openLightbox = (url: string, title?: string, caption?: string) => {
@@ -141,70 +172,69 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
 
   const refreshStorageStats = async () => {
     const stats = await getNovelOfflineStats(novelId);
-    setStorageStats(stats);
+    if (mounted.current) setStorageStats(stats);
   };
 
-  const handleDownloadChapter = async (chapterId: string) => {
-    if (downloadingId) return;
-    setDownloadingId(chapterId);
-    const success = await downloadChapterOnDemand(novelId, chapterId);
-    if (success) {
-      setDownloadedMap((prev) => ({ ...prev, [chapterId]: true }));
-      await refreshStorageStats();
-    } else {
-      Alert.alert('เกิดข้อผิดพลาด', 'ไม่สามารถดาวน์โหลดตอนได้ กรุณาตรวจสอบอินเทอร์เน็ต');
+  const runJob = async (kind: 'single' | 'all' | 'clear', work: () => Promise<void>, chapterId?: string) => {
+    if (busy.current) return;
+    busy.current = true;
+    setJob({ kind, chapterId });
+    // Invalidate any status scan which started before this operation.
+    requestId.current++;
+    try {
+      await withOfflineJob(novelId, work);
+    } catch (cause) {
+      if (mounted.current) Alert.alert('จัดการข้อมูลไม่ได้', cause instanceof Error ? cause.message : 'กรุณาลองอีกครั้ง');
+    } finally {
+      if (mounted.current) { await refreshStorageStats(); setJob(null); }
+      busy.current = false;
     }
-    setDownloadingId(null);
   };
 
-  const handleDownloadAll = async () => {
-    if (isDownloadingAll) return;
-    setIsDownloadingAll(true);
-    let count = 0;
-    for (const ch of chapters) {
-      if (!downloadedMap[ch.id]) {
-        setDownloadingId(ch.id);
-        const ok = await downloadChapterOnDemand(novelId, ch.id);
-        if (ok) {
-          setDownloadedMap((prev) => ({ ...prev, [ch.id]: true }));
-          count++;
-        }
+  const handleDownloadChapter = (chapterId: string) => runJob('single', async () => {
+    const result = await downloadChapterOnDemand(novelId, chapterId);
+    if (!mounted.current) return;
+    setDownloadedMap(previous => ({ ...previous, [chapterId]: result.status === 'failed' ? previous[chapterId] ?? 'missing' : result.status }));
+    if (result.status === 'failed') Alert.alert('ดาวน์โหลดไม่ได้', 'ตรวจสอบอินเทอร์เน็ตและพื้นที่เครื่อง แล้วลองอีกครั้ง');
+    if (result.status === 'text-only') Alert.alert('บันทึกข้อความแล้ว', 'ภาพประกอบยังไม่ครบ แตะดาวน์โหลดอีกครั้งเพื่อโหลดภาพที่ขาด');
+  }, chapterId);
+
+  const handleDownloadAll = () => runJob('all', async () => {
+    const counts = { complete: 0, 'text-only': 0, failed: 0 };
+    for (const chapter of chapters) {
+      if (!mounted.current) break;
+      if (downloadedMap[chapter.id] === 'complete') continue;
+      setJob({ kind: 'all', chapterId: chapter.id });
+      const result = await downloadChapterOnDemand(novelId, chapter.id);
+      counts[result.status]++;
+      if (mounted.current && result.status !== 'failed') {
+        const status = result.status;
+        setDownloadedMap(previous => ({ ...previous, [chapter.id]: status }));
       }
     }
-    setDownloadingId(null);
-    setIsDownloadingAll(false);
-    await refreshStorageStats();
-    Alert.alert('ดาวน์โหลดสำเร็จ', `ดาวน์โหลดเพิ่ม ${count} ตอนเรียบร้อยแล้ว อ่านออฟไลน์ได้ทันที!`);
-  };
+    if (mounted.current) Alert.alert('ผลการดาวน์โหลด', `ครบ ${counts.complete} ตอน\nข้อความพร้อม รูปยังไม่ครบ ${counts['text-only']} ตอน\nไม่สำเร็จ ${counts.failed} ตอน`);
+  });
 
   const handleClearAllOffline = () => {
-    Alert.alert(
-      'ล้างข้อมูลออฟไลน์',
-      'คุณต้องการลบไฟล์ตอนทั้งหมดที่ดาวน์โหลดไว้ในเครื่องใช่หรือไม่? (ยังสามารถดาวน์โหลดใหม่ได้ตลอดเวลา)',
-      [
-        { text: 'ยกเลิก', style: 'cancel' },
-        {
-          text: 'ลบข้อมูล',
-          style: 'destructive',
-          onPress: async () => {
-            await clearNovelOfflineStorage(novelId);
-            // Re-sync status
-            const statusMap: Record<string, boolean> = {};
-            for (const ch of chapters) {
-              statusMap[ch.id] = await isChapterDownloaded(novelId, ch.id);
-            }
-            setDownloadedMap(statusMap);
-            await refreshStorageStats();
+    if (busy.current) return;
+    Alert.alert('ล้างข้อมูลออฟไลน์', 'ลบไฟล์ที่ดาวน์โหลดของเรื่องนี้หรือไม่? ตอนที่มากับแอปยังอ่านได้ และตำแหน่งอ่านจะยังอยู่', [
+      { text: 'ยกเลิก', style: 'cancel' },
+      { text: 'ลบข้อมูล', style: 'destructive', onPress: () => {
+        void runJob('clear', async () => {
+          await clearNovelOfflineStorage(novelId);
+          const statuses = await Promise.all(chapters.map(async chapter => [chapter.id, await getChapterOfflineStatus(novelId, chapter.id)] as const));
+          if (mounted.current) {
+            setDownloadedMap(Object.fromEntries(statuses));
             setShowSettingsModal(false);
-            Alert.alert('ลบข้อมูลเรียบร้อย', 'คืนพื้นที่ความจุเครื่องเรียบร้อยแล้ว');
-          },
-        },
-      ]
-    );
+            Alert.alert('ลบข้อมูลเรียบร้อย', 'ลบไฟล์ที่ดาวน์โหลดของเรื่องนี้แล้ว');
+          }
+        });
+      } },
+    ]);
   };
 
-  const downloadedCount = Object.values(downloadedMap).filter(Boolean).length;
-  const remainingCount = Math.max(0, chapters.length - downloadedCount);
+  const downloadedCount = Object.values(downloadedMap).filter(status => status !== 'missing').length;
+  const remainingCount = chapters.filter(chapter => downloadedMap[chapter.id] !== 'complete').length;
 
   const formatFileSize = (bytes: number) => {
     if (bytes === 0) return '0 KB';
@@ -233,6 +263,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
 
           <TouchableOpacity
             style={styles.iconButton}
+            accessibilityLabel="จัดการข้อมูลออฟไลน์"
             onPress={() => {
               refreshStorageStats();
               setShowSettingsModal(true);
@@ -243,22 +274,15 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
         </View>
       </View>
 
-      {loading || !novel ? (
+      {loading ? (
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color={themeColors.primary} />
         </View>
+      ) : error || !novel ? (
+        <ScreenState colors={themeColors} message={error ? 'โหลดรายละเอียดไม่ได้ กรุณาลองอีกครั้ง' : 'ไม่พบข้อมูลนิยายเรื่องนี้'} onRetry={retry} onBack={() => navigation.goBack()} backLabel="กลับชั้นหนังสือ" />
       ) : (
-        <ScrollView
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={false}
-          refreshControl={
-            <RefreshControl
-              refreshing={refreshing}
-              onRefresh={handleRefresh}
-              tintColor={themeColors.primary}
-              colors={[themeColors.primary]}
-            />
-          }
+        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}
+          refreshControl={<RefreshControl testID="chapter-refresh" refreshing={refreshing} enabled={job === null} onRefresh={() => { void handleRefresh(); }} tintColor={themeColors.primary} colors={[themeColors.primary]} />}
         >
           {/* Novel Info Banner */}
           <View style={styles.novelInfoCard}>
@@ -284,7 +308,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
               <View style={[styles.offlineStatusBar, { backgroundColor: themeColors.card, borderColor: themeColors.border }]}>
                 <HardDrive size={13} color={themeColors.textMuted} />
                 <Text style={[styles.offlineStatsText, { color: themeColors.textMuted }]}>
-                  ออฟไลน์ในเครื่อง: {downloadedCount}/{chapters.length} ตอน
+                  เนื้อหาออฟไลน์: {downloadedCount}/{chapters.length} ตอน
                 </Text>
               </View>
             </View>
@@ -344,8 +368,10 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
           {/* TAB 1: CHAPTERS LIST */}
           {activeTab === 'chapters' && (
             <View>
+              {chapters.length === 0 && <ScreenState colors={themeColors} message="ยังไม่มีตอนให้อ่าน" onRetry={retry} />}
               {chapters.map((ch) => {
-                const isDownloaded = downloadedMap[ch.id];
+                const offlineStatus = downloadedMap[ch.id] ?? 'missing';
+                const isDownloaded = offlineStatus === 'complete';
                 const isDownloading = downloadingId === ch.id;
                 const isCh0 = ch.chapterNumber === 0;
 
@@ -398,6 +424,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
                       </View>
                     </TouchableOpacity>
 
+                    {offlineStatus === 'text-only' && <Text style={{ color: themeColors.textMuted, fontSize: 11, maxWidth: 80 }}>ข้อความพร้อม รูปยังไม่ครบ</Text>}
                     {/* Right Action: Show download icon only if not downloaded */}
                     <View style={styles.chapterActions}>
                       {isDownloading ? (
@@ -405,7 +432,9 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
                       ) : !isDownloaded ? (
                         <TouchableOpacity
                           style={[styles.downloadIconBtn, { backgroundColor: themeColors.primaryBg }]}
-                          onPress={() => handleDownloadChapter(ch.id)}
+                          disabled={job !== null}
+                          accessibilityLabel={offlineStatus === 'text-only' ? 'ดาวน์โหลดภาพที่ขาด' : 'ดาวน์โหลดตอน'}
+                          onPress={() => { void handleDownloadChapter(ch.id); }}
                           hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                         >
                           <Download size={16} color={themeColors.primary} />
@@ -494,6 +523,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
                   </Text>
                 </View>
 
+                {illustrations.length === 0 && <Text style={{ color: themeColors.textMuted }}>ยังไม่มีภาพประกอบที่แสดงได้</Text>}
                 <View style={styles.illustrationsGrid}>
                   {illustrations.map((item) => {
                     const imgUrl = getIllustrationUrl(novelId, item.filename);
@@ -514,7 +544,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
                         activeOpacity={0.85}
                         onPress={() => openLightbox(imgUrl, item.title, item.caption)}
                       >
-                        <Image source={{ uri: imgUrl }} style={styles.gridImage} resizeMode="cover" />
+                        <OfflineImage novelId={novelId} src={item.filename} style={styles.gridImage} color={themeColors.primary} />
                         <View style={styles.gridItemOverlay}>
                           <View style={[styles.gridTypeBadge, { backgroundColor: 'rgba(0,0,0,0.68)' }]}>
                             <Text style={styles.gridTypeBadgeText}>{typeBadge}</Text>
@@ -549,6 +579,7 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
         imageUrl={lightboxUrl}
         title={lightboxTitle}
         caption={lightboxCaption}
+        novelId={novelId}
         onClose={() => setLightboxVisible(false)}
       />
 
@@ -585,13 +616,13 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
             {/* Storage Info Card */}
             <View style={[styles.modalInfoBox, { backgroundColor: themeColors.background, borderColor: themeColors.border }]}>
               <View style={styles.infoRow}>
-                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>ตอนที่บันทึกแล้ว:</Text>
+                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>ตอนที่มีเนื้อหาอ่านได้:</Text>
                 <Text style={[styles.infoValue, { color: themeColors.text }]}>
                   {downloadedCount} / {chapters.length} ตอน
                 </Text>
               </View>
               <View style={styles.infoRow}>
-                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>พื้นที่ในเครื่องที่ใช้:</Text>
+                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>พื้นที่ไฟล์ที่ลบคืนได้:</Text>
                 <Text style={[styles.infoValue, { color: themeColors.text }]}>
                   {formatFileSize(storageStats.totalBytes)}
                 </Text>
@@ -600,15 +631,16 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
 
             {/* Action 1: Download All */}
             <TouchableOpacity
+              accessibilityLabel="ดาวน์โหลดตอนที่ยังไม่ครบทั้งหมด"
               style={[
                 styles.modalActionBtn,
                 {
                   backgroundColor: remainingCount === 0 ? themeColors.border : themeColors.primary,
-                  opacity: remainingCount === 0 || isDownloadingAll ? 0.6 : 1,
+                  opacity: remainingCount === 0 || job !== null ? 0.6 : 1,
                 },
               ]}
-              onPress={handleDownloadAll}
-              disabled={remainingCount === 0 || isDownloadingAll}
+              onPress={() => { void handleDownloadAll(); }}
+              disabled={remainingCount === 0 || job !== null}
             >
               {isDownloadingAll ? (
                 <ActivityIndicator size="small" color="#ffffff" />
@@ -628,16 +660,17 @@ export const NovelDetailScreen: React.FC<Props> = ({ route, navigation }) => {
 
             {/* Action 2: Clear Offline Storage */}
             <TouchableOpacity
+              accessibilityLabel="ลบไฟล์ออฟไลน์ทั้งหมดของเรื่องนี้"
               style={[
                 styles.modalDestructiveBtn,
                 {
                   borderColor: '#ef444433',
                   backgroundColor: '#ef444410',
-                  opacity: storageStats.count === 0 ? 0.4 : 1,
+                  opacity: storageStats.totalBytes === 0 || job !== null ? 0.4 : 1,
                 },
               ]}
               onPress={handleClearAllOffline}
-              disabled={storageStats.count === 0}
+              disabled={storageStats.totalBytes === 0 || job !== null}
             >
               <Trash2 size={16} color="#ef4444" />
               <Text style={styles.modalDestructiveText}>ลบไฟล์ออฟไลน์ทั้งหมดของเรื่องนี้</Text>
@@ -667,6 +700,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   iconButton: {
+    minWidth: 44,
+    minHeight: 44,
     padding: 6,
   },
   headerTitle: {
@@ -795,6 +830,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   downloadIconBtn: {
+    minWidth: 44,
+    minHeight: 44,
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 6,
     borderRadius: 8,
   },
@@ -829,6 +868,10 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   modalCloseBtn: {
+    minWidth: 44,
+    minHeight: 44,
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 4,
   },
   modalInfoBox: {
@@ -851,6 +894,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   modalActionBtn: {
+    minHeight: 44,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
@@ -865,6 +909,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   modalDestructiveBtn: {
+    minHeight: 44,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',

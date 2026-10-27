@@ -1,0 +1,267 @@
+import { StyleSheet } from 'react-native';
+
+export const readerStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  header: {
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+  },
+  centeredRow: {
+    width: '100%',
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  backBtn: {
+    minWidth: 44,
+    minHeight: 44,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 6,
+    marginRight: 10,
+  },
+  headerTitles: {
+    flex: 1,
+  },
+  headerChapterTitle: {
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  progressPercentBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+  },
+  progressPercentText: {
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  progressBarTrack: {
+    height: 2.5,
+    width: '100%',
+  },
+  progressBarFill: {
+    height: '100%',
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadingText: {
+    marginTop: 12,
+    fontSize: 13,
+  },
+  scrollContent: {
+    paddingHorizontal: 22,
+    paddingTop: 16,
+    paddingBottom: 110,
+  },
+  bookSpine: {
+    width: '100%',
+    alignSelf: 'center',
+  },
+  chapterHero: {
+    paddingBottom: 18,
+    marginBottom: 22,
+    borderBottomWidth: 1,
+    alignItems: 'center',
+  },
+  chapterHeroNum: {
+    fontSize: 12,
+    fontWeight: '800',
+    letterSpacing: 2,
+    marginBottom: 6,
+  },
+  chapterHeroTitle: {
+    fontSize: 18,
+    fontWeight: '800',
+    textAlign: 'center',
+    lineHeight: 25,
+  },
+  narrationBlock: {
+    letterSpacing: 0.2,
+    marginBottom: 14,
+  },
+  // Classic Novel Dialogue (Soft, Left-border Accent)
+  dialogueNovelCard: {
+    borderLeftWidth: 3.5,
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    marginBottom: 14,
+  },
+  speakerRow: {
+    minHeight: 44,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+    gap: 10,
+  },
+  speakerAvatar: {
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    borderWidth: 1.5,
+  },
+  speakerAvatarPlaceholder: {
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    borderWidth: 1.5,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  speakerInitial: {
+    fontSize: 11,
+    fontWeight: '700',
+  },
+  speakerTextContainer: {
+    flex: 1,
+  },
+  speakerNameAndRole: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    gap: 6,
+  },
+  speakerName: {
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  speakerRoleBadge: {
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+    borderRadius: 10,
+  },
+  speakerRoleText: {
+    fontSize: 10,
+    fontWeight: '600',
+  },
+  dialogueText: {
+    minHeight: 44,
+    fontWeight: '500',
+  },
+  sceneBreakRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 20,
+    gap: 12,
+  },
+  sceneBreakLine: {
+    flex: 1,
+    height: 1,
+  },
+  sceneBreakSymbol: {
+    fontSize: 14,
+  },
+  bottomChapterNav: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingTop: 24,
+    marginTop: 20,
+    borderTopWidth: 1,
+    gap: 12,
+  },
+  navChapterBtn: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    borderRadius: 10,
+    borderWidth: 1,
+    gap: 6,
+  },
+  navChapterBtnText: {
+    fontSize: 13,
+    fontWeight: '600',
+  },
+  navChapterBtnNextText: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: '#ffffff',
+  },
+  floatingBar: {
+    position: 'absolute',
+    bottom: 24,
+    alignSelf: 'center',
+    width: '94%',
+    maxWidth: 480,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+    borderRadius: 30,
+    borderWidth: 1,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.12,
+    shadowRadius: 10,
+    elevation: 5,
+  },
+  typographyPillBtn: {
+    minHeight: 44,
+    flexShrink: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 16,
+  },
+  typographyBtnText: {
+    flexShrink: 1,
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  themeGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+  themeOptionBtn: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.04)',
+  },
+  illustrationBlockContainer: {
+    marginVertical: 20,
+    width: '100%',
+  },
+  illustrationCard: {
+    width: '100%',
+    borderRadius: 14,
+    borderWidth: 1,
+    overflow: 'hidden',
+  },
+  illustrationImg: {
+    width: '100%',
+    height: 340,
+    backgroundColor: 'rgba(0,0,0,0.03)',
+  },
+  illustrationFooter: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    gap: 8,
+  },
+  illustrationCaption: {
+    fontSize: 13,
+    flex: 1,
+    lineHeight: 18,
+  },
+  illustrationZoomHint: {
+    fontSize: 11.5,
+    fontWeight: '700',
+  },
+});

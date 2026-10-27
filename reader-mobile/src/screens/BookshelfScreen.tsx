@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import {
   View,
   Text,
@@ -15,26 +15,25 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import {
   BookOpen,
-  Sparkles,
-  DownloadCloud,
   ChevronRight,
   Play,
-  Users,
-  Feather,
   Sun,
   Moon,
   Coffee,
-  CheckCircle2,
 } from 'lucide-react-native';
 import { Novel, RootStackParamList, ReaderTheme, ReadingProgress, Character } from '../types';
 import { fetchNovels, fetchCharacters, getAvailableChapterList } from '../services/api';
 import {
   getSavedTheme,
+  readMetadata,
   saveTheme,
   getReadingProgress,
   isChapterDownloaded,
 } from '../services/storage';
 import { themes } from '../theme/colors';
+import { isNovelList } from '../services/validation';
+import bundledNovels from '../data/novels.json';
+import { ScreenState } from '../components/ScreenState';
 import { CharacterDetailModal, getAvatarSource } from '../components/CharacterDetailModal';
 
 type BookshelfNavProp = NativeStackNavigationProp<RootStackParamList, 'Bookshelf'>;
@@ -46,6 +45,10 @@ interface Props {
 export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
   const [novels, setNovels] = useState<Novel[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
+  const activeRequest = useRef(0);
+  const mounted = useRef(false);
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [lastProgress, setLastProgress] = useState<Record<string, ReadingProgress | null>>({});
   const [charactersMap, setCharactersMap] = useState<Record<string, Character[]>>({});
@@ -53,64 +56,80 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
   const [selectedTag, setSelectedTag] = useState<string>('all');
   const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
 
-  const [refreshing, setRefreshing] = useState(false);
-
   const themeColors = themes[currentTheme];
 
-  useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', () => {
-      loadData(false);
-    });
-    loadData(true);
-    return unsubscribe;
-  }, [navigation]);
-
-  const loadData = async (showSpinner = true) => {
-    if (showSpinner) setLoading(true);
-    const theme = await getSavedTheme();
-    setCurrentTheme(theme);
-
-    const novelList = await fetchNovels();
-    setNovels(novelList);
-
-    const progMap: Record<string, ReadingProgress | null> = {};
-    const charMap: Record<string, Character[]> = {};
-    const dlMap: Record<string, number> = {};
-
-    for (const n of novelList) {
-      // Progress
-      progMap[n.id] = await getReadingProgress(n.id);
-
-      // Characters
-      charMap[n.id] = await fetchCharacters(n.id);
-
-      // Download counts
-      const chList = await getAvailableChapterList(n.id);
-      let downloaded = 0;
-      for (const ch of chList) {
-        if (await isChapterDownloaded(n.id, ch.id)) {
-          downloaded++;
-        }
-      }
-      dlMap[n.id] = downloaded;
+  const loadData = useCallback(async (isActive: () => boolean) => {
+    try {
+      const [theme, cached] = await Promise.all([getSavedTheme(), readMetadata('novels', isNovelList)]);
+      if (!isActive()) return;
+      setCurrentTheme(theme);
+      const loadExtras = async (novelList: Novel[]) => {
+        await Promise.all(novelList.map(async novel => {
+          const progress = await getReadingProgress(novel.id);
+          if (!isActive()) return;
+          setLastProgress(previous => ({ ...previous, [novel.id]: progress }));
+          const [characters, chapters] = await Promise.all([
+            fetchCharacters(novel.id, true), getAvailableChapterList(novel.id, true),
+          ]);
+          const statuses = await Promise.all(chapters.map(ch => isChapterDownloaded(novel.id, ch.id)));
+          if (!isActive()) return;
+          setCharactersMap(previous => ({ ...previous, [novel.id]: characters }));
+          setDownloadCountMap(previous => ({ ...previous, [novel.id]: statuses.filter(Boolean).length }));
+        }));
+      };
+      const initialNovels = cached ?? bundledNovels as Novel[];
+      setNovels(initialNovels);
+      setLoading(false);
+      // Progress comes from disk immediately, independently of catalog refresh.
+      void loadExtras(initialNovels).catch(() => { if (isActive()) setError(true); });
+      const freshNovels = await fetchNovels();
+      if (!isActive()) return;
+      setNovels(freshNovels);
+      setError(false);
+      await loadExtras(freshNovels);
+    } catch {
+      if (isActive()) { setError(true); setLoading(false); }
     }
+  }, []);
 
-    setLastProgress(progMap);
-    setCharactersMap(charMap);
-    setDownloadCountMap(dlMap);
-    setLoading(false);
+  useEffect(() => {
+    mounted.current = true;
+    const refresh = () => {
+      const request = ++activeRequest.current;
+      void loadData(() => mounted.current && request === activeRequest.current);
+    };
+    const unsubscribe = navigation.addListener('focus', refresh);
+    refresh();
+    return () => { mounted.current = false; unsubscribe(); };
+  }, [navigation, loadData]);
+
+  const retry = () => {
+    setLoading(true);
+    const request = ++activeRequest.current;
+    void loadData(() => mounted.current && request === activeRequest.current);
   };
 
   const handleToggleTheme = async () => {
     const nextTheme: ReaderTheme =
       currentTheme === 'light' ? 'sepia' : currentTheme === 'sepia' ? 'dark' : 'light';
     setCurrentTheme(nextTheme);
-    await saveTheme(nextTheme);
+    await saveTheme(nextTheme).catch(() => setError(true));
+  };
+
+  const handleRefresh = async () => {
+    if (refreshing) return;
+    setRefreshing(true);
+    const request = ++activeRequest.current;
+    try {
+      await loadData(() => mounted.current && request === activeRequest.current);
+    } finally {
+      if (mounted.current) setRefreshing(false);
+    }
   };
 
   // Find most recent novel & chapter read
   const mostRecentProgress = Object.entries(lastProgress)
-    .filter(([_, p]) => p !== null)
+    .filter(([novelId, progress]) => progress !== null && novels.some(novel => novel.id === novelId))
     .sort((a, b) => (b[1]?.updatedAt || 0) - (a[1]?.updatedAt || 0))[0];
 
   const continueNovel = mostRecentProgress
@@ -134,12 +153,6 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
       return { uri: coverUrl };
     }
     return { uri: `https://phongsathondev.github.io/Yomiori/${coverUrl.replace(/^\//, '')}` };
-  };
-
-  const handleRefresh = async () => {
-    setRefreshing(true);
-    await loadData(false);
-    setRefreshing(false);
   };
 
   return (
@@ -177,18 +190,13 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
             กำลังโหลด...
           </Text>
         </View>
+      ) : error && novels.length === 0 ? (
+        <ScreenState colors={themeColors} message="โหลดชั้นหนังสือไม่ได้ กรุณาลองอีกครั้ง" onRetry={retry} />
+      ) : novels.length === 0 ? (
+        <ScreenState colors={themeColors} message="ยังไม่มีนิยายในชั้นหนังสือ" onRetry={retry} />
       ) : (
-        <ScrollView
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={false}
-          refreshControl={
-            <RefreshControl
-              refreshing={refreshing}
-              onRefresh={handleRefresh}
-              tintColor={themeColors.primary}
-              colors={[themeColors.primary]}
-            />
-          }
+        <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}
+          refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => { void handleRefresh(); }} tintColor={themeColors.primary} colors={[themeColors.primary]} />}
         >
           {/* HERO: CONTINUE READING CARD */}
           {continueNovel && (
@@ -305,13 +313,14 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
             ))}
           </ScrollView>
 
+          {filteredNovels.length === 0 && <ScreenState colors={themeColors} message="ไม่มีนิยายในหมวดนี้" onBack={() => setSelectedTag('all')} backLabel="ดูทั้งหมด" />}
+          {error && <ScreenState colors={themeColors} message="รีเฟรชข้อมูลบางส่วนไม่ได้" onRetry={retry} />}
           {/* NOVELS LIST CARDS */}
           {filteredNovels.map((novel) => {
             const progress = lastProgress[novel.id];
             const currentChapterId = progress?.chapterId || 'ch-01';
             const chars = charactersMap[novel.id] || [];
             const downloadedCount = downloadCountMap[novel.id] || 0;
-            const isFullyDownloaded = downloadedCount >= 25;
 
             return (
               <View

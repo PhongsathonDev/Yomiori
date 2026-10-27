@@ -1,221 +1,141 @@
-import { Chapter, Character, Novel, IllustrationItem, NovelManifest } from '../types';
-import { saveChapterOffline, loadChapterOffline, isChapterDownloaded } from './storage';
-
-// Bundled fallback data
+import { Chapter, Character, Novel, IllustrationItem, NovelManifest, CommentItem, ChapterListItem, ChapterDownloadResult, ChapterLoadResult } from '../types';
+import {
+  saveChapterOffline, loadChapterOffline, getOfflineGeneration, cacheIllustrationOffline,
+  readMetadata, saveMetadata, getUserComments, getLikedCommentIds,
+} from './storage';
+import { requestJson } from './request';
+import { isChapter, isNovelList, isCharacterList, isManifest, isIllustrationList, isSafeId, isRecord } from './validation';
 import bundledNovels from '../data/novels.json';
 import bundledKyudoCharacters from '../data/novels/kyudo-senpai/characters.json';
 import bundledBoyishCharacters from '../data/novels/boyish-friend/characters.json';
 import bundledBlackCatCharacters from '../data/novels/black-cat-hangout/characters.json';
 import { blackCatChapters } from '../data/novels/black-cat-hangout/chapters';
+import bundledKyudoComments from '../data/novels/kyudo-senpai/comments.json';
+import bundledBoyishComments from '../data/novels/boyish-friend/comments.json';
+import bundledIdolComments from '../data/novels/idol-neighbor/comments.json';
+import bundledBlackCatComments from '../data/novels/black-cat-hangout/comments.json';
 
-// GitHub Pages Headless CDN Base URL
 export const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
 
-export async function fetchNovels(): Promise<Novel[]> {
-  let remoteNovels: Novel[] = [];
+async function metadata<T>(key: string, url: string, validate: (data: unknown) => data is T, preferCache = false): Promise<T | null> {
+  const cached = await readMetadata(key, validate);
+  if (preferCache && cached !== null) return cached;
   try {
-    const res = await fetch(`${CDN_BASE_URL}/novels.json?_t=${Date.now()}`);
-    if (res.ok) {
-      remoteNovels = (await res.json()) as Novel[];
-    }
-  } catch (err) {
-    console.log('Using offline bundled novels data:', err);
-  }
-
-  // Merge remote novels with bundled novels so newly added novels appear immediately!
-  const merged = [...remoteNovels];
-  const existingIds = new Set(merged.map((n) => n.id));
-  for (const b of (bundledNovels as Novel[])) {
-    if (!existingIds.has(b.id)) {
-      merged.push(b);
-      existingIds.add(b.id);
-    }
-  }
-
-  return merged.length > 0 ? merged : (bundledNovels as Novel[]);
+    const value = await requestJson(url);
+    if (!validate(value)) throw new Error('Invalid metadata');
+    await saveMetadata(key, value).catch(() => undefined);
+    return value;
+  } catch { return cached; }
 }
 
-export async function fetchCharacters(novelId: string): Promise<Character[]> {
-  try {
-    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/characters.json?_t=${Date.now()}`);
-    if (res.ok) {
-      const data = await res.json();
-      return data as Character[];
-    }
-  } catch (err) {
-    console.log('Using offline bundled characters data:', err);
-  }
-  if (novelId === 'kyudo-senpai') {
-    return bundledKyudoCharacters as Character[];
-  }
-  if (novelId === 'boyish-friend') {
-    return bundledBoyishCharacters as Character[];
-  }
-  if (novelId === 'black-cat-hangout') {
-    return bundledBlackCatCharacters as Character[];
-  }
+export async function fetchNovels(preferCache = false): Promise<Novel[]> {
+  const remote = await metadata('novels', `${CDN_BASE_URL}/novels.json`, isNovelList, preferCache) ?? [];
+  const ids = new Set(remote.map(n => n.id));
+  return [...remote, ...(bundledNovels as Novel[]).filter(n => !ids.has(n.id))];
+}
+
+export async function fetchCharacters(novelId: string, preferCache = false): Promise<Character[]> {
+  if (!isSafeId(novelId)) return [];
+  const remote = await metadata(`characters_${novelId}`, `${CDN_BASE_URL}/novels/${novelId}/characters.json`, isCharacterList, preferCache);
+  if (remote) return remote;
+  if (novelId === 'kyudo-senpai') return bundledKyudoCharacters as Character[];
+  if (novelId === 'boyish-friend') return bundledBoyishCharacters as Character[];
+  if (novelId === 'black-cat-hangout') return bundledBlackCatCharacters as Character[];
   return [];
 }
 
 export async function fetchIllustrations(novelId: string): Promise<IllustrationItem[]> {
+  if (!isSafeId(novelId)) return [];
+  return await metadata(`illustrations_${novelId}`, `${CDN_BASE_URL}/novels/${novelId}/illustrations.json`, isIllustrationList) ?? [];
+}
+
+async function fetchChapter(novelId: string, chapterId: string): Promise<Chapter> {
+  if (!isSafeId(novelId) || !isSafeId(chapterId)) throw new Error('Invalid chapter ID');
   try {
-    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/illustrations.json?_t=${Date.now()}`);
-    if (res.ok) {
-      const data = await res.json();
-      return data as IllustrationItem[];
-    }
-  } catch (err) {
-    console.log('Using offline bundled illustrations data:', err);
+    const value = await requestJson(`${CDN_BASE_URL}/novels/${novelId}/chapters/${chapterId}.json`);
+    if (!isChapter(value, novelId, chapterId)) throw new Error('Invalid chapter response');
+    return value;
+  } catch (error) {
+    const bundled = getBundledChapter(novelId, chapterId);
+    if (bundled && isChapter(bundled, novelId, chapterId)) return bundled;
+    throw error;
   }
-  return [];
 }
 
 export function getBundledChapter(novelId: string, chapterId: string): Chapter | null {
-  if (novelId === 'black-cat-hangout') {
-    return (blackCatChapters as Chapter[]).find((c) => c.id === chapterId) || null;
-  }
-  return null;
+  return novelId === 'black-cat-hangout'
+    ? (blackCatChapters as Chapter[]).find(chapter => chapter.id === chapterId) ?? null : null;
 }
 
-/**
- * Fetch chapter:
- * 1. Checks if stored in offline FileSystem first (Instant & Offline-first)
- * 2. If not offline, fetches from GitHub Pages CDN
- * 3. Falls back to bundled data if CDN is missing/offline (e.g. newly added chapters)
- * 4. Saves to offline FileSystem so subsequent reads are instant and offline-ready!
- */
-export async function getChapter(novelId: string, chapterId: string): Promise<Chapter | null> {
-  // 1. Try offline storage first
+async function cacheChapterImages(chapter: Chapter, generation: number): Promise<boolean> {
+  let complete = true;
+  const sources = new Set(chapter.blocks.filter(b => b.type === 'illustration').map(b => b.src));
+  for (const src of sources) {
+    if (generation !== getOfflineGeneration(chapter.novelId)) return false;
+    try { await cacheIllustrationOffline(chapter.novelId, src, generation); } catch { complete = false; }
+  }
+  return complete;
+}
+
+/** A cache failure never discards successfully fetched reading content. */
+export async function getChapterForReading(novelId: string, chapterId: string): Promise<ChapterLoadResult> {
+  const generation = getOfflineGeneration(novelId);
   const offline = await loadChapterOffline(novelId, chapterId);
-  if (offline) {
-    return offline;
-  }
-
-  // 2. Fetch from CDN
+  if (offline) return { chapter: offline, cacheWarning: false };
   try {
-    const url = `${CDN_BASE_URL}/novels/${novelId}/chapters/${chapterId}.json`;
-    const res = await fetch(url);
-    if (res.ok) {
-      const chapter = (await res.json()) as Chapter;
-      // Auto-cache so it's offline for next time
-      await saveChapterOffline(chapter);
-      return chapter;
-    }
-  } catch (err) {
-    console.warn(`Failed to fetch ${chapterId} from CDN:`, err);
-  }
-
-  // 3. Fallback to bundled chapters
-  const bundled = getBundledChapter(novelId, chapterId);
-  if (bundled) {
-    await saveChapterOffline(bundled).catch(() => {});
-    return bundled;
-  }
-
-  return null;
+    const chapter = await fetchChapter(novelId, chapterId);
+    let cacheWarning = false;
+    try { await saveChapterOffline(chapter, generation); } catch { cacheWarning = true; }
+    if (!cacheWarning) void cacheChapterImages(chapter, generation).catch(() => undefined);
+    return { chapter, cacheWarning };
+  } catch { return { chapter: null, cacheWarning: false }; }
 }
 
-/**
- * Explicit On-Demand download action triggered by user clicking the Download button
- */
-export async function downloadChapterOnDemand(novelId: string, chapterId: string): Promise<boolean> {
-  try {
-    const url = `${CDN_BASE_URL}/novels/${novelId}/chapters/${chapterId}.json`;
-    const res = await fetch(url);
-    if (res.ok) {
-      const chapter = (await res.json()) as Chapter;
-      await saveChapterOffline(chapter);
-      return true;
-    }
-  } catch (err) {
-    console.error(`Download error for ${chapterId}:`, err);
-  }
-
-  // Fallback to bundled chapter
-  const bundled = getBundledChapter(novelId, chapterId);
-  if (bundled) {
-    await saveChapterOffline(bundled);
-    return true;
-  }
-
-  return false;
+export async function getChapter(novelId: string, chapterId: string): Promise<Chapter | null> {
+  return (await getChapterForReading(novelId, chapterId)).chapter;
 }
 
-// NovelManifest is imported from ../types
-
-export async function fetchNovelManifest(novelId: string): Promise<NovelManifest | null> {
+/** Retry uses existing readable text and only requests missing illustration files. */
+export async function downloadChapterOnDemand(novelId: string, chapterId: string): Promise<ChapterDownloadResult> {
+  const generation = getOfflineGeneration(novelId);
   try {
-    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/manifest.json?_t=${Date.now()}`);
-    if (res.ok) {
-      return (await res.json()) as NovelManifest;
-    }
-  } catch (err) {
-    console.log('Manifest fetch offline fallback:', err);
-  }
-  return null;
+    const existing = await loadChapterOffline(novelId, chapterId);
+    const chapter = existing ?? await fetchChapter(novelId, chapterId);
+    if (!existing) await saveChapterOffline(chapter, generation);
+    const complete = await cacheChapterImages(chapter, generation);
+    if (generation !== getOfflineGeneration(novelId)) return { status: 'failed' };
+    return { status: complete ? 'complete' : 'text-only' };
+  } catch { return { status: 'failed' }; }
 }
 
-/**
- * Generates or fetches the chapter list dynamically from manifest.json
- */
-export async function getAvailableChapterList(
-  novelId: string
-): Promise<Array<{ id: string; novelId: string; chapterNumber: number; title: string }>> {
-  let list: Array<{ id: string; novelId: string; chapterNumber: number; title: string }> = [];
+export async function fetchNovelManifest(novelId: string, preferCache = false): Promise<NovelManifest | null> {
+  if (!isSafeId(novelId)) return null;
+  return metadata(`manifest_${novelId}`, `${CDN_BASE_URL}/novels/${novelId}/manifest.json`,
+    (data): data is NovelManifest => isManifest(data, novelId), preferCache);
+}
 
-  const manifest = await fetchNovelManifest(novelId);
-  if (manifest && manifest.chapters && manifest.chapters.length > 0) {
-    list = manifest.chapters.map((c) => ({
-      id: c.id,
-      novelId,
-      chapterNumber: c.chapterNumber,
-      title: c.title,
-    }));
-  }
-
-  // Merge bundled chapters so new chapters (such as Ch.26-30) appear immediately even if CDN manifest hasn't updated
+export async function getAvailableChapterList(novelId: string, preferCache = false): Promise<ChapterListItem[]> {
+  if (!isSafeId(novelId)) return [];
+  const manifest = await fetchNovelManifest(novelId, preferCache);
+  const available = manifest?.chapters.map(c => ({ id: c.id, novelId, chapterNumber: c.chapterNumber, title: c.title })) ?? [];
   if (novelId === 'black-cat-hangout') {
-    const existingIds = new Set(list.map((c) => c.id));
-    for (const b of (blackCatChapters as Chapter[])) {
-      if (!existingIds.has(b.id)) {
-        list.push({
-          id: b.id,
-          novelId,
-          chapterNumber: b.chapterNumber,
-          title: b.title,
-        });
-        existingIds.add(b.id);
-      }
+    const ids = new Set(available.map(chapter => chapter.id));
+    for (const bundled of blackCatChapters as Chapter[]) {
+      if (!ids.has(bundled.id)) available.push({ id: bundled.id, novelId, chapterNumber: bundled.chapterNumber, title: bundled.title });
     }
   }
-
-  // Offline default fallback if list is empty
-  if (list.length === 0) {
-    if (novelId === 'black-cat-hangout') {
-      const fbList = [
-        {
-          id: 'ch-00',
-          novelId,
-          chapterNumber: 0,
-          title: 'Ch.0 — รูปประกอบ',
-        },
-      ];
-      for (let i = 1; i <= 60; i++) {
-        const numStr = String(i).padStart(2, '0');
-        fbList.push({
-          id: `ch-${numStr}`,
-          novelId,
-          chapterNumber: i,
-          title: `ตอนที่ ${i}`,
-        });
-      }
-      return fbList;
-    }
-
-    let count = 1;
-    if (novelId === 'kyudo-senpai') count = 25;
-    if (novelId === 'boyish-friend') count = 14;
-    for (let i = 1; i <= count; i++) {
+  if (available.length > 0) return available.sort((a, b) => a.chapterNumber - b.chapterNumber);
+  // Offline default fallback
+  if (novelId === 'black-cat-hangout') {
+    const list = [
+      {
+        id: 'ch-00',
+        novelId,
+        chapterNumber: 0,
+        title: 'Ch.0 — รูปประกอบ',
+      },
+    ];
+    for (let i = 1; i <= 60; i++) {
       const numStr = String(i).padStart(2, '0');
       list.push({
         id: `ch-${numStr}`,
@@ -224,39 +144,43 @@ export async function getAvailableChapterList(
         title: `ตอนที่ ${i}`,
       });
     }
+    return list;
   }
 
-  return list.sort((a, b) => a.chapterNumber - b.chapterNumber);
+  let count = 1;
+  if (novelId === 'kyudo-senpai') count = 25;
+  if (novelId === 'boyish-friend') count = 14;
+  const list = [];
+  for (let i = 1; i <= count; i++) {
+    const numStr = String(i).padStart(2, '0');
+    list.push({
+      id: `ch-${numStr}`,
+      novelId,
+      chapterNumber: i,
+      title: `ตอนที่ ${i}`,
+    });
+  }
+  return list;
 }
-
-// Fallback bundled comments
-import bundledKyudoComments from '../data/novels/kyudo-senpai/comments.json';
-import bundledBoyishComments from '../data/novels/boyish-friend/comments.json';
-import bundledIdolComments from '../data/novels/idol-neighbor/comments.json';
-import bundledBlackCatComments from '../data/novels/black-cat-hangout/comments.json';
-import { getUserComments, getLikedCommentIds } from './storage';
-import { CommentItem } from '../types';
 
 export async function fetchChapterComments(novelId: string, chapterId: string): Promise<CommentItem[]> {
   let catalog: Record<string, { comments?: CommentItem[] }> = {};
   try {
-    const res = await fetch(`${CDN_BASE_URL}/novels/${novelId}/comments.json`, { cache: 'no-cache' });
-    if (res.ok) {
-      catalog = await res.json();
-    }
+    const data = await requestJson(`${CDN_BASE_URL}/novels/${novelId}/comments.json`);
+    if (isRecord(data)) catalog = data as typeof catalog;
   } catch (err) {
     console.log('Using offline comments fallback:', err);
   }
 
   if (!catalog || Object.keys(catalog).length === 0) {
     if (novelId === 'kyudo-senpai') {
-      catalog = bundledKyudoComments as any;
+      catalog = bundledKyudoComments as typeof catalog;
     } else if (novelId === 'boyish-friend') {
-      catalog = bundledBoyishComments as any;
+      catalog = bundledBoyishComments as typeof catalog;
     } else if (novelId === 'idol-neighbor') {
-      catalog = bundledIdolComments as any;
+      catalog = bundledIdolComments as typeof catalog;
     } else if (novelId === 'black-cat-hangout') {
-      catalog = bundledBlackCatComments as any;
+      catalog = bundledBlackCatComments as typeof catalog;
     }
   }
 

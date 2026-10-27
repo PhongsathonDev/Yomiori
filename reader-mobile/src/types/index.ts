@@ -92,6 +92,15 @@ export interface Novel {
 
 export type ReaderTheme = 'dark' | 'light' | 'sepia';
 
+export type ReaderFont = 'Sarabun' | 'Kanit' | 'Prompt' | 'System';
+export type ReaderLineHeight = 1.55 | 1.85 | 2.15;
+export type ChapterOfflineStatus = 'missing' | 'text-only' | 'complete';
+export type ChapterDownloadResult = { status: 'complete' | 'text-only' | 'failed' };
+export interface ChapterLoadResult {
+  chapter: Chapter | null;
+  cacheWarning: boolean;
+}
+
 export interface ReadingProgress {
   novelId: string;
   chapterId: string;

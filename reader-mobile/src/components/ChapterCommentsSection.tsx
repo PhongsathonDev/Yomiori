@@ -19,7 +19,11 @@ interface Props {
   theme: ReaderTheme;
 }
 
-export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId, theme }) => {
+export const ChapterCommentsSection: React.FC<Props> = props => (
+  <ChapterCommentsContent key={`${props.novelId}:${props.chapterId}`} {...props} />
+);
+
+const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) => {
   const themeColors = themes[theme];
   const [comments, setComments] = useState<CommentItem[]>([]);
   const [loading, setLoading] = useState(true);
@@ -29,8 +33,6 @@ export const ChapterCommentsSection: React.FC<Props> = ({ novelId, chapterId, th
 
   useEffect(() => {
     let isMounted = true;
-    setLoading(true);
-    setExpanded(false);
     fetchChapterComments(novelId, chapterId)
       .then((data) => {
         if (isMounted) {

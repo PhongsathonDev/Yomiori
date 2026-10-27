@@ -3,7 +3,6 @@ import {
   Modal,
   View,
   Text,
-  Image,
   StyleSheet,
   TouchableOpacity,
   ScrollView,
@@ -11,12 +10,14 @@ import {
   StatusBar,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { OfflineImage } from './OfflineImage';
 
 interface ImageLightboxModalProps {
   visible: boolean;
   imageUrl: string | null;
   title?: string;
   caption?: string;
+  novelId?: string;
   onClose: () => void;
 }
 
@@ -27,6 +28,7 @@ export const ImageLightboxModal: React.FC<ImageLightboxModalProps> = ({
   imageUrl,
   title,
   caption,
+  novelId,
   onClose,
 }) => {
   const insets = useSafeAreaInsets();
@@ -49,6 +51,7 @@ export const ImageLightboxModal: React.FC<ImageLightboxModalProps> = ({
           <TouchableOpacity
             style={styles.closeButton}
             onPress={onClose}
+            accessibilityLabel="ปิดภาพขยาย"
             hitSlop={{ top: 16, bottom: 16, left: 16, right: 16 }}
             activeOpacity={0.8}
           >
@@ -67,13 +70,16 @@ export const ImageLightboxModal: React.FC<ImageLightboxModalProps> = ({
           showsVerticalScrollIndicator={false}
           bouncesZoom={true}
         >
-          <TouchableOpacity activeOpacity={1} onPress={onClose} style={styles.imageWrapper}>
-            <Image
-              source={{ uri: imageUrl }}
+          <View style={styles.imageWrapper}>
+            <OfflineImage
+              novelId={novelId}
+              src={imageUrl}
+              accessibilityLabel={caption || title || 'ภาพประกอบนิยาย'}
+              color="#ffffff"
               style={styles.image}
               resizeMode="contain"
             />
-          </TouchableOpacity>
+          </View>
         </ScrollView>
 
         {/* Bottom Editorial Caption */}
@@ -101,8 +107,8 @@ const styles = StyleSheet.create({
     zIndex: 100,
   },
   closeButton: {
-    width: 40,
-    height: 40,
+    width: 44,
+    height: 44,
     borderRadius: 20,
     backgroundColor: 'rgba(255, 255, 255, 0.18)',
     justifyContent: 'center',
