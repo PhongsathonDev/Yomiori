@@ -1,5 +1,7 @@
 # Android startup baseline
 
+> **ยกเลิกการบิลด์ baseline ก่อนแก้ไขแล้ว:** ผู้ใช้ต้องการให้บิลด์หลังแก้ครบเพราะ EAS ใช้เวลานาน Build ที่ลิงก์ด้านล่างถูก cancel สำเร็จขณะยังอยู่ในคิว ไม่มี APK ใหม่ เอกสารนี้เก็บเป็นประวัติและวิธีตรวจท้ายงาน ไม่ใช่ prerequisite ของการแก้โค้ด
+
 หลักฐานสำหรับ [สร้างฐานเปรียบเทียบการเปิดแอปบน Android](../../issues/WF-0002.md) ไม่ใช่ผลทดสอบอุปกรณ์ที่ agent ทำแทนผู้ใช้
 
 ## Build identity
@@ -9,14 +11,16 @@
 | Version | 1.0.0 (1) | 1.0.1 (2) |
 | Package | `com.phongsathon.yomiori` ใน EAS record | คง `com.phongsathon.yomiori` |
 | EAS profile | preview | preview |
-| Source | `a4f7ce93b5c085070e48cb2089bd8c9aee67f4fb` ใน EAS record | จะบันทึก commit ของ build จริงเมื่อส่ง EAS |
-| EAS build | `7c3535b2-e79b-417b-8043-040c1b27d99b` | ยังไม่ส่ง build |
+| Source | `a4f7ce93b5c085070e48cb2089bd8c9aee67f4fb` ใน EAS record | `fffd103659daee6d9a4a37456b69a963050e9aa0` |
+| EAS build | `7c3535b2-e79b-417b-8043-040c1b27d99b` | [Android startup baseline 1.0.1 (2)](https://expo.dev/accounts/mochimint/projects/yomiori-reader/builds/c2ea5b54-7ecb-4195-a23c-8cde0995930d) |
 | สร้างเมื่อ | 2 ต.ค. 2026 00:44:45 น. Asia/Bangkok | จะบันทึกจาก EAS |
 | หลักฐานเชื่อมกับเครื่อง | ผู้ใช้ระบุ Expo, 1.0.0 (1), Oct 2, 2026 12:44 AM ซึ่งตรงกับ EAS record | ยังไม่ได้ติดตั้งหรือวัดบนเครื่องผู้ใช้ |
 
 EAS record เดิมมีสถานะ FINISHED; ไม่ถือว่า artifact เก่ายังดาวน์โหลดได้ เพราะ record ระบุ expiration ผ่านไปแล้ว ไม่ดาวน์โหลด APK เก่าเพื่อให้ผู้ใช้ downgrade
 
 Source สำหรับ baseline สืบต่อจาก `97e09a0` โดยเปลี่ยนเฉพาะ version/build identity และการเลือก local version source ก่อน build ไม่เพิ่ม feature หรือเปลี่ยนลำดับการโหลดเพื่อให้ baseline เร็วขึ้น
+
+ส่ง EAS Build ด้วย preview profile แบบ non-interactive สำเร็จแล้ว โดย EAS ยืนยันว่าใช้ remote Android credentials และ default keystore ที่ตั้งไว้เดิม อัปโหลด source และคำนวณ fingerprint สำเร็จ การส่งงานยังไม่เท่ากับ build สำเร็จหรือ APK ติดตั้งได้จริง
 
 ## ก่อนอัปเดต: เก็บอาการเดิมเท่าที่ทำได้
 
@@ -60,7 +64,7 @@ Source สำหรับ baseline สืบต่อจาก `97e09a0` โด�
 
 อย่างน้อยขอผลสองเรื่อง: เวลา T0→T1 แบบมี/ไม่มีเน็ต และตอนที่เคยหายกลับมาเห็น/เปิดได้หรือไม่ หากยังหาย ให้บอกนิยาย เลขตอน และวิธีเข้าอ่านที่ลอง
 
-Ticket ยังเปิดอยู่จนมีหลักฐานบนอุปกรณ์จริงหรือมีการตกลงปรับ prerequisite อย่างชัดเจน การ build ผ่านเพียงอย่างเดียวไม่ใช่ resolution
+ผู้ใช้ตกลงปรับ prerequisite แล้ว: ticket baseline ถูกปิดเป็น out of scope ของขั้นตอนก่อนแก้ไข ไม่ใช่ปิดเพราะวัดสำเร็จ การตรวจบนอุปกรณ์เลื่อนไปหลังแก้ครบใน APK สุดท้าย ไม่มีผล native ใหม่ที่อ้างได้ในตอนนี้
 
 ## References
 
