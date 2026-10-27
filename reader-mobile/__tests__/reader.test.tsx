@@ -12,8 +12,9 @@ import longChapter from '../src/data/novels/kyudo-senpai/chapters/ch-69.json';
 
 jest.mock('react-native-safe-area-context', () => require('react-native-safe-area-context/jest/mock').default);
 jest.mock('expo-navigation-bar', () => ({ NavigationBar: () => null }));
+jest.mock('expo-font', () => ({ useFonts: () => [true, null] }));
 jest.mock('lucide-react-native', () => Object.fromEntries(
-  ['ArrowLeft', 'ChevronLeft', 'ChevronRight', 'Sun', 'Moon', 'Coffee', 'Type', 'X', 'Minus', 'Plus', 'Check', 'Sparkles', 'User'].map(name => [name, () => null]),
+  ['ArrowLeft', 'ChevronLeft', 'ChevronRight', 'Sun', 'Moon', 'Coffee', 'Type', 'List', 'X', 'Minus', 'Plus', 'Check', 'Sparkles', 'User'].map(name => [name, () => null]),
 ));
 jest.mock('../src/components/ChapterCommentsSection', () => ({ ChapterCommentsSection: () => null }));
 jest.mock('../src/services/api', () => ({
@@ -32,7 +33,7 @@ const chapter = longChapter as Chapter;
 const loaded = jest.mocked(getChapterForReading);
 const saved = jest.mocked(saveReadingProgress);
 const navigation = {
-  addListener: jest.fn(() => jest.fn()), goBack: jest.fn(), replace: jest.fn(),
+  addListener: jest.fn(() => jest.fn()), goBack: jest.fn(), replace: jest.fn(), navigate: jest.fn(),
 };
 const props = {
   route: { key: 'reader', name: 'Reader', params: { novelId: chapter.novelId, chapterId: chapter.id } },
@@ -114,5 +115,13 @@ test('the real story skips dialogue work until typography changes', async () => 
   expect(lookup).not.toHaveBeenCalled();
   await view.rerender(<ReaderStory {...storyProps} fontSize={20} />);
   expect(lookup).toHaveBeenCalled();
+  await view.unmount();
+});
+
+test('table of contents is reachable directly from the reader header', async () => {
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  expect(navigation.navigate).toHaveBeenCalledWith('NovelDetail', { novelId: chapter.novelId });
   await view.unmount();
 });

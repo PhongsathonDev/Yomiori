@@ -5,7 +5,7 @@ import {
   cacheIllustrationOffline, clearNovelOfflineStorage, getChapterFilePath, getChapterOfflineStatus,
   getIllustrationLocalPath, getNovelOfflineStats, getReadingProgress, getSavedFontFamily,
   getSavedFontSize, getSavedLineHeight, getSavedTheme, loadChapterOffline,
-  resolveIllustrationUri, saveChapterOffline, saveReadingProgress, withOfflineJob,
+  resolveIllustrationUri, saveChapterOffline, saveReadingProgress, withOfflineJob, getSavedLibrary, getSavedNovel,
 } from '../src/services/storage';
 import { downloadChapterOnDemand, fetchCharacters, fetchNovels, getAvailableChapterList, getChapterForReading } from '../src/services/api';
 import { requestJson } from '../src/services/request';
@@ -191,6 +191,61 @@ describe('illustrations and explicit downloads', () => {
 });
 
 describe('metadata, settings and progress compatibility', () => {
+  test('recovers a saved Kyudo chapter beyond the old fallback range without a manifest', async () => {
+    const saved = { ...chapter, novelId: 'kyudo-senpai', chapterNumber: 99 };
+    await saveChapterOffline(saved);
+    const list = await getAvailableChapterList(saved.novelId, true);
+    expect(list.find(item => item.id === saved.id)).toMatchObject({ title: saved.title, offlineStatus: 'complete' });
+    expect(list.some(item => item.id === 'ch-01')).toBe(true);
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  test('a remote manifest cannot hide saved chapters it no longer contains', async () => {
+    await saveChapterOffline(chapter);
+    fetchMock.mockResolvedValue(response({ novelId: chapter.novelId, chapters: [] }));
+    expect((await getAvailableChapterList(chapter.novelId)).map(item => item.id)).toContain(chapter.id);
+  });
+
+  test('recovers a remote-only book and partial illustrations even after catalog loss', async () => {
+    await saveChapterOffline(illustrated);
+    expect((await getSavedLibrary())[0]).toMatchObject({ id: chapter.novelId, title: chapter.novelTitle,
+      chapters: [{ id: chapter.id, offlineStatus: 'text-only' }] });
+    expect(await fetchNovels(true)).toContainEqual(expect.objectContaining({ id: chapter.novelId, title: chapter.novelTitle }));
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  test('file discovery validates backups, skips damaged and temporary files, and deduplicates IDs', async () => {
+    const path = getChapterFilePath(chapter.novelId, chapter.id);
+    files.set(path, '{broken'); files.set(`${path}.bak`, JSON.stringify(chapter));
+    files.set(getChapterFilePath(chapter.novelId, 'ch-10'), JSON.stringify({ ...chapter, id: 'wrong' }));
+    files.set(`${getChapterFilePath(chapter.novelId, 'ch-11')}.tmp`, JSON.stringify({ ...chapter, id: 'ch-11' }));
+    const saved = await getSavedNovel(chapter.novelId);
+    expect(saved?.chapters.map(item => item.id)).toEqual([chapter.id]);
+  });
+
+  test('local catalog, chapter list and characters never wait for a stalled network', async () => {
+    fetchMock.mockReturnValue(new Promise(() => undefined));
+    await Promise.all([fetchNovels(true), getAvailableChapterList('kyudo-senpai', true), fetchCharacters('kyudo-senpai', true)]);
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  test('a newly saved chapter is discoverable even when an earlier scan is still pending', async () => {
+    let finishOldScan!: (names: string[]) => void;
+    fs.readDirectoryAsync.mockReturnValueOnce(new Promise(done => { finishOldScan = done; }));
+    const oldScan = getSavedNovel(chapter.novelId);
+    await saveChapterOffline(chapter);
+    expect((await getSavedNovel(chapter.novelId))?.chapters[0].id).toBe(chapter.id);
+    finishOldScan([]);
+    await oldScan;
+  });
+
+  test('bundled reading and explicit download do not request a stalled CDN first', async () => {
+    fetchMock.mockReturnValue(new Promise(() => undefined));
+    expect((await getChapterForReading('black-cat-hangout', 'ch-60')).chapter?.id).toBe('ch-60');
+    expect((await downloadChapterOnDemand('black-cat-hangout', 'ch-60')).status).toBe('complete');
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
   test('retains upstream bundled chapter 60 when the CDN is offline', async () => {
     const result = await getChapterForReading('black-cat-hangout', 'ch-60');
     expect(result.chapter?.id).toBe('ch-60');

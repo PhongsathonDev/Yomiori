@@ -6,6 +6,7 @@ import { readerStyles as styles } from '../theme/readerStyles';
 import { FONT_MAP } from './TypographyModal';
 import { getAvatarSource } from './CharacterDetailModal';
 import { OfflineImage } from './OfflineImage';
+import { useReaderFonts } from './ReaderFontProvider';
 
 interface Props {
   novelId: string;
@@ -47,7 +48,8 @@ function formatDialogueText(rawText: string): string {
 }
 
 export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characterMap, colors, fontSize, fontFamily, lineHeightRatio, onToggleControls, onSelectCharacter, onOpenIllustration }: Props) {
-  const font = FONT_MAP[fontFamily];
+  const fonts = useReaderFonts();
+  const font = FONT_MAP[fonts === 'ready' ? fontFamily : 'System'];
   return <View>{blocks.map(block => {
     if (block.type === 'narration') return (
       <Pressable key={block.id} onPress={onToggleControls}>

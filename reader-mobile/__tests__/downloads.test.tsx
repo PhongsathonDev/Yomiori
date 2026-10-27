@@ -3,7 +3,7 @@ import { Alert } from 'react-native';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import { NovelDetailScreen } from '../src/screens/NovelDetailScreen';
 import { downloadChapterOnDemand, fetchNovels, getAvailableChapterList, fetchCharacters, fetchIllustrations } from '../src/services/api';
-import { getChapterOfflineStatus } from '../src/services/storage';
+import { getChapterOfflineStatus, getNovelOfflineStats } from '../src/services/storage';
 import { Novel } from '../src/types';
 
 jest.mock('react-native-safe-area-context', () => require('react-native-safe-area-context/jest/mock').default);
@@ -20,9 +20,10 @@ jest.mock('../src/services/api', () => ({
 }));
 jest.mock('../src/services/storage', () => ({
   getSavedTheme: async () => 'light', getChapterOfflineStatus: jest.fn(),
+  readMetadata: jest.fn().mockResolvedValue(null),
   withOfflineJob: async (_novel: string, work: () => Promise<void>) => work(),
   clearNovelOfflineStorage: jest.fn().mockResolvedValue(undefined),
-  getNovelOfflineStats: async () => ({ count: 1, totalBytes: 1000 }),
+  getNovelOfflineStats: jest.fn(async () => ({ count: 1, totalBytes: 1000 })),
 }));
 
 const novel: Novel = { id: 'novel', title: 'Test novel', author: 'Author', coverUrl: 'https://example.com/cover.jpg', synopsis: 'Story', tags: [], totalOriginalChapters: 3 };
@@ -79,5 +80,16 @@ test('pull-to-refresh requests a fresh chapter list instead of only cached metad
   jest.mocked(getAvailableChapterList).mockClear();
   await fireEvent(screen.getByTestId('chapter-refresh'), 'refresh');
   await waitFor(() => expect(getAvailableChapterList).toHaveBeenCalledWith(novel.id, false));
+  await view.unmount();
+});
+
+test('local chapters appear without waiting for online refresh or recursive storage statistics', async () => {
+  jest.mocked(fetchNovels).mockImplementation(async localOnly => localOnly ? [novel] : new Promise(() => undefined));
+  jest.mocked(getAvailableChapterList).mockImplementation(async (_id, localOnly) => localOnly
+    ? chapters.map(chapter => ({ ...chapter, offlineStatus: 'complete' as const })) : new Promise(() => undefined));
+  const view = await render(<NovelDetailScreen {...props} />);
+  await screen.findByText('Chapter 3');
+  await waitFor(() => expect(screen.queryAllByLabelText('ดาวน์โหลดตอน')).toHaveLength(0));
+  expect(getNovelOfflineStats).not.toHaveBeenCalled();
   await view.unmount();
 });

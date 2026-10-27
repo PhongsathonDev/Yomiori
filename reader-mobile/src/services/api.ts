@@ -1,7 +1,7 @@
 import { Chapter, Character, Novel, IllustrationItem, NovelManifest, CommentItem, ChapterListItem, ChapterDownloadResult, ChapterLoadResult } from '../types';
 import {
   saveChapterOffline, loadChapterOffline, getOfflineGeneration, cacheIllustrationOffline,
-  readMetadata, saveMetadata, getUserComments, getLikedCommentIds,
+  readMetadata, saveMetadata, getUserComments, getLikedCommentIds, getSavedNovel, getSavedLibrary,
 } from './storage';
 import { requestJson } from './request';
 import { isChapter, isNovelList, isCharacterList, isManifest, isIllustrationList, isSafeId, isRecord } from './validation';
@@ -19,7 +19,8 @@ export const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
 
 async function metadata<T>(key: string, url: string, validate: (data: unknown) => data is T, preferCache = false): Promise<T | null> {
   const cached = await readMetadata(key, validate);
-  if (preferCache && cached !== null) return cached;
+  // Local reads must never turn into a network request on a cache miss.
+  if (preferCache) return cached;
   try {
     const value = await requestJson(url);
     if (!validate(value)) throw new Error('Invalid metadata');
@@ -29,9 +30,21 @@ async function metadata<T>(key: string, url: string, validate: (data: unknown) =
 }
 
 export async function fetchNovels(preferCache = false): Promise<Novel[]> {
-  const remote = await metadata('novels', `${CDN_BASE_URL}/novels.json`, isNovelList, preferCache) ?? [];
-  const ids = new Set(remote.map(n => n.id));
-  return [...remote, ...(bundledNovels as Novel[]).filter(n => !ids.has(n.id))];
+  const [remote, local] = await Promise.all([
+    metadata('novels', `${CDN_BASE_URL}/novels.json`, isNovelList, preferCache), getSavedLibrary(),
+  ]);
+  const novels = [...remote ?? []];
+  const ids = new Set(novels.map(n => n.id));
+  for (const bundled of bundledNovels as Novel[]) {
+    if (!ids.has(bundled.id)) { novels.push(bundled); ids.add(bundled.id); }
+  }
+  for (const saved of local) {
+    if (ids.has(saved.id)) continue;
+    novels.push({ id: saved.id, title: saved.title, author: '', coverUrl: '', synopsis: '', tags: [],
+      totalOriginalChapters: Math.max(...saved.chapters.map(chapter => chapter.chapterNumber)) });
+    ids.add(saved.id);
+  }
+  return novels;
 }
 
 export async function fetchCharacters(novelId: string, preferCache = false): Promise<Character[]> {
@@ -82,6 +95,8 @@ export async function getChapterForReading(novelId: string, chapterId: string): 
   const generation = getOfflineGeneration(novelId);
   const offline = await loadChapterOffline(novelId, chapterId);
   if (offline) return { chapter: offline, cacheWarning: false };
+  const bundled = getBundledChapter(novelId, chapterId);
+  if (bundled && isChapter(bundled, novelId, chapterId)) return { chapter: bundled, cacheWarning: false };
   try {
     const chapter = await fetchChapter(novelId, chapterId);
     let cacheWarning = false;
@@ -100,7 +115,7 @@ export async function downloadChapterOnDemand(novelId: string, chapterId: string
   const generation = getOfflineGeneration(novelId);
   try {
     const existing = await loadChapterOffline(novelId, chapterId);
-    const chapter = existing ?? await fetchChapter(novelId, chapterId);
+    const chapter = existing ?? getBundledChapter(novelId, chapterId) ?? await fetchChapter(novelId, chapterId);
     if (!existing) await saveChapterOffline(chapter, generation);
     const complete = await cacheChapterImages(chapter, generation);
     if (generation !== getOfflineGeneration(novelId)) return { status: 'failed' };
@@ -116,51 +131,31 @@ export async function fetchNovelManifest(novelId: string, preferCache = false): 
 
 export async function getAvailableChapterList(novelId: string, preferCache = false): Promise<ChapterListItem[]> {
   if (!isSafeId(novelId)) return [];
-  const manifest = await fetchNovelManifest(novelId, preferCache);
-  const available = manifest?.chapters.map(c => ({ id: c.id, novelId, chapterNumber: c.chapterNumber, title: c.title })) ?? [];
+  const [manifest, saved] = await Promise.all([fetchNovelManifest(novelId, preferCache), getSavedNovel(novelId)]);
+  const available: ChapterListItem[] = manifest?.chapters.map(c => ({ id: c.id, novelId, chapterNumber: c.chapterNumber, title: c.title })) ?? [];
   if (novelId === 'black-cat-hangout') {
     const ids = new Set(available.map(chapter => chapter.id));
     for (const bundled of blackCatChapters as Chapter[]) {
       if (!ids.has(bundled.id)) available.push({ id: bundled.id, novelId, chapterNumber: bundled.chapterNumber, title: bundled.title });
     }
   }
-  if (available.length > 0) return available.sort((a, b) => a.chapterNumber - b.chapterNumber);
-  // Offline default fallback
-  if (novelId === 'black-cat-hangout') {
-    const list = [
-      {
-        id: 'ch-00',
-        novelId,
-        chapterNumber: 0,
-        title: 'Ch.0 — รูปประกอบ',
-      },
-    ];
-    for (let i = 1; i <= 60; i++) {
-      const numStr = String(i).padStart(2, '0');
-      list.push({
-        id: `ch-${numStr}`,
-        novelId,
-        chapterNumber: i,
-        title: `ตอนที่ ${i}`,
-      });
+  // Keep the established catalog fallback while also recovering saved chapters
+  // outside that range. Unknown recovered novels list only actual saved files.
+  if (!manifest && available.length === 0 && (bundledNovels as Novel[]).some(novel => novel.id === novelId)) {
+    const count = novelId === 'kyudo-senpai' ? 25 : novelId === 'boyish-friend' ? 14 : 1;
+    for (let number = 1; number <= count; number++) {
+      available.push({ id: `ch-${String(number).padStart(2, '0')}`, novelId, chapterNumber: number, title: `ตอนที่ ${number}` });
     }
-    return list;
   }
-
-  let count = 1;
-  if (novelId === 'kyudo-senpai') count = 25;
-  if (novelId === 'boyish-friend') count = 14;
-  const list = [];
-  for (let i = 1; i <= count; i++) {
-    const numStr = String(i).padStart(2, '0');
-    list.push({
-      id: `ch-${numStr}`,
-      novelId,
-      chapterNumber: i,
-      title: `ตอนที่ ${i}`,
-    });
+  for (const chapter of saved?.chapters ?? []) {
+    const index = available.findIndex(item => item.id === chapter.id);
+    if (index === -1) available.push(chapter);
+    else available[index] = chapter;
   }
-  return list;
+  return available.map(chapter => ({ ...chapter,
+    offlineStatus: chapter.offlineStatus
+      ?? (novelId === 'kyudo-senpai' && chapter.id === 'ch-01' ? 'complete' : 'missing'),
+  })).sort((a, b) => a.chapterNumber - b.chapterNumber);
 }
 
 export async function fetchChapterComments(novelId: string, chapterId: string): Promise<CommentItem[]> {

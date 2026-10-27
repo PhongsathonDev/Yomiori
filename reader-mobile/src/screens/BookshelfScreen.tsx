@@ -25,15 +25,14 @@ import { Novel, RootStackParamList, ReaderTheme, ReadingProgress, Character } fr
 import { fetchNovels, fetchCharacters, getAvailableChapterList } from '../services/api';
 import {
   getSavedTheme,
-  readMetadata,
   saveTheme,
   getReadingProgress,
   isChapterDownloaded,
 } from '../services/storage';
 import { themes } from '../theme/colors';
-import { isNovelList } from '../services/validation';
 import bundledNovels from '../data/novels.json';
 import { ScreenState } from '../components/ScreenState';
+import { BookCover } from '../components/BookCover';
 import { CharacterDetailModal, getAvatarSource } from '../components/CharacterDetailModal';
 
 type BookshelfNavProp = NativeStackNavigationProp<RootStackParamList, 'Bookshelf'>;
@@ -43,8 +42,8 @@ interface Props {
 }
 
 export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
-  const [novels, setNovels] = useState<Novel[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [novels, setNovels] = useState<Novel[]>(bundledNovels as Novel[]);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const activeRequest = useRef(0);
@@ -60,7 +59,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
 
   const loadData = useCallback(async (isActive: () => boolean) => {
     try {
-      const [theme, cached] = await Promise.all([getSavedTheme(), readMetadata('novels', isNovelList)]);
+      const [theme, cached] = await Promise.all([getSavedTheme(), fetchNovels(true)]);
       if (!isActive()) return;
       setCurrentTheme(theme);
       const loadExtras = async (novelList: Novel[]) => {
@@ -71,7 +70,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
           const [characters, chapters] = await Promise.all([
             fetchCharacters(novel.id, true), getAvailableChapterList(novel.id, true),
           ]);
-          const statuses = await Promise.all(chapters.map(ch => isChapterDownloaded(novel.id, ch.id)));
+          const statuses = await Promise.all(chapters.map(ch => ch.offlineStatus !== undefined ? Promise.resolve(ch.offlineStatus !== 'missing') : isChapterDownloaded(novel.id, ch.id)));
           if (!isActive()) return;
           setCharactersMap(previous => ({ ...previous, [novel.id]: characters }));
           setDownloadCountMap(previous => ({ ...previous, [novel.id]: statuses.filter(Boolean).length }));
@@ -148,12 +147,6 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
       ? novels
       : novels.filter((n) => n.tags?.includes(selectedTag));
 
-  const getCoverSource = (coverUrl: string) => {
-    if (coverUrl.startsWith('http')) {
-      return { uri: coverUrl };
-    }
-    return { uri: `https://phongsathondev.github.io/Yomiori/${coverUrl.replace(/^\//, '')}` };
-  };
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: themeColors.background }]}>
@@ -217,11 +210,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
               }
             >
               <View style={styles.heroTopRow}>
-                <Image
-                  source={getCoverSource(continueNovel.coverUrl)}
-                  style={styles.heroCover}
-                  resizeMode="cover"
-                />
+                <BookCover uri={continueNovel.coverUrl} style={styles.heroCover} />
 
                 <View style={styles.heroInfo}>
                   <Text style={[styles.heroSectionLabel, { color: themeColors.primary }]}>
@@ -339,11 +328,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                     activeOpacity={0.9}
                     onPress={() => navigation.navigate('NovelDetail', { novelId: novel.id })}
                   >
-                    <Image
-                      source={getCoverSource(novel.coverUrl)}
-                      style={styles.coverImage}
-                      resizeMode="cover"
-                    />
+                    <BookCover uri={novel.coverUrl} style={styles.coverImage} />
                   </TouchableOpacity>
 
                   <View style={styles.cardInfo}>

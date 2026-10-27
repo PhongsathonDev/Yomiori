@@ -11,6 +11,7 @@ import { X, Minus, Plus, Check } from 'lucide-react-native';
 import { ReaderTheme, ReaderFont, ReaderLineHeight } from '../types';
 import { themes } from '../theme/colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useReaderFonts } from './ReaderFontProvider';
 
 export type FontOption = ReaderFont;
 export type LineHeightOption = ReaderLineHeight;
@@ -66,7 +67,8 @@ export const TypographyModal: React.FC<Props> = ({
   onClose,
 }) => {
   const themeColors = themes[theme];
-  const activeFontMeta = FONT_MAP[fontFamily] || FONT_MAP.Sarabun;
+  const fonts = useReaderFonts();
+  const activeFontMeta = FONT_MAP[fonts === 'ready' ? fontFamily : 'System'];
   const insets = useSafeAreaInsets();
 
   return (
@@ -85,6 +87,7 @@ export const TypographyModal: React.FC<Props> = ({
           </View>
 
           <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
+            {fonts === 'error' && <Text style={{ color: themeColors.textMuted }}>โหลดแบบอักษรไม่ได้ กำลังใช้แบบอักษรระบบ</Text>}
             {/* Live Preview Box */}
             <View
               style={[
@@ -167,7 +170,7 @@ export const TypographyModal: React.FC<Props> = ({
                             styles.fontItemName,
                             {
                               color: themeColors.text,
-                              fontFamily: meta.regular,
+                              fontFamily: fonts === 'ready' ? meta.regular : undefined,
                             },
                           ]}
                         >

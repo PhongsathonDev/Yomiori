@@ -74,6 +74,13 @@ export interface ChapterListItem {
   chapterNumber: number;
   title: string;
   isDownloaded?: boolean;
+  offlineStatus?: ChapterOfflineStatus;
+}
+
+export interface SavedNovelSummary {
+  id: string;
+  title: string;
+  chapters: ChapterListItem[];
 }
 
 export interface Novel {

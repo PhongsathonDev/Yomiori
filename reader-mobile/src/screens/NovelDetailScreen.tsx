@@ -39,6 +39,7 @@ import {
 } from '../services/api';
 import {
   getSavedTheme,
+  readMetadata,
   getChapterOfflineStatus,
   withOfflineJob,
   clearNovelOfflineStorage,
@@ -47,6 +48,9 @@ import {
 } from '../services/storage';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import { themes } from '../theme/colors';
+import { isNovelList } from '../services/validation';
+import bundledNovels from '../data/novels.json';
+import { BookCover } from '../components/BookCover';
 import { ScreenState } from '../components/ScreenState';
 import { OfflineImage } from '../components/OfflineImage';
 
@@ -77,6 +81,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
   const [refreshing, setRefreshing] = useState(false);
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [loading, setLoading] = useState(true);
+  const [chaptersLoading, setChaptersLoading] = useState(true);
 
   // Settings & Storage Modal State
   const [showSettingsModal, setShowSettingsModal] = useState(false);
@@ -100,22 +105,31 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
 
   const loadData = useCallback(async (isActive: () => boolean, preferCache = true) => {
     try {
+      if (preferCache) {
+        const [theme, catalog] = await Promise.all([getSavedTheme(), readMetadata('novels', isNovelList)]);
+        const initial = (catalog ?? bundledNovels as Novel[]).find(novel => novel.id === novelId);
+        if (!isActive()) return;
+        setCurrentTheme(theme);
+        if (initial) { setNovel(initial); setLoading(false); }
+      }
       const [theme, novelList, chapterList] = await Promise.all([
         getSavedTheme(), fetchNovels(preferCache), getAvailableChapterList(novelId, preferCache),
       ]);
-      const statuses = await Promise.all(chapterList.map(async ch => [ch.id, await getChapterOfflineStatus(novelId, ch.id)] as const));
-      const stats = await getNovelOfflineStats(novelId);
       if (!isActive()) return;
       setCurrentTheme(theme);
       setNovel(novelList.find(n => n.id === novelId) ?? null);
       setChapters(chapterList);
-      setDownloadedMap(Object.fromEntries(statuses));
-      setStorageStats(stats);
+      setChaptersLoading(false);
       setError(false);
+      setLoading(false);
+      // Byte totals are only needed when the storage sheet is opened.
+      const statuses = await Promise.all(chapterList.map(async ch => [ch.id, ch.offlineStatus ?? await getChapterOfflineStatus(novelId, ch.id)] as const));
+      if (!isActive()) return;
+      setDownloadedMap(Object.fromEntries(statuses));
     } catch {
       if (isActive()) setError(true);
     } finally {
-      if (isActive()) setLoading(false);
+      if (isActive()) { setLoading(false); setChaptersLoading(false); }
     }
   }, [novelId]);
 
@@ -286,14 +300,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
         >
           {/* Novel Info Banner */}
           <View style={styles.novelInfoCard}>
-            <Image
-              source={{
-                uri: novel.coverUrl.startsWith('http')
-                  ? novel.coverUrl
-                  : `https://phongsathondev.github.io/Yomiori/${novel.coverUrl.replace(/^\//, '')}`,
-              }}
-              style={styles.coverImage}
-            />
+            <BookCover uri={novel.coverUrl} style={styles.coverImage} />
 
             <View style={styles.infoRight}>
               <Text style={[styles.title, { color: themeColors.text }]}>{novel.title}</Text>
@@ -368,7 +375,8 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
           {/* TAB 1: CHAPTERS LIST */}
           {activeTab === 'chapters' && (
             <View>
-              {chapters.length === 0 && <ScreenState colors={themeColors} message="ยังไม่มีตอนให้อ่าน" onRetry={retry} />}
+              {chaptersLoading ? <View style={{ paddingVertical: 24 }}><ActivityIndicator color={themeColors.primary} /></View>
+                : chapters.length === 0 && <ScreenState colors={themeColors} message="ยังไม่มีตอนให้อ่าน" onRetry={retry} />}
               {chapters.map((ch) => {
                 const offlineStatus = downloadedMap[ch.id] ?? 'missing';
                 const isDownloaded = offlineStatus === 'complete';

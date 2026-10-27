@@ -24,6 +24,7 @@ import {
   Moon,
   Coffee,
   Type,
+  List,
 } from 'lucide-react-native';
 import { RootStackParamList, Chapter, Character, ReaderTheme, ChapterListItem } from '../types';
 import { getChapterForReading, fetchCharacters, getAvailableChapterList } from '../services/api';
@@ -41,6 +42,7 @@ import {
 import { themes } from '../theme/colors';
 import { readerStyles as styles } from '../theme/readerStyles';
 import { ReaderStory } from '../components/ReaderStory';
+import { useReaderFonts } from '../components/ReaderFontProvider';
 import { ScreenState } from '../components/ScreenState';
 import { createProgressWriter, getResumeOffset } from '../services/readingProgress';
 import { CharacterDetailModal } from '../components/CharacterDetailModal';
@@ -99,7 +101,8 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const hasRestoredScroll = useRef(false);
   const savedProgressPercent = useRef(0);
   const themeColors = themes[currentTheme];
-  const activeFont = FONT_MAP[fontFamily] || FONT_MAP.Sarabun;
+  const fonts = useReaderFonts();
+  const activeFont = FONT_MAP[fonts === 'ready' ? fontFamily : 'System'];
 
   const progressWriter = useRef<ReturnType<typeof createProgressWriter> | null>(null);
   const viewportHeight = useRef(0);
@@ -247,6 +250,12 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
                 {Math.round(readingProgress)}%
               </Text>
             </View>
+            <TouchableOpacity accessibilityRole="button" accessibilityLabel="เปิดสารบัญ" style={styles.backBtn} onPress={() => {
+              progressWriter.current?.flush();
+              navigation.navigate('NovelDetail', { novelId });
+            }}>
+              <List size={22} color={themeColors.text} />
+            </TouchableOpacity>
           </View>
         </View>
       )}
@@ -287,7 +296,11 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
           scrollEventThrottle={32}
           showsVerticalScrollIndicator={false}
           onLayout={event => { viewportHeight.current = event.nativeEvent.layout.height; restoreScroll(); }}
-          onContentSizeChange={(_width, height) => { contentHeight.current = height; restoreScroll(); }}
+          onContentSizeChange={(_width, height) => {
+            contentHeight.current = height;
+            if (!userStartedReading.current) hasRestoredScroll.current = false;
+            restoreScroll();
+          }}
           onScrollBeginDrag={() => { userStartedReading.current = true; hasRestoredScroll.current = true; }}
           onScrollEndDrag={event => { handleScroll(event); progressWriter.current?.flush(); }}
           onMomentumScrollEnd={event => { handleScroll(event); progressWriter.current?.flush(); }}

@@ -1,6 +1,6 @@
 import * as FileSystem from 'expo-file-system/legacy';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Chapter, ReaderTheme, ReadingProgress, ReaderFont, ReaderLineHeight, ChapterOfflineStatus, CommentItem } from '../types';
+import { Chapter, ReaderTheme, ReadingProgress, ReaderFont, ReaderLineHeight, ChapterOfflineStatus, CommentItem, SavedNovelSummary } from '../types';
 import bundledCh01 from '../data/novels/kyudo-senpai/chapters/ch-01.json';
 import { isChapter, isRecord, isSafeId } from './validation';
 import { createKeyedQueue } from './queue';
@@ -12,6 +12,9 @@ const enqueueImage = createKeyedQueue();
 const enqueueProgress = createKeyedQueue();
 const generations = new Map<string, number>();
 const activeJobs = new Set<string>();
+const savedNovelScans = new Map<string, Promise<SavedNovelSummary | null>>();
+const fileRevisions = new Map<string, number>();
+const markFilesChanged = (novelId: string) => fileRevisions.set(novelId, (fileRevisions.get(novelId) ?? 0) + 1);
 
 export const getOfflineGeneration = (novelId: string) => generations.get(novelId) ?? 0;
 
@@ -42,7 +45,7 @@ export function getChapterFilePath(novelId: string, chapterId: string): string {
   return `${novelDirectory(novelId)}${chapterId}.json`;
 }
 
-export async function loadChapterOffline(novelId: string, chapterId: string): Promise<Chapter | null> {
+async function loadSavedChapter(novelId: string, chapterId: string): Promise<Chapter | null> {
   if (!isSafeId(novelId) || !isSafeId(chapterId)) return null;
   const path = getChapterFilePath(novelId, chapterId);
   // Legacy iOS move removes the destination first. A backup also survives an
@@ -57,7 +60,59 @@ export async function loadChapterOffline(novelId: string, chapterId: string): Pr
       // A damaged cache or unavailable disk must not prevent an online retry.
     }
   }
-  return novelId === 'kyudo-senpai' && chapterId === 'ch-01' ? bundledCh01 as Chapter : null;
+  return null;
+}
+
+export async function loadChapterOffline(novelId: string, chapterId: string): Promise<Chapter | null> {
+  return await loadSavedChapter(novelId, chapterId)
+    ?? (novelId === 'kyudo-senpai' && chapterId === 'ch-01' ? bundledCh01 as Chapter : null);
+}
+
+/** Files remain authoritative even if AsyncStorage or CDN metadata is missing.
+ * Only summaries are retained; long chapter bodies are released each iteration.
+ */
+export function getSavedNovel(novelId: string): Promise<SavedNovelSummary | null> {
+  const generation = getOfflineGeneration(novelId);
+  const key = `${novelId}:${generation}:${fileRevisions.get(novelId) ?? 0}`;
+  const pending = savedNovelScans.get(key);
+  if (pending) return pending;
+  const scan = scanSavedNovel(novelId).then(summary => generation === getOfflineGeneration(novelId) ? summary : null)
+    .finally(() => { if (savedNovelScans.get(key) === scan) savedNovelScans.delete(key); });
+  savedNovelScans.set(key, scan);
+  return scan;
+}
+
+async function scanSavedNovel(novelId: string): Promise<SavedNovelSummary | null> {
+  if (!isSafeId(novelId)) return null;
+  try {
+    const names = await FileSystem.readDirectoryAsync(novelDirectory(novelId));
+    const ids = new Set(names.map(name => /^(.*)\.json(?:\.bak)?$/.exec(name)?.[1]).filter(isSafeId));
+    const summary: SavedNovelSummary = { id: novelId, title: '', chapters: [] };
+    for (const id of ids) {
+      const chapter = await loadSavedChapter(novelId, id);
+      if (!chapter) continue;
+      summary.title ||= chapter.novelTitle;
+      let offlineStatus: ChapterOfflineStatus = 'complete';
+      for (const block of chapter.blocks) {
+        if (block.type === 'illustration' && !await localIllustration(novelId, block.src)) { offlineStatus = 'text-only'; break; }
+      }
+      summary.chapters.push({ id, novelId, title: chapter.title, chapterNumber: chapter.chapterNumber, isDownloaded: true, offlineStatus });
+    }
+    summary.chapters.sort((a, b) => a.chapterNumber - b.chapterNumber);
+    return summary.chapters.length ? summary : null;
+  } catch { return null; }
+}
+
+export async function getSavedLibrary(): Promise<SavedNovelSummary[]> {
+  try {
+    const names = await FileSystem.readDirectoryAsync(NOVELS_DIR);
+    const result: SavedNovelSummary[] = [];
+    for (const id of names.filter(isSafeId)) {
+      const novel = await getSavedNovel(id);
+      if (novel) result.push(novel);
+    }
+    return result;
+  } catch { return []; }
 }
 
 export async function isChapterDownloaded(novelId: string, chapterId: string): Promise<boolean> {
@@ -88,6 +143,7 @@ export async function saveChapterOffline(chapter: Chapter, generation = getOffli
       checkGeneration(chapter.novelId, generation);
       await FileSystem.moveAsync({ from: temporary, to: path });
       promoted = true;
+      markFilesChanged(chapter.novelId);
     } finally {
       await FileSystem.deleteAsync(temporary, { idempotent: true }).catch(() => undefined);
       if (promoted) await FileSystem.deleteAsync(backup, { idempotent: true }).catch(() => undefined);
@@ -100,6 +156,7 @@ export async function deleteChapterOffline(novelId: string, chapterId: string): 
     const path = getChapterFilePath(novelId, chapterId);
     await FileSystem.deleteAsync(path, { idempotent: true });
     await FileSystem.deleteAsync(`${path}.bak`, { idempotent: true });
+    markFilesChanged(novelId);
   });
 }
 
@@ -193,6 +250,7 @@ export async function cacheIllustrationOffline(novelId: string, src: string, gen
       await enqueueFile(novelId, async () => {
         checkGeneration(novelId, generation);
         await FileSystem.moveAsync({ from: temporary, to: path });
+        markFilesChanged(novelId);
       });
       return path;
     } finally {

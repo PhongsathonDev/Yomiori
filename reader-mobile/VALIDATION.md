@@ -19,10 +19,17 @@ npx expo export --platform ios --output-dir dist/ios --max-workers 2
 - Progress throttling with fake timers, final flush, write failures and chapter isolation.
 - Reader error/retry state, stale chapter requests, background flush and rendering work for the real 147-block `kyudo-senpai/ch-69` chapter.
 - Download UI: honest batch summaries and mutually exclusive single/batch/delete actions.
+- Saved-file discovery without catalog/manifest metadata, recovery above legacy fallback ranges, backup validation and overlapping scans/writes.
+- App usability during font loading/failure, bookshelf usability during stalled catalog reads and local chapters during stalled online refresh.
+- Direct table-of-contents access from the Reader header.
 
 ## Storage behavior
 
 Existing progress/settings keys, simple illustration filenames and chapter JSON paths are preserved. A `.json.bak` recovery file is readable if a legacy iOS move is interrupted. Only validated text counts as readable; illustration completeness is tracked separately. Bundled `kyudo-senpai/ch-01` remains available after clearing downloaded files. Reclaimable byte totals include downloaded files, temporary files and recovery files, but exclude bundled assets and retained catalog metadata.
+
+Validated chapter files are also used to recover catalog entries and chapter lists when metadata is missing or stale. Local reads do not initiate network requests on metadata cache misses. Concurrent scans share work, but completed writes invalidate reuse of earlier in-flight scans. No persisted index migration or file relocation is required. Chapter bodies are not retained in a whole-library memory cache.
+
+The app renders while font assets load and uses system typefaces until ready. A font error leaves content usable. Only the seven used font files are imported. Bundled Black Cat chapters are immediately readable without trying the CDN first; explicit downloads still cache required illustrations. Recursive byte totals are deferred until the storage sheet is opened.
 
 Text auto-caching does not wait for image downloads. Clearing a novel invalidates previous cache generations so an earlier request cannot restore accepted chapter/image files after the clear. The app retains the catalog metadata and reading progress.
 
@@ -37,4 +44,4 @@ These require Android and iOS devices/development builds. Jest and Metro exports
 5. Check a 320-point phone and a tablet in light/dark/sepia at font sizes 14 and 26 with all line-height options. Verify Thai wrapping, typography modal safe area and bottom controls.
 6. Tap narration to hide/show controls; tap a speaker and an illustration independently. Confirm those actions do not toggle controls. Check native zoom/close and TalkBack/VoiceOver labels.
 
-Keep the current ScrollView/navigation architecture for this change. Follow-up release work includes font-loading failure handling, Android image zoom verification, broader accessibility checks and native lifecycle/performance testing. No FPS or native React Profiler result is claimed from Jest rendering tests.
+Keep the current ScrollView/navigation architecture for this change. Follow-up release work includes Android image zoom verification, broader accessibility checks and native lifecycle/performance testing. Do not trigger an intermediate cloud build: the user requested an APK only after the changes are ready. No FPS or native React Profiler result is claimed from Jest rendering tests.
