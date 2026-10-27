@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import { X, Minus, Plus, Check } from 'lucide-react-native';
+import { X, Minus, Plus, Check, Sun, Moon, Coffee } from 'lucide-react-native';
 import { ReaderTheme, ReaderFont, ReaderLineHeight } from '../types';
 import { themes } from '../theme/colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -52,6 +52,7 @@ interface Props {
   onChangeFontSize: (delta: number) => void;
   onChangeFontFamily: (family: FontOption) => void;
   onChangeLineHeight: (ratio: LineHeightOption) => void;
+  onChangeTheme?: (theme: ReaderTheme) => void;
   onClose: () => void;
 }
 
@@ -64,6 +65,7 @@ export const TypographyModal: React.FC<Props> = ({
   onChangeFontSize,
   onChangeFontFamily,
   onChangeLineHeight,
+  onChangeTheme,
   onClose,
 }) => {
   const themeColors = themes[theme];
@@ -80,7 +82,7 @@ export const TypographyModal: React.FC<Props> = ({
         >
           {/* Header */}
           <View style={styles.header}>
-            <Text style={[styles.title, { color: themeColors.text }]}>ตั้งค่าตัวอักษรและการอ่าน</Text>
+            <Text style={[styles.title, { color: themeColors.text }]}>ตั้งค่าการอ่าน</Text>
             <TouchableOpacity accessibilityRole="button" accessibilityLabel="ปิดการตั้งค่าตัวอักษร" onPress={onClose} style={styles.closeBtn}>
               <X size={18} color={themeColors.textMuted} />
             </TouchableOpacity>
@@ -88,6 +90,21 @@ export const TypographyModal: React.FC<Props> = ({
 
           <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
             {fonts === 'error' && <Text style={{ color: themeColors.textMuted }}>โหลดแบบอักษรไม่ได้ กำลังใช้แบบอักษรระบบ</Text>}
+            {onChangeTheme && <View style={styles.section}>
+              <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>ธีม</Text>
+              <View style={styles.themeOptions}>
+                {([
+                  { id: 'light', label: 'สว่าง', Icon: Sun },
+                  { id: 'sepia', label: 'โทนอุ่น', Icon: Coffee },
+                  { id: 'dark', label: 'มืด', Icon: Moon },
+                ] as const).map(({ id, label, Icon }) => <TouchableOpacity key={id} accessibilityRole="radio"
+                  accessibilityLabel={`ธีม${label}`} accessibilityState={{ selected: theme === id }} onPress={() => onChangeTheme(id)}
+                  style={[styles.themeOption, { backgroundColor: themes[id].background, borderColor: theme === id ? themeColors.primary : themeColors.border }]}>
+                  <Icon size={20} color={themes[id].text} />
+                  <Text style={[styles.themeLabel, { color: themes[id].text }]}>{label}</Text>
+                </TouchableOpacity>)}
+              </View>
+            </View>}
             {/* Live Preview Box */}
             <View
               style={[
@@ -108,7 +125,7 @@ export const TypographyModal: React.FC<Props> = ({
                 }}
                 numberOfLines={2}
               >
-                {'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}นี่คือตัวอย่างการแสดงผลสำหรับอ่านนิยาย &ldquo;โยมิโอริ&rdquo; ในรูปแบบรูปเล่ม
+                นี่คือตัวอย่างการแสดงผลสำหรับอ่านนิยาย &ldquo;โยมิโอริ&rdquo; ในรูปแบบรูปเล่ม
               </Text>
             </View>
 
@@ -142,7 +159,7 @@ export const TypographyModal: React.FC<Props> = ({
 
             {/* Section 2: Font Family */}
             <View style={styles.section}>
-              <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>แบบอักษร (Font Family)</Text>
+              <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>แบบอักษร</Text>
               <View style={styles.fontOptionsList}>
                 {(['Sarabun', 'Kanit', 'Prompt', 'System'] as FontOption[]).map((f) => {
                   const meta = FONT_MAP[f];
@@ -259,17 +276,20 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'space-between',
     marginBottom: 14,
   },
   title: {
-    fontSize: 16,
+    flex: 1,
+    minWidth: 0,
+    fontSize: 18,
+    lineHeight: 28,
     fontWeight: '700',
   },
   closeBtn: {
-    minWidth: 44,
-    minHeight: 44,
+    minWidth: 48,
+    minHeight: 48,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 4,
@@ -285,12 +305,13 @@ const styles = StyleSheet.create({
   section: {
     marginBottom: 18,
   },
+  themeOptions: { flexDirection: 'row', gap: 8 },
+  themeOption: { flex: 1, minWidth: 48, minHeight: 64, paddingVertical: 10, paddingHorizontal: 4, borderWidth: 1, borderRadius: 12, alignItems: 'center', justifyContent: 'center', gap: 6 },
+  themeLabel: { fontSize: 12, lineHeight: 18, textAlign: 'center' },
   sectionLabel: {
     fontSize: 12,
     fontWeight: '600',
     marginBottom: 8,
-    textTransform: 'uppercase',
-    letterSpacing: 0.5,
   },
   fontSizeControlRow: {
     flexDirection: 'row',
@@ -299,8 +320,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
   },
   sizeBtn: {
-    width: 44,
-    height: 44,
+    width: 48,
+    height: 48,
     borderRadius: 22,
     justifyContent: 'center',
     alignItems: 'center',
@@ -345,6 +366,7 @@ const styles = StyleSheet.create({
   },
   pillBtn: {
     flex: 1,
+    minHeight: 48,
     paddingVertical: 10,
     borderRadius: 10,
     borderWidth: 1,
@@ -353,6 +375,8 @@ const styles = StyleSheet.create({
   },
   pillBtnText: {
     fontSize: 13,
+    lineHeight: 20,
+    textAlign: 'center',
     fontWeight: '600',
   },
 });

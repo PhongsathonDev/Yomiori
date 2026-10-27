@@ -53,8 +53,8 @@ export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characte
   return <View>{blocks.map(block => {
     if (block.type === 'narration') return (
       <Pressable key={block.id} onPress={onToggleControls}>
-        <Text style={[styles.narrationBlock, { color: colors.narrationText, fontSize, fontFamily: font.regular, lineHeight: fontSize * lineHeightRatio }]}>
-          {'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}{block.text}
+        <Text style={[styles.narrationBlock, { color: colors.narrationText, fontSize, fontFamily: font.regular, lineHeight: fontSize * lineHeightRatio, marginBottom: Math.round(fontSize * 0.85) }]}>
+          {block.text}
         </Text>
       </Pressable>
     );
@@ -70,9 +70,9 @@ export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characte
               <Text style={[styles.speakerInitial, { color }]}>{block.speakerName.charAt(0)}</Text>
             </View>}
           <View style={styles.speakerTextContainer}><View style={styles.speakerNameAndRole}>
-            <Text style={[styles.speakerName, { color, fontFamily: font.bold || font.regular }]}>{block.speakerName}</Text>
+            <Text style={[styles.speakerName, { color, fontFamily: font.bold || font.regular, fontSize: Math.max(14, Math.min(18, Math.round(fontSize * 0.8))) }]}>{block.speakerName}</Text>
             {character?.role ? <View style={[styles.speakerRoleBadge, { backgroundColor: `${color}15` }]}>
-              <Text style={[styles.speakerRoleText, { color }]} numberOfLines={1}>{character.role}</Text>
+              <Text style={[styles.speakerRoleText, { color, fontSize: Math.max(11, Math.min(13, Math.round(fontSize * 0.55))) }]} numberOfLines={1}>{character.role}</Text>
             </View> : null}
           </View></View>
         </Pressable>

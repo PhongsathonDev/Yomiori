@@ -1,9 +1,9 @@
 import React from 'react';
-import { AppState } from 'react-native';
+import { AppState, StyleSheet } from 'react-native';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import { ReaderScreen } from '../src/screens/ReaderScreen';
 import { getChapterForReading, fetchCharacters, getAvailableChapterList } from '../src/services/api';
-import { getReadingProgress, saveReadingProgress } from '../src/services/storage';
+import { getReadingProgress, saveReadingProgress, saveTheme, saveFontSize } from '../src/services/storage';
 import * as characterModal from '../src/components/CharacterDetailModal';
 import { ReaderStory } from '../src/components/ReaderStory';
 import { themes } from '../src/theme/colors';
@@ -14,7 +14,7 @@ jest.mock('react-native-safe-area-context', () => require('react-native-safe-are
 jest.mock('expo-navigation-bar', () => ({ NavigationBar: () => null }));
 jest.mock('expo-font', () => ({ useFonts: () => [true, null] }));
 jest.mock('lucide-react-native', () => Object.fromEntries(
-  ['ArrowLeft', 'ChevronLeft', 'ChevronRight', 'Sun', 'Moon', 'Coffee', 'Type', 'List', 'X', 'Minus', 'Plus', 'Check', 'Sparkles', 'User'].map(name => [name, () => null]),
+  ['ArrowLeft', 'ChevronLeft', 'ChevronRight', 'Sun', 'Moon', 'Coffee', 'Type', 'List', 'Eye', 'EyeOff', 'X', 'Minus', 'Plus', 'Check', 'Sparkles', 'User'].map(name => [name, () => null]),
 ));
 jest.mock('../src/components/ChapterCommentsSection', () => ({ ChapterCommentsSection: () => null }));
 jest.mock('../src/services/api', () => ({
@@ -123,5 +123,44 @@ test('table of contents is reachable directly from the reader header', async () 
   await screen.findAllByText(chapter.title);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
   expect(navigation.navigate).toHaveBeenCalledWith('NovelDetail', { novelId: chapter.novelId });
+  await view.unmount();
+});
+
+test('hiding and revealing chrome leaves the story viewport and insets unchanged', async () => {
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  const before = StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle);
+  await fireEvent.press(screen.getByRole('button', { name: 'ซ่อนเครื่องมืออ่าน' }));
+  expect(StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle)).toEqual(before);
+  expect(screen.getByTestId('reader-dock', { includeHiddenElements: true }).props.pointerEvents).toBe('none');
+  expect(screen.queryByRole('button', { name: 'ตั้งค่าการอ่าน' })).toBeNull();
+  await fireEvent.press(screen.getByRole('button', { name: 'แสดงเครื่องมืออ่าน' }));
+  expect(StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle)).toEqual(before);
+  expect(screen.getByRole('button', { name: 'ตั้งค่าการอ่าน' })).toBeTruthy();
+  await view.unmount();
+});
+
+test('next chapter is reachable from the dock without scrolling through comments', async () => {
+  jest.mocked(getAvailableChapterList).mockResolvedValue([
+    { id: chapter.id, novelId: chapter.novelId, chapterNumber: chapter.chapterNumber, title: chapter.title },
+    { id: 'ch-next', novelId: chapter.novelId, chapterNumber: chapter.chapterNumber + 1, title: 'Next' },
+  ]);
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  await fireEvent.press(screen.getByRole('button', { name: 'อ่านตอนถัดไป' }));
+  expect(navigation.replace).toHaveBeenCalledWith('Reader', { novelId: chapter.novelId, chapterId: 'ch-next' });
+  expect(saved).toHaveBeenCalledWith(chapter.novelId, chapter.id, 50);
+  await view.unmount();
+});
+
+test('the reading sheet preserves direct theme and font-size controls', async () => {
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  await fireEvent.press(screen.getByRole('button', { name: 'ตั้งค่าการอ่าน' }));
+  await fireEvent.press(screen.getByRole('radio', { name: 'ธีมมืด' }));
+  expect(saveTheme).toHaveBeenCalledWith('dark');
+  expect(screen.getByRole('radio', { name: 'ธีมมืด' }).props.accessibilityState.selected).toBe(true);
+  await fireEvent.press(screen.getByLabelText('เพิ่มขนาดตัวอักษร'));
+  expect(saveFontSize).toHaveBeenCalledWith(18);
   await view.unmount();
 });

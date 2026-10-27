@@ -6,13 +6,13 @@ import {
   ScrollView,
   TouchableOpacity,
   Image,
-  StatusBar,
   ActivityIndicator,
   Alert,
   Modal,
   RefreshControl,
 } from 'react-native';
 import { NavigationBar } from 'expo-navigation-bar';
+import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -258,10 +258,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: themeColors.background }]}>
-      <StatusBar
-        barStyle={themeColors.statusBar === 'dark' ? 'dark-content' : 'light-content'}
-        backgroundColor={themeColors.background}
-      />
+      <StatusBar style={themeColors.statusBar === 'dark' ? 'dark' : 'light'} />
       <NavigationBar hidden={false} style={currentTheme === 'dark' ? 'dark' : 'light'} />
 
       {/* Top Header */}

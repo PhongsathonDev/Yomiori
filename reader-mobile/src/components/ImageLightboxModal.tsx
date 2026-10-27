@@ -7,9 +7,9 @@ import {
   TouchableOpacity,
   ScrollView,
   Dimensions,
-  StatusBar,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 import { OfflineImage } from './OfflineImage';
 
 interface ImageLightboxModalProps {
@@ -44,7 +44,7 @@ export const ImageLightboxModal: React.FC<ImageLightboxModalProps> = ({
       statusBarTranslucent={true}
     >
       <View style={styles.container}>
-        <StatusBar barStyle="light-content" backgroundColor="#000000" />
+        <StatusBar style="light" />
 
         {/* Top Header / Close Button */}
         <View style={[styles.header, { top: Math.max(16, insets.top + 8) }]}>

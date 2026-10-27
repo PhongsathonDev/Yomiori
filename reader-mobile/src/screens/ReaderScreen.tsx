@@ -3,28 +3,24 @@ import {
   View,
   Text,
   ScrollView,
+  type ScrollViewInstance,
+  type LayoutChangeEvent,
   TouchableOpacity,
   Pressable,
-  StatusBar,
   ActivityIndicator,
   NativeSyntheticEvent,
   NativeScrollEvent,
   AppState,
   useWindowDimensions,
 } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { NavigationBar } from 'expo-navigation-bar';
 import { RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import {
-  ArrowLeft,
   ChevronLeft,
   ChevronRight,
-  Sun,
-  Moon,
-  Coffee,
-  Type,
-  List,
 } from 'lucide-react-native';
 import { RootStackParamList, Chapter, Character, ReaderTheme, ChapterListItem } from '../types';
 import { getChapterForReading, fetchCharacters, getAvailableChapterList } from '../services/api';
@@ -42,6 +38,7 @@ import {
 import { themes } from '../theme/colors';
 import { readerStyles as styles } from '../theme/readerStyles';
 import { ReaderStory } from '../components/ReaderStory';
+import { ReaderHeader, ReaderDock, ReaderReveal } from '../components/ReaderChrome';
 import { useReaderFonts } from '../components/ReaderFontProvider';
 import { ScreenState } from '../components/ScreenState';
 import { createProgressWriter, getResumeOffset } from '../services/readingProgress';
@@ -91,13 +88,15 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
   const [showControls, setShowControls] = useState(true);
   const [showTypographyModal, setShowTypographyModal] = useState(false);
+  const [headerHeight, setHeaderHeight] = useState(68);
+  const [dockHeight, setDockHeight] = useState(124);
 
   // Lightbox Modal State
   const [lightboxVisible, setLightboxVisible] = useState(false);
   const [lightboxUrl, setLightboxUrl] = useState<string | null>(null);
   const [lightboxCaption, setLightboxCaption] = useState<string | undefined>();
 
-  const scrollRef = useRef<ScrollView>(null);
+  const scrollRef = useRef<ScrollViewInstance>(null);
   const hasRestoredScroll = useRef(false);
   const savedProgressPercent = useRef(0);
   const themeColors = themes[currentTheme];
@@ -210,67 +209,37 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const hasPrev = currentChapterIndex > 0;
   const hasNext = currentChapterIndex !== -1 && currentChapterIndex < chapterList.length - 1;
 
-  const goToChapterAt = (index: number) => {
+  const goToChapterAt = useCallback((index: number) => {
     const target = chapterList[index];
     if (!target) return;
     progressWriter.current?.flush();
     navigation.replace('Reader', { novelId, chapterId: target.id });
-  };
+  }, [chapterList, navigation, novelId]);
+  const openContents = useCallback(() => {
+    progressWriter.current?.flush();
+    navigation.navigate('NovelDetail', { novelId });
+  }, [navigation, novelId]);
+  const goBack = useCallback(() => navigation.goBack(), [navigation]);
+  const goPrev = useCallback(() => goToChapterAt(currentChapterIndex - 1), [currentChapterIndex, goToChapterAt]);
+  const goNext = useCallback(() => goToChapterAt(currentChapterIndex + 1), [currentChapterIndex, goToChapterAt]);
+  const openSettings = useCallback(() => setShowTypographyModal(true), []);
+  const hideControls = useCallback(() => setShowControls(false), []);
+  const revealControls = useCallback(() => setShowControls(true), []);
+  const measureHeader = useCallback((event: LayoutChangeEvent) => setHeaderHeight(Math.ceil(event.nativeEvent.layout.height)), []);
+  const measureDock = useCallback((event: LayoutChangeEvent) => setDockHeight(Math.ceil(event.nativeEvent.layout.height)), []);
+  const positionLabel = currentChapterIndex >= 0
+    ? `${currentChapterIndex + 1} / ${chapterList.length} ในสารบัญ` : chapter ? `ตอนที่ ${chapter.chapterNumber}` : 'กำลังเปิดตอน';
 
   return (
-    <SafeAreaView style={[styles.container, { backgroundColor: themeColors.background }]}>
-      <StatusBar
-        barStyle={themeColors.statusBar === 'dark' ? 'dark-content' : 'light-content'}
-        backgroundColor={themeColors.background}
-      />
+    <SafeAreaView edges={['left', 'right']} style={[styles.container, { backgroundColor: themeColors.background }]}>
+      <StatusBar style={themeColors.statusBar === 'dark' ? 'dark' : 'light'} />
       <NavigationBar hidden={true} />
+      <View pointerEvents="none" style={{ position: 'absolute', top: 0, left: 0, right: 0, height: insets.top, backgroundColor: themeColors.background, zIndex: 40 }} />
 
-      {/* Top Header (Collapsible in Zen Mode) */}
-      {showControls && (
-        <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
-          <View style={[styles.centeredRow, { maxWidth: isTablet ? 720 : '100%' }]}>
-            <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
-              <ArrowLeft size={22} color={themeColors.text} />
-            </TouchableOpacity>
-
-            <View style={styles.headerTitles}>
-              <Text
-                style={[
-                  styles.headerChapterTitle,
-                  { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
-                ]}
-                numberOfLines={1}
-              >
-                {chapter ? chapter.title : `ตอนที่ ${chapterId}`}
-              </Text>
-            </View>
-
-            <View style={styles.progressPercentBadge}>
-              <Text style={[styles.progressPercentText, { color: themeColors.primary }]}>
-                {Math.round(readingProgress)}%
-              </Text>
-            </View>
-            <TouchableOpacity accessibilityRole="button" accessibilityLabel="เปิดสารบัญ" style={styles.backBtn} onPress={() => {
-              progressWriter.current?.flush();
-              navigation.navigate('NovelDetail', { novelId });
-            }}>
-              <List size={22} color={themeColors.text} />
-            </TouchableOpacity>
-          </View>
-        </View>
-      )}
-
-      {/* Always Visible Linear Reading Progress Bar (Ultra-sleek top indicator) */}
-      <View style={[styles.progressBarTrack, { backgroundColor: themeColors.progressTrack }]}>
-        <View
-          style={[
-            styles.progressBarFill,
-            {
-              backgroundColor: themeColors.progressBar,
-              width: `${readingProgress}%`,
-            },
-          ]}
-        />
+      <View accessibilityRole="progressbar" accessibilityLabel="ความคืบหน้าการอ่าน"
+        accessibilityValue={{ min: 0, max: 100, now: readingProgress }}
+        style={[styles.progressBarTrack, { top: insets.top, backgroundColor: themeColors.progressTrack }]}>
+        <View style={[styles.progressBarFill, { backgroundColor: themeColors.progressBar, width: `${readingProgress}%` }]} />
       </View>
 
       {loadState === 'loading' ? (
@@ -289,8 +258,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
           ref={scrollRef}
           contentContainerStyle={[
             styles.scrollContent,
-            { paddingBottom: Math.max(110, insets.bottom + 95) },
-            !showControls && { paddingTop: 28 },
+            { paddingTop: insets.top + headerHeight + 27, paddingBottom: dockHeight + 24, paddingHorizontal: windowWidth < 400 ? 16 : 24 },
           ]}
           onScroll={handleScroll}
           scrollEventThrottle={32}
@@ -306,14 +274,12 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
           onMomentumScrollEnd={event => { handleScroll(event); progressWriter.current?.flush(); }}
         >
           {/* Centered Book Spine: Ergonomic line length on both Phones and Tablets */}
-          <View style={[styles.bookSpine, { maxWidth: isTablet ? 720 : '100%' }]}>
+          <View style={[styles.bookSpine, { maxWidth: Math.min(720, fontSize * 36) }]}>
             {/* Chapter Heading Banner */}
             <Pressable onPress={toggleControls}>
               <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
-                <Text style={[styles.chapterHeroNum, { color: themeColors.primary }]}>
-                  CHAPTER {chapter.chapterNumber}
-                </Text>
                 <Text
+                  accessibilityRole="header"
                   style={[
                     styles.chapterHeroTitle,
                     { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
@@ -334,14 +300,10 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
               fontSize={fontSize} fontFamily={fontFamily} lineHeightRatio={lineHeightRatio}
               onToggleControls={toggleControls} onSelectCharacter={setSelectedCharacter} onOpenIllustration={openIllustration} />
 
-            {/* Co-Reading Community Comments Section */}
-            <ChapterCommentsSection key={`${novelId}:${chapterId}`}
-              novelId={novelId}
-              chapterId={chapterId}
-              theme={currentTheme}
-            />
-
-            {/* End of Chapter Navigation */}
+            {/* Reading continues before the secondary community section. */}
+            <Text accessibilityRole="header" style={[styles.chapterEndTitle, { color: themeColors.text }]}>
+              {hasNext ? 'อ่านต่อ' : 'ถึงตอนสุดท้ายในรายการ'}
+            </Text>
             <View style={[styles.bottomChapterNav, { borderTopColor: themeColors.border }]}>
               <TouchableOpacity
                 style={[
@@ -350,7 +312,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
                   !hasPrev && { opacity: 0.4 },
                 ]}
                 disabled={!hasPrev}
-                onPress={() => goToChapterAt(currentChapterIndex - 1)}
+                onPress={goPrev}
               >
                 <ChevronLeft size={18} color={themeColors.text} />
                 <Text style={[styles.navChapterBtnText, { color: themeColors.text }]}>ตอนก่อนหน้า</Text>
@@ -363,74 +325,33 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
                   !hasNext && { opacity: 0.4 },
                 ]}
                 disabled={!hasNext}
-                onPress={() => goToChapterAt(currentChapterIndex + 1)}
+                onPress={goNext}
               >
                 <Text style={styles.navChapterBtnNextText}>ตอนถัดไป</Text>
                 <ChevronRight size={18} color="#ffffff" />
               </TouchableOpacity>
             </View>
+            {!hasNext && <Pressable accessibilityRole="button" onPress={openContents} style={styles.chapterContentsLink}>
+              <Text style={{ color: themeColors.primary }}>ดูตอนทั้งหมดในสารบัญ</Text>
+            </Pressable>}
+            {/* Co-Reading Community Comments Section */}
+            <ChapterCommentsSection key={`${novelId}:${chapterId}`}
+              novelId={novelId}
+              chapterId={chapterId}
+              theme={currentTheme}
+            />
+
           </View>
         </ScrollView>
       )}
 
-      {/* Floating Bottom Quick Settings Bar (Centered on both Phones & Tablets) */}
-      {showControls && (
-        <View
-          style={[
-            styles.floatingBar,
-            {
-              backgroundColor: themeColors.card,
-              borderColor: themeColors.cardBorder,
-              bottom: Math.max(24, insets.bottom + 12),
-            },
-          ]}
-        >
-          {/* Typography Settings Button */}
-          <TouchableOpacity
-            style={[styles.typographyPillBtn, { backgroundColor: themeColors.primaryBg }]}
-            onPress={() => setShowTypographyModal(true)}
-            activeOpacity={0.7}
-          >
-            <Type size={16} color={themeColors.primary} />
-            <Text numberOfLines={1} style={[styles.typographyBtnText, { color: themeColors.primary }]}>
-              {fontFamily === 'System' ? 'ระบบ' : fontFamily} · {fontSize}
-            </Text>
-          </TouchableOpacity>
-
-          {/* Theme Toggles */}
-          <View style={styles.themeGroup}>
-            <TouchableOpacity
-              style={[
-                styles.themeOptionBtn,
-                currentTheme === 'light' && { borderColor: themeColors.primary, borderWidth: 2 },
-              ]}
-              onPress={() => handleToggleTheme('light')}
-            >
-              <Sun size={16} color="#d97706" />
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={[
-                styles.themeOptionBtn,
-                currentTheme === 'sepia' && { borderColor: themeColors.primary, borderWidth: 2 },
-              ]}
-              onPress={() => handleToggleTheme('sepia')}
-            >
-              <Coffee size={16} color="#9e432a" />
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={[
-                styles.themeOptionBtn,
-                currentTheme === 'dark' && { borderColor: themeColors.primary, borderWidth: 2 },
-              ]}
-              onPress={() => handleToggleTheme('dark')}
-            >
-              <Moon size={16} color="#e26d83" />
-            </TouchableOpacity>
-          </View>
-        </View>
-      )}
+      <ReaderHeader visible={showControls} colors={themeColors} topInset={insets.top} novelTitle={chapter?.novelTitle ?? 'Yomiori'}
+        chapterTitle={chapter?.title ?? 'เปิดตอนนิยาย'} onBack={goBack} onContents={openContents} onLayout={measureHeader} />
+      <ReaderDock visible={showControls} enabled={loadState === 'ready'} colors={themeColors}
+        positionLabel={positionLabel} progress={readingProgress} bottomInset={insets.bottom}
+        hasPrev={hasPrev} hasNext={hasNext} onPrev={goPrev} onNext={goNext}
+        onContents={openContents} onSettings={openSettings} onHide={hideControls} onLayout={measureDock} />
+      {!showControls && <ReaderReveal colors={themeColors} bottomInset={insets.bottom} onPress={revealControls} />}
 
       {/* Typography & Layout Settings Modal */}
       <TypographyModal
@@ -442,6 +363,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
         onChangeFontSize={handleChangeFontSize}
         onChangeFontFamily={handleChangeFontFamily}
         onChangeLineHeight={handleChangeLineHeight}
+        onChangeTheme={handleToggleTheme}
         onClose={() => setShowTypographyModal(false)}
       />
 

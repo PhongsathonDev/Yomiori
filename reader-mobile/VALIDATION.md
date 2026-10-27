@@ -22,6 +22,11 @@ npx expo export --platform ios --output-dir dist/ios --max-workers 2
 - Saved-file discovery without catalog/manifest metadata, recovery above legacy fallback ranges, backup validation and overlapping scans/writes.
 - App usability during font loading/failure, bookshelf usability during stalled catalog reads and local chapters during stalled online refresh.
 - Direct table-of-contents access from the Reader header.
+- Stable scroll-content spacing when Reader tools are hidden/revealed, dock navigation with progress flush, and persistent theme/font changes from the reading settings sheet.
+
+## 28 October 2026 validation
+
+Validated the existing Expo 58 / React Native 0.88 dependency upgrade together with the Reader refinement. `expo install --check`, TypeScript, Expo ESLint and all 55 Jest tests pass. Local Android Metro export also passes (2,975 modules); this checks the JavaScript/assets bundle, not native compilation. The layout detector reported no findings on the changed Reader layout files. Browser layout review is documented in `.wayfinder/assets/reader-layout/README.md`; it is not native visual verification. No cloud build or APK was created.
 
 ## Storage behavior
 
