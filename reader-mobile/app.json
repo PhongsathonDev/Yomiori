@@ -2,7 +2,7 @@
   "expo": {
     "name": "Yomiori",
     "slug": "yomiori-reader",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -15,7 +15,7 @@
     },
     "android": {
       "package": "com.phongsathon.yomiori",
-      "versionCode": 1,
+      "versionCode": 2,
       "adaptiveIcon": {
         "backgroundColor": "#faf8f5",
         "foregroundImage": "./assets/android-icon-foreground.png",
