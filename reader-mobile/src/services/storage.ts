@@ -15,8 +15,13 @@ const enqueueComments = createKeyedQueue();
 const generations = new Map<string, number>();
 const activeJobs = new Set<string>();
 const savedNovelScans = new Map<string, Promise<SavedNovelSummary | null>>();
+// Session-only summaries: a fresh process always verifies the files again.
+const savedNovelSummaries = new Map<string, { revision: number; generation: number; summary: SavedNovelSummary }>();
 const fileRevisions = new Map<string, number>();
-const markFilesChanged = (novelId: string) => fileRevisions.set(novelId, (fileRevisions.get(novelId) ?? 0) + 1);
+const markFilesChanged = (novelId: string) => {
+  fileRevisions.set(novelId, (fileRevisions.get(novelId) ?? 0) + 1);
+  savedNovelSummaries.delete(novelId);
+};
 
 export const getOfflineGeneration = (novelId: string) => generations.get(novelId) ?? 0;
 
@@ -81,10 +86,19 @@ export async function loadChapterOffline(novelId: string, chapterId: string): Pr
  */
 export function getSavedNovel(novelId: string): Promise<SavedNovelSummary | null> {
   const generation = getOfflineGeneration(novelId);
-  const key = `${novelId}:${generation}:${fileRevisions.get(novelId) ?? 0}`;
+  const revision = fileRevisions.get(novelId) ?? 0;
+  const cached = savedNovelSummaries.get(novelId);
+  if (cached && cached.generation === generation && cached.revision === revision) return Promise.resolve(cached.summary);
+  const key = `${novelId}:${generation}:${revision}`;
   const pending = savedNovelScans.get(key);
   if (pending) return pending;
-  const scan = scanSavedNovel(novelId).then(summary => generation === getOfflineGeneration(novelId) ? summary : null)
+  const scan = scanSavedNovel(novelId).then(summary => {
+    // Never publish a scan which overlapped a write or clear.
+    if (generation !== getOfflineGeneration(novelId) || revision !== (fileRevisions.get(novelId) ?? 0)) return getSavedNovel(novelId);
+    // Null can mean an I/O error; retry on the next request instead of caching it.
+    if (summary) savedNovelSummaries.set(novelId, { generation, revision, summary });
+    return summary;
+  })
     .finally(() => { if (savedNovelScans.get(key) === scan) savedNovelScans.delete(key); });
   savedNovelScans.set(key, scan);
   return scan;
@@ -151,10 +165,10 @@ export async function saveChapterOffline(chapter: Chapter, generation = getOffli
       checkGeneration(chapter.novelId, generation);
       await FileSystem.moveAsync({ from: temporary, to: path });
       promoted = true;
-      markFilesChanged(chapter.novelId);
     } finally {
       await FileSystem.deleteAsync(temporary, { idempotent: true }).catch(() => undefined);
       if (promoted) await FileSystem.deleteAsync(backup, { idempotent: true }).catch(() => undefined);
+      markFilesChanged(chapter.novelId);
     }
   });
 }
@@ -162,9 +176,10 @@ export async function saveChapterOffline(chapter: Chapter, generation = getOffli
 export async function deleteChapterOffline(novelId: string, chapterId: string): Promise<void> {
   await enqueueFile(novelId, async () => {
     const path = getChapterFilePath(novelId, chapterId);
-    await FileSystem.deleteAsync(path, { idempotent: true });
-    await FileSystem.deleteAsync(`${path}.bak`, { idempotent: true });
-    markFilesChanged(novelId);
+    try {
+      await FileSystem.deleteAsync(path, { idempotent: true });
+      await FileSystem.deleteAsync(`${path}.bak`, { idempotent: true });
+    } finally { markFilesChanged(novelId); }
   });
 }
 
@@ -172,7 +187,10 @@ export async function clearNovelOfflineStorage(novelId: string): Promise<void> {
   const dir = novelDirectory(novelId);
   // Invalidate already-started fetches before waiting for a file operation.
   generations.set(novelId, getOfflineGeneration(novelId) + 1);
-  await enqueueFile(novelId, () => FileSystem.deleteAsync(dir, { idempotent: true }));
+  await enqueueFile(novelId, async () => {
+    try { await FileSystem.deleteAsync(dir, { idempotent: true }); }
+    finally { markFilesChanged(novelId); }
+  });
 }
 
 export async function getNovelOfflineStats(novelId: string): Promise<{ count: number; totalBytes: number }> {

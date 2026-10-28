@@ -63,6 +63,10 @@ beforeEach(async () => {
     downloadAsync: jest.fn(async () => { files.set(path, 'image-data'); return { status: 200, uri: path }; }),
     cancelAsync: jest.fn().mockResolvedValue(undefined),
   }) as unknown as FileSystem.DownloadResumable);
+  // Each test models a fresh library; invalidate session summaries as well.
+  await clearNovelOfflineStorage('test-novel');
+  await clearNovelOfflineStorage('kyudo-senpai');
+  jest.clearAllMocks();
 });
 
 afterEach(() => { jest.useRealTimers(); });
@@ -238,6 +242,18 @@ describe('metadata, settings and progress compatibility', () => {
     expect((await getSavedNovel(chapter.novelId))?.chapters[0].id).toBe(chapter.id);
     finishOldScan([]);
     await oldScan;
+  });
+
+  test('reuses a scan until a chapter changes, then rescans', async () => {
+    await saveChapterOffline(chapter);
+    await getSavedNovel(chapter.novelId);
+    fs.readAsStringAsync.mockClear();
+    await getSavedNovel(chapter.novelId);
+    expect(fs.readAsStringAsync).not.toHaveBeenCalled();
+    await saveChapterOffline({ ...chapter, title: 'Updated' });
+    fs.readAsStringAsync.mockClear();
+    expect((await getSavedNovel(chapter.novelId))?.chapters[0].title).toBe('Updated');
+    expect(fs.readAsStringAsync).toHaveBeenCalled();
   });
 
   test('bundled reading and explicit download do not request a stalled CDN first', async () => {
