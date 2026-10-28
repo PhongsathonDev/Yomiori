@@ -37,8 +37,9 @@ export const themes: Record<ReaderTheme, ThemeColors> = {
     statusBar: 'dark',
   },
   dark: {
-    background: '#121214',
-    card: '#1b1b1e',
+    // True black keeps the main canvas and shared surfaces unlit on OLED.
+    background: '#000000',
+    card: '#000000',
     cardBorder: 'rgba(255, 255, 255, 0.07)',
     text: '#ece8e1',
     textMuted: '#9e968f',
@@ -47,7 +48,7 @@ export const themes: Record<ReaderTheme, ThemeColors> = {
     accent: '#f59e0b',
     border: '#2a2a2e',
     narrationText: '#d8d3cb',
-    dialogueBg: '#1f1f23',
+    dialogueBg: '#000000',
     dialogueBorder: 'rgba(255, 255, 255, 0.09)',
     progressBar: '#e26d83',
     progressTrack: 'rgba(255, 255, 255, 0.1)',
