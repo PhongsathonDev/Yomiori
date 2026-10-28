@@ -59,23 +59,23 @@ export const ReaderDock = memo(function ReaderDock({ visible, enabled, colors, t
   return (
     <View testID="reader-dock" onLayout={onLayout} pointerEvents={visible ? 'box-none' : 'none'}
       accessibilityElementsHidden={!visible} importantForAccessibility={visible ? 'auto' : 'no-hide-descendants'}
-      style={[styles.dock, { paddingBottom: Math.max(12, bottomInset), opacity: visible ? 1 : 0 }]}>
+      style={[styles.dock, { paddingBottom: Math.max(24, bottomInset + 12), opacity: visible ? 1 : 0 }]}>
       <View style={[styles.pill, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
         <Pressable accessibilityRole="button" accessibilityLabel="ตั้งค่าการอ่าน" disabled={!enabled} onPress={onSettings}
           style={[styles.fontButton, { opacity: enabled ? 1 : 0.4 }]}>
           <View style={[styles.fontChip, { backgroundColor: colors.primaryBg }]}>
             <Type size={14} color={colors.primary} />
-            <Text numberOfLines={1} style={[styles.fontLabel, { color: colors.primary }]}>{fontFamily} · {fontSize}</Text>
+            <Text numberOfLines={1} style={[styles.fontLabel, { color: colors.primary }]}>{fontFamily === 'System' ? 'ระบบ' : fontFamily} · {fontSize}</Text>
           </View>
         </Pressable>
         <Pressable accessibilityRole="button" accessibilityLabel="เปิดสารบัญ" onPress={onContents} disabled={!enabled} style={styles.iconButton}>
           <List size={16} color={colors.textMuted} />
         </Pressable>
-        {([{ id: 'light', label: 'ธีมสว่าง', Icon: Sun }, { id: 'sepia', label: 'ธีมโทนอุ่น', Icon: Coffee }, { id: 'dark', label: 'ธีมมืด', Icon: Moon }] as const).map(({ id, label, Icon }) => (
+        {([{ id: 'light', label: 'ธีมสว่าง', Icon: Sun, color: '#d97706' }, { id: 'sepia', label: 'ธีมโทนอุ่น', Icon: Coffee, color: '#9e432a' }, { id: 'dark', label: 'ธีมมืด', Icon: Moon, color: '#e26d83' }] as const).map(({ id, label, Icon, color }) => (
           <Pressable key={id} accessibilityRole="radio" accessibilityLabel={label} accessibilityState={{ selected: theme === id, disabled: !enabled }}
             disabled={!enabled} onPress={() => onTheme(id)} style={styles.iconButton}>
-            <View style={[styles.themeIcon, { borderColor: theme === id ? colors.primary : 'transparent', backgroundColor: theme === id ? colors.primaryBg : 'transparent' }]}>
-              <Icon size={15} color={theme === id ? colors.primary : colors.textMuted} />
+            <View style={[styles.themeIcon, { borderColor: theme === id ? colors.primary : 'transparent', borderWidth: theme === id ? 2 : 0 }]}>
+              <Icon size={16} color={color} />
             </View>
           </Pressable>
         ))}
@@ -97,12 +97,12 @@ const styles = StyleSheet.create({
   iconButton: { minWidth: 48, minHeight: 48, alignItems: 'center', justifyContent: 'center' },
   titles: { flex: 1, minWidth: 0 },
   chapterTitle: { fontSize: 12, lineHeight: 18 },
-  dock: { position: 'absolute', bottom: 0, left: 12, right: 12, zIndex: 10, paddingTop: 8 },
-  pill: { width: '100%', maxWidth: 440, alignSelf: 'center', flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderRadius: 28, paddingHorizontal: 4, elevation: 3 },
-  fontButton: { flex: 1, minWidth: 0, minHeight: 48, justifyContent: 'center', paddingLeft: 8 },
-  fontChip: { alignSelf: 'flex-start', flexDirection: 'row', alignItems: 'center', gap: 4, borderRadius: 16, paddingHorizontal: 8, paddingVertical: 5, maxWidth: '100%' },
-  fontLabel: { fontSize: 11, flexShrink: 1 },
-  themeIcon: { width: 30, height: 30, borderRadius: 15, borderWidth: 1, alignItems: 'center', justifyContent: 'center' },
+  dock: { position: 'absolute', bottom: 0, left: '3%', right: '3%', zIndex: 10, paddingTop: 8 },
+  pill: { width: '100%', maxWidth: 480, alignSelf: 'center', flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderRadius: 30, paddingHorizontal: 10, paddingVertical: 10, elevation: 5, shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.12, shadowRadius: 10 },
+  fontButton: { flex: 1, minWidth: 0, minHeight: 48, justifyContent: 'center' },
+  fontChip: { alignSelf: 'flex-start', flexDirection: 'row', alignItems: 'center', gap: 6, borderRadius: 16, paddingHorizontal: 12, paddingVertical: 6, maxWidth: '100%' },
+  fontLabel: { fontSize: 12, fontWeight: '700', flexShrink: 1 },
+  themeIcon: { width: 44, height: 44, borderRadius: 22, backgroundColor: 'rgba(0,0,0,0.04)', alignItems: 'center', justifyContent: 'center' },
   dockInner: { width: '100%', maxWidth: 360, alignSelf: 'center', paddingHorizontal: 8 },
   percent: { fontSize: 11, lineHeight: 16, minWidth: 32, textAlign: 'center' },
   actions: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
