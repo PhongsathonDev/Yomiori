@@ -1,0 +1,532 @@
+{
+  "generatedAt": "2026-10-28T03:24:59.152Z",
+  "node": "v24.12.0",
+  "platform": "win32-x64",
+  "sourceCommit": "e76517b7b96ea3eefc53debe1d5da667329d0db5",
+  "fixtureNotes": [
+    "Four synthetic novels per library with generated Thai chapters.",
+    "Illustrated every fifth chapter, one illustration block each.",
+    "mixed adds broken primary + valid .bak, stale .bak, orphan recovered .bak, foreign-id JSON and .tmp.",
+    "Airplane-mode network: fetch rejects immediately; metadata caches pre-seeded."
+  ],
+  "fixtures": [
+    {
+      "scenario": "library-100-clean",
+      "mode": "clean",
+      "novels": 4,
+      "chaptersPerNovel": 25,
+      "libraryChapters": 100,
+      "illustratedChapters": 20,
+      "missingIllustrationFiles": 0,
+      "brokenPrimaries": 0,
+      "recoveryBackups": 0,
+      "staleBackups": 0,
+      "orphanRecoveries": 0,
+      "invalidIdentityFiles": 0,
+      "strayTempFiles": 0,
+      "chapterBytes": 2097064,
+      "averageChapterBytes": 20971
+    },
+    {
+      "scenario": "library-100-mixed",
+      "mode": "mixed",
+      "novels": 4,
+      "chaptersPerNovel": 25,
+      "libraryChapters": 100,
+      "illustratedChapters": 20,
+      "missingIllustrationFiles": 4,
+      "brokenPrimaries": 2,
+      "recoveryBackups": 2,
+      "staleBackups": 2,
+      "orphanRecoveries": 4,
+      "invalidIdentityFiles": 4,
+      "strayTempFiles": 4,
+      "chapterBytes": 2097064,
+      "averageChapterBytes": 20971
+    },
+    {
+      "scenario": "library-1000-clean",
+      "mode": "clean",
+      "novels": 4,
+      "chaptersPerNovel": 250,
+      "libraryChapters": 1000,
+      "illustratedChapters": 200,
+      "missingIllustrationFiles": 0,
+      "brokenPrimaries": 0,
+      "recoveryBackups": 0,
+      "staleBackups": 0,
+      "orphanRecoveries": 0,
+      "invalidIdentityFiles": 0,
+      "strayTempFiles": 0,
+      "chapterBytes": 20972656,
+      "averageChapterBytes": 20973
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "mode": "mixed",
+      "novels": 4,
+      "chaptersPerNovel": 250,
+      "libraryChapters": 1000,
+      "illustratedChapters": 200,
+      "missingIllustrationFiles": 48,
+      "brokenPrimaries": 20,
+      "recoveryBackups": 20,
+      "staleBackups": 27,
+      "orphanRecoveries": 4,
+      "invalidIdentityFiles": 4,
+      "strayTempFiles": 4,
+      "chapterBytes": 20972656,
+      "averageChapterBytes": 20973
+    }
+  ],
+  "measurements": [
+    {
+      "scenario": "library-100-clean",
+      "entry": "storage.getSavedLibrary (pass 1)",
+      "wallMs": 16,
+      "ops": {
+        "listDirectory": 5,
+        "statChapter": 100,
+        "readChapter": 100,
+        "bytesChapter": 2097064,
+        "jsonParse": 100,
+        "statIllustration": 20
+      }
+    },
+    {
+      "scenario": "library-100-clean",
+      "entry": "storage.getSavedLibrary (pass 2)",
+      "wallMs": 16,
+      "ops": {
+        "listDirectory": 5,
+        "statChapter": 100,
+        "readChapter": 100,
+        "bytesChapter": 2097064,
+        "jsonParse": 100,
+        "statIllustration": 20
+      }
+    },
+    {
+      "scenario": "library-100-clean",
+      "entry": "storage.getSavedNovel (pass 1)",
+      "wallMs": 3,
+      "ops": {
+        "listDirectory": 1,
+        "statChapter": 25,
+        "readChapter": 25,
+        "bytesChapter": 524266,
+        "jsonParse": 25,
+        "statIllustration": 5
+      }
+    },
+    {
+      "scenario": "library-100-clean",
+      "entry": "storage.getSavedNovel (pass 2)",
+      "wallMs": 3,
+      "ops": {
+        "listDirectory": 1,
+        "statChapter": 25,
+        "readChapter": 25,
+        "bytesChapter": 524266,
+        "jsonParse": 25,
+        "statIllustration": 5
+      }
+    },
+    {
+      "scenario": "library-100-clean",
+      "entry": "bookshelf entry (first)",
+      "wallMs": 73,
+      "ops": {
+        "metaRead": 51,
+        "listDirectory": 24,
+        "statChapter": 350,
+        "jsonParse": 368,
+        "readChapter": 350,
+        "bytesChapter": 7339724,
+        "statIllustration": 72,
+        "networkRequest": 1
+      }
+    },
+    {
+      "scenario": "library-100-clean",
+      "entry": "bookshelf entry (repeat)",
+      "wallMs": 76,
+      "ops": {
+        "metaRead": 51,
+        "listDirectory": 24,
+        "statChapter": 350,
+        "jsonParse": 368,
+        "readChapter": 350,
+        "bytesChapter": 7339724,
+        "statIllustration": 72,
+        "networkRequest": 1
+      }
+    },
+    {
+      "scenario": "library-100-clean",
+      "entry": "novel detail entry (first)",
+      "wallMs": 38,
+      "ops": {
+        "metaRead": 10,
+        "jsonParse": 205,
+        "listDirectory": 10,
+        "statChapter": 200,
+        "readChapter": 200,
+        "bytesChapter": 4194128,
+        "statIllustration": 40,
+        "networkRequest": 3
+      }
+    },
+    {
+      "scenario": "library-100-clean",
+      "entry": "novel detail entry (repeat)",
+      "wallMs": 26,
+      "ops": {
+        "metaRead": 10,
+        "jsonParse": 205,
+        "listDirectory": 10,
+        "statChapter": 200,
+        "readChapter": 200,
+        "bytesChapter": 4194128,
+        "statIllustration": 40,
+        "networkRequest": 3
+      }
+    },
+    {
+      "scenario": "library-100-mixed",
+      "entry": "storage.getSavedLibrary (pass 1)",
+      "wallMs": 15,
+      "ops": {
+        "listDirectory": 5,
+        "statChapter": 114,
+        "readChapter": 106,
+        "bytesChapter": 2181034,
+        "jsonParse": 106,
+        "statIllustration": 20
+      }
+    },
+    {
+      "scenario": "library-100-mixed",
+      "entry": "storage.getSavedLibrary (pass 2)",
+      "wallMs": 13,
+      "ops": {
+        "listDirectory": 5,
+        "statChapter": 114,
+        "readChapter": 106,
+        "bytesChapter": 2181034,
+        "jsonParse": 106,
+        "statIllustration": 20
+      }
+    },
+    {
+      "scenario": "library-100-mixed",
+      "entry": "storage.getSavedNovel (pass 1)",
+      "wallMs": 3,
+      "ops": {
+        "listDirectory": 1,
+        "statChapter": 28,
+        "readChapter": 26,
+        "bytesChapter": 545221,
+        "jsonParse": 26,
+        "statIllustration": 5
+      }
+    },
+    {
+      "scenario": "library-100-mixed",
+      "entry": "storage.getSavedNovel (pass 2)",
+      "wallMs": 3,
+      "ops": {
+        "listDirectory": 1,
+        "statChapter": 28,
+        "readChapter": 26,
+        "bytesChapter": 545221,
+        "jsonParse": 26,
+        "statIllustration": 5
+      }
+    },
+    {
+      "scenario": "library-100-mixed",
+      "entry": "bookshelf entry (first)",
+      "wallMs": 56,
+      "ops": {
+        "metaRead": 51,
+        "listDirectory": 24,
+        "statChapter": 399,
+        "jsonParse": 389,
+        "readChapter": 371,
+        "bytesChapter": 7633619,
+        "statIllustration": 72,
+        "networkRequest": 1
+      }
+    },
+    {
+      "scenario": "library-100-mixed",
+      "entry": "bookshelf entry (repeat)",
+      "wallMs": 64,
+      "ops": {
+        "metaRead": 51,
+        "listDirectory": 24,
+        "statChapter": 399,
+        "jsonParse": 389,
+        "readChapter": 371,
+        "bytesChapter": 7633619,
+        "statIllustration": 72,
+        "networkRequest": 1
+      }
+    },
+    {
+      "scenario": "library-100-mixed",
+      "entry": "novel detail entry (first)",
+      "wallMs": 24,
+      "ops": {
+        "metaRead": 10,
+        "jsonParse": 217,
+        "listDirectory": 10,
+        "statChapter": 228,
+        "readChapter": 212,
+        "bytesChapter": 4362068,
+        "statIllustration": 40,
+        "networkRequest": 3
+      }
+    },
+    {
+      "scenario": "library-100-mixed",
+      "entry": "novel detail entry (repeat)",
+      "wallMs": 25,
+      "ops": {
+        "metaRead": 10,
+        "jsonParse": 217,
+        "listDirectory": 10,
+        "statChapter": 228,
+        "readChapter": 212,
+        "bytesChapter": 4362068,
+        "statIllustration": 40,
+        "networkRequest": 3
+      }
+    },
+    {
+      "scenario": "library-1000-clean",
+      "entry": "storage.getSavedLibrary (pass 1)",
+      "wallMs": 138,
+      "ops": {
+        "listDirectory": 5,
+        "statChapter": 1000,
+        "readChapter": 1000,
+        "bytesChapter": 20972656,
+        "jsonParse": 1000,
+        "statIllustration": 200
+      }
+    },
+    {
+      "scenario": "library-1000-clean",
+      "entry": "storage.getSavedLibrary (pass 2)",
+      "wallMs": 137,
+      "ops": {
+        "listDirectory": 5,
+        "statChapter": 1000,
+        "readChapter": 1000,
+        "bytesChapter": 20972656,
+        "jsonParse": 1000,
+        "statIllustration": 200
+      }
+    },
+    {
+      "scenario": "library-1000-clean",
+      "entry": "storage.getSavedNovel (pass 1)",
+      "wallMs": 34,
+      "ops": {
+        "listDirectory": 1,
+        "statChapter": 250,
+        "readChapter": 250,
+        "bytesChapter": 5243164,
+        "jsonParse": 250,
+        "statIllustration": 50
+      }
+    },
+    {
+      "scenario": "library-1000-clean",
+      "entry": "storage.getSavedNovel (pass 2)",
+      "wallMs": 47,
+      "ops": {
+        "listDirectory": 1,
+        "statChapter": 250,
+        "readChapter": 250,
+        "bytesChapter": 5243164,
+        "jsonParse": 250,
+        "statIllustration": 50
+      }
+    },
+    {
+      "scenario": "library-1000-clean",
+      "entry": "bookshelf entry (first)",
+      "wallMs": 536,
+      "ops": {
+        "metaRead": 51,
+        "listDirectory": 24,
+        "statChapter": 3500,
+        "jsonParse": 3518,
+        "readChapter": 3500,
+        "bytesChapter": 73404296,
+        "statIllustration": 702,
+        "networkRequest": 1
+      }
+    },
+    {
+      "scenario": "library-1000-clean",
+      "entry": "bookshelf entry (repeat)",
+      "wallMs": 485,
+      "ops": {
+        "metaRead": 51,
+        "listDirectory": 24,
+        "statChapter": 3500,
+        "jsonParse": 3518,
+        "readChapter": 3500,
+        "bytesChapter": 73404296,
+        "statIllustration": 702,
+        "networkRequest": 1
+      }
+    },
+    {
+      "scenario": "library-1000-clean",
+      "entry": "novel detail entry (first)",
+      "wallMs": 276,
+      "ops": {
+        "metaRead": 10,
+        "jsonParse": 2005,
+        "listDirectory": 10,
+        "statChapter": 2000,
+        "readChapter": 2000,
+        "bytesChapter": 41945312,
+        "statIllustration": 400,
+        "networkRequest": 3
+      }
+    },
+    {
+      "scenario": "library-1000-clean",
+      "entry": "novel detail entry (repeat)",
+      "wallMs": 297,
+      "ops": {
+        "metaRead": 10,
+        "jsonParse": 2005,
+        "listDirectory": 10,
+        "statChapter": 2000,
+        "readChapter": 2000,
+        "bytesChapter": 41945312,
+        "statIllustration": 400,
+        "networkRequest": 3
+      }
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "entry": "storage.getSavedLibrary (pass 1)",
+      "wallMs": 125,
+      "ops": {
+        "listDirectory": 5,
+        "statChapter": 1032,
+        "readChapter": 1024,
+        "bytesChapter": 21057976,
+        "jsonParse": 1024,
+        "statIllustration": 200
+      }
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "entry": "storage.getSavedLibrary (pass 2)",
+      "wallMs": 143,
+      "ops": {
+        "listDirectory": 5,
+        "statChapter": 1032,
+        "readChapter": 1024,
+        "bytesChapter": 21057976,
+        "jsonParse": 1024,
+        "statIllustration": 200
+      }
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "entry": "storage.getSavedNovel (pass 1)",
+      "wallMs": 37,
+      "ops": {
+        "listDirectory": 1,
+        "statChapter": 258,
+        "readChapter": 256,
+        "bytesChapter": 5264494,
+        "jsonParse": 256,
+        "statIllustration": 50
+      }
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "entry": "storage.getSavedNovel (pass 2)",
+      "wallMs": 40,
+      "ops": {
+        "listDirectory": 1,
+        "statChapter": 258,
+        "readChapter": 256,
+        "bytesChapter": 5264494,
+        "jsonParse": 256,
+        "statIllustration": 50
+      }
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "entry": "bookshelf entry (first)",
+      "wallMs": 473,
+      "ops": {
+        "metaRead": 51,
+        "listDirectory": 24,
+        "statChapter": 3612,
+        "jsonParse": 3602,
+        "readChapter": 3584,
+        "bytesChapter": 73702916,
+        "statIllustration": 702,
+        "networkRequest": 1
+      }
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "entry": "bookshelf entry (repeat)",
+      "wallMs": 543,
+      "ops": {
+        "metaRead": 51,
+        "listDirectory": 24,
+        "statChapter": 3612,
+        "jsonParse": 3602,
+        "readChapter": 3584,
+        "bytesChapter": 73702916,
+        "statIllustration": 702,
+        "networkRequest": 1
+      }
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "entry": "novel detail entry (first)",
+      "wallMs": 325,
+      "ops": {
+        "metaRead": 10,
+        "jsonParse": 2053,
+        "listDirectory": 10,
+        "statChapter": 2064,
+        "readChapter": 2048,
+        "bytesChapter": 42115952,
+        "statIllustration": 400,
+        "networkRequest": 3
+      }
+    },
+    {
+      "scenario": "library-1000-mixed",
+      "entry": "novel detail entry (repeat)",
+      "wallMs": 368,
+      "ops": {
+        "metaRead": 10,
+        "jsonParse": 2053,
+        "listDirectory": 10,
+        "statChapter": 2064,
+        "readChapter": 2048,
+        "bytesChapter": 42115952,
+        "statIllustration": 400,
+        "networkRequest": 3
+      }
+    }
+  ]
+}

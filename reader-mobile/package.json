@@ -39,7 +39,8 @@
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
     "lint": "expo lint",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "benchmark:scan": "jest --config jest.benchmark.config.js --runInBand"
   },
   "private": true
 }

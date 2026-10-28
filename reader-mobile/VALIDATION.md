@@ -78,3 +78,9 @@ User prefers the older small floating capsule shown in Screenshot_20261028_09491
 ### 28 October 2026 — Restore the historical control styling
 
 Following the user's request to retrieve the old version, inspected `f5ecc21` ReaderScreen/readerStyles rather than approximating from the screenshot. Restored its capsule proportions (94% width, max 480, radius 30, 10-point padding), bottom offset, font-chip typography, colored 16-point outline theme icons and circular theme backgrounds/selected ring. Preserved 48-point tap targets, the small contents addition and current progress/navigation reliability. Removed Unicode theme symbols from the browser companion and replaced them with outline SVGs to avoid platform emoji rendering. TypeScript, lint and 67 tests pass. The revised companion still requires visual acceptance and is not a native capture.
+
+## Offline library scan-cost benchmark — 28 October 2026
+
+`npm run benchmark:scan` runs `benchmarks/libraryScanCost.bench.ts` under `jest.benchmark.config.js`. It exercises the real storage/api code against in-memory 100- and 1,000-chapter libraries (4 novels each, ~20.5 KB generated Thai chapters) and counts directory listings, chapter stats/reads/JSON parses, illustration stats, metadata reads and network attempts for Bookshelf and NovelDetail entries, first and repeat, in clean and damaged/backup variants. `SCAN_BENCH_OUT=<path>` also writes the raw JSON.
+
+The benchmark is an evidence harness, not a behavioural test: `npm test` does not run it. Its operation counts are deterministic for the current promise ordering; wall-clock numbers are desktop-only references and must not be presented as Android startup or device performance. Results and platform caveats are recorded in `.wayfinder/assets/android-scan-cost/report.md` (WF-0011); the 3.5–4 library passes per Bookshelf entry and 2–2.5 per NovelDetail entry are evidence for the WF-0012 reuse/index decision, not a chosen optimization.
