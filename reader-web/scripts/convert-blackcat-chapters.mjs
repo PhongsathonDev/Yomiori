@@ -1982,12 +1982,99 @@ const remainingChapters = [
     },
   },
   {
+    number: 75,
+    speakers: {
+      0: 'hina', 1: 'mizuki', 2: 'takumi', 3: 'hina', 4: 'mizuki', 5: 'takumi',
+      6: 'hina', 7: 'mizuki', 9: 'takumi', 11: 'hina', 13: 'takumi', 16: 'hina',
+      17: 'takumi', 18: 'hina', 21: 'hina', 23: 'takumi', 24: 'mizuki', 25: 'hina',
+      26: 'mizuki', 27: 'hina', 28: 'mizuki', 29: 'hina', 30: 'takumi', 31: 'hina',
+      32: 'takumi', 36: 'mizuki', 37: 'hina', 38: 'mizuki', 39: 'hina', 41: 'mizuki',
+    },
+  },
+  {
+    number: 76,
+    speakers: {
+      0: 'takumi', 2: 'mizuki', 5: 'hina', 7: 'takumi', 8: 'hina', 9: 'takumi',
+      15: 'mizuki', 19: 'takumi', 21: 'mizuki', 22: 'takumi', 23: 'mizuki',
+      24: 'takumi', 25: 'mizuki', 30: 'takumi', 31: 'mizuki', 33: 'takumi',
+      34: 'mizuki', 37: 'hina', 38: 'mizuki', 39: 'hina', 40: 'mizuki',
+      41: 'hina', 43: 'takumi', 45: 'hina', 46: 'mizuki', 47: 'hina',
+      48: 'mizuki', 50: 'hina', 51: 'mizuki',
+    },
+  },
+  {
     number: 77,
     speakers: {
       1: 'hina', 3: 'takumi', 4: 'mizuki', 6: 'takumi', 7: 'hina', 8: 'takumi',
       9: 'hina', 10: 'mizuki', 12: 'takumi', 15: 'mizuki', 18: 'hina', 19: 'mizuki',
       20: 'takumi', 21: 'hina', 24: 'takumi', 27: 'mizuki', 28: 'hina', 30: 'takumi',
       35: 'hina', 36: 'takumi', 37: 'hina', 39: 'mizuki', 40: 'takumi', 41: 'hina',
+    },
+  },
+  {
+    number: 78,
+    speakers: {
+      1: 'hina', 3: 'takumi', 4: 'mizuki', 6: 'takumi', 7: 'hina', 8: 'takumi',
+      9: 'hina', 10: 'mizuki', 12: 'takumi', 15: 'mizuki', 18: 'hina', 19: 'mizuki',
+      20: 'takumi', 21: 'hina', 24: 'takumi', 27: 'mizuki', 28: 'hina', 30: 'takumi',
+      35: 'hina', 36: 'takumi', 37: 'hina', 39: 'mizuki', 40: 'takumi', 41: 'hina',
+      45: 'hina', 46: 'mizuki', 51: 'hina', 52: 'mizuki', 53: 'takumi', 54: 'hina',
+      55: 'mizuki', 56: 'takumi', 59: 'takumi', 60: 'hina', 61: 'mizuki', 64: 'takumi',
+      65: 'hina', 66: 'mizuki', 72: 'takumi', 73: 'hina', 76: 'mizuki', 77: 'takumi',
+      78: 'hina', 79: 'mizuki', 80: 'takumi', 81: 'hina', 82: 'mizuki', 84: 'takumi',
+      86: 'hina', 89: 'mizuki', 90: 'hina', 91: 'mizuki', 92: 'hina', 98: 'takumi',
+      99: 'hina', 100: 'mizuki',
+    },
+  },
+  {
+    number: 79,
+    speakers: {
+      2: 'hina', 3: 'takumi', 5: 'hina', 6: 'takumi', 7: 'hina', 9: 'mizuki',
+      10: 'hina', 11: 'mizuki', 12: 'hina', 13: 'mizuki', 22: 'hina', 24: 'hina',
+      30: 'takumi', 34: 'hina', 39: 'takumi', 41: 'hina',
+    },
+  },
+  {
+    number: 80,
+    speakers: {
+      1: 'takumi', 3: 'hina', 4: 'mizuki', 5: 'hina', 9: 'mizuki', 19: 'takumi',
+      21: 'mizuki', 31: 'hina', 34: 'hina', 36: 'takumi', 37: 'mizuki', 38: 'hina',
+      39: 'takumi', 41: 'mizuki', 44: 'hina',
+    },
+  },
+  {
+    number: 81,
+    speakers: {
+      1: 'hina', 4: 'takumi', 5: 'mizuki', 7: 'hina', 9: 'takumi', 10: 'mizuki',
+      11: 'hina', 13: 'takumi', 14: 'mizuki', 18: 'hina', 19: 'mizuki', 20: 'hina',
+      23: 'mizuki', 25: 'hina', 26: 'mizuki', 27: 'hina', 28: 'mizuki', 30: 'hina',
+      33: 'takumi', 34: 'hina', 35: 'takumi', 37: 'hina', 40: 'takumi', 43: 'mizuki',
+    },
+  },
+  {
+    number: 82,
+    speakers: {
+      0: 'hina', 1: 'mizuki', 2: 'hina', 3: 'mizuki', 5: 'hina', 6: 'mizuki',
+      8: 'hina', 11: 'takumi', 15: 'hina', 16: 'mizuki', 23: 'mizuki', 27: 'takumi',
+      29: 'hina', 34: 'mizuki', 39: 'mizuki', 42: 'mizuki', 44: 'hina', 45: 'mizuki',
+      46: 'hina', 47: 'mizuki',
+    },
+  },
+  {
+    number: 83,
+    speakers: {
+      0: 'hina', 5: 'takumi', 7: 'hina', 11: 'takumi', 12: 'hina', 13: 'takumi',
+      32: 'takumi', 36: 'takumi', 41: 'takumi',
+    },
+  },
+  {
+    number: 84,
+    speakers: {
+      2: 'hina', 4: 'takumi', 5: 'hina', 6: 'takumi', 7: 'hina', 8: 'takumi',
+      9: 'hina', 11: 'mizuki', 12: 'hina', 13: 'mizuki', 14: 'takumi', 15: 'hina',
+      16: 'mizuki', 19: 'takumi', 20: 'hina', 21: 'takumi', 24: 'mizuki', 25: 'takumi',
+      26: 'mizuki', 27: 'hina', 29: 'mizuki', 30: 'hina', 31: 'mizuki', 32: 'hina',
+      34: 'takumi', 36: 'mizuki', 38: 'takumi', 39: 'hina', 40: 'mizuki',
     },
   },
   {
