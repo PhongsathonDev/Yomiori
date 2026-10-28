@@ -82,7 +82,7 @@ export const TypographyModal: React.FC<Props> = ({
         >
           {/* Header */}
           <View style={styles.header}>
-            <Text style={[styles.title, { color: themeColors.text }]}>ตั้งค่าการอ่าน</Text>
+            <Text style={[styles.title, { color: themeColors.text }]}>ตั้งค่าตัวอักษรและการอ่าน</Text>
             <TouchableOpacity accessibilityRole="button" accessibilityLabel="ปิดการตั้งค่าตัวอักษร" onPress={onClose} style={styles.closeBtn}>
               <X size={18} color={themeColors.textMuted} />
             </TouchableOpacity>
@@ -125,7 +125,7 @@ export const TypographyModal: React.FC<Props> = ({
                 }}
                 numberOfLines={2}
               >
-                นี่คือตัวอย่างการแสดงผลสำหรับอ่านนิยาย &ldquo;โยมิโอริ&rdquo; ในรูปแบบรูปเล่ม
+                {'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}นี่คือตัวอย่างการแสดงผลสำหรับอ่านนิยาย &ldquo;โยมิโอริ&rdquo; ในรูปแบบรูปเล่ม
               </Text>
             </View>
 
@@ -159,7 +159,7 @@ export const TypographyModal: React.FC<Props> = ({
 
             {/* Section 2: Font Family */}
             <View style={styles.section}>
-              <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>แบบอักษร</Text>
+              <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>แบบอักษร (Font Family)</Text>
               <View style={styles.fontOptionsList}>
                 {(['Sarabun', 'Kanit', 'Prompt', 'System'] as FontOption[]).map((f) => {
                   const meta = FONT_MAP[f];
@@ -283,7 +283,7 @@ const styles = StyleSheet.create({
   title: {
     flex: 1,
     minWidth: 0,
-    fontSize: 18,
+    fontSize: 16,
     lineHeight: 28,
     fontWeight: '700',
   },

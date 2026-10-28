@@ -185,7 +185,7 @@ test('hiding and revealing chrome leaves the story viewport and insets unchanged
   await view.unmount();
 });
 
-test('next chapter is reachable from the header without scrolling through comments', async () => {
+test('historical end-of-chapter navigation still flushes progress before changing chapters', async () => {
   jest.mocked(getAvailableChapterList).mockResolvedValue([
     { id: chapter.id, novelId: chapter.novelId, chapterNumber: chapter.chapterNumber, title: chapter.title },
     { id: 'ch-next', novelId: chapter.novelId, chapterNumber: chapter.chapterNumber + 1, title: 'Next' },
@@ -195,6 +195,23 @@ test('next chapter is reachable from the header without scrolling through commen
   await fireEvent.press(screen.getByRole('button', { name: 'อ่านตอนถัดไป' }));
   expect(navigation.replace).toHaveBeenCalledWith('Reader', { novelId: chapter.novelId, chapterId: 'ch-next' });
   expect(saved).toHaveBeenCalledWith(chapter.novelId, chapter.id, 50);
+  await view.unmount();
+});
+
+test('restores the 1.0.0 chapter heading, paragraph indent and compact chrome', async () => {
+  const text = 'ข้อความย่อหน้าเดิม';
+  loaded.mockResolvedValue({ chapter: { ...chapter, blocks: [{ id: 'original-paragraph', type: 'narration', text }] }, cacheWarning: false });
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findByText(`CHAPTER ${chapter.chapterNumber}`);
+  const heading = screen.getAllByText(chapter.title).find(node => node.props.accessibilityRole === 'header');
+  expect(StyleSheet.flatten(heading?.props.style)).toMatchObject({ fontSize: 18, lineHeight: 25, textAlign: 'center' });
+  expect(screen.getByText(text).props.children.join('')).toBe(`\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${text}`);
+  expect(StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle).paddingHorizontal).toBe(22);
+  const dock = screen.getByTestId('reader-dock');
+  expect(StyleSheet.flatten(dock.props.style)).toMatchObject({ left: '5%', right: '5%' });
+  const light = screen.getByRole('radio', { name: 'ธีมสว่าง' });
+  expect(light.props.hitSlop).toBe(8);
+  expect(StyleSheet.flatten(screen.getByTestId('reader-theme-light').props.style)).toMatchObject({ width: 32, height: 32, borderRadius: 16 });
   await view.unmount();
 });
 

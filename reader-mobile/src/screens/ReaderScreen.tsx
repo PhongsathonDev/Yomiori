@@ -269,7 +269,6 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const goPrev = useCallback(() => goToChapterAt(currentChapterIndex - 1), [currentChapterIndex, goToChapterAt]);
   const goNext = useCallback(() => goToChapterAt(currentChapterIndex + 1), [currentChapterIndex, goToChapterAt]);
   const openSettings = useCallback(() => setShowTypographyModal(true), []);
-  const hideControls = useCallback(() => setShowControls(false), []);
   const revealControls = useCallback(() => setShowControls(true), []);
   const measureHeader = useCallback((event: LayoutChangeEvent) => setHeaderHeight(Math.ceil(event.nativeEvent.layout.height)), []);
   const measureDock = useCallback((event: LayoutChangeEvent) => setDockHeight(Math.ceil(event.nativeEvent.layout.height)), []);
@@ -303,7 +302,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
           ref={scrollRef}
           contentContainerStyle={[
             styles.scrollContent,
-            { paddingTop: insets.top + headerHeight + 27, paddingBottom: dockHeight + 24, paddingHorizontal: windowWidth < 400 ? 16 : 24 },
+            { paddingTop: insets.top + headerHeight + 16, paddingBottom: Math.max(110, dockHeight + 24), paddingHorizontal: 22 },
           ]}
           onScroll={handleScroll}
           scrollEventThrottle={32}
@@ -319,10 +318,11 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
           onMomentumScrollEnd={event => { handleScroll(event); dragging.current = false; progressWriter.current?.flush(); }}
         >
           {/* Centered Book Spine: Ergonomic line length on both Phones and Tablets */}
-          <View testID="reader-spine" onLayout={event => { spineY.current = event.nativeEvent.layout.y; scheduleRestore(); }} style={[styles.bookSpine, { maxWidth: Math.min(720, fontSize * 36) }]}>
+          <View testID="reader-spine" onLayout={event => { spineY.current = event.nativeEvent.layout.y; scheduleRestore(); }} style={[styles.bookSpine, { maxWidth: isTablet ? 720 : '100%' }]}>
             {/* Chapter Heading Banner */}
-            <Pressable onPress={toggleControls}>
+            <Pressable accessibilityRole="button" accessibilityLabel={showControls ? 'ซ่อนเครื่องมืออ่าน' : 'แสดงเครื่องมืออ่านจากหัวตอน'} onPress={toggleControls}>
               <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
+                <Text style={[styles.chapterHeroNum, { color: themeColors.primary }]}>CHAPTER {chapter.chapterNumber}</Text>
                 <Text
                   accessibilityRole="header"
                   style={[
@@ -346,10 +346,12 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
               onStoryLayout={onStoryLayout} onBlockLayout={onBlockLayout}
               onToggleControls={toggleControls} onSelectCharacter={setSelectedCharacter} onOpenIllustration={openIllustration} />
 
-            {/* Reading continues before the secondary community section. */}
-            <Text accessibilityRole="header" style={[styles.chapterEndTitle, { color: themeColors.text }]}>
-              {hasNext ? 'อ่านต่อ' : 'ถึงตอนสุดท้ายในรายการ'}
-            </Text>
+            {/* Historical 1.0.0 order; comment persistence remains unchanged. */}
+            <ChapterCommentsSection key={`${novelId}:${chapterId}`}
+              novelId={novelId}
+              chapterId={chapterId}
+              theme={currentTheme}
+            />
             <View style={[styles.bottomChapterNav, { borderTopColor: themeColors.border }]}>
               <TouchableOpacity
                 style={[
@@ -358,6 +360,8 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
                   !hasPrev && { opacity: 0.4 },
                 ]}
                 disabled={!hasPrev}
+                accessibilityRole="button"
+                accessibilityLabel="อ่านตอนก่อนหน้า"
                 onPress={goPrev}
               >
                 <ChevronLeft size={18} color={themeColors.text} />
@@ -371,6 +375,8 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
                   !hasNext && { opacity: 0.4 },
                 ]}
                 disabled={!hasNext}
+                accessibilityRole="button"
+                accessibilityLabel="อ่านตอนถัดไป"
                 onPress={goNext}
               >
                 <Text style={styles.navChapterBtnNextText}>ตอนถัดไป</Text>
@@ -380,22 +386,16 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
             {!hasNext && <Pressable accessibilityRole="button" onPress={openContents} style={styles.chapterContentsLink}>
               <Text style={{ color: themeColors.primary }}>ดูตอนทั้งหมดในสารบัญ</Text>
             </Pressable>}
-            {/* Co-Reading Community Comments Section */}
-            <ChapterCommentsSection key={`${novelId}:${chapterId}`}
-              novelId={novelId}
-              chapterId={chapterId}
-              theme={currentTheme}
-            />
 
           </View>
         </ScrollView>
       )}
 
       <ReaderHeader visible={showControls} colors={themeColors} topInset={insets.top} progress={readingProgress} novelTitle={chapter?.novelTitle ?? 'Yomiori'}
-        chapterTitle={chapter?.title ?? 'เปิดตอนนิยาย'} onBack={goBack} hasPrev={hasPrev} hasNext={hasNext} onPrev={goPrev} onNext={goNext} onHide={hideControls} onLayout={measureHeader} />
+        chapterTitle={chapter?.title ?? 'เปิดตอนนิยาย'} fontFamily={activeFont.bold || activeFont.regular} onBack={goBack} onContents={openContents} onLayout={measureHeader} />
       <ReaderDock visible={showControls && !showTypographyModal} enabled={loadState === 'ready'} colors={themeColors}
         theme={currentTheme} fontFamily={fontFamily} fontSize={fontSize} onTheme={handleToggleTheme} bottomInset={insets.bottom}
-        onContents={openContents} onSettings={openSettings} onLayout={measureDock} />
+        onSettings={openSettings} onLayout={measureDock} />
       {!showControls && <ReaderReveal colors={themeColors} bottomInset={insets.bottom} onPress={revealControls} />}
 
       {/* Typography & Layout Settings Modal */}
