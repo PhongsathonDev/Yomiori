@@ -1,6 +1,6 @@
 # Reader Android: behavior and acceptance contract
 
-Status: implementation and automated evidence recorded; visual acceptance and Android device evidence pending. This is a personal Android reader, with no account, public release or navigation redesign in scope. It preserves existing file paths, settings and reading progress. This document is the single detailed contract for WF-0004/5/7.
+Status: specification finalized; user accepted the latest visual direction on 28 October 2026. Android APK/device validation remains open in WF-0008. This is a personal Android reader, with no account, public release or navigation redesign in scope. It preserves existing file paths, settings and reading progress. This document is the single detailed contract for WF-0004/5/7.
 
 ## Local library authority
 
@@ -28,7 +28,7 @@ Opening a saved chapter and pulling to refresh metadata preserve its text snapsh
 
 ## Reader direction awaiting user visual acceptance
 
-The user supplied a screenshot and prefers the old floating capsule. Use the historical f5ecc21 capsule styling with font/size settings chip, a small added contents shortcut and direct light/sepia/dark selectors. Use outline vector icons in the app and companion, without Unicode emoji. Place previous/next/hide and reading percentage in the small header. Preserve 48-point tap targets and accessible labels. Hide dock controls from interaction/accessibility while the settings sheet is open. Keep theme controls in the sheet as well. This revised direction still awaits visual acceptance. Keep current fonts, palettes, Thai text and Dialogue Cards. The [interactive layout companion](../reader-layout/preview.html) is a browser reconstruction, not a native screenshot. It cannot establish Thai wrapping, safe areas, image gestures or accessibility on Android. WF-0006 remains open until the user reviews and accepts or requests changes.
+The user supplied a screenshot and prefers the old floating capsule. Use the historical f5ecc21 capsule styling with font/size settings chip, a small added contents shortcut and direct light/sepia/dark selectors. Use outline vector icons in the app and companion, without Unicode emoji. Place previous/next/hide and reading percentage in the small header. Preserve 48-point tap targets and accessible labels. Hide dock controls from interaction/accessibility while the settings sheet is open. Keep theme controls in the sheet as well. The user accepted this direction after the historical-styling revision. Keep current fonts, palettes, Thai text and Dialogue Cards. The [interactive layout companion](../reader-layout/preview.html) is a browser reconstruction, not a native screenshot. It cannot establish Thai wrapping, safe areas, image gestures or accessibility on Android. WF-0006 is closed after user acceptance; native checks remain separate.
 
 ## Acceptance matrix
 
@@ -50,3 +50,7 @@ For each check record device/Android version, app version/build, source commit, 
 ## Closure gates
 
 WF-0004: local authority decision and source evidence recorded. WF-0005: entry/refresh/update contract and automated evidence recorded. WF-0006: user visual acceptance required. WF-0007 and parent map: finalize only once WF-0006 is accepted and outstanding decisions have answers; keep Android validation obligations explicit rather than claiming a device result from Jest/Metro.
+
+### Final acceptance record
+
+The user accepted the historical capsule revision (“โอเคละ”). WF-0001 and WF-0003–7 are closed for specification/design decisions. Final APK and Android evidence remain open in WF-0008; this acceptance is not device certification.
