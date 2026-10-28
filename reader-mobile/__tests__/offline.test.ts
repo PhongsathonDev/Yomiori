@@ -6,7 +6,7 @@ import {
   cacheIllustrationOffline, clearNovelOfflineStorage, getChapterFilePath, getChapterOfflineStatus,
   getIllustrationLocalPath, getNovelOfflineStats, getReadingProgress, getSavedFontFamily,
   getSavedFontSize, getSavedLineHeight, getSavedTheme, loadChapterOffline,
-  resolveIllustrationUri, saveChapterOffline, saveReadingProgress, withOfflineJob, getSavedLibrary, getSavedNovel,
+  resolveIllustrationUri, saveChapterOffline, deleteChapterOffline, saveReadingProgress, withOfflineJob, getSavedLibrary, getSavedNovel,
 } from '../src/services/storage';
 import { downloadChapterOnDemand, fetchCharacters, fetchNovels, getAvailableChapterList, getChapterForReading } from '../src/services/api';
 import { requestJson } from '../src/services/request';
@@ -254,6 +254,60 @@ describe('metadata, settings and progress compatibility', () => {
     fs.readAsStringAsync.mockClear();
     expect((await getSavedNovel(chapter.novelId))?.chapters[0].title).toBe('Updated');
     expect(fs.readAsStringAsync).toHaveBeenCalled();
+  });
+
+  test('retries a partial scan after a temporary chapter read failure', async () => {
+    const second = { ...chapter, id: 'ch-100', chapterNumber: 100 };
+    await saveChapterOffline(chapter);
+    await saveChapterOffline(second);
+    const read = fs.readAsStringAsync.getMockImplementation()!;
+    let failed = false;
+    fs.readAsStringAsync.mockImplementation(async (path, options) => {
+      if (path === getChapterFilePath(second.novelId, second.id) && !failed) {
+        failed = true;
+        throw new Error('temporary I/O failure');
+      }
+      return read(path, options);
+    });
+    expect((await getSavedNovel(chapter.novelId))?.chapters.map(item => item.id)).toEqual([chapter.id]);
+    expect((await getSavedNovel(chapter.novelId))?.chapters.map(item => item.id)).toEqual([chapter.id, second.id]);
+  });
+
+  test('retries an illustration stat failure instead of caching text-only', async () => {
+    await saveChapterOffline(illustrated);
+    const path = getIllustrationLocalPath(chapter.novelId, '/illustrations/page.jpg');
+    files.set(path, 'image-data');
+    const stat = fs.getInfoAsync.getMockImplementation()!;
+    let failed = false;
+    fs.getInfoAsync.mockImplementation(async (uri, options) => {
+      if (uri === path && !failed) { failed = true; throw new Error('temporary I/O failure'); }
+      return stat(uri, options);
+    });
+    expect((await getSavedNovel(chapter.novelId))?.chapters[0].offlineStatus).toBe('text-only');
+    expect((await getSavedNovel(chapter.novelId))?.chapters[0].offlineStatus).toBe('complete');
+  });
+
+  test('shares concurrent scans and invalidates after deleting a chapter', async () => {
+    await saveChapterOffline(chapter);
+    const [first, second] = await Promise.all([getSavedNovel(chapter.novelId), getSavedNovel(chapter.novelId)]);
+    expect(first).toEqual(second);
+    expect(fs.readDirectoryAsync).toHaveBeenCalledTimes(1);
+    await deleteChapterOffline(chapter.novelId, chapter.id);
+    expect(await getSavedNovel(chapter.novelId)).toBeNull();
+  });
+
+  test('retries primary after a temporary failure even when backup was readable', async () => {
+    const path = getChapterFilePath(chapter.novelId, chapter.id);
+    files.set(path, JSON.stringify(chapter));
+    files.set(`${path}.bak`, JSON.stringify({ ...chapter, title: 'Backup' }));
+    const read = fs.readAsStringAsync.getMockImplementation()!;
+    let failed = false;
+    fs.readAsStringAsync.mockImplementation(async (uri, options) => {
+      if (uri === path && !failed) { failed = true; throw new Error('temporary I/O failure'); }
+      return read(uri, options);
+    });
+    expect((await getSavedNovel(chapter.novelId))?.chapters[0].title).toBe('Backup');
+    expect((await getSavedNovel(chapter.novelId))?.chapters[0].title).toBe(chapter.title);
   });
 
   test('reading progress keeps a valid anchor and ignores a malformed anchor', async () => {

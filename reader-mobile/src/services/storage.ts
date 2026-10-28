@@ -52,7 +52,7 @@ export function getChapterFilePath(novelId: string, chapterId: string): string {
   return `${novelDirectory(novelId)}${chapterId}.json`;
 }
 
-async function loadSavedChapter(novelId: string, chapterId: string): Promise<Chapter | null> {
+async function loadSavedChapter(novelId: string, chapterId: string, onIOError?: () => void): Promise<Chapter | null> {
   if (!isSafeId(novelId) || !isSafeId(chapterId)) return null;
   const path = getChapterFilePath(novelId, chapterId);
   // Legacy iOS move removes the destination first. A backup also survives an
@@ -60,10 +60,13 @@ async function loadSavedChapter(novelId: string, chapterId: string): Promise<Cha
   for (const candidate of [path, `${path}.bak`]) {
     try {
       if ((await FileSystem.getInfoAsync(candidate)).exists) {
-        const value: unknown = JSON.parse(await FileSystem.readAsStringAsync(candidate));
+        const raw = await FileSystem.readAsStringAsync(candidate);
+        let value: unknown;
+        try { value = JSON.parse(raw); } catch { continue; }
         if (isChapter(value, novelId, chapterId)) return value;
       }
     } catch {
+      onIOError?.();
       // A damaged cache or unavailable disk must not prevent an online retry.
     }
   }
@@ -92,11 +95,11 @@ export function getSavedNovel(novelId: string): Promise<SavedNovelSummary | null
   const key = `${novelId}:${generation}:${revision}`;
   const pending = savedNovelScans.get(key);
   if (pending) return pending;
-  const scan = scanSavedNovel(novelId).then(summary => {
+  const scan = scanSavedNovel(novelId).then(({ summary, reliable }) => {
     // Never publish a scan which overlapped a write or clear.
     if (generation !== getOfflineGeneration(novelId) || revision !== (fileRevisions.get(novelId) ?? 0)) return getSavedNovel(novelId);
     // Null can mean an I/O error; retry on the next request instead of caching it.
-    if (summary) savedNovelSummaries.set(novelId, { generation, revision, summary });
+    if (summary && reliable) savedNovelSummaries.set(novelId, { generation, revision, summary });
     return summary;
   })
     .finally(() => { if (savedNovelScans.get(key) === scan) savedNovelScans.delete(key); });
@@ -104,25 +107,27 @@ export function getSavedNovel(novelId: string): Promise<SavedNovelSummary | null
   return scan;
 }
 
-async function scanSavedNovel(novelId: string): Promise<SavedNovelSummary | null> {
-  if (!isSafeId(novelId)) return null;
+async function scanSavedNovel(novelId: string): Promise<{ summary: SavedNovelSummary | null; reliable: boolean }> {
+  if (!isSafeId(novelId)) return { summary: null, reliable: false };
+  let reliable = true;
+  const onIOError = () => { reliable = false; };
   try {
     const names = await FileSystem.readDirectoryAsync(novelDirectory(novelId));
     const ids = new Set(names.map(name => /^(.*)\.json(?:\.bak)?$/.exec(name)?.[1]).filter(isSafeId));
     const summary: SavedNovelSummary = { id: novelId, title: '', chapters: [] };
     for (const id of ids) {
-      const chapter = await loadSavedChapter(novelId, id);
+      const chapter = await loadSavedChapter(novelId, id, onIOError);
       if (!chapter) continue;
       summary.title ||= chapter.novelTitle;
       let offlineStatus: ChapterOfflineStatus = 'complete';
       for (const block of chapter.blocks) {
-        if (block.type === 'illustration' && !await localIllustration(novelId, block.src)) { offlineStatus = 'text-only'; break; }
+        if (block.type === 'illustration' && !await localIllustration(novelId, block.src, onIOError)) { offlineStatus = 'text-only'; break; }
       }
       summary.chapters.push({ id, novelId, title: chapter.title, chapterNumber: chapter.chapterNumber, isDownloaded: true, offlineStatus });
     }
     summary.chapters.sort((a, b) => a.chapterNumber - b.chapterNumber);
-    return summary.chapters.length ? summary : null;
-  } catch { return null; }
+    return { summary: summary.chapters.length ? summary : null, reliable };
+  } catch { return { summary: null, reliable: false }; }
 }
 
 export async function getSavedLibrary(): Promise<SavedNovelSummary[]> {
@@ -242,12 +247,12 @@ export function getIllustrationLocalPath(novelId: string, src: string): string {
   return `${novelDirectory(novelId)}illustrations/${filename}`;
 }
 
-async function localIllustration(novelId: string, src: string): Promise<string | null> {
+async function localIllustration(novelId: string, src: string, onIOError?: () => void): Promise<string | null> {
   const path = src.startsWith('file://') ? src : getIllustrationLocalPath(novelId, src);
   try {
     const info = await FileSystem.getInfoAsync(path);
     return info.exists && !info.isDirectory && info.size > 0 ? info.uri : null;
-  } catch { return null; }
+  } catch { onIOError?.(); return null; }
 }
 
 export async function resolveIllustrationUri(novelId: string, src: string): Promise<string> {
