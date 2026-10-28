@@ -5,11 +5,12 @@ import {
   saveUserComment, getUserComments, toggleCommentLike, getLikedCommentIds,
   cacheIllustrationOffline, clearNovelOfflineStorage, getChapterFilePath, getChapterOfflineStatus,
   getIllustrationLocalPath, getNovelOfflineStats, getReadingProgress, getSavedFontFamily,
-  getSavedFontSize, getSavedLineHeight, getSavedTheme, loadChapterOffline,
+  getSavedFontSize, getSavedLineHeight, getSavedTheme, loadChapterOffline, getBundledChapter,
   resolveIllustrationUri, saveChapterOffline, deleteChapterOffline, saveReadingProgress, withOfflineJob, getSavedLibrary, getSavedNovel,
 } from '../src/services/storage';
 import { downloadChapterOnDemand, fetchCharacters, fetchNovels, getAvailableChapterList, getChapterForReading } from '../src/services/api';
 import { requestJson } from '../src/services/request';
+import blackCatConversion from '../src/data/novels/black-cat-hangout/conversion-status.json';
 
 jest.mock('expo-file-system/legacy', () => ({
   documentDirectory: 'file:///docs/', EncodingType: { UTF8: 'utf8' },
@@ -196,6 +197,39 @@ describe('illustrations and explicit downloads', () => {
 });
 
 describe('metadata, settings and progress compatibility', () => {
+  test('lists the complete real Black Cat bundle offline without filling intentionally skipped numbers', async () => {
+    const list = await getAvailableChapterList('black-cat-hangout', true);
+    expect(list.map(item => item.chapterNumber)).toEqual([
+      ...Array.from({ length: 61 }, (_, number) => number), ...blackCatConversion.convertedChapters,
+    ]);
+    expect(new Set(list.map(item => item.id)).size).toBe(list.length);
+    for (const skipped of blackCatConversion.skippedChapters) {
+      expect(getBundledChapter('black-cat-hangout', `ch-${skipped.chapterNumber}`)).toBeNull();
+    }
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  test('an older Black Cat manifest still merges all actual bundled chapters without duplicates', async () => {
+    fetchMock.mockResolvedValue(response({ novelId: 'black-cat-hangout', chapters: [
+      { id: 'ch-61', chapterNumber: 61, title: 'Earlier manifest title' },
+    ] }));
+    const list = await getAvailableChapterList('black-cat-hangout');
+    expect(list).toHaveLength(61 + blackCatConversion.convertedChapters.length);
+    expect(list.filter(item => item.id === 'ch-61')).toHaveLength(1);
+    expect(list.at(-1)).toMatchObject({ id: 'ch-87', offlineStatus: 'complete' });
+    for (const skipped of blackCatConversion.skippedChapters) {
+      expect(list.some(item => item.chapterNumber === skipped.chapterNumber)).toBe(false);
+    }
+  });
+
+  test.each(blackCatConversion.convertedChapters)('opens new bundled Black Cat Ch.%i without network or disk writes', async number => {
+    const result = await getChapterForReading('black-cat-hangout', `ch-${number}`);
+    expect(result.cacheWarning).toBe(false);
+    expect(result.chapter).toMatchObject({ id: `ch-${number}`, novelId: 'black-cat-hangout', chapterNumber: number });
+    expect(fetchMock).not.toHaveBeenCalled();
+    expect(fs.writeAsStringAsync).not.toHaveBeenCalled();
+  });
+
   test('recovers a saved Kyudo chapter beyond the old fallback range without a manifest', async () => {
     const saved = { ...chapter, novelId: 'kyudo-senpai', chapterNumber: 99 };
     await saveChapterOffline(saved);

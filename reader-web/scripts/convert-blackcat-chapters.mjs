@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { parseArgs } from 'node:util';
 
 /**
  * Converts the raw Nekopost markdown of "black-cat-hangout" into reader JSON.
@@ -1862,7 +1863,188 @@ const chapters = [
   },
 ];
 
+// Paragraph indices are reviewed against the raw text, including quoted
+// descriptions that are narration rather than spoken dialogue.
+const remainingChapters = [
+  {
+    number: 61,
+    narration: [33],
+    speakers: { 2: 'hina', 6: 'hina', 17: 'hina', 20: 'hina', 23: 'hina' },
+  },
+  {
+    number: 62,
+    speakers: { 6: 'hina', 9: 'hina', 13: 'hina', 17: 'hina', 21: 'hina', 23: 'hina', 27: 'hina' },
+  },
+  {
+    number: 63,
+    speakers: {
+      19: 'takumi', 23: 'takumi', 35: 'mizuki', 38: 'takumi', 39: 'mizuki',
+      40: 'takumi', 41: 'mizuki', 44: 'takumi', 46: 'mizuki', 49: 'takumi',
+      50: 'mizuki', 51: 'takumi',
+    },
+  },
+  {
+    number: 64,
+    speakers: {
+      0: 'mizuki', 7: 'takumi', 9: 'mizuki', 10: 'takumi', 11: 'mizuki',
+      12: 'takumi', 14: 'mizuki', 15: 'takumi', 17: 'mizuki', 18: 'takumi',
+      19: 'mizuki', 20: 'takumi', 24: 'mizuki', 26: 'takumi', 27: 'mizuki',
+      28: 'takumi', 29: 'mizuki', 30: 'takumi', 32: 'mizuki', 33: 'takumi',
+      34: 'mizuki', 37: 'takumi', 40: 'mizuki', 41: 'takumi', 42: 'mizuki',
+      43: 'takumi', 44: 'mizuki', 45: 'takumi', 46: 'mizuki', 47: 'takumi', 48: 'mizuki',
+    },
+  },
+  {
+    number: 65,
+    speakers: {
+      1: 'kuro', 3: 'takumi', 4: 'kuro', 6: 'takumi', 7: 'kuro', 9: 'takumi',
+      14: 'kuro', 16: 'takumi', 17: 'kuro', 18: 'takumi', 21: 'takumi',
+      25: 'takumi', 29: 'takumi', 30: 'kuro', 32: 'takumi', 41: 'takumi', 43: 'takumi',
+    },
+  },
+  {
+    number: 66,
+    speakers: {
+      1: 'takumi', 12: 'kuro', 13: 'hina', 14: 'mizuki', 15: 'hina', 16: 'mizuki',
+      28: 'hina', 29: 'mizuki', 30: 'hina', 32: 'mizuki', 33: 'hina', 34: 'mizuki',
+      35: 'hina', 36: 'mizuki', 37: 'hina', 41: 'mizuki', 42: 'hina', 43: 'mizuki',
+      44: 'hina', 45: 'mizuki',
+    },
+  },
+  {
+    number: 67,
+    speakers: {
+      0: 'hina', 13: 'mizuki', 14: 'hina', 19: 'mizuki', 20: 'hina', 21: 'mizuki',
+      28: 'hina', 37: 'mizuki', 38: 'hina', 39: 'mizuki', 40: 'hina', 41: 'mizuki',
+      43: 'hina', 44: 'mizuki', 45: 'hina',
+    },
+  },
+  {
+    number: 68,
+    speakers: {
+      0: 'mizuki', 1: 'hina', 2: 'mizuki', 3: 'hina', 4: 'mizuki', 24: 'hina',
+      25: 'mizuki', 26: 'hina', 27: 'mizuki', 29: 'hina', 30: 'mizuki',
+      31: 'hina', 32: 'mizuki', 37: 'hina',
+    },
+  },
+  {
+    number: 69,
+    speakers: {
+      0: 'mizuki', 1: 'hina', 2: 'mizuki', 3: 'hina', 7: 'mizuki', 8: 'hina',
+      9: 'mizuki', 10: 'hina', 11: 'mizuki', 12: 'hina', 13: 'mizuki', 17: 'takumi',
+    },
+  },
+  {
+    number: 70,
+    speakers: {
+      0: 'hina', 1: 'mizuki', 2: 'hina', 3: 'mizuki', 4: 'hina', 5: 'mizuki',
+      8: 'hina', 9: 'mizuki', 10: 'hina', 11: 'mizuki', 13: 'hina', 16: 'mizuki',
+      17: 'hina', 18: 'mizuki', 19: 'hina', 20: 'mizuki', 21: 'hina', 22: 'mizuki',
+      23: 'hina', 24: 'mizuki', 25: 'hina', 26: 'mizuki', 27: 'hina', 28: 'mizuki',
+      29: 'hina', 30: 'mizuki', 31: 'hina', 32: 'mizuki', 34: 'hina', 35: 'mizuki',
+      44: 'takumi', 49: 'hina',
+    },
+  },
+  {
+    number: 71,
+    speakers: {
+      0: 'takumi', 2: 'hina', 3: 'takumi', 4: 'hina', 5: 'takumi', 6: 'hina',
+      7: 'takumi', 10: 'hina', 11: 'takumi', 15: 'hina', 16: 'takumi', 17: 'hina',
+      18: 'takumi', 24: 'hina', 25: 'takumi', 26: 'hina', 27: 'takumi', 35: 'mizuki',
+    },
+  },
+  {
+    number: 72,
+    speakers: {
+      0: 'takumi', 4: 'hina', 5: 'takumi', 6: 'hina', 7: 'takumi', 8: 'hina',
+      9: 'takumi', 10: 'mizuki', 12: 'hina', 13: 'mizuki', 14: 'hina', 15: 'mizuki',
+      16: 'hina', 18: 'mizuki', 19: 'hina', 20: 'mizuki', 22: 'hina', 23: 'takumi',
+      24: 'hina', 25: 'takumi', 27: 'hina', 28: 'takumi',
+    },
+  },
+  {
+    number: 73,
+    speakers: {
+      0: 'hina', 1: 'mizuki', 2: 'hina', 3: 'takumi', 6: 'hina', 7: 'mizuki',
+      8: 'hina', 9: 'mizuki', 10: 'takumi', 12: 'hina', 13: 'mizuki', 14: 'hina',
+      20: 'takumi', 21: 'hina', 22: 'takumi', 23: 'hina', 25: 'takumi', 26: 'hina',
+      27: 'takumi', 34: 'hina', 35: 'mizuki', 38: 'takumi', 42: 'hina', 43: 'mizuki',
+      44: 'takumi', 45: 'hina', 46: 'mizuki', 47: 'hina', 48: 'mizuki', 50: 'takumi',
+    },
+  },
+  {
+    number: 74,
+    speakers: {
+      0: 'hina', 1: 'takumi', 5: 'hina', 6: 'mizuki', 7: 'hina', 8: 'mizuki',
+      9: 'takumi', 11: 'hina', 13: 'takumi', 15: 'hina', 16: 'takumi', 17: 'hina',
+      19: 'mizuki', 27: 'takumi', 32: 'hina', 33: 'mizuki', 36: 'takumi', 37: 'hina',
+      38: 'mizuki', 40: 'takumi',
+    },
+  },
+  {
+    number: 77,
+    speakers: {
+      1: 'hina', 3: 'takumi', 4: 'mizuki', 6: 'takumi', 7: 'hina', 8: 'takumi',
+      9: 'hina', 10: 'mizuki', 12: 'takumi', 15: 'mizuki', 18: 'hina', 19: 'mizuki',
+      20: 'takumi', 21: 'hina', 24: 'takumi', 27: 'mizuki', 28: 'hina', 30: 'takumi',
+      35: 'hina', 36: 'takumi', 37: 'hina', 39: 'mizuki', 40: 'takumi', 41: 'hina',
+    },
+  },
+  {
+    number: 85,
+    speakers: {
+      3: 'hina', 5: 'takumi', 7: 'hina', 8: 'takumi', 13: 'hina', 17: 'mizuki',
+      18: 'takumi', 19: 'hina', 20: 'mizuki', 21: 'takumi', 22: 'hina', 23: 'mizuki',
+      24: 'takumi', 25: 'hina', 26: 'mizuki', 27: 'takumi', 30: 'takumi', 31: 'mizuki',
+      32: 'takumi', 34: 'hina', 35: 'mizuki', 37: 'takumi',
+    },
+  },
+  {
+    number: 86,
+    speakers: {
+      0: 'hina', 1: 'takumi', 2: 'mizuki', 3: 'takumi', 4: 'hina', 5: 'takumi',
+      6: 'hina', 7: 'mizuki', 8: 'takumi', 9: 'mizuki', 10: 'takumi', 11: 'hina',
+    },
+  },
+  {
+    number: 87,
+    speakers: {
+      0: 'hina', 1: 'mizuki', 2: 'takumi', 3: 'hina', 4: 'mizuki', 5: 'takumi',
+      6: 'hina', 7: 'mizuki', 8: 'takumi', 9: 'hina', 10: 'mizuki', 11: 'takumi',
+      12: 'hina', 13: 'mizuki', 14: 'takumi', 15: 'hina', 16: 'mizuki', 17: 'takumi',
+      18: 'hina', 19: 'mizuki', 20: 'takumi',
+    },
+  },
+];
+const source = JSON.parse(fs.readFileSync(path.resolve(RAW_DIR, '../_source.json'), 'utf8'));
+for (const chapter of remainingChapters) {
+  const metadata = source.chapters.find(item => Number(item.chapterNo) === chapter.number);
+  if (!metadata) throw new Error(`No source metadata for chapter ${chapter.number}`);
+  chapters.push({ ...chapter, file: metadata.file, out: `ch-${String(chapter.number).padStart(2, '0')}.json` });
+}
+
 const HEADER_RE = /^(#\s|By\s|Published:\s|Source:\s|Ch\.\d+\s)/;
+// The final two specials use explicit speaker labels instead of opening quotes.
+const DIALOGUE_RE = /^(?:“|(?:ฮินะ|ทาคุมิ|มิซึกิ)\s*:\s*“)/;
+const { values } = parseArgs({ options: { from: { type: 'string' }, to: { type: 'string' } } });
+const first = Number(values.from ?? 1);
+const last = Number(values.to ?? 87);
+if (!Number.isInteger(first) || !Number.isInteger(last) || first < 1 || last < first || last > 87) {
+  throw new Error('Use --from <1-87> --to <1-87> with from <= to');
+}
+const conversionStatus = JSON.parse(fs.readFileSync(path.resolve(OUT_DIR, '../conversion-status.json'), 'utf8'));
+const mappedNewChapters = remainingChapters.map(chapter => chapter.number);
+if (JSON.stringify(mappedNewChapters) !== JSON.stringify(conversionStatus.convertedChapters)) {
+  throw new Error('Reviewed chapter mappings do not match conversion-status.json');
+}
+for (const skipped of conversionStatus.skippedChapters) {
+  if (chapters.some(chapter => chapter.number === skipped.chapterNumber)) {
+    throw new Error(`Chapter ${skipped.chapterNumber} is marked skipped but has a conversion mapping`);
+  }
+  if (skipped.chapterNumber >= first && skipped.chapterNumber <= last) {
+    console.log(`Skipped ch-${skipped.chapterNumber}: ${skipped.reason}`);
+  }
+}
 
 function splitParagraphs(raw) {
   const body = raw
@@ -1875,7 +2057,7 @@ function splitParagraphs(raw) {
     .filter(Boolean);
 }
 
-for (const chapter of chapters) {
+for (const chapter of chapters.filter(chapter => chapter.number >= first && chapter.number <= last)) {
   const rawPath = path.join(RAW_DIR, chapter.file);
   if (!fs.existsSync(rawPath)) throw new Error(`Raw chapter not found: ${rawPath}`);
   const raw = fs.readFileSync(rawPath, 'utf8');
@@ -1888,10 +2070,10 @@ for (const chapter of chapters) {
 
   paragraphs.forEach((text, index) => {
     const forceNarration = chapter.narration?.includes(index) ?? false;
-    const isDialogue = text.startsWith('“') && !forceNarration;
+    const isDialogue = DIALOGUE_RE.test(text) && !forceNarration;
     if (isDialogue) {
       const speakerId = chapter.speakers[index];
-      if (!speakerId) {
+      if (!speakerId || !Object.hasOwn(characters, speakerId)) {
         throw new Error(`${chapter.file}: dialogue at paragraph ${index} has no speaker: ${text.slice(0, 40)}`);
       }
       usedSpeakers.add(index);

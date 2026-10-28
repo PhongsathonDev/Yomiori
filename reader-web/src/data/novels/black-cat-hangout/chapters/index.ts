@@ -59,6 +59,25 @@ import ch57 from './ch-57.json';
 import ch58 from './ch-58.json';
 import ch59 from './ch-59.json';
 import ch60 from './ch-60.json';
+import ch61 from './ch-61.json';
+import ch62 from './ch-62.json';
+import ch63 from './ch-63.json';
+import ch64 from './ch-64.json';
+import ch65 from './ch-65.json';
+import ch66 from './ch-66.json';
+import ch67 from './ch-67.json';
+import ch68 from './ch-68.json';
+import ch69 from './ch-69.json';
+import ch70 from './ch-70.json';
+import ch71 from './ch-71.json';
+import ch72 from './ch-72.json';
+import ch73 from './ch-73.json';
+import ch74 from './ch-74.json';
+// Intentionally omitted: 75-76 and 78-84. See ../conversion-status.json.
+import ch77 from './ch-77.json';
+import ch85 from './ch-85.json';
+import ch86 from './ch-86.json';
+import ch87 from './ch-87.json';
 import type { Chapter } from '../../../../types';
 
 export const blackCatChapters = [
@@ -123,4 +142,22 @@ export const blackCatChapters = [
   ch58 as Chapter,
   ch59 as Chapter,
   ch60 as Chapter,
+  ch61 as Chapter,
+  ch62 as Chapter,
+  ch63 as Chapter,
+  ch64 as Chapter,
+  ch65 as Chapter,
+  ch66 as Chapter,
+  ch67 as Chapter,
+  ch68 as Chapter,
+  ch69 as Chapter,
+  ch70 as Chapter,
+  ch71 as Chapter,
+  ch72 as Chapter,
+  ch73 as Chapter,
+  ch74 as Chapter,
+  ch77 as Chapter,
+  ch85 as Chapter,
+  ch86 as Chapter,
+  ch87 as Chapter,
 ];
