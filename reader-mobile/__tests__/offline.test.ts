@@ -247,6 +247,21 @@ describe('metadata, settings and progress compatibility', () => {
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
+  test('bundled chapters report real offline availability without copying bundled text', async () => {
+    const list = await getAvailableChapterList('black-cat-hangout', true);
+    expect(list.find(item => item.id === 'ch-60')?.offlineStatus).toBe('complete');
+    expect(list.find(item => item.id === 'ch-00')?.offlineStatus).toBe('text-only');
+    expect(await getChapterOfflineStatus('black-cat-hangout', 'ch-60')).toBe('complete');
+    expect(await downloadChapterOnDemand('black-cat-hangout', 'ch-60')).toEqual({ status: 'complete' });
+    expect(files.has(getChapterFilePath('black-cat-hangout', 'ch-60'))).toBe(false);
+    for (let index = 1; index <= 9; index++) {
+      files.set(getIllustrationLocalPath('black-cat-hangout', `illust_${String(index).padStart(2, '0')}.jpg`), 'image');
+    }
+    const updated = await getAvailableChapterList('black-cat-hangout', true);
+    expect(updated.find(item => item.id === 'ch-00')?.offlineStatus).toBe('complete');
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
   test('retains upstream bundled chapter 60 when the CDN is offline', async () => {
     const result = await getChapterForReading('black-cat-hangout', 'ch-60');
     expect(result.chapter?.id).toBe('ch-60');

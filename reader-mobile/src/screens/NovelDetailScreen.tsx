@@ -656,7 +656,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
               )}
               <Text style={styles.modalActionBtnText}>
                 {remainingCount === 0
-                  ? 'ดาวน์โหลดครบทุกตอนแล้ว'
+                  ? 'ทุกตอนพร้อมอ่านออฟไลน์แล้ว'
                   : isDownloadingAll
                   ? `กำลังดาวน์โหลด... (${downloadingId})`
                   : `ดาวน์โหลดทุกตอนที่เหลือ (${remainingCount} ตอน)`}

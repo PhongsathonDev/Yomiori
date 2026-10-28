@@ -2,6 +2,7 @@ import * as FileSystem from 'expo-file-system/legacy';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Chapter, ReaderTheme, ReadingProgress, ReaderFont, ReaderLineHeight, ChapterOfflineStatus, CommentItem, SavedNovelSummary } from '../types';
 import bundledCh01 from '../data/novels/kyudo-senpai/chapters/ch-01.json';
+import { blackCatChapters } from '../data/novels/black-cat-hangout/chapters';
 import { isChapter, isRecord, isSafeId } from './validation';
 import { createKeyedQueue } from './queue';
 import { REQUEST_TIMEOUT_MS } from './request';
@@ -64,9 +65,15 @@ async function loadSavedChapter(novelId: string, chapterId: string): Promise<Cha
   return null;
 }
 
+export function getBundledChapter(novelId: string, chapterId: string): Chapter | null {
+  if (novelId === 'kyudo-senpai' && chapterId === 'ch-01') return bundledCh01 as Chapter;
+  return novelId === 'black-cat-hangout'
+    ? (blackCatChapters as Chapter[]).find(chapter => chapter.id === chapterId) ?? null : null;
+}
+
 export async function loadChapterOffline(novelId: string, chapterId: string): Promise<Chapter | null> {
   return await loadSavedChapter(novelId, chapterId)
-    ?? (novelId === 'kyudo-senpai' && chapterId === 'ch-01' ? bundledCh01 as Chapter : null);
+    ?? getBundledChapter(novelId, chapterId);
 }
 
 /** Files remain authoritative even if AsyncStorage or CDN metadata is missing.
@@ -265,8 +272,12 @@ export async function cacheIllustrationOffline(novelId: string, src: string, gen
 export async function getChapterOfflineStatus(novelId: string, chapterId: string): Promise<ChapterOfflineStatus> {
   const chapter = await loadChapterOffline(novelId, chapterId);
   if (!chapter) return 'missing';
+  return getChapterContentStatus(chapter);
+}
+
+export async function getChapterContentStatus(chapter: Chapter): Promise<ChapterOfflineStatus> {
   for (const block of chapter.blocks) {
-    if (block.type === 'illustration' && !await localIllustration(novelId, block.src)) return 'text-only';
+    if (block.type === 'illustration' && !await localIllustration(chapter.novelId, block.src)) return 'text-only';
   }
   return 'complete';
 }

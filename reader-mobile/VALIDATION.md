@@ -54,3 +54,7 @@ Keep the current ScrollView/navigation architecture for this change. Follow-up r
 ## Comment persistence follow-up — 28 October 2026
 
 TypeScript, Expo lint and all 59 Jest tests pass. Added regression coverage for concurrent comment/like writes, storage read/write failure recovery, retaining a failed draft, and preventing the initial comment load from replacing a new comment. Mutations now propagate storage errors and serialize updates per storage key. The composer keeps the draft on failure and prevents repeated submission while saving; likes update only after persistence succeeds. Existing storage keys are preserved. Repaired missing transitive lockfile entries found during clean dependency installation. No APK/native validation was performed for this follow-up.
+
+## Bundled offline availability follow-up — 28 October 2026
+
+Bundled Black Cat chapters and Kyudo chapter 1 now share the same local lookup used by reading, offline status and chapter discovery. Saved chapter files still take precedence. Bundled text is not copied into downloaded storage when requesting missing illustrations. Chapter lists check whether bundled illustrations are present before reporting completeness. The offline management label describes availability without claiming bundled chapters were downloaded. TypeScript, lint and 60 Jest tests pass; native Android filesystem and performance checks remain pending.

@@ -2,6 +2,7 @@ import { Chapter, Character, Novel, IllustrationItem, NovelManifest, CommentItem
 import {
   saveChapterOffline, loadChapterOffline, getOfflineGeneration, cacheIllustrationOffline,
   readMetadata, saveMetadata, getUserComments, getLikedCommentIds, getSavedNovel, getSavedLibrary,
+  getBundledChapter, getChapterContentStatus,
 } from './storage';
 import { requestJson } from './request';
 import { isChapter, isNovelList, isCharacterList, isManifest, isIllustrationList, isSafeId, isRecord } from './validation';
@@ -75,11 +76,6 @@ async function fetchChapter(novelId: string, chapterId: string): Promise<Chapter
   }
 }
 
-export function getBundledChapter(novelId: string, chapterId: string): Chapter | null {
-  return novelId === 'black-cat-hangout'
-    ? (blackCatChapters as Chapter[]).find(chapter => chapter.id === chapterId) ?? null : null;
-}
-
 async function cacheChapterImages(chapter: Chapter, generation: number): Promise<boolean> {
   let complete = true;
   const sources = new Set(chapter.blocks.filter(b => b.type === 'illustration').map(b => b.src));
@@ -116,7 +112,7 @@ export async function downloadChapterOnDemand(novelId: string, chapterId: string
   try {
     const existing = await loadChapterOffline(novelId, chapterId);
     const chapter = existing ?? getBundledChapter(novelId, chapterId) ?? await fetchChapter(novelId, chapterId);
-    if (!existing) await saveChapterOffline(chapter, generation);
+    if (!existing && !getBundledChapter(novelId, chapterId)) await saveChapterOffline(chapter, generation);
     const complete = await cacheChapterImages(chapter, generation);
     if (generation !== getOfflineGeneration(novelId)) return { status: 'failed' };
     return { status: complete ? 'complete' : 'text-only' };
@@ -152,10 +148,11 @@ export async function getAvailableChapterList(novelId: string, preferCache = fal
     if (index === -1) available.push(chapter);
     else available[index] = chapter;
   }
-  return available.map(chapter => ({ ...chapter,
-    offlineStatus: chapter.offlineStatus
-      ?? (novelId === 'kyudo-senpai' && chapter.id === 'ch-01' ? 'complete' : 'missing'),
-  })).sort((a, b) => a.chapterNumber - b.chapterNumber);
+  return (await Promise.all(available.map(async chapter => {
+    const bundled = getBundledChapter(novelId, chapter.id);
+    return { ...chapter, offlineStatus: chapter.offlineStatus
+      ?? (bundled ? await getChapterContentStatus(bundled) : 'missing') };
+  }))).sort((a, b) => a.chapterNumber - b.chapterNumber);
 }
 
 export async function fetchChapterComments(novelId: string, chapterId: string): Promise<CommentItem[]> {
