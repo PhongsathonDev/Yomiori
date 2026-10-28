@@ -1,0 +1,80 @@
+$ cd reader-web; npx oxlint src/components/QuickFixModal.tsx
+
+  ! react(set-state-in-effect): Calling setState synchronously within an effect can trigger cascading renders
+    ,-[src/components/QuickFixModal.tsx:34:5]
+ 32 | 
+ 33 |   useEffect(() => {
+    :   ^^^^|^^^^
+    :       `-- This is the containing effect
+ 34 |     setText('text' in block ? block.text : '');
+    :     ^^^|^^^
+    :        `-- Avoid calling setState() directly within an effect
+ 35 |     setSelectedSpeakerId(block.type === 'dialogue' ? block.speakerId : '');
+    `----
+  help: Effects should synchronize React with external systems. Calling setState synchronously inside an effect starts another render and is usually unnecessary. Derive the value during render, initialize state directly, or update it from the event that caused the change. Use an effect only when synchronizing with an external system.
+  note: React Compiler skipped optimizing this component or hook. Additional guidance: https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect
+
+  x react-hooks(rules-of-hooks): React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render.
+    ,-[src/components/QuickFixModal.tsx:29:27]
+ 28 | 
+ 29 |   const [text, setText] = useState(initialText);
+    :                           ^^^^^^^^^^|^^^^^^^^^^
+    :                                     `-- This Hook call is not reachable on every render path.
+ 30 |   const [selectedSpeakerId, setSelectedSpeakerId] = useState(initialSpeakerId);
+    `----
+  help: Move the Hook call before the condition, or call it unconditionally and branch inside the Hook/effect instead.
+
+  x react-hooks(rules-of-hooks): React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render.
+    ,-[src/components/QuickFixModal.tsx:30:53]
+ 29 |   const [text, setText] = useState(initialText);
+ 30 |   const [selectedSpeakerId, setSelectedSpeakerId] = useState(initialSpeakerId);
+    :                                                     ^^^^^^^^^^^^^|^^^^^^^^^^^^
+    :                                                                  `-- This Hook call is not reachable on every render path.
+ 31 |   const [selectedSpeakerName, setSelectedSpeakerName] = useState(initialSpeakerName);
+    `----
+  help: Move the Hook call before the condition, or call it unconditionally and branch inside the Hook/effect instead.
+
+  x react-hooks(rules-of-hooks): React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render.
+    ,-[src/components/QuickFixModal.tsx:31:57]
+ 30 |   const [selectedSpeakerId, setSelectedSpeakerId] = useState(initialSpeakerId);
+ 31 |   const [selectedSpeakerName, setSelectedSpeakerName] = useState(initialSpeakerName);
+    :                                                         ^^^^^^^^^^^^^^|^^^^^^^^^^^^^
+    :                                                                       `-- This Hook call is not reachable on every render path.
+ 32 | 
+    `----
+  help: Move the Hook call before the condition, or call it unconditionally and branch inside the Hook/effect instead.
+
+  x react-hooks(rules-of-hooks): React Hook "useEffect" is called conditionally. React Hooks must be called in the exact same order in every component render.
+    ,-[src/components/QuickFixModal.tsx:33:3]
+ 32 |     
+ 33 | ,->   useEffect(() => {
+ 34 | |       setText('text' in block ? block.text : '');
+ 35 | |       setSelectedSpeakerId(block.type === 'dialogue' ? block.speakerId : '');
+ 36 | |       setSelectedSpeakerName(block.type === 'dialogue' ? block.speakerName : '');
+ 37 | |->   }, [block]);
+    : `---- This Hook call is not reachable on every render path.
+ 38 |     
+    `----
+  help: Move the Hook call before the condition, or call it unconditionally and branch inside the Hook/effect instead.
+
+Found 1 warning and 4 errors.
+Finished in 24ms on 1 file with 116 rules using 12 threads.
+
+--------------------------------------------------------------------------------
+
+$ node .wayfinder/assets/WF-0019/repro.mjs
+
+=== TEST 1: Production QuickFixModal (Reachable App.tsx Flow) ===
+Step 1 (Mount block=null) errors: 0
+Internal React error: Expected static flag was missing. Please notify the React team.
+Step 2 (Open modal with block) errors: 1
+Production component hook violation observed: true
+
+=== TEST 2: Control Case (Compliant Hook Ordering) ===
+Control Step 1 (Mount block=null) errors: 0
+Control Step 2 (Open modal with block) errors: 0
+Control Step 3 (Close modal) errors: 0
+
+=== SUMMARY ===
+Production Errors Count: 1
+Control Errors Count: 0
