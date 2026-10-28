@@ -48,6 +48,7 @@ import {
 } from '../services/storage';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import { themes } from '../theme/colors';
+import { radius, typeScale } from '../theme/layout';
 import { isNovelList } from '../services/validation';
 import bundledNovels from '../data/novels.json';
 import { BookCover } from '../components/BookCover';
@@ -262,14 +263,13 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
       <StatusBar style={themeColors.statusBar === 'dark' ? 'dark' : 'light'} />
       <NavigationBar hidden={false} style={currentTheme === 'dark' ? 'dark' : 'light'} />
 
-      {/* Top Header */}
       <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
         <View style={styles.headerCenteredRow}>
-          <TouchableOpacity style={styles.iconButton} onPress={() => navigation.goBack()}>
-            <ArrowLeft size={22} color={themeColors.text} />
+          <TouchableOpacity accessibilityRole="button" accessibilityLabel="กลับ" style={styles.iconButton} onPress={() => navigation.goBack()}>
+            <ArrowLeft size={20} color={themeColors.text} />
           </TouchableOpacity>
 
-          <Text style={[styles.headerTitle, { color: themeColors.text }]} numberOfLines={1}>
+          <Text style={[styles.headerTitle, { color: themeColors.textMuted }]} numberOfLines={1}>
             {novel?.title || 'รายละเอียดนิยาย'}
           </Text>
 
@@ -281,7 +281,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
               setShowSettingsModal(true);
             }}
           >
-            <Settings2 size={21} color={themeColors.text} />
+            <Settings2 size={19} color={themeColors.textMuted} />
           </TouchableOpacity>
         </View>
       </View>
@@ -296,48 +296,50 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}
           refreshControl={<RefreshControl testID="chapter-refresh" refreshing={refreshing} enabled={job === null} onRefresh={() => { void handleRefresh(); }} tintColor={themeColors.primary} colors={[themeColors.primary]} />}
         >
-          {/* Novel Info Banner */}
+          {/* Book front matter: cover, title, who made it, what is on the device. */}
           <View style={styles.novelInfoCard}>
-            <BookCover uri={novel.coverUrl} style={styles.coverImage} />
+            <BookCover uri={novel.coverUrl} style={[styles.coverImage, { borderColor: themeColors.border }]} />
 
             <View style={styles.infoRight}>
               <Text style={[styles.title, { color: themeColors.text }]}>{novel.title}</Text>
-              <Text style={[styles.metaText, { color: themeColors.textMuted }]}>
-                ผู้แต่ง: {novel.author}
-              </Text>
-              <Text style={[styles.metaText, { color: themeColors.textMuted }]}>
-                ผู้แปล: {novel.translator || 'ไม่ระบุ'}
-              </Text>
 
-              {/* Clean Offline Counter Badge */}
-              <View style={[styles.offlineStatusBar, { backgroundColor: themeColors.card, borderColor: themeColors.border }]}>
-                <HardDrive size={13} color={themeColors.textMuted} />
+              <View style={styles.creditRow}>
+                <Text style={[styles.creditLabel, { color: themeColors.textFaint }]}>ผู้แต่ง</Text>
+                <Text style={[styles.creditValue, { color: themeColors.textMuted }]} numberOfLines={1}>{novel.author}</Text>
+              </View>
+              <View style={styles.creditRow}>
+                <Text style={[styles.creditLabel, { color: themeColors.textFaint }]}>ผู้แปล</Text>
+                <Text style={[styles.creditValue, { color: themeColors.textMuted }]} numberOfLines={1}>{novel.translator || 'ไม่ระบุ'}</Text>
+              </View>
+
+              <View style={[styles.offlineRow, { borderTopColor: themeColors.border }]}>
+                <HardDrive size={12} color={themeColors.textFaint} />
                 <Text style={[styles.offlineStatsText, { color: themeColors.textMuted }]}>
-                  เนื้อหาออฟไลน์: {downloadedCount}/{chapters.length} ตอน
+                  เนื้อหาออฟไลน์ {downloadedCount}/{chapters.length} ตอน
                 </Text>
               </View>
             </View>
           </View>
 
-          {/* Synopsis */}
-          <View style={[styles.synopsisCard, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}>
-            <Text style={[styles.synopsisTitle, { color: themeColors.text }]}>เรื่องย่อ</Text>
+          {/* Synopsis reads like a book jacket flap, not a card. */}
+          <View style={[styles.synopsisBlock, { borderLeftColor: themeColors.borderStrong }]}>
+            <Text style={[styles.synopsisTitle, { color: themeColors.textMuted }]}>เรื่องย่อ</Text>
             <Text style={[styles.synopsisBody, { color: themeColors.narrationText }]}>
               {novel.synopsis}
             </Text>
           </View>
 
-          {/* Segmented Tab Switcher */}
-          <View style={[styles.tabSwitcher, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}>
+          {/* Tabs as an underlined index, the way a table of contents is printed. */}
+          <View style={[styles.tabSwitcher, { borderBottomColor: themeColors.border }]}>
             <TouchableOpacity
               style={[
                 styles.tabButton,
-                activeTab === 'chapters' && [styles.tabButtonActive, { backgroundColor: themeColors.primaryBg }],
+                activeTab === 'chapters' && { borderBottomColor: themeColors.primary },
               ]}
               onPress={() => setActiveTab('chapters')}
-              activeOpacity={0.8}
+              activeOpacity={0.7}
             >
-              <BookOpen size={16} color={activeTab === 'chapters' ? themeColors.primary : themeColors.textMuted} />
+              <BookOpen size={15} color={activeTab === 'chapters' ? themeColors.primary : themeColors.textMuted} />
               <Text
                 style={[
                   styles.tabText,
@@ -345,19 +347,19 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                   activeTab === 'chapters' && styles.tabTextActive,
                 ]}
               >
-                สารบัญ ({chapters.length})
+                สารบัญ {chapters.length}
               </Text>
             </TouchableOpacity>
 
             <TouchableOpacity
               style={[
                 styles.tabButton,
-                activeTab === 'gallery' && [styles.tabButtonActive, { backgroundColor: themeColors.primaryBg }],
+                activeTab === 'gallery' && { borderBottomColor: themeColors.primary },
               ]}
               onPress={() => setActiveTab('gallery')}
-              activeOpacity={0.8}
+              activeOpacity={0.7}
             >
-              <Images size={16} color={activeTab === 'gallery' ? themeColors.primary : themeColors.textMuted} />
+              <Images size={15} color={activeTab === 'gallery' ? themeColors.primary : themeColors.textMuted} />
               <Text
                 style={[
                   styles.tabText,
@@ -365,12 +367,11 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                   activeTab === 'gallery' && styles.tabTextActive,
                 ]}
               >
-                ภาพ & ตัวละคร ({illustrations.length + characters.length})
+                ภาพและตัวละคร {illustrations.length + characters.length}
               </Text>
             </TouchableOpacity>
           </View>
 
-          {/* TAB 1: CHAPTERS LIST */}
           {activeTab === 'chapters' && (
             <View>
               {chaptersLoading ? <View style={{ paddingVertical: 24 }}><ActivityIndicator color={themeColors.primary} /></View>
@@ -384,13 +385,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                 return (
                   <View
                     key={ch.id}
-                    style={[
-                      styles.chapterItem,
-                      {
-                        backgroundColor: themeColors.card,
-                        borderColor: isCh0 ? themeColors.primary : themeColors.cardBorder,
-                      },
-                    ]}
+                    style={[styles.chapterItem, { borderBottomColor: themeColors.border }]}
                   >
                     <TouchableOpacity
                       style={styles.chapterTouch}
@@ -402,17 +397,12 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                         })
                       }
                     >
-                      <View
-                        style={[
-                          styles.chapterNumBadge,
-                          { backgroundColor: isCh0 ? `${themeColors.primary}20` : themeColors.primaryBg },
-                        ]}
-                      >
+                      <View style={styles.chapterNumColumn}>
                         {isCh0 ? (
-                          <Sparkles size={14} color={themeColors.primary} />
+                          <Sparkles size={13} color={themeColors.primary} />
                         ) : (
-                          <Text style={[styles.chapterNumText, { color: themeColors.primary }]}>
-                            {ch.chapterNumber}
+                          <Text style={[styles.chapterNumText, { color: themeColors.textFaint }]}>
+                            {String(ch.chapterNumber).padStart(2, '0')}
                           </Text>
                         )}
                       </View>
@@ -421,31 +411,37 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                           style={[
                             styles.chapterTitle,
                             { color: isCh0 ? themeColors.primary : themeColors.text },
-                            isCh0 && { fontWeight: '700' },
                           ]}
                           numberOfLines={2}
                         >
                           {ch.title || `ตอนที่ ${ch.chapterNumber}`}
                         </Text>
+                        {offlineStatus === 'text-only' && (
+                          <Text style={[styles.chapterNote, { color: themeColors.textMuted }]}>ข้อความพร้อม รูปยังไม่ครบ</Text>
+                        )}
                       </View>
                     </TouchableOpacity>
 
-                    {offlineStatus === 'text-only' && <Text style={{ color: themeColors.textMuted, fontSize: 11, maxWidth: 80 }}>ข้อความพร้อม รูปยังไม่ครบ</Text>}
-                    {/* Right Action: Show download icon only if not downloaded */}
                     <View style={styles.chapterActions}>
                       {isDownloading ? (
                         <ActivityIndicator size="small" color={themeColors.primary} />
                       ) : !isDownloaded ? (
                         <TouchableOpacity
-                          style={[styles.downloadIconBtn, { backgroundColor: themeColors.primaryBg }]}
+                          style={styles.downloadIconBtn}
                           disabled={job !== null}
+                          accessibilityRole="button"
                           accessibilityLabel={offlineStatus === 'text-only' ? 'ดาวน์โหลดภาพที่ขาด' : 'ดาวน์โหลดตอน'}
                           onPress={() => { void handleDownloadChapter(ch.id); }}
-                          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                          activeOpacity={0.6}
+                          hitSlop={{ top: 6, bottom: 6, left: 6, right: 6 }}
                         >
-                          <Download size={16} color={themeColors.primary} />
+                          <Download size={16} color={themeColors.textMuted} />
                         </TouchableOpacity>
-                      ) : null}
+                      ) : (
+                        <View style={styles.downloadedMark}>
+                          <Check size={14} color={themeColors.success} />
+                        </View>
+                      )}
                     </View>
                   </View>
                 );
@@ -453,16 +449,14 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
             </View>
           )}
 
-          {/* TAB 2: GALLERY & CHARACTERS */}
           {activeTab === 'gallery' && (
             <View style={styles.galleryContainer}>
-              {/* Section 1: Characters Cast */}
               {characters.length > 0 && (
                 <View style={styles.gallerySection}>
                   <View style={styles.sectionHeaderRow}>
-                    <Users size={16} color={themeColors.primary} />
+                    <Users size={15} color={themeColors.primary} />
                     <Text style={[styles.sectionTitle, { color: themeColors.text }]}>
-                      ตัวละครหลัก ({characters.length})
+                      ตัวละครหลัก {characters.length}
                     </Text>
                   </View>
 
@@ -482,7 +476,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                             styles.characterCard,
                             { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder },
                           ]}
-                          activeOpacity={0.8}
+                          activeOpacity={0.85}
                           onPress={() => {
                             if (avatarUri) {
                               openLightbox(avatarUri, char.name, char.description || char.role);
@@ -492,7 +486,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                           {avatarUri ? (
                             <Image source={{ uri: avatarUri }} style={styles.charAvatar} resizeMode="cover" />
                           ) : (
-                            <View style={[styles.charAvatarPlaceholder, { backgroundColor: `${char.color}20` }]}>
+                            <View style={[styles.charAvatarPlaceholder, { backgroundColor: `${char.color}1f` }]}>
                               <Text style={[styles.charInitial, { color: char.color }]}>
                                 {char.name.charAt(0)}
                               </Text>
@@ -520,16 +514,15 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                 </View>
               )}
 
-              {/* Section 2: Official Illustrations */}
               <View style={styles.gallerySection}>
                 <View style={styles.sectionHeaderRow}>
-                  <Sparkles size={16} color={themeColors.primary} />
+                  <Sparkles size={15} color={themeColors.primary} />
                   <Text style={[styles.sectionTitle, { color: themeColors.text }]}>
-                    ภาพประกอบนิยายทางการ ({illustrations.length})
+                    ภาพประกอบ {illustrations.length}
                   </Text>
                 </View>
 
-                {illustrations.length === 0 && <Text style={{ color: themeColors.textMuted }}>ยังไม่มีภาพประกอบที่แสดงได้</Text>}
+                {illustrations.length === 0 && <Text style={{ color: themeColors.textMuted, fontSize: typeScale.body }}>ยังไม่มีภาพประกอบที่แสดงได้</Text>}
                 <View style={styles.illustrationsGrid}>
                   {illustrations.map((item) => {
                     const imgUrl = getIllustrationUrl(novelId, item.filename);
@@ -552,7 +545,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                       >
                         <OfflineImage novelId={novelId} src={item.filename} style={styles.gridImage} color={themeColors.primary} />
                         <View style={styles.gridItemOverlay}>
-                          <View style={[styles.gridTypeBadge, { backgroundColor: 'rgba(0,0,0,0.68)' }]}>
+                          <View style={styles.gridTypeBadge}>
                             <Text style={styles.gridTypeBadgeText}>{typeBadge}</Text>
                           </View>
                         </View>
@@ -579,7 +572,6 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
         </ScrollView>
       )}
 
-      {/* Lightbox Zoom Modal */}
       <ImageLightboxModal
         visible={lightboxVisible}
         imageUrl={lightboxUrl}
@@ -589,7 +581,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
         onClose={() => setLightboxVisible(false)}
       />
 
-      {/* Storage & Download Management Modal */}
+      {/* Storage & Download Management Sheet */}
       <Modal
         visible={showSettingsModal}
         transparent
@@ -597,51 +589,52 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
         onRequestClose={() => setShowSettingsModal(false)}
       >
         <TouchableOpacity
-          style={styles.modalOverlay}
+          style={[styles.modalOverlay, { backgroundColor: themeColors.scrim }]}
           activeOpacity={1}
           onPress={() => setShowSettingsModal(false)}
         >
           <TouchableOpacity
-            style={[styles.modalContent, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}
+            style={[styles.modalContent, { backgroundColor: themeColors.card, borderColor: themeColors.border }]}
             activeOpacity={1}
           >
-            {/* Modal Header */}
+            <View style={[styles.sheetHandle, { backgroundColor: themeColors.borderStrong }]} />
+
             <View style={styles.modalHeader}>
               <View style={styles.modalHeaderLeft}>
-                <HardDrive size={18} color={themeColors.primary} />
+                <HardDrive size={17} color={themeColors.primary} />
                 <Text style={[styles.modalTitle, { color: themeColors.text }]}>จัดการข้อมูลออฟไลน์</Text>
               </View>
               <TouchableOpacity
+                accessibilityRole="button"
+                accessibilityLabel="ปิดการจัดการข้อมูลออฟไลน์"
                 onPress={() => setShowSettingsModal(false)}
                 style={styles.modalCloseBtn}
               >
-                <X size={18} color={themeColors.textMuted} />
+                <X size={17} color={themeColors.textMuted} />
               </TouchableOpacity>
             </View>
 
-            {/* Storage Info Card */}
-            <View style={[styles.modalInfoBox, { backgroundColor: themeColors.background, borderColor: themeColors.border }]}>
+            <View style={[styles.modalInfoBox, { backgroundColor: themeColors.backgroundElevated, borderColor: themeColors.border }]}>
               <View style={styles.infoRow}>
-                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>ตอนที่มีเนื้อหาอ่านได้:</Text>
+                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>ตอนที่มีเนื้อหาอ่านได้</Text>
                 <Text style={[styles.infoValue, { color: themeColors.text }]}>
                   {downloadedCount} / {chapters.length} ตอน
                 </Text>
               </View>
               <View style={styles.infoRow}>
-                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>พื้นที่ไฟล์ที่ลบคืนได้:</Text>
+                <Text style={[styles.infoLabel, { color: themeColors.textMuted }]}>พื้นที่ไฟล์ที่ลบคืนได้</Text>
                 <Text style={[styles.infoValue, { color: themeColors.text }]}>
                   {formatFileSize(storageStats.totalBytes)}
                 </Text>
               </View>
             </View>
 
-            {/* Action 1: Download All */}
             <TouchableOpacity
               accessibilityLabel="ดาวน์โหลดตอนที่ยังไม่ครบทั้งหมด"
               style={[
                 styles.modalActionBtn,
                 {
-                  backgroundColor: remainingCount === 0 ? themeColors.border : themeColors.primary,
+                  backgroundColor: remainingCount === 0 ? themeColors.borderStrong : themeColors.primary,
                   opacity: remainingCount === 0 || job !== null ? 0.6 : 1,
                 },
               ]}
@@ -651,9 +644,9 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
               {isDownloadingAll ? (
                 <ActivityIndicator size="small" color="#ffffff" />
               ) : remainingCount === 0 ? (
-                <Check size={18} color="#ffffff" />
+                <Check size={17} color="#ffffff" />
               ) : (
-                <Download size={18} color="#ffffff" />
+                <Download size={17} color="#ffffff" />
               )}
               <Text style={styles.modalActionBtnText}>
                 {remainingCount === 0
@@ -666,33 +659,32 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
 
             <TouchableOpacity
               accessibilityLabel="อัปเดตตอนที่มีในเครื่อง"
-              style={[styles.modalActionBtn, { backgroundColor: themeColors.primary, opacity: downloadedCount === 0 || job !== null ? 0.6 : 1 }]}
+              style={[styles.modalGhostBtn, { borderColor: themeColors.borderStrong, opacity: downloadedCount === 0 || job !== null ? 0.5 : 1 }]}
               disabled={downloadedCount === 0 || job !== null}
               onPress={() => { void handleDownloadAll(true); }}
             >
-              <Download size={18} color="#ffffff" />
-              <Text style={styles.modalActionBtnText}>อัปเดตตอนที่มีในเครื่อง</Text>
+              <Download size={16} color={themeColors.text} />
+              <Text style={[styles.modalGhostBtnText, { color: themeColors.text }]}>อัปเดตตอนที่มีในเครื่อง</Text>
             </TouchableOpacity>
-            <Text style={{ color: themeColors.textMuted, marginBottom: 16 }}>
+            <Text style={[styles.modalHint, { color: themeColors.textMuted }]}>
               ดึงข้อความฉบับล่าสุดและภาพที่ขาด หากอัปเดตไม่สำเร็จจะเก็บตอนเดิมไว้ ตำแหน่งอ่านยังอยู่
             </Text>
 
-            {/* Action 2: Clear Offline Storage */}
             <TouchableOpacity
               accessibilityLabel="ลบไฟล์ออฟไลน์ทั้งหมดของเรื่องนี้"
               style={[
                 styles.modalDestructiveBtn,
                 {
-                  borderColor: '#ef444433',
-                  backgroundColor: '#ef444410',
-                  opacity: storageStats.totalBytes === 0 || job !== null ? 0.4 : 1,
+                  borderColor: `${themeColors.danger}33`,
+                  backgroundColor: `${themeColors.danger}0f`,
+                  opacity: storageStats.totalBytes === 0 || job !== null ? 0.45 : 1,
                 },
               ]}
               onPress={handleClearAllOffline}
               disabled={storageStats.totalBytes === 0 || job !== null}
             >
-              <Trash2 size={16} color="#ef4444" />
-              <Text style={styles.modalDestructiveText}>ลบไฟล์ออฟไลน์ทั้งหมดของเรื่องนี้</Text>
+              <Trash2 size={15} color={themeColors.danger} />
+              <Text style={[styles.modalDestructiveText, { color: themeColors.danger }]}>ลบไฟล์ออฟไลน์ทั้งหมดของเรื่องนี้</Text>
             </TouchableOpacity>
           </TouchableOpacity>
         </TouchableOpacity>
@@ -706,8 +698,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    paddingHorizontal: 16,
-    paddingVertical: 12,
+    paddingHorizontal: 12,
     borderBottomWidth: 1,
   },
   headerCenteredRow: {
@@ -717,17 +708,19 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    minHeight: 52,
   },
   iconButton: {
     minWidth: 44,
     minHeight: 44,
-    padding: 6,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   headerTitle: {
-    fontSize: 16,
-    fontWeight: '700',
+    fontSize: typeScale.bodyLg,
+    fontWeight: '600',
     flex: 1,
-    marginHorizontal: 12,
+    marginHorizontal: 8,
     textAlign: 'center',
   },
   loadingContainer: {
@@ -739,83 +732,103 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: 760,
     alignSelf: 'center',
-    padding: 16,
-    paddingBottom: 40,
+    paddingHorizontal: 20,
+    paddingTop: 20,
+    paddingBottom: 48,
   },
   novelInfoCard: {
     flexDirection: 'row',
     gap: 16,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   coverImage: {
     width: 100,
     height: 145,
-    borderRadius: 10,
-    backgroundColor: '#ddd',
+    borderRadius: radius.sm,
+    borderWidth: 1,
+    backgroundColor: 'rgba(0,0,0,0.04)',
   },
   infoRight: {
     flex: 1,
+    minWidth: 0,
     justifyContent: 'center',
   },
   title: {
-    fontSize: 17,
-    fontWeight: '700',
-    lineHeight: 22,
-    marginBottom: 6,
+    fontSize: typeScale.display,
+    fontWeight: '800',
+    letterSpacing: -0.5,
+    lineHeight: 28,
+    marginBottom: 10,
   },
-  metaText: {
-    fontSize: 13,
+  creditRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    gap: 8,
     marginBottom: 3,
   },
-  offlineStatusBar: {
+  creditLabel: {
+    fontSize: typeScale.meta,
+    width: 34,
+  },
+  creditValue: {
+    flex: 1,
+    fontSize: typeScale.body,
+  },
+  offlineRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderRadius: 8,
-    borderWidth: 1,
-    marginTop: 8,
-    alignSelf: 'flex-start',
     gap: 6,
+    borderTopWidth: 1,
+    marginTop: 10,
+    paddingTop: 9,
   },
   offlineStatsText: {
-    fontSize: 11,
-    fontWeight: '500',
+    fontSize: typeScale.meta + 0.5,
   },
-  synopsisCard: {
-    padding: 14,
-    borderRadius: 12,
-    borderWidth: 1,
-    marginBottom: 20,
+  synopsisBlock: {
+    borderLeftWidth: 2,
+    paddingLeft: 14,
+    marginBottom: 10,
   },
   synopsisTitle: {
-    fontSize: 14,
+    fontSize: typeScale.caption,
     fontWeight: '700',
     marginBottom: 6,
   },
   synopsisBody: {
-    fontSize: 13,
-    lineHeight: 20,
+    fontSize: typeScale.bodyLg,
+    lineHeight: 24,
   },
-  chaptersHeaderRow: {
+  tabSwitcher: {
+    flexDirection: 'row',
+    gap: 22,
+    borderBottomWidth: 1,
+    marginTop: 22,
+    marginBottom: 6,
+  },
+  tabButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: 12,
+    gap: 7,
+    paddingBottom: 11,
+    paddingTop: 4,
+    borderBottomWidth: 2,
+    borderBottomColor: 'transparent',
   },
-  chaptersHeading: {
-    fontSize: 16,
+  tabText: {
+    fontSize: typeScale.bodyLg,
+    fontWeight: '500',
+  },
+  tabTextActive: {
     fontWeight: '700',
   },
   chapterItem: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 12,
-    paddingHorizontal: 14,
-    borderRadius: 12,
-    borderWidth: 1,
-    marginBottom: 8,
+    minHeight: 56,
+    paddingVertical: 10,
+    borderBottomWidth: 1,
   },
   chapterTouch: {
     flex: 1,
@@ -823,53 +836,179 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
   },
-  chapterNumBadge: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
+  chapterNumColumn: {
+    width: 26,
+    alignItems: 'flex-start',
   },
   chapterNumText: {
-    fontSize: 13,
-    fontWeight: '700',
+    fontSize: typeScale.caption,
+    fontWeight: '600',
+    fontVariant: ['tabular-nums'],
   },
   chapterTitles: {
     flex: 1,
     paddingRight: 8,
   },
   chapterTitle: {
-    fontSize: 14,
+    fontSize: typeScale.bodyLg,
     fontWeight: '600',
-    lineHeight: 19,
+    lineHeight: 21,
+  },
+  chapterNote: {
+    fontSize: typeScale.micro + 0.5,
+    marginTop: 2,
   },
   chapterActions: {
-    minWidth: 28,
-    alignItems: 'center',
+    minWidth: 36,
+    alignItems: 'flex-end',
     justifyContent: 'center',
   },
   downloadIconBtn: {
-    minWidth: 44,
-    minHeight: 44,
+    width: 36,
+    height: 36,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 6,
-    borderRadius: 8,
+    borderRadius: radius.full,
   },
-  // Modal styles
+  downloadedMark: {
+    width: 36,
+    height: 36,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  galleryContainer: {
+    paddingTop: 20,
+    paddingBottom: 24,
+  },
+  gallerySection: {
+    marginBottom: 28,
+  },
+  sectionHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 14,
+  },
+  sectionTitle: {
+    fontSize: typeScale.bodyLg,
+    fontWeight: '700',
+  },
+  charactersScroll: {
+    paddingVertical: 2,
+    gap: 12,
+  },
+  characterCard: {
+    width: 162,
+    borderRadius: radius.md,
+    borderWidth: 1,
+    overflow: 'hidden',
+  },
+  charAvatar: {
+    width: '100%',
+    height: 150,
+    backgroundColor: 'rgba(0,0,0,0.04)',
+  },
+  charAvatarPlaceholder: {
+    width: '100%',
+    height: 150,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  charInitial: {
+    fontSize: 34,
+    fontWeight: '700',
+  },
+  charCardBody: {
+    padding: 10,
+  },
+  charName: {
+    fontSize: typeScale.body,
+    fontWeight: '700',
+    marginBottom: 5,
+  },
+  charRoleBadge: {
+    alignSelf: 'flex-start',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: radius.xs,
+    marginBottom: 6,
+  },
+  charRoleText: {
+    fontSize: typeScale.micro,
+    fontWeight: '600',
+  },
+  charDesc: {
+    fontSize: typeScale.meta,
+    lineHeight: 16,
+  },
+  illustrationsGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    gap: 12,
+  },
+  illustrationGridItem: {
+    width: '48%',
+    borderRadius: radius.md,
+    borderWidth: 1,
+    overflow: 'hidden',
+  },
+  gridImage: {
+    width: '100%',
+    height: 130,
+    backgroundColor: 'rgba(0,0,0,0.04)',
+  },
+  gridItemOverlay: {
+    position: 'absolute',
+    top: 7,
+    left: 7,
+  },
+  gridTypeBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: radius.xs,
+    backgroundColor: 'rgba(24,24,22,0.72)',
+  },
+  gridTypeBadgeText: {
+    color: '#ffffff',
+    fontSize: typeScale.micro,
+    fontWeight: '600',
+  },
+  gridItemBody: {
+    padding: 9,
+  },
+  gridItemTitle: {
+    fontSize: typeScale.caption,
+    fontWeight: '700',
+    marginBottom: 2,
+  },
+  gridItemCaption: {
+    fontSize: typeScale.meta,
+    lineHeight: 15,
+  },
   modalOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.5)',
-    justifyContent: 'center',
-    padding: 20,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
   },
   modalContent: {
     width: '100%',
-    maxWidth: 480,
-    alignSelf: 'center',
-    borderRadius: 16,
-    padding: 20,
+    maxWidth: 520,
+    borderTopLeftRadius: radius.lg,
+    borderTopRightRadius: radius.lg,
     borderWidth: 1,
+    borderBottomWidth: 0,
+    paddingHorizontal: 20,
+    paddingTop: 10,
+    paddingBottom: 28,
+  },
+  sheetHandle: {
+    width: 36,
+    height: 3,
+    borderRadius: 2,
+    alignSelf: 'center',
+    marginBottom: 14,
+    opacity: 0.6,
   },
   modalHeader: {
     flexDirection: 'row',
@@ -883,49 +1022,67 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   modalTitle: {
-    fontSize: 16,
+    fontSize: typeScale.title,
     fontWeight: '700',
   },
   modalCloseBtn: {
-    minWidth: 44,
-    minHeight: 44,
+    minWidth: 40,
+    minHeight: 40,
     justifyContent: 'center',
-    alignItems: 'center',
-    padding: 4,
+    alignItems: 'flex-end',
   },
   modalInfoBox: {
     padding: 12,
-    borderRadius: 10,
+    borderRadius: radius.sm,
     borderWidth: 1,
-    gap: 6,
+    gap: 8,
     marginBottom: 18,
   },
   infoRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    gap: 12,
   },
   infoLabel: {
-    fontSize: 13,
+    fontSize: typeScale.body,
   },
   infoValue: {
-    fontSize: 13,
+    fontSize: typeScale.body,
     fontWeight: '600',
   },
   modalActionBtn: {
-    minHeight: 44,
+    minHeight: 46,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     gap: 8,
-    paddingVertical: 12,
-    borderRadius: 10,
+    borderRadius: radius.sm,
     marginBottom: 10,
   },
   modalActionBtnText: {
     color: '#ffffff',
-    fontSize: 14,
+    fontSize: typeScale.bodyLg,
+    fontWeight: '700',
+  },
+  modalGhostBtn: {
+    minHeight: 46,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    borderRadius: radius.sm,
+    borderWidth: 1,
+  },
+  modalGhostBtnText: {
+    fontSize: typeScale.bodyLg,
     fontWeight: '600',
+  },
+  modalHint: {
+    fontSize: typeScale.meta,
+    lineHeight: 17,
+    marginTop: 8,
+    marginBottom: 18,
   },
   modalDestructiveBtn: {
     minHeight: 44,
@@ -933,156 +1090,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 8,
-    paddingVertical: 11,
-    borderRadius: 10,
+    borderRadius: radius.sm,
     borderWidth: 1,
   },
   modalDestructiveText: {
-    color: '#ef4444',
-    fontSize: 13,
+    fontSize: typeScale.body,
     fontWeight: '600',
-  },
-  // Segmented Tab Switcher Styles
-  tabSwitcher: {
-    flexDirection: 'row',
-    borderRadius: 12,
-    borderWidth: 1,
-    padding: 4,
-    marginVertical: 14,
-    gap: 6,
-  },
-  tabButton: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 10,
-    borderRadius: 8,
-    gap: 8,
-  },
-  tabButtonActive: {
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.08,
-    shadowRadius: 2,
-    elevation: 1,
-  },
-  tabText: {
-    fontSize: 13.5,
-    fontWeight: '500',
-  },
-  tabTextActive: {
-    fontWeight: '700',
-  },
-  // Gallery & Cast Styles
-  galleryContainer: {
-    paddingBottom: 24,
-  },
-  gallerySection: {
-    marginBottom: 24,
-  },
-  sectionHeaderRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    marginBottom: 12,
-  },
-  sectionTitle: {
-    fontSize: 15,
-    fontWeight: '700',
-    letterSpacing: 0.2,
-  },
-  charactersScroll: {
-    paddingVertical: 4,
-    gap: 12,
-  },
-  characterCard: {
-    width: 175,
-    borderRadius: 14,
-    borderWidth: 1,
-    overflow: 'hidden',
-    paddingBottom: 8,
-  },
-  charAvatar: {
-    width: '100%',
-    height: 150,
-    backgroundColor: '#eee',
-  },
-  charAvatarPlaceholder: {
-    width: '100%',
-    height: 150,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  charInitial: {
-    fontSize: 36,
-    fontWeight: '700',
-  },
-  charCardBody: {
-    padding: 10,
-  },
-  charName: {
-    fontSize: 13.5,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  charRoleBadge: {
-    alignSelf: 'flex-start',
-    paddingHorizontal: 7,
-    paddingVertical: 2,
-    borderRadius: 6,
-    marginBottom: 6,
-  },
-  charRoleText: {
-    fontSize: 10.5,
-    fontWeight: '600',
-  },
-  charDesc: {
-    fontSize: 11.5,
-    lineHeight: 16,
-  },
-  illustrationsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    gap: 12,
-  },
-  illustrationGridItem: {
-    width: '48%',
-    borderRadius: 12,
-    borderWidth: 1,
-    overflow: 'hidden',
-  },
-  gridImage: {
-    width: '100%',
-    height: 135,
-    backgroundColor: '#eee',
-  },
-  gridItemOverlay: {
-    position: 'absolute',
-    top: 6,
-    left: 6,
-  },
-  gridTypeBadge: {
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    borderRadius: 4,
-  },
-  gridTypeBadgeText: {
-    color: '#ffffff',
-    fontSize: 9.5,
-    fontWeight: '600',
-  },
-  gridItemBody: {
-    padding: 8,
-  },
-  gridItemTitle: {
-    fontSize: 12,
-    fontWeight: '700',
-    marginBottom: 2,
-  },
-  gridItemCaption: {
-    fontSize: 10.5,
-    lineHeight: 14,
   },
 });

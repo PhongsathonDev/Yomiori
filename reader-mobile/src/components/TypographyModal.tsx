@@ -7,9 +7,10 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import { X, Minus, Plus, Check, Sun, Moon, Coffee } from 'lucide-react-native';
+import { X, Minus, Plus, Sun, Moon, Coffee } from 'lucide-react-native';
 import { ReaderTheme, ReaderFont, ReaderLineHeight } from '../types';
 import { themes } from '../theme/colors';
+import { radius, typeScale } from '../theme/layout';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useReaderFonts } from './ReaderFontProvider';
 
@@ -75,12 +76,13 @@ export const TypographyModal: React.FC<Props> = ({
 
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
-      <TouchableOpacity style={styles.overlay} activeOpacity={1} onPress={onClose}>
+      <TouchableOpacity style={[styles.overlay, { backgroundColor: themeColors.scrim }]} activeOpacity={1} onPress={onClose}>
         <TouchableOpacity
-          style={[styles.sheet, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder, paddingBottom: Math.max(30, insets.bottom + 12) }]}
+          style={[styles.sheet, { backgroundColor: themeColors.card, borderColor: themeColors.border, paddingBottom: Math.max(24, insets.bottom + 10) }]}
           activeOpacity={1}
         >
-          {/* Header */}
+          <View style={[styles.handle, { backgroundColor: themeColors.borderStrong }]} />
+
           <View style={styles.header}>
             <Text style={[styles.title, { color: themeColors.text }]}>ตั้งค่าการอ่าน</Text>
             <TouchableOpacity accessibilityRole="button" accessibilityLabel="ปิดการตั้งค่าตัวอักษร" onPress={onClose} style={styles.closeBtn}>
@@ -89,52 +91,67 @@ export const TypographyModal: React.FC<Props> = ({
           </View>
 
           <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
-            {fonts === 'error' && <Text style={{ color: themeColors.textMuted }}>โหลดแบบอักษรไม่ได้ กำลังใช้แบบอักษรระบบ</Text>}
-            {onChangeTheme && <View style={styles.section}>
-              <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>ธีม</Text>
-              <View style={styles.themeOptions}>
-                {([
-                  { id: 'light', label: 'สว่าง', Icon: Sun },
-                  { id: 'sepia', label: 'โทนอุ่น', Icon: Coffee },
-                  { id: 'dark', label: 'มืด', Icon: Moon },
-                ] as const).map(({ id, label, Icon }) => <TouchableOpacity key={id} accessibilityRole="radio"
-                  accessibilityLabel={`ธีม${label}`} accessibilityState={{ selected: theme === id }} onPress={() => onChangeTheme(id)}
-                  style={[styles.themeOption, { backgroundColor: themes[id].background, borderColor: theme === id ? themeColors.primary : themeColors.border }]}>
-                  <Icon size={20} color={themes[id].text} />
-                  <Text style={[styles.themeLabel, { color: themes[id].text }]}>{label}</Text>
-                </TouchableOpacity>)}
+            {fonts === 'error' && <Text style={{ color: themeColors.textMuted, fontSize: typeScale.body }}>โหลดแบบอักษรไม่ได้ กำลังใช้แบบอักษรระบบ</Text>}
+
+            {onChangeTheme && (
+              <View style={styles.section}>
+                <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>ธีม</Text>
+                <View style={styles.themeOptions}>
+                  {([
+                    { id: 'light', label: 'สว่าง', Icon: Sun },
+                    { id: 'sepia', label: 'โทนอุ่น', Icon: Coffee },
+                    { id: 'dark', label: 'มืด', Icon: Moon },
+                  ] as const).map(({ id, label, Icon }) => {
+                    const selected = theme === id;
+                    return (
+                      <TouchableOpacity key={id} accessibilityRole="radio"
+                        accessibilityLabel={`ธีม${label}`} accessibilityState={{ selected }} onPress={() => onChangeTheme(id)}
+                        style={[
+                          styles.themeOption,
+                          {
+                            backgroundColor: themes[id].background,
+                            borderColor: selected ? themeColors.primary : themeColors.border,
+                            borderWidth: selected ? 1.5 : 1,
+                          },
+                        ]}>
+                        <Icon size={18} color={selected ? themeColors.primary : themes[id].textMuted} />
+                        <Text style={[styles.themeLabel, { color: selected ? themeColors.primary : themes[id].textMuted }]}>{label}</Text>
+                      </TouchableOpacity>
+                    );
+                  })}
+                </View>
               </View>
-            </View>}
-            {/* Live Preview Box */}
-            <View
-              style={[
-                styles.previewBox,
-                {
-                  backgroundColor: themeColors.background,
-                  borderColor: themeColors.border,
-                },
-              ]}
-            >
-              <Text
-                style={{
-                  color: themeColors.text,
-                  fontSize: fontSize,
-                  fontFamily: activeFontMeta.regular,
-                  lineHeight: fontSize * lineHeightRatio,
-                  textAlign: 'left',
-                }}
-                numberOfLines={2}
+            )}
+
+            {/* Live preview: the fastest way to judge a reading setting. */}
+            <View style={styles.previewSection}>
+              <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>ตัวอย่าง</Text>
+              <View
+                style={[
+                  styles.previewBox,
+                  { backgroundColor: themeColors.background, borderColor: themeColors.border },
+                ]}
               >
-                นี่คือตัวอย่างการแสดงผลสำหรับอ่านนิยาย &ldquo;โยมิโอริ&rdquo; ในรูปแบบรูปเล่ม
-              </Text>
+                <Text
+                  style={{
+                    color: themeColors.narrationText,
+                    fontSize: fontSize,
+                    fontFamily: activeFontMeta.regular,
+                    lineHeight: fontSize * lineHeightRatio,
+                    textAlign: 'left',
+                  }}
+                  numberOfLines={2}
+                >
+                  นี่คือตัวอย่างการแสดงผลสำหรับอ่านนิยาย &ldquo;โยมิโอริ&rdquo; ในรูปแบบรูปเล่ม
+                </Text>
+              </View>
             </View>
 
-            {/* Section 1: Font Size */}
             <View style={styles.section}>
               <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>ขนาดตัวอักษร</Text>
-              <View style={styles.fontSizeControlRow}>
+              <View style={[styles.sizeRow, { borderColor: themeColors.border }]}>
                 <TouchableOpacity
-                  style={[styles.sizeBtn, { backgroundColor: themeColors.primaryBg }]}
+                  style={[styles.sizeBtn, { backgroundColor: themeColors.primaryBg, opacity: fontSize <= 14 ? 0.4 : 1 }]}
                   onPress={() => onChangeFontSize(-1)}
                   accessibilityLabel="ลดขนาดตัวอักษร"
                   disabled={fontSize <= 14}
@@ -143,10 +160,13 @@ export const TypographyModal: React.FC<Props> = ({
                   <Minus size={16} color={themeColors.primary} />
                 </TouchableOpacity>
 
-                <Text style={[styles.sizeNumber, { color: themeColors.text }]}>{fontSize} pt</Text>
+                <View style={styles.sizeReadout}>
+                  <Text style={[styles.sizeNumber, { color: themeColors.text }]}>{fontSize}</Text>
+                  <Text style={[styles.sizeUnit, { color: themeColors.textFaint }]}>pt</Text>
+                </View>
 
                 <TouchableOpacity
-                  style={[styles.sizeBtn, { backgroundColor: themeColors.primaryBg }]}
+                  style={[styles.sizeBtn, { backgroundColor: themeColors.primaryBg, opacity: fontSize >= 26 ? 0.4 : 1 }]}
                   onPress={() => onChangeFontSize(1)}
                   accessibilityLabel="เพิ่มขนาดตัวอักษร"
                   disabled={fontSize >= 26}
@@ -157,7 +177,6 @@ export const TypographyModal: React.FC<Props> = ({
               </View>
             </View>
 
-            {/* Section 2: Font Family */}
             <View style={styles.section}>
               <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>แบบอักษร</Text>
               <View style={styles.fontOptionsList}>
@@ -171,9 +190,8 @@ export const TypographyModal: React.FC<Props> = ({
                       style={[
                         styles.fontItem,
                         {
-                          backgroundColor: themeColors.background,
+                          backgroundColor: isSelected ? themeColors.primaryBg : 'transparent',
                           borderColor: isSelected ? themeColors.primary : themeColors.border,
-                          borderWidth: isSelected ? 1.5 : 1,
                         },
                       ]}
                       onPress={() => onChangeFontFamily(f)}
@@ -198,18 +216,15 @@ export const TypographyModal: React.FC<Props> = ({
                         </Text>
                       </View>
 
-                      {isSelected && (
-                        <View style={[styles.checkCircle, { backgroundColor: themeColors.primary }]}>
-                          <Check size={14} color="#ffffff" />
-                        </View>
-                      )}
+                      <View style={[styles.radio, { borderColor: isSelected ? themeColors.primary : themeColors.borderStrong }]}>
+                        {isSelected && <View style={[styles.radioDot, { backgroundColor: themeColors.primary }]} />}
+                      </View>
                     </TouchableOpacity>
                   );
                 })}
               </View>
             </View>
 
-            {/* Section 3: Line Height */}
             <View style={styles.section}>
               <Text style={[styles.sectionLabel, { color: themeColors.textMuted }]}>ระยะห่างบรรทัด</Text>
               <View style={styles.lineHeightPillsRow}>
@@ -225,8 +240,8 @@ export const TypographyModal: React.FC<Props> = ({
                       style={[
                         styles.pillBtn,
                         {
-                          backgroundColor: isSelected ? themeColors.primary : themeColors.background,
-                          borderColor: isSelected ? themeColors.primary : themeColors.border,
+                          backgroundColor: isSelected ? themeColors.primary : 'transparent',
+                          borderColor: isSelected ? themeColors.primary : themeColors.borderStrong,
                         },
                       ]}
                       onPress={() => onChangeLineHeight(item.val)}
@@ -236,7 +251,7 @@ export const TypographyModal: React.FC<Props> = ({
                       <Text
                         style={[
                           styles.pillBtnText,
-                          { color: isSelected ? '#ffffff' : themeColors.text },
+                          { color: isSelected ? themeColors.onPrimary : themeColors.textMuted },
                         ]}
                       >
                         {item.label}
@@ -256,109 +271,148 @@ export const TypographyModal: React.FC<Props> = ({
 const styles = StyleSheet.create({
   overlay: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.5)',
     justifyContent: 'flex-end',
   },
   sheet: {
-    maxHeight: '85%',
+    maxHeight: '88%',
     width: '100%',
     maxWidth: 520,
     alignSelf: 'center',
-    borderTopLeftRadius: 24,
-    borderTopRightRadius: 24,
+    borderTopLeftRadius: radius.lg,
+    borderTopRightRadius: radius.lg,
     borderWidth: 1,
-    paddingTop: 18,
+    borderBottomWidth: 0,
+    paddingTop: 10,
     paddingHorizontal: 20,
-    paddingBottom: 30,
+  },
+  handle: {
+    width: 36,
+    height: 3,
+    borderRadius: 2,
+    alignSelf: 'center',
+    marginBottom: 12,
+    opacity: 0.6,
   },
   scrollContent: {
-    paddingBottom: 20,
+    paddingBottom: 16,
   },
   header: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: 14,
+    marginBottom: 18,
   },
   title: {
     flex: 1,
     minWidth: 0,
-    fontSize: 18,
-    lineHeight: 28,
+    fontSize: typeScale.title,
+    lineHeight: 24,
     fontWeight: '700',
   },
   closeBtn: {
-    minWidth: 48,
-    minHeight: 48,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 4,
-  },
-  previewBox: {
-    padding: 12,
-    borderRadius: 12,
-    borderWidth: 1,
-    marginBottom: 16,
-    minHeight: 52,
+    minWidth: 44,
+    minHeight: 44,
+    alignItems: 'flex-end',
     justifyContent: 'center',
   },
   section: {
-    marginBottom: 18,
+    marginBottom: 22,
+  },
+  previewSection: {
+    marginBottom: 22,
+  },
+  sectionLabel: {
+    fontSize: typeScale.meta,
+    fontWeight: '600',
+    marginBottom: 9,
   },
   themeOptions: { flexDirection: 'row', gap: 8 },
-  themeOption: { flex: 1, minWidth: 48, minHeight: 64, paddingVertical: 10, paddingHorizontal: 4, borderWidth: 1, borderRadius: 12, alignItems: 'center', justifyContent: 'center', gap: 6 },
-  themeLabel: { fontSize: 12, lineHeight: 18, textAlign: 'center' },
-  sectionLabel: {
-    fontSize: 12,
-    fontWeight: '600',
-    marginBottom: 8,
+  themeOption: {
+    flex: 1,
+    minWidth: 48,
+    minHeight: 60,
+    paddingVertical: 10,
+    paddingHorizontal: 4,
+    borderRadius: radius.sm,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 7,
   },
-  fontSizeControlRow: {
+  themeLabel: { fontSize: typeScale.meta, lineHeight: 16, textAlign: 'center', fontWeight: '600' },
+  previewBox: {
+    padding: 14,
+    borderRadius: radius.sm,
+    borderWidth: 1,
+    minHeight: 56,
+    justifyContent: 'center',
+  },
+  sizeRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 8,
+    paddingVertical: 8,
+    borderRadius: radius.sm,
+    borderWidth: 1,
   },
   sizeBtn: {
-    width: 48,
-    height: 48,
-    borderRadius: 22,
+    width: 44,
+    height: 44,
+    borderRadius: radius.full,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  sizeReadout: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    gap: 3,
+  },
   sizeNumber: {
-    fontSize: 18,
+    fontSize: typeScale.display - 1,
     fontWeight: '700',
+    fontVariant: ['tabular-nums'],
+  },
+  sizeUnit: {
+    fontSize: typeScale.meta,
+    fontWeight: '600',
   },
   fontOptionsList: {
-    gap: 8,
+    gap: 6,
   },
   fontItem: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 10,
-    paddingHorizontal: 14,
-    borderRadius: 10,
+    minHeight: 56,
+    paddingVertical: 9,
+    paddingHorizontal: 13,
+    borderRadius: radius.sm,
+    borderWidth: 1,
   },
   fontItemInfo: {
     flex: 1,
+    paddingRight: 10,
   },
   fontItemName: {
-    fontSize: 14,
+    fontSize: typeScale.bodyLg,
     fontWeight: '600',
   },
   fontItemDesc: {
-    fontSize: 11,
-    marginTop: 2,
+    fontSize: typeScale.meta,
+    marginTop: 3,
   },
-  checkCircle: {
-    width: 22,
-    height: 22,
-    borderRadius: 11,
+  radio: {
+    width: 20,
+    height: 20,
+    borderRadius: radius.full,
+    borderWidth: 1.5,
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: 8,
+  },
+  radioDot: {
+    width: 10,
+    height: 10,
+    borderRadius: radius.full,
   },
   lineHeightPillsRow: {
     flexDirection: 'row',
@@ -366,16 +420,16 @@ const styles = StyleSheet.create({
   },
   pillBtn: {
     flex: 1,
-    minHeight: 48,
+    minHeight: 44,
     paddingVertical: 10,
-    borderRadius: 10,
+    borderRadius: radius.sm,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   pillBtnText: {
-    fontSize: 13,
-    lineHeight: 20,
+    fontSize: typeScale.caption,
+    lineHeight: 18,
     textAlign: 'center',
     fontWeight: '600',
   },

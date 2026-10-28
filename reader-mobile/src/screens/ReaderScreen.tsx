@@ -323,6 +323,9 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
             {/* Chapter Heading Banner */}
             <Pressable onPress={toggleControls}>
               <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
+                <Text numberOfLines={1} style={[styles.chapterKicker, { color: themeColors.textFaint }]}>
+                  {chapter.novelTitle}
+                </Text>
                 <Text
                   accessibilityRole="header"
                   style={[
@@ -339,7 +342,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
               {cacheWarning ? 'อ่านตอนนี้ได้ แต่ยังบันทึกออฟไลน์ไม่ได้ กรุณาตรวจสอบพื้นที่เครื่องแล้วลองอีกครั้ง' : 'ยังบันทึกการอ่านหรือการตั้งค่าไม่ได้ กรุณาตรวจสอบพื้นที่เครื่อง'}
             </Text>}
             {cacheWarning && <Pressable accessibilityRole="button" onPress={retryChapter} style={styles.navChapterBtn}>
-              <Text style={{ color: themeColors.primary }}>ลองบันทึกออฟไลน์อีกครั้ง</Text>
+              <Text style={{ color: themeColors.primary, fontWeight: '600' }}>ลองบันทึกออฟไลน์อีกครั้ง</Text>
             </Pressable>}
             <ReaderStory novelId={novelId} blocks={chapter.blocks} characterMap={characterMap} colors={themeColors}
               fontSize={fontSize} fontFamily={fontFamily} lineHeightRatio={lineHeightRatio}

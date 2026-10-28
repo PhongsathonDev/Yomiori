@@ -30,6 +30,7 @@ import {
   isChapterDownloaded,
 } from '../services/storage';
 import { themes } from '../theme/colors';
+import { radius, shadowSoft, space, typeScale } from '../theme/layout';
 import bundledNovels from '../data/novels.json';
 import { ScreenState } from '../components/ScreenState';
 import { BookCover } from '../components/BookCover';
@@ -155,22 +156,24 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
       <StatusBar style={themeColors.statusBar === 'dark' ? 'dark' : 'light'} />
       <NavigationBar hidden={false} style={currentTheme === 'dark' ? 'dark' : 'light'} />
 
-      {/* Top App Header with Theme Switcher */}
-      <View style={[styles.header, { borderBottomColor: themeColors.border }]}>
+      {/* Wordmark on plain paper — no bar, no rule, just the name. */}
+      <View style={styles.header}>
         <View style={styles.headerInner}>
           <View style={styles.titleRow}>
             <Text style={[styles.appTitle, { color: themeColors.primary }]}>Yomiori</Text>
-            <Text style={[styles.appKanji, { color: themeColors.textMuted }]}> 読織</Text>
+            <Text style={[styles.appKanji, { color: themeColors.textFaint }]}>読織</Text>
           </View>
 
-          {/* Theme Quick Toggle */}
           <TouchableOpacity
-            style={[styles.themeBtn, { backgroundColor: themeColors.primaryBg }]}
+            accessibilityRole="button"
+            accessibilityLabel="เปลี่ยนธีมการอ่าน"
+            style={[styles.themeBtn, { backgroundColor: themeColors.card, borderColor: themeColors.borderStrong }]}
             onPress={handleToggleTheme}
+            activeOpacity={0.7}
           >
-            {currentTheme === 'light' && <Sun size={17} color="#d97706" />}
-            {currentTheme === 'sepia' && <Coffee size={17} color="#9e432a" />}
-            {currentTheme === 'dark' && <Moon size={17} color="#e26d83" />}
+            {currentTheme === 'light' && <Sun size={16} color={themeColors.primary} />}
+            {currentTheme === 'sepia' && <Coffee size={16} color={themeColors.primary} />}
+            {currentTheme === 'dark' && <Moon size={16} color={themeColors.primary} />}
           </TouchableOpacity>
         </View>
       </View>
@@ -190,17 +193,11 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}
           refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => { void handleRefresh(); }} tintColor={themeColors.primary} colors={[themeColors.primary]} />}
         >
-          {/* HERO: CONTINUE READING CARD */}
+          {/* Continue reading: the newest page in the book, marked with a spine. */}
           {continueNovel && (
             <TouchableOpacity
-              style={[
-                styles.heroCard,
-                {
-                  backgroundColor: themeColors.card,
-                  borderColor: themeColors.cardBorder,
-                },
-              ]}
-              activeOpacity={0.9}
+              style={[styles.heroCard, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}
+              activeOpacity={0.92}
               onPress={() =>
                 navigation.navigate('Reader', {
                   novelId: continueNovel.id,
@@ -208,50 +205,57 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                 })
               }
             >
-              <View style={styles.heroTopRow}>
-                <BookCover uri={continueNovel.coverUrl} style={styles.heroCover} />
+              <View style={[styles.heroSpine, { backgroundColor: themeColors.primary }]} />
+              <BookCover uri={continueNovel.coverUrl} style={styles.heroCover} />
 
-                <View style={styles.heroInfo}>
-                  <Text style={[styles.heroSectionLabel, { color: themeColors.primary }]}>
+              <View style={styles.heroInfo}>
+                <View style={styles.heroTopRow}>
+                  <Text style={[styles.heroLabel, { color: themeColors.primary, backgroundColor: themeColors.primaryBg }]}>
                     อ่านต่อ
                   </Text>
-                  <Text style={[styles.heroNovelTitle, { color: themeColors.text }]} numberOfLines={1}>
-                    {continueNovel.title}
-                  </Text>
-                  <Text style={[styles.heroChapterTitle, { color: themeColors.textMuted }]} numberOfLines={1}>
-                    {continueChapterId.replace('ch-', 'ตอนที่ ')}
-                    {continuePercent > 0 ? ` • ${continuePercent}%` : ''}
-                  </Text>
-
-                  {/* Reading Progress Bar */}
-                  <View style={[styles.heroProgressBarTrack, { backgroundColor: themeColors.progressTrack }]}>
-                    <View
-                      style={[
-                        styles.heroProgressBarFill,
-                        {
-                          backgroundColor: themeColors.progressBar,
-                          width: `${Math.max(4, continuePercent)}%`,
-                        },
-                      ]}
-                    />
-                  </View>
+                  {continuePercent > 0 ? (
+                    <Text style={[styles.heroPercent, { color: themeColors.textFaint }]}>{continuePercent}%</Text>
+                  ) : null}
                 </View>
+                <Text style={[styles.heroNovelTitle, { color: themeColors.text }]} numberOfLines={2}>
+                  {continueNovel.title}
+                </Text>
+                <Text style={[styles.heroChapterTitle, { color: themeColors.textMuted }]} numberOfLines={1}>
+                  {continueChapterId.replace('ch-', 'ตอนที่ ')}
+                </Text>
 
-                <View style={[styles.heroPlayButton, { backgroundColor: themeColors.primary }]}>
-                  <Play size={16} color="#ffffff" fill="#ffffff" />
+                <View style={[styles.heroProgressTrack, { backgroundColor: themeColors.progressTrack }]}>
+                  <View
+                    style={[
+                      styles.heroProgressFill,
+                      {
+                        backgroundColor: themeColors.progressBar,
+                        width: `${Math.max(4, continuePercent)}%`,
+                      },
+                    ]}
+                  />
                 </View>
+              </View>
+
+              <View style={[styles.heroPlayButton, { backgroundColor: themeColors.primary }]}>
+                <Play size={14} color={themeColors.onPrimary} fill={themeColors.onPrimary} />
               </View>
             </TouchableOpacity>
           )}
 
-          {/* SECTION HEADER */}
+          {/* Shelf heading */}
           <View style={styles.sectionHeaderRow}>
-            <Text style={[styles.sectionHeading, { color: themeColors.text }]}>
-              ชั้นหนังสือ
-            </Text>
+            <View>
+              <Text style={[styles.sectionHeading, { color: themeColors.text }]}>
+                ชั้นหนังสือ
+              </Text>
+              <Text style={[styles.sectionSubHeading, { color: themeColors.textMuted }]}>
+                {novels.length} เรื่องในชั้น
+              </Text>
+            </View>
           </View>
 
-          {/* HORIZONTAL TAG FILTER CHIPS */}
+          {/* Tag filters */}
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
@@ -262,7 +266,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                 styles.tagChip,
                 {
                   backgroundColor: selectedTag === 'all' ? themeColors.primary : themeColors.card,
-                  borderColor: selectedTag === 'all' ? themeColors.primary : themeColors.border,
+                  borderColor: selectedTag === 'all' ? themeColors.primary : themeColors.borderStrong,
                 },
               ]}
               onPress={() => setSelectedTag('all')}
@@ -270,7 +274,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
               <Text
                 style={[
                   styles.tagChipText,
-                  { color: selectedTag === 'all' ? '#ffffff' : themeColors.textMuted },
+                  { color: selectedTag === 'all' ? themeColors.onPrimary : themeColors.textMuted },
                 ]}
               >
                 ทั้งหมด ({novels.length})
@@ -284,7 +288,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                   styles.tagChip,
                   {
                     backgroundColor: selectedTag === tag ? themeColors.primary : themeColors.card,
-                    borderColor: selectedTag === tag ? themeColors.primary : themeColors.border,
+                    borderColor: selectedTag === tag ? themeColors.primary : themeColors.borderStrong,
                   },
                 ]}
                 onPress={() => setSelectedTag(tag)}
@@ -292,7 +296,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                 <Text
                   style={[
                     styles.tagChipText,
-                    { color: selectedTag === tag ? '#ffffff' : themeColors.textMuted },
+                    { color: selectedTag === tag ? themeColors.onPrimary : themeColors.textMuted },
                   ]}
                 >
                   {tag}
@@ -303,7 +307,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
 
           {filteredNovels.length === 0 && <ScreenState colors={themeColors} message="ไม่มีนิยายในหมวดนี้" onBack={() => setSelectedTag('all')} backLabel="ดูทั้งหมด" />}
           {error && <ScreenState colors={themeColors} message="รีเฟรชข้อมูลบางส่วนไม่ได้" onRetry={retry} />}
-          {/* NOVELS LIST CARDS */}
+
           {filteredNovels.map((novel) => {
             const progress = lastProgress[novel.id];
             const currentChapterId = progress?.chapterId || 'ch-01';
@@ -315,19 +319,15 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                 key={novel.id}
                 style={[
                   styles.novelCard,
-                  {
-                    backgroundColor: themeColors.card,
-                    borderColor: themeColors.cardBorder,
-                  },
+                  { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder },
                 ]}
               >
-                {/* Main Card Content */}
                 <View style={styles.cardTop}>
                   <TouchableOpacity
                     activeOpacity={0.9}
                     onPress={() => navigation.navigate('NovelDetail', { novelId: novel.id })}
                   >
-                    <BookCover uri={novel.coverUrl} style={styles.coverImage} />
+                    <BookCover uri={novel.coverUrl} style={[styles.coverImage, { borderColor: themeColors.border }]} />
                   </TouchableOpacity>
 
                   <View style={styles.cardInfo}>
@@ -340,23 +340,22 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                     </TouchableOpacity>
 
                     {novel.originalTitle && (
-                      <Text style={[styles.novelOrigTitle, { color: themeColors.textMuted }]} numberOfLines={1}>
+                      <Text style={[styles.novelOrigTitle, { color: themeColors.textFaint }]} numberOfLines={1}>
                         {novel.originalTitle}
                       </Text>
                     )}
 
-                    {/* Metadata & Author */}
                     <View style={styles.authorBadgeRow}>
                       <Text style={[styles.authorText, { color: themeColors.textMuted }]}>
                         {novel.author}
                       </Text>
-                      <Text style={[styles.metaDivider, { color: themeColors.border }]}>•</Text>
+                      <Text style={[styles.metaDivider, { color: themeColors.textFaint }]}>·</Text>
                       <Text style={[styles.authorText, { color: themeColors.textMuted }]}>
                         {chapterCountMap[novel.id] === undefined ? 'กำลังโหลดจำนวนตอน' : `${chapterCountMap[novel.id]} ตอน`}
                       </Text>
                       {downloadedCount > 0 && (
                         <>
-                          <Text style={[styles.metaDivider, { color: themeColors.border }]}>•</Text>
+                          <Text style={[styles.metaDivider, { color: themeColors.textFaint }]}>·</Text>
                           <Text style={[styles.authorText, { color: themeColors.primary }]}>
                             ในเครื่อง {downloadedCount} ตอน
                           </Text>
@@ -366,10 +365,9 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                   </View>
                 </View>
 
-                {/* Character Roster Avatar Stack */}
                 {chars.length > 0 && (
                   <View style={[styles.characterRosterSection, { borderTopColor: themeColors.border }]}>
-                    <Text style={[styles.rosterHeadingText, { color: themeColors.textMuted }]}>
+                    <Text style={[styles.rosterHeadingText, { color: themeColors.textFaint }]}>
                       ตัวละคร
                     </Text>
 
@@ -387,26 +385,23 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                             key={c.id}
                             style={[
                               styles.charAvatarPill,
-                              { backgroundColor: themeColors.background, borderColor: cColor },
+                              { backgroundColor: themeColors.backgroundElevated, borderColor: themeColors.border },
                             ]}
                             activeOpacity={0.7}
                             onPress={() => setSelectedCharacter(c)}
                           >
                             {avatarSrc ? (
-                              <Image source={avatarSrc} style={styles.rosterAvatar} />
+                              <Image source={avatarSrc} style={[styles.rosterAvatar, { borderColor: cColor }]} />
                             ) : (
                               <View
-                                style={[
-                                  styles.rosterAvatarPlaceholder,
-                                  { backgroundColor: `${cColor}20` },
-                                ]}
+                                style={[styles.rosterAvatarPlaceholder, { backgroundColor: `${cColor}1f` }]}
                               >
                                 <Text style={[styles.rosterInitial, { color: cColor }]}>
                                   {c.name.charAt(0)}
                                 </Text>
                               </View>
                             )}
-                            <Text style={[styles.rosterName, { color: themeColors.text }]} numberOfLines={1}>
+                            <Text style={[styles.rosterName, { color: themeColors.textMuted }]} numberOfLines={1}>
                               {c.name.split(' ')[0]}
                             </Text>
                           </TouchableOpacity>
@@ -416,12 +411,10 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                   </View>
                 )}
 
-                {/* Synopsis */}
                 <Text style={[styles.synopsisText, { color: themeColors.narrationText }]} numberOfLines={3}>
                   {novel.synopsis}
                 </Text>
 
-                {/* Card Bottom Actions */}
                 <View style={[styles.cardActions, { borderTopColor: themeColors.border }]}>
                   <TouchableOpacity
                     style={[styles.continueButton, { backgroundColor: themeColors.primary }]}
@@ -433,14 +426,14 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                       })
                     }
                   >
-                    <BookOpen size={16} color="#ffffff" />
-                    <Text style={styles.continueButtonText}>
+                    <BookOpen size={15} color={themeColors.onPrimary} />
+                    <Text style={[styles.continueButtonText, { color: themeColors.onPrimary }]}>
                       {progress ? `อ่านต่อ ${progress.chapterId.replace('ch-', 'ตอนที่ ')}` : 'เริ่มอ่าน'}
                     </Text>
                   </TouchableOpacity>
 
                   <TouchableOpacity
-                    style={[styles.detailButton, { borderColor: themeColors.border }]}
+                    style={[styles.detailButton, { borderColor: themeColors.borderStrong }]}
                     onPress={() =>
                       navigation.navigate('NovelDetail', {
                         novelId: novel.id,
@@ -450,7 +443,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                     <Text style={[styles.detailButtonText, { color: themeColors.text }]}>
                       สารบัญ
                     </Text>
-                    <ChevronRight size={16} color={themeColors.textMuted} />
+                    <ChevronRight size={15} color={themeColors.textFaint} />
                   </TouchableOpacity>
                 </View>
               </View>
@@ -459,7 +452,6 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
         </ScrollView>
       )}
 
-      {/* Character Profile Modal (Accessible directly from Home!) */}
       <CharacterDetailModal
         visible={!!selectedCharacter}
         character={selectedCharacter}
@@ -476,12 +468,12 @@ const styles = StyleSheet.create({
   },
   header: {
     paddingHorizontal: 20,
-    paddingVertical: 14,
-    borderBottomWidth: 1,
+    paddingTop: space.xs,
+    paddingBottom: space.md,
   },
   headerInner: {
     width: '100%',
-    maxWidth: 800,
+    maxWidth: 760,
     alignSelf: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -492,48 +484,30 @@ const styles = StyleSheet.create({
     alignItems: 'baseline',
   },
   appTitle: {
-    fontSize: 22,
+    fontSize: typeScale.hero,
     fontWeight: '800',
-    letterSpacing: -0.5,
+    letterSpacing: -0.7,
   },
   appKanji: {
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: '600',
-  },
-  appSubtitle: {
-    fontSize: 11,
-    marginTop: 2,
-  },
-  headerRightActions: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
+    marginLeft: 7,
+    letterSpacing: 0.5,
   },
   themeBtn: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
+    width: 38,
+    height: 38,
+    borderRadius: radius.full,
+    borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  offlineBadge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 9,
-    paddingVertical: 6,
-    borderRadius: 20,
-    gap: 5,
-  },
-  offlineBadgeText: {
-    fontSize: 10,
-    fontWeight: '700',
-  },
   scrollContent: {
     width: '100%',
-    maxWidth: 800,
+    maxWidth: 760,
     alignSelf: 'center',
-    padding: 18,
-    paddingBottom: 40,
+    paddingHorizontal: 20,
+    paddingBottom: 48,
   },
   loadingContainer: {
     flex: 1,
@@ -541,241 +515,247 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   loadingText: {
-    marginTop: 12,
-    fontSize: 13,
+    marginTop: space.md,
+    fontSize: typeScale.caption,
   },
   heroCard: {
-    borderRadius: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: radius.lg,
     borderWidth: 1,
-    padding: 16,
-    marginBottom: 22,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.08,
-    shadowRadius: 10,
-    elevation: 3,
+    paddingVertical: 14,
+    paddingLeft: 16,
+    paddingRight: 14,
+    marginBottom: space.xl,
+    overflow: 'hidden',
+    ...shadowSoft,
+  },
+  heroSpine: {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    bottom: 0,
+    width: 3,
+  },
+  heroCover: {
+    width: 54,
+    height: 78,
+    borderRadius: radius.sm,
+    backgroundColor: 'rgba(0,0,0,0.04)',
+  },
+  heroInfo: {
+    flex: 1,
+    minWidth: 0,
+    marginLeft: 14,
   },
   heroTopRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 14,
+    justifyContent: 'space-between',
+    marginBottom: 5,
+    gap: space.sm,
   },
-  heroCover: {
-    width: 52,
-    height: 74,
-    borderRadius: 8,
-    backgroundColor: '#ddd',
+  heroLabel: {
+    fontSize: typeScale.micro + 0.5,
+    fontWeight: '700',
+    letterSpacing: 0,
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+    borderRadius: radius.xs,
+    overflow: 'hidden',
   },
-  heroInfo: {
-    flex: 1,
-  },
-  heroSectionLabel: {
-    fontSize: 10,
-    fontWeight: '800',
-    letterSpacing: 1,
-    marginBottom: 2,
-    textTransform: 'uppercase',
+  heroPercent: {
+    fontSize: typeScale.micro + 0.5,
+    fontVariant: ['tabular-nums'],
   },
   heroNovelTitle: {
-    fontSize: 15,
+    fontSize: typeScale.title,
     fontWeight: '700',
+    letterSpacing: -0.2,
     marginBottom: 2,
   },
   heroChapterTitle: {
-    fontSize: 12,
-    marginBottom: 8,
+    fontSize: typeScale.caption,
+    marginBottom: 9,
   },
-  heroProgressBarTrack: {
-    height: 3,
+  heroProgressTrack: {
+    height: 2,
     width: '100%',
-    borderRadius: 2,
+    borderRadius: 1,
     overflow: 'hidden',
   },
-  heroProgressBarFill: {
+  heroProgressFill: {
     height: '100%',
-    borderRadius: 2,
+    borderRadius: 1,
   },
   heroPlayButton: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
+    width: 36,
+    height: 36,
+    borderRadius: radius.full,
     alignItems: 'center',
     justifyContent: 'center',
-    marginLeft: 6,
+    marginLeft: 14,
   },
   sectionHeaderRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-end',
-    marginBottom: 12,
+    marginBottom: space.md,
   },
   sectionHeading: {
-    fontSize: 18,
+    fontSize: typeScale.display,
     fontWeight: '800',
+    letterSpacing: -0.5,
   },
   sectionSubHeading: {
-    fontSize: 12,
-    marginTop: 2,
+    fontSize: typeScale.caption,
+    marginTop: 3,
   },
   tagScrollContent: {
-    gap: 8,
-    paddingBottom: 16,
+    gap: space.sm,
+    paddingBottom: space.lg,
   },
   tagChip: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 20,
+    paddingHorizontal: 13,
+    height: 32,
+    justifyContent: 'center',
+    borderRadius: radius.full,
     borderWidth: 1,
   },
   tagChipText: {
-    fontSize: 12,
+    fontSize: typeScale.caption,
     fontWeight: '600',
   },
   novelCard: {
-    borderRadius: 16,
+    borderRadius: radius.lg,
     borderWidth: 1,
-    marginBottom: 20,
+    marginBottom: space.lg,
     overflow: 'hidden',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.05,
-    shadowRadius: 8,
-    elevation: 2,
   },
   cardTop: {
     flexDirection: 'row',
-    padding: 16,
+    padding: 14,
     gap: 14,
   },
   coverImage: {
-    width: 95,
-    height: 135,
-    borderRadius: 10,
-    backgroundColor: '#e2d9cd',
+    width: 86,
+    height: 122,
+    borderRadius: radius.sm,
+    borderWidth: 1,
+    backgroundColor: 'rgba(0,0,0,0.04)',
   },
   cardInfo: {
     flex: 1,
     justifyContent: 'center',
+    minWidth: 0,
   },
   novelTitle: {
-    fontSize: 16,
+    fontSize: typeScale.title,
     fontWeight: '700',
-    lineHeight: 22,
+    lineHeight: 23,
+    letterSpacing: -0.2,
   },
   novelOrigTitle: {
-    fontSize: 11,
-    marginTop: 2,
+    fontSize: typeScale.meta,
+    marginTop: 3,
   },
   authorBadgeRow: {
     flexDirection: 'row',
     alignItems: 'center',
     flexWrap: 'wrap',
-    marginTop: 6,
-    gap: 4,
+    marginTop: 8,
+    gap: 5,
   },
   authorText: {
-    fontSize: 12,
-    fontWeight: '500',
+    fontSize: typeScale.caption,
   },
   metaDivider: {
-    marginHorizontal: 2,
-    fontSize: 10,
+    fontSize: typeScale.caption,
   },
   characterRosterSection: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 14,
     paddingVertical: 10,
     borderTopWidth: 1,
   },
-  rosterHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 8,
-  },
-  rosterHeaderLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 5,
-  },
   rosterHeadingText: {
-    fontSize: 11,
-    fontWeight: '700',
-  },
-  rosterHint: {
-    fontSize: 10,
+    fontSize: typeScale.meta,
+    fontWeight: '600',
+    marginBottom: 7,
   },
   avatarRow: {
-    gap: 8,
-    paddingVertical: 2,
+    gap: 7,
+    paddingVertical: 1,
   },
   charAvatarPill: {
     flexDirection: 'row',
     alignItems: 'center',
     paddingVertical: 3,
-    paddingHorizontal: 8,
-    borderRadius: 16,
+    paddingLeft: 3,
+    paddingRight: 9,
+    borderRadius: radius.full,
     borderWidth: 1,
     gap: 6,
   },
   rosterAvatar: {
     width: 22,
     height: 22,
-    borderRadius: 11,
+    borderRadius: radius.full,
+    borderWidth: 1.5,
   },
   rosterAvatarPlaceholder: {
     width: 22,
     height: 22,
-    borderRadius: 11,
+    borderRadius: radius.full,
     justifyContent: 'center',
     alignItems: 'center',
   },
   rosterInitial: {
-    fontSize: 10,
+    fontSize: typeScale.micro,
     fontWeight: '700',
   },
   rosterName: {
-    fontSize: 11,
+    fontSize: typeScale.meta + 0.5,
     fontWeight: '600',
-    maxWidth: 70,
+    maxWidth: 74,
   },
   synopsisText: {
-    paddingHorizontal: 16,
-    paddingBottom: 12,
-    fontSize: 12,
-    lineHeight: 18,
+    paddingHorizontal: 14,
+    paddingBottom: 14,
+    fontSize: typeScale.body,
+    lineHeight: 21,
   },
   cardActions: {
     flexDirection: 'row',
     padding: 12,
-    paddingHorizontal: 16,
+    paddingHorizontal: 14,
     borderTopWidth: 1,
-    gap: 10,
+    gap: space.sm,
   },
   continueButton: {
-    flex: 1.2,
+    flex: 1.35,
+    minHeight: 42,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 10,
-    borderRadius: 10,
-    gap: 6,
+    borderRadius: radius.sm,
+    gap: 7,
   },
   continueButtonText: {
-    color: '#ffffff',
-    fontSize: 13,
-    fontWeight: '600',
+    fontSize: typeScale.body,
+    fontWeight: '700',
   },
   detailButton: {
     flex: 1,
+    minHeight: 42,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 10,
-    borderRadius: 10,
+    borderRadius: radius.sm,
     borderWidth: 1,
+    gap: 4,
   },
   detailButtonText: {
-    fontSize: 12,
+    fontSize: typeScale.body,
     fontWeight: '600',
   },
 });

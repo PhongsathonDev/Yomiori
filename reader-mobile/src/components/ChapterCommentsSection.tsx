@@ -10,6 +10,7 @@ import {
 import { MessageCircle, Heart, Send, Flame, CornerDownRight, ChevronDown, ChevronUp } from 'lucide-react-native';
 import { CommentItem, ReaderTheme } from '../types';
 import { themes } from '../theme/colors';
+import { radius, typeScale } from '../theme/layout';
 import { fetchChapterComments } from '../services/api';
 import { saveUserComment, toggleCommentLike } from '../services/storage';
 
@@ -135,7 +136,7 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
           </View>
           <Text style={[styles.title, { color: themeColors.text }]}>ความคิดเห็นของเพื่อนร่วมอ่าน</Text>
         </View>
-        <View style={[styles.badge, { backgroundColor: themeColors.cardBorder }]}>
+        <View style={[styles.badge, { backgroundColor: themeColors.backgroundElevated, borderColor: themeColors.border }]}>
           <Text style={[styles.badgeText, { color: themeColors.textMuted }]}>{comments.length} ข้อความ</Text>
         </View>
       </View>
@@ -152,7 +153,7 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
         <TextInput
           style={[styles.inputField, { color: themeColors.text }]}
           placeholder="เขียนความในใจหลังอ่านจบ..."
-          placeholderTextColor={themeColors.textMuted}
+          placeholderTextColor={themeColors.textFaint}
           value={inputVal}
           onChangeText={setInputVal}
           editable={!submitting}
@@ -162,7 +163,7 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
         <TouchableOpacity
           style={[
             styles.sendBtn,
-            { backgroundColor: inputVal.trim() ? themeColors.primary : themeColors.cardBorder },
+            { backgroundColor: themeColors.primary, opacity: inputVal.trim() ? 1 : 0.35 },
           ]}
           accessibilityRole="button"
           accessibilityLabel="บันทึกความคิดเห็น"
@@ -204,14 +205,14 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
                 {/* Pinned / Top Badge */}
                 {item.isPinned && (
                   <View style={styles.pinnedRow}>
-                    <Flame size={12} color="#f97316" />
-                    <Text style={styles.pinnedText}>ความคิดเห็นยอดนิยม</Text>
+                    <Flame size={12} color={themeColors.accent} />
+                    <Text style={[styles.pinnedText, { color: themeColors.accent }]}>ความคิดเห็นยอดนิยม</Text>
                   </View>
                 )}
 
                 {/* Comment Header */}
                 <View style={styles.commentHeader}>
-                  <View style={[styles.avatar, { backgroundColor: item.avatarColor || '#ec4899' }]}>
+                  <View style={[styles.avatar, { backgroundColor: item.avatarColor || themeColors.primary }]}>
                     <Text style={styles.avatarLetter}>
                       {item.isUser ? 'ME' : item.username.charAt(0).toUpperCase()}
                     </Text>
@@ -238,20 +239,20 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
                   <TouchableOpacity
                     style={[
                       styles.likeBtn,
-                      isLiked && { backgroundColor: '#fee2e2' },
+                      isLiked && { backgroundColor: themeColors.primaryBg },
                     ]}
                     onPress={() => handleLike(item.id)}
                     activeOpacity={0.7}
                   >
                     <Heart
                       size={14}
-                      color={isLiked ? '#ef4444' : themeColors.textMuted}
-                      fill={isLiked ? '#ef4444' : 'transparent'}
+                      color={isLiked ? themeColors.primary : themeColors.textMuted}
+                      fill={isLiked ? themeColors.primary : 'transparent'}
                     />
                     <Text
                       style={[
                         styles.likeCount,
-                        { color: isLiked ? '#ef4444' : themeColors.textMuted },
+                        { color: isLiked ? themeColors.primary : themeColors.textMuted },
                       ]}
                     >
                       {item.likes}
@@ -261,7 +262,7 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
 
                 {/* Nested Replies */}
                 {item.replies && item.replies.length > 0 && (
-                  <View style={styles.repliesContainer}>
+                  <View style={[styles.repliesContainer, { borderLeftColor: themeColors.border }]}>
                     {item.replies.map((reply) => {
                       const isReplyLiked = reply.userLiked;
                       return (
@@ -303,20 +304,20 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
                             <TouchableOpacity
                               style={[
                                 styles.likeBtn,
-                                isReplyLiked && { backgroundColor: '#fee2e2' },
+                                isReplyLiked && { backgroundColor: themeColors.primaryBg },
                               ]}
                               onPress={() => handleLike(reply.id)}
                               activeOpacity={0.7}
                             >
                               <Heart
                                 size={12}
-                                color={isReplyLiked ? '#ef4444' : themeColors.textMuted}
-                                fill={isReplyLiked ? '#ef4444' : 'transparent'}
+                                color={isReplyLiked ? themeColors.primary : themeColors.textMuted}
+                                fill={isReplyLiked ? themeColors.primary : 'transparent'}
                               />
                               <Text
                                 style={[
                                   styles.likeCountSmall,
-                                  { color: isReplyLiked ? '#ef4444' : themeColors.textMuted },
+                                  { color: isReplyLiked ? themeColors.primary : themeColors.textMuted },
                                 ]}
                               >
                                 {reply.likes}
@@ -357,53 +358,58 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 16,
+    borderRadius: radius.md,
     borderWidth: 1,
     padding: 16,
-    marginTop: 26,
+    marginTop: 28,
     marginBottom: 20,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: 4,
+    marginBottom: 5,
   },
   headerLeft: {
+    flex: 1,
+    minWidth: 0,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
   },
   iconWrap: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
+    width: 28,
+    height: 28,
+    borderRadius: radius.sm,
     justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
-    fontSize: 16,
+    fontSize: typeScale.bodyLg + 1,
     fontWeight: '700',
+    flexShrink: 1,
   },
   badge: {
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 10,
+    paddingHorizontal: 7,
+    paddingVertical: 2,
+    borderRadius: radius.xs,
+    borderWidth: 1,
+    marginLeft: 8,
   },
   badgeText: {
-    fontSize: 11,
+    fontSize: typeScale.micro + 0.5,
     fontWeight: '600',
   },
   subtitle: {
-    fontSize: 12,
+    fontSize: typeScale.caption,
     marginBottom: 16,
     marginTop: 4,
-    lineHeight: 18,
+    lineHeight: 19,
   },
   inputBox: {
     flexDirection: 'row',
     alignItems: 'center',
-    borderRadius: 12,
+    borderRadius: radius.sm,
     borderWidth: 1,
     paddingHorizontal: 10,
     paddingVertical: 8,
@@ -411,27 +417,27 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   avatarMini: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
+    width: 26,
+    height: 26,
+    borderRadius: radius.full,
     justifyContent: 'center',
     alignItems: 'center',
   },
   avatarInitial: {
     color: '#fff',
-    fontSize: 11,
+    fontSize: typeScale.micro,
     fontWeight: '700',
   },
   inputField: {
     flex: 1,
-    fontSize: 13,
+    fontSize: typeScale.body,
     minHeight: 36,
     paddingVertical: 4,
   },
   sendBtn: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
+    width: 34,
+    height: 34,
+    borderRadius: radius.sm,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -441,13 +447,13 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   loadingText: {
-    fontSize: 12,
+    fontSize: typeScale.caption,
   },
   commentList: {
-    gap: 12,
+    gap: 10,
   },
   commentCard: {
-    borderRadius: 12,
+    borderRadius: radius.sm,
     borderWidth: 1,
     padding: 12,
   },
@@ -458,9 +464,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   pinnedText: {
-    fontSize: 10.5,
+    fontSize: typeScale.micro + 0.5,
     fontWeight: '700',
-    color: '#f97316',
   },
   commentHeader: {
     flexDirection: 'row',
@@ -469,15 +474,15 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   avatar: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
+    width: 28,
+    height: 28,
+    borderRadius: radius.full,
     justifyContent: 'center',
     alignItems: 'center',
   },
   avatarLetter: {
     color: '#ffffff',
-    fontSize: 12,
+    fontSize: typeScale.meta,
     fontWeight: '700',
   },
   userInfo: {
@@ -490,25 +495,25 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   username: {
-    fontSize: 13,
+    fontSize: typeScale.body,
     fontWeight: '700',
   },
   roleBadge: {
     paddingHorizontal: 6,
     paddingVertical: 1.5,
-    borderRadius: 6,
+    borderRadius: radius.xs,
   },
   roleBadgeText: {
-    fontSize: 10,
+    fontSize: typeScale.micro - 0.5,
     fontWeight: '600',
   },
   timeAgo: {
-    fontSize: 10.5,
+    fontSize: typeScale.micro + 0.5,
     marginTop: 1,
   },
   commentText: {
-    fontSize: 13.5,
-    lineHeight: 20,
+    fontSize: typeScale.body + 0.5,
+    lineHeight: 21,
     marginBottom: 8,
   },
   commentFooter: {
@@ -519,30 +524,29 @@ const styles = StyleSheet.create({
   likeBtn: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 4,
+    gap: 5,
     paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 12,
+    paddingVertical: 3,
+    borderRadius: radius.sm,
   },
   likeCount: {
-    fontSize: 11,
+    fontSize: typeScale.meta,
     fontWeight: '600',
   },
   likeCountSmall: {
-    fontSize: 10,
+    fontSize: typeScale.micro,
     fontWeight: '600',
   },
   repliesContainer: {
     marginTop: 10,
     paddingLeft: 12,
     borderLeftWidth: 2,
-    borderLeftColor: 'rgba(150, 150, 150, 0.2)',
     gap: 8,
   },
   replyCard: {
-    borderRadius: 8,
+    borderRadius: radius.sm,
     borderWidth: 1,
-    padding: 8,
+    padding: 9,
   },
   replyHeader: {
     flexDirection: 'row',
@@ -553,35 +557,35 @@ const styles = StyleSheet.create({
   avatarSmall: {
     width: 20,
     height: 20,
-    borderRadius: 10,
+    borderRadius: radius.full,
     justifyContent: 'center',
     alignItems: 'center',
   },
   avatarLetterSmall: {
     color: '#ffffff',
-    fontSize: 10,
+    fontSize: typeScale.micro,
     fontWeight: '700',
   },
   replyUsername: {
-    fontSize: 11.5,
+    fontSize: typeScale.meta + 0.5,
     fontWeight: '700',
   },
   roleBadgeSmall: {
     paddingHorizontal: 4,
     paddingVertical: 1,
-    borderRadius: 4,
+    borderRadius: radius.xs,
   },
   roleBadgeTextSmall: {
-    fontSize: 9,
+    fontSize: typeScale.micro - 1,
     fontWeight: '600',
   },
   timeAgoSmall: {
-    fontSize: 9.5,
+    fontSize: typeScale.micro - 0.5,
     marginLeft: 'auto',
   },
   replyText: {
-    fontSize: 12.5,
-    lineHeight: 18,
+    fontSize: typeScale.caption + 0.5,
+    lineHeight: 19,
     marginLeft: 20,
     marginBottom: 4,
   },
@@ -590,13 +594,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 6,
-    paddingVertical: 10,
-    borderRadius: 10,
+    minHeight: 44,
+    borderRadius: radius.sm,
     borderWidth: 1,
     marginTop: 4,
   },
   expandBtnText: {
-    fontSize: 12.5,
+    fontSize: typeScale.caption + 0.5,
     fontWeight: '600',
   },
 });
