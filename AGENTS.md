@@ -70,6 +70,16 @@ git push origin main
 - Mobile app build & run instructions: `MOBILE_GUIDE.md`
 - System blueprint: `SYSTEM_BLUEPRINT.md`
 
+## Task grouping and dashboard protocol
+
+When creating, editing, claiming, closing, or regrouping tasks, first read `.wayfinder/README.md` (including **Grouping and coordination**). The canonical tracker is `.wayfinder/issues/`, not `tasks.html`.
+
+- Every new decision/task belongs to an existing map through `parent`, or a new map if its destination differs. Do not leave new tasks ungrouped without a documented reason.
+- Put actual prerequisites in `## Blocked by`; put coordinated work in reciprocal `## Work with` links. A reference in prose is not a dependency. Do not invent dependencies or close tickets merely to organize the board.
+- Group requests do not override Wayfinder's one-decision-ticket-per-session rule, HITL approval, or claims. Read the group's map and start only unblocked, unclaimed work.
+- After any tracker/model change, run `node scripts/update-task-dashboard.mjs`, then `node --test scripts/wayfinder-model.test.cjs` and `node scripts/update-task-dashboard.mjs --check`. Commit the generated `tasks.html` with the tracker changes so direct `file:///` viewing has a current offline snapshot.
+- Keep `tasks.html` standalone; its model/snapshot blocks are generated, not hand-edited. Edit `scripts/wayfinder-model.cjs` for shared relationship logic. Preserve GitHub refresh pinned to a single commit and offline fallback.
+
 ## Development delivery preference
 
 The user requested on 28 October 2026 that every completed development change be committed and pushed to GitHub immediately. After completing the relevant checks, commit the finished work and push it to the current development branch without asking for confirmation again. Report any push failure explicitly.
