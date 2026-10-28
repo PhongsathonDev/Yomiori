@@ -63,7 +63,7 @@ export async function fetchIllustrations(novelId: string): Promise<IllustrationI
   return await metadata(`illustrations_${novelId}`, `${CDN_BASE_URL}/novels/${novelId}/illustrations.json`, isIllustrationList) ?? [];
 }
 
-async function fetchChapter(novelId: string, chapterId: string): Promise<Chapter> {
+async function fetchChapter(novelId: string, chapterId: string, allowBundled = true): Promise<Chapter> {
   if (!isSafeId(novelId) || !isSafeId(chapterId)) throw new Error('Invalid chapter ID');
   try {
     const value = await requestJson(`${CDN_BASE_URL}/novels/${novelId}/chapters/${chapterId}.json`);
@@ -71,7 +71,7 @@ async function fetchChapter(novelId: string, chapterId: string): Promise<Chapter
     return value;
   } catch (error) {
     const bundled = getBundledChapter(novelId, chapterId);
-    if (bundled && isChapter(bundled, novelId, chapterId)) return bundled;
+    if (allowBundled && bundled && isChapter(bundled, novelId, chapterId)) return bundled;
     throw error;
   }
 }
@@ -107,12 +107,13 @@ export async function getChapter(novelId: string, chapterId: string): Promise<Ch
 }
 
 /** Retry uses existing readable text and only requests missing illustration files. */
-export async function downloadChapterOnDemand(novelId: string, chapterId: string): Promise<ChapterDownloadResult> {
+export async function downloadChapterOnDemand(novelId: string, chapterId: string, refreshText = false): Promise<ChapterDownloadResult> {
   const generation = getOfflineGeneration(novelId);
   try {
     const existing = await loadChapterOffline(novelId, chapterId);
-    const chapter = existing ?? getBundledChapter(novelId, chapterId) ?? await fetchChapter(novelId, chapterId);
-    if (!existing && !getBundledChapter(novelId, chapterId)) await saveChapterOffline(chapter, generation);
+    const chapter = refreshText ? await fetchChapter(novelId, chapterId, false)
+      : existing ?? getBundledChapter(novelId, chapterId) ?? await fetchChapter(novelId, chapterId);
+    if (refreshText || (!existing && !getBundledChapter(novelId, chapterId))) await saveChapterOffline(chapter, generation);
     const complete = await cacheChapterImages(chapter, generation);
     if (generation !== getOfflineGeneration(novelId)) return { status: 'failed' };
     return { status: complete ? 'complete' : 'text-only' };

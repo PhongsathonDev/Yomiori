@@ -213,20 +213,21 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
     if (result.status === 'text-only') Alert.alert('บันทึกข้อความแล้ว', 'ภาพประกอบยังไม่ครบ แตะดาวน์โหลดอีกครั้งเพื่อโหลดภาพที่ขาด');
   }, chapterId);
 
-  const handleDownloadAll = () => runJob('all', async () => {
+  const handleDownloadAll = (refreshText = false) => runJob('all', async () => {
     const counts = { complete: 0, 'text-only': 0, failed: 0 };
     for (const chapter of chapters) {
       if (!mounted.current) break;
-      if (downloadedMap[chapter.id] === 'complete') continue;
+      if (refreshText ? !downloadedMap[chapter.id] || downloadedMap[chapter.id] === 'missing'
+        : downloadedMap[chapter.id] === 'complete') continue;
       setJob({ kind: 'all', chapterId: chapter.id });
-      const result = await downloadChapterOnDemand(novelId, chapter.id);
+      const result = await downloadChapterOnDemand(novelId, chapter.id, refreshText);
       counts[result.status]++;
       if (mounted.current && result.status !== 'failed') {
         const status = result.status;
         setDownloadedMap(previous => ({ ...previous, [chapter.id]: status }));
       }
     }
-    if (mounted.current) Alert.alert('ผลการดาวน์โหลด', `ครบ ${counts.complete} ตอน\nข้อความพร้อม รูปยังไม่ครบ ${counts['text-only']} ตอน\nไม่สำเร็จ ${counts.failed} ตอน`);
+    if (mounted.current) Alert.alert(refreshText ? 'ผลการอัปเดต (ตอนที่ไม่สำเร็จยังเก็บฉบับเดิมไว้)' : 'ผลการดาวน์โหลด', `ครบ ${counts.complete} ตอน\nข้อความพร้อม รูปยังไม่ครบ ${counts['text-only']} ตอน\nไม่สำเร็จ ${counts.failed} ตอน`);
   });
 
   const handleClearAllOffline = () => {
@@ -662,6 +663,19 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                   : `ดาวน์โหลดทุกตอนที่เหลือ (${remainingCount} ตอน)`}
               </Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+              accessibilityLabel="อัปเดตตอนที่มีในเครื่อง"
+              style={[styles.modalActionBtn, { backgroundColor: themeColors.primary, opacity: downloadedCount === 0 || job !== null ? 0.6 : 1 }]}
+              disabled={downloadedCount === 0 || job !== null}
+              onPress={() => { void handleDownloadAll(true); }}
+            >
+              <Download size={18} color="#ffffff" />
+              <Text style={styles.modalActionBtnText}>อัปเดตตอนที่มีในเครื่อง</Text>
+            </TouchableOpacity>
+            <Text style={{ color: themeColors.textMuted, marginBottom: 16 }}>
+              ดึงข้อความฉบับล่าสุดและภาพที่ขาด หากอัปเดตไม่สำเร็จจะเก็บตอนเดิมไว้ ตำแหน่งอ่านยังอยู่
+            </Text>
 
             {/* Action 2: Clear Offline Storage */}
             <TouchableOpacity

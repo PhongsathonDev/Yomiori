@@ -62,3 +62,9 @@ Bundled Black Cat chapters and Kyudo chapter 1 now share the same local lookup u
 ## Concurrent refresh follow-up — 28 October 2026
 
 Requests for the same URL share in-flight headers/body parsing and a ten-second deadline. Successful and failed requests release their entry, so later refreshes fetch new data and retries recover after HTTP failures or timeouts. Different URLs proceed independently. TypeScript, Expo lint and all 63 Jest tests pass, including stalled-body sharing, fresh subsequent reads, failed-request retries and unrelated requests during a stall. This reduces duplicate network work; it does not establish Android startup timing. No APK build was triggered.
+
+## Wayfinder completion pass — 28 October 2026
+
+TypeScript, Expo lint and all 66 Jest tests pass. Added explicit updates for locally readable chapters from the offline management sheet: validate new text before staged replacement, retain existing readable data on failed fetch/validation/write, preserve progress, retry missing images and serialize against download/delete UI jobs. Tests cover successful updates, invalid responses, storage failure, offline bundled preservation and UI job locking. Acceptance details and remaining visual/native gates are in `.wayfinder/assets/reader-contract/spec.md`. Expo 58 docs retrieval was attempted but returned HTTP 403; the implementation reuses existing API/UI patterns without introducing new native dependencies or APIs.
+
+Local Android Metro export also passed (2,975 modules; output `/tmp/yomiori-wayfinder-android`). This verifies JavaScript/assets bundling, not APK/native compilation or device behavior.

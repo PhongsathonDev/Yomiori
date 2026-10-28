@@ -93,3 +93,19 @@ test('local chapters appear without waiting for online refresh or recursive stor
   expect(getNovelOfflineStats).not.toHaveBeenCalled();
   await view.unmount();
 });
+
+
+test('explicit update targets only readable chapters and locks competing actions', async () => {
+  jest.mocked(getChapterOfflineStatus).mockImplementation(async (_novel, id) => id === 'ch-1' ? 'complete' : 'missing');
+  let finish!: (result: { status: 'complete' }) => void;
+  jest.mocked(downloadChapterOnDemand).mockImplementation(() => new Promise(done => { finish = done; }));
+  const view = await render(<NovelDetailScreen {...props} />);
+  await screen.findByText('Chapter 1');
+  await fireEvent.press(screen.getByLabelText('จัดการข้อมูลออฟไลน์'));
+  await fireEvent.press(screen.getByLabelText('อัปเดตตอนที่มีในเครื่อง'));
+  expect(downloadChapterOnDemand).toHaveBeenCalledWith('novel', 'ch-1', true);
+  expect(screen.getByLabelText('ลบไฟล์ออฟไลน์ทั้งหมดของเรื่องนี้')).toBeDisabled();
+  await act(async () => { finish({ status: 'complete' }); });
+  expect(downloadChapterOnDemand).toHaveBeenCalledTimes(1);
+  await view.unmount();
+});

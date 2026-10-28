@@ -401,3 +401,28 @@ test('failed comment writes and reads reject and allow a later retry', async () 
   await expect(toggleCommentLike('novel', 'ch-01', 'a')).rejects.toThrow('Full');
   expect(await toggleCommentLike('novel', 'ch-01', 'a')).toBe(true);
 });
+
+
+test('explicit update replaces validated text while preserving reading progress', async () => {
+  await saveChapterOffline(chapter);
+  await saveReadingProgress(chapter.novelId, chapter.id, 45);
+  const updated = { ...chapter, title: 'Revised chapter' };
+  fetchMock.mockResolvedValue(response(updated));
+  expect(await downloadChapterOnDemand(chapter.novelId, chapter.id, true)).toEqual({ status: 'complete' });
+  expect((await loadChapterOffline(chapter.novelId, chapter.id))?.title).toBe('Revised chapter');
+  expect((await getReadingProgress(chapter.novelId))?.scrollPercent).toBe(45);
+});
+
+test('failed updates preserve readable text and do not claim a bundled fallback was updated', async () => {
+  await saveChapterOffline(chapter);
+  fetchMock.mockResolvedValue(response({ ...chapter, novelId: 'wrong' }));
+  expect(await downloadChapterOnDemand(chapter.novelId, chapter.id, true)).toEqual({ status: 'failed' });
+  expect(await loadChapterOffline(chapter.novelId, chapter.id)).toEqual(chapter);
+  fetchMock.mockResolvedValue(response({ ...chapter, title: 'New title' }));
+  fs.writeAsStringAsync.mockRejectedValueOnce(new Error('Full'));
+  expect(await downloadChapterOnDemand(chapter.novelId, chapter.id, true)).toEqual({ status: 'failed' });
+  expect(await loadChapterOffline(chapter.novelId, chapter.id)).toEqual(chapter);
+  fetchMock.mockRejectedValue(new Error('Offline'));
+  expect(await downloadChapterOnDemand('black-cat-hangout', 'ch-60', true)).toEqual({ status: 'failed' });
+  expect((await loadChapterOffline('black-cat-hangout', 'ch-60'))?.id).toBe('ch-60');
+});
