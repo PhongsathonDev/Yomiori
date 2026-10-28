@@ -10,6 +10,7 @@ const NOVELS_DIR = `${FileSystem.documentDirectory}novels/`;
 const enqueueFile = createKeyedQueue();
 const enqueueImage = createKeyedQueue();
 const enqueueProgress = createKeyedQueue();
+const enqueueComments = createKeyedQueue();
 const generations = new Map<string, number>();
 const activeJobs = new Set<string>();
 const savedNovelScans = new Map<string, Promise<SavedNovelSummary | null>>();
@@ -345,14 +346,12 @@ export async function getUserComments(novelId: string, chapterId: string): Promi
 }
 
 export async function saveUserComment(novelId: string, chapterId: string, comment: CommentItem): Promise<void> {
-  try {
-    const key = `${KEY_COMMENTS_PREFIX}${novelId}_${chapterId}`;
-    const existing = await getUserComments(novelId, chapterId);
-    existing.unshift(comment);
-    await AsyncStorage.setItem(key, JSON.stringify(existing));
-  } catch (err) {
-    console.warn('Failed to save user comment:', err);
-  }
+  const key = `${KEY_COMMENTS_PREFIX}${novelId}_${chapterId}`;
+  await enqueueComments(key, async () => {
+    const stored = await AsyncStorage.getItem(key);
+    const existing: CommentItem[] = stored ? JSON.parse(stored) : [];
+    await AsyncStorage.setItem(key, JSON.stringify([comment, ...existing]));
+  });
 }
 
 export async function getLikedCommentIds(novelId: string, chapterId: string): Promise<string[]> {
@@ -366,9 +365,10 @@ export async function getLikedCommentIds(novelId: string, chapterId: string): Pr
 }
 
 export async function toggleCommentLike(novelId: string, chapterId: string, commentId: string): Promise<boolean> {
-  try {
-    const key = `${KEY_LIKED_PREFIX}${novelId}_${chapterId}`;
-    const existing = await getLikedCommentIds(novelId, chapterId);
+  const key = `${KEY_LIKED_PREFIX}${novelId}_${chapterId}`;
+  return enqueueComments(key, async () => {
+    const stored = await AsyncStorage.getItem(key);
+    const existing: string[] = stored ? JSON.parse(stored) : [];
     let isLiked = false;
     let updated: string[];
     if (existing.includes(commentId)) {
@@ -380,8 +380,6 @@ export async function toggleCommentLike(novelId: string, chapterId: string, comm
     }
     await AsyncStorage.setItem(key, JSON.stringify(updated));
     return isLiked;
-  } catch {
-    return false;
-  }
+  });
 }
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
   Text,
@@ -30,6 +30,9 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
   const [inputVal, setInputVal] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const sending = useRef(false);
+  const liking = useRef(new Set<string>());
 
   useEffect(() => {
     let isMounted = true;
@@ -50,39 +53,50 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
   }, [novelId, chapterId]);
 
   const handleLike = async (commentId: string) => {
-    const isNowLiked = await toggleCommentLike(novelId, chapterId, commentId);
-    setComments((prev) =>
-      prev.map((c) => {
-        if (c.id === commentId) {
-          const newLikes = isNowLiked ? c.likes + 1 : Math.max(0, c.likes - 1);
-          return {
-            ...c,
-            userLiked: isNowLiked,
-            likes: newLikes,
-          };
-        }
-        if (c.replies) {
-          const updatedReplies = c.replies.map((r) => {
-            if (r.id === commentId) {
-              const newLikes = isNowLiked ? r.likes + 1 : Math.max(0, r.likes - 1);
-              return {
-                ...r,
-                userLiked: isNowLiked,
-                likes: newLikes,
-              };
-            }
-            return r;
-          });
-          return { ...c, replies: updatedReplies };
-        }
-        return c;
-      })
-    );
+    if (liking.current.has(commentId)) return;
+    liking.current.add(commentId);
+    setSaveError(null);
+    try {
+      const isNowLiked = await toggleCommentLike(novelId, chapterId, commentId);
+      setComments((prev) =>
+        prev.map((c) => {
+          if (c.id === commentId) {
+            const newLikes = isNowLiked ? c.likes + 1 : Math.max(0, c.likes - 1);
+            return {
+              ...c,
+              userLiked: isNowLiked,
+              likes: newLikes,
+            };
+          }
+          if (c.replies) {
+            const updatedReplies = c.replies.map((r) => {
+              if (r.id === commentId) {
+                const newLikes = isNowLiked ? r.likes + 1 : Math.max(0, r.likes - 1);
+                return {
+                  ...r,
+                  userLiked: isNowLiked,
+                  likes: newLikes,
+                };
+              }
+              return r;
+            });
+            return { ...c, replies: updatedReplies };
+          }
+          return c;
+        })
+      );
+    } catch {
+      setSaveError('ยังบันทึกถูกใจไม่ได้ กรุณาลองอีกครั้ง');
+    } finally {
+      liking.current.delete(commentId);
+    }
   };
 
   const handleSendComment = async () => {
     const text = inputVal.trim();
-    if (!text) return;
+    if (!text || loading || sending.current) return;
+    sending.current = true;
+    setSaveError(null);
 
     setSubmitting(true);
     const newComment: CommentItem = {
@@ -97,10 +111,16 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
       userLiked: true,
     };
 
-    await saveUserComment(novelId, chapterId, newComment);
-    setComments((prev) => [newComment, ...prev]);
-    setInputVal('');
-    setSubmitting(false);
+    try {
+      await saveUserComment(novelId, chapterId, newComment);
+      setComments((prev) => [newComment, ...prev]);
+      setInputVal('');
+    } catch {
+      setSaveError('ยังบันทึกความคิดเห็นไม่ได้ กรุณาตรวจสอบพื้นที่เครื่องแล้วลองอีกครั้ง');
+    } finally {
+      sending.current = false;
+      setSubmitting(false);
+    }
   };
 
   const displayedComments = expanded || comments.length <= 4 ? comments : comments.slice(0, 4);
@@ -135,6 +155,7 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
           placeholderTextColor={themeColors.textMuted}
           value={inputVal}
           onChangeText={setInputVal}
+          editable={!submitting}
           multiline
           maxLength={300}
         />
@@ -143,7 +164,9 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
             styles.sendBtn,
             { backgroundColor: inputVal.trim() ? themeColors.primary : themeColors.cardBorder },
           ]}
-          disabled={!inputVal.trim() || submitting}
+          accessibilityRole="button"
+          accessibilityLabel="บันทึกความคิดเห็น"
+          disabled={!inputVal.trim() || submitting || loading}
           onPress={handleSendComment}
           activeOpacity={0.7}
         >
@@ -154,6 +177,8 @@ const ChapterCommentsContent: React.FC<Props> = ({ novelId, chapterId, theme }) 
           )}
         </TouchableOpacity>
       </View>
+
+      {saveError && <Text accessibilityRole="alert" style={{ color: themeColors.primary }}>{saveError}</Text>}
 
       {/* Loading state */}
       {loading ? (

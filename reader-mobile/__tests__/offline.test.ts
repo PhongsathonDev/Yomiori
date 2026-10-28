@@ -2,6 +2,7 @@ import * as FileSystem from 'expo-file-system/legacy';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Chapter, Novel } from '../src/types';
 import {
+  saveUserComment, getUserComments, toggleCommentLike, getLikedCommentIds,
   cacheIllustrationOffline, clearNovelOfflineStorage, getChapterFilePath, getChapterOfflineStatus,
   getIllustrationLocalPath, getNovelOfflineStats, getReadingProgress, getSavedFontFamily,
   getSavedFontSize, getSavedLineHeight, getSavedTheme, loadChapterOffline,
@@ -317,4 +318,29 @@ describe('request timeout', () => {
     await jest.advanceTimersByTimeAsync(10_000); await rejection;
     expect(jest.getTimerCount()).toBe(0);
   });
+});
+
+
+test('concurrent comment and like writes retain every update', async () => {
+  const comment = { id: 'a', username: 'Reader', avatarColor: '#fff', text: 'Hello', likes: 0, timeAgo: 'now' };
+  await Promise.all([
+    saveUserComment('novel', 'ch-01', comment),
+    saveUserComment('novel', 'ch-01', { ...comment, id: 'b' }),
+  ]);
+  expect((await getUserComments('novel', 'ch-01')).map(item => item.id)).toEqual(['b', 'a']);
+  await Promise.all([toggleCommentLike('novel', 'ch-01', 'a'), toggleCommentLike('novel', 'ch-01', 'b')]);
+  expect(await getLikedCommentIds('novel', 'ch-01')).toEqual(['a', 'b']);
+});
+
+test('failed comment writes and reads reject and allow a later retry', async () => {
+  const comment = { id: 'a', username: 'Reader', avatarColor: '#fff', text: 'Hello', likes: 0, timeAgo: 'now' };
+  jest.mocked(AsyncStorage.setItem).mockRejectedValueOnce(new Error('Full'));
+  await expect(saveUserComment('novel', 'ch-01', comment)).rejects.toThrow('Full');
+  jest.mocked(AsyncStorage.getItem).mockRejectedValueOnce(new Error('Read failed'));
+  await expect(saveUserComment('novel', 'ch-01', comment)).rejects.toThrow('Read failed');
+  await saveUserComment('novel', 'ch-01', comment);
+  expect(await getUserComments('novel', 'ch-01')).toEqual([comment]);
+  jest.mocked(AsyncStorage.setItem).mockRejectedValueOnce(new Error('Full'));
+  await expect(toggleCommentLike('novel', 'ch-01', 'a')).rejects.toThrow('Full');
+  expect(await toggleCommentLike('novel', 'ch-01', 'a')).toBe(true);
 });

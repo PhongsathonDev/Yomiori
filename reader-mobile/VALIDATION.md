@@ -50,3 +50,7 @@ These require Android and iOS devices/development builds. Jest and Metro exports
 6. Tap narration to hide/show controls; tap a speaker and an illustration independently. Confirm those actions do not toggle controls. Check native zoom/close and TalkBack/VoiceOver labels.
 
 Keep the current ScrollView/navigation architecture for this change. Follow-up release work includes Android image zoom verification, broader accessibility checks and native lifecycle/performance testing. Do not trigger an intermediate cloud build: the user requested an APK only after the changes are ready. No FPS or native React Profiler result is claimed from Jest rendering tests.
+
+## Comment persistence follow-up — 28 October 2026
+
+TypeScript, Expo lint and all 59 Jest tests pass. Added regression coverage for concurrent comment/like writes, storage read/write failure recovery, retaining a failed draft, and preventing the initial comment load from replacing a new comment. Mutations now propagate storage errors and serialize updates per storage key. The composer keeps the draft on failure and prevents repeated submission while saving; likes update only after persistence succeeds. Existing storage keys are preserved. Repaired missing transitive lockfile entries found during clean dependency installation. No APK/native validation was performed for this follow-up.

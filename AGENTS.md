@@ -69,3 +69,7 @@ git push origin main
 - Detailed conversion examples: `AI_CONVERSION_GUIDE.md`
 - Mobile app build & run instructions: `MOBILE_GUIDE.md`
 - System blueprint: `SYSTEM_BLUEPRINT.md`
+
+## Development delivery preference
+
+The user requested on 28 October 2026 that every completed development change be committed and pushed to GitHub immediately. After completing the relevant checks, commit the finished work and push it to the current development branch without asking for confirmation again. Report any push failure explicitly.
