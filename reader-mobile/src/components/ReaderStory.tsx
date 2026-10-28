@@ -64,7 +64,7 @@ export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characte
       const character = characterMap.get(block.speakerId);
       const color = character?.color || colors.primary;
       const avatar = getAvatarSource(character?.avatarUrl);
-      return <View key={block.id} style={[styles.dialogueNovelCard, { backgroundColor: colors.card, borderColor: colors.border, borderLeftColor: color }]}>
+      return <View key={block.id} style={[styles.dialogueNovelCard, { backgroundColor: `${color}0a`, borderLeftColor: color }]}>
         <Pressable accessibilityRole="button" accessibilityLabel={`ดูข้อมูล ${block.speakerName}`} style={styles.speakerRow}
           onPress={() => onSelectCharacter(character ?? { id: block.speakerId, name: block.speakerName, role: 'ตัวละครประกอบ', color })}>
           {avatar ? <Image source={avatar} style={[styles.speakerAvatar, { borderColor: color }]} resizeMode="cover" />
@@ -94,7 +94,7 @@ export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characte
           accessibilityLabel={block.alt || block.caption || 'ภาพประกอบนิยาย'} onOpen={uri => onOpenIllustration(uri, block.caption)} />
         <View style={styles.illustrationFooter}>
           <Text style={[styles.illustrationCaption, { color: colors.narrationText, fontFamily: font.regular }]}>{block.caption || 'ภาพประกอบนิยาย'}</Text>
-          <Text style={[styles.illustrationZoomHint, { color: colors.primary }]}>ขยายภาพ</Text>
+          <Text style={[styles.illustrationZoomHint, { color: colors.primary }]}>แตะภาพเพื่อขยาย</Text>
         </View>
       </View>
     </View>;

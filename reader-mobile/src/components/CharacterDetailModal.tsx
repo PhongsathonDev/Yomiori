@@ -12,7 +12,6 @@ import {
 import { X, Sparkles, User } from 'lucide-react-native';
 import { Character, ReaderTheme } from '../types';
 import { themes } from '../theme/colors';
-import { radius, shadowRaised, typeScale } from '../theme/layout';
 
 interface Props {
   visible: boolean;
@@ -52,27 +51,24 @@ export const CharacterDetailModal: React.FC<Props> = ({
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
       <TouchableWithoutFeedback onPress={onClose}>
-        <View style={[styles.overlay, { backgroundColor: themeColors.scrim }]}>
+        <View style={styles.overlay}>
           <TouchableWithoutFeedback>
             <View
               style={[
                 styles.modalCard,
                 {
                   backgroundColor: themeColors.card,
-                  borderColor: themeColors.border,
+                  borderColor: themeColors.cardBorder,
                 },
               ]}
             >
-              <TouchableOpacity
-                accessibilityRole="button"
-                accessibilityLabel="ปิดข้อมูลตัวละคร"
-                style={styles.closeBtn}
-                onPress={onClose}
-              >
-                <X size={18} color={themeColors.textMuted} />
+              {/* Close Button */}
+              <TouchableOpacity style={styles.closeBtn} onPress={onClose}>
+                <X size={20} color={themeColors.textMuted} />
               </TouchableOpacity>
 
               <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.content}>
+                {/* Big Avatar */}
                 <View style={styles.avatarWrapper}>
                   {avatarSource ? (
                     <Image
@@ -87,28 +83,31 @@ export const CharacterDetailModal: React.FC<Props> = ({
                         { borderColor: charColor, backgroundColor: `${charColor}15` },
                       ]}
                     >
-                      <User size={42} color={charColor} />
+                      <User size={48} color={charColor} />
                     </View>
                   )}
+                  <View style={[styles.colorBadge, { backgroundColor: charColor }]} />
                 </View>
 
+                {/* Character Name & Role */}
                 <Text style={[styles.charName, { color: themeColors.text }]}>
                   {character.name}
                 </Text>
 
                 {character.role ? (
-                  <View style={[styles.roleBadge, { backgroundColor: `${charColor}1a` }]}>
-                    <Sparkles size={11} color={charColor} />
+                  <View style={[styles.roleBadge, { backgroundColor: `${charColor}18` }]}>
+                    <Sparkles size={12} color={charColor} />
                     <Text style={[styles.roleText, { color: charColor }]}>
                       {character.role}
                     </Text>
                   </View>
                 ) : null}
 
+                {/* Aliases */}
                 {character.aliases && character.aliases.length > 0 ? (
                   <View style={styles.aliasContainer}>
                     <Text style={[styles.aliasLabel, { color: themeColors.textMuted }]}>
-                      ชื่อเรียกอื่น
+                      ชื่อเรียกอื่น / สรรพนาม:
                     </Text>
                     <View style={styles.aliasChips}>
                       {character.aliases.map((alias, idx) => (
@@ -116,10 +115,10 @@ export const CharacterDetailModal: React.FC<Props> = ({
                           key={idx}
                           style={[
                             styles.aliasChip,
-                            { backgroundColor: themeColors.backgroundElevated, borderColor: themeColors.border },
+                            { backgroundColor: themeColors.primaryBg },
                           ]}
                         >
-                          <Text style={[styles.aliasText, { color: themeColors.textMuted }]}>
+                          <Text style={[styles.aliasText, { color: themeColors.primary }]}>
                             {alias}
                           </Text>
                         </View>
@@ -128,10 +127,11 @@ export const CharacterDetailModal: React.FC<Props> = ({
                   </View>
                 ) : null}
 
+                {/* Description */}
                 {character.description ? (
-                  <View style={[styles.descCard, { backgroundColor: themeColors.backgroundElevated, borderColor: themeColors.border }]}>
-                    <Text style={[styles.descTitle, { color: themeColors.textMuted }]}>
-                      ข้อมูลและบุคลิก
+                  <View style={[styles.descCard, { backgroundColor: themeColors.background, borderColor: themeColors.border }]}>
+                    <Text style={[styles.descTitle, { color: themeColors.text }]}>
+                      ข้อมูลและบุคลิกตัวละคร
                     </Text>
                     <Text style={[styles.descBody, { color: themeColors.narrationText }]}>
                       {character.description}
@@ -150,80 +150,91 @@ export const CharacterDetailModal: React.FC<Props> = ({
 const styles = StyleSheet.create({
   overlay: {
     flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.6)',
     justifyContent: 'center',
     alignItems: 'center',
     padding: 24,
   },
   modalCard: {
     width: '100%',
-    maxWidth: 460,
-    maxHeight: '84%',
-    borderRadius: radius.lg,
+    maxWidth: 480,
+    maxHeight: '80%',
+    borderRadius: 20,
     borderWidth: 1,
-    padding: 22,
-    ...shadowRaised,
+    padding: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.2,
+    shadowRadius: 16,
+    elevation: 10,
   },
   closeBtn: {
     position: 'absolute',
-    top: 10,
-    right: 10,
+    top: 14,
+    right: 14,
     zIndex: 10,
-    width: 40,
-    height: 40,
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 6,
   },
   content: {
     alignItems: 'center',
-    paddingTop: 10,
-    paddingBottom: 4,
+    paddingTop: 8,
+    paddingBottom: 10,
   },
   avatarWrapper: {
     position: 'relative',
-    marginBottom: 14,
+    marginBottom: 12,
   },
   bigAvatar: {
-    width: 88,
-    height: 88,
-    borderRadius: radius.full,
-    borderWidth: 2,
+    width: 96,
+    height: 96,
+    borderRadius: 48,
+    borderWidth: 3,
   },
   bigAvatarPlaceholder: {
-    width: 88,
-    height: 88,
-    borderRadius: radius.full,
-    borderWidth: 2,
+    width: 96,
+    height: 96,
+    borderRadius: 48,
+    borderWidth: 3,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  colorBadge: {
+    position: 'absolute',
+    bottom: 2,
+    right: 2,
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#ffffff',
+  },
   charName: {
-    fontSize: typeScale.display - 1,
+    fontSize: 20,
     fontWeight: '800',
-    letterSpacing: -0.3,
     textAlign: 'center',
-    marginBottom: 7,
+    marginBottom: 6,
   },
   roleBadge: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 9,
-    paddingVertical: 3,
-    borderRadius: radius.xs,
-    gap: 5,
-    marginBottom: 16,
+    paddingHorizontal: 12,
+    paddingVertical: 5,
+    borderRadius: 20,
+    gap: 6,
+    marginBottom: 14,
   },
   roleText: {
-    fontSize: typeScale.meta,
+    fontSize: 12,
     fontWeight: '700',
   },
   aliasContainer: {
     width: '100%',
-    marginBottom: 16,
+    marginBottom: 14,
   },
   aliasLabel: {
-    fontSize: typeScale.meta,
+    fontSize: 11,
     fontWeight: '600',
-    marginBottom: 7,
+    marginBottom: 6,
   },
   aliasChips: {
     flexDirection: 'row',
@@ -232,27 +243,26 @@ const styles = StyleSheet.create({
   },
   aliasChip: {
     paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: radius.xs,
-    borderWidth: 1,
+    paddingVertical: 4,
+    borderRadius: 6,
   },
   aliasText: {
-    fontSize: typeScale.meta,
+    fontSize: 11,
     fontWeight: '600',
   },
   descCard: {
     width: '100%',
     padding: 14,
-    borderRadius: radius.sm,
+    borderRadius: 12,
     borderWidth: 1,
   },
   descTitle: {
-    fontSize: typeScale.meta,
+    fontSize: 12,
     fontWeight: '700',
-    marginBottom: 6,
+    marginBottom: 4,
   },
   descBody: {
-    fontSize: typeScale.body,
-    lineHeight: 22,
+    fontSize: 13,
+    lineHeight: 20,
   },
 });
