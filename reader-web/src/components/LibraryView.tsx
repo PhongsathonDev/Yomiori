@@ -92,9 +92,6 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
     if (currentNovel.id === 'kyudo-senpai') {
       return ['rino', 'toya', 'mei', 'shion', 'urushibara', 'basketball_guy', 'ayamori'].includes(c.id);
     }
-    if (currentNovel.id === 'idol-neighbor') {
-      return ['yuika', 'hiro'].includes(c.id);
-    }
     if (currentNovel.id === 'boyish-friend') {
       return ['protagonist', 'aya', 'tokita', 'classmate', 'guide'].includes(c.id);
     }

@@ -13,7 +13,6 @@ import bundledBlackCatCharacters from '../data/novels/black-cat-hangout/characte
 import { blackCatChapters } from '../data/novels/black-cat-hangout/chapters';
 import bundledKyudoComments from '../data/novels/kyudo-senpai/comments.json';
 import bundledBoyishComments from '../data/novels/boyish-friend/comments.json';
-import bundledIdolComments from '../data/novels/idol-neighbor/comments.json';
 import bundledBlackCatComments from '../data/novels/black-cat-hangout/comments.json';
 
 export const CDN_BASE_URL = 'https://phongsathondev.github.io/Yomiori/data';
@@ -34,13 +33,14 @@ export async function fetchNovels(preferCache = false): Promise<Novel[]> {
   const [remote, local] = await Promise.all([
     metadata('novels', `${CDN_BASE_URL}/novels.json`, isNovelList, preferCache), getSavedLibrary(),
   ]);
-  const novels = [...remote ?? []];
+  // The old mockup can still be present in cached metadata or saved chapters.
+  const novels = (remote ?? []).filter(novel => novel.id !== 'idol-neighbor');
   const ids = new Set(novels.map(n => n.id));
   for (const bundled of bundledNovels as Novel[]) {
     if (!ids.has(bundled.id)) { novels.push(bundled); ids.add(bundled.id); }
   }
   for (const saved of local) {
-    if (ids.has(saved.id)) continue;
+    if (saved.id === 'idol-neighbor' || ids.has(saved.id)) continue;
     novels.push({ id: saved.id, title: saved.title, author: '', coverUrl: '', synopsis: '', tags: [],
       totalOriginalChapters: Math.max(...saved.chapters.map(chapter => chapter.chapterNumber)) });
     ids.add(saved.id);
@@ -170,8 +170,6 @@ export async function fetchChapterComments(novelId: string, chapterId: string): 
       catalog = bundledKyudoComments as typeof catalog;
     } else if (novelId === 'boyish-friend') {
       catalog = bundledBoyishComments as typeof catalog;
-    } else if (novelId === 'idol-neighbor') {
-      catalog = bundledIdolComments as typeof catalog;
     } else if (novelId === 'black-cat-hangout') {
       catalog = bundledBlackCatComments as typeof catalog;
     }
