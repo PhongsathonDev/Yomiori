@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yomiori — ภาพร่างชั้นหนังสือ (ยังไม่อนุมัติ)</title>
+  <link rel="stylesheet" href="sketch.css">
+  <script src="sketch.js" defer></script>
+</head>
+<body>
+  <!-- Planning artifact only. Existing paper/pink/system-font identity is inherited.
+       Human chose side-by-side covers and a full-title / three-line comparison.
+       No production component, navigation, storage, orientation or native test here. -->
+  <div class="system-inset" aria-hidden="true">พื้นที่แถบระบบ — จำลอง</div>
+  <header class="app-header">
+    <div class="shell header-inner">
+      <div class="brand">Yomiori <span lang="ja">読織</span></div>
+      <button class="theme-toggle" type="button" aria-label="เปลี่ยนธีม"></button>
+    </div>
+  </header>
+  <main class="shell">
+    <p class="draft-label">ภาพร่าง · ข้อมูลสถานะจำลอง · ยังไม่อนุมัติ</p>
+    <div id="continue-slot"></div>
+    <h1>ชั้นหนังสือ</h1>
+    <nav class="filters" aria-label="ตัวกรองหมวดนิยาย"></nav>
+    <div id="notice"></div>
+    <div class="shelf"></div>
+    <output class="tap-feedback" aria-live="polite"></output>
+    <p class="draft-footnote">แตะเรื่อง → รายละเอียด · อ่านต่อ → ตอนและย่อหน้าล่าสุด<br>ตัวเลขตอนจากไฟล์ต้นทาง ไม่ใช่ผลตรวจเครื่องหรือ CDN</p>
+  </main>
+  <div class="bottom-inset" aria-hidden="true"></div>
+</body>
+</html>

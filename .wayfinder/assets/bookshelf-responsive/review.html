@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>เทียบภาพร่างชั้นหนังสือ Yomiori — รอผู้ใช้เลือก</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; background: #f0f0ef; color: #282828; font: 15px/1.6 system-ui, sans-serif; }
+    h1 { font-size: 26px; line-height: 1.4; margin: 8px 0; }
+    p { margin: 8px 0; }
+    .kicker { font-size: 13px; font-weight: 700; color: #645d59; }
+    .controls { display: flex; flex-wrap: wrap; gap: 12px 20px; margin: 24px 0 16px; }
+    label { display: grid; gap: 4px; font-size: 13px; font-weight: 600; }
+    select { min-height: 44px; max-width: 100%; font: inherit; color: inherit; background: white; border: 1px solid #b8b8b5; border-radius: 6px; padding: 8px 12px; }
+    .comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+    article { min-width: 0; }
+    h2 { font-size: 19px; margin: 12px 0 4px; }
+    .reason { font-size: 14px; min-height: 48px; margin: 0 0 8px; }
+    .canvas { position: relative; overflow: hidden; background: #dededb; border: 1px solid #b8b8b5; margin-top: 12px; }
+    .canvas.actual-size { overflow: auto; }
+    iframe { display: block; border: 0; transform-origin: top left; background: #faf8f5; }
+    a { color: #783549; text-underline-offset: 3px; }
+    .caveat { margin-top: 20px; max-width: 100ch; }
+    .test-note { color: #5a5a58; font-size: 13px; }
+    @media (max-width: 660px) { body { padding: 16px; } .comparison { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="kicker">ภาพร่างเพื่อสนทนา · ไม่ใช่แอปจริง · ยังไม่อนุมัติ</div>
+  <h1>ชื่อเต็ม หรือ 3 บรรทัด?</h1>
+  <p>ปกซ้าย–ชื่อขวาตามทิศทางที่เลือก เปรียบเทียบด้วยหนังสือและขนาดหน้าต่างเดียวกัน</p>
+  <div class="controls">
+    <label>ขนาดหน้าต่างจำลอง
+      <select id="size">
+        <option value="360,800">มือถือแนวตั้ง · 360 × 800</option>
+        <option value="800,360">มือถือแนวนอน · 800 × 360</option>
+        <option value="800,1280">แท็บเล็ตแนวตั้ง · 800 × 1280</option>
+        <option value="1280,800">แท็บเล็ตแนวนอน · 1280 × 800</option>
+        <option value="600,960">หน้าต่างแคบ · 600 × 960</option>
+      </select>
+    </label>
+    <label>ธีม
+      <select id="theme"><option value="light">สว่าง</option><option value="sepia">ซีเปีย</option><option value="dark">ดำสนิท OLED</option></select>
+    </label>
+    <label>ตัวอักษร (จำลอง)
+      <select id="scale"><option value="1">100%</option><option value="1.3">130%</option></select>
+    </label>
+    <label>การดูภาพ
+      <select id="zoom"><option value="fit">ย่อพอดีช่องเทียบ</option><option value="actual">100% · เลื่อนด้านข้างได้</option></select>
+    </label>
+    <label>สถานการณ์ (ข้อมูลจำลอง)
+      <select id="state">
+        <option value="new">ไม่มีประวัติ · กำลังตรวจออฟไลน์</option>
+        <option value="resume">มีประวัติ · อ่านต่อ</option>
+        <option value="missing">เล่มแรกไม่มีปก</option>
+        <option value="loading">จำนวนตอน/ประวัติ/ออฟไลน์ยังไม่พร้อม</option>
+        <option value="offline">รู้ผลออฟไลน์ · ข้อความไม่เท่ากับภาพครบ</option>
+        <option value="few">มีหนังสือเพียง 1 เรื่อง</option>
+        <option value="empty">ชั้นหนังสือว่าง</option>
+        <option value="error">รีเฟรชบางส่วนไม่ได้ · คงรายการเดิม</option>
+      </select>
+    </label>
+  </div>
+  <p class="test-note" id="dimensions"></p>
+  <div class="comparison">
+    <article>
+      <h2>A — ชื่อเต็ม ไม่ตัด</h2>
+      <p class="reason">อ่านแยกเรื่องได้โดยไม่ต้องเปิดรายละเอียด แต่ชื่อยาวทำให้เล่มนั้นสูงขึ้น</p>
+      <a class="actual" target="_blank" rel="noopener" href="sketch.html?title=full">เปิดภาพร่างเดี่ยว</a>
+      <div class="canvas"><iframe title="A ชื่อเต็ม" data-title="full"></iframe></div>
+    </article>
+    <article>
+      <h2>B — ไม่เกิน 3 บรรทัด</h2>
+      <p class="reason">เห็นรายการได้กระชับกว่า แต่ท้ายชื่อบางเรื่องหายไป ต้องแตะรายละเอียดเพื่ออ่านครบ</p>
+      <a class="actual" target="_blank" rel="noopener" href="sketch.html?title=clamp">เปิดภาพร่างเดี่ยว</a>
+      <div class="canvas"><iframe title="B ชื่อไม่เกิน 3 บรรทัด" data-title="clamp"></iframe></div>
+    </article>
+  </div>
+  <p class="caveat"><strong>ใช้ภาพร่างนี้เลือกอะไร:</strong> ความอ่านง่ายของชื่อ สัดส่วนปก ความหนาแน่น และลำดับอ่านต่อ → ตัวกรอง → หนังสือ ภาพอาจย่อให้พอดีพื้นที่เทียบ; เลือกการดูภาพ “100%” เพื่ออ่านขนาดจริงและเลื่อนด้านข้าง หรือ “เปิดภาพร่างเดี่ยว” เพื่อดูเต็มพื้นที่หน้าต่างปัจจุบัน</p>
+  <p class="test-note">ขนาดเป็น CSS px ไม่ใช่ข้อพิสูจน์ dp/sp ของ Android; ตัวอักษร 130% และพื้นที่แถบระบบเป็นการจำลอง ฟอนต์ระบบบน browser อาจต่างจากเครื่องจริง ไม่ได้ทดสอบหมุนจอ การคืนย่อหน้า lightbox ประสิทธิภาพ ออฟไลน์ หรือ standalone APK</p>
+  <p class="test-note">ชื่อนิยาย/ปกจริงจาก repo; ตัวเลข 73 / 1 / 14 / 61 เป็นจำนวนไฟล์ตอนต้นทางวันที่ 29 ต.ค. 2026 ไม่ใช่จำนวนตอนบน CDN หรือในเครื่อง ประวัติอ่านและสถานะทั้งหมดเป็น fixture ไม่บันทึก storage ไม่เรียก API แตะหนังสือ/อ่านต่อแสดงคำอธิบายปลายทางเท่านั้น</p>
+  <p><a href="draft-notes.md">อ่านกติกาภาพร่างและประเด็นรอเลือก</a></p>
+  <script>
+    const controls = [...document.querySelectorAll('select')];
+    const query = new URLSearchParams(location.search);
+    for (const control of controls) {
+      if ([...control.options].some(option => option.value === query.get(control.id))) control.value = query.get(control.id);
+    }
+    function fit() {
+      const [width, height] = document.querySelector('#size').value.split(',').map(Number);
+      for (const iframe of document.querySelectorAll('iframe')) {
+        const actual = document.querySelector('#zoom').value === 'actual';
+        iframe.parentElement.classList.toggle('actual-size', actual);
+        const scale = actual ? 1 : Math.min(1, iframe.parentElement.clientWidth / width);
+        iframe.style.width = `${width}px`;
+        iframe.style.height = `${height}px`;
+        iframe.style.transform = `scale(${scale})`;
+        iframe.parentElement.style.height = `${Math.ceil(height * scale)}px`;
+      }
+    }
+    function render() {
+      const values = new URLSearchParams(controls.map(control => [control.id, control.value]));
+      try { history.replaceState(null, '', `?${values}`); } catch { /* File/preview origins may not support URL history. Still render the sketches. */ }
+      const [width, height] = document.querySelector('#size').value.split(',');
+      document.querySelector('#dimensions').textContent = `${width} × ${height} CSS px ต่อภาพ · ถ้าหนังสือน้อยจะคงขนาด ไม่ขยายเล่มเดียวเต็มแถว · กดธีม/ตัวกรอง/หนังสือในภาพร่างได้`;
+      for (const iframe of document.querySelectorAll('iframe')) {
+        const params = new URLSearchParams(values);
+        params.delete('size');
+        params.set('title', iframe.dataset.title);
+        iframe.src = `sketch.html?${params}`;
+        iframe.closest('article').querySelector('.actual').href = iframe.src;
+      }
+      fit();
+    }
+    controls.forEach(control => control.addEventListener('change', render));
+    new ResizeObserver(fit).observe(document.querySelector('.comparison'));
+    render();
+  </script>
+</body>
+</html>
