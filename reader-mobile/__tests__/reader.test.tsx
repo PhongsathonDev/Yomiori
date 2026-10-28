@@ -140,7 +140,7 @@ test('hiding and revealing chrome leaves the story viewport and insets unchanged
   await view.unmount();
 });
 
-test('next chapter is reachable from the dock without scrolling through comments', async () => {
+test('next chapter is reachable from the header without scrolling through comments', async () => {
   jest.mocked(getAvailableChapterList).mockResolvedValue([
     { id: chapter.id, novelId: chapter.novelId, chapterNumber: chapter.chapterNumber, title: chapter.title },
     { id: 'ch-next', novelId: chapter.novelId, chapterNumber: chapter.chapterNumber + 1, title: 'Next' },
@@ -162,5 +162,18 @@ test('the reading sheet preserves direct theme and font-size controls', async ()
   expect(screen.getByRole('radio', { name: 'ธีมมืด' }).props.accessibilityState.selected).toBe(true);
   await fireEvent.press(screen.getByLabelText('เพิ่มขนาดตัวอักษร'));
   expect(saveFontSize).toHaveBeenCalledWith(18);
+  await view.unmount();
+});
+
+
+test('floating font chip opens settings and quick theme buttons persist selection', async () => {
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  expect(screen.getByText('Sarabun · 17')).toBeTruthy();
+  await fireEvent.press(screen.getByRole('radio', { name: 'ธีมโทนอุ่น' }));
+  expect(saveTheme).toHaveBeenCalledWith('sepia');
+  expect(screen.getByRole('radio', { name: 'ธีมโทนอุ่น' }).props.accessibilityState.selected).toBe(true);
+  await fireEvent.press(screen.getByRole('button', { name: 'ตั้งค่าการอ่าน' }));
+  expect(screen.getByLabelText('เพิ่มขนาดตัวอักษร')).toBeTruthy();
   await view.unmount();
 });

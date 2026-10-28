@@ -13,3 +13,7 @@ Direction implemented: fixed overlays that do not resize the reading viewport wh
 ## Minimal revision after user feedback
 
 The user found the first companion too large and prominent. The current generator and native Reader use a single row of muted 18-point icons without colored button panels or visible text labels, a single-line 12-point header, and an icon-only reveal button. Native tap targets remain 48 points. Initial content spacing follows the shorter controls. The earlier Chrome inspection above applies to the preceding layout; the new revision has not been visually accepted or checked on Android. TypeScript, lint and all 66 tests pass for this revision.
+
+### 28 October 2026 — Screenshot-led floating pill
+
+User prefers the older small floating capsule shown in Screenshot_20261028_094916_Yomiori.jpg. Revised the native dock to a centered capsule (max width 440), with font/size chip opening settings, a small contents shortcut and three direct theme selectors. Moved previous/next/hide to the header and restored a small header percentage. Tap targets remain 48 points. Dock controls are excluded while the settings sheet is open to avoid duplicate accessibility controls. Updated the browser companion; it remains an approximation, not a native screenshot. TypeScript, lint and 67 tests pass, including direct theme persistence and font-chip access. User visual acceptance of this revision is still pending.

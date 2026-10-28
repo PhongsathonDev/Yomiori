@@ -70,3 +70,7 @@ TypeScript, Expo lint and all 66 Jest tests pass. Added explicit updates for loc
 Local Android Metro export also passed (2,975 modules; output `/tmp/yomiori-wayfinder-android`). This verifies JavaScript/assets bundling, not APK/native compilation or device behavior.
 
 Minimal Reader revision after user feedback: muted 18-point icons, single-row dock, 12-point single-line header and icon-only reveal. Tap targets remain 48 points and accessibility labels are preserved. Typecheck, lint and 66 tests pass. New visual/native acceptance is pending.
+
+### 28 October 2026 — Screenshot-led floating pill
+
+User prefers the older small floating capsule shown in Screenshot_20261028_094916_Yomiori.jpg. Revised the native dock to a centered capsule (max width 440), with font/size chip opening settings, a small contents shortcut and three direct theme selectors. Moved previous/next/hide to the header and restored a small header percentage. Tap targets remain 48 points. Dock controls are excluded while the settings sheet is open to avoid duplicate accessibility controls. Updated the browser companion; it remains an approximation, not a native screenshot. TypeScript, lint and 67 tests pass, including direct theme persistence and font-chip access. User visual acceptance of this revision is still pending.

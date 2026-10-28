@@ -227,8 +227,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const revealControls = useCallback(() => setShowControls(true), []);
   const measureHeader = useCallback((event: LayoutChangeEvent) => setHeaderHeight(Math.ceil(event.nativeEvent.layout.height)), []);
   const measureDock = useCallback((event: LayoutChangeEvent) => setDockHeight(Math.ceil(event.nativeEvent.layout.height)), []);
-  const positionLabel = currentChapterIndex >= 0
-    ? `${currentChapterIndex + 1} / ${chapterList.length} ในสารบัญ` : chapter ? `ตอนที่ ${chapter.chapterNumber}` : 'กำลังเปิดตอน';
+
 
   return (
     <SafeAreaView edges={['left', 'right']} style={[styles.container, { backgroundColor: themeColors.background }]}>
@@ -345,12 +344,11 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
         </ScrollView>
       )}
 
-      <ReaderHeader visible={showControls} colors={themeColors} topInset={insets.top} novelTitle={chapter?.novelTitle ?? 'Yomiori'}
-        chapterTitle={chapter?.title ?? 'เปิดตอนนิยาย'} onBack={goBack} onContents={openContents} onLayout={measureHeader} />
-      <ReaderDock visible={showControls} enabled={loadState === 'ready'} colors={themeColors}
-        positionLabel={positionLabel} progress={readingProgress} bottomInset={insets.bottom}
-        hasPrev={hasPrev} hasNext={hasNext} onPrev={goPrev} onNext={goNext}
-        onContents={openContents} onSettings={openSettings} onHide={hideControls} onLayout={measureDock} />
+      <ReaderHeader visible={showControls} colors={themeColors} topInset={insets.top} progress={readingProgress} novelTitle={chapter?.novelTitle ?? 'Yomiori'}
+        chapterTitle={chapter?.title ?? 'เปิดตอนนิยาย'} onBack={goBack} hasPrev={hasPrev} hasNext={hasNext} onPrev={goPrev} onNext={goNext} onHide={hideControls} onLayout={measureHeader} />
+      <ReaderDock visible={showControls && !showTypographyModal} enabled={loadState === 'ready'} colors={themeColors}
+        theme={currentTheme} fontFamily={fontFamily} fontSize={fontSize} onTheme={handleToggleTheme} bottomInset={insets.bottom}
+        onContents={openContents} onSettings={openSettings} onLayout={measureDock} />
       {!showControls && <ReaderReveal colors={themeColors} bottomInset={insets.bottom} onPress={revealControls} />}
 
       {/* Typography & Layout Settings Modal */}
