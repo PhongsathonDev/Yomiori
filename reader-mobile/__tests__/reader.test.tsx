@@ -163,11 +163,69 @@ test('the real story skips dialogue work until typography changes', async () => 
   await view.unmount();
 });
 
-test('table of contents is reachable directly from the reader header', async () => {
+test('header opens a chapter overlay and selection flushes progress without visiting novel details', async () => {
+  jest.mocked(getAvailableChapterList).mockResolvedValue([
+    { id: chapter.id, novelId: chapter.novelId, chapterNumber: chapter.chapterNumber, title: chapter.title },
+    { id: 'ch-00', novelId: chapter.novelId, chapterNumber: 0, title: 'ภาพประกอบ' },
+  ]);
   const view = await render(<ReaderScreen {...props} />);
   await screen.findAllByText(chapter.title);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
-  expect(navigation.navigate).toHaveBeenCalledWith('NovelDetail', { novelId: chapter.novelId });
+  expect(screen.getByRole('header', { name: 'เลือกตอน' })).toBeTruthy();
+  expect(screen.getByRole('button', { name: `เลือกตอน ${chapter.title}` }).props.accessibilityState.selected).toBe(true);
+  await fireEvent.press(screen.getByRole('button', { name: 'เลือกตอน ภาพประกอบ' }));
+  expect(navigation.navigate).not.toHaveBeenCalled();
+  expect(navigation.replace).toHaveBeenCalledWith('Reader', { novelId: chapter.novelId, chapterId: 'ch-00' });
+  expect(saved).toHaveBeenCalledWith(chapter.novelId, chapter.id, 50);
+  await view.unmount();
+});
+
+test('closing the chapter overlay or selecting the current chapter keeps the reader and its insets', async () => {
+  jest.mocked(getAvailableChapterList).mockResolvedValue([
+    { id: chapter.id, novelId: chapter.novelId, chapterNumber: chapter.chapterNumber, title: chapter.title },
+  ]);
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  const before = StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle);
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  await fireEvent.press(screen.getByRole('button', { name: 'ปิดสารบัญ' }));
+  expect(screen.queryByRole('header', { name: 'เลือกตอน' })).toBeNull();
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  await fireEvent.press(screen.getByRole('button', { name: `เลือกตอน ${chapter.title}` }));
+  expect(navigation.replace).not.toHaveBeenCalled();
+  expect(StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle)).toEqual(before);
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  await fireEvent.press(screen.getByTestId('chapter-picker-backdrop', { includeHiddenElements: true }));
+  expect(screen.queryByRole('header', { name: 'เลือกตอน' })).toBeNull();
+  await view.unmount();
+});
+
+test('chapter list failures can be retried without reloading the reading content', async () => {
+  jest.mocked(getAvailableChapterList).mockRejectedValueOnce(new Error('Unavailable'));
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  expect(await screen.findByText('โหลดรายชื่อตอนไม่ได้')).toBeTruthy();
+  jest.mocked(getAvailableChapterList).mockResolvedValue([
+    { id: 'ch-new', novelId: chapter.novelId, chapterNumber: 99, title: 'ตอนใหม่' },
+  ]);
+  await fireEvent.press(screen.getByRole('button', { name: 'ลองโหลดสารบัญอีกครั้ง' }));
+  expect(await screen.findByRole('button', { name: 'เลือกตอน ตอนใหม่' })).toBeTruthy();
+  expect(getAvailableChapterList).toHaveBeenLastCalledWith(chapter.novelId, false);
+  expect(loaded).toHaveBeenCalledTimes(1);
+  await view.unmount();
+});
+
+test('a pending chapter list never blocks reading and an empty list offers retry', async () => {
+  let finish!: (chapters: []) => void;
+  jest.mocked(getAvailableChapterList).mockReturnValueOnce(new Promise(resolve => { finish = resolve; }));
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  expect(screen.getByText('กำลังโหลดรายชื่อตอน...')).toBeTruthy();
+  await act(async () => { finish([]); });
+  expect(screen.getByText('ยังไม่มีรายชื่อตอน')).toBeTruthy();
+  expect(screen.getByRole('button', { name: 'ลองโหลดสารบัญอีกครั้ง' })).toBeTruthy();
   await view.unmount();
 });
 

@@ -39,6 +39,7 @@ import { themes } from '../theme/colors';
 import { readerStyles as styles } from '../theme/readerStyles';
 import { ReaderStory } from '../components/ReaderStory';
 import { ReaderHeader, ReaderDock, ReaderReveal } from '../components/ReaderChrome';
+import { ChapterPickerModal } from '../components/ChapterPickerModal';
 import { useReaderFonts } from '../components/ReaderFontProvider';
 import { ScreenState } from '../components/ScreenState';
 import { createProgressWriter, getResumeOffset, anchorAtOffset, offsetForAnchor, BlockLayout } from '../services/readingProgress';
@@ -73,6 +74,9 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [characters, setCharacters] = useState<Character[]>([]);
   const [chapterList, setChapterList] = useState<ChapterListItem[]>([]);
+  const [chapterListStatus, setChapterListStatus] = useState<'loading' | 'ready' | 'error'>('loading');
+  const [chapterListRetry, setChapterListRetry] = useState(0);
+  const [showChapterPicker, setShowChapterPicker] = useState(false);
   const [loadState, setLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
   const [retryKey, setRetryKey] = useState(0);
   const [cacheWarning, setCacheWarning] = useState(false);
@@ -175,7 +179,6 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
     }).catch(() => { if (active) setLoadState('error'); });
     // Optional metadata is independent of the reading content.
     void fetchCharacters(novelId, true).then(data => { if (active) setCharacters(data); }).catch(() => undefined);
-    void getAvailableChapterList(novelId, true).then(data => { if (active) setChapterList(data); }).catch(() => undefined);
     return () => {
       active = false;
       clearTimeout(restoreTimer.current);
@@ -186,6 +189,14 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
       if (progressWriter.current === writer) progressWriter.current = null;
     };
   }, [novelId, chapterId, retryKey, defaultFontSize, navigation]);
+
+  useEffect(() => {
+    let active = true;
+    void getAvailableChapterList(novelId, chapterListRetry === 0).then(data => {
+      if (active) { setChapterList(data); setChapterListStatus('ready'); }
+    }).catch(() => { if (active) setChapterListStatus('error'); });
+    return () => { active = false; };
+  }, [novelId, chapterListRetry]);
 
   const retryChapter = () => { setLoadState('loading'); setRetryKey(key => key + 1); };
   const restoreScroll = () => {
@@ -263,8 +274,17 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   }, [chapterList, navigation, novelId]);
   const openContents = useCallback(() => {
     progressWriter.current?.flush();
-    navigation.navigate('NovelDetail', { novelId });
-  }, [navigation, novelId]);
+    setShowChapterPicker(true);
+  }, []);
+  const closeContents = useCallback(() => setShowChapterPicker(false), []);
+  const retryContents = useCallback(() => {
+    setChapterListStatus('loading');
+    setChapterListRetry(previous => previous + 1);
+  }, []);
+  const selectChapter = useCallback((index: number) => {
+    setShowChapterPicker(false);
+    if (chapterList[index]?.id !== chapterId) goToChapterAt(index);
+  }, [chapterId, chapterList, goToChapterAt]);
   const goBack = useCallback(() => navigation.goBack(), [navigation]);
   const goPrev = useCallback(() => goToChapterAt(currentChapterIndex - 1), [currentChapterIndex, goToChapterAt]);
   const goNext = useCallback(() => goToChapterAt(currentChapterIndex + 1), [currentChapterIndex, goToChapterAt]);
@@ -391,12 +411,15 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
         </ScrollView>
       )}
 
-      <ReaderHeader visible={showControls} colors={themeColors} topInset={insets.top} progress={readingProgress} novelTitle={chapter?.novelTitle ?? 'Yomiori'}
+      <ReaderHeader visible={showControls && !showChapterPicker} colors={themeColors} topInset={insets.top} progress={readingProgress} novelTitle={chapter?.novelTitle ?? 'Yomiori'}
         chapterTitle={chapter?.title ?? 'เปิดตอนนิยาย'} fontFamily={activeFont.bold || activeFont.regular} onBack={goBack} onContents={openContents} onLayout={measureHeader} />
-      <ReaderDock visible={showControls && !showTypographyModal} enabled={loadState === 'ready'} colors={themeColors}
+      <ReaderDock visible={showControls && !showTypographyModal && !showChapterPicker} enabled={loadState === 'ready'} colors={themeColors}
         theme={currentTheme} fontFamily={fontFamily} fontSize={fontSize} onTheme={handleToggleTheme} bottomInset={insets.bottom}
         onSettings={openSettings} onLayout={measureDock} />
-      {!showControls && <ReaderReveal colors={themeColors} bottomInset={insets.bottom} onPress={revealControls} />}
+      {!showControls && !showChapterPicker && <ReaderReveal colors={themeColors} bottomInset={insets.bottom} onPress={revealControls} />}
+
+      <ChapterPickerModal visible={showChapterPicker} chapters={chapterList} currentChapterId={chapterId}
+        colors={themeColors} status={chapterListStatus} onSelect={selectChapter} onClose={closeContents} onRetry={retryContents} />
 
       {/* Typography & Layout Settings Modal */}
       <TypographyModal

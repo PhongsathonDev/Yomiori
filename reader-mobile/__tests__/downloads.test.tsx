@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert } from 'react-native';
+import { Alert, StyleSheet } from 'react-native';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import { NovelDetailScreen } from '../src/screens/NovelDetailScreen';
 import { downloadChapterOnDemand, fetchNovels, getAvailableChapterList, fetchCharacters, fetchIllustrations } from '../src/services/api';
@@ -43,6 +43,21 @@ beforeEach(() => {
   jest.spyOn(Alert, 'alert').mockImplementation(() => undefined);
 });
 afterEach(() => { jest.restoreAllMocks(); });
+
+test('selected contents and gallery tabs use a flat fill without native elevation or shadows', async () => {
+  const view = await render(<NovelDetailScreen {...props} />);
+  await screen.findByText('Chapter 1');
+  const contents = screen.getByRole('tab', { name: 'สารบัญ' });
+  expect(contents.props.accessibilityState.selected).toBe(true);
+  expect(StyleSheet.flatten(contents.props.style).elevation).toBeUndefined();
+  expect(StyleSheet.flatten(contents.props.style).shadowColor).toBeUndefined();
+  await fireEvent.press(screen.getByRole('tab', { name: 'ภาพและตัวละคร' }));
+  const gallery = screen.getByRole('tab', { name: 'ภาพและตัวละคร' });
+  expect(gallery.props.accessibilityState.selected).toBe(true);
+  expect(StyleSheet.flatten(gallery.props.style).elevation).toBeUndefined();
+  expect(StyleSheet.flatten(gallery.props.style).shadowColor).toBeUndefined();
+  await view.unmount();
+});
 
 test('batch summary reports complete, partial and failed chapters accurately', async () => {
   jest.mocked(downloadChapterOnDemand).mockResolvedValueOnce({ status: 'complete' })

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { View, Text, Pressable, StyleSheet, LayoutChangeEvent } from 'react-native';
-import { ArrowLeft, Type, Eye, Sun, Coffee, Moon } from 'lucide-react-native';
+import { ArrowLeft, List, Type, Eye, Sun, Coffee, Moon } from 'lucide-react-native';
 import { ReaderTheme } from '../types';
 import { ThemeColors } from '../theme/colors';
 
@@ -26,8 +26,11 @@ export const ReaderHeader = memo(function ReaderHeader({ visible, colors, novelT
         <Pressable accessibilityRole="button" accessibilityLabel="กลับ" hitSlop={7} onPress={onBack} style={styles.backButton}>
           <ArrowLeft size={22} color={colors.text} />
         </Pressable>
-        <Pressable accessibilityRole="button" accessibilityLabel="เปิดสารบัญ" accessibilityHint={`${novelTitle}, ${chapterTitle}`} hitSlop={7} onPress={onContents} style={styles.titles}>
-          <Text numberOfLines={1} style={[styles.chapterTitle, { color: colors.text, fontFamily }]}>{chapterTitle}</Text>
+        <View style={styles.titles}>
+          <Text accessibilityLabel={`${novelTitle}, ${chapterTitle}`} numberOfLines={1} style={[styles.chapterTitle, { color: colors.text, fontFamily }]}>{chapterTitle}</Text>
+        </View>
+        <Pressable accessibilityRole="button" accessibilityLabel="เปิดสารบัญ" onPress={onContents} style={styles.contentsButton}>
+          <List size={20} color={colors.primary} />
         </Pressable>
         <Text style={[styles.percent, { color: colors.primary }]}>{progress}%</Text>
       </View>
@@ -87,6 +90,7 @@ const styles = StyleSheet.create({
   header: { position: 'absolute', left: 0, right: 0, zIndex: 10, paddingHorizontal: 16, paddingVertical: 10, borderBottomWidth: 1 },
   headerInner: { width: '100%', maxWidth: 720, alignSelf: 'center', flexDirection: 'row', alignItems: 'center' },
   backButton: { padding: 6 },
+  contentsButton: { width: 48, minHeight: 48, alignItems: 'center', justifyContent: 'center' },
   titles: { flex: 1, minWidth: 0, minHeight: 34, justifyContent: 'center', marginLeft: 10 },
   chapterTitle: { fontSize: 14, fontWeight: '700' },
   dock: { position: 'absolute', bottom: 0, left: '5%', right: '5%', zIndex: 10 },

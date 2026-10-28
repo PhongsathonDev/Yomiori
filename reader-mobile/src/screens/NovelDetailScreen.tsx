@@ -332,8 +332,11 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
             <TouchableOpacity
               style={[
                 styles.tabButton,
-                activeTab === 'chapters' && [styles.tabButtonActive, { backgroundColor: themeColors.primaryBg }],
+                activeTab === 'chapters' && { backgroundColor: themeColors.primaryBg },
               ]}
+              accessibilityRole="tab"
+              accessibilityLabel="สารบัญ"
+              accessibilityState={{ selected: activeTab === 'chapters' }}
               onPress={() => setActiveTab('chapters')}
               activeOpacity={0.8}
             >
@@ -352,8 +355,11 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
             <TouchableOpacity
               style={[
                 styles.tabButton,
-                activeTab === 'gallery' && [styles.tabButtonActive, { backgroundColor: themeColors.primaryBg }],
+                activeTab === 'gallery' && { backgroundColor: themeColors.primaryBg },
               ]}
+              accessibilityRole="tab"
+              accessibilityLabel="ภาพและตัวละคร"
+              accessibilityState={{ selected: activeTab === 'gallery' }}
               onPress={() => setActiveTab('gallery')}
               activeOpacity={0.8}
             >
@@ -959,13 +965,6 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 8,
     gap: 8,
-  },
-  tabButtonActive: {
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.08,
-    shadowRadius: 2,
-    elevation: 1,
   },
   tabText: {
     fontSize: 13.5,
