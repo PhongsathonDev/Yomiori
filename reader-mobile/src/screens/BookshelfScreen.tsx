@@ -51,6 +51,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [lastProgress, setLastProgress] = useState<Record<string, ReadingProgress | null>>({});
   const [charactersMap, setCharactersMap] = useState<Record<string, Character[]>>({});
+  const [chapterCountMap, setChapterCountMap] = useState<Record<string, number>>({});
   const [downloadCountMap, setDownloadCountMap] = useState<Record<string, number>>({});
   const [selectedTag, setSelectedTag] = useState<string>('all');
   const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
@@ -72,6 +73,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
           ]);
           const statuses = await Promise.all(chapters.map(ch => ch.offlineStatus !== undefined ? Promise.resolve(ch.offlineStatus !== 'missing') : isChapterDownloaded(novel.id, ch.id)));
           if (!isActive()) return;
+          setChapterCountMap(previous => ({ ...previous, [novel.id]: chapters.length }));
           setCharactersMap(previous => ({ ...previous, [novel.id]: characters }));
           setDownloadCountMap(previous => ({ ...previous, [novel.id]: statuses.filter(Boolean).length }));
         }));
@@ -214,7 +216,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                     อ่านต่อ
                   </Text>
                   <Text style={[styles.heroNovelTitle, { color: themeColors.text }]} numberOfLines={1}>
-                    {continueNovel.title.split('ผม')[0].trim()}
+                    {continueNovel.title}
                   </Text>
                   <Text style={[styles.heroChapterTitle, { color: themeColors.textMuted }]} numberOfLines={1}>
                     {continueChapterId.replace('ch-', 'ตอนที่ ')}
@@ -350,7 +352,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                       </Text>
                       <Text style={[styles.metaDivider, { color: themeColors.border }]}>•</Text>
                       <Text style={[styles.authorText, { color: themeColors.textMuted }]}>
-                        25 ตอน
+                        {chapterCountMap[novel.id] === undefined ? 'กำลังโหลดจำนวนตอน' : `${chapterCountMap[novel.id]} ตอน`}
                       </Text>
                       {downloadedCount > 0 && (
                         <>
