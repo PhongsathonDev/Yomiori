@@ -1,4 +1,4 @@
-import { createProgressWriter, getResumeOffset } from '../src/services/readingProgress';
+import { createProgressWriter, getResumeOffset, anchorAtOffset, offsetForAnchor } from '../src/services/readingProgress';
 
 jest.mock('../src/services/storage', () => ({ saveReadingProgress: jest.fn().mockResolvedValue(undefined) }));
 
@@ -53,6 +53,23 @@ test('computes resume offset using actual viewport and clamps short chapters', (
   expect(getResumeOffset(50, 3000, 900)).toBe(1050);
   expect(getResumeOffset(100, 400, 900)).toBe(0);
   expect(getResumeOffset(120, 3000, 900)).toBe(2100);
+});
+
+test('anchors inside a paragraph, follows its changed height, and uses the nearest surviving index', () => {
+  const layouts = [{ id: 'a', index: 0, y: 0, height: 100 }, { id: 'b', index: 1, y: 100, height: 200 }];
+  const anchor = anchorAtOffset(layouts, 150)!;
+  expect(anchor).toEqual({ blockId: 'b', blockIndex: 1, fraction: 0.25 });
+  expect(offsetForAnchor(anchor, [{ ...layouts[1], y: 180, height: 400 }])).toBe(280);
+  expect(offsetForAnchor(anchor, [{ id: 'replacement', index: 1, y: 200, height: 80 }])).toBe(220);
+  expect(offsetForAnchor(anchor, [])).toBeUndefined();
+});
+
+test('writer persists the anchor along with the fallback percentage', () => {
+  const save = jest.fn().mockResolvedValue(undefined);
+  const writer = createProgressWriter('novel', 'ch-01', jest.fn(), save);
+  const anchor = { blockId: 'b', blockIndex: 1, fraction: 0.25 };
+  writer.update(40, anchor); writer.flush();
+  expect(save).toHaveBeenCalledWith('novel', 'ch-01', 40, anchor);
 });
 
 test('a late failed write cannot requeue an older position after a newer update', async () => {

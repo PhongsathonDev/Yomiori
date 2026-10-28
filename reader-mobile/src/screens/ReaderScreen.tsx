@@ -22,7 +22,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react-native';
-import { RootStackParamList, Chapter, Character, ReaderTheme, ChapterListItem } from '../types';
+import { RootStackParamList, Chapter, Character, ReaderTheme, ChapterListItem, ReadingAnchor } from '../types';
 import { getChapterForReading, fetchCharacters, getAvailableChapterList } from '../services/api';
 import {
   getSavedTheme,
@@ -41,7 +41,7 @@ import { ReaderStory } from '../components/ReaderStory';
 import { ReaderHeader, ReaderDock, ReaderReveal } from '../components/ReaderChrome';
 import { useReaderFonts } from '../components/ReaderFontProvider';
 import { ScreenState } from '../components/ScreenState';
-import { createProgressWriter, getResumeOffset } from '../services/readingProgress';
+import { createProgressWriter, getResumeOffset, anchorAtOffset, offsetForAnchor, BlockLayout } from '../services/readingProgress';
 import { CharacterDetailModal } from '../components/CharacterDetailModal';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import { ChapterCommentsSection } from '../components/ChapterCommentsSection';
@@ -107,6 +107,29 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const viewportHeight = useRef(0);
   const contentHeight = useRef(0);
   const userStartedReading = useRef(false);
+  const currentAnchor = useRef<ReadingAnchor | undefined>(undefined);
+  const blockLayouts = useRef(new Map<string, BlockLayout>());
+  const blockCount = useRef(0);
+  const spineY = useRef<number | null>(null);
+  const storyY = useRef<number | null>(null);
+  const dragging = useRef(false);
+  const restoreTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const programmatic = useRef(false);
+  const programmaticTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const restoreRef = useRef<() => void>(() => {});
+  const scheduleRestore = useCallback(() => {
+    if (dragging.current) return;
+    clearTimeout(restoreTimer.current);
+    restoreTimer.current = setTimeout(() => restoreRef.current(), 80);
+  }, []);
+  const onStoryLayout = useCallback((event: LayoutChangeEvent) => {
+    storyY.current = event.nativeEvent.layout.y;
+    scheduleRestore();
+  }, [scheduleRestore]);
+  const onBlockLayout = useCallback((id: string, index: number, y: number, height: number) => {
+    blockLayouts.current.set(id, { id, index, y, height });
+    scheduleRestore();
+  }, [scheduleRestore]);
 
   useEffect(() => {
     let active = true;
@@ -115,6 +138,12 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
     userStartedReading.current = false;
     viewportHeight.current = 0;
     contentHeight.current = 0;
+    blockLayouts.current.clear();
+    blockCount.current = 0;
+    spineY.current = null;
+    storyY.current = null;
+    currentAnchor.current = undefined;
+    dragging.current = false;
     const writer = createProgressWriter(novelId, chapterId, () => {
       if (active) setProgressWarning(true);
     });
@@ -137,16 +166,20 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
       setProgressWarning(false);
       if (!result.chapter) { setLoadState('error'); return; }
       const percent = progress?.chapterId === chapterId ? progress.scrollPercent : 0;
+      currentAnchor.current = progress?.chapterId === chapterId ? progress.anchor : undefined;
+      blockCount.current = result.chapter.blocks.filter(block => block.type === 'narration' || block.type === 'dialogue').length;
       savedProgressPercent.current = percent;
       setReadingProgress(Math.round(percent));
       setLoadState('ready');
-      writer.update(percent);
+      writer.update(percent, currentAnchor.current);
     }).catch(() => { if (active) setLoadState('error'); });
     // Optional metadata is independent of the reading content.
     void fetchCharacters(novelId, true).then(data => { if (active) setCharacters(data); }).catch(() => undefined);
     void getAvailableChapterList(novelId, true).then(data => { if (active) setChapterList(data); }).catch(() => undefined);
     return () => {
       active = false;
+      clearTimeout(restoreTimer.current);
+      clearTimeout(programmaticTimer.current);
       writer.dispose();
       blur();
       appState.remove();
@@ -156,18 +189,31 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
 
   const retryChapter = () => { setLoadState('loading'); setRetryKey(key => key + 1); };
   const restoreScroll = () => {
-    if (hasRestoredScroll.current || userStartedReading.current || !viewportHeight.current || !contentHeight.current) return;
+    if (dragging.current || !viewportHeight.current || !contentHeight.current) return;
+    if (!currentAnchor.current && (hasRestoredScroll.current || userStartedReading.current)) return;
+    let offset = getResumeOffset(savedProgressPercent.current, contentHeight.current, viewportHeight.current);
+    if (currentAnchor.current) {
+      if (spineY.current === null || storyY.current === null || blockLayouts.current.size < blockCount.current) return;
+      const y = offsetForAnchor(currentAnchor.current, [...blockLayouts.current.values()]);
+      if (y !== undefined) offset = spineY.current + storyY.current + y;
+    }
     hasRestoredScroll.current = true;
-    scrollRef.current?.scrollTo({ y: getResumeOffset(savedProgressPercent.current, contentHeight.current, viewportHeight.current), animated: false });
+    programmatic.current = true;
+    clearTimeout(programmaticTimer.current);
+    programmaticTimer.current = setTimeout(() => { programmatic.current = false; }, 150);
+    scrollRef.current?.scrollTo({ y: Math.max(0, Math.min(offset, Math.max(0, contentHeight.current - viewportHeight.current))), animated: false });
   };
+  useEffect(() => { restoreRef.current = restoreScroll; });
   const handleScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
-    if (!hasRestoredScroll.current || !userStartedReading.current) return;
+    if (!hasRestoredScroll.current || !userStartedReading.current || programmatic.current) return;
     const { contentOffset, layoutMeasurement, contentSize } = event.nativeEvent;
     const scrollable = contentSize.height - layoutMeasurement.height;
     const percent = scrollable > 0 ? Math.min(100, Math.max(0, contentOffset.y / scrollable * 100)) : 100;
     const display = Math.round(percent);
     setReadingProgress(previous => previous === display ? previous : display);
-    progressWriter.current?.update(percent);
+    const relative = contentOffset.y - (spineY.current ?? 0) - (storyY.current ?? 0);
+    currentAnchor.current = anchorAtOffset([...blockLayouts.current.values()], relative);
+    progressWriter.current?.update(percent, currentAnchor.current);
   };
   const toggleControls = useCallback(() => setShowControls(previous => !previous), []);
   const openIllustration = useCallback((uri: string, caption?: string) => {
@@ -266,14 +312,14 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
           onContentSizeChange={(_width, height) => {
             contentHeight.current = height;
             if (!userStartedReading.current) hasRestoredScroll.current = false;
-            restoreScroll();
+            if (currentAnchor.current) scheduleRestore(); else restoreScroll();
           }}
-          onScrollBeginDrag={() => { userStartedReading.current = true; hasRestoredScroll.current = true; }}
-          onScrollEndDrag={event => { handleScroll(event); progressWriter.current?.flush(); }}
-          onMomentumScrollEnd={event => { handleScroll(event); progressWriter.current?.flush(); }}
+          onScrollBeginDrag={() => { clearTimeout(restoreTimer.current); clearTimeout(programmaticTimer.current); programmatic.current = false; dragging.current = true; userStartedReading.current = true; hasRestoredScroll.current = true; }}
+          onScrollEndDrag={event => { handleScroll(event); dragging.current = false; progressWriter.current?.flush(); }}
+          onMomentumScrollEnd={event => { handleScroll(event); dragging.current = false; progressWriter.current?.flush(); }}
         >
           {/* Centered Book Spine: Ergonomic line length on both Phones and Tablets */}
-          <View style={[styles.bookSpine, { maxWidth: Math.min(720, fontSize * 36) }]}>
+          <View testID="reader-spine" onLayout={event => { spineY.current = event.nativeEvent.layout.y; scheduleRestore(); }} style={[styles.bookSpine, { maxWidth: Math.min(720, fontSize * 36) }]}>
             {/* Chapter Heading Banner */}
             <Pressable onPress={toggleControls}>
               <View style={[styles.chapterHero, { borderBottomColor: themeColors.border }]}>
@@ -297,6 +343,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
             </Pressable>}
             <ReaderStory novelId={novelId} blocks={chapter.blocks} characterMap={characterMap} colors={themeColors}
               fontSize={fontSize} fontFamily={fontFamily} lineHeightRatio={lineHeightRatio}
+              onStoryLayout={onStoryLayout} onBlockLayout={onBlockLayout}
               onToggleControls={toggleControls} onSelectCharacter={setSelectedCharacter} onOpenIllustration={openIllustration} />
 
             {/* Reading continues before the secondary community section. */}

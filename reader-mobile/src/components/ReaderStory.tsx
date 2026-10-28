@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { View, Text, Pressable, Image } from 'react-native';
+import { View, Text, Pressable, Image, LayoutChangeEvent } from 'react-native';
 import { Character, StoryBlock, ReaderFont, ReaderLineHeight } from '../types';
 import { ThemeColors } from '../theme/colors';
 import { readerStyles as styles } from '../theme/readerStyles';
@@ -19,6 +19,8 @@ interface Props {
   onToggleControls: () => void;
   onSelectCharacter: (character: Character) => void;
   onOpenIllustration: (uri: string, caption?: string) => void;
+  onStoryLayout?: (event: LayoutChangeEvent) => void;
+  onBlockLayout?: (id: string, index: number, y: number, height: number) => void;
 }
 
 /**
@@ -47,10 +49,10 @@ function formatDialogueText(rawText: string): string {
   return `“${cleaned}”`;
 }
 
-export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characterMap, colors, fontSize, fontFamily, lineHeightRatio, onToggleControls, onSelectCharacter, onOpenIllustration }: Props) {
+export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characterMap, colors, fontSize, fontFamily, lineHeightRatio, onToggleControls, onSelectCharacter, onOpenIllustration, onStoryLayout, onBlockLayout }: Props) {
   const fonts = useReaderFonts();
   const font = FONT_MAP[fonts === 'ready' ? fontFamily : 'System'];
-  return <View>{blocks.map(block => {
+  return <View onLayout={onStoryLayout} testID="reader-story">{blocks.map((block, index) => <View key={block.id} testID={`story-block-${index}`} onLayout={event => { if (block.type === 'narration' || block.type === 'dialogue') onBlockLayout?.(block.id, index, event.nativeEvent.layout.y, event.nativeEvent.layout.height); }}>{(() => {
     if (block.type === 'narration') return (
       <Pressable key={block.id} onPress={onToggleControls}>
         <Text style={[styles.narrationBlock, { color: colors.narrationText, fontSize, fontFamily: font.regular, lineHeight: fontSize * lineHeightRatio, marginBottom: Math.round(fontSize * 0.85) }]}>
@@ -96,5 +98,5 @@ export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characte
         </View>
       </View>
     </View>;
-  })}</View>;
+  })()}</View>)}</View>;
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppState, StyleSheet } from 'react-native';
+import { AppState, StyleSheet, ScrollView } from 'react-native';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import { ReaderScreen } from '../src/screens/ReaderScreen';
 import { getChapterForReading, fetchCharacters, getAvailableChapterList } from '../src/services/api';
@@ -100,6 +100,51 @@ test('scrolling a real 147-block chapter skips story rendering and flushes on ba
   // The terminal drag event may carry a newer offset than throttled onScroll.
   await fireEvent(scroll, 'scrollEndDrag', { nativeEvent: { contentOffset: { y: 1365 }, contentSize: { height: 3000 }, layoutMeasurement: { height: 900 } } });
   expect(saved).toHaveBeenLastCalledWith(chapter.novelId, chapter.id, 65);
+  await view.unmount();
+});
+
+test('saves a paragraph anchor and retains it when the reader opens again', async () => {
+  const shortChapter: Chapter = { ...chapter, blocks: [{ id: 'paragraph-1', type: 'narration', text: 'A long paragraph' }] };
+  loaded.mockResolvedValue({ chapter: shortChapter, cacheWarning: false });
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findByText('A long paragraph');
+  const scroll = screen.getByTestId('reader-scroll');
+  await fireEvent(scroll, 'layout', { nativeEvent: { layout: { height: 400 } } });
+  await fireEvent(scroll, 'contentSizeChange', 400, 1400);
+  await fireEvent(screen.getByTestId('reader-spine'), 'layout', { nativeEvent: { layout: { y: 100 } } });
+  await fireEvent(screen.getByTestId('reader-story'), 'layout', { nativeEvent: { layout: { y: 100 } } });
+  await fireEvent(screen.getByTestId('story-block-0'), 'layout', { nativeEvent: { layout: { y: 0, height: 200 } } });
+  await fireEvent(scroll, 'scrollBeginDrag');
+  await fireEvent(scroll, 'scrollEndDrag', { nativeEvent: { contentOffset: { y: 300 }, contentSize: { height: 1400 }, layoutMeasurement: { height: 400 } } });
+  expect(saved).toHaveBeenLastCalledWith(chapter.novelId, chapter.id, 30, { blockId: 'paragraph-1', blockIndex: 0, fraction: 0.5 });
+  await view.unmount();
+  jest.mocked(getReadingProgress).mockResolvedValue({ novelId: chapter.novelId, chapterId: chapter.id, scrollPercent: 30, updatedAt: 1, anchor: { blockId: 'paragraph-1', blockIndex: 0, fraction: 0.5 } });
+  const reopened = await render(<ReaderScreen {...props} />);
+  await screen.findByText('A long paragraph');
+  await reopened.unmount();
+  expect(saved).toHaveBeenLastCalledWith(chapter.novelId, chapter.id, 30, { blockId: 'paragraph-1', blockIndex: 0, fraction: 0.5 });
+});
+
+test('restores the saved paragraph after its layout changes', async () => {
+  const scrollTo = jest.spyOn(ScrollView.prototype, 'scrollTo').mockImplementation(() => undefined);
+  const shortChapter: Chapter = { ...chapter, blocks: [{ id: 'paragraph-1', type: 'narration', text: 'A paragraph to resume' }] };
+  loaded.mockResolvedValue({ chapter: shortChapter, cacheWarning: false });
+  jest.mocked(getReadingProgress).mockResolvedValue({ novelId: chapter.novelId, chapterId: chapter.id, scrollPercent: 30, updatedAt: 1, anchor: { blockId: 'paragraph-1', blockIndex: 0, fraction: 0.5 } });
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findByText('A paragraph to resume');
+  const scroll = screen.getByTestId('reader-scroll');
+  await fireEvent(scroll, 'layout', { nativeEvent: { layout: { height: 400 } } });
+  await fireEvent(scroll, 'contentSizeChange', 400, 1400);
+  await fireEvent(screen.getByTestId('reader-spine'), 'layout', { nativeEvent: { layout: { y: 100 } } });
+  await fireEvent(screen.getByTestId('reader-story'), 'layout', { nativeEvent: { layout: { y: 100 } } });
+  await fireEvent(screen.getByTestId('story-block-0'), 'layout', { nativeEvent: { layout: { y: 0, height: 200 } } });
+  await waitFor(() => expect(scrollTo).toHaveBeenLastCalledWith({ y: 300, animated: false }));
+  await fireEvent(screen.getByTestId('story-block-0'), 'layout', { nativeEvent: { layout: { y: 0, height: 400 } } });
+  await waitFor(() => expect(scrollTo).toHaveBeenLastCalledWith({ y: 400, animated: false }));
+  await fireEvent(scroll, 'scrollBeginDrag');
+  await fireEvent(scroll, 'scrollEndDrag', { nativeEvent: { contentOffset: { y: 400 }, contentSize: { height: 1400 }, layoutMeasurement: { height: 400 } } });
+  await fireEvent(screen.getByTestId('story-block-0'), 'layout', { nativeEvent: { layout: { y: 0, height: 600 } } });
+  await waitFor(() => expect(scrollTo).toHaveBeenLastCalledWith({ y: 500, animated: false }));
   await view.unmount();
 });
 
