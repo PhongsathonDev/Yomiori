@@ -310,6 +310,48 @@ describe('metadata, settings and progress compatibility', () => {
 });
 
 describe('request timeout', () => {
+  test('shares concurrent reads through body parsing and fetches again on the next refresh', async () => {
+    let finish!: (value: unknown) => void;
+    fetchMock.mockResolvedValue({ ok: true, json: () => new Promise(done => { finish = done; }) } as Response);
+    const first = requestJson('https://example.com/shared.json');
+    await Promise.resolve();
+    const second = requestJson('https://example.com/shared.json');
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    finish({ version: 1 });
+    expect(await first).toEqual({ version: 1 });
+    expect(await second).toEqual({ version: 1 });
+    fetchMock.mockResolvedValue(response({ version: 2 }));
+    expect(await requestJson('https://example.com/shared.json')).toEqual({ version: 2 });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  test('a failed shared request releases its slot so retry can recover', async () => {
+    fetchMock.mockResolvedValue(response(null, 503));
+    const results = await Promise.allSettled([
+      requestJson('https://example.com/retry.json'), requestJson('https://example.com/retry.json'),
+    ]);
+    expect(results.map(result => result.status)).toEqual(['rejected', 'rejected']);
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    fetchMock.mockResolvedValue(response({ recovered: true }));
+    expect(await requestJson('https://example.com/retry.json')).toEqual({ recovered: true });
+  });
+
+  test('unrelated requests proceed while a shared request is stalled and timed-out work can retry', async () => {
+    jest.useFakeTimers();
+    fetchMock.mockImplementation(async url => String(url).includes('slow.json')
+      ? new Promise(() => undefined) : response({ fast: true }));
+    const first = requestJson('https://example.com/slow.json');
+    const second = requestJson('https://example.com/slow.json');
+    const failed = Promise.allSettled([first, second]);
+    expect(await requestJson('https://example.com/fast.json')).toEqual({ fast: true });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    await jest.advanceTimersByTimeAsync(10_000);
+    expect((await failed).map(result => result.status)).toEqual(['rejected', 'rejected']);
+    fetchMock.mockResolvedValue(response({ recovered: true }));
+    expect(await requestJson('https://example.com/slow.json')).toEqual({ recovered: true });
+    expect(jest.getTimerCount()).toBe(0);
+  });
+
   test('bypasses native HTTP caches with a timestamp query', async () => {
     fetchMock.mockResolvedValue(response({ ok: true }));
     await requestJson('https://example.com/manifest.json');

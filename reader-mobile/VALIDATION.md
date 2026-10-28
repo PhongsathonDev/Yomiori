@@ -58,3 +58,7 @@ TypeScript, Expo lint and all 59 Jest tests pass. Added regression coverage for 
 ## Bundled offline availability follow-up — 28 October 2026
 
 Bundled Black Cat chapters and Kyudo chapter 1 now share the same local lookup used by reading, offline status and chapter discovery. Saved chapter files still take precedence. Bundled text is not copied into downloaded storage when requesting missing illustrations. Chapter lists check whether bundled illustrations are present before reporting completeness. The offline management label describes availability without claiming bundled chapters were downloaded. TypeScript, lint and 60 Jest tests pass; native Android filesystem and performance checks remain pending.
+
+## Concurrent refresh follow-up — 28 October 2026
+
+Requests for the same URL share in-flight headers/body parsing and a ten-second deadline. Successful and failed requests release their entry, so later refreshes fetch new data and retries recover after HTTP failures or timeouts. Different URLs proceed independently. TypeScript, Expo lint and all 63 Jest tests pass, including stalled-body sharing, fresh subsequent reads, failed-request retries and unrelated requests during a stall. This reduces duplicate network work; it does not establish Android startup timing. No APK build was triggered.
