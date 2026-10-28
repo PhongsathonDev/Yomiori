@@ -113,6 +113,13 @@ export interface ReadingProgress {
   chapterId: string;
   scrollPercent: number;
   updatedAt: number;
+  anchor?: ReadingAnchor;
+}
+
+export interface ReadingAnchor {
+  blockId: string;
+  blockIndex: number;
+  fraction: number;
 }
 
 export interface CommentItem {

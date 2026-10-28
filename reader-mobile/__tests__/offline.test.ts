@@ -256,6 +256,36 @@ describe('metadata, settings and progress compatibility', () => {
     expect(fs.readAsStringAsync).toHaveBeenCalled();
   });
 
+  test('reading progress keeps a valid anchor and ignores a malformed anchor', async () => {
+    const anchor = { blockId: 'b-1', blockIndex: 0, fraction: 0.4 };
+    await saveReadingProgress(chapter.novelId, chapter.id, 42, anchor);
+    expect(await getReadingProgress(chapter.novelId)).toMatchObject({ scrollPercent: 42, anchor });
+    await AsyncStorage.setItem(`yomiori_progress_${chapter.novelId}`, JSON.stringify({
+      novelId: chapter.novelId, chapterId: chapter.id, scrollPercent: 42, updatedAt: 1,
+      anchor: { ...anchor, fraction: 5 },
+    }));
+    expect(await getReadingProgress(chapter.novelId)).toEqual({ novelId: chapter.novelId, chapterId: chapter.id, scrollPercent: 42, updatedAt: 1 });
+  });
+
+  test('discard a scan that finishes after the chapter is replaced', async () => {
+    await saveChapterOffline(chapter);
+    let finishScan!: (names: string[]) => void;
+    fs.readDirectoryAsync.mockReturnValueOnce(new Promise(resolve => { finishScan = resolve; }));
+    const scan = getSavedNovel(chapter.novelId);
+    await saveChapterOffline({ ...chapter, title: 'Replaced' });
+    finishScan([`${chapter.id}.json`]);
+    expect((await scan)?.chapters[0].title).toBe('Replaced');
+  });
+
+  test('invalidates the summary after illustration download and library clear', async () => {
+    await saveChapterOffline(illustrated);
+    expect((await getSavedNovel(chapter.novelId))?.chapters[0].offlineStatus).toBe('text-only');
+    await cacheIllustrationOffline(chapter.novelId, '/illustrations/page.jpg');
+    expect((await getSavedNovel(chapter.novelId))?.chapters[0].offlineStatus).toBe('complete');
+    await clearNovelOfflineStorage(chapter.novelId);
+    expect(await getSavedNovel(chapter.novelId)).toBeNull();
+  });
+
   test('bundled reading and explicit download do not request a stalled CDN first', async () => {
     fetchMock.mockReturnValue(new Promise(() => undefined));
     expect((await getChapterForReading('black-cat-hangout', 'ch-60')).chapter?.id).toBe('ch-60');

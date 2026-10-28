@@ -1,6 +1,6 @@
 import * as FileSystem from 'expo-file-system/legacy';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Chapter, ReaderTheme, ReadingProgress, ReaderFont, ReaderLineHeight, ChapterOfflineStatus, CommentItem, SavedNovelSummary } from '../types';
+import { Chapter, ReaderTheme, ReadingProgress, ReadingAnchor, ReaderFont, ReaderLineHeight, ChapterOfflineStatus, CommentItem, SavedNovelSummary } from '../types';
 import bundledCh01 from '../data/novels/kyudo-senpai/chapters/ch-01.json';
 import { blackCatChapters } from '../data/novels/black-cat-hangout/chapters';
 import { isChapter, isRecord, isSafeId } from './validation';
@@ -145,6 +145,7 @@ export async function saveChapterOffline(chapter: Chapter, generation = getOffli
   if (!isChapter(chapter)) throw new Error('Invalid chapter');
   return enqueueFile(chapter.novelId, async () => {
     checkGeneration(chapter.novelId, generation);
+    markFilesChanged(chapter.novelId);
     const path = getChapterFilePath(chapter.novelId, chapter.id);
     const temporary = `${path}.tmp`;
     const backup = `${path}.bak`;
@@ -176,6 +177,7 @@ export async function saveChapterOffline(chapter: Chapter, generation = getOffli
 export async function deleteChapterOffline(novelId: string, chapterId: string): Promise<void> {
   await enqueueFile(novelId, async () => {
     const path = getChapterFilePath(novelId, chapterId);
+    markFilesChanged(novelId);
     try {
       await FileSystem.deleteAsync(path, { idempotent: true });
       await FileSystem.deleteAsync(`${path}.bak`, { idempotent: true });
@@ -187,6 +189,7 @@ export async function clearNovelOfflineStorage(novelId: string): Promise<void> {
   const dir = novelDirectory(novelId);
   // Invalidate already-started fetches before waiting for a file operation.
   generations.set(novelId, getOfflineGeneration(novelId) + 1);
+  markFilesChanged(novelId);
   await enqueueFile(novelId, async () => {
     try { await FileSystem.deleteAsync(dir, { idempotent: true }); }
     finally { markFilesChanged(novelId); }
@@ -275,8 +278,9 @@ export async function cacheIllustrationOffline(novelId: string, src: string, gen
       if (!info.exists || info.isDirectory || info.size === 0) throw new Error('Empty illustration');
       await enqueueFile(novelId, async () => {
         checkGeneration(novelId, generation);
-        await FileSystem.moveAsync({ from: temporary, to: path });
         markFilesChanged(novelId);
+        try { await FileSystem.moveAsync({ from: temporary, to: path }); }
+        finally { markFilesChanged(novelId); }
       });
       return path;
     } finally {
@@ -330,9 +334,17 @@ export async function getSavedLineHeight(): Promise<ReaderLineHeight> {
 }
 export const saveLineHeight = (ratio: ReaderLineHeight) => AsyncStorage.setItem('yomiori_line_height', String(ratio));
 
-export function saveReadingProgress(novelId: string, chapterId: string, percent: number): Promise<void> {
+function validReadingAnchor(value: unknown): value is ReadingAnchor {
+  return isRecord(value) && isSafeId(value.blockId) && typeof value.blockIndex === 'number'
+    && Number.isSafeInteger(value.blockIndex) && value.blockIndex >= 0
+    && typeof value.fraction === 'number' && Number.isFinite(value.fraction)
+    && value.fraction >= 0 && value.fraction <= 1;
+}
+
+export function saveReadingProgress(novelId: string, chapterId: string, percent: number, anchor?: ReadingAnchor): Promise<void> {
   if (!isSafeId(novelId) || !isSafeId(chapterId) || !Number.isFinite(percent)) return Promise.resolve();
   const progress: ReadingProgress = { novelId, chapterId, scrollPercent: Math.max(0, Math.min(100, percent)), updatedAt: Date.now() };
+  if (validReadingAnchor(anchor)) progress.anchor = anchor;
   return enqueueProgress(novelId, () => AsyncStorage.setItem(`yomiori_progress_${novelId}`, JSON.stringify(progress)));
 }
 
@@ -344,7 +356,8 @@ export async function getReadingProgress(novelId: string): Promise<ReadingProgre
       if (!isRecord(value) || value.novelId !== novelId || !isSafeId(value.chapterId)
         || typeof value.scrollPercent !== 'number' || !Number.isFinite(value.scrollPercent)
         || typeof value.updatedAt !== 'number' || !Number.isFinite(value.updatedAt)) return null;
-      return { novelId, chapterId: value.chapterId, scrollPercent: Math.max(0, Math.min(100, value.scrollPercent)), updatedAt: value.updatedAt };
+      return { novelId, chapterId: value.chapterId, scrollPercent: Math.max(0, Math.min(100, value.scrollPercent)), updatedAt: value.updatedAt,
+        ...(validReadingAnchor(value.anchor) ? { anchor: value.anchor } : {}) };
     } catch { return null; }
   });
 }
