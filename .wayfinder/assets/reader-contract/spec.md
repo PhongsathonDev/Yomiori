@@ -28,7 +28,7 @@ Opening a saved chapter and pulling to refresh metadata preserve its text snapsh
 
 ## Reader direction awaiting user visual acceptance
 
-Use overlay header/dock with stable content spacing, previous/contents/settings/next shortcuts, a chapter-position label and progress, theme controls grouped with font settings, and chapter continuation before comments. Keep current fonts, palettes, Thai text and Dialogue Cards. The [interactive layout companion](../reader-layout/preview.html) is a browser reconstruction, not a native screenshot. It cannot establish Thai wrapping, safe areas, image gestures or accessibility on Android. WF-0006 remains open until the user reviews and accepts or requests changes.
+After the user rejected the large, prominent companion, use a compact overlay header and a single row of muted icon shortcuts for previous/contents/settings/next/hide, plus a small reading percentage. Keep 48-point tap targets and accessible labels, including chapter position; the header shows a single small title line. Keep theme controls grouped with font settings and chapter continuation before comments. Keep current fonts, palettes, Thai text and Dialogue Cards. The [interactive layout companion](../reader-layout/preview.html) is a browser reconstruction, not a native screenshot. It cannot establish Thai wrapping, safe areas, image gestures or accessibility on Android. WF-0006 remains open until the user reviews and accepts or requests changes.
 
 ## Acceptance matrix
 

@@ -88,8 +88,8 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const [lineHeightRatio, setLineHeightRatio] = useState<LineHeightOption>(1.85);
   const [showControls, setShowControls] = useState(true);
   const [showTypographyModal, setShowTypographyModal] = useState(false);
-  const [headerHeight, setHeaderHeight] = useState(68);
-  const [dockHeight, setDockHeight] = useState(124);
+  const [headerHeight, setHeaderHeight] = useState(48);
+  const [dockHeight, setDockHeight] = useState(54);
 
   // Lightbox Modal State
   const [lightboxVisible, setLightboxVisible] = useState(false);

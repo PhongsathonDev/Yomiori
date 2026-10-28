@@ -9,3 +9,7 @@ Query parameters: `theme=light|dark|sepia`, `size=14..26`, `sheet=1`. The tools 
 Inspected in Chrome at 390×844/light/17, 320×720/dark/26, 320×720/sepia/settings and 768×1024/light/19. No horizontal page overflow was visible. The native implementation retains a two-line settings preview, native theme icons and measured safe-area spacing, which this companion only approximates. Native Thai wrapping, safe areas, gestures, accessibility scaling and performance remain device checks.
 
 Direction implemented: fixed overlays that do not resize the reading viewport when hidden; chapter position plus previous/contents/settings/next shortcuts; themes grouped with typography; left-aligned chapter titles and paragraphs; chapter continuation before comments. Existing palette, Thai fonts and Dialogue Cards are retained. User visual feedback is still pending in WF-0006.
+
+## Minimal revision after user feedback
+
+The user found the first companion too large and prominent. The current generator and native Reader use a single row of muted 18-point icons without colored button panels or visible text labels, a single-line 12-point header, and an icon-only reveal button. Native tap targets remain 48 points. Initial content spacing follows the shorter controls. The earlier Chrome inspection above applies to the preceding layout; the new revision has not been visually accepted or checked on Android. TypeScript, lint and all 66 tests pass for this revision.
