@@ -103,7 +103,7 @@ const ch03Speakers = [
 ];
 
 function buildChapter(chNum, rawFilename, speakerRules) {
-  const rawPath = path.resolve('../novels_source/kyudo-senpai/raw_chapters', rawFilename);
+  const rawPath = path.resolve('../novels_source/kyudo-senpai', rawFilename);
   const rawContent = fs.readFileSync(rawPath, 'utf8');
 
   let title = `ตอนที่ ${chNum}`;

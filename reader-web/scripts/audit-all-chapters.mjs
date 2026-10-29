@@ -7,7 +7,7 @@ const validCharacterIds = new Set(charactersData.map(c => c.id));
 // Also add 'unknown' or any generic if allowed, but we want to detect if unknown exists
 console.log('Known character IDs:', Array.from(validCharacterIds));
 
-const rawDir = '../novels_source/kyudo-senpai/raw_chapters';
+const rawDir = '../novels_source/kyudo-senpai';
 const chaptersDir = 'src/data/novels/kyudo-senpai/chapters';
 
 function cleanText(str) {

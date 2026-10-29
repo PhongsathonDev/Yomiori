@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const rawDir = path.resolve('../novels_source/kyudo-senpai/raw_chapters');
+const rawDir = path.resolve('../novels_source/kyudo-senpai');
 const chaptersDir = path.resolve('src/data/novels/kyudo-senpai/chapters');
 
 const rawFiles = fs.readdirSync(rawDir).filter(f => f.endsWith('.md') && /^Ch[._]\d+/i.test(f)).sort((a,b) => {

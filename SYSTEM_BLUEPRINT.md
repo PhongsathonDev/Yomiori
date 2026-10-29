@@ -77,7 +77,7 @@
 ### 3.3 เครื่องยนต์แปลงเนื้อหาด้วย AI (Antigravity AI Agent Ingestion)
 * **Model & Runtime:** ใช้ Antigravity AI ในตัว IDE โดยตรง (ฟรี รวดเร็ว ประหยัด ไม่ต้องตั้งค่า API Key หรือเสียค่าบริการภายนอก)
 * **กระบวนการทำงาน:**
-  1. ผู้ใช้วางไฟล์นิยายดิบ (Markdown / Text) ไว้ในโฟลเดอร์สำหรับจัดเก็บเนื้อหาตั้งต้น (เช่น `raw_staging/` หรือ `01_Original_Chapters/`)
+  1. ผู้ใช้วางไฟล์นิยายดิบ (Markdown / Text) ไว้ใน `novels_source/<novel-id>/` โดยตรง ไม่แยกโฟลเดอร์ staging หรือโฟลเดอร์ซ้อนสำหรับไฟล์ตอน
   2. สั่ง Antigravity ในแชท IDE ให้แปลงตอนที่ต้องการ
   3. Antigravity จะอ่านโครงสร้าง ตรวจสอบรายชื่อตัวละครในสมุดรายชื่อ (Character Roster) และแปลงเป็น Structured JSON (แยก Narration vs Dialogue พร้อมใส่ Speaker ID และสี) บันทึกเข้าสู่ระบบเว็บโดยตรง
 * **Structured Output Schema:**
@@ -93,9 +93,8 @@
   }
   ```
 
-### 3.4 โฟลเดอร์นำเข้าและคลังข้อมูล (Multi-Novel Staging & Data Storage)
-* **Raw Source Repository (`novels_source/`):** จัดเก็บไฟล์ต้นฉบับแยกตามเรื่องอย่างเป็นระเบียบ เช่น `novels_source/kyudo-senpai/` และ `novels_source/idol-neighbor/`
-* **Dropzone Staging Folder (`raw_chapters/`):** โฟลเดอร์กลางสำหรับวางไฟล์ใหม่ชั่วคราวก่อนย้ายเข้า novel source
+### 3.4 โฟลเดอร์นำเข้าและคลังข้อมูล (Multi-Novel Source & Data Storage)
+* **Source Repository (`novels_source/`):** คลังต้นฉบับเพียงแห่งเดียว จัดเก็บไฟล์ตอนในโฟลเดอร์เรื่องโดยตรง เช่น `novels_source/kyudo-senpai/Ch_01_<ชื่อตอน>.md` พร้อม metadata/สารบัญและ `illustrations/` ตาม [มาตรฐานต้นฉบับ](novels_source/README.md) ไม่แยกโฟลเดอร์รับเข้าชั่วคราว
 * **Structured Data per Novel (`reader-web/src/data/novels/<novel-id>/`):** 
   * `characters.json`: รายชื่อและโทนสีตัวละครเฉพาะเรื่องนั้น
   * `chapters/`: ตอนแต่ละตอน (ch-01.json, ch-02.json, ...)
@@ -149,6 +148,5 @@
 - [x] เพิ่มระบบ Dynamic Character Discovery ลงทะเบียนตัวละครใหม่สู่อัตโนมัติใน [characters.json](file:///d:/Yomiori/reader-web/src/data/novels/kyudo-senpai/characters.json)
 - [x] แปลงและเพิ่มตอนที่ 4 ถึงตอนที่ 9 ของเรื่อง *รุ่นพี่สาวสวยจากชมรมยิงธนู* ผ่านการตรวจสอบ 100% Fidelity (Anti-Lazy Batch Protocol)
 - [x] อัปเดตคู่มือ [AI_CONVERSION_GUIDE.md](file:///d:/Yomiori/AI_CONVERSION_GUIDE.md) ด้วย Anti-Lazy Batch Protocol Template
-
 
 

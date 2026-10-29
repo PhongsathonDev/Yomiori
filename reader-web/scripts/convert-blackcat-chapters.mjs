@@ -10,7 +10,7 @@ import { parseArgs } from 'node:util';
  */
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const RAW_DIR = path.resolve(__dirname, '../../novels_source/black-cat-hangout/raw_chapters');
+const RAW_DIR = path.resolve(__dirname, '../../novels_source/black-cat-hangout');
 const OUT_DIR = path.resolve(__dirname, '../src/data/novels/black-cat-hangout/chapters');
 
 const NOVEL_ID = 'black-cat-hangout';

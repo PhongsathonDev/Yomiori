@@ -18,7 +18,7 @@ Yomiori is a cross-platform novel reading platform consisting of:
 Whenever the user asks to add, convert, update, or import new chapters for any novel, you **MUST complete ALL 6 steps below**. Skipping any step will break the mobile app (resulting in 404 Chapter Not Found or missing chapters in the list).
 
 ### Step 1: Parse and Convert Chapter to Structured JSON
-- Read raw chapter from `novels_source/<novel-id>/raw_chapters/`.
+- Read raw chapter directly from `novels_source/<novel-id>/` (for example, `Ch_01_<title>.md`). Keep all novel sources under `novels_source/`; do not create a separate staging folder or nested chapter-source folder.
 - Convert into `reader-web/src/data/novels/<novel-id>/chapters/ch-XX.json`:
   - `blocks`: Split between `narration` and `dialogue`.
   - Every `dialogue` block must have a valid `speakerId` and `speakerName`.

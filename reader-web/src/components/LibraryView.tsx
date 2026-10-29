@@ -789,7 +789,7 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
               </div>
               <div style={{ fontWeight: 800, fontSize: '1.05rem', marginBottom: '6px' }}>+ เพิ่มนิยายเรื่องใหม่</div>
               <p style={{ fontSize: '0.8rem', color: 'var(--text-faint)', maxWidth: '220px', lineHeight: 1.5 }}>
-                วางไฟล์เนื้อหาในโฟลเดอร์ <code style={{ color: 'var(--accent-primary)' }}>raw_chapters/</code> เพื่อแปลงเข้าสู่ระบบ
+                วางไฟล์เนื้อหาในโฟลเดอร์ <code style={{ color: 'var(--accent-primary)' }}>{'novels_source/<novel-id>/'}</code> เพื่อแปลงเข้าสู่ระบบ
               </p>
             </div>
           </div>

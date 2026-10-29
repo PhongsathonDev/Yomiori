@@ -29,7 +29,7 @@ test('every remaining source chapter is either converted or explicitly skipped, 
 for (const number of status.convertedChapters) {
   test(`Ch.${number}: exact text fidelity, valid speakers and identical mobile copy`, () => {
     const metadata = source.chapters.find(chapter => Number(chapter.chapterNo) === number);
-    const rawPath = path.join(sourceDir, 'raw_chapters', metadata.file);
+    const rawPath = path.join(sourceDir, metadata.file);
     const raw = fs.readFileSync(rawPath, 'utf8');
     // Strip only metadata, retaining all prose, punctuation and quoted text.
     const paragraphs = raw.split(/\r?\n/)

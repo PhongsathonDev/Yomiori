@@ -114,13 +114,13 @@ test('fresh import stores all source items, local images, credits and valid TOC 
   assert.deepEqual(source.chapters.map((chapter) => chapter.chapterNo), ['0', '1', '84.5']);
   assert.equal(load().scrapedAt, '2026-10-29T08:00:00.000Z');
   for (const chapter of source.chapters) {
-    const md = fs.readFileSync(path.join(root, 'raw_chapters', chapter.file), 'utf8');
+    const md = fs.readFileSync(path.join(root, chapter.file), 'utf8');
     assert.ok(md.includes(`Source: ${chapter.url}`));
     assert.ok(md.includes('By ผู้แปล'));
     assert.ok(md.includes('“ข้อความครบ & ตรง”'));
     assert.ok(md.includes('หมายเหตุท้ายตอน'));
     const image = md.match(/!\[Illustration\]\(([^)]+)\)/)[1];
-    assert.ok(fs.existsSync(path.resolve(root, 'raw_chapters', image)));
+    assert.ok(fs.existsSync(path.resolve(root, image)));
     assert.match(chapter.images[0].file, /\.png$/);
     assert.match(chapter.images[0].source, /^https:\/\/www\.nekopost\.net\/images\//);
   }
@@ -131,6 +131,7 @@ test('fresh import stores all source items, local images, credits and valid TOC 
   assert.ok(overview.includes('%28'));
   assert.ok(overview.includes('%23'));
   assert.equal(state.requests.filter((request) => request.url.endsWith('/handler/cinfo')).length, 3);
+  assert.deepEqual(fs.readdirSync(root, { withFileTypes: true }).filter((entry) => entry.isDirectory()).map((entry) => entry.name), ['illustrations']);
 });
 
 test('incremental --only merges previous chapters, images and preserves existing filenames', async (t) => {
@@ -150,7 +151,7 @@ test('repeated import skips downloads without erasing image mapping or edited bo
   const { run, state, root, load } = fixture(t);
   await run();
   const before = load().chapters;
-  const file = path.join(root, 'raw_chapters', before[1].file);
+  const file = path.join(root, before[1].file);
   fs.appendFileSync(file, '\nข้อความแก้ด้วยมือ\n');
   state.requests.length = 0;
   await run();
@@ -169,8 +170,8 @@ test('changed titles do not produce duplicate files; force refreshes content but
   await run({ only: ['1'], force: true });
   assert.equal(load().chapters[0].file, original.file);
   assert.equal(load().chapters[0].chapterName, 'ชื่อใหม่');
-  assert.equal(fs.readdirSync(path.join(root, 'raw_chapters')).length, 1);
-  assert.ok(fs.readFileSync(path.join(root, 'raw_chapters', original.file), 'utf8').includes('ชื่อใหม่'));
+  assert.equal(fs.readdirSync(root).filter((file) => /^Ch[._]/.test(file)).length, 1);
+  assert.ok(fs.readFileSync(path.join(root, original.file), 'utf8').includes('ชื่อใหม่'));
 });
 
 test('failed later chapter leaves earlier progress registered and resumable', async (t) => {
@@ -191,7 +192,7 @@ test('failed image or empty body is not registered as a successful chapter', asy
   state.invalidImage = false;
   state.bodies.set(101, '<p> </p>');
   await assert.rejects(run({ only: ['1'] }), /Empty chapter/);
-  assert.equal(fs.readdirSync(path.join(root, 'raw_chapters')).length, 0);
+  assert.equal(fs.readdirSync(root).filter((file) => /^Ch[._]/.test(file)).length, 0);
 });
 
 test('unknown requested chapter and project mismatch fail without rewriting sources', async (t) => {
@@ -209,9 +210,8 @@ test('unknown requested chapter and project mismatch fail without rewriting sour
 
 test('refuses unregistered files even with --force', async (t) => {
   const { run, state, root } = fixture(t);
-  const rawDir = path.join(root, 'raw_chapters');
-  fs.mkdirSync(rawDir, { recursive: true });
-  const file = path.join(rawDir, chapterFileName(state.project.ListChapter[1]));
+  fs.mkdirSync(root, { recursive: true });
+  const file = path.join(root, chapterFileName(state.project.ListChapter[1]));
   fs.writeFileSync(file, 'user work');
   await assert.rejects(run({ only: ['1'], force: true }), /Unregistered chapter/);
   assert.equal(fs.readFileSync(file, 'utf8'), 'user work');

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const NOVEL_ID = 'kyudo-senpai';
-const RAW_DIR = path.resolve('../novels_source', NOVEL_ID, 'raw_chapters');
+const RAW_DIR = path.resolve('../novels_source', NOVEL_ID);
 const DATA_DIR = path.resolve('src/data/novels', NOVEL_ID, 'chapters');
 const CHAR_PATH = path.resolve('src/data/novels', NOVEL_ID, 'characters.json');
 

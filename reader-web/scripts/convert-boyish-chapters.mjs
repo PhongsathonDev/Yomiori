@@ -6,7 +6,7 @@ import { verifyChapter } from './verify-conversion.mjs';
 const NOVEL_ID = 'boyish-friend';
 const NOVEL_TITLE = '[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน';
 const SCRIPT_DIR = import.meta.dirname;
-const RAW_DIR = path.resolve(SCRIPT_DIR, '../../novels_source', NOVEL_ID, 'raw_chapters');
+const RAW_DIR = path.resolve(SCRIPT_DIR, '../../novels_source', NOVEL_ID);
 const DATA_DIR = path.resolve(SCRIPT_DIR, '../src/data/novels', NOVEL_ID, 'chapters');
 
 if (!fs.existsSync(DATA_DIR)) {

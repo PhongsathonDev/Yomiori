@@ -124,7 +124,7 @@ function renderChapter(chapter, html, images) {
   let index = 0;
   const body = html.replace(/<img\b[^>]*>/gi, () => {
     const image = images[index++];
-    return `\n\n![Illustration](../${image.file})\n\n`;
+    return `\n\n![Illustration](${image.file})\n\n`;
   });
   const paragraphs = htmlToLines(body);
   // Do not guess whether the first paragraph is a duplicate title: it may be prose.
@@ -167,7 +167,7 @@ function readExisting(root, projectId) {
       throw new Error('Duplicate or invalid chapter in existing source registry.');
     }
     if (typeof chapter.file !== 'string' || chapter.file.includes('/')) throw new Error('Expected chapter filename only');
-    localFile(path.join(root, 'raw_chapters'), chapter.file);
+    localFile(root, chapter.file);
     if (!Array.isArray(chapter.images)) throw new Error('Existing chapter has no image registry');
     for (const image of chapter.images) localFile(root, image.file, 'illustrations/');
     ids.add(String(chapter.chapterId)); numbers.add(no); files.add(chapter.file);
@@ -198,7 +198,7 @@ function renderOverview(source, available) {
     `- **รายการต้นทางที่ยังไม่ได้เก็บ:** ${missing.length ? missing.join(', ') : 'ไม่มี'}`,
     `- **วันที่ดึงข้อมูล:** ${source.scrapedAt}`, '',
     '## เรื่องย่อ', source.synopsis || '-', '', '## สารบัญ',
-    ...source.chapters.map((chapter) => `- **Ch.${chapter.chapterNo}:** ${chapter.chapterName} — [${chapter.file}](${markdownLink('raw_chapters/' + chapter.file)})`), '',
+    ...source.chapters.map((chapter) => `- **Ch.${chapter.chapterNo}:** ${chapter.chapterName} — [${chapter.file}](${markdownLink(chapter.file)})`), '',
   ].join('\n');
 }
 
@@ -269,11 +269,10 @@ async function scrape(options, dependencies = {}) {
   const log = dependencies.log || console.log;
   const now = dependencies.now || (() => new Date().toISOString());
   const root = path.join(dependencies.sourceRoot || path.resolve(__dirname, '../novels_source'), slug);
-  const rawDir = path.join(root, 'raw_chapters');
   const previous = readExisting(root, projectId);
   // Missing old files must not be silently carried into the next snapshot.
   for (const chapter of previous?.chapters || []) {
-    if (!fs.existsSync(localFile(rawDir, chapter.file))) throw new Error(`Missing registered chapter: ${chapter.file}`);
+    if (!fs.existsSync(localFile(root, chapter.file))) throw new Error(`Missing registered chapter: ${chapter.file}`);
     for (const image of chapter.images) {
       if (!fs.existsSync(localFile(root, image.file, 'illustrations/'))) throw new Error(`Missing registered image: ${image.file}`);
     }
@@ -311,7 +310,7 @@ async function scrape(options, dependencies = {}) {
   let overview = fs.existsSync(overviewPath) ? fs.readFileSync(overviewPath, 'utf8') : '';
   // Validate markers before any chapter is changed.
   mergeOverview('', overview);
-  fs.mkdirSync(rawDir, { recursive: true });
+  fs.mkdirSync(root, { recursive: true });
   fs.mkdirSync(path.join(root, 'illustrations'), { recursive: true });
   const info = project.Project;
   const source = {
@@ -334,7 +333,7 @@ async function scrape(options, dependencies = {}) {
     const old = records.get(id);
     if (old && !force) { log(`  skip Ch.${chapter.ChapterNo} (registered; metadata/images preserved)`); continue; }
     const file = old?.file || chapterFileName(chapter);
-    const target = localFile(rawDir, file);
+    const target = localFile(root, file);
     if (!old && fs.existsSync(target)) throw new Error(`Unregistered chapter file exists; refusing to overwrite: ${file}`);
     const url = `${BASE}/novel/${projectId}/${chapter.ChapterNo}`;
     const data = JSON.parse(decrypt(await post(`${BASE}/handler/cinfo`, { p: projectId, c: chapter.ChapterID }, 'text/plain;charset=UTF-8')));

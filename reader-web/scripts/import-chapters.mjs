@@ -9,7 +9,7 @@ import path from 'node:path';
 
 const SCRIPT_DIR = import.meta.dirname;
 const NOVEL_ID = process.argv[3] || 'kyudo-senpai';
-const RAW_DIR = path.resolve(SCRIPT_DIR, '../../novels_source', NOVEL_ID, 'raw_chapters');
+const RAW_DIR = path.resolve(SCRIPT_DIR, '../../novels_source', NOVEL_ID);
 const DATA_DIR = path.resolve(SCRIPT_DIR, '../src/data/novels', NOVEL_ID, 'chapters');
 const CHARACTERS_PATH = path.resolve(SCRIPT_DIR, '../src/data/novels', NOVEL_ID, 'characters.json');
 

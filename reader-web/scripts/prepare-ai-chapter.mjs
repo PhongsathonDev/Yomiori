@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const rawDir = path.resolve(import.meta.dirname, '../../novels_source/kyudo-senpai/raw_chapters');
+const rawDir = path.resolve(import.meta.dirname, '../../novels_source/kyudo-senpai');
 
 export function prepareChapterForAI(chNum) {
   const files = fs.readdirSync(rawDir);

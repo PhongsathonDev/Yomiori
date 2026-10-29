@@ -35,7 +35,6 @@ if (!fs.existsSync(sourcePath)) {
 }
 
 const source = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
-const rawDir = path.join(root, 'raw_chapters');
 const renames = [];
 
 for (const chapter of source.chapters || []) {
@@ -43,8 +42,8 @@ for (const chapter of source.chapters || []) {
   const next = chapterFileName(chapter);
   if (next === chapter.file) continue;
 
-  const from = path.join(rawDir, chapter.file);
-  const to = path.join(rawDir, next);
+  const from = path.join(root, chapter.file);
+  const to = path.join(root, next);
   if (!fs.existsSync(from)) {
     console.warn(`skip (missing): ${chapter.file}`);
     continue;
@@ -82,7 +81,7 @@ for (const oldOverview of overviews) {
   }
 
   const toc = (source.chapters || [])
-    .map((c) => `- **Ch.${c.chapterNo}:** ${c.chapterName} — [${c.file}](${markdownLink('raw_chapters/' + c.file)})`)
+    .map((c) => `- **Ch.${c.chapterNo}:** ${c.chapterName} — [${c.file}](${markdownLink(c.file)})`)
     .join('\n');
   // Only replace the TOC section, not generated markers or hand-written notes.
   const afterHeading = markerIndex + marker.length;
@@ -93,13 +92,11 @@ for (const oldOverview of overviews) {
 
 // Final guard: no component may approach NAME_MAX.
 let tooLong = 0;
-for (const dir of [root, rawDir]) {
-  for (const name of fs.readdirSync(dir)) {
-    const bytes = Buffer.byteLength(name, 'utf8');
-    if (bytes > MAX_NAME_BYTES) {
-      tooLong++;
-      console.error(`too long (${bytes} bytes): ${path.join(dir, name)}`);
-    }
+for (const name of fs.readdirSync(root)) {
+  const bytes = Buffer.byteLength(name, 'utf8');
+  if (bytes > MAX_NAME_BYTES) {
+    tooLong++;
+    console.error(`too long (${bytes} bytes): ${path.join(root, name)}`);
   }
 }
 
