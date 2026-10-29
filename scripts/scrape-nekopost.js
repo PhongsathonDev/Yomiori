@@ -116,7 +116,11 @@ function sanitizeFileName(name, max = 90, maxBytes = 190) {
 
 function chapterFileName(chapter) {
   const no = chapterNumber(chapter.ChapterNo).padStart(2, '0');
-  const title = sanitizeFileName(chapter.ChapterName);
+  // A real title may consist only of dots (project 14982, Ch.116). Use its
+  // source identity for the filename only; keep the original title in content/metadata.
+  const title = sanitizeFileName(chapter.ChapterName) ||
+    (String(chapter.ChapterName || '').trim() && /^[1-9]\d*$/.test(String(chapter.ChapterID))
+      ? `chapter-${chapter.ChapterID}` : '');
   if (!title) throw new Error(`Chapter ${no} has no usable title`);
   const file = `Ch_${no}_${title}.md`;
   if (Buffer.byteLength(file, 'utf8') > 200) throw new Error(`Filename exceeds 200 bytes: ${file}`);

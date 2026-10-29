@@ -87,6 +87,23 @@ test('entities decode once and invalid codepoints do not lose text', () => {
     '&lt; … 😀 " &unknown; &#99999999;');
 });
 
+test('dot-only source titles get identity filenames without inventing chapter titles', async (t) => {
+  assert.equal(chapterFileName({ ChapterNo: '116', ChapterID: 169660, ChapterName: '.....' }),
+    'Ch_116_chapter-169660.md');
+  for (const ChapterName of ['', ' ', null]) {
+    assert.throws(() => chapterFileName({ ChapterNo: '116', ChapterID: 169660, ChapterName }), /no usable title/);
+  }
+  assert.throws(() => chapterFileName({ ChapterNo: '116', ChapterID: '../unsafe', ChapterName: '.....' }), /no usable title/);
+  const { run, state, root } = fixture(t);
+  state.project.ListChapter[1].ChapterName = '.....';
+  const source = await run({ only: ['1'] });
+  const chapter = source.chapters[0];
+  assert.equal(chapter.file, 'Ch_01_chapter-101.md');
+  assert.equal(chapter.chapterName, '.....');
+  assert.ok(fs.readFileSync(path.join(root, chapter.file), 'utf8').startsWith('# Ch.1 — .....\n'));
+  assert.deepEqual((await run({ only: ['1'] })).chapters[0], chapter);
+});
+
 test('HTML preserves first paragraph, scene breaks, notes and decoded angle brackets', () => {
   const html = '<p>บทที่ 1 เป็นเนื้อเรื่อง</p><p>&lt;คำ&gt;<br>“พูด”</p><hr><p>หมายเหตุ</p>';
   assert.deepEqual(htmlToLines(html), ['บทที่ 1 เป็นเนื้อเรื่อง', '<คำ>', '“พูด”', '---', 'หมายเหตุ']);
