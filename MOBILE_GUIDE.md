@@ -1,21 +1,19 @@
 # คู่มือการใช้งานและ Build แอปมือถือ Yomiori (Reader Mobile)
 
-โปรเจกต์ **reader-mobile** พัฒนาด้วย **React Native + Expo** ออกแบบมาสำหรับเปิดอ่านนิยายแบบพกพา รองรับการอ่านแบบ **Offline 100%** พร้อมระบบดาวน์โหลดตอนตามสั่ง (On-Demand Download) ผ่าน GitHub Pages CDN
+โปรเจกต์ **reader-mobile** พัฒนาด้วย **React Native + Expo** อ่านข้อความที่บันทึกไว้หรือ bundled ได้ออฟไลน์ ส่วนภาพประกอบต้องตรวจความครบแยกตาม [คำศัพท์ผลิตภัณฑ์](CONTEXT.md) เอกสารนี้เป็นคู่มือติดตั้ง/เปิดแอป/สั่ง build; กติกาเขียนโค้ดอยู่ใน [mobile AGENTS.md](reader-mobile/AGENTS.md) และขั้นตอนตรวจงานอยู่ใน [VALIDATION.md](reader-mobile/VALIDATION.md)
 
 ---
 
-## 📱 1. วิธีเปิดทดสอบบนมือถือของคุณ (ผ่าน Expo Go)
+## 📱 1. ติดตั้ง dependencies และเปิดแอป
 
-คุณสามารถเปิดทดสอบบนมือถือจริงได้ทันทีโดยไม่ต้องต่อสาย:
+รันจากโฟลเดอร์ `reader-mobile` ซึ่งใช้ npm และ package-lock.json:
 
-1. โหลดแอป **Expo Go** จาก Google Play Store ลงในมือถือ Android
-2. ในเครื่องคอมพิวเตอร์ เปิด Terminal เข้าโฟลเดอร์ `reader-mobile`:
-   ```bash
-   cd reader-mobile
-   npx expo start
-   ```
-3. ใช้กล้องมือถือหรือแอป Expo Go สแกน **QR Code** ที่ขึ้นใน Terminal
-4. หน้าจอแอป Yomiori Mobile จะเปิดขึ้นบนมือถือของคุณทันที!
+```sh
+npm ci
+npm start
+```
+
+เลือก client/อุปกรณ์ตามคำแนะนำของ Expo CLI และ SDK ใน package.json ใช้ Expo Go ได้เมื่อเวอร์ชันและ native modules เข้ากันได้; ถ้าต้องใช้ development build ให้ทำตามเอกสาร Expo ที่ตรง SDK ตาม mobile AGENTS.md ไม่รับรองว่า Expo Go จาก Store จะใช้ได้กับทุก SDK
 
 ---
 
@@ -23,26 +21,20 @@
 
 โปรเจกต์ตั้งค่าไฟล์ `eas.json` ไว้เป็นโหมด **APK Standalone** เรียบร้อยแล้ว (สามารถติดตั้งบนมือถือได้โดยตรง ไม่ต้องผ่าน Google Play):
 
-1. ติดตั้ง EAS CLI (ทำครั้งเดียว):
-   ```bash
-   npm install -g eas-cli
-   ```
-2. ล็อกอินบัญชี Expo (สมัครฟรีที่ expo.dev):
-   ```bash
-   eas login
-   ```
-3. สั่ง Build เป็นไฟล์ APK บน Cloud:
-   ```bash
-   cd reader-mobile
-   eas build -p android --profile preview
-   ```
-4. เมื่อระบบคอมไพล์เสร็จ จะมี **ลิงก์ดาวน์โหลดไฟล์ `.apk`** และ QR Code ให้สแกนโหลดลงมือถือเพื่อกดติดตั้งได้ทันที!
+รันจาก `reader-mobile` หลังตรวจงานและถึงรอบส่งมอบที่ผู้ใช้ต้องการแล้ว ไม่สั่ง cloud build เพียงเพราะแก้เอกสารหรือ push ข้อมูล:
+
+```sh
+npx eas-cli@latest login
+npx eas-cli@latest build -p android --profile preview
+```
+
+ใช้บัญชี/โครงการ/credentials เดิมตาม app.json และ eas.json เมื่อ build สำเร็จ EAS จะแสดงลิงก์ APK ให้ติดตั้งทับแอปเดิมโดยรักษาข้อมูล ทำ [device checks](reader-mobile/VALIDATION.md#required-device-checks-before-delivery) และบันทึกผลจริงก่อนรายงานว่าผ่านการตรวจบนเครื่อง
 
 ---
 
-## 🛠️ 3. สถาปัตยกรรมของแอป (Architecture)
+## 🛠️ 3. เอกสารและข้อมูลที่เกี่ยวข้อง
 
-- **UI / UX:** ออกแบบด้วย React Native แท้ๆ รองรับ Continuous Vertical Scroll, Visual Novel Dialogue Cards, แถบเปอร์เซ็นต์อ่าน, ปรับขนาดฟอนต์ และเปลี่ยนธีม (Light, Dark, Sepia)
-- **Data Source:** ดึงเนื้อหาตอนและตัวละครจาก GitHub Pages Headless CDN (`/data/novels/...`)
-- **Offline Storage:** จัดเก็บไฟล์ JSON ที่ดาวน์โหลดแล้วลงใน DocumentDirectory ของมือถือด้วย `expo-file-system` ทำให้เปิดอ่านตอนที่ดาวน์โหลดไว้ได้ตลอดเวลาแม้ไม่มีอินเทอร์เน็ต
-- **Bookmarks & Progress:** บันทึกตอนที่อ่านล่าสุดและตำแหน่งเปอร์เซ็นต์การอ่านลงใน `AsyncStorage` ของตัวเครื่อง
+- [System blueprint](SYSTEM_BLUEPRINT.md): สถาปัตยกรรมเว็บ/มือถือและ CDN
+- [Reader contract](.wayfinder/assets/reader-contract/spec.md): พฤติกรรมอ่าน ออฟไลน์ ความคืบหน้าและหน้าตาปัจจุบัน
+- [Chapter protocol](AI_CONVERSION_GUIDE.md#chapter-protocol): การเพิ่มตอนและตรวจข้อมูลบน CDN
+- [Git delivery](AGENTS.md#delivery): นโยบาย commit/push; การ push CDN ไม่เปลี่ยนโค้ดหรือ bundled files ใน APK ที่ติดตั้งแล้ว

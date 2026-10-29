@@ -1,6 +1,13 @@
 # Local Markdown issue tracker
 
-ที่เก็บ Wayfinder maps และ decision tickets ของ repo นี้ ใช้ระหว่างที่ยังไม่มี issue tracker ที่ตั้งค่าไว้ตาม `/setup-matt-pocock-skills` โดยไม่ต้องล็อกอิน GitHub CLI
+แหล่งหลักของกติกา tracker และการสร้างกระดานงาน แหล่งข้อมูลจริงคือ `issues/` ส่วน `tasks.html` เป็นผลสร้างสำหรับเปิดดู งานเริ่มจาก [AGENTS.md](../AGENTS.md) แล้วอ่าน map/ticket ที่เกี่ยวข้อง ใช้งาน tracker ในเครื่องได้โดยไม่ต้องล็อกอิน GitHub CLI
+
+## Scope and terms
+
+- **Session** ในกฎด้านล่างหมายถึงรอบทำงานต่อเนื่องกับ decision ticket ที่เลือก ไม่ใช่หนึ่ง tool call; การย่อ context ไม่เริ่มสิทธิ์ปิด ticket เพิ่ม
+- **HITL (human in the loop)** คือจุดที่ map/ticket ระบุให้ผู้ใช้ตัดสินหรือรับรอง เช่นภาพร่างและผลตรวจอุปกรณ์ ไม่ถือว่า tests ผ่านหรือผู้ช่วยเลือกเองเป็นการอนุมัติแทนผู้ใช้
+- การอ่าน/review อย่างเดียวไม่ใช่การ claim หรือ resolve งาน หากทำงานตาม tracker ต้องอ่านขอบเขต/Notes ของ map ด้วย เพราะ frontier บอกเพียง blockers/claims ไม่ได้ยกเลิก planning-only หรือเงื่อนไขอนุมัติ
+- วิธีจัดกลุ่มอยู่ใน [Grouping and coordination](#grouping-and-coordination); คำสั่ง update/check อยู่ใน [การอัปเดตกระดาน standalone](#การอัปเดตกระดาน-standalone) ไม่คัดลอกกติกาชุดเต็มไปไว้ใน entry point หรือไฟล์อื่น
 
 ## Issue format
 
@@ -53,7 +60,9 @@ node scripts/wayfinder-status.mjs WF-0001 --all
 
 **One ticket per session:** การ chart map ไม่ resolve ticket ใด ๆ; session ที่ทำงานต่อ resolve ได้ไม่เกินหนึ่ง ticket ยกเว้น research ตามทักษะ wayfinder
 
-Tracker นี้อยู่ใน repo และใช้ git แชร์ระหว่าง session ก่อน commit หรือ push ให้รักษาขอบเขตที่ผู้ใช้อนุญาต
+หากจะใช้ข้อยกเว้น research ต้องอ่านทักษะ wayfinder ที่มีอยู่และระบุข้อยกเว้นที่ใช้ให้ชัด หากทักษะนั้นไม่มีหรืออ่านไม่ได้ ห้ามอนุมานว่าคำว่า research อนุญาตให้ปิดหลาย decision tickets ได้เอง
+
+Tracker นี้อยู่ใน repo และใช้ git แชร์ระหว่าง session ก่อน commit หรือ push ให้รักษาขอบเขตที่ผู้ใช้อนุญาตและทำตาม [นโยบายส่งงาน](../AGENTS.md#delivery)
 
 ## Grouping and coordination
 
@@ -87,6 +96,7 @@ Tracker นี้อยู่ใน repo และใช้ git แชร์ร�
 - คำสั่งกลุ่มไม่ยกเลิก claim, HITL, planning-only หรือหนึ่ง decision ticket ต่อ session งานคู่ทำได้คนละ session โดยประสานบริบท ไม่ปิดหลาย ticket แทนผู้ใช้
 - ไม่เปลี่ยน state, assignee หรือ blockers เพียงเพื่อให้หน้ากระดานดูเรียบร้อย
 
+<a id="dashboard"></a>
 ### การอัปเดตกระดาน standalone
 
 `tasks.html` เปิดจาก `file:///D:/Yomiori/tasks.html` ได้โดยไม่ต้องรัน dev server ข้อมูลสำรอง/model ในไฟล์เป็น generated artifact แหล่งจริงยังเป็น Markdown และ `scripts/wayfinder-model.cjs` หน้าเว็บพยายามโหลดชุดข้อมูล GitHub main จาก commit เดียว หาก offline/timeout/rate limit จะเก็บข้อมูลเดิมไว้และแจ้งว่าอาจไม่ล่าสุด

@@ -1,5 +1,7 @@
 This is an Expo/React Native mobile application. Prioritize mobile-first patterns, performance, and cross-platform compatibility.
 
+Read the repository [entry point](../AGENTS.md) for task scope and delivery rules. This file owns mobile coding conventions; [VALIDATION.md](VALIDATION.md) owns checks/device validation and [MOBILE_GUIDE.md](../MOBILE_GUIDE.md) owns setup/APK build steps.
+
 ## Expo has changed — do not trust your training data
 
 Expo ships breaking changes every SDK release. APIs you remember are likely renamed, moved, or removed. Before writing any code that touches an Expo, EAS, or React Native API:
@@ -15,13 +17,11 @@ Use `bunx` instead of `npx` if the project uses bun (`bun.lock` present).
 ```bash
 npx expo install <package>  # ALWAYS use instead of npm/yarn/pnpm/bun add — resolves SDK-compatible versions
 npx expo start              # start the dev server
-npx expo lint               # lint
-npx tsc --noEmit            # typecheck
 npx expo-doctor             # diagnose dependency and config issues
 npx expo install --fix      # fix incompatible package versions
 ```
 
-Run lint and typecheck before declaring any task done.
+Run lint and typecheck before declaring any task done. Use the commands and change-specific validation routes in [VALIDATION.md](VALIDATION.md), rather than copying its checklist here.
 
 ## Navigation & Routing
 
@@ -31,8 +31,7 @@ Run lint and typecheck before declaring any task done.
 
 ## Building with EAS
 
-Use EAS to build, sign, and submit the app in the cloud (`eas build`, `eas submit`) and to ship over-the-air updates (`eas update`) — no local Xcode or Android Studio required. Run EAS CLI as `bunx eas-cli <command>` in Bun projects, or `npx eas-cli@latest <command>` otherwise; substitute that for bare `eas` in docs examples.
-Docs: https://docs.expo.dev/eas/index.md
+Follow [MOBILE_GUIDE.md](../MOBILE_GUIDE.md) for the configured APK profile and EAS commands, and [VALIDATION.md](VALIDATION.md) for delivery gates. Existing project configuration is authoritative; do not add OTA updates, submission or a new build profile as part of an unrelated change. Version-matched Expo/EAS API documentation is still required when writing code that touches those APIs.
 
 ## Rules
 
