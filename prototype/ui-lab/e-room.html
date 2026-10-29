@@ -1,0 +1,1285 @@
+<!doctype html>
+<html lang="th" data-variant="E" data-defaults='{"theme":"sepia","font":"serif"}'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>UI Lab E · ห้องเดียว | Yomiori</title>
+    <link rel="stylesheet" href="/web-v2/css/fonts.css" />
+    <link rel="stylesheet" href="shared/mali.css" />
+    <link rel="stylesheet" href="shared/lab.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         E · ห้องเดียว — one book at a time, a lot of air, almost no chrome.
+         ------------------------------------------------------------------ */
+      body {
+        overflow-x: hidden;
+      }
+
+      .e-head {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 16px clamp(20px, 5vw, 56px);
+        background: color-mix(in srgb, var(--paper) 95%, transparent);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+      }
+
+      .e-brand {
+        font-family: var(--font-serif);
+        font-size: 1.18rem;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .e-brand span {
+        font-family: var(--font-jp);
+        color: var(--accent);
+        font-size: 0.84em;
+        margin-left: 2px;
+      }
+
+      .e-lab {
+        font-size: 0.62rem;
+        letter-spacing: 0.18em;
+        color: var(--faint);
+      }
+
+      .e-tools {
+        display: flex;
+        gap: 4px;
+      }
+
+      .e-tools button {
+        min-height: 34px;
+        padding: 4px 8px;
+        border: 1px solid transparent;
+        background: transparent;
+        color: var(--muted);
+        font-size: 0.68rem;
+        cursor: pointer;
+      }
+
+      .e-tools button:hover {
+        color: var(--ink);
+        border-color: var(--line);
+      }
+
+      .e-main {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 clamp(20px, 5vw, 56px) 90px;
+      }
+
+      .e-shelf {
+        display: grid;
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: clamp(40px, 8vw, 120px);
+        padding-top: clamp(30px, 6vh, 64px);
+      }
+
+      .e-spines {
+        border-top: 1px solid var(--ink);
+        align-self: start;
+        position: sticky;
+        top: 80px;
+      }
+
+      .e-spine {
+        display: grid;
+        grid-template-columns: 26px minmax(0, 1fr);
+        gap: 10px;
+        width: 100%;
+        padding: 14px 0;
+        border: 0;
+        border-bottom: 1px solid var(--line);
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+        color: var(--muted);
+      }
+
+      .e-spine:hover {
+        color: var(--ink);
+      }
+
+      .e-spine[aria-current='true'] {
+        color: var(--ink);
+      }
+
+      .e-spine-no {
+        font-family: var(--font-serif);
+        font-size: 0.68rem;
+        color: var(--faint);
+      }
+
+      .e-spine[aria-current='true'] .e-spine-no {
+        color: var(--accent);
+      }
+
+      .e-spine-title {
+        font-family: var(--font-serif);
+        font-size: 0.76rem;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .e-display {
+        min-width: 0;
+      }
+
+      .e-display-inner {
+        display: grid;
+        grid-template-columns: minmax(240px, 330px) minmax(0, 1fr);
+        gap: clamp(34px, 6vw, 90px);
+        align-items: start;
+        animation: e-in 360ms var(--lab-ease) both;
+      }
+
+      @keyframes e-in {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .e-cover-wrap {
+        position: relative;
+      }
+
+      .e-cover {
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        border: 1px solid var(--line);
+      }
+
+      .e-cover-no {
+        position: absolute;
+        left: -18px;
+        bottom: -24px;
+        font-family: var(--font-serif);
+        font-size: clamp(3.4rem, 7vw, 6rem);
+        line-height: 0.8;
+        color: color-mix(in srgb, var(--accent) 28%, transparent);
+        pointer-events: none;
+      }
+
+      .e-copy {
+        padding-top: 8px;
+        min-width: 0;
+      }
+
+      .e-kicker {
+        font-size: 0.64rem;
+        letter-spacing: 0.16em;
+        color: var(--faint);
+        margin-bottom: 15px;
+      }
+
+      .e-title {
+        font-family: var(--font-serif);
+        font-size: clamp(1.8rem, 3.8vw, 3.2rem);
+        font-weight: 500;
+        line-height: 1.3;
+        letter-spacing: -0.02em;
+        max-width: 18ch;
+      }
+
+      .e-original {
+        margin-top: 9px;
+        font-family: var(--font-jp);
+        font-size: 0.74rem;
+        line-height: 1.8;
+        color: var(--muted);
+        max-width: 48ch;
+      }
+
+      .e-meta-line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 6px;
+        margin-top: 15px;
+        font-size: 0.68rem;
+        color: var(--muted);
+      }
+
+      .e-meta-line span + span::before {
+        content: ' / ';
+        color: var(--faint);
+      }
+
+      .e-synopsis {
+        margin-top: 24px;
+        max-width: 52ch;
+        font-family: var(--font-serif);
+        font-size: 0.85rem;
+        line-height: 1.95;
+        color: var(--ink-2);
+      }
+
+      .e-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+
+      .e-actions button {
+        padding: 0 0 3px;
+        border: 0;
+        border-bottom: 1px solid var(--ink);
+        background: transparent;
+        color: var(--ink);
+        font-size: 0.76rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .e-actions button:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .e-actions .e-quiet {
+        border-color: transparent;
+        color: var(--muted);
+        font-weight: 400;
+      }
+
+      .e-actions .e-quiet:hover {
+        border-color: transparent;
+      }
+
+      .e-progress {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-top: 24px;
+        max-width: 300px;
+        font-size: 0.62rem;
+        color: var(--faint);
+      }
+
+      .e-progress i {
+        flex: 1;
+        height: 1px;
+        background: var(--line);
+        position: relative;
+      }
+
+      .e-progress i::after {
+        content: '';
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 32%;
+        background: var(--accent);
+      }
+
+      /* Detail ---------------------------------------------------------- */
+      .e-detail {
+        padding-top: 26px;
+      }
+
+      .e-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 26px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--muted);
+        font-size: 0.7rem;
+        cursor: pointer;
+      }
+
+      .e-detail-grid {
+        display: grid;
+        grid-template-columns: 210px minmax(0, 1fr) minmax(0, 0.75fr);
+        gap: clamp(28px, 5vw, 64px);
+        align-items: start;
+      }
+
+      .e-detail-cover {
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        border: 1px solid var(--line);
+      }
+
+      .e-detail-title {
+        font-family: var(--font-serif);
+        font-size: clamp(1.6rem, 3.1vw, 2.6rem);
+        font-weight: 500;
+        line-height: 1.35;
+      }
+
+      .e-detail-copy {
+        margin-top: 18px;
+        max-width: 54ch;
+        font-family: var(--font-serif);
+        font-size: 0.83rem;
+        line-height: 1.95;
+        color: var(--ink-2);
+      }
+
+      .e-facts {
+        margin-top: 24px;
+        border-top: 1px solid var(--line);
+        font-size: 0.7rem;
+      }
+
+      .e-facts div {
+        display: grid;
+        grid-template-columns: 86px minmax(0, 1fr);
+        gap: 12px;
+        padding: 8px 0;
+        border-bottom: 1px solid var(--line-2);
+      }
+
+      .e-facts dt {
+        color: var(--faint);
+      }
+
+      .e-facts dd {
+        margin: 0;
+        color: var(--ink-2);
+      }
+
+      .e-chapters h2 {
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--ink);
+        font-family: var(--font-serif);
+        font-size: 0.94rem;
+        font-weight: 500;
+      }
+
+      .e-chapter {
+        display: grid;
+        grid-template-columns: 28px minmax(0, 1fr);
+        gap: 8px;
+        width: 100%;
+        padding: 9px 0;
+        border: 0;
+        border-bottom: 1px solid var(--line-2);
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .e-chapter:hover {
+        color: var(--accent);
+      }
+
+      .e-chapter span:first-child {
+        font-family: var(--font-serif);
+        font-size: 0.65rem;
+        color: var(--faint);
+      }
+
+      .e-chapter span:last-child {
+        font-size: 0.71rem;
+        line-height: 1.5;
+      }
+
+      .e-empty {
+        padding: 16px 0;
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+
+      /* Reader ---------------------------------------------------------- */
+      body[data-lab-screen='reader'] .e-head,
+      body[data-lab-screen='reader'] .e-spines {
+        display: none;
+      }
+
+      .e-reader-bar {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 12px clamp(16px, 4vw, 30px);
+        background: color-mix(in srgb, var(--paper) 95%, transparent);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+      }
+
+      .e-reader-bar-left,
+      .e-reader-bar-right {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        min-width: 0;
+      }
+
+      .e-reader-bar button {
+        min-height: 32px;
+        padding: 4px 7px;
+        border: 1px solid transparent;
+        background: transparent;
+        color: var(--muted);
+        font-size: 0.68rem;
+        cursor: pointer;
+      }
+
+      .e-reader-bar button:hover {
+        color: var(--ink);
+        border-color: var(--line);
+      }
+
+      .e-reader-context {
+        font-size: 0.64rem;
+        color: var(--faint);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .e-reading-wrap {
+        display: grid;
+        grid-template-columns: 72px minmax(0, 620px) 72px;
+        justify-content: center;
+        gap: 28px;
+        padding: 50px 20px 100px;
+      }
+
+      .e-reading-margin {
+        position: sticky;
+        top: 84px;
+        align-self: start;
+        font-family: var(--font-serif);
+        font-size: 0.72rem;
+        color: var(--faint);
+        text-align: right;
+        line-height: 1.6;
+      }
+
+      .e-reading-margin b {
+        display: block;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--accent);
+      }
+
+      .e-reading {
+        min-width: 0;
+      }
+
+      .e-reader-head {
+        padding-bottom: 30px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .e-reader-kicker {
+        font-size: 0.62rem;
+        letter-spacing: 0.14em;
+        color: var(--faint);
+        margin-bottom: 12px;
+      }
+
+      .e-reader-title {
+        font-family: var(--font-serif);
+        font-size: clamp(1.6rem, 3.1vw, 2.4rem);
+        font-weight: 500;
+        line-height: 1.45;
+      }
+
+      .e-reader-novel {
+        margin-top: 9px;
+        font-size: 0.7rem;
+        color: var(--muted);
+      }
+
+      .e-reading .lab-speech {
+        margin: 1.4em 0;
+        padding-left: 1.2em;
+        border-left: 1px solid color-mix(in srgb, var(--char, var(--accent)) 55%, transparent);
+      }
+
+      .e-reading .lab-who {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 0.66rem;
+      }
+
+      .e-reading .lab-role {
+        display: inline;
+        margin-left: 5px;
+      }
+
+      .e-reading .lab-avatar {
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+      }
+
+      .e-reading .lab-line {
+        font-family: var(--font-serif);
+      }
+
+      .e-sample-note {
+        margin-top: 12px;
+        font-size: 0.64rem;
+        color: var(--faint);
+      }
+
+      .e-reader-nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 48px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+      }
+
+      .e-reader-nav button {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        text-align: left;
+        color: var(--muted);
+        cursor: pointer;
+      }
+
+      .e-reader-nav button:last-child {
+        text-align: right;
+      }
+
+      .e-reader-nav span {
+        display: block;
+        font-size: 0.6rem;
+        color: var(--faint);
+        margin-bottom: 3px;
+      }
+
+      .e-reader-nav strong {
+        font-family: var(--font-serif);
+        font-size: 0.74rem;
+        font-weight: 500;
+        color: var(--ink);
+      }
+
+      .e-reading-side {
+        position: sticky;
+        top: 84px;
+        align-self: start;
+        padding-top: 3px;
+        font-size: 0.6rem;
+        line-height: 1.8;
+        color: var(--faint);
+        border-top: 1px solid var(--line);
+      }
+
+      /* Settings / TOC -------------------------------------------------- */
+      .e-settings {
+        width: min(520px, calc(100vw - 32px));
+        margin: auto;
+        background: var(--paper);
+        border: 1px solid var(--line);
+      }
+
+      .e-settings-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 22px 26px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .e-settings-head h2 {
+        font-family: var(--font-serif);
+        font-size: 1.05rem;
+        font-weight: 500;
+      }
+
+      .e-settings-head p {
+        margin-top: 2px;
+        font-size: 0.66rem;
+        color: var(--muted);
+      }
+
+      .e-close {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--muted);
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      .e-settings-body {
+        padding: 8px 26px 26px;
+      }
+
+      .e-setting {
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line-2);
+      }
+
+      .e-setting h3 {
+        margin-bottom: 8px;
+        font-size: 0.64rem;
+        letter-spacing: 0.1em;
+        color: var(--faint);
+        font-weight: 500;
+      }
+
+      .e-option {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        width: 100%;
+        padding: 5px 0;
+        border: 0;
+        background: transparent;
+        text-align: left;
+        font-size: 0.76rem;
+        color: var(--muted);
+        cursor: pointer;
+      }
+
+      .e-option[aria-pressed='true'] {
+        color: var(--ink);
+      }
+
+      .e-option[aria-pressed='true']::after {
+        content: '●';
+        margin-left: auto;
+        font-size: 0.5rem;
+        color: var(--accent);
+      }
+
+      .e-swatch {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+      }
+
+      .e-range-head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        font-size: 0.68rem;
+        color: var(--muted);
+      }
+
+      .e-range-head b {
+        font-family: var(--font-serif);
+        font-weight: 500;
+        color: var(--accent);
+      }
+
+      input[type='range'] {
+        width: 100%;
+        height: 20px;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      input[type='range']::-webkit-slider-runnable-track {
+        height: 1px;
+        background: var(--line);
+      }
+
+      input[type='range']::-webkit-slider-thumb {
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      .e-toc {
+        width: min(620px, 100vw);
+        height: 100dvh;
+        margin: 0 auto;
+        background: var(--paper);
+      }
+
+      .e-toc-inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .e-toc-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 20px 26px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .e-toc-head h2 {
+        font-family: var(--font-serif);
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      .e-toc-head p {
+        margin-top: 2px;
+        font-size: 0.66rem;
+        color: var(--muted);
+      }
+
+      .e-toc-list {
+        flex: 1;
+        overflow-y: auto;
+        padding: 10px 26px 40px;
+      }
+
+      .e-toc-row {
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 9px;
+        width: 100%;
+        padding: 9px 0;
+        border: 0;
+        border-bottom: 1px solid var(--line-2);
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .e-toc-row:hover {
+        color: var(--accent);
+      }
+
+      .e-toc-row span:first-child {
+        font-family: var(--font-serif);
+        font-size: 0.66rem;
+        color: var(--faint);
+      }
+
+      .e-toc-row span:last-child {
+        font-size: 0.73rem;
+        line-height: 1.5;
+      }
+
+      .e-toc-row[aria-current='true'] {
+        color: var(--accent);
+      }
+
+      /* Responsive ------------------------------------------------------ */
+      @media (max-width: 900px) {
+        .e-shelf {
+          grid-template-columns: 1fr;
+          gap: 26px;
+        }
+
+        .e-spines {
+          position: static;
+          display: flex;
+          gap: 12px;
+          overflow-x: auto;
+          border-top: 0;
+          padding-bottom: 7px;
+          scrollbar-width: none;
+        }
+
+        .e-spines::-webkit-scrollbar {
+          display: none;
+        }
+
+        .e-spine {
+          flex: 0 0 150px;
+          grid-template-columns: 22px minmax(0, 1fr);
+          padding: 9px 0;
+          border-top: 1px solid var(--line);
+        }
+
+        .e-display-inner {
+          grid-template-columns: 180px minmax(0, 1fr);
+          gap: 28px;
+        }
+
+        .e-detail-grid {
+          grid-template-columns: 150px minmax(0, 1fr);
+          gap: 24px;
+        }
+
+        .e-chapters {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .e-head {
+          padding: 12px 16px;
+        }
+
+        .e-lab {
+          display: none;
+        }
+
+        .e-tools button:nth-child(1) {
+          font-size: 0;
+        }
+
+        .e-main {
+          padding: 0 16px 70px;
+        }
+
+        .e-shelf {
+          padding-top: 20px;
+        }
+
+        .e-display-inner {
+          grid-template-columns: 1fr;
+          gap: 22px;
+        }
+
+        .e-cover {
+          width: 190px;
+        }
+
+        .e-cover-no {
+          left: auto;
+          right: -8px;
+        }
+
+        .e-title {
+          font-size: 1.75rem;
+        }
+
+        .e-detail-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .e-detail-cover {
+          width: 150px;
+        }
+
+        .e-reading-wrap {
+          grid-template-columns: 1fr;
+          padding: 30px 16px 80px;
+        }
+
+        .e-reading-margin,
+        .e-reading-side {
+          display: none;
+        }
+
+        .e-reader-context {
+          display: none;
+        }
+
+        .e-reader-bar {
+          padding: 10px 12px;
+        }
+
+        .e-reader-nav {
+          flex-direction: column;
+        }
+
+        .e-reader-nav button:last-child {
+          text-align: left;
+        }
+
+        .e-settings {
+          width: 100%;
+          height: auto;
+          max-height: 90dvh;
+          margin: auto 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="e-head">
+      <a class="e-brand" href="#" data-nav="shelf">Yomiori <span>読織</span></a>
+      <p class="e-lab">UI LAB · E / ห้องเดียว</p>
+      <div class="e-tools">
+        <button type="button" data-lab-theme aria-label="สลับธีมสี">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+          <span data-theme-name>ฮิโนกิอุ่น</span>
+        </button>
+        <button type="button" data-open-settings>ตั้งค่า</button>
+      </div>
+    </header>
+
+    <main class="e-main">
+      <section data-screen="shelf">
+        <div class="e-shelf">
+          <nav class="e-spines" data-spines aria-label="หนังสือในห้อง"></nav>
+          <div class="e-display" data-display></div>
+        </div>
+      </section>
+
+      <section data-screen="detail" hidden>
+        <div class="e-detail">
+          <button class="e-back" type="button" data-nav="shelf">← กลับห้องอ่าน</button>
+          <div class="e-detail-grid">
+            <img class="e-detail-cover" data-detail-cover src="" alt="" />
+            <div>
+              <h1 class="e-detail-title" data-detail-title></h1>
+              <p class="e-original" data-detail-original></p>
+              <div class="e-meta-line" data-detail-tags></div>
+              <p class="e-detail-copy" data-detail-synopsis></p>
+              <dl class="e-facts" data-detail-facts></dl>
+              <div class="e-actions">
+                <button type="button" data-open-reader>เริ่มอ่านตอนแรก</button>
+                <button class="e-quiet" type="button" data-nav="shelf">กลับห้องอ่าน</button>
+              </div>
+            </div>
+            <div class="e-chapters">
+              <h2>สารบัญ</h2>
+              <div data-detail-chapters></div>
+              <p class="e-sample-note">mockup E · รายการตอนเป็นตัวอย่างจากข้อมูลจริง</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-screen="reader" hidden>
+        <div class="e-reader-bar">
+          <div class="e-reader-bar-left">
+            <button type="button" data-nav="detail">← หน้าเรื่อง</button>
+            <span class="e-reader-context" data-reader-context></span>
+          </div>
+          <div class="e-reader-bar-right">
+            <button type="button" data-open-toc>สารบัญ</button>
+            <button type="button" data-lab-theme aria-label="สลับธีมสี">ธีม</button>
+            <button type="button" data-open-settings>ตั้งค่า</button>
+          </div>
+        </div>
+        <div class="e-reading-wrap">
+          <aside class="e-reading-margin">
+            <b data-reader-no>01</b>
+            <span data-reader-number>ตอนที่ 1</span><br />
+            <span data-reader-progress>32%</span>
+          </aside>
+          <article class="e-reading">
+            <header class="e-reader-head">
+              <p class="e-reader-kicker">ตอนที่ <span data-reader-number-2>1</span></p>
+              <h1 class="e-reader-title" data-reader-title></h1>
+              <p class="e-reader-novel" data-reader-novel></p>
+            </header>
+            <div class="lab-prose" data-reader-body></div>
+            <p class="e-sample-note" data-reader-sample hidden>ตอนนี้ใช้ข้อความตัวอย่างจากตอนแรกของเรื่อง</p>
+            <nav class="e-reader-nav" data-reader-nav></nav>
+          </article>
+          <aside class="e-reading-side">อ่านช้า ๆ<br />พื้นที่ว่างคือส่วนหนึ่งของการอ่าน</aside>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="e-settings" data-settings>
+      <div class="e-settings-head">
+        <div>
+          <h2>ตั้งค่าการอ่าน</h2>
+          <p>ไม่มีกรอบ ไม่มีเสียงดัง</p>
+        </div>
+        <button class="e-close" type="button" data-close-settings aria-label="ปิดการตั้งค่า">×</button>
+      </div>
+      <div class="e-settings-body">
+        <div class="e-setting">
+          <h3>ธีมสี</h3>
+          <div data-setting-theme></div>
+        </div>
+        <div class="e-setting">
+          <h3>ตัวอักษร</h3>
+          <div data-setting-font></div>
+        </div>
+        <div class="e-setting">
+          <div class="e-range-head"><span>ขนาดตัวอักษร</span><b data-value-size>18px</b></div>
+          <input type="range" min="15" max="26" step="1" data-range-size aria-label="ขนาดตัวอักษร" />
+        </div>
+        <div class="e-setting">
+          <div class="e-range-head"><span>ระยะบรรทัด</span><b data-value-leading>1.9x</b></div>
+          <input type="range" min="1.6" max="2.2" step="0.1" data-range-leading aria-label="ระยะบรรทัด" />
+        </div>
+        <div class="e-setting">
+          <h3>บทสนทนา</h3>
+          <div data-setting-dialogue></div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="e-toc" data-toc>
+      <div class="e-toc-inner">
+        <div class="e-toc-head">
+          <div>
+            <h2>สารบัญ</h2>
+            <p data-toc-subtitle></p>
+          </div>
+          <button class="e-close" type="button" data-close-toc aria-label="ปิดสารบัญ">×</button>
+        </div>
+        <div class="e-toc-list" data-toc-list></div>
+      </div>
+    </dialog>
+
+    <nav class="lab-switcher" aria-label="สลับ mockup">
+      <span>LAB</span>
+      <a href="a-andon.html" title="A · คาตาล็อก">A</a>
+      <a href="b-engawa.html" title="B · โรงหนังสือ">B</a>
+      <a href="c-zine.html" title="C · สมุดตัดแปะ">C</a>
+      <a href="d-desk.html" title="D · โต๊ะทำงานนักอ่าน">D</a>
+      <a href="e-room.html" title="E · ห้องเดียว" aria-current="page">E</a>
+      <a href="f-panels.html" title="F · มังงะ">F</a>
+    </nav>
+
+    <script src="shared/sample.js"></script>
+    <script src="shared/lab.js"></script>
+    <script>
+      (() => {
+        const novels = Lab.novels;
+        let selected = novels[0];
+        let currentNovel = novels[0];
+
+        const $ = (selector, scope = document) => scope.querySelector(selector);
+        const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+
+        function renderSpines() {
+          $('[data-spines]').innerHTML = novels
+            .map(
+              (novel, index) => `<button class="e-spine" type="button" data-spine="${novel.id}" aria-current="${selected.id === novel.id}">
+                <span class="e-spine-no">${String(index + 1).padStart(2, '0')}</span>
+                <span class="e-spine-title">${Lab.esc(novel.title)}</span>
+              </button>`,
+            )
+            .join('');
+        }
+
+        function renderDisplay(novel) {
+          selected = novel;
+          currentNovel = novel;
+          const first = Lab.firstReadingChapter(novel);
+          $('[data-display]').innerHTML = `
+            <div class="e-display-inner">
+              <div class="e-cover-wrap">
+                <img class="e-cover" src="${novel.cover}" alt="ปก ${Lab.esc(novel.title)}" />
+                <span class="e-cover-no" aria-hidden="true">${String(novels.findIndex((item) => item.id === novel.id) + 1).padStart(2, '0')}</span>
+              </div>
+              <div class="e-copy">
+                <p class="e-kicker">${novel.chapters.length ? `${novel.chapters.length} ตอนในห้องนี้` : 'รอแปลงตอน'}</p>
+                <h1 class="e-title">${Lab.esc(novel.title)}</h1>
+                ${novel.originalTitle ? `<p class="e-original">${Lab.esc(novel.originalTitle)}</p>` : ''}
+                <div class="e-meta-line">${novel.tags.map((tag) => `<span>${Lab.esc(tag)}</span>`).join('')}</div>
+                <p class="e-synopsis">${Lab.esc(novel.synopsis)}</p>
+                ${novel.id === 'kyudo-senpai' ? '<div class="e-progress"><i aria-hidden="true"></i><span>อ่านไปแล้ว 32%</span></div>' : ''}
+                <div class="e-actions">
+                  ${
+                    novel.chapters.length
+                      ? `<button type="button" data-read="${novel.id}" data-chapter="${first.id}">${novel.id === 'kyudo-senpai' ? 'อ่านต่อ' : 'เริ่มอ่าน'}</button>`
+                      : '<span class="e-kicker">ยังไม่มีตอนให้เปิด</span>'
+                  }
+                  <button class="e-quiet" type="button" data-detail="${novel.id}">รายละเอียดเรื่อง</button>
+                </div>
+              </div>
+            </div>`;
+          renderSpines();
+        }
+
+        function renderDetail(novel) {
+          currentNovel = novel;
+          const first = Lab.firstReadingChapter(novel);
+          $('[data-detail-cover]').src = novel.cover;
+          $('[data-detail-cover]').alt = `ปก ${novel.title}`;
+          $('[data-detail-title]').textContent = novel.title;
+          $('[data-detail-original]').textContent = novel.originalTitle || '';
+          $('[data-detail-tags]').innerHTML = novel.tags.map((tag) => `<span>${Lab.esc(tag)}</span>`).join('');
+          $('[data-detail-synopsis]').textContent = novel.synopsis;
+          $('[data-detail-facts]').innerHTML = `
+            <div><dt>ผู้แต่ง</dt><dd>${Lab.esc(novel.author)}</dd></div>
+            ${novel.artist ? `<div><dt>ภาพประกอบ</dt><dd>${Lab.esc(novel.artist)}</dd></div>` : ''}
+            <div><dt>พร้อมอ่าน</dt><dd>${novel.chapters.length} ตอน จากต้นฉบับ ${novel.totalOriginalChapters} ตอน</dd></div>`;
+          $('[data-detail-chapters]').innerHTML = novel.chapters.length
+            ? novel.chapters
+                .map(
+                  (chapter) => `<button class="e-chapter" type="button" data-chapter="${chapter.id}">
+                    <span>${Lab.chapterNumber(chapter)}</span><span>${Lab.esc(chapter.title)}</span>
+                  </button>`,
+                )
+                .join('')
+            : '<p class="e-empty">ยังไม่มีตอนที่แปลงเข้าสู่ระบบ</p>';
+          $('[data-open-reader]').dataset.chapter = first ? first.id : '';
+          Lab.showScreen('detail');
+        }
+
+        function renderReader(novel, chapterId) {
+          currentNovel = novel;
+          const prepared = Lab.prepareChapter(novel, chapterId);
+          const index = novel.chapters.findIndex((item) => item.id === prepared.id);
+          const prev = index > 0 ? novel.chapters[index - 1] : null;
+          const next = index >= 0 && index < novel.chapters.length - 1 ? novel.chapters[index + 1] : null;
+          $('[data-reader-context]').textContent = `${novel.title} · ${prepared.title}`;
+          $('[data-reader-no]').textContent = Lab.chapterNumber(prepared);
+          $('[data-reader-number]').textContent = `ตอนที่ ${prepared.number}`;
+          $('[data-reader-number-2]').textContent = prepared.number;
+          $('[data-reader-progress]').textContent = prepared.sample ? 'ตัวอย่าง' : '32%';
+          $('[data-reader-title]').textContent = prepared.title;
+          $('[data-reader-novel]').textContent = novel.title;
+          Lab.mountChapter($('[data-reader-body]'), novel, prepared);
+          $('[data-reader-sample]').hidden = !prepared.sample;
+          $('[data-reader-nav]').innerHTML = `
+            ${prev ? `<button type="button" data-chapter="${prev.id}"><span>ก่อนหน้า</span><strong>${Lab.esc(prev.title)}</strong></button>` : '<span></span>'}
+            ${next ? `<button type="button" data-chapter="${next.id}"><span>ถัดไป</span><strong>${Lab.esc(next.title)}</strong></button>` : '<span></span>'}`;
+          $('[data-toc-subtitle]').textContent = novel.title;
+          $('[data-toc-list]').innerHTML = novel.chapters
+            .map(
+              (chapter) => `<button class="e-toc-row" type="button" data-chapter="${chapter.id}" aria-current="${chapter.id === prepared.id}">
+                <span>${Lab.chapterNumber(chapter)}</span><span>${Lab.esc(chapter.title)}</span>
+              </button>`,
+            )
+            .join('');
+          Lab.showScreen('reader');
+        }
+
+        function themeColors(id) {
+          if (id === 'dark') return ['#11100e', '#ece4d6', '#d97a60'];
+          if (id === 'sepia') return ['#ece0cb', '#2a2117', '#8c5426'];
+          return ['#f3ecdf', '#221e19', '#a8452f'];
+        }
+
+        function renderSettings() {
+          $('[data-setting-theme]').innerHTML = Lab.themes
+            .map(
+              (theme) => `<button class="e-option" type="button" data-set-theme="${theme.id}" aria-pressed="${Lab.prefs.theme === theme.id}">
+                <span class="e-swatch" style="background:${themeColors(theme.id)[0]}"></span>${theme.name}
+              </button>`,
+            )
+            .join('');
+          $('[data-setting-font]').innerHTML = Object.entries(Lab.fonts)
+            .map(
+              ([id, font]) => `<button class="e-option" type="button" data-set-font="${id}" aria-pressed="${Lab.prefs.font === id}" style="font-family:${font.stack}">${font.label}</button>`,
+            )
+            .join('');
+          $('[data-setting-dialogue]').innerHTML = Lab.dialogues
+            .map(
+              (dialogue) => `<button class="e-option" type="button" data-set-dialogue="${dialogue.id}" aria-pressed="${Lab.prefs.dialogue === dialogue.id}">${dialogue.name}</button>`,
+            )
+            .join('');
+          syncSettings();
+        }
+
+        function syncSettings() {
+          $$('[data-set-theme]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.setTheme === Lab.prefs.theme)));
+          $$('[data-set-font]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.setFont === Lab.prefs.font)));
+          $$('[data-set-dialogue]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.setDialogue === Lab.prefs.dialogue)));
+          const size = $('[data-range-size]');
+          const leading = $('[data-range-leading]');
+          if (size) size.value = Lab.prefs.size;
+          if (leading) leading.value = Lab.prefs.leading;
+          if ($('[data-value-size]')) $('[data-value-size]').textContent = `${Lab.prefs.size}px`;
+          if ($('[data-value-leading]')) $('[data-value-leading]').textContent = `${Number(Lab.prefs.leading).toFixed(1)}x`;
+        }
+
+        document.addEventListener('lab:prefs', () => {
+          $$('[data-theme-name]').forEach((node) => (node.textContent = Lab.themeName()));
+          if ($('[data-settings]').open) syncSettings();
+        });
+
+        document.addEventListener('click', (event) => {
+          const spine = event.target.closest('[data-spine]');
+          if (spine) {
+            renderDisplay(Lab.novelById(spine.dataset.spine));
+            return;
+          }
+
+          const read = event.target.closest('[data-read]');
+          if (read) {
+            renderReader(Lab.novelById(read.dataset.read), read.dataset.chapter);
+            return;
+          }
+
+          if (event.target.closest('[data-detail]')) {
+            renderDetail(Lab.novelById(event.target.closest('[data-detail]').dataset.detail));
+            return;
+          }
+
+          if (event.target.closest('[data-open-reader]')) {
+            if (currentNovel.chapters.length) renderReader(currentNovel, Lab.firstReadingChapter(currentNovel).id);
+            return;
+          }
+
+          const chapter = event.target.closest('[data-chapter]');
+          if (chapter) {
+            const dialog = chapter.closest('dialog');
+            if (dialog) dialog.close();
+            renderReader(currentNovel, chapter.dataset.chapter);
+            return;
+          }
+
+          if (event.target.closest('[data-nav="shelf"]')) {
+            Lab.showScreen('shelf');
+            return;
+          }
+          if (event.target.closest('[data-nav="detail"]')) {
+            Lab.showScreen('detail');
+            return;
+          }
+
+          if (event.target.closest('[data-open-settings]')) {
+            renderSettings();
+            $('[data-settings]').showModal();
+            return;
+          }
+          if (event.target.closest('[data-close-settings]')) {
+            $('[data-settings]').close();
+            return;
+          }
+          if (event.target.closest('[data-open-toc]')) {
+            $('[data-toc]').showModal();
+            return;
+          }
+          if (event.target.closest('[data-close-toc]')) {
+            $('[data-toc]').close();
+            return;
+          }
+
+          if (event.target.closest('[data-set-theme]')) {
+            Lab.set({ theme: event.target.closest('[data-set-theme]').dataset.setTheme });
+            return;
+          }
+          if (event.target.closest('[data-set-font]')) {
+            Lab.set({ font: event.target.closest('[data-set-font]').dataset.setFont });
+            return;
+          }
+          if (event.target.closest('[data-set-dialogue]')) {
+            Lab.set({ dialogue: event.target.closest('[data-set-dialogue]').dataset.setDialogue });
+          }
+        });
+
+        document.addEventListener('input', (event) => {
+          if (event.target.matches('[data-range-size]')) Lab.set({ size: Number(event.target.value) });
+          if (event.target.matches('[data-range-leading]')) Lab.set({ leading: Number(event.target.value) });
+        });
+
+        $('[data-settings]').addEventListener('click', (event) => {
+          if (event.target === $('[data-settings]')) $('[data-settings]').close();
+        });
+        $('[data-toc]').addEventListener('click', (event) => {
+          if (event.target === $('[data-toc]')) $('[data-toc]').close();
+        });
+
+        renderDisplay(novels[0]);
+      })();
+    </script>
+  </body>
+</html>

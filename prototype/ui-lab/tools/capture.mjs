@@ -58,12 +58,49 @@ const variants = {
     close: `document.querySelector('dialog[open]')?.close()`,
     ready: 'ชั้นวางของฉัน',
   },
+  D: {
+    page: 'd-desk.html',
+    key: 'ui_lab_D_prefs',
+    theme: 'light',
+    openDetail: `document.querySelector('.d-book-row')?.click()`,
+    openReader: `document.querySelectorAll('[data-detail-chapters] .d-chapter')[1].click()`,
+    openSettings: `document.querySelector('[data-screen="reader"] [data-open-settings]')?.click() || document.querySelector('[data-open-settings]').click()`,
+    openToc: `document.querySelector('[data-open-toc]').click()`,
+    close: `document.querySelector('dialog[open]')?.close()`,
+    ready: 'ชั้นหนังสือ',
+  },
+  E: {
+    page: 'e-room.html',
+    key: 'ui_lab_E_prefs',
+    theme: 'sepia',
+    openDetail: `document.querySelector('[data-detail="kyudo-senpai"]')?.click()`,
+    openReader: `document.querySelectorAll('[data-detail-chapters] .e-chapter')[1].click()`,
+    openSettings: `document.querySelector('[data-screen="reader"] [data-open-settings]')?.click() || document.querySelector('[data-open-settings]').click()`,
+    openToc: `document.querySelector('[data-open-toc]').click()`,
+    close: `document.querySelector('dialog[open]')?.close()`,
+    ready: 'ห้องเดียว',
+  },
+  F: {
+    page: 'f-panels.html',
+    key: 'ui_lab_F_prefs',
+    theme: 'light',
+    openDetail: `document.querySelector('[data-hero-detail]')?.click()`,
+    openReader: `document.querySelectorAll('[data-detail-chapters] .f-chapter')[1].click()`,
+    openSettings: `document.querySelector('[data-screen="reader"] [data-open-settings]')?.click() || document.querySelector('[data-open-settings]').click()`,
+    openToc: `document.querySelector('[data-open-toc]').click()`,
+    close: `document.querySelector('dialog[open]')?.close()`,
+    ready: 'อ่านค้างไว้',
+  },
 };
 
 const viewports = {
   desktop: { width: 1440, height: 900, mobile: false },
   mobile: { width: 390, height: 844, mobile: true },
 };
+
+const args = process.argv.slice(2);
+const variantsArg = args.find((arg) => arg.startsWith('--variants='));
+const onlyVariants = variantsArg ? variantsArg.split('=')[1].split(',').map((item) => item.trim()) : null;
 
 class CDP {
   constructor(url) {
@@ -212,6 +249,7 @@ async function main() {
     };
 
     for (const [name, variant] of Object.entries(variants)) {
+      if (onlyVariants && !onlyVariants.includes(name)) continue;
       for (const [viewportName, viewport] of Object.entries(viewports)) {
         await cdp.send(
           'Emulation.setDeviceMetricsOverride',
