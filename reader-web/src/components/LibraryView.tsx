@@ -98,6 +98,12 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
     if (currentNovel.id === 'black-cat-hangout') {
       return ['takumi', 'hina', 'mizuki', 'kuro', 'yumi', 'classmate'].includes(c.id);
     }
+    if (currentNovel.id === 'makeine-too-many-losing-heroines') {
+      return [
+        'nukumizu', 'yanami', 'komari', 'yakishio', 'shiratama',
+        'shikiya', 'asagumo', 'tiara', 'haguhara', 'kaju',
+      ].includes(c.id);
+    }
     return true;
   });
 
@@ -107,7 +113,9 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
   // Find last read chapter belonging to this novel or default to the first story chapter
   const lastReadChapter =
     novelChapters.find((c) => c.id === lastReadChapterId) || firstStoryChapter || chapters[0];
-  const lastReadNovel = currentNovel;
+  // The hero card is global ("อ่านค้างไว้ล่าสุด"), so follow the chapter's own novel
+  // instead of the selected one; otherwise a chapterless novel borrows another story's chapter.
+  const lastReadNovel = novels.find((n) => n.id === lastReadChapter?.novelId) || currentNovel;
 
   // Filter and sort chapters for detail view based on search query and sort order
   const filteredChapters = novelChapters

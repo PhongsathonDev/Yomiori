@@ -10,6 +10,7 @@ import bundledNovels from '../data/novels.json';
 import bundledKyudoCharacters from '../data/novels/kyudo-senpai/characters.json';
 import bundledBoyishCharacters from '../data/novels/boyish-friend/characters.json';
 import bundledBlackCatCharacters from '../data/novels/black-cat-hangout/characters.json';
+import bundledMakeineCharacters from '../data/novels/makeine-too-many-losing-heroines/characters.json';
 import { blackCatChapters } from '../data/novels/black-cat-hangout/chapters';
 import bundledKyudoComments from '../data/novels/kyudo-senpai/comments.json';
 import bundledBoyishComments from '../data/novels/boyish-friend/comments.json';
@@ -59,6 +60,7 @@ export async function fetchCharacters(novelId: string, preferCache = false): Pro
   if (novelId === 'kyudo-senpai') return bundledKyudoCharacters as Character[];
   if (novelId === 'boyish-friend') return bundledBoyishCharacters as Character[];
   if (novelId === 'black-cat-hangout') return bundledBlackCatCharacters as Character[];
+  if (novelId === 'makeine-too-many-losing-heroines') return bundledMakeineCharacters as Character[];
   return [];
 }
 
@@ -143,7 +145,9 @@ export async function getAvailableChapterList(novelId: string, preferCache = fal
   // Keep the established catalog fallback while also recovering saved chapters
   // outside that range. Unknown recovered novels list only actual saved files.
   if (!manifest && available.length === 0 && (bundledNovels as Novel[]).some(novel => novel.id === novelId)) {
-    const count = novelId === 'kyudo-senpai' ? 25 : novelId === 'boyish-friend' ? 14 : 1;
+    // Legacy bundled catalogs only. Novels without converted chapters (for example
+    // the makeine skeleton) must stay empty instead of inventing a first chapter.
+    const count = novelId === 'kyudo-senpai' ? 25 : novelId === 'boyish-friend' ? 14 : 0;
     for (let number = 1; number <= count; number++) {
       available.push({ id: `ch-${String(number).padStart(2, '0')}`, novelId, chapterNumber: number, title: `ตอนที่ ${number}` });
     }
