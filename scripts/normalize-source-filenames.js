@@ -13,32 +13,12 @@
 
 const fs = require('fs');
 const path = require('path');
+const { sanitizeFileName, chapterFileName: sourceChapterFileName, markdownLink } = require('./scrape-nekopost.js');
 
 const MAX_NAME_BYTES = 200;
 
-function truncateUtf8(str, maxBytes) {
-  let out = '';
-  for (const ch of str) {
-    if (Buffer.byteLength(out + ch, 'utf8') > maxBytes) break;
-    out += ch;
-  }
-  return out;
-}
-
-function sanitizeFileName(name, max = 90, maxBytes = 190) {
-  let s = String(name || '')
-    .replace(/[\u0000-\u001f]/g, ' ')
-    .replace(/[\\/:*?"<>|]/g, '_')
-    .replace(/\s+/g, ' ')
-    .trim();
-  if (s.length > max) s = s.slice(0, max);
-  s = truncateUtf8(s, maxBytes);
-  return s.replace(/[. ]+$/, '');
-}
-
 function chapterFileName(chapter) {
-  const no = String(chapter.chapterNo).padStart(2, '0');
-  return `Ch_${no}_${sanitizeFileName(chapter.chapterName, 90, 190)}.md`;
+  return sourceChapterFileName({ ChapterNo: chapter.chapterNo, ChapterName: chapter.chapterName });
 }
 
 const target = process.argv[2];
@@ -102,9 +82,13 @@ for (const oldOverview of overviews) {
   }
 
   const toc = (source.chapters || [])
-    .map((c) => `- **Ch.${c.chapterNo}:** ${c.chapterName} — [${c.file}](${encodeURI('raw_chapters/' + c.file)})`)
+    .map((c) => `- **Ch.${c.chapterNo}:** ${c.chapterName} — [${c.file}](${markdownLink('raw_chapters/' + c.file)})`)
     .join('\n');
-  fs.writeFileSync(overviewPath, content.slice(0, markerIndex) + marker + '\n' + toc + '\n', 'utf8');
+  // Only replace the TOC section, not generated markers or hand-written notes.
+  const afterHeading = markerIndex + marker.length;
+  const nextSection = content.slice(afterHeading).search(/\n(?=##\s|<!-- nekopost:generated:end -->)/);
+  const sectionEnd = nextSection === -1 ? content.length : afterHeading + nextSection;
+  fs.writeFileSync(overviewPath, content.slice(0, markerIndex) + marker + '\n' + toc + '\n' + content.slice(sectionEnd), 'utf8');
 }
 
 // Final guard: no component may approach NAME_MAX.

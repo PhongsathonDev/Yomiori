@@ -66,6 +66,7 @@ git push origin main
 ---
 
 ## 📚 Key Reference Files
+- Nekopost source acquisition standard (read before fetching or updating raw sources): `novels_source/README.md`
 - Detailed conversion examples: `AI_CONVERSION_GUIDE.md`
 - Mobile app build & run instructions: `MOBILE_GUIDE.md`
 - System blueprint: `SYSTEM_BLUEPRINT.md`
