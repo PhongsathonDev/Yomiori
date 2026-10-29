@@ -90,6 +90,7 @@ export interface Novel {
   author: string;
   artist?: string;
   translator?: string;
+  translationSource?: { name: string; url: string };
   coverUrl: string;
   bannerUrl?: string;
   synopsis: string;

@@ -11,6 +11,8 @@ import {
 import { downloadChapterOnDemand, fetchCharacters, fetchNovels, getAvailableChapterList, getChapterForReading } from '../src/services/api';
 import { requestJson } from '../src/services/request';
 import blackCatConversion from '../src/data/novels/black-cat-hangout/conversion-status.json';
+import bundledNovels from '../src/data/novels.json';
+import { isNovelList } from '../src/services/validation';
 
 jest.mock('expo-file-system/legacy', () => ({
   documentDirectory: 'file:///docs/', EncodingType: { UTF8: 'utf8' },
@@ -197,13 +199,47 @@ describe('illustrations and explicit downloads', () => {
 });
 
 describe('metadata, settings and progress compatibility', () => {
+  test('all bundled Thai translation sources match the web catalog and their novel projects', async () => {
+    expect(bundledNovels).toEqual(require('../../reader-web/src/data/novels.json'));
+    expect(isNovelList(bundledNovels)).toBe(true);
+    const novels = await fetchNovels(true);
+    for (const [id, project] of [['kyudo-senpai', '17934'], ['boyish-friend', '15877'], ['black-cat-hangout', '17903']]) {
+      expect(novels.find(novel => novel.id === id)?.translationSource).toEqual({
+        name: 'Nekopost', url: `https://www.nekopost.net/novel/${project}`,
+      });
+    }
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  test('old cached catalogs gain bundled sources without losing their other metadata or requiring a network', async () => {
+    const { translationSource: _source, ...oldNovel } = bundledNovels[0];
+    await AsyncStorage.setItem('yomiori_metadata_novels', JSON.stringify([{ ...oldNovel, title: 'Cached title' }]));
+    const novels = await fetchNovels(true);
+    expect(novels.find(novel => novel.id === oldNovel.id)).toMatchObject({
+      title: 'Cached title', translationSource: bundledNovels[0].translationSource,
+    });
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  test('fresh source metadata takes precedence over bundled credits', async () => {
+    const novel = { ...bundledNovels[0], translationSource: { name: 'Updated source', url: 'https://example.com/novel' } };
+    fetchMock.mockResolvedValue(response([novel]));
+    expect(await fetchNovels()).toContainEqual(novel);
+  });
+
+  test.each([null, {}, { name: 'Nekopost', url: 'javascript:alert(1)' }, { name: '', url: 'https://example.com' }])(
+    'rejects invalid translation source metadata: %j', translationSource => {
+      expect(isNovelList([{ ...bundledNovels[0], translationSource }])).toBe(false);
+    },
+  );
+
   test('lists the complete real Black Cat bundle offline without filling intentionally skipped numbers', async () => {
     const list = await getAvailableChapterList('black-cat-hangout', true);
     expect(list.map(item => item.chapterNumber)).toEqual([
       ...Array.from({ length: 61 }, (_, number) => number), ...blackCatConversion.convertedChapters,
     ]);
     expect(new Set(list.map(item => item.id)).size).toBe(list.length);
-    for (const skipped of blackCatConversion.skippedChapters) {
+    for (const skipped of blackCatConversion.skippedChapters as { chapterNumber: number }[]) {
       expect(getBundledChapter('black-cat-hangout', `ch-${skipped.chapterNumber}`)).toBeNull();
     }
     expect(fetchMock).not.toHaveBeenCalled();
@@ -217,7 +253,7 @@ describe('metadata, settings and progress compatibility', () => {
     expect(list).toHaveLength(61 + blackCatConversion.convertedChapters.length);
     expect(list.filter(item => item.id === 'ch-61')).toHaveLength(1);
     expect(list.at(-1)).toMatchObject({ id: 'ch-87', offlineStatus: 'complete' });
-    for (const skipped of blackCatConversion.skippedChapters) {
+    for (const skipped of blackCatConversion.skippedChapters as { chapterNumber: number }[]) {
       expect(list.some(item => item.chapterNumber === skipped.chapterNumber)).toBe(false);
     }
   });

@@ -34,7 +34,11 @@ export async function fetchNovels(preferCache = false): Promise<Novel[]> {
     metadata('novels', `${CDN_BASE_URL}/novels.json`, isNovelList, preferCache), getSavedLibrary(),
   ]);
   // The old mockup can still be present in cached metadata or saved chapters.
-  const novels = (remote ?? []).filter(novel => novel.id !== 'idol-neighbor');
+  const novels = (remote ?? []).filter(novel => novel.id !== 'idol-neighbor').map(novel => {
+    // Older CDN/cache catalogs predate source credits; keep their other metadata intact.
+    const source = (bundledNovels as Novel[]).find(bundled => bundled.id === novel.id)?.translationSource;
+    return !novel.translationSource && source ? { ...novel, translationSource: source } : novel;
+  });
   const ids = new Set(novels.map(n => n.id));
   for (const bundled of bundledNovels as Novel[]) {
     if (!ids.has(bundled.id)) { novels.push(bundled); ids.add(bundled.id); }

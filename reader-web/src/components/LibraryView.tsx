@@ -952,6 +952,20 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
                       <strong style={{ color: 'var(--text-main)' }}>{currentNovel.translator}</strong>
                     </div>
                   )}
+                  {currentNovel.translationSource && (
+                    <div>
+                      <span style={{ color: 'var(--text-faint)' }}>แหล่งแปลไทย: </span>
+                      <a
+                        href={currentNovel.translationSource.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`เปิดแหล่งแปลไทย ${currentNovel.translationSource.name} (แท็บใหม่)`}
+                        style={{ color: 'var(--accent-primary)', fontWeight: 600, textDecoration: 'underline', textUnderlineOffset: '3px' }}
+                      >
+                        {currentNovel.translationSource.name}
+                      </a>
+                    </div>
+                  )}
                 </div>
 
                 {/* Synopsis */}

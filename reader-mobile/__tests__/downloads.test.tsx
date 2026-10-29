@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, StyleSheet } from 'react-native';
+import { Alert, Linking, StyleSheet } from 'react-native';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import { NovelDetailScreen } from '../src/screens/NovelDetailScreen';
 import { downloadChapterOnDemand, fetchNovels, getAvailableChapterList, fetchCharacters, fetchIllustrations } from '../src/services/api';
@@ -43,6 +43,35 @@ beforeEach(() => {
   jest.spyOn(Alert, 'alert').mockImplementation(() => undefined);
 });
 afterEach(() => { jest.restoreAllMocks(); });
+
+test('source credit opens the novel-specific Thai translation page', async () => {
+  const translationSource = { name: 'Nekopost', url: 'https://www.nekopost.net/novel/17934' };
+  jest.mocked(fetchNovels).mockResolvedValue([{ ...novel, translationSource }]);
+  const openURL = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
+  const view = await render(<NovelDetailScreen {...props} />);
+  await screen.findByText('Chapter 1');
+  await fireEvent.press(screen.getByRole('link', { name: 'เปิดแหล่งแปลไทย Nekopost' }));
+  expect(openURL).toHaveBeenCalledWith(translationSource.url);
+  await view.unmount();
+});
+
+test('source credit reports browser failures without an unhandled rejection', async () => {
+  const translationSource = { name: 'Nekopost', url: 'https://www.nekopost.net/novel/17934' };
+  jest.mocked(fetchNovels).mockResolvedValue([{ ...novel, translationSource }]);
+  jest.spyOn(Linking, 'openURL').mockRejectedValue(new Error('No browser'));
+  const view = await render(<NovelDetailScreen {...props} />);
+  await screen.findByText('Chapter 1');
+  await fireEvent.press(screen.getByRole('link', { name: 'เปิดแหล่งแปลไทย Nekopost' }));
+  await waitFor(() => expect(Alert.alert).toHaveBeenCalledWith('เปิดแหล่งแปลไทยไม่ได้', expect.stringContaining(translationSource.url)));
+  await view.unmount();
+});
+
+test('novels without source metadata do not invent a source link', async () => {
+  const view = await render(<NovelDetailScreen {...props} />);
+  await screen.findByText('Chapter 1');
+  expect(screen.queryByRole('link')).toBeNull();
+  await view.unmount();
+});
 
 test('selected contents and gallery tabs use a flat fill without native elevation or shadows', async () => {
   const view = await render(<NovelDetailScreen {...props} />);

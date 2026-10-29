@@ -35,6 +35,9 @@ export function isChapter(value: unknown, novelId?: string, chapterId?: string):
 export function isNovelList(value: unknown): value is Novel[] {
   return Array.isArray(value) && value.every(n => isRecord(n) && isSafeId(n.id)
     && ['title', 'author', 'coverUrl', 'synopsis'].every(key => typeof n[key] === 'string')
+    && (n.translationSource === undefined || (isRecord(n.translationSource)
+      && typeof n.translationSource.name === 'string' && n.translationSource.name.trim().length > 0
+      && typeof n.translationSource.url === 'string' && /^https:\/\/[^\s/?#]+(?:[/?#][^\s]*)?$/.test(n.translationSource.url)))
     && Array.isArray(n.tags) && n.tags.every(tag => typeof tag === 'string')
     && typeof n.totalOriginalChapters === 'number');
 }

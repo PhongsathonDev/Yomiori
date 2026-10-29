@@ -10,6 +10,8 @@ import {
   Alert,
   Modal,
   RefreshControl,
+  Linking,
+  Pressable,
 } from 'react-native';
 import { NavigationBar } from 'expo-navigation-bar';
 import { StatusBar } from 'expo-status-bar';
@@ -184,6 +186,15 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
     setLightboxVisible(true);
   };
 
+  const openTranslationSource = async () => {
+    if (!novel?.translationSource) return;
+    try {
+      await Linking.openURL(novel.translationSource.url);
+    } catch {
+      Alert.alert('เปิดแหล่งแปลไทยไม่ได้', 'กรุณาลองอีกครั้ง หรือนำลิงก์นี้ไปเปิดในเบราว์เซอร์:\n' + novel.translationSource.url);
+    }
+  };
+
   const refreshStorageStats = async () => {
     const stats = await getNovelOfflineStats(novelId);
     if (mounted.current) setStorageStats(stats);
@@ -308,6 +319,19 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
               <Text style={[styles.metaText, { color: themeColors.textMuted }]}>
                 ผู้แปล: {novel.translator || 'ไม่ระบุ'}
               </Text>
+              {novel.translationSource ? (
+                <Pressable
+                  accessibilityRole="link"
+                  accessibilityLabel={`เปิดแหล่งแปลไทย ${novel.translationSource.name}`}
+                  accessibilityHint="เปิดเว็บไซต์ต้นทางในเบราว์เซอร์"
+                  onPress={() => { void openTranslationSource(); }}
+                  style={({ pressed }) => [styles.sourceLink, { opacity: pressed ? 0.6 : 1 }]}
+                >
+                  <Text style={[styles.metaText, { color: themeColors.textMuted }]}>
+                    แหล่งแปลไทย: <Text style={[styles.sourceLinkText, { color: themeColors.primary }]}>{novel.translationSource.name}</Text>
+                  </Text>
+                </Pressable>
+              ) : null}
 
               {/* Clean Offline Counter Badge */}
               <View style={[styles.offlineStatusBar, { backgroundColor: themeColors.card, borderColor: themeColors.border }]}>
@@ -772,6 +796,15 @@ const styles = StyleSheet.create({
   metaText: {
     fontSize: 13,
     marginBottom: 3,
+  },
+  sourceLink: {
+    minHeight: 44,
+    justifyContent: 'center',
+    alignSelf: 'flex-start',
+  },
+  sourceLinkText: {
+    textDecorationLine: 'underline',
+    fontWeight: '600',
   },
   offlineStatusBar: {
     flexDirection: 'row',
