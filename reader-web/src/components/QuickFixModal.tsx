@@ -20,21 +20,23 @@ export const QuickFixModal: React.FC<QuickFixModalProps> = ({
   onConvertToNarration,
   onSaveBlock,
 }) => {
-  if (!block) return null;
-
-  const initialText = 'text' in block ? block.text : '';
-  const initialSpeakerId = block.type === 'dialogue' ? block.speakerId : '';
-  const initialSpeakerName = block.type === 'dialogue' ? block.speakerName : '';
+  const initialText = block && 'text' in block ? block.text : '';
+  const initialSpeakerId = block?.type === 'dialogue' ? block.speakerId : '';
+  const initialSpeakerName = block?.type === 'dialogue' ? block.speakerName : '';
 
   const [text, setText] = useState(initialText);
   const [selectedSpeakerId, setSelectedSpeakerId] = useState(initialSpeakerId);
   const [selectedSpeakerName, setSelectedSpeakerName] = useState(initialSpeakerName);
 
   useEffect(() => {
+    if (!block) return;
     setText('text' in block ? block.text : '');
     setSelectedSpeakerId(block.type === 'dialogue' ? block.speakerId : '');
     setSelectedSpeakerName(block.type === 'dialogue' ? block.speakerName : '');
   }, [block]);
+
+  // Hooks must run even while the modal is closed (block === null).
+  if (!block) return null;
 
   const handleSave = () => {
     if (onSaveBlock) {
