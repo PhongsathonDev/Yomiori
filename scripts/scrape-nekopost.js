@@ -11,9 +11,27 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const BASE = 'https://www.nekopost.net';
+// The reader app calls the JSON/AES endpoints under /api; /handler/* is 404 at the site root.
+const API = `${BASE}/api`;
+// Chapter bodies reference {file_fs}/{file_img}/{file_audio}; the site serves them from the
+// photo CDN, switching hosts for project ids above 17500.
+const CDN_WWW = 'https://www.osemocphoto.com/';
+const CDN_FS = 'https://fs.osemocphoto.com/';
+const CDN_THRESHOLD = 17500;
 const UA = 'Yomiori-source-importer/1.0';
 const own = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key);
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+function assetBase(projectId, chapterId) {
+  const host = Number(projectId) > CDN_THRESHOLD ? CDN_FS : CDN_WWW;
+  return `${host}collectManga/${projectId}/${chapterId}/`;
+}
+
+// Novel bodies store CDN placeholders ({file_fs}image_x.jpg) instead of absolute URLs.
+function resolveContent(html, projectId, chapterId) {
+  const base = assetBase(projectId, chapterId);
+  return String(html).replace(/\{file_(?:fs|img|audio)\}/g, base);
+}
 
 function chapterNumber(value) {
   const text = String(value);
@@ -159,18 +177,18 @@ function readExisting(root, projectId) {
     throw new Error('Existing source belongs to another project or has an invalid chapter registry.');
   }
   const ids = new Set();
-  const numbers = new Set();
   const files = new Set();
   for (const chapter of source.chapters) {
-    const no = Number(chapterNumber(chapter.chapterNo));
-    if (!chapter.chapterId || ids.has(String(chapter.chapterId)) || numbers.has(no) || files.has(chapter.file)) {
+    // Nekopost can list two different chapters under the same ChapterNo; chapterId is the identity.
+    chapterNumber(chapter.chapterNo);
+    if (!chapter.chapterId || ids.has(String(chapter.chapterId)) || files.has(chapter.file)) {
       throw new Error('Duplicate or invalid chapter in existing source registry.');
     }
     if (typeof chapter.file !== 'string' || chapter.file.includes('/')) throw new Error('Expected chapter filename only');
     localFile(root, chapter.file);
     if (!Array.isArray(chapter.images)) throw new Error('Existing chapter has no image registry');
     for (const image of chapter.images) localFile(root, image.file, 'illustrations/');
-    ids.add(String(chapter.chapterId)); numbers.add(no); files.add(chapter.file);
+    ids.add(String(chapter.chapterId)); files.add(chapter.file);
   }
   return source;
 }
@@ -282,24 +300,37 @@ async function scrape(options, dependencies = {}) {
     method: 'POST', headers: { 'Content-Type': type, Origin: BASE, Accept: '*/*' }, body: JSON.stringify(body),
   })).text();
   log(`Fetching project ${projectId}…`);
-  const project = JSON.parse(await post(`${BASE}/api/project/detail2`, { pid: projectId }, 'application/json')).projectInfo;
+  const project = JSON.parse(await post(`${API}/project/detail2`, { pid: projectId }, 'application/json')).projectInfo;
   if (!project?.Project?.projectName || !Array.isArray(project.ListChapter)) throw new Error('Invalid project response');
   const available = project.ListChapter.slice().sort((a, b) => Number(a.ChapterNo) - Number(b.ChapterNo));
   const ids = new Set();
   const numbers = new Set();
+  const numberCounts = new Map();
+  const files = new Set();
   for (const chapter of available) {
     const no = Number(chapterNumber(chapter.ChapterNo));
-    if (!chapter.ChapterID || ids.has(String(chapter.ChapterID)) || numbers.has(no)) throw new Error('Duplicate or invalid chapter in project response');
-    chapterFileName(chapter);
-    ids.add(String(chapter.ChapterID)); numbers.add(no);
+    const file = chapterFileName(chapter);
+    // Nekopost may list two distinct chapters under one number (e.g. both 40); keep both by chapterId.
+    if (!chapter.ChapterID || ids.has(String(chapter.ChapterID)) || files.has(file)) {
+      throw new Error('Duplicate chapterId or filename in project response');
+    }
+    ids.add(String(chapter.ChapterID)); numbers.add(no); files.add(file);
+    numberCounts.set(no, (numberCounts.get(no) || 0) + 1);
   }
+  const duplicatedNumbers = new Set([...numberCounts].filter(([, count]) => count > 1).map(([no]) => no));
   if (only?.some((no) => !numbers.has(Number(no)))) throw new Error('Requested chapter is not present in the project.');
   const records = new Map((previous?.chapters || []).map((chapter) => [String(chapter.chapterId), chapter]));
   // A replaced/renumbered source item requires a deliberate migration, not duplicate files.
+  // A number shared by two ids that both exist upstream is a genuine source duplicate, not a rename.
+  const sourceIds = new Set(available.map((chapter) => String(chapter.ChapterID)));
   for (const chapter of available) {
     const old = records.get(String(chapter.ChapterID));
-    if ((old && Number(old.chapterNo) !== Number(chapter.ChapterNo)) ||
-        [...records.values()].some((record) => Number(record.chapterNo) === Number(chapter.ChapterNo) && String(record.chapterId) !== String(chapter.ChapterID))) {
+    if (old && Number(old.chapterNo) !== Number(chapter.ChapterNo)) {
+      throw new Error(`Chapter identity changed at ${chapter.ChapterNo}; inspect the registry before importing.`);
+    }
+    const clash = [...records.values()].find((record) =>
+      Number(record.chapterNo) === Number(chapter.ChapterNo) && String(record.chapterId) !== String(chapter.ChapterID));
+    if (clash && !sourceIds.has(String(clash.chapterId))) {
       throw new Error(`Chapter identity changed at ${chapter.ChapterNo}; inspect the registry before importing.`);
     }
   }
@@ -336,8 +367,10 @@ async function scrape(options, dependencies = {}) {
     const target = localFile(root, file);
     if (!old && fs.existsSync(target)) throw new Error(`Unregistered chapter file exists; refusing to overwrite: ${file}`);
     const url = `${BASE}/novel/${projectId}/${chapter.ChapterNo}`;
-    const data = JSON.parse(decrypt(await post(`${BASE}/handler/cinfo`, { p: projectId, c: chapter.ChapterID }, 'text/plain;charset=UTF-8')));
-    const html = data.novelContent || (data.pageItem || []).map((page) => page.content || page.html || '').join('\n');
+    const data = JSON.parse(decrypt(await post(`${API}/handler/cinfo`, { p: projectId, c: chapter.ChapterID }, 'text/plain;charset=UTF-8')));
+    const html = resolveContent(
+      data.novelContent || (data.pageItem || []).map((page) => page.content || page.html || '').join('\n'),
+      projectId, chapter.ChapterID);
     if (typeof html !== 'string' || !html.trim()) throw new Error(`Empty chapter response: ${chapter.ChapterNo}`);
     // Fail before writing files if the content cannot be rendered.
     const tags = imageTags(html);
@@ -349,8 +382,14 @@ async function scrape(options, dependencies = {}) {
       const buffer = Buffer.from(await response.arrayBuffer());
       const extension = imageExtension(buffer);
       const no = chapterNumber(chapter.ChapterNo).padStart(2, '0');
-      const name = Number(no) === 0 ? `illust_${String(index + 1).padStart(2, '0')}` : `ch${no}_img${index + 1}`;
-      const imageFile = `illustrations/${name}${extension}`;
+      // A number shared by two upstream chapters needs the chapterId in the image name.
+      const base = Number(no) === 0 ? `illust_${String(index + 1).padStart(2, '0')}`
+        : duplicatedNumbers.has(Number(no)) ? `ch${no}_${chapter.ChapterID}_img${index + 1}`
+          : `ch${no}_img${index + 1}`;
+      const imageFile = `illustrations/${base}${extension}`;
+      // Two chapters can share a number upstream; never let them overwrite each other's images.
+      const owner = [...records.values()].find((record) => record.images.some((image) => image.file === imageFile));
+      if (owner && String(owner.chapterId) !== id) throw new Error(`Image filename collision: ${imageFile}`);
       atomicWrite(localFile(root, imageFile, 'illustrations/'), buffer);
       images.push({ source: imageUrl, file: imageFile });
     }
@@ -372,7 +411,7 @@ async function scrape(options, dependencies = {}) {
 module.exports = {
   parseArgs, chapterNumber, sanitizeFileName, chapterFileName, decodeEntities, htmlToLines,
   imageTags, renderChapter, readExisting, renderOverview, imageExtension, createHttp, scrape,
-  markdownLink,
+  markdownLink, assetBase, resolveContent,
 };
 
 if (require.main === module) {

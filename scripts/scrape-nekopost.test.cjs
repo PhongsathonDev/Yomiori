@@ -9,7 +9,7 @@ const { test } = require('node:test');
 const { execFileSync } = require('node:child_process');
 const {
   parseArgs, chapterFileName, sanitizeFileName, decodeEntities, htmlToLines,
-  renderChapter, imageTags, imageExtension, createHttp, scrape,
+  renderChapter, imageTags, imageExtension, createHttp, scrape, resolveContent,
 } = require('./scrape-nekopost.js');
 
 const PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=', 'base64');
@@ -50,7 +50,7 @@ function fixture(t) {
         if (id === state.failedChapter) return new Response('unavailable', { status: 503 });
         return new Response(encrypt({ novelContent: state.bodies.get(id) }));
       }
-      if (url.includes('/images/')) return new Response(state.invalidImage ? '<html>Error</html>' : PNG);
+      if (url.includes('/images/') || url.includes('/collectManga/')) return new Response(state.invalidImage ? '<html>Error</html>' : PNG);
       throw new Error(`Unexpected fixture URL: ${url}`);
     },
   };
@@ -105,6 +105,39 @@ test('image attributes handle single/double/unquoted src but not data-src as src
 test('image content, not a misleading URL extension, determines output format', () => {
   assert.equal(imageExtension(PNG), '.png');
   assert.throws(() => imageExtension(Buffer.from('<html>error</html>')), /invalid image/);
+});
+
+test('CDN placeholders resolve to the host the site uses for the project id', () => {
+  assert.equal(resolveContent('<img src="{file_fs}a.jpg">', 14560, 7),
+    '<img src="https://www.osemocphoto.com/collectManga/14560/7/a.jpg">');
+  assert.equal(resolveContent('{file_img}b.png {file_audio}c.ogg', 17903, 9),
+    'https://fs.osemocphoto.com/collectManga/17903/9/b.png https://fs.osemocphoto.com/collectManga/17903/9/c.ogg');
+});
+
+test('placeholder images are downloaded from the CDN and registered', async (t) => {
+  const { run, state, root } = fixture(t);
+  state.bodies.set(101, '<p>ข้อความ</p><img src="{file_fs}image_abc.jpeg">');
+  const source = await run({ only: ['1'] });
+  const chapter = source.chapters[0];
+  assert.equal(chapter.images[0].source, 'https://www.osemocphoto.com/collectManga/12345/101/image_abc.jpeg');
+  assert.ok(fs.existsSync(path.join(root, chapter.images[0].file)));
+});
+
+test('two distinct chapters sharing one source number are both stored', async (t) => {
+  const { run, state, root } = fixture(t);
+  state.project.ListChapter.push({ ChapterNo: '1', ChapterID: 200, ChapterName: 'ตอนที่ใช้เลขซ้ำ', ProviderName: 'ผู้แปล' });
+  state.bodies.set(200, '<p>เนื้อหาของตอนที่ใช้เลขซ้ำ</p><img src="/images/dup.jpg">');
+  const first = await run();
+  const duplicate = first.chapters.filter((chapter) => chapter.chapterNo === '1');
+  assert.equal(duplicate.length, 2);
+  assert.notEqual(duplicate[0].file, duplicate[1].file);
+  for (const chapter of duplicate) {
+    assert.ok(fs.existsSync(path.join(root, chapter.file)));
+    assert.match(chapter.images[0].file, new RegExp(`ch01_${chapter.chapterId}_img1`));
+  }
+  assert.notEqual(duplicate[0].images[0].file, duplicate[1].images[0].file);
+  const second = await run();
+  assert.equal(second.chapters.filter((chapter) => chapter.chapterNo === '1').length, 2);
 });
 
 test('fresh import stores all source items, local images, credits and valid TOC links', async (t) => {
