@@ -15,29 +15,31 @@ Yomiori is a cross-platform novel reading platform consisting of:
 
 ## 🚨 MANDATORY PROTOCOL: Adding or Modifying Novel Chapters
 
-Whenever the user asks to add, convert, update, or import new chapters for any novel, you **MUST complete ALL 6 steps below**. Skipping any step will break the mobile app (resulting in 404 Chapter Not Found or missing chapters in the list).
+Whenever the user asks to add, convert, update, or import chapters into the reader, you **MUST complete ALL 6 steps below**. Missing chapter exports, manifest entries or CDN deployment can leave chapters unavailable on mobile. Source-only acquisition follows `novels_source/README.md` and does not itself publish reader chapters.
 
 ### Step 1: Parse and Convert Chapter to Structured JSON
 - Read raw chapter directly from `novels_source/<novel-id>/` (for example, `Ch_01_<title>.md`). Keep all novel sources under `novels_source/`; do not create a separate staging folder or nested chapter-source folder.
 - Convert into `reader-web/src/data/novels/<novel-id>/chapters/ch-XX.json`:
-  - `blocks`: Split between `narration` and `dialogue`.
+  - Follow `Chapter` and `StoryBlock` in `reader-web/src/types.ts` and `reader-mobile/src/types/index.ts`: include `novelId`, `novelTitle` and a unique `id` for every block.
+  - Preserve text as `narration` or `dialogue`, scene separators as `scene_break`, and images in their original positions as `illustration` blocks.
   - Every `dialogue` block must have a valid `speakerId` and `speakerName`.
 - Update `reader-web/src/data/novels/<novel-id>/chapters/index.ts` to import and export the new chapters.
 - If new characters appear, add them to `reader-web/src/data/novels/<novel-id>/characters.json` with `id`, `name`, `role`, `color`, `aliases`, and `description`.
 
 ### Step 2: Quality & Fidelity Verification (Zero-Loss Rule)
 - Verify 100% text fidelity between raw text and converted JSON. No paragraphs or dialogues may be omitted or summarized.
+- Compare the story body paragraph by paragraph in order, excluding only source headers/metadata as defined in `novels_source/README.md`; check scene separators and illustrations separately. The length ratio from `reader-web/scripts/verify-conversion.mjs` is only a warning signal, not proof of fidelity. Its current pass range is 96–104% after normalization.
 - Check that no dialogue has `unknown` speaker or invalid speaker ID.
 
 ### Step 3: Synchronize with Mobile App (`reader-mobile`)
-The mobile app contains offline bundled copies and manifests:
+Keep mobile data copies synchronized, and check the actual runtime lookup separately:
 - Copy `ch-XX.json` to `reader-mobile/src/data/novels/<novel-id>/chapters/ch-XX.json`.
 - Update `reader-mobile/src/data/novels/<novel-id>/chapters/index.ts` to export all chapters.
 - Sync `characters.json` to `reader-mobile/src/data/novels/<novel-id>/characters.json`.
-- In `reader-mobile/src/services/api.ts`:
-  - Ensure `getAvailableChapterList` includes the novel in the bundled merge logic.
-  - Ensure `getBundledChapter` supports the novel.
-  - Ensure offline fallback count covers the new chapters.
+- `getBundledChapter` is defined in `reader-mobile/src/services/storage.ts`. It currently exposes Kyudo chapter 1 and the imported Black Cat chapter collection. Copying a JSON file or exporting it from an otherwise unused index does not make it runtime-bundled.
+- Preserve the existing bundled scope unless the task explicitly changes it. For chapters intended to ship with the app, verify that the runtime lookup imports and exposes them; source synchronization alone is insufficient.
+- `getAvailableChapterList` in `reader-mobile/src/services/api.ts` merges the CDN manifest, Black Cat bundled entries and validated saved chapters. Its legacy no-manifest fallback lists Kyudo 1–25 and Boyish 1–14; these are catalog entries, not evidence of bundled text. Do not increase fallback counts as a substitute for a manifest or invent entries for unconverted novels.
+- Verify new chapters in the generated CDN manifest. Runtime bundle changes require a new app build to reach installed apps; publishing CDN data does not update an APK's bundled files.
 
 ### Step 4: Run Web Build & Manifest Generator
 Run the production build in `reader-web`:
@@ -48,20 +50,22 @@ This triggers `scripts/postbuild.mjs`, which:
 - Exports all JSON data to `dist/data/`.
 - Automatically rebuilds `manifest.json` for each novel with updated `totalAvailable` and chapter index.
 
-### Step 5: Git Commit & Push to `origin main`
-**CRITICAL**: The mobile app fetches chapters and manifests directly from the GitHub Pages CDN (`https://phongsathondev.github.io/Yomiori/data/...`). If changes are not pushed to GitHub, GitHub Actions will not deploy them, and mobile users will encounter 404 errors!
-```bash
-git add .
+### Step 5: Commit, Push and Deliver CDN Changes
+Commit only the files belonging to the task and push the current development branch, as required by the delivery preference below. Inspect `git status` and the current branch first; do not stage unrelated work.
+```sh
+git add -- <task-file-1> <task-file-2>
 git commit -m "feat(<novel-id>): add Ch.XX-YY and sync mobile cdn"
-git push origin main
+git push origin HEAD
 ```
+The mobile CDN is published by `.github/workflows/deploy.yml` on pushes to `main` or `master` (or a manual workflow dispatch). A development-branch push alone does not publish chapters to the production CDN. For normal chapter delivery on `main`, verify that the pushed commit is on that branch. If working on another branch, complete the authorized integration into a deployment branch before claiming production availability; otherwise report CDN deployment as pending. `git push origin main` from another branch pushes the local `main` ref, not necessarily the current work.
 
 ### Step 6: Verify Deployment Status
-- Check GitHub Actions:
-  ```bash
-  gh run list -L 1
+- Find the deployment run for the exact commit delivered to the deployment branch:
+  ```sh
+  gh run list --workflow deploy.yml --commit <deployed-commit-sha>
+  gh run watch <run-id> --exit-status
   ```
-- Verify that the workflow succeeds (`✓`) and verify via `curl -sI https://phongsathondev.github.io/Yomiori/data/novels/<novel-id>/chapters/ch-XX.json` returning `HTTP/2 200`.
+- Require both a successful matching deployment and HTTP status 200 for the affected chapter JSON and novel manifest, for example `curl.exe -f -I https://phongsathondev.github.io/Yomiori/data/novels/<novel-id>/chapters/ch-XX.json` on Windows. The HTTP protocol version may vary. For modified chapters, compare the fetched JSON content with the expected data; an existing URL returning 200 does not prove the update is live.
 
 ---
 

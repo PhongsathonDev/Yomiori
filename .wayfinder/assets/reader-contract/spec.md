@@ -1,12 +1,12 @@
 # Reader Android: behavior and acceptance contract
 
-Status: specification finalized; user accepted the latest visual direction on 28 October 2026. Android APK/device validation remains open in WF-0008. This is a personal Android reader, with no account, public release or navigation redesign in scope. It preserves existing file paths, settings and reading progress. This document is the single detailed contract for WF-0004/5/7.
+Status: WF-0004/5/7 specification decisions are finalized; the historical capsule direction was accepted on 28 October 2026. Current implementation notes below were reconciled with source on 29 October 2026, including later visual and scan-reuse changes. Android APK/device validation remains open in WF-0008. This is a personal Android reader, with no account, public release or navigation redesign in scope. It preserves existing file paths, settings and reading progress. This document records the detailed contract for WF-0004/5/7 together with links to subsequent decisions; historical acceptance does not establish acceptance or native validation of every later revision.
 
 ## Local library authority
 
 Validated saved chapter files, including readable recovery backups, establish local availability even when the manifest/catalog is missing. Reject invalid chapter shapes and mismatched identities. Merge these summaries with cached/remote metadata and bundled chapter summaries, deduplicate IDs and sort by chapter number. Saved text overrides bundled text. Remote metadata must not hide a saved chapter above the old fallback range or a saved novel absent from the catalog.
 
-Use validated file discovery rather than a new persisted index: an index introduces migration and another source of stale state. In-flight scans share work; completed writes invalidate reuse of older scans. Chapter bodies are released after each summary is produced. A completed scan is not a permanent cache. This deliberately preserves repairability at the cost of disk reads; actual cost with a large Android library is still unmeasured. Revisit indexing only after device measurements justify it.
+Use validated file discovery rather than a new persisted index. The later [scan-reuse decision](../android-scan-cost/reuse-decision.md) retains completed chapter summaries within the current process, keyed by file revision/generation; concurrent scans also share work. App writes, updates, deletes and image saves invalidate summary reuse. I/O-error results are not retained, and a fresh process verifies files again. Chapter bodies are released after each summary is produced. External file changes during the same process may not appear in the list until restart, as accepted in that decision. The earlier full-rescan behavior is historical; desktop operation counts do not establish Android startup time or memory cost. Revisit persisted indexing only with further evidence and an explicit decision.
 
 `missing` means no validated local text; `text-only` means text is readable but an illustration is missing; `complete` means text and every required illustration are local. A chapter without illustrations can be complete. Bundled chapters count as locally readable but not reclaimable downloaded bytes. Clearing downloads preserves bundled content, progress, settings and catalog metadata.
 
@@ -26,9 +26,13 @@ Simultaneous JSON requests for an identical URL share work; different URLs proce
 
 Opening a saved chapter and pulling to refresh metadata preserve its text snapshot. To retrieve edited chapter text, use **จัดการข้อมูลออฟไลน์ → อัปเดตตอนที่มีในเครื่อง**. The action updates readable chapters only, validates identity/content before staged replacement, then caches missing illustrations. It excludes competing download/delete jobs. Network, response-validation or save failures retain the old readable text; a bundled fallback does not count as a successful remote update. Report complete/text-only/failed counts. Progress remains the existing percentage; text edits can change the corresponding paragraph. Cached images at the same URL are not forcibly replaced by this action.
 
-## Reader direction awaiting user visual acceptance
+## Current Reader implementation and visual history
 
-The user supplied a screenshot and prefers the old floating capsule. Use the historical f5ecc21 capsule styling with font/size settings chip, a small added contents shortcut and direct light/sepia/dark selectors. Use outline vector icons in the app and companion, without Unicode emoji. Place previous/next/hide and reading percentage in the small header. Preserve 48-point tap targets and accessible labels. Hide dock controls from interaction/accessibility while the settings sheet is open. Keep theme controls in the sheet as well. The user accepted this direction after the historical-styling revision. Keep current fonts, palettes, Thai text and Dialogue Cards. The [interactive layout companion](../reader-layout/preview.html) is a browser reconstruction, not a native screenshot. It cannot establish Thai wrapping, safe areas, image gestures or accessibility on Android. WF-0006 is closed after user acceptance; native checks remain separate.
+The user accepted the earlier `f5ecc21` capsule revision in [WF-0006](../../issues/WF-0006.md). Later work restored the shipped 1.0.0 source `a4f7ce93b5c085070e48cb2089bd8c9aee67f4fb`, then added the in-reader chapter picker and OLED dark surfaces. The [build identity record](../android-baseline/README.md) and dated follow-ups in [VALIDATION.md](../../../reader-mobile/VALIDATION.md) preserve that sequence. Do not restore `f5ecc21` over the current implementation merely because it appears in the earlier acceptance record.
+
+Current code in [ReaderChrome.tsx](../../../reader-mobile/src/components/ReaderChrome.tsx) and [ReaderScreen.tsx](../../../reader-mobile/src/screens/ReaderScreen.tsx) uses a chapter-title header with back, chapter-picker and percentage controls; previous/next actions are below the story/comments. The bottom capsule has the font/size settings chip and direct light/sepia/dark selectors; it has no contents shortcut. It occupies 90% of the available width, capped at 480 points, with 32-point theme circles and expanded hit areas. Narration taps hide/show the controls, and an accessible reveal button is available while hidden. Dock controls are hidden from interaction/accessibility while settings or the chapter picker is open. Theme controls remain in the settings sheet. Keep the current fonts, Thai text, Dialogue Cards, saved preferences and OLED black palette unless the task changes them.
+
+The [interactive layout companion](../reader-layout/preview.html) is a historical browser reconstruction, not the authority for the latest native layout or a native screenshot. It cannot establish Thai wrapping, safe areas, image gestures or accessibility on Android. WF-0006 stays closed for its recorded direction decision; later revisions and native validation retain their own acceptance requirements.
 
 ## Acceptance matrix
 
@@ -47,9 +51,9 @@ The user supplied a screenshot and prefers the old floating capsule. Use the his
 
 For each check record device/Android version, app version/build, source commit, number of saved chapters, network condition, steps, observed result and evidence. Use `reader-mobile/VALIDATION.md` as the runbook. Do not uninstall or clear app data to make acceptance pass. No baseline or intermediate cloud build is required; create the final APK only after visual feedback and implementation are ready. Native checks remain unchecked until evidence exists.
 
-## Closure gates
+## Historical closure gates and outstanding device work
 
-WF-0004: local authority decision and source evidence recorded. WF-0005: entry/refresh/update contract and automated evidence recorded. WF-0006: user visual acceptance required. WF-0007 and parent map: finalize only once WF-0006 is accepted and outstanding decisions have answers; keep Android validation obligations explicit rather than claiming a device result from Jest/Metro.
+WF-0004 recorded the local authority decision and source evidence. WF-0005 recorded entry/refresh/update behavior and automated evidence. WF-0006 required user acceptance before WF-0007 and the parent map could finalize; that gate was satisfied as recorded below. These closed decisions do not close WF-0008 or certify subsequent revisions on a device. Keep current Android validation obligations explicit rather than claiming a device result from Jest/Metro.
 
 ### Final acceptance record
 
