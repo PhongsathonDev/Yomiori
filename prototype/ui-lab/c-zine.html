@@ -1,0 +1,1823 @@
+<!doctype html>
+<html lang="th" data-variant="C" data-defaults='{"theme":"sepia","font":"serif"}'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>UI Lab C · สมุดตัดแปะ | Yomiori</title>
+    <link rel="stylesheet" href="/web-v2/css/fonts.css" />
+    <link rel="stylesheet" href="shared/mali.css" />
+    <link rel="stylesheet" href="shared/lab.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         C · สมุดตัดแปะ — a reader's zine: tape, stamps, paper and margins.
+         ------------------------------------------------------------------ */
+      html[data-theme='light'] {
+        --tape: rgba(196, 164, 104, 0.45);
+        --highlight: rgba(213, 182, 98, 0.35);
+        --paper-card: #fffaf0;
+        --stamp: #a8452f;
+      }
+
+      html[data-theme='dark'] {
+        --tape: rgba(180, 150, 100, 0.18);
+        --highlight: rgba(217, 121, 96, 0.22);
+        --paper-card: #221f1a;
+        --stamp: #d97a60;
+      }
+
+      html[data-theme='sepia'] {
+        --tape: rgba(180, 140, 80, 0.35);
+        --highlight: rgba(205, 165, 85, 0.32);
+        --paper-card: #fbf2e2;
+        --stamp: #8c5426;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      .c-hand {
+        font-family: var(--font-hand);
+      }
+
+      .c-head {
+        position: sticky;
+        top: 0;
+        z-index: 35;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 14px clamp(18px, 4vw, 44px);
+        background: color-mix(in srgb, var(--paper) 94%, transparent);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px dashed var(--line);
+      }
+
+      .c-brand {
+        font-family: var(--font-serif);
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .c-brand span {
+        font-family: var(--font-jp);
+        color: var(--accent);
+        font-size: 0.84em;
+        margin-left: 3px;
+      }
+
+      .c-head-note {
+        font-family: var(--font-hand);
+        font-size: 0.85rem;
+        color: var(--muted);
+        transform: rotate(-1deg);
+      }
+
+      .c-head-tools {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+
+      .c-head-tools button {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        min-height: 36px;
+        padding: 5px 9px;
+        border: 1px solid transparent;
+        background: transparent;
+        color: var(--muted);
+        font-size: 0.73rem;
+        cursor: pointer;
+      }
+
+      .c-head-tools button:hover {
+        color: var(--ink);
+        border-color: var(--line);
+      }
+
+      .c-head-tools svg {
+        width: 15px;
+        height: 15px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .c-main {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0 clamp(18px, 4vw, 44px) 100px;
+      }
+
+      /* Shelf ----------------------------------------------------------- */
+      .c-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(240px, 0.7fr);
+        gap: clamp(30px, 7vw, 90px);
+        align-items: center;
+        padding: 56px 0 48px;
+      }
+
+      .c-ticket {
+        position: relative;
+        padding: 34px 34px 30px;
+        background: var(--paper-card);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        transform: rotate(-0.7deg);
+      }
+
+      .c-ticket::after {
+        content: '';
+        position: absolute;
+        left: 28px;
+        right: 28px;
+        bottom: 15px;
+        border-bottom: 1px dashed var(--line);
+      }
+
+      .c-stamp {
+        position: absolute;
+        right: 24px;
+        top: 20px;
+        padding: 5px 10px;
+        border: 2px solid var(--stamp);
+        color: var(--stamp);
+        font-family: var(--font-hand);
+        font-size: 0.86rem;
+        letter-spacing: 0.04em;
+        transform: rotate(7deg);
+        opacity: 0.82;
+      }
+
+      .c-kicker {
+        font-family: var(--font-hand);
+        font-size: 0.88rem;
+        color: var(--muted);
+        margin-bottom: 9px;
+      }
+
+      .c-ticket h1 {
+        max-width: 20ch;
+        font-family: var(--font-serif);
+        font-size: clamp(1.65rem, 3.7vw, 2.8rem);
+        font-weight: 500;
+        line-height: 1.4;
+      }
+
+      .c-ticket-novel {
+        margin-top: 8px;
+        font-size: 0.76rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .c-ticket-foot {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+
+      .c-ticket-foot button {
+        min-height: 44px;
+        padding: 9px 18px;
+        border: 1px solid var(--ink);
+        background: var(--ink);
+        color: var(--paper);
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+        transform: rotate(-0.5deg);
+      }
+
+      .c-ticket-foot button:hover {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--on-accent);
+      }
+
+      .c-progress {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-family: var(--font-hand);
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      .c-progress i {
+        display: block;
+        width: 100px;
+        height: 2px;
+        background: var(--line);
+        position: relative;
+      }
+
+      .c-progress i::after {
+        content: '';
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 32%;
+        background: var(--stamp);
+      }
+
+      .c-feature {
+        position: relative;
+        width: min(100%, 280px);
+        margin: 0 auto;
+        padding: 13px 13px 20px;
+        background: var(--paper-card);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        transform: rotate(2.4deg);
+      }
+
+      .c-tape {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        top: -12px;
+        width: 104px;
+        height: 26px;
+        background: var(--tape);
+        transform: translateX(-50%) rotate(-2deg);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+        pointer-events: none;
+      }
+
+      .c-feature img {
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        border: 1px solid var(--line);
+      }
+
+      .c-feature figcaption {
+        margin-top: 12px;
+        font-family: var(--font-hand);
+        font-size: 0.85rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .c-shelf-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 26px 0 6px;
+        padding-bottom: 12px;
+        border-bottom: 1px dashed var(--line);
+      }
+
+      .c-shelf-head h2 {
+        font-family: var(--font-serif);
+        font-size: 1.55rem;
+        font-weight: 500;
+      }
+
+      .c-shelf-head p {
+        font-family: var(--font-hand);
+        font-size: 0.86rem;
+        color: var(--muted);
+      }
+
+      .c-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 38px 30px;
+        padding-top: 32px;
+      }
+
+      .c-book {
+        position: relative;
+        display: block;
+        padding: 12px 12px 17px;
+        background: var(--paper-card);
+        border: 1px solid var(--line);
+        color: var(--ink);
+        text-decoration: none;
+        transform: rotate(var(--rot, 0deg));
+        box-shadow: var(--shadow);
+        transition: transform 240ms var(--lab-ease), box-shadow 240ms var(--lab-ease);
+      }
+
+      .c-book:nth-child(3n + 1) {
+        --rot: -1.6deg;
+      }
+
+      .c-book:nth-child(3n + 2) {
+        --rot: 1.3deg;
+      }
+
+      .c-book:nth-child(3n) {
+        --rot: -0.5deg;
+      }
+
+      .c-book:hover,
+      .c-book:focus-visible {
+        transform: rotate(0deg) translateY(-5px);
+        box-shadow: 0 30px 50px -30px rgba(0, 0, 0, 0.5);
+      }
+
+      .c-book .c-tape {
+        top: -10px;
+        width: 78px;
+        height: 21px;
+        opacity: 0.85;
+      }
+
+      .c-book img {
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        border: 1px solid var(--line);
+      }
+
+      .c-book-title {
+        margin-top: 12px;
+        font-family: var(--font-serif);
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .c-book-meta {
+        margin-top: 5px;
+        font-family: var(--font-hand);
+        font-size: 0.78rem;
+        color: var(--muted);
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      .c-book-stamp {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 2px 7px;
+        border: 1px solid var(--stamp);
+        color: var(--stamp);
+        font-family: var(--font-hand);
+        font-size: 0.7rem;
+        transform: rotate(-2deg);
+        opacity: 0.8;
+      }
+
+      .c-note {
+        margin-top: 30px;
+        font-family: var(--font-hand);
+        font-size: 0.86rem;
+        line-height: 1.8;
+        color: var(--muted);
+      }
+
+      /* Detail spread --------------------------------------------------- */
+      .c-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin: 28px 0 18px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--muted);
+        font-family: var(--font-hand);
+        font-size: 0.88rem;
+        cursor: pointer;
+      }
+
+      .c-spread {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: var(--paper-card);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        min-height: 620px;
+      }
+
+      .c-spread::after {
+        content: '';
+        position: absolute;
+        top: 18px;
+        bottom: 18px;
+        left: 50%;
+        width: 1px;
+        background: var(--line);
+        box-shadow: 0 0 18px 4px color-mix(in srgb, var(--ink) 8%, transparent);
+        pointer-events: none;
+      }
+
+      .c-page {
+        padding: clamp(24px, 4vw, 44px);
+        min-width: 0;
+      }
+
+      .c-page-left {
+        border-right: 0;
+      }
+
+      .c-taped {
+        position: relative;
+        width: min(82%, 270px);
+        margin: 8px auto 0;
+        padding: 10px 10px 18px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        transform: rotate(-2deg);
+        box-shadow: var(--shadow);
+      }
+
+      .c-taped img {
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+        border: 1px solid var(--line);
+      }
+
+      .c-taped figcaption {
+        margin-top: 9px;
+        font-family: var(--font-hand);
+        font-size: 0.78rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .c-page-label {
+        margin-bottom: 12px;
+        font-family: var(--font-hand);
+        font-size: 0.84rem;
+        color: var(--muted);
+        border-bottom: 1px dashed var(--line);
+        padding-bottom: 7px;
+      }
+
+      .c-cast-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .c-cast {
+        width: 92px;
+      }
+
+      .c-cast img,
+      .c-cast .c-initial {
+        width: 46px;
+        height: 46px;
+        object-fit: cover;
+        border: 3px solid var(--paper-card);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        transform: rotate(-3deg);
+        background: var(--surface);
+        border-radius: 2px;
+      }
+
+      .c-cast .c-initial {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-serif);
+        color: var(--char, var(--ink));
+      }
+
+      .c-cast-name {
+        margin-top: 6px;
+        font-family: var(--font-hand);
+        font-size: 0.76rem;
+        line-height: 1.4;
+      }
+
+      .c-cast-role {
+        font-size: 0.62rem;
+        color: var(--muted);
+        line-height: 1.4;
+      }
+
+      .c-margin-note {
+        margin-top: 24px;
+        padding: 14px 16px;
+        background: var(--highlight);
+        font-family: var(--font-hand);
+        font-size: 0.82rem;
+        line-height: 1.75;
+        transform: rotate(-0.6deg);
+      }
+
+      .c-right-title {
+        font-family: var(--font-serif);
+        font-size: clamp(1.7rem, 3vw, 2.45rem);
+        font-weight: 500;
+        line-height: 1.35;
+        letter-spacing: -0.01em;
+      }
+
+      .c-original {
+        margin-top: 8px;
+        font-family: var(--font-jp);
+        font-size: 0.75rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .c-start {
+        margin-top: 17px;
+        padding: 8px 15px;
+        border: 1px solid var(--ink);
+        background: var(--ink);
+        color: var(--paper);
+        font-family: var(--font-hand);
+        font-size: 0.86rem;
+        cursor: pointer;
+        transform: rotate(-0.5deg);
+      }
+
+      .c-start:hover {
+        background: var(--stamp);
+        border-color: var(--stamp);
+        color: var(--on-accent);
+      }
+
+      .c-stamp-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 16px;
+      }
+
+      .c-stamp-row span {
+        padding: 2px 7px;
+        border: 1px solid var(--line);
+        color: var(--muted);
+        font-family: var(--font-hand);
+        font-size: 0.72rem;
+        transform: rotate(-1deg);
+      }
+
+      .c-receipt {
+        margin-top: 24px;
+        padding: 18px 18px 20px;
+        background: var(--paper);
+        border: 1px dashed var(--muted);
+        font-family: var(--font-plex);
+        font-size: 0.78rem;
+        line-height: 1.85;
+        color: var(--ink-2);
+        position: relative;
+      }
+
+      .c-receipt::before {
+        content: 'เรื่องย่อ';
+        position: absolute;
+        top: -9px;
+        left: 14px;
+        padding: 0 5px;
+        background: var(--paper);
+        font-family: var(--font-hand);
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+
+      .c-checklist {
+        margin-top: 26px;
+      }
+
+      .c-checklist-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 7px;
+        border-bottom: 1px dashed var(--line);
+      }
+
+      .c-checklist-head h2 {
+        font-family: var(--font-serif);
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .c-checklist-head span {
+        font-family: var(--font-hand);
+        font-size: 0.76rem;
+        color: var(--muted);
+      }
+
+      .c-check {
+        display: grid;
+        grid-template-columns: 27px minmax(0, 1fr);
+        gap: 10px;
+        align-items: start;
+        width: 100%;
+        padding: 9px 0;
+        border: 0;
+        border-bottom: 1px solid var(--line-2);
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .c-check:hover .c-check-title {
+        color: var(--accent);
+      }
+
+      .c-check-no {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 23px;
+        height: 23px;
+        border: 1px solid var(--stamp);
+        border-radius: 50%;
+        color: var(--stamp);
+        font-family: var(--font-hand);
+        font-size: 0.66rem;
+        transform: rotate(-5deg);
+      }
+
+      .c-check-title {
+        font-size: 0.8rem;
+        line-height: 1.55;
+        padding-top: 2px;
+      }
+
+      .c-check[aria-current='true'] .c-check-no {
+        background: var(--stamp);
+        color: var(--paper);
+      }
+
+      .c-empty {
+        padding: 20px 0;
+        font-family: var(--font-hand);
+        color: var(--muted);
+      }
+
+      /* Reader ---------------------------------------------------------- */
+      body[data-lab-screen='reader'] .c-head {
+        display: none;
+      }
+
+      .c-reader {
+        min-height: 100svh;
+        background: var(--paper);
+      }
+
+      .c-reader-bar {
+        position: sticky;
+        top: 0;
+        z-index: 25;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 12px clamp(16px, 3vw, 34px);
+        background: color-mix(in srgb, var(--paper) 94%, transparent);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px dashed var(--line);
+      }
+
+      .c-reader-bar-left,
+      .c-reader-bar-right {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        min-width: 0;
+      }
+
+      .c-reader-bar button {
+        min-height: 34px;
+        padding: 4px 8px;
+        border: 1px solid transparent;
+        background: transparent;
+        color: var(--muted);
+        font-family: var(--font-hand);
+        font-size: 0.82rem;
+        cursor: pointer;
+      }
+
+      .c-reader-bar button:hover {
+        color: var(--ink);
+        border-color: var(--line);
+      }
+
+      .c-reader-context {
+        font-family: var(--font-hand);
+        font-size: 0.8rem;
+        color: var(--muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .c-desk {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 42px 20px 100px;
+      }
+
+      .c-sheet {
+        position: relative;
+        width: min(760px, 100%);
+        padding: clamp(28px, 5vw, 58px) clamp(22px, 6vw, 72px) 50px;
+        background: var(--paper-card);
+        border: 1px solid var(--line);
+        box-shadow: 0 32px 60px -40px rgba(0, 0, 0, 0.45);
+      }
+
+      .c-sheet::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -13px;
+        width: 124px;
+        height: 28px;
+        background: var(--tape);
+        transform: translateX(-50%) rotate(-1.4deg);
+        opacity: 0.8;
+      }
+
+      .c-reader-kicker {
+        font-family: var(--font-hand);
+        font-size: 0.86rem;
+        color: var(--muted);
+        margin-bottom: 10px;
+      }
+
+      .c-reader-head {
+        padding-bottom: 24px;
+        margin-bottom: 28px;
+        border-bottom: 1px dashed var(--line);
+      }
+
+      .c-reader-title {
+        font-family: var(--font-serif);
+        font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+      }
+
+      .c-reader-novel {
+        margin-top: 8px;
+        font-size: 0.74rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .c-page-no {
+        position: absolute;
+        right: clamp(18px, 4vw, 46px);
+        top: clamp(20px, 4vw, 46px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--stamp);
+        border-radius: 50%;
+        color: var(--stamp);
+        font-family: var(--font-serif);
+        font-size: 0.82rem;
+        transform: rotate(7deg);
+      }
+
+      .c-sheet .lab-speech {
+        position: relative;
+        margin: 1.35em 0;
+        padding: 0.55em 0 0.55em 1.15em;
+      }
+
+      .c-sheet .lab-speech::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.25em;
+        bottom: 0.25em;
+        width: 4px;
+        background: color-mix(in srgb, var(--char, var(--accent)) 52%, transparent);
+      }
+
+      .c-sheet .lab-who {
+        display: inline;
+        padding: 0 4px;
+        background: var(--highlight);
+        font-family: var(--font-hand);
+        font-size: 0.86rem;
+        color: var(--ink-2);
+      }
+
+      .c-sheet .lab-who .lab-role {
+        display: inline;
+        margin-left: 4px;
+        font-size: 0.68rem;
+      }
+
+      .c-sheet .lab-avatar {
+        display: inline-block;
+        vertical-align: middle;
+        width: 27px;
+        height: 27px;
+        margin-right: 5px;
+        border-radius: 2px;
+        border: 2px solid var(--paper-card);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+        transform: rotate(-3deg);
+      }
+
+      .c-sheet .lab-line {
+        font-family: var(--font-serif);
+      }
+
+      .c-reader-note {
+        position: sticky;
+        top: 90px;
+        align-self: flex-start;
+        width: 150px;
+        font-family: var(--font-hand);
+        font-size: 0.86rem;
+        line-height: 1.9;
+        color: var(--muted);
+        transform: rotate(2deg);
+      }
+
+      .c-reader-note::before {
+        content: '';
+        display: block;
+        width: 50px;
+        border-top: 1px solid var(--accent);
+        margin-bottom: 12px;
+      }
+
+      .c-reader-note b {
+        display: block;
+        font-weight: 400;
+        color: var(--stamp);
+      }
+
+      .c-reader-nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 14px;
+        margin-top: 46px;
+        padding-top: 18px;
+        border-top: 1px dashed var(--line);
+      }
+
+      .c-reader-nav button {
+        padding: 8px 13px;
+        border: 1px solid var(--line);
+        border-bottom: 0;
+        background: var(--paper);
+        color: var(--muted);
+        text-align: left;
+        font-family: var(--font-hand);
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+
+      .c-reader-nav button:last-child {
+        text-align: right;
+      }
+
+      .c-reader-nav button:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .c-reader-nav strong {
+        display: block;
+        max-width: 240px;
+        font-family: var(--font-serif);
+        font-size: 0.78rem;
+        font-weight: 500;
+        color: var(--ink);
+        line-height: 1.45;
+      }
+
+      .c-sample-note {
+        margin-top: 12px;
+        font-family: var(--font-hand);
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+
+      /* Settings / TOC -------------------------------------------------- */
+      .c-toolbox {
+        position: fixed;
+        inset: 0 0 0 auto;
+        margin: 0;
+        width: min(440px, 100vw);
+        height: 100dvh;
+      }
+
+      .c-toolbox-inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: var(--paper-2);
+        border-left: 2px dashed var(--line);
+      }
+
+      .c-toolbox-head {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 24px 24px 18px;
+        border-bottom: 2px dashed var(--line);
+      }
+
+      .c-toolbox-head::before {
+        content: '';
+        position: absolute;
+        left: 24px;
+        top: -9px;
+        width: 84px;
+        height: 19px;
+        background: var(--tape);
+        transform: rotate(-2deg);
+      }
+
+      .c-toolbox-head h2 {
+        font-family: var(--font-serif);
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .c-toolbox-head p {
+        margin-top: 2px;
+        font-family: var(--font-hand);
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .c-close {
+        width: 34px;
+        height: 34px;
+        padding: 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+        color: var(--muted);
+        cursor: pointer;
+        font-size: 1.1rem;
+      }
+
+      .c-toolbox-body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 24px 24px 36px;
+      }
+
+      .c-tool + .c-tool {
+        margin-top: 24px;
+      }
+
+      .c-tool h3 {
+        margin-bottom: 9px;
+        font-family: var(--font-hand);
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--muted);
+      }
+
+      .c-swatches {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+
+      .c-swatch {
+        padding: 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+        cursor: pointer;
+        text-align: left;
+      }
+
+      .c-swatch[aria-pressed='true'] {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 1px var(--accent);
+      }
+
+      .c-swatch i {
+        display: block;
+        height: 40px;
+        padding: 9px;
+      }
+
+      .c-swatch i b {
+        display: block;
+        height: 2px;
+        margin-bottom: 4px;
+      }
+
+      .c-swatch span {
+        display: block;
+        padding: 5px 7px;
+        font-family: var(--font-hand);
+        font-size: 0.74rem;
+      }
+
+      .c-font-option,
+      .c-dialogue-option {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 6px;
+        padding: 9px 10px;
+        border: 1px solid var(--line);
+        background: var(--paper);
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .c-font-option[aria-pressed='true'],
+      .c-dialogue-option[aria-pressed='true'] {
+        border-color: var(--accent);
+      }
+
+      .c-font-option small,
+      .c-dialogue-option small {
+        display: block;
+        font-family: var(--font-hand);
+        font-size: 0.74rem;
+        color: var(--muted);
+      }
+
+      .c-range-head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2px;
+        font-family: var(--font-hand);
+        font-size: 0.84rem;
+        color: var(--muted);
+      }
+
+      .c-range-head b {
+        font-weight: 400;
+        color: var(--stamp);
+      }
+
+      input[type='range'] {
+        width: 100%;
+        height: 22px;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      input[type='range']::-webkit-slider-runnable-track {
+        height: 2px;
+        background: transparent;
+        border-top: 1px dashed var(--line);
+      }
+
+      input[type='range']::-webkit-slider-thumb {
+        appearance: none;
+        width: 13px;
+        height: 13px;
+        margin-top: -6px;
+        border-radius: 1px;
+        background: var(--stamp);
+        border: 2px solid var(--paper);
+        transform: rotate(45deg);
+      }
+
+      .c-toc {
+        position: fixed;
+        inset: 0;
+        margin: 0 auto;
+        width: min(880px, 100vw);
+        height: 100dvh;
+        background: var(--paper);
+      }
+
+      .c-toc-inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .c-toc-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 22px 28px 16px;
+        border-bottom: 2px dashed var(--line);
+      }
+
+      .c-toc-head h2 {
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .c-toc-head p {
+        margin-top: 2px;
+        font-family: var(--font-hand);
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      .c-toc-list {
+        flex: 1;
+        overflow-y: auto;
+        columns: 2;
+        column-gap: 36px;
+        padding: 18px 28px 60px;
+      }
+
+      .c-toc-row {
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 9px;
+        width: 100%;
+        padding: 9px 0;
+        border: 0;
+        border-bottom: 1px solid var(--line-2);
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+        break-inside: avoid;
+      }
+
+      .c-toc-row:hover {
+        color: var(--accent);
+      }
+
+      .c-toc-row span:first-child {
+        font-family: var(--font-hand);
+        font-size: 0.82rem;
+        color: var(--stamp);
+      }
+
+      .c-toc-row span:last-child {
+        font-size: 0.78rem;
+        line-height: 1.5;
+      }
+
+      .c-toc-row[aria-current='true'] {
+        color: var(--accent);
+      }
+
+      .c-foot {
+        margin-top: 42px;
+        padding-top: 14px;
+        border-top: 1px dashed var(--line);
+        font-family: var(--font-hand);
+        font-size: 0.78rem;
+        color: var(--muted);
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 1120px) {
+        .c-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 900px) {
+        .c-spread {
+          grid-template-columns: 1fr;
+        }
+
+        .c-spread::after {
+          display: none;
+        }
+
+        .c-hero {
+          padding: 34px 0 30px;
+          gap: 40px;
+        }
+
+        .c-feature {
+          width: 220px;
+        }
+
+        .c-reader-note {
+          display: none;
+        }
+
+        .c-reader-bar-right button:nth-child(2) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .c-head {
+          padding: 11px 16px;
+        }
+
+        .c-head-note {
+          display: none;
+        }
+
+        .c-head-tools button span {
+          display: none;
+        }
+
+        .c-main {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .c-hero {
+          grid-template-columns: 1fr;
+          gap: 30px;
+          padding: 34px 0 30px;
+        }
+
+        .c-ticket {
+          padding: 28px 20px 26px;
+        }
+
+        .c-stamp {
+          right: 16px;
+          top: 14px;
+        }
+
+        .c-feature {
+          display: none;
+        }
+
+        .c-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 30px 18px;
+          padding-top: 24px;
+        }
+
+        .c-book {
+          padding: 9px 9px 14px;
+        }
+
+        .c-book:nth-child(3n + 1),
+        .c-book:nth-child(3n + 2),
+        .c-book:nth-child(3n) {
+          --rot: 0deg;
+        }
+
+        .c-book:nth-child(2n + 1) {
+          --rot: -1deg;
+        }
+
+        .c-book:nth-child(2n) {
+          --rot: 1deg;
+        }
+
+        .c-book-title {
+          font-size: 0.82rem;
+        }
+
+        .c-book-meta {
+          font-size: 0.7rem;
+        }
+
+        .c-page {
+          padding: 24px 18px;
+        }
+
+        .c-spread {
+          min-height: 0;
+        }
+
+        .c-page-left {
+          border-bottom: 1px dashed var(--line);
+        }
+
+        .c-taped {
+          width: 170px;
+        }
+
+        .c-right-title {
+          font-size: 1.55rem;
+        }
+
+        .c-desk {
+          padding: 22px 12px 70px;
+        }
+
+        .c-sheet {
+          padding: 30px 18px 36px;
+        }
+
+        .c-sheet::before {
+          width: 86px;
+          height: 22px;
+          top: -10px;
+        }
+
+        .c-page-no {
+          top: 18px;
+          right: 14px;
+          width: 34px;
+          height: 34px;
+          font-size: 0.7rem;
+        }
+
+        .c-reader-title {
+          font-size: 1.48rem;
+          padding-right: 38px;
+        }
+
+        .c-reader-bar {
+          padding: 10px 12px;
+        }
+
+        .c-reader-context {
+          display: none;
+        }
+
+        .c-reader-nav {
+          flex-direction: column;
+        }
+
+        .c-reader-nav button {
+          width: 100%;
+          text-align: left;
+        }
+
+        .c-toolbox {
+          width: 100%;
+          height: auto;
+          max-height: 90dvh;
+          bottom: 0;
+          top: auto;
+        }
+
+        .c-toolbox-inner {
+          max-height: 90dvh;
+          border-left: 0;
+          border-top: 2px dashed var(--line);
+        }
+
+        .c-toolbox-body {
+          max-height: 66dvh;
+        }
+
+        .c-toc-list {
+          columns: 1;
+          padding: 14px 18px 50px;
+        }
+
+        .c-toc-head {
+          padding: 16px 18px 12px;
+        }
+
+        .c-toast {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="c-head">
+      <a class="c-brand" href="#" data-nav="shelf">Yomiori <span>読織</span></a>
+      <p class="c-head-note">สมุดตัดแปะของนักอ่าน</p>
+      <div class="c-head-tools">
+        <button type="button" data-lab-theme aria-label="สลับธีมสี">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+          <span data-theme-name>ฮิโนกิอุ่น</span>
+        </button>
+        <button type="button" data-open-settings>ตั้งค่า</button>
+      </div>
+    </header>
+
+    <main class="c-main">
+      <section data-screen="shelf">
+        <div class="c-hero">
+          <div class="c-ticket">
+            <span class="c-stamp">อ่านค้าง</span>
+            <p class="c-kicker">กลับไปที่หน้าที่คั่นไว้</p>
+            <h1 data-continue-title>อีเวนต์หายากกลางดึก ①</h1>
+            <p class="c-ticket-novel" data-continue-novel></p>
+            <div class="c-ticket-foot">
+              <button type="button" data-continue-open>เปิดต่อ</button>
+              <div class="c-progress"><i aria-hidden="true"></i><span>32%</span></div>
+            </div>
+          </div>
+          <figure class="c-feature">
+            <span class="c-tape"></span>
+            <img data-feature-cover src="" alt="" />
+            <figcaption data-feature-caption></figcaption>
+          </figure>
+        </div>
+
+        <div class="c-shelf-head">
+          <h2>ชั้นวางของฉัน</h2>
+          <p>4 เรื่องที่ตัดแปะไว้ในสมุดเล่มนี้</p>
+        </div>
+        <div class="c-grid" data-books></div>
+        <p class="c-note">mockup C · ใช้ข้อมูลจริงบางส่วน · ยังไม่เชื่อมระบบจริง</p>
+      </section>
+
+      <section data-screen="detail" hidden>
+        <button class="c-back" type="button" data-nav="shelf">← กลับชั้นวาง</button>
+        <div class="c-spread">
+          <div class="c-page c-page-left">
+            <p class="c-page-label">หน้าที่คั่นไว้</p>
+            <figure class="c-taped">
+              <span class="c-tape"></span>
+              <img data-detail-cover src="" alt="" />
+              <figcaption data-detail-cover-caption></figcaption>
+            </figure>
+            <div data-detail-notes></div>
+          </div>
+          <div class="c-page c-page-right">
+            <div data-detail-head></div>
+            <div class="c-receipt" data-detail-synopsis></div>
+            <div class="c-checklist">
+              <div class="c-checklist-head"><h2>สารบัญ</h2><span data-detail-count></span></div>
+              <div data-detail-chapters></div>
+            </div>
+          </div>
+        </div>
+        <p class="c-foot"><span>mockup C · หน้ากระดาษตัวอย่าง</span><span>ข้อมูลตอนเป็นสำเนาจากเว็บจริง</span></p>
+      </section>
+
+      <section class="c-reader" data-screen="reader" hidden>
+        <div class="c-reader-bar">
+          <div class="c-reader-bar-left">
+            <button type="button" data-nav="detail">← หน้าเรื่อง</button>
+            <span class="c-reader-context" data-reader-context></span>
+          </div>
+          <div class="c-reader-bar-right">
+            <button type="button" data-open-toc>สารบัญ</button>
+            <button type="button" data-lab-theme aria-label="สลับธีมสี">ธีม</button>
+            <button type="button" data-open-settings>ตั้งค่า</button>
+          </div>
+        </div>
+        <div class="c-desk">
+          <article class="c-sheet">
+            <span class="c-page-no" data-reader-no>01</span>
+            <p class="c-reader-kicker">ตอนที่ <span data-reader-number>1</span> · อ่านช้า ๆ</p>
+            <header class="c-reader-head">
+              <h1 class="c-reader-title" data-reader-title></h1>
+              <p class="c-reader-novel" data-reader-novel></p>
+            </header>
+            <div class="lab-prose" data-reader-body></div>
+            <p class="c-sample-note" data-reader-sample hidden>ตอนนี้ใช้ข้อความตัวอย่างจากตอนแรกของเรื่อง</p>
+            <nav class="c-reader-nav" data-reader-nav></nav>
+          </article>
+          <aside class="c-reader-note">
+            <b>อ่านช้า ๆ</b>
+            เก็บประโยคที่ชอบไว้ในใจ<br />แล้วค่อยพลิกหน้าต่อ
+            <br /><br />
+            <span data-reader-note-no>01</span> / <span data-reader-note-total>09</span>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="c-toolbox" data-settings>
+      <div class="c-toolbox-inner">
+        <div class="c-toolbox-head">
+          <div>
+            <h2>กล่องเครื่องมืออ่าน</h2>
+            <p>เลือกกระดาษ ปากกา และจังหวะการอ่าน</p>
+          </div>
+          <button class="c-close" type="button" data-close-settings aria-label="ปิดการตั้งค่า">×</button>
+        </div>
+        <div class="c-toolbox-body">
+          <div class="c-tool">
+            <h3>กระดาษ</h3>
+            <div class="c-swatches" data-setting-theme></div>
+          </div>
+          <div class="c-tool">
+            <h3>ตัวอักษร</h3>
+            <div data-setting-font></div>
+          </div>
+          <div class="c-tool">
+            <h3>ขนาดตัวอักษร</h3>
+            <div class="c-range-head"><span>เล็ก → ใหญ่</span><b data-value-size>18px</b></div>
+            <input type="range" min="15" max="26" step="1" data-range-size aria-label="ขนาดตัวอักษร" />
+          </div>
+          <div class="c-tool">
+            <h3>ระยะบรรทัด</h3>
+            <div class="c-range-head"><span>แน่น → โปร่ง</span><b data-value-leading>1.9x</b></div>
+            <input type="range" min="1.6" max="2.2" step="0.1" data-range-leading aria-label="ระยะบรรทัด" />
+          </div>
+          <div class="c-tool">
+            <h3>บทสนทนา</h3>
+            <div data-setting-dialogue></div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="c-toc" data-toc>
+      <div class="c-toc-inner">
+        <div class="c-toc-head">
+          <div>
+            <h2>สารบัญ</h2>
+            <p data-toc-subtitle></p>
+          </div>
+          <button class="c-close" type="button" data-close-toc aria-label="ปิดสารบัญ">×</button>
+        </div>
+        <div class="c-toc-list" data-toc-list></div>
+      </div>
+    </dialog>
+
+    <nav class="lab-switcher" aria-label="สลับ mockup">
+      <span>LAB</span>
+      <a href="a-andon.html" title="A · คาตาล็อก" aria-label="A · คาตาล็อก">A</a>
+      <a href="b-engawa.html" title="B · โรงหนังสือ" aria-label="B · โรงหนังสือ">B</a>
+      <a href="c-zine.html" title="C · สมุดตัดแปะ" aria-label="C · สมุดตัดแปะ" aria-current="page">C</a>
+    </nav>
+
+    <script src="shared/sample.js"></script>
+    <script src="shared/lab.js"></script>
+    <script>
+      (() => {
+        const novels = Lab.novels;
+        let currentNovel = novels[0];
+        let currentChapter = Lab.firstReadingChapter(currentNovel);
+        let lastBook = novels[0];
+
+        const $ = (selector, scope = document) => scope.querySelector(selector);
+        const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+
+        const continueNovel = novels.find((novel) => novel.id === 'kyudo-senpai') || novels[0];
+        const continueChapter = Lab.firstReadingChapter(continueNovel);
+
+        $('[data-continue-title]').textContent = continueChapter.title;
+        $('[data-continue-novel]').textContent = continueNovel.title;
+        $('[data-feature-cover]').src = continueNovel.cover;
+        $('[data-feature-cover]').alt = `ปก ${continueNovel.title}`;
+        $('[data-feature-caption]').textContent = continueNovel.originalTitle || continueNovel.title;
+
+        function status(novel) {
+          if (novel.chapters.length === 0) return 'รอแปลง';
+          return novel.id === 'kyudo-senpai' ? 'อ่านแล้ว 32%' : 'พร้อมอ่าน';
+        }
+
+        function renderShelf() {
+          $('[data-books]').innerHTML = novels
+            .map(
+              (novel) => `<a class="c-book" href="#" data-book="${novel.id}">
+                <span class="c-tape"></span>
+                <img src="${novel.cover}" alt="ปก ${Lab.esc(novel.title)}" loading="lazy" />
+                <h2 class="c-book-title">${Lab.esc(novel.title)}</h2>
+                <div class="c-book-meta"><span>${Lab.esc(novel.author)}</span><span>${novel.chapters.length} ตอน</span></div>
+                <span class="c-book-stamp">${status(novel)}</span>
+              </a>`,
+            )
+            .join('');
+        }
+
+        function renderDetail(novel) {
+          currentNovel = novel;
+          lastBook = novel;
+          $('[data-detail-cover]').src = novel.cover;
+          $('[data-detail-cover]').alt = `ปก ${novel.title}`;
+          $('[data-detail-cover-caption]').textContent = novel.originalTitle || novel.author;
+
+          $('[data-detail-head]').innerHTML = `
+            <h1 class="c-right-title">${Lab.esc(novel.title)}</h1>
+            ${novel.originalTitle ? `<p class="c-original">${Lab.esc(novel.originalTitle)}</p>` : ''}
+            <div class="c-stamp-row">${novel.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
+            ${
+              novel.chapters.length
+                ? `<button class="c-start" type="button" data-open-reader>เริ่มอ่านตอนแรก</button>`
+                : '<p class="c-empty">ยังไม่มีตอนที่แปลงเข้าสู่ระบบ</p>'
+            }`;
+
+          $('[data-detail-synopsis]').textContent = novel.synopsis;
+
+          $('[data-detail-notes]').innerHTML = `
+            <div class="c-margin-note">“${Lab.esc(novel.author)}”<br />พร้อมอ่าน ${novel.chapters.length} ตอน จากต้นฉบับ ${novel.totalOriginalChapters} ตอน</div>
+            ${
+              novel.characters.length
+                ? `<p class="c-page-label" style="margin-top:26px">ตัวละครที่เจอในเรื่อง</p>
+                   <div class="c-cast-list">${novel.characters
+                     .map(
+                       (character) => `<figure class="c-cast" style="--char:${character.color}">
+                         ${character.avatar ? `<img src="${character.avatar}" alt="${Lab.esc(character.name)}" loading="lazy" />` : `<span class="c-initial">${Lab.esc(character.name.charAt(0))}</span>`}
+                         <figcaption><div class="c-cast-name">${Lab.esc(character.name)}</div><div class="c-cast-role">${Lab.esc(character.role)}</div></figcaption>
+                       </figure>`,
+                     )
+                     .join('')}</div>`
+                : ''
+            }`;
+
+          $('[data-detail-count]').textContent = `${novel.chapters.length} ตอน`;
+          $('[data-detail-chapters]').innerHTML = novel.chapters.length
+            ? novel.chapters
+                .map(
+                  (chapter) => `<button class="c-check" type="button" data-chapter="${chapter.id}">
+                    <span class="c-check-no">${Lab.chapterNumber(chapter)}</span>
+                    <span class="c-check-title">${Lab.esc(chapter.title)}</span>
+                  </button>`,
+                )
+                .join('')
+            : '<p class="c-empty">ยังไม่มีตอนที่แปลงเข้าสู่ระบบ</p>';
+
+          Lab.showScreen('detail');
+        }
+
+        function renderReader(novel, chapterId) {
+          currentNovel = novel;
+          const prepared = Lab.prepareChapter(novel, chapterId);
+          currentChapter = prepared;
+          const index = novel.chapters.findIndex((item) => item.id === prepared.id);
+          const prev = index > 0 ? novel.chapters[index - 1] : null;
+          const next = index >= 0 && index < novel.chapters.length - 1 ? novel.chapters[index + 1] : null;
+
+          $('[data-reader-context]').textContent = `${novel.title} · ${prepared.title}`;
+          $('[data-reader-no]').textContent = Lab.chapterNumber(prepared);
+          $('[data-reader-number]').textContent = prepared.number;
+          $('[data-reader-title]').textContent = prepared.title;
+          $('[data-reader-novel]').textContent = novel.title;
+          $('[data-reader-note-no]').textContent = Lab.chapterNumber(prepared);
+          $('[data-reader-note-total]').textContent = String(novel.chapters.length).padStart(2, '0');
+          Lab.mountChapter($('[data-reader-body]'), novel, prepared);
+          $('[data-reader-sample]').hidden = !prepared.sample;
+
+          $('[data-reader-nav]').innerHTML = `
+            ${prev ? `<button type="button" data-chapter="${prev.id}">← ตอนก่อนหน้า<br /><strong>${Lab.esc(prev.title)}</strong></button>` : '<span></span>'}
+            ${next ? `<button type="button" data-chapter="${next.id}">ตอนถัดไป →<br /><strong>${Lab.esc(next.title)}</strong></button>` : '<span></span>'}`;
+
+          $('[data-toc-subtitle]').textContent = novel.title;
+          $('[data-toc-list]').innerHTML = novel.chapters
+            .map(
+              (chapter) => `<button class="c-toc-row" type="button" data-chapter="${chapter.id}" aria-current="${chapter.id === prepared.id}">
+                <span>${Lab.chapterNumber(chapter)}</span><span>${Lab.esc(chapter.title)}</span>
+              </button>`,
+            )
+            .join('');
+
+          Lab.showScreen('reader');
+        }
+
+        function renderSettings() {
+          $('[data-setting-theme]').innerHTML = Lab.themes
+            .map(
+              (theme) => `<button class="c-swatch" type="button" data-set-theme="${theme.id}" aria-pressed="${Lab.prefs.theme === theme.id}">
+                <i style="background:${themeColors(theme.id)[0]}">
+                  <b style="background:${themeColors(theme.id)[1]}"></b><b style="background:${themeColors(theme.id)[1]}"></b><b style="background:${themeColors(theme.id)[2]}"></b>
+                </i>
+                <span>${theme.name}</span>
+              </button>`,
+            )
+            .join('');
+          $('[data-setting-font]').innerHTML = Object.entries(Lab.fonts)
+            .map(
+              ([id, font]) => `<button class="c-font-option" type="button" data-set-font="${id}" aria-pressed="${Lab.prefs.font === id}">
+                <span style="font-family:${font.stack};font-size:0.94rem">อ่านอีกนิด</span>
+                <small>${font.label}</small>
+              </button>`,
+            )
+            .join('');
+          $('[data-setting-dialogue]').innerHTML = Lab.dialogues
+            .map(
+              (dialogue) => `<button class="c-dialogue-option" type="button" data-set-dialogue="${dialogue.id}" aria-pressed="${Lab.prefs.dialogue === dialogue.id}">
+                <span>${dialogue.name}</span><small>${dialogue.hint}</small>
+              </button>`,
+            )
+            .join('');
+          $('[data-range-size]').value = Lab.prefs.size;
+          $('[data-range-leading]').value = Lab.prefs.leading;
+          $('[data-value-size]').textContent = `${Lab.prefs.size}px`;
+          $('[data-value-leading]').textContent = `${Number(Lab.prefs.leading).toFixed(1)}x`;
+        }
+
+        function themeColors(id) {
+          if (id === 'dark') return ['#11100e', '#ece4d6', '#d97a60'];
+          if (id === 'sepia') return ['#ece0cb', '#2a2117', '#8c5426'];
+          return ['#f3ecdf', '#221e19', '#a8452f'];
+        }
+
+        function syncSettings() {
+          $$('[data-set-theme]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.setTheme === Lab.prefs.theme)));
+          $$('[data-set-font]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.setFont === Lab.prefs.font)));
+          $$('[data-set-dialogue]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.setDialogue === Lab.prefs.dialogue)));
+          const size = $('[data-range-size]');
+          const leading = $('[data-range-leading]');
+          if (size) size.value = Lab.prefs.size;
+          if (leading) leading.value = Lab.prefs.leading;
+          if ($('[data-value-size]')) $('[data-value-size]').textContent = `${Lab.prefs.size}px`;
+          if ($('[data-value-leading]')) $('[data-value-leading]').textContent = `${Number(Lab.prefs.leading).toFixed(1)}x`;
+        }
+
+        function refreshPrefs() {
+          $$('[data-theme-name]').forEach((node) => (node.textContent = Lab.themeName()));
+          if ($('[data-settings]').open) syncSettings();
+        }
+
+        document.addEventListener('lab:prefs', refreshPrefs);
+
+        document.addEventListener('click', (event) => {
+          const book = event.target.closest('[data-book]');
+          if (book) {
+            event.preventDefault();
+            renderDetail(Lab.novelById(book.dataset.book));
+            return;
+          }
+
+          if (event.target.closest('[data-continue-open]')) {
+            renderReader(continueNovel, continueChapter.id);
+            return;
+          }
+
+          if (event.target.closest('[data-open-reader]')) {
+            if (currentNovel.chapters.length) {
+              renderReader(currentNovel, Lab.firstReadingChapter(currentNovel).id);
+            }
+            return;
+          }
+
+          const chapter = event.target.closest('[data-chapter]');
+          if (chapter) {
+            const dialog = chapter.closest('dialog');
+            if (dialog) dialog.close();
+            renderReader(currentNovel, chapter.dataset.chapter);
+            return;
+          }
+
+          if (event.target.closest('[data-nav="shelf"]')) {
+            Lab.showScreen('shelf');
+            return;
+          }
+
+          if (event.target.closest('[data-nav="detail"]')) {
+            Lab.showScreen('detail');
+            return;
+          }
+
+          if (event.target.closest('[data-open-settings]')) {
+            renderSettings();
+            $('[data-settings]').showModal();
+            return;
+          }
+
+          if (event.target.closest('[data-close-settings]')) {
+            $('[data-settings]').close();
+            return;
+          }
+
+          if (event.target.closest('[data-open-toc]')) {
+            $('[data-toc]').showModal();
+            return;
+          }
+
+          if (event.target.closest('[data-close-toc]')) {
+            $('[data-toc]').close();
+            return;
+          }
+
+          if (event.target.closest('[data-set-theme]')) {
+            Lab.set({ theme: event.target.closest('[data-set-theme]').dataset.setTheme });
+            return;
+          }
+
+          if (event.target.closest('[data-set-font]')) {
+            Lab.set({ font: event.target.closest('[data-set-font]').dataset.setFont });
+            return;
+          }
+
+          if (event.target.closest('[data-set-dialogue]')) {
+            Lab.set({ dialogue: event.target.closest('[data-set-dialogue]').dataset.setDialogue });
+          }
+        });
+
+        document.addEventListener('input', (event) => {
+          if (event.target.matches('[data-range-size]')) Lab.set({ size: Number(event.target.value) });
+          if (event.target.matches('[data-range-leading]')) Lab.set({ leading: Number(event.target.value) });
+        });
+
+        $('[data-settings]').addEventListener('click', (event) => {
+          if (event.target === $('[data-settings]')) $('[data-settings]').close();
+        });
+        $('[data-toc]').addEventListener('click', (event) => {
+          if (event.target === $('[data-toc]')) $('[data-toc]').close();
+        });
+
+        renderShelf();
+        refreshPrefs();
+      })();
+    </script>
+  </body>
+</html>
