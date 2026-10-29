@@ -12,6 +12,7 @@ import { downloadChapterOnDemand, fetchCharacters, fetchNovels, getAvailableChap
 import { requestJson } from '../src/services/request';
 import blackCatConversion from '../src/data/novels/black-cat-hangout/conversion-status.json';
 import bundledNovels from '../src/data/novels.json';
+import bundledNazekaCharacters from '../src/data/novels/nazeka-natsukareta-rashii/characters.json';
 import { isNovelList } from '../src/services/validation';
 
 jest.mock('expo-file-system/legacy', () => ({
@@ -232,6 +233,25 @@ describe('metadata, settings and progress compatibility', () => {
       expect(isNovelList([{ ...bundledNovels[0], translationSource }])).toBe(false);
     },
   );
+
+  test('Nazeka skeleton is discoverable locally with its three characters and no invented first chapter', async () => {
+    const novelId = 'nazeka-natsukareta-rashii';
+    const novels = await fetchNovels(true);
+    expect(novels.find(novel => novel.id === novelId)).toMatchObject({
+      coverUrl: 'illustrations/nazeka_cover.webp', totalOriginalChapters: 141,
+    });
+    expect(await fetchCharacters(novelId, true)).toEqual(bundledNazekaCharacters);
+    expect(await getAvailableChapterList(novelId, true)).toEqual([]);
+    expect(getBundledChapter(novelId, 'ch-01')).toBeNull();
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  test('Nazeka skeleton keeps its roster and empty chapter list when the CDN is unavailable', async () => {
+    const novelId = 'nazeka-natsukareta-rashii';
+    expect(await fetchCharacters(novelId)).toEqual(bundledNazekaCharacters);
+    expect(await getAvailableChapterList(novelId)).toEqual([]);
+    expect(await fetchNovels()).toContainEqual(expect.objectContaining({ id: novelId }));
+  });
 
   test('lists the complete real Black Cat bundle offline without filling intentionally skipped numbers', async () => {
     const list = await getAvailableChapterList('black-cat-hangout', true);

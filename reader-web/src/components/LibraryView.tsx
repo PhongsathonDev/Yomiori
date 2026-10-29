@@ -104,6 +104,9 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
         'shikiya', 'asagumo', 'tiara', 'haguhara', 'kaju',
       ].includes(c.id);
     }
+    if (currentNovel.id === 'nazeka-natsukareta-rashii') {
+      return ['nazeka-eita', 'nazeka-yuzu', 'nazeka-mei'].includes(c.id);
+    }
     return true;
   });
 

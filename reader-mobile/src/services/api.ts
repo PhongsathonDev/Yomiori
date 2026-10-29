@@ -11,6 +11,7 @@ import bundledKyudoCharacters from '../data/novels/kyudo-senpai/characters.json'
 import bundledBoyishCharacters from '../data/novels/boyish-friend/characters.json';
 import bundledBlackCatCharacters from '../data/novels/black-cat-hangout/characters.json';
 import bundledMakeineCharacters from '../data/novels/makeine-too-many-losing-heroines/characters.json';
+import bundledNazekaCharacters from '../data/novels/nazeka-natsukareta-rashii/characters.json';
 import { blackCatChapters } from '../data/novels/black-cat-hangout/chapters';
 import bundledKyudoComments from '../data/novels/kyudo-senpai/comments.json';
 import bundledBoyishComments from '../data/novels/boyish-friend/comments.json';
@@ -61,6 +62,7 @@ export async function fetchCharacters(novelId: string, preferCache = false): Pro
   if (novelId === 'boyish-friend') return bundledBoyishCharacters as Character[];
   if (novelId === 'black-cat-hangout') return bundledBlackCatCharacters as Character[];
   if (novelId === 'makeine-too-many-losing-heroines') return bundledMakeineCharacters as Character[];
+  if (novelId === 'nazeka-natsukareta-rashii') return bundledNazekaCharacters as Character[];
   return [];
 }
 
