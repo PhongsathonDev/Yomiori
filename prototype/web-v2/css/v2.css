@@ -1831,6 +1831,7 @@ input[type='range']::-moz-range-thumb {
 
   .hero-actions .btn-primary {
     width: 100%;
+    max-width: 320px;
   }
 
   .shelf-head {
