@@ -8,11 +8,12 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const port = Number(process.env.PORT || 5190);
-const host = process.env.HOST || '127.0.0.1';
+const host = process.env.HOST || '0.0.0.0';
 
 const types = {
   '.html': 'text/html; charset=utf-8',
@@ -57,5 +58,12 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`UI Lab: http://${host}:${port}/ui-lab/`);
+  console.log(`UI Lab: http://localhost:${port}/ui-lab/`);
+  const addresses = Object.values(os.networkInterfaces())
+    .flat()
+    .filter((item) => item && item.family === 'IPv4' && !item.internal)
+    .map((item) => item.address);
+  for (const address of addresses) {
+    console.log(`UI Lab (LAN): http://${address}:${port}/ui-lab/`);
+  }
 });

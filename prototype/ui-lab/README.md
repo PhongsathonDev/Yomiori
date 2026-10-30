@@ -17,6 +17,21 @@ node prototype/ui-lab/serve.mjs
 
 เซิร์ฟเวอร์นี้อ่านไฟล์จาก `prototype/` จึงใช้ปกและฟอนต์ของ `web-v2` ร่วมได้โดยไม่ต้องคัดลอก
 
+### เปิดจากมือถือ (Wi-Fi เดียวกัน)
+
+`serve.mjs` ผูกกับ `0.0.0.0` แล้ว และจะพิมพ์ LAN URL ออกมา ถ้าเครื่องมีอะไรใช้ port 5190 อยู่ ให้เลือก port อื่น:
+
+```sh
+# PowerShell
+$env:PORT=5191; node prototype/ui-lab/serve.mjs
+```
+
+แล้วเปิดบนมือถือ: **http://<LAN-IP-ของคอมพิวเตอร์>:5191/ui-lab/**
+
+- มือถือต้องอยู่ใน Wi-Fi เดียวกับคอมพิวเตอร์
+- ถ้าเปิดไม่ขึ้น ให้อนุญาต Node.js ผ่าน Windows Firewall สำหรับเครือข่าย Private
+- ตัวอย่าง v2 เปิดแยกได้ด้วย `$env:PORT=5181; node prototype/web-v2/serve.mjs` → `http://<LAN-IP>:5181/`
+
 ## หกทิศทาง
 
 | | ชื่อ | แนว | เริ่มที่ธีม |
