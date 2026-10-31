@@ -303,7 +303,7 @@
     const isResume = Boolean(record && reading);
     const chapters = novel.chapters;
     const galleryChapter = chapters.find((chapter) => chapter.chapterNumber === 0) || null;
-    const cast = novel.characters.slice(0, 8);
+    const cast = novel.characters.slice(0, 6);
     const gallery = novel.illustrations.slice(0, 4);
 
     return `<div class="detail-page">
@@ -327,7 +327,7 @@
             <div class="tags">${novel.tags.map((tag) => `<span>${esc(tag)}</span>`).join('')}</div>
             <h1 class="meta-title">${esc(novel.title)}</h1>
             ${novel.originalTitle ? `<p class="meta-original">${esc(novel.originalTitle)}</p>` : ''}
-            <p class="synopsis">${esc(novel.synopsis)}</p>
+            <p class="meta-byline">โดย ${esc(novel.author)}${novel.artist ? ` · ภาพประกอบ ${esc(novel.artist)}` : ''}</p>
             <div class="meta-actions">
               ${
                 chapters.length
@@ -336,6 +336,16 @@
                   : `<span class="btn btn-ghost" aria-disabled="true">ยังไม่มีตอนพร้อมอ่าน</span>`
               }
             </div>
+          </div>
+        </article>
+
+        <section class="detail-info" aria-labelledby="synopsis-title">
+          <div class="detail-synopsis">
+            <h2 id="synopsis-title">เรื่องย่อ</h2>
+            <p class="synopsis">${esc(novel.synopsis)}</p>
+          </div>
+          <div class="detail-facts">
+            <h2>ข้อมูลหนังสือ</h2>
             <dl class="colophon">
               <div class="colophon-row"><dt>ผู้แต่ง</dt><dd>${esc(novel.author)}</dd></div>
               ${novel.artist ? `<div class="colophon-row"><dt>ภาพประกอบ</dt><dd>${esc(novel.artist)}</dd></div>` : ''}
@@ -348,7 +358,7 @@
               <div class="colophon-row"><dt>ตอนในระบบ</dt><dd>${chapters.length} ตอน จากต้นฉบับ ${novel.totalOriginalChapters} ตอน</dd></div>
             </dl>
           </div>
-        </article>
+        </section>
 
         ${
           cast.length
