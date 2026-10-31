@@ -102,6 +102,17 @@ const variants = {
     close: `document.querySelector('dialog[open]')?.close()`,
     ready: 'ชั้นวางของฉัน',
   },
+  H: {
+    page: 'h-rails.html',
+    key: 'ui_lab_H_prefs',
+    theme: 'light',
+    openDetail: `document.querySelector('[data-hero-detail]')?.click()`,
+    openReader: `document.querySelectorAll('[data-detail] .chapter-row')[1].click()`,
+    openSettings: `document.querySelector('[data-screen="reader"] [data-open-settings]')?.click() || document.querySelector('[data-open-settings]').click()`,
+    openToc: `document.querySelector('[data-open-toc]').click()`,
+    close: `document.querySelector('dialog[open]')?.close()`,
+    ready: 'ชั้นวางของฉัน',
+  },
 };
 
 const viewports = {
