@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const labDir = path.resolve(here, '..');
 const outDir = path.join(labDir, 'evidence');
-const base = 'http://127.0.0.1:5190/ui-lab/';
+const base = 'http://127.0.0.1:5191/ui-lab/';
 const port = 9334;
 const chromeBin = [
   'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
@@ -90,6 +90,17 @@ const variants = {
     openToc: `document.querySelector('[data-open-toc]').click()`,
     close: `document.querySelector('dialog[open]')?.close()`,
     ready: 'อ่านค้างไว้',
+  },
+  G: {
+    page: 'g-room.html',
+    key: 'ui_lab_G_prefs',
+    theme: 'light',
+    openDetail: `document.querySelector('[data-hero-detail]')?.click()`,
+    openReader: `document.querySelectorAll('[data-detail-chapters] .g-chapter')[1].click()`,
+    openSettings: `document.querySelector('[data-screen="reader"] [data-open-settings]')?.click() || document.querySelector('[data-open-settings]').click()`,
+    openToc: `document.querySelector('[data-open-toc]').click()`,
+    close: `document.querySelector('dialog[open]')?.close()`,
+    ready: 'ชั้นวางของฉัน',
   },
 };
 
