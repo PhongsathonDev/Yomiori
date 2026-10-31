@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>UI Lab H · v2 + รางข้าง | Yomiori</title>
+    <title>UI Lab H · v2 + รางซ้าย | Yomiori</title>
     <link rel="stylesheet" href="/web-v2/css/fonts.css" />
     <link rel="stylesheet" href="/web-v2/css/v2.css" />
     <style>
@@ -18,7 +18,7 @@
 
       .h-layout {
         display: grid;
-        grid-template-columns: 212px minmax(0, 1fr) 294px;
+        grid-template-columns: 212px minmax(0, 1fr);
         align-items: start;
         max-width: 1480px;
         margin: 0 auto;
@@ -40,6 +40,7 @@
       }
 
       .h-right {
+        display: none;
         border-left: 1px solid var(--line);
         padding-right: 22px;
       }
@@ -50,7 +51,8 @@
       }
 
       .h-main .wrap {
-        max-width: none;
+        max-width: 1160px;
+        margin: 0 auto;
         padding: 0;
       }
 
@@ -661,7 +663,7 @@
 
       @media (max-width: 1280px) {
         .h-layout {
-          grid-template-columns: 212px minmax(0, 1fr);
+          grid-template-columns: 200px minmax(0, 1fr);
         }
 
         .h-right {
@@ -671,15 +673,16 @@
 
       @media (max-width: 1020px) {
         .h-layout {
-          display: block;
-        }
-
-        .h-left {
-          display: none;
+          grid-template-columns: 190px minmax(0, 1fr);
         }
 
         .h-main {
           padding: 0 24px 70px;
+        }
+
+        .h-left {
+          padding-left: 16px;
+          padding-right: 12px;
         }
 
         .h-reader-bar {
@@ -689,6 +692,14 @@
       }
 
       @media (max-width: 760px) {
+        .h-layout {
+          display: block;
+        }
+
+        .h-left {
+          display: none;
+        }
+
         .h-main {
           padding: 0 16px 60px;
         }
@@ -731,7 +742,7 @@
           <span class="brand-name">Yomiori <span class="brand-jp">読織</span></span>
         </a>
         <div class="head-actions">
-          <span class="text-tag">v2 + รางข้าง</span>
+          <span class="text-tag">v2 + รางซ้าย</span>
           <button class="icon-btn" type="button" data-lab-theme aria-label="สลับธีมสี">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
           </button>
@@ -750,7 +761,7 @@
           <strong>คั่นไว้ที่</strong>
           <span data-left-note></span>
         </div>
-        <p class="h-left-foot">mockup H<br />v2 เดิม + รางซ้าย/ขวา</p>
+        <p class="h-left-foot">mockup H<br />v2 เดิม + รางซ้าย</p>
       </aside>
 
       <main class="h-main">
@@ -787,7 +798,7 @@
             <div class="filters" data-filters role="group" aria-label="กรองตามหมวด"></div>
             <div class="shelf-grid" data-books></div>
             <footer class="site-foot">
-              <span>mockup H · v2 + รางข้าง · ใช้ข้อมูลจริงบางส่วน · ยังไม่เชื่อมระบบหลังบ้าน</span>
+              <span>mockup H · v2 + รางซ้าย · ใช้ข้อมูลจริงบางส่วน · ยังไม่เชื่อมระบบหลังบ้าน</span>
               <span>UI LAB</span>
             </footer>
           </div>
@@ -889,7 +900,7 @@
       <a href="e-room.html" title="E · ห้องเดียว">E</a>
       <a href="f-panels.html" title="F · มังงะ">F</a>
       <a href="g-room.html" title="G · ห้องอ่าน">G</a>
-      <a href="h-rails.html" title="H · v2 + รางข้าง" aria-current="page">H</a>
+      <a href="h-rails.html" title="H · v2 + รางซ้าย" aria-current="page">H</a>
     </nav>
 
     <script src="shared/sample.js"></script>

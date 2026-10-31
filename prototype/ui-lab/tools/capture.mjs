@@ -117,6 +117,7 @@ const variants = {
 
 const viewports = {
   desktop: { width: 1440, height: 900, mobile: false },
+  tablet: { width: 1024, height: 768, mobile: false },
   mobile: { width: 390, height: 844, mobile: true },
 };
 
