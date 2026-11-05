@@ -46,7 +46,11 @@ test('cover, banner and individual portraits contain real local artwork', () => 
   for (const asset of [bannerUrl, ...avatars]) {
     const bytes = readFileSync(new URL(`public/${asset}`, web));
     assert.ok(bytes.length > 1000);
-    assert.deepEqual([...bytes.subarray(0, 3)], [0xff, 0xd8, 0xff]);
+    if (asset.endsWith('.png')) {
+      assert.deepEqual([...bytes.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]);
+    } else {
+      assert.deepEqual([...bytes.subarray(0, 3)], [0xff, 0xd8, 0xff]);
+    }
   }
   const cover = readFileSync(new URL(`public/${coverUrl}`, web));
   const original = readFileSync(new URL(`../../novels_source/${id}/illustrations/nazeka_official_cover.webp`, import.meta.url));
@@ -58,7 +62,7 @@ test('cover, banner and individual portraits contain real local artwork', () => 
 test('registered skeleton has its own normalized portraits and no invented chapters', () => {
   const roster = data.getCharactersByNovelId(id);
   assert.equal(roster.length, 3);
-  assert.ok(roster.every(c => c.avatarUrl.endsWith(`illustrations/char_${c.id.replace('nazeka-', 'nazeka_')}.jpg`)));
+  assert.ok(roster.every(c => c.avatarUrl.endsWith(`illustrations/char_${c.id.replace('nazeka-', 'nazeka_')}_ai.png`)));
   const ids = roster.map(c => c.id);
   for (const characterId of ids) {
     assert.equal(data.allCharacters.filter(c => c.id === characterId).length, 1);
