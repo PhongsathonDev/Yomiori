@@ -28,7 +28,7 @@ chapter 1 and the official publisher synopsis (佐々木瑛太, 姶良柚, 姫�
 
 The gallery image and official cover are **not chapter inserts**. They are documented here,
 not added to `_source.json`'s chapter image mappings. Original chapter text and images
-remain untouched. The original crops below use no AI-generated artwork or speculative character matching. Reader avatars now use the separately documented AI portraits below.
+remain untouched. No AI-generated artwork or speculative character matching is used.
 
 ## Reader assets
 
@@ -60,22 +60,3 @@ This does not add native offline image bundles or require an APK build.
 | `nazeka_official_cover.webp` | `3eec35ef4a30c9fe35daadfd871f18f61b7a5f91943009b2836600b52d797e0f` |
 | `nazeka_gallery.jpg` | `cfd32bca9c23f0c3ae0c0a9f43b94ef76f3fa6587a616b89cd214a684b715498` |
 | `ch32_img1.jpg` | `d0ca2dea305aa3f17a8623cf183fc4cda6a410adc2a36ff1728cb1e0ff58368c` |
-
-## AI character portraits — 2026-11-05
-
-Requested by the user: individual portraits for the three registered main characters.
-Generated with the image generation tool using each original avatar crop above as
-an identity reference. These are AI interpretations, not official illustrations.
-The original crops, chapter illustrations, cover and banner are preserved.
-
-| Character | Active reader asset | Identity reference |
-| --- | --- | --- |
-| Sasaki Eita | `illustrations/char_nazeka_eita_ai.png` | `char_nazeka_eita.jpg` |
-| Aira Yuzu | `illustrations/char_nazeka_yuzu_ai.png` | `char_nazeka_yuzu.jpg` |
-| Himeno Mei | `illustrations/char_nazeka_mei_ai.png` | `char_nazeka_mei.jpg` |
-
-Each PNG is copied unchanged from the generated output. Eita stays monochrome
-because his reference does not establish official hair/eye colors. Yuzu and Mei
-retain their reference colors and distinguishing hairstyles/hairpins. All three
-use centered school-uniform head-and-shoulders compositions with pale backgrounds.
-Web and mobile rosters point to the same new asset paths. No chapters are added.
