@@ -14,6 +14,19 @@ const {
 
 const PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=', 'base64');
 
+test('reader-provided signed image URLs retain their access query', () => {
+  const signed = 'https://www.osemocphoto.com/collectManga/15830/7/a.jpg?verify=expires-signature';
+  assert.equal(resolveContent('<img src="{file_fs}a.jpg">', 15830, 7, { 'a.jpg': signed }),
+    `<img src="${signed}">`);
+  assert.equal(resolveContent('{file_fs}b.jpg', 15830, 7, { 'a.jpg': signed }),
+    'https://www.osemocphoto.com/collectManga/15830/7/b.jpg');
+});
+
+test('source emphasis survives HTML conversion', () => {
+  assert.deepEqual(htmlToLines('<p>A <i>thought</i> and <strong>note</strong>.</p>'),
+    ['A *thought* and **note**.']);
+});
+
 function encrypt(data) {
   const salt = Buffer.from('12345678');
   let derived = Buffer.alloc(0);

@@ -28,9 +28,13 @@ function assetBase(projectId, chapterId) {
 }
 
 // Novel bodies store CDN placeholders ({file_fs}image_x.jpg) instead of absolute URLs.
-function resolveContent(html, projectId, chapterId) {
+function resolveContent(html, projectId, chapterId, fileUrls = {}) {
   const base = assetBase(projectId, chapterId);
-  return String(html).replace(/\{file_(?:fs|img|audio)\}/g, base);
+  return String(html).replace(/\{file_(?:fs|img|audio)\}([^\s"'<>]+)/g, (_, file) => {
+    // Use the access URL supplied by the reader API, including its signed query.
+    const url = fileUrls && own(fileUrls, file) ? fileUrls[file] : null;
+    return typeof url === 'string' && url ? url : base + file;
+  });
 }
 
 function chapterNumber(value) {
@@ -96,6 +100,8 @@ function htmlToLines(html) {
     .replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, '')
     .replace(/<br\s*\/?\s*>/gi, '\n')
     .replace(/<hr\b[^>]*>/gi, '\n\n---\n\n')
+    .replace(/<\/?(?:i|em)\b[^>]*>/gi, '*')
+    .replace(/<\/?(?:b|strong)\b[^>]*>/gi, '**')
     .replace(/<\/?(?:div|p|h[1-6]|li|blockquote|tr)\b[^>]*>/gi, '\n')
     .replace(/<\/(?:td|th)\s*>/gi, '\t')
     .replace(/<[^>]+>/g, ''))
@@ -374,7 +380,7 @@ async function scrape(options, dependencies = {}) {
     const data = JSON.parse(decrypt(await post(`${API}/handler/cinfo`, { p: projectId, c: chapter.ChapterID }, 'text/plain;charset=UTF-8')));
     const html = resolveContent(
       data.novelContent || (data.pageItem || []).map((page) => page.content || page.html || '').join('\n'),
-      projectId, chapter.ChapterID);
+      projectId, chapter.ChapterID, data.fileUrls);
     if (typeof html !== 'string' || !html.trim()) throw new Error(`Empty chapter response: ${chapter.ChapterNo}`);
     // Fail before writing files if the content cannot be rendered.
     const tags = imageTags(html);
