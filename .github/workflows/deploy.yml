@@ -1,53 +1,94 @@
-name: Deploy Reader to GitHub Pages
+name: Validate and Deploy Reader
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: "pages"
+  group: reader-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    env:
+      CONVERSION_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            reader-web/package-lock.json
+            reader-mobile/package-lock.json
+      - name: Install web dependencies
+        run: npm ci --prefix reader-web
+      - name: Conversion regression and web tests
+        run: npm test --prefix reader-web
+      - name: Web lint
+        run: npm run lint --prefix reader-web
+      - name: Install mobile dependencies
+        run: npm ci --prefix reader-mobile
+      - name: Mobile typecheck and lint
+        run: |
+          npm run typecheck --prefix reader-mobile
+          npm run lint --prefix reader-mobile
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build (includes mandatory conversion publication gate)
+        run: npm run build --prefix reader-web
+      - name: Upload validated Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: reader-web/dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      actions: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
-          cache-dependency-path: reader-web/package-lock.json
-
-      - name: Install dependencies
-        working-directory: reader-web
-        run: npm ci
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Build Web App
-        working-directory: reader-web
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'reader-web/dist'
-
-
-      - name: Deploy to GitHub Pages
+          node-version: 24
+      - name: Deploy validated artifact
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Download the exact deployed artifact for verification
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: .release-artifact
+      - name: Verify deployed commit, chapters, metadata and images on CDN
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          mkdir .release-dist
+          tar -xf .release-artifact/artifact.tar -C .release-dist
+          node reader-web/scripts/verify-release.mjs "$PAGE_URL" .release-dist

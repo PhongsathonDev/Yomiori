@@ -5,12 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm run conversion:check",
     "build": "tsc -b && vite build && node scripts/postbuild.mjs",
+    "conversion": "node scripts/conversion-pipeline.mjs",
+    "conversion:check": "node scripts/conversion-pipeline.mjs audit",
+    "verify:release": "node scripts/verify-release.mjs",
     "verify": "node scripts/verify-conversion.mjs",
     "chapters:status": "node scripts/import-chapters.mjs --status",
     "chapters:audit": "node scripts/import-chapters.mjs --audit",
     "lint": "oxlint",
-    "test": "node --test tests/*.test.mjs",
+    "test": "node --test tests/*.test.mjs scripts/blackcat-conversion.test.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

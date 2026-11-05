@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { invariant, readJson, validateStructure, validateRoster } from './conversion-core.mjs';
+import { writeRelease } from './verify-release.mjs';
 
 const distDir = path.resolve('dist');
 const indexPath = path.join(distDir, 'index.html');
@@ -70,49 +72,30 @@ if (fs.existsSync(novelsDir)) {
         const chapterFiles = fs.readdirSync(chaptersDir)
           .filter((f) => f.startsWith('ch-') && f.endsWith('.json'))
           .sort((a, b) => {
-            const numA = parseInt(a.replace('ch-', '').replace('.json', ''), 10);
-            const numB = parseInt(b.replace('ch-', '').replace('.json', ''), 10);
-            return numA - numB;
+            const aa = readJson(path.join(chaptersDir, a));
+            const bb = readJson(path.join(chaptersDir, b));
+            return aa.chapterNumber - bb.chapterNumber || aa.id.localeCompare(bb.id);
           });
 
         const chapterList = [];
         for (const file of chapterFiles) {
-          try {
-            const content = JSON.parse(fs.readFileSync(path.join(chaptersDir, file), 'utf8'));
-            chapterList.push({
-              id: content.id || file.replace('.json', ''),
-              chapterNumber: content.chapterNumber,
-              title: content.title || `ตอนที่ ${content.chapterNumber}`,
-            });
-          } catch {
-            const num = parseInt(file.replace('ch-', '').replace('.json', ''), 10);
-            chapterList.push({
-              id: file.replace('.json', ''),
-              chapterNumber: num,
-              title: `ตอนที่ ${num}`,
-            });
-          }
+          const content = readJson(path.join(chaptersDir, file));
+          validateStructure(content);
+          invariant(content.novelId === n.name && file === `${content.id}.json`, `Chapter identity mismatch: ${n.name}/${file}`);
+          invariant(!chapterList.some(c => c.id === content.id), 'Duplicate chapter ID');
+          chapterList.push({ id: content.id, chapterNumber: content.chapterNumber, title: content.title });
         }
 
         let illustrations = [];
         const illustJsonPath = path.join(novelsDir, n.name, 'illustrations.json');
         if (fs.existsSync(illustJsonPath)) {
-          try {
-            illustrations = JSON.parse(fs.readFileSync(illustJsonPath, 'utf8'));
-          } catch (e) {
-            console.warn(`Failed to parse illustrations.json for ${n.name}:`, e.message);
-          }
+          illustrations = readJson(illustJsonPath);
+          invariant(Array.isArray(illustrations), `Invalid illustration metadata: ${n.name}`);
         }
 
-        let characters = [];
         const charJsonPath = path.join(novelsDir, n.name, 'characters.json');
-        if (fs.existsSync(charJsonPath)) {
-          try {
-            characters = JSON.parse(fs.readFileSync(charJsonPath, 'utf8'));
-          } catch (e) {
-            console.warn(`Failed to parse characters.json for ${n.name}:`, e.message);
-          }
-        }
+        const characters = readJson(charJsonPath);
+        validateRoster(characters);
 
         const manifest = {
           novelId: n.name,
@@ -133,3 +116,4 @@ if (fs.existsSync(novelsDir)) {
     }
   }
 }
+writeRelease(distDir);

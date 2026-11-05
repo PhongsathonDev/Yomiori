@@ -35,6 +35,8 @@ For work spanning several areas, follow all applicable rows. Read an existing ma
 
 Before any reader chapter addition or modification, read and complete **all six steps** in the [chapter protocol](AI_CONVERSION_GUIDE.md#chapter-protocol). It covers web data, zero-loss verification, mobile synchronization, build/manifests, Git delivery and deployment verification. Do not report production availability without the matching deployment and CDN evidence.
 
+Use the source-preserving conversion pipeline in that guide. Whole-novel work uses its default whole-novel plan and must pass the complete audit; do not substitute the retired heuristic converters, downgrade to partial, delete checkpoints or expand the frozen legacy baseline to make validation pass. Legacy fingerprints are explicitly unverified and do not certify old chapters.
+
 ## Tracker and dashboard
 
 The canonical tracker is [.wayfinder/issues/](.wayfinder/issues/). [Wayfinder rules](.wayfinder/README.md) own grouping, claims, blockers, reciprocal Work with links, one-decision-ticket-per-session and HITL gates. Read them before tracker changes.

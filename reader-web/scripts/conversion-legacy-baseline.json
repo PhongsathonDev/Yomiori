@@ -1,0 +1,1586 @@
+{
+  "version": 1,
+  "note": "Frozen pre-migration fingerprints. NOT certified by the strict pipeline. Changed outputs, sources, rosters or mobile copies require revalidation. Do not regenerate or expand to suppress failures.",
+  "knownIssues": {
+    "kyudoUnregisteredSpeakerBlocks": 55,
+    "kyudoNonCanonicalSpeakerNames": 223,
+    "boyishMissingMobileCopies": 14
+  },
+  "chapters": {
+    "kyudo-senpai/ch-00.json": {
+      "web": "56fba547446b35ba6b43e869c9575b8d603250bc779705dfdb82b4ab57b56c8c",
+      "mobile": "56fba547446b35ba6b43e869c9575b8d603250bc779705dfdb82b4ab57b56c8c",
+      "sourceFile": "Ch.00_รูปนิยาย_ภาพประกอบ.md",
+      "source": "be9698ba21afae231c3b494eaba55d16c1eec46fd22cb250b62182335aa77f6f",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-01.json": {
+      "web": "57900fd064b85b1a02e21da55bcc69648c033d195fe23f583c74a48acf2d3ae0",
+      "mobile": "57900fd064b85b1a02e21da55bcc69648c033d195fe23f583c74a48acf2d3ae0",
+      "sourceFile": "Ch_01_อีเวนต์หายากกลางดึก ①.md",
+      "source": "f0b831289ae267f7d1a818cb9e49ef566d95447029c47f7a29d4fd9288f51ecc",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-02.json": {
+      "web": "4ebf547d0df5b6428c901d7c15852d2e795e5171b3e970042e73654e5fdc7fd4",
+      "mobile": "4ebf547d0df5b6428c901d7c15852d2e795e5171b3e970042e73654e5fdc7fd4",
+      "sourceFile": "Ch_02_อีเวนต์หายากกลางดึก ②.md",
+      "source": "289a3fd0c0034d50a7bc922706a0bf95bc69a86a38dee61f9d183909a15f0f47",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-03.json": {
+      "web": "b4d825fb461fe2165993f16f825da2b2dd958a4b3c8adb165830288e942928b2",
+      "mobile": "b4d825fb461fe2165993f16f825da2b2dd958a4b3c8adb165830288e942928b2",
+      "sourceFile": "Ch_03_อีเวนต์หายากกลางดึก ③.md",
+      "source": "eba55b624d3b7b5aa37d842e54e1996ef27e672a19ad34231ba0c85fd86179e8",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-04.json": {
+      "web": "5e69c2d133d75ce6c9deffde4c492eb419b52a5ac90300f5a8434abe62f9b2f0",
+      "mobile": "5e69c2d133d75ce6c9deffde4c492eb419b52a5ac90300f5a8434abe62f9b2f0",
+      "sourceFile": "Ch_04_อีเวนต์ทั่วไปในชีวิตประจำวัน.md",
+      "source": "d157589c5ef709fef8f8f8221cb53b6bc1ff85a096e9f67b1957dab8bed84882",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-05.json": {
+      "web": "05cfc14aebdd637c27069aa79a6f312dc53a1f163c575589fbff6d06484447b7",
+      "mobile": "05cfc14aebdd637c27069aa79a6f312dc53a1f163c575589fbff6d06484447b7",
+      "sourceFile": "Ch_05_การปรึกษาและการปรึกษา.md",
+      "source": "a36f1281128b2d56401a76becf061f4b5cb57a113f0695617da85746d9e69644",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-06.json": {
+      "web": "e81a03c6c13820a88d86272eb43b5476520be57b8e838f479c3c5e5f3e0d3aee",
+      "mobile": "e81a03c6c13820a88d86272eb43b5476520be57b8e838f479c3c5e5f3e0d3aee",
+      "sourceFile": "Ch_06_คำแนะนำสัญญาชั่วคราว.md",
+      "source": "9da8aef1382091b7969e4067d49ccc2ca4ab5ca0f822159b7c40c0d2cb24041d",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-07.json": {
+      "web": "ed0beb31492824c1fe91a72509268d133e89e89d1566167515f008ced2fb951e",
+      "mobile": "ed0beb31492824c1fe91a72509268d133e89e89d1566167515f008ced2fb951e",
+      "sourceFile": "Ch_07_เจริญรอยตามตารางเวลา ①.md",
+      "source": "106e6365e3ffea9d3ebad9b057621d794aa4c08e40569f4455508c61df99c126",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-08.json": {
+      "web": "f61d33597cca9c427cd048a3cc39f34c71c85ff1dc75df424b40ea271d53f80e",
+      "mobile": "f61d33597cca9c427cd048a3cc39f34c71c85ff1dc75df424b40ea271d53f80e",
+      "sourceFile": "Ch_08_เจริญรอยตามตารางเวลา ②.md",
+      "source": "4501128375d63f611c5f30143d5b2e9326d0ca8a4ae8f383714c3b5df46845c1",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-09.json": {
+      "web": "073be0fc404e9cc0ddc7a43695b3fdd88a48df39bdfd750f352b4e16fc9b8e30",
+      "mobile": "073be0fc404e9cc0ddc7a43695b3fdd88a48df39bdfd750f352b4e16fc9b8e30",
+      "sourceFile": "Ch_09_เสียงหัวใจที่เต้นรัวนี้.md",
+      "source": "7887c754344ce502d3e902b55d8922c33b2a5c3d6677cf15f6f5a100d26a868d",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-10.json": {
+      "web": "27385bfb3264e0b368939e01bdc0d81017c9b31940df26f7ce198e52f45ee0ee",
+      "mobile": "27385bfb3264e0b368939e01bdc0d81017c9b31940df26f7ce198e52f45ee0ee",
+      "sourceFile": "Ch_10_คอร์สผ่อนคลายสุดพิเศษ.md",
+      "source": "7f6de7408598c23172950697f76c2f839f2623d308b129eba359d617ab5d8046",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-11.json": {
+      "web": "0c238152084ec1ba4304dada7dadecd9fda1b9d429a13c45d3fde749d39515ef",
+      "mobile": "0c238152084ec1ba4304dada7dadecd9fda1b9d429a13c45d3fde749d39515ef",
+      "sourceFile": "Ch_11_วาตานูกิ ริโนะ อยากจะสงบใจ!.md",
+      "source": "a9c2cfc875624a53a1ee91da2201c0fcb0c873ac3e4bc6c0898120fcebed5650",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-12.json": {
+      "web": "f2146fb20e8c2027b422167700b0b1535a00b39682c9d5287799e80afd8fb3e6",
+      "mobile": "f2146fb20e8c2027b422167700b0b1535a00b39682c9d5287799e80afd8fb3e6",
+      "sourceFile": "Ch_12_บอสกลางประเภทที่ถ้าชินแล้วจะล้มได้โดยไม่เจ็บตัว.md",
+      "source": "ef8cc9b8f56fdde871195b6c922b183ba89c98f638eaf73d6c8d28fb7c67a018",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-13.json": {
+      "web": "432c3249bf0169b2a146d5cc09e9e5cf433e0576e98b28ad32427ea1433393ed",
+      "mobile": "432c3249bf0169b2a146d5cc09e9e5cf433e0576e98b28ad32427ea1433393ed",
+      "sourceFile": "Ch_13_ช่วงเวลาที่เรียกว่าการประชุม.md",
+      "source": "e2f0d474e14335cdfbcace01fb29321f8f20436cc71541c2e7586ee55784b063",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-14.json": {
+      "web": "347d784ef757e20b4fc09ddd30098f111a37e0f26d61508c87286c98b6b4dfc4",
+      "mobile": "347d784ef757e20b4fc09ddd30098f111a37e0f26d61508c87286c98b6b4dfc4",
+      "sourceFile": "Ch_14_ช่วงเวลาที่เรียกว่าเมฆครึ้ม.md",
+      "source": "4ceee23fdc46099bef835255aa08ad29a0d8b0330809425691fe90c8942d669f",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-15.json": {
+      "web": "57a227f97618e31d9f3879815de6799f6dffc2d4ef812dc28ea3d3cbf81ff74a",
+      "mobile": "57a227f97618e31d9f3879815de6799f6dffc2d4ef812dc28ea3d3cbf81ff74a",
+      "sourceFile": "Ch_15_(ค่อยๆ ถลำลึกในห้องของเธอ).md",
+      "source": "b92205f95b04e208ffd8d48082270bd851e862da647cebccb30fd9832f497ae3",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-16.json": {
+      "web": "b90cbfb79ed60e43b72388562db873156331801cfc91b636becd8e8efe0e43b3",
+      "mobile": "b90cbfb79ed60e43b72388562db873156331801cfc91b636becd8e8efe0e43b3",
+      "sourceFile": "Ch_16_รุ่นพี่วาตานูกิ 《ร่างที่สอง》 ค่อนข้างใจกล้าเอาเรื่อง.md",
+      "source": "3e23ac91f2a381f6df332e737bee13c87cada40d31f4f78f1831f26f3dcd08af",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-17.json": {
+      "web": "e6ce8da133c473c7c88d6962a4fdc63b61bdf8630e93770b36648c4ea8ee51d8",
+      "mobile": "e6ce8da133c473c7c88d6962a4fdc63b61bdf8630e93770b36648c4ea8ee51d8",
+      "sourceFile": "Ch_17_น้องสาวของรุ่นพี่เป็นพวกอันตรายเอาเรื่อง.md",
+      "source": "2f71959a2c83cb8234136af18e1059cf34509b207e1fab668ac76b3765003436",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-18.json": {
+      "web": "5b85f22e2e1e6ef90bc5f3a9e26ae7d7639cbc20ce39ad8ae9b6701356169e89",
+      "mobile": "5b85f22e2e1e6ef90bc5f3a9e26ae7d7639cbc20ce39ad8ae9b6701356169e89",
+      "sourceFile": "Ch_18_ปรึกษาเรื่องความรักหรือหาทางเลี่ยงกฎกันแน่.md",
+      "source": "1b29929607bb0d7ab66d2e8a53775678c45dbc75cc7d1bb79f1bfcd3ce88a1f4",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-19.json": {
+      "web": "ca118bd83a6d17af8fdd4ce77e318c2715fff0c1cd883e455a8f5c2169326934",
+      "mobile": "ca118bd83a6d17af8fdd4ce77e318c2715fff0c1cd883e455a8f5c2169326934",
+      "sourceFile": "Ch_19_จากมื้ออาหารอันแสนสงบสุขพลิกผันสู่ความวุ่นวาย.md",
+      "source": "8f315083d22b3b4cafe3a771adde348740a1a279655bfdc654d72f6e4c4a04d4",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-20.json": {
+      "web": "90b76b64fe9c1d6a6a0cf993424b27651b54ce80a290dd38df0969ad0769f086",
+      "mobile": "90b76b64fe9c1d6a6a0cf993424b27651b54ce80a290dd38df0969ad0769f086",
+      "sourceFile": "Ch_20_ช่วงเวลาที่เรียกว่าการประชุม (ครั้งที่สอง).md",
+      "source": "081a5558794c14d680f3ecd7764de39a97c15165ea954eefde4cf233328f80cc",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-21.json": {
+      "web": "c8058261f09b2e73ac3bd5a3e442aceeefd0e306b3061d53a00fa6c6c8176749",
+      "mobile": "c8058261f09b2e73ac3bd5a3e442aceeefd0e306b3061d53a00fa6c6c8176749",
+      "sourceFile": "Ch_21_ข้อมูลอัปเดต_ ปลดล็อกเปิดเสรีความรักเรียบร้อยแล้ว.md",
+      "source": "f4e778a4566f6160f23e1ef4daa4750da6609f89c7fc31a8c70bb392d61aca0c",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-22.json": {
+      "web": "4dfcdea5195c78bbb5af387e604026691c90d710ee9908b05729c3b202ddafcb",
+      "mobile": "4dfcdea5195c78bbb5af387e604026691c90d710ee9908b05729c3b202ddafcb",
+      "sourceFile": "Ch_22_วาตานูกิ ริโนะ นอนไม่หลับ!.md",
+      "source": "c149e25f4b5dbf248a1dfe2a7fe2ee2c1d04bdf5645b222469b70f0b44878e41",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-23.json": {
+      "web": "8e7ea52913cef4513ebc9f146ec23419af1f0799f1de266d4780c77190a06951",
+      "mobile": "8e7ea52913cef4513ebc9f146ec23419af1f0799f1de266d4780c77190a06951",
+      "sourceFile": "Ch_23_การรุกและรับของยอดนักสืบจอมปลอมและผู้ต้องหาจอมปลอม.md",
+      "source": "ec720b0e58232d7908783f9f8a921cd6ec4c3292d11f2d62561cee20ea28f002",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-24.json": {
+      "web": "4678c22c0a6f1fb6d89848a991e97a1a064b370b5b455c40177720632dfc0829",
+      "mobile": "4678c22c0a6f1fb6d89848a991e97a1a064b370b5b455c40177720632dfc0829",
+      "sourceFile": "Ch_24_※หลังจากนี้หน้าแดงแจ๋สุดๆ.md",
+      "source": "6d46ac4b4cc5c43f9f16b368eda112708d11fff76c128b7efde3e156903c56cf",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-25.json": {
+      "web": "af7a9dfa57fb05c521aef79d08354c14c2d1a40533875af05210ffdacf930b1c",
+      "mobile": "af7a9dfa57fb05c521aef79d08354c14c2d1a40533875af05210ffdacf930b1c",
+      "sourceFile": "Ch_25_ยอมรับนายในฐานะคู่ปรับ.md",
+      "source": "6d598f3712c9b13d5857ac522bfd3c7d3cf9032be6302cdd985f2538163415ac",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-26.json": {
+      "web": "c559bc2cc506cd4f0de11fbbcfe3c2ae17e82d0b5d450726d41b8db47472abd3",
+      "mobile": "c559bc2cc506cd4f0de11fbbcfe3c2ae17e82d0b5d450726d41b8db47472abd3",
+      "sourceFile": "Ch_26_บ่ายวันหยุดอันหวานละมุนและแฝงความขมขื่น ①.md",
+      "source": "3b72f664963f2171cf8d27b611a2493950ddf874d45ed98eef21e171eb542adc",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-27.json": {
+      "web": "3bdb174c6ca171a8c767256a644a60d6096f4d3bd13b203592fb31635a658be8",
+      "mobile": "3bdb174c6ca171a8c767256a644a60d6096f4d3bd13b203592fb31635a658be8",
+      "sourceFile": "Ch_27_บ่ายวันหยุดอันหวานละมุนและแฝงความขมขื่น ②.md",
+      "source": "78f7cb60b37c5445f52e45e6f67cf5163f734805664459fc9996ab781155e19e",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-28.json": {
+      "web": "cbe2640f3fef998ec560798d38b9910ab32c9d09836ceb7d4a38cd529698090e",
+      "mobile": "cbe2640f3fef998ec560798d38b9910ab32c9d09836ceb7d4a38cd529698090e",
+      "sourceFile": "Ch_28_บทสรุปของการผลัดวันประกันพรุ่งและข้อเสนออันทรงพลัง.md",
+      "source": "fece679fb861b21c98d5502bdf5d366672103e9475c80eb7fcb9d4833eac83b5",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-29.json": {
+      "web": "1940476d0bf7e42e203e014fa453303854ec6ea67378cfe9b64c8410c4d0b7e6",
+      "mobile": "1940476d0bf7e42e203e014fa453303854ec6ea67378cfe9b64c8410c4d0b7e6",
+      "sourceFile": "Ch_29_การนัดพบสุดรุกต้อน.md",
+      "source": "4f9b2b04788bb560f419c8eadad379a44cf82383aff1c9ca79dc6fa468052030",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-30.json": {
+      "web": "5f41a2c2dcbbf682f63f00aefac5a1bf2601d468369ab60c9ea7ecd580d67b71",
+      "mobile": "5f41a2c2dcbbf682f63f00aefac5a1bf2601d468369ab60c9ea7ecd580d67b71",
+      "sourceFile": "Ch_30_เพราะมีเธออยู่ถึงก้าวออกไปได้.md",
+      "source": "bc2d6735ddcf5d03bd44aff89775ac41ca499ef6f8a1459d791bcfa24b1a72f4",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-31.json": {
+      "web": "49e826e4ee1e93360aac39fa924a2cc6c48039a07a417f87a3da91e6a8702a50",
+      "mobile": "49e826e4ee1e93360aac39fa924a2cc6c48039a07a417f87a3da91e6a8702a50",
+      "sourceFile": "Ch_31_ความทรงจำที่ไม่อาจลืมเลือนไปตลอดกาล.md",
+      "source": "de43e052f2923d30f63423acba9748623488b91075cc07dc38a774f7d286d965",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-32.json": {
+      "web": "fb9e6674182f4ce69cb29e135309db9dc93587d0fd2f2c30eb2ccf6dac18abaf",
+      "mobile": "fb9e6674182f4ce69cb29e135309db9dc93587d0fd2f2c30eb2ccf6dac18abaf",
+      "sourceFile": "Ch_32_พักเที่ยงของพวกซ่อนอาการซิสคอน.md",
+      "source": "a9799a57bfbe5682f813aaa2fe4f94f81b923dd0fcfc643918f3d060e93e8bd5",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-33.json": {
+      "web": "7243b70949ae2da18888a8cae1f03db664d5fcf66417273ba4ea0f72a9cfb4f6",
+      "mobile": "7243b70949ae2da18888a8cae1f03db664d5fcf66417273ba4ea0f72a9cfb4f6",
+      "sourceFile": "Ch_33_คืนก่อนวันชี้ชะตาอันแสนพิเศษนิดหน่อย.md",
+      "source": "7d391d05a3ccbf0263ef9829a31a215af0363d0e101b246a2eb4267646fe4128",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-34.json": {
+      "web": "f241a0eb1a0f63def1b69eae390f4f72e58214d63f122a81dcb5d096e61493b2",
+      "mobile": "f241a0eb1a0f63def1b69eae390f4f72e58214d63f122a81dcb5d096e61493b2",
+      "sourceFile": "Ch_34_แผนการย่อมมาคู่กับการด้นสด.md",
+      "source": "27a3e6bf45a733475499f29b606e344908ac6e0d4159926324748357ca9d3b86",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-35.json": {
+      "web": "0fa21c91484284afe11725a7a4420484be3cec7c9299b0f8f84849a0f4a0450a",
+      "mobile": "0fa21c91484284afe11725a7a4420484be3cec7c9299b0f8f84849a0f4a0450a",
+      "sourceFile": "Ch_35_เริ่มจากอธิบายกฎกติจาก่อน☆.md",
+      "source": "5eddcd4a86267caec9b921fed92fb69d04446cc6aa29347161f73e27a0327ad7",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-36.json": {
+      "web": "28ecbed256b61f42c0f149cad71cfc79d73d752f36465b0cd4623b77b4e0fedf",
+      "mobile": "28ecbed256b61f42c0f149cad71cfc79d73d752f36465b0cd4623b77b4e0fedf",
+      "sourceFile": "Ch_36_คำตอบแบบนั้นใครมันจะไปทายถูกกัน.md",
+      "source": "98f01af5b9db8f867c8bef608153bd437afa4761f02b6f8e45c8ac9febd4fdb2",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-37.json": {
+      "web": "24c618c4e7991c33eb57bbe504d8daeb0536ba784923177205031f4f0f50364a",
+      "mobile": "24c618c4e7991c33eb57bbe504d8daeb0536ba784923177205031f4f0f50364a",
+      "sourceFile": "Ch_37_ยื่นมือออกไปไขว่คว้าคำตอบที่ไม่เคยรู้จัก.md",
+      "source": "edf04ce7a2480211fe4ee0c96f3e05f912b139311cbda5518f6350111d889100",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-38.json": {
+      "web": "87e2a77e47e8fca7d1f90b368cef1edec0430e749694d83cd73810604ebc9bd1",
+      "mobile": "87e2a77e47e8fca7d1f90b368cef1edec0430e749694d83cd73810604ebc9bd1",
+      "sourceFile": "Ch_38_ช่วงต่อเวลา.md",
+      "source": "1abbd0ce6f6f1aa7708037bc928a2366c6484302379c4b81c4bd5b7f82ed322f",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-39.json": {
+      "web": "447427efac138ade75d17cf65224a4562e4f898830b9c3730a10dd84e7036fb7",
+      "mobile": "447427efac138ade75d17cf65224a4562e4f898830b9c3730a10dd84e7036fb7",
+      "sourceFile": "Ch_39_การโต้ตอบในเช้าอันแสนธรรมดา.md",
+      "source": "22d0f0fcdb52f04575de4c032f807591d714fa0db8039a60fd52f1732571dc6d",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-40.json": {
+      "web": "151e8c8773e9cde50454532dfaace39b4329b04b13f7a456f6c485caf8f6c70a",
+      "mobile": "151e8c8773e9cde50454532dfaace39b4329b04b13f7a456f6c485caf8f6c70a",
+      "sourceFile": "Ch_40_การสรุปเรื่องราวที่ผ่านมา กับงานเทศกาลหลังจากนี้.md",
+      "source": "56dbfee519215c1b7b9516edecca86b76b1a420db36f0afc74511581980ad4d0",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-41.json": {
+      "web": "80b149764debabf5a51f9ae26afe22c897b1ed2c9ab71c0ba911ae5a45958b1d",
+      "mobile": "80b149764debabf5a51f9ae26afe22c897b1ed2c9ab71c0ba911ae5a45958b1d",
+      "sourceFile": "Ch_41_การประชุมงานเทศกาลโรงเรียนนี้สุดยอดไปเลย! (หมวดความชื้น).md",
+      "source": "46113a366cb387b1f190dbcf093884625bd95630d9b781d5f19288e9176b6d59",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-42.json": {
+      "web": "c2ebd29da14c687ee2adecf469a50016ceaddd19aec01138b02d431d540d2148",
+      "mobile": "c2ebd29da14c687ee2adecf469a50016ceaddd19aec01138b02d431d540d2148",
+      "sourceFile": "Ch_42_ศัตรูในวันวานคืออะไรนะ.md",
+      "source": "f29de07afc2714668209e1d8eff25fd725d976432a8eba513b199b0bf91cfad9",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-43.json": {
+      "web": "4ccfb9e4a8609631fa646aa32be330b3ad463481ca533b23f7e03d75cf8bf38d",
+      "mobile": "4ccfb9e4a8609631fa646aa32be330b3ad463481ca533b23f7e03d75cf8bf38d",
+      "sourceFile": "Ch_43_เดตที่บ้านโดยไม่รู้ตัว.md",
+      "source": "dfe160b970b763373d55e7c5d9019b8732272b4b933e19c1a03ab7fb2ef2e28d",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-44.json": {
+      "web": "7232c8d3affd59c54d6591cbd4697e693d5299c56a6cde1ad5f5ab1fe5095345",
+      "mobile": "7232c8d3affd59c54d6591cbd4697e693d5299c56a6cde1ad5f5ab1fe5095345",
+      "sourceFile": "Ch_44_ช่วงเวลาแบ่งกลุ่มอันอบอวลด้วยเจตนาซ่อนเร้น.md",
+      "source": "d664848688b190fbf915ae27a51c5fcf942a2fbd72fb95c94eb523aca9c67d6d",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-45.json": {
+      "web": "dad6e8488e8cf8229ad18f19bc6da5e78c1406c92692e0c84e82595d5c0dd0c0",
+      "mobile": "dad6e8488e8cf8229ad18f19bc6da5e78c1406c92692e0c84e82595d5c0dd0c0",
+      "sourceFile": "Ch_45_มายากลของคุณพี่สาว!.md",
+      "source": "2f2bc01a9dc9e943d6fd8a94bf23b44bba336bda51efc6041aac7ff64df32e7a",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-46.json": {
+      "web": "b633e391d7cbcb4cc7357c12c1db406d1b3c9ace09f1e7c56ca0dd597113d898",
+      "mobile": "b633e391d7cbcb4cc7357c12c1db406d1b3c9ace09f1e7c56ca0dd597113d898",
+      "sourceFile": "Ch_46_กุญแจสู่ประตูบานซ่อน.md",
+      "source": "53b67d0aa126d278602d4305f75adfa352b8ab41c776a4ff4273c884c8f73eb8",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-47.json": {
+      "web": "d4f02b86fe35cd8471d89db76663c99cea429d157cd18c40bdae182c2cce542e",
+      "mobile": "d4f02b86fe35cd8471d89db76663c99cea429d157cd18c40bdae182c2cce542e",
+      "sourceFile": "Ch_47_มุ่งสู่กลุ่มประชาสัมพันธ์อันสนิทสนม · วันที่ 1 (พาร์ตสงครามข่าวสาร).md",
+      "source": "6ccc20d7412db1e43f5114ed914bde688017a7a59a9a551913a66649a19eaa54",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-48.json": {
+      "web": "5b2e66e1a9c3e45681ce0a1d4f6468d279a23a119e8dbf175b0ea8cf4f4f0322",
+      "mobile": "5b2e66e1a9c3e45681ce0a1d4f6468d279a23a119e8dbf175b0ea8cf4f4f0322",
+      "sourceFile": "Ch_48_วาตานูกิ ริโนะ อยากเป็นฝ่ายรุกให้มากกว่านี้!.md",
+      "source": "259663ec9455de3ab7823405a46299bd3dcd38618d4e9adbbad201851734b5e4",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-49.json": {
+      "web": "bb521b693ccc5e6b1cb7fb880a63b0f9eb2fa953e6eb4f48d636598df0a3a212",
+      "mobile": "bb521b693ccc5e6b1cb7fb880a63b0f9eb2fa953e6eb4f48d636598df0a3a212",
+      "sourceFile": "Ch_49_คำเสนอแนะจากสองพี่น้องมึนธรรมชาติ.md",
+      "source": "87008b473ffc299ae7141d8697742c7c20e5ff6118237320bb8daab0443d22fd",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-50.json": {
+      "web": "5b9521b5248fc57b02ba3e98ff1f089ba81a52ac7e6998058a796aa4cf6b38ec",
+      "mobile": "5b9521b5248fc57b02ba3e98ff1f089ba81a52ac7e6998058a796aa4cf6b38ec",
+      "sourceFile": "Ch_50_มุ่งสู่กลุ่มประชาสัมพันธ์อันสนิทสนม · วันสุดท้าย (พาร์ตยุบกลุ่ม).md",
+      "source": "8b24f7b5ba48eb7179c47b432c0eb2f727e6dcb1ae6afe9a9b5f6dd061b6e2c7",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-51.json": {
+      "web": "eecc3de2de4f7b1de5c9c69be17c2c48b7948bbbb0f2720c2df5f87c2f88fc56",
+      "mobile": "eecc3de2de4f7b1de5c9c69be17c2c48b7948bbbb0f2720c2df5f87c2f88fc56",
+      "sourceFile": "Ch_51_เปลี่ยนให้กลายเป็นคืนอันแสนพิเศษไปเลยนะ ①.md",
+      "source": "926ac54d323d53f7770a6853e7ac675cca6a86fad80acdcab60462b7cfbfde85",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-52.json": {
+      "web": "6412d3ea53454f8683fceac451e850b6af82100a62f0f058aafc3eee3a1a0767",
+      "mobile": "6412d3ea53454f8683fceac451e850b6af82100a62f0f058aafc3eee3a1a0767",
+      "sourceFile": "Ch_52_เปลี่ยนให้กลายเป็นคืนอันแสนพิเศษไปเลยนะ ②.md",
+      "source": "de53b3dc8e1a899ffa5c860856f2c0421f60388efc4fd82873f71885bbea9a99",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-53.json": {
+      "web": "ff3b5904e54f6ae6aca8330fc8250d7eceda4108ace7120017c4cefb486414ed",
+      "mobile": "ff3b5904e54f6ae6aca8330fc8250d7eceda4108ace7120017c4cefb486414ed",
+      "sourceFile": "Ch_53_ก้าวออกจากเงามืด.md",
+      "source": "1ba047b9954712a0528d06609eac06683c1ffed5fd448f4e3bfbe5ce416a9468",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-54.json": {
+      "web": "481335f4371b20a3c3472de2aa9f8747d2211396f139a98ad00328f169e3b0b7",
+      "mobile": "481335f4371b20a3c3472de2aa9f8747d2211396f139a98ad00328f169e3b0b7",
+      "sourceFile": "Ch_54_หมายเลขหลังเสื้อคือ 0 สมเป็นเธอแล้ว โคตรเท่เลยแฮะ.md",
+      "source": "b16917796a0b332850e20744285e387ac6aa016f80e3400a7f3a5050b14cde49",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-55.json": {
+      "web": "e9fa6a3f1936043cc1015c9384c9cfc32d268a66919cf4c884afc7e49a011de1",
+      "mobile": "e9fa6a3f1936043cc1015c9384c9cfc32d268a66919cf4c884afc7e49a011de1",
+      "sourceFile": "Ch_55_ระเบียงทางเดินของพวกรุ่นพี่ให้อารมณ์เหมือนอยู่คนละโลกเลยเนอะ.md",
+      "source": "746d3d4ab3ee3e44e3efe84e99f4aa6fc63b545c621366a9a287c5bda47e36c7",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-56.json": {
+      "web": "40493d34bfe7c9a305893071546f1e2690931df9ef99405b0afd03276517f52d",
+      "mobile": "40493d34bfe7c9a305893071546f1e2690931df9ef99405b0afd03276517f52d",
+      "sourceFile": "Ch_56_และอดีตที่ถูกเอ่ยถึง.md",
+      "source": "a8aa7c2e5ca9d581774fdbb561f2ee037b9e2708e652d6f4e313fc74cfb12d25",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-57.json": {
+      "web": "4e7a92eb901ccb956fbef85ae642b4e1098806c6288aee98a5eb285e404286d0",
+      "mobile": "4e7a92eb901ccb956fbef85ae642b4e1098806c6288aee98a5eb285e404286d0",
+      "sourceFile": "Ch_57_ภารกิจ_ รับมือรุ่นพี่ผู้แสนขี้เกียจกันเถอะ!.md",
+      "source": "814b5031fd531fb4ca344418d3c131b9b857002fff22ac93878630fd965f6e5b",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-58.json": {
+      "web": "3d5d941434b85d396760db185b5a452cbbf62ee1840f16ed85967fcf3b9a6d33",
+      "mobile": "3d5d941434b85d396760db185b5a452cbbf62ee1840f16ed85967fcf3b9a6d33",
+      "sourceFile": "Ch_58_ลางสังหรณ์งานเทศกาลอย่างที่ไม่เคยมีมาก่อน...!.md",
+      "source": "afe9d5c8de86ef68511f0a6b894795755a531445ed93e571345179ab8a0c5904",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-59.json": {
+      "web": "5bfc5cdc9e7262928ccde50ac177637513cb4edcd48cd2083dc49373c61dad05",
+      "mobile": "5bfc5cdc9e7262928ccde50ac177637513cb4edcd48cd2083dc49373c61dad05",
+      "sourceFile": "Ch_59_คาเฟ่เชียร์ ในที่สุดก็เปิดทำการแล้วครับ.md",
+      "source": "845cecf82e459b9b2513ef1ec9ac9cc07ed3bc0b4ad1683e627dad03961254a7",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-60.json": {
+      "web": "3be049eb70276ee365c5b57d788436a702a3813d7c38337a3e4e7d1e1b60e964",
+      "mobile": "3be049eb70276ee365c5b57d788436a702a3813d7c38337a3e4e7d1e1b60e964",
+      "sourceFile": "Ch_60_โชว์มายากลโปรโมตของอาเมโมโตะ โทยะ.md",
+      "source": "2b623abfb5d343973f533aa80022db3f82ea3bda6cc11d4f97a2db05efa950cf",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-61.json": {
+      "web": "f8831ccdc9b6fc039deffb120dd2063eb855a5cab9cb37b44bc8191320d67908",
+      "mobile": "f8831ccdc9b6fc039deffb120dd2063eb855a5cab9cb37b44bc8191320d67908",
+      "sourceFile": "Ch_61_สิ่งที่เรียกว่าเดตงานเทศกาลโรงเรียน.md",
+      "source": "c4600427f7e452894888ecf357c1eec310d3317fb3c088253c21c5a3517cdefc",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-62.json": {
+      "web": "6ba7a5cd2519c902993590958ed8e34f539da0b2276b2fae5e36edd8464e5249",
+      "mobile": "6ba7a5cd2519c902993590958ed8e34f539da0b2276b2fae5e36edd8464e5249",
+      "sourceFile": "Ch_62_งานฉลองกลางเทศกาลที่ไม่อาจหลีกเลี่ยง.md",
+      "source": "2c8a2dbaf833f24f05ab8c02950d8dbb80d1d6a2e1b3a04286585de6a77788e7",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-63.json": {
+      "web": "56b62d79bf6e8d700565bdf0d31353d888c87744ce17151349e184cfc14a722d",
+      "mobile": "56b62d79bf6e8d700565bdf0d31353d888c87744ce17151349e184cfc14a722d",
+      "sourceFile": "Ch_63_ชูสองนิ้วแห่งชัยชนะ.md",
+      "source": "6e904784eb74c2c0f8c2dfd7495b5842c083b285bf2be0cbf1db74212c3c71d3",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-64.json": {
+      "web": "d51c98c9fabcb121015ee012b6da25c140a6c9096406487149f3cb661f89f251",
+      "mobile": "d51c98c9fabcb121015ee012b6da25c140a6c9096406487149f3cb661f89f251",
+      "sourceFile": "Ch_64_การสารภาพของเด็กสาวผู้ชาญฉลาด.md",
+      "source": "4cc45011bd2dccfb15c63de1922cae0c79d26339d2fbc5fca8fa097c7f00014a",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-65.json": {
+      "web": "9c0a5393daf88013980214bc12bc3fc4069e8e75aceca042b615419a267699ec",
+      "mobile": "9c0a5393daf88013980214bc12bc3fc4069e8e75aceca042b615419a267699ec",
+      "sourceFile": "Ch_65_วาตานูกิ ริโนะ อยากจะทบทวนตัวเอง!.md",
+      "source": "6294bc2b478806d80fca82201ffe1742b6a6c32620aea73cc2795d5d23b5a0dd",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-66.json": {
+      "web": "3aabd8bbb5b5212bccffaf67ebe7e777ff1c346caac30344905acd342a5feb20",
+      "mobile": "3aabd8bbb5b5212bccffaf67ebe7e777ff1c346caac30344905acd342a5feb20",
+      "sourceFile": "Ch_66_แฟรี่แห่งซุ้มโยนห่วง.md",
+      "source": "417624946e59cbaa8fe096d6331bae00f1ffbd4c87e8e1511a5db1a07041e4cc",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-67.json": {
+      "web": "19fcf0aa560ca55f5b4aed68cc74d85d49b12b95c6b657e6e56262afdd0a1b12",
+      "mobile": "19fcf0aa560ca55f5b4aed68cc74d85d49b12b95c6b657e6e56262afdd0a1b12",
+      "sourceFile": "Ch_67_นั่นคือจุดเริ่มต้นของความสัมพันธ์ครั้งใหม่.md",
+      "source": "7a1f42d4a507014439e150bbcaad4b1be241341fbd8291536cfe0443c017485b",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-68.json": {
+      "web": "ed5315808f44824a1cde33336a9b042faa9c90d18adc2501ae4287f8d03ba182",
+      "mobile": "ed5315808f44824a1cde33336a9b042faa9c90d18adc2501ae4287f8d03ba182",
+      "sourceFile": "Ch_68_กลับสู่ชีวิตประจำวัน ก่อนจะถึงตอนนั้น ①.md",
+      "source": "fa62abee4a3181cad5cdef443b062b5ed606e87347ed1059cfdab36389c3d310",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-69.json": {
+      "web": "34796b101ea00b7df9d3efe3815c922099a576f43bfbe26eeabae6886bf4383c",
+      "mobile": "34796b101ea00b7df9d3efe3815c922099a576f43bfbe26eeabae6886bf4383c",
+      "sourceFile": "Ch_69_กลับสู่ชีวิตประจำวัน ก่อนจะถึงตอนนั้น ②.md",
+      "source": "005f0667e00058f646172061c36cf76a06d091a9f6e45921dcc6fa72c5ae3374",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-70.json": {
+      "web": "a792ceec84988239c64a89b508c980f0808927f5e51a1c74032dc3c2b0e15db1",
+      "mobile": "a792ceec84988239c64a89b508c980f0808927f5e51a1c74032dc3c2b0e15db1",
+      "sourceFile": "Ch_70_กลับสู่ชีวิตประจำวัน ก่อนจะถึงตอนนั้น ③.md",
+      "source": "54bf880c705e19eb3ad7357cf58817d86272ea5240b9b12d8b4e59c6022923c3",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-71.json": {
+      "web": "d8f72642934868ea7dfc718b005ba48df5a615b42b98981c33856c001308d894",
+      "mobile": "d8f72642934868ea7dfc718b005ba48df5a615b42b98981c33856c001308d894",
+      "sourceFile": "Ch_71_วาตานูกิ ริโนะ อยากจะอยู่ข้างๆ!.md",
+      "source": "cb643e5fa032ed6f8b89d1b115651c0d7e0aef8943075ea24555b29d18139a66",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "kyudo-senpai/ch-72.json": {
+      "web": "c41e90b0391abbe82f5f55ab81b9543feb55afc7473131e30e2de0f65eba7a5b",
+      "mobile": "c41e90b0391abbe82f5f55ab81b9543feb55afc7473131e30e2de0f65eba7a5b",
+      "sourceFile": "Ch_72_บทส่งท้าย สู่สถานที่ที่มีแสงแดดส่องถึง.md",
+      "source": "c013358b8e4fc0aa98fdacc94b9021e82d284acbdb043a53a92396b6b2bf543b",
+      "registryEntry": null,
+      "roster": "8b4f5fc78d669f868cc691a11aa27772f4f63ec1ab39afcd662425b9518826fc",
+      "novelTitle": "(WN) รุ่นพี่สาวสวยจากชมรมยิงธนู ผมนอนในห้องของผมโดยที่ท้องของเธอเปิดโล่ง"
+    },
+    "boyish-friend/ch-01.json": {
+      "web": "437c318472f6bcd0817a4de5deecf413b9fd4f26f17e8a7aea2f0c21e1b747f3",
+      "mobile": null,
+      "sourceFile": "Ch_01.md",
+      "source": "d59d8d6188a00395b0c99bdfae176dd17970d531b7e128fba19c313729d5b1dd",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-02.json": {
+      "web": "c15da9457cb49a6d47c882c6468eabc422ed4c5cae205afa19b7a1dafeeb4411",
+      "mobile": null,
+      "sourceFile": "Ch_02.md",
+      "source": "7d0fc81c26dc6762528eddd53b4234b3eff8681c43a6fa8ea0b3c204d6f85115",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-03.json": {
+      "web": "493bafd62add046fc3aedddfe84d364d53a89e5964ab1b886a4a208ced1e1446",
+      "mobile": null,
+      "sourceFile": "Ch_03.md",
+      "source": "d6134239a4b54d6d4e2d4add81c8fe48ec9adbc10dbd5db7ef55b7dda923a533",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-04.json": {
+      "web": "694a4fe35ef81f350e02fce1e77adeb72db0384e2d5acf1e903e8fd023b0a8ad",
+      "mobile": null,
+      "sourceFile": "Ch_04.md",
+      "source": "3031c219541606a6a42261533bf5201c4e269a47c85dd5190dfb74bc86982487",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-05.json": {
+      "web": "ba72ee31a93555cf657e81f2beb146b4c1ee7b870fc910a90a5689cbdbad659b",
+      "mobile": null,
+      "sourceFile": "Ch_05.md",
+      "source": "8211df6f9d9fe71b0ad12e8752d8fdc55185996dce74b344b9bca8eb39ed29d7",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-06.json": {
+      "web": "2be7e58c4d44ec3d19f64876c5587e1846c908684296b8d06c5fcfd9676e5e01",
+      "mobile": null,
+      "sourceFile": "Ch_06.md",
+      "source": "8dfae8b5a602d2838b622ab1477dfabf94c9fe9745d902f66da317c399c33b12",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-07.json": {
+      "web": "b411145598f12a155127cd3d5f7cfe3c7aab2b7139d57727b50050c5040da40d",
+      "mobile": null,
+      "sourceFile": "Ch_07.md",
+      "source": "c26fb1990220f3f3cb465f44f332aaf478689288dc56a9b025cb64edb890360c",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-08.json": {
+      "web": "a2f83d60895611b28d39675c7aa464a9333258255d4539e4f91c1d1ace87f697",
+      "mobile": null,
+      "sourceFile": "Ch_08.md",
+      "source": "721ff3fa2ac024960f13d03c241de508be77091051b7f6b003f8532932f190ff",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-09.json": {
+      "web": "8b590a173f8caf9c56ba1282447941e51d34120db5594ae1090fcf217ebb6d89",
+      "mobile": null,
+      "sourceFile": "Ch_09.md",
+      "source": "83000c937edc1088cdf34d5c00d6b95069afb08fc50529d0cf6d596a27df1007",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-10.json": {
+      "web": "6c90b310d115ee8b80c38dbad202a7167fd589d66eb32f19238b9c5d7274e524",
+      "mobile": null,
+      "sourceFile": "Ch_10.md",
+      "source": "a02779f014d30c46efde5e119ef220a4eb8968dcfbdea585f81128d05dd53ca4",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-11.json": {
+      "web": "5b95db0533fad082c08d98d229dff9ce29de89fe99e33783ed25444166cd419c",
+      "mobile": null,
+      "sourceFile": "Ch_11.md",
+      "source": "2e44f9532409dbb7a539d717c9788b1c9ca90def1f5a362d93387be201c38015",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-12.json": {
+      "web": "9c28f89f2785ecf33672fd938a1f465d6c01af8fa3bdf613d368e5ca21e84449",
+      "mobile": null,
+      "sourceFile": "Ch_12.md",
+      "source": "4ddc039ab8bdffbb3e9cc2b629e4ce9833c0efadfc739cd1b77eb675c8c368ac",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-13.json": {
+      "web": "afa5bf5efb488485b61fa65aff2e83071f304a9f78c632f1c81cfdf4c566038d",
+      "mobile": null,
+      "sourceFile": "Ch_13.md",
+      "source": "ca70c6cc3888c5ed8953d9bbfcaa986d990cec3a001cf064a9ead963629cd73a",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "boyish-friend/ch-14.json": {
+      "web": "81556bece821fe20cf6d0f73c338680ccee6c02de303e38db6076b1d22f3a832",
+      "mobile": null,
+      "sourceFile": "Ch_14.md",
+      "source": "8d77c782444820db03876f711c158ff0db5a60b8b9a2795abce677ec98b695e0",
+      "registryEntry": null,
+      "roster": "12f6520f6569912c97d5fa58d3a4d76b36d3df5482bbddc518533d1d69832a0f",
+      "novelTitle": "[18+] เรื่องราวของการพรากเพื่อนสนิทสาวที่น่ารักอันดับสองในห้อง มาเป็นของตัวเองด้วยทริปทัศนศึกษาสองคืนสามวัน"
+    },
+    "black-cat-hangout/ch-00.json": {
+      "web": "bb4ef2b7d3c4b77d22797d46e7f758cd7778d4412545c95f7ec01d3c11a0c406",
+      "mobile": "bb4ef2b7d3c4b77d22797d46e7f758cd7778d4412545c95f7ec01d3c11a0c406",
+      "sourceFile": "Ch_00_รูปประกรอบ.md",
+      "source": "3dd956904b06b9cf08e901d1df887077a8b70f43374ce99288b70fc9208a7348",
+      "registryEntry": "612b345cd6799ebd91168f73e8635ccffa54795be8be25edf475d4f69daca927",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-01.json": {
+      "web": "0c9ac2ed85188026aa137b5fbf85aab2465e1d8f727a964631955ac7b684c293",
+      "mobile": "0c9ac2ed85188026aa137b5fbf85aab2465e1d8f727a964631955ac7b684c293",
+      "sourceFile": "Ch_01_อามาโนะ ฮินะ กับ โคคาเงะ มิซึกิ.md",
+      "source": "764d2256a50b80d18449a06cc6ef84446e8c7791a9c5526191b3f064bd0a247e",
+      "registryEntry": "2ee8d5a3587c31f9f772b4b556ea3f35d84bc05dd8ffa97c024af5f328e76232",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-02.json": {
+      "web": "3fa4d6c19765e59217629f812380236400378a8f9f45c12304573ecd7607f6b8",
+      "mobile": "3fa4d6c19765e59217629f812380236400378a8f9f45c12304573ecd7607f6b8",
+      "sourceFile": "Ch_02_ผม ลูกแมว และคุณโคคาเงะ.md",
+      "source": "0a12003b6c806be989b28c4d4ec9ac7c93f790ceda90e96a09a34b9dbd09321a",
+      "registryEntry": "687c372efc0d6bac59d495fbb3d2deff1b00accdf3f2340df70fba10da84848e",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-03.json": {
+      "web": "63cc7acf54b890ffbc237e9c9a9b6c8c2a7d2ba6f061ee7aeb2a18631d08cdfb",
+      "mobile": "63cc7acf54b890ffbc237e9c9a9b6c8c2a7d2ba6f061ee7aeb2a18631d08cdfb",
+      "sourceFile": "Ch_03_คุณโคคาเงะที่ป้อนอาหารลูกแมว กับตัวผมที่คอยเฝ้ามอง.md",
+      "source": "e76a673fa2bee87731fe0ccbb0a43b491fb9210fec3099e3905ac9e01396dbac",
+      "registryEntry": "bf0ec7127fff52d1c4a6872458c81bf2c8665ed175be6b26a908f9d75d7156fc",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-04.json": {
+      "web": "967325abdc3023cd25aefb8de1c56eecd28f83d627312c25af78c8fa10be5277",
+      "mobile": "967325abdc3023cd25aefb8de1c56eecd28f83d627312c25af78c8fa10be5277",
+      "sourceFile": "Ch_04_คุณโคคาเงะผู้ขี้วิตก.md",
+      "source": "6a31a440b6f11daacf4fbdc1b8df31c7252ed27cdfc9521ef0a7f11a7f25f691",
+      "registryEntry": "8718eeae7af97319c54d97e1cacea89b548fd4cc8fd53fca5c91118660579dee",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-05.json": {
+      "web": "9e664f5e96e5b3ea65e421883e9c4fa13703c542c05d62ac3d6d21571e4603e5",
+      "mobile": "9e664f5e96e5b3ea65e421883e9c4fa13703c542c05d62ac3d6d21571e4603e5",
+      "sourceFile": "Ch_05_“ถ้าอย่างนั้น ตอนนี้ขอตามไปบ้านคุณนากาโนะด้วยได้ไหมคะ_”.md",
+      "source": "e4fcdaa251494f23aef79d7939bd5a4a15829ff2031ca698f8ff4dc5386be47d",
+      "registryEntry": "f7f685054b246b7b439498ec57b4a962993dae2c36139910441f4fa3789cfc19",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-06.json": {
+      "web": "0661d156ecbaaac2f582d7a7c2653363940c99517f48f27159d88350d1576999",
+      "mobile": "0661d156ecbaaac2f582d7a7c2653363940c99517f48f27159d88350d1576999",
+      "sourceFile": "Ch_06_ผม คุณโคคาเงะ และการกางร่มคันเดียวกัน.md",
+      "source": "b96f862a48e0dbc1b3c7dca38ccb30ca917ccbb50a4f249304118c1e22e24e39",
+      "registryEntry": "771851cd5736abe0b37831a6b8a740fde55fc4480c8c69f43f8b88686dc816ae",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-07.json": {
+      "web": "202e436b9be0d52e641a35bb84f5832f9af9984e88c2d79c040404eafcffcf0c",
+      "mobile": "202e436b9be0d52e641a35bb84f5832f9af9984e88c2d79c040404eafcffcf0c",
+      "sourceFile": "Ch_07_“เดี๋ยวสิ! รอแป๊บหนึ่งเลยนะ!”.md",
+      "source": "dbd2ce7d9c14a79561d4c5574262cce3a4510a2e5401dd61735bb5e489e11f3f",
+      "registryEntry": "e6ab6b8dc4becccf7fbfd68ba1c26d6e08cbbd6ebe19451ae837f21afbd366bc",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-08.json": {
+      "web": "f4cecba7790ae9d99c91b3abe763e0f943a74571f099bcb035ec5c36a1856bf7",
+      "mobile": "f4cecba7790ae9d99c91b3abe763e0f943a74571f099bcb035ec5c36a1856bf7",
+      "sourceFile": "Ch_08_คุณโคคาเงะกับคุณอามาโนะที่หยอกล้อกัน.md",
+      "source": "7d51d29067cb79d4f345c6b95ea3b59c8269662565f77051a1fa2adec1c27177",
+      "registryEntry": "2ceabc3de1890020fe3bc9f618581b1a566c65a0f38d99e3e1c9c6d274e61be7",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-09.json": {
+      "web": "ab13c7f47f470fdf79f72259dcf54e2e785c21c5ea436a8e4f461ebb0dab0043",
+      "mobile": "ab13c7f47f470fdf79f72259dcf54e2e785c21c5ea436a8e4f461ebb0dab0043",
+      "sourceFile": "Ch_09_“เพราะงั้นอย่าเข้าใจผิดล่ะ ฉันไม่ได้เป็นผู้หญิงเย็นชาขนาดนั้นสัก.md",
+      "source": "9bdc4ab848186529b70bd1cf70460d377f4468e02b2233934e741a8d96eeb82d",
+      "registryEntry": "f7b7c256f00bd4e6e34b7258183ed1582fe5ccc618a3ddd2af8a04a845dec5cb",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-10.json": {
+      "web": "dde8da29f22a832d5f0772ca24225911d8fbaddf743fb7def5b9890e02652786",
+      "mobile": "dde8da29f22a832d5f0772ca24225911d8fbaddf743fb7def5b9890e02652786",
+      "sourceFile": "Ch_10_“อาฮะฮะ ไม่ใช่อย่างนั้นสักหน่อยเนอะ เนอะ ทาคุมิน♪”.md",
+      "source": "edcf9ebd0a52adb5a4d7ca1c332295f3ce80c68a8d78264ed7176cfef9cdeab5",
+      "registryEntry": "3154eafb51d8e3a3e5efc5d2cf0c1b8921fb49aa0cc3f61f4ca8dd9a759643b6",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-11.json": {
+      "web": "b3d4e0452ce3828bc997ce55f37ebb91d5e036379b31b2ffd3953180345becfb",
+      "mobile": "b3d4e0452ce3828bc997ce55f37ebb91d5e036379b31b2ffd3953180345becfb",
+      "sourceFile": "Ch_11_“ฮินะ” กับ “คุณโคคาเงะ”.md",
+      "source": "8c6b72e3bb2bdd626cee7ebaebd4929a6d22cc1df5403d2a410ad6d8cd0e93d6",
+      "registryEntry": "e4cae6c8d02dbc4073c6487f50f3e72a090af4205983ffcf9670592f86cafac6",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-12.json": {
+      "web": "77a3f5375a24bae125ea03717fbbf3701695c4c96c6ec20f0f4dadb1a786e785",
+      "mobile": "77a3f5375a24bae125ea03717fbbf3701695c4c96c6ec20f0f4dadb1a786e785",
+      "sourceFile": "Ch_12_สองสาวสวยระดับท็อปของชั้นปี 1 มาที่บ้านผม.md",
+      "source": "b6d2f6b291319c5b92c70b90eb88bfe918cac77cad6c1dd989201f0557be111b",
+      "registryEntry": "fd18960aa26c9980051f53e3e450b1798667f0b7720dac82a8c9daccfd9f2156",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-13.json": {
+      "web": "b7cbc0e8cdfa55a378295fcdc6ca55639ca8156d8faae07a2a5e26f0eac2e8c7",
+      "mobile": "b7cbc0e8cdfa55a378295fcdc6ca55639ca8156d8faae07a2a5e26f0eac2e8c7",
+      "sourceFile": "Ch_13_“คนโกหก~ เห็นชัดๆ ว่ามองอยู่~ โธ่ ทาคุมินคนลามก”.md",
+      "source": "a4a71a6ffdbffa921b995479b7aa15966c9508bfa9c6488c0a6e0d909799f98c",
+      "registryEntry": "6796b42732ed64722809b0b5ac555318fb5bae598b95deabff6b69310869c813",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-14.json": {
+      "web": "096ccde56756988686ac1f64aa8e31d04be3994f7590079fe9f24ca81f0a0b63",
+      "mobile": "096ccde56756988686ac1f64aa8e31d04be3994f7590079fe9f24ca81f0a0b63",
+      "sourceFile": "Ch_14_หน้าอกของคุณโคคาเงะ กางเกงซับในของฮินะ กับตัวผมที่ลนลาน.md",
+      "source": "2aa5a8c4f4cb2c1bdf12a5550bfa770d81ccaae745c3b4ac9e55bfab14c1268e",
+      "registryEntry": "3396b3ca71c78f78f1ca6f3c8e9445ec4d36506425885ff47c9ec78337aa613b",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-15.json": {
+      "web": "fd656c423f356726f89e2d0162c878ec7aef54a26bb90e2afd101b18ec2bf437",
+      "mobile": "fd656c423f356726f89e2d0162c878ec7aef54a26bb90e2afd101b18ec2bf437",
+      "sourceFile": "Ch_15_“โชว์ให้... ทา... คุ... มิ... น... ดูคนเดียวเท่านั้นแหละ♪”.md",
+      "source": "0c7eac727c1ab4ae054e83c10dcf8da66fc72b347e2b2602d688d0b0aa0497eb",
+      "registryEntry": "0926533ef34af5d935015e731de6cddae35714e69455f7a42580370cacce8965",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-16.json": {
+      "web": "f7b9ad8407ee4875c67b6c0f345f7d437c64dacf02323810e417604cd53686d2",
+      "mobile": "f7b9ad8407ee4875c67b6c0f345f7d437c64dacf02323810e417604cd53686d2",
+      "sourceFile": "Ch_16_ชื่อคือคุโรโตะ.md",
+      "source": "0fbf99a904599ef10de810d33aac732dd74f1233be69291fa4e4e77ea2bb0b4d",
+      "registryEntry": "bc43d7b2c26c55816588ce0b4f5883449948276931dfbc517e5ee5e60c8fd229",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-17.json": {
+      "web": "c67f6de38f8c1d682c06d93a94dfaece43d1ed5a0640d2ba8400ae4d23088518",
+      "mobile": "c67f6de38f8c1d682c06d93a94dfaece43d1ed5a0640d2ba8400ae4d23088518",
+      "sourceFile": "Ch_17_“เนอะๆ_ แม้แต่ทาคุมินก็ชอบให้กระโปรงของเด็กผู้หญิงสั้นกว่าไม่ใช่.md",
+      "source": "82f639040e9849e3fbe88382e9198d2d262935ce6982d304d4acf79ea9cf2366",
+      "registryEntry": "1d144e7a165708a76bdb6814ee6cdb1dadd574e400e47b1aa4d94079e328bfc4",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-18.json": {
+      "web": "1d53743d9e3716b7c4514e062e3277c6e6626d56b22094cfbb152e98436b8d22",
+      "mobile": "1d53743d9e3716b7c4514e062e3277c6e6626d56b22094cfbb152e98436b8d22",
+      "sourceFile": "Ch_18_“ก็คุยด้วยได้เป็นปกติ ลองคบกันดูเลยไหมล่ะ_”.md",
+      "source": "8fc4f658007767ae48d6f3b564468e72a74a71fd4aa057e65c52668ddaba3fb5",
+      "registryEntry": "9db4569ae6c0ae88f448ee36ac07e90f13672d046bf65e0f91ce914b0fff8183",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-19.json": {
+      "web": "56cc698b8596851adb19d5a885b3684c427299be3cb477b0bf2082cb98d7bcf0",
+      "mobile": "56cc698b8596851adb19d5a885b3684c427299be3cb477b0bf2082cb98d7bcf0",
+      "sourceFile": "Ch_19_มือขวาได้สัมผัสแน่นแนบ มือซ้ายได้สัมผัสนุ่มยุ่น.md",
+      "source": "c666023847bf61af99aeac8d63fe372a7f49114af4514bd8fe8d71b0a351812e",
+      "registryEntry": "32db2eab9dc20cea1692546fead3ba5335e04aaae23422e9465c6c4f195a4b52",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-20.json": {
+      "web": "3d1604c27c43b8e25e2be589f9c0fff2b1db1878ea2cb746ad012cdb41d34efd",
+      "mobile": "3d1604c27c43b8e25e2be589f9c0fff2b1db1878ea2cb746ad012cdb41d34efd",
+      "sourceFile": "Ch_20_“คุณทาคุมิ ทำไมจู่ๆ ถึงหยิกแก้มตัวเองล่ะจ๊ะ_”.md",
+      "source": "daa7c7018a0a5ddaf3c46c80baedd1362547b5c0e7c97ea7a7bcca02ab3d87d4",
+      "registryEntry": "255cc7ca3a68d918a4e4f7f0c77a1e52c82456bce7d3596af89b15b91ceaba56",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-21.json": {
+      "web": "f064c8518765cd08da0fcd5c980e0b634b35c66c0db75f2391eeb2e94460013e",
+      "mobile": "f064c8518765cd08da0fcd5c980e0b634b35c66c0db75f2391eeb2e94460013e",
+      "sourceFile": "Ch_21_“ทาคุมิน~ ฮินะเองจ้า~ ฝากตัวด้วยน้า~”.md",
+      "source": "f539c8cbe08ee0690c679a062e06706af3bd7923d4d6af02ee3a5672ca828c6f",
+      "registryEntry": "1a6f60b90557b222747b8f44fee6240afc02900188282995ca2b01debec4dee9",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-22.json": {
+      "web": "3d00434111f6fb29ef7ee3acddc8ed6b91ab22ec6e7f8b3064ac8fa4e2749901",
+      "mobile": "3d00434111f6fb29ef7ee3acddc8ed6b91ab22ec6e7f8b3064ac8fa4e2749901",
+      "sourceFile": "Ch_22_~มุมมองของมิซึกิและฮินะ~ คุยเรื่องความรักระหว่างทางกลับบ้าน (1).md",
+      "source": "c3412e22eda79416032720bce574eae3fb33935287b55c090bc37b3c9dc4e406",
+      "registryEntry": "910bf04ed42f7782c84d352406a9a6ced15455af507d3519fd5e9dcbb24c6306",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-23.json": {
+      "web": "9d8a743a9f9e0eb182c1bae0e9de746c7b1fdbda997539d90b7f1adcf7e29906",
+      "mobile": "9d8a743a9f9e0eb182c1bae0e9de746c7b1fdbda997539d90b7f1adcf7e29906",
+      "sourceFile": "Ch_23_~มุมมองของมิซึกิและฮินะ~ คุยเรื่องความรักระหว่างทางกลับบ้าน (2).md",
+      "source": "8090095deb9bf8db0b5c6e5eac5afdd9147cb5ab32d9d7568275aeb6c0ef6538",
+      "registryEntry": "8fe9b7f7951602ee1f9a6a0b0fd6afeaed23726b2bb41b614b2b8295d216060a",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-24.json": {
+      "web": "2ff21f3d38fd20de315836c3b8d86467090d5cc7a7ce183e5791fc1c935a0178",
+      "mobile": "2ff21f3d38fd20de315836c3b8d86467090d5cc7a7ce183e5791fc1c935a0178",
+      "sourceFile": "Ch_24_~มุมมองของมิซึกิและฮินะ~ คุยเรื่องความรักระหว่างทางกลับบ้าน (3).md",
+      "source": "e7ba960a165fec7f0a50eba90d996e90be0fb1f99d1a2ae737257b127a1ff4a4",
+      "registryEntry": "f8db6d570854953b83dba0e36f9b3fb7863f8c57462d383ba6d18d18f0f5fa74",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-25.json": {
+      "web": "6f5a1e5aca2c724ae817445aff04754edcc02af63d5a13b02bf4cab2b5dfc3c0",
+      "mobile": "6f5a1e5aca2c724ae817445aff04754edcc02af63d5a13b02bf4cab2b5dfc3c0",
+      "sourceFile": "Ch_25_ความฝันเรื่องรักแรกอยู่ร่วมกับแมวดำ (1).md",
+      "source": "08680d7904535f549061fa4bd795347e61b95ddbe46a77ba528e0b448d65f10d",
+      "registryEntry": "c897aba257ba9ffedfc02f50b9911f86eaf0d1ca323066f11af9ce637f83cffc",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-26.json": {
+      "web": "91d6186dddafbec471aff0e82c511f7a91a819ef2cc9d6be7cd94ea8f1a6e8d2",
+      "mobile": "91d6186dddafbec471aff0e82c511f7a91a819ef2cc9d6be7cd94ea8f1a6e8d2",
+      "sourceFile": "Ch_26_ความฝันเรื่องรักแรกอยู่ร่วมกับแมวดำ (2).md",
+      "source": "ca456464abeb0004c2b69073d620a33c1c21b454fd0edaec1992bc8592bd8cd7",
+      "registryEntry": "3a7e39c7ae04fb1f3f094deeeeae1ffa4ad29fe1ccd9d9063586571a2cf9a71e",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-27.json": {
+      "web": "357b11409aa1137ed75256a1ffca590cbc71261c0d9fed088d147c6f822e138b",
+      "mobile": "357b11409aa1137ed75256a1ffca590cbc71261c0d9fed088d147c6f822e138b",
+      "sourceFile": "Ch_27_“อ๊ะ ทาคุมินนี่นา อรุณสวัสดิ์~!”.md",
+      "source": "c4ea75e3ba18e334939015043963b830dc495ec94b51f246efb295c52f2942fd",
+      "registryEntry": "f11e782558ceb668539e0c90dcfc27d8a931cfe0a2e2736fa7251dc7a0399b4c",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-28.json": {
+      "web": "37d1fdca9b82a6e6527993fd9c637f56e92e1be758cfb090db85298f828e2736",
+      "mobile": "37d1fdca9b82a6e6527993fd9c637f56e92e1be758cfb090db85298f828e2736",
+      "sourceFile": "Ch_28_การที่กลุ่มสาวเจิดจรัสคุยเรื่องผมกันอย่างครึกครื้น แถมคนทั้งห้อง.md",
+      "source": "51db87c7d5e409efe89b124bb6e2cc7af95b45dd3eaf9e4f57a1166116fcdac3",
+      "registryEntry": "a79109335085e45af794221bc3381d8447ac619902c40010b42f41de7959dbba",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-29.json": {
+      "web": "bcad7ec3fc061f7a36cd5ce802e2c14826dd100210f0714f080e9115e8d38be5",
+      "mobile": "bcad7ec3fc061f7a36cd5ce802e2c14826dd100210f0714f080e9115e8d38be5",
+      "sourceFile": "Ch_29_ฮินะ_ หลังเลิกเรียนว่างไหม~_.md",
+      "source": "d773dfbf6f7e97f9889db852ccb191afbfae95a41a2564eeb7f928f08dbe716f",
+      "registryEntry": "8db401b9f93e0d8790df546013b1e36cf91860196e3346693c1f21343bed4d0c",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-30.json": {
+      "web": "2183073bc4af621607e9330d6d45f1bf4e2021f771bfe0eebf19f6149e7713bb",
+      "mobile": "2183073bc4af621607e9330d6d45f1bf4e2021f771bfe0eebf19f6149e7713bb",
+      "sourceFile": "Ch_30_คอยบานะมิน_.md",
+      "source": "0f971192ccf0b5c08983a755a20ccf4866448e8e8d4e3b7f0ed3d7040901fab4",
+      "registryEntry": "67a999237dd94ecedf869b11adb0e7cbafc545556f18e08caf043ef21f3a646a",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-31.json": {
+      "web": "6d598773ad82fab64b72bb0f609d8b6d2df04d583f6d3de48e372c1c6d689d93",
+      "mobile": "6d598773ad82fab64b72bb0f609d8b6d2df04d583f6d3de48e372c1c6d689d93",
+      "sourceFile": "Ch_31_ยัยตัวร้ายสุดเซ็กซี่ฮินะ vs ทูตสวรรค์ศักดิ์สิทธิ์คุณโคคาเงะ.md",
+      "source": "411122bd49a8a120560e9d7df306b7b2f20c0ed610e32612b7b78cb5d1bd0212",
+      "registryEntry": "a2ec6bb54578fb7710a269259f3921c2ad3b8ea9dab3e6ae860289ef5b55ee29",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-32.json": {
+      "web": "29d0a9851c0da90b4e28dc37c9d796ef62348a4b649bf7acddb3c37352e2de91",
+      "mobile": "29d0a9851c0da90b4e28dc37c9d796ef62348a4b649bf7acddb3c37352e2de91",
+      "sourceFile": "Ch_32_คุโรโตะ! สปีดดด!.md",
+      "source": "cdf2ace73d8f6c1eace961ed7e8c9780d1002a2e51527b7808b26bf90d37df8a",
+      "registryEntry": "9bbb01dffdb65d390af7b9551ce26ddad807e9b450cc7979c1dc5cced37ed16b",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-33.json": {
+      "web": "ba175c8e970cbb5018d97900230a5db5f57de6696507ec54d0d95b5d174e1e29",
+      "mobile": "ba175c8e970cbb5018d97900230a5db5f57de6696507ec54d0d95b5d174e1e29",
+      "sourceFile": "Ch_33_นุ่มยุ่น นุ่มยุ่มยุ่น ~แซนด์วิชเจิดจรัส~.md",
+      "source": "e8514b9e5bfa06f84d460d1f522d78fb53f000a264fe0c1304aa0bfb30bceb27",
+      "registryEntry": "76e31747fe20effa897be2d5e826e0b80b3430134c4b6769bc1280b29a7a96f2",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-34.json": {
+      "web": "853587d8181b97c64aa9ddc2f9bb15421c7a72e99d7347dd5e282bca7332035d",
+      "mobile": "853587d8181b97c64aa9ddc2f9bb15421c7a72e99d7347dd5e282bca7332035d",
+      "sourceFile": "Ch_34_ก่อตั้ง! ทีมสำรวจคอนโดแมว!.md",
+      "source": "cfc70cf235535c6fcf4fafabe6f5a59df5ce511c52f882b5dfdde4cf1cb83bdb",
+      "registryEntry": "83b1176b014d678930bdbf032d77dcf9eb5f0f5f4753cabf4e520568f0002a82",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-35.json": {
+      "web": "9db97933e38e20cd618a939f04ec6124ed0e1199925383a6e27582f3c52b5332",
+      "mobile": "9db97933e38e20cd618a939f04ec6124ed0e1199925383a6e27582f3c52b5332",
+      "sourceFile": "Ch_35_“เนื้อคู่ในโชคชะตาอาจจะอยู่ใกล้ๆ อย่างคาดไม่ถึงก็ได้นะ_ เนอะ มิซึก.md",
+      "source": "ea2edfb91c1fe8feb115d97f2aad2b6909a284383263570c904b29f2913b4654",
+      "registryEntry": "c13b58e784b75f5ed842e13477e67a9a0b50f712e3f128b3e9190a9f1b948e0e",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-36.json": {
+      "web": "982420e293f1d5f14a2346ab271473a2f43cd651a8d138f5f6101b5aae6cffdd",
+      "mobile": "982420e293f1d5f14a2346ab271473a2f43cd651a8d138f5f6101b5aae6cffdd",
+      "sourceFile": "Ch_36_“อ๊าย ทาคุมินใจดีจัง~♪”.md",
+      "source": "a612c9ae49925ca6bc5f486de99eee1f88cd7d5f4f1a1b7dad44cf3c307f8bbb",
+      "registryEntry": "2b3c000976cc48ee3ab1afe44e15e561d440d552facc63f0b3a9a9d7788d90c4",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-37.json": {
+      "web": "41eecc420912d97caf2bb4b4afa89c00f595bd67ba0ff25ba7eb9bcedc57acf0",
+      "mobile": "41eecc420912d97caf2bb4b4afa89c00f595bd67ba0ff25ba7eb9bcedc57acf0",
+      "sourceFile": "Ch_37_“โธ่ มิซึกิคนขี้โมโห♪ ยิ่งกว่าเรื่องนั้น ฉันรู้ตัวคนร้ายแล้วน้า~”.md",
+      "source": "42701ba52d746217721a3c6eb8b15f639c8d2e952a3644fd24d0a264af933910",
+      "registryEntry": "332a8f1fa9afe7b541b5485be18aa4a3c77a95e99a1c8ac769e0ae81e22d2b1c",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-38.json": {
+      "web": "9a2a4b17f071dab92357fbe0880af2f4bd978bc2f3c3e7baa452cd3eb94d034b",
+      "mobile": "9a2a4b17f071dab92357fbe0880af2f4bd978bc2f3c3e7baa452cd3eb94d034b",
+      "sourceFile": "Ch_38_“ถ้าจะพูดแบบนั้น ต้องเรียกว่าแมวสอดรู้สอดเห็นหรือเปล่านะ_ ฟุฟุ”.md",
+      "source": "09d77c0f19421c6c83e7835e847ac71a81ff0de2eac585c96a1ecf2836333dbb",
+      "registryEntry": "7cc952c275e7521c359d6042853dd5f1525b18545e3271720afddff74211ba75",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-39.json": {
+      "web": "2603ef198862318d69bcd8b05a423b6df2ba3428f4355a254a30fb634a2aa38c",
+      "mobile": "2603ef198862318d69bcd8b05a423b6df2ba3428f4355a254a30fb634a2aa38c",
+      "sourceFile": "Ch_39_“อาฮะฮะ ทาคุมินใสซื่อจังเลยน้า~♪ ขำอ่ะ~♪”.md",
+      "source": "0e3c027e456b7aa3afcff0678b0259bc385e248c8809d76fd13a9674323e4330",
+      "registryEntry": "68d814edefeea359a1febb924fd0ceeac3ef478053d88517a82f756f0e0d495b",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-40.json": {
+      "web": "9781b5ad27fedf72686e2bea8996d662536ab1fe36b13ef4f32e01c1da707929",
+      "mobile": "9781b5ad27fedf72686e2bea8996d662536ab1fe36b13ef4f32e01c1da707929",
+      "sourceFile": "Ch_40_~มุมมองของมิซึกิและฮินะ~ คุยเรื่องความรักระหว่างทางกลับบ้าน (4).md",
+      "source": "c3af5cbf09b21b212bb6eda5c2cf3dc0f2c05cde86f6ec62b90d384e52abf1cc",
+      "registryEntry": "2686a851d75cfd13767162eca95c8c259e2436a7b2c1aab13867fba7e93522f1",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-41.json": {
+      "web": "3cea050559a6aed99a8cab41496c146582b4cad9349cd2f3f9dcd3379c151901",
+      "mobile": "3cea050559a6aed99a8cab41496c146582b4cad9349cd2f3f9dcd3379c151901",
+      "sourceFile": "Ch_41_“ฮะเนีย~น ฮะเนีย~น”.md",
+      "source": "c3935e82e55a9257ce2d299f72a3e96321752f60efab88a9a52db8c14c5a8f04",
+      "registryEntry": "da9ca15c6ccde57d59c5c9b7bc9be864701ccd3a5cfb165a083354a00812e333",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-42.json": {
+      "web": "d47cb5e24f45a235aafed812d323021333c7c1f81b80f15f5ba5755a1d14447e",
+      "mobile": "d47cb5e24f45a235aafed812d323021333c7c1f81b80f15f5ba5755a1d14447e",
+      "sourceFile": "Ch_42_คุโรโตะ vs คุณโคคาเงะ (ศึกประลองไม้ตกแมว).md",
+      "source": "ea9fcbcab28ae3a6829ac11dde36b39f4e98fe6b08d5bc48e0ef4b331714ef26",
+      "registryEntry": "be31f66683474c99a0990dd5a45d7ac8a384846374bf22181cd85ee29bbbf9ee",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-43.json": {
+      "web": "2704afab7c26c90a92ae511157bd0c61f3c93138886c68e5308b38a029adcb71",
+      "mobile": "2704afab7c26c90a92ae511157bd0c61f3c93138886c68e5308b38a029adcb71",
+      "sourceFile": "Ch_43_คุณโคคาเงะผู้เหมือน “ปูสเบสึเบะมังจูกานิ”_.md",
+      "source": "45a8bb3b8d2d74c8e946c7137af1085d6422cdd2e65079029b1ca1f75082da93",
+      "registryEntry": "35f8b32c23d617a13371bc38dd908d0b86ec4b535e9238223592ba2ae5150b98",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-44.json": {
+      "web": "99f72a80374d1c9be3c08fec6402e3775e1d3a948627ca0b25f118063459cfa5",
+      "mobile": "99f72a80374d1c9be3c08fec6402e3775e1d3a948627ca0b25f118063459cfa5",
+      "sourceFile": "Ch_44_คุณโคคาเงะผู้บริสุทธิ์ เรียบร้อย ขี้อาย และเป็นสาวน้อยขี้อาย.md",
+      "source": "35fc069de5df1df903f3023e7542cb8fdd8dfbb4f5088e1f201c6a6d286c2504",
+      "registryEntry": "e75dd44e687da3b40912c88419a3584001ea52bbd8f7c12913e669f5e2bee533",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-45.json": {
+      "web": "8dfcd55fd1f73b6efe489b0575e1e658fe49657ce976263bedf9dd107f4c491a",
+      "mobile": "8dfcd55fd1f73b6efe489b0575e1e658fe49657ce976263bedf9dd107f4c491a",
+      "sourceFile": "Ch_45_“จะว่าไป ห้องของทาคุมินเป็นแบบไหนเหรอ_”.md",
+      "source": "bf65c58a4a9b3dfd35bbfb3a6ae061353a8f3023af79b0911d2848331b677c37",
+      "registryEntry": "b40b3975de572360110bbbe13ac92253c00108ef7004ea3bcb6abd4c96195bbc",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-46.json": {
+      "web": "ad8104f7e2fad7ddf23467f947c9f87659a0afbca5c9ef7e7ec262e86f25875e",
+      "mobile": "ad8104f7e2fad7ddf23467f947c9f87659a0afbca5c9ef7e7ec262e86f25875e",
+      "sourceFile": "Ch_46_สาวสวยเจิดจรัสกับการตรวจเช็กห้องของทาคุมิน.md",
+      "source": "c4058a4d7b4f9c88355d5288d133641f058762c8fde2349ce37021df5a47b4b1",
+      "registryEntry": "7f44d3d0322882a3e8f411ab740c3233f0845394a7968044baa105b56a3b6137",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-47.json": {
+      "web": "507211e8aef080d82e1923a3e67ae2a4fe853bf136e9239ba9e6b8b2aa8f64e9",
+      "mobile": "507211e8aef080d82e1923a3e67ae2a4fe853bf136e9239ba9e6b8b2aa8f64e9",
+      "sourceFile": "Ch_47_พวกสาวสวยเจิดจรัสกำลังกอดรัดฟัดเหวี่ยงกันบนเตียงของผม.md",
+      "source": "24a05d9efe1cece84653ef9bf36409eee94b2f134f4546ddc5d2a714315e3e7b",
+      "registryEntry": "5a0636b1b44a50d51fd6229b9815ec2ce1832082e38dde7dced4f2877e939c62",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-48.json": {
+      "web": "8e2a8484af61fbb95bb3d209a8a5b411fe039bc5493558f1f11f9173b6572dcb",
+      "mobile": "8e2a8484af61fbb95bb3d209a8a5b411fe039bc5493558f1f11f9173b6572dcb",
+      "sourceFile": "Ch_48_“ไม่เอา! ชอบความยาวเท่านี้แหละ! เชิดใส่ซะเลย!”.md",
+      "source": "51c3784b2741d55540dffba953673fa49f603edf2c1fb42838e37a9de710ae09",
+      "registryEntry": "475c3977eeddf148a6141226107d9a261627311b880f542b9e8baaeddde648b3",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-49.json": {
+      "web": "07d0ab9d75800ce303bf4a8b7d165d1befcca2d80c8937d69cb2768c32b985e4",
+      "mobile": "07d0ab9d75800ce303bf4a8b7d165d1befcca2d80c8937d69cb2768c32b985e4",
+      "sourceFile": "Ch_49_“จริงเหรอ~_ อ๊ะ เจอลังกระดาษน่าสงสัยเข้าแล้ว~♪”.md",
+      "source": "2da8470799a7a23837b9f7a39ffdc18e84e2aa65a6a76db16c8c86d675625b62",
+      "registryEntry": "aa8c6b9d8090641c765c6cf7056eff7388bbe20aee57602c8b92ab383d633088",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-50.json": {
+      "web": "132ad7df578751ae2eafe69da5c2647f61a05af6ac05295356ecf7d1361f4156",
+      "mobile": "132ad7df578751ae2eafe69da5c2647f61a05af6ac05295356ecf7d1361f4156",
+      "sourceFile": "Ch_50_“เกมนี้ ต้องสู้กับคุณหมีเหรอจ๊ะ_” “อาฮะฮะ หมีดูน่าจะเก่งน่าดูเลยนะ.md",
+      "source": "8ad5a8ce97b1a061a236c287d09268d206f87840f0974aee8b4994af26991eee",
+      "registryEntry": "cf6aaaafb0d3bcc13d4a70b1589644967c630786fa23f70944530f5eea509546",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-51.json": {
+      "web": "0776b57d89fac2de8159cdef1a5dba1bbaf75d4ecba6fd6659622aacac81be2e",
+      "mobile": "0776b57d89fac2de8159cdef1a5dba1bbaf75d4ecba6fd6659622aacac81be2e",
+      "sourceFile": "Ch_51_“เอ๋~_ ฉันยังไม่ได้พูดสักคำเลยนะว่าเด็กผู้หญิงคนนั้นคือมิซึกิน่ะ~_.md",
+      "source": "7ead8d265c2b6a001df0e62310c70f72bc5d8d2bb2ffa05f28c190b2f9f23ea4",
+      "registryEntry": "a75a847195e097f28bf6af0c49ed5a7f5f623bf6d9be4e5f04401552300073c2",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-52.json": {
+      "web": "f5989a1a6a1459f0e92ac05c2ead1d6987d848f083d1b2f0154b025bacf92b3d",
+      "mobile": "f5989a1a6a1459f0e92ac05c2ead1d6987d848f083d1b2f0154b025bacf92b3d",
+      "sourceFile": "Ch_52_“ฟุฟุ ชนะแมตช์ต่อไปให้ได้นะจ๊ะ คุณทาคุมิ”.md",
+      "source": "8f3f79ffee19b7496c8ab0f3604045a02bbb8aa99f36f29a9389b75734894858",
+      "registryEntry": "965f2c498427a2656dafc184c57c4eceb0218f3a1562eac516267876600d0ec2",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-53.json": {
+      "web": "9cd4228ceb22c690c2801a0a3ac9a8e5525e33bf6e1bf1fd0ecfe7d73b928d30",
+      "mobile": "9cd4228ceb22c690c2801a0a3ac9a8e5525e33bf6e1bf1fd0ecfe7d73b928d30",
+      "sourceFile": "Ch_53_การแปรงขนและคุกกี้.md",
+      "source": "56b16af7430ca240c4832fbd072f66aa91dcc226e43ee657ea88799580349646",
+      "registryEntry": "42587eceb6bbdc826f385fc753497cec3adcbf418f9976faa1bae648de3dab05",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-54.json": {
+      "web": "319e9b2d521695217cd85080ccd800372354fed5289b58e92978f337794c5dee",
+      "mobile": "319e9b2d521695217cd85080ccd800372354fed5289b58e92978f337794c5dee",
+      "sourceFile": "Ch_54_“...คุณทาคุมินครับ_ ปฏิกิริยาไม่ต่างกับตอนของมิซึกิเกินไปหน่อยเหรอ.md",
+      "source": "29e23b9c1940281bc02e116d7fde63b223cff9eba7fd95ae33013a725feca88b",
+      "registryEntry": "c68a0c0e7efc354e7d7e407d15300637fa23915f5840833c82aada5bae4bc1e2",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-55.json": {
+      "web": "c0062fb86b64308459190b2270a674fcbd3a73110bd2aec0db379172fd7926b6",
+      "mobile": "c0062fb86b64308459190b2270a674fcbd3a73110bd2aec0db379172fd7926b6",
+      "sourceFile": "Ch_55_“แต่ว่านะ แมวน้อยน่ารักแบบนั้นน่ะ หลังจากนี้จะโดนกินแล้วล่ะนะ”.md",
+      "source": "4766a7a32925db07ad3c668baec2ce40bfce7629aad660422b52357be7a334c5",
+      "registryEntry": "e1eb7de4e2feafe4104365bd126ae2f147c864d74c797c9666e3474580a565ed",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-56.json": {
+      "web": "18202509ae8595e7a8f42ba4ecbd3bd75c00cf65945b3cbf71b4a09609c305c0",
+      "mobile": "18202509ae8595e7a8f42ba4ecbd3bd75c00cf65945b3cbf71b4a09609c305c0",
+      "sourceFile": "Ch_56_วันหยุดของฮินะ.md",
+      "source": "341917ae5150fbdef754fc120bd2a241d1781f1ef7b13266982e0c9d3a7c12f5",
+      "registryEntry": "5be51de732dbfb19a96189823d252e9dfef0ec62e9ca97858874ebf153123279",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-57.json": {
+      "web": "fcbce51686ac3cceffe0cd888282e23e25b429479bc40ffc5ee467b6807fdf17",
+      "mobile": "fcbce51686ac3cceffe0cd888282e23e25b429479bc40ffc5ee467b6807fdf17",
+      "sourceFile": "Ch_57_“เจ้าคนอ่อนแอเอ๋ย!”.md",
+      "source": "915fdde596d8f85df63c0b46b1b31f302e7434388836d2176fdc2aeb1170cbbd",
+      "registryEntry": "60e0b53f67b3f32cb2ef52e22b3ed489e9ea88cfdd7f2c56590df78d666bc090",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-58.json": {
+      "web": "29dbb1a4f40fca158c193e44c35322660791430f36213959b018ef1c1b42a1dc",
+      "mobile": "29dbb1a4f40fca158c193e44c35322660791430f36213959b018ef1c1b42a1dc",
+      "sourceFile": "Ch_58_จักรยานเสือภูเขาของฮินะ.md",
+      "source": "af9a6b878b38e3a1d7f38cd63c98f10034b05933cc7f37a773b1804b9388d9f0",
+      "registryEntry": "8cb9adbf6288a0d75baa112a3f4f48cd00ae1e39b7f0af7ae98c89f5d958d77c",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-59.json": {
+      "web": "33cf530250e8715871b9857ca3fb438861e9c44a3b18ba7ac00421261ca1ebb9",
+      "mobile": "33cf530250e8715871b9857ca3fb438861e9c44a3b18ba7ac00421261ca1ebb9",
+      "sourceFile": "Ch_59_“โกหกน่า--ก็แบบว่า เรื่องแบบนั้น--เรื่องแบบนั้นมันไม่ได้นะ เพราะว่า.md",
+      "source": "47e333a84c6b008cb0db44b0e2e7a327e5fdea32012cfb5a5cc93cf8acfbc226",
+      "registryEntry": "af3feaae087908844718ddc2283a22dadfb88bfe68b88e58ae20ac876addbbeb",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-60.json": {
+      "web": "80c65b62e8c839003f0bda54ddc5d06d2a79e7b96b578f089396f922ece548e6",
+      "mobile": "80c65b62e8c839003f0bda54ddc5d06d2a79e7b96b578f089396f922ece548e6",
+      "sourceFile": "Ch_60_แต่ตั้งแต่วันนั้นเป็นต้นมา ฮินะก็ไม่มาที่บ้านผมอีกเลย.md",
+      "source": "959ce22dc3c5c6b361542c0c5224ce47050b02df0f51cc1901c686977b43c169",
+      "registryEntry": "85b09c24959d52fc1a70568f9656f39ade6f4ed44b981f4251c47e140b6875a3",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-61.json": {
+      "web": "7334f5165fca7d874a89239c7e579056965a84595600849babffc86a192586ee",
+      "mobile": "7334f5165fca7d874a89239c7e579056965a84595600849babffc86a192586ee",
+      "sourceFile": "Ch_61_~มุมมองของฮินะ~ (1) “ไม่ได้นะ...... ห้ามร้องไห้นะ......”.md",
+      "source": "a4fc9853aaeceeb1955ca30a1297639a1cd0e2f6841cf7964cd208005baf64b4",
+      "registryEntry": "643761f6d538a065185d92507953a852bc89462aab5087afa569bb384f12106c",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-62.json": {
+      "web": "13160fbcaecff0844667c5110fe089b46360f6250f53eb5d73cdb6984705f0f1",
+      "mobile": "13160fbcaecff0844667c5110fe089b46360f6250f53eb5d73cdb6984705f0f1",
+      "sourceFile": "Ch_62_~มุมมองของฮินะ~ (2) “พระเจ้าใจร้ายเกินไปแล้ว...... เรื่องแบบนี้น่ะ มันไม่.md",
+      "source": "58023b10e696093b5aaf6111acdbff7eedefbf5bc9375e67fa32ee4206b2b2b2",
+      "registryEntry": "38389ce7f21ba11ad2abbca0ea6e342201fa8dd535d143e7228df9b21ac9926a",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-63.json": {
+      "web": "19b353e29d9b6681d15e87e69d2e01d73b1ff476b080ecb7399b2308a957523d",
+      "mobile": "19b353e29d9b6681d15e87e69d2e01d73b1ff476b080ecb7399b2308a957523d",
+      "sourceFile": "Ch_63_ชีวิตประจำวันที่เปลี่ยนแปลงไป.md",
+      "source": "c32959874249e1017714427b7d5745ad20bb33083e8a883bb18f588e523876d7",
+      "registryEntry": "ab97d768f96ab26aaf59e506d24e904f64a18445b41561f0ce752f8fdcea6a84",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-64.json": {
+      "web": "15b58d434f85681ee77c68cdf11f40c3e8b0b6ea829f94f174d2533aa5797888",
+      "mobile": "15b58d434f85681ee77c68cdf11f40c3e8b0b6ea829f94f174d2533aa5797888",
+      "sourceFile": "Ch_64_“ปล่อยเป็นหน้าที่ฉันเองนะ จะทำให้ทั้งสองคนคืนดีกันให้ได้เลย”.md",
+      "source": "ee646a651d0523a7362da917e9880f3ccd80a06f2613223cc59840c1f94e7da6",
+      "registryEntry": "afdfcab1f89517b7b9b89c24cd76b8d488757ca3a59f134c84ad241a065005f2",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-65.json": {
+      "web": "8c54cc86a41725dab57d09d9417eb7de9303836797fe2087d81b398b94484bcd",
+      "mobile": "8c54cc86a41725dab57d09d9417eb7de9303836797fe2087d81b398b94484bcd",
+      "sourceFile": "Ch_65_ปลายทางที่แมวดำนำพาไปคือ--.md",
+      "source": "60bb9f9b04f93156a3c359dd6639cce12d13b964f0083ac7a4ceb6a8cc38759f",
+      "registryEntry": "646c4d9210d7d5b08ba9e6b06d67075af21f532132d6b45d4a76603d5392d3ff",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-66.json": {
+      "web": "6ad102f1d8f175e892ddde2d9ec860dfca945fedf82ea469ba10a5646896342c",
+      "mobile": "6ad102f1d8f175e892ddde2d9ec860dfca945fedf82ea469ba10a5646896342c",
+      "sourceFile": "Ch_66_ฮินะกับคุณโคคาเงะ.md",
+      "source": "a47985a4706347dc172115df85d38f334c6ce7a648d989bb21e7528d1a2d7de4",
+      "registryEntry": "a9a146e07ed65b516fa58037c69332faeaa5ee4218ec4fca6c223739c69a1c05",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-67.json": {
+      "web": "2b27f506b497b17871f805ebd401284a2beded5b3d5a8892914dd5bc7b696b94",
+      "mobile": "2b27f506b497b17871f805ebd401284a2beded5b3d5a8892914dd5bc7b696b94",
+      "sourceFile": "Ch_67_“ก็เพราะว่า บอกว่าจะช่วยเชียร์เรื่องของมิซึกิไปแล้วนี่นา......”.md",
+      "source": "e012cbb31f06708f1a26e81500a4c738a096c60868751f65338ee74c583dee62",
+      "registryEntry": "0e185badf098c1b479c96773cb1e26079dbb33961a9c18b6faf5fe1a523a13ac",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-68.json": {
+      "web": "64f94be1f15d888336bfe66f13c90bf4653aa05e261cb1d64b0fb520107a6221",
+      "mobile": "64f94be1f15d888336bfe66f13c90bf4653aa05e261cb1d64b0fb520107a6221",
+      "sourceFile": "Ch_68_“อย่ามาดูถูก...”.md",
+      "source": "3a4f28ef63e247f0be7727100f96985308e3bcc41c54fedefe9c4b83804cf431",
+      "registryEntry": "e99f603032be176a786bf3df2e0439bc38e1b327de8fea6288ace2a7e9fdbd94",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-69.json": {
+      "web": "e82273814d6ab9bb0fc959bbd5c62bc21a1ad9ffcb00729c4b9f5bf51e335795",
+      "mobile": "e82273814d6ab9bb0fc959bbd5c62bc21a1ad9ffcb00729c4b9f5bf51e335795",
+      "sourceFile": "Ch_69_ฮินะ vs คุณโคคาเงะ.md",
+      "source": "70aa8eaaabd3d5cbca455a0b2cfad6153898fd25fef31b821699abb3b739d070",
+      "registryEntry": "97af180320f2f40185b6264e636ef27d636c19293a5cc64fb24ffce4570414e5",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-70.json": {
+      "web": "f903b493a2e0d019036c22d27afc70dd28e58544c66baae1fb890bb7eafdc4d6",
+      "mobile": "f903b493a2e0d019036c22d27afc70dd28e58544c66baae1fb890bb7eafdc4d6",
+      "sourceFile": "Ch_70_“แล้วยังไงล่ะ_ ทาคุมินมายืนบื้อทำอะไรตรงนั้นน่ะ_”.md",
+      "source": "824e34b3d855851e966a6fa9e7fb2b0f4fb1d63872e45871ada6922a5c1dc867",
+      "registryEntry": "dce887c8f67480d3f070d56f4278ffe5392d0670074ea4c513376e94163d02f9",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-71.json": {
+      "web": "287af8df2681a618dfba44754517e27ca02c87fce8df8e896b116b57967c7a89",
+      "mobile": "287af8df2681a618dfba44754517e27ca02c87fce8df8e896b116b57967c7a89",
+      "sourceFile": "Ch_71_“โดนแอบฟังเข้าซะแล้ว โดนแอบฟังเข้าซะแล้ว โดนแอบฟังเข้าซะแล้ว......”.md",
+      "source": "dbece4918bae51916c2a9bcdafc0fc91eaafbd511eb4503c2cf6fef5ba9ecdf5",
+      "registryEntry": "138d466445c9251308225d41ffad738b4740ffe88341281040ba47389c223e97",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-72.json": {
+      "web": "d1d48815bb20ab616476005de41619c264d07ab6b0210a1c2cb4910b8507a201",
+      "mobile": "d1d48815bb20ab616476005de41619c264d07ab6b0210a1c2cb4910b8507a201",
+      "sourceFile": "Ch_72_“เอ้า เพราะงั้นแหละ ทาคุมิน จะเลือกใครเป็นแฟนงั้นเหรอ_ ฉัน หรือว่าม.md",
+      "source": "8ef39a4ab83f177ffae9f61f81d0a7fbfbf3247ba5ef5b44e23506204fe0448a",
+      "registryEntry": "4f7dd3433f6da467d3a4b2cc043115aaf3ed28138c50105be994fbd0772dde57",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-73.json": {
+      "web": "f7ba77e525d49d04731a3fc22ed1b810458cc75121a78aca72448558e84f9d36",
+      "mobile": "f7ba77e525d49d04731a3fc22ed1b810458cc75121a78aca72448558e84f9d36",
+      "sourceFile": "Ch_73_ความรู้สึกของทาคุมิ.md",
+      "source": "fad35b136234c77a3415385d021e650f5a30f4740736f1017b1d0ae4480eaa4e",
+      "registryEntry": "d450858e6db02c58529154959ddee7e604fe926f240464b8fb229c063bb38311",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-74.json": {
+      "web": "708c831c7889f5baff51961f5ef7660bdfe0d355f064e4ca46f08c7bc4f403cb",
+      "mobile": "708c831c7889f5baff51961f5ef7660bdfe0d355f064e4ca46f08c7bc4f403cb",
+      "sourceFile": "Ch_74_คำตอบของทาคุมิ.md",
+      "source": "b64568b6425c4f0c2beff1878a0996875edc4d99fc9fafd37d2ca6ff5ac5e682",
+      "registryEntry": "a38887b1b179f354acbaea960813810c501c360a898a3d489342a831def3c623",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-75.json": {
+      "web": "68b1a2b1f4cd8f8d44fbea97715247177e5c7010d0bd006ba78c4755ef85a22b",
+      "mobile": "68b1a2b1f4cd8f8d44fbea97715247177e5c7010d0bd006ba78c4755ef85a22b",
+      "sourceFile": "Ch_75_“จะไม่เกรงใจแล้วนะ”.md",
+      "source": "99c9d060855b483cb53dad30aaf91f33bb7bf5ad2fc99edc2ff1c483b3e58cb8",
+      "registryEntry": "8c32f72056497c12392b5938e29ae5663a3ba9d649f17f3efa990f88ceca3296",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-76.json": {
+      "web": "9c8a0efe9c09969b93367835db9763eb40e85eb24ad0ade1ce8f22d48f9abc8b",
+      "mobile": "9c8a0efe9c09969b93367835db9763eb40e85eb24ad0ade1ce8f22d48f9abc8b",
+      "sourceFile": "Ch_76_บทสรุป.md",
+      "source": "18a28fd3afd8faed61cf2657e8e517205430018456429cc2a3640c4bd6ea3193",
+      "registryEntry": "31178bddaae746251ec206c3fbedea943fcb40d9bee618b78824873582f7df06",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-77.json": {
+      "web": "ccb3da7aae6e1f99c6ef03c976f4e39f14172566f8b29e695a1bdde24e79d62f",
+      "mobile": "ccb3da7aae6e1f99c6ef03c976f4e39f14172566f8b29e695a1bdde24e79d62f",
+      "sourceFile": "Ch_77_ตอนพิเศษฉลองวางจำหน่ายเล่ม 2 “คุโรโตะหนีออกจากบ้าน_ เริ่มการสะกดรอ.md",
+      "source": "23bb75eb5a4d3c6941f74d6cb845d67185c8852530b075347dabeff1e1785353",
+      "registryEntry": "7a1b098076c6cd13ccff0f35d3b7650c376131fdb0cae031403f5bcc6657730d",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-78.json": {
+      "web": "c11b976eee5baa0c07b41721537bc8913fb211d6fbdde5968c7d9a87cb4119e2",
+      "mobile": "c11b976eee5baa0c07b41721537bc8913fb211d6fbdde5968c7d9a87cb4119e2",
+      "sourceFile": "Ch_78_ตอนพิเศษฉลองวางจำหน่ายเล่ม 2 “คุโรโตะหนีออกจากบ้าน_ เริ่มการสะกดรอ.md",
+      "source": "c6736aba6a1d65f3729713a98aeb1b119cb0e0223994320648af17ab1e2485a2",
+      "registryEntry": "4f1332da707e44b45896b8ab15b94f338c886515d29d8efbf1ffe8fe6fbad5b6",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-79.json": {
+      "web": "39b5b37540410a6a3f77562e2aa438d4c98c9f384f1f76667748e629d029674a",
+      "mobile": "39b5b37540410a6a3f77562e2aa438d4c98c9f384f1f76667748e629d029674a",
+      "sourceFile": "Ch_79_ตอนพิเศษฉลองวางจำหน่ายเล่ม 2 (2) “ชุดฤดูร้อนสำหรับคุณคนเดียว” (1).md",
+      "source": "02c55ac53abc828d60931c4f918513d1e7b294e463831c8b98e67c26adb3bdc1",
+      "registryEntry": "2557f6d685dca75f6ed903264703f1bf66387e435a23a20b6ea7450f76db0451",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-80.json": {
+      "web": "d4a4635b7a4f602a21765f518a72c011539377bdb8620e297378c3ce5c6399ad",
+      "mobile": "d4a4635b7a4f602a21765f518a72c011539377bdb8620e297378c3ce5c6399ad",
+      "sourceFile": "Ch_80_ตอนพิเศษฉลองวางจำหน่ายเล่ม 2 (2) “ชุดฤดูร้อนสำหรับคุณคนเดียว” (ภาคจบ).md",
+      "source": "672f63089f744ae6fdf131bbc3967e30ba38bbcf3904985f779ca282b8b6947a",
+      "registryEntry": "bbb81584ebc63476e789e11e4bb2791b46982590e41358610fce3fd708f72196",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-81.json": {
+      "web": "389d4cf6f65f55974f5d61d0f536e89ca975571ad2f748582a8eaef15bd394c8",
+      "mobile": "389d4cf6f65f55974f5d61d0f536e89ca975571ad2f748582a8eaef15bd394c8",
+      "sourceFile": "Ch_81_ตอนพิเศษฉลองวางจำหน่ายเล่ม 2 (2) “ชุดฤดูร้อนสำหรับคุณคนเดียว” (3).md",
+      "source": "7f3ffce7e7a01ef4f3502245e2469dd99c40495400af08994fb2096226ce9a55",
+      "registryEntry": "4e33e89c1e6e0fff2a4e7879f0b139cf7550315a6d37bdfdd7cc068ca5a13e2d",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-82.json": {
+      "web": "179058d1a87694197a7939da8078721cc1c3180eded07f9bd1fb9ed98b6669b2",
+      "mobile": "179058d1a87694197a7939da8078721cc1c3180eded07f9bd1fb9ed98b6669b2",
+      "sourceFile": "Ch_82_ตอนพิเศษฉลองวางจำหน่ายเล่ม 2 (2) “ชุดฤดูร้อนสำหรับคุณคนเดียว” (4).md",
+      "source": "e30a3dcd58b33dfcd5b022b149af1f9a1a756fa1b889b518a9caf22c8f61d45b",
+      "registryEntry": "234d48ebfb7c5ce3c53ff1448ed031c9d56e58b6c6ce3d56142eade7069e105e",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-83.json": {
+      "web": "87e803f72c73d1f5ca3b9940e8f2378671bf1a71c59017dd21f1dcd45217ea3e",
+      "mobile": "87e803f72c73d1f5ca3b9940e8f2378671bf1a71c59017dd21f1dcd45217ea3e",
+      "sourceFile": "Ch_83_ตอนพิเศษฉลองวางจำหน่ายเล่ม 2 (3) “ฮินะผู้เสื่อมศีลธรรม”.md",
+      "source": "3e3510681ddc244be13c144f3424c7c4c1d48c727fb5e1b7af1b49a16b7d2f58",
+      "registryEntry": "dfd0d55ea5e3621c6993e91abd2985fb9d78af99ce3ac7801b7865f261a033ce",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-84.json": {
+      "web": "91170ba60cc03467aa648d8528754e64f2dba906d921182fb5e46bc72dddb817",
+      "mobile": "91170ba60cc03467aa648d8528754e64f2dba906d921182fb5e46bc72dddb817",
+      "sourceFile": "Ch_84_ตอนพิเศษเขียนขึ้นฉุกเฉิน “ดุ๋งดิ๋ง ดุ๋งดิ๋ง♪”.md",
+      "source": "2d8747fe34693b0ccbefc51324845632bb320ae0be7c4f604b1237d0ed2e04a3",
+      "registryEntry": "3261528dc67c0a101203564f416b0ce877332c40020dbc989ee0bf00b7811e39",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-85.json": {
+      "web": "2b5209a80ca893cf2314b337f8174106e650648a906107beb66ac68fedf68fab",
+      "mobile": "2b5209a80ca893cf2314b337f8174106e650648a906107beb66ac68fedf68fab",
+      "sourceFile": "Ch_85_ตอนพิเศษเขียนขึ้นฉุกเฉิน “เจ้าชายผ้าเช็ดหน้าญี่ปุ่น”.md",
+      "source": "88db85134d145b11e66b14982904e0705a0d9fb10f1ee0b8facbd08286bc5200",
+      "registryEntry": "ecfc91cea7a70706b32454b43726857ad35416e5a577bd80368de171fc12fe43",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-86.json": {
+      "web": "1ff32c8c8ec15aa5a548c54dc3b6117e41d863aa95bd9f4f4ba60742588047f8",
+      "mobile": "1ff32c8c8ec15aa5a548c54dc3b6117e41d863aa95bd9f4f4ba60742588047f8",
+      "sourceFile": "Ch_86_ตอนพิเศษฉลองวางจำหน่ายเล่ม 3 ~บทสนทนาโต้ตอบ~ “วันที่ 2 สิงหาคมคือวันก.md",
+      "source": "688d40532f1b6dc0534a8dac3dd09c941f4b68cc7b06b36f22c62b487643a2c8",
+      "registryEntry": "aadd01e479d1b57c281931663104ee1994f9b2ee8a17aea68004780d74958cd8",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    },
+    "black-cat-hangout/ch-87.json": {
+      "web": "d57fd2547249c264c5426c6cfbfae9720d71d918ad92fb95e3ebd1c893e82507",
+      "mobile": "d57fd2547249c264c5426c6cfbfae9720d71d918ad92fb95e3ebd1c893e82507",
+      "sourceFile": "Ch_87_ตอนพิเศษเนโกะตามะ “ทั้งที่เป็นวันริตชู (วันเริ่มต้นฤดูใบไม้ร่วง) แ.md",
+      "source": "e222e15477489abf46d466d01e3347d92a14c6628bcb8ab9bb8815f2ac929027",
+      "registryEntry": "26f50363c87b4f1fef50aedbfe43f0854cc05d7848416e32a25be927cb861cd2",
+      "roster": "43eac884d287e1654078bdb63de1ff69d6d549f43b45be25c8fd5a98a99a7d80",
+      "novelTitle": "(WN) พอเก็บแมวดำมาเลี้ยง บ้านผมก็กลายเป็นแหล่งรวมตัวของสองสาวสวยไปซะแล้ว"
+    }
+  }
+}

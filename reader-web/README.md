@@ -20,9 +20,17 @@ Open the local URL printed by Vite. The development editor writes JSON files int
 | npm run lint | Oxlint checks |
 | npm test | Web tests in tests/ |
 | npm run build | TypeScript check, Vite build and postbuild CDN export |
+| npm run conversion -- prepare --novel <id> | Prepare a resumable whole-novel source/mapping plan |
+| npm run conversion -- inspect --novel <id> --source-id <id> | Read source token IDs and text for contextual review |
+| npm run conversion -- apply --novel <id> | Build exact source spans from reviewed maps; sync web/mobile and checkpoint |
+| npm run conversion -- audit --novel <id> --complete | Certify the entire declared scope without legacy exceptions |
+| npm run conversion:check | Publication gate; required automatically before every build |
+| npm run verify:release -- <CDN-base-URL> | Compare deployed commit and every data/image checksum with local dist |
 | npm run preview | Preview the existing production build locally |
 
 Choose checks for the changed behavior; preview does not provide the development editor's write endpoints. A build produces dist/ for deployment and dist/data/ manifests/data for the mobile CDN. Deployment configuration lives in [deploy.yml](../.github/workflows/deploy.yml); production has no file-writing backend.
+
+Tests include the conversion regressions and the existing Black Cat conversion checks. The gate distinguishes certified chapters from unchanged legacy fingerprints; legacy chapters remain explicitly unverified. Follow the conversion guide before editing chapters, maps, receipts or the baseline. PRs validate without deployment; deployment verifies checksums against the exact uploaded artifact.
 
 ## Read next
 
