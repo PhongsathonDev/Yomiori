@@ -1,0 +1,1609 @@
+{
+  "sourceSha256": "3e340cd58a2a5e6d43829b8b04bf6fd9ebb7db0d30307d7ebf77b991bc3963c6",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p2-1 ตอบสั้น ๆ ว่า ‘พุดดิ้ง’ และ p3-1 เป็นการรับปากว่าจะไปหาหลังเลิกเรียน ส่วน p14-1 ยืนยันว่าผมซื้อพุดดิ้งตามที่เธอขอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p1-1 เป็นคำถามของฮารุกิเรื่องของที่อยากได้ และ p3-1 เป็นคำตอบรับของเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p2-1 เป็นคำขอของซาโอโตเมะ และ p4-1 เป็นคำพูดต่อของเธอว่า ‘ลืมไปเลย’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p3-1 เป็นคำรับปากของฮารุกิ และ p5-1 เป็นคำถามของเขาว่าลืมอะไร ก่อน p6-1 เธอจะบอกสี"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p4-1 เป็นคำพูดของซาโอโตเมะ และ p6-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p7-1 ระบุว่าข้อความที่ส่งมาทำให้รู้ว่าเธอยังแข็งแรงดี และคำว่า ‘สีขาว’ พร้อมหางเสียง ‘นะ’ เป็นการรายงานสีแบบที่เธอทำทุกวัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p8-1 เป็นความคิดของผู้เล่า และ p10-1 เป็นคำตอบของซาโอโตเมะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p9-1 เป็นคำเตือนของฮารุกิ และ p11-1 เป็นความคิดของผู้เล่าเรื่องคำตอบที่อยากพิมพ์กลับ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดเป็นเพียงคำว่า ‘เรื่องปกติ’ ที่ผู้เล่ายกมาอ้างในคำบรรยายว่าเป็นคำตอบที่คิดจะพิมพ์ แต่ p12-1 ระบุว่าเขายั้งมือไว้ จึงไม่ใช่บทสนทนาจริง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 84,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 111,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p14-1 ระบุว่าผมแวะซื้อของแล้วมุ่งหน้าไปบ้านซาโอโตเมะ และ p16-1 ระบุว่าผมหาบ้านเจอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 106,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "seijo-maid",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p23-1 ระบุชัดว่า ‘คนรับใช้เดินนำทางผม’ และคำลงท้าย ‘คะ’ กับคำเรียก ‘คุณหนู’ เป็นเสียงของคนรับใช้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "seijo-maid",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p28-1 ระบุว่าคนรับใช้หยุดอยู่หน้าประตูห้อง และประโยคนี้ใช้ ‘คุณหนู’ ตามคำเรียกของคนรับใช้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p31-1 ระบุว่าเป็น ‘เสียงครางแปลก ๆ ของซาโอโตเมะ’ ที่แว่วออกมาจากห้อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 72,
+          "type": "dialogue",
+          "speakerId": "seijo-maid",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p33-1 ระบุว่าคนรับใช้เคาะประตู และ p35-1 เป็นเสียงร้องตอบของซาโอโตเมะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p34-1 เป็นคำถามของคนรับใช้ และ p36-1 ระบุว่าเป็น ‘เสียงร้องลนลานของซาโอโตเมะ’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p37-1 เป็นเสียงฝีเท้าวิ่งอยู่ข้างใน และ p39-1 เป็นคำขออนุญาตของคนรับใช้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "seijo-maid",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p38-1 เป็นคำอนุญาตของซาโอโตเมะ และ p40-1 ระบุว่าคนรับใช้เปิดประตู"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 91,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดเป็นฉายา ‘ท่านนักบุญ’ ที่ผู้เล่ายกมาในคำบรรยายเปรียบเทียบบรรยากาศของเธอ ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "seijo-maid",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p46-1 ระบุว่าคนรับใช้ก้มศีรษะก่อนเดินจากไป และประโยคใช้ ‘คะ’ อย่างสุภาพ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "p47-1 ระบุว่าผมเดินเข้าไปหยุดตรงหน้าซาโอโตเมะ และ p49-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p48-1 เป็นคำทักของฮารุกิ และ p50-1 ระบุว่าซาโอโตเมะพูดพลางหลบสายตา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p54-1 เป็นคำบรรยายว่าผมสงสัยว่าเธอเพิ่งตื่นนอน และ p56-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p55-1 เป็นคำถามของฮารุกิ และ p57-1 ระบุว่าผมยื่นมือไปทาบหน้าผากเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p58-1 เป็นความรู้สึกของผู้เล่าเรื่องตัวร้อน และ p60-1 เป็นคำตอบของซาโอโตเมะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p59-1 เป็นคำพูดของฮารุกิ และ p61-1 ระบุว่าซาโอโตเมะปัดมือผมออก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "p63-1 เป็นคำบรรยายว่าเธอไม่ยอมสบตา และ p65-1 ระบุว่าหน้าต่างถูกเปิดทิ้งไว้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "p66-1 อธิบายลมร้อนที่พัดเข้า และ p68-1 เป็นคำถามของฮารุกิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "p67-1 เป็นคำแก้ตัวของซาโอโตเมะ และ p69-1 เป็นคำอนุญาตของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "p68-1 เป็นคำขอของฮารุกิ และ p70-1 ระบุว่าซาโอโตเมะอนุญาต"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 152,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "p72-1 ระบุว่าผมสังเกตเห็นภาพบิดเบี้ยว และ p74-1 เป็นคำตอบของซาโอโตเมะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 169,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1",
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "p73-1 เป็นคำอธิบายของฮารุกิ และ p75-1 ระบุว่าซาโอโตเมะพูดด้วยน้ำเสียงประชด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 78,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1",
+              "p79-1",
+              "p80-1",
+              "p81-1"
+            ],
+            "reason": "p78-1 เป็นคำบรรยายอากาศ และ p80-1 เป็นคำถามกลับของฮารุกิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1",
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "p79-1 เป็นคำขอของซาโอโตเมะ และ p81-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1",
+              "p80-1",
+              "p81-1",
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "p80-1 เป็นคำถามของฮารุกิ และ p82-1 ระบุว่าซาโอโตเมะพูดพลางทำจมูกฟุดฟิด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1",
+              "p84-1",
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "p84-1 ระบุว่าผมเอียงคอสงสัย และ p86-1 เป็นคำตอบของซาโอโตเมะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p86-1",
+              "p87-1",
+              "p88-1"
+            ],
+            "reason": "p85-1 เป็นคำชมของฮารุกิ และ p87-1 ระบุว่าซาโอโตเมะตอบกลับ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 97,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1",
+              "p95-1",
+              "p96-1"
+            ],
+            "reason": "p93-1 ระบุว่าผมแกะของฝาก และ p95-1 เป็นคำตอบของซาโอโตเมะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 117,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "p94-1 เป็นคำถามของฮารุกิ และ p96-1 ระบุว่าสีหน้าของซาโอโตเมะดูดีใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1",
+              "p97-1",
+              "p98-1",
+              "p99-1",
+              "p100-1"
+            ],
+            "reason": "p97-1 ระบุว่าผมสบายใจที่เธอชอบ และ p99-1 เป็นคำพูดต่อของฮารุกิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p97-1",
+              "p98-1",
+              "p99-1",
+              "p100-1",
+              "p101-1"
+            ],
+            "reason": "p98-1 เป็นคำพูดของซาโอโตเมะ และ p100-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1",
+              "p99-1",
+              "p100-1",
+              "p101-1",
+              "p102-1"
+            ],
+            "reason": "p99-1 เป็นคำเรียกของฮารุกิ และ p101-1 เป็นคำถามของเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p99-1",
+              "p100-1",
+              "p101-1",
+              "p102-1",
+              "p103-1"
+            ],
+            "reason": "p100-1 เป็นคำตอบของซาโอโตเมะ และ p102-1 เป็นคำบรรยายของผู้เล่า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p103-1",
+              "p104-1",
+              "p105-1",
+              "p106-1",
+              "p107-1"
+            ],
+            "reason": "p104-1 เป็นจังหวะหยุดก่อนเธอพูด และ p106-1 ระบุว่าสีหน้าของซาโอโตเมะนิ่งค้าง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p106-1",
+              "p107-1",
+              "p108-1",
+              "p109-1"
+            ],
+            "reason": "p107-1 ระบุว่าใบหน้าซาโอโตเมะเริ่มแดงจัด และ p109-1 เป็นความสงสัยของผู้เล่า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

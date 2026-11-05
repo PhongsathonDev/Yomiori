@@ -1,0 +1,1987 @@
+{
+  "sourceSha256": "ebb3f6b80d72e04f15c827223190fb5ac4447cd426cc25282dacebbd6635569c",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 72,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 97,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p1-1 ถึง p6-1 เป็นบทบรรยายของผู้เล่า และ p7-1 ‘เข้ามาก่อนสิ’ เป็นคำเชิญของผม ส่วน p9-1 ระบุว่าเซย์ระมาที่บ้านผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p7-1 ผมเชิญให้เข้ามา และ p8-1 ‘ขอรบกวนหน่อยนะ’ เป็นคำตอบของเซย์ระ ส่วน p9-1 ระบุว่าเธอมาขลุกอยู่ที่บ้านผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 110,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 128,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 69,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 99,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 149,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 98,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p20-1 จบความคิดของผู้เล่า และ p22-1 ระบุว่า ‘เซย์ระถอดหูฟังออกพลางพูดขึ้น’ p21-1 ‘ซึ้งสุด ๆ ไปเลยล่ะ……’ จึงเป็นคำของเซย์ระ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 69,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p22-1 ระบุว่าเซย์ระพูด และ p24-1 ต่อเนื่องเป็นคำพูดของเธอเรื่องเพื่อนสมัยเด็กเป็นผู้บงการ ก่อน p25-1 เป็นคำถามของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p24-1 เซย์ระเล่าเนื้อเรื่องเกม และ p25-1 ‘ขอถามอะไรหน่อยได้ไหม?’ เป็นคำถามของผู้เล่า ส่วน p28-1 ระบุว่าผมเอ่ยถาม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p25-1 ผมขอถาม และ p26-1 ‘มีอะไรเหรอ?’ เป็นคำตอบของเซย์ระ ก่อน p27-1 เป็นคำถามของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p26-1 เซย์ระถามกลับ และ p27-1 ‘จะไม่อ่านหนังสือหน่อยเหรอ?’ เป็นคำถามของผู้เล่า ส่วน p28-1 ระบุว่าผมเอ่ยถามเซย์ระ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p28-1 ระบุว่าผมถาม และ p29-1 ระบุว่าเซย์ระตอบกลับ p30-1 จึงเป็นคำอธิบายของเธอเรื่องอ่านหนังสือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 83,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 99,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p33-1 จบความคิดของผู้เล่า และ p34-1 ใช้ ‘ฉัน’ ว่าแต่ช่วงสามวันก่อนสอบก็อ่านอยู่ ก่อน p35-1 เป็นคำพูดของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p34-1 เซย์ระบอกว่าอ่านหนังสือ และ p35-1 ใช้ ‘ฟะ’ ว่า ‘น่าอิจฉาชะมัดยาดเลยฟะ’ ซึ่งเป็นเสียงของผู้เล่า ก่อน p36-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p35-1 ผมบ่นอิจฉา และ p36-1 เรียก ‘ฮารุกิคุง’ ลงท้าย ‘คะ’ ว่าผลการเรียนของเขาก็ดี ก่อน p37-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p36-1 เซย์ระชมผลการเรียนผม และ p37-1 ใช้ ‘ผม’ อธิบายว่าทบทวนล่วงหน้าและย้อนหลังตลอด ส่วน p38-1 ต่อด้วย บทบรรยาย ของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 104,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p41-1 จบคำอธิบายของผู้เล่า และ p42-1 ‘หืมมม งั้นเหรอ’ เป็นเสียงตอบรับของเซย์ระ ก่อน p43-1 เป็นคำถามของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "p42-1 เซย์ระส่งเสียงรับ และ p43-1 เป็นคำชวนของผู้เล่าเรื่องมื้อเที่ยง ก่อน p44-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p43-1 ผมชวนกินโซเมน และ p44-1 ใช้ ‘ฉัน’ อาสาหั่นผัก ก่อน p45-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p44-1 เซย์ระอาสาหั่นผัก และ p45-1 ใช้ ‘ผม’ รับว่าจะต้มเส้น ส่วน p46-1 ระบุว่าแบ่งหน้าที่กันเสร็จ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 113,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 69,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p48-1 จบบทบรรยาย และ p49-1 ใช้ ‘ฉัน’ กับเรียก ‘ฮารุกิคุง’ ชมว่าโซเมนอร่อยและเกรดดี ก่อน p50-1 เป็นคำถามของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "p49-1 เซย์ระถามเรื่องโซเมนเกรดดี และ p50-1 ‘งั้นเหรอ?’ เป็นคำถามของผู้เล่า ส่วน p51-1 ระบุว่าผมเอียงคอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 84,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "p52-1 เป็นบทบรรยายของผู้เล่า และคำว่า ‘ของเกรดดี’ ในเครื่องหมายคำพูดเป็นเพียงการยกคำจาก p49-1 มาเน้น ไม่ใช่บทพูด ส่วน p53-1 ต่อด้วยความคิดของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "p53-1 เป็นความคิดของผู้เล่า และ p54-1 ถามด้วย ‘คะ’ ว่า ‘นี่ซื้อมาโดยที่ไม่รู้เรื่องเลยเหรอคะ?’ ก่อน p55-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p54-1 เซย์ระถาม และ p55-1 ‘ก็ที่บ้านต่างจังหวัดเขาส่งมาให้น่ะ’ เป็นคำตอบของผู้เล่า ก่อน p56-1 เป็นคำพูดของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p55-1 ผมตอบ และ p56-1 ลงท้าย ‘นะ’ ว่า ‘อ๋อ อย่างนี้นี่เอง ……สมเป็นคุณชายเลยนะเนี่ย’ ก่อน p57-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p56-1 เซย์ระแซวว่าสมเป็นคุณชาย และ p57-1 ‘ไม่อยากโดนยัยลูกคุณหนูอย่างเธอมาพูดใส่หรอกนะ’ เป็นคำตอบของผู้เล่า ส่วน p58-1 ระบุว่าทั้งคู่ล้างจาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p58-1 ระบุว่าล้างจานกันเสร็จ และ p59-1 เรียก ‘ฮารุกิคุง’ ขึ้นต้นบทสนทนา ก่อน p60-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p59-1 เซย์ระเรียกผม และ p60-1 ‘มีอะไรเหรอ?’ เป็นคำตอบของผู้เล่า ก่อน p61-1 เป็นคำถามของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p60-1 ผมถาม และ p61-1 ถามว่าชอบสระว่ายน้ำหรือทะเลมากกว่า ก่อน p62-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "p61-1 เซย์ระถาม และ p62-1 ‘น่าจะทะเลละมั้ง...’ เป็นคำตอบของผู้เล่า ก่อน p63-1 เป็นเสียงของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "p62-1 ผมตอบว่าทะเล และ p63-1 ‘หืมมม งั้นเหรอ’ เป็นเสียงตอบรับของเซย์ระ ก่อน p64-1 เป็นคำถามของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "p63-1 เซย์ระส่งเสียงรับ และ p64-1 ‘แล้วเธอล่ะ?’ เป็นคำถามของผู้เล่า ก่อน p65-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "p64-1 ผมถาม และ p65-1 ใช้ ‘ฉัน’ ตอบว่าชอบสระว่ายน้ำเพราะน้ำทะเลทำผมเสีย ก่อน p66-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "p65-1 เซย์ระอธิบายเหตุผล และ p66-1 ‘ก็จริงของเธอแฮะ’ เป็นคำเห็นด้วยของผู้เล่า ก่อน p67-1 เป็นคำพูดต่อของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "p66-1 ผมเห็นด้วย และ p67-1 ใช้ ‘ฉัน’ ว่าผิวจะไหม้แดดจึงไม่ค่อยชอบทั้งสองแบบ ก่อน p68-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "p67-1 เซย์ระบอกไม่ชอบทั้งสองแบบ และ p68-1 ‘เหรอออ อย่างนั้นหรอกเรอะ ผิดคาดชะมัด’ เป็นเสียงของผู้เล่า ก่อน p69-1 เป็นคำถามของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "p68-1 ผมแสดงความประหลาดใจ และ p69-1 ใช้ ‘ฉัน’ ถามว่าหน้าตาดูเป็นคนผิวทนแดดทนฝนขนาดนั้นเหรอ ก่อน p70-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 93,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "p69-1 เซย์ระถาม และ p70-1 ใช้ ‘เธอ’ ว่า ‘เปล่าหรอก แค่คิดว่ามันเป็นสถานที่ที่สามารถโชว์เนื้อหนังได้อย่างถูกกฎหมาย’ ก่อน p71-1 เป็นคำถามของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "p70-1 ผมพูดเล่นเรื่องโชว์เนื้อหนัง และ p71-1 ใช้ ‘ฉัน’ ถามว่า ‘เห็นฉันเป็นคนยังไงกันแน่เนี่ยคะ?’ ก่อน p72-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1",
+              "p73-1",
+              "p74-1"
+            ],
+            "reason": "p71-1 เซย์ระถาม และ p72-1 ‘...พวกชอบโชว์’ เป็นคำตอบสั้น ๆ ของผู้เล่า ก่อน p73-1 เป็นคำตอบยาวของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 108,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "p72-1 ผมตอบว่า ‘พวกชอบโชว์’ และ p73-1 ใช้ ‘ฉัน’ กับ ‘ค่ะ’ ยอมรับเรื่องรสนิยมแปลก ๆ แต่ปฏิเสธว่าชอบให้คนอื่นแอบมอง ก่อน p74-1 เป็นคำถามของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1",
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "p73-1 เซย์ระอธิบาย และ p74-1 ‘งั้นเหรอ?’ เป็นคำถามทวนของผู้เล่า ก่อน p75-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 65,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "p74-1 ผมถาม และ p75-1 ใช้ ‘อื้อ’ กับ ‘คะ’ ว่าที่ผ่านมาเธอไม่เคยเปิดให้คนอื่นดู ก่อน p76-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1",
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "p75-1 เซย์ระยืนยัน และ p76-1 ‘ก็นะ ที่ผ่านมาเธอก็ไม่เคยเปิดให้ดูจริง ๆ นั่นแหละ’ เป็นคำตอบของผู้เล่า ก่อน p77-1 เป็นคำอธิบายต่อของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 146,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1",
+              "p78-1",
+              "p79-1"
+            ],
+            "reason": "p76-1 ผมเห็นด้วย และ p77-1 ใช้ ‘ฉัน’ อธิบายว่าชอบความรู้สึกตื่นเต้นเวลาคิดว่าอาจมองเห็น แต่ไม่ต้องการโชว์ให้คนอื่นดู ก่อน p78-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1",
+              "p78-1",
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "p77-1 เซย์ระอธิบาย และ p78-1 ‘ลึกซึ้งชะมัดยาดเลยฟะ’ เป็นคำอุทานของผู้เล่า ก่อน p79-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1",
+              "p79-1",
+              "p80-1",
+              "p81-1"
+            ],
+            "reason": "p78-1 ผมอุทาน และ p79-1 ลงท้าย ‘คะ’ ว่า ‘ใช่ไหมล่ะคะ’ แล้วบอกว่าปกติไม่ค่อยไปสถานที่แบบนั้น ก่อน p80-1 เป็นคำถามของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1",
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "p79-1 เซย์ระอธิบาย และ p80-1 ใช้ ‘เธอ’ ว่า ‘แต่คราวก่อน เห็นเธอซื้อชุดว่ายน้ำมาด้วยไม่ใช่เหรอ?’ ก่อน p81-1 เป็นคำตอบยาวของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 326,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1",
+              "p80-1",
+              "p81-1",
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "p80-1 ผมถามถึงชุดว่ายน้ำ และ p81-1 ใช้ ‘ฉัน’ กับ ‘คะ’ อธิบายเรื่องการเข้าสังคมกับน้องสาวและเพื่อน ก่อน p82-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 141,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1",
+              "p81-1",
+              "p82-1",
+              "p83-1",
+              "p84-1"
+            ],
+            "reason": "p81-1 เซย์ระอธิบาย และ p82-1 ‘ก็เข้าใจความรู้สึกอยู่ล่ะนะ...’ เป็นคำตอบของผู้เล่า ก่อน p83-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 127,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p83-1",
+              "p84-1",
+              "p85-1"
+            ],
+            "reason": "p82-1 ผมเห็นด้วย และ p83-1 ลงท้าย ‘ค่ะ’ ว่า ‘ใช่ ๆ แบบนั้นเลยค่ะ’ เรื่องเสียดายถ้าไม่ได้ไปเที่ยว ก่อน p84-1 เป็นคำถามของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1",
+              "p83-1",
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "p83-1 เซย์ระเห็นด้วย และ p84-1 ‘หืมมม แล้วสำหรับปีนี้เอาไงล่ะ? นี่ก็เข้าเดือนสิงหาคมแล้วนะ’ เป็นคำถามของผู้เล่า ก่อน p85-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 166,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1",
+              "p84-1",
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "p84-1 ผมถามถึงปีนี้ และ p85-1 ใช้ ‘ฉัน’ กับ ‘ค่ะ’ บอกว่ายังไม่ได้ไปและอยากไปถ้ามีคนชวน ก่อน p86-1 เป็นจุดไข่ปลา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p86-1"
+            ],
+            "reason": "p85-1 เซย์ระบอกว่าถ้ามีใครชวนเธออาจจะไป และ p87-1 เป็นการเสริมของเธอเรื่องชุดว่ายน้ำใจกล้า p86-1 เป็นเพียงจุดไข่ปลาแสดงความเงียบของฮารุกิ ไม่ใช่ถ้อยคำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1",
+              "p88-1",
+              "p89-1"
+            ],
+            "reason": "p86-1 เป็นความเงียบของผู้เล่า และ p87-1 ต่อด้วย ‘……แถมยังแอบซื้อแบบที่ค่อนข้างใจกล้ามาซะด้วยสิ’ ซึ่ง p90-1 ระบุว่าเป็นประโยคที่เซย์ระพูด ก่อน p88-1 เป็นความเงียบอีกครั้ง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p88-1"
+            ],
+            "reason": "p87-1 เซย์ระเสริมเรื่องชุดว่ายน้ำใจกล้า และ p89-1 ระบุว่า ‘เหล่ เหล่ เหล่’ เป็นการส่งสายตาของเธอ p88-1 เป็นเพียงจุดไข่ปลาแสดงความเงียบของผู้เล่า ไม่ใช่ถ้อยคำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 75,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p89-1",
+              "p90-1",
+              "p91-1",
+              "p92-1",
+              "p93-1"
+            ],
+            "reason": "p90-1 ระบุว่าเซย์ระส่งสายตาและพูดประโยคนั้น และ p91-1 ใช้ ‘ผม’ ว่า ‘……งั้น ไปกันไหมล่ะ? ไปทะเลหรือสระว่ายน้ำกับผม’ ส่วน p92-1 ระบุว่าผมหลุดปากชวน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 85,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1",
+              "p95-1",
+              "p96-1"
+            ],
+            "reason": "p93-1 ระบุว่าเซย์ระยิ้มกริ่ม และ p94-1 เรียก ‘ฮารุกิคุง’ ลงท้าย ‘คะ’ ถามว่าเล็งชุดว่ายน้ำอยู่ใช่ไหม ก่อน p95-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "p94-1 เซย์ระถาม และ p95-1 ‘เออดิ’ เป็นคำตอบของผู้เล่า ส่วน p96-1 ระบุว่าผมยอมรับสารภาพ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 75,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1",
+              "p99-1",
+              "p100-1",
+              "p101-1",
+              "p102-1"
+            ],
+            "reason": "p99-1 จบบทบรรยาย และ p100-1 ‘นะ... อยากเห็นขนาดนั้นเลยเหรอคะ?’ เป็นคำถามของเซย์ระ ก่อน p101-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p99-1",
+              "p100-1",
+              "p101-1",
+              "p102-1",
+              "p103-1"
+            ],
+            "reason": "p100-1 เซย์ระถาม และ p101-1 ‘จะไม่อยากเห็นได้ยังไงเล่า?’ เป็นคำตอบของผู้เล่า ก่อน p102-1 เป็นเสียงของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p100-1",
+              "p101-1",
+              "p102-1",
+              "p103-1",
+              "p104-1"
+            ],
+            "reason": "p101-1 ผมตอบตรง ๆ และ p102-1 ‘งะ... งั้นเหรอคะ……’ เป็นเสียงของเซย์ระ ก่อน p103-1 เป็นคำพูดของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p101-1",
+              "p102-1",
+              "p103-1",
+              "p104-1",
+              "p105-1"
+            ],
+            "reason": "p102-1 เซย์ระลังเล และ p103-1 ‘ถ้าเธอไม่ชอบก็ไม่เป็นไรนะ’ เป็นคำปลอบของผู้เล่า ก่อน p104-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p103-1",
+              "p104-1",
+              "p105-1",
+              "p106-1"
+            ],
+            "reason": "p103-1 ผมปลอบ และ p104-1 ใช้ ‘ฉัน’ ว่า ‘มะ... ไม่ไม่ได้บอกว่าไม่ชอบซะหน่อย แต่ว่า……’ ส่วน p105-1 ระบุว่าเธอทำสีหน้าเหมือนต่อสู้กับความรู้สึก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p105-1",
+              "p106-1",
+              "p107-1",
+              "p108-1",
+              "p109-1"
+            ],
+            "reason": "p106-1 ระบุว่าเธอช้อนสายตาขึ้นมองผม และ p107-1 ถามด้วย ‘คะ’ ว่า ‘……ถ้าไม่ใส่ชุดแบบที่ใจกล้า ๆ จะไม่ชอบเหรอคะ?’ ก่อน p108-1 เป็นคำตอบของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p106-1",
+              "p107-1",
+              "p108-1",
+              "p109-1",
+              "p110-1"
+            ],
+            "reason": "p107-1 เซย์ระถาม และ p108-1 ‘เปล่าหรอก ไม่เกี่ยวสักหน่อย...’ เป็นคำตอบของผู้เล่า ก่อน p109-1 เป็นคำถามของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p107-1",
+              "p108-1",
+              "p109-1",
+              "p110-1",
+              "p111-1"
+            ],
+            "reason": "p108-1 ผมตอบ และ p109-1 ‘งะ... งั้นเหรอคะ?’ เป็นเสียงของเซย์ระ ก่อน p110-1 เป็นคำอธิบายของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p110-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p108-1",
+              "p109-1",
+              "p110-1",
+              "p111-1",
+              "p112-1"
+            ],
+            "reason": "p109-1 เซย์ระถาม และ p110-1 ใช้ ‘ผม’ ว่า ‘เดิมทีผมก็ยังไม่รู้เลยด้วยซ้ำว่าเธอซื้อชุดว่ายน้ำแบบไหนมา’ ก่อน p111-1 เป็นคำตอบของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p111-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p109-1",
+              "p110-1",
+              "p111-1",
+              "p112-1",
+              "p113-1"
+            ],
+            "reason": "p110-1 ผมบอกว่าไม่รู้แบบชุด และ p111-1 ‘นะ... นั่นสินะคะ? ถ้าเป็นแบบนั้นละก็……’ เป็นเสียงของเซย์ระ ก่อน p112-1 เป็นคำพูดของผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p112-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p110-1",
+              "p111-1",
+              "p112-1",
+              "p113-1",
+              "p114-1"
+            ],
+            "reason": "p111-1 เซย์ระลังเล และ p112-1 ‘แต่ผมจะแอบคาดหวังไว้แล้วกันนะ’ เป็นคำพูดของผู้เล่า ก่อน p113-1 เป็นเสียงของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p113-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p111-1",
+              "p112-1",
+              "p113-1",
+              "p114-1",
+              "p115-1"
+            ],
+            "reason": "p112-1 ผมบอกว่าคาดหวัง และ p113-1 ‘……อะ... อื้อ’ เป็นเสียงตอบรับของเซย์ระ ส่วน p114-1 ระบุว่าเธอเบือนหน้าหนี"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p114-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p115-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 65,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p116-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p114-1",
+              "p115-1",
+              "p116-1",
+              "p117-1"
+            ],
+            "reason": "p115-1 บรรยายใบหูแดงของเซย์ระ และ p116-1 ลงท้าย ‘ค่ะ’ ว่า ‘……เดี๋ยว จะลองเก็บไปคิดดูแล้วกันค่ะ’ ส่วน p117-1 ระบุว่า ‘เธอพึมพำคำนั้นออกมา’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p117-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

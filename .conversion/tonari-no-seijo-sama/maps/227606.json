@@ -1,0 +1,1982 @@
+{
+  "sourceSha256": "f25afdd4b40163d9ba1737ed447805418d66b4f42cd58d71dba1dec4e1a38b07",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 85,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 126,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p5-1 ระบุว่า ‘วันนี้ก็โดนซายากะถามอีกแล้ว’ และคำลงท้าย ‘คะ’ ตรงกับซายากะที่ถามเรื่องการไปบ้านฮารุกิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 97,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 129,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 114,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p8-1 บอกว่าซายากะยังคิดว่าฉันกับฮารุกิคุงเป็นแฟนกัน และ p9-1 ใช้ ‘จ๊ะ’ ตอบน้องสาวก่อน p10-1 จะค้าน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p9-1 เป็นคำตอบของเซย์ระ และ p10-1 ใช้ ‘ค่ะ’ กับคำเรียก ‘พี่’ ค้านว่าอยู่สองต่อสองต้องมีอะไรเกิดขึ้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 228,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p12-1 เป็นความคิดของเซย์ระเรื่องความลับ และ p13-1 ใช้ ‘จ๊ะ’ ปฏิเสธก่อนเล่าว่าแค่เล่นเกมด้วยกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 149,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูด ‘ไปเล่นเกมลามกมาค่ะ’ เป็นตัวอย่างคำพูดสมมติใน narration ของ p14-1 ไม่ได้มีใครเปล่งออกมาในฉาก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17-1 ระบุว่า ‘ปฏิกิริยาตอบรับของซายากะ’ หลังคำว่า ‘เกะ... เกมเหรอคะ……’ นี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p15-1 เป็นคำถามของซายากะ และ p16-1 ใช้ ‘จ๊ะ’ ตอบว่าเป็นแค่เกมธรรมดา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 252,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ต่อจาก p18-1 ที่เซย์ระสงสัยปฏิกิริยาของน้องสาว และ p20-1 เป็นเสียง ‘เห?’ ในใจของเซย์ระหลังคำกล่าวหานี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "p20-1 ระบุว่าสมองของเซย์ระหยุดทำงาน และ p21-1 เป็นการตีความในใจโดยมีคำพูด ‘ไปทำเรื่องลามกมางั้นเหรอ?’ อยู่ใน narration"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 101,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p22-1 ระบุว่าซายากะรู้เรื่องเกมลามก และ p23-1 เป็นคำปฏิเสธของเซย์ระก่อนซายากะจับโกหกใน p24-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 109,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p23-1 เป็นคำปฏิเสธของเซย์ระ และ p24-1 ใช้ ‘ค่ะ’ กับ ‘คะ’ กล่าวหาว่าโกหกและถามต่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 195,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p25-1 เป็นความคิดเขิน ๆ ของเซย์ระ และ p26-1 ใช้ ‘ฉัน’ กับ ‘เธอ’ ตอกกลับซายากะเรื่องการอธิบาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p28-1 ระบุว่า ‘ซายากะก็ทำท่าอึกอักพูดไม่ออก’ หลังประโยค ‘เระ... เรื่องนั้นมัน……’ นี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 156,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "p28-1 บรรยายความเงียบหลังเซย์ระตอกกลับ และ p29-1 ใช้ ‘หนู’ กับ ‘พี่’ รวมถึง ‘คุณฮารุกิ’ เปิดใจกับเซย์ระ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 95,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "p30-1 เป็นความคิดของเซย์ระที่สะดุดกับคำว่า ‘คุณฮารุกิ’ และ p31-1 ใช้ ‘จ๊ะ’ ถามซายากะเรื่องความสนิท"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 224,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 85,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p32-1 ระบุว่าซายากะเพิ่งเจอกับฮารุกิครั้งแรกที่ทะเล และ p33-1 ใช้ ‘ค่ะ’ กับ ‘คนพรรค์นั้น’ ปฏิเสธว่าสนิทกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 200,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p34-1 บรรยายว่าน้ำเสียงของซายากะเหมือนรู้จักฮารุกิมาก่อน และ p35-1 ใช้ ‘จ๊ะ’ ถามต่อว่าไปรู้จักกันที่ไหน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p37-1 ระบุว่า ‘ซายากะพูดออกมาด้วยสีหน้าบึ้งตึง’ หลังประโยคนี้ ซึ่งใช้ ‘ค่ะ’ และเล่าว่ารู้จักกันที่ทะเล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p39-1 เป็นเสียง ‘……เหรอออ’ ของเซย์ระรับข้อสันนิษฐานใน p38-1 ที่ลงท้ายด้วย ‘ค่ะ’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p38-1 เป็นข้อสันนิษฐานของซายากะ และ p40-1 เป็นคำถามของเซย์ระถึงฮารุกิต่อจากเสียง ‘……เหรอออ’ นี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p39-1 เป็นเสียงรับของเซย์ระ และ p40-1 ใช้คำเรียก ‘ฮิมุโระคุง’ กับ ‘ค่ะ’ พูดกับฮารุกิเรื่องคำกล่าวหาของซายากะ ก่อน p41-1 จะเป็นเสียง ‘หา……?’ ของฮารุกิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p40-1 เป็นคำถามของเซย์ระถึงฮารุกิ และ p42-1 เปลี่ยนมาเป็น narration ของฮารุกิหลังเสียง ‘หา……?’ นี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 165,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p43-1 เป็นความคิดของฮารุกิ และ p44-1 ใช้ ‘ผม’ กับ ‘ครับ’ เริ่มเล่าเรื่องจากมุมมองของตน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p44-1 เป็นคำเสนอของฮารุกิ และ p46-1 ระบุว่า ‘เซย์ระพูดพลางเอามือเท้าเอว’ หลังคำตอบรับ ‘อื้อ’ นี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 91,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 78,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p46-1 บรรยายท่าทางของเซย์ระ และ p48-1 เป็นคำตอบของเธอต่อคำถาม ‘ผมเดินแยกไปซื้อของกิน…ใช่ไหมครับ?’ นี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 151,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "p47-1 เป็นคำถามของฮารุกิ และ p48-1 ใช้ ‘นาย’ กับ ‘ฉัน’ ตอบพร้อมกล่าวหาว่าฮารุกิแอบไปจีบสาว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 176,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "p49-1 บรรยายว่าเซย์ระมองค้อน และ p50-1 ใช้ ‘ผม’ กับ ‘ครับ’ อธิบายว่าเด็กคนนั้นคือน้องสาวของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p50-1 เป็นคำอธิบายของฮารุกิ และ p51-1 เป็นคำค้านของเซย์ระที่ว่า ‘ตอนนั้นไม่เห็นบอกกันเลยนี่นา?’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "p51-1 เป็นคำค้านของเซย์ระ และ p52-1 ใช้ ‘ครับ’ ตอบว่าเพราะตอนนั้นยังไม่รู้ว่าเป็นน้องสาวของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "type": "narration"
+        },
+        {
+          "start": 2,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "แม้ p53-1 จะมีคำนำ ‘自由’ แต่ช่วงในเครื่องหมายคำพูดลงท้ายด้วย ‘นะคะ’ และ p54-1 เป็นความคิดของฮารุกิต่อคำว่า ‘สมเหตุสมผล’ ในประโยคนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 176,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p54-1 เป็นความคิดของผู้เล่า และ p55-1 ใช้ ‘นะคะ’ ยกคำพูดของซายากะขึ้นมาโต้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 69,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p55-1 เป็นคำพูดของเซย์ระ และ p56-1 ใช้ ‘ผม’ กับ ‘ครับ’ โต้กลับว่าฝ่ายที่ถูกเต๊าะคือตน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p56-1 เป็นคำตอบของฮารุกิ และ p57-1 ใช้ ‘คะ’ ถามกลับว่าหมายความว่าอย่างไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 84,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p57-1 เป็นคำถามของเซย์ระ และ p58-1 ใช้ ‘ผม’ กับ ‘ครับ’ เล่าว่าซายากะเป็นฝ่ายชวนตน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p58-1 เป็นคำอธิบายของฮารุกิ และ p59-1 ใช้ ‘ค่ะ’ ค้านว่าเรื่องสำคัญแบบนั้นไม่เคยพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p59-1 เป็นคำค้านของเซย์ระ และ p60-1 ใช้ ‘ครับ’ ตอบสั้น ๆ ว่าเรื่องอะไรจะไปพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p60-1 เป็นคำตอบของฮารุกิ และ p61-1 ใช้ ‘คะ’ ซักว่าเพราะรู้สึกผิดใช่ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 111,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "p61-1 เป็นคำซักของเซย์ระ และ p62-1 ใช้ ‘ครับ’ อธิบายว่าไม่มีผู้ชายคนไหนพูดอวดเรื่องถูกเด็กผู้หญิงเต๊าะกลางเดต"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 133,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูด ‘เข้าไปช่วยเด็กผู้หญิงที่โดนจีบ’ เป็นการยกคำพูดเดิมมาเล่าใน narration ของ p63-1 ไม่ได้พูดในฉากนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "p63-1 เป็นความคิดของผู้เล่า และ p64-1 ใช้ ‘นะคะ’ ยอมรับอย่างลังเลก่อน p65-1 บรรยายว่าเซย์ระหลบสายตา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 107,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "p65-1 บรรยายว่าเซย์ระหลบสายตา และ p66-1 ใช้ ‘คะ’ ประชดเรื่องที่ซายากะเรียก ‘คุณฮารุกิ’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 92,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "p67-1 เป็นความคิดของฮารุกิ และ p68-1 ใช้ ‘ฉัน’ กับ ‘คะ’ ประชดว่าเซย์ระเรียกนามสกุลมาตลอด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 109,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 186,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 103,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "p69-1 ระบุว่า ‘เซย์ระพูดประชดประชัน’ และ p71-1 ใช้ ‘ผม’ กับ ‘ครับ’ แก้ตัวว่าไม่ได้คิดจะสนิทด้วย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1",
+              "p73-1",
+              "p74-1"
+            ],
+            "reason": "p71-1 เป็นคำแก้ตัวของฮารุกิ และ p72-1 ใช้ ‘คะ’ ถามว่าแล้วทำไมถึงยอมรับคำเรียกนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "p72-1 เป็นคำถามของเซย์ระ และ p73-1 ใช้ ‘ครับ’ ตอบว่าการห้ามเรียกก็ดูแปลก ๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1",
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "p73-1 เป็นคำตอบของฮารุกิ และ p74-1 ใช้ ‘คุณ’ ยอมรับว่า ‘มันก็จริงอย่างที่คุณว่า’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "p74-1 เป็นคำยอมรับของเซย์ระ และ p75-1 ใช้ ‘ผม’ เล่าต่อว่าซายากะบอกให้เรียก ‘ซายากะจัง’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1",
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "p75-1 เป็นคำเล่าของฮารุกิ และ p76-1 ใช้ ‘คะ!?’ ถามว่าแล้วได้เรียกไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1",
+              "p78-1",
+              "p79-1"
+            ],
+            "reason": "p76-1 เป็นคำถามของเซย์ระ และ p77-1 ใช้ ‘ครับ’ ตอบว่าเรื่องอะไรจะไปเรียก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 103,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1",
+              "p79-1",
+              "p80-1",
+              "p81-1"
+            ],
+            "reason": "p78-1 เป็นความคิดของผู้เล่า และ p79-1 ใช้ ‘ผม’ กับ ‘ครับ’ ถามว่ามลทินของตนถูกชำระแล้วหรือยัง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "type": "narration"
+        },
+        {
+          "start": 2,
+          "end": 69,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1",
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "แม้ p80-1 จะมีคำนำ ‘自由’ แต่ช่วงในเครื่องหมายคำพูดใช้ ‘ฉัน’ กับ ‘ค่ะ’ และ p81-1 ระบุว่า ‘เซย์ระตอบกลับมา’ หลังประโยคยอมรับผิดนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p83-1",
+              "p84-1",
+              "p85-1"
+            ],
+            "reason": "p82-1 เป็นความคิดของผู้เล่าว่าเป็นจังหวะดี และ p83-1 ใช้ ‘ครับ’ ประกาศเวลาไถ่โทษ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1",
+              "p83-1",
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "p83-1 เป็นคำประกาศของฮารุกิ และ p84-1 ใช้ ‘คะ!?’ ถามย้ำว่าไถ่โทษหรือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 121,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1",
+              "p84-1",
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "p84-1 เป็นคำถามของเซย์ระ และ p85-1 ใช้ ‘ครับ’ ระบุสองข้อหา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 104,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 226,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1",
+              "p88-1",
+              "p89-1"
+            ],
+            "reason": "p86-1 เป็นความคิดของผู้เล่า และ p87-1 ใช้ ‘ฉัน’ กับ ‘ค่ะ’ ยอมรับว่าจะชดใช้แทนน้องสาว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 172,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p87-1",
+              "p88-1",
+              "p89-1",
+              "p90-1",
+              "p91-1"
+            ],
+            "reason": "p88-1 ระบุว่าเซย์ระยอมตามน้ำกับมุกตลกของผม และ p89-1 เป็นคำพูดของฮารุกิที่ครุ่นคิดว่า ‘เอาไงดีน้า’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p88-1",
+              "p89-1",
+              "p90-1",
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "p89-1 เป็นคำพูดของฮารุกิ และ p91-1 ระบุว่า ‘เซย์ระพูดคำนั้นออกมาพร้อมกับส่งสายตาอ้อนวอน’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 195,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p91-1",
+              "p92-1",
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "p92-1 เป็นความคิดของผู้เล่า และ p93-1 ใช้ ‘ผม’ กับ ‘ครับ’ ชวนเซย์ระไปงานเทศกาลฤดูร้อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1",
+              "p95-1",
+              "p96-1"
+            ],
+            "reason": "p93-1 เป็นคำชวนของฮารุกิ และ p94-1 ใช้ ‘คะ’ ทวนคำว่า ‘งานเทศกาลฤดูร้อนเหรอคะ?’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "p94-1 เป็นคำทวนของเซย์ระ และ p95-1 ใช้ ‘ครับ’ ยืนยันว่างานจัดเร็ว ๆ นี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 175,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p96-1",
+              "p97-1",
+              "p98-1",
+              "p99-1"
+            ],
+            "reason": "p96-1 บรรยายว่าเซย์ระทำสีหน้าเหวอ และ p97-1 ใช้ ‘คะ’ กับ ‘อื้อ’ ตอบรับอย่างลังเล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 248,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p97-1",
+              "p98-1",
+              "p99-1",
+              "p100-1",
+              "p101-1"
+            ],
+            "reason": "p98-1 เป็นความคิดของผู้เล่า และ p99-1 ใช้ ‘ครับ’ ถามว่ามีติดธุระหรือเปล่า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 91,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1",
+              "p99-1",
+              "p100-1",
+              "p101-1",
+              "p102-1"
+            ],
+            "reason": "p99-1 เป็นคำถามของฮารุกิ และ p100-1 ใช้ ‘ค่ะ’ ตอบว่าไม่มีธุระ แต่กังวลเรื่องเวลาเคอร์ฟิว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p99-1",
+              "p100-1",
+              "p101-1",
+              "p102-1",
+              "p103-1"
+            ],
+            "reason": "p100-1 เป็นคำตอบของเซย์ระ และ p101-1 ใช้ ‘ครับ’ ยืนยันว่างานจัดกลางคืน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p100-1",
+              "p101-1",
+              "p102-1",
+              "p103-1",
+              "p104-1"
+            ],
+            "reason": "p101-1 เป็นคำยืนยันของฮารุกิ และ p102-1 ใช้ ‘ค่ะ’ อธิบายเรื่องเวลาเคอร์ฟิว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 107,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p103-1",
+              "p104-1",
+              "p105-1",
+              "p106-1"
+            ],
+            "reason": "p103-1 เป็นความคิดของผู้เล่า และ p104-1 ใช้ ‘ฉัน’ กับ ‘ค่ะ’ อาสาจะไปเจรจาต่อรองเรื่องเคอร์ฟิว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 79,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p103-1",
+              "p104-1",
+              "p105-1",
+              "p106-1",
+              "p107-1"
+            ],
+            "reason": "p104-1 เป็นคำอาสาของเซย์ระ และ p105-1 ใช้ ‘ผม’ กับ ‘ครับ’ บอกว่าไม่ต้องฝืนตัวเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 147,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p105-1",
+              "p106-1",
+              "p107-1",
+              "p108-1",
+              "p109-1"
+            ],
+            "reason": "p106-1 ระบุว่าเซย์ระรีบส่ายหน้าปฏิเสธ และ p107-1 ใช้ ‘ค่ะ’ ยืนยันว่าไม่ได้ฝืนตัวเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "seijo-haruki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p106-1",
+              "p107-1",
+              "p108-1",
+              "p109-1",
+              "p110-1"
+            ],
+            "reason": "p107-1 เป็นคำปฏิเสธของเซย์ระ และ p108-1 เป็นเสียง ‘งั้นเหรอ?’ ของฮารุกิก่อนเธอพูดต่อใน p109-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p107-1",
+              "p108-1",
+              "p109-1",
+              "p110-1",
+              "p111-1"
+            ],
+            "reason": "p108-1 เป็นเสียงรับของฮารุกิ และ p110-1 ระบุว่า ‘เซย์ระเลื่อนสายตาสีฟ้าหลบหนี’ หลังคำว่า ‘ตัวฉันเองก็……’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p110-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p111-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p109-1",
+              "p110-1",
+              "p111-1",
+              "p112-1",
+              "p113-1"
+            ],
+            "reason": "p112-1 ระบุว่า ‘เธอพูดประโยคนั้นออกมา’ และ p111-1 ใช้คำเรียก ‘ฮิมุโระคุง’ กับ ‘นี่นา’ บอกว่าอยากไปด้วย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p112-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p113-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "sourceSha256": "23d013570a751531796526f97fae52b1264b6bd33ef8eeaabe810f29ccb03e1d",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 75,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 112,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 198,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 141,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 120,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 173,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 130,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p11-1 ระบุว่าวันนั้นพี่เตรียมตัวออกไปข้างนอก และ p13-1 บรรยายชุดของเธอ p12-1 ถามด้วย ‘คะ’ ว่า ‘……ชุดนั้น ไปเอามาจากไหนเหรอคะ?’ ในฐานะคำถามของซายากะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 191,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p12-1 ซายากะถามเรื่องชุด และ p16-1 ระบุว่า ‘พี่พูดพลางเอามือม้วนผมเล่น’ p15-1 ลงท้าย ‘จ้ะ’ ว่า ‘ซื้อมาเมื่อไม่นานมานี้เองจ้ะ’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p15-1 เซย์ระถามว่าดูแปลกไหม และ p17-1 ใช้ ‘หนู’ กับ ‘พี่’ ว่า ‘ดูเรียบร้อยบริสุทธิ์ เข้ากับพี่ดีออกนะคะ’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "p18-1 เป็นบทบรรยายของซายากะ และคำว่า ‘ผ่าน’ ในเครื่องหมายคำพูดเป็นเพียงการยกคำมาเน้นความคิดของเธอ ไม่ใช่บทพูด ส่วน p19-1 เป็นคำถามของเธอต่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "p18-1 เป็นความคิดของซายากะ และ p19-1 ถามด้วย ‘คะ’ ว่า ‘……มีใครเลือกชุดนี้ให้หรือเปล่าคะ?’ ก่อน p20-1 เป็นคำตอบของเซย์ระ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p19-1 ซายากะถาม และ p21-1 ระบุว่า ‘พี่ตอบคำถามของฉันพลางหลบสายตา’ p20-1 ลงท้าย ‘จ้ะ’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p21-1 ระบุว่าพี่ตอบและหลบสายตา และ p22-1 ใช้ ‘พี่’ แทนตัวเองบอกว่าจะกลับสาย ก่อน p23-1 เป็นคำตอบของซายากะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p22-1 เซย์ระบอกว่าจะกลับสาย และ p23-1 ลงท้าย ‘ค่ะ’ ว่า ‘ก็ไม่มีปัญหาหรอกค่ะ แต่ว่าพี่จะไปไหนเหรอคะ?’"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p23-1 ซายากะถามว่าจะไปไหน และ p24-1 ลงท้าย ‘จ้ะ’ ตอบว่า ‘ทะเลน่ะจ้ะ ไปหาดเล่นน้ำ’ ส่วน p25-1 เป็นความคิดของซายากะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 117,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p25-1 เป็นความคิดของซายากะเรื่องการแต่งตัว และ p26-1 ถามด้วย ‘คะ’ ว่า ‘ไปเที่ยวกับใครเหรอคะ?’ ก่อน p27-1 เป็นคำตอบของเซย์ระ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p26-1 ซายากะถามว่าไปกับใคร และ p27-1 ลงท้าย ‘จ้ะ’ ตอบว่า ‘เพื่อนน่ะจ้ะ เพื่อนผู้หญิง’ ส่วน p28-1 เป็นความคิดของซายากะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 179,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p29-1 เป็นความคิดของซายากะเรื่องแฟนหนุ่ม และ p30-1 ใช้ ‘หนู’ กับ ‘พี่’ ถามว่า ‘หนูขอไปด้วยคนได้ไหมคะ?’ ส่วน p31-1 ระบุว่าเธอแกล้งถามหยั่งเชิง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p31-1 ระบุว่าซายากะแกล้งถาม และ p33-1 ระบุว่า ‘พี่ส่งเสียงหลงปฏิเสธออกมาเสียงดังลั่น’ p32-1 ‘ไม่ได้!’ จึงเป็นคำของเซย์ระ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 82,
+          "type": "dialogue",
+          "speakerId": "seijo-seira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p34-1 เป็นความคิดของซายากะ และ p35-1 ลงท้าย ‘จ้ะ’ ว่า ‘……ก็อยู่ ๆ มีคนเพิ่มมาอีกคน... งั้นพี่ขอตัวไปก่อนนะ’ ส่วน p36-1 ระบุว่าพี่พูดตัดบท"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 122,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "seijo-sayaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p36-1 ระบุว่าพี่วิ่งออกจากบ้านไปแล้ว และ p39-1 ระบุว่า ‘ตัดสินใจได้แล้วล่ะค่ะ! ฉันจะเป็นคนปกป้องพี่เอง’ p38-1 ‘……เอาละ’ จึงเป็นคำของซายากะที่กำลังตั้งใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 115,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 75,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}
