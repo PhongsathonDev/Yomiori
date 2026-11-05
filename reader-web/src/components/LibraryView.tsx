@@ -107,6 +107,9 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
     if (currentNovel.id === 'nazeka-natsukareta-rashii') {
       return ['nazeka-eita', 'nazeka-yuzu', 'nazeka-mei'].includes(c.id);
     }
+    if (currentNovel.id === 'tonari-no-seijo-sama') {
+      return ['seijo-haruki', 'seijo-seira'].includes(c.id);
+    }
     if (currentNovel.id === 'kokou-na-kanojo') {
       return ['kokou-takumi', 'kokou-kotori', 'kokou-akira'].includes(c.id);
     }
