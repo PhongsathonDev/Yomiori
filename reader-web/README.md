@@ -34,6 +34,7 @@ Tests include the conversion regressions and the existing Black Cat conversion c
 
 ## Read next
 
+- [Parallel mapping with subagents](../AI_CONVERSION_GUIDE.md#multi-agent): workers edit separate maps; the main agent serializes apply and publishing.
 - [Chapter conversion and publishing](../AI_CONVERSION_GUIDE.md#chapter-protocol): mandatory when adding or modifying chapter content.
 - [Product vocabulary](../CONTEXT.md): consistent bookshelf, offline and resume terminology.
 - [System architecture](../SYSTEM_BLUEPRINT.md): data flow, editor endpoints and historical context.
