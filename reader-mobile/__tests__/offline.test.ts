@@ -234,6 +234,19 @@ describe('metadata, settings and progress compatibility', () => {
     },
   );
 
+  test('Shinpai skeleton is available offline without inventing a readable chapter', async () => {
+    const novelId = 'shinpai-kanojo';
+    expect(await fetchNovels(true)).toContainEqual(expect.objectContaining({
+      id: novelId, totalOriginalChapters: 69,
+    }));
+    expect((await fetchCharacters(novelId, true)).map(character => character.id)).toEqual([
+      'shinpai-aoto', 'shinpai-shizuno', 'shinpai-aina',
+    ]);
+    expect(await getAvailableChapterList(novelId, true)).toEqual([]);
+    expect(getBundledChapter(novelId, 'ch-01')).toBeNull();
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
   test('Kokou skeleton has local characters and no invented chapter when offline', async () => {
     const novelId = 'kokou-na-kanojo';
     expect(await fetchNovels(true)).toContainEqual(expect.objectContaining({

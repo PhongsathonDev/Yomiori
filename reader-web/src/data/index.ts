@@ -6,6 +6,7 @@ import { makeineChapters, makeineCharacters as rawMakeineCharacters } from './no
 import { nazekaChapters, nazekaCharacters as rawNazekaCharacters } from './novels/nazeka-natsukareta-rashii';
 import { kokouChapters, kokouCharacters as rawKokouCharacters } from './novels/kokou-na-kanojo';
 import { seijoChapters, seijoCharacters as rawSeijoCharacters } from './novels/tonari-no-seijo-sama';
+import { shinpaiChapters, shinpaiCharacters as rawShinpaiCharacters } from './novels/shinpai-kanojo';
 import type { Novel, Chapter, Character } from '../types';
 import { getAssetUrl } from '../utils/assets';
 
@@ -34,6 +35,8 @@ export const kokouCharacters: Character[] = (rawKokouCharacters as Character[]).
 
 export const seijoCharacters: Character[] = (rawSeijoCharacters as Character[]).map(normalizeCharacter);
 
+export const shinpaiCharacters: Character[] = (rawShinpaiCharacters as Character[]).map(normalizeCharacter);
+
 export const allNovels: Novel[] = (initialNovels as Novel[]).map(normalizeNovel);
 
 export const allCharacters: Character[] = [
@@ -44,6 +47,7 @@ export const allCharacters: Character[] = [
   ...nazekaCharacters,
   ...kokouCharacters,
   ...seijoCharacters,
+  ...shinpaiCharacters,
 ];
 
 export const allChapters: Chapter[] = [
@@ -54,6 +58,7 @@ export const allChapters: Chapter[] = [
   ...nazekaChapters,
   ...kokouChapters,
   ...seijoChapters,
+  ...shinpaiChapters,
 ];
 
 export const getNovelById = (id: string): Novel | undefined => {
@@ -72,6 +77,7 @@ export const getCharactersByNovelId = (novelId: string): Character[] => {
   if (novelId === 'nazeka-natsukareta-rashii') return nazekaCharacters;
   if (novelId === 'kokou-na-kanojo') return kokouCharacters;
   if (novelId === 'tonari-no-seijo-sama') return seijoCharacters;
+  if (novelId === 'shinpai-kanojo') return shinpaiCharacters;
   return allCharacters;
 };
 
