@@ -1,0 +1,1043 @@
+{
+  "version": 1,
+  "novelId": "shinpai-kanojo",
+  "sourceCount": 69,
+  "assignments": [
+    {
+      "sourceId": "225837",
+      "chapterNo": "1",
+      "outputId": "ch-01",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/225837.json",
+      "mappingSha256": "98f15f11807c37ca4eb929f772ab9147a6033e5759d8840c2b0c83bcacc66b05",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "98f15f11807c37ca4eb929f772ab9147a6033e5759d8840c2b0c83bcacc66b05",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226071",
+      "chapterNo": "2",
+      "outputId": "ch-02",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226071.json",
+      "mappingSha256": "c2d31588bd6d33078a8c4631387ef7ab55a5dad75a5e05087eb217d4e862df36",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "c2d31588bd6d33078a8c4631387ef7ab55a5dad75a5e05087eb217d4e862df36",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226072",
+      "chapterNo": "3",
+      "outputId": "ch-03",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226072.json",
+      "mappingSha256": "83ea790aa6fec062da232b732b94684d4f973708bf69b8a70c9424999f2d5ec6",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "83ea790aa6fec062da232b732b94684d4f973708bf69b8a70c9424999f2d5ec6",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226231",
+      "chapterNo": "4",
+      "outputId": "ch-04",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226231.json",
+      "mappingSha256": "791692a2808da2dcb7ec8727b8b0e550ed79a2737eea8613c9f697c2629850d4",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "791692a2808da2dcb7ec8727b8b0e550ed79a2737eea8613c9f697c2629850d4",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226232",
+      "chapterNo": "5",
+      "outputId": "ch-05",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226232.json",
+      "mappingSha256": "0fc673762f4c806f78a7d94835542dcd9dbbee4665240629b4e9c1c43599c29e",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "0fc673762f4c806f78a7d94835542dcd9dbbee4665240629b4e9c1c43599c29e",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226233",
+      "chapterNo": "6",
+      "outputId": "ch-06",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226233.json",
+      "mappingSha256": "24c9d9c044dcbae52faf888c19a07f031ac36df512c65586310f27459ce3dd8b",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "24c9d9c044dcbae52faf888c19a07f031ac36df512c65586310f27459ce3dd8b",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226234",
+      "chapterNo": "7",
+      "outputId": "ch-07",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226234.json",
+      "mappingSha256": "cf7bdc212e4bd919d7c77364eadee5d05a2ecc1d3063bf440b44cf66a57d3639",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "cf7bdc212e4bd919d7c77364eadee5d05a2ecc1d3063bf440b44cf66a57d3639",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226235",
+      "chapterNo": "8",
+      "outputId": "ch-08",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226235.json",
+      "mappingSha256": "8372b12b758cfdb83cc937dfa6bf63e43f4e04063d865c7ac62afeb9c7236923",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "8372b12b758cfdb83cc937dfa6bf63e43f4e04063d865c7ac62afeb9c7236923",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226236",
+      "chapterNo": "8.5",
+      "outputId": "ch-8-5",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226236.json",
+      "mappingSha256": "b08d0e3c23d3f5e5f794f0c9e174788d8862ae4974191cf48eaa67cf639f067b",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "b08d0e3c23d3f5e5f794f0c9e174788d8862ae4974191cf48eaa67cf639f067b",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226422",
+      "chapterNo": "9",
+      "outputId": "ch-09",
+      "workerBatch": "A",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226422.json",
+      "mappingSha256": "f16aa23c1a7d67130dc3fe92aeec947c62da7a176818489fe2bf652da47b48f5",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "f16aa23c1a7d67130dc3fe92aeec947c62da7a176818489fe2bf652da47b48f5",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226423",
+      "chapterNo": "10",
+      "outputId": "ch-10",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226423.json",
+      "mappingSha256": "e96b75f138cbb94666c21c1e6185f1b41333c0b4e4e9ea59268880855e776005",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "e96b75f138cbb94666c21c1e6185f1b41333c0b4e4e9ea59268880855e776005",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226424",
+      "chapterNo": "11",
+      "outputId": "ch-11",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226424.json",
+      "mappingSha256": "eec14cfc39f081fdbaeeab7c41416bb24dce46bbe162644204123109772df600",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "eec14cfc39f081fdbaeeab7c41416bb24dce46bbe162644204123109772df600",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226425",
+      "chapterNo": "12",
+      "outputId": "ch-12",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226425.json",
+      "mappingSha256": "ef7dff8dfa09b938e9ebb59b1837b423d9e9b01b9791d27cde9efe5ce2920861",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "ef7dff8dfa09b938e9ebb59b1837b423d9e9b01b9791d27cde9efe5ce2920861",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226426",
+      "chapterNo": "13",
+      "outputId": "ch-13",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226426.json",
+      "mappingSha256": "eb68d2d04b6485669e40351fd45edaf6bfc57b5024742de5dd9a105d18987376",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "eb68d2d04b6485669e40351fd45edaf6bfc57b5024742de5dd9a105d18987376",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226427",
+      "chapterNo": "14",
+      "outputId": "ch-14",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226427.json",
+      "mappingSha256": "51613bde4945751a401f6fe1e8ebd9e33999d081e346b3dff5511932f5a3e364",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "51613bde4945751a401f6fe1e8ebd9e33999d081e346b3dff5511932f5a3e364",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226428",
+      "chapterNo": "15",
+      "outputId": "ch-15",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226428.json",
+      "mappingSha256": "6b499f1bcafc1b1878f65ef5c867cee5f6aa5448ca4af71b064c22db9bfe990e",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "6b499f1bcafc1b1878f65ef5c867cee5f6aa5448ca4af71b064c22db9bfe990e",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226429",
+      "chapterNo": "16",
+      "outputId": "ch-16",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226429.json",
+      "mappingSha256": "65f871e01ec9761cb9e3d71fbf7597f027810b365df9cb539dac2397be39184e",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "65f871e01ec9761cb9e3d71fbf7597f027810b365df9cb539dac2397be39184e",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226430",
+      "chapterNo": "17",
+      "outputId": "ch-17",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226430.json",
+      "mappingSha256": "f1beee8c82549206cca427b917727536e699ef59443c3a69580cfc8d8c9aa094",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "f1beee8c82549206cca427b917727536e699ef59443c3a69580cfc8d8c9aa094",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226431",
+      "chapterNo": "18",
+      "outputId": "ch-18",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226431.json",
+      "mappingSha256": "fd358d0b9fa3f86d35ef2920b8e5cb90365b240f1a3b44a291dab9c816af15b7",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "fd358d0b9fa3f86d35ef2920b8e5cb90365b240f1a3b44a291dab9c816af15b7",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226432",
+      "chapterNo": "19",
+      "outputId": "ch-19",
+      "workerBatch": "B",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226432.json",
+      "mappingSha256": "6322eb1e60b40040836a249b3f55a790b59b386e21db1c43c3ecb47394975f72",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "6322eb1e60b40040836a249b3f55a790b59b386e21db1c43c3ecb47394975f72",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226433",
+      "chapterNo": "20",
+      "outputId": "ch-20",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226433.json",
+      "mappingSha256": "15546776fcd7e40d170d94c1fcebc4ddae2fbd3cd9a70c5a46cf1066903e6b3e",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "15546776fcd7e40d170d94c1fcebc4ddae2fbd3cd9a70c5a46cf1066903e6b3e",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226434",
+      "chapterNo": "21",
+      "outputId": "ch-21",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226434.json",
+      "mappingSha256": "3b134e3629939d8724366a3c7a4bf292be5051ac374f4477243be21d98794f06",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "3b134e3629939d8724366a3c7a4bf292be5051ac374f4477243be21d98794f06",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226435",
+      "chapterNo": "22",
+      "outputId": "ch-22",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226435.json",
+      "mappingSha256": "cdb7b5945b772cbf0a8ce9b9c9dfde6316cc1ecbccc20380f81e41995a8e1772",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "cdb7b5945b772cbf0a8ce9b9c9dfde6316cc1ecbccc20380f81e41995a8e1772",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226436",
+      "chapterNo": "23",
+      "outputId": "ch-23",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226436.json",
+      "mappingSha256": "bd12b1a3a2678ce0dcc3033e45265de79ce4cf2d6c03a275b7d55b9093d90702",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "bd12b1a3a2678ce0dcc3033e45265de79ce4cf2d6c03a275b7d55b9093d90702",
+        "result": "fixed",
+        "note": "ตรวจซ้ำโดย main agent: พบสลับผู้พูดช่วง p59–p66 และแก้แล้ว"
+      }
+    },
+    {
+      "sourceId": "226710",
+      "chapterNo": "23.5",
+      "outputId": "ch-23-5",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226710.json",
+      "mappingSha256": "1ac47569b7b49444b0665d9647be371b1bda1f56818e702b693184fccec45f6d",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "1ac47569b7b49444b0665d9647be371b1bda1f56818e702b693184fccec45f6d",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226712",
+      "chapterNo": "24",
+      "outputId": "ch-24",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226712.json",
+      "mappingSha256": "6f5962cecf18716a003527019817edd71ba7e63a32de83218917eb4c14ea8712",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "6f5962cecf18716a003527019817edd71ba7e63a32de83218917eb4c14ea8712",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226714",
+      "chapterNo": "25",
+      "outputId": "ch-25",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226714.json",
+      "mappingSha256": "46658e15816cdcdf5d1aff54a76c39d16a4a807ea7e069c819872f38ea832a8b",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "46658e15816cdcdf5d1aff54a76c39d16a4a807ea7e069c819872f38ea832a8b",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226715",
+      "chapterNo": "26",
+      "outputId": "ch-26",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226715.json",
+      "mappingSha256": "d81f7b3b9fb1c0c986ce33b299bcbea94ea9eab87de064ac5d52e0de6479fc31",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "d81f7b3b9fb1c0c986ce33b299bcbea94ea9eab87de064ac5d52e0de6479fc31",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226716",
+      "chapterNo": "27",
+      "outputId": "ch-27",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226716.json",
+      "mappingSha256": "b2e9b7d69f20770f2810a0037b55220015fb284f4e04967ec8a6f7f85aec88f8",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "b2e9b7d69f20770f2810a0037b55220015fb284f4e04967ec8a6f7f85aec88f8",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226717",
+      "chapterNo": "28",
+      "outputId": "ch-28",
+      "workerBatch": "C",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226717.json",
+      "mappingSha256": "e446df8a587b900e6f0dd45bbb7ec7f4d1a4192509bfa8a091e6fa938d8c6b92",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "e446df8a587b900e6f0dd45bbb7ec7f4d1a4192509bfa8a091e6fa938d8c6b92",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226719",
+      "chapterNo": "29",
+      "outputId": "ch-29",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226719.json",
+      "mappingSha256": "aed21784656851ba55dee053a14e25f4be6ca762b525f40397721d42c9050605",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "aed21784656851ba55dee053a14e25f4be6ca762b525f40397721d42c9050605",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226720",
+      "chapterNo": "30",
+      "outputId": "ch-30",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226720.json",
+      "mappingSha256": "d99ddf4f89902f2a67b8a2887887d4513a9ba683621655f79658d21db06be707",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "d99ddf4f89902f2a67b8a2887887d4513a9ba683621655f79658d21db06be707",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226721",
+      "chapterNo": "31",
+      "outputId": "ch-31",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226721.json",
+      "mappingSha256": "f6d61b0e4c2505503baabcac56a6828ba91d9dcbbad064d1eabfbe906bbd86c9",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "f6d61b0e4c2505503baabcac56a6828ba91d9dcbbad064d1eabfbe906bbd86c9",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226723",
+      "chapterNo": "32",
+      "outputId": "ch-32",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226723.json",
+      "mappingSha256": "145ff6e2a47da28256a579c84e5a9d0134cc001b651672cc7caad077c5a262ef",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "145ff6e2a47da28256a579c84e5a9d0134cc001b651672cc7caad077c5a262ef",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226724",
+      "chapterNo": "33",
+      "outputId": "ch-33",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226724.json",
+      "mappingSha256": "a980f0f555037d339a126d8f80a770c4ecde449b40297c3f62ac9f9a246e1d4e",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "a980f0f555037d339a126d8f80a770c4ecde449b40297c3f62ac9f9a246e1d4e",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226725",
+      "chapterNo": "34",
+      "outputId": "ch-34",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226725.json",
+      "mappingSha256": "ad4a633bb45cd14d7d843741d91f0be9751b67d32b467950f920bfd6328c1dc5",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "ad4a633bb45cd14d7d843741d91f0be9751b67d32b467950f920bfd6328c1dc5",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226726",
+      "chapterNo": "35",
+      "outputId": "ch-35",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226726.json",
+      "mappingSha256": "aec5f64303082dccaf6f89ad80e680d1b0040571231b489beb9ce9535dd33b45",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "aec5f64303082dccaf6f89ad80e680d1b0040571231b489beb9ce9535dd33b45",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226727",
+      "chapterNo": "36",
+      "outputId": "ch-36",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226727.json",
+      "mappingSha256": "df1e72fde5b967099e6161fcea645cbde0b3aa3296518882f314f23856971037",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "df1e72fde5b967099e6161fcea645cbde0b3aa3296518882f314f23856971037",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226728",
+      "chapterNo": "37",
+      "outputId": "ch-37",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226728.json",
+      "mappingSha256": "93f5e4136e722d07da4f029e942fc34dec81a630c7d30645d6c2a5d203fa35ac",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "93f5e4136e722d07da4f029e942fc34dec81a630c7d30645d6c2a5d203fa35ac",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "226729",
+      "chapterNo": "38",
+      "outputId": "ch-38",
+      "workerBatch": "D",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/226729.json",
+      "mappingSha256": "56f9e42598b02ca72b48259c6acef96de64e18b03dd08a3be78b4f29452573f3",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "56f9e42598b02ca72b48259c6acef96de64e18b03dd08a3be78b4f29452573f3",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227190",
+      "chapterNo": "39",
+      "outputId": "ch-39",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227190.json",
+      "mappingSha256": "ce5ba16d377bb2960026c5fe5f40eeb702dcf81a1445bbe3a08773b917cafbdc",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "ce5ba16d377bb2960026c5fe5f40eeb702dcf81a1445bbe3a08773b917cafbdc",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227191",
+      "chapterNo": "40",
+      "outputId": "ch-40",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227191.json",
+      "mappingSha256": "c4d2f1f0e7d13219632f2593559147f08781cdc0f97778732c784a4a0fc6129d",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "c4d2f1f0e7d13219632f2593559147f08781cdc0f97778732c784a4a0fc6129d",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227193",
+      "chapterNo": "41",
+      "outputId": "ch-41",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227193.json",
+      "mappingSha256": "5ca52f49ff1706d5c8dd6619a90c6d0d4c96997fcf0c1a9d228ce7b333fefe6c",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "5ca52f49ff1706d5c8dd6619a90c6d0d4c96997fcf0c1a9d228ce7b333fefe6c",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227194",
+      "chapterNo": "42",
+      "outputId": "ch-42",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227194.json",
+      "mappingSha256": "2b39d4d69263255e8b4db13d8a36a79d06be38b305d69a575a73c12b4d966788",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "2b39d4d69263255e8b4db13d8a36a79d06be38b305d69a575a73c12b4d966788",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227195",
+      "chapterNo": "42.5",
+      "outputId": "ch-42-5",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227195.json",
+      "mappingSha256": "c47d30754bbe10e75d2475d2e26dace4d97bd24d00da35395fdcd11db10033f5",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "c47d30754bbe10e75d2475d2e26dace4d97bd24d00da35395fdcd11db10033f5",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227220",
+      "chapterNo": "43",
+      "outputId": "ch-43",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227220.json",
+      "mappingSha256": "f9d0e4d93ef3ae8ab793cdc290dcd1d6fd8d1b8c8354b2a82f844557ac37a005",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "f9d0e4d93ef3ae8ab793cdc290dcd1d6fd8d1b8c8354b2a82f844557ac37a005",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227221",
+      "chapterNo": "44",
+      "outputId": "ch-44",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227221.json",
+      "mappingSha256": "10fba947992a50d10c0fdc2e375834654d0e57146b3b0907485c99ff76861184",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "10fba947992a50d10c0fdc2e375834654d0e57146b3b0907485c99ff76861184",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227222",
+      "chapterNo": "45",
+      "outputId": "ch-45",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227222.json",
+      "mappingSha256": "2b0756ae969b7ca7ff0b04d5973c33d3f67be3ad86083362ef2c2ca648cb63e4",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "2b0756ae969b7ca7ff0b04d5973c33d3f67be3ad86083362ef2c2ca648cb63e4",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227223",
+      "chapterNo": "46",
+      "outputId": "ch-46",
+      "workerBatch": "E",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227223.json",
+      "mappingSha256": "fef363487eb256999e33a0aa8f72b1b24ec3c519451bbd2aff27273fa541e3fc",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "fef363487eb256999e33a0aa8f72b1b24ec3c519451bbd2aff27273fa541e3fc",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227225",
+      "chapterNo": "47",
+      "outputId": "ch-47",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227225.json",
+      "mappingSha256": "1e3d6ad78205a85c0036b45814cd78b854376afcaa0f57edac8ee9d64044e5de",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "1e3d6ad78205a85c0036b45814cd78b854376afcaa0f57edac8ee9d64044e5de",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227227",
+      "chapterNo": "48",
+      "outputId": "ch-48",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227227.json",
+      "mappingSha256": "1827b0ed99acea28906e82bf7f915a384d05be11a395b2f4f0cb57b863d0f9f4",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "1827b0ed99acea28906e82bf7f915a384d05be11a395b2f4f0cb57b863d0f9f4",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227228",
+      "chapterNo": "49",
+      "outputId": "ch-49",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227228.json",
+      "mappingSha256": "718a1b5d6cc8412855f7d98aafc1ba981be11938a6fe50d4ec224503cae3b1fb",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "718a1b5d6cc8412855f7d98aafc1ba981be11938a6fe50d4ec224503cae3b1fb",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227229",
+      "chapterNo": "50",
+      "outputId": "ch-50",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227229.json",
+      "mappingSha256": "dd7d2efe5acc2aff7b1712b47d9e3edc3ebd5d249560a1f1a70540e436e6cac5",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "dd7d2efe5acc2aff7b1712b47d9e3edc3ebd5d249560a1f1a70540e436e6cac5",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227230",
+      "chapterNo": "51",
+      "outputId": "ch-51",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227230.json",
+      "mappingSha256": "bf814510b723e0100cd61d4a346a4e9911e8f74dbbd1b677699994032a5c448d",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "bf814510b723e0100cd61d4a346a4e9911e8f74dbbd1b677699994032a5c448d",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227319",
+      "chapterNo": "52",
+      "outputId": "ch-52",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227319.json",
+      "mappingSha256": "b41472e98ed781d95c3efcc974221cf0d21ce59523c3280b74842382db2c8b1c",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "b41472e98ed781d95c3efcc974221cf0d21ce59523c3280b74842382db2c8b1c",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227321",
+      "chapterNo": "53",
+      "outputId": "ch-53",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227321.json",
+      "mappingSha256": "3d9ddc01085bd656fd4edb0227bbcf555ac7fe8e716390ecd6edacec914a88ea",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "3d9ddc01085bd656fd4edb0227bbcf555ac7fe8e716390ecd6edacec914a88ea",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227322",
+      "chapterNo": "54",
+      "outputId": "ch-54",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227322.json",
+      "mappingSha256": "b8b373208d8fad28f40fae8a24eb720168dfd4217106c8ed9f6168ee81200068",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "b8b373208d8fad28f40fae8a24eb720168dfd4217106c8ed9f6168ee81200068",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227323",
+      "chapterNo": "55",
+      "outputId": "ch-55",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227323.json",
+      "mappingSha256": "e8bc8e2d09356ba9e825639cbb32287519ea391fc9f8f13cad79a5727f535925",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "e8bc8e2d09356ba9e825639cbb32287519ea391fc9f8f13cad79a5727f535925",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227328",
+      "chapterNo": "55.5",
+      "outputId": "ch-55-5",
+      "workerBatch": "F",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227328.json",
+      "mappingSha256": "6795e093c3300f711a0cb25d0fea7705216462a8a9f592879adabd726d9d7f50",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "6795e093c3300f711a0cb25d0fea7705216462a8a9f592879adabd726d9d7f50",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227329",
+      "chapterNo": "56",
+      "outputId": "ch-56",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227329.json",
+      "mappingSha256": "91603ee32e543a66257dfd25dddca4e30de101642433859ab579a201d8b7bbe6",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "91603ee32e543a66257dfd25dddca4e30de101642433859ab579a201d8b7bbe6",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227330",
+      "chapterNo": "57",
+      "outputId": "ch-57",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227330.json",
+      "mappingSha256": "2f92cfce3997caaab23523a193aa35c564343dd1fb8f09b77e3277a34a98dab4",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "2f92cfce3997caaab23523a193aa35c564343dd1fb8f09b77e3277a34a98dab4",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227331",
+      "chapterNo": "58",
+      "outputId": "ch-58",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227331.json",
+      "mappingSha256": "700f0bd6bff887bafb0ab75c9c4c7c8dd2bc5e44c7e95c16c8e655b9dc0020c2",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "700f0bd6bff887bafb0ab75c9c4c7c8dd2bc5e44c7e95c16c8e655b9dc0020c2",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227332",
+      "chapterNo": "59",
+      "outputId": "ch-59",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227332.json",
+      "mappingSha256": "67316cdfbb81300adf65f77566083b75e40feb515d1c4a22e8a487c4402fe8b1",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "67316cdfbb81300adf65f77566083b75e40feb515d1c4a22e8a487c4402fe8b1",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227333",
+      "chapterNo": "60",
+      "outputId": "ch-60",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227333.json",
+      "mappingSha256": "bfddf9c64e81c5629e44a78ed4b1269972e140f4b630f32bb0387274c81a66a0",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "bfddf9c64e81c5629e44a78ed4b1269972e140f4b630f32bb0387274c81a66a0",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227334",
+      "chapterNo": "61",
+      "outputId": "ch-61",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227334.json",
+      "mappingSha256": "0e424bddc5e446f285a8ab624ddaad19fd43cd802b281e5c6c17ca693aabf928",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "0e424bddc5e446f285a8ab624ddaad19fd43cd802b281e5c6c17ca693aabf928",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227335",
+      "chapterNo": "62",
+      "outputId": "ch-62",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227335.json",
+      "mappingSha256": "9d64ffd2988782f05c758847b68d8685f8cdb336d326eca5aef670fa0e2defe8",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "9d64ffd2988782f05c758847b68d8685f8cdb336d326eca5aef670fa0e2defe8",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227336",
+      "chapterNo": "63",
+      "outputId": "ch-63",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227336.json",
+      "mappingSha256": "a4a68b0ec471fa01796686b75915d7987e79d3fea35c327e36faa6147f3d6f71",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "a4a68b0ec471fa01796686b75915d7987e79d3fea35c327e36faa6147f3d6f71",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227337",
+      "chapterNo": "64",
+      "outputId": "ch-64",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227337.json",
+      "mappingSha256": "1237c8031e8012a493783b948ee1d3c7494fa2941fa9ec87c7f270ff4749c7f0",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "1237c8031e8012a493783b948ee1d3c7494fa2941fa9ec87c7f270ff4749c7f0",
+        "result": "pass"
+      }
+    },
+    {
+      "sourceId": "227338",
+      "chapterNo": "65",
+      "outputId": "ch-65",
+      "workerBatch": "G",
+      "mappingPath": ".conversion/shinpai-kanojo/maps/227338.json",
+      "mappingSha256": "d18d95700b55ae647c71660640d8cf8592b3199ede3210a7353aa3a54d3649a7",
+      "status": "applied",
+      "review": {
+        "reviewer": "main-agent-targeted-audit",
+        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewedMappingSha256": "d18d95700b55ae647c71660640d8cf8592b3199ede3210a7353aa3a54d3649a7",
+        "result": "pass"
+      }
+    }
+  ]
+}

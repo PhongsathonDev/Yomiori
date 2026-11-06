@@ -12,6 +12,13 @@ const mobile = new URL('../../reader-mobile/', import.meta.url);
 const readJson = (base, path) => JSON.parse(readFileSync(new URL(path, base), 'utf8'));
 const novel = (base) => readJson(base, 'src/data/novels.json').find(novel => novel.id === id);
 const characters = (base) => readJson(base, `src/data/novels/${id}/characters.json`);
+const sourceRegistry = readJson(new URL('../../', import.meta.url), `novels_source/${id}/_source.json`);
+const mainCharacterIds = [
+  'shinpai-aoto', 'shinpai-shizuno', 'shinpai-aina', 'shinpai-mikura',
+  'shinpai-shirato', 'shinpai-naruse', 'shinpai-katsuma', 'shinpai-koshima',
+  'shinpai-honda', 'shinpai-ishikamori', 'shinpai-hoshino', 'shinpai-akane',
+];
+const allCharacterIds = [...mainCharacterIds, 'shinpai-teacher', 'shinpai-crowd'];
 let vite;
 let data;
 let LibraryView;
@@ -28,20 +35,20 @@ before(async () => {
 
 after(async () => { await vite?.close(); });
 
-test('Shinpai skeleton metadata and main-character roster are synchronized', () => {
+test('Shinpai metadata and full character roster are synchronized', () => {
   assert.ok(novel(web));
   assert.deepEqual(novel(web), novel(mobile));
   assert.deepEqual(characters(web), characters(mobile));
-  const source = readJson(new URL('../../', import.meta.url), `novels_source/${id}/_source.json`);
-  assert.equal(novel(web).synopsis, source.synopsis);
-  assert.equal(novel(web).totalOriginalChapters, source.totalChapters);
+  assert.equal(novel(web).synopsis, sourceRegistry.synopsis);
+  assert.equal(novel(web).totalOriginalChapters, sourceRegistry.totalChapters);
   assert.equal(novel(web).translationSource.url, 'https://www.nekopost.net/novel/17236');
-  assert.deepEqual(characters(web).map(c => c.id), ['shinpai-aoto', 'shinpai-shizuno', 'shinpai-aina']);
+  assert.deepEqual(characters(web).map(c => c.id), allCharacterIds);
 });
 
-test('cover, banner and individual portraits contain real local artwork', () => {
+test('cover, banner and official portraits contain real local artwork', () => {
   const { coverUrl, bannerUrl } = novel(web);
-  const avatars = characters(web).map(c => c.avatarUrl);
+  const avatars = characters(web).map(c => c.avatarUrl).filter(Boolean);
+  assert.equal(avatars.length, 3);
   assert.equal(new Set([coverUrl, bannerUrl, ...avatars]).size, 5);
   for (const asset of [bannerUrl, ...avatars]) {
     const bytes = readFileSync(new URL(`public/${asset}`, web));
@@ -54,21 +61,30 @@ test('cover, banner and individual portraits contain real local artwork', () => 
   assert.deepEqual([...cover.subarray(0, 3)], [0xff, 0xd8, 0xff]);
 });
 
-test('registered skeleton has its own normalized portraits and no invented chapters', () => {
-  const roster = data.getCharactersByNovelId(id);
-  assert.equal(roster.length, 3);
-  assert.ok(roster.every(c => c.avatarUrl.endsWith(`illustrations/char_${c.id.replace('shinpai-', 'shinpai_')}.jpg`)));
-  const ids = roster.map(c => c.id);
-  for (const characterId of ids) {
-    assert.equal(data.allCharacters.filter(c => c.id === characterId).length, 1);
-  }
-  assert.deepEqual(data.getChaptersByNovelId(id), []);
-  for (const base of [web, mobile]) {
-    assert.deepEqual(readdirSync(new URL(`src/data/novels/${id}/chapters/`, base)), ['index.ts']);
+test('all 69 source chapters are converted and synchronized across web and mobile', () => {
+  assert.equal(sourceRegistry.chapters.length, 69);
+  const chapters = data.getChaptersByNovelId(id);
+  assert.equal(chapters.length, 69);
+  assert.equal(new Set(chapters.map(c => c.id)).size, 69);
+  assert.deepEqual(
+    chapters.map(c => c.chapterNumber).sort((a, b) => a - b),
+    sourceRegistry.chapters.map(c => Number(c.chapterNo)).sort((a, b) => a - b),
+  );
+  assert.ok(chapters.every(c => c.novelId === id && c.blocks.length > 0));
+  const webFiles = readdirSync(new URL(`src/data/novels/${id}/chapters/`, web)).filter(f => f.endsWith('.json')).sort();
+  const mobileFiles = readdirSync(new URL(`src/data/novels/${id}/chapters/`, mobile)).filter(f => f.endsWith('.json')).sort();
+  assert.deepEqual(webFiles, mobileFiles);
+  assert.equal(webFiles.length, 69);
+  for (const file of webFiles) {
+    assert.deepEqual(
+      readJson(web, `src/data/novels/${id}/chapters/${file}`),
+      readJson(mobile, `src/data/novels/${id}/chapters/${file}`),
+      `${file} differs between web and mobile`,
+    );
   }
 });
 
-test('novel detail shows only this roster and the existing waiting-for-conversion state', () => {
+test('novel detail shows converted chapters and only this novel roster', () => {
   const noop = () => {};
   const markup = renderToStaticMarkup(React.createElement(LibraryView, {
     novels: data.allNovels,
@@ -80,9 +96,13 @@ test('novel detail shows only this roster and the existing waiting-for-conversio
     onSelectNovel: noop, onSelectChapter: noop, onToggleTheme: noop,
     onOpenSettings: noop, onOpenRoster: noop,
   }));
-  assert.ok(markup.includes('กำลังรอแปลงตอนเข้าสู่ระบบ'));
-  assert.ok(!markup.includes('เริ่มอ่านตอนที่ 1'));
-  for (const character of characters(web)) assert.ok(markup.includes(character.name));
+  assert.ok(!markup.includes('กำลังรอแปลงตอนเข้าสู่ระบบ'));
+  assert.ok(markup.includes('Ch.1') || markup.includes('บทที่ 1') || markup.includes('เริ่มอ่านตอนที่ 1'));
+  for (const characterId of mainCharacterIds) {
+    const character = characters(web).find(c => c.id === characterId);
+    assert.ok(character);
+    assert.ok(markup.includes(character.name), `Missing main character: ${character.name}`);
+  }
   for (const character of data.allCharacters.filter(c => !c.id.startsWith('shinpai-'))) {
     assert.ok(!markup.includes(character.name), `Unrelated character leaked: ${character.name}`);
   }

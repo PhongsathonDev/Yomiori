@@ -114,7 +114,11 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
       return ['renai-ryoma', 'renai-arisa', 'renai-reo', 'renai-shizuku'].includes(c.id);
     }
     if (currentNovel.id === 'shinpai-kanojo') {
-      return ['shinpai-aoto', 'shinpai-shizuno', 'shinpai-aina'].includes(c.id);
+      return [
+        'shinpai-aoto', 'shinpai-shizuno', 'shinpai-aina', 'shinpai-mikura',
+        'shinpai-shirato', 'shinpai-naruse', 'shinpai-katsuma', 'shinpai-koshima',
+        'shinpai-honda', 'shinpai-ishikamori', 'shinpai-hoshino', 'shinpai-akane',
+      ].includes(c.id);
     }
     if (currentNovel.id === 'kokou-na-kanojo') {
       return ['kokou-takumi', 'kokou-kotori', 'kokou-akira'].includes(c.id);
