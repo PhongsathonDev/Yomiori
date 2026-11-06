@@ -12,8 +12,7 @@
       "mappingSha256": "98f15f11807c37ca4eb929f772ab9147a6033e5759d8840c2b0c83bcacc66b05",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "98f15f11807c37ca4eb929f772ab9147a6033e5759d8840c2b0c83bcacc66b05",
         "result": "pass"
       }
@@ -27,8 +26,7 @@
       "mappingSha256": "c2d31588bd6d33078a8c4631387ef7ab55a5dad75a5e05087eb217d4e862df36",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "c2d31588bd6d33078a8c4631387ef7ab55a5dad75a5e05087eb217d4e862df36",
         "result": "pass"
       }
@@ -42,8 +40,7 @@
       "mappingSha256": "83ea790aa6fec062da232b732b94684d4f973708bf69b8a70c9424999f2d5ec6",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "83ea790aa6fec062da232b732b94684d4f973708bf69b8a70c9424999f2d5ec6",
         "result": "pass"
       }
@@ -54,13 +51,13 @@
       "outputId": "ch-04",
       "workerBatch": "A",
       "mappingPath": ".conversion/shinpai-kanojo/maps/226231.json",
-      "mappingSha256": "791692a2808da2dcb7ec8727b8b0e550ed79a2737eea8613c9f697c2629850d4",
+      "mappingSha256": "f4b7a37cfd45cd576e13971588d74ef295c61866d7cf3f52518c567b5f8c8c92",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "791692a2808da2dcb7ec8727b8b0e550ed79a2737eea8613c9f697c2629850d4",
-        "result": "pass"
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "f4b7a37cfd45cd576e13971588d74ef295c61866d7cf3f52518c567b5f8c8c92",
+        "result": "fixed",
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -72,8 +69,7 @@
       "mappingSha256": "0fc673762f4c806f78a7d94835542dcd9dbbee4665240629b4e9c1c43599c29e",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "0fc673762f4c806f78a7d94835542dcd9dbbee4665240629b4e9c1c43599c29e",
         "result": "pass"
       }
@@ -87,8 +83,7 @@
       "mappingSha256": "24c9d9c044dcbae52faf888c19a07f031ac36df512c65586310f27459ce3dd8b",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "24c9d9c044dcbae52faf888c19a07f031ac36df512c65586310f27459ce3dd8b",
         "result": "pass"
       }
@@ -102,8 +97,7 @@
       "mappingSha256": "cf7bdc212e4bd919d7c77364eadee5d05a2ecc1d3063bf440b44cf66a57d3639",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "cf7bdc212e4bd919d7c77364eadee5d05a2ecc1d3063bf440b44cf66a57d3639",
         "result": "pass"
       }
@@ -117,8 +111,7 @@
       "mappingSha256": "8372b12b758cfdb83cc937dfa6bf63e43f4e04063d865c7ac62afeb9c7236923",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "8372b12b758cfdb83cc937dfa6bf63e43f4e04063d865c7ac62afeb9c7236923",
         "result": "pass"
       }
@@ -132,8 +125,7 @@
       "mappingSha256": "b08d0e3c23d3f5e5f794f0c9e174788d8862ae4974191cf48eaa67cf639f067b",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "b08d0e3c23d3f5e5f794f0c9e174788d8862ae4974191cf48eaa67cf639f067b",
         "result": "pass"
       }
@@ -147,8 +139,7 @@
       "mappingSha256": "f16aa23c1a7d67130dc3fe92aeec947c62da7a176818489fe2bf652da47b48f5",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "f16aa23c1a7d67130dc3fe92aeec947c62da7a176818489fe2bf652da47b48f5",
         "result": "pass"
       }
@@ -159,13 +150,13 @@
       "outputId": "ch-10",
       "workerBatch": "B",
       "mappingPath": ".conversion/shinpai-kanojo/maps/226423.json",
-      "mappingSha256": "e96b75f138cbb94666c21c1e6185f1b41333c0b4e4e9ea59268880855e776005",
+      "mappingSha256": "2e5da60b46b820095ee1f836dd64de5e90b60833095448b7e71e08b8ffd159c7",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "e96b75f138cbb94666c21c1e6185f1b41333c0b4e4e9ea59268880855e776005",
-        "result": "pass"
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "2e5da60b46b820095ee1f836dd64de5e90b60833095448b7e71e08b8ffd159c7",
+        "result": "fixed",
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -177,8 +168,7 @@
       "mappingSha256": "eec14cfc39f081fdbaeeab7c41416bb24dce46bbe162644204123109772df600",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "eec14cfc39f081fdbaeeab7c41416bb24dce46bbe162644204123109772df600",
         "result": "pass"
       }
@@ -192,8 +182,7 @@
       "mappingSha256": "ef7dff8dfa09b938e9ebb59b1837b423d9e9b01b9791d27cde9efe5ce2920861",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "ef7dff8dfa09b938e9ebb59b1837b423d9e9b01b9791d27cde9efe5ce2920861",
         "result": "pass"
       }
@@ -207,8 +196,7 @@
       "mappingSha256": "eb68d2d04b6485669e40351fd45edaf6bfc57b5024742de5dd9a105d18987376",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "eb68d2d04b6485669e40351fd45edaf6bfc57b5024742de5dd9a105d18987376",
         "result": "pass"
       }
@@ -222,8 +210,7 @@
       "mappingSha256": "51613bde4945751a401f6fe1e8ebd9e33999d081e346b3dff5511932f5a3e364",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "51613bde4945751a401f6fe1e8ebd9e33999d081e346b3dff5511932f5a3e364",
         "result": "pass"
       }
@@ -234,13 +221,13 @@
       "outputId": "ch-15",
       "workerBatch": "B",
       "mappingPath": ".conversion/shinpai-kanojo/maps/226428.json",
-      "mappingSha256": "6b499f1bcafc1b1878f65ef5c867cee5f6aa5448ca4af71b064c22db9bfe990e",
+      "mappingSha256": "e32beabdc36098a323d2f36e21b4c911e99df8dd6dbc7709ee54b0a839e14cf2",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "6b499f1bcafc1b1878f65ef5c867cee5f6aa5448ca4af71b064c22db9bfe990e",
-        "result": "pass"
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "e32beabdc36098a323d2f36e21b4c911e99df8dd6dbc7709ee54b0a839e14cf2",
+        "result": "fixed",
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -252,8 +239,7 @@
       "mappingSha256": "65f871e01ec9761cb9e3d71fbf7597f027810b365df9cb539dac2397be39184e",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "65f871e01ec9761cb9e3d71fbf7597f027810b365df9cb539dac2397be39184e",
         "result": "pass"
       }
@@ -267,8 +253,7 @@
       "mappingSha256": "f1beee8c82549206cca427b917727536e699ef59443c3a69580cfc8d8c9aa094",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "f1beee8c82549206cca427b917727536e699ef59443c3a69580cfc8d8c9aa094",
         "result": "pass"
       }
@@ -282,8 +267,7 @@
       "mappingSha256": "fd358d0b9fa3f86d35ef2920b8e5cb90365b240f1a3b44a291dab9c816af15b7",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "fd358d0b9fa3f86d35ef2920b8e5cb90365b240f1a3b44a291dab9c816af15b7",
         "result": "pass"
       }
@@ -297,8 +281,7 @@
       "mappingSha256": "6322eb1e60b40040836a249b3f55a790b59b386e21db1c43c3ecb47394975f72",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "6322eb1e60b40040836a249b3f55a790b59b386e21db1c43c3ecb47394975f72",
         "result": "pass"
       }
@@ -312,8 +295,7 @@
       "mappingSha256": "15546776fcd7e40d170d94c1fcebc4ddae2fbd3cd9a70c5a46cf1066903e6b3e",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "15546776fcd7e40d170d94c1fcebc4ddae2fbd3cd9a70c5a46cf1066903e6b3e",
         "result": "pass"
       }
@@ -327,8 +309,7 @@
       "mappingSha256": "3b134e3629939d8724366a3c7a4bf292be5051ac374f4477243be21d98794f06",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "3b134e3629939d8724366a3c7a4bf292be5051ac374f4477243be21d98794f06",
         "result": "pass"
       }
@@ -342,8 +323,7 @@
       "mappingSha256": "cdb7b5945b772cbf0a8ce9b9c9dfde6316cc1ecbccc20380f81e41995a8e1772",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "cdb7b5945b772cbf0a8ce9b9c9dfde6316cc1ecbccc20380f81e41995a8e1772",
         "result": "pass"
       }
@@ -354,14 +334,13 @@
       "outputId": "ch-23",
       "workerBatch": "C",
       "mappingPath": ".conversion/shinpai-kanojo/maps/226436.json",
-      "mappingSha256": "bd12b1a3a2678ce0dcc3033e45265de79ce4cf2d6c03a275b7d55b9093d90702",
+      "mappingSha256": "dd4f495e98f1e821b00ad7ad9d5985dfbc9f324a6473f36b1257486c7d4e1152",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "bd12b1a3a2678ce0dcc3033e45265de79ce4cf2d6c03a275b7d55b9093d90702",
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "dd4f495e98f1e821b00ad7ad9d5985dfbc9f324a6473f36b1257486c7d4e1152",
         "result": "fixed",
-        "note": "ตรวจซ้ำโดย main agent: พบสลับผู้พูดช่วง p59–p66 และแก้แล้ว"
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -373,8 +352,7 @@
       "mappingSha256": "1ac47569b7b49444b0665d9647be371b1bda1f56818e702b693184fccec45f6d",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "1ac47569b7b49444b0665d9647be371b1bda1f56818e702b693184fccec45f6d",
         "result": "pass"
       }
@@ -388,8 +366,7 @@
       "mappingSha256": "6f5962cecf18716a003527019817edd71ba7e63a32de83218917eb4c14ea8712",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "6f5962cecf18716a003527019817edd71ba7e63a32de83218917eb4c14ea8712",
         "result": "pass"
       }
@@ -403,8 +380,7 @@
       "mappingSha256": "46658e15816cdcdf5d1aff54a76c39d16a4a807ea7e069c819872f38ea832a8b",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "46658e15816cdcdf5d1aff54a76c39d16a4a807ea7e069c819872f38ea832a8b",
         "result": "pass"
       }
@@ -418,8 +394,7 @@
       "mappingSha256": "d81f7b3b9fb1c0c986ce33b299bcbea94ea9eab87de064ac5d52e0de6479fc31",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "d81f7b3b9fb1c0c986ce33b299bcbea94ea9eab87de064ac5d52e0de6479fc31",
         "result": "pass"
       }
@@ -433,8 +408,7 @@
       "mappingSha256": "b2e9b7d69f20770f2810a0037b55220015fb284f4e04967ec8a6f7f85aec88f8",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "b2e9b7d69f20770f2810a0037b55220015fb284f4e04967ec8a6f7f85aec88f8",
         "result": "pass"
       }
@@ -448,8 +422,7 @@
       "mappingSha256": "e446df8a587b900e6f0dd45bbb7ec7f4d1a4192509bfa8a091e6fa938d8c6b92",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "e446df8a587b900e6f0dd45bbb7ec7f4d1a4192509bfa8a091e6fa938d8c6b92",
         "result": "pass"
       }
@@ -463,8 +436,7 @@
       "mappingSha256": "aed21784656851ba55dee053a14e25f4be6ca762b525f40397721d42c9050605",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "aed21784656851ba55dee053a14e25f4be6ca762b525f40397721d42c9050605",
         "result": "pass"
       }
@@ -478,8 +450,7 @@
       "mappingSha256": "d99ddf4f89902f2a67b8a2887887d4513a9ba683621655f79658d21db06be707",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "d99ddf4f89902f2a67b8a2887887d4513a9ba683621655f79658d21db06be707",
         "result": "pass"
       }
@@ -493,8 +464,7 @@
       "mappingSha256": "f6d61b0e4c2505503baabcac56a6828ba91d9dcbbad064d1eabfbe906bbd86c9",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "f6d61b0e4c2505503baabcac56a6828ba91d9dcbbad064d1eabfbe906bbd86c9",
         "result": "pass"
       }
@@ -508,8 +478,7 @@
       "mappingSha256": "145ff6e2a47da28256a579c84e5a9d0134cc001b651672cc7caad077c5a262ef",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "145ff6e2a47da28256a579c84e5a9d0134cc001b651672cc7caad077c5a262ef",
         "result": "pass"
       }
@@ -523,8 +492,7 @@
       "mappingSha256": "a980f0f555037d339a126d8f80a770c4ecde449b40297c3f62ac9f9a246e1d4e",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "a980f0f555037d339a126d8f80a770c4ecde449b40297c3f62ac9f9a246e1d4e",
         "result": "pass"
       }
@@ -538,8 +506,7 @@
       "mappingSha256": "ad4a633bb45cd14d7d843741d91f0be9751b67d32b467950f920bfd6328c1dc5",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "ad4a633bb45cd14d7d843741d91f0be9751b67d32b467950f920bfd6328c1dc5",
         "result": "pass"
       }
@@ -553,8 +520,7 @@
       "mappingSha256": "aec5f64303082dccaf6f89ad80e680d1b0040571231b489beb9ce9535dd33b45",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "aec5f64303082dccaf6f89ad80e680d1b0040571231b489beb9ce9535dd33b45",
         "result": "pass"
       }
@@ -568,8 +534,7 @@
       "mappingSha256": "df1e72fde5b967099e6161fcea645cbde0b3aa3296518882f314f23856971037",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "df1e72fde5b967099e6161fcea645cbde0b3aa3296518882f314f23856971037",
         "result": "pass"
       }
@@ -583,8 +548,7 @@
       "mappingSha256": "93f5e4136e722d07da4f029e942fc34dec81a630c7d30645d6c2a5d203fa35ac",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "93f5e4136e722d07da4f029e942fc34dec81a630c7d30645d6c2a5d203fa35ac",
         "result": "pass"
       }
@@ -598,8 +562,7 @@
       "mappingSha256": "56f9e42598b02ca72b48259c6acef96de64e18b03dd08a3be78b4f29452573f3",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "56f9e42598b02ca72b48259c6acef96de64e18b03dd08a3be78b4f29452573f3",
         "result": "pass"
       }
@@ -613,8 +576,7 @@
       "mappingSha256": "ce5ba16d377bb2960026c5fe5f40eeb702dcf81a1445bbe3a08773b917cafbdc",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "ce5ba16d377bb2960026c5fe5f40eeb702dcf81a1445bbe3a08773b917cafbdc",
         "result": "pass"
       }
@@ -628,8 +590,7 @@
       "mappingSha256": "c4d2f1f0e7d13219632f2593559147f08781cdc0f97778732c784a4a0fc6129d",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "c4d2f1f0e7d13219632f2593559147f08781cdc0f97778732c784a4a0fc6129d",
         "result": "pass"
       }
@@ -643,8 +604,7 @@
       "mappingSha256": "5ca52f49ff1706d5c8dd6619a90c6d0d4c96997fcf0c1a9d228ce7b333fefe6c",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "5ca52f49ff1706d5c8dd6619a90c6d0d4c96997fcf0c1a9d228ce7b333fefe6c",
         "result": "pass"
       }
@@ -658,8 +618,7 @@
       "mappingSha256": "2b39d4d69263255e8b4db13d8a36a79d06be38b305d69a575a73c12b4d966788",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "2b39d4d69263255e8b4db13d8a36a79d06be38b305d69a575a73c12b4d966788",
         "result": "pass"
       }
@@ -673,8 +632,7 @@
       "mappingSha256": "c47d30754bbe10e75d2475d2e26dace4d97bd24d00da35395fdcd11db10033f5",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "c47d30754bbe10e75d2475d2e26dace4d97bd24d00da35395fdcd11db10033f5",
         "result": "pass"
       }
@@ -688,8 +646,7 @@
       "mappingSha256": "f9d0e4d93ef3ae8ab793cdc290dcd1d6fd8d1b8c8354b2a82f844557ac37a005",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "f9d0e4d93ef3ae8ab793cdc290dcd1d6fd8d1b8c8354b2a82f844557ac37a005",
         "result": "pass"
       }
@@ -703,8 +660,7 @@
       "mappingSha256": "10fba947992a50d10c0fdc2e375834654d0e57146b3b0907485c99ff76861184",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "10fba947992a50d10c0fdc2e375834654d0e57146b3b0907485c99ff76861184",
         "result": "pass"
       }
@@ -718,8 +674,7 @@
       "mappingSha256": "2b0756ae969b7ca7ff0b04d5973c33d3f67be3ad86083362ef2c2ca648cb63e4",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "2b0756ae969b7ca7ff0b04d5973c33d3f67be3ad86083362ef2c2ca648cb63e4",
         "result": "pass"
       }
@@ -730,13 +685,13 @@
       "outputId": "ch-46",
       "workerBatch": "E",
       "mappingPath": ".conversion/shinpai-kanojo/maps/227223.json",
-      "mappingSha256": "fef363487eb256999e33a0aa8f72b1b24ec3c519451bbd2aff27273fa541e3fc",
+      "mappingSha256": "7eca568310e3c4998b908cac7803089875616d065e89b9cf7a4804a66d798ba2",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "fef363487eb256999e33a0aa8f72b1b24ec3c519451bbd2aff27273fa541e3fc",
-        "result": "pass"
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "7eca568310e3c4998b908cac7803089875616d065e89b9cf7a4804a66d798ba2",
+        "result": "fixed",
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -745,13 +700,13 @@
       "outputId": "ch-47",
       "workerBatch": "F",
       "mappingPath": ".conversion/shinpai-kanojo/maps/227225.json",
-      "mappingSha256": "1e3d6ad78205a85c0036b45814cd78b854376afcaa0f57edac8ee9d64044e5de",
+      "mappingSha256": "e9b4ed7fe574d8a7eea8d868ccdb7919c933c7150b9a91f4a33f8f9227129bfc",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "1e3d6ad78205a85c0036b45814cd78b854376afcaa0f57edac8ee9d64044e5de",
-        "result": "pass"
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "e9b4ed7fe574d8a7eea8d868ccdb7919c933c7150b9a91f4a33f8f9227129bfc",
+        "result": "fixed",
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -763,8 +718,7 @@
       "mappingSha256": "1827b0ed99acea28906e82bf7f915a384d05be11a395b2f4f0cb57b863d0f9f4",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "1827b0ed99acea28906e82bf7f915a384d05be11a395b2f4f0cb57b863d0f9f4",
         "result": "pass"
       }
@@ -778,8 +732,7 @@
       "mappingSha256": "718a1b5d6cc8412855f7d98aafc1ba981be11938a6fe50d4ec224503cae3b1fb",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "718a1b5d6cc8412855f7d98aafc1ba981be11938a6fe50d4ec224503cae3b1fb",
         "result": "pass"
       }
@@ -790,13 +743,13 @@
       "outputId": "ch-50",
       "workerBatch": "F",
       "mappingPath": ".conversion/shinpai-kanojo/maps/227229.json",
-      "mappingSha256": "dd7d2efe5acc2aff7b1712b47d9e3edc3ebd5d249560a1f1a70540e436e6cac5",
+      "mappingSha256": "0d07f0f9b55c79b67f3f6ae7c83d9525afdbd753fdb7a9cc0bd9021be4d9152a",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "dd7d2efe5acc2aff7b1712b47d9e3edc3ebd5d249560a1f1a70540e436e6cac5",
-        "result": "pass"
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "0d07f0f9b55c79b67f3f6ae7c83d9525afdbd753fdb7a9cc0bd9021be4d9152a",
+        "result": "fixed",
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -808,8 +761,7 @@
       "mappingSha256": "bf814510b723e0100cd61d4a346a4e9911e8f74dbbd1b677699994032a5c448d",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "bf814510b723e0100cd61d4a346a4e9911e8f74dbbd1b677699994032a5c448d",
         "result": "pass"
       }
@@ -823,8 +775,7 @@
       "mappingSha256": "b41472e98ed781d95c3efcc974221cf0d21ce59523c3280b74842382db2c8b1c",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "b41472e98ed781d95c3efcc974221cf0d21ce59523c3280b74842382db2c8b1c",
         "result": "pass"
       }
@@ -835,13 +786,13 @@
       "outputId": "ch-53",
       "workerBatch": "F",
       "mappingPath": ".conversion/shinpai-kanojo/maps/227321.json",
-      "mappingSha256": "3d9ddc01085bd656fd4edb0227bbcf555ac7fe8e716390ecd6edacec914a88ea",
+      "mappingSha256": "90ebaf19b398eda4a47bb850b22dde647f6dcedc12d083a8beef7ba1ba447e94",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "3d9ddc01085bd656fd4edb0227bbcf555ac7fe8e716390ecd6edacec914a88ea",
-        "result": "pass"
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "90ebaf19b398eda4a47bb850b22dde647f6dcedc12d083a8beef7ba1ba447e94",
+        "result": "fixed",
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -853,8 +804,7 @@
       "mappingSha256": "b8b373208d8fad28f40fae8a24eb720168dfd4217106c8ed9f6168ee81200068",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "b8b373208d8fad28f40fae8a24eb720168dfd4217106c8ed9f6168ee81200068",
         "result": "pass"
       }
@@ -868,8 +818,7 @@
       "mappingSha256": "e8bc8e2d09356ba9e825639cbb32287519ea391fc9f8f13cad79a5727f535925",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
+        "reviewer": "independent-subagent",
         "reviewedMappingSha256": "e8bc8e2d09356ba9e825639cbb32287519ea391fc9f8f13cad79a5727f535925",
         "result": "pass"
       }
@@ -880,13 +829,13 @@
       "outputId": "ch-55-5",
       "workerBatch": "F",
       "mappingPath": ".conversion/shinpai-kanojo/maps/227328.json",
-      "mappingSha256": "6795e093c3300f711a0cb25d0fea7705216462a8a9f592879adabd726d9d7f50",
+      "mappingSha256": "9f643364177731d510737cd4873ec62219333d324fdec278e995971eef7bd3b2",
       "status": "applied",
       "review": {
-        "reviewer": "main-agent-targeted-audit",
-        "independentSubagentReview": "unavailable: DNS getaddrinfo ENOTFOUND opencode.ai",
-        "reviewedMappingSha256": "6795e093c3300f711a0cb25d0fea7705216462a8a9f592879adabd726d9d7f50",
-        "result": "pass"
+        "reviewer": "independent-subagent",
+        "reviewedMappingSha256": "9f643364177731d510737cd4873ec62219333d324fdec278e995971eef7bd3b2",
+        "result": "fixed",
+        "note": "พบประเด็นใน independent review และแก้ mapping/receipt แล้ว"
       }
     },
     {
@@ -1039,5 +988,10 @@
         "result": "pass"
       }
     }
-  ]
+  ],
+  "reviewSummary": {
+    "reviewed": 69,
+    "fixes": 9,
+    "note": "Independent reviewers A-F completed; reviewer G failed on DNS and batch G was reviewed by the main agent."
+  }
 }

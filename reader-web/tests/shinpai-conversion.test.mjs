@@ -18,7 +18,12 @@ const mainCharacterIds = [
   'shinpai-shirato', 'shinpai-naruse', 'shinpai-katsuma', 'shinpai-koshima',
   'shinpai-honda', 'shinpai-ishikamori', 'shinpai-hoshino', 'shinpai-akane',
 ];
-const allCharacterIds = [...mainCharacterIds, 'shinpai-teacher', 'shinpai-crowd'];
+const allCharacterIds = [
+  'shinpai-aoto', 'shinpai-shizuno', 'shinpai-aina', 'shinpai-mikura',
+  'shinpai-shirato', 'shinpai-naruse', 'shinpai-katsuma', 'shinpai-koshima',
+  'shinpai-honda', 'shinpai-ishikamori', 'shinpai-hoshino', 'shinpai-yumi',
+  'shinpai-akane', 'shinpai-teacher', 'shinpai-crowd',
+];
 let vite;
 let data;
 let LibraryView;

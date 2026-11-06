@@ -713,7 +713,15 @@
         {
           "start": 0,
           "end": 22,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "shinpai-shizuno",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ข้อความในวงเล็บเหลี่ยมเป็นเนื้อความแชทที่ส่งมาจาก “คุณยูนางิ” ตามบทบรรยายก่อนหน้า"
+          }
         }
       ]
     },

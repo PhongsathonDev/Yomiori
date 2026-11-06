@@ -802,14 +802,13 @@
         {
           "start": 0,
           "end": 5,
-          "type": "dialogue",
-          "speakerId": "shinpai-shizuno",
+          "type": "narration",
           "review": {
             "confirmed": true,
             "context": [
               "p62-1"
             ],
-            "reason": "ตรวจบริบท p62-1 แล้ว คำพูดนี้เป็นของ ยูนางิ ชิซุโนะ"
+            "reason": "มีแต่เครื่องหมายคำพูดและความเงียบ เป็นปฏิกิริยาเงียบของชิซุโนะ ไม่ใช่คำพูด"
           }
         }
       ]
@@ -1101,25 +1100,15 @@
       "segments": [
         {
           "start": 0,
-          "end": 13,
-          "type": "narration"
-        },
-        {
-          "start": 13,
-          "end": 37,
+          "end": 41,
           "type": "narration",
           "review": {
             "confirmed": true,
             "context": [
               "p88-1"
             ],
-            "reason": "ตรวจบริบทแล้ว ช่วงเครื่องหมายคำพูดนี้เป็นข้อความบรรยาย/ความคิด ไม่ใช่บทสนทนาที่มีผู้พูด"
+            "reason": "ถ้อยคำที่ยกมาเป็นคำพูดในใจที่ถูกกล่าวถึงในบรรยายเดียวกัน จึงคงเป็น narration ทั้งย่อหน้า"
           }
-        },
-        {
-          "start": 37,
-          "end": 41,
-          "type": "narration"
         }
       ]
     },
