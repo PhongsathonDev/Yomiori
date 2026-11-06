@@ -30,11 +30,21 @@ function assetBase(projectId, chapterId) {
 // Novel bodies store CDN placeholders ({file_fs}image_x.jpg) instead of absolute URLs.
 function resolveContent(html, projectId, chapterId, fileUrls = {}) {
   const base = assetBase(projectId, chapterId);
-  return String(html).replace(/\{file_(?:fs|img|audio)\}([^\s"'<>]+)/g, (_, file) => {
+  const resolved = String(html).replace(/\{file_(?:fs|img|audio)\}([^\s"'<>]+)/g, (_, file) => {
     // Use the access URL supplied by the reader API, including its signed query.
     const url = fileUrls && own(fileUrls, file) ? fileUrls[file] : null;
     return typeof url === 'string' && url ? url : base + file;
   });
+  // Older chapters embed absolute URLs and key fileUrls by that exact URL,
+  // rather than by the placeholder filename. Use the reader's supplied URL;
+  // never guess authorization parameters or match unrelated files by basename.
+  return resolved.replace(/(<img\b[^>]*\ssrc\s*=\s*)(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi,
+    (tag, prefix, double, single, unquoted) => {
+      const original = decodeEntities(double ?? single ?? unquoted);
+      const url = fileUrls && own(fileUrls, original) ? fileUrls[original] : null;
+      return typeof url === 'string' && url
+        ? `${prefix}"${url.replace(/&/g, '&amp;').replace(/"/g, '&quot;')}"` : tag;
+    });
 }
 
 function chapterNumber(value) {

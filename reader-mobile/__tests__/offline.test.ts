@@ -234,6 +234,17 @@ describe('metadata, settings and progress compatibility', () => {
     },
   );
 
+  test('Renai metadata skeleton has four characters and no invented readable chapters', async () => {
+    const novelId = 'renai-soudan';
+    expect(await fetchNovels(true)).toContainEqual(expect.objectContaining({ id: novelId, totalOriginalChapters: 127 }));
+    expect((await fetchCharacters(novelId, true)).map(character => character.id)).toEqual([
+      'renai-ryoma', 'renai-arisa', 'renai-reo', 'renai-shizuku',
+    ]);
+    expect(await getAvailableChapterList(novelId, true)).toEqual([]);
+    expect(getBundledChapter(novelId, 'ch-01')).toBeNull();
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
   test('Shinpai skeleton is available offline without inventing a readable chapter', async () => {
     const novelId = 'shinpai-kanojo';
     expect(await fetchNovels(true)).toContainEqual(expect.objectContaining({

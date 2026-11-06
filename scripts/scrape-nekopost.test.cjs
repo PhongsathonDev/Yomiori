@@ -27,6 +27,18 @@ test('source emphasis survives HTML conversion', () => {
     ['A *thought* and **note**.']);
 });
 
+test('legacy absolute image URLs use only their exact reader-provided signed mapping', () => {
+  const original = 'https://www.osemocphoto.com/collectManga/14609/7/a.jpg';
+  const signed = original + '?verify=provided&extra=value';
+  for (const attribute of [`"${original}"`, `'${original}'`, original]) {
+    const html = resolveContent(`<img src=${attribute}>`, 14609, 7, { [original]: signed });
+    assert.equal(imageTags(html)[0].source, signed);
+  }
+  assert.equal(imageTags(resolveContent('<img src="{file_fs}a.jpg">', 14609, 7, { [original]: signed }))[0].source, signed);
+  const other = 'https://example.com/a.jpg';
+  assert.equal(resolveContent(`<img src="${other}">`, 14609, 7, { [original]: signed }), `<img src="${other}">`);
+});
+
 function encrypt(data) {
   const salt = Buffer.from('12345678');
   let derived = Buffer.alloc(0);
