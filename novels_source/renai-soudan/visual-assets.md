@@ -1,4 +1,4 @@
-# Renai Soudan — original non-sexual character artwork
+# Renai Soudan — original character artwork
 
 - Thai source / metadata: https://www.nekopost.net/novel/14609
 - Original WN: https://ncode.syosetu.com/n5018if/
@@ -6,40 +6,12 @@
 - Author credit: Tetsujin jusu (source spelling); official 鉄人じゅす.
 - Illustrator: Tantan / たん旦. Official ISBN: 9784086315487.
 
-Only three non-sexual original references are retained from chapter 0 (chapterId
-162013), obtained through image access URLs supplied by the site's reader API:
+## Chapter 0 gallery
 
-| Reference | Original image position | Canonical source URL |
-| --- | --- | --- |
-| `reference_cover.jpg` | 1 | https://www.osemocphoto.com/collectManga/14609/162013/image_674911db764396.09871720.jpeg |
-| `reference_lunch.jpg` | 3 | https://www.osemocphoto.com/collectManga/14609/162013/image_674911db7a8635.05321909.jpeg |
-| `reference_characters.jpg` | 17 | https://www.osemocphoto.com/collectManga/14609/162013/image_674911db8a76b8.99358192.jpeg |
-
-The references are stored unchanged; the full illustration chapter is not archived.
-The character chart explicitly labels 小暮涼真, 朝比奈アリサ, 平沢獅子 and 大月雫.
-The same four identities and their relationships are confirmed by the Nekopost and
-official publisher synopses. No AI artwork or speculative character matching is used.
-Three portraits use the original full-color lunch illustration, which labels each
-character by name. Arisa’s front-facing portrait uses the original color cover. Only cropping and resizing are applied; no AI
-colorization, redrawing or linework changes are used. The original monochrome
-portraits remain available as older assets. New portrait paths avoid reusing
-cached monochrome images on existing clients.
-
-## Reader derivatives
-
-Paths relative to `reader-web/public/illustrations/`. Cover copied byte-for-byte;
-other files cropped and resized with Lanczos, JPEG quality 88.
-
-| Reader asset | Reference | Crop (left, top, right, bottom) | Output |
-| --- | --- | --- | --- |
-| `renai_banner.jpg` | `reference_lunch.jpg` | `(37, 0, 1317, 720)` | 960×540 |
-| `char_renai_ryoma_color.jpg` | `reference_lunch.jpg` | `(180, 390, 390, 600)` | 512×512 |
-| `char_renai_arisa_front.jpg` | `reference_cover.jpg` | `(155, 20, 395, 260)` | 512×512 |
-| `char_renai_reo_color.jpg` | `reference_lunch.jpg` | `(456, 257, 666, 467)` | 512×512 |
-| `char_renai_shizuku_color.jpg` | `reference_lunch.jpg` | `(710, 234, 920, 444)` | 512×512 |
-
-Web and mobile share avatar paths. Existing mobile apps may refresh CDN metadata;
-this does not add chapters or change the native bundled chapter set.
+- `Ch_00_ภาพประกอบ.md` เก็บคำบรรยายครบ 27 ภาพตามลำดับต้นทาง
+- ไฟล์ภาพที่เก็บมี 3 ภาพอ้างอิงที่ไม่ใช่ภาพเชิงเพศ: ปก, ภาพสี 2 (ภาพฉากกินข้าว) และแนะนำตัวละคร
+- ภาพแกลเลอรีอีก 24 ภาพไม่ถูกดาวน์โหลดหรือเก็บ เพื่อไม่เก็บภาพเชิงเพศของตัวละครวัยเรียน
+- ภาพอ้างอิงทั้งสามเป็นไฟล์ต้นฉบับที่ไม่ผ่าน AI; ใช้ครอบ/ย่อขนาดเฉพาะไฟล์ที่นำไปแสดงใน reader
 
 ## Reference SHA-256
 
