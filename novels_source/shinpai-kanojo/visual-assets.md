@@ -17,18 +17,27 @@ Original publisher images (downloaded unchanged):
 - `publisher_spread_01.jpg`: https://dash.shueisha.co.jp/imagesBook/978-4-08-631602-6-01.jpg (909×480)
 - `publisher_spread_02.jpg`: https://dash.shueisha.co.jp/imagesBook/978-4-08-631602-6-02.jpg (909×480)
 
-The author explicitly notes that the LN changes its supporting cast. Use only the
-three characters whose identities match the WN: 桜庭碧人 (Aoto), 遊薙静乃
-(Shizuno), 桜庭藍奈 (Aina). The official character spread labels them by name;
-Aina introduces herself as Aoto's younger sister in WN chapter 15. Do not assign
-LN-only 湯野椿 or the changed supporting character 白戸華澄 to WN characters.
-This skeleton is not a complete speaker roster for future chapter conversion.
+The author explicitly states that Aoto, Shizuno, **Shirato** and Aina retain almost
+the same characterization in the LN (announcement paragraphs 105–106). The earlier
+note excluding Shirato was overly restrictive and has been corrected. Her official
+portrait is labeled 白戸華澄 in the publisher character spread. The added LN-only
+湯野椿 must not be assigned to a WN character. The author confirms that WN supporting
+heroines 御倉, 成瀬, 古柴 and 紗和 were removed from the LN.
+
+Aoto, Shizuno, Aina and Shirato use original publisher artwork. The other 11 roster
+entries use AI portraits explicitly authorized by the user on 2026-11-06 when no
+verified official portrait was found. Their hair, facial features and other visual
+details are imagined, not canonical character designs. Teacher and crowd are role
+illustrations rather than verified individual appearances. See
+`generated-portraits.json` for prompts, asset paths and SHA-256 hashes.
 
 ## Reader assets
 
 Paths below are relative to `reader-web/public/illustrations/`.
 `shinpai_cover.jpg` is a byte-for-byte copy of the official cover.
-No AI artwork, recoloring, inpainting or replacement faces are used.
+The four publisher portraits are cropped only; no recoloring, inpainting or
+replacement faces. Generated avatars have distinct `_ai.png` paths and are copied
+unchanged from the image generation output. They are not source chapter illustrations.
 JPEG crops use quality 88 and Lanczos resizing.
 
 | Asset | Original | Crop (left, top, right, bottom) | Output |
@@ -36,6 +45,7 @@ JPEG crops use quality 88 and Lanczos resizing.
 | `shinpai_banner.jpg` | `publisher_spread_02.jpg` | `(0, 0, 853, 480)` | 960×540 |
 | `char_shinpai_aoto.jpg` | `publisher_spread_01.jpg` | `(745, 15, 909, 179)` | 512×512 |
 | `char_shinpai_shizuno.jpg` | `publisher_cover.jpg` | `(70, 0, 310, 240)` | 512×512 |
+| `char_shinpai_shirato.jpg` | `publisher_spread_01.jpg` | `(186, 65, 318, 197)` | 512×512 |
 | `char_shinpai_aina.jpg` | `publisher_spread_01.jpg` | `(0, 65, 150, 215)` | 512×512 |
 
 These three original references are not chapter inserts. They are not added to

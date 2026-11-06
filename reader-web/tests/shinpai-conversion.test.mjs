@@ -50,15 +50,15 @@ test('Shinpai metadata and full character roster are synchronized', () => {
   assert.deepEqual(characters(web).map(c => c.id), allCharacterIds);
 });
 
-test('cover, banner and official portraits contain real local artwork', () => {
+test('cover, banner and all roster portraits contain local artwork', () => {
   const { coverUrl, bannerUrl } = novel(web);
   const avatars = characters(web).map(c => c.avatarUrl).filter(Boolean);
-  assert.equal(avatars.length, 3);
-  assert.equal(new Set([coverUrl, bannerUrl, ...avatars]).size, 5);
+  assert.equal(avatars.length, allCharacterIds.length);
+  assert.equal(new Set([coverUrl, bannerUrl, ...avatars]).size, 2 + allCharacterIds.length);
   for (const asset of [bannerUrl, ...avatars]) {
     const bytes = readFileSync(new URL(`public/${asset}`, web));
     assert.ok(bytes.length > 1000);
-    assert.deepEqual([...bytes.subarray(0, 3)], [0xff, 0xd8, 0xff]);
+    assert.deepEqual([...bytes.subarray(0, 3)], asset.endsWith('.png') ? [0x89, 0x50, 0x4e] : [0xff, 0xd8, 0xff]);
   }
   const cover = readFileSync(new URL(`public/${coverUrl}`, web));
   const original = readFileSync(new URL(`../../novels_source/${id}/illustrations/publisher_cover.jpg`, import.meta.url));
