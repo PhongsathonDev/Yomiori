@@ -57,7 +57,7 @@ test('cover, banner and individual portraits contain real local artwork', () => 
 test('registered skeleton has its own normalized portraits and no invented chapters', () => {
   const roster = data.getCharactersByNovelId(id);
   assert.equal(roster.length, 4);
-  assert.ok(roster.every(c => c.avatarUrl.endsWith(`illustrations/char_${c.id.replace('renai-', 'renai_')}_color.jpg`)));
+  assert.ok(roster.every(c => c.avatarUrl.endsWith(`illustrations/char_${c.id.replace('renai-', 'renai_')}_${c.id === 'renai-arisa' ? 'front' : 'color'}.jpg`)));
   const ids = roster.map(c => c.id);
   for (const characterId of ids) {
     assert.equal(data.allCharacters.filter(c => c.id === characterId).length, 1);

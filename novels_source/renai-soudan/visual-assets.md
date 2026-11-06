@@ -19,10 +19,10 @@ The references are stored unchanged; the full illustration chapter is not archiv
 The character chart explicitly labels 小暮涼真, 朝比奈アリサ, 平沢獅子 and 大月雫.
 The same four identities and their relationships are confirmed by the Nekopost and
 official publisher synopses. No AI artwork or speculative character matching is used.
-All four active portraits use the original full-color lunch illustration, which
-labels each character by name. Only cropping and resizing are applied; no AI
+Three portraits use the original full-color lunch illustration, which labels each
+character by name. Arisa’s front-facing portrait uses the original color cover. Only cropping and resizing are applied; no AI
 colorization, redrawing or linework changes are used. The original monochrome
-portraits remain available as older assets. New `_color.jpg` paths avoid reusing
+portraits remain available as older assets. New portrait paths avoid reusing
 cached monochrome images on existing clients.
 
 ## Reader derivatives
@@ -34,7 +34,7 @@ other files cropped and resized with Lanczos, JPEG quality 88.
 | --- | --- | --- | --- |
 | `renai_banner.jpg` | `reference_lunch.jpg` | `(37, 0, 1317, 720)` | 960×540 |
 | `char_renai_ryoma_color.jpg` | `reference_lunch.jpg` | `(180, 390, 390, 600)` | 512×512 |
-| `char_renai_arisa_color.jpg` | `reference_lunch.jpg` | `(875, 55, 1205, 385)` | 512×512 |
+| `char_renai_arisa_front.jpg` | `reference_cover.jpg` | `(155, 20, 395, 260)` | 512×512 |
 | `char_renai_reo_color.jpg` | `reference_lunch.jpg` | `(456, 257, 666, 467)` | 512×512 |
 | `char_renai_shizuku_color.jpg` | `reference_lunch.jpg` | `(710, 234, 920, 444)` | 512×512 |
 
