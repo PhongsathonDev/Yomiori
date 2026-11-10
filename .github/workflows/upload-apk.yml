@@ -1,0 +1,86 @@
+name: Upload APK to draft release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing draft release tag (for example v1.0.2)
+        required: true
+        type: string
+      apk_url:
+        description: Public EAS APK artifact URL
+        required: true
+        type: string
+      sha256:
+        description: SHA-256 of the locally verified APK
+        required: true
+        type: string
+      source_commit:
+        description: Full source commit SHA used by EAS
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-apk-${{ inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: ${{ inputs.tag }}
+      APK_URL: ${{ inputs.apk_url }}
+      EXPECTED_SHA256: ${{ inputs.sha256 }}
+      SOURCE_COMMIT: ${{ inputs.source_commit }}
+    steps:
+      - name: Validate inputs and draft release source
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess, urllib.parse
+          tag = os.environ['RELEASE_TAG']
+          assert re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+', tag), 'Invalid version tag'
+          assert re.fullmatch(r'[0-9a-f]{64}', os.environ['EXPECTED_SHA256']), 'Invalid SHA-256'
+          assert re.fullmatch(r'[0-9a-f]{40}', os.environ['SOURCE_COMMIT']), 'Invalid source commit'
+          url = urllib.parse.urlsplit(os.environ['APK_URL'])
+          assert url.scheme == 'https' and url.netloc == 'expo.dev', 'Expected an EAS artifact URL'
+          assert url.path.startswith('/artifacts/eas/') and url.path.endswith('.apk') and not url.query and not url.fragment
+          release = json.loads(subprocess.check_output(['gh', 'api', f"repos/{os.environ['GH_REPO']}/releases/tags/{tag}"]))
+          assert release['draft'], 'Only draft releases can receive assets through this workflow'
+          assert release['target_commitish'] == os.environ['SOURCE_COMMIT'], 'Release must target the APK source commit'
+          with open(os.environ['GITHUB_ENV'], 'a') as output:
+              output.write(f'APK_NAME=Yomiori-{tag[1:]}.apk\n')
+          PY
+      - name: Download APK and verify its checksum
+        run: |
+          node --input-type=module <<'JS'
+          import { createWriteStream } from 'node:fs';
+          import { Readable } from 'node:stream';
+          import { pipeline } from 'node:stream/promises';
+          const response = await fetch(process.env.APK_URL, {
+            headers: { 'User-Agent': 'node-fetch/1.0 (+https://github.com/bitinn/node-fetch)' },
+            signal: AbortSignal.timeout(180000),
+          });
+          if (!response.ok) throw new Error(`APK download failed: ${response.status}`);
+          await pipeline(Readable.fromWeb(response.body), createWriteStream(process.env.APK_NAME));
+          JS
+          python3 - <<'PY'
+          import hashlib, os, pathlib, zipfile
+          apk = pathlib.Path(os.environ['APK_NAME'])
+          digest = hashlib.file_digest(apk.open('rb'), 'sha256').hexdigest()
+          assert digest == os.environ['EXPECTED_SHA256'], 'APK checksum mismatch'
+          with zipfile.ZipFile(apk) as archive:
+              assert 'AndroidManifest.xml' in archive.namelist() and 'classes.dex' in archive.namelist()
+              assert archive.testzip() is None, 'Damaged APK archive'
+          pathlib.Path(str(apk) + '.sha256').write_text(f'{digest}  {apk.name}\n')
+          PY
+      - name: Upload verified assets to the draft
+        run: gh release upload "$RELEASE_TAG" "$APK_NAME" "$APK_NAME.sha256" --repo "$GH_REPO" --clobber

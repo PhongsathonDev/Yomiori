@@ -21,6 +21,10 @@ npm start
 
 โปรเจกต์ตั้งค่าไฟล์ `eas.json` ไว้เป็นโหมด **APK Standalone** เรียบร้อยแล้ว (สามารถติดตั้งบนมือถือได้โดยตรง ไม่ต้องผ่าน Google Play):
 
+ก่อน build APK รุ่นใหม่เพื่อลง GitHub Releases ให้เพิ่ม `expo.version` และ `expo.android.versionCode` ใน `reader-mobile/app.json` พร้อมปรับเวอร์ชันรากของ `package.json` และ `package-lock.json` ให้ตรงกัน ใช้แท็ก Release เป็น `v<expo.version>` และชี้ไปยัง source commit ที่นำไป build จริง ผู้ใช้ย้ำความต้องการให้เพิ่มเลขเวอร์ชันเมื่อออกรุ่นใหม่เมื่อ 10 November 2026
+
+ตรวจเลขเวอร์ชันที่ resolve จาก `npx expo config --type public` แล้ว commit/push ก่อนสั่ง build เพื่อให้ EAS ระบุ source commit ได้ตรงกับ Release รักษา package และคีย์เซ็นเดิมไว้ build APK จาก config ที่มีเลขเวอร์ชันใหม่ดังกล่าว
+
 รันจาก `reader-mobile` หลังตรวจงานและถึงรอบส่งมอบที่ผู้ใช้ต้องการแล้ว ไม่สั่ง cloud build เพียงเพราะแก้เอกสารหรือ push ข้อมูล:
 
 ```sh
