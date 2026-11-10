@@ -34,6 +34,8 @@ npx eas-cli@latest build -p android --profile preview
 
 ใช้บัญชี/โครงการ/credentials เดิมตาม app.json และ eas.json เมื่อ build สำเร็จ EAS จะแสดงลิงก์ APK ให้ติดตั้งทับแอปเดิมโดยรักษาข้อมูล ทำ [device checks](reader-mobile/VALIDATION.md#required-device-checks-before-delivery) และบันทึกผลจริงก่อนรายงานว่าผ่านการตรวจบนเครื่อง
 
+เมื่อลง GitHub Releases ให้เตรียม draft ที่ชี้ไปยัง source commit ของ APK พร้อมรายการเปลี่ยนแปลง ตรวจเวอร์ชันใน APK และใบรับรองเซ็นเทียบกับรุ่นเดิม แล้วแนบ APK กับไฟล์ SHA-256 หากช่องทางอัปโหลดของเครื่องทำงานไม่ได้ ใช้ workflow [Upload APK to draft release](.github/workflows/upload-apk.yml) โดยระบุแท็ก draft, EAS APK URL, checksum ที่ตรวจแล้ว และ source commit จากนั้นตรวจ digest ของ asset บน GitHub ให้ตรงก่อนเผยแพร่ Release ตัว workflow อัปโหลดเฉพาะไฟล์ที่ผ่านการตรวจและไม่เผยแพร่ draft เอง
+
 ---
 
 ## 🛠️ 3. เอกสารและข้อมูลที่เกี่ยวข้อง

@@ -4,6 +4,20 @@ Archived on 29 October 2026 from the previous VALIDATION.md. The original text b
 
 ---
 
+## 10 November 2026 — Android 1.0.2 APK and GitHub Release
+
+Published [v1.0.2](https://github.com/PhongsathonDev/Yomiori/releases/tag/v1.0.2) as a preview/pre-release with Thai change notes, `Yomiori-1.0.2.apk` and its SHA-256 file. APK source: `0d111f2882fc611ade753bcfef3c530d772296db`; the release tag resolves to that exact commit. App/package versions were increased together to 1.0.2 and Android versionCode to 3 before building; package `com.phongsathon.yomiori`, EAS project and signing identity were preserved.
+
+[EAS build 46eda977-c53a-4b39-a7b9-c8958e1ddaac](https://expo.dev/accounts/mochimint/projects/yomiori-reader/builds/46eda977-c53a-4b39-a7b9-c8958e1ddaac) finished successfully at 2026-11-10 04:05:04 UTC using the existing preview profile and frozen remote credentials. Typecheck, lint, all 167 mobile tests and resolved Expo config consistency checks passed after the version bump.
+
+Downloaded APK verification: AndroidManifest.xml reports versionName 1.0.2, versionCode 3 and the expected package. ZIP CRC checks passed. Size: 92,019,518 bytes. SHA-256: `4d665b00151b7aef1413d2fe89e57ff96eaf06288255855eec8d7e481b8ed12f`. The signing certificate SHA-256 is `e6f8b48c4c9ca265cfcfd7f4e01f49b03680162e7ad6bcf0301d945cfc45dbf1`, matching the preceding 1.0.1 APK.
+
+The local environment's direct GitHub asset upload returned HTTP 401 while release API access remained available. Added the manual `Upload APK to draft release` workflow; it validates the draft's source commit, downloads only an EAS APK URL, verifies its expected hash/archive and uploads through a scoped repository GITHUB_TOKEN. [Run 42754358640](https://github.com/PhongsathonDev/Yomiori/actions/runs/42754358640) passed. The GitHub asset digest/size were checked against the locally verified APK before publishing. Workflow/release documentation commits after the APK source do not change the packaged app.
+
+Native installation over existing data, device gestures, lifecycle, offline cold start and accessibility checks remain pending. Certificate/version compatibility and successful compilation do not certify those device checks. Install the update without uninstalling or clearing data when performing acceptance.
+
+---
+
 ## 10 November 2026 — Read indicators in chapter contents
 
 Source: the commit containing this record, based on `9f440b7`. The reader marks a chapter read only after a user scroll reaches the measured end of ReaderStory, above comments/navigation and clear of the reading dock. Opening/restoring a chapter alone does not mark it read. Completion is saved in a separate per-novel AsyncStorage history, serialized to preserve concurrent chapter writes; it persists across rereading and download deletion without changing resume anchors or manually completed shelf status. Existing last-position data cannot reconstruct older per-chapter history, so previous chapters are not inferred as read.
