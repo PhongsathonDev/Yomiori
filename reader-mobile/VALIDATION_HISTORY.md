@@ -4,6 +4,18 @@ Archived on 29 October 2026 from the previous VALIDATION.md. The original text b
 
 ---
 
+## 10 November 2026 — Compact bookshelf and manual completion
+
+Source: the implementation commit containing this record, based on `81e08838d16ffc199289d408a6ea09fd8bf1f88f`.
+
+- Replaced the expanded home cards with a two-column FlatList, search, status tabs, genre filters, persisted sorting and a compact continue-reading card. Personal completion uses independent per-novel AsyncStorage keys; chapter files, progress anchors and existing preferences retain their paths/keys. New chapters and rereading never automatically unarchive a book.
+- `npm run typecheck` and `npm run lint`: passed. `npm test -- --silent`: all 146 tests in 9 suites passed. Added coverage for persisted completion/restore, sorting and failed writes, stale refreshes, no-history/all-completed states, composed search/filtering over 100 novels, and preserving downloaded chapters/progress. Updated the existing Shinpai roster assertion from its obsolete three-character list to the fifteen characters already present in the unchanged bundled data.
+- `npx expo export --platform android --output-dir dist/android --max-workers 2`: passed (3,009 modules). This verifies JS/assets packaging, not an APK/native build. `npm run benchmark:scan`: all 4 existing storage benchmark scenarios passed; this is no claim about device startup time or the new screen's native scrolling performance.
+- Browser layout review used the actual BookshelfScreen through a temporary React Native Web harness with mocked catalog/progress/storage adapters and a 100-book fixture. Chromium checks passed at 320- and 768-pixel widths, in light/sepia/OLED themes, including complete/reload/restore and empty-search recovery. Screenshots were visually reviewed; enlarged text was approximated at 1.625×. No horizontal document overflow or browser JS errors were observed. This is supporting layout evidence, not Android font scaling, TalkBack or gesture validation.
+- Native checks remain pending: no Android device, adb or emulator is available in this environment. Small-screen/native text scaling, lifecycle/airplane-mode behavior, install-over-existing-data and native accessibility/performance have not been certified. No APK or EAS cloud build was created in this implementation pass.
+
+---
+
 # Reader reliability validation
 
 Run from `reader-mobile`:

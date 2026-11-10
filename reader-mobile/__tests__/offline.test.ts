@@ -14,6 +14,7 @@ import blackCatConversion from '../src/data/novels/black-cat-hangout/conversion-
 import bundledNovels from '../src/data/novels.json';
 import bundledNazekaCharacters from '../src/data/novels/nazeka-natsukareta-rashii/characters.json';
 import { isNovelList } from '../src/services/validation';
+import { getShelfStatuses, saveShelfStatus } from '../src/services/bookshelf';
 
 jest.mock('expo-file-system/legacy', () => ({
   documentDirectory: 'file:///docs/', EncodingType: { UTF8: 'utf8' },
@@ -252,6 +253,10 @@ describe('metadata, settings and progress compatibility', () => {
     }));
     expect((await fetchCharacters(novelId, true)).map(character => character.id)).toEqual([
       'shinpai-aoto', 'shinpai-shizuno', 'shinpai-aina',
+      'shinpai-mikura', 'shinpai-shirato', 'shinpai-naruse',
+      'shinpai-katsuma', 'shinpai-koshima', 'shinpai-honda',
+      'shinpai-ishikamori', 'shinpai-hoshino', 'shinpai-yumi',
+      'shinpai-akane', 'shinpai-teacher', 'shinpai-crowd',
     ]);
     expect(await getAvailableChapterList(novelId, true)).toEqual([]);
     expect(getBundledChapter(novelId, 'ch-01')).toBeNull();
@@ -652,4 +657,18 @@ test('failed updates preserve readable text and do not claim a bundled fallback 
   fetchMock.mockRejectedValue(new Error('Offline'));
   expect(await downloadChapterOnDemand('black-cat-hangout', 'ch-60', true)).toEqual({ status: 'failed' });
   expect((await loadChapterOffline('black-cat-hangout', 'ch-60'))?.id).toBe('ch-60');
+});
+
+test('shelf organization preserves downloaded chapters and progress; clearing downloads preserves organization', async () => {
+  await saveChapterOffline(chapter);
+  await saveReadingProgress(chapter.novelId, chapter.id, 42);
+  const before = await getReadingProgress(chapter.novelId);
+  await saveShelfStatus(chapter.novelId, 'completed');
+  expect(await loadChapterOffline(chapter.novelId, chapter.id)).toEqual(chapter);
+  expect(await getReadingProgress(chapter.novelId)).toEqual(before);
+  await clearNovelOfflineStorage(chapter.novelId);
+  expect(await getShelfStatuses([chapter.novelId])).toEqual({ [chapter.novelId]: 'completed' });
+  expect(await getReadingProgress(chapter.novelId)).toEqual(before);
+  await saveShelfStatus(chapter.novelId, 'active');
+  expect(await getReadingProgress(chapter.novelId)).toEqual(before);
 });
