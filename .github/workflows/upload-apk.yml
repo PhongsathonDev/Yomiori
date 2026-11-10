@@ -53,9 +53,9 @@ jobs:
           url = urllib.parse.urlsplit(os.environ['APK_URL'])
           assert url.scheme == 'https' and url.netloc == 'expo.dev', 'Expected an EAS artifact URL'
           assert url.path.startswith('/artifacts/eas/') and url.path.endswith('.apk') and not url.query and not url.fragment
-          release = json.loads(subprocess.check_output(['gh', 'api', f"repos/{os.environ['GH_REPO']}/releases/tags/{tag}"]))
-          assert release['draft'], 'Only draft releases can receive assets through this workflow'
-          assert release['target_commitish'] == os.environ['SOURCE_COMMIT'], 'Release must target the APK source commit'
+          release = json.loads(subprocess.check_output(['gh', 'release', 'view', tag, '--repo', os.environ['GH_REPO'], '--json', 'isDraft,targetCommitish']))
+          assert release['isDraft'], 'Only draft releases can receive assets through this workflow'
+          assert release['targetCommitish'] == os.environ['SOURCE_COMMIT'], 'Release must target the APK source commit'
           with open(os.environ['GITHUB_ENV'], 'a') as output:
               output.write(f'APK_NAME=Yomiori-{tag[1:]}.apk\n')
           PY
