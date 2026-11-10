@@ -4,6 +4,14 @@ Archived on 29 October 2026 from the previous VALIDATION.md. The original text b
 
 ---
 
+## 10 November 2026 — Per-book genre tags
+
+Source: the commit containing this entry, based on `fabefd4`. Each bookshelf card now shows all of its catalog tags below the title as wrapping badges, with a screen-reader hint listing the same tags. Cards without tags omit the badge area.
+
+`npm run typecheck`, `npm run lint`, and `npm test -- --silent bookshelf` passed (17 tests). The temporary React Native Web review harness confirmed that all tags, including long tags, fit inside a card at 320 and 768 pixels in light/sepia/dark themes; screenshots were visually reviewed and no browser errors were observed. This is browser layout evidence; native Android layout and accessibility checks remain pending. No APK was built.
+
+---
+
 ## 10 November 2026 — Compact bookshelf and manual completion
 
 Source: the implementation commit containing this record, based on `81e08838d16ffc199289d408a6ea09fd8bf1f88f`.

@@ -251,10 +251,15 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
           onBack={query.trim() || tag !== 'all' ? clearFilters : tab === 'active' && completedCount > 0 ? () => chooseTab('completed') : undefined}
           backLabel={query.trim() || tag !== 'all' ? 'ล้างตัวกรอง' : 'ดูเรื่องที่อ่านจบแล้ว'} />}
         renderItem={({ item: novel }) => <View style={[styles.book, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
-          <Pressable accessibilityRole="button" accessibilityLabel={`รายละเอียด ${novel.title}`} onPress={() => navigation.navigate('NovelDetail', { novelId: novel.id })}>
+          <Pressable accessibilityRole="button" accessibilityLabel={`รายละเอียด ${novel.title}`} accessibilityHint={novel.tags?.length ? `แท็ก: ${novel.tags.join(', ')}` : undefined} onPress={() => navigation.navigate('NovelDetail', { novelId: novel.id })}>
             <BookCover uri={novel.coverUrl} style={styles.cover} />
             <View style={styles.bookInfo}>
               <Text numberOfLines={3} style={[styles.bookTitle, { color: colors.text }]}>{novel.title}</Text>
+              {!!novel.tags?.length && <View style={styles.bookTags}>
+                {novel.tags.map((novelTag, index) => <View key={`${novelTag}-${index}`} style={[styles.bookTag, { backgroundColor: colors.primaryBg }]}>
+                  <Text style={[styles.bookTagText, { color: colors.primary }]}>{novelTag}</Text>
+                </View>)}
+              </View>}
               <Text style={[styles.small, { color: colors.textMuted }]}>{chapters[novel.id] === undefined ? 'กำลังโหลดจำนวนตอน' : `${chapters[novel.id].length} ตอน`}</Text>
               <Text style={[styles.small, { color: statuses[novel.id] === 'completed' ? colors.primary : colors.textMuted }]}>{readLabel(novel)}</Text>
             </View>
@@ -323,6 +328,9 @@ const styles = StyleSheet.create({
   cover: { width: '100%', aspectRatio: 2 / 3 },
   bookInfo: { padding: 10, gap: 6 },
   bookTitle: { fontSize: 14, lineHeight: 21, fontWeight: '700' },
+  bookTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
+  bookTag: { maxWidth: '100%', borderRadius: 6, paddingHorizontal: 6, paddingVertical: 3 },
+  bookTagText: { fontSize: 11, lineHeight: 16 },
   bookMenu: { position: 'absolute', top: 6, right: 6, borderWidth: 1 },
   modalRoot: { flex: 1, justifyContent: 'flex-end' },
   backdrop: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, backgroundColor: 'rgba(0,0,0,0.5)' },
