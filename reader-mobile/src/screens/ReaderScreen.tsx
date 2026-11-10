@@ -36,6 +36,7 @@ import {
   getReadingProgress,
 } from '../services/storage';
 import { themes } from '../theme/colors';
+import { getReadChapterIds, markChapterRead } from '../services/chapterReadHistory';
 import { readerStyles as styles } from '../theme/readerStyles';
 import { ReaderStory } from '../components/ReaderStory';
 import { ReaderHeader, ReaderDock, ReaderReveal } from '../components/ReaderChrome';
@@ -82,6 +83,11 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const [cacheWarning, setCacheWarning] = useState(false);
   const [progressWarning, setProgressWarning] = useState(false);
   const [readingProgress, setReadingProgress] = useState(0);
+  const [readChapterIds, setReadChapterIds] = useState<string[]>([]);
+  const [historyWarning, setHistoryWarning] = useState(false);
+  const historyActive = useRef(false);
+  const completionSaved = useRef(false);
+  const completionPending = useRef(false);
   const [selectedCharacter, setSelectedCharacter] = useState<Character | null>(null);
 
   // Settings & Immersion
@@ -116,6 +122,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   const blockCount = useRef(0);
   const spineY = useRef<number | null>(null);
   const storyY = useRef<number | null>(null);
+  const storyHeight = useRef<number | null>(null);
   const dragging = useRef(false);
   const restoreTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const programmatic = useRef(false);
@@ -128,12 +135,23 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   }, []);
   const onStoryLayout = useCallback((event: LayoutChangeEvent) => {
     storyY.current = event.nativeEvent.layout.y;
+    storyHeight.current = event.nativeEvent.layout.height;
     scheduleRestore();
   }, [scheduleRestore]);
   const onBlockLayout = useCallback((id: string, index: number, y: number, height: number) => {
     blockLayouts.current.set(id, { id, index, y, height });
     scheduleRestore();
   }, [scheduleRestore]);
+
+  useEffect(() => {
+    historyActive.current = true;
+    void getReadChapterIds(novelId).then(ids => {
+      if (!historyActive.current) return;
+      completionSaved.current ||= ids.includes(chapterId);
+      setReadChapterIds(previous => [...new Set([...previous, ...ids])]);
+    }).catch(() => { if (historyActive.current) setHistoryWarning(true); });
+    return () => { historyActive.current = false; };
+  }, [novelId, chapterId]);
 
   useEffect(() => {
     let active = true;
@@ -146,6 +164,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
     blockCount.current = 0;
     spineY.current = null;
     storyY.current = null;
+    storyHeight.current = null;
     currentAnchor.current = undefined;
     dragging.current = false;
     const writer = createProgressWriter(novelId, chapterId, () => {
@@ -225,6 +244,22 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
     const relative = contentOffset.y - (spineY.current ?? 0) - (storyY.current ?? 0);
     currentAnchor.current = anchorAtOffset([...blockLayouts.current.values()], relative);
     progressWriter.current?.update(percent, currentAnchor.current);
+    // Use the measured end of the story, before comments/navigation. Opening or
+    // restoring a chapter alone never marks it read; this path requires a user drag.
+    const bottomOverlay = showControls ? dockHeight : insets.bottom;
+    if (!completionSaved.current && !completionPending.current && chapter?.blocks.length
+      && spineY.current !== null && storyY.current !== null && storyHeight.current !== null && storyHeight.current > 0
+      && contentOffset.y + Math.max(0, layoutMeasurement.height - bottomOverlay) >= spineY.current + storyY.current + storyHeight.current - 2) {
+      completionPending.current = true;
+      void markChapterRead(novelId, chapterId).then(ids => {
+        completionSaved.current = true;
+        if (historyActive.current) {
+          setReadChapterIds(previous => [...new Set([...previous, ...ids, chapterId])]);
+          setHistoryWarning(false);
+        }
+      }).catch(() => { if (historyActive.current) setHistoryWarning(true); })
+        .finally(() => { completionPending.current = false; });
+    }
   };
   const toggleControls = useCallback(() => setShowControls(previous => !previous), []);
   const openIllustration = useCallback((uri: string, caption?: string) => {
@@ -355,8 +390,8 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
               </View>
             </Pressable>
 
-            {(cacheWarning || progressWarning) && <Text accessibilityRole="alert" style={[styles.loadingText, { color: themeColors.primary }]}>
-              {cacheWarning ? 'อ่านตอนนี้ได้ แต่ยังบันทึกออฟไลน์ไม่ได้ กรุณาตรวจสอบพื้นที่เครื่องแล้วลองอีกครั้ง' : 'ยังบันทึกการอ่านหรือการตั้งค่าไม่ได้ กรุณาตรวจสอบพื้นที่เครื่อง'}
+            {(cacheWarning || progressWarning || historyWarning) && <Text accessibilityRole="alert" style={[styles.loadingText, { color: themeColors.primary }]}>
+              {cacheWarning ? 'อ่านตอนนี้ได้ แต่ยังบันทึกออฟไลน์ไม่ได้ กรุณาตรวจสอบพื้นที่เครื่องแล้วลองอีกครั้ง' : historyWarning ? 'ยังโหลดหรือบันทึกสถานะอ่านแล้วไม่ได้ กรุณาตรวจสอบพื้นที่เครื่อง' : 'ยังบันทึกการอ่านหรือการตั้งค่าไม่ได้ กรุณาตรวจสอบพื้นที่เครื่อง'}
             </Text>}
             {cacheWarning && <Pressable accessibilityRole="button" onPress={retryChapter} style={styles.navChapterBtn}>
               <Text style={{ color: themeColors.primary }}>ลองบันทึกออฟไลน์อีกครั้ง</Text>
@@ -418,7 +453,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
         onSettings={openSettings} onLayout={measureDock} />
       {!showControls && !showChapterPicker && <ReaderReveal colors={themeColors} bottomInset={insets.bottom} onPress={revealControls} />}
 
-      <ChapterPickerModal visible={showChapterPicker} chapters={chapterList} currentChapterId={chapterId}
+      <ChapterPickerModal visible={showChapterPicker} chapters={chapterList} currentChapterId={chapterId} readChapterIds={readChapterIds}
         colors={themeColors} status={chapterListStatus} onSelect={selectChapter} onClose={closeContents} onRetry={retryContents} />
 
       {/* Typography & Layout Settings Modal */}

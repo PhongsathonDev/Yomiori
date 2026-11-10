@@ -50,6 +50,7 @@ import {
 } from '../services/storage';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import { themes } from '../theme/colors';
+import { getReadChapterIds } from '../services/chapterReadHistory';
 import { isNovelList } from '../services/validation';
 import bundledNovels from '../data/novels.json';
 import { BookCover } from '../components/BookCover';
@@ -84,6 +85,8 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
   const [currentTheme, setCurrentTheme] = useState<ReaderTheme>('light');
   const [loading, setLoading] = useState(true);
   const [chaptersLoading, setChaptersLoading] = useState(true);
+  const [readChapterIds, setReadChapterIds] = useState<string[]>([]);
+  const [historyError, setHistoryError] = useState(false);
 
   // Settings & Storage Modal State
   const [showSettingsModal, setShowSettingsModal] = useState(false);
@@ -105,7 +108,15 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
 
   const themeColors = themes[currentTheme];
 
+  const loadReadHistory = useCallback(async (isActive: () => boolean) => {
+    try {
+      const ids = await getReadChapterIds(novelId);
+      if (isActive()) { setReadChapterIds(ids); setHistoryError(false); }
+    } catch { if (isActive()) setHistoryError(true); }
+  }, [novelId]);
+
   const loadData = useCallback(async (isActive: () => boolean, preferCache = true) => {
+    void loadReadHistory(isActive);
     try {
       if (preferCache) {
         const [theme, catalog] = await Promise.all([getSavedTheme(), readMetadata('novels', isNovelList)]);
@@ -133,7 +144,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
     } finally {
       if (isActive()) { setLoading(false); setChaptersLoading(false); }
     }
-  }, [novelId]);
+  }, [novelId, loadReadHistory]);
 
   useEffect(() => {
     mounted.current = true;
@@ -412,6 +423,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
           {/* TAB 1: CHAPTERS LIST */}
           {activeTab === 'chapters' && (
             <View>
+              {historyError && <ScreenState colors={themeColors} message="ยังโหลดประวัติการอ่านไม่ได้" onRetry={() => { void loadReadHistory(() => mounted.current); }} />}
               {chaptersLoading ? <View style={{ paddingVertical: 24 }}><ActivityIndicator color={themeColors.primary} /></View>
                 : chapters.length === 0 && <ScreenState colors={themeColors} message="ยังไม่มีตอนให้อ่าน" onRetry={retry} />}
               {chapters.map((ch) => {
@@ -466,6 +478,10 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                         >
                           {ch.title || `ตอนที่ ${ch.chapterNumber}`}
                         </Text>
+                        {readChapterIds.includes(ch.id) && <View style={styles.readBadge}>
+                          <Check size={13} color={themeColors.primary} />
+                          <Text style={[styles.readBadgeText, { color: themeColors.primary }]}>อ่านแล้ว</Text>
+                        </View>}
                       </View>
                     </TouchableOpacity>
 
@@ -830,6 +846,8 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '500',
   },
+  readBadge: { flexDirection: 'row', alignItems: 'center', gap: 4, marginTop: 4 },
+  readBadgeText: { fontSize: 12, lineHeight: 18 },
   genreSection: { marginBottom: 16 },
   genreTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
   genreTag: { maxWidth: '100%', borderRadius: 8, paddingHorizontal: 10, paddingVertical: 5 },

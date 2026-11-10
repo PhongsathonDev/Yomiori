@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useRef } from 'react';
+import React, { memo, useCallback, useEffect, useRef, useMemo } from 'react';
 import { Modal, View, Text, Pressable, FlatList, StyleSheet, ActivityIndicator, ListRenderItemInfo } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { X, Check } from 'lucide-react-native';
@@ -9,6 +9,7 @@ interface Props {
   visible: boolean;
   chapters: ChapterListItem[];
   currentChapterId: string;
+  readChapterIds?: readonly string[];
   colors: ThemeColors;
   status: 'loading' | 'ready' | 'error';
   onSelect: (index: number) => void;
@@ -20,8 +21,10 @@ const MAX_AUTO_SCROLL_ATTEMPTS = 20;
 
 const keyExtractor = (chapter: ChapterListItem) => chapter.id;
 
-export const ChapterPickerModal = memo(function ChapterPickerModal({ visible, chapters, currentChapterId, colors, status, onSelect, onClose, onRetry }: Props) {
+export const ChapterPickerModal = memo(function ChapterPickerModal({ visible, chapters, currentChapterId, readChapterIds, colors, status, onSelect, onClose, onRetry }: Props) {
   const insets = useSafeAreaInsets();
+  const readIds = useMemo(() => new Set(readChapterIds), [readChapterIds]);
+  const listState = useMemo(() => ({ currentChapterId, readChapterIds }), [currentChapterId, readChapterIds]);
   const listRef = useRef<FlatList<ChapterListItem>>(null);
   const pendingIndex = useRef<number | null>(null);
   const viewportHeight = useRef(0);
@@ -76,17 +79,20 @@ export const ChapterPickerModal = memo(function ChapterPickerModal({ visible, ch
 
   const renderItem = useCallback(({ item, index }: ListRenderItemInfo<ChapterListItem>) => {
     const selected = item.id === currentChapterId;
+    const read = readIds.has(item.id);
     return <Pressable accessibilityRole="button" accessibilityLabel={`เลือกตอน ${item.title}`}
+      accessibilityHint={selected && read ? 'กำลังอ่าน · อ่านแล้ว' : read ? 'อ่านแล้ว' : selected ? 'กำลังอ่าน' : undefined}
       accessibilityState={{ selected }} onPress={() => onSelect(index)}
       style={[styles.row, { backgroundColor: selected ? colors.primaryBg : colors.card, borderBottomColor: colors.border }]}>
       <Text style={[styles.number, { color: colors.primary }]}>{item.chapterNumber}</Text>
       <View style={styles.titleGroup}>
-        <Text style={[styles.chapterTitle, { color: selected ? colors.primary : colors.text }]}>{item.title}</Text>
+        <Text style={[styles.chapterTitle, { color: selected ? colors.primary : read ? colors.textMuted : colors.text }]}>{item.title}</Text>
         {selected && <Text style={[styles.current, { color: colors.primary }]}>กำลังอ่าน</Text>}
+        {read && <Text style={[styles.current, { color: colors.textMuted }]}>อ่านแล้ว</Text>}
       </View>
-      {selected && <Check size={18} color={colors.primary} />}
+      {(selected || read) && <Check size={18} color={selected ? colors.primary : colors.textMuted} />}
     </Pressable>;
-  }, [colors, currentChapterId, onSelect]);
+  }, [colors, currentChapterId, readIds, onSelect]);
 
   return <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose} onShow={startAutoScroll}>
     <View style={[styles.overlay, { paddingTop: Math.max(16, insets.top), paddingBottom: Math.max(16, insets.bottom) }]}>
@@ -108,7 +114,7 @@ export const ChapterPickerModal = memo(function ChapterPickerModal({ visible, ch
             onLayout={event => { viewportHeight.current = event.nativeEvent.layout.height; scrollToCurrent(); }}
             onScrollToIndexFailed={onScrollToIndexFailed}
             onScrollBeginDrag={cancelAutoScroll}
-            extraData={currentChapterId} initialNumToRender={12} contentContainerStyle={styles.list} />}
+            extraData={listState} initialNumToRender={12} contentContainerStyle={styles.list} />}
       </View>
     </View>
   </Modal>;

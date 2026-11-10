@@ -1,4 +1,5 @@
 import React from 'react';
+import { getReadChapterIds } from '../src/services/chapterReadHistory';
 import { Alert, Linking, StyleSheet } from 'react-native';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import { NovelDetailScreen } from '../src/screens/NovelDetailScreen';
@@ -6,6 +7,7 @@ import { downloadChapterOnDemand, fetchNovels, getAvailableChapterList, fetchCha
 import { getChapterOfflineStatus, getNovelOfflineStats } from '../src/services/storage';
 import { Novel } from '../src/types';
 
+jest.mock('../src/services/chapterReadHistory', () => ({ getReadChapterIds: jest.fn(async () => []), markChapterRead: jest.fn(async () => []) }));
 jest.mock('react-native-safe-area-context', () => require('react-native-safe-area-context/jest/mock').default);
 jest.mock('expo-navigation-bar', () => ({ NavigationBar: () => null }));
 jest.mock('react-native/Libraries/Components/RefreshControl/RefreshControl', () => {
@@ -35,6 +37,7 @@ const props = {
 
 beforeEach(() => {
   jest.clearAllMocks();
+  jest.mocked(getReadChapterIds).mockResolvedValue([]);
   jest.mocked(fetchNovels).mockResolvedValue([novel]);
   jest.mocked(getAvailableChapterList).mockResolvedValue(chapters);
   jest.mocked(fetchCharacters).mockResolvedValue([]);
@@ -151,5 +154,16 @@ test('explicit update targets only readable chapters and locks competing actions
   expect(screen.getByLabelText('ลบไฟล์ออฟไลน์ทั้งหมดของเรื่องนี้')).toBeDisabled();
   await act(async () => { finish({ status: 'complete' }); });
   expect(downloadChapterOnDemand).toHaveBeenCalledTimes(1);
+  await view.unmount();
+});
+
+test('contents show saved read history independently of offline download status', async () => {
+  jest.mocked(getReadChapterIds).mockResolvedValue(['ch-2']);
+  const view = await render(<NovelDetailScreen {...props} />);
+  await screen.findByText('Chapter 2');
+  expect(screen.getAllByText('อ่านแล้ว')).toHaveLength(1);
+  expect(getReadChapterIds).toHaveBeenCalledWith(novel.id);
+  // All chapter download states are still missing, including the completed chapter.
+  expect(screen.getAllByLabelText('ดาวน์โหลดตอน')).toHaveLength(3);
   await view.unmount();
 });

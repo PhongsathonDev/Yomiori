@@ -15,6 +15,7 @@ import bundledNovels from '../src/data/novels.json';
 import bundledNazekaCharacters from '../src/data/novels/nazeka-natsukareta-rashii/characters.json';
 import { isNovelList } from '../src/services/validation';
 import { getShelfStatuses, saveShelfStatus } from '../src/services/bookshelf';
+import { getReadChapterIds, markChapterRead } from '../src/services/chapterReadHistory';
 
 jest.mock('expo-file-system/legacy', () => ({
   documentDirectory: 'file:///docs/', EncodingType: { UTF8: 'utf8' },
@@ -664,10 +665,12 @@ test('shelf organization preserves downloaded chapters and progress; clearing do
   await saveReadingProgress(chapter.novelId, chapter.id, 42);
   const before = await getReadingProgress(chapter.novelId);
   await saveShelfStatus(chapter.novelId, 'completed');
+  await markChapterRead(chapter.novelId, chapter.id);
   expect(await loadChapterOffline(chapter.novelId, chapter.id)).toEqual(chapter);
   expect(await getReadingProgress(chapter.novelId)).toEqual(before);
   await clearNovelOfflineStorage(chapter.novelId);
   expect(await getShelfStatuses([chapter.novelId])).toEqual({ [chapter.novelId]: 'completed' });
+  expect(await getReadChapterIds(chapter.novelId)).toEqual([chapter.id]);
   expect(await getReadingProgress(chapter.novelId)).toEqual(before);
   await saveShelfStatus(chapter.novelId, 'active');
   expect(await getReadingProgress(chapter.novelId)).toEqual(before);

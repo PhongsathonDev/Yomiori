@@ -1,4 +1,5 @@
 import React from 'react';
+import { getReadChapterIds, markChapterRead } from '../src/services/chapterReadHistory';
 import { AppState, StyleSheet, ScrollView } from 'react-native';
 import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import { ReaderScreen } from '../src/screens/ReaderScreen';
@@ -10,6 +11,7 @@ import { themes } from '../src/theme/colors';
 import { Chapter, Character } from '../src/types';
 import longChapter from '../src/data/novels/kyudo-senpai/chapters/ch-69.json';
 
+jest.mock('../src/services/chapterReadHistory', () => ({ getReadChapterIds: jest.fn(async () => []), markChapterRead: jest.fn(async () => []) }));
 jest.mock('react-native-safe-area-context', () => require('react-native-safe-area-context/jest/mock').default);
 jest.mock('expo-navigation-bar', () => ({ NavigationBar: () => null }));
 jest.mock('expo-font', () => ({ useFonts: () => [true, null] }));
@@ -43,6 +45,8 @@ const props = {
 beforeEach(() => {
   jest.useRealTimers();
   jest.clearAllMocks();
+  jest.mocked(getReadChapterIds).mockResolvedValue([]);
+  jest.mocked(markChapterRead).mockResolvedValue([]);
   loaded.mockResolvedValue({ chapter, cacheWarning: false });
   jest.mocked(fetchCharacters).mockResolvedValue([]);
   jest.mocked(getAvailableChapterList).mockResolvedValue([]);
@@ -295,5 +299,79 @@ test('floating font chip opens settings and quick theme buttons persist selectio
   expect(screen.getByRole('radio', { name: 'ธีมโทนอุ่น' }).props.accessibilityState.selected).toBe(true);
   await fireEvent.press(screen.getByRole('button', { name: 'ตั้งค่าการอ่าน' }));
   expect(screen.getByLabelText('เพิ่มขนาดตัวอักษร')).toBeTruthy();
+  await view.unmount();
+});
+
+async function setCompletionGeometry() {
+  const scroll = screen.getByTestId('reader-scroll');
+  await fireEvent(scroll, 'layout', { nativeEvent: { layout: { height: 400 } } });
+  await fireEvent(scroll, 'contentSizeChange', 320, 3000);
+  await fireEvent(screen.getByTestId('reader-spine'), 'layout', { nativeEvent: { layout: { y: 100 } } });
+  await fireEvent(screen.getByTestId('reader-story'), 'layout', { nativeEvent: { layout: { y: 100, height: 800 } } });
+  return scroll;
+}
+const scrollCompletion = (scroll: ReturnType<typeof screen.getByTestId>, y: number) => fireEvent(scroll, 'scrollEndDrag', {
+  nativeEvent: { contentOffset: { y }, contentSize: { height: 3000 }, layoutMeasurement: { height: 400 } },
+});
+
+test('marks only the reached chapter at the story end, before comments and the page bottom', async () => {
+  jest.mocked(getAvailableChapterList).mockResolvedValue([
+    { id: 'ch-01', novelId: chapter.novelId, chapterNumber: 1, title: 'ตอนก่อนหน้า' },
+    { id: chapter.id, novelId: chapter.novelId, chapterNumber: chapter.chapterNumber, title: chapter.title },
+  ]);
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  const scroll = await setCompletionGeometry();
+  // A restored or programmatic position alone is not evidence of reading.
+  await scrollCompletion(scroll, 2600);
+  expect(markChapterRead).not.toHaveBeenCalled();
+  await fireEvent(scroll, 'scrollBeginDrag');
+  await scrollCompletion(scroll, 600); // The dock still covers the final lines.
+  expect(markChapterRead).not.toHaveBeenCalled();
+  await scrollCompletion(scroll, 660);
+  await waitFor(() => expect(markChapterRead).toHaveBeenCalledWith(chapter.novelId, chapter.id));
+  expect(saved).toHaveBeenLastCalledWith(chapter.novelId, chapter.id, 660 / 2600 * 100);
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  expect(screen.getByRole('button', { name: `เลือกตอน ${chapter.title}` }).props.accessibilityHint).toBe('กำลังอ่าน · อ่านแล้ว');
+  expect(screen.getByRole('button', { name: 'เลือกตอน ตอนก่อนหน้า' }).props.accessibilityHint).toBeUndefined();
+  await fireEvent.press(screen.getByRole('button', { name: 'ปิดสารบัญ' }));
+  await fireEvent(scroll, 'scrollBeginDrag');
+  await scrollCompletion(scroll, 100);
+  await scrollCompletion(scroll, 660);
+  expect(markChapterRead).toHaveBeenCalledTimes(1);
+  await view.unmount();
+});
+
+test('completion write failure warns without claiming success and retries on the next end scroll', async () => {
+  jest.mocked(markChapterRead).mockRejectedValueOnce(new Error('full'));
+  jest.mocked(getAvailableChapterList).mockResolvedValue([{ id: chapter.id, novelId: chapter.novelId, chapterNumber: 69, title: chapter.title }]);
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  const scroll = await setCompletionGeometry();
+  await fireEvent(scroll, 'scrollBeginDrag');
+  await scrollCompletion(scroll, 660);
+  await screen.findByText('ยังโหลดหรือบันทึกสถานะอ่านแล้วไม่ได้ กรุณาตรวจสอบพื้นที่เครื่อง');
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  expect(screen.queryByText('อ่านแล้ว')).toBeNull();
+  await fireEvent.press(screen.getByRole('button', { name: 'ปิดสารบัญ' }));
+  await scrollCompletion(scroll, 660);
+  await waitFor(() => expect(markChapterRead).toHaveBeenCalledTimes(2));
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  expect(screen.getByText('อ่านแล้ว')).toBeTruthy();
+  await view.unmount();
+});
+
+test('previous completions load independently and opening the reader never marks a chapter read', async () => {
+  jest.mocked(getReadChapterIds).mockResolvedValue(['ch-01']);
+  jest.mocked(getAvailableChapterList).mockResolvedValue([
+    { id: 'ch-01', novelId: chapter.novelId, chapterNumber: 1, title: 'อ่านไว้แล้ว' },
+    { id: chapter.id, novelId: chapter.novelId, chapterNumber: 69, title: chapter.title },
+  ]);
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(chapter.title);
+  await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
+  expect(screen.getByRole('button', { name: 'เลือกตอน อ่านไว้แล้ว' }).props.accessibilityHint).toBe('อ่านแล้ว');
+  expect(screen.getByRole('button', { name: `เลือกตอน ${chapter.title}` }).props.accessibilityHint).toBe('กำลังอ่าน');
+  expect(markChapterRead).not.toHaveBeenCalled();
   await view.unmount();
 });

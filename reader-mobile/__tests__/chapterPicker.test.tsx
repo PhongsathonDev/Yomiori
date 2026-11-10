@@ -106,3 +106,12 @@ test.each(['chapter-1', 'chapter-100', 'absent'])('handles boundary or missing c
   else expect(scroll).toHaveBeenLastCalledWith({ index: id === 'chapter-1' ? 0 : 99, viewPosition: 0.5, animated: false });
   await view.unmount();
 });
+
+test('read indicators are independent of the current selection', async () => {
+  const view = await render(<ChapterPickerModal {...props} chapters={chapters.slice(0, 3)} currentChapterId="chapter-2" readChapterIds={['chapter-1', 'chapter-2']} />);
+  expect(screen.getAllByText('อ่านแล้ว')).toHaveLength(2);
+  expect(screen.getByRole('button', { name: `เลือกตอน ${chapters[0].title}` }).props.accessibilityHint).toBe('อ่านแล้ว');
+  expect(screen.getByRole('button', { name: `เลือกตอน ${chapters[1].title}` }).props.accessibilityHint).toBe('กำลังอ่าน · อ่านแล้ว');
+  expect(screen.getByRole('button', { name: `เลือกตอน ${chapters[2].title}` }).props.accessibilityHint).toBeUndefined();
+  await view.unmount();
+});

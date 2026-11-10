@@ -4,6 +4,18 @@ Archived on 29 October 2026 from the previous VALIDATION.md. The original text b
 
 ---
 
+## 10 November 2026 — Read indicators in chapter contents
+
+Source: the commit containing this record, based on `9f440b7`. The reader marks a chapter read only after a user scroll reaches the measured end of ReaderStory, above comments/navigation and clear of the reading dock. Opening/restoring a chapter alone does not mark it read. Completion is saved in a separate per-novel AsyncStorage history, serialized to preserve concurrent chapter writes; it persists across rereading and download deletion without changing resume anchors or manually completed shelf status. Existing last-position data cannot reconstruct older per-chapter history, so previous chapters are not inferred as read.
+
+Both the in-reader chapter picker and novel-detail contents show a check and “อ่านแล้ว”; the current chapter independently retains “กำลังอ่าน”. History reads never block reading/chapter metadata. Storage failures warn without claiming completion, and a subsequent end scroll retries failed completion writes.
+
+`npm run typecheck`, `npm run lint` and `npm test -- --silent` passed (167 tests in 11 suites). Coverage includes end-of-story detection before comments, dock occlusion, no completion on open/restore, persistence and duplicate/concurrent writes, I/O failures/retry, read/current/unread indicators, and preserving completion history when downloads are cleared. Android Metro export passed (3,010 modules), verifying JS/assets rather than a native build.
+
+The actual chapter picker was reviewed in the temporary React Native Web harness at 320 pixels with 200 variable-height Thai chapter titles. Read/current/unread labels were visible and chapter 169 still centered with both ready and delayed metadata, including reopening after manual browsing. No browser JS errors were observed. Native Android lifecycle/gesture/accessibility checks remain pending; no APK was built.
+
+---
+
 ## 10 November 2026 — Chapter picker opens at the current chapter
 
 Source: the commit containing this record, based on `7544fc5`. Opening the reader's chapter picker now scrolls without animation to the current chapter by ID, centered where the list boundaries allow. It repeats on reopening and handles chapter metadata arriving after the modal opens. Variable-height chapter titles retain their existing layout; unmeasured targets use an estimated offset followed by bounded measurement retries. Closing/unmounting or beginning a manual drag cancels pending retries.
