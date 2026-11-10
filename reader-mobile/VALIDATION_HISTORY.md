@@ -4,6 +4,14 @@ Archived on 29 October 2026 from the previous VALIDATION.md. The original text b
 
 ---
 
+## 10 November 2026 — Compact tag summaries
+
+Source: the commit containing this entry, based on `0361557`. Following visual feedback, bookshelf cards now show only the first two tags in catalog order; the novel detail page shows the complete tag list in a wrapping genre section. The card's accessibility hint describes the summary and points to full details. Genre filtering still uses every catalog tag.
+
+`npm run typecheck`, `npm run lint` and `npm test -- --silent bookshelf downloads` passed (26 tests). The existing browser harness confirmed the two-tag limit and no document overflow at 320/768 pixels in all three themes. Native Android validation remains pending; no APK was built.
+
+---
+
 ## 10 November 2026 — Per-book genre tags
 
 Source: the commit containing this entry, based on `fabefd4`. Each bookshelf card now shows all of its catalog tags below the title as wrapping badges, with a screen-reader hint listing the same tags. Cards without tags omit the badge area.

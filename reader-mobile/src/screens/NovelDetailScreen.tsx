@@ -343,6 +343,15 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
             </View>
           </View>
 
+          {!!novel.tags?.length && <View style={styles.genreSection}>
+            <Text style={[styles.synopsisTitle, { color: themeColors.text }]}>แนวเรื่อง</Text>
+            <View style={styles.genreTags}>
+              {novel.tags.map((tag, index) => <View key={`${tag}-${index}`} style={[styles.genreTag, { backgroundColor: themeColors.primaryBg }]}>
+                <Text style={[styles.genreTagText, { color: themeColors.primary }]}>{tag}</Text>
+              </View>)}
+            </View>
+          </View>}
+
           {/* Synopsis */}
           <View style={[styles.synopsisCard, { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder }]}>
             <Text style={[styles.synopsisTitle, { color: themeColors.text }]}>เรื่องย่อ</Text>
@@ -821,6 +830,10 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '500',
   },
+  genreSection: { marginBottom: 16 },
+  genreTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
+  genreTag: { maxWidth: '100%', borderRadius: 8, paddingHorizontal: 10, paddingVertical: 5 },
+  genreTagText: { fontSize: 12, lineHeight: 18 },
   synopsisCard: {
     padding: 14,
     borderRadius: 12,
