@@ -1,4 +1,4 @@
-import React, { memo, useCallback } from 'react';
+import React, { memo, useCallback, useEffect, useRef } from 'react';
 import { Modal, View, Text, Pressable, FlatList, StyleSheet, ActivityIndicator, ListRenderItemInfo } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { X, Check } from 'lucide-react-native';
@@ -16,10 +16,64 @@ interface Props {
   onRetry: () => void;
 }
 
+const MAX_AUTO_SCROLL_ATTEMPTS = 20;
+
 const keyExtractor = (chapter: ChapterListItem) => chapter.id;
 
 export const ChapterPickerModal = memo(function ChapterPickerModal({ visible, chapters, currentChapterId, colors, status, onSelect, onClose, onRetry }: Props) {
   const insets = useSafeAreaInsets();
+  const listRef = useRef<FlatList<ChapterListItem>>(null);
+  const pendingIndex = useRef<number | null>(null);
+  const viewportHeight = useRef(0);
+  const attempts = useRef(0);
+  const retryTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const currentIndex = chapters.findIndex(chapter => chapter.id === currentChapterId);
+
+  const cancelAutoScroll = useCallback(() => {
+    pendingIndex.current = null;
+    if (retryTimer.current !== null) {
+      clearTimeout(retryTimer.current);
+      retryTimer.current = null;
+    }
+  }, []);
+
+  const scrollToCurrent = useCallback(() => {
+    if (pendingIndex.current === null || !listRef.current || viewportHeight.current <= 0) return;
+    if (retryTimer.current !== null) {
+      clearTimeout(retryTimer.current);
+      retryTimer.current = null;
+    }
+    const index = pendingIndex.current;
+    pendingIndex.current = null;
+    attempts.current++;
+    listRef.current.scrollToIndex({ index, animated: false, viewPosition: 0.5 });
+  }, []);
+
+  const startAutoScroll = useCallback(() => {
+    cancelAutoScroll();
+    attempts.current = 0;
+    if (visible && status === 'ready' && currentIndex >= 0) {
+      pendingIndex.current = currentIndex;
+      scrollToCurrent();
+    }
+  }, [cancelAutoScroll, currentIndex, scrollToCurrent, status, visible]);
+
+  useEffect(() => {
+    startAutoScroll();
+    return cancelAutoScroll;
+  }, [startAutoScroll, cancelAutoScroll]);
+
+  const onScrollToIndexFailed = useCallback((info: { index: number; averageItemLength: number }) => {
+    if (!visible || status !== 'ready' || info.index !== currentIndex || attempts.current >= MAX_AUTO_SCROLL_ATTEMPTS) return;
+    // Titles wrap and the selected row has an extra label: fixed row heights would
+    // misplace later chapters. Render near the target, then retry with measured rows.
+    pendingIndex.current = info.index;
+    listRef.current?.scrollToOffset({
+      offset: Math.max(0, info.averageItemLength * info.index - viewportHeight.current / 2), animated: false,
+    });
+    retryTimer.current = setTimeout(scrollToCurrent, 100);
+  }, [currentIndex, scrollToCurrent, status, visible]);
+
   const renderItem = useCallback(({ item, index }: ListRenderItemInfo<ChapterListItem>) => {
     const selected = item.id === currentChapterId;
     return <Pressable accessibilityRole="button" accessibilityLabel={`เลือกตอน ${item.title}`}
@@ -34,7 +88,7 @@ export const ChapterPickerModal = memo(function ChapterPickerModal({ visible, ch
     </Pressable>;
   }, [colors, currentChapterId, onSelect]);
 
-  return <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
+  return <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose} onShow={startAutoScroll}>
     <View style={[styles.overlay, { paddingTop: Math.max(16, insets.top), paddingBottom: Math.max(16, insets.bottom) }]}>
       <Pressable testID="chapter-picker-backdrop" accessibilityRole="button" accessibilityLabel="ปิดสารบัญจากพื้นหลัง" onPress={onClose} style={StyleSheet.absoluteFill} />
       <View accessibilityViewIsModal style={[styles.sheet, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
@@ -50,7 +104,10 @@ export const ChapterPickerModal = memo(function ChapterPickerModal({ visible, ch
             <Pressable accessibilityRole="button" accessibilityLabel="ลองโหลดสารบัญอีกครั้ง" onPress={onRetry} style={styles.retry}>
               <Text style={{ color: colors.primary }}>ลองอีกครั้ง</Text>
             </Pressable>
-          </View> : <FlatList data={chapters} keyExtractor={keyExtractor} renderItem={renderItem}
+          </View> : <FlatList ref={listRef} testID="chapter-picker-list" data={chapters} keyExtractor={keyExtractor} renderItem={renderItem}
+            onLayout={event => { viewportHeight.current = event.nativeEvent.layout.height; scrollToCurrent(); }}
+            onScrollToIndexFailed={onScrollToIndexFailed}
+            onScrollBeginDrag={cancelAutoScroll}
             extraData={currentChapterId} initialNumToRender={12} contentContainerStyle={styles.list} />}
       </View>
     </View>

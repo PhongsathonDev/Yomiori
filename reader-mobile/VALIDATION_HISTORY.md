@@ -4,6 +4,16 @@ Archived on 29 October 2026 from the previous VALIDATION.md. The original text b
 
 ---
 
+## 10 November 2026 — Chapter picker opens at the current chapter
+
+Source: the commit containing this record, based on `7544fc5`. Opening the reader's chapter picker now scrolls without animation to the current chapter by ID, centered where the list boundaries allow. It repeats on reopening and handles chapter metadata arriving after the modal opens. Variable-height chapter titles retain their existing layout; unmeasured targets use an estimated offset followed by bounded measurement retries. Closing/unmounting or beginning a manual drag cancels pending retries.
+
+`npm run typecheck`, `npm run lint` and `npm test -- --silent` passed (157 tests in 10 suites). Eleven focused cases cover distant targets, reopen/current-ID changes, delayed chapter metadata, unmeasured-row recovery, cancellation, retry bounds, first/last chapters and absent IDs. Android Metro export passed (3,009 modules); it verifies JS/assets, not a native build or APK.
+
+A temporary React Native Web harness rendered the actual ChapterPickerModal with 200 variable-height Thai chapter titles at a 320-pixel viewport. Chromium confirmed chapter 169 becomes visible around the center both with ready and delayed metadata, and returns into view when reopening after browsing elsewhere; no browser JS errors were observed. The screenshot was reviewed. This is supporting browser evidence; native Android scrolling, font scaling and lifecycle checks remain pending. No APK was built.
+
+---
+
 ## 10 November 2026 — Compact tag summaries
 
 Source: the commit containing this entry, based on `0361557`. Following visual feedback, bookshelf cards now show only the first two tags in catalog order; the novel detail page shows the complete tag list in a wrapping genre section. The card's accessibility hint describes the summary and points to full details. Genre filtering still uses every catalog tag.
