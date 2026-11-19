@@ -38,8 +38,154 @@ function fixture(t, bodies = ['Alpha.\n\n“Hello.”', 'Next chapter.']) {
 }
 function reviewAll(ctx) {
   prepare(ctx);
-  for (const entry of ctx.sources) writeJson(path.join(ctx.stateDir, 'maps', `${entry.sourceId}.json`), mapping(fs.readFileSync(entry.sourcePath, 'utf8')));
+  for (const entry of ctx.sources) {
+    writeMapping(ctx, entry);
+    seedSourceReview(ctx, entry);
+  }
 }
+const reviewPath = (ctx, id) => path.join(ctx.stateDir, 'source-reviews', `${id}.json`);
+const receiptPath = (ctx, id) => path.join(ctx.stateDir, 'receipts', `${id}.json`);
+function writeMapping(ctx, entry) {
+  writeJson(path.join(ctx.stateDir, 'maps', `${entry.sourceId}.json`), mapping(fs.readFileSync(entry.sourcePath, 'utf8')));
+}
+function seedSourceReview(ctx, entry) {
+  writeJson(reviewPath(ctx, entry.sourceId), { version: 1, sourceId: entry.sourceId, sourceSha256: entry.sourceSha256,
+    reference: `https://example.com/${entry.chapterNo}`, reviewedBy: 'Fixture reviewer', note: 'Fixture body, notes and images match.' });
+}
+const recordReview = (ctx, entry, sha = entry.sourceSha256, note = 'Compared complete body, notes and images.') =>
+  runCLI(['source-review', '--novel', ctx.novelId, '--source-id', entry.sourceId, '--source-sha', sha,
+    '--reference', `https://example.invalid/${entry.chapterNo}`, '--reviewed-by', 'Test reviewer', '--reason', note], ctx.root);
+
+test('short sources can pass after review', async t => {
+  const { ctx: getCtx } = fixture(t, ['A brief note.', '![Art](illustrations/a.png)', 'A long passage. '.repeat(25)]);
+  const ctx = getCtx(), registryFile = path.join(ctx.sourceDir, '_source.json');
+  const registry = readJson(registryFile);
+  registry.chapters[1].images = [{ file: 'illustrations/a.png', source: 'https://example.com/a.png' }];
+  writeJson(registryFile, registry);
+  fs.mkdirSync(path.join(ctx.sourceDir, 'illustrations'));
+  fs.writeFileSync(path.join(ctx.sourceDir, 'illustrations/a.png'), Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=', 'base64'));
+  const warn = t.mock.method(console, 'warn', () => {});
+  const log = t.mock.method(console, 'log', () => {});
+  await runCLI(['prepare', '--novel', 'test'], ctx.root);
+  assert.match(warn.mock.calls.map(call => call.arguments.join(' ')).join('\n'), /100.*Ch_1_Test\.md/);
+  assert.match(warn.mock.calls.map(call => call.arguments.join(' ')).join('\n'), /101.*Ch_2_Test\.md/);
+  assert.doesNotMatch(warn.mock.calls.map(call => call.arguments.join(' ')).join('\n'), /Ch_3_Test\.md/);
+  assert.equal(JSON.parse(log.mock.calls[0].arguments[0]).entries.length, 3);
+  const current = getCtx();
+  for (const entry of current.sources.slice(0, 2)) {
+    await recordReview(current, entry);
+    writeMapping(current, entry);
+    assert.equal(apply(current, entry.sourceId).entries.find(e => e.sourceId === entry.sourceId).status, 'verified');
+  }
+});
+
+test('missing review blocks only its chapter', t => {
+  const ctx = fixture(t, ['A long but possibly incomplete passage. '.repeat(20), 'A complete chapter.']).ctx();
+  prepare(ctx);
+  for (const entry of ctx.sources) writeMapping(ctx, entry);
+  seedSourceReview(ctx, ctx.sources[1]);
+  const plan = apply(ctx);
+  assert.deepEqual(plan.entries.map(e => e.status), ['blocked', 'verified']);
+  assert.match(plan.entries[0].reason, /source review/i);
+  for (const file of [path.join(ctx.web, 'chapters/ch-01.json'), path.join(ctx.mobile, 'chapters/ch-01.json'), receiptPath(ctx, 'ch-01')]) assert.equal(fs.existsSync(file), false);
+  assert.equal(audit(ctx.root, { novelId: 'test', complete: true }).pending, 1);
+});
+
+test('prepare blocks an empty source but still prepares its sibling', async t => {
+  const { ctx: getCtx, directory } = fixture(t, ['', 'A complete chapter.']);
+  const warn = t.mock.method(console, 'warn', () => {});
+  t.mock.method(console, 'log', () => {});
+  const plan = await runCLI(['prepare', '--novel', 'test'], directory);
+  assert.deepEqual(plan.entries.map(e => e.status), ['blocked', 'pending']);
+  assert.match(warn.mock.calls.map(call => call.arguments.join(' ')).join('\n'), /100.*Source body is empty/);
+  const ctx = getCtx();
+  assert.equal(fs.existsSync(path.join(ctx.stateDir, 'maps/100.json')), false);
+  assert.ok(fs.existsSync(path.join(ctx.stateDir, 'maps/101.json')));
+  writeMapping(ctx, ctx.sources[1]); seedSourceReview(ctx, ctx.sources[1]);
+  assert.deepEqual((await runCLI(['apply', '--novel', 'test', '--source-id', '101'], directory)).entries.map(e => e.status), ['blocked', 'verified']);
+});
+
+test('stale source review never overwrites output', async t => {
+  const f = fixture(t, ['Original chapter.']);
+  const old = f.ctx(); reviewAll(old); apply(old);
+  const files = [path.join(old.web, 'chapters/ch-01.json'), path.join(old.mobile, 'chapters/ch-01.json'), receiptPath(old, 'ch-01')];
+  const before = files.map(file => fs.readFileSync(file));
+  fs.appendFileSync(old.sources[0].sourcePath, '\nRecovered ending.\n');
+  const current = f.ctx(), entry = current.sources[0];
+  prepare(current); writeMapping(current, entry);
+  await assert.rejects(recordReview(current, entry, old.sources[0].sourceSha256), /SHA|hash|changed/i);
+  assert.equal(apply(current).entries[0].status, 'blocked');
+  assert.deepEqual(files.map(file => fs.readFileSync(file)), before);
+  await recordReview(current, entry);
+  assert.equal(apply(current).entries[0].status, 'verified');
+  assert.equal(readJson(files[0]).blocks.at(-1).text, 'Recovered ending.');
+});
+
+test('v2 audit requires the exact source review', t => {
+  const ctx = fixture(t, ['Approved body.']).ctx();
+  reviewAll(ctx); apply(ctx);
+  const receipt = readJson(receiptPath(ctx, 'ch-01'));
+  assert.equal(receipt.version, 2);
+  assert.match(receipt.sourceReviewSha256, /^[0-9a-f]{64}$/);
+  assert.deepEqual(audit(ctx.root).errors, []);
+  const file = reviewPath(ctx, '100'), review = readJson(file);
+  fs.unlinkSync(file);
+  assert.match(audit(ctx.root).errors.join('\n'), /source review/i);
+  fs.writeFileSync(file, '{broken');
+  assert.match(audit(ctx.root).errors.join('\n'), /source review/i);
+  writeJson(file, { ...review, note: 'Different comparison.' });
+  assert.match(audit(ctx.root).errors.join('\n'), /source review/i);
+});
+
+test('a fresh source cannot pass audit or apply with a v1 receipt from an old tool', t => {
+  const ctx = fixture(t, ['New source.']).ctx();
+  reviewAll(ctx); apply(ctx);
+  const file = receiptPath(ctx, 'ch-01'), { sourceReviewSha256: _proof, ...receipt } = readJson(file);
+  writeJson(file, { ...receipt, version: 1 });
+  fs.unlinkSync(reviewPath(ctx, '100'));
+  assert.match(audit(ctx.root).errors.join('\n'), /source review/i);
+  assert.equal(apply(ctx).entries[0].status, 'blocked');
+  seedSourceReview(ctx, ctx.sources[0]);
+  assert.equal(apply(ctx).entries[0].status, 'verified');
+  assert.equal(readJson(file).version, 2);
+});
+
+test('v1 compatibility is limited to the same source recorded before rollout', t => {
+  const directory = temp(t), novelId = 'boyish-friend', chapterId = 'ch-11';
+  const beforeRollout = '79a6ce7b707fa47bb28c03721d856ad5fc1818a3';
+  function copy(file) {
+    const dest = path.join(directory, file);
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.writeFileSync(dest, execFileSync('git', ['show', `${beforeRollout}:${file}`], { cwd: root }));
+  }
+  for (const app of ['reader-web', 'reader-mobile']) {
+    const catalog = `${app}/src/data/novels.json`;
+    copy(catalog);
+    const catalogPath = path.join(directory, catalog);
+    writeJson(catalogPath, readJson(catalogPath).filter(n => n.id === novelId));
+    const data = `${app}/src/data/novels/${novelId}`;
+    copy(`${data}/characters.json`);
+    copy(`${data}/chapters/${chapterId}.json`);
+    fs.writeFileSync(path.join(directory, `${data}/chapters/index.ts`), "import c from './ch-11.json';\nexport const chapters = [c];\n");
+  }
+  copy('novels_source/boyish-friend/Ch_11.md');
+  copy('.conversion/boyish-friend/receipts/ch-11.json');
+  copy('.conversion/boyish-friend/maps/legacy-c2f80145f7666ef2.json');
+  const ctx = context(directory, novelId), entry = ctx.sources[0], file = receiptPath(ctx, chapterId);
+  prepare(ctx, { partial: true });
+  assert.deepEqual(audit(ctx.root).errors, []);
+  const mapFile = path.join(ctx.stateDir, 'maps', `${entry.sourceId}.json`), map = readJson(mapFile);
+  const existingReview = map.tokens.flatMap(token => token.segments).find(span => span.review).review;
+  existingReview.reason += ' Rechecked mapping.';
+  writeJson(mapFile, map);
+  assert.equal(apply(ctx).entries[0].status, 'verified');
+  assert.equal(readJson(file).version, 1);
+  fs.appendFileSync(entry.sourcePath, '\nNew text.\n');
+  const updated = context(directory, novelId); prepare(updated, { partial: true }); writeMapping(updated, updated.sources[0]);
+  const result = apply(updated).entries[0];
+  assert.equal(result.status, 'blocked');
+  assert.match(result.reason, /source review/i);
+});
 
 test('source parser preserves decimal identity, body headings, notes, emphasis and literal metadata lines', () => {
   const parsed = parseSource(source('By a river.\n\n# A heading in the story\n\n*An italic thought.*\n\nSource: a literal story line', '12.5'));
@@ -124,6 +270,7 @@ test('a blocked chapter does not overwrite old files or erase another completed 
 test('unreviewed chapters stay pending and cannot be called a complete novel', t => {
   const f = fixture(t); const ctx = f.ctx(); prepare(ctx, { partial: true });
   const sourceEntry = ctx.sources[0]; writeJson(path.join(ctx.stateDir, 'maps/100.json'), mapping(fs.readFileSync(sourceEntry.sourcePath, 'utf8')));
+  seedSourceReview(ctx, sourceEntry);
   const plan = apply(ctx); assert.equal(plan.entries[0].status, 'verified'); assert.equal(plan.entries[1].status, 'blocked');
   const report = audit(f.directory, { novelId: 'test', complete: true }); assert.equal(report.pending, 1); assert.ok(report.errors.length);
   assert.equal(audit(f.directory).errors.length, 0, 'A partial novel may publish only its certified chapters');
@@ -132,9 +279,11 @@ test('unreviewed chapters stay pending and cannot be called a complete novel', t
 test('the default whole-novel plan blocks publication until every scoped source is certified', t => {
   const f = fixture(t); const ctx = f.ctx(); prepare(ctx);
   const entry = ctx.sources[0]; writeJson(path.join(ctx.stateDir, 'maps/100.json'), mapping(fs.readFileSync(entry.sourcePath, 'utf8')));
+  seedSourceReview(ctx, entry);
   apply(ctx);
   assert.ok(audit(f.directory).errors.length, 'Default CI gate must enforce the declared whole-novel scope');
   const remaining = ctx.sources[1]; writeJson(path.join(ctx.stateDir, 'maps/101.json'), mapping(fs.readFileSync(remaining.sourcePath, 'utf8')));
+  seedSourceReview(ctx, remaining);
   apply(ctx); assert.equal(audit(f.directory).errors.length, 0);
 });
 
@@ -149,6 +298,7 @@ test('explicit exclusions need reasons, create no placeholder and do not claim f
   await assert.rejects(runCLI(['exclude', '--novel', 'test', '--source-id', '101'], f.directory), /reason/);
   await runCLI(['exclude', '--novel', 'test', '--source-id', '101', '--reason', 'User-scoped exclusion of the announcement'], f.directory);
   const entry = ctx.sources[0]; writeJson(path.join(ctx.stateDir, 'maps/100.json'), mapping(fs.readFileSync(entry.sourcePath, 'utf8')));
+  seedSourceReview(ctx, entry);
   apply(ctx); const report = audit(f.directory);
   assert.equal(report.errors.length, 0); assert.equal(report.verified, 1); assert.equal(report.excluded, 1);
   assert.equal(fs.existsSync(path.join(ctx.web, 'chapters/ch-02.json')), false);

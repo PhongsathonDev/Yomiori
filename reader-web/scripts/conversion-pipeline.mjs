@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import { execFileSync } from 'node:child_process';
 import { hash, readJson, fileHash, jsonHash, safeId, inside, invariant, writeJson, atomicWrite, parseSource, validateRoster, validateStructure, buildChapter } from './conversion-core.mjs';
+import { isGrandfatheredSource, recordSourceReview, requireSourceReview, warnOnShortSource } from './conversion-source-review.mjs';
 
 export const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 // One-time migration snapshot, not a baseline-regeneration command. Updating this
@@ -136,7 +137,7 @@ function metadata(ctx, source) {
   return { id: source.outputId, novelId: ctx.novelId, chapterNumber: Number(source.chapterNo), title: parsed.title, novelTitle: ctx.novel.title };
 }
 
-export function prepare(ctx, { partial = false } = {}) {
+export function prepare(ctx, { partial = false, warn } = {}) {
   const file = path.join(ctx.stateDir, 'plan.json');
   const previous = fs.existsSync(file) ? readJson(file) : { entries: [] };
   invariant(!previous.novelId || previous.novelId === ctx.novelId, 'Wrong plan novel ID');
@@ -148,12 +149,24 @@ export function prepare(ctx, { partial = false } = {}) {
       sourceSha256: source.sourceSha256, status: excluded ? 'excluded' : 'pending', ...(excluded ? { reason: old.reason } : {}) };
   });
   const plan = { version: 1, scope: partial ? 'partial' : 'whole-novel', novelId: ctx.novelId, sourceCount: ctx.sources.length, upstreamCount: ctx.registry?.totalChapters ?? ctx.sources.length, entries };
-  writeJson(file, plan);
-  for (const source of ctx.sources) {
-    if (fs.existsSync(mapPath(ctx, source.sourceId))) continue;
-    const tokens = parseSource(fs.readFileSync(source.sourcePath, 'utf8')).tokens.filter(t => t.type === 'text');
-    writeJson(mapPath(ctx, source.sourceId), { sourceSha256: source.sourceSha256, tokens: tokens.map(t => ({ id: t.id, segments: [] })) });
+  for (const [index, source] of ctx.sources.entries()) {
+    const entry = entries[index], mapFile = mapPath(ctx, source.sourceId), hasMap = fs.existsSync(mapFile);
+    if (entry.status === 'excluded' || (hasMap && !warn)) continue;
+    let parsed;
+    try { parsed = parseSource(fs.readFileSync(source.sourcePath, 'utf8')); }
+    catch (error) {
+      entry.status = 'blocked'; entry.reason = error.message;
+      warn?.(`Could not inspect source ${source.sourceId} (${source.file}): ${error.message}`);
+      continue;
+    }
+    const warning = warn && warnOnShortSource(source, parsed);
+    if (warning) warn(`Source ${warning.sourceId} (${warning.file}) has ${warning.textChars} text characters and ${warning.illustrationCount} images; compare the complete chapter with upstream before mapping`);
+    if (!hasMap) {
+      const tokens = parsed.tokens.filter(t => t.type === 'text');
+      writeJson(mapFile, { sourceSha256: source.sourceSha256, tokens: tokens.map(t => ({ id: t.id, segments: [] })) });
+    }
   }
+  writeJson(file, plan);
   return plan;
 }
 
@@ -164,12 +177,14 @@ function validatePlan(ctx, plan) {
 }
 
 export function checkCertified(ctx, filename, receipt) {
-  invariant(receipt?.version === 1, `Missing conversion receipt: ${ctx.novelId}/${filename}`);
+  invariant(receipt?.version === 1 || receipt?.version === 2, `Missing or unsupported conversion receipt: ${ctx.novelId}/${filename}`);
   const chapter = readJson(path.join(ctx.web, 'chapters', filename));
   const source = sourceForChapter(ctx, chapter, receipt);
   invariant(source.outputId === chapter.id && filename === `${chapter.id}.json`, 'Source identity/output ID differs');
   invariant(receipt.sourceSha256 === source.sourceSha256 && receipt.rosterSha256 === jsonHash(ctx.characters), 'Source or character roster changed; review mapping again');
   invariant(receipt.sourceEntrySha256 === entryHash(ctx, source), 'Source registry entry changed; review provenance again');
+  if (receipt.version === 2) invariant(receipt.sourceReviewSha256 === requireSourceReview(ctx, source), 'Source review changed after conversion; run apply again');
+  else invariant(isGrandfatheredSource(ctx, source), 'Source review required for this chapter; compare upstream and reapply with the current converter');
   const mapping = readJson(mapPath(ctx, source.sourceId));
   invariant(receipt.mappingSha256 === jsonHash(mapping), 'Mapping changed without conversion');
   const { paths, assets } = imageAssets(ctx, source);
@@ -191,19 +206,28 @@ export function apply(ctx, selectedSourceId) {
     if (entry.status === 'excluded') continue;
     try {
       const oldReceipt = receiptPath(ctx, source.outputId);
+      let previous;
       if (fs.existsSync(oldReceipt)) {
-        try { checkCertified(ctx, `${source.outputId}.json`, readJson(oldReceipt)); entry.status = 'verified'; delete entry.reason; continue; }
+        try {
+          previous = readJson(oldReceipt);
+          checkCertified(ctx, `${source.outputId}.json`, previous); entry.status = 'verified'; delete entry.reason; continue;
+        }
         catch { /* Rebuild from the current reviewed mapping, never from stale prose. */ }
       }
+      const unchangedV1 = previous?.version === 1 && previous.sourceId === source.sourceId && previous.sourceSha256 === source.sourceSha256 && isGrandfatheredSource(ctx, source);
+      const sourceReviewSha256 = unchangedV1 ? null : requireSourceReview(ctx, source);
       const mapping = readJson(mapPath(ctx, source.sourceId));
+      const sourceBytes = fs.readFileSync(source.sourcePath);
+      invariant(hash(sourceBytes) === source.sourceSha256, 'Source changed during conversion; run prepare again and check the source review');
       const { paths, assets } = imageAssets(ctx, source);
-      const chapter = buildChapter(fs.readFileSync(source.sourcePath, 'utf8'), mapping, ctx.characters, metadata(ctx, source), paths);
+      const chapter = buildChapter(sourceBytes.toString('utf8'), mapping, ctx.characters, metadata(ctx, source), paths);
       // Fully validate before the first mutation. Receipt is the final commit marker;
       // interrupted writes cannot pass the publication gate. Re-running repairs them.
       for (const asset of assets) atomicWrite(inside(path.join(ctx.root, 'reader-web/src'), asset.path), fs.readFileSync(asset.file));
       for (const app of ['web', 'mobile']) writeJson(path.join(ctx[app], 'chapters', `${source.outputId}.json`), chapter);
       writeIndex(ctx, 'web'); writeIndex(ctx, 'mobile');
-      writeJson(oldReceipt, { version: 1, sourceId: source.sourceId, sourceSha256: source.sourceSha256,
+      writeJson(oldReceipt, { version: unchangedV1 ? 1 : 2, sourceId: source.sourceId, sourceSha256: source.sourceSha256,
+        ...(sourceReviewSha256 ? { sourceReviewSha256 } : {}),
         sourceEntrySha256: entryHash(ctx, source),
         rosterSha256: jsonHash(ctx.characters), mappingSha256: jsonHash(mapping), chapterSha256: jsonHash(chapter),
         assets: assets.map(({ source: s, path: p, sha256 }) => ({ source: s, path: p, sha256 })) });
@@ -270,9 +294,9 @@ export function audit(root, { novelId, complete = false, baseline = true, baseli
 }
 
 export async function runCLI(args = process.argv.slice(2), root = repoRoot) {
-  const { positionals, values } = parseArgs({ args, allowPositionals: true, options: { novel: { type: 'string' }, 'source-id': { type: 'string' }, complete: { type: 'boolean' }, partial: { type: 'boolean' }, reason: { type: 'string' } } });
+  const { positionals, values } = parseArgs({ args, allowPositionals: true, options: { novel: { type: 'string' }, 'source-id': { type: 'string' }, 'source-sha': { type: 'string' }, reference: { type: 'string' }, 'reviewed-by': { type: 'string' }, complete: { type: 'boolean' }, partial: { type: 'boolean' }, reason: { type: 'string' } } });
   const command = positionals[0];
-  invariant(positionals.length === 1 && ['prepare', 'inspect', 'apply', 'status', 'audit', 'exclude'].includes(command), 'Use conversion <prepare|inspect|apply|status|audit|exclude> --novel <id> [--source-id <id>] [--complete]');
+  invariant(positionals.length === 1 && ['prepare', 'inspect', 'source-review', 'apply', 'status', 'audit', 'exclude'].includes(command), 'Use conversion <prepare|inspect|source-review|apply|status|audit|exclude> --novel <id> [--source-id <id>] [--complete]');
   if (command === 'audit') {
     invariant(!values.complete || values.novel, '--complete requires --novel');
     const report = audit(root, { novelId: values.novel, complete: values.complete });
@@ -280,9 +304,17 @@ export async function runCLI(args = process.argv.slice(2), root = repoRoot) {
     invariant(report.errors.length === 0, 'Conversion publication gate failed'); return report;
   }
   const ctx = context(root, values.novel);
-  if (command === 'prepare') { const plan = prepare(ctx, { partial: values.partial }); console.log(JSON.stringify(plan, null, 2)); return plan; }
-  if (command === 'inspect') {
-    const source = ctx.sources.find(s => s.sourceId === values['source-id']); invariant(source, 'inspect requires a known --source-id');
+  if (command === 'prepare') {
+    const plan = prepare(ctx, { partial: values.partial, warn: message => console.warn(message) });
+    console.log(JSON.stringify(plan, null, 2)); return plan;
+  }
+  if (command === 'inspect' || command === 'source-review') {
+    const source = ctx.sources.find(s => s.sourceId === values['source-id']); invariant(source, `${command} requires a known --source-id`);
+    if (command === 'source-review') {
+      const review = recordSourceReview(ctx, source, { sourceSha256: values['source-sha'], reference: values.reference,
+        reviewedBy: values['reviewed-by'], note: values.reason });
+      console.log(JSON.stringify(review, null, 2)); return review;
+    }
     const markdown = fs.readFileSync(source.sourcePath, 'utf8');
     const output = { sourceId: source.sourceId, sourceSha256: source.sourceSha256, ...parseSource(markdown) };
     console.log(JSON.stringify(output, null, 2)); return output;
@@ -298,7 +330,7 @@ export async function runCLI(args = process.argv.slice(2), root = repoRoot) {
   if (command === 'apply') {
     const plan = apply(ctx, values['source-id']);
     console.log(JSON.stringify(plan, null, 2));
-    invariant(!plan.entries.some(e => e.status === 'blocked'), 'Some chapters are blocked; existing verified checkpoints are preserved'); return plan;
+    invariant(!plan.entries.some(e => e.status === 'blocked' && (!values['source-id'] || e.sourceId === values['source-id'])), 'Some requested chapters are blocked; existing verified checkpoints are preserved'); return plan;
   }
   const report = audit(root, { novelId: ctx.novelId });
   console.log(`Total raw chapters found: ${ctx.sources.length}\nVerified: ${report.verified}\nLegacy (unverified): ${report.legacyUnverified}\nPending: ${report.pending}\nExcluded: ${report.excluded}`);

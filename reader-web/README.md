@@ -20,8 +20,9 @@ Open the local URL printed by Vite. The development editor writes JSON files int
 | npm run lint | Oxlint checks |
 | npm test | Web tests in tests/ |
 | npm run build | TypeScript check, Vite build and postbuild CDN export |
-| npm run conversion -- prepare --novel <id> | Prepare a resumable whole-novel source/mapping plan |
+| npm run conversion -- prepare --novel <id> | Prepare a resumable whole-novel plan and warn about unusually short sources |
 | npm run conversion -- inspect --novel <id> --source-id <id> | Read source token IDs and text for contextual review |
+| npm run conversion -- source-review --novel <id> --source-id <id> --source-sha <sha256> --reference "<reference>" --reviewed-by "<reviewer>" --reason "<notes>" | Record an actual comparison with upstream before mapping a new or changed chapter |
 | npm run conversion -- apply --novel <id> | Build exact source spans from reviewed maps; sync web/mobile and checkpoint |
 | npm run conversion -- audit --novel <id> --complete | Certify the entire declared scope without legacy exceptions |
 | npm run conversion:check | Publication gate; required automatically before every build |
