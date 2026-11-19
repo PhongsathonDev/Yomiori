@@ -1,0 +1,29 @@
+{
+  "batch": "b11",
+  "sources": [
+    {
+      "sourceId": "180918",
+      "chapterNo": "42",
+      "mapJsonHash": "507d388e2546211c7127d224d39b3fd558529c0e14ca11ecebc560dcbb4b0d48",
+      "status": "ready",
+      "dialogue": 23
+    },
+    {
+      "sourceId": "180919",
+      "chapterNo": "43",
+      "mapJsonHash": "16adb784c22d43b33abc65ba9f021104e3f82e74b1e53d0c7b5abde4ce94846e",
+      "status": "ready",
+      "dialogue": 19
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "Both cues were seeded almost entirely as DIALOGUE? (every text token except p1-1 in each chapter), so most spans were reclassified to narration from the source text: 68 spans in 180918 and 39 in 180919. Final dialogue counts are 23 and 19.",
+    "180918 p31-1 (kiss and breath sounds during the Shinji/Renka kiss described in p30-1 and p32-1) is kept as narration because it is not speech.",
+    "180918 p82-1 and p91-1 use doubled brackets 「「...」」 for Miris and Renka speaking together and are mapped to netori-party, following the 180253 precedent for simultaneous two-person lines.",
+    "180918 paired whispers and moans were split Miris then Renka from the paragraph order in p4-1/p10-1 (p7-1, p8-1) and p71-1 (p69-1, p70-1); p42-1, p52-1, p61-1, p66-1 and p79-1 were confirmed by p44-1, p53-1, p60-1, p67-1 and p80-1.",
+    "180919 p35-1 and p41-1 are the unnamed female guild receptionist; she has no roster entry, so she uses netori-crowd as in the 180368 precedent for unnamed staff, and no roster gap is reported.",
+    "180919 p18-1 was reshaped into narration + dialogue (\"พวกสมองกล้าม...\") + narration because the words are actually muttered by Shinji and his companions; p15-1, p23-1 and p28-1 keep called-out spell names as dialogue, consistent with 180117.",
+    "180919 p57-1 ‘บทสนทนาลับที่อัลวินไม่ได้ยิน’ is a scene caption and stays narration."
+  ]
+}

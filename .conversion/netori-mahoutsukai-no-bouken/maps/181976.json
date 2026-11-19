@@ -48,7 +48,15 @@
           "start": 0,
           "end": 79,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ป4 ระบุว่าชินจิเรียกเอมิลี่และเฟรรี่มาชุมนุม แล้วเขากล่าวขอบคุณในป5"
+          }
         }
       ]
     },
@@ -59,7 +67,15 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้พูดแทนทั้งตนเองและเฟรรี่เรื่องการติดตั้งอุปกรณ์"
+          }
         }
       ]
     },
@@ -70,7 +86,15 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ป8 ระบุว่าเฟรรี่ยกนิ้วโป้งพร้อมบอกว่าพร้อมแล้ว ประโยคนี้จึงเป็นเสียงของเฟรรี่"
+          }
         }
       ]
     },
@@ -85,8 +109,14 @@
         {
           "start": 35,
           "end": 47,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "เป็นความหมายของท่าทางยกนิ้วโป้งของเฟรรี่ ไม่ได้พูดออกมา"
+          }
         },
         {
           "start": 47,
@@ -102,7 +132,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้ติดต่อลีร่า และเอมิลี่ตอบรับในป10"
+          }
         }
       ]
     },
@@ -113,7 +151,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้รับคำสั่งของชินจิเรื่องติดต่อลีร่า"
+          }
         }
       ]
     },
@@ -124,7 +171,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เฟรรี่เป็นอีกผู้ร่วมทีมที่ส่งเสียงตอบรับสั้น ๆ ต่อคำสั่ง ก่อนทั้งสามออกเดินทางในป12"
+          }
         }
       ]
     },
@@ -165,7 +221,15 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ป14 ระบุว่าลีร่าวิ่งเข้ามารายงานมินาโตะ"
+          }
         }
       ]
     },
@@ -176,7 +240,15 @@
           "start": 0,
           "end": 119,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "มินาโตะเป็นผู้สั่งให้ลีร่านำทางและให้ลิลี่กับลิลไปด้วยกัน"
+          }
         }
       ]
     },
@@ -187,7 +259,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ป17 เป็นเสียงตอบรับพร้อมกันของลีร่า ลิลี่ และลิล; ใช้ลีร่าเป็นตัวแทนเสียงหมู่"
+          }
         }
       ]
     },
@@ -208,7 +288,15 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ป20 ระบุว่าลีร่าพยักหน้าตอบคำถามของมินาโตะ"
+          }
         }
       ]
     },
@@ -229,7 +317,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ถามถึงธุระในโกดัง และลีร่าตอบในป22"
+          }
         }
       ]
     },
@@ -240,7 +336,15 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ตอบคำถามของมินาโตะเรื่องคนข้างในโกดัง"
+          }
         }
       ]
     },
@@ -301,7 +405,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "มินาโตะเป็นผู้เรียกเอมิลี่และเฟรรี่เมื่อเดินเข้าไปใกล้ตามที่ป27 บรรยาย"
+          }
         }
       ]
     },
@@ -332,7 +445,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "ป32 ระบุว่ามินาโตะประกาศประโยคนี้ออกมาดัง ๆ"
+          }
         }
       ]
     },
@@ -383,7 +504,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ถูกเถาวัลย์จับและอุทานด้วยความตกใจ"
+          }
         }
       ]
     },
@@ -394,7 +523,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ป38 ระบุว่าลิลี่และลิลถูกจับทั้งคู่; บทถัดไป (Ch.63) เปิดด้วยเสียงของลิลี่ที่เรียกมินาโตะแบบเดียวกัน จึงใช้ลิลี่เป็นตัวแทนเสียงแฝด"
+          }
         }
       ]
     },
@@ -415,7 +553,15 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ร้องขอความช่วยเหลือจากเฟรรี่และเอมิลี่ ก่อนชินจิพูดในป40"
+          }
         }
       ]
     },
@@ -426,7 +572,15 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ป41 ระบุว่าชินจิพูดกับมินาโตะที่กำลังโวยวาย"
+          }
         }
       ]
     },
@@ -447,7 +601,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ถามชินจิเรื่องที่ซ่อนตัว ก่อนชินจิตอบในป43"
+          }
         }
       ]
     },
@@ -458,7 +620,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าตนอยู่ใต้ดินและกำลังจะเผยความลับ"
+          }
         }
       ]
     },
@@ -479,7 +649,16 @@
           "start": 0,
           "end": 185,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายกลไกดวงตาแห่งเสน่ห์ต่อมินาโตะ"
+          }
         }
       ]
     },
@@ -490,7 +669,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ตอบด้วยความเหลือเชื่อต่อคำอธิบายของชินจิ"
+          }
         }
       ]
     },
@@ -500,8 +687,14 @@
         {
           "start": 0,
           "end": 191,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "เป็นบทบรรยายปฏิกิริยาของมินาโตะและคำที่เขาคิดในใจ ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
         }
       ]
     },
@@ -512,7 +705,16 @@
           "start": 0,
           "end": 166,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิเป็นผู้ข่มขู่มินาโตะเรื่องการยื่นมือมาหาผู้หญิงของเขา ก่อนมินาโตะตอบในป49"
+          }
         }
       ]
     },
@@ -523,7 +725,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ประท้วงเรื่องลิลี่และลิล ก่อนชินจิตอบในป50"
+          }
         }
       ]
     },
@@ -534,7 +745,14 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ตรวจบริบท p50-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -544,8 +762,7 @@
         {
           "start": 0,
           "end": 67,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -555,8 +772,7 @@
         {
           "start": 0,
           "end": 90,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -566,8 +782,7 @@
         {
           "start": 0,
           "end": 72,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -578,7 +793,15 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ร่ายเวทเพลิงและอุทานเมื่อเวทไม่ทำงาน"
+          }
         }
       ]
     },
@@ -588,8 +811,7 @@
         {
           "start": 0,
           "end": 194,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -599,8 +821,7 @@
         {
           "start": 0,
           "end": 362,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -610,8 +831,7 @@
         {
           "start": 0,
           "end": 191,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -622,7 +842,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ร้องเรียกแฟลร์ด้วยความวิตกกังวลตามที่ป59 บรรยาย"
+          }
         }
       ]
     },
@@ -632,8 +860,7 @@
         {
           "start": 0,
           "end": 160,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -643,8 +870,7 @@
         {
           "start": 0,
           "end": 80,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -655,7 +881,15 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ตะโกนสั่งแฟลร์ให้ฆ่าชินจิ"
+          }
         }
       ]
     },
@@ -665,8 +899,7 @@
         {
           "start": 0,
           "end": 132,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -677,7 +910,15 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ตะโกนเร่งแฟลร์อีกครั้ง"
+          }
         }
       ]
     },
@@ -688,7 +929,15 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ตอบมินาโตะว่าไม่สามารถขัดขืนชินจิได้"
+          }
         }
       ]
     },
@@ -698,8 +947,7 @@
         {
           "start": 0,
           "end": 137,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -709,8 +957,7 @@
         {
           "start": 0,
           "end": 22,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -720,8 +967,7 @@
         {
           "start": 0,
           "end": 113,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -732,7 +978,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าแฟลร์จะไม่ช่วยมินาโตะ และมินาโตะทวนคำในป69"
+          }
         }
       ]
     },
@@ -743,7 +997,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ทวนคำพูดของชินจิด้วยความตกตะลึง"
+          }
         }
       ]
     },
@@ -753,8 +1016,7 @@
         {
           "start": 0,
           "end": 126,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -765,7 +1027,15 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามเรื่องแผนรับมือและบอกว่าถึงเวลาลงโทษ"
+          }
         }
       ]
     },
@@ -776,7 +1046,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "มินาโตะเป็นผู้ส่งเสียงตกใจตอบคำขู่ของชินจิ"
+          }
         }
       ]
     },
@@ -786,8 +1065,7 @@
         {
           "start": 0,
           "end": 147,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     }

@@ -8,7 +8,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1"
+            ],
+            "reason": "p2-1 ระบุว่าอัลวินตื่นเพราะมีริสเขย่าและปลุก"
+          }
         }
       ]
     },
@@ -29,7 +37,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "อัลวินตอบมีริส แล้วมีริสทักกลับใน p4-1"
+          }
         }
       ]
     },
@@ -40,7 +57,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "มีริสตอบคำทักของอัลวิน"
+          }
         }
       ]
     },
@@ -61,7 +86,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p5-1 ระบุว่าอากาเนะกำลังจัดจาน แล้วเธอทักทั้งสองคน"
+          }
         }
       ]
     },
@@ -72,7 +106,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "มีริสตอบคำทักของอากาเนะ"
+          }
         }
       ]
     },
@@ -83,7 +126,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "อัลวินถามถึงคนอื่นต่อจากคำทักทาย"
+          }
         }
       ]
     },
@@ -104,7 +156,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "อากาเนะตอบคำถามเรื่องคนอื่นที่ทานเสร็จแล้ว"
+          }
         }
       ]
     },
@@ -115,7 +176,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "อัลวินขออาหารเช้า แล้วอากาเนะรับใน p12-1"
+          }
         }
       ]
     },
@@ -126,7 +196,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "อากาเนะรับจะเตรียมอาหาร แล้ว p13-1 ระบุว่าเธอเดินเข้าครัว"
+          }
         }
       ]
     },
@@ -157,7 +236,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "อากาเนะกลับมาจากครัวและบอกว่าอาหารพร้อม"
+          }
         }
       ]
     },
@@ -168,7 +256,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "เครื่องหมายคำพูดสองชั้นหมายถึงอัลวินและมีริสพูดพร้อมกันก่อนทานอาหาร"
+          }
         }
       ]
     },
@@ -189,7 +286,16 @@
           "start": 0,
           "end": 79,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "อากาเนะบอกว่าจะไปทำงานอื่นต่อ แล้วอัลวินตอบใน p19-1"
+          }
         }
       ]
     },
@@ -200,7 +306,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "อัลวินตอบรับคำของอากาเนะ"
+          }
         }
       ]
     },
@@ -231,7 +346,16 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "อัลวินชวนมีริสไปเที่ยวในเมือง แล้วมีริสตอบใน p23-1"
+          }
         }
       ]
     },
@@ -242,7 +366,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "มีริสตอบรับและถามว่าจะไปไหน"
+          }
         }
       ]
     },
@@ -253,7 +386,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "อัลวินเสนอไปดูเสื้อผ้า แล้วมีริสเห็นด้วยใน p25-1"
+          }
         }
       ]
     },
@@ -264,7 +406,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "มีริสตอบเห็นด้วยกับข้อเสนอของอัลวิน"
+          }
         }
       ]
     },
@@ -290,7 +441,14 @@
           "start": 66,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "narration ระบุว่าทั้งสองคนพูดขอบคุณพร้อมกัน"
+          }
         },
         {
           "start": 85,
@@ -306,7 +464,16 @@
           "start": 0,
           "end": 80,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "มีริสบอกว่าจะไปบอกเรนกะ แล้วอัลวินตอบใน p29-1"
+          }
         }
       ]
     },
@@ -317,7 +484,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "อัลวินตอบรับคำของมีริส"
+          }
         }
       ]
     },
@@ -378,7 +554,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "มีริสถามอัลวินที่จ้องมองเธอ แล้วอัลวินตอบใน p36-1"
+          }
         }
       ]
     },
@@ -389,7 +574,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "อัลวินตอบคำถามของมีริส"
+          }
         }
       ]
     },
@@ -400,7 +594,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "มีริสตอบกลับอัลวิน"
+          }
         }
       ]
     },
@@ -440,7 +643,19 @@
         {
           "start": 0,
           "end": 27,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p44-1 ระบุว่าชินจิกับเรนกะอยู่ในห้องของเรนกะ จึงเป็นเรนกะที่รายงานว่าอัลวินกับมีริสออกเดท"
+          }
         }
       ]
     },
@@ -450,7 +665,17 @@
         {
           "start": 0,
           "end": 40,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชินจิเป็นอีกคนในห้องของเรนกะและตอบรับคำรายงาน"
+          }
         }
       ]
     },
@@ -460,7 +685,17 @@
         {
           "start": 0,
           "end": 41,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เรนกะพูดว่ารักชินจิ สอดคล้องกับ p44-1 ที่ระบุความสัมพันธ์ของทั้งสอง"
+          }
         }
       ]
     },
@@ -481,7 +716,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าอัลวินฝึกกับเอมิลี่ช่วงบ่าย เธอจึงประกาศจบการฝึก"
+          }
         }
       ]
     },
@@ -492,7 +736,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "อัลวินขอบคุณอาจารย์หลังจบการฝึก"
+          }
         }
       ]
     },
@@ -523,7 +776,16 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เอมิลี่คุยเรื่องฝีมือของตัวเอง แล้วอัลวินตอบใน p50-1"
+          }
         }
       ]
     },
@@ -534,7 +796,16 @@
           "start": 0,
           "end": 104,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "อัลวินชมความเร็วของอาจารย์"
+          }
         }
       ]
     },
@@ -545,7 +816,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "เอมิลี่ตอบรับคำชมเรื่องสัญชาตญาณ"
+          }
         }
       ]
     },
@@ -580,8 +860,14 @@
         {
           "start": 67,
           "end": 73,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "เป็นเสียงตบหลัง ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
         }
       ]
     },
@@ -592,7 +878,16 @@
           "start": 0,
           "end": 95,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "เอมิลี่ตบหลังแล้วกล่าวชมฝีมืออัลวิน"
+          }
         }
       ]
     },
@@ -603,7 +898,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "อัลวินตอบรับคำชมและชวนกลับ"
+          }
         }
       ]
     },
@@ -614,7 +918,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "เอมิลี่เห็นด้วยและพูดถึงอาหารเย็นของอากาเนะ"
+          }
         }
       ]
     },
@@ -645,7 +958,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "อัลวินเคาะประตูห้องมีริสและเรียกเธอ"
+          }
         }
       ]
     },
@@ -656,7 +978,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "มีริสตกใจตอบจากในห้อง"
+          }
         }
       ]
     },
@@ -677,7 +1008,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "อัลวินบอกว่ากำลังจะไปอาบน้ำ"
+          }
         }
       ]
     },
@@ -688,7 +1028,16 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "มีริสตอบอัลวิน และ p65-1 บรรยายเสียงอู้อี้ของเธอ"
+          }
         }
       ]
     },
@@ -709,7 +1058,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "อัลวินถามว่ามีริสเป็นอะไร"
+          }
         }
       ]
     },
@@ -730,7 +1088,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "มีริสตอบจากในห้องที่ล็อกประตู"
+          }
         }
       ]
     },
@@ -761,7 +1128,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "มีริสรีบให้อัลวินไปอาบน้ำ แล้วอัลวินขอโทษใน p72-1"
+          }
         }
       ]
     },
@@ -772,7 +1148,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "อัลวินตกใจขอโทษแล้ววิ่งไปห้องน้ำตามที่มีริสบอก"
+          }
         }
       ]
     },
@@ -802,7 +1187,18 @@
         {
           "start": 0,
           "end": 44,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "บทสนทนาลับในห้องมีริส มีริสเรียกชินจิและพูดถึงการเกือบถูกจับได้"
+          }
         }
       ]
     },
@@ -812,7 +1208,17 @@
         {
           "start": 0,
           "end": 102,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "ชินจิขอโทษมีริสและพูดถึงการหลั่งในช่องคลอด"
+          }
         }
       ]
     },
@@ -822,7 +1228,17 @@
         {
           "start": 0,
           "end": 39,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "มีริสครางตอบชินจิ"
+          }
         }
       ]
     },
@@ -843,7 +1259,18 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p79-1",
+              "p80-1",
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "อัลวินเอ่ยชมอาหารที่อากาเนะทำ (p17-1 ว่าอาหารถูกปากอัลวิน) ก่อนชวนชินจิคุยใน p82-1"
+          }
         }
       ]
     },
@@ -874,7 +1301,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "อัลวินชวนชินจิคุย แล้ว p83-1 อธิบายว่าอัลวินว่างจึงชวนชินจิ"
+          }
         }
       ]
     },
@@ -905,7 +1341,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "ชินจิโชว์หนังสือและตอบคำถามอัลวิน"
+          }
         }
       ]
     },
@@ -916,7 +1361,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "อัลวินตื่นเต้นกับเวทมนตร์ใหม่"
+          }
         }
       ]
     },
@@ -927,7 +1381,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p86-1",
+              "p87-1",
+              "p88-1"
+            ],
+            "reason": "ชินจิอธิบายหนังสือแล้วถามถึงการฝึกของอัลวิน"
+          }
         }
       ]
     },
@@ -938,7 +1401,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p87-1",
+              "p88-1",
+              "p89-1"
+            ],
+            "reason": "อัลวินตอบเรื่องอาจารย์ของเขา"
+          }
         }
       ]
     },
@@ -949,7 +1421,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p88-1",
+              "p89-1",
+              "p90-1"
+            ],
+            "reason": "ชินจิรับฟังและพยักหน้าใน p90-1"
+          }
         }
       ]
     },
@@ -980,7 +1461,16 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p91-1",
+              "p92-1",
+              "p93-1"
+            ],
+            "reason": "มีริสเดินเข้ามาและบอกว่าจะไปอาบน้ำก่อน"
+          }
         }
       ]
     },
@@ -991,7 +1481,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1"
+            ],
+            "reason": "อัลวินตอบว่าจะอาบเป็นคนสุดท้าย"
+          }
         }
       ]
     },
@@ -1002,7 +1501,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "ชินจิบอกว่าตัวเองอาบแล้ว และ p95-1 ระบุว่าชินจิกับอัลวินพยักหน้ารับคำมีริส"
+          }
         }
       ]
     },
@@ -1023,7 +1531,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1",
+              "p97-1",
+              "p98-1"
+            ],
+            "reason": "เรนกะเตือนอัลวินเรื่องภารกิจพรุ่งนี้ แล้ว p98-1 ระบุว่าเรนกะกับเอมิลี่ออกไป"
+          }
         }
       ]
     },
@@ -1034,7 +1551,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1",
+              "p97-1",
+              "p98-1"
+            ],
+            "reason": "เอมิลี่กล่าวราตรีสวัสดิ์ชินจิ แล้ว p98-1 ระบุว่าเธอออกไปกับเรนกะ"
+          }
         }
       ]
     },
@@ -1055,7 +1581,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1",
+              "p99-1",
+              "p100-1"
+            ],
+            "reason": "ชินจิกล่าวราตรีสวัสดิ์อัลวิน แล้วอัลวินตอบใน p100-1"
+          }
         }
       ]
     },
@@ -1066,7 +1601,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p99-1",
+              "p100-1",
+              "p101-1"
+            ],
+            "reason": "อัลวินตอบราตรีสวัสดิ์ชินจิ"
+          }
         }
       ]
     },
@@ -1087,7 +1631,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p101-1",
+              "p102-1",
+              "p103-1"
+            ],
+            "reason": "p101-1 ระบุว่ามีริสกระซิบกับอัลวิน แล้วเธอบอกว่าจะไปหาที่ห้อง"
+          }
         }
       ]
     },
@@ -1098,7 +1651,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p103-1",
+              "p104-1"
+            ],
+            "reason": "อัลวินตอบรับคำกระซิบของมีริส"
+          }
         }
       ]
     },
@@ -1159,7 +1721,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p108-1",
+              "p109-1",
+              "p110-1"
+            ],
+            "reason": "อัลวินเรียกมีริส แล้วมีริสตอบใน p110-1"
+          }
         }
       ]
     },
@@ -1170,7 +1741,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p109-1",
+              "p110-1",
+              "p111-1"
+            ],
+            "reason": "มีริสตอบเรียกอัลวิน แล้ว p111-1 ระบุว่าเธอเดินเข้าไปกอดเขา"
+          }
         }
       ]
     },
@@ -1211,7 +1791,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p113-1",
+              "p114-1",
+              "p115-1"
+            ],
+            "reason": "อัลวินบอกรักมีริส แล้วมีริสตอบใน p115-1"
+          }
         }
       ]
     },
@@ -1222,7 +1811,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p114-1",
+              "p115-1",
+              "p116-1"
+            ],
+            "reason": "มีริสตอบบอกรักอัลวิน"
+          }
         }
       ]
     },
@@ -1282,7 +1880,17 @@
         {
           "start": 0,
           "end": 52,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p120-1",
+              "p121-1",
+              "p122-1"
+            ],
+            "reason": "ผู้พูดเรียกชินจิว่า นายท่าน และพูดถึงการทำความสะอาด ซึ่งเป็นหน้าที่เมดของอากาเนะ"
+          }
         }
       ]
     },
@@ -1292,7 +1900,17 @@
         {
           "start": 0,
           "end": 79,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p121-1",
+              "p122-1",
+              "p123-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบอากาเนะเรื่องการอาบน้ำเป็นคนสุดท้ายและทำความสะอาด"
+          }
         }
       ]
     },
@@ -1302,7 +1920,18 @@
         {
           "start": 0,
           "end": 26,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p97-1",
+              "p98-1",
+              "p123-1",
+              "p124-1"
+            ],
+            "reason": "p97-1 เอมิลี่กล่าวราตรีสวัสดิ์ชินจิอย่างสนิทสนม และ p98-1 ระบุว่าเธอออกไปอาบน้ำโดยชินจิเดินตามไป; p124-1 ระบุว่ามีสามคนในห้องอาบน้ำ จึงเป็นเอมิลี่ที่ชวนชินจิร่วมกับอากาเนะ"
+          }
         }
       ]
     },
@@ -1367,8 +1996,14 @@
         {
           "start": 42,
           "end": 50,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p130-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้แทนคำว่า เอ็กซ์ ในคำบรรยาย ไม่ได้พูดออกมา"
+          }
         },
         {
           "start": 50,
@@ -1388,8 +2023,14 @@
         {
           "start": 22,
           "end": 30,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p131-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้แทนคำว่า เอ็กซ์ ในคำบรรยาย ไม่ได้พูดออกมา"
+          }
         },
         {
           "start": 30,

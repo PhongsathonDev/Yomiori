@@ -38,7 +38,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ชินจิเป็นผู้รอให้ไอริสสงบลงตาม p1-1 แล้วถามว่าเธอสงบลงบ้างแล้วหรือยัง และไอริสตอบใน p5-1"
+          }
         }
       ]
     },
@@ -49,7 +58,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบว่าตอนนี้สงบลงแล้ว และ p6-1 บรรยายว่าเธอซุกตัวอยู่ใต้ผ้าห่มด้วยความเขินอาย"
+          }
         }
       ]
     },
@@ -80,7 +98,16 @@
           "start": 0,
           "end": 120,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกให้เตรียมตัวกลับและถามเรื่องกาเลโอ ก่อนไอริสถามกลับใน p9-1"
+          }
         }
       ]
     },
@@ -91,7 +118,16 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ไอริสเป็นผู้ถามว่าจะเก็บเรื่องนี้เป็นความลับให้หรือไม่ และ p10-1 บรรยายความประหลาดใจของเธอ"
+          }
         }
       ]
     },
@@ -112,7 +148,16 @@
           "start": 0,
           "end": 156,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าเขาจะเก็บเรื่องนี้เป็นความลับ และ p12-1 บรรยายรอยยิ้มซุกซนของเขา"
+          }
         }
       ]
     },
@@ -133,7 +178,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p12-1 ระบุว่าชินจิถามเธอด้วยใบหน้าที่จริงจังขึ้นมาทันที และไอริสตอบใน p14-1"
+          }
         }
       ]
     },
@@ -144,7 +198,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบว่าไม่มีทางเลือกอื่นและยังต้องหาให้เจอ ก่อน p15-1 บรรยายสีหน้าของเธอ"
+          }
         }
       ]
     },
@@ -165,7 +228,16 @@
           "start": 0,
           "end": 135,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิเป็นผู้เสนอที่จะแนะนำปาร์ตี้ที่มีเรื่องราวซับซ้อน และไอริสถามต่อใน p17-1"
+          }
         }
       ]
     },
@@ -176,7 +248,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "ไอริสเป็นผู้ถามว่าเรื่องราวอะไร และ p18-1 ระบุว่าเธอสอบถามเพราะอยากรู้ให้แน่ใจ"
+          }
         }
       ]
     },
@@ -197,7 +278,16 @@
           "start": 0,
           "end": 177,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายว่าปาร์ตี้นั้นเคยเป็นเหยื่อและเป็นปาร์ตี้เอลฟ์สามคน ก่อนไอริสตอบรับใน p20-1"
+          }
         }
       ]
     },
@@ -208,7 +298,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับและก้มศีรษะตามที่ p21-1 บรรยาย"
+          }
         }
       ]
     },
@@ -229,7 +328,16 @@
           "start": 0,
           "end": 120,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ชินจิเป็นผู้นัดหมายวันรุ่งขึ้นและหันหลังให้ไอริสตาม p21-1 ก่อนไอริสตอบใน p23-1"
+          }
         }
       ]
     },
@@ -240,7 +348,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับสั้นๆ ก่อน p24-1 บรรยายรอยยิ้มอ่อนของเธอ"
+          }
         }
       ]
     },
@@ -371,7 +488,17 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p39-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "พวกลีร่าเป็นผู้ปรากฏตัวตาม p39-1 และลีร่าเป็นคนที่ออกมาขอโทษที่ให้รอ; p42-1 ระบุรอยยิ้มของลีร่าที่มีต่อชินจิ"
+          }
         }
       ]
     },
@@ -382,7 +509,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p66-1"
+            ],
+            "reason": "เป็นคำของน้องสาวเอลฟ์ที่เรียกคู่สนทนาว่าพี่สาว; p38-1 เป็นคำแก้ตัวของลีร่าผู้ถูกตำหนิ; ต้นฉบับไม่แยกว่าลิลี่หรือลิล จึงใช้ลำดับลิลี่ก่อนลิลแบบเดียวกับ 181641 และ p66-1 ระบุว่าลิลี่กับลิลช่วยกันสงบสติลีร่า"
+          }
         }
       ]
     },
@@ -393,7 +529,17 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ลีร่าเป็นผู้แก้ตัวว่าที่มาช้าเพราะคุณชินจิมา และ p41-1 ถึง p42-1 ระบุท่าทีเขินของลีร่าที่มีต่อชินจิ"
+          }
         }
       ]
     },
@@ -414,7 +560,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอโทษที่มาหาแต่เช้า และลีร่าตอบใน p41-1"
+          }
         }
       ]
     },
@@ -425,7 +580,16 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p42-1 ระบุชัดว่าลีร่ายิ้มให้ชินจิและไอริสรู้ได้ว่าลีร่าชอบชินจิ"
+          }
         }
       ]
     },
@@ -456,7 +620,16 @@
           "start": 0,
           "end": 167,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิเป็นผู้แนะนำไอริสให้เอลฟ์ทั้งสามรู้จัก และ p45-1 ระบุว่าไอริสก้มศีรษะเมื่อเขแนะนําเธอ"
+          }
         }
       ]
     },
@@ -477,7 +650,16 @@
           "start": 0,
           "end": 221,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายบทบาทของสามพี่น้องเอลฟ์ต่อ และ p47-1 ระบุว่าลีร่าฟังการแนะนำของชินจิอย่างเงียบๆ"
+          }
         }
       ]
     },
@@ -508,7 +690,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ยื่นมือขอจับมือตาม p47-1 และ p48-1 ระบุว่าไอริสจับมือกับลีร่าก่อน จากนั้นจึงจับมือกับลิลี่และลิล"
+          }
         }
       ]
     },
@@ -519,7 +710,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้น \"「「...」」\" เป็นเสียงพร้อมกันของลิลี่และลิลที่น้องสาวทั้งสองเอ่ยตอบรับ; ใช้ netori-party สำหรับเสียงหมู่ตามแบบ 180253 และ 180918"
+          }
         }
       ]
     },
@@ -530,7 +730,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับคำทักทายของสองพี่น้อง และ p52-1 บรรยายรอยยิ้มโล่งใจของเธอ"
+          }
         }
       ]
     },
@@ -551,7 +760,16 @@
           "start": 0,
           "end": 213,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "p52-1 ระบุว่าชินจิเปิดปากพูดอีกครั้ง และเนื้อหาเป็นการเล่าเรื่องกำหนดสัญญาให้เอลฟ์ฟัง"
+          }
         }
       ]
     },
@@ -562,7 +780,16 @@
           "start": 0,
           "end": 138,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p58-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ตอบแทนปาร์ตี้เรื่องกำหนดหนึ่งสัปดาห์ และ p58-1 ระบุว่าลีร่าทำหน้าประหลาดใจต่อคำถามของไอริส"
+          }
         }
       ]
     },
@@ -573,7 +800,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบว่าไม่มีปัญหาก่อน p56-1 บรรยายสีหน้ากังวลของเธอ"
+          }
         }
       ]
     },
@@ -594,7 +830,16 @@
           "start": 0,
           "end": 158,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ไอริสเป็นผู้ถามเรื่องการลดระดับปาร์ตี้ตามที่ p58-1 บรรยายว่าเธอตัดสินใจถาม"
+          }
         }
       ]
     },
@@ -615,7 +860,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ถามชินจิด้วยความประหลาดใจตาม p58-1 ก่อนชินจิอธิบายใน p60-1"
+          }
         }
       ]
     },
@@ -626,7 +880,16 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าเป็นเรื่องละเอียดอ่อนจึงยังไม่ได้เล่า ก่อน p61-1 บรรยายว่าเขาหันไปขออนุญาตพวกลีร่า"
+          }
         }
       ]
     },
@@ -647,7 +910,17 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1",
+              "p66-1"
+            ],
+            "reason": "p63-1 ของน้องสาวเรียกผู้พูดนี้ว่าพี่สาว และ p66-1 ระบุว่าความใส่ใจของชินจิทำให้ลีร่าใจเต้น"
+          }
         }
       ]
     },
@@ -658,7 +931,17 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1",
+              "p66-1"
+            ],
+            "reason": "เป็นคำของน้องสาวฝาแฝดที่เรียกผู้พูดก่อนหน้าว่าพี่สาว; p66-1 ระบุว่าลิลี่และลิลช่วยกันจึงใช้ลำดับลิลี่ก่อนลิลแบบ 181641"
+          }
         }
       ]
     },
@@ -669,7 +952,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p66-1"
+            ],
+            "reason": "เป็นคำพูดต่อเนื่องของฝาแฝดอีกคนที่ช่วยสงบสติลีร่าตาม p66-1 จึงใช้ลำดับลิลี่แล้วลิลแบบ 181641"
+          }
         }
       ]
     },
@@ -680,7 +972,16 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ขอโทษแทนปาร์ตี้และบอกว่าพวกเธอพูดเองไม่ได้; p66-1 ถึง p67-1 บรรยายการปรับสีหน้าของเธอ"
+          }
         }
       ]
     },
@@ -711,7 +1012,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอบคุณสามพี่น้อง และ p69-1 ระบุว่าเขายิ้มอย่างเป็นธรรมชาติเหมือนเดิม"
+          }
         }
       ]
     },

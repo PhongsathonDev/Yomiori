@@ -78,7 +78,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิหันไปหาสมาชิกปาร์ตี้แล้วขอบอกพักผ่อน"
+          }
         }
       ]
     },
@@ -99,7 +108,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "อัลวินเป็นผู้พยักหน้ารับและบอกให้ชินจิพัก"
+          }
         }
       ]
     },
@@ -110,7 +127,15 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เรนกะเป็นผู้เรียกชื่อชินจิด้วยความเป็นห่วงก่อน p12-1 บรรยายว่าเธอดูเป็นห่วง"
+          }
         }
       ]
     },
@@ -125,8 +150,14 @@
         {
           "start": 38,
           "end": 49,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ชินจิส่งสายตาบอกเรนกะแทนการพูด จึงไม่ใช่บทสนทนาออกเสียง"
+          }
         },
         {
           "start": 49,
@@ -142,7 +173,17 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เรนกะเป็นผู้ขอให้ชินจิทำอาหารอีกหลังกลับบ้าน และ p15-1 ระบุว่าเธอยังทำหน้าครุ่นคิด"
+          }
         }
       ]
     },
@@ -153,7 +194,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ชินจิเป็นผู้รับปากว่าจะทำอาหารให้"
+          }
         }
       ]
     },
@@ -174,7 +224,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกให้อัลวินและมีริสพาเรนกะไปกินของอร่อย"
+          }
         }
       ]
     },
@@ -185,7 +244,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับและชวนเรนกะไป"
+          }
         }
       ]
     },
@@ -196,7 +264,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "เรนกะพูดด้วยน้ำเสียงเป็นกันเองว่าจะซื้อของฝากให้ชินจิ ต่างจากคำลงท้ายค่ะของมีริส"
+          }
         }
       ]
     },
@@ -207,7 +284,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบขอของอร่อย"
+          }
         }
       ]
     },
@@ -238,7 +324,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ชินจิพูดกับตัวเองหลังล้มตัวลงบนเตียงใน p21-1"
+          }
         }
       ]
     },
@@ -268,7 +363,16 @@
         {
           "start": 0,
           "end": 12,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p27-1"
+            ],
+            "reason": "เป็นคำตอบของแฟลร์ผ่านกระแสจิต"
+          }
         }
       ]
     },
@@ -278,7 +382,16 @@
         {
           "start": 0,
           "end": 13,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "เป็นคำตอบของเฟรรี่ผ่านกระแสจิต"
+          }
         }
       ]
     },
@@ -358,7 +471,15 @@
         {
           "start": 0,
           "end": 48,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p35-1 ระบุว่าความคิดจากแฟลร์มาถึงชินจิ ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -378,7 +499,15 @@
         {
           "start": 0,
           "end": 107,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p39-1"
+            ],
+            "reason": "เป็นคำอธิบายของแฟลร์ผ่านกระแสจิต"
+          }
         }
       ]
     },
@@ -388,7 +517,16 @@
         {
           "start": 0,
           "end": 27,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p39-1"
+            ],
+            "reason": "p39-1 ระบุว่าความคิดจากเฟรรี่มาถึงด้วย และเป็นเสียงของเฟรรี่ที่ถูกสั่งไม่ให้รบกวนมิโกะ"
+          }
         }
       ]
     },
@@ -398,7 +536,15 @@
         {
           "start": 0,
           "end": 95,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p39-1 ระบุว่าความคิดจากเทพธิดาอาริอานมาถึง และเนื้อหาพูดในฐานะแม่ของมิโกะ"
+          }
         }
       ]
     },
@@ -429,7 +575,15 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p42-1 ระบุว่ามิโกะอาริอานเป็นผู้ชะโงกมองและพูด"
+          }
         }
       ]
     },
@@ -454,8 +608,14 @@
         {
           "start": 77,
           "end": 85,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "เป็นเสียงหน้าอกกระเพื่อม 'ดึ่งๆ♡' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 85,
@@ -471,7 +631,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามว่าทำไมต้องให้นอนหนุนตัก"
+          }
         }
       ]
     },
@@ -482,7 +651,16 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "มิโกะอาริอานเป็นผู้ตอบและขอโทษถ้ารบกวน"
+          }
         }
       ]
     },
@@ -503,7 +681,16 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขออนุญาตลุกเพราะรู้สึกอาย"
+          }
         }
       ]
     },
@@ -524,7 +711,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "มิโกะอาริอานเป็นผู้พึมพำว่าจะยังไม่ได้ปลอบโยน"
+          }
         }
       ]
     },
@@ -564,7 +760,15 @@
         {
           "start": 0,
           "end": 67,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าคำพูดนี้เป็นของเฟรรี่ผ่านกระแสจิต"
+          }
         }
       ]
     },
@@ -574,7 +778,15 @@
         {
           "start": 0,
           "end": 162,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "เทพธิดาอาริอานพูดในฐานะแม่ของมิโกะอาริอานผ่านกระแสจิต"
+          }
         }
       ]
     },
@@ -594,7 +806,15 @@
         {
           "start": 0,
           "end": 40,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p59-1"
+            ],
+            "reason": "แฟลร์เป็นผู้แซวเทพธิดาอาริอานผ่านกระแสจิต"
+          }
         }
       ]
     },
@@ -604,7 +824,16 @@
         {
           "start": 0,
           "end": 25,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p59-1"
+            ],
+            "reason": "เทพธิดาอาริอานเป็นผู้ตอบแฟลร์ผ่านกระแสจิต"
+          }
         }
       ]
     },
@@ -614,7 +843,16 @@
         {
           "start": 0,
           "end": 18,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ส่งเสียงหยอกล้อก่อน p59-1 ระบุว่าความคิดทั้งสองขาดหาย"
+          }
         }
       ]
     },
@@ -645,7 +883,16 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "มิโกะอาริอานเป็นผู้พูดกับชินจิและก้มตัวลงใน p62-1"
+          }
         }
       ]
     },
@@ -755,7 +1002,14 @@
         {
           "start": 0,
           "end": 46,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "เป็นข้อความพรีวิวตอนต่อไปจากผู้แต่ง ไม่ใช่บทสนทนา"
+          }
         }
       ]
     }

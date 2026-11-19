@@ -58,7 +58,16 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p8-1"
+            ],
+            "reason": "p8 ระบุว่าอัลวินหัวเราะเย้าแหย่ชินจิที่พูดจาอ้อมแอ้ม จึงเป็นอัลวินผู้ทักเรื่องชินจิมีแฟนแล้ว"
+          }
         }
       ]
     },
@@ -69,7 +78,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำเย้าแหย่ของอัลวินด้วยคำพูดอ้อมแอ้มตามที่ p8 ระบุ"
+          }
         }
       ]
     },
@@ -90,7 +108,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "อัลวินถามต่อว่ามีอะไรที่บอกพวกเราไม่ได้ และ p10 ระบุว่าชินจิคุยกับอัลวินอยู่"
+          }
         }
       ]
     },
@@ -156,7 +183,15 @@
           "start": 151,
           "end": 158,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "p15 ระบุว่าชินจิส่งเสียงนี้ในลำคอเพื่อดึงความสนใจของทุกคน แล้ว p16 เขาพูดต่อ"
+          }
         },
         {
           "start": 158,
@@ -172,7 +207,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17 ระบุว่าเขาพูดคำที่ใช้หลบเลี่ยงเพื่อถ่วงเวลา ต่อจากเสียงในลำคอของชินจิใน p15"
+          }
         }
       ]
     },
@@ -233,7 +277,16 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "อัลวินซักต่อเรื่องจังหวะและถามว่าคนรักของชินจิเป็นใคร แล้ว p23 ชินจิตอบรับ"
+          }
         }
       ]
     },
@@ -244,7 +297,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24 ระบุว่าชินจิพยักหน้าตอบคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -270,7 +332,15 @@
           "start": 55,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25 ระบุว่าอัลวินทำจมูกบานด้วยความคาดหวังและพูดประโยคนี้กับชินจิ"
+          }
         }
       ]
     },
@@ -281,7 +351,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชินจิเป็นผู้เฉลยชื่อคนรัก และ p27 บรรยายว่าบรรยากาศในห้องเงียบกริบทันที"
+          }
         }
       ]
     },
@@ -302,7 +381,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p28-1",
+              "p32-1"
+            ],
+            "reason": "เป็นเสียงอุทานตกใจแบบไม่เป็นทางการของอัลวิน และ p32 ระบุว่าอัลวินกับไอริสหันไปมองเรนกะเพราะไม่เชื่อ"
+          }
         }
       ]
     },
@@ -313,7 +401,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p32-1"
+            ],
+            "reason": "คำอุทานสุภาพที่เรียก 'คุณเรนกะ' สอดคล้องกับไอริสผู้พูดสุภาพ และ p32 ระบุว่าไอริสหันไปมองเรนกะพร้อมอัลวิน"
+          }
         }
       ]
     },
@@ -364,7 +461,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "อัลวินที่กำลังตกตะลึงถามว่าเริ่มตั้งแต่เมื่อไหร่ และ p35 ชินจิทำหน้าขอโทษต่ออัลวิน"
+          }
         }
       ]
     },
@@ -385,7 +491,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p37 ระบุว่าชินจิโกหกเรื่องช่วงเวลาอย่างหน้าตาเฉย"
+          }
         }
       ]
     },
@@ -416,7 +531,16 @@
           "start": 0,
           "end": 137,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p38 ระบุว่าชินจิวางมือบนไหล่เรนกะแล้วพูดต่อ"
+          }
         }
       ]
     },
@@ -437,7 +561,17 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "เรนกะวางมือทับมือชินจิและเรียกอัลวินว่า 'อัล' เพื่อขอโทษเรื่องปิดบังความสัมพันธ์"
+          }
         }
       ]
     },
@@ -448,7 +582,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p43 ระบุว่าชินจิและเรนกะทำหน้าขอโทษอย่างจริงใจทั้งคู่ จึงเป็นคำขอโทษอีกประโยคของชินจิต่อจากของเรนกะใน p41"
+          }
         }
       ]
     },
@@ -549,7 +692,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p53 ระบุว่าอัลวินได้สติเมื่อได้ยินเสียงที่ถามอย่างไม่สบายใจของเรนกะ"
+          }
         }
       ]
     },
@@ -570,7 +722,17 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "อัลวินรีบโบกมือและพูดด้วยน้ำเสียงที่พยายามทำให้สดใส แล้วถามมีริสว่า 'ว่าไหม มี่!'"
+          }
         }
       ]
     },
@@ -581,7 +743,15 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับคำถามของอัลวินเรื่อง 'มี่' และตำหนิเรนกะอย่างสุภาพ"
+          }
         }
       ]
     },
@@ -592,7 +762,15 @@
           "start": 0,
           "end": 116,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57 ระบุว่าเรนกะหน้าแดงเมื่อได้ยินคำพูดของเอมิลี่ จึงเป็นเอมิลี่ผู้แซวเรื่องชินจิไม่สนใจเธอ"
+          }
         }
       ]
     },
@@ -722,7 +900,15 @@
         {
           "start": 0,
           "end": 59,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เป็นหมายเหตุผู้แปลอธิบายสำนวนญี่ปุ่นท้ายบท ไม่ใช่บทสนทนาของตัวละคร"
+          }
         }
       ]
     },
@@ -732,8 +918,16 @@
         {
           "start": 0,
           "end": 55,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "เป็นคำแปลความหมายสำนวนในหมายเหตุผู้แปล ถูกยกมาอ้างในเครื่องหมายคำพูด ไม่ใช่คำพูดของตัวละคร"
+          }
         },
         {
           "start": 55,
@@ -748,8 +942,16 @@
         {
           "start": 0,
           "end": 84,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "เป็นคำแปลความหมายสำนวนอีกแนวทางในหมายเหตุผู้แปล ไม่ใช่บทสนทนาในเนื้อเรื่อง"
+          }
         },
         {
           "start": 84,

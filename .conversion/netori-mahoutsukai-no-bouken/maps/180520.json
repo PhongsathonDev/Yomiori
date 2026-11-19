@@ -18,7 +18,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p4-1"
+            ],
+            "reason": "p4 ระบุว่าอัลวินกระตือรือร้นจะลองเวทเป็นคนแรก"
+          }
         }
       ]
     },
@@ -29,7 +37,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p12-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ควบคุมการฝึกและออกคำสั่งกับอัลวินตลอดฉาก (p12, p25) คำเตือนให้ถอยเพราะอันตรายจึงเป็นคำสั่งของผู้ฝึก"
+          }
         }
       ]
     },
@@ -50,7 +67,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "มีริสเรียกอัลวินว่าอัลคุงและเตือนให้ระวัง"
+          }
         }
       ]
     },
@@ -61,7 +86,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เรนกะเรียกมีริสว่ามี่และขอเป็นคนถัดจากอัล"
+          }
         }
       ]
     },
@@ -72,7 +105,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "มีริสตอบรับคำขอของเรนกะแล้วถามชินจิต่อ"
+          }
         }
       ]
     },
@@ -93,7 +134,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p8 ระบุว่าชินจิส่ายหน้า จากนั้นเขาบอกว่าตัวเองจะเป็นคนสุดท้าย"
+          }
         }
       ]
     },
@@ -104,7 +153,15 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "มีริสขอบคุณที่ชินจิให้เธอลองก่อน"
+          }
         }
       ]
     },
@@ -125,7 +182,15 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "เสียงเรียกอัลวินแบบอาจารย์ผู้สอน และ p13 อัลวินเรียกท่านอาจารย์ตอบ"
+          }
         }
       ]
     },
@@ -136,7 +201,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "อัลวินตอบรับคำสั่งของเอมิลี่ในฐานะลูกศิษย์"
+          }
         }
       ]
     },
@@ -167,7 +240,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p15 ระบุว่าอัลวินถือดาบใหญ่ และ p17 บรรยายว่าเขาฟันดาบลงมา"
+          }
         }
       ]
     },
@@ -208,7 +290,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p24-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ชื่นชมผลของเวทแล้วถามถึงการใช้พลังเวทต่อทันที และ p24 ระบุว่าเธอเป็นผู้ตรวจสอบพลังเวทของอัลวิน"
+          }
         }
       ]
     },
@@ -219,7 +310,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ผู้พูดถามอัลวินเรื่องการใช้พลังเวท และ p22 อัลวินตอบ"
+          }
         }
       ]
     },
@@ -230,7 +329,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "อัลวินตอบคำถามของเอมิลี่"
+          }
         }
       ]
     },
@@ -261,7 +368,15 @@
           "start": 0,
           "end": 135,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "เป็นคำสั่งฝึกของเอมิลี่ และ p26 อัลวินตอบรับ"
+          }
         }
       ]
     },
@@ -272,7 +387,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "อัลวินตอบรับคำสั่งของอาจารย์"
+          }
         }
       ]
     },
@@ -293,7 +416,15 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ชินจิฝากอัลวินไว้กับเอมิลี่ และ p29 เอมิลี่ตอบรับ"
+          }
         }
       ]
     },
@@ -304,7 +435,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "เอมิลี่ตอบรับคำฝากของชินจิ"
+          }
         }
       ]
     },
@@ -345,7 +484,15 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "ชินจิชวนเรนกะลองเวทของเธอ และ p34 เรนกะตอบรับ"
+          }
         }
       ]
     },
@@ -356,7 +503,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "เรนกะตอบรับและยิงธนูตาม p35"
+          }
         }
       ]
     },
@@ -377,7 +533,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ชินจิวิเคราะห์ผลของเวท〈ติดตาม〉ต่อเนื่องสองประโยคในแบบเดียวกับที่เขาวิเคราะห์เวทของมีริสใน p48"
+          }
         }
       ]
     },
@@ -388,7 +553,15 @@
           "start": 0,
           "end": 117,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจากการวิเคราะห์ของชินจิใน p36"
+          }
         }
       ]
     },
@@ -399,7 +572,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "มีริสชมเรนกะจัง และ p39 เรนกะขอบใจมี่"
+          }
         }
       ]
     },
@@ -410,7 +591,15 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "เรนกะขอบใจมีริสและพูดถึงการฝึกต่อ"
+          }
         }
       ]
     },
@@ -441,7 +630,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p41 ระบุว่าชินจิเตรียมเป้าหมายให้มีริส แล้วเขาเสนอเวท〈ดาบศักดิ์สิทธิ์〉"
+          }
         }
       ]
     },
@@ -452,7 +650,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "มีริสตอบรับข้อเสนอของชินจิ"
+          }
         }
       ]
     },
@@ -467,8 +673,14 @@
         {
           "start": 93,
           "end": 101,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "คำว่า“คู่นอน”ในเครื่องหมายคำพูดเป็นคำเรียกที่ผู้บรรยายใช้ ไม่ใช่คำพูดของตัวละคร"
+          }
         },
         {
           "start": 101,
@@ -494,7 +706,15 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "มีริสรวบรวมสมาธิและร่ายคาถาตาม p45"
+          }
         }
       ]
     },
@@ -515,7 +735,16 @@
           "start": 0,
           "end": 165,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิวิเคราะห์ขนาดดาบหลังการร่ายของมีริส และ p49 บรรยายว่าดาบหายไป"
+          }
         }
       ]
     },
@@ -546,7 +775,15 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "มีริสตอบว่าจะลองหลายอย่างหลังชินจิวิเคราะห์เวท"
+          }
         }
       ]
     },
@@ -557,7 +794,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "ชินจิสนับสนุนให้มีริสลองแล้วบอกว่าจะไปดูอัลวินกับเรนกะ"
+          }
         }
       ]
     },
@@ -568,7 +814,15 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "มีริสตอบรับคำของชินจิ"
+          }
         }
       ]
     },
@@ -593,8 +847,14 @@
         {
           "start": 97,
           "end": 105,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "คำว่า“คู่นอน”ในเครื่องหมายคำพูดเป็นคำเรียกในคำบรรยาย ไม่ใช่คำพูดของตัวละคร"
+          }
         },
         {
           "start": 105,
@@ -650,7 +910,15 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ชินจิประเมินสีหน้าของทุกคนหลังกลับมารวมตัวตาม p59"
+          }
         }
       ]
     },
@@ -661,7 +929,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p66-1"
+            ],
+            "reason": "อัลวินตอบรับอย่างกระตือรือร้น และ p66 บรรยายความคิดเรื่องเงินของเขา"
+          }
         }
       ]
     },
@@ -672,7 +949,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "เรนกะตอบด้วยนั่นสินะคะ และ p63 ระบุว่ามีริสพยักหน้าเห็นด้วยเหมือนเรนกะ"
+          }
         }
       ]
     },
@@ -693,7 +979,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "ชินจิเสนอให้อัลวินรับเควสต์ต่อ และ p65 อัลวินตอบ"
+          }
         }
       ]
     },
@@ -704,7 +999,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "อัลวินตอบเรื่องเก็บเงิน และ p66 บรรยายถึงความคิดของเขา"
+          }
         }
       ]
     },
@@ -725,7 +1029,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "ชินจิถามเอมิลี่ต่อจากเรื่องเควสต์ และ p68 เอมิลี่ตอบ"
+          }
         }
       ]
     },
@@ -736,7 +1049,15 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "เอมิลี่ตอบเรื่องแผนทำงานเดี่ยวของเธอ"
+          }
         }
       ]
     },
@@ -747,7 +1068,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p72-1"
+            ],
+            "reason": "อัลวินเรียกเอมิลี่ว่าอาจารย์ด้วยความซาบซึ้ง และ p72 ทั้งสองจับมือกัน"
+          }
         }
       ]
     },
@@ -758,7 +1088,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p72-1"
+            ],
+            "reason": "เอมิลี่ตอบคำเรียกของอัลวินอย่างไม่ถนัดใจ และ p72 ระบุว่าทั้งสองตอบด้วยรอยยิ้มแล้วจับมือกัน"
+          }
         }
       ]
     },
@@ -769,7 +1108,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p73-1"
+            ],
+            "reason": "ชินจิหัวเราะในฉาก และ p73 ระบุว่าเรนกะกับมีริสหัวเราะแห้งๆ ตาม"
+          }
         }
       ]
     },
@@ -800,7 +1148,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "ชินจิชวนอัญเชิญเฟรรี่เป็นการฝึกครั้งสุดท้าย"
+          }
         }
       ]
     },
@@ -811,7 +1168,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p77-1"
+            ],
+            "reason": "อัลวินตอบรับอย่างกระตือรือร้นตาม p77"
+          }
         }
       ]
     },
@@ -822,7 +1188,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "มีริสตอบรับอย่างกระตือรือร้นตาม p77"
+          }
         }
       ]
     },
@@ -843,7 +1218,15 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1"
+            ],
+            "reason": "ชินจิเรียกเฟรรี่ แล้ว p79 บรรยายว่าวงเวทปรากฏข้างเขา"
+          }
         }
       ]
     },
@@ -884,7 +1267,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "p83 ระบุว่าเสียงชมความน่ารักทำให้หัวใจของมีริสถูกยิงทะลุ"
+          }
         }
       ]
     },
@@ -910,7 +1301,14 @@
           "start": 23,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1"
+            ],
+            "reason": "p84 ระบุว่ามีริสกวักมือเรียกเฟรรี่พร้อมเปล่งประโยคนี้"
+          }
         },
         {
           "start": 42,
@@ -920,8 +1318,14 @@
         {
           "start": 102,
           "end": 109,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1"
+            ],
+            "reason": "กึ้บ♪ เป็นเสียงจากการกอด ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 109,
@@ -937,7 +1341,17 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "เรนกะถามชินจิด้วยรูปประโยคเดียวกับที่เธอถามเขาใน p47 ของบทที่ 34 และ p87 ระบุว่าอัลวินกับเรนกะเอียงคอสงสัย"
+          }
         }
       ]
     },
@@ -948,7 +1362,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "ชินจิหัวเราะและยืนยันคำตอบให้อัลวินกับเรนกะตาม p87"
+          }
         }
       ]
     },
@@ -969,7 +1392,15 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p88-1",
+              "p90-1"
+            ],
+            "reason": "p90 ระบุว่าคำรับรองเรื่องเฟรรี่เป็นของเอมิลี่"
+          }
         }
       ]
     },
@@ -980,7 +1411,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p88-1",
+              "p89-1",
+              "p90-1"
+            ],
+            "reason": "ชินจิพยักหน้ารับคำรับรองของเอมิลี่ตาม p90"
+          }
         }
       ]
     },
@@ -1001,7 +1441,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p89-1",
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "อัลวินตอบรับสั้นๆ ก่อนเรนกะเริ่มบทพูดใหม่ใน p92"
+          }
         }
       ]
     },
@@ -1012,7 +1461,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1"
+            ],
+            "reason": "เรนกะแซวมีริสเรื่องกอด และ p93 มีริสตอบ"
+          }
         }
       ]
     },
@@ -1023,7 +1480,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1"
+            ],
+            "reason": "มีริสตอบว่าเฟรรี่น่ารัก"
+          }
         }
       ]
     },
@@ -1034,7 +1499,15 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "p95 ระบุว่าชินจิเป็นผู้พูดกับเฟรรี่"
+          }
         }
       ]
     },
@@ -1054,8 +1527,16 @@
         {
           "start": 0,
           "end": 17,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "มีเพียงจุดไข่ปลาแสดงความเงียบ/การไม่ตอบของเฟรรี่ ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
         }
       ]
     },
@@ -1066,7 +1547,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "ชินจิขอให้เฟรรี่พูดหลังจากเธอเงียบใส่ตาม p95-p96"
+          }
         }
       ]
     },

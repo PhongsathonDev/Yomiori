@@ -28,7 +28,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "อากาเนะรอชินจิอยู่ในห้องและเอ่ยเรียกชื่อเขาก่อน p4 ที่บรรยายว่าเธอกำลังรออยู่"
+          }
         }
       ]
     },
@@ -49,7 +57,15 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p7-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามอากาเนะ และ p7 ระบุว่าเขาบอกว่าจะมาคุยด้วยตอนกลางคืน"
+          }
         }
       ]
     },
@@ -60,7 +76,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "อากาเนะตอบคำถามชินจิ และ p7 อธิบายว่าเธอยังไม่นอนเพราะรอเขา"
+          }
         }
       ]
     },
@@ -81,7 +106,15 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกเรื่องที่อยากให้อากาเนะรับรู้ ก่อนเธอตอบใน p9"
+          }
         }
       ]
     },
@@ -92,7 +125,16 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "อากาเนะตอบด้วยคำลงท้าย ค่ะ และ p11 ระบุว่าเธอส่ายหน้ากับคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -103,7 +145,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิถามกลับหลังอากาเนะเอ่ยถึงเรนกะ และ p11 ระบุว่าเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -124,7 +174,15 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "อากาเนะขอร่วมเป็นคู่นอนต่อจากคำพูดของชินจิใน p11"
+          }
         }
       ]
     },
@@ -135,7 +193,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "ชินจิทำเป็นครุ่นคิดก่อนอากาเนะจะอ้อนวอนใน p14"
+          }
         }
       ]
     },
@@ -146,7 +212,15 @@
           "start": 0,
           "end": 90,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "อากาเนะเรียกชินจิว่านายท่านและอ้อนวอนเขา"
+          }
         }
       ]
     },
@@ -167,7 +241,15 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิเปลี่ยนเป็นท่าทีแข็งกร้าวตาม p17 ที่บรรยายว่าเขาจงใจทำเช่นนั้น"
+          }
         }
       ]
     },
@@ -198,7 +280,15 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p19-1"
+            ],
+            "reason": "อากาเนะตอบรับคำสั่งของชินจิด้วยคำว่าค่ะ"
+          }
         }
       ]
     },
@@ -248,8 +338,15 @@
         {
           "start": 0,
           "end": 46,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เป็นเสียงจุ๊บจากการใช้ปากใน p25 ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -280,7 +377,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ชินจิถามอากาเนะเรื่องที่ฝึกมา และ p29 ระบุว่าเธอตอบคำถามของชินจิ"
+          }
         }
       ]
     },
@@ -291,7 +397,16 @@
           "start": 0,
           "end": 128,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "อากาเนะตอบคำถามชินจิพร้อมเรียกเขาว่านายท่าน"
+          }
         }
       ]
     },
@@ -322,7 +437,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p33-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้อากาเนะเปลี่ยนท่า และ p33 บรรยายว่าเธอทำตาม"
+          }
         }
       ]
     },
@@ -333,7 +456,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "อากาเนะตอบรับคำสั่งและเอ่ยถึงชินจิว่านายท่าน"
+          }
         }
       ]
     },
@@ -364,7 +495,15 @@
           "start": 0,
           "end": 106,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p38-1"
+            ],
+            "reason": "อากาเนะเป็นผู้ถูกสอดใส่และเรียกชินจิว่านายท่าน"
+          }
         }
       ]
     },
@@ -375,7 +514,15 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "ชินจิเป็นผู้เอ่ยถึงช่องคลอดของอากาเนะขณะกระทำกับเธอ"
+          }
         }
       ]
     },
@@ -426,7 +573,14 @@
           "start": 0,
           "end": 107,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "อากาเนะเรียกชินจิว่านายท่านและบอกว่าใกล้เสร็จ"
+          }
         }
       ]
     },
@@ -437,7 +591,15 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชินจิเตือนเรื่องที่เคยสอนไว้ว่าห้ามเสร็จก่อน"
+          }
         }
       ]
     },
@@ -448,7 +610,15 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "อากาเนะตอบและถึงจุดสุดยอดตาม p44"
+          }
         }
       ]
     },
@@ -463,8 +633,14 @@
         {
           "start": 51,
           "end": 61,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "คิวย์นเป็นเสียงของช่องคลอดที่รัดแน่นในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 61,
@@ -520,7 +696,15 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิติงว่ายังฝึกไม่พอหลังอากาเนะเสร็จก่อน"
+          }
         }
       ]
     },
@@ -531,7 +715,15 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "อากาเนะตอบรับคำติงของนายท่าน"
+          }
         }
       ]
     },
@@ -582,7 +774,15 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "อากาเนะบอกนายท่านว่าไม่ไหวและจะเสร็จอีก"
+          }
         }
       ]
     },
@@ -593,7 +793,15 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิต่อว่าอากาเนะที่ติดนิสัยเสร็จง่าย"
+          }
         }
       ]
     },
@@ -608,8 +816,14 @@
         {
           "start": 40,
           "end": 48,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "กุกกักเป็นเสียงในลำคอของอากาเนะที่ตอบไม่ได้ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 48,
@@ -635,7 +849,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p61-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะทำช้าๆ ก่อน p61 บรรยายการกระซิบของเขา"
+          }
         }
       ]
     },
@@ -646,7 +868,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "อากาเนะเรียกนายท่านและถามว่าสิ่งที่เห็นคืออะไร"
+          }
         }
       ]
     },
@@ -667,7 +897,15 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ชินจิกระซิบอธิบายรอยสลักตาม p61"
+          }
         }
       ]
     },
@@ -678,7 +916,15 @@
           "start": 0,
           "end": 112,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "อากาเนะตอบด้วยความดีใจและเรียกนายท่าน"
+          }
         }
       ]
     },
@@ -709,7 +955,15 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชินจิแจ้งเรื่องมีริสและเอมิลี่พร้อมขอให้ปิดเป็นความลับจากอัลวิน"
+          }
         }
       ]
     },
@@ -720,7 +974,15 @@
           "start": 0,
           "end": 120,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "อากาเนะสรุปว่าทุกคนในบ้านเป็นผู้หญิงของนายท่าน"
+          }
         }
       ]
     },
@@ -736,7 +998,14 @@
           "start": 33,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "เป็นเสียงครางของอากาเนะที่ p68 บรรยายว่าแอ่นหลังแล้วครางออกมาจนน้ำลายไหล"
+          }
         },
         {
           "start": 52,
@@ -752,7 +1021,15 @@
           "start": 0,
           "end": 125,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "ชินจิสั่งให้อากาเนะเก็บกวาดและปิดเรื่องจากอัลวิน"
+          }
         }
       ]
     },
@@ -763,7 +1040,15 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "อากาเนะตอบรับว่าจะร่วมมือและปิดเรื่องจากอัลวิน"
+          }
         }
       ]
     },
@@ -798,8 +1083,14 @@
         {
           "start": 92,
           "end": 102,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "คิวย์นเป็นเสียงของช่องคลอดที่รัดแน่นหลังการจูบ ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -850,7 +1141,14 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1"
+            ],
+            "reason": "อากาเนะเรียกนายท่านและฝากตัวกับเขา"
+          }
         }
       ]
     },

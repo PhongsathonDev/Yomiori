@@ -18,7 +18,15 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p3-1 ระบุว่าเอมิลี่เป็นผู้หยิบกล้องส่องทางไกลและมองบอลลูนหลังเอ่ยถึงแผนเบี่ยงเบนความสนใจ"
+          }
         }
       ]
     },
@@ -53,8 +61,15 @@
         {
           "start": 17,
           "end": 46,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p4-1 ระบุว่าเป็นเนื้อความที่ได้จากธงสัญญาณของเจ้าหน้าที่ควบคุมบอลลูน ไม่ใช่คำพูดของตัวละครในฉาก"
+          }
         }
       ]
     },
@@ -65,7 +80,16 @@
           "start": 0,
           "end": 152,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้อ่านสถานการณ์และแบ่งหน้าที่ให้ปาร์ตี้ก่อนการบุก"
+          }
         }
       ]
     },
@@ -76,7 +100,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่ตอบรับแล้วสั่งให้ทุกคนลุย"
+          }
         }
       ]
     },
@@ -87,7 +120,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "เป็นเสียงตอบรับด้วยคำลงท้าย 'ค่ะ' ของมีริสก่อนเรนกะและชินจิ ตอบใน p9-1 และ p10-1"
+          }
         }
       ]
     },
@@ -98,7 +140,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "เป็นเสียงตอบรับสั้นๆ ของเรนกะ หลังจากมีริสตอบใน p8-1 และก่อนชินจิใน p10-1"
+          }
         }
       ]
     },
@@ -109,7 +160,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิเป็นสมาชิกคนที่สี่ที่ตอบรับด้วยถ้อยคำสุภาพว่า 'จะพยายามให้เต็มที่'"
+          }
         }
       ]
     },
@@ -180,7 +240,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p19-1 ระบุว่าเสียงตะโกนที่ทำให้มีริสร่ายเวทมนตร์มาจากชินจิและอัลวิน และ p18-1 เป็นเสียงอัลวิน"
+          }
         }
       ]
     },
@@ -191,7 +260,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่าอัลวินถือดาบใหญ่เดินไปข้างหน้าและตะโกนเรียกมีริส"
+          }
         }
       ]
     },
@@ -212,7 +290,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p19-1 ระบุว่ามีริสถือไม้เท้าแล้วร่ายเวทมนตร์ตามเสียงตะโกน"
+          }
         }
       ]
     },
@@ -243,7 +329,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ระบุว่าลูกธนูที่เรนกะยิงออกไปปักเข้าที่ขาหน้าของมังกรตัวเมีย"
+          }
         }
       ]
     },
@@ -254,7 +349,15 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p26-1"
+            ],
+            "reason": "p26-1 ระบุว่ากระสุนหินที่ชินจิปล่อยออกไปพุ่งเข้าใส่มังกรอีกตัว"
+          }
         }
       ]
     },
@@ -285,7 +388,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p26-1 ระบุว่ากระสุนหินของชินจิถูกมังกรหลบ จึงเป็นชินจิที่เปรยว่ายิงไปเฉยๆ ไม่โดน"
+          }
         }
       ]
     },
@@ -296,7 +408,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "เรนกะเป็นพลธนูที่เสนอให้เล็งพร้อมกันหลังการโจมตีเดี่ยวไม่สำเร็จ"
+          }
         }
       ]
     },
@@ -307,7 +428,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "อัลวินเป็นผู้เรียกมีริสว่า 'มี่' และขอให้สนับสนุน"
+          }
         }
       ]
     },
@@ -318,7 +447,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับอัลวินและร่าย〈บาเรียกายภาพ〉"
+          }
         }
       ]
     },
@@ -379,7 +516,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p34-1 ถึง p35-1 บรรยายอัลวินรับแรงพุ่งเข้าใส่ของมังกรก่อนเปล่งเสียงโจมตีสวน"
+          }
         }
       ]
     },
@@ -390,7 +536,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p40-1"
+            ],
+            "reason": "ชินจิเป็นผู้แบ่งหน้าที่กับเรนกะในการจัดการมังกรตัวเมียอีกตัว"
+          }
         }
       ]
     },
@@ -421,7 +576,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 ระบุว่าพื้นใต้เท้ามังกรกลายเป็นบึงโคลนด้วยเวทมนตร์ของชินจิ"
+          }
         }
       ]
     },
@@ -462,7 +626,15 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "p45-1 ระบุว่าเอมิลี่ที่จ้องมองมังกรดำเริ่มเคลื่อนไหวหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -503,7 +675,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ต่อสู้กับมังกรดำและเป็นผู้พูดหลังมังกรรับการโจมตีได้"
+          }
         }
       ]
     },
@@ -518,8 +699,14 @@
         {
           "start": 182,
           "end": 197,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "เป็นเสียงฝีเท้าของมังกร (sound effect) ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -590,7 +777,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "อัลวินเป็นผู้เรียกมีริสว่า 'มี่' และขอให้ร่าย〈เพิ่มความเร็ว〉"
+          }
         }
       ]
     },
@@ -601,7 +796,15 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับและร่าย〈เพิ่มความเร็ว〉ให้อัลวิน"
+          }
         }
       ]
     },
@@ -702,7 +905,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p67-1"
+            ],
+            "reason": "p64-1 ถึง p65-1 บรรยายแขนหินที่ตรึงมังกรไว้ และ p73-1 ยืนยันว่าชินจิเป็นผู้ใช้〈แขนหิน〉"
+          }
         }
       ]
     },
@@ -713,7 +925,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "p69-1 ระบุว่าดาบใหญ่ของอัลวินถูกฟันลงมาหลังเสียงตะโกนนี้"
+          }
         }
       ]
     },
@@ -744,7 +964,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "p72-1 ระบุว่ามังกรตัวเมียที่ขาติดบึงถูกเรนกะยิงตาย และเรนกะเรียกอัลวินว่า 'อัล'"
+          }
         }
       ]
     },
@@ -825,7 +1053,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอบคุณชินจิที่ใช้〈แขนหิน〉ช่วยตนสังหารมังกร"
+          }
         }
       ]
     },
@@ -836,7 +1073,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1",
+              "p80-1",
+              "p81-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำขอบคุณและชวนไปช่วยเอมิลี่"
+          }
         }
       ]
     },
@@ -847,7 +1093,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1",
+              "p81-1",
+              "p57-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับด้วยเสียง 'อื้อ' แบบเดียวกับที่ใช้ตอบอัลวินใน p57-1"
+          }
         }
       ]
     },
@@ -938,7 +1193,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p89-1",
+              "p90-1",
+              "p91-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้รอปาร์ตี้มาสมทบแล้วตะโกนขอพลังเวทจากชินจิ"
+          }
         }
       ]
     },
@@ -949,7 +1213,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p90-1",
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "ชินจิเป็นผู้ลังเลแล้วยอมทำตามคำขอของเอมิลี่และห้ามอัลวินกับคนอื่นออกมาข้างหน้า"
+          }
         }
       ]
     },
@@ -980,7 +1253,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "p93-1 ระบุว่าเอมิลี่ได้รับ〈มานาลิงก์〉แล้วปลดปล่อยท่าไม้ตาย"
+          }
         }
       ]
     },
@@ -1020,8 +1302,14 @@
         {
           "start": 0,
           "end": 8,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1"
+            ],
+            "reason": "เป็นเสียงร่างกายถูกตัดขาด (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 8,
@@ -1037,7 +1325,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p99-1",
+              "p100-1"
+            ],
+            "reason": "p100-1 ระบุว่าเอมิลี่ปักกระบองเหล็กที่พื้นแล้วหันกลับมาพร้อมรอยยิ้มหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -1058,7 +1354,15 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p101-1",
+              "p105-1"
+            ],
+            "reason": "p105-1 ระบุว่าเอมิลี่และอัลวินกำลังไฮไฟว์กันด้วยความดีใจ"
+          }
         }
       ]
     },
@@ -1069,7 +1373,15 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p106-1"
+            ],
+            "reason": "มีริสเป็นผู้พูดด้วยคำลงท้าย 'ค่ะ' และ p106-1 ระบุว่ามีริสกำลังรีบเตรียมมานาโพชั่นให้ชินจิ"
+          }
         }
       ]
     },
@@ -1080,7 +1392,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p103-1",
+              "p106-1"
+            ],
+            "reason": "p106-1 ระบุว่าเรนกะกำลังพยุงชินจิที่ดูเหนื่อยล้า จึงเป็นผู้ร้องถามอาการของชินจิ"
+          }
         }
       ]
     },
@@ -1091,7 +1412,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p103-1",
+              "p104-1",
+              "p107-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้รู้สาเหตุว่าชินจิอ่อนเพลียเพราะเธอถูกดูดพลังเวทไป และ p107-1 ระบุว่าเสียงประท้วงของชินจิไม่ได้ยินถึงหูทั้งสองคน"
+          }
         }
       ]
     },

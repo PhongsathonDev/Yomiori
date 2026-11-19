@@ -28,7 +28,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "เป็นคำสรุปของไอริสที่เดินเคียงเอมิลี่ และ p4-1 เป็นเอมิลี่ตอบกลับ"
+          }
         }
       ]
     },
@@ -39,7 +47,16 @@
           "start": 0,
           "end": 153,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p7-1"
+            ],
+            "reason": "เป็นคำตอบให้กำลังใจของผู้เป็นอาจารย์ และ p7-1 ระบุว่าเอมิลี่คุยกับไอริส"
+          }
         }
       ]
     },
@@ -60,7 +77,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "ตรวจบริบท p6-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -71,7 +95,15 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p9-1"
+            ],
+            "reason": "p9-1 ระบุว่าเอมิลี่แยกจากไอริสแล้ววิ่งไปหาชินจิ ตรงกับคำพูดนี้"
+          }
         }
       ]
     },
@@ -82,7 +114,14 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "ตรวจบริบท p8-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -133,7 +172,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p16-1"
+            ],
+            "reason": "เป็นคำถามห่วงใยที่เรียก 'ไอริสจัง' และ p16-1 ระบุว่าไอริสคุยกับอัลวินและมีริส"
+          }
         }
       ]
     },
@@ -144,7 +192,14 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "ตรวจบริบท p14-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -155,7 +210,16 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "p16-1 ระบุว่าบทสนทนานี้เป็นการพูดคุยของอัลวินและมีริส"
+          }
         }
       ]
     },
@@ -196,7 +260,14 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "ตรวจบริบท p19-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -207,7 +278,14 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -228,7 +306,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "เป็นคำทักทายกาเลโออย่างสุภาพก่อนที่อัลวินจะทักใน p23-1 และกาเลโอตอบถึงมีริสใน p24-1"
+          }
         }
       ]
     },
@@ -239,7 +326,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -250,7 +344,14 @@
           "start": 0,
           "end": 101,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ตรวจบริบท p24-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -271,7 +372,14 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "ตรวจบริบท p26-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -282,7 +390,14 @@
           "start": 0,
           "end": 104,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -293,7 +408,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "ตรวจบริบท p28-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -314,7 +436,15 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "เป็นคำเชิญแขกเข้าไปในบ้านปาร์ตี้ที่ชินจิพักอยู่ และ p31-1 เป็นกาเลโอผู้มาเยือนตอบรับ"
+          }
         }
       ]
     },
@@ -325,7 +455,14 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "ตรวจบริบท p31-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -346,7 +483,14 @@
           "start": 0,
           "end": 194,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -367,7 +511,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p37-1 ระบุว่ามีริสพยักหน้าเห็นด้วยกับคำพูดของอัลวินและเรนกะ จึงเป็นคำของอัลวินใน p35-1 และเรนกะใน p36-1"
+          }
         }
       ]
     },
@@ -378,7 +531,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p37-1 ระบุว่ามีริสเห็นด้วยกับคำพูดของอัลวินและเรนกะ"
+          }
         }
       ]
     },
@@ -399,7 +561,14 @@
           "start": 0,
           "end": 163,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -410,7 +579,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "เครื่องหมายคำพูดสามชั้นหมายถึงอัลวินและคนอื่นๆ ตอบพร้อมกัน; p40-1 ระบุว่าอัลวินและคนอื่นๆ ที่เคยได้รับการสอนจากกาเลโอดีใจ"
+          }
         }
       ]
     },
@@ -431,7 +608,14 @@
           "start": 0,
           "end": 165,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "ตรวจบริบท p41-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -442,7 +626,14 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -453,7 +644,14 @@
           "start": 0,
           "end": 107,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "ตรวจบริบท p43-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -464,7 +662,14 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "ตรวจบริบท p44-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -485,7 +690,14 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "ตรวจบริบท p46-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -496,7 +708,14 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "ตรวจบริบท p47-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -507,7 +726,14 @@
           "start": 0,
           "end": 177,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -538,7 +764,14 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1"
+            ],
+            "reason": "ตรวจบริบท p51-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -549,7 +782,14 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -560,7 +800,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าแม้อัลวินและเรนกะจะเข้ามาไกล่เกลี่ย จึงเป็นคำของเรนกะต่อจากอัลวินใน p51-1"
+          }
         }
       ]
     },
@@ -571,7 +819,14 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ตรวจบริบท p54-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -592,7 +847,15 @@
           "start": 0,
           "end": 80,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุว่าเมื่อได้ยินคำพูดของชินจิ กาเลโอก็สงบลง"
+          }
         }
       ]
     },
@@ -613,7 +876,14 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "ตรวจบริบท p58-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -634,7 +904,14 @@
           "start": 0,
           "end": 166,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "ตรวจบริบท p60-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -645,7 +922,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p62-1 ระบุว่ากาเลโอพยักหน้าช้าๆ"
+          }
         }
       ]
     },
@@ -676,7 +961,14 @@
           "start": 0,
           "end": 224,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1"
+            ],
+            "reason": "ตรวจบริบท p64-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -687,7 +979,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "p66-1 ระบุว่าไอริสพยักหน้าเห็นด้วยกับคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -708,7 +1008,14 @@
           "start": 0,
           "end": 434,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "ตรวจบริบท p67-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -729,7 +1036,14 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1"
+            ],
+            "reason": "ตรวจบริบท p69-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -740,7 +1054,14 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "ตรวจบริบท p70-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -751,7 +1072,14 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1"
+            ],
+            "reason": "ตรวจบริบท p71-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -782,7 +1110,14 @@
           "start": 0,
           "end": 106,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1"
+            ],
+            "reason": "ตรวจบริบท p74-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -793,7 +1128,14 @@
           "start": 0,
           "end": 227,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1"
+            ],
+            "reason": "ตรวจบริบท p75-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -804,7 +1146,14 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1"
+            ],
+            "reason": "ตรวจบริบท p76-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -819,8 +1168,14 @@
         {
           "start": 24,
           "end": 35,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1"
+            ],
+            "reason": "“ฮ้าาาา...” เป็นเสียงถอนหายใจของกาเลโอ ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -831,7 +1186,14 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1"
+            ],
+            "reason": "ตรวจบริบท p78-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -842,7 +1204,14 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1"
+            ],
+            "reason": "ตรวจบริบท p79-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -853,7 +1222,14 @@
           "start": 0,
           "end": 143,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1"
+            ],
+            "reason": "ตรวจบริบท p80-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -864,7 +1240,14 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1"
+            ],
+            "reason": "ตรวจบริบท p81-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -885,7 +1268,15 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1",
+              "p84-1"
+            ],
+            "reason": "เป็นเสียงชื่นชมกระตือรือร้นแบบเอมิลี่ และชินจิเป็นผู้ตอบถ่อมตัวใน p84-1"
+          }
         }
       ]
     },
@@ -896,7 +1287,14 @@
           "start": 0,
           "end": 65,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1"
+            ],
+            "reason": "ตรวจบริบท p84-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -907,7 +1305,14 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1"
+            ],
+            "reason": "เป็นคำพูดเสียงเบาแบบสุภาพของผู้หญิงในปาร์ตี้และกล่าวถึงไอริสอย่างเอ็นดู"
+          }
         }
       ]
     },
@@ -928,7 +1333,17 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p87-1",
+              "p88-1",
+              "p89-1",
+              "p90-1"
+            ],
+            "reason": "เป็นคำเชิญกินข้าวแบบเจ้าบ้าน และ p90-1 ระบุว่าอัลวินตอบรับเมื่อเห็นอากาเนะพยักหน้า"
+          }
         }
       ]
     },
@@ -939,7 +1354,14 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p88-1"
+            ],
+            "reason": "ตรวจบริบท p88-1 แล้ว จัดประเภทเป็นคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -950,7 +1372,14 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p89-1"
+            ],
+            "reason": "ตรวจบริบท p89-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -981,7 +1410,14 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1"
+            ],
+            "reason": "ตรวจบริบท p92-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -992,7 +1428,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1"
+            ],
+            "reason": "ตรวจบริบท p93-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -1003,7 +1446,14 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p94-1"
+            ],
+            "reason": "ตรวจบริบท p94-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },

@@ -8,7 +8,14 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1"
+            ],
+            "reason": "ตรวจบริบท p1-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -29,7 +36,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p2-1 บรรยายว่าชินจิเริ่มกระแทก และ p4-1 เป็นลีร่าตอบคำถามนี้"
+          }
         }
       ]
     },
@@ -40,7 +56,14 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "ตรวจบริบท p4-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -71,7 +94,15 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p8-1 ระบุว่าชินจิเป็นผู้ประกบริมฝีปากและสอนการจูบ ลีร่าจึงเป็นผู้ส่งเสียงในช่วงนี้"
+          }
         }
       ]
     },
@@ -106,8 +137,14 @@
         {
           "start": 81,
           "end": 89,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "จุ๊บๆ เป็นเสียงจูบที่บรรยายว่าดังไปทั่วห้อง ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 89,
@@ -143,7 +180,14 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1"
+            ],
+            "reason": "ตรวจบริบท p13-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -174,7 +218,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1"
+            ],
+            "reason": "ตรวจบริบท p16-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -185,7 +236,14 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -216,7 +274,14 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -227,7 +292,14 @@
           "start": 0,
           "end": 116,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -258,7 +330,14 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ตรวจบริบท p24-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -299,7 +378,14 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "ตรวจบริบท p28-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -310,7 +396,14 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -331,7 +424,14 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "ตรวจบริบท p31-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -342,7 +442,14 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "ตรวจบริบท p32-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -357,8 +464,14 @@
         {
           "start": 209,
           "end": 272,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดเป็นความคิดของชินจิจากคำว่า คิดว่า ไม่ได้เปล่งเสียงพูด"
+          }
         },
         {
           "start": 272,
@@ -374,7 +487,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -385,7 +505,14 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -426,7 +553,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 ระบุว่าลิลี่และลิลเป็นคนซื้ออาหารกลางวันมา และเป็นบททักทายคนแรกของฝาแฝดตามลำดับชื่อที่เรื่องใช้"
+          }
         }
       ]
     },
@@ -437,7 +573,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นบทพูดต่อเนื่องจาก p39-1 ของฝาแฝดอีกคน ตามลำดับชื่อที่เรื่องใช้ (ลิลี่แล้วลิล)"
+          }
         }
       ]
     },
@@ -458,7 +603,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -469,7 +621,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "ตรวจบริบท p43-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -500,7 +659,14 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "ตรวจบริบท p46-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -511,7 +677,16 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "เป็นคำตอบเรื่องข้าวกล่องของฝาแฝดคนแรก และ p48-1 เป็นอีกคนแซวต่อ"
+          }
         }
       ]
     },
@@ -522,7 +697,15 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p49-1 ระบุว่าชินจิเปิดปากพูดพลางมองลิลที่ดูเสียดาย ตรงกับบทแซวเรื่องพี่สาวใน p48-1"
+          }
         }
       ]
     },
@@ -543,7 +726,14 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ตรวจบริบท p50-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -564,7 +754,16 @@
           "start": 0,
           "end": 106,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p51-1 ระบุว่าลิลี่และลิลเริ่มเล่าเหตุผล และเป็นบทพูดคนแรกของฝาแฝดตามลำดับชื่อที่เรื่องใช้"
+          }
         }
       ]
     },
@@ -575,7 +774,16 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "เป็นบทพูดต่อเนื่องจาก p52-1 ของฝาแฝดอีกคน ตามลำดับชื่อที่เรื่องใช้ (ลิลี่แล้วลิล)"
+          }
         }
       ]
     },
@@ -626,7 +834,14 @@
           "start": 0,
           "end": 147,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "ตรวจบริบท p58-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -637,7 +852,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "เป็นบทตอบโต้คนแรกของฝาแฝดคู่ p58-1 ตามลำดับชื่อที่เรื่องใช้ (ลิลี่แล้วลิล)"
+          }
         }
       ]
     },
@@ -648,7 +872,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "เป็นบทพูดต่อเนื่องจาก p59-1 ของฝาแฝดอีกคน ตามลำดับชื่อที่เรื่องใช้"
+          }
         }
       ]
     },
@@ -659,7 +892,14 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "ตรวจบริบท p61-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -680,7 +920,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p66-1"
+            ],
+            "reason": "p66-1 ระบุว่าชินจิจูบแก้มลิลี่ก่อนแล้วจึงทำแบบเดียวกันกับลิล ตรงกับลำดับคำขอของฝาแฝดใน p63-1 และ p64-1"
+          }
         }
       ]
     },
@@ -691,7 +940,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p66-1"
+            ],
+            "reason": "เป็นคำขอต่อเนื่องจาก p63-1 ของฝาแฝดอีกคน และ p66-1 ระบุว่าชินจิหันไปหาลิลเป็นคนที่สอง"
+          }
         }
       ]
     },
@@ -702,7 +960,14 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "ตรวจบริบท p65-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },

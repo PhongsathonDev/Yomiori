@@ -78,7 +78,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p10-1"
+            ],
+            "reason": "ไอริสเป็นผู้กลับมาถึงบ้านปาร์ตี้และเอ่ยทักตามที่ p10-1 บรรยายว่าเธอเดินเข้าไปในห้องอาหาร"
+          }
         }
       ]
     },
@@ -89,7 +97,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p10-1 ระบุว่าห้องอาหารมีชินจินั่งอ่านหนังสืออยู่ จึงเป็นชินจิที่ตอบรับไอริส"
+          }
         }
       ]
     },
@@ -130,7 +146,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามไอริสเรื่องปาร์ตี้ และไอริสตอบใน p14-1"
+          }
         }
       ]
     },
@@ -141,7 +166,16 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบคำถามของชินจิเรื่องวิธีพูดของหัวหน้าปาร์ตี้"
+          }
         }
       ]
     },
@@ -182,7 +216,16 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิเป็นผู้ปลอบและอธิบายเรื่องการทำความคุ้นเคย ก่อนไอริสตอบใน p19-1"
+          }
         }
       ]
     },
@@ -193,7 +236,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบด้วยความน้อยใจเรื่องเวลาที่มีจำกัด และ p20-1 บรรยายว่าเธอพูดจาไม่ดีเพราะความอาย"
+          }
         }
       ]
     },
@@ -214,7 +266,16 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p20-1 ระบุว่าชินจิไม่ได้โกรธและยังคงสนทนาต่อ จึงเป็นคำพูดของเขา และไอริสตอบใน p22-1"
+          }
         }
       ]
     },
@@ -225,7 +286,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับคำอธิบายของชินจิและบอกเหตุผลที่เข้าร่วมชั่วคราว"
+          }
         }
       ]
     },
@@ -236,7 +306,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนฝึกปรับพลังเวท และไอริสตอบรับใน p24-1"
+          }
         }
       ]
     },
@@ -247,7 +326,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับคำชวนก่อนทั้งสองออกไปที่สวนตาม p25-1"
+          }
         }
       ]
     },
@@ -288,7 +376,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "p30-1 ระบุว่าอัลวินและมีริสปรากฏตัวขึ้น และไอริสเรียกผู้พูดนี้ว่ารุ่นพี่ใน p29-1"
+          }
         }
       ]
     },
@@ -299,7 +396,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับคำทักทายของอัลวินก่อนมีริสพูดใน p31-1"
+          }
         }
       ]
     },
@@ -320,7 +426,16 @@
           "start": 0,
           "end": 94,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p32-1 ระบุว่ามีริสเป็นผู้ยื่นผ้าเช็ดเหงื่อให้ไอริสกับชินจิ ต่อจากคำพูดของเธอใน p31-1"
+          }
         }
       ]
     },
@@ -351,7 +466,16 @@
           "start": 0,
           "end": 176,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p33-1 ระบุว่าชินจิกล่าวขอบคุณและรับผ้ามาเช็ดเหงื่อ แล้วจึงกล่าวคำชมนี้ และ p35-1 บรรยายว่าไอริสเขินจากคำชมของชินจิ"
+          }
         }
       ]
     },
@@ -372,7 +496,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับคำชมของชินจิและเรียกเขาว่ารุ่นพี่ชินจิ"
+          }
         }
       ]
     },
@@ -393,7 +526,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p37-1 ระบุว่ามีริสยกมือสองข้างขึ้นมาแสดงตัวต่อหน้าไอริส แล้วพูดประโยคนี้"
+          }
         }
       ]
     },
@@ -404,7 +546,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบมีริสว่าก็เป็นรุ่นพี่เหมือนกัน ก่อนมีริสตัดพ้อใน p40-1"
+          }
         }
       ]
     },
@@ -415,7 +566,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 ระบุว่าอัลวินและชินจิหัวเราะเมื่อเห็นมีริสทำหน้าเศร้า คำพูดนี้จึงเป็นของมีริส"
+          }
         }
       ]
     },
@@ -446,7 +606,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gilly",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p46-1"
+            ],
+            "reason": "เป็นคำที่อ้างถึงคาตันว่าเป็นคนพูดก่อนหน้า จึงเป็นของกิลลี่ผู้ร่วมปาร์ตี้ และ p46-1 ระบุว่ากิลลี่กำลังหัวเราะอย่างอารมณ์ดี"
+          }
         }
       ]
     },
@@ -457,7 +626,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p46-1"
+            ],
+            "reason": "คาตันเป็นผู้ตอบรับคำของกิลลี่ และ p46-1 ระบุว่าคาตันเป็นผู้หลั่งในช่องคลอดจิโตเสะในจังหวะนั้น"
+          }
         }
       ]
     },
@@ -468,7 +646,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-jitose",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าจิโตเสะถูกคาตันทำให้ถึงจุดสุดยอดจากการหลั่งในช่องคลอด เสียงใน p45-1 จึงเป็นของเธอ"
+          }
         }
       ]
     },
@@ -519,7 +706,16 @@
           "start": 0,
           "end": 115,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gilly",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p49-1 ระบุว่ากิลลี่เป็นผู้จับจิโตเสะกดลงต่อหลังคาตันถอยออกไป คำพูดประเมินท่าทีของไอริสจึงเป็นของกิลลี่ ก่อนคาตันตอบใน p51-1"
+          }
         }
       ]
     },
@@ -530,7 +726,16 @@
           "start": 0,
           "end": 163,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "คาตันเป็นผู้ตอบรับคำของกิลลี่ และ p52-1 ระบุว่าคาตันพูดต่อไปพร้อมยิ้มแสยะก่อนประโยคใน p53-1"
+          }
         }
       ]
     },
@@ -551,7 +756,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "p52-1 ระบุชัดว่าคาตันพูดต่อไปพลางยิ้มแสยะ และกิลลี่ตอบใน p54-1"
+          }
         }
       ]
     },
@@ -562,7 +776,16 @@
           "start": 0,
           "end": 101,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gilly",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "กิลลี่เป็นผู้ชื่นชมคาตันและบอกว่ายาเตรียมไว้แล้ว สอดคล้องกับ p56-1 ที่ระบุว่ากิลลี่เป็นผู้หายาต้องห้ามมา"
+          }
         }
       ]
     },
@@ -613,7 +836,17 @@
           "start": 0,
           "end": 129,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "คาตันเป็นผู้ตอบรับข่าวว่ายาเตรียมพร้อมแล้วและวางแผนอดทนถึงการผจญภัยครั้งที่สาม ก่อนกิลลี่พูดใน p60-1"
+          }
         }
       ]
     },
@@ -624,7 +857,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gilly",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p62-1 ระบุว่ากิลลี่เป็นผู้หลั่งในช่องคลอดในจังหวะนี้ คำพูดที่บอกว่าใกล้จะออกจึงเป็นของกิลลี่"
+          }
         }
       ]
     },
@@ -635,7 +877,16 @@
           "start": 0,
           "end": 5,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-jitose",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p62-1 บรรยายว่าจิโตเสะหมดเรี่ยวแรงด้วยความสุขหลังการหลั่งของกิลลี่ เสียงใน p61-1 จึงเป็นของเธอ"
+          }
         }
       ]
     },

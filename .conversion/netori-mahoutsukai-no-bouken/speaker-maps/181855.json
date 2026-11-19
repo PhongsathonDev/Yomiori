@@ -1,0 +1,88 @@
+{
+  "p3-1": {
+    "speakerId": "netori-charlotte",
+    "context": ["p3-1", "p4-1"],
+    "reason": "ป4 ระบุชัดว่าเป็นเสียงของชาร์ลอตต้าที่ดังขึ้นหน้าห้อง"
+  },
+  "p6-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p6-1", "p7-1", "p8-1"],
+    "reason": "ชินจิเป็นผู้เปิดประตูและทักอัลวิน ก่อนอัลวินตอบในป7"
+  },
+  "p7-1": "netori-alvin",
+  "p8-1#2": {
+    "speakerId": "netori-shinji",
+    "context": ["p8-1"],
+    "reason": "ป8 ระบุว่าชินจิตอบกลับอัลวินที่ทำหน้าลำบากใจ"
+  },
+  "p9-1": "netori-shinji",
+  "p10-1": "netori-alvin",
+  "p11-1": "netori-shinji",
+  "p14-1#2": {
+    "speakerId": "netori-party",
+    "context": ["p13-1", "p14-1", "p15-1"],
+    "reason": "ป14 ระบุว่าชินจิและอัลวินชนแก้วแล้วพูดพร้อมกัน จึงใช้เสียงหมู่ของปาร์ตี้"
+  },
+  "p15-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p15-1", "p16-1"],
+    "reason": "อัลวินเป็นผู้พูดถึงเอลกลางวัน แล้วชินจิแซวเรื่องทำตัวแก่ในป16"
+  },
+  "p16-1": "netori-shinji",
+  "p17-1#2": {
+    "speakerId": "netori-alvin",
+    "context": ["p17-1", "p18-1"],
+    "reason": "ป17 บรรยายว่าอัลวินถอนหายใจแล้วส่งเสียงนี้ ก่อนเขาพูดต่อในป18"
+  },
+  "p18-1": "netori-alvin",
+  "p19-1": "netori-shinji",
+  "p20-1": "netori-alvin",
+  "p21-1#2": {
+    "speakerId": "netori-alvin",
+    "context": ["p21-1"],
+    "reason": "ป21 ระบุว่าชินจิหัวเราะเมื่อเห็นอัลวินบ่นเรื่องเรนกะ"
+  },
+  "p22-1": "netori-shinji",
+  "p23-1": "netori-alvin",
+  "p24-1": "netori-shinji",
+  "p26-1": "netori-alvin",
+  "p27-1": "netori-shinji",
+  "p29-1": "netori-alvin",
+  "p30-1": "netori-shinji",
+  "p32-1": "netori-alvin",
+  "p33-1": "netori-shinji",
+  "p34-1#1": {
+    "speakerId": "netori-alvin",
+    "context": ["p34-1"],
+    "reason": "ป34 ระบุว่าอัลวินหัวเราะและพูดว่า 'จริงด้วย'"
+  },
+  "p35-1": "netori-shinji",
+  "p36-1": "netori-alvin",
+  "p38-1": "netori-shinji",
+  "p39-1": "netori-alvin",
+  "p41-1": "netori-alvin",
+  "p42-1#2": {
+    "speakerId": "netori-alvin",
+    "context": ["p42-1"],
+    "reason": "ป42 ระบุว่าอัลวินพึมพำประโยคนี้"
+  },
+  "p43-1": "netori-alvin",
+  "p44-1#1": {
+    "speakerId": "netori-alvin",
+    "context": ["p44-1"],
+    "reason": "ป44 ระบุว่าอัลวินพึมพำ 'ฉันโชคดีมาก'"
+  },
+  "p45-1": "netori-alvin",
+  "p46-1#2": {
+    "speakerId": "netori-alvin",
+    "context": ["p46-1"],
+    "reason": "ป46 ระบุว่าเป็นคำที่อัลวินบอกเล่าเรื่องตอนนั้น"
+  },
+  "p47-1": "netori-alvin",
+  "p49-1": "netori-shinji",
+  "p50-1": "netori-alvin",
+  "p51-1": "netori-shinji",
+  "p53-1": "netori-alvin",
+  "p54-1": "netori-shinji",
+  "p55-1": "netori-alvin"
+}

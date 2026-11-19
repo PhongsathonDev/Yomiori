@@ -18,7 +18,15 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชมช่องคลอดของแฟลร์ และแฟลร์ตอบในป3"
+          }
         }
       ]
     },
@@ -29,7 +37,14 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1"
+            ],
+            "reason": "ตรวจบริบท p3-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -44,8 +59,14 @@
         {
           "start": 151,
           "end": 161,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "เป็นเสียงตอบสนองของช่องคลอดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 161,
@@ -65,8 +86,14 @@
         {
           "start": 148,
           "end": 157,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์จากการเสียดสีในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 157,
@@ -102,7 +129,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดประโยคนี้ และแฟลร์ถามกลับในป9"
+          }
         }
       ]
     },
@@ -113,7 +148,14 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "ตรวจบริบท p9-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -134,7 +176,16 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ป10 ระบุว่าชินจิกระซิบข้างหูแฟลร์ และแฟลร์ตอบในป12"
+          }
         }
       ]
     },
@@ -145,7 +196,14 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -166,7 +224,15 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ร้องขอและครางในจังหวะที่ชินจิกระแทกตามที่ป13 บรรยาย"
+          }
         }
       ]
     },
@@ -181,8 +247,14 @@
         {
           "start": 126,
           "end": 143,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "เป็นเสียงตอบสนองของช่องคลอดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 143,
@@ -222,8 +294,14 @@
         {
           "start": 49,
           "end": 66,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์จากการดันช่องคลอดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 66,
@@ -243,8 +321,14 @@
         {
           "start": 95,
           "end": 106,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ของหน้าอกในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 106,
@@ -254,8 +338,14 @@
         {
           "start": 138,
           "end": 149,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ของหน้าอกในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 149,
@@ -271,7 +361,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -322,7 +419,14 @@
           "start": 0,
           "end": 95,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "ตรวจบริบท p25-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -347,8 +451,14 @@
         {
           "start": 218,
           "end": 228,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "เป็นเสียงตอบสนองของช่องคลอดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 228,
@@ -358,8 +468,14 @@
         {
           "start": 257,
           "end": 267,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "เป็นเสียงตอบสนองของช่องคลอดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 267,
@@ -415,7 +531,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ชินจิเป็นผู้กระซิบถามเรื่องมินาโตะ และแฟลร์ตอบในป33"
+          }
         }
       ]
     },
@@ -426,7 +551,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -457,7 +589,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามแฟลร์หลังจับคางเธอในป35 และแฟลร์ตอบในป37"
+          }
         }
       ]
     },
@@ -468,7 +609,14 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "ตรวจบริบท p37-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -479,7 +627,15 @@
           "start": 0,
           "end": 130,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายเงื่อนไข ก่อนแฟลร์ตอบในป39"
+          }
         }
       ]
     },
@@ -490,7 +646,14 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ตรวจบริบท p39-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -511,7 +674,15 @@
           "start": 0,
           "end": 94,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดเรื่องสภาพช่องคลอดของแฟลร์ และแฟลร์ตอบในป42"
+          }
         }
       ]
     },
@@ -522,7 +693,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -533,7 +711,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิเป็นผู้เสนอว่าจะให้ความสุขหากแฟลร์ยอมแพ้จริง ๆ และแฟลร์ตอบในป44"
+          }
         }
       ]
     },
@@ -544,7 +730,14 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "ตรวจบริบท p44-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -579,8 +772,14 @@
         {
           "start": 89,
           "end": 101,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "เป็นคำที่แฟลร์นึกถึงเป็นข้ออ้างในใจในประโยคบรรยาย ไม่ได้พูดออกมา"
+          }
         },
         {
           "start": 101,
@@ -596,7 +795,14 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -607,7 +813,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำยอมแพ้ของแฟลร์"
+          }
         }
       ]
     },
@@ -698,7 +912,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดหลังสอดใส่แฟลร์อีกครั้งตามที่ป57 บรรยาย และแฟลร์ตอบในป59"
+          }
         }
       ]
     },
@@ -709,7 +932,14 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "ตรวจบริบท p59-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -730,7 +960,14 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "ตรวจบริบท p61-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },

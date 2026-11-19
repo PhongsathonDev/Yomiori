@@ -48,7 +48,16 @@
           "start": 0,
           "end": 228,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เป็นข้อตกลงเรื่องการวางตัวข้างนอกที่ชินจิพูดต่อจาก p4-1 ที่เขาบอกให้ทั้งสองคนแต่งตัว และ p6-1 เป็นเรนกะที่เห็นด้วย"
+          }
         }
       ]
     },
@@ -59,7 +68,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "เป็นคำตอบรับข้อตกลงของชินจิ และ p7-1 เป็นไอริสที่พูดต่อเรื่องการต้องแยกจากรุ่นพี่"
+          }
         }
       ]
     },
@@ -70,7 +88,15 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p8-1 ระบุว่าไอริสที่แต่งตัวเสร็จบ่นออกมาอย่างเหงาๆ"
+          }
         }
       ]
     },
@@ -111,7 +137,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ไอริสตอบรับความใจดีของเรนกะที่เพิ่งพูดใน p9-1 และ p12-1 เป็นเรนกะที่ตกใจเมื่อถูกกอด"
+          }
         }
       ]
     },
@@ -122,7 +157,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p13-1 ระบุว่าไอริสเข้ามากอดเรนกะจากด้านหน้า"
+          }
         }
       ]
     },
@@ -153,7 +196,15 @@
           "start": 0,
           "end": 99,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "เป็นคำของชินจิที่พูดต่อจากเรนกะและบอกให้ไอริสมาหาได้ทุกเมื่อ และ p16-1 เป็นไอริสที่ขอบคุณรุ่นพี่"
+          }
         }
       ]
     },
@@ -164,7 +215,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ไอริสขอบคุณ 'รุ่นพี่' และ p17-1 บรรยายว่าเธอยิ้มอย่างมีความสุข"
+          }
         }
       ]
     },
@@ -235,7 +295,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1",
+              "p26-1"
+            ],
+            "reason": "อัลวินเป็นศิษย์ของกาเลโอและเป็นคนทักอาจารย์ และ p26-1 เป็นอัลวินที่ตอบเรื่องไอริส"
+          }
         }
       ]
     },
@@ -246,7 +316,17 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "กาเลโอเป็นผู้ตอบคำทักทายของอัลวินและถามหาไอริส ก่อนที่ p25-1 จะบรรยายว่าเขามองไปรอบๆ"
+          }
         }
       ]
     },
@@ -267,7 +347,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "อัลวินตอบคำถามของกาเลโอเรื่องไอริส และ p27-1 เป็นกาเลโอที่รับคำ"
+          }
         }
       ]
     },
@@ -278,7 +367,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "กาเลโอรับคำและ p28-1 ระบุว่าเขาพยักหน้าและกระสับกระส่าย"
+          }
         }
       ]
     },
@@ -329,7 +427,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ไอริสแนะนำเพื่อนร่วมทีมให้พ่อของเธอ และ p33-1 เป็นลีร่าที่แนะนำตัวต่อ"
+          }
         }
       ]
     },
@@ -340,7 +447,15 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p34-1 ระบุว่าลีร่าก้าวออกมาหนึ่งก้าวแล้วยิ้ม"
+          }
         }
       ]
     },
@@ -371,7 +486,15 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "กาเลโอแนะนำตัวเองต่อลีร่าหลัง p35-1 บรรยายว่าเขาประหม่าเมื่ออยู่ต่อหน้าเธอ"
+          }
         }
       ]
     },
@@ -382,7 +505,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "เป็นคำของไอริสที่ถามพ่อ และ p38-1 เป็นกาเลโอที่รีบแก้ตัวกับลูกสาว"
+          }
         }
       ]
     },
@@ -393,7 +525,16 @@
           "start": 0,
           "end": 125,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p40-1"
+            ],
+            "reason": "กาเลโอรีบแก้ตัวกับลูกสาวที่มองเขาด้วยสายตาตำหนิใน p40-1"
+          }
         }
       ]
     },
@@ -404,7 +545,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นคำแซวของลีร่า และ p41-1 ระบุว่าลีร่ายิ้มอย่างเอ็นดูเมื่อเห็นการโต้ตอบกันของพ่อลูก"
+          }
         }
       ]
     },
@@ -435,7 +585,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ลีร่าแนะนำลิลี่น้องสาว และ p43-1 เป็นลิลที่แนะนำตัวต่อ"
+          }
         }
       ]
     },
@@ -446,7 +605,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ลิลแนะนำตัวเองว่าเป็นน้องสาวเหมือนกัน และ p44-1 เป็นกาเลโอที่ทักทาย"
+          }
         }
       ]
     },
@@ -457,7 +625,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "กาเลโอทักทาย และ p45-1 ระบุว่าเขาทักทายทั้งลิลี่และลิล"
+          }
         }
       ]
     },
@@ -488,7 +665,16 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "กาเลโอขอโทษเรื่องสายตา และ p48-1 เป็นลีร่าที่ตอบรับ"
+          }
         }
       ]
     },
@@ -499,7 +685,16 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ลีร่าตอบรับคำขอโทษ และ p49-1 ระบุว่ากาเลโอเงยหน้าขึ้นเมื่อได้ยินคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -520,7 +715,15 @@
           "start": 0,
           "end": 128,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "กาเลโอฝากไอริสไว้กับพวกลีร่า และ p51-1 ระบุว่าไอริสทำหน้าเศร้าเมื่อได้ยินคำพูดของกาเลโอ"
+          }
         }
       ]
     },
@@ -541,7 +744,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p54-1"
+            ],
+            "reason": "p51-1 ระบุว่าลิลี่พูดขึ้นมาก่อนใคร และ p54-1 เรียกคำพูดนี้ว่าของฝาแฝด"
+          }
         }
       ]
     },
@@ -552,7 +764,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "เป็นคำพูดต่อจากลิลี่ และ p54-1 เรียกคำพูดของทั้งคู่ว่าของฝาแฝด"
+          }
         }
       ]
     },
@@ -573,7 +794,15 @@
           "start": 0,
           "end": 145,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ผู้พูดเรียกตัวเองว่าพี่สาวและถามไอริสจังตรงๆ ตามด้วย p56-1 ที่ไอริสตอบ"
+          }
         }
       ]
     },
@@ -584,7 +813,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ไอริสตอบรับคำถามของลีร่า และ p57-1 ระบุว่าเธอยิ้มอย่างมีความสุข"
+          }
         }
       ]
     },
@@ -625,7 +863,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "กาเลโอขอโทษไอริส และ p61-1 เป็นไอริสที่ตกใจ ก่อน p62-1 ที่กาเลโอยิ้มและพยักหน้า"
+          }
         }
       ]
     },
@@ -636,7 +883,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "เป็นเสียงตกใจของไอริสต่อคำขอโทษของพ่อ และ p62-1 เป็นกาเลโอที่ยิ้มและพยักหน้า"
+          }
         }
       ]
     },
@@ -657,7 +913,15 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "กาเลโอให้อนุญาตและกำชับเรื่องความปลอดภัย และ p64-1 เป็นไอริสที่ขอบคุณ"
+          }
         }
       ]
     },
@@ -668,7 +932,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "ไอริสขอบคุณพ่อ และ p65-1 ระบุว่าเธอกระโดดด้วยความดีใจเมื่อได้รับอนุญาต"
+          }
         }
       ]
     },
@@ -728,8 +1001,14 @@
         {
           "start": 0,
           "end": 6,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "'ปิ๊ง' เป็นเสียงเอฟเฟกต์ของอากาศที่แข็งตัว ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 6,
@@ -745,7 +1024,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "กาเลโอถามด้วยความสงสัยหลังเห็นไอริสกอดชินจิ และ p72-1 เป็นชินจิที่รีบแก้ตัว"
+          }
         }
       ]
     },
@@ -756,7 +1044,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p74-1"
+            ],
+            "reason": "ชินจิรีบแก้ตัวและตักเตือนไอริส และ p74-1 ระบุว่าเขาเห็นกาเลโอที่กำลังโกรธจัด"
+          }
         }
       ]
     },
@@ -767,7 +1064,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p75-1"
+            ],
+            "reason": "ไอริสสารภาพว่าแกล้งทำเป็นครั้งสุดท้าย และ p75-1 ระบุว่ากาเลโอตาโตขึ้นเมื่อได้ยินคำพูดที่น่าสงสัย"
+          }
         }
       ]
     },
@@ -798,7 +1103,15 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p78-1"
+            ],
+            "reason": "กาเลโอประกาศไม่อนุญาตให้ไอริสมีแฟน และ p78-1 ยังเป็นคำของเขาที่ต่อว่าเรื่องคนรัก"
+          }
         }
       ]
     },
@@ -809,7 +1122,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "ชินจิแก้ตัวว่ามีคนรักอยู่แล้ว และ p78-1 เป็นกาเลโอที่โต้กลับ"
+          }
         }
       ]
     },
@@ -820,7 +1142,16 @@
           "start": 0,
           "end": 108,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-galeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1",
+              "p79-1"
+            ],
+            "reason": "กาเลโอต่อว่าชินจิและเรียกอัลวิน และ p79-1 เป็นอัลวินที่พยายามทำให้อาจารย์ใจเย็น"
+          }
         }
       ]
     },
@@ -831,7 +1162,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "อัลวินเรียกกาเลโอว่าอาจารย์และพยายามห้ามปรามตาม p80-1"
+          }
         }
       ]
     },
@@ -852,7 +1192,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1",
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "เป็นคำของลีร่าที่พูดถึงชินจิอย่างสุภาพ และ p82-1 เป็นไอริสที่ตอบเรื่องการแกล้งพ่อ"
+          }
         }
       ]
     },
@@ -863,7 +1212,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "ไอริสอธิบายว่าแกล้งพ่อเพราะถูกทำเหมือนเป็นเด็ก และ p83-1 ระบุว่าเธอหันไปพนมมือขอโทษชินจิ"
+          }
         }
       ]
     },
@@ -893,7 +1251,16 @@
         {
           "start": 0,
           "end": 45,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "p84-1 ระบุว่าไอริสทำปากขมุบขมิบโดยไม่มีเสียง คำพูดในเครื่องหมาย『』จึงเป็นการพูดในใจ/ขยับปาก ไม่ใช่คำพูดที่ได้ยิน"
+          }
         }
       ]
     },

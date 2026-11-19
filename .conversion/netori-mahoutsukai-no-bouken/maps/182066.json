@@ -8,7 +8,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1"
+            ],
+            "reason": "p2-1 ระบุว่าอัลวินพูดชวนไปดูบ้านขึ้นมา"
+          }
         }
       ]
     },
@@ -29,7 +37,15 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าทุกคนลุกขึ้นตามคำพูดของอัลวินและเรนกะ จึงเป็นเสียงของเรนกะที่เสนอช่วงเวลาที่เหมาะ"
+          }
         }
       ]
     },
@@ -40,7 +56,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p5-1 ระบุว่าอัลวินเป็นผู้กวาดสายตามองทุกคนหลังถาม"
+          }
         }
       ]
     },
@@ -61,7 +85,15 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p10-1"
+            ],
+            "reason": "ใช้คำลงท้าย คะ และ p10-1 ระบุว่าชินจิจดสิ่งที่ผู้หญิงหลายคนพูด"
+          }
         }
       ]
     },
@@ -72,7 +104,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p29-1"
+            ],
+            "reason": "p29-1 ระบุว่าห้องน้ำที่เรนกะต้องการก็ครบครัน"
+          }
         }
       ]
     },
@@ -83,7 +123,15 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p29-1"
+            ],
+            "reason": "เป็นความต้องการสวนกว้างพอเหวี่ยงอาวุธ ซึ่งสอดคล้องกับเอมิลี่นักดาบที่ร่วมบ้านเดียวกันตาม p29-1"
+          }
         }
       ]
     },
@@ -94,7 +142,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p10-1 ระบุว่าชินจิจดสิ่งที่ผู้หญิงหลายคนพูด"
+          }
         }
       ]
     },
@@ -115,7 +171,16 @@
           "start": 0,
           "end": 110,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ชินจิเป็นผู้สรุปเงื่อนไขที่จดไว้ และ p12-1 บรรยายสีหน้าคำถามของเขาเอง"
+          }
         }
       ]
     },
@@ -130,8 +195,14 @@
         {
           "start": 26,
           "end": 53,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "\"มีบ้านแบบนี้อยู่ด้วยเหรอ?\" เป็นคำถามในสีหน้าของชินจิ ไม่ได้พูดออกมา"
+          }
         }
       ]
     },
@@ -142,7 +213,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เป็นฝ่ายเสนอให้ไปถามก่อน และเรนกะตอบรับใน p14-1 ก่อนทุกคนลุกตามคำพูดของทั้งสองใน p15-1"
+          }
         }
       ]
     },
@@ -153,7 +233,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบรับข้อเสนอของอัลวิน และ p15-1 ระบุว่าเป็นการตัดสินใจของอัลวินและเรนกะ"
+          }
         }
       ]
     },
@@ -174,7 +263,15 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p18-1"
+            ],
+            "reason": "เป็นเจ้าหน้าที่เคาน์เตอร์กิลด์ที่ไม่มีชื่อใน roster จึงใช้กลุ่มตัวละครประกอบที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -205,7 +302,16 @@
           "start": 0,
           "end": 158,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p24-1"
+            ],
+            "reason": "เป็นเจ้าหน้าที่กิลด์คนเดิมที่อธิบายเรื่องที่ดินและบ้านว่างต่อ"
+          }
         }
       ]
     },
@@ -236,7 +342,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p25-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่คุยรายละเอียดกับเจ้าหน้าที่ ก่อน p25-1 แยกให้ชินจิไปปรึกษาอีกคน"
+          }
         }
       ]
     },
@@ -247,7 +362,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "อัลวินเป็นผู้แจ้งงบประมาณให้เจ้าหน้าที่เสนอทางเลือกใน p24-1"
+          }
         }
       ]
     },
@@ -258,7 +382,15 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "เป็นเจ้าหน้าที่กิลด์ที่เสนอทางเลือกตามงบของอัลวิน"
+          }
         }
       ]
     },
@@ -279,7 +411,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตื่นเต้นว่าเรื่องไปได้สวย และเรนกะตอบใน p27-1"
+          }
         }
       ]
     },
@@ -290,7 +430,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "เป็นคำตอบรับที่ต่อจากอัลวิน และ p28-1 ระบุว่าหลังจากนั้นทุกคนไปดูบ้าน"
+          }
         }
       ]
     },
@@ -326,7 +475,14 @@
           "start": 186,
           "end": 204,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "p30-1 ระบุว่าพวกผู้หญิงบอกอัลวินอย่างเป็นเอกฉันท์ จึงเป็นเสียงพร้อมกันของสมาชิกหญิงในปาร์ตี้"
+          }
         },
         {
           "start": 204,
@@ -352,7 +508,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ใช้คำลงท้าย คะ และ p33-1 ระบุว่ามีริสเป็นผู้แตะประตูทางเข้า"
+          }
         }
       ]
     },
@@ -373,7 +537,15 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p33-1"
+            ],
+            "reason": "อัลวินเป็นผู้สังเกตความสะดวกของกุญแจหลังมีริสเปิดประตู"
+          }
         }
       ]
     },
@@ -384,7 +556,16 @@
           "start": 0,
           "end": 94,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "เรนกะเป็นผู้พูดถึงความจำเป็นของการรักษาความปลอดภัยตามนิสัยรับผิดชอบ"
+          }
         }
       ]
     },
@@ -405,7 +586,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p41-1"
+            ],
+            "reason": "p36-1 ระบุว่าอัลวินยกมือขึ้นก่อน และ p41-1 ระบุว่าเขาเลือกห้องที่ 2"
+          }
         }
       ]
     },
@@ -416,7 +606,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p38-1",
+              "p41-1"
+            ],
+            "reason": "p36-1 ระบุว่าเอมิลี่ทำตามอัลวิน และ p41-1 ระบุว่าเธอเข้าไปในห้องที่ 3"
+          }
         }
       ]
     },
@@ -427,7 +626,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เรนกะเป็นผู้จัดการแบ่งห้องและอธิบายว่าห้องใกล้ที่สุดใช้เป็นห้องรับแขก"
+          }
         }
       ]
     },
@@ -438,7 +646,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นแสดงว่าอัลวินและเอมิลี่ตอบพร้อมกัน จึงใช้เสียงหมู่ของปาร์ตี้"
+          }
         }
       ]
     },
@@ -448,8 +664,7 @@
         {
           "start": 0,
           "end": 138,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -460,7 +675,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ใช้คำลงท้าย คะ และถามเรื่องห้องอาหารกับห้องเก็บของ"
+          }
         }
       ]
     },
@@ -471,7 +694,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบรับและคำนวณห้องที่เหลือต่อ"
+          }
         }
       ]
     },
@@ -482,7 +714,16 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิเป็นผู้สรุปแผนจ้างคนอยู่ประจำซึ่ง p45-1 อธิบายต่อ"
+          }
         }
       ]
     },
@@ -492,8 +733,7 @@
         {
           "start": 0,
           "end": 55,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -503,8 +743,7 @@
         {
           "start": 0,
           "end": 158,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -514,8 +753,7 @@
         {
           "start": 0,
           "end": 66,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -525,8 +763,7 @@
         {
           "start": 0,
           "end": 82,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -536,8 +773,7 @@
         {
           "start": 0,
           "end": 52,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -547,8 +783,7 @@
         {
           "start": 0,
           "end": 27,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -558,8 +793,7 @@
         {
           "start": 0,
           "end": 188,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -570,7 +804,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามเรื่องกำหนดเข้าอยู่ และชินจิตอบใน p53-1"
+          }
         }
       ]
     },
@@ -581,7 +823,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าจะเข้าอยู่เมื่อเฟอร์นิเจอร์ครบ ก่อนยื่นกระดาษใน p54-1"
+          }
         }
       ]
     },
@@ -590,9 +841,22 @@
       "segments": [
         {
           "start": 0,
-          "end": 78,
+          "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "เป็นคำถามของชินจิที่ถามอัลวินก่อนอัลวินตอบใน p55-1"
+          }
+        },
+        {
+          "start": 23,
+          "end": 78,
+          "type": "narration"
         }
       ]
     },
@@ -601,9 +865,27 @@
       "segments": [
         {
           "start": 0,
-          "end": 65,
+          "end": 13,
+          "type": "narration"
+        },
+        {
+          "start": 13,
+          "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าอัลวินพูดว่าโอเคแล้วยื่นกระดาษให้เอมิลี่"
+          }
+        },
+        {
+          "start": 20,
+          "end": 65,
+          "type": "narration"
         }
       ]
     },
@@ -614,7 +896,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "อัลวินเป็นผู้ชวนไปดูร้านเฟอร์นิเจอร์ และมีริสตอบเรื่องกำหนดส่งใน p57-1"
+          }
         }
       ]
     },
@@ -625,7 +915,16 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ใช้คำลงท้าย คะ และเตือนเรื่องระยะเวลาจัดส่ง"
+          }
         }
       ]
     },
@@ -636,7 +935,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "เป็นเสียงตื่นเต้นของผู้หญิงคนหนึ่งเรื่องแบบเฟอร์นิเจอร์ และ p59-1 ระบุว่าผู้หญิงทุกคนตั้งใจไปซื้อของ"
+          }
         }
       ]
     },
@@ -646,8 +953,7 @@
         {
           "start": 0,
           "end": 44,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -657,8 +963,7 @@
         {
           "start": 0,
           "end": 92,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -668,8 +973,7 @@
         {
           "start": 0,
           "end": 71,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     }

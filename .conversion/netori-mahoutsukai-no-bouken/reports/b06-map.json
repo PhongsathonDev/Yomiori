@@ -1,0 +1,50 @@
+{
+  "batch": "b06",
+  "sources": [
+    {
+      "sourceId": "180115",
+      "chapterNo": "24",
+      "mapJsonHash": "902f49a1a775c09064460d635412b017035cd4a6214dbb3e1ca473a0b2bd42dc",
+      "status": "ready",
+      "dialogue": 43
+    },
+    {
+      "sourceId": "180116",
+      "chapterNo": "25",
+      "mapJsonHash": "86cdf567ede772a8e5bdf3689cbe74f22ecac49ae37653e9b01504bd4eb1bcf5",
+      "status": "ready",
+      "dialogue": 36
+    },
+    {
+      "sourceId": "180117",
+      "chapterNo": "26",
+      "mapJsonHash": "7c4a3d7401b4ee109b732cfc5eca1112da2ac88333ebee9051bae7240e430467",
+      "status": "ready",
+      "dialogue": 36
+    },
+    {
+      "sourceId": "180251",
+      "chapterNo": "27",
+      "mapJsonHash": "233e8c3ce52ad4d2d68ed39e62157b535f4e2104a928b9f57704c940bef5242d",
+      "status": "ready",
+      "dialogue": 23
+    },
+    {
+      "sourceId": "180252",
+      "chapterNo": "28",
+      "mapJsonHash": "f2a277207291bd8e06e893252f1bbd0947c0f09fdf1a99e3b2bc9ff8d2092b27",
+      "status": "ready",
+      "dialogue": 25
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "180115: p17/p20/p22 attributed by reading order (Alvin continues his remark, Renka asks for confirmation, Alvin reacts); p39 Renka from the jealousy described in p40-1.",
+    "180115: p66 Alvin and p67 Miris split because p68-1 names both as the pair leaving; p3-1 and p75-1 kept narration.",
+    "180116: p4 Shinji and p11 Alvin are not explicitly tagged; p4 is the flat response from the silent pair and p11 is the cheerer noticing them.",
+    "180116: p70 Shinji from p58-1..p59-1 (he tried the technique first and broke his arm); p5-1 '「「...」」' kept as narration silence.",
+    "180117: p8/p9/p10 assigned Miris/Renka/Shinji following the four-member reply order in p11-1; p81 Miris from her 'อื้อ' pattern (p57-1).",
+    "180251: unnamed female hotel owner mapped to netori-crowd; group cheers mapped to netori-party and the lone adventurer taunt to netori-adventurers.",
+    "180252: p85-1 wordless reaction assigned to Miris; p86-1 says her answer was physical, but the quoted reaction belongs to her."
+  ]
+}

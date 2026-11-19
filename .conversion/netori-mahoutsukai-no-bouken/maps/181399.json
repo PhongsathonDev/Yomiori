@@ -28,7 +28,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p4-1 ระบุว่าชินจิเริ่มพูดกับเอมิลี่"
+          }
         }
       ]
     },
@@ -49,7 +57,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามต่อเนื่องถึงความจำของเอมิลี่"
+          }
         }
       ]
     },
@@ -60,7 +76,15 @@
           "start": 0,
           "end": 144,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "เอมิลี่ตอบคำถามของชินจิและเล่าว่าสบตาแล้วรู้สึกไม่ดี"
+          }
         }
       ]
     },
@@ -71,7 +95,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชมสัญชาตญาณของเอมิลี่ก่อนอธิบายสถานการณ์ใน p8-1"
+          }
         }
       ]
     },
@@ -92,7 +124,15 @@
           "start": 0,
           "end": 219,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้เล่าเรื่องมินาโตะและดวงตาแห่งเสน่ห์ตามที่ p8-1 ระบุว่าเขาจะอธิบายก่อน"
+          }
         }
       ]
     },
@@ -103,7 +143,15 @@
           "start": 0,
           "end": 132,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "เอมิลี่ตอบรับคำอธิบายของชินจิเรื่องมินาโตะ"
+          }
         }
       ]
     },
@@ -114,7 +162,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำพูดของเอมิลี่เรื่องคิดบวก"
+          }
         }
       ]
     },
@@ -135,7 +191,15 @@
           "start": 0,
           "end": 121,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "เอมิลี่เล่าความรู้สึกของตัวเองต่อเนื่องหลัง p12-1 บรรยายถึงประสบการณ์แรกของเธอ"
+          }
         }
       ]
     },
@@ -166,7 +230,16 @@
           "start": 0,
           "end": 474,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p15-1 ถึง p17-1 ระบุว่าเป็นคำพูดของเอมิลี่ที่พูดไม่จบสิ้น"
+          }
         }
       ]
     },
@@ -187,7 +260,15 @@
           "start": 0,
           "end": 199,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "เอมิลี่พูดต่อเรื่องรอยสลักและ p19-1 บรรยายว่าเธอลูบไล้รอยสลัก"
+          }
         }
       ]
     },
@@ -208,7 +289,15 @@
           "start": 0,
           "end": 110,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "เอมิลี่ขอให้ชินจิบอกความคิดและ p21-1 ระบุว่าเธอสาบานว่าจะเชื่อฟัง"
+          }
         }
       ]
     },
@@ -249,7 +338,15 @@
           "start": 0,
           "end": 126,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดถึงรอยสลักที่จะเล่าที่มาให้เอมิลี่ฟังต่อใน p25-1"
+          }
         }
       ]
     },
@@ -310,7 +407,15 @@
           "start": 0,
           "end": 101,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชินจิอธิบายเหตุผลที่ไม่ตอบรับความรู้สึกของเอมิลี่ ก่อน p31-1 ระบุว่าเขาพูดต่อ"
+          }
         }
       ]
     },
@@ -326,7 +431,15 @@
           "start": 75,
           "end": 146,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p31-1 ระบุว่าเขามองเอมิลี่พลางพูดว่า จึงเป็นคำพูดออกเสียงของชินจิ"
+          }
         },
         {
           "start": 146,
@@ -352,7 +465,15 @@
           "start": 0,
           "end": 104,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามเอมิลี่ที่ไม่ตอบอะไรหลังเขาสารภาพ"
+          }
         }
       ]
     },
@@ -363,7 +484,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ตอบและ p35-1 บรรยายว่าเธอลุกขึ้นยืน"
+          }
         }
       ]
     },
@@ -384,7 +513,15 @@
           "start": 0,
           "end": 246,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "เอมิลี่อธิบายว่าตัวเองเป็นของชินจิและ p37-1 ระบุว่าเธอกำมือเขา"
+          }
         }
       ]
     },
@@ -405,7 +542,15 @@
           "start": 0,
           "end": 114,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "เอมิลี่พูดต่อเรื่องความรักและ p39-1 บรรยายสายตาคลั่งรักของเธอ"
+          }
         }
       ]
     },
@@ -426,7 +571,15 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "ชินจิยิ้มแห้งและเป็นผู้ถามว่าจะให้เอมิลี่ช่วยร่วมกับเฟรรี่ได้ไหม"
+          }
         }
       ]
     },
@@ -437,7 +590,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "เอมิลี่ตอบรับว่าจะให้ใช้ประโยชน์จากเธอ"
+          }
         }
       ]
     },
@@ -448,7 +609,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "เป็นเสียงตอบรับของเอมิลี่ต่อเนื่องกับคำพูดของเธอ และ p43-1 ระบุว่านิ้วของเอมิลี่พันกับนิ้วชินจิ"
+          }
         }
       ]
     },
@@ -489,7 +659,15 @@
           "start": 0,
           "end": 107,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้สรุปแผนเรื่องมินาโตะหลัง p45-1 บรรยายผลลัพธ์ที่ดี"
+          }
         }
       ]
     },
@@ -500,7 +678,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p49-1"
+            ],
+            "reason": "เอมิลี่ทวนคำว่า ผู้หญิงของฉัน ของชินจิ และ p49-1 บรรยายว่าเธอหน้าแดง"
+          }
         }
       ]
     },
@@ -511,7 +698,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เป็นเสียงตอบรับต่อเนื่องของเอมิลี่หลังทวนคำพูดชินจิ และ p49-1 ระบุว่าเธอหน้าแดง"
+          }
         }
       ]
     },
@@ -572,7 +768,15 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ชินจิเป็นผู้ปิดท้ายด้วยการรับปากดูแลเอมิลี่และกำชับเรื่องการแสดงต่อหน้าคนอื่น"
+          }
         }
       ]
     },
@@ -583,7 +787,15 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "เอมิลี่ตอบรับด้วยคำสั้นๆ และ p56-1 ระบุว่าเธอยังคงมีความสุขที่ถูกชินจิต้องการ"
+          }
         }
       ]
     },

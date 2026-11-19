@@ -8,7 +8,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p3-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ขยับสะโพกอยู่บนตัวชินจิใน p3"
+          }
         }
       ]
     },
@@ -49,7 +57,15 @@
           "start": 0,
           "end": 4,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ส่งเสียงพอใจขณะขยับสะโพกตาม p4"
+          }
         }
       ]
     },
@@ -60,7 +76,15 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p3-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ถามเรื่องจูบกับเอมิลี่และขอให้ชินจิจูบเธอ"
+          }
         }
       ]
     },
@@ -71,7 +95,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p8 ระบุว่าเฟรรี่โอบแขนรอบตัวชินจิจากด้านหลังทันทีหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -132,7 +164,15 @@
           "start": 0,
           "end": 124,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p3-1"
+            ],
+            "reason": "แฟลร์ใช้สรรพนามข้าและบ่นว่าชินจิทิ้งเธอไป"
+          }
         }
       ]
     },
@@ -183,7 +223,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ถูกเวทมนตร์และหยุดขยับสะโพกใน p19"
+          }
         }
       ]
     },
@@ -203,7 +251,15 @@
         {
           "start": 0,
           "end": 23,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p50-1"
+            ],
+            "reason": "เป็นบทสนทนาทางความคิดระหว่างเฟรรี่กับชินจิ ไม่ได้พูดออกเสียง และ p50 ยืนยันว่าทั้งคู่แลกเปลี่ยนความคิดกัน"
+          }
         }
       ]
     },
@@ -213,7 +269,15 @@
         {
           "start": 0,
           "end": 39,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p50-1"
+            ],
+            "reason": "เป็นคำตอบทางความคิดของชินจิต่อเฟรรี่ ไม่ได้พูดออกเสียง"
+          }
         }
       ]
     },
@@ -228,8 +292,14 @@
         {
           "start": 28,
           "end": 53,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "เวทมนตร์เสริมความสามารถเป็นชื่อเวทที่ยกมาในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 53,
@@ -239,8 +309,14 @@
         {
           "start": 78,
           "end": 112,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "การมอบความสุขสุดยอดให้แก่ผู้หญิงเป็นคำอธิบายผลของเวทที่ยกมา ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 112,
@@ -260,8 +336,14 @@
         {
           "start": 331,
           "end": 347,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "เพชฌฆาตหญิงสาวเป็นคำเปรียบที่ยกมาในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -292,7 +374,15 @@
           "start": 0,
           "end": 133,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p25-1"
+            ],
+            "reason": "แฟลร์เรียกให้ชินจิขยับตามคำอ้อนของเธอใน p25"
+          }
         }
       ]
     },
@@ -303,7 +393,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้เฟรรี่ เรนกะ และเอมิลี่ถอยออกไป ก่อน p28-p29 มีเสียงตอบรับ"
+          }
         }
       ]
     },
@@ -314,7 +412,15 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบรับคำสั่งด้วยท่าทีสงบ ก่อน p29 ที่เอมิลี่ตอบรับเสียงร่าเริง"
+          }
         }
       ]
     },
@@ -325,7 +431,14 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ตอบรับเสียงร่าเริงแบบค่า~♡ ตามสไตล์ของเธอ"
+          }
         }
       ]
     },
@@ -350,8 +463,14 @@
         {
           "start": 143,
           "end": 153,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "เอกิเบ็นเป็นชื่อท่าที่มีคำอธิบายในวงเล็บ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 153,
@@ -367,7 +486,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ถูกกระแทกครั้งเดียวและถึงจุดสุดยอดตาม p33"
+          }
         }
       ]
     },
@@ -428,7 +555,15 @@
           "start": 0,
           "end": 151,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p37-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ถูกกระแทกซ้ำและบอกว่าใกล้เสร็จ"
+          }
         }
       ]
     },
@@ -443,8 +578,14 @@
         {
           "start": 184,
           "end": 194,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ดึ๋งๆๆ เป็นเสียงหน้าอกที่สั่นไหวในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 194,
@@ -500,7 +641,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "แฟลร์เป็นผู้พูดหลังชินจิวางเธอลงในอ่างตาม p43"
+          }
         }
       ]
     },
@@ -511,7 +660,15 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอโทษที่ทำแรงไป"
+          }
         }
       ]
     },
@@ -541,7 +698,15 @@
         {
           "start": 0,
           "end": 23,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p50-1"
+            ],
+            "reason": "เป็นความคิดของเฟรรี่ที่ส่งถึงชินจิ ไม่ได้พูดออกเสียง"
+          }
         }
       ]
     },
@@ -551,7 +716,15 @@
         {
           "start": 0,
           "end": 19,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เป็นคำตอบทางความคิดของชินจิต่อเฟรรี่ ไม่ได้พูดออกเสียง"
+          }
         }
       ]
     },
@@ -572,7 +745,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ชินจิเป็นผู้เอ่ยว่ายังมีต่อก่อนยื่นมือไปหาเรนกะใน p52"
+          }
         }
       ]
     },
@@ -603,7 +784,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชินจิเป็นผู้ผ่อนคลายและเปล่งเสียงหลังเสร็จกิจตาม p55"
+          }
         }
       ]
     },
@@ -634,7 +823,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p56 ระบุว่าเอมิลี่นั่งลงบนหน้าขาของชินจิ"
+          }
         }
       ]
     },
@@ -645,7 +842,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p59 ระบุว่าชินจิพูดพลางยิ้ม"
+          }
         }
       ]
     },
@@ -666,7 +871,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p61 ระบุว่าเรนกะพูดพลางหัวเราะอย่างเหนื่อยใจ"
+          }
         }
       ]
     },
@@ -687,7 +900,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p63 ระบุว่าเอมิลี่ยิ้มอย่างอารมณ์ดี"
+          }
         }
       ]
     },
@@ -703,7 +924,14 @@
           "start": 25,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "ฮิๆๆ เป็นเสียงหัวเราะของเอมิลี่ในประโยคที่บรรยายว่าเธอยิ้มอย่างอารมณ์ดี"
+          }
         }
       ]
     },
@@ -714,7 +942,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "p65 ระบุว่ามีริสจ้องมองชินจิด้วยรอยยิ้ม"
+          }
         }
       ]
     },
@@ -735,7 +971,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "p67 ระบุว่าอากาเนะจ้องมองชินจิด้วยสีหน้าเคลิบเคลิ้ม"
+          }
         }
       ]
     },
@@ -756,7 +1000,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "p69 ระบุว่าแฟลร์หันหน้าหนีพลางทำท่าไม่แยแส"
+          }
         }
       ]
     },
@@ -776,7 +1028,15 @@
         {
           "start": 0,
           "end": 28,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เป็นความคิดของเฟรรี่ที่ส่งถึงชินจิ ไม่ได้พูดออกเสียง และ p71 ระบุว่าชินจิรับความคิดนั้น"
+          }
         }
       ]
     },

@@ -38,7 +38,14 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "ตรวจบริบท p4-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -49,7 +56,14 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "ตรวจบริบท p5-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -64,8 +78,14 @@
         {
           "start": 63,
           "end": 80,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "p6-1 บรรยายว่าเป็นสายตาของเรนกะที่แสดงออกว่า 'ช่วยไม่ได้เลยนะ' ไม่ได้พูดออกมา"
+          }
         }
       ]
     },
@@ -76,7 +96,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ตรวจบริบท p7-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -87,7 +114,14 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "ตรวจบริบท p8-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -98,7 +132,14 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "ตรวจบริบท p9-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -219,7 +260,14 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -230,7 +278,14 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "ตรวจบริบท p22-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -241,7 +296,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24-1 ระบุว่าทันทีที่ชินจิเอ่ยชื่อเอมิลี่ ประตูก็เปิดและเอมิลี่ปรากฏตัวขึ้น คำพูดนี้จึงเป็นของเอมิลี่ที่ได้ยินชื่อตัวเอง"
+          }
         }
       ]
     },
@@ -262,7 +326,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เรนกะเป็นเจ้าของบ้านที่กำลังคุยกับชินจิและตกใจเมื่อเอมิลี่กับเฟรรี่เข้ามาโดยไม่ได้รับเชิญ"
+          }
         }
       ]
     },
@@ -273,7 +346,17 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p24-1 ระบุว่าเฟรรี่เป็นคนปลดล็อกและเข้ามากับเอมิลี่ เสียงตอบรับสั้นๆ นี้จึงเป็นของเฟรรี่ ก่อน p27-1 จะบรรยายความคิดของเธอ"
+          }
         }
       ]
     },
@@ -288,8 +371,14 @@
         {
           "start": 35,
           "end": 59,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "p27-1 ระบุว่าเป็นความคิดของเฟรรี่ที่ไหลเข้าสู่ชินจิ ไม่ใช่คำพูดออกเสียง"
+          }
         },
         {
           "start": 59,
@@ -305,7 +394,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "ตรวจบริบท p28-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -316,7 +412,14 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -337,7 +440,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "p30-1 ระบุว่าเอมิลี่ตอบกลับเรนกะที่ตั้งท่าจะแก้ตัวไม่ทัน คำถามนี้จึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -348,7 +460,14 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "ตรวจบริบท p32-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -359,7 +478,14 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -380,7 +506,14 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -391,7 +524,14 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -412,7 +552,14 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -423,7 +570,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "เอมิลี่ประกาศว่าจะพาเฟรรี่ไปใน p38-1 และ p40-1 บรรยายว่าเอมิลี่ลากเฟรรี่ที่ดูเหมือนอยากพูดอะไรออกไป คำอุทานนี้จึงเป็นเสียงของเฟรรี่ตอนถูกดึงตัวไป"
+          }
         }
       ]
     },
@@ -438,8 +594,14 @@
         {
           "start": 120,
           "end": 139,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "p40-1 ระบุว่าเป็นสิ่งที่เฟรรี่ 'ดูเหมือนจะอยากพูด' แต่ไม่ได้พูดออกมา"
+          }
         },
         {
           "start": 139,
@@ -455,7 +617,14 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "ตรวจบริบท p41-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -466,7 +635,14 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -497,7 +673,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1"
+            ],
+            "reason": "ตรวจบริบท p45-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -508,7 +691,14 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "ตรวจบริบท p46-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -529,7 +719,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -540,7 +737,14 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },

@@ -28,7 +28,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p4-1 ระบุว่ากลางดึกอัลวินตื่นขึ้นมาเพราะปวดปัสสาวะ คำบ่นเรื่องความหนาวก่อนหน้านั้นจึงเป็นของอัลวิน"
+          }
         }
       ]
     },
@@ -93,8 +102,14 @@
         {
           "start": 88,
           "end": 107,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "'ทำไมถึงเป็นแบบนี้' เป็นคำคร่ำครวญในใจของอัลวินที่ฝังในย่อหน้าบรรยาย ไม่ได้พูดออกเสียง"
+          }
         }
       ]
     },
@@ -159,8 +174,14 @@
         {
           "start": 112,
           "end": 118,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "'ปังๆ' เป็นเสียงเนื้อกระทบกันที่อัลวินคิดว่าได้ยิน ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 118,
@@ -356,7 +377,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ชินจิเป็นผู้เริ่มบทสนทนาเพื่อคลายบรรยากาศใน p33-1 และ p35-1 เป็นอัลวินที่ตอบ"
+          }
         }
       ]
     },
@@ -367,7 +397,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "อัลวินตอบเรื่องแผนของมีริสที่เรียกเธอว่า 'มี่'"
+          }
         }
       ]
     },
@@ -388,7 +427,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p36-1 ระบุว่าอัลวินคิดจะถามอ้อมๆ เรื่องที่แอบดู และในที่สุดก็พูดขึ้นมา"
+          }
         }
       ]
     },
@@ -399,7 +447,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถูกถามเรื่องแต่งงานกับเรนกะและตอบด้วยความประหลาดใจ"
+          }
         }
       ]
     },
@@ -420,7 +477,16 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "อัลวินอธิบายเหตุผลในฐานะเพื่อนสมัยเด็ก และ p41-1 เป็นชินจิที่ตอบ"
+          }
         }
       ]
     },
@@ -431,7 +497,16 @@
           "start": 0,
           "end": 132,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิตอบเรื่องการแต่งงานและถามกลับเรื่องอัลวินกับมีริส และ p42-1 ระบุว่าเขามองแหวนบนนิ้วอัลวิน"
+          }
         }
       ]
     },
@@ -452,7 +527,16 @@
           "start": 0,
           "end": 129,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "อัลวินตอบเรื่องแผนแต่งงานของตัวเองกับมีริส"
+          }
         }
       ]
     },
@@ -463,7 +547,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิตอบและถามเรื่องพ่อแม่ของเรนกะ และ p45-1 ระบุว่าอัลวินกำลังพูดถึงเรื่องพ่อแม่ของเรนกะ"
+          }
         }
       ]
     },
@@ -484,7 +577,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "มีริสเรียกอัลวินว่า 'อัลคุง' และ p48-1 ระบุว่ามีริสกับเรนกะออกมาจากบ้านปาร์ตี้"
+          }
         }
       ]
     },
@@ -495,7 +597,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "เรนกะเรียกชินจิและถามเรื่องรอ และ p48-1 ระบุว่าเธอออกมาพร้อมมีริส"
+          }
         }
       ]
     },
@@ -536,7 +646,17 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "อัลวินเป็นคนเรียกมีริสว่า 'มี่' ตาม p35-1 และ p43-1 และ p54-1 ระบุว่าชินจิเป็นผู้ถามมีริสกลับ จึงเหลืออัลวินเป็นผู้พูดประโยคนี้"
+          }
         }
       ]
     },
@@ -547,7 +667,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "มีริสตอบเรื่องความฝันเรื่องเดทคู่ให้ผู้ที่เรียกเธอว่ามี่"
+          }
         }
       ]
     },
@@ -558,7 +687,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "p54-1 ระบุว่าชินจิถามมีริสกลับด้วยความประหลาดใจ"
+          }
         }
       ]
     },
@@ -579,7 +717,16 @@
           "start": 0,
           "end": 161,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "มีริสอธิบายความฝันเรื่องอยู่ด้วยกันทั้งสี่คนต่อจากคำถามของชินจิ"
+          }
         }
       ]
     },
@@ -590,7 +737,17 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ชินจิแซวเรื่องมีลูกพร้อมกัน และ p57-1 เป็นอัลวินที่แทรกขึ้นมาเรื่องการเลื่อนระดับตาม p58-1"
+          }
         }
       ]
     },
@@ -601,7 +758,16 @@
           "start": 0,
           "end": 101,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p58-1 ระบุว่าอัลวินแทรกขึ้นมาในจังหวะที่เหมาะสม"
+          }
         }
       ]
     },
@@ -617,7 +783,15 @@
           "start": 84,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p58-1 ระบุว่ามีริสกับเรนกะทำหน้าสงสัยแต่เอียงคอพร้อมกันว่า จึงเป็นคำพูดพร้อมกันของสมาชิกทั้งสองในปาร์ตี้"
+          }
         }
       ]
     },
@@ -628,7 +802,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าใช้เวทมนตร์คุมกำเนิด และ p60-1 เป็นอัลวินที่ประหลาดใจ"
+          }
         }
       ]
     },
@@ -639,7 +822,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "อัลวินประหลาดใจเรื่องเวทมนตร์คุมกำเนิด และ p61-1 ระบุว่าเขาจ้องหน้าชินจิอย่างจริงจัง"
+          }
         }
       ]
     },
@@ -660,7 +852,16 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "ชินจิอธิบายวิธีหาเวทมนตร์คุมกำเนิดต่อจากคำถามของอัลวิน"
+          }
         }
       ]
     },
@@ -701,7 +902,15 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ผู้พูดเรียกอัลวินว่า 'อัล' แบบสั้นและพูดเรื่องเป้าหมายของปาร์ตี้ ก่อน p67-1 ที่อัลวินขอโทษในฐานะหัวหน้า"
+          }
         }
       ]
     },
@@ -712,7 +921,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "อัลวินขอโทษในฐานะหัวหน้าปาร์ตี้ และ p68-1 เป็นชินจิที่ตอบ"
+          }
         }
       ]
     },
@@ -723,7 +941,16 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "ชินจิเห็นด้วยกับการยืนยันของอัลวิน และ p69-1 เป็นคำที่เรียก 'คุณชินจิ'"
+          }
         }
       ]
     },
@@ -734,7 +961,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "ผู้พูดเรียกชินจิอย่างสุภาพว่า 'คุณชินจิ' ตามลักษณะคำพูดของมีริส และ p70-1 จัดเธออยู่ในกลุ่มเพื่อนสมัยเด็กสามคน"
+          }
         }
       ]
     },
@@ -805,7 +1041,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p78-1"
+            ],
+            "reason": "อัลวินเป็นผู้ปลุกเร้าให้ทุกคนสนุกเต็มที่ และ p78-1 เป็นมีริสที่เชียร์อัลคุง"
+          }
         }
       ]
     },
@@ -826,7 +1070,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p78-1",
+              "p79-1"
+            ],
+            "reason": "มีริสเรียกอัลวินว่า 'อัลคุง' และเชียร์ตามคำปลุกเร้าของเขา"
+          }
         }
       ]
     },
@@ -837,7 +1090,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "เรนกะพูดกับชินจิต่อจากมีริส และ p80-1 เป็นชินจิที่ตอบ"
+          }
         }
       ]
     },
@@ -848,7 +1110,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1",
+              "p80-1",
+              "p81-1"
+            ],
+            "reason": "ชินจิตอบทุกคนเรื่องการใช้จ่าย และ p81-1 ขึ้นย่อหน้าใหม่เรื่องความเชื่อของอัลวิน"
+          }
         }
       ]
     },
@@ -878,7 +1149,14 @@
         {
           "start": 0,
           "end": 81,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1"
+            ],
+            "reason": "เป็นข้อความโน้ตผู้แปลท้ายบท ไม่ใช่บทสนทนาของตัวละคร"
+          }
         }
       ]
     }

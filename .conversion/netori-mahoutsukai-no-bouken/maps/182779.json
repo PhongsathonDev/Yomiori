@@ -78,7 +78,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p9-1 ระบุว่าอัลวินเป็นผู้เสนอจัดงานเลี้ยง"
+          }
         }
       ]
     },
@@ -99,7 +108,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "อากาเนะเป็นผู้ถามว่างานเลี้ยงนั้นเพื่อเธอหรือไม่"
+          }
         }
       ]
     },
@@ -110,7 +128,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "อัลวินเป็นผู้ยืนยันคำถามของอากาเนะและชูนิ้วโป้งใน p12-1"
+          }
         }
       ]
     },
@@ -131,7 +158,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "อากาเนะเป็นผู้แสดงความเกรงใจว่าเธอมาเป็นเมด"
+          }
         }
       ]
     },
@@ -142,7 +178,17 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "p16-1 ระบุว่าเรนกะเป็นผู้พูดแทรกขึ้นมา"
+          }
         }
       ]
     },
@@ -153,7 +199,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p17-1"
+            ],
+            "reason": "อัลวินเป็นผู้ปฏิเสธคำแซวและชวนฉลองตาม p17-1"
+          }
         }
       ]
     },
@@ -184,7 +239,16 @@
           "start": 0,
           "end": 104,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "เรนกะเป็นผู้เสนอว่าจะทำอาหารและชวนทุกคนกินด้วยกัน"
+          }
         }
       ]
     },
@@ -195,7 +259,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนเรนกะทำอาหารด้วยกันเป็นครั้งคราว"
+          }
         }
       ]
     },
@@ -206,7 +279,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "มีริสเป็นผู้ขอร่วมทำอาหารด้วย"
+          }
         }
       ]
     },
@@ -227,7 +309,15 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p23-1 ระบุว่าชินจิเป็นผู้คิดจะไปซื้อเหล้าตามที่เอมิลี่แนะนำ"
+          }
         }
       ]
     },
@@ -253,7 +343,16 @@
           "start": 15,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "อัลวินพยักหน้ารับคำของชินจิด้วยเสียง 'อืมๆ'"
+          }
         },
         {
           "start": 21,
@@ -269,7 +368,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามว่าของเขาไม่มีงานให้ทำหรือ"
+          }
         }
       ]
     },
@@ -280,7 +388,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "เครื่องหมายคำพูดสามชั้นและ p27-1 ระบุว่ามีริส เรนกะ และอากาเนะพูดพร้อมกัน"
+          }
         }
       ]
     },
@@ -301,7 +418,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "อากาเนะเป็นผู้เปลี่ยนชุดเมดตาม p31-1 และอธิบายการแต่งตัวในชุดนั้น"
+          }
         }
       ]
     },
@@ -352,7 +478,17 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชมว่าเข้ากับอากาเนะดี และ p35-1 ระบุว่าเรนกะมองชินจิที่ชอบเมด"
+          }
         }
       ]
     },
@@ -363,7 +499,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "เรนกะเป็นผู้เสริมว่าเหมือนเป็นสีสันของบ้านปาร์ตี้ก่อนเหลือบมองชินจิ"
+          }
         }
       ]
     },
@@ -394,7 +539,16 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "อากาเนะเป็นผู้บอกว่าจะไปทำความสะอาดและออกจากห้องใน p38-1"
+          }
         }
       ]
     },
@@ -415,7 +569,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอให้มีริสลองใส่ชุดเมด"
+          }
         }
       ]
     },
@@ -426,7 +589,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับและถามหาที่ซื้อชุดเมด"
+          }
         }
       ]
     },
@@ -477,7 +649,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "เรนกะเป็นผู้ดึงแขนชินจิและเรียกเขาว่ามีเรื่องจะปรึกษา"
+          }
         }
       ]
     },
@@ -488,7 +669,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนไปคุยกันในห้อง"
+          }
         }
       ]
     },
@@ -519,7 +709,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิเป็นผู้ทักเอมิลี่ที่พุ่งเข้ากอดและบอกว่าเจ็บ"
+          }
         }
       ]
     },
@@ -530,7 +729,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ขอโทษที่กอดแรงเพราะคิดถึงชินจิ"
+          }
         }
       ]
     },
@@ -571,7 +779,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "อากาเนะเป็นผู้แนะนำตัวกับเอมิลี่"
+          }
         }
       ]
     },
@@ -586,8 +803,14 @@
         {
           "start": 62,
           "end": 70,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "เป็นเสียงหน้าอกกระเพื่อม 'ดึ่งๆ♡' ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -598,7 +821,16 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้แนะนำตัวตอบและพูดถึงจำนวนสาวหน้าอกโต"
+          }
         }
       ]
     },
@@ -629,7 +861,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ถามผลการทดสอบ"
+          }
         }
       ]
     },
@@ -640,7 +881,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบว่าสำเร็จเรียบร้อย"
+          }
         }
       ]
     },
@@ -651,7 +901,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ชมว่าสมกับเป็นพวกอัลวินก่อนไฮไฟฟ์ใน p62-1"
+          }
         }
       ]
     },
@@ -667,7 +926,14 @@
           "start": 45,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1"
+            ],
+            "reason": "p62-1 ระบุว่าเอมิลี่ไฮไฟฟ์กับอัลวินและทั้งคู่ส่งเสียงเชียร์พร้อมกัน"
+          }
         }
       ]
     },
@@ -678,7 +944,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้พูดว่าระดับสูงขั้นกลางเท่ากับเธอแล้ว"
+          }
         }
       ]
     },
@@ -689,7 +964,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p66-1"
+            ],
+            "reason": "p66-1 ระบุว่าคำพูดนี้เป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -700,7 +984,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ตอบรับและขอตัวไปอาบน้ำก่อน"
+          }
         }
       ]
     },
@@ -721,7 +1014,16 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "เรนกะเป็นผู้บอกให้เอมิลี่มากินข้าวพร้อมกันหลังอาบน้ำ"
+          }
         }
       ]
     },
@@ -732,7 +1034,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้รับปากและวิ่งจากไปใน p69-1"
+          }
         }
       ]
     },
@@ -753,7 +1064,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "p72-1 ระบุว่าอากาเนะหัวเราะกับคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -764,7 +1084,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "อากาเนะเป็นผู้หัวเราะและเปรียบเทียบเอมิลี่กับอัลวิน"
+          }
         }
       ]
     },
@@ -790,7 +1119,14 @@
           "start": 17,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "p73-1 ระบุว่าอัลวินพึมพำถามว่าเหมือนขนาดนั้นเลยหรือ"
+          }
         },
         {
           "start": 44,
@@ -806,7 +1142,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "มีริสเป็นผู้เปรียบเทียบอาจารย์กับลูกศิษย์ที่เหมือนกัน"
+          }
         }
       ]
     },
@@ -817,7 +1162,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "อากาเนะเป็นผู้บอกว่าถ้าอย่างนั้นเธออาจสนิทด้วยง่ายขึ้น"
+          }
         }
       ]
     },
@@ -828,7 +1182,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "ชินจิเป็นผู้สรุปอย่างไม่แน่ใจก่อนทุกคนพยักหน้าใน p77-1"
+          }
         }
       ]
     },

@@ -28,7 +28,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p3-1",
+              "p5-1"
+            ],
+            "reason": "เป็นเสียงยินดีที่ได้กลับเมืองฐานเดิม และ p5-1 อัลวินเรียกมีริสว่า 'มี่' ต่อทันทีตามที่เขาพูด"
+          }
         }
       ]
     },
@@ -39,7 +48,14 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "ตรวจบริบท p4-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -50,7 +66,14 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "ตรวจบริบท p5-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -61,7 +84,14 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "ตรวจบริบท p6-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -72,7 +102,14 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ตรวจบริบท p7-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -93,7 +130,14 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "ตรวจบริบท p9-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -104,7 +148,14 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -115,7 +166,14 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "ตรวจบริบท p11-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -126,7 +184,14 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -137,7 +202,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าชินจิรู้สึกถึงอันตรายจากเอมิลี่ที่ปิดหน้าเจ้าเล่ห์ด้วยคำโกหกไม่เนียน; คำว่า 'ฉันไม่ทำอะไรแปลกๆ' จึงเป็นของเอมิลี่"
+          }
         }
       ]
     },
@@ -168,7 +242,15 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "p15-1 เป็นความคิดของชินจิเรื่องอันตรายจากเอมิลี่ ประโยคนี้จึงเป็นข้อเสนอของเขาให้ทุกคนเช่าบ้านอยู่ด้วยกันเพื่อความปลอดภัย"
+          }
         }
       ]
     },
@@ -179,7 +261,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -190,7 +279,14 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "ตรวจบริบท p18-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -201,7 +297,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เป็นเสียงค้านแบบไม่เป็นทางการ (ไม่มี 'ค่ะ') เรื่องงานทำความสะอาดและดูแลบ้าน ตรงกับนิสัยรับผิดชอบของเรนกะ"
+          }
         }
       ]
     },
@@ -212,7 +317,14 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -253,7 +365,14 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ตรวจบริบท p24-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
         }
       ]
     },
@@ -264,7 +383,14 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "ตรวจบริบท p25-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -275,7 +401,14 @@
           "start": 0,
           "end": 101,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "ตรวจบริบท p26-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
         }
       ]
     },
@@ -291,7 +424,15 @@
           "start": 61,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "narration ระบุว่าชินจิหันไปถามเอมิลี่ว่า 'เอาไง?' และ p28-1 เป็นคำตอบของเอมิลี่"
+          }
         }
       ]
     },
@@ -302,7 +443,14 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "ตรวจบริบท p28-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -313,7 +461,14 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -324,7 +479,14 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ตรวจบริบท p30-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -365,7 +527,14 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
         }
       ]
     },
@@ -376,7 +545,14 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -387,7 +563,14 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
         }
       ]
     },
@@ -402,8 +585,14 @@
         {
           "start": 70,
           "end": 77,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์เมื่อชาร์ลอตต้าสะดุ้งในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 77,
@@ -419,7 +608,14 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -430,7 +626,14 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ตรวจบริบท p39-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
         }
       ]
     },
@@ -445,8 +648,14 @@
         {
           "start": 30,
           "end": 40,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "เป็นเสียงจูบแก้มในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 40,
@@ -502,7 +711,17 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "เป็นเสียงเปิดบทสนทนาเรื่องจำนวนเวทมนตร์ ก่อนมีริสและเรนกะจะพูดต่อใน p46-1 และ p47-1"
+          }
         }
       ]
     },
@@ -513,7 +732,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "ตรวจบริบท p46-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -524,7 +750,14 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "ตรวจบริบท p47-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -555,7 +788,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ตรวจบริบท p50-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -566,7 +806,16 @@
           "start": 0,
           "end": 65,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "เป็นคำโต้ต่อคำแนะนำของชินจิเรื่องการเลือกโดยไม่มีอคติ และชินจิพยักหน้ารับใน p52-1 ก่อนหันไปถามอัลวินกับมีริส"
+          }
         }
       ]
     },
@@ -577,7 +826,15 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "narration ใน p52-1 ระบุว่าชินจิพยักหน้าแล้วจึงถามอัลวินและมีริส คำว่า 'นั่นสินะ' จึงเป็นของชินจิ"
+          }
         },
         {
           "start": 10,
@@ -593,7 +850,14 @@
           "start": 0,
           "end": 192,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -634,7 +898,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "อัลวินเป็นแนวหน้าผู้ใช้ดาบและเป็นคนถามต่อเรื่องเวทมนตร์ป้องกันตัว ส่วน p58-1 เป็นคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -645,7 +917,14 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "ตรวจบริบท p58-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -666,7 +945,14 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "ตรวจบริบท p60-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -697,7 +983,14 @@
           "start": 0,
           "end": 217,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "ตรวจบริบท p63-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -728,7 +1021,14 @@
           "start": 0,
           "end": 188,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1"
+            ],
+            "reason": "ตรวจบริบท p66-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -739,7 +1039,17 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1",
+              "p74-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่ยังไม่ได้เลือกเวทมนตร์ของตัวเองและประกาศผลใน p74-1 ต่อจากบทสนทนานี้"
+          }
         }
       ]
     },
@@ -770,7 +1080,14 @@
           "start": 0,
           "end": 169,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "ตรวจบริบท p70-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -781,7 +1098,14 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1"
+            ],
+            "reason": "ตรวจบริบท p71-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -792,7 +1116,17 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "p71-1 มีริสถามต่อด้วย 'ค่ะ' และ p72-1 เป็นอีกเสียงที่อยากเห็น ก่อนชินจิตอบรับใน p73-1"
+          }
         }
       ]
     },
@@ -803,7 +1137,14 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "ตรวจบริบท p73-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -814,7 +1155,14 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1"
+            ],
+            "reason": "ตรวจบริบท p74-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },

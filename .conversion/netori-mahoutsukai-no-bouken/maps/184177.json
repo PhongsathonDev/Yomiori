@@ -48,7 +48,17 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p4 ระบุว่าเรนกะอารมณ์ดีที่ทั้งสองอยู่ในห้องเดียวกันได้อย่างเปิดเผย จึงเป็นเรนกะผู้พูดกับชินจิ"
+          }
         }
       ]
     },
@@ -59,7 +69,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7 ระบุว่าชินจิขอโทษขณะที่เรนกะกอดแขนเขา"
+          }
         }
       ]
     },
@@ -80,7 +99,16 @@
           "start": 0,
           "end": 161,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิอธิบายแผนว่าจะปิดความสัมพันธ์ไว้จนอัลวินถึงเป้าหมาย แล้ว p9 เรนกะตอบ"
+          }
         }
       ]
     },
@@ -91,7 +119,16 @@
           "start": 0,
           "end": 94,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "เรนกะถามกลับเรื่องตั้งใจปิดบัง และ p10 บรรยายว่าเธอทำหน้าหน่ายๆ แล้วบีบแขนเขา"
+          }
         }
       ]
     },
@@ -132,7 +169,16 @@
           "start": 0,
           "end": 325,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p12 ระบุว่าชินจิขอโทษเรนกะอีกครั้งด้วยคำพูดยาวเรื่องเหตุผลและความสัมพันธ์กับอัลวิน"
+          }
         }
       ]
     },
@@ -143,7 +189,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15 ระบุว่าหัวใจของเรนกะเต้นแรงกับท่าทางไม่มั่นใจของชินจิและคำพูดที่ดูหึงหวงอัลวิน"
+          }
         }
       ]
     },
@@ -164,7 +219,16 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิพูดต่อถึงเรื่องคนมาจีบและอยากบอกทุกคนว่าเรนกะเป็นคนรัก แล้ว p17 เรนกะขอให้เล่าละเอียด"
+          }
         }
       ]
     },
@@ -175,7 +239,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เรนกะเปลี่ยนจากยิ้มเป็นหน้าบึ้งหลังได้ฟังเรื่องคนมาจีบ และ p18 ระบุว่าเธอจ้องชินจิด้วยสายตาจับผิด"
+          }
         }
       ]
     },
@@ -190,8 +263,14 @@
         {
           "start": 42,
           "end": 49,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "เป็นเสียง/อาการทำหน้าบึ้งของเรนกะที่บรรยายไว้ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 49,
@@ -217,7 +296,16 @@
           "start": 0,
           "end": 222,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ชินจิเล่าเรื่องไอริสจังและปาร์ตี้〈นักเดินทางสีเขียว〉 แล้ว p21 เรนกะถามต่อ"
+          }
         }
       ]
     },
@@ -228,7 +316,16 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "เรนกะถามว่าไอริสเข้าไปพัวพันกับ〈มังกรเพลิง〉หรือไม่ และ p22 ระบุว่าเธอเป็นห่วงไอริสเป็นอันดับแรก"
+          }
         }
       ]
     },
@@ -249,7 +346,16 @@
           "start": 0,
           "end": 199,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ชินจิเล่าว่าทุกอย่างเรียบร้อยและเขาถูกสารภาพรักแต่ปฏิเสธไป แล้ว p24 เรนกะทวนคำ"
+          }
         }
       ]
     },
@@ -260,7 +366,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เรนกะพึมพำเรื่องถูกสารภาพรัก และ p25 ชินจิลูบหัวเธอ"
+          }
         }
       ]
     },
@@ -281,7 +396,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชินจิเล่าต่อว่าไอริสพูดว่าจะมาเป็นภรรยาคนที่สอง แล้ว p27 เรนกะถาม"
+          }
         }
       ]
     },
@@ -292,7 +416,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "เรนกะทวนว่าไอริสก็ด้วยเหรอ และ p28 บรรยายว่าดวงตาของเธอคมกริบขึ้น"
+          }
         }
       ]
     },
@@ -313,7 +446,16 @@
           "start": 0,
           "end": 144,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ชินจิอธิบายว่าไม่รู้ว่าไอริสจริงจังแค่ไหน จึงบอกทุกคนว่าเรนกะเป็นอันดับหนึ่ง แล้ว p30 เขายิ้มเจื่อน"
+          }
         }
       ]
     },
@@ -338,8 +480,14 @@
         {
           "start": 155,
           "end": 166,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "เป็นเสียงถอนหายใจของเรนกะที่บรรยายไว้ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 166,
@@ -355,7 +503,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "เรนกะยอมให้อภัยเพราะชินจิพูดตรงๆ แล้ว p33 ชินจิกล่าวขอบคุณ"
+          }
         }
       ]
     },
@@ -366,7 +523,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "ชินจิขอบคุณเรนกะและจูบเธอเป็นการตอบแทนตาม p34"
+          }
         }
       ]
     },
@@ -387,7 +553,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "เป็นเสียงครางของเรนกะระหว่างจูบกับชินจิที่บรรยายใน p34 และ p36"
+          }
         }
       ]
     },
@@ -418,7 +593,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "เป็นเสียงครางของเรนกะขณะจูบดูดดื่มบนเตียงตาม p37 และ p39"
+          }
         }
       ]
     },
@@ -443,8 +627,14 @@
         {
           "start": 62,
           "end": 69,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "เป็นเสียงน้ำลาย/เสียงจูบ ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 69,
@@ -524,8 +714,14 @@
         {
           "start": 16,
           "end": 22,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "เป็นเสียงกลืนน้ำลายของไอริสที่บรรยายไว้ ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -556,7 +752,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p52-1"
+            ],
+            "reason": "p52 ระบุว่าไอริสถูกอากาเนะพบเข้า และอากาเนะเป็นผู้ทักไอริสที่หน้าประตูห้อง"
+          }
         }
       ]
     },
@@ -567,7 +772,16 @@
           "start": 0,
           "end": 4,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p53-1"
+            ],
+            "reason": "p53 ระบุว่าไอริสหันกลับไปอย่างตกใจหลังถูกอากาเนะทัก จึงเป็นเสียงอุทานของไอริส"
+          }
         }
       ]
     },
@@ -612,8 +826,14 @@
         {
           "start": 47,
           "end": 70,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "เป็นภาพรอยยิ้มของอากาเนะที่ราวกับกำลังบอกคำนี้ ไม่ได้พูดออกเสียงจริง"
+          }
         }
       ]
     },
@@ -634,7 +854,16 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p58 ระบุว่าอากาเนะเปิดประตูห้องของตัวเองแล้วพูดแค่นั้นก่อนเดินกลับไปที่ห้องอาหาร"
+          }
         }
       ]
     },

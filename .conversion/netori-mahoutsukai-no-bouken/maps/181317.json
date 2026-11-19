@@ -7,7 +7,14 @@
         {
           "start": 0,
           "end": 33,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1"
+            ],
+            "reason": "หมายเหตุผู้แปลเปิดตอน ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -38,7 +45,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตื่นขึ้นและพบว่าเฟรรี่กำลังทำอยู่ (p4) จึงพูดกับเธอ"
+          }
         }
       ]
     },
@@ -49,7 +64,15 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -70,7 +93,15 @@
           "start": 0,
           "end": 120,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p10-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดถึงเฟรรี่และ 'ฉัน' ผู้สั่งให้เธอเคลื่อนไหว"
+          }
         }
       ]
     },
@@ -81,7 +112,15 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำพูดของชินจิใน p8"
+          }
         }
       ]
     },
@@ -132,7 +171,14 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดเรื่องการดูดพลังเวทและพลังชีวิต"
+          }
         }
       ]
     },
@@ -143,7 +189,15 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำขอของชินจิ"
+          }
         }
       ]
     },
@@ -194,7 +248,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p22-1"
+            ],
+            "reason": "เสียงครางของเฟรรี่ระหว่างถูกบรรยายการอมใน p22"
+          }
         }
       ]
     },
@@ -205,7 +267,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p22 ระบุว่าชินจิผู้มีประสบการณ์เป็นผู้ทนรับการอมและเปล่งเสียง"
+          }
         }
       ]
     },
@@ -246,7 +316,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p28-1"
+            ],
+            "reason": "ชินจิพูดกับเฟรรี่ และ p28 ระบุว่าเธอดีใจกับคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -257,7 +335,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำพูดของชินจิใน p25"
+          }
         }
       ]
     },
@@ -288,7 +374,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p32-1"
+            ],
+            "reason": "ชินจิเป็นผู้ใกล้ถึงจุดสุดยอดตามการบรรยายใน p32"
+          }
         }
       ]
     },
@@ -299,7 +393,15 @@
           "start": 0,
           "end": 5,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ระหว่างการอม"
+          }
         }
       ]
     },
@@ -350,7 +452,15 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p37-1"
+            ],
+            "reason": "ชินจิถามเฟรรี่ว่าพอใจหรือยัง และ p37 ระบุว่าเฟรรี่ส่ายหน้า"
+          }
         }
       ]
     },
@@ -361,7 +471,15 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "เฟรรี่ตอบด้วยเสียงแล้วส่ายหน้าใน p37"
+          }
         }
       ]
     },
@@ -432,7 +550,15 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เสียงของเฟรรี่เมื่อชินจิเล้าโลมใน p44"
+          }
         }
       ]
     },
@@ -457,8 +583,14 @@
         {
           "start": 144,
           "end": 152,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1"
+            ],
+            "reason": "เสียง 'ปุ๊ง' ของดอกไม้ที่ผลิบานบนผมเฟรรี่ ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -469,7 +601,15 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p48-1"
+            ],
+            "reason": "ชินจิพูดกับเฟรรี่และหัวเราะใน p48"
+          }
         }
       ]
     },
@@ -480,7 +620,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -511,7 +660,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p52-1"
+            ],
+            "reason": "ชินจิชมน้ำหวานของเฟรรี่ และ p52 ระบุว่าเมื่อชินจิพูดเช่นนั้นช่องคลอดของเธอหดเกร็ง"
+          }
         }
       ]
     },
@@ -522,7 +679,15 @@
           "start": 0,
           "end": 4,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำชมของชินจิ"
+          }
         }
       ]
     },
@@ -537,8 +702,14 @@
         {
           "start": 49,
           "end": 61,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "เสียงช่องคลอดหดเกร็ง 'ควิ้ววว' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 61,
@@ -564,7 +735,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "เสียงครางของเฟรรี่ระหว่างถูกกระแทกใน p55"
+          }
         }
       ]
     },
@@ -589,8 +768,14 @@
         {
           "start": 139,
           "end": 154,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "เสียง 'กุจุ๊กกุจุ๊ก' ของการเสียดสี ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 154,
@@ -606,7 +791,15 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ชินจิเป็นผู้ประกาศว่าใกล้จะแตก"
+          }
         }
       ]
     },
@@ -617,7 +810,15 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "เสียงครางของเฟรรี่ตอบรับการกระแทกของชินจิ"
+          }
         }
       ]
     },
@@ -632,8 +833,14 @@
         {
           "start": 18,
           "end": 29,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "เสียงช่องคลอดหดเกร็ง 'ควิ้ววว' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 29,
@@ -653,8 +860,14 @@
         {
           "start": 61,
           "end": 89,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "เสียง 'ตุ๊บ' ของการหลั่งน้ำอสุจิ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 89,
@@ -674,8 +887,14 @@
         {
           "start": 59,
           "end": 74,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "เสียง 'บิ๊กกุบิ๊กกุ' ของของเหลว ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 74,
@@ -701,7 +920,15 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p65-1"
+            ],
+            "reason": "ชินจิถามเฟรรี่ว่ารู้สึกดีไหม และ p65 ระบุว่าเมื่อได้ยินคำพูดของชินจิเฟรรี่พยักหน้า"
+          }
         }
       ]
     },
@@ -712,7 +939,16 @@
           "start": 0,
           "end": 4,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ก่อนพยักหน้าใน p65"
+          }
         }
       ]
     },
@@ -733,7 +969,15 @@
           "start": 0,
           "end": 106,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p68-1"
+            ],
+            "reason": "ชินจิออกคำสั่งให้เฟรรี่สร้างเครือข่ายเฝ้าระวัง และ p68 ระบุว่าเขาออกคำสั่ง"
+          }
         }
       ]
     },
@@ -744,7 +988,16 @@
           "start": 0,
           "end": 4,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำสั่ง ก่อนชูนิ้วโป้งใน p68"
+          }
         }
       ]
     },
@@ -775,7 +1028,14 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "ชินจิสั่งให้เริ่มรวบรวมข้อมูล"
+          }
         }
       ]
     },
@@ -786,7 +1046,15 @@
           "start": 0,
           "end": 4,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำสั่งของชินจิ"
+          }
         }
       ]
     },
@@ -801,8 +1069,14 @@
         {
           "start": 74,
           "end": 80,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1"
+            ],
+            "reason": "ท่าทางกำหมัดและชูมือของเฟรรี่ที่บรรยายว่า 'ราวกับจะบอกว่า' ไม่ใช่คำพูดจริง"
+          }
         }
       ]
     },

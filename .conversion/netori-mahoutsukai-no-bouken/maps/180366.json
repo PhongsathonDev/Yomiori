@@ -58,7 +58,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "มีริสเรียกชื่อชินจิและพูดกับเขาเมื่อเขามาที่ห้องของเธอตาม p5-1"
+          }
         }
       ]
     },
@@ -99,7 +108,14 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -110,7 +126,14 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "ตรวจบริบท p11-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -125,8 +148,14 @@
         {
           "start": 139,
           "end": 151,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "เป็นเสียง/อาการของร่างกาย (sound effect) ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -137,7 +166,14 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1"
+            ],
+            "reason": "ตรวจบริบท p13-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -148,7 +184,14 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "ตรวจบริบท p14-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -179,7 +222,14 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -190,7 +240,14 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "ตรวจบริบท p18-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -205,8 +262,14 @@
         {
           "start": 85,
           "end": 101,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "เป็นเสียง/อาการของร่างกาย (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 101,
@@ -222,7 +285,14 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -233,7 +303,14 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -288,8 +365,14 @@
         {
           "start": 35,
           "end": 47,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "เป็นเสียงบีบรัด (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 47,
@@ -305,7 +388,14 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -316,7 +406,14 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "ตรวจบริบท p28-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -327,7 +424,14 @@
           "start": 0,
           "end": 133,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -368,7 +472,14 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -379,7 +490,14 @@
           "start": 0,
           "end": 117,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -390,7 +508,14 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -405,8 +530,14 @@
         {
           "start": 169,
           "end": 172,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "เป็นเพียงเครื่องหมาย ♡ ใน narration ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 172,
@@ -422,7 +553,14 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "ตรวจบริบท p37-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -433,7 +571,14 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -444,7 +589,14 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ตรวจบริบท p39-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -455,7 +607,14 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -480,8 +639,14 @@
         {
           "start": 214,
           "end": 224,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "เป็นเสียงสอดใส่ (sound effect) ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -496,8 +661,14 @@
         {
           "start": 85,
           "end": 94,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "เป็นเสียง/อาการของร่างกาย (sound effect) ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -508,7 +679,14 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "ตรวจบริบท p44-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -519,7 +697,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1"
+            ],
+            "reason": "ตรวจบริบท p45-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -534,8 +719,14 @@
         {
           "start": 24,
           "end": 33,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "เป็นเสียง/อาการของร่างกาย (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 33,
@@ -561,7 +752,14 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -572,7 +770,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -593,7 +798,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1"
+            ],
+            "reason": "ตรวจบริบท p51-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -604,7 +816,14 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -629,8 +848,14 @@
         {
           "start": 71,
           "end": 87,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "เป็นเสียงกระทบสะโพก (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 87,
@@ -640,8 +865,14 @@
         {
           "start": 135,
           "end": 151,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "เป็นเสียงอาการกระตุก (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 151,
@@ -657,7 +888,14 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "ตรวจบริบท p55-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -668,7 +906,14 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "ตรวจบริบท p56-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -683,8 +928,14 @@
         {
           "start": 97,
           "end": 116,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "เป็นเสียงกระแทก (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 116,
@@ -710,7 +961,14 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "ตรวจบริบท p59-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -725,8 +983,14 @@
         {
           "start": 34,
           "end": 44,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "เป็นเสียงสอดใส่ (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 44,
@@ -736,8 +1000,14 @@
         {
           "start": 65,
           "end": 84,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "เป็นเสียงหลั่ง (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 84,
@@ -757,8 +1027,14 @@
         {
           "start": 29,
           "end": 36,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "เป็นเสียง/อาการของร่างกาย (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 36,
@@ -768,8 +1044,14 @@
         {
           "start": 72,
           "end": 81,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "เป็นเสียงร่างกายสั่น (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 81,
@@ -809,8 +1091,14 @@
         {
           "start": 145,
           "end": 155,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1"
+            ],
+            "reason": "เป็นเสียงบีบรัด (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 155,
@@ -826,7 +1114,14 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "ตรวจบริบท p65-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -846,8 +1141,15 @@
         {
           "start": 0,
           "end": 6,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "「...♡」เป็นเพียงลมหายใจ/เสียงในลำคอของมีริส และ p68-1 ระบุว่าเธอตอบอะไรไม่ได้"
+          }
         }
       ]
     },

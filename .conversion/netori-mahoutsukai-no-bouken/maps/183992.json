@@ -12,8 +12,14 @@
         {
           "start": 46,
           "end": 51,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'คุย' ในประโยคบรรยายว่าไปคุยกับสามพี่น้องลีร่า ไม่ใช่บทสนทนาที่มีคนพูดในฉาก"
+          }
         },
         {
           "start": 51,
@@ -49,7 +55,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p5 ระบุว่ามีริสพยักหน้าตอบคำถามของไอริส และไอริสเพิ่งเดินมาหาอัลวินกับมีริสที่โรงอาหาร"
+          }
         }
       ]
     },
@@ -70,7 +85,16 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p5 ระบุว่ามีริสพยักหน้าตอบคำถามของไอริส จึงเป็นมีริสผู้ตอบเรื่องชินจิและเรนกะออกไปข้างนอก"
+          }
         }
       ]
     },
@@ -81,7 +105,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับคำอธิบายของมีริส และ p8 บรรยายว่าไอริสขมวดคิ้วด้วยความผิดหวังกับคำตอบ"
+          }
         }
       ]
     },
@@ -102,7 +135,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "อัลวินถามว่าไอริสมาหาชินจิหรือไม่ แล้ว p10 ไอริสตอบรับคำถามนี้"
+          }
         }
       ]
     },
@@ -113,7 +155,15 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ไอริสตอบคำถามของอัลวินใน p9 ว่าใช่แต่ชินจิไม่อยู่"
+          }
         }
       ]
     },
@@ -124,7 +174,16 @@
           "start": 0,
           "end": 114,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p12 ระบุว่าอัลวินถามมีริสพลางมองไอริส และเรียกมีริสว่า 'มี่'"
+          }
         }
       ]
     },
@@ -145,7 +204,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p12 ระบุว่ามีริสไม่คิดจะปฏิเสธคำขอของอัลวิน จึงเป็นมีริสผู้ตอบรับชวนไปดื่มชา"
+          }
         }
       ]
     },
@@ -156,7 +224,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15 ระบุว่าไอริสพยายามปฏิเสธมีริสผู้ยิ้มตอบ"
+          }
         }
       ]
     },
@@ -187,7 +264,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "อัลวินเรียกมีริสว่า 'มี่' และปลอบไอริสว่าไม่ต้องเกรงใจ แล้ว p18 มีริสสนับสนุน"
+          }
         }
       ]
     },
@@ -198,7 +284,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "คำตอบสุภาพลงท้าย 'ค่ะ' สนับสนุนคำพูดของอัลวินใน p17 และ p19 ไอริสกล่าวขอบคุณ"
+          }
         }
       ]
     },
@@ -209,7 +304,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ไอริสเป็นผู้กล่าวขอบคุณหลังมีริสรับปากจะช่วย"
+          }
         }
       ]
     },
@@ -240,7 +343,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p25-1"
+            ],
+            "reason": "มีริสเอ่ยถามว่าไอริสชอบชินจิหรือไม่ และ p25 ระบุว่าอัลวินเป็นผู้บอกมีริสเรื่องนี้"
+          }
         }
       ]
     },
@@ -251,7 +363,15 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "อัลวินตอบยืนยันคำถามของมีริสอย่างตื่นเต้นว่าชินจิมีเรื่องดีๆ เข้ามาในชีวิต"
+          }
         }
       ]
     },
@@ -292,7 +412,16 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p25 ระบุว่าอัลวินบอกมีริสว่าไอริสหลงรักชินจิ และ p26 บรรยายมีริสมองไอริสก่อนพูดประโยคนี้"
+          }
         }
       ]
     },
@@ -303,7 +432,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบเรื่องสัญญาของกาเลโอ และ p29 ระบุว่ามีริสยิ้มเมื่อไอริสรายงานด้วยสีหน้าภาคภูมิใจ"
+          }
         }
       ]
     },
@@ -324,7 +462,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ไอริสเรียกอัลวินว่า 'พี่อัล' และถามถึงแผนของเขา แล้ว p31 อัลวินตอบ"
+          }
         }
       ]
     },
@@ -335,7 +482,16 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "อัลวินตอบคำถามของไอริส และ p32 ระบุว่าเขาส่งสายตาให้มีริสพลางถอยหลังเมื่อไอริสจ้อง"
+          }
         }
       ]
     },
@@ -366,7 +522,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p35 ระบุว่ามีริสเริ่มต้นด้วยคำถามที่ปลอดภัยว่าไอริสจังอยากเป็นยังไง"
+          }
         }
       ]
     },
@@ -387,7 +552,17 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ไอริสตอบคำถามของมีริสว่าตั้งเป้าเป็นภรรยาคนที่สอง และ p37 อัลวินทวนคำ"
+          }
         }
       ]
     },
@@ -398,7 +573,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p39-1"
+            ],
+            "reason": "p39 ระบุว่าอัลวินเอียงคอเมื่อไอริสตอบอย่างจริงจัง จึงเป็นอัลวินผู้ทวนคำว่า 'ภรรยาคนที่สอง?'"
+          }
         }
       ]
     },
@@ -429,7 +613,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p41 ระบุว่าไอริสพยักหน้าตอบอัลวินที่ตกใจช้าไปจังหวะหนึ่ง"
+          }
         }
       ]
     },
@@ -450,7 +643,15 @@
           "start": 0,
           "end": 154,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ไอริสอธิบายเหตุผลที่ตั้งเป้าเป็นภรรยาคนที่สองต่อจากคำตอบของตัวเองใน p36"
+          }
         }
       ]
     },
@@ -461,7 +662,15 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "อัลวินอุทานแล้วถามมีริสว่า 'มี่ล่ะ?' และ p44 มีริสเป็นผู้ตอบ"
+          }
         }
       ]
     },
@@ -472,7 +681,16 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "มีริสตอบคำถามของอัลวินใน p43 และ p45 ระบุว่าเธอดูเหมือนทำตามน้ำ"
+          }
         }
       ]
     },
@@ -503,7 +721,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ไอริสสงสัยว่าใครคือคนรักของชินจิ และ p48 อัลวินเป็นผู้ตอบ"
+          }
         }
       ]
     },
@@ -514,7 +741,16 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p49 ระบุว่ามีริสมองอัลวินที่ดูเหมือนจะเข้าใจอะไรบางอย่าง จึงเป็นอัลวินผู้พูดถึงอาจารย์ที่จีบชินจิ"
+          }
         }
       ]
     },
@@ -535,7 +771,16 @@
           "start": 0,
           "end": 111,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p52-1"
+            ],
+            "reason": "มีริสเป็นผู้ชี้ว่าเป้าหมายภรรยาคนที่สองต้องเริ่มจากการแต่งงาน และ p52 ไอริสตอบรับ"
+          }
         }
       ]
     },
@@ -556,7 +801,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p53 ระบุว่าไอริสผู้ไม่รู้เรื่องเพื่อนร่วมเพศของชินจิเป็นคนกุมขมับหลังพูดประโยคนี้"
+          }
         }
       ]
     },
@@ -577,7 +831,17 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "p56 ระบุว่ามีริสพยักหน้าเห็นด้วยกับคำพูดของอัลวิน จึงเป็นอัลวินผู้เสนอให้ทำให้ชินจิเข้าใจข้อดีของการแต่งงาน"
+          }
         }
       ]
     },
@@ -588,7 +852,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "มีริสเห็นด้วยกับคำพูดของอัลวิน และ p56 ระบุว่าเธอพยักหน้าเห็นด้วย"
+          }
         }
       ]
     },
@@ -619,7 +892,16 @@
           "start": 0,
           "end": 152,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ไอริสเป็นผู้เสนอแผนตามหาคนรักของชินจิและกันผู้หญิงคนอื่น แล้ว p59 อัลวินตอบเรื่องที่มีคนมาจีบ"
+          }
         }
       ]
     },
@@ -630,7 +912,16 @@
           "start": 0,
           "end": 131,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "อัลวินเล่าว่ามีคนมาจีบมากขึ้นหลังขึ้นระดับสูงขั้นกลางและเขาปฏิเสธเพราะรักมีริส แล้ว p60 มีริสพูดต่อ"
+          }
         }
       ]
     },
@@ -641,7 +932,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p61 ระบุว่ามีริสยิ้มเจื่อนๆ แล้วลูบหัวอัลวินหลังพูดประโยคนี้"
+          }
         }
       ]
     },
@@ -662,7 +962,15 @@
           "start": 0,
           "end": 118,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "ไอริสเสนอให้อัลวินกับมีริสแสดงความรักต่อหน้าชินจิ และ p63 มีริสตอบอย่างเขินอาย"
+          }
         }
       ]
     },
@@ -673,7 +981,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "p64 ระบุว่ามีริสหน้าแดงก่ำพลางโบกมือปฏิเสธรัวๆ"
+          }
         }
       ]
     },
@@ -694,7 +1011,16 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "อัลวินเปลี่ยนใจเห็นด้วยกับแผนและเสนอชวนชินจิไปเดทคู่ แล้ว p66 ไอริสตั้งข้อสังเกต"
+          }
         }
       ]
     },
@@ -705,7 +1031,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ไอริสตั้งคำถามกังวลว่าชินจิจะปฏิเสธ และ p67 อัลวินตอบ"
+          }
         }
       ]
     },
@@ -721,7 +1056,14 @@
           "start": 30,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "p67 ระบุว่าอัลวินที่กระตือรือร้นกล่าวคำนี้"
+          }
         }
       ]
     },

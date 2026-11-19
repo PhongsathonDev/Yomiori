@@ -8,7 +8,14 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1"
+            ],
+            "reason": "ตรวจบริบท p1-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -29,7 +36,16 @@
           "start": 0,
           "end": 65,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "เป็นคำตอบของแฟลร์ที่ถูกเร่งให้พูดต่อใน p2-1 และเรียกชินจิว่า 'นายท่าน' ตามผลของรอยสลักแห่งราคะ"
+          }
         }
       ]
     },
@@ -40,7 +56,14 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "ตรวจบริบท p4-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -61,7 +84,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "ตรวจบริบท p6-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -72,7 +102,14 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ตรวจบริบท p7-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -97,8 +134,14 @@
         {
           "start": 184,
           "end": 197,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "เป็นเสียงน้ำหล่อลื่นไหลออกมาในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 197,
@@ -114,7 +157,14 @@
           "start": 0,
           "end": 121,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -155,7 +205,14 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "ตรวจบริบท p14-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -170,8 +227,14 @@
         {
           "start": 25,
           "end": 42,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "เป็นเสียงก้นและสะโพกกระทบกันในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 42,
@@ -181,8 +244,14 @@
         {
           "start": 98,
           "end": 117,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "เป็นเสียงน้ำหล่อลื่นจากการเสียดสีในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 117,
@@ -222,8 +291,14 @@
         {
           "start": 77,
           "end": 87,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "เป็นเสียงกลืนน้ำลายของแฟลร์ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 87,
@@ -249,7 +324,14 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -264,8 +346,14 @@
         {
           "start": 172,
           "end": 188,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "เป็นเสียงช่องคลอดบีบรัดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -276,7 +364,14 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "ตรวจบริบท p22-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -287,7 +382,14 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -302,8 +404,15 @@
         {
           "start": 32,
           "end": 52,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "เป็นคำพูดของแฟลร์ใน p23-1 ที่ชินจิยกมาอ้างในประโยคบรรยาย ('คำพูดที่ดูถูกว่า') ไม่ใช่บทสนทนาใหม่"
+          }
         },
         {
           "start": 52,
@@ -313,8 +422,14 @@
         {
           "start": 169,
           "end": 179,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "เป็นเสียงช่องคลอดรัดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 179,
@@ -330,7 +445,14 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "ตรวจบริบท p25-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -341,7 +463,14 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "ตรวจบริบท p26-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -392,7 +521,14 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "ตรวจบริบท p31-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -427,8 +563,14 @@
         {
           "start": 106,
           "end": 127,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "เป็นคำพูดเชิงสมมติที่แฟลร์จะตอบโต้กลับไปหากมีการสนทนา ('จะตอบโต้กลับไปว่า') ไม่ได้เปล่งออกมาในฉาก"
+          }
         }
       ]
     },
@@ -453,8 +595,14 @@
         {
           "start": 19,
           "end": 40,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "เป็นเสียงเนื้อกระทบกันในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -475,7 +623,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -496,7 +651,14 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -507,7 +669,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "ตรวจบริบท p41-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -542,8 +711,14 @@
         {
           "start": 123,
           "end": 134,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "เป็นเสียงอสุจิทะลักออกมาในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 134,
@@ -593,8 +768,14 @@
         {
           "start": 87,
           "end": 93,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "เป็นเสียงสอดใส่ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 93,
@@ -610,7 +791,14 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -631,7 +819,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1"
+            ],
+            "reason": "ตรวจบริบท p51-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -642,7 +837,14 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -663,7 +865,14 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ตรวจบริบท p54-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -684,7 +893,14 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "ตรวจบริบท p56-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -705,7 +921,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "ตรวจบริบท p58-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -726,7 +949,14 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "ตรวจบริบท p60-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -737,7 +967,14 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "ตรวจบริบท p61-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -778,7 +1015,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "ตรวจบริบท p65-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },

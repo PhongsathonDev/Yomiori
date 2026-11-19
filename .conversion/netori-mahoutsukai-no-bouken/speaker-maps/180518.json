@@ -1,0 +1,101 @@
+{
+  "p3-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p1-1", "p3-1", "p5-1"],
+    "reason": "เป็นเสียงยินดีที่ได้กลับเมืองฐานเดิม และ p5-1 อัลวินเรียกมีริสว่า 'มี่' ต่อทันทีตามที่เขาพูด"
+  },
+  "p4-1": "netori-miris",
+  "p5-1": "netori-alvin",
+  "p6-1": "netori-emily",
+  "p7-1": "netori-shinji",
+  "p9-1": "netori-alvin",
+  "p10-1": "netori-miris",
+  "p11-1": "netori-renka",
+  "p12-1": "netori-shinji",
+  "p13-1": {
+    "speakerId": "netori-emily",
+    "context": ["p13-1", "p14-1", "p15-1"],
+    "reason": "p15-1 ระบุว่าชินจิรู้สึกถึงอันตรายจากเอมิลี่ที่ปิดหน้าเจ้าเล่ห์ด้วยคำโกหกไม่เนียน; คำว่า 'ฉันไม่ทำอะไรแปลกๆ' จึงเป็นของเอมิลี่"
+  },
+  "p16-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p15-1", "p16-1"],
+    "reason": "p15-1 เป็นความคิดของชินจิเรื่องอันตรายจากเอมิลี่ ประโยคนี้จึงเป็นข้อเสนอของเขาให้ทุกคนเช่าบ้านอยู่ด้วยกันเพื่อความปลอดภัย"
+  },
+  "p17-1": "netori-emily",
+  "p18-1": "netori-alvin",
+  "p19-1": {
+    "speakerId": "netori-renka",
+    "context": ["p18-1", "p19-1", "p20-1"],
+    "reason": "เป็นเสียงค้านแบบไม่เป็นทางการ (ไม่มี 'ค่ะ') เรื่องงานทำความสะอาดและดูแลบ้าน ตรงกับนิสัยรับผิดชอบของเรนกะ"
+  },
+  "p20-1": "netori-emily",
+  "p24-1": "netori-charlotte",
+  "p25-1": "netori-shinji",
+  "p26-1": "netori-charlotte",
+  "p27-1#2": {
+    "speakerId": "netori-shinji",
+    "context": ["p27-1", "p28-1"],
+    "reason": "narration ระบุว่าชินจิหันไปถามเอมิลี่ว่า 'เอาไง?' และ p28-1 เป็นคำตอบของเอมิลี่"
+  },
+  "p28-1": "netori-emily",
+  "p29-1": "netori-shinji",
+  "p30-1": "netori-emily",
+  "p34-1": "netori-charlotte",
+  "p35-1": "netori-shinji",
+  "p36-1": "netori-charlotte",
+  "p37-1#2": {
+    "type": "narration",
+    "context": ["p37-1"],
+    "reason": "เป็นเสียงเอฟเฟกต์เมื่อชาร์ลอตต้าสะดุ้งในประโยคบรรยาย ไม่ใช่คำพูด"
+  },
+  "p38-1": "netori-shinji",
+  "p39-1": "netori-charlotte",
+  "p40-1#2": {
+    "type": "narration",
+    "context": ["p40-1"],
+    "reason": "เป็นเสียงจูบแก้มในประโยคบรรยาย ไม่ใช่คำพูด"
+  },
+  "p45-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p44-1", "p45-1", "p46-1", "p47-1"],
+    "reason": "เป็นเสียงเปิดบทสนทนาเรื่องจำนวนเวทมนตร์ ก่อนมีริสและเรนกะจะพูดต่อใน p46-1 และ p47-1"
+  },
+  "p46-1": "netori-miris",
+  "p47-1": "netori-renka",
+  "p50-1": "netori-shinji",
+  "p51-1": {
+    "speakerId": "netori-renka",
+    "context": ["p50-1", "p51-1", "p52-1"],
+    "reason": "เป็นคำโต้ต่อคำแนะนำของชินจิเรื่องการเลือกโดยไม่มีอคติ และชินจิพยักหน้ารับใน p52-1 ก่อนหันไปถามอัลวินกับมีริส"
+  },
+  "p52-1#1": {
+    "speakerId": "netori-shinji",
+    "context": ["p51-1", "p52-1"],
+    "reason": "narration ใน p52-1 ระบุว่าชินจิพยักหน้าแล้วจึงถามอัลวินและมีริส คำว่า 'นั่นสินะ' จึงเป็นของชินจิ"
+  },
+  "p53-1": "netori-shinji",
+  "p57-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p57-1", "p58-1"],
+    "reason": "อัลวินเป็นแนวหน้าผู้ใช้ดาบและเป็นคนถามต่อเรื่องเวทมนตร์ป้องกันตัว ส่วน p58-1 เป็นคำตอบของชินจิ"
+  },
+  "p58-1": "netori-shinji",
+  "p60-1": "netori-shinji",
+  "p63-1": "netori-shinji",
+  "p66-1": "netori-shinji",
+  "p67-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p66-1", "p67-1", "p68-1", "p74-1"],
+    "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่ยังไม่ได้เลือกเวทมนตร์ของตัวเองและประกาศผลใน p74-1 ต่อจากบทสนทนานี้"
+  },
+  "p70-1": "netori-shinji",
+  "p71-1": "netori-miris",
+  "p72-1": {
+    "speakerId": "netori-renka",
+    "context": ["p70-1", "p71-1", "p72-1", "p73-1"],
+    "reason": "p71-1 มีริสถามต่อด้วย 'ค่ะ' และ p72-1 เป็นอีกเสียงที่อยากเห็น ก่อนชินจิตอบรับใน p73-1"
+  },
+  "p73-1": "netori-shinji",
+  "p74-1": "netori-alvin"
+}

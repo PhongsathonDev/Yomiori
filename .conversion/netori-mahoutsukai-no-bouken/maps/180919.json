@@ -12,8 +12,14 @@
         {
           "start": 32,
           "end": 97,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1"
+            ],
+            "reason": "'สวนปีศาจ' ในเครื่องหมายคำพูดเป็นชื่อดันเจี้ยน ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -23,8 +29,7 @@
         {
           "start": 0,
           "end": 64,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -34,8 +39,7 @@
         {
           "start": 0,
           "end": 149,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -45,8 +49,7 @@
         {
           "start": 0,
           "end": 90,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -57,7 +60,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่ามีริส เรนกะ ชินจิ และเฟรรี่พยักหน้าตามคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -68,7 +80,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "เป็นเสียงตอบรับพร้อมกันของผู้ที่พยักหน้าตามคำพูดอัลวินใน p7-1 (มีริส เรนกะ ชินจิ เฟรรี่)"
+          }
         }
       ]
     },
@@ -78,8 +99,7 @@
         {
           "start": 0,
           "end": 78,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -89,8 +109,7 @@
         {
           "start": 0,
           "end": 190,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -101,7 +120,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ผู้ออกคำสั่ง (p5-1) และ p10-1 ระบุว่าอัลวินพุ่งเข้าหาปีศาจทันทีหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -111,8 +138,7 @@
         {
           "start": 0,
           "end": 137,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -123,7 +149,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 บรรยายการฟันดาบใหญ่ของอัลวินที่เพิ่งเงื้อดาบใน p10-1"
+          }
         }
       ]
     },
@@ -133,8 +168,7 @@
         {
           "start": 0,
           "end": 207,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -144,8 +178,7 @@
         {
           "start": 0,
           "end": 149,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -155,8 +188,7 @@
         {
           "start": 0,
           "end": 264,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -167,7 +199,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "เป็นชื่อเวทที่ร่าย และ p16-1 ระบุว่านี่คือเวทมนตร์ของชินจิ"
+          }
         }
       ]
     },
@@ -177,8 +217,7 @@
         {
           "start": 0,
           "end": 174,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -188,8 +227,7 @@
         {
           "start": 0,
           "end": 62,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -198,9 +236,27 @@
       "segments": [
         {
           "start": 0,
-          "end": 109,
+          "end": 47,
+          "type": "narration"
+        },
+        {
+          "start": 47,
+          "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "เป็นคำที่ชินจิและเพื่อนๆ พึมพำออกมาดัง ๆ ตามประโยคบรรยายเดียวกัน เสียงจึงเป็นของกลุ่มสมาชิกปาร์ตี้ที่เหลืออยู่แนวหลัง"
+          }
+        },
+        {
+          "start": 64,
+          "end": 109,
+          "type": "narration"
         }
       ]
     },
@@ -210,8 +266,7 @@
         {
           "start": 0,
           "end": 377,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -221,8 +276,15 @@
         {
           "start": 0,
           "end": 5,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "เครื่องหมายคำพูดครอบ '...' ซึ่งไม่ใช่คำพูด เป็นเพียงความเงียบของเฟรรี่ตาม p21-1"
+          }
         }
       ]
     },
@@ -232,8 +294,7 @@
         {
           "start": 0,
           "end": 120,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -243,8 +304,7 @@
         {
           "start": 0,
           "end": 160,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -255,7 +315,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24-1 ระบุว่า〈ดาบศักดิ์สิทธิ์〉เป็นของมีริส"
+          }
         }
       ]
     },
@@ -265,8 +333,7 @@
         {
           "start": 0,
           "end": 214,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -277,7 +344,15 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p26-1 บรรยายว่าอัลวินฟันปีศาจลูกน้องทีละตัวหลังเสียงนับนี้"
+          }
         }
       ]
     },
@@ -287,8 +362,7 @@
         {
           "start": 0,
           "end": 152,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -298,8 +372,7 @@
         {
           "start": 0,
           "end": 37,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -310,7 +383,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p29-1 ระบุว่าเป็น〈แขนหิน〉ของชินจิที่ถูกสร้างขึ้นมาเรื่อยๆ"
+          }
         }
       ]
     },
@@ -320,8 +401,7 @@
         {
           "start": 0,
           "end": 138,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -331,8 +411,7 @@
         {
           "start": 0,
           "end": 182,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -342,8 +421,7 @@
         {
           "start": 0,
           "end": 181,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -353,8 +431,7 @@
         {
           "start": 0,
           "end": 113,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -364,8 +441,7 @@
         {
           "start": 0,
           "end": 110,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -375,8 +451,7 @@
         {
           "start": 0,
           "end": 57,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -387,7 +462,15 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p38-1"
+            ],
+            "reason": "พนักงานต้อนรับหญิงของกิลด์ไม่มีชื่อและไม่มีใน roster; p38-1 ระบุว่าเธออยู่เคาน์เตอร์รับรายงานผล"
+          }
         }
       ]
     },
@@ -398,7 +481,15 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "อัลวินเป็นคนรายงานผลและรับรางวัลที่เคาน์เตอร์ตาม p38-1"
+          }
         }
       ]
     },
@@ -408,8 +499,7 @@
         {
           "start": 0,
           "end": 53,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -419,8 +509,7 @@
         {
           "start": 0,
           "end": 96,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -430,8 +519,7 @@
         {
           "start": 0,
           "end": 60,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -442,7 +530,15 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามพนักงานต้อนรับตาม p39-1"
+          }
         }
       ]
     },
@@ -453,7 +549,15 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "พนักงานต้อนรับหญิงคนเดิมเป็นผู้ตอบคำถามใน p40-1; เธอไม่มีชื่อและไม่มีใน roster"
+          }
         }
       ]
     },
@@ -464,7 +568,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p44-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอบคุณก่อนโค้งคำนับและเดินออกจากเคาน์เตอร์ตาม p44-1"
+          }
         }
       ]
     },
@@ -474,8 +586,7 @@
         {
           "start": 0,
           "end": 82,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -485,8 +596,7 @@
         {
           "start": 0,
           "end": 104,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -496,8 +606,7 @@
         {
           "start": 0,
           "end": 27,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -507,8 +616,7 @@
         {
           "start": 0,
           "end": 49,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -518,8 +626,7 @@
         {
           "start": 0,
           "end": 93,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -529,8 +636,7 @@
         {
           "start": 0,
           "end": 93,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -540,8 +646,7 @@
         {
           "start": 0,
           "end": 66,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -551,8 +656,7 @@
         {
           "start": 0,
           "end": 83,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -562,8 +666,7 @@
         {
           "start": 0,
           "end": 75,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -574,7 +677,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p52-1"
+            ],
+            "reason": "คำเรียก 'อัลคุง' เป็นคำที่ roster ระบุว่าเป็นของมีริส และ p47-1 ระบุว่ามีริสกับเรนกะกำลังคุยกัน"
+          }
         }
       ]
     },
@@ -585,7 +696,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "เรนกะเรียกอัลวินว่า 'อัล' และพูดต่อจากคำทักของมีริสใน p52-1"
+          }
         }
       ]
     },
@@ -596,7 +715,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p47-1",
+              "p54-1"
+            ],
+            "reason": "ชายคนที่สามที่รออยู่คือชินจิ (p47-1) และเขาขอบคุณเรื่องแลกเงินที่ p38-1 ระบุว่าอัลวินเป็นคนทำ"
+          }
         }
       ]
     },
@@ -606,8 +734,7 @@
         {
           "start": 0,
           "end": 46,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -617,8 +744,7 @@
         {
           "start": 0,
           "end": 35,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -628,8 +754,7 @@
         {
           "start": 0,
           "end": 30,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -640,7 +765,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ลงท้าย 'ค่ะ' และเป็นบทสนทนาลับที่คู่กับ p59-1 ซึ่งเรียกเธอว่า 'มี่'"
+          }
         }
       ]
     },
@@ -651,7 +784,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "อีกฝ่ายเรียกมีริสว่า 'มี่' และบอกว่าจะรออยู่กับชินจิ"
+          }
         }
       ]
     }

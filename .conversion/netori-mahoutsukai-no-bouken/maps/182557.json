@@ -8,7 +8,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "ชินจิเป็นผู้เรียกแฟลร์ให้เผาศัตรูตาม p3-1"
+          }
         }
       ]
     },
@@ -19,7 +28,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p4-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ตอบรับคำสั่งของชินจิและปรากฏตัวใน p4-1"
+          }
         }
       ]
     },
@@ -60,7 +78,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ชินจิเป็นผู้สังเกตว่าฝูงยังมาไม่หมด แล้วแฟลร์ตอบใน p7-1"
+          }
         }
       ]
     },
@@ -71,7 +98,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "แฟลร์ใช้สรรพนามข้าและพูดถึงพลังเวทของตน"
+          }
         }
       ]
     },
@@ -132,7 +168,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "มีริสเป็นผู้เรียกอัลคุงก่อนอัลวินตะโกนสั่งใน p14-1"
+          }
         }
       ]
     },
@@ -143,7 +188,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าอัลวินตะโกนพลางฟันซากศพและวิ่งออกไป"
+          }
         }
       ]
     },
@@ -174,7 +227,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p16-1 ระบุว่าเรนกะเป็นผู้ตะโกน"
+          }
         }
       ]
     },
@@ -185,7 +247,16 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของเรนกะเรื่องสถานการณ์"
+          }
         }
       ]
     },
@@ -195,7 +266,14 @@
         {
           "start": 0,
           "end": 54,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "เป็นข้อความจากเฟรรี่ผ่านกระแสจิต ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -206,7 +284,16 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้เฟรรี่ร่ายเวทมนตร์คุ้มกันทั้งปาร์ตี้"
+          }
         }
       ]
     },
@@ -217,7 +304,15 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นแสดงว่าสมาชิกปาร์ตี้ตอบพร้อมกัน"
+          }
         }
       ]
     },
@@ -247,7 +342,15 @@
         {
           "start": 0,
           "end": 14,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เป็นคำเตือนของเฟรรี่ผ่านกระแสจิต ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -258,7 +361,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "ชินจิเป็นผู้เตือนเรนกะเรื่องการซุ่มโจมตี"
+          }
         }
       ]
     },
@@ -269,7 +381,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอให้มีริสช่วยป้องกัน แล้ว p27-1 ระบุว่าทั้งสองพยักหน้าให้กัน"
+          }
         }
       ]
     },
@@ -290,7 +411,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้ทุกคนตามเรนกะไป"
+          }
         }
       ]
     },
@@ -301,7 +431,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับคำสั่งของชินจิ"
+          }
         }
       ]
     },
@@ -332,7 +471,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p34-1"
+            ],
+            "reason": "p34-1 ระบุว่าลูกศรถูกเบี่ยงด้วยเวทมนตร์ของชินจิ"
+          }
         }
       ]
     },
@@ -343,7 +491,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p35-1"
+            ],
+            "reason": "p35-1 ระบุว่ากระสุนกรดถูกขวางด้วยโล่จากเวทมนตร์ของมีริส"
+          }
         }
       ]
     },
@@ -394,7 +550,17 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p39-1 ระบุว่าลูกศรของเรนกะพุ่งทะลุก็อบลินทราย"
+          }
         }
       ]
     },
@@ -455,7 +621,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "แฟลร์ใช้สรรพนามข้าและบ่นว่าเหนื่อยหลังต่อสู้"
+          }
         }
       ]
     },
@@ -466,7 +641,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าแฟลร์ได้รับการขอบคุณจากชินจิ"
+          }
         }
       ]
     },
@@ -477,7 +660,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ถามถึงแผนต่อไปหลังได้รับคำขอบคุณ"
+          }
         }
       ]
     },
@@ -508,7 +700,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "p48-1 ระบุว่าชินจิเดินเข้าไปหาเรนกะเพื่อถามร่องรอย"
+          }
         }
       ]
     },
@@ -519,7 +720,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p52-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตรวจรอยเท้าและรายงานว่ามีสองทาง"
+          }
         }
       ]
     },
@@ -540,7 +750,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "เรนกะเป็นผู้ครุ่นคิดว่าจะไปทางไหนต่อก่อน p53-1 ระบุว่าทั้งเธอและชินจิกำลังคิด"
+          }
         }
       ]
     },
@@ -571,7 +790,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "อัลวินเป็นผู้ชี้ไปทางขวาและเลือกเส้นทาง"
+          }
         }
       ]
     },
@@ -582,7 +810,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามเหตุผลของอัลวิน"
+          }
         }
       ]
     },
@@ -593,7 +830,16 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบว่าอาศัยสัญชาตญาณ"
+          }
         }
       ]
     },
@@ -634,7 +880,17 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ชินจิเป็นผู้สรุปให้ไปทางขวาหลังอัลวินอธิบายและทุกคนเห็นพ้อง"
+          }
         }
       ]
     },
@@ -645,7 +901,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "มีริสเป็นผู้สนับสนุนอัลวินด้วยคำว่าอัลคุง"
+          }
         }
       ]
     },
@@ -656,7 +921,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "อัลวินเป็นผู้พูดอย่างมั่นใจเรื่องสัญชาตญาณของตน"
+          }
         }
       ]
     },
@@ -676,7 +950,14 @@
         {
           "start": 0,
           "end": 189,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "เป็นความคิดของแฟลร์ผ่านกระแสจิต ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -686,7 +967,14 @@
         {
           "start": 0,
           "end": 79,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1"
+            ],
+            "reason": "เป็นความคิดตอบของชินจิผ่านกระแสจิต ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -696,7 +984,14 @@
         {
           "start": 0,
           "end": 126,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "เป็นความคิดของแฟลร์ผ่านกระแสจิต ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -712,7 +1007,16 @@
           "start": 25,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "แฟลร์พยักหน้ารับด้วยเสียง 'อืมๆ' ระหว่างบทสนทนาทางกระแสจิตกับชินจิ"
+          }
         },
         {
           "start": 31,
@@ -727,7 +1031,14 @@
         {
           "start": 0,
           "end": 20,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1"
+            ],
+            "reason": "เป็นความคิดของชินจิผ่านกระแสจิต ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -737,7 +1048,14 @@
         {
           "start": 0,
           "end": 14,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "เป็นความคิดของแฟลร์ผ่านกระแสจิต ไม่ได้ออกเสียง"
+          }
         }
       ]
     },

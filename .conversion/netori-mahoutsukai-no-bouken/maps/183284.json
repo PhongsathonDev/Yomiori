@@ -38,7 +38,15 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่าเอมิลี่เป็นผู้ให้สัญญาณเริ่มการฝึก"
+          }
         }
       ]
     },
@@ -49,7 +57,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p8-1"
+            ],
+            "reason": "เป็นเสียงอุทานสั้นๆ ของไอริสผู้ไม่ชอบวิ่ง ตามด้วย p6-1 ที่อัลวินแซวไอริสตรงๆ และ p8-1 ที่สีหน้าไอริสไม่ชอบใจ"
+          }
         }
       ]
     },
@@ -60,7 +77,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "ตรวจบริบท p6-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -101,7 +125,14 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -112,7 +143,15 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เป็นคำชวนที่เรียกไอริสว่า 'ไอริสจัง' ด้วยน้ำเสียงสุภาพแบบมีริส"
+          }
         }
       ]
     },
@@ -123,7 +162,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -138,8 +184,14 @@
         {
           "start": 65,
           "end": 72,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1"
+            ],
+            "reason": "“ดึ่งๆ” เป็นเสียงเอฟเฟกต์การสั่นไหว ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -190,7 +242,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "ตรวจบริบท p18-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -201,7 +260,14 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "ตรวจบริบท p19-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -212,7 +278,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "เป็นเสียงพึมพำของไอริสที่บ่นว่าเมนูฝึกหนักกว่าของพ่อ และ p21-1 ระบุว่าคนอื่นวิ่งตามเอมิลี่ไป"
+          }
         }
       ]
     },
@@ -233,7 +307,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p26-1"
+            ],
+            "reason": "p21-1 ระบุว่าอัลวิน มีริส เรนกะวิ่งตามเอมิลี่ไป จึงเหลือชินจิอยู่ข้างไอริส และ p25-1 ถึง p26-1 เป็นความคิดและการกระทำของชินจิ"
+          }
         }
       ]
     },
@@ -244,7 +327,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -305,7 +395,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p31-1"
+            ],
+            "reason": "เป็นคำถามห่วงใยที่เรียก 'ไอริสจัง' และ p31-1 ที่ไอริสตอบว่า 'มีริสจัง'"
+          }
         }
       ]
     },
@@ -316,7 +414,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "เป็นคำแนะนำต่อจากมีริส และ p31-1 ที่ไอริสเอ่ยถึง 'คุณเรนกะ'"
+          }
         }
       ]
     },
@@ -327,7 +433,14 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "ตรวจบริบท p31-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -348,7 +461,16 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "เป็นคำอธิบายต่อเนื่องจากเรนกะที่เพิ่งบอกไอริสใน p30-1 ว่าไม่ต้องฝืนวิ่งตามความเร็วของรุ่นพี่ และอัลวินตอบรับใน p34-1"
+          }
         }
       ]
     },
@@ -359,7 +481,14 @@
           "start": 0,
           "end": 141,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -390,7 +519,14 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "ตรวจบริบท p37-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -401,7 +537,14 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -426,8 +569,14 @@
         {
           "start": 93,
           "end": 101,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "“กริ๊ง!” เป็นเสียงเอฟเฟกต์ของดาบกระทบกัน ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 101,
@@ -443,7 +592,14 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "ตรวจบริบท p41-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -454,7 +610,14 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -465,7 +628,15 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p44-1 ระบุว่ามีริสยิ้มเจื่อนๆ พลางดึงไอริสให้ลุกขึ้น"
+          }
         }
       ]
     },
@@ -496,7 +667,15 @@
           "start": 0,
           "end": 167,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p48-1"
+            ],
+            "reason": "p48-1 ระบุว่าไอริสโค้งคำนับให้ชินจิที่บอกให้เธอดูไปก่อน"
+          }
         }
       ]
     },
@@ -507,7 +686,14 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "ตรวจบริบท p47-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -543,7 +729,14 @@
           "start": 51,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "เป็นเสียงเชียร์ที่ดังออกมาว่า 'เรนกะจัง อย่าแพ้นะ~♪' ซึ่งเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -604,7 +797,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "เป็นเสียงหอบของเรนกะหลังประลองกับชินจิ และ p57-1 เป็นคำชมตอบกลับของชินจิ"
+          }
         }
       ]
     },
@@ -615,7 +816,14 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "ตรวจบริบท p57-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -631,7 +839,14 @@
           "start": 67,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "p58-1 ระบุว่าเรนกะมองชินจิด้วยสายตาจิกกัดพลางบอกคำนี้"
+          }
         },
         {
           "start": 89,
@@ -677,7 +892,14 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1"
+            ],
+            "reason": "ตรวจบริบท p62-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -688,7 +910,14 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "ตรวจบริบท p63-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -699,7 +928,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1"
+            ],
+            "reason": "ตรวจบริบท p64-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -730,7 +966,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "ตรวจบริบท p67-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -741,7 +984,14 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "ตรวจบริบท p68-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -752,7 +1002,14 @@
           "start": 0,
           "end": 99,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1"
+            ],
+            "reason": "ตรวจบริบท p69-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -773,7 +1030,14 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1"
+            ],
+            "reason": "ตรวจบริบท p71-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -824,7 +1088,14 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1"
+            ],
+            "reason": "ตรวจบริบท p76-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -855,7 +1126,14 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1"
+            ],
+            "reason": "ตรวจบริบท p79-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -886,7 +1164,14 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1"
+            ],
+            "reason": "ตรวจบริบท p82-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -927,7 +1212,14 @@
           "start": 0,
           "end": 127,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p86-1"
+            ],
+            "reason": "ตรวจบริบท p86-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -938,7 +1230,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p87-1"
+            ],
+            "reason": "ตรวจบริบท p87-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -969,7 +1268,14 @@
           "start": 0,
           "end": 175,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p90-1"
+            ],
+            "reason": "ตรวจบริบท p90-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -1000,7 +1306,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1"
+            ],
+            "reason": "ตรวจบริบท p93-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },

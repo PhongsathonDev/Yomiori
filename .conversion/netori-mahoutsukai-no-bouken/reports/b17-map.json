@@ -1,0 +1,56 @@
+{
+  "batch": "b17",
+  "sources": [
+    {
+      "sourceId": "182067",
+      "chapterNo": "67",
+      "mapJsonHash": "5bd20c4e4257e4efa14b16a28d62df350130705788165d29b504be7444b1431b",
+      "status": "ready",
+      "dialogue": 35
+    },
+    {
+      "sourceId": "182068",
+      "chapterNo": "68",
+      "mapJsonHash": "77a3a2b2a4d86b138796f125c96e41afc3406379ed6aad5ba712532cdc0a1157",
+      "status": "ready",
+      "dialogue": 22
+    },
+    {
+      "sourceId": "182113",
+      "chapterNo": "69",
+      "mapJsonHash": "a4a00cb21e44c9df516e1ad9973a5efc396086589868cc31df3cff5c621d5d97",
+      "status": "ready",
+      "dialogue": 26
+    },
+    {
+      "sourceId": "182114",
+      "chapterNo": "70",
+      "mapJsonHash": "f874c53db1efbc6f94cad05bbf03be16df90411aa303a1af886855a6fce7e589",
+      "status": "ready",
+      "dialogue": 14
+    },
+    {
+      "sourceId": "182115",
+      "chapterNo": "71",
+      "mapJsonHash": "ddd50d8dba1a8e19550dd8c1efefa9570f8a04ff6c0f4e44855e8593bc6a07d8",
+      "status": "ready",
+      "dialogue": 32
+    },
+    {
+      "sourceId": "182181",
+      "chapterNo": "72",
+      "mapJsonHash": "122fa2aa47c1ba13e1f3690b9c90ec7b1956195f240ec117022437fed5dc3673",
+      "status": "ready",
+      "dialogue": 43
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "182067 p12-1 is Renka: she addresses him with the bare name 'ชินจิ' and ♡, while Miris always uses 'คุณชินจิ' and Alvin never uses ♡ in mapped dialogue; p13-1 Shinji then says goodbye to Miris separately.",
+    "182067 p76-1, p81-1 and p86-1 are Alvin speaking from outside the room, confirmed by p77-1 and p87-1; p34-1, p83-1, p84-1 and p88-1 quoted spans are narration (unasked question and sound effects).",
+    "182068 p7-1 uses doubled quotes for Shinji and Emily saying the same line together and is mapped to netori-party, following the 180253/180915 precedent; p35-1 is Shinji's sigh confirmed by p36-1.",
+    "182114 keeps the 12 『』 telepathy messages as narration because p12-1 states Ferry is sending thought waves rather than speaking aloud; only p64-1 is Ferry's audible speech, confirmed by p65-1.",
+    "182115 p81-1 is Shinji (he calls her 'ชาล' in p70-1) and p82-1 is Charlotte answering 'ปะป๋า', while Morse never wakes according to p83-1.",
+    "182181 p50-1 is a wordless exclamation kept as narration; p56-1 is Renka (casual 'เอาล่ะ', organizer of the cleaning assignments) with Alvin replying in p57-1; p71-1 'หน้าอก' is the word repeated from p70-1 and stays narration."
+  ]
+}

@@ -38,7 +38,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "ตรวจบริบท p4-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -59,7 +66,16 @@
           "start": 0,
           "end": 114,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p5-1 ระบุว่าชินจิยิ้มให้ไอริสที่โค้งคำนับ และคำนี้เรียกคู่สนทนาว่าไอริสจัง"
+          }
         }
       ]
     },
@@ -90,7 +106,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "ตรวจบริบท p9-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -121,7 +144,14 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -132,7 +162,16 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เป็นคำตอบรับคำขอตอบแทนของไอริส และ p14-1 ระบุว่าไอริสยังคงพูดคุยกับชินจิ"
+          }
         }
       ]
     },
@@ -163,7 +202,14 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1"
+            ],
+            "reason": "ตรวจบริบท p16-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -174,7 +220,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p18-1 ระบุว่าชินจิยิ้มตอบไอริสที่โบกมือให้เล็กน้อย"
+          }
         }
       ]
     },
@@ -265,7 +320,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p25-1 ระบุว่าลีร่ามาถึงบ้านของชินจิ และ p26-1 เป็นคำต้อนรับที่ถามถึงสองคนที่เหลือ"
+          }
         }
       ]
     },
@@ -276,7 +340,14 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -297,7 +368,14 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -308,7 +386,14 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ตรวจบริบท p30-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -329,7 +414,14 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "ตรวจบริบท p32-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -340,7 +432,14 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -361,7 +460,14 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -372,7 +478,14 @@
           "start": 0,
           "end": 111,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -393,7 +506,14 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -404,7 +524,14 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ตรวจบริบท p39-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -425,7 +552,14 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "ตรวจบริบท p41-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -446,7 +580,14 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "ตรวจบริบท p43-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -497,7 +638,14 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -508,7 +656,14 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -539,7 +694,14 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -550,7 +712,14 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -565,8 +734,14 @@
         {
           "start": 89,
           "end": 114,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดเป็นชื่อความสามารถที่เวทมนตร์เสริมประสิทธิภาพมอบให้ ไม่ใช่คำพูดที่ชินจิเปล่งออกมา"
+          }
         }
       ]
     },
@@ -597,7 +772,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "ตรวจบริบท p57-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -618,7 +800,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p58-1 ระบุว่าชินจิจูบที่หูของลีร่าพลางกระซิบ"
+          }
         }
       ]
     },
@@ -659,7 +850,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "p64-1 ระบุว่าลีร่าพึมพำออกมาเบาๆ"
+          }
         }
       ]
     },

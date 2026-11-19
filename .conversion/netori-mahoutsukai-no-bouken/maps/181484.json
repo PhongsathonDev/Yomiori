@@ -22,8 +22,14 @@
         {
           "start": 110,
           "end": 118,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ กึ้บ~ จากการคลายแรงกด ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 118,
@@ -43,8 +49,14 @@
         {
           "start": 16,
           "end": 26,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1"
+            ],
+            "reason": "เป็นเสียงกลืนน้ำลาย กึ้ก ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 26,
@@ -70,7 +82,15 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะหลั่งในให้อีก และ p7-1 ระบุว่าเป็นคำพูดที่ลีร่าปรารถนา"
+          }
         }
       ]
     },
@@ -81,7 +101,15 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ลีร่าตอบรับคำพูดของชินจิด้วยคำลงท้ายค่ะ"
+          }
         }
       ]
     },
@@ -102,7 +130,15 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ชินจิเป็นผู้ปลดเสื้อผ้าและพูดกับลีร่าที่ใช้แขนปิดหน้าอกตามที่ p7-1 บรรยาย"
+          }
         }
       ]
     },
@@ -113,7 +149,15 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ลีร่าตอบรับคำพูดของชินจิเรื่องหน้าอกของเธอ"
+          }
         }
       ]
     },
@@ -134,7 +178,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิเป็นผู้นวดหน้าอกและพูดว่าไม่อยากหยุดสัมผัส"
+          }
         }
       ]
     },
@@ -145,7 +197,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ถูกสัมผัสหัวนมและส่งเสียงตามที่ p13-1 บรรยาย"
+          }
         }
       ]
     },
@@ -160,8 +221,14 @@
         {
           "start": 117,
           "end": 134,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ กึ๊ก...กึ๊ก จากการหยิกหัวนม ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 134,
@@ -177,7 +244,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ถูกดูดหัวนมตามที่ p13-1 บรรยายและส่งเสียงคราง"
+          }
         }
       ]
     },
@@ -198,7 +273,15 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดเรื่องหน้าอกของลีร่าหลังจากดูดหัวนมเสร็จตามที่ p15-1 บรรยาย แม้เครื่องหมายปิดคำพูดจะใช้ \" ผิด"
+          }
         }
       ]
     },
@@ -209,7 +292,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ลีร่าตอบรับคำพูดของชินจิเรื่องหน้าอกที่ทำให้เขาหลงใหล"
+          }
         }
       ]
     },
@@ -219,8 +310,7 @@
         {
           "start": 0,
           "end": 216,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -231,7 +321,15 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะทำให้ลีร่าลืมมินาโตะ ก่อนลีร่าตอบใน p20-1"
+          }
         }
       ]
     },
@@ -242,7 +340,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ลีร่าตอบรับและขอให้ชินจิช่วงชิงเธอไป"
+          }
         }
       ]
     },
@@ -252,8 +358,7 @@
         {
           "start": 0,
           "end": 166,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -263,8 +368,7 @@
         {
           "start": 0,
           "end": 194,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -275,7 +379,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ส่งเสียงเมื่อชินจิเริ่มสอดใส่ตามที่ p22-1 บรรยาย"
+          }
         }
       ]
     },
@@ -285,8 +397,7 @@
         {
           "start": 0,
           "end": 110,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -296,8 +407,14 @@
         {
           "start": 0,
           "end": 196,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "ย่อหน้าเป็นการบรรยายการบีบรัดและเสียง คยู้วววว ในเครื่องหมายคำพูด ซึ่งเป็นเสียงเอฟเฟกต์; seed ลากสถานะ dialogue จาก quote ที่ปิดผิดใน p16-1"
+          }
         }
       ]
     },
@@ -308,7 +425,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะเริ่มขยับ และ p27-1 เป็นเสียงตอบรับของลีร่า"
+          }
         }
       ]
     },
@@ -319,7 +444,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ลีร่าตอบรับด้วยเสียงครางเมื่อชินจิเริ่มขยับ"
+          }
         }
       ]
     },
@@ -329,8 +462,7 @@
         {
           "start": 0,
           "end": 105,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -340,8 +472,7 @@
         {
           "start": 0,
           "end": 101,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -351,8 +482,7 @@
         {
           "start": 0,
           "end": 34,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -362,8 +492,7 @@
         {
           "start": 0,
           "end": 135,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -373,8 +502,7 @@
         {
           "start": 0,
           "end": 259,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -385,7 +513,15 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "ลีร่าเรียกชื่อชินจิซ้ำด้วยความสุข และ p34-1 ชินจิเป็นผู้ตอบว่าจะเร่งจังหวะ"
+          }
         }
       ]
     },
@@ -396,7 +532,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะเร่งจังหวะ ก่อนลีร่าส่งเสียงใน p35-1"
+          }
         }
       ]
     },
@@ -407,7 +552,16 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ส่งเสียงครางเมื่อชินจิกระแทกสะโพกตามที่ p36-1 บรรยาย"
+          }
         }
       ]
     },
@@ -417,8 +571,14 @@
         {
           "start": 0,
           "end": 298,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ย่อหน้าเป็นการบรรยายท่าทางและเสียง บรู๊มบรู๊ม ซึ่งเป็นเสียงเอฟเฟกต์; seed ลากสถานะ dialogue จาก quote ที่ปิดผิดใน p16-1"
+          }
         }
       ]
     },
@@ -429,7 +589,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าใกล้จะเสร็จ และ p38-1 เป็นเสียงตอบรับของลีร่า"
+          }
         }
       ]
     },
@@ -440,7 +608,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ลีร่าส่งเสียงครางตอบรับการหลั่งของชินจิ"
+          }
         }
       ]
     },
@@ -450,8 +626,14 @@
         {
           "start": 0,
           "end": 73,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ย่อหน้าเป็นการบรรยายการบีบรัดและเสียง คยู้วววว ซึ่งเป็นเสียงเอฟเฟกต์; seed ลากสถานะ dialogue จาก quote ที่ปิดผิดใน p16-1"
+          }
         }
       ]
     },
@@ -461,8 +643,7 @@
         {
           "start": 0,
           "end": 38,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -472,8 +653,7 @@
         {
           "start": 0,
           "end": 109,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -483,8 +663,7 @@
         {
           "start": 0,
           "end": 167,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -494,8 +673,7 @@
         {
           "start": 0,
           "end": 39,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -505,8 +683,7 @@
         {
           "start": 0,
           "end": 219,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -517,7 +694,15 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดว่าความรู้สึกดี ก่อนลีร่าตอบใน p46-1"
+          }
         }
       ]
     },
@@ -528,7 +713,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ลีร่าตอบรับคำพูดของชินจิและ p47-1 บรรยายว่าเธอขมิบช่องคลอด"
+          }
         }
       ]
     },
@@ -538,8 +732,14 @@
         {
           "start": 0,
           "end": 136,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "ย่อหน้าเป็นการบรรยายการขมิบและเสียง ขมิบ ซึ่งเป็นเสียงเอฟเฟกต์; seed ลากสถานะ dialogue จาก quote ที่ปิดผิดใน p16-1"
+          }
         }
       ]
     },
@@ -550,7 +750,15 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ลีร่าชวนชินจิอีกรอบและ p49-1 บรรยายว่าเธอช้อนตามองอย่างอายๆ"
+          }
         }
       ]
     },
@@ -560,8 +768,7 @@
         {
           "start": 0,
           "end": 245,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -572,7 +779,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "ชินจิตอบรับคำชวนของลีร่าก่อนเปลี่ยนท่าใน p52-1"
+          }
         }
       ]
     },
@@ -583,7 +799,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ลีร่าส่งเสียงเมื่อชินจิยกเธอขึ้นในท่าขี่ตามที่ p52-1 บรรยาย"
+          }
         }
       ]
     },
@@ -593,8 +818,7 @@
         {
           "start": 0,
           "end": 247,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -604,8 +828,7 @@
         {
           "start": 0,
           "end": 154,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -616,7 +839,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ลีร่าเป็นผู้ขยับสะโพกและส่งเสียงก่อนที่ p55-1 จะระบุว่าเธอขยับอย่างชำนาญ"
+          }
         }
       ]
     },
@@ -626,8 +857,7 @@
         {
           "start": 0,
           "end": 168,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -637,8 +867,14 @@
         {
           "start": 0,
           "end": 167,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "ย่อหน้าเป็นการบรรยายผิวและหน้าอกของลีร่า รวมถึงเสียง บรู๊มบรู๊ม ซึ่งเป็นเสียงเอฟเฟกต์; seed ลากสถานะ dialogue จาก quote ที่ปิดผิดใน p16-1"
+          }
         }
       ]
     },
@@ -648,8 +884,7 @@
         {
           "start": 0,
           "end": 279,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -660,7 +895,15 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ลีร่าเป็นผู้พูดขณะถูกขยำหน้าอกตามที่ p59-1 บรรยาย"
+          }
         }
       ]
     },
@@ -670,8 +913,7 @@
         {
           "start": 0,
           "end": 183,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -681,8 +923,14 @@
         {
           "start": 0,
           "end": 221,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "ย่อหน้าเป็นการบรรยายการขยับสะโพกและเสียงเอฟเฟกต์ กริ๊บ/กริ๊ดดดด; seed ลากสถานะ dialogue จาก quote ที่ปิดผิดใน p16-1"
+          }
         }
       ]
     },
@@ -693,7 +941,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าใกล้จะเสร็จอีกครั้ง ก่อนลีร่าตอบใน p62-1"
+          }
         }
       ]
     },
@@ -704,7 +960,15 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ลีร่าตอบว่าจะถึงจุดสุดยอดตามชินจิ"
+          }
         }
       ]
     },
@@ -714,8 +978,7 @@
         {
           "start": 0,
           "end": 187,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -725,8 +988,7 @@
         {
           "start": 0,
           "end": 63,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -736,8 +998,14 @@
         {
           "start": 0,
           "end": 261,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "ย่อหน้าเป็นการบรรยายการกอดและเสียง มุนิววว ซึ่งเป็นเสียงเอฟเฟกต์; seed ลากสถานะ dialogue จาก quote ที่ปิดผิดใน p16-1"
+          }
         }
       ]
     },
@@ -748,7 +1016,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชินจิเป็นผู้เริ่มรอบใหม่หลังกอดลีร่า และลีร่าตอบใน p67-1"
+          }
         }
       ]
     },
@@ -759,7 +1036,15 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ลีร่าตอบรับคำพูดของชินจิและชมความแข็งแรงของเขา"
+          }
         }
       ]
     },
@@ -769,8 +1054,7 @@
         {
           "start": 0,
           "end": 101,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -780,8 +1064,7 @@
         {
           "start": 0,
           "end": 73,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     }

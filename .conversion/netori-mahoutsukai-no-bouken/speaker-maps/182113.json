@@ -1,0 +1,42 @@
+{
+  "p4-1": "netori-morse",
+  "p6-1": "netori-shinji",
+  "p7-1": "netori-morse",
+  "p9-1": "netori-shinji",
+  "p10-1": "netori-morse",
+  "p11-1": "netori-shinji",
+  "p12-1": "netori-morse",
+  "p14-1": "netori-shinji",
+  "p15-1": "netori-morse",
+  "p17-1": "netori-shinji",
+  "p18-1": "netori-charlotte",
+  "p21-1": "netori-shinji",
+  "p22-1": "netori-charlotte",
+  "p23-1": "netori-shinji",
+  "p26-1": "netori-charlotte",
+  "p30-1": "netori-shinji",
+  "p32-1": "netori-shinji",
+  "p33-1": "netori-charlotte",
+  "p35-1": "netori-shinji",
+  "p36-1": "netori-charlotte",
+  "p37-1#1": {
+    "speakerId": "netori-charlotte",
+    "context": ["p37-1"],
+    "reason": "p37-1 ลงท้ายว่า 'ชาร์ลอตต้าพึมพำ' ยืนยันว่าคำพูดนี้เป็นของชาร์ลอตต้า"
+  },
+  "p39-1": "netori-shinji",
+  "p40-1": "netori-charlotte",
+  "p44-1": "netori-shinji",
+  "p51-1#2": {
+    "type": "narration",
+    "context": ["p51-1"],
+    "reason": "เป็นเสียงชูนิ้วโป้งของเฟรรี่ (sound effect) ไม่ใช่คำพูด"
+  },
+  "p52-1": "netori-shinji",
+  "p53-1": "netori-ferry",
+  "p62-1#2": {
+    "type": "narration",
+    "context": ["p62-1"],
+    "reason": "เป็นเสียงชุดเดรสหลุดลงพื้น (sound effect) ไม่ใช่คำพูด"
+  }
+}

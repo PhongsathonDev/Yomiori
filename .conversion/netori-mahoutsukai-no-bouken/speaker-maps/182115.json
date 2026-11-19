@@ -1,0 +1,66 @@
+{
+  "p1-1": "netori-shinji",
+  "p14-1": "netori-charlotte",
+  "p15-1": {
+    "speakerId": "netori-morse",
+    "context": ["p14-1", "p15-1", "p16-1"],
+    "reason": "เป็นคำตอบรับของมอสต่อชาร์ลอตต้า และเรียกชื่อเล่น 'ชาล' ตามที่มอสใช้"
+  },
+  "p18-1": "netori-charlotte",
+  "p19-1": "netori-morse",
+  "p21-1": "netori-morse",
+  "p22-1": "netori-charlotte",
+  "p25-1": "netori-charlotte",
+  "p26-1": "netori-morse",
+  "p28-1": "netori-shinji",
+  "p29-1": "netori-charlotte",
+  "p34-1": "netori-shinji",
+  "p35-1": "netori-charlotte",
+  "p36-1": "netori-shinji",
+  "p37-1": "netori-charlotte",
+  "p39-1": "netori-shinji",
+  "p40-1": "netori-charlotte",
+  "p42-1": "netori-charlotte",
+  "p43-1": "netori-shinji",
+  "p47-1": "netori-shinji",
+  "p48-1": "netori-charlotte",
+  "p49-1": "netori-shinji",
+  "p50-1#2": {
+    "type": "narration",
+    "context": ["p50-1"],
+    "reason": "เป็นเสียงนิ้วกวนช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p54-1": "netori-charlotte",
+  "p55-1": "netori-shinji",
+  "p56-1": "netori-charlotte",
+  "p58-1#2": {
+    "type": "narration",
+    "context": ["p58-1"],
+    "reason": "เป็นเสียงช่องคลอดรัด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p59-1#2": {
+    "type": "narration",
+    "context": ["p59-1"],
+    "reason": "เป็นเสียงปากมดลูกดูด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p59-1#4": {
+    "type": "narration",
+    "context": ["p59-1"],
+    "reason": "วลีในเครื่องหมายคำพูดอยู่หลัง 'ราวกับจะบอกว่า' เป็นการเปรียบเทียบ ไม่ใช่คำพูดออกเสียง"
+  },
+  "p60-1": "netori-charlotte",
+  "p61-1": "netori-shinji",
+  "p62-1": "netori-charlotte",
+  "p70-1": "netori-shinji",
+  "p71-1": "netori-charlotte",
+  "p81-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p70-1", "p80-1", "p81-1", "p82-1", "p83-1"],
+    "reason": "ชินจิเรียกชาร์ลอตต้าว่า 'ชาล' ใน p70-1 และ p82-1 ตอบกลับด้วย 'ปะป๋า' ฝ่ายพ่อของเด็ก ขณะที่ p83-1 ระบุว่ามอสหลับไม่ตื่นเลย"
+  },
+  "p82-1": {
+    "speakerId": "netori-charlotte",
+    "context": ["p81-1", "p82-1", "p83-1"],
+    "reason": "เป็นคำตอบของผู้หญิงที่ตั้งท้องต่อคำของชินจิใน p81-1 ตามที่ p83-1 บรรยาย"
+  }
+}

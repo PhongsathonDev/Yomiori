@@ -8,7 +8,15 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p4-1"
+            ],
+            "reason": "ชินจิเป็นผู้ควบคุมหนวดเถาวัลย์และสั่งพาลิลมาหามินาโตะใน p4-1"
+          }
         }
       ]
     },
@@ -19,7 +27,15 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "ลิลเป็นผู้พูดว่าตนเป็นของมินาโตะ และ p3-1 เป็นความคิดของมินาโตะที่ได้ยิน"
+          }
         }
       ]
     },
@@ -80,7 +96,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้สังเกตการดูดก่อนสอดใส่และลิลตอบใน p9-1"
+          }
         }
       ]
     },
@@ -91,7 +115,15 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ลิลเป็นผู้พูดกับมินาโตะและชินจิพูดต่อใน p10-1"
+          }
         }
       ]
     },
@@ -102,7 +134,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดต่อและเริ่มสอดใส่ใน p11-1"
+          }
         }
       ]
     },
@@ -117,8 +158,14 @@
         {
           "start": 80,
           "end": 90,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "\"จุ๊บ...♡\" เป็นเสียงน้ำในการบรรยายการสอดใส่ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 90,
@@ -138,8 +185,14 @@
         {
           "start": 96,
           "end": 120,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "\"เข้ามาลึกกว่านี้อีกสิ♡\" เป็นคำอุปมาของการกระชับช่องคลอดที่บรรยายว่ากระดุกกระดิกราวกับจะบอก ไม่ได้พูดออกมา"
+          }
         }
       ]
     },
@@ -170,7 +223,15 @@
           "start": 0,
           "end": 111,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ลิลเป็นผู้กรีดร้องเมื่อชินจิแทรกเข้าไป และชินจิตอบใน p16-1"
+          }
         }
       ]
     },
@@ -181,7 +242,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดถึงช่องคลอดของลิลและลิลตอบใน p17-1"
+          }
         }
       ]
     },
@@ -192,7 +262,15 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "มินาโตะยังถูกปิดปากด้วยเถาวัลย์ และ p18-1 ระบุว่าเขาส่ายหน้าไปมาหลังส่งเสียงอู้อี้"
+          }
         }
       ]
     },
@@ -243,7 +321,15 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ลิลเป็นผู้พูดขอโทษลิลี่และยอมรับว่าแพ้ แล้วชินจิตอบใน p23-1"
+          }
         }
       ]
     },
@@ -254,7 +340,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดว่ายังเร็วเกินไปและลิลตอบใน p24-1"
+          }
         }
       ]
     },
@@ -265,7 +360,15 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ลิลเป็นผู้ร้องห้ามการกระแทกและ p25-1 บรรยายช่องคลอดของลิลต่อ"
+          }
         }
       ]
     },
@@ -280,8 +383,14 @@
         {
           "start": 59,
           "end": 69,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "\"คิวย์น~♡\" เป็นเสียง/อาการในการบรรยายเมื่อถูกดันส่วนลึก ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 69,
@@ -337,7 +446,15 @@
           "start": 0,
           "end": 111,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ลิลเป็นผู้ครางบรรยายความรู้สึก แล้วชินจิพูดต่อใน p31-1"
+          }
         }
       ]
     },
@@ -348,7 +465,15 @@
           "start": 0,
           "end": 99,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "ชินจิเปรียบเทียบกับลิลี่และลิลโต้กลับใน p32-1"
+          }
         }
       ]
     },
@@ -359,7 +484,15 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ลิลเป็นผู้โต้แย้งเรื่องความอ่อนแอและชินจิตอบใน p33-1"
+          }
         }
       ]
     },
@@ -370,7 +503,15 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขู่ว่าจะทำให้ไม่พอใจมินาโตะอีก และลิลร้องห้ามใน p34-1"
+          }
         }
       ]
     },
@@ -381,7 +522,15 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ลิลเป็นผู้ร้องห้ามและ p35-1 ระบุว่าลิลกรีดร้องพลางส่ายหัว"
+          }
         }
       ]
     },
@@ -396,8 +545,14 @@
         {
           "start": 173,
           "end": 181,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "\"แจ๊บๆ♡\" เป็นเสียงน้ำรักในการบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 181,
@@ -457,8 +612,14 @@
         {
           "start": 48,
           "end": 61,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "\"จุ๊บ♡ จุ๊บ♡\" เป็นเสียงการดูดอสุจิในการบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 61,
@@ -484,7 +645,15 @@
           "start": 0,
           "end": 153,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p45-1"
+            ],
+            "reason": "ลิลเป็นผู้เอ่ยถึงท่านมินาโตะและขอโทษ แล้วชินจิพูดต่อใน p45-1"
+          }
         }
       ]
     },
@@ -509,8 +678,14 @@
         {
           "start": 139,
           "end": 147,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "\"จุ๊บๆ♡\" เป็นเสียงการดูดอสุจิในการบรรยาย"
+          }
         },
         {
           "start": 147,
@@ -520,8 +695,14 @@
         {
           "start": 190,
           "end": 198,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "\"กึ้บๆ♡\" เป็นเสียงช่องคลอดรัดในการบรรยาย"
+          }
         },
         {
           "start": 198,
@@ -537,7 +718,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเปรียบเทียบว่าลิลตั้งใจจะท้องมากกว่าลิลี่ และลิลตอบใน p46-1"
+          }
         }
       ]
     },
@@ -548,7 +737,15 @@
           "start": 0,
           "end": 164,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ลิลเป็นผู้อธิบายความรู้สึกของการถูกหลั่งในตามที่ p47-1 บรรยายต่อ"
+          }
         }
       ]
     },
@@ -589,7 +786,15 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามว่าจะทำให้อีกครั้งไหม และลิลตอบใน p51-1"
+          }
         }
       ]
     },
@@ -600,7 +805,15 @@
           "start": 0,
           "end": 153,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ลิลเป็นผู้ตอบรับและ p52-1 ระบุว่าคำพูดของลิลปิดฉากดวงตาแห่งเสน่ห์"
+          }
         }
       ]
     },

@@ -1,0 +1,48 @@
+{
+  "batch": "b20",
+  "sources": [
+    {
+      "sourceId": "182780",
+      "chapterNo": "84",
+      "mapJsonHash": "51039c4d79ed0da090f90cd8a4718f13aa0259408d5b14e1b1b745f73e4950b7",
+      "status": "ready",
+      "dialogue": 34
+    },
+    {
+      "sourceId": "182957",
+      "chapterNo": "85",
+      "mapJsonHash": "cce148b85698886edae18c7cd3f21b16ba3ea3e599d9e830e275d40810813aeb",
+      "status": "ready",
+      "dialogue": 35
+    },
+    {
+      "sourceId": "182958",
+      "chapterNo": "86",
+      "mapJsonHash": "07506f25ffa0c7225bc99ed0877832a949107ba3954cf575dc77178827d1f66b",
+      "status": "ready",
+      "dialogue": 34
+    },
+    {
+      "sourceId": "182959",
+      "chapterNo": "87",
+      "mapJsonHash": "fc2e368897faa5dbaf00ab5de96dde0cb96f1ea36b8f39273aaf82398bc68f85",
+      "status": "ready",
+      "dialogue": 24
+    },
+    {
+      "sourceId": "183047",
+      "chapterNo": "88",
+      "mapJsonHash": "5c165242dc8831c93a2544e2f7d5a14cd85f3b3851d111b37e81b9a8ba7d92c4",
+      "status": "ready",
+      "dialogue": 24
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "182780: p24-1 pure kiss sounds reclassified as narration; p44-1#2, p57-1#2 and p73-1#2 sound effects kept narration; p68-1#2 moan attributed to Agane.",
+    "182957: untagged opening lines p3/p4/p5 attributed from p6 narration (Renka, Agane, Shinji); p12 Renka, p13 Agane, p14 Emily from p15 cleanup description.",
+    "182958: p15 double-bracket chorus uses netori-party; p52 Renka inferred from her Alvin-exposure worry; p60 Emily and p61 Renka from p63 attribution.",
+    "182959: p15 Emily (uses 'นายท่าน' playfully after her p4 tease); p22 Shinji, p24 Miris for the follow-up exchange.",
+    "183047: p28 Renka and p29 Emily split by tone; telepathic 『』 exchanges (p20, p21, p48, p49, p70) confirmed as narration."
+  ]
+}

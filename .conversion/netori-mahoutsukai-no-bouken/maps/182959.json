@@ -28,7 +28,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p2-1"
+            ],
+            "reason": "อากาเนะเรียกชินจิว่านายท่านขณะถูกเลียตาม p2"
+          }
         }
       ]
     },
@@ -39,7 +47,15 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p7-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้พูดเรื่องการเรียกว่านายท่าน และ p7 ระบุว่าเธอคุกเข่าอมให้ชินจิ"
+          }
         }
       ]
     },
@@ -64,8 +80,14 @@
         {
           "start": 55,
           "end": 62,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "จ๊วบๆ เป็นเสียงดูดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 62,
@@ -105,8 +127,14 @@
         {
           "start": 197,
           "end": 210,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "ช่องคลอดปากเป็นคำเปรียบที่ยกมาในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 210,
@@ -122,7 +150,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p12-1"
+            ],
+            "reason": "อากาเนะเรียกนายท่านและบอกว่าใกล้เสร็จ ก่อน p12 บรรยายการกดคลิตอริส"
+          }
         }
       ]
     },
@@ -133,7 +169,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p14-1"
+            ],
+            "reason": "เป็นเสียงหายใจและกลืนของเอมิลี่ผู้กำลังอมอยู่ ก่อน p14 ที่ระบุว่าเธอกลืนน้ำอสุจิ"
+          }
         }
       ]
     },
@@ -174,7 +218,15 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ผละปากออกใน p16 และเรียกนายท่านล้อเลียนคำที่เธอแซวไว้ใน p4"
+          }
         }
       ]
     },
@@ -215,7 +267,15 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p21-1"
+            ],
+            "reason": "p21 ระบุว่าอากาเนะตอบคำถามของมีริส"
+          }
         }
       ]
     },
@@ -226,7 +286,15 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "อากาเนะเป็นผู้ตอบคำถามของมีริสและเรียกชินจิว่านายท่าน"
+          }
         }
       ]
     },
@@ -247,7 +315,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามต่อว่าการถูกกอดเป็นงานด้วยหรือไม่"
+          }
         }
       ]
     },
@@ -258,7 +334,15 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "อากาเนะเป็นผู้ตอบปฏิเสธและสารภาพว่าอยากมีเซ็กส์"
+          }
         }
       ]
     },
@@ -269,7 +353,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "มีริสเป็นผู้แซวอากาเนะว่าเจ้าชู้หลังได้ฟังคำตอบ"
+          }
         }
       ]
     },
@@ -330,7 +422,15 @@
           "start": 0,
           "end": 121,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p29-1"
+            ],
+            "reason": "อากาเนะอ้อนวอนให้นายท่านหลั่งในช่องคลอดตาม p29"
+          }
         }
       ]
     },
@@ -391,7 +491,15 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้มีริสเอาน้ำมา และ p37 มีริสตอบรับ"
+          }
         }
       ]
     },
@@ -402,7 +510,15 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับคำสั่งของชินจิ"
+          }
         }
       ]
     },
@@ -433,7 +549,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ถูกสอดใส่ในท่านี้และบอกว่าชอบมาก"
+          }
         }
       ]
     },
@@ -444,7 +568,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าเอมิลี่ทำตัวดื้อ"
+          }
         }
       ]
     },
@@ -455,7 +587,15 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ถูกกระทำและส่งเสียงครางตอบ"
+          }
         }
       ]
     },
@@ -496,7 +636,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ถูกทำให้ถึงจุดสุดยอดต่อเนื่องตาม p45"
+          }
         }
       ]
     },
@@ -527,7 +675,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้หอบหายใจและพูดว่ารู้สึกดีตาม p50"
+          }
         }
       ]
     },
@@ -588,7 +744,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามมีริสว่าชอบเขามากกว่าอัลวินแล้วหรือ"
+          }
         }
       ]
     },
@@ -599,7 +763,15 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบว่าชอบเพราะเรื่องเซ็กส์เท่านั้น"
+          }
         }
       ]
     },
@@ -610,7 +782,15 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกให้มีริสลิ้มรสจู๋นอกใจ"
+          }
         }
       ]
     },
@@ -695,8 +875,14 @@
         {
           "start": 38,
           "end": 46,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "กึ๊กๆ เป็นเสียงครางในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 46,
@@ -712,7 +898,15 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามมีริสหลังหลั่งในช่องคลอด"
+          }
         }
       ]
     },
@@ -723,7 +917,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบว่าสุดยอด"
+          }
         }
       ]
     },
@@ -744,7 +946,15 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนไปอาบน้ำหลังดึงอวัยวะเพศออกตาม p70"
+          }
         }
       ]
     },

@@ -23,7 +23,16 @@
           "start": 79,
           "end": 95,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "คำอำลาของเอมิลี่ก่อนทุกคนออกเดินทางไปกิลด์"
+          }
         }
       ]
     },
@@ -64,7 +73,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "ตรวจบริบท p6-1 แล้ว จัดประเภทเป็นคำพูดของกิลเดโอ"
+          }
         }
       ]
     },
@@ -85,7 +101,14 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "ตรวจบริบท p8-1 แล้ว จัดประเภทเป็นคำพูดของกิลเดโอ"
+          }
         }
       ]
     },
@@ -96,7 +119,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ทั้งสี่คนก้มหัวตอบพร้อมกันตาม p10-1"
+          }
         }
       ]
     },
@@ -127,7 +158,14 @@
           "start": 0,
           "end": 206,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของกิลเดโอ"
+          }
         }
       ]
     },
@@ -148,7 +186,14 @@
           "start": 0,
           "end": 276,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "ตรวจบริบท p14-1 แล้ว จัดประเภทเป็นคำพูดของกิลเดโอ"
+          }
         }
       ]
     },
@@ -169,7 +214,14 @@
           "start": 0,
           "end": 175,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1"
+            ],
+            "reason": "ตรวจบริบท p16-1 แล้ว จัดประเภทเป็นคำพูดของกิลเดโอ"
+          }
         }
       ]
     },
@@ -180,7 +232,16 @@
           "start": 0,
           "end": 149,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "ประโยคต่อเนื่องของกิลเดโอ และ p19-1 ระบุว่าชินจิถามเมื่อได้ยินคำพูดของกิลเดโอ"
+          }
         }
       ]
     },
@@ -191,7 +252,14 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "ตรวจบริบท p18-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -242,7 +310,14 @@
           "start": 0,
           "end": 124,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของกิลเดโอ"
+          }
         }
       ]
     },
@@ -253,7 +328,14 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ตรวจบริบท p24-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -274,7 +356,14 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "ตรวจบริบท p26-1 แล้ว จัดประเภทเป็นคำพูดของกิลเดโอ"
+          }
         }
       ]
     },
@@ -285,7 +374,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "อัลวินและเพื่อนๆ กล่าวคำอำลาพร้อมกันตาม p28-1"
+          }
         }
       ]
     },
@@ -326,7 +423,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "ตรวจบริบท p31-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -337,7 +441,17 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p35-1",
+              "p37-1"
+            ],
+            "reason": "ต่อจากคำชมของมีริส และ p35-1 เป็นคำถามที่ p37-1 ระบุว่าเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -358,7 +472,14 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -369,7 +490,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p37-1 ระบุว่าชินจิตอบคำถามของเรนกะ"
+          }
         }
       ]
     },
@@ -380,7 +510,14 @@
           "start": 0,
           "end": 146,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -441,7 +578,14 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -452,7 +596,14 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "ตรวจบริบท p43-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -523,7 +674,15 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "นักบวชผู้นำทางในวิหารไม่มีชื่อใน roster จึงใช้เสียงของตัวละครประกอบที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -544,7 +703,14 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -555,7 +721,14 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -580,8 +753,15 @@
         {
           "start": 17,
           "end": 25,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "เสียงกลืนน้ำลาย 'อึก...' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 25,
@@ -597,7 +777,15 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p58-1"
+            ],
+            "reason": "นักบวชผู้เฝ้าประตูรายงานต่อมิโกะ ไม่มีชื่อใน roster"
+          }
         }
       ]
     },
@@ -608,7 +796,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p58-1 ระบุว่าเสียงผู้หญิงดังมาจากในห้องก่อนพวกเขาเข้าไป"
+          }
         }
       ]
     },
@@ -629,7 +825,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุว่านักบวชเป็นผู้เชิญให้เข้าไป"
+          }
         }
       ]
     },
@@ -690,7 +894,14 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "ตรวจบริบท p65-1 แล้ว จัดประเภทเป็นคำพูดของอาริอาน"
+          }
         }
       ]
     },
@@ -711,7 +922,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "หัวหน้าปาร์ตี้เป็นผู้แนะนำตัวและพูดด้วยคำลงท้าย ครับ"
+          }
         }
       ]
     },
@@ -722,7 +942,14 @@
           "start": 0,
           "end": 142,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "ตรวจบริบท p68-1 แล้ว จัดประเภทเป็นคำพูดของอาริอาน"
+          }
         }
       ]
     },
@@ -737,8 +964,15 @@
         {
           "start": 21,
           "end": 32,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกคำว่า คำพยากรณ์ ในประโยคบรรยาย ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 32,
@@ -804,7 +1038,14 @@
           "start": 0,
           "end": 268,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1"
+            ],
+            "reason": "ตรวจบริบท p75-1 แล้ว จัดประเภทเป็นคำพูดของอาริอาน"
+          }
         }
       ]
     },
@@ -815,7 +1056,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "ทั้งกลุ่มตอบรับพร้อมกันแล้วออกจากห้องตาม p77-1"
+          }
         }
       ]
     },
@@ -860,8 +1110,14 @@
         {
           "start": 15,
           "end": 20,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1"
+            ],
+            "reason": "เสียงประตูปิด 'ปัง' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 20,

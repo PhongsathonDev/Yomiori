@@ -817,7 +817,14 @@
         {
           "start": 0,
           "end": 34,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1"
+            ],
+            "reason": "เป็นการระบุชื่อเต็มของแฟลร์ในวงเล็บ ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -1042,8 +1049,14 @@
         {
           "start": 112,
           "end": 118,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p105-1"
+            ],
+            "reason": "\"Boku\" เป็นคำที่ยกมาอธิบายสรรพนามของลิลในประโยคบรรยาย ไม่ได้พูดออกมา"
+          }
         },
         {
           "start": 118,

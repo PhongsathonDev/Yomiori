@@ -1,0 +1,75 @@
+{
+  "p4-1": "netori-alvin",
+  "p5-1": "netori-shinji",
+  "p9-1": "netori-renka",
+  "p10-1": "netori-alvin",
+  "p11-1": "netori-miris",
+  "p12-1#2": "netori-renka",
+  "p14-1": "netori-emily",
+  "p15-1": "netori-shinji",
+  "p16-1": {
+    "speakerId": "netori-emily",
+    "context": ["p15-1", "p16-1", "p17-1"],
+    "reason": "p17-1 ระบุว่าเอมิลี่ตัวแข็งทื่อเมื่อได้ยินคำว่า 'เติบโต' แสดงว่าเป็นเสียงทวนคำของเอมิลี่"
+  },
+  "p19-1": "netori-shinji",
+  "p23-1": "netori-miris",
+  "p25-1#2": {
+    "speakerId": "netori-ferry",
+    "context": ["p24-1", "p25-1", "p26-1"],
+    "reason": "เป็นเสียงของเฟรรี่ขณะกอดมีริสกลับใน p25-1 เธอส่งเสียงสั้น ๆ แทนคำพูด"
+  },
+  "p27-1": "netori-renka",
+  "p28-1": "netori-shinji",
+  "p30-1": "netori-shinji",
+  "p31-1": "netori-renka",
+  "p41-1": "netori-shinji",
+  "p42-1": "netori-renka",
+  "p44-1": "netori-alvin",
+  "p45-1": "netori-miris",
+  "p46-1": "netori-alvin",
+  "p49-1": "netori-emily",
+  "p50-1": {
+    "type": "narration",
+    "context": ["p49-1", "p50-1", "p51-1"],
+    "reason": "เครื่องหมายอัศเจรีย์ล้วนเป็นการอุทานโดยไม่มีคำพูด จึงคงเป็นข้อความบรรยาย"
+  },
+  "p51-1": "netori-miris",
+  "p56-1": {
+    "speakerId": "netori-renka",
+    "context": ["p55-1", "p56-1", "p57-1", "p58-1"],
+    "reason": "ถ้อยคำแบบกันเองขึ้นต้นด้วย 'เอาล่ะ' ตรงกับเรนกะผู้จัดสรรงานทำความสะอาดใน p12-1 และ p61-1 ส่วน p57-1 อัลวินตอบรับแล้วถามมีริสซึ่งตอบใน p58-1"
+  },
+  "p57-1": "netori-alvin",
+  "p58-1": "netori-miris",
+  "p61-1": "netori-renka",
+  "p62-1": "netori-shinji",
+  "p64-1": {
+    "speakerId": "netori-renka",
+    "context": ["p61-1", "p64-1", "p65-1", "p67-1"],
+    "reason": "เรนกะเป็นผู้วางลำดับการทำความสะอาดใน p61-1 จึงเป็นผู้พูดถึงเวลาที่ห้องอาบน้ำใช้มากที่สุด และ p67-1 ตามด้วยชินจิมองเรนกะ"
+  },
+  "p65-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p64-1", "p65-1", "p67-1"],
+    "reason": "เป็นคำตอบรับของชินจิต่อเรนกะ โดยกล่าวถึงขนาดห้องอาบน้ำรวมและ remark เชิงหยอก"
+  },
+  "p68-1": "netori-renka",
+  "p69-1": "netori-shinji",
+  "p70-1": "netori-renka",
+  "p71-1#2": {
+    "type": "narration",
+    "context": ["p70-1", "p71-1"],
+    "reason": "เป็นคำที่ชินจิได้ยินจากประโยคของเรนกะใน p70-1 ไม่ใช่คำพูดใหม่"
+  },
+  "p73-1": "netori-renka",
+  "p74-1": "netori-shinji",
+  "p76-1": "netori-shinji",
+  "p77-1": "netori-renka",
+  "p79-1": "netori-renka",
+  "p80-1": "netori-shinji",
+  "p81-1": "netori-renka",
+  "p84-1": "netori-renka",
+  "p85-1": "netori-shinji",
+  "p86-1": "netori-renka"
+}

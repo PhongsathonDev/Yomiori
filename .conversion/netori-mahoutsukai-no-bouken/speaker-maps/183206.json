@@ -1,0 +1,51 @@
+{
+  "p2-1": "netori-shinji",
+  "p3-1": "netori-lira",
+  "p5-1": "netori-shinji",
+  "p6-1": "netori-lira",
+  "p10-1": {
+    "speakerId": "netori-lira",
+    "context": ["p10-1", "p12-1"],
+    "reason": "เป็นเสียงครางของลีร่าขณะถูกนวดหน้าอก และ p12-1 ระบุว่าลีร่าตัวอ่อนหมดแรง"
+  },
+  "p15-1": "netori-lira",
+  "p17-1": "netori-shinji",
+  "p18-1": "netori-lira",
+  "p21-1": "netori-lira",
+  "p22-1": "netori-shinji",
+  "p23-1": "netori-lira",
+  "p28-1": "netori-shinji",
+  "p29-1": "netori-lira",
+  "p33-1": "netori-lira",
+  "p34-1": "netori-shinji",
+  "p35-1": "netori-lira",
+  "p37-1#2": {
+    "type": "narration",
+    "context": ["p37-1"],
+    "reason": "“แจ๊ะๆ” เป็นเสียงเอฟเฟกต์ของการเคลื่อนไหว ไม่ใช่คำพูด"
+  },
+  "p40-1": "netori-lira",
+  "p41-1": "netori-shinji",
+  "p42-1": "netori-lira",
+  "p43-1#2": {
+    "type": "narration",
+    "context": ["p43-1"],
+    "reason": "“คิวย์น~♡” เป็นเสียงเอฟเฟกต์ของการบีบรัด ไม่ใช่คำพูด"
+  },
+  "p44-1": "netori-lira",
+  "p52-1": "netori-lira",
+  "p53-1": "netori-shinji",
+  "p54-1": "netori-lira",
+  "p66-1": "netori-lira",
+  "p67-1": "netori-shinji",
+  "p69-1": "netori-lira",
+  "p70-1": "netori-shinji",
+  "p71-1": "netori-lira",
+  "p75-1": "netori-shinji",
+  "p76-1": "netori-lira",
+  "p81-1#2": {
+    "type": "narration",
+    "context": ["p81-1"],
+    "reason": "“สุดยอด” เป็นคำที่ยกมาเน้นในบันทึกผู้แต่ง ไม่ใช่บทสนทนา"
+  }
+}

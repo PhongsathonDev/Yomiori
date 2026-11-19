@@ -18,7 +18,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "เรียกชินจิวา 'คุณชินจิคะ' และลงท้าย 'ค่ะ' แบบมีริส ขณะที่อีกเสียงใน p3-1 เรียกเขาเพียง 'ชินจิ'"
+          }
         }
       ]
     },
@@ -29,7 +38,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "เรียกชินจิว่า 'ชินจิ' และถามด้วย 'ไหม' ไม่ลงท้ายสุภาพ ตรงกับสไตล์เรนกะ; p4-1 ระบุว่ามีริสและเรนกะอยู่คนละข้าง"
+          }
         }
       ]
     },
@@ -44,8 +62,14 @@
         {
           "start": 181,
           "end": 281,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "'รอยสลักแห่งราคะ' ในเครื่องหมายคำพูดเป็นชื่อคำสาป ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -56,7 +80,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เป็นคำตอบรับคำถาม 'ชินจิ...รู้สึกดีไหม?' ใน p3-1 และ p6-1 บรรยายต่อว่าชินจิพยายามลูบไล้ร่างกายของทั้งสอง"
+          }
         }
       ]
     },
@@ -66,8 +99,7 @@
         {
           "start": 0,
           "end": 310,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -78,7 +110,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "เป็นเสียงกระซิบจากสองข้างตาม p9-1; เสียงแรกตรงกับมีริสที่บรรยายก่อนใน p4-1 และ p10-1"
+          }
         }
       ]
     },
@@ -89,7 +131,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "เป็นเสียงกระซิบอีกข้างตาม p9-1; เรนกะเป็นคนที่สองในลำดับของ p4-1 และ p10-1"
+          }
         }
       ]
     },
@@ -99,8 +151,7 @@
         {
           "start": 0,
           "end": 106,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -110,8 +161,7 @@
         {
           "start": 0,
           "end": 120,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -121,8 +171,14 @@
         {
           "start": 0,
           "end": 100,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "เสียง 'ปุ๊ดดดด~♡' เป็นเอฟเฟกต์การหลั่งในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -132,8 +188,7 @@
         {
           "start": 0,
           "end": 52,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -143,8 +198,7 @@
         {
           "start": 0,
           "end": 48,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -154,8 +208,7 @@
         {
           "start": 0,
           "end": 168,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -166,7 +219,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เสียงครางของผู้ที่ถูกสอดใส่จากด้านหลัง; p17-1 ระบุว่าชินจิเข้าจากด้านหลังกอดเรนกะ และ p18-1 ว่าเรนกะส่งเสียงคราง ส่วนมีริสแช่ในอ่างมองอยู่"
+          }
         }
       ]
     },
@@ -177,7 +239,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "เป็นคำพูดของฝ่ายชายในฉากที่ p17-1 บรรยายว่าชินจิกำลังสอดใส่เรนกะ"
+          }
         }
       ]
     },
@@ -187,8 +258,7 @@
         {
           "start": 0,
           "end": 87,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -198,8 +268,7 @@
         {
           "start": 0,
           "end": 173,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -209,8 +278,7 @@
         {
           "start": 0,
           "end": 34,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -220,8 +288,7 @@
         {
           "start": 0,
           "end": 136,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -231,8 +298,14 @@
         {
           "start": 0,
           "end": 78,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "'รอยสลักแห่งราคะ' ในเครื่องหมายคำพูดเป็นชื่อคำสาป ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -242,8 +315,7 @@
         {
           "start": 0,
           "end": 163,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -253,8 +325,7 @@
         {
           "start": 0,
           "end": 99,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -264,8 +335,7 @@
         {
           "start": 0,
           "end": 86,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -275,8 +345,7 @@
         {
           "start": 0,
           "end": 104,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -286,8 +355,7 @@
         {
           "start": 0,
           "end": 97,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -298,7 +366,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p30-1"
+            ],
+            "reason": "p30-1 ระบุว่าหลังเสียงนี้ชินจิโน้มหน้าเข้าใกล้เรนกะที่ตัวสั่นกระตุกและดื่มด่ำกับความสุขหลังถึงจุดสุดยอด"
+          }
         }
       ]
     },
@@ -309,7 +386,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "เป็นเสียงอุทานสั้นๆ ของฝ่ายชายหลังเสียงครางของเรนกะใน p27-1 ก่อน p29-1 บรรยายการหลั่ง"
+          }
         }
       ]
     },
@@ -319,8 +405,14 @@
         {
           "start": 0,
           "end": 128,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "เสียง 'กึกๆ♡' เป็นเอฟเฟกต์ในประโยคบรรยาย และประโยคเป็นบทบรรยายความรู้ของมีริส"
+          }
         }
       ]
     },
@@ -330,8 +422,7 @@
         {
           "start": 0,
           "end": 84,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -341,8 +432,16 @@
         {
           "start": 0,
           "end": 62,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "เป็นเสียงจูบและลมหายใจระหว่างการจูบของชินจิกับเรนกะ (p30-1, p32-1) ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -352,8 +451,7 @@
         {
           "start": 0,
           "end": 107,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -363,8 +461,7 @@
         {
           "start": 0,
           "end": 75,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -374,8 +471,7 @@
         {
           "start": 0,
           "end": 75,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -385,8 +481,7 @@
         {
           "start": 0,
           "end": 108,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -396,8 +491,7 @@
         {
           "start": 0,
           "end": 180,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -407,8 +501,14 @@
         {
           "start": 0,
           "end": 160,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "เสียง 'พรวด...♡' เป็นเอฟเฟกต์การหลั่งในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -418,8 +518,7 @@
         {
           "start": 0,
           "end": 19,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -429,8 +528,7 @@
         {
           "start": 0,
           "end": 153,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -440,8 +538,7 @@
         {
           "start": 0,
           "end": 119,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -451,8 +548,7 @@
         {
           "start": 0,
           "end": 132,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -463,7 +559,16 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ลงท้าย 'ค่ะ' และ p44-1 ระบุว่าเรนกะที่อาบน้ำเสร็จก่อนได้ยินเสียงครางของมีริสจากห้องนั่งเล่น"
+          }
         }
       ]
     },
@@ -473,8 +578,14 @@
         {
           "start": 0,
           "end": 48,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "เสียง 'ปัง♡ ปัง♡ ปัง♡' เป็นเอฟเฟกต์ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -484,8 +595,7 @@
         {
           "start": 0,
           "end": 76,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -495,8 +605,7 @@
         {
           "start": 0,
           "end": 58,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -506,8 +615,7 @@
         {
           "start": 0,
           "end": 157,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -517,8 +625,7 @@
         {
           "start": 0,
           "end": 35,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -528,8 +635,7 @@
         {
           "start": 0,
           "end": 127,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -539,8 +645,7 @@
         {
           "start": 0,
           "end": 35,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -550,8 +655,7 @@
         {
           "start": 0,
           "end": 162,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -561,8 +665,7 @@
         {
           "start": 0,
           "end": 50,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -573,7 +676,15 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p53-1 ระบุชัดว่าเป็นเสียงของมีริสที่ดังกว่าปกติ"
+          }
         }
       ]
     },
@@ -583,8 +694,7 @@
         {
           "start": 0,
           "end": 37,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -594,8 +704,7 @@
         {
           "start": 0,
           "end": 136,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -605,8 +714,7 @@
         {
           "start": 0,
           "end": 76,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -616,8 +724,7 @@
         {
           "start": 0,
           "end": 55,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -627,8 +734,7 @@
         {
           "start": 0,
           "end": 24,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -638,8 +744,7 @@
         {
           "start": 0,
           "end": 150,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -650,7 +755,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p62-1",
+              "p64-1"
+            ],
+            "reason": "เป็นคำพูดของชินจิถึงสองคน ก่อน p62-1 บรรยายว่าเขาวางมีริสลงบนตัวเรนกะ และ p64-1 ว่าเขาตัดสินใจทำให้ทั้งสองเคลิบเคลิ้ม"
+          }
         }
       ]
     },
@@ -661,7 +775,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "คำพูดเหนื่อยล้าแบบไม่ลงท้ายสุภาพ และ p61-1 เป็นคำพูดของมีริสที่หันไปเรียก 'เรนกะจัง'"
+          }
         }
       ]
     },
@@ -672,7 +795,15 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "มีริสเรียกอีกฝ่ายว่า 'เรนกะจัง' เรียกชินจิวา 'คุณชินจิ' และลงท้าย 'ค่ะ'"
+          }
         }
       ]
     },
@@ -682,8 +813,7 @@
         {
           "start": 0,
           "end": 45,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -693,8 +823,14 @@
         {
           "start": 0,
           "end": 83,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "เสียง 'ซึม...♡' เป็นเอฟเฟกต์ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -704,8 +840,7 @@
         {
           "start": 0,
           "end": 107,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -716,7 +851,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชินจิเป็นผู้ประกาศรอบสุดท้ายเหมือน p59-1 ก่อน p67-1 บรรยายว่าเขาสอดใส่มีริส"
+          }
         }
       ]
     },
@@ -727,7 +871,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "p67-1 ระบุว่าชินจิ สอดใส่เข้าไปในช่องคลอดของมีริสทันทีหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -737,8 +889,14 @@
         {
           "start": 0,
           "end": 57,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "เสียง 'ซวบซาบ...♡' เป็นเอฟเฟกต์ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -748,8 +906,14 @@
         {
           "start": 0,
           "end": 133,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "เสียง 'คิวย์นๆ♡' เป็นเอฟเฟกต์ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -760,7 +924,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "ต่อเนื่องจาก p67-1 ถึง p68-1 ที่ชินจิกำลังกระแทกมีริส และ p71-1 ระบุลำดับการสลับที่มีริสก่อนเรนกะ"
+          }
         }
       ]
     },
@@ -771,7 +945,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เป็นเสียงครางของอีกคนในการสลับตาม p71-1 ที่ระบุว่าหลังมีริสคือเรนกะ"
+          }
         }
       ]
     },
@@ -781,8 +964,7 @@
         {
           "start": 0,
           "end": 226,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -792,8 +974,7 @@
         {
           "start": 0,
           "end": 26,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -803,8 +984,7 @@
         {
           "start": 0,
           "end": 75,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -814,8 +994,7 @@
         {
           "start": 0,
           "end": 46,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -826,7 +1005,15 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "p76-1 ระบุว่าเรนกะถึงจุดสุดยอดเป็นคนแรกหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -836,8 +1023,7 @@
         {
           "start": 0,
           "end": 26,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -847,8 +1033,7 @@
         {
           "start": 0,
           "end": 80,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -858,8 +1043,7 @@
         {
           "start": 0,
           "end": 115,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -870,7 +1054,15 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "p80-1 ระบุว่ามีริสถึงจุดสุดยอดตามเรนกะ"
+          }
         }
       ]
     },
@@ -880,8 +1072,7 @@
         {
           "start": 0,
           "end": 27,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -891,8 +1082,7 @@
         {
           "start": 0,
           "end": 180,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -903,7 +1093,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "「「อ๊าง...!♡」」 เป็นเสียงพร้อมกันของมีริสและเรนกะที่ถูกอวัยวะเพศของชินจิเสียดสีพร้อมกันตาม p81-1"
+          }
         }
       ]
     },
@@ -913,8 +1112,7 @@
         {
           "start": 0,
           "end": 132,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -924,8 +1122,7 @@
         {
           "start": 0,
           "end": 28,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -935,8 +1132,7 @@
         {
           "start": 0,
           "end": 83,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -946,8 +1142,7 @@
         {
           "start": 0,
           "end": 80,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -957,8 +1152,7 @@
         {
           "start": 0,
           "end": 13,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -968,8 +1162,7 @@
         {
           "start": 0,
           "end": 127,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -979,8 +1172,7 @@
         {
           "start": 0,
           "end": 61,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -991,7 +1183,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p90-1",
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "p92-1 ระบุว่าชินจิยิ้มให้มีริสและเรนกะที่ตอบกลับด้วยน้ำเสียงเคลิบเคลิ้ม"
+          }
         }
       ]
     },
@@ -1002,7 +1203,15 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "「「ค่ะ...♡」」 เป็นคำตอบรับพร้อมกันของมีริสและเรนกะตาม p92-1"
+          }
         }
       ]
     },
@@ -1012,8 +1221,7 @@
         {
           "start": 0,
           "end": 79,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     }

@@ -92,8 +92,14 @@
         {
           "start": 13,
           "end": 106,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "'คู่นอน' เป็นคำที่ถูกยกมาใน narration ไม่ใช่คำพูดของตัวละคร; ต้นฉบับปิดด้วย “ (ซ้าย) ทำให้ seed ถือว่าคำพูดยังไม่จบ"
+          }
         }
       ]
     },
@@ -103,8 +109,7 @@
         {
           "start": 0,
           "end": 71,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -114,8 +119,7 @@
         {
           "start": 0,
           "end": 33,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -125,8 +129,7 @@
         {
           "start": 0,
           "end": 74,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -136,8 +139,7 @@
         {
           "start": 0,
           "end": 49,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -147,8 +149,7 @@
         {
           "start": 0,
           "end": 51,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -158,8 +159,7 @@
         {
           "start": 0,
           "end": 108,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -169,8 +169,7 @@
         {
           "start": 0,
           "end": 63,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -180,8 +179,7 @@
         {
           "start": 0,
           "end": 145,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -191,8 +189,7 @@
         {
           "start": 0,
           "end": 61,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -202,8 +199,7 @@
         {
           "start": 0,
           "end": 68,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -214,7 +210,14 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -225,7 +228,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -236,7 +246,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้สอนและตอบคำชื่นชมของอัลวินว่าเขาเป็นอัจฉริยะที่ใช้ความรู้สึก (p20-1, p27-1)"
+          }
         }
       ]
     },
@@ -246,8 +265,7 @@
         {
           "start": 0,
           "end": 93,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -257,8 +275,7 @@
         {
           "start": 0,
           "end": 144,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -269,7 +286,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p24-1 เล่าว่าชินจิเคยขอคำแนะนำจากเอมิลี่แล้วล้มเลิกไป ประโยคนี้จึงเป็นความเห็นของเขาเองเรื่องการใช้เวท"
+          }
         }
       ]
     },
@@ -280,7 +306,16 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "มีริสเป็นฝ่ายแนวหลังและลงท้ายด้วย 'นะคะ' ตามลักษณะคำพูดของเธอ"
+          }
         }
       ]
     },
@@ -291,7 +326,15 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p28-1 ระบุว่าเอมิลี่เป็นคนชวนมีริสและเรนกะไปฝึกด้วย"
+          }
         }
       ]
     },
@@ -301,8 +344,7 @@
         {
           "start": 0,
           "end": 43,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -312,8 +354,7 @@
         {
           "start": 0,
           "end": 44,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -323,8 +364,14 @@
         {
           "start": 0,
           "end": 52,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ทั้งย่อหน้าเป็น narration ที่ยกคำพูดของอัลวินมาอ้าง; สแปนครอบ narration ด้วย จึงคงเป็น narration"
+          }
         }
       ]
     },
@@ -334,8 +381,7 @@
         {
           "start": 0,
           "end": 79,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -345,8 +391,7 @@
         {
           "start": 0,
           "end": 110,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -356,8 +401,7 @@
         {
           "start": 0,
           "end": 27,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -367,8 +411,7 @@
         {
           "start": 0,
           "end": 81,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -379,7 +422,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p37-1"
+            ],
+            "reason": "p37-1 ระบุว่าชินจิเงยหน้ามองเรนกะที่เดินเข้ามาในห้องหลังเสียงเคาะประตู"
+          }
         }
       ]
     },
@@ -390,7 +442,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ชินจิเป็นเจ้าของห้องที่กำลังอ่านหนังสือและเชิญให้เรนกะเข้ามา"
+          }
         }
       ]
     },
@@ -400,8 +461,7 @@
         {
           "start": 0,
           "end": 54,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -412,7 +472,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นคนถามเรนกะว่ามีอะไรหลังจากเธอเดินเข้ามาในห้อง"
+          }
         }
       ]
     },
@@ -423,7 +492,15 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 ระบุว่าเธอถามถึงกำหนดการของชินจิ"
+          }
         }
       ]
     },
@@ -433,8 +510,7 @@
         {
           "start": 0,
           "end": 53,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -444,8 +520,7 @@
         {
           "start": 0,
           "end": 63,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -456,7 +531,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามเรื่องกำหนดการของเรนกะ"
+          }
         }
       ]
     },
@@ -467,7 +550,15 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เรนกะเป็นคนเชิญชินจิไปกับอากาเนะตามคำขอของอากาเนะ"
+          }
         }
       ]
     },
@@ -478,7 +569,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p46-1 ระบุว่าชินจิยิ้มแล้วถามเรนกะต่อ"
+          }
         }
       ]
     },
@@ -488,8 +588,7 @@
         {
           "start": 0,
           "end": 85,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -499,8 +598,7 @@
         {
           "start": 0,
           "end": 21,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -511,7 +609,15 @@
           "start": 0,
           "end": 217,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "p48-1 ระบุว่าเรนกะยอมเล่าเรื่องที่เธอพูด"
+          }
         }
       ]
     },
@@ -521,8 +627,7 @@
         {
           "start": 0,
           "end": 125,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -533,7 +638,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิเป็นคนแซวเรนกะต่อจากเรื่องที่เธอเล่า"
+          }
         }
       ]
     },
@@ -544,7 +657,15 @@
           "start": 0,
           "end": 170,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เป็นคำตอบของเรนกะต่อคำแซวของชินจิ"
+          }
         }
       ]
     },
@@ -555,7 +676,15 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ชินจิเป็นคนขอโทษที่หัวเราะ และ p52-1 บรรยายว่าเขายังหัวเราะอยู่"
+          }
         }
       ]
     },
@@ -565,8 +694,7 @@
         {
           "start": 0,
           "end": 55,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -577,7 +705,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "p54-1 ระบุว่าชินจิลุกขึ้นและวางมือบนศีรษะของเรนกะที่มองเขาซึ่งตอบตกลง"
+          }
         }
       ]
     },
@@ -587,8 +723,7 @@
         {
           "start": 0,
           "end": 86,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -598,8 +733,7 @@
         {
           "start": 0,
           "end": 42,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -610,7 +744,15 @@
           "start": 0,
           "end": 81,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุว่าเมื่อเรนกะได้ยินคำพูดนั้นหน้าแดงและเข้าใจว่าชินจิพูดเป็นนัยว่าเธอพิเศษ"
+          }
         }
       ]
     },
@@ -620,8 +762,14 @@
         {
           "start": 0,
           "end": 238,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "'คิวย์น♡' เป็นเสียง/อาการของร่างกายใน narration ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -632,7 +780,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบปฏิเสธคำพูดของชินจิเรื่องเธอพิเศษ"
+          }
         }
       ]
     },
@@ -643,7 +799,15 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ชินจิเป็นผู้ยืนยันคำพูดของตนต่อเรนกะ"
+          }
         }
       ]
     },
@@ -653,8 +817,7 @@
         {
           "start": 0,
           "end": 42,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -664,8 +827,7 @@
         {
           "start": 0,
           "end": 100,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -676,7 +838,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "ชินจิเป็นผู้ปิดบทสนทนาและ p64-1 ระบุว่าเรนกะจับแขนเขาไว้ก่อนเขาจะกลับไปอ่านหนังสือ"
+          }
         }
       ]
     },
@@ -687,7 +858,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "เรนกะตอบรับแล้วเรียกชินจิเพื่อขอคุยต่อ p64-1 ถึง p65-1"
+          }
         }
       ]
     },
@@ -697,8 +877,7 @@
         {
           "start": 0,
           "end": 61,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -709,7 +888,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "เรนกะเป็นผู้ขอคุยต่อหลังจากจับแขนชินจิ"
+          }
         }
       ]
     },
@@ -720,7 +908,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำขอของเรนกะและ p67-1 ระบุว่าเขายิ้มแล้วยอมรับคำขอ"
+          }
         }
       ]
     },
@@ -730,8 +927,7 @@
         {
           "start": 0,
           "end": 50,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     }

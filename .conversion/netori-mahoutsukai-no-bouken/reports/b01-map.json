@@ -11,9 +11,9 @@
     {
       "sourceId": "179585",
       "chapterNo": "5",
-      "mapJsonHash": "bc31076c81d7ee0107e10e996c7f855af2ef4e236fa58ea181ec789beb24bd3c",
+      "mapJsonHash": "5edf0c0d2837f9781ebad7b1058d3ed734acb2ee57e2e78a3178a1139c58dbfb",
       "status": "ready",
-      "dialogue": 40
+      "dialogue": 38
     },
     {
       "sourceId": "179587",
@@ -25,9 +25,9 @@
     {
       "sourceId": "179593",
       "chapterNo": "7",
-      "mapJsonHash": "5e7b58064bfe136f71451d8e25b730a27f1cc73cd38e5fb8c3bdf08a3ae38fd0",
+      "mapJsonHash": "e73c2e57a162c8ac7f61f400cd402627efa36bd321d1a6770746008cf9652ffd",
       "status": "ready",
-      "dialogue": 50
+      "dialogue": 51
     },
     {
       "sourceId": "179596",
@@ -42,7 +42,7 @@
     "179518: image-caption chapter; all tokens narration, no dialogue.",
     "179585: p69 teacher of Charlotte attributed to netori-shinji from p4 nickname use and p67 'taught by another man' plus later training scenes.",
     "179587: p43/p44 two unnamed men mapped to netori-crowd; quoted looks/thoughts (p39, p71, p73, p75, p79) kept narration.",
-    "179593: p6 embedded mutter kept narration because the seed has no separate span; p49 'แป๊ะ!' sound effect narration.",
+    "179593: p6 embedded mutter is audible speech by Shinji and now dialogue; p49 'แป๊ะ!' sound effect narration.",
     "179596: Charlotte's unnamed mother at p44 mapped to netori-crowd; p18/p43 quoted thoughts kept narration."
   ]
 }

@@ -18,7 +18,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p4-1"
+            ],
+            "reason": "p4-1 ระบุว่าเสียงเฮดังขึ้นพร้อมกันตามเสียงของเอมิลี่"
+          }
         }
       ]
     },
@@ -29,7 +37,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "เป็นเสียงเชียร์พร้อมกันของผู้ร่วมงานเลี้ยงที่ตอบรับคำประกาศของเอมิลี่"
+          }
         }
       ]
     },
@@ -120,7 +137,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-adventurers",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p12-1",
+              "p17-1"
+            ],
+            "reason": "p6-1 และ p17-1 ระบุว่ามีนักผจญภัยจากปาร์ตี้อื่นร่วมงานเลี้ยงและกำลังแข่งดื่มกับเอมิลี่ จึงเป็นเสียงของนักผจญภัยคนอื่นที่ท้าให้อัลวินแสดงความสามารถ"
+          }
         }
       ]
     },
@@ -131,7 +157,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เป็นเสียงเชียร์พร้อมกันของผู้ร่วมงานที่สนับสนุนให้อัลวินแสดงความสามารถ"
+          }
         }
       ]
     },
@@ -142,7 +177,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "อัลวินเป็นผู้แสดงความสามารถแล้วส่งต่อให้เอมิลี่เป็นคนต่อไป"
+          }
         }
       ]
     },
@@ -153,7 +197,15 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เป็นเสียงเชียร์พร้อมกันของผู้ร่วมงานที่เรียกหาการแสดงความสามารถ"
+          }
         }
       ]
     },
@@ -164,7 +216,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "มีริสเป็นผู้พูดด้วยคำลงท้าย 'คะ' และ p17-1 ระบุว่ามีริสกำลังมองหาอัลวินเพื่อถามเรื่องเรนกะ"
+          }
         }
       ]
     },
@@ -185,7 +245,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่าเจ้าของโรงแรมหญิงเป็นผู้เข้ามาทักมีริส แต่ตัวละครนี้ไม่มีชื่อใน roster จึงใช้กลุ่มตัวละครประกอบที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -206,7 +274,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "มีริสเป็นผู้ถามเจ้าของโรงแรมเรื่องเรนกะด้วยคำลงท้าย 'คะ'"
+          }
         }
       ]
     },
@@ -217,7 +294,16 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "เป็นคำตอบของเจ้าของโรงแรมหญิงที่ไม่มีชื่อใน roster จึงใช้กลุ่มตัวละครประกอบที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -228,7 +314,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p23-1 ระบุว่ามีริสขอบคุณคุณนายเจ้าของโรงแรมหลังได้คำตอบ"
+          }
         }
       ]
     },
@@ -309,7 +404,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p33-1",
+              "p37-1"
+            ],
+            "reason": "p33-1 ระบุว่าเสียงที่ได้ยินเป็นเสียงของเรนกะอย่างไม่ต้องสงสัย และ p37-1 ระบุว่าเรนกะกำลังอยู่บนตัวชินจิ"
+          }
         }
       ]
     },
@@ -354,8 +458,14 @@
         {
           "start": 56,
           "end": 63,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "เป็นเสียงจูบ (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 63,
@@ -421,7 +531,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "เรนกะเป็นฝ่ายอยู่บนตัวชินจิและเป็นผู้ถามว่าชินจิรู้สึกดีหรือไม่ ก่อนชินจิตอบใน p41-1"
+          }
         }
       ]
     },
@@ -432,7 +551,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p43-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของเรนกะเรื่องความรู้สึกข้างใน"
+          }
         }
       ]
     },
@@ -453,7 +581,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เรนกะเป็นผู้บอกว่าจะขยับเองและให้ชินจิปล่อยตามสบาย"
+          }
         }
       ]
     },
@@ -464,7 +601,15 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำของเรนกะ"
+          }
         }
       ]
     },
@@ -475,7 +620,15 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p46-1 ระบุว่าเรนกะเป็นผู้เคลื่อนไหวและส่งเสียงครางในจังหวะนี้"
+          }
         }
       ]
     },
@@ -500,8 +653,14 @@
         {
           "start": 31,
           "end": 52,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "เป็นเสียงน้ำหล่อลื่น (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 52,
@@ -597,7 +756,15 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุว่ามีริสเป็นผู้ใช้ปลายนิ้วสัมผัสช่องส่วนลับและส่งเสียงหายใจ"
+          }
         }
       ]
     },
@@ -612,8 +779,14 @@
         {
           "start": 63,
           "end": 72,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "เป็นเสียงสัมผัสช่องคลอด (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 72,
@@ -629,7 +802,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกเรนกะว่าตนจะหลั่ง ก่อน p60-1 บรรยายว่าชินจิจับสะโพกเรนกะ"
+          }
         }
       ]
     },
@@ -640,7 +822,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p62-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบรับการหลั่งของชินจิและส่งเสียงครางใน p62-1"
+          }
         }
       ]
     },
@@ -685,8 +876,14 @@
         {
           "start": 22,
           "end": 38,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "เป็นเสียงสะโพกกระทบกัน (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 38,
@@ -712,7 +909,15 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "เรนกะเป็นผู้ส่งเสียงครางถึงจุดสุดยอดหลังชินจิกระแทก"
+          }
         }
       ]
     },
@@ -723,7 +928,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะหลั่ง ก่อนเรนกะตอบใน p67-1"
+          }
         }
       ]
     },
@@ -734,7 +947,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p70-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบให้ชินจิหลั่งข้างใน และ p70-1 บรรยายชินจิหลั่งตามคำนั้น"
+          }
         }
       ]
     },
@@ -1004,7 +1226,14 @@
         {
           "start": 0,
           "end": 35,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1"
+            ],
+            "reason": "เป็นบันทึกของผู้แปล (TL) ไม่ใช่บทสนทนาหรือคำพูดของตัวละคร"
+          }
         }
       ]
     }

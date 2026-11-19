@@ -8,7 +8,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1"
+            ],
+            "reason": "ป2 บรรยายว่าแฟลร์กำลังนึกถึงการถูกอัญเชิญ ประโยคนี้จึงเป็นคำพูดของแฟลร์ก่อนถูกเรียกตัว"
+          }
         }
       ]
     },
@@ -139,7 +147,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "แฟลร์ถูกอัญเชิญมาในห้องที่ไม่คุ้นเคยและอุทานเมื่อเห็นภาพตรงหน้า"
+          }
         }
       ]
     },
@@ -160,7 +177,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ป17 ระบุว่าเฟรรี่กำลังถูกชินจิกระทำอยู่บนเตียง"
+          }
         }
       ]
     },
@@ -175,8 +200,14 @@
         {
           "start": 134,
           "end": 147,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์จากการกระแทกในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 147,
@@ -202,7 +233,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p21-1"
+            ],
+            "reason": "ป21 ระบุว่าแฟลร์ที่ถูกเรียกมาโวยวายใส่ชินจิ"
+          }
         }
       ]
     },
@@ -213,7 +252,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบแฟลร์และยังคงมีเซ็กส์กับเฟรรี่ตามที่ป21 บรรยาย"
+          }
         }
       ]
     },
@@ -294,7 +341,15 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ถามเอมิลี่เรื่องการยอมจำนน ก่อนเอมิลี่ตอบในป29"
+          }
         }
       ]
     },
@@ -305,7 +360,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ป30 ระบุชัดว่าคนที่ตอบคำถามของแฟลร์คือเอมิลี่"
+          }
         }
       ]
     },
@@ -326,7 +389,16 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p33-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ตอบต่อเนื่องจากป29 เรื่องความแข็งแกร่งกับเซ็กส์ ก่อนแฟลร์ตอบกลับในป33"
+          }
         }
       ]
     },
@@ -337,7 +409,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p35-1"
+            ],
+            "reason": "เป็นเสียงครางของเฟรรี่ที่กำลังถูกชินจิกระทำอยู่ และป35 บรรยายว่าเธอครางออกมา"
+          }
         }
       ]
     },
@@ -348,7 +429,14 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -363,8 +451,14 @@
         {
           "start": 151,
           "end": 168,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "เป็นเสียงตอบสนองของช่องคลอดแฟลร์ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -385,7 +479,16 @@
           "start": 0,
           "end": 158,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้พูดต่อเรื่องเซ็กส์กับชินจิ ก่อนแฟลร์ตอบในป37"
+          }
         }
       ]
     },
@@ -396,7 +499,14 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "ตรวจบริบท p37-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -407,7 +517,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นผู้ประกาศว่าเฟรรี่จะหลั่ง แล้วเฟรรี่ถึงจุดสุดยอดในป39"
+          }
         }
       ]
     },
@@ -418,7 +536,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "เป็นเสียงของเฟรรี่ตอบรับคำประกาศของชินจิและถึงจุดสุดยอด"
+          }
         }
       ]
     },
@@ -449,7 +575,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิหันมาหาเอมิลี่หลังเสร็จกับเฟรรี่ ก่อนป44 บรรยายว่าเขาคร่อมเอมิลี่"
+          }
         }
       ]
     },
@@ -460,7 +595,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ตอบชินจิและป44 ระบุว่าเขาคร่อมเธอขณะพูดคุย"
+          }
         }
       ]
     },
@@ -501,7 +644,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ร้องขอให้ชินจิกระทำต่อ และป48 บรรยายว่าเธอออดอ้อนชินจิ"
+          }
         }
       ]
     },
@@ -531,7 +683,16 @@
         {
           "start": 0,
           "end": 41,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p52-1"
+            ],
+            "reason": "ป52 ระบุชัดว่าเป็นคำพูดของเฟรรี่ที่ดังเข้ามาในหัวของแฟลร์ จึงเป็นการสื่อสารด้วยคำพูด ไม่ใช่บทบรรยาย"
+          }
         }
       ]
     },
@@ -542,7 +703,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "แฟลร์อุทานตอบคำพูดของเฟรรี่ที่ดังเข้ามาในหัวตามที่ป52 บรรยาย"
+          }
         }
       ]
     },
@@ -562,7 +731,17 @@
         {
           "start": 0,
           "end": 55,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p52-1",
+              "p55-1"
+            ],
+            "reason": "เป็นคำพูดของเฟรรี่ที่สื่อสารเข้าหัวแฟลร์ต่อเนื่องจากป50 และป55 ระบุว่าแฟลร์ตอบสนองต่อคำพูดของเฟรรี่"
+          }
         }
       ]
     },
@@ -573,7 +752,14 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ตรวจบริบท p54-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -593,7 +779,16 @@
         {
           "start": 0,
           "end": 30,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "เป็นคำพูดของเฟรรี่ที่ดังในหัวแฟลร์ต่อเนื่องจากบทสนทนาก่อนหน้า"
+          }
         }
       ]
     },
@@ -604,7 +799,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ป58 บรรยายว่าเอมิลี่ถึงจุดสุดยอดหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -619,8 +822,14 @@
         {
           "start": 38,
           "end": 51,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์การหลั่งในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 51,
@@ -636,7 +845,15 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ป60 ระบุว่าแฟลร์หันหน้าหนีจากเอมิลี่ที่ดูเต็มอิ่มจากใจจริง"
+          }
         }
       ]
     },
@@ -667,7 +884,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "ชินจิเป็นผู้เรียกแฟลร์มาหลังจากถอยออกจากเอมิลี่ตามที่ป61 บรรยาย"
+          }
         }
       ]
     },
@@ -698,7 +924,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "แฟลร์เป็นผู้พูดยอมให้ชินจิทำตามใจชอบ ก่อนชินจิตอบในป66"
+          }
         }
       ]
     },
@@ -709,7 +944,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1"
+            ],
+            "reason": "ตรวจบริบท p66-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },

@@ -49,6 +49,22 @@ one span for that token (n is 1-based in cue order).
   actually used. Default is the token itself; add the adjacent narration token
   when that is what identifies the speaker.
 - `reason` is required for reclassifications and for group/ambiguous speakers.
+- If the proposed quote boundary is wrong (for example a quoted question inside a
+  narration paragraph), replace the whole token entry with a `segments` array
+  covering the token exactly. Each segment needs `start`, `end`, `type`
+  (`narration` or `dialogue`), plus `speakerId` for dialogue and
+  `context`/`reason` where the brief requires them. `assign` rebuilds that token.
+
+```json
+"p6-1": {
+  "segments": [
+    { "start": 0, "end": 123, "type": "narration" },
+    { "start": 123, "end": 150, "type": "dialogue", "speakerId": "netori-shinji",
+      "context": ["p5-1", "p6-1", "p7-1"], "reason": "คำถามที่ชินจิพึมพำและอัลวินตอบใน p7-1" },
+    { "start": 150, "end": 166, "type": "narration" }
+  ]
+}
+```
 - Every `DIALOGUE?` span must get a speaker. Label the speaker from evidence in
   the chapter (narration tags, who is addressed, who answers next, prior scene).
   Never default to the protagonist.

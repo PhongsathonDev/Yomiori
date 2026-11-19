@@ -28,7 +28,15 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p3-1"
+            ],
+            "reason": "ชินจิไปที่เคาน์เตอร์กิลด์เพื่อถามข้อมูล〈มังกรเพลิง〉ตาม p1"
+          }
         }
       ]
     },
@@ -39,7 +47,15 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "พนักงานต้อนรับหญิงที่เคาน์เตอร์กิลด์ไม่มีชื่อใน roster จึงใช้กลุ่มเสียงตัวละครประกอบที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -54,8 +70,14 @@
         {
           "start": 66,
           "end": 82,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "สีหน้าของพนักงานที่แสดงออกว่า 'อีกแล้วเหรอ...' เป็นการบรรยายสีหน้า ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -76,7 +98,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามต่อหลังเห็นสีหน้าของพนักงานต้อนรับ"
+          }
         }
       ]
     },
@@ -87,7 +117,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "พนักงานต้อนรับผู้ถูกถามใน p7 เป็นผู้กล่าวขอโทษ"
+          }
         }
       ]
     },
@@ -108,7 +146,15 @@
           "start": 0,
           "end": 116,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ชินจิแสดงความเห็นใจต่อพนักงานต้อนรับตาม p9"
+          }
         }
       ]
     },
@@ -119,7 +165,15 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12 ระบุว่าพนักงานต้อนรับหัวเราะแห้งๆ แล้วถามกลับ"
+          }
         }
       ]
     },
@@ -269,7 +323,15 @@
         {
           "start": 0,
           "end": 38,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p26-1"
+            ],
+            "reason": "ข้อความในบันทึกที่ชินจิเขียน ขึ้นต้นด้วยเครื่องหมายคำพูดและรูปแบบ 'มินาโตะ: ...' ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -309,7 +371,14 @@
         {
           "start": 0,
           "end": 59,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ข้อความในบันทึกข้อมูลปาร์ตี้ที่ชินจิเขียน รูปแบบ 'ลีร่า: ...' ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -329,7 +398,14 @@
         {
           "start": 0,
           "end": 58,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "ข้อความในบันทึกข้อมูลปาร์ตี้ที่ชินจิเขียน รูปแบบ 'ลิลี่: ...' ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -349,7 +425,14 @@
         {
           "start": 0,
           "end": 57,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ข้อความในบันทึกข้อมูลปาร์ตี้ที่ชินจิเขียน รูปแบบ 'ลิล: ...' ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -369,7 +452,14 @@
         {
           "start": 0,
           "end": 34,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ข้อความในบันทึกข้อมูลปาร์ตี้ที่ชินจิเขียน รูปแบบ 'แฟลร์: ...' ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -400,7 +490,15 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดหลังวางปากกาลงใน p38"
+          }
         }
       ]
     },
@@ -451,7 +549,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "p45 ระบุว่าเอมิลี่เปิดประตูเข้ามาและชวนไปกินข้าว"
+          }
         }
       ]
     },
@@ -472,7 +579,14 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้เตือนเอมิลี่เรื่องการเคาะประตู"
+          }
         }
       ]
     },
@@ -483,7 +597,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ตอบว่าเราสนิทกัน"
+          }
         }
       ]
     },
@@ -494,7 +616,14 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ชินจิเป็นผู้ย้อนว่าแม้สนิทกันก็ต้องมีมารยาท"
+          }
         }
       ]
     },
@@ -545,7 +674,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p52 ระบุว่าเอมิลี่ขยิบตาแล้วถามชินจิ"
+          }
         }
       ]
     },
@@ -566,7 +703,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบชมเอมิลี่ผิดจากปกติ"
+          }
         }
       ]
     },
@@ -577,7 +722,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57 ระบุว่าเอมิลี่หน้าแดงก่ำกับคำชมของชินจิ"
+          }
         }
       ]
     },
@@ -598,7 +752,15 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "เอมิลี่พูดตะกุกตะกักด้วยความเขินหลังหน้าแดงใน p57"
+          }
         }
       ]
     },
@@ -609,7 +771,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60 ระบุว่าชินจิปฏิเสธคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -630,7 +801,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p63-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนไปกินข้าวและดึงมือเธอกลับใน p63"
+          }
         }
       ]
     },
@@ -641,7 +820,15 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "เอมิลี่ตอบรับข้อชวนของชินจิ"
+          }
         }
       ]
     },

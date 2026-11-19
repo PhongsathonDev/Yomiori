@@ -242,8 +242,14 @@
         {
           "start": 39,
           "end": 47,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "คำว่า “คู่นอน” ถูกยกมาอ้างในคำอธิบายตัวละครมีริส ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
         },
         {
           "start": 47,
@@ -253,8 +259,14 @@
         {
           "start": 89,
           "end": 106,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "คำว่า “รอยสลักแห่งราคะ“ เป็นชื่อที่ยกมาอ้างในคำอธิบาย ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -264,8 +276,7 @@
         {
           "start": 0,
           "end": 27,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -275,8 +286,15 @@
         {
           "start": 0,
           "end": 111,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "ย่อหน้าคำอธิบายตัวละครมีริส (ลักษณะนิสัยหลังถูกสลักรอยสลัก) ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -286,8 +304,7 @@
         {
           "start": 0,
           "end": 89,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -297,8 +314,7 @@
         {
           "start": 0,
           "end": 91,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -308,8 +324,7 @@
         {
           "start": 0,
           "end": 57,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -319,8 +334,7 @@
         {
           "start": 0,
           "end": 17,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -330,8 +344,7 @@
         {
           "start": 0,
           "end": 21,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -341,8 +354,7 @@
         {
           "start": 0,
           "end": 76,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -352,8 +364,7 @@
         {
           "start": 0,
           "end": 113,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -363,8 +374,7 @@
         {
           "start": 0,
           "end": 151,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -374,8 +384,7 @@
         {
           "start": 0,
           "end": 26,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -385,8 +394,7 @@
         {
           "start": 0,
           "end": 78,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -396,8 +404,7 @@
         {
           "start": 0,
           "end": 65,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -407,8 +414,7 @@
         {
           "start": 0,
           "end": 48,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -418,8 +424,7 @@
         {
           "start": 0,
           "end": 136,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -429,8 +434,7 @@
         {
           "start": 0,
           "end": 124,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -440,8 +444,7 @@
         {
           "start": 0,
           "end": 80,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -451,8 +454,7 @@
         {
           "start": 0,
           "end": 103,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -462,8 +464,7 @@
         {
           "start": 0,
           "end": 31,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -473,8 +474,7 @@
         {
           "start": 0,
           "end": 49,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -484,8 +484,7 @@
         {
           "start": 0,
           "end": 16,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -495,8 +494,7 @@
         {
           "start": 0,
           "end": 130,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -506,8 +504,7 @@
         {
           "start": 0,
           "end": 34,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -517,8 +514,7 @@
         {
           "start": 0,
           "end": 13,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -528,8 +524,7 @@
         {
           "start": 0,
           "end": 25,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -539,8 +534,7 @@
         {
           "start": 0,
           "end": 107,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -550,8 +544,7 @@
         {
           "start": 0,
           "end": 15,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -561,8 +554,7 @@
         {
           "start": 0,
           "end": 14,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -572,8 +564,7 @@
         {
           "start": 0,
           "end": 33,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -583,8 +574,7 @@
         {
           "start": 0,
           "end": 25,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -594,8 +584,7 @@
         {
           "start": 0,
           "end": 63,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -605,8 +594,7 @@
         {
           "start": 0,
           "end": 24,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -616,8 +604,7 @@
         {
           "start": 0,
           "end": 12,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -627,8 +614,7 @@
         {
           "start": 0,
           "end": 42,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -638,8 +624,7 @@
         {
           "start": 0,
           "end": 27,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -649,8 +634,7 @@
         {
           "start": 0,
           "end": 44,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -660,8 +644,7 @@
         {
           "start": 0,
           "end": 21,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -671,8 +654,7 @@
         {
           "start": 0,
           "end": 97,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -682,8 +664,7 @@
         {
           "start": 0,
           "end": 52,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -693,8 +674,7 @@
         {
           "start": 0,
           "end": 35,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -704,8 +684,7 @@
         {
           "start": 0,
           "end": 114,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -715,8 +694,7 @@
         {
           "start": 0,
           "end": 18,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -726,8 +704,7 @@
         {
           "start": 0,
           "end": 24,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -737,8 +714,7 @@
         {
           "start": 0,
           "end": 111,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -748,8 +724,7 @@
         {
           "start": 0,
           "end": 34,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -759,8 +734,7 @@
         {
           "start": 0,
           "end": 16,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -770,8 +744,7 @@
         {
           "start": 0,
           "end": 49,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -781,8 +754,7 @@
         {
           "start": 0,
           "end": 58,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -792,8 +764,7 @@
         {
           "start": 0,
           "end": 87,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -803,8 +774,14 @@
         {
           "start": 0,
           "end": 108,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1"
+            ],
+            "reason": "หมายเหตุผู้แปลท้ายตอน ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -814,8 +791,7 @@
         {
           "start": 0,
           "end": 48,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     }

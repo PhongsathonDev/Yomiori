@@ -1,0 +1,131 @@
+{
+  "p5-1": {
+    "type": "dialogue",
+    "speakerId": "netori-shinji",
+    "context": ["p5-1", "p7-1"],
+    "reason": "p7-1 ระบุว่าชินจิเรียกแฟลร์ผ่านการสื่อสารทางความคิด ประโยคนี้เป็นคำเรียกของชินจิ"
+  },
+  "p6-1": {
+    "type": "dialogue",
+    "speakerId": "netori-flare",
+    "context": ["p6-1", "p7-1"],
+    "reason": "p7-1 ระบุว่าเป็นความคิดตอบของแฟลร์ที่ระแวง"
+  },
+  "p8-1": {
+    "type": "dialogue",
+    "speakerId": "netori-shinji",
+    "context": ["p8-1", "p9-1"],
+    "reason": "ชินจิถามแฟลร์ผ่านการสื่อสารทางความคิด และ p9-1 เป็นคำตอบของแฟลร์"
+  },
+  "p9-1": {
+    "type": "dialogue",
+    "speakerId": "netori-flare",
+    "context": ["p8-1", "p9-1"],
+    "reason": "คำตอบของการสื่อสารทางความคิดต่อคำถามใน p8-1"
+  },
+  "p10-1": {
+    "type": "dialogue",
+    "speakerId": "netori-shinji",
+    "context": ["p10-1", "p11-1"],
+    "reason": "ชินจิสั่งให้เก็บเป็นความลับ และ p11-1 เป็นคำตอบรับของแฟลร์"
+  },
+  "p11-1": {
+    "type": "dialogue",
+    "speakerId": "netori-flare",
+    "context": ["p10-1", "p11-1", "p12-1"],
+    "reason": "คำตอบรับของแฟลร์ก่อน p12-1 บรรยายว่าแฟลร์พูดอย่างเย็นชา"
+  },
+  "p13-1": {
+    "type": "dialogue",
+    "speakerId": "netori-shinji",
+    "context": ["p13-1", "p14-1"],
+    "reason": "ชินจิขู่ลงโทษผ่านการสื่อสารทางความคิด และ p14-1 เป็นเสียงตกใจของแฟลร์"
+  },
+  "p14-1": {
+    "type": "dialogue",
+    "speakerId": "netori-flare",
+    "context": ["p13-1", "p14-1"],
+    "reason": "เสียงตอบโต้ของแฟลร์ต่อคำขู่ใน p13-1"
+  },
+  "p15-1": {
+    "type": "dialogue",
+    "speakerId": "netori-shinji",
+    "context": ["p15-1", "p16-1"],
+    "reason": "ชินจิอธิบายเงื่อนไขและ p16-1 เป็นคำขอโทษของแฟลร์"
+  },
+  "p16-1": {
+    "type": "dialogue",
+    "speakerId": "netori-flare",
+    "context": ["p15-1", "p16-1", "p17-1"],
+    "reason": "แฟลร์ยอมรับผิดตอบชินจิ ก่อน p17-1 ที่ชินจิส่งความคิดปิดท้าย"
+  },
+  "p17-1#1": "netori-shinji",
+  "p18-1#1": {
+    "type": "narration",
+    "context": ["p18-1"],
+    "reason": "p18-1 ระบุว่า 'ชินจิคิดเช่นนั้น' เป็นความคิดในใจ ไม่ได้พูดหรือส่งความคิดออกมา"
+  },
+  "p19-1": "netori-alvin",
+  "p20-1": "netori-shinji",
+  "p22-1": "netori-miris",
+  "p23-1": "netori-shinji",
+  "p24-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p23-1", "p24-1", "p25-1"],
+    "reason": "p25-1 ระบุว่าชินจิเป็นผู้พูดพร้อมสบตากับมีริสและเรนกะ"
+  },
+  "p26-1": "netori-shinji",
+  "p27-1": {
+    "speakerId": "netori-miris",
+    "context": ["p26-1", "p27-1"],
+    "reason": "คำอธิบายด้วยคำลงท้าย ค่ะ ต่อจากคำพูดของชินจิ"
+  },
+  "p30-1": "netori-shinji",
+  "p31-1": {
+    "speakerId": "netori-miris",
+    "context": ["p30-1", "p31-1"],
+    "reason": "คำตอบด้วยคำลงท้าย ค่ะ ต่อจากข้อสันนิษฐานของชินจิ"
+  },
+  "p32-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p32-1", "p34-1"],
+    "reason": "p34-1 ระบุว่าชินจิพยักหน้าตอบคำถามของอัลวิน"
+  },
+  "p35-1": "netori-shinji",
+  "p36-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p35-1", "p36-1", "p37-1"],
+    "reason": "p37-1 ระบุว่าอัลวินหัวเราะอย่างร่าเริงหลังประโยคนี้"
+  },
+  "p38-1#1": "netori-alvin",
+  "p39-1": "netori-alvin",
+  "p40-1": {
+    "speakerId": "netori-miris",
+    "context": ["p39-1", "p40-1", "p45-1"],
+    "reason": "คำอธิบายกำหนดการด้วยคำลงท้าย ค่ะ ต่อจากคำพูดของอัลวิน"
+  },
+  "p41-1": {
+    "speakerId": "netori-renka",
+    "context": ["p39-1", "p40-1", "p41-1", "p47-1"],
+    "reason": "คำชมบริการของวิหารหลังอัลวินและมีริสพูดถึงกำหนดการ เป็นเสียงของเรนกะสมาชิกคนเดียวที่ยังไม่พูดในฉาก"
+  },
+  "p45-1": "netori-miris",
+  "p48-1": "netori-shinji",
+  "p49-1": "netori-miris",
+  "p51-1": {
+    "type": "narration",
+    "context": ["p50-1", "p51-1", "p52-1"],
+    "reason": "ข้อความในจดหมายตอบกลับของอากาเนะที่เรนกะได้รับ เป็นข้อความเขียน ไม่ใช่บทสนทนาในฉาก"
+  },
+  "p53-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p52-1", "p53-1", "p54-1", "p56-1"],
+    "reason": "คำพูดตื่นเต้นเรื่องผู้ดูแลบ้านและระดับขั้น ก่อน p56-1 ระบุว่าอัลวินตอบคำพูดของชินจิ"
+  },
+  "p54-1": "netori-shinji",
+  "p55-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p54-1", "p55-1", "p56-1"],
+    "reason": "p56-1 ระบุว่าอัลวินตอบคำพูดของชินจิ ส่วนมีริสและเรนกะพยักหน้า"
+  }
+}

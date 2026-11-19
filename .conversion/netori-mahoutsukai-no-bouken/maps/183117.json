@@ -8,7 +8,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p2-1 ระบุว่าอัลวินและเพื่อนๆ กลับบ้านปาร์ตี้ และ p3-1 ว่าไอริสตกตะลึงเมื่อเห็นบ้านครั้งแรก"
+          }
         }
       ]
     },
@@ -39,7 +48,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "อัลวินอธิบายเรื่องบ้านให้ไอริส แล้วเธอตอบใน p5-1"
+          }
         }
       ]
     },
@@ -50,7 +68,16 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ไอริสตอบรับคำอธิบายของอัลวิน"
+          }
         }
       ]
     },
@@ -81,7 +108,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "อัลวินถามไอริสเรื่องเงินอุดหนุน แล้วไอริสตอบใน p9-1"
+          }
         }
       ]
     },
@@ -92,7 +128,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ไอริสย้อนถามอัลวินเรื่องระบบกิลด์"
+          }
         }
       ]
     },
@@ -103,7 +148,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "อัลวินหัวเราะกลบเกลื่อน และ p11-1 ระบุว่าไอริสมองอัลวินที่หัวเราะ"
+          }
         }
       ]
     },
@@ -124,7 +178,17 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เรนกะเป็นคนคอยดูแลจัดการปาร์ตี้จึงบอกว่าคอยระวังอยู่เสมอ แล้วชินจิเสริมใน p13-1 และอัลวินเอ่ยชื่อเรนกะกับชินจิใน p14-1"
+          }
         }
       ]
     },
@@ -135,7 +199,16 @@
           "start": 0,
           "end": 81,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "ชินจิเป็นผู้จัดหาบ้านและวางแผนงบประมาณตอนเช่าที่นี่ อัลวินจึงเอ่ยชื่อเขาต่อจากเรนกะใน p14-1"
+          }
         }
       ]
     },
@@ -146,7 +219,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าอัลวินพูดขึ้นมาอย่างไม่สะทกสะท้าน"
+          }
         }
       ]
     },
@@ -167,7 +249,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ไอริสมองอัลวินที่หัวเราะกลบเกลื่อน แล้วเรียกเขาใน p16-1"
+          }
         }
       ]
     },
@@ -178,7 +269,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "อัลวินหัวเราะและชวนเข้าบ้าน แล้วไอริสร้องตามใน p18-1"
+          }
         }
       ]
     },
@@ -189,7 +289,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ไอริสถูกอัลวินดันหลังและร้องเรียกเขา"
+          }
         }
       ]
     },
@@ -210,7 +319,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "p21-1 ระบุว่าอากาเนะในชุดเมดออกมาต้อนรับ"
+          }
         }
       ]
     },
@@ -241,7 +359,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "อากาเนะทักไอริส แล้วไอริสตอบใน p24-1"
+          }
         }
       ]
     },
@@ -252,7 +379,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ไอริสตอบอากาเนะ"
+          }
         }
       ]
     },
@@ -313,7 +449,17 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "อากาเนะบอกไอริสว่าชินจิกับเรนกะดูแลเธอดี แล้วไอริสตอบเรื่องชุดเมดใน p31-1"
+          }
         }
       ]
     },
@@ -324,7 +470,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "ไอริสแสดงความประหลาดใจเรื่องชุดเมด"
+          }
         }
       ]
     },
@@ -335,7 +490,16 @@
           "start": 0,
           "end": 156,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "อากาเนะอธิบายเรื่องชุดเมดแล้วหันไปบอกทุกคนเรื่องห้องน้ำตาม p33-1"
+          }
         }
       ]
     },
@@ -356,7 +520,16 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "อัลวินจัดลำดับให้มีริสและคนอื่นเข้าอาบน้ำก่อน"
+          }
         }
       ]
     },
@@ -367,7 +540,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "มีริสชวนไอริสไปอาบน้ำ แล้วไอริสตอบใน p36-1"
+          }
         }
       ]
     },
@@ -378,7 +560,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ไอริสตอบรับคำชวนของมีริส"
+          }
         }
       ]
     },
@@ -399,7 +590,17 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1",
+              "p41-1"
+            ],
+            "reason": "p37-1 ระบุว่าชินจิกับเรนกะคุยกับอากาเนะ ชินจิเป็นผู้จัดหาบ้านจึงขอให้อากาเนะเตรียมห้องรับแขกและอาหารเพิ่ม"
+          }
         }
       ]
     },
@@ -410,7 +611,16 @@
           "start": 0,
           "end": 94,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "อากาเนะตอบรับเรื่องห้องรับแขกและอาหาร"
+          }
         }
       ]
     },
@@ -421,7 +631,16 @@
           "start": 0,
           "end": 131,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เรนกะแบ่งงานโดยเรียกชื่อชินจิและอากาเนะ แล้วชินจิรับใน p41-1"
+          }
         }
       ]
     },
@@ -432,7 +651,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิรับแผนของเรนกะ แล้วเรนกะขอบคุณชินจิใน p42-1"
+          }
         }
       ]
     },
@@ -443,7 +671,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "เรนกะขอบคุณชินจิ และ p43-1 บรรยายรอยยิ้มของเรนกะที่มองชินจิ"
+          }
         }
       ]
     },
@@ -464,7 +701,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "มีริสชวนเรนกะไปอาบน้ำ แล้วเรนกะตอบใน p45-1"
+          }
         }
       ]
     },
@@ -475,7 +721,16 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "เรนกะบอกว่าจะไปเอาผ้าเช็ดตัวให้ไอริสก่อน"
+          }
         }
       ]
     },
@@ -486,7 +741,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "มีริสตอบรับแล้วเรียกไอริสให้ตามไป"
+          }
         }
       ]
     },
@@ -497,7 +761,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ไอริสตอบรับมีริส"
+          }
         }
       ]
     },
@@ -513,7 +786,14 @@
           "start": 56,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "narration ระบุว่าอัลวินมองตามและบอกว่าเขาจะรออยู่ในห้อง"
+          }
         }
       ]
     },
@@ -574,7 +854,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ไอริสถามเรนกะเรื่องความสัมพันธ์กับชินจิ แล้วเรนกะตกใจใน p55-1"
+          }
         }
       ]
     },
@@ -585,7 +874,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "เรนกะตกใจอุทาน และ p56-1 ระบุว่าไอริสถามเรนกะในอ่างอาบน้ำ"
+          }
         }
       ]
     },
@@ -636,7 +934,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p59-1 ระบุว่ามีริสตัดสินใจพูดกับไอริสแทน"
+          }
         }
       ]
     },
@@ -647,7 +954,16 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ไอริสตอบคำถามของมีริสเรื่องระยะห่างกับชินจิ"
+          }
         }
       ]
     },
@@ -678,7 +994,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "เรนกะหน้าแดงและยอมรับ แล้วไอริสพูดต่อใน p65-1"
+          }
         }
       ]
     },
@@ -689,7 +1014,16 @@
           "start": 0,
           "end": 108,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "ไอริสวิเคราะห์นิสัยเรนกะ"
+          }
         }
       ]
     },
@@ -700,7 +1034,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "มีริสพูดเรื่องอัลวินไม่รู้เรื่อง แล้วไอริสบ่นใน p67-1"
+          }
         }
       ]
     },
@@ -711,7 +1054,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "ไอริสบ่นว่าอัลวินทึบ และ p68-1 ระบุว่ามีริสกับเรนกะตอบไอริสที่พึมพำ"
+          }
         }
       ]
     },
@@ -742,7 +1094,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "ไอริสขยับเข้าใกล้เรนกะแล้วพูดถึงความชอบที่มีต่ออัลวิน"
+          }
         }
       ]
     },
@@ -763,7 +1124,16 @@
           "start": 0,
           "end": 145,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "p71-1 ระบุว่าไอริสพูดเสียงเบาและเรนกะตอบเสียงเบาเช่นกัน"
+          }
         }
       ]
     },
@@ -774,7 +1144,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1",
+              "p74-1"
+            ],
+            "reason": "ไอริสตอบรับคำขอของเรนกะเรื่องแหวนคู่"
+          }
         }
       ]
     },

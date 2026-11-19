@@ -8,7 +8,15 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1"
+            ],
+            "reason": "p2-1 ระบุว่าอัลวินกำลังเดินดูร้านเครื่องประดับและครุ่นคิดเรื่องแหวนให้มีริส"
+          }
         }
       ]
     },
@@ -29,7 +37,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "เป็นความคิดต่อเนื่องจาก p2-1 ของอัลวินก่อนเขาไปกินอาหารกลางวันใน p4-1"
+          }
         }
       ]
     },
@@ -49,8 +66,15 @@
         {
           "start": 0,
           "end": 46,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p7-1"
+            ],
+            "reason": "เป็นเสียงดูด/จูบและเสียงในลำคอระหว่างการทำออรัลเซ็กส์ตาม p7-1 ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -61,7 +85,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่ามีริสนั่งคุกเข่าอมให้ชินจิ ดังนั้นผู้ที่พูดถึงปากของมีริสคือชินจิ"
+          }
         }
       ]
     },
@@ -76,8 +108,15 @@
         {
           "start": 113,
           "end": 225,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p20-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นชื่อคำสาป “รอยสลักแห่งราคะ“ ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -87,8 +126,7 @@
         {
           "start": 0,
           "end": 46,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -98,8 +136,7 @@
         {
           "start": 0,
           "end": 77,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -109,8 +146,7 @@
         {
           "start": 0,
           "end": 120,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -120,8 +156,14 @@
         {
           "start": 0,
           "end": 82,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "บทบรรยายการลูบศีรษะมีเสียง “จุ๊บปุ๊“ แทรกอยู่ ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -132,7 +174,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "เป็นคำสั่งของชินจิแล้วมีริสตอบรับด้วยคำว่า ค่ะ ใน p13-1"
+          }
         }
       ]
     },
@@ -143,7 +193,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับคำสั่งของชินจิและ p14-1 ระบุว่าเธอรับอสุจิในปากตามที่เขาบอก"
+          }
         }
       ]
     },
@@ -153,8 +212,7 @@
         {
           "start": 0,
           "end": 156,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -164,8 +222,14 @@
         {
           "start": 0,
           "end": 91,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "บทบรรยายการกลืนอสุจิมีเสียง “พรวดๆ“ แทรก ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -175,8 +239,15 @@
         {
           "start": 0,
           "end": 173,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "บทบรรยายความรู้สึกของมีริสมีเสียง “คิวย์น“ แทรก ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -187,7 +258,15 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เป็นคำสั่งของชินจิแล้ว p18-1 มีมีริสเรียก “คุณชินจิ“ ตอบ"
+          }
         }
       ]
     },
@@ -198,7 +277,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "มีริสเป็นผู้เรียกคุณชินจิและ p19-1 ระบุว่าเธอเงยหน้าขึ้นมองชินจิหลังดูดจนหมด"
+          }
         }
       ]
     },
@@ -208,8 +296,7 @@
         {
           "start": 0,
           "end": 151,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -219,8 +306,15 @@
         {
           "start": 0,
           "end": 157,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "เป็นบทบรรยายผลของคำสาป ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -231,7 +325,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามว่าเธอจะให้เขาทำต่อถึงเมื่อไหร่ แล้วมีริสตอบเรื่องเวลากลับใน p22-1"
+          }
         }
       ]
     },
@@ -242,7 +345,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบด้วยคำลงท้าย ค่ะ ว่าต้องกลับตอนเย็น"
+          }
         }
       ]
     },
@@ -253,7 +365,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับเวลาที่มีริสบอก"
+          }
         }
       ]
     },
@@ -264,7 +384,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เป็นเสียงอุทานของมีริสเมื่อชินจิดึงแขนให้นั่งคร่อมและสอดใส่ตาม p25-1"
+          }
         }
       ]
     },
@@ -274,8 +402,7 @@
         {
           "start": 0,
           "end": 143,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -285,8 +412,14 @@
         {
           "start": 0,
           "end": 176,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "บทบรรยายการเกาะชินจิมีเสียง “คิวย์น“ และ “กึ๊กๆ“ แทรก ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -296,8 +429,15 @@
         {
           "start": 0,
           "end": 80,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "เป็นบทบรรยายการอุ้มและกระแทกในท่าเอกิเบ็น ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -308,7 +448,15 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "มีริสเป็นผู้ร้องเรียกคุณชินจิและบอกว่าลึกเกินไปตามอาการใน p29-1"
+          }
         }
       ]
     },
@@ -318,8 +466,7 @@
         {
           "start": 0,
           "end": 169,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -330,7 +477,15 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชินจิเป็นผู้ปลอบว่ามีเพียงเขาเท่านั้นที่เห็น แล้วมีริสตอบใน p31-1"
+          }
         }
       ]
     },
@@ -341,7 +496,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "มีริสเป็นผู้ร้องตอบและถึงจุดสุดยอดตาม p32-1"
+          }
         }
       ]
     },
@@ -351,8 +515,14 @@
         {
           "start": 0,
           "end": 216,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "บทบรรยายการถึงจุดสุดยอดมีเสียง “กึ้บๆ“ และ “พรวดๆ“ แทรก ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -363,7 +533,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนกินอะไรเบาๆ ก่อนทำต่อ แล้วมีริสถามกลับใน p34-1"
+          }
         }
       ]
     },
@@ -374,7 +552,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p36-1"
+            ],
+            "reason": "มีริสเป็นผู้ถามกลับด้วยคำลงท้าย คะ และ p36-1 ระบุว่าเธอมองชินจิผู้ยังต้องการทำต่อ"
+          }
         }
       ]
     },
@@ -384,8 +571,14 @@
         {
           "start": 0,
           "end": 91,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "บทบรรยายการถอนอวัยวะเพศมีเสียง “รูด“ และอสุจิหยด ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -395,8 +588,7 @@
         {
           "start": 0,
           "end": 118,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -406,8 +598,7 @@
         {
           "start": 0,
           "end": 65,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -417,8 +608,7 @@
         {
           "start": 0,
           "end": 112,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -428,8 +618,15 @@
         {
           "start": 0,
           "end": 188,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "บทบรรยายผลของ “รอยสลักแห่งราคะ“ เครื่องหมายคำพูดใช้เน้นชื่อคำสาป ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -439,8 +636,7 @@
         {
           "start": 0,
           "end": 32,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -450,8 +646,7 @@
         {
           "start": 0,
           "end": 167,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -462,7 +657,15 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายเรื่องรอยสลักแล้วมีริสตอบขอบคุณใน p43-1"
+          }
         }
       ]
     },
@@ -473,7 +676,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบขอบคุณด้วยคำลงท้าย ค่ะ"
+          }
         }
       ]
     },
@@ -483,8 +694,7 @@
         {
           "start": 0,
           "end": 14,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -495,7 +705,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนทำภารกิจต่อ แล้วมีริสตอบใน p46-1"
+          }
         }
       ]
     },
@@ -506,7 +724,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับและเรียกอัลคุงตามบทบรรยายการขยับสะโพกใน p47-1"
+          }
         }
       ]
     },
@@ -516,8 +743,7 @@
         {
           "start": 0,
           "end": 133,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -528,7 +754,15 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอให้เก็บเรื่องคู่นอนและบ้านเป็นความลับ แล้วมีริสรับปากใน p49-1"
+          }
         }
       ]
     },
@@ -539,7 +773,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "มีริสเป็นผู้รับปากว่าจะเก็บความลับและบอกว่าใกล้เสร็จตาม p50-1"
+          }
         }
       ]
     },
@@ -549,8 +792,7 @@
         {
           "start": 0,
           "end": 37,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -560,8 +802,15 @@
         {
           "start": 0,
           "end": 153,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "บทบรรยายการกระแทกต่อมีเสียง “ตึ้บ“ แทรก ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -572,7 +821,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "เป็นเสียงอุทานของมีริสจากการกระแทกต่อเนื่องใน p51-1 และ p53-1 ระบุว่าชินจิหลั่งเป็นครั้งสุดท้าย"
+          }
         }
       ]
     },
@@ -582,8 +840,7 @@
         {
           "start": 0,
           "end": 37,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -593,8 +850,7 @@
         {
           "start": 0,
           "end": 145,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -604,8 +860,7 @@
         {
           "start": 0,
           "end": 44,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -615,8 +870,15 @@
         {
           "start": 0,
           "end": 120,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "บทบรรยายว่ามีริสถูกผูกมัดด้วย “รอยสลักแห่งราคะ“ เครื่องหมายคำพูดใช้เน้นชื่อคำสาป ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -626,8 +888,7 @@
         {
           "start": 0,
           "end": 91,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -637,8 +898,7 @@
         {
           "start": 0,
           "end": 85,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration"
         }
       ]
     },
@@ -648,8 +908,14 @@
         {
           "start": 0,
           "end": 62,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "เป็นหมายเหตุของผู้แปล (TL) ไม่ใช่บทสนทนาในเนื้อเรื่อง"
+          }
         }
       ]
     }

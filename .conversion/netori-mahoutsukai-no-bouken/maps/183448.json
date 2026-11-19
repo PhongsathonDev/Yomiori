@@ -38,7 +38,16 @@
           "start": 0,
           "end": 114,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p6-1 ระบุว่าคาตันเพิ่งกลับมาจากการสำรวจดันเจี้ยนและหัวเราะอย่างอารมณ์ดีต่อจากคำพูดนี้"
+          }
         }
       ]
     },
@@ -49,7 +58,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p7-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบคำชมของคาตัน และ p7-1 บรรยายว่าเธอไม่รู้สึกแย่กับคำชมเรื่องเวทมนตร์"
+          }
         }
       ]
     },
@@ -90,7 +108,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "คาตันเป็นผู้ถามต่อว่าไอริสจะมาอยู่กับปาร์ตี้แล้วใช่ไหม และไอริสตอบใน p10-1"
+          }
         }
       ]
     },
@@ -101,7 +128,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบรับคำถามของคาตัน ก่อน p11-1 บรรยายว่าเธอพยักหน้ารับ"
+          }
         }
       ]
     },
@@ -122,7 +158,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "คาตันเป็นหัวหน้าปาร์ตี้ที่ออกโรงแสดงความยินดีเรื่องปาร์ตี้จะไปได้ไกลกว่าเดิม และ p13-1 เป็นเสียงสมทบของกิลลี่"
+          }
         }
       ]
     },
@@ -133,7 +178,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gilly",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เป็นเสียงตอบรับแบบครึกครื้นต่อจากคาตัน ส่วนไอริสกล่าวฝากตัวใน p14-1 จึงเหลือกิลลี่เป็นผู้พูด"
+          }
         }
       ]
     },
@@ -144,7 +198,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ไอริสเป็นผู้กล่าวฝากเนื้อฝากตัว และ p15-1 บรรยายว่าเธอยิ้มเมื่อเห็นทั้งสามดีใจ"
+          }
         }
       ]
     },
@@ -165,7 +228,15 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17-1 ระบุว่าทุกคนเดินตามหลังคาตันไป จึงเป็นคาตันที่ชวนไปหาข้าวกินและสั่งเตรียมของไว้"
+          }
         }
       ]
     },
@@ -226,7 +297,16 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-jitose",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p19-1 ระบุว่าจิโตเสะเป็นผู้ชวนไอริสดื่ม และ p21-1 บรรยายว่าจิโตเสะโอบแขนรอบตัวไอริสในจังหวะนี้"
+          }
         }
       ]
     },
@@ -237,7 +317,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ไอริสเป็นผู้ครางและขอให้ปล่อย ก่อน p24-1 บรรยายว่ามีมือมาปิดปากเธอ"
+          }
         }
       ]
     },
@@ -308,7 +397,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ไอริสเป็นผู้เรียกชื่อจิโตเสะและถามว่าเหตุใดจึงทำแบบนี้ ก่อนจิโตเสะตอบใน p31-1"
+          }
         }
       ]
     },
@@ -319,7 +417,16 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-jitose",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "จิโตเสะเป็นผู้ตอบคำถามของไอริส และ p32-1 ระบุว่าเธอพูดต่อไปพร้อมรอยยิ้ม"
+          }
         }
       ]
     },
@@ -340,7 +447,16 @@
           "start": 0,
           "end": 228,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-jitose",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p32-1 ระบุว่าจิโตเสะพูดต่อไป และ p34-1 เป็นความคิดของไอริสเกี่ยวกับคำพูดของเธอ"
+          }
         }
       ]
     },
@@ -371,7 +487,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p38-1 ระบุว่าคาตันและกิลลี่ก้าวเข้ามาในห้อง แล้วคาตันเป็นผู้แซวเรื่องเสื้อผ้าที่ยังไม่ได้ถอด"
+          }
         }
       ]
     },
@@ -382,7 +507,16 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gilly",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p40-1"
+            ],
+            "reason": "กิลลี่เป็นคนหยาบคายที่เข้ามาพร้อมคาตันตาม p38-1 และเป็นผู้พูดจาเร่งเร้าแบบนี้ต่อจากคำแซวของคาตัน"
+          }
         }
       ]
     },
@@ -403,7 +537,16 @@
           "start": 0,
           "end": 90,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "คาตันเป็นหัวหน้าปาร์ตี้ที่ปลอบอย่างเย็นชาเรื่องจะทำให้เหมือนจิโตเสะ ส่วนกิลลี่พูดเร่งใน p40-1"
+          }
         }
       ]
     },
@@ -414,7 +557,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gilly",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "กิลลี่เป็นผู้พูดเร่งเร้าต่อจากคาตัน ก่อน p41-1 บรรยายว่าทั้งสองคืบคลานเข้ามาใกล้เตียง"
+          }
         }
       ]
     },
@@ -445,7 +597,17 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-katan",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1",
+              "p46-1"
+            ],
+            "reason": "p42-1 ระบุว่าลูกบอลเวทมนตร์พุ่งเข้าชนคาตันและพวก แล้ว p46-1 ว่าทั้งสามถูกกระแทกกระเด็น; เรียงเสียงร้องตามลำดับคาตัน กิลลี่ จิโตเสะที่ใช้ในฉากนี้"
+          }
         }
       ]
     },
@@ -456,7 +618,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gilly",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "เป็นเสียงร้องคนที่สองจากทั้งสามคนที่ถูกกระแทกตาม p42-1 และ p46-1 จึงไล่ลำดับต่อจากคาตันเป็นกิลลี่"
+          }
         }
       ]
     },
@@ -467,7 +638,17 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-jitose",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "เป็นเสียงร้องคนที่สามของทั้งสามคน และ p47-1 ระบุว่าจิโตเสะถูกเถาวัลย์ปิดปากในจังหวะถัดมา"
+          }
         }
       ]
     },
@@ -518,7 +699,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p49-1 ระบุว่าชินจิปรากฏตัวขึ้นต่อหน้าไอริส และ p51-1 ระบุว่าเขาร่ายเวทมนตร์แห่งการหลับใหลใส่ทั้งสามคน"
+          }
         }
       ]
     },
@@ -539,7 +729,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "ไอริสเป็นผู้เรียกชินจิด้วยความตกตะลึง ก่อนชินจิอธิบายใน p53-1"
+          }
         }
       ]
     },
@@ -550,7 +749,16 @@
           "start": 0,
           "end": 210,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของไอริสและเล่าเรื่องการเตรียมป้องกันไว้ล่วงหน้า"
+          }
         }
       ]
     },
@@ -591,7 +799,17 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งเฟรรี่ให้จัดการที่เหลือ และ p59-1 ระบุว่าเฟรรี่หัวเราะพลางบิดเถาวัลย์"
+          }
         }
       ]
     },
@@ -601,7 +819,17 @@
         {
           "start": 0,
           "end": 32,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "เครื่องหมาย 『』 ใช้กับคำพูดของเฟรรี่ที่สื่อสารกับชินจิ เป็นการตอบรับคำสั่งใน p57-1 และ p59-1 ยืนยันว่าเธอหัวเราะตอบ ตามแบบ 181856"
+          }
         }
       ]
     },
@@ -646,8 +874,15 @@
         {
           "start": 112,
           "end": 124,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "เป็นข้อความบนกระดาษที่ติดหน้าผากคาตันและกิลลี่ ไม่ได้มีใครพูดออกมา"
+          }
         },
         {
           "start": 124,
@@ -657,8 +892,15 @@
         {
           "start": 129,
           "end": 138,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "เป็นข้อความบนกระดาษอีกแผ่นที่ติดหน้าผากของทั้งสอง ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 138,
@@ -678,8 +920,14 @@
         {
           "start": 36,
           "end": 51,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "เป็นข้อความบนกระดาษที่ติดอยู่ที่หลังจิโตเสะ ไม่ได้พูดออกมา"
+          }
         },
         {
           "start": 51,

@@ -8,7 +8,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชมภาพแล้วสั่งให้ทั้งสองคนถอดเสื้อผ้าใน p2"
+          }
         }
       ]
     },
@@ -39,7 +47,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p5 ระบุว่าทางขวาของชินจิคือเรนกะ จึงเป็นคำพูดของเรนกะ"
+          }
         }
       ]
     },
@@ -70,7 +86,15 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p8 ระบุว่าตรงกลางคือเอมิลี่ จึงเป็นคำถามของเอมิลี่"
+          }
         }
       ]
     },
@@ -101,7 +125,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p11 ระบุว่าทางซ้ายของชินจิคือมีริส และคำพูดลงท้ายด้วยคะ"
+          }
         }
       ]
     },
@@ -142,7 +174,15 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p16-1"
+            ],
+            "reason": "ชินจิเป็นผู้เลือกเองว่าจะเริ่มจากใคร ก่อน p16 บรรยายว่าเขายืนหลังเอมิลี่"
+          }
         }
       ]
     },
@@ -153,7 +193,15 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนแสดงเสียงของผู้หญิงทั้งสามพร้อมกัน จึงใช้เสียงหมู่ของปาร์ตี้"
+          }
         }
       ]
     },
@@ -178,8 +226,14 @@
         {
           "start": 69,
           "end": 76,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "จุ๊บๆ เป็นเสียงจากการใช้นิ้วในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 76,
@@ -195,7 +249,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p20-1"
+            ],
+            "reason": "p20 ระบุว่าเอมิลี่บิดตัวไปมาพลางอ้อนวอนให้ชินจิสอดใส่"
+          }
         }
       ]
     },
@@ -206,7 +268,15 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p20 ระบุว่ามีริสจมดิ่งอยู่กับความสุขจากการใช้นิ้ว"
+          }
         }
       ]
     },
@@ -227,7 +297,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ชินจิเป็นผู้ประกาศว่าจะเริ่มจากเอมิลี่ก่อน p22 ที่เอมิลี่ตอบ"
+          }
         }
       ]
     },
@@ -238,7 +316,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p24-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ถูกสอดใส่ตาม p24"
+          }
         }
       ]
     },
@@ -249,7 +335,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p25-1"
+            ],
+            "reason": "เรนกะเป็นผู้ถูกสัมผัสรูทวารตาม p25 จึงเป็นเสียงทักเรื่องก้น"
+          }
         }
       ]
     },
@@ -259,8 +353,14 @@
         {
           "start": 0,
           "end": 7,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ฉึก!♡ เป็นเสียงสอดใส่ในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 7,
@@ -286,7 +386,14 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ถูกกระแทกและบอกว่าสะโพกขยับเอง"
+          }
         }
       ]
     },
@@ -297,7 +404,15 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p25-1"
+            ],
+            "reason": "เรนกะเป็นผู้ถูกนิ้วสอดทางก้นตาม p25 และบอกว่ารู้สึกซาบซ่า"
+          }
         }
       ]
     },
@@ -308,7 +423,14 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "มีริสเป็นผู้ถูกนิ้วทำจนใกล้เสร็จและเรียกชินจิว่านายท่าน"
+          }
         }
       ]
     },
@@ -349,7 +471,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ถูกหลั่งในและถึงจุดสุดยอดตาม p33"
+          }
         }
       ]
     },
@@ -390,7 +520,16 @@
           "start": 0,
           "end": 122,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "เอมิลี่เพิ่งถึงจุดสุดยอดและไวต่อความรู้สึกจากรอยสลักตาม p33 ก่อนทรุดลงบนเตียงใน p35"
+          }
         }
       ]
     },
@@ -401,7 +540,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p37-1",
+              "p40-1"
+            ],
+            "reason": "เรนกะเปรียบเทียบว่าตรงนี้ดีกว่าตรงก้น สอดคล้องกับ p25 และ p40 ที่ชินจิย้ายนิ้วจากรูทวารมาช่องคลอด"
+          }
         }
       ]
     },
@@ -442,7 +590,15 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p43-1"
+            ],
+            "reason": "p43 ระบุว่าเอมิลี่ชะโงกหน้ามองมีริสแล้วถามแกล้ง"
+          }
         }
       ]
     },
@@ -453,7 +609,15 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบคำถามของเอมิลี่และเรียกชินจิว่านายท่าน"
+          }
         }
       ]
     },
@@ -468,8 +632,14 @@
         {
           "start": 147,
           "end": 157,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "คิวย์นๆ เป็นเสียงช่องคลอดที่บีบรัดในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -480,7 +650,14 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ถามแกล้งมีริสต่อ"
+          }
         }
       ]
     },
@@ -491,7 +668,14 @@
           "start": 0,
           "end": 115,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบและขอโทษอัลวิน"
+          }
         }
       ]
     },
@@ -542,7 +726,15 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "มีริสเป็นผู้ถูกหลั่งในช่องคลอดและพูดถึงความรู้สึก"
+          }
         }
       ]
     },
@@ -553,7 +745,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p53-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้แซวสีหน้าของมีริสหลังถึงจุดสุดยอด ก่อน p53 ที่มีริสเผยใบหน้าให้เอมิลี่เห็น"
+          }
         }
       ]
     },
@@ -564,7 +764,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "เรนกะเป็นผู้กังวลเรื่องการสะสางความสัมพันธ์ให้พ้นสายตาอัลวิน สอดคล้องกับบทบาทผู้คอยเตือนที่ p53 ระบุว่าเธอมองมีริส"
+          }
         }
       ]
     },
@@ -579,8 +787,14 @@
         {
           "start": 162,
           "end": 187,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "คำในเครื่องหมายคำพูดตามด้วยราวกับจะบอกว่า เป็นความรู้สึกที่แสดงออกทางท่าทาง ไม่ได้พูดออกมา"
+          }
         },
         {
           "start": 187,
@@ -606,7 +820,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชินจิเป็นผู้หันมาหาเรนกะหลังมีริสทรุดลงบนเตียง"
+          }
         }
       ]
     },
@@ -617,7 +839,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบรับการสอดใส่จากด้านหลัง"
+          }
         }
       ]
     },
@@ -658,7 +888,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p63-1"
+            ],
+            "reason": "p63 ระบุว่าเอมิลี่พูดด้วยความอิจฉาเมื่อเห็นท่าทีของเรนกะ จึงเป็นประโยคชมเซ็กส์แบบคนรักของเอมิลี่"
+          }
         }
       ]
     },
@@ -669,7 +908,15 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบว่าเป็นคนรักกันต่อจากคำพูดของเอมิลี่"
+          }
         }
       ]
     },
@@ -710,7 +957,15 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "เรนกะเป็นผู้ถูกกระแทกและครางตาม p64"
+          }
         }
       ]
     },
@@ -721,7 +976,15 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะทำรุนแรงเพราะเอมิลี่รออยู่"
+          }
         }
       ]
     },
@@ -732,7 +995,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบรับด้วยคำว่าช่วยไม่ได้"
+          }
         }
       ]
     },
@@ -753,7 +1024,14 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1"
+            ],
+            "reason": "เรนกะเป็นผู้ขอให้ชินจิมาจูบ"
+          }
         }
       ]
     },
@@ -764,7 +1042,15 @@
           "start": 0,
           "end": 80,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p72-1"
+            ],
+            "reason": "เรนกะเป็นผู้ถูกกระตุ้นพร้อมกันและถึงจุดสุดยอดตาม p72"
+          }
         }
       ]
     },
@@ -815,7 +1101,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p74-1",
+              "p77-1"
+            ],
+            "reason": "p74 ระบุว่าอากาเนะถูกเฟรรี่ดันหลังเข้ามา และ p77 บรรยายหน้าแดงของเธอ"
+          }
         }
       ]
     },
@@ -825,7 +1120,15 @@
         {
           "start": 0,
           "end": 47,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "เป็นความคิดของอากาเนะที่อธิบายว่าเธอแอบดูและช่วยตัวเองอยู่ ไม่ได้พูดออกมา"
+          }
         }
       ]
     },

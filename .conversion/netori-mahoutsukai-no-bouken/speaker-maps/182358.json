@@ -1,0 +1,61 @@
+{
+  "p3-1": "netori-shinji",
+  "p4-1": "netori-flare",
+  "p10-1": "netori-shinji",
+  "p11-1": "netori-flare",
+  "p13-1": "netori-flare",
+  "p16-1": "netori-flare",
+  "p17-1#2": {
+    "type": "narration",
+    "context": ["p17-1"],
+    "reason": "เสียงอุทาน 'ฮึบ' ของแฟลร์เมื่อถูกโอบไหล่ ไม่ใช่คำพูด"
+  },
+  "p18-1": "netori-shinji",
+  "p19-1": "netori-flare",
+  "p20-1#2": {
+    "speakerId": "netori-shinji",
+    "context": ["p20-1", "p21-1"],
+    "reason": "ชินจิพึมพำขณะบีบนวดหน้าอก แล้ว p21-1 เป็นเสียงของแฟลร์"
+  },
+  "p21-1": "netori-flare",
+  "p22-1": "netori-shinji",
+  "p23-1": "netori-flare",
+  "p25-1#2": {
+    "type": "narration",
+    "context": ["p25-1"],
+    "reason": "เสียงหัวเข่าของแฟลร์สั่น 'กุกกัก' ไม่ใช่คำพูด"
+  },
+  "p26-1": "netori-shinji",
+  "p27-1": "netori-flare",
+  "p28-1": "netori-shinji",
+  "p29-1": "netori-flare",
+  "p31-1#2": {
+    "type": "narration",
+    "context": ["p31-1"],
+    "reason": "เสียงจูบ 'จุ๊บๆ' ไม่ใช่คำพูด"
+  },
+  "p40-1": "netori-flare",
+  "p41-1": "netori-shinji",
+  "p42-1": "netori-flare",
+  "p48-1": "netori-flare",
+  "p50-1": "netori-flare",
+  "p52-1#2": {
+    "type": "narration",
+    "context": ["p52-1"],
+    "reason": "เสียงช่องคลอดบีบรัด 'คิว~' ไม่ใช่คำพูด"
+  },
+  "p56-1#2": {
+    "type": "narration",
+    "context": ["p56-1"],
+    "reason": "เสียงปากมดลูกดูด 'จุ๊บๆ♡' ไม่ใช่คำพูด"
+  },
+  "p58-1": "netori-flare",
+  "p59-1": "netori-shinji",
+  "p61-1#2": {
+    "type": "narration",
+    "context": ["p61-1"],
+    "reason": "เสียงอสุจิ 'ตุ้บๆ' ไม่ใช่คำพูด"
+  },
+  "p64-1": "netori-flare",
+  "p66-1": "netori-flare"
+}

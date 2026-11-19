@@ -38,7 +38,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p3 ระบุว่าชินจิเป็นผู้พูดความต้องการของเขาออกมาก่อนบทพูดนี้"
+          }
         }
       ]
     },
@@ -49,7 +57,15 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เป็นเสียงตอบรับของชาร์ลอตต้า และ p6 บรรยายว่าเธอคุกเข่าทำตามคำสั่งของชินจิ"
+          }
         }
       ]
     },
@@ -70,7 +86,15 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ชินจิร้องห้ามเมื่อชาร์ลอตต้าเลียแรงเกินไปตามที่ p6 บรรยาย"
+          }
         }
       ]
     },
@@ -81,7 +105,15 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "เสียงตอบรับของชาร์ลอตต้าต่อคำห้ามของชินจิ"
+          }
         }
       ]
     },
@@ -112,7 +144,15 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชาร์ลอตต้าขอโทษหลังถอนออกจากปากตาม p10"
+          }
         }
       ]
     },
@@ -123,7 +163,16 @@
           "start": 0,
           "end": 95,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ชินจิออกคำสั่งต่อจากคำขอโทษของชาร์ลอตต้า และ p13 เธอตอบรับคำสั่ง"
+          }
         }
       ]
     },
@@ -134,7 +183,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ชาร์ลอตต้าตอบรับคำสั่งของชินจิ"
+          }
         }
       ]
     },
@@ -149,8 +206,14 @@
         {
           "start": 49,
           "end": 56,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "เสียงกระทบระหว่างบรรยายการขยับสะโพก ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
         },
         {
           "start": 56,
@@ -160,8 +223,14 @@
         {
           "start": 110,
           "end": 121,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "เสียงของเหลวไหลในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 121,
@@ -187,7 +256,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "เสียงครางของชาร์ลอตต้าเมื่อชินจิสอดใส่ตาม p15"
+          }
         }
       ]
     },
@@ -198,7 +275,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ผู้พูดเรียกชาร์ลอตต้าว่าชาร์ลอตต้าจังและแซวเรื่องเสียงดัง"
+          }
         }
       ]
     },
@@ -213,8 +298,14 @@
         {
           "start": 114,
           "end": 124,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "เสียงกระทบตุ้บในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 124,
@@ -230,7 +321,15 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิพูดถึงชาร์ลอตต้าในฐานะผู้กระทำ และ p20 บรรยายถึงเอวของเขา"
+          }
         }
       ]
     },
@@ -245,8 +344,14 @@
         {
           "start": 110,
           "end": 118,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "เสียงดูดจุ๊บๆ ของร่างกายในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 118,
@@ -256,8 +361,14 @@
         {
           "start": 134,
           "end": 153,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดเป็นการเปรียบเทียบว่าปากมดลูกเหมือนบอกให้รีบหลั่ง ไม่มีตัวละครใดพูดออกมา"
+          }
         }
       ]
     },
@@ -278,7 +389,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ชาร์ลอตต้าส่งเสียงอู้อี้ และ p23 บรรยายว่าเธอกัดชายเสื้อเพื่อกลั้นเสียง"
+          }
         }
       ]
     },
@@ -363,8 +483,14 @@
         {
           "start": 31,
           "end": 42,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "เสียงปังจากการขยับสะโพกในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 42,
@@ -390,7 +516,15 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ชาร์ลอตต้าส่งเสียงว่าใกล้ถึงจุดสุดยอด และ p33 บรรยายว่าเธอหยุดจูบแล้วขยับสะโพก"
+          }
         }
       ]
     },
@@ -415,8 +549,14 @@
         {
           "start": 65,
           "end": 75,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "เสียงรัดของช่องคลอดในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 75,
@@ -426,8 +566,14 @@
         {
           "start": 114,
           "end": 124,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "เสียงครืดจากการสอดใส่ในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 124,
@@ -443,7 +589,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ชาร์ลอตต้าถูกหลั่งในและถึงจุดสุดยอดตาม p36"
+          }
         }
       ]
     },
@@ -468,8 +623,14 @@
         {
           "start": 63,
           "end": 76,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "เสียงกึ้บจากการกดสะโพกในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 76,
@@ -485,7 +646,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิชวนไปต่อที่เตียง และ p39 ชาร์ลอตต้าตอบรับ"
+          }
         }
       ]
     },
@@ -496,7 +665,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชาร์ลอตต้าตอบรับคำชวนของชินจิ"
+          }
         }
       ]
     },
@@ -527,7 +704,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p41 ระบุว่าชินจิเปิดปากถามระหว่างกระแทก และ p43 ชาร์ลอตต้าตอบ"
+          }
         }
       ]
     },
@@ -538,7 +724,15 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชาร์ลอตต้าตอบคำถามของชินจิ"
+          }
         }
       ]
     },
@@ -559,7 +753,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิยิ้มและถามต่อจากคำตอบของชาร์ลอตต้าตาม p44"
+          }
         }
       ]
     },
@@ -570,7 +772,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชาร์ลอตต้าตอบเรื่องมอร์สขอแต่งงาน"
+          }
         }
       ]
     },
@@ -581,7 +791,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ชินจิถามต่อเรื่องการนอกใจ"
+          }
         }
       ]
     },
@@ -602,7 +820,15 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p48 ระบุว่าชินจิถามชาร์ลอตต้า แล้วเธอเป็นผู้ตอบ"
+          }
         }
       ]
     },
@@ -613,7 +839,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิถามต่อเรื่องการแต่งงาน"
+          }
         }
       ]
     },
@@ -624,7 +858,15 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "ชาร์ลอตต้าตอบคำถามของชินจิ"
+          }
         }
       ]
     },
@@ -639,8 +881,14 @@
         {
           "start": 107,
           "end": 123,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "เสียงกึกจากการกระแทกในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 123,
@@ -666,7 +914,15 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ชินจิเสนอให้ชาร์ลอตต้าแต่งงานกับมอร์ส"
+          }
         }
       ]
     },
@@ -677,7 +933,15 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชาร์ลอตต้าตอบโต้คำพูดยั่วของชินจิ"
+          }
         }
       ]
     },
@@ -698,7 +962,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิเสนอการแข่งระหว่างมอร์สกับตัวเอง"
+          }
         }
       ]
     },
@@ -709,7 +981,15 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ชาร์ลอตต้าทวนคำอย่างสงสัย"
+          }
         }
       ]
     },
@@ -720,7 +1000,15 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ชินจิอธิบายกติกาการแข่งต่อ"
+          }
         }
       ]
     },
@@ -731,7 +1019,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ชาร์ลอตต้าตอบตะกุกตะกัก และ p61 เป็นความคิดของเธอ"
+          }
         }
       ]
     },
@@ -776,8 +1073,14 @@
         {
           "start": 16,
           "end": 33,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1"
+            ],
+            "reason": "เสียงรัดของช่องคลอดในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 33,
@@ -793,7 +1096,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "ชินจิแซวเรื่องร่างกายที่ซื่อสัตย์"
+          }
         }
       ]
     },
@@ -808,8 +1119,14 @@
         {
           "start": 127,
           "end": 137,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1"
+            ],
+            "reason": "เสียงกึ้บจากการกอดในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 137,
@@ -825,7 +1142,15 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชาร์ลอตต้าพูดถึงการเริ่มมีเซ็กส์เพื่อสร้างลูก"
+          }
         }
       ]
     },
@@ -836,7 +1161,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "ชินจิตอบว่าจะรอเวลานั้น"
+          }
         }
       ]
     },
@@ -871,8 +1204,14 @@
         {
           "start": 172,
           "end": 189,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1"
+            ],
+            "reason": "เสียงซูมจากการกระแทกในคำบรรยาย ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 189,
@@ -888,7 +1227,15 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "ชาร์ลอตต้าส่งเสียงใกล้ถึงจุดสุดยอด และ p73 บรรยายว่าเธอถึงจุดสุดยอด"
+          }
         }
       ]
     },
@@ -909,7 +1256,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "เสียงครางสุดท้ายของชาร์ลอตต้า และ p75 บรรยายการหลั่งของชินจิ"
+          }
         }
       ]
     },

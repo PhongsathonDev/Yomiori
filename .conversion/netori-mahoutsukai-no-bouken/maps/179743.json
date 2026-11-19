@@ -494,7 +494,16 @@
         {
           "start": 0,
           "end": 56,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "p32 บรรยายว่าชินจิโน้มหน้าเข้าใกล้หูเรนกะแล้วกระซิบ ดังนั้นข้อความในอัญประกาศต่อเนื่องนี้คือคำกระซิบของชินจิ"
+          }
         }
       ]
     },
@@ -504,7 +513,16 @@
         {
           "start": 0,
           "end": 65,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "ข้อความกระซิบของชินจิต่อเนื่องจาก p33-1 ตามที่ p32 บรรยายว่าเขากระซิบข้างหูเรนกะ"
+          }
         }
       ]
     },
@@ -514,7 +532,16 @@
         {
           "start": 0,
           "end": 52,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ข้อความกระซิบของชินจิต่อเนื่องจาก p34-1 ตามที่ p32 บรรยายว่าเขากระซิบข้างหูเรนกะ"
+          }
         }
       ]
     },
@@ -524,7 +551,17 @@
         {
           "start": 0,
           "end": 74,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ข้อความกระซิบสุดท้ายของชินจิต่อเนื่องจาก p35-1 และ p37 เป็นคำพูดของชินจิที่สรุปปัญหาของเรนกะ"
+          }
         }
       ]
     },

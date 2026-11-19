@@ -88,7 +88,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "แฟลร์ปรากฏตัวในห้องของชินจิใน p8-1 และชินจิเป็นผู้ถามว่าเธอมาทำอะไร"
+          }
         }
       ]
     },
@@ -99,7 +108,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "เป็นคำตอบของแฟลร์ที่แจ้งว่าท่านอาริอานเรียกพบ"
+          }
         }
       ]
     },
@@ -110,7 +128,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ชินจิพูดว่าช่วงนี้เงียบไป และ p13-1 ระบุว่าเขาผู้ไม่มีโอกาสได้คุยกับเทพธิดาอาริอาน"
+          }
         }
       ]
     },
@@ -151,7 +178,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "แฟลร์อธิบายหน้าที่อัครทูตและถามว่าพร้อมหรือยัง ก่อน p16-1 ที่ชินจิตอบ"
+          }
         }
       ]
     },
@@ -162,7 +198,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิตอบว่าพร้อมเสมอ และ p17-1 บรรยายว่าเขาสวมชุดคลุมและถือไม้เท้า"
+          }
         }
       ]
     },
@@ -223,7 +268,17 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1",
+              "p24-1"
+            ],
+            "reason": "p24-1 ระบุว่าคนที่ปรากฏตัวคือมิโกะอาริอานซึ่งจริงๆ เป็นเทพธิดาอาริอานที่ยืมร่างมา"
+          }
         }
       ]
     },
@@ -234,7 +289,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p25-1"
+            ],
+            "reason": "ชินจิทักทายเทพธิดาและ p25-1 บรรยายว่าเขาโค้งคำนับด้วยความเคารพ"
+          }
         }
       ]
     },
@@ -275,7 +339,16 @@
           "start": 0,
           "end": 141,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "เทพธิดาอาริอานชมผลงานและมอบหมายภารกิจ ก่อน p28-1 ที่ชินจิถามกลับ"
+          }
         }
       ]
     },
@@ -286,7 +359,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ชินจิถามกลับเรื่อง 'ใกล้ที่สุด' และ p29-1 บรรยายความสงสัยของเขา"
+          }
         }
       ]
     },
@@ -307,7 +389,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "เทพธิดาเชื้อเชิญให้นั่งลงก่อนอธิบาย และ p31-1 เป็นชินจิที่ตอบรับ"
+          }
         }
       ]
     },
@@ -318,7 +409,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "ชินจิตอบรับคำเชิญของเทพธิดา"
+          }
         }
       ]
     },
@@ -329,7 +429,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "แฟลร์ประกาศนำชามาเสิร์ฟ และ p34-1 ระบุว่าแฟลร์เป็นผู้เสิร์ฟชาให้ทั้งสองคน"
+          }
         }
       ]
     },
@@ -370,7 +479,16 @@
           "start": 0,
           "end": 231,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "เทพธิดาอธิบายภารกิจเรื่องกลุ่มนอกรีต และ p37-1 เป็นชินจิที่รับคำ"
+          }
         }
       ]
     },
@@ -381,7 +499,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชินจิรับคำสั่งและ p38-1 เป็นเหตุผลประกอบของเขา"
+          }
         }
       ]
     },
@@ -412,7 +539,16 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ชินจิถามถึงอัครทูตคนเดิม และ p41-1 บรรยายการคาดการณ์ของเขา"
+          }
         }
       ]
     },
@@ -433,7 +569,16 @@
           "start": 0,
           "end": 272,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "เทพธิดาอธิบายเรื่องอัครทูตและ p43-1 ระบุว่าเธอกล่าวต่อ"
+          }
         }
       ]
     },
@@ -454,7 +599,16 @@
           "start": 0,
           "end": 294,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "เทพธิดาอธิบายกรณีอัครทูตที่เลิกเป็นนักผจญภัยต่อจาก p43-1"
+          }
         }
       ]
     },
@@ -485,7 +639,16 @@
           "start": 0,
           "end": 228,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "เทพธิดาพูดเรื่องการลงโทษอัครทูตที่ไม่ทำตามหน้าที่ และ p48-1 ระบุว่าเธอบ่นด้วยความเศร้า"
+          }
         }
       ]
     },
@@ -506,7 +669,16 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เทพธิดาสั่งให้ชินจิเป็นผู้ควบคุมดูแลฮายาเตะและชิซุกุ และ p50-1 เป็นชินจิที่รับคำ"
+          }
         }
       ]
     },
@@ -517,7 +689,16 @@
           "start": 0,
           "end": 197,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "ชินจิรับคำสั่งและอธิบายความยากลำบาก และ p51-1 ขยายเหตุผลของเขา"
+          }
         }
       ]
     },
@@ -538,7 +719,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "เทพธิดาบอกว่าได้พิจารณาเรื่องนั้นแล้ว และ p53-1 ระบุว่าเธอวางกระดิ่งลงบนโต๊ะ"
+          }
         }
       ]
     },
@@ -559,7 +749,16 @@
           "start": 0,
           "end": 256,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "เทพธิดาอธิบายวิธีใช้กระดิ่งทองและเงิน และ p55-1 เป็นชินจิที่ขอทดลอง"
+          }
         }
       ]
     },
@@ -570,7 +769,16 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ชินจิขออนุญาตเรียกทั้งสองคน และ p56-1 บรรยายว่าไอเท็มวิเศษปรากฏขึ้น"
+          }
         }
       ]
     },
@@ -605,8 +813,14 @@
         {
           "start": 77,
           "end": 90,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "'กริ๊งกริ๊ง♪' เป็นเสียงกระดิ่ง ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -687,7 +901,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "เทพธิดาอธิบายคุณสมบัติของวงแหวนเวทมนตร์ และ p67-1 เป็นชินจิที่เข้าใจ"
+          }
         }
       ]
     },
@@ -698,7 +921,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "ชินจิอุทานว่าเข้าใจ และ p68-1 บรรยายว่าเขาสังเกตมุมปากของทั้งสองคน"
+          }
         }
       ]
     },

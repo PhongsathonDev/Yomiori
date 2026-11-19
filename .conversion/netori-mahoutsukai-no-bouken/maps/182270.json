@@ -18,7 +18,17 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1",
+              "p27-1"
+            ],
+            "reason": "p3-1 ระบุว่าบรรยากาศอ่อนโยนของมิโกะเปลี่ยนไปทันทีหลังจากประโยคนี้ จึงเป็นเสียงของอาริอานก่อนเทพธิดาเข้าสิงร่างในฉากถัดมา (p27-1)"
+          }
         }
       ]
     },
@@ -59,7 +69,14 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "ตรวจบริบท p6-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -70,7 +87,14 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ตรวจบริบท p7-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -91,7 +115,14 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "ตรวจบริบท p9-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -112,7 +143,14 @@
           "start": 0,
           "end": 153,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "ตรวจบริบท p11-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -123,7 +161,14 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -134,7 +179,14 @@
           "start": 0,
           "end": 238,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1"
+            ],
+            "reason": "ตรวจบริบท p13-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -159,8 +211,15 @@
         {
           "start": 51,
           "end": 78,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดคือแววตาไม่พอใจที่บรรยายว่า 'ราวกับจะบอกว่า' ไม่ได้พูดออกมา"
+          }
         }
       ]
     },
@@ -181,7 +240,14 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -192,7 +258,14 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "ตรวจบริบท p18-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -213,7 +286,14 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -224,7 +304,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -235,7 +322,14 @@
           "start": 0,
           "end": 142,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "ตรวจบริบท p22-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -246,7 +340,14 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -257,7 +358,14 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ตรวจบริบท p24-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -272,8 +380,14 @@
         {
           "start": 22,
           "end": 28,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "เสียงแฟลร์ทรุดตัวลงกับพื้น 'แผละ' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 28,
@@ -289,7 +403,14 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "ตรวจบริบท p26-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -300,7 +421,14 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -321,7 +449,14 @@
           "start": 0,
           "end": 94,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -342,7 +477,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "ตรวจบริบท p31-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -353,7 +495,14 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "ตรวจบริบท p32-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -374,7 +523,14 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -385,7 +541,14 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -396,7 +559,14 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -427,7 +597,14 @@
           "start": 0,
           "end": 112,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ตรวจบริบท p39-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -438,7 +615,14 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -459,7 +643,14 @@
           "start": 0,
           "end": 213,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -480,7 +671,14 @@
           "start": 0,
           "end": 183,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "ตรวจบริบท p44-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -491,7 +689,16 @@
           "start": 0,
           "end": 185,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ประโยคต่อเนื่องในเครื่องหมายคำพูดที่เปิดใน p44-1 และปิดที่ p45-1"
+          }
         }
       ]
     },
@@ -512,7 +719,14 @@
           "start": 0,
           "end": 246,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "ตรวจบริบท p47-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -523,7 +737,16 @@
           "start": 0,
           "end": 192,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ประโยคต่อเนื่องของการอธิบายของเทพธิดา ก่อนปิดเครื่องหมายคำพูดที่ p49-1"
+          }
         }
       ]
     },
@@ -534,7 +757,14 @@
           "start": 0,
           "end": 130,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -555,7 +785,14 @@
           "start": 0,
           "end": 179,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1"
+            ],
+            "reason": "ตรวจบริบท p51-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -571,7 +808,15 @@
           "start": 12,
           "end": 79,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p52-1 ระบุว่าเธอพึมพำคำนี้ เป็นคำพูดของเทพธิดา"
+          }
         },
         {
           "start": 79,
@@ -587,7 +832,14 @@
           "start": 0,
           "end": 276,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -612,8 +864,14 @@
         {
           "start": 108,
           "end": 114,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "เครื่องหมายคำพูดยกคำตอบ 'ครับ' ที่เขารู้สึกไม่อยากตอบในประโยคบรรยาย ไม่ใช่บทสนทนาที่เปล่งออกมา"
+          }
         },
         {
           "start": 114,
@@ -624,7 +882,15 @@
           "start": 156,
           "end": 162,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "คำตอบ 'ครับ' ที่ชินจิต้องตอบเทพธิดา"
+          }
         }
       ]
     },
@@ -635,7 +901,14 @@
           "start": 0,
           "end": 154,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "ตรวจบริบท p56-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -646,7 +919,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "ตรวจบริบท p57-1 แล้ว จัดประเภทเป็นคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -667,7 +947,14 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "ตรวจบริบท p59-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -677,8 +964,16 @@
         {
           "start": 0,
           "end": 5,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "จุดไข่ปลาแสดงความเงียบของแฟลร์ ไม่มีคำพูดที่เปล่งออกมา"
+          }
         }
       ]
     },
@@ -729,7 +1024,14 @@
           "start": 0,
           "end": 106,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "ตรวจบริบท p65-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -740,7 +1042,14 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1"
+            ],
+            "reason": "ตรวจบริบท p66-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -751,7 +1060,14 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "ตรวจบริบท p67-1 แล้ว จัดประเภทเป็นคำพูดของเทพธิดา"
+          }
         }
       ]
     },
@@ -782,7 +1098,15 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p70-1"
+            ],
+            "reason": "p68-1 ระบุว่าเทพธิดาจากไปและสติของมิโกะอาริอานกลับมา ประโยคนี้จึงเป็นของอาริอาน"
+          }
         }
       ]
     },
@@ -798,7 +1122,14 @@
           "start": 50,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1"
+            ],
+            "reason": "ตรวจบริบท p71-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -808,7 +1139,14 @@
         {
           "start": 0,
           "end": 86,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "หมายเหตุผู้แปล (TL) ไม่ใช่บทสนทนาในฉาก"
+          }
         }
       ]
     }

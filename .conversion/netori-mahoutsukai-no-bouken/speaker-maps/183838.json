@@ -1,0 +1,57 @@
+{
+  "p4-1": "netori-iris",
+  "p6-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p4-1", "p5-1", "p6-1"],
+    "reason": "p5-1 ระบุว่าชินจิยิ้มให้ไอริสที่โค้งคำนับ และคำนี้เรียกคู่สนทนาว่าไอริสจัง"
+  },
+  "p9-1": "netori-iris",
+  "p12-1": "netori-iris",
+  "p13-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p12-1", "p13-1", "p14-1"],
+    "reason": "เป็นคำตอบรับคำขอตอบแทนของไอริส และ p14-1 ระบุว่าไอริสยังคงพูดคุยกับชินจิ"
+  },
+  "p16-1": "netori-iris",
+  "p17-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p16-1", "p17-1", "p18-1"],
+    "reason": "p18-1 ระบุว่าชินจิยิ้มตอบไอริสที่โบกมือให้เล็กน้อย"
+  },
+  "p26-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p25-1", "p26-1", "p27-1"],
+    "reason": "p25-1 ระบุว่าลีร่ามาถึงบ้านของชินจิ และ p26-1 เป็นคำต้อนรับที่ถามถึงสองคนที่เหลือ"
+  },
+  "p27-1": "netori-lira",
+  "p29-1": "netori-shinji",
+  "p30-1": "netori-lira",
+  "p32-1": "netori-shinji",
+  "p33-1": "netori-lira",
+  "p35-1": "netori-shinji",
+  "p36-1": "netori-lira",
+  "p38-1": "netori-shinji",
+  "p39-1": "netori-lira",
+  "p41-1": "netori-lira",
+  "p43-1": "netori-lira",
+  "p48-1": "netori-shinji",
+  "p49-1": "netori-lira",
+  "p52-1": "netori-shinji",
+  "p53-1": "netori-lira",
+  "p54-1#2": {
+    "type": "narration",
+    "context": ["p54-1"],
+    "reason": "ข้อความในเครื่องหมายคำพูดเป็นชื่อความสามารถที่เวทมนตร์เสริมประสิทธิภาพมอบให้ ไม่ใช่คำพูดที่ชินจิเปล่งออกมา"
+  },
+  "p57-1": "netori-lira",
+  "p59-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p58-1", "p59-1", "p60-1"],
+    "reason": "p58-1 ระบุว่าชินจิจูบที่หูของลีร่าพลางกระซิบ"
+  },
+  "p63-1": {
+    "speakerId": "netori-lira",
+    "context": ["p62-1", "p63-1", "p64-1"],
+    "reason": "p64-1 ระบุว่าลีร่าพึมพำออกมาเบาๆ"
+  }
+}

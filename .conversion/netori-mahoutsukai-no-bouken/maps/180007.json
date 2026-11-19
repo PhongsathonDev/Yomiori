@@ -88,7 +88,15 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p14-1"
+            ],
+            "reason": "บทบรรยาย p14 ระบุว่าชินจิและอากาเนะช่วยกันตักเตือนเรนกะ และ p11 เป็นอากาเนะพูดถึงอาการของตัวเอง คำเตือนอีกประโยคที่เรนกะตอบกลับใน p10 จึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -99,7 +107,15 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p11-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบว่าเธอรู้แต่ยังอยากช่วยเพราะเหลือเวลาอยู่ที่นี่ครึ่งเดือน"
+          }
         }
       ]
     },
@@ -110,7 +126,14 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ผู้พูดเอ่ยชื่อเรนกะและพูดถึงอาการของตัวเองว่าดีขึ้นมากแล้ว จึงเป็นอากาเนะ"
+          }
         }
       ]
     },
@@ -205,8 +228,14 @@
         {
           "start": 164,
           "end": 189,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "เป็นคำพูดสมมติที่ยกมาอ้างในบทบรรยาย ('แม้จะถูกบอกว่า') ไม่มีผู้ใดพูดในฉากนี้"
+          }
         },
         {
           "start": 189,
@@ -262,7 +291,14 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "บทบรรยาย p24 ระบุว่าคำพูดที่ไม่น่าเชื่อหลุดออกมาจากปากของเรนกะ"
+          }
         }
       ]
     },
@@ -273,7 +309,14 @@
           "start": 0,
           "end": 5,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "\"หา?\" เป็นเสียงอุทานของชินจิ เทียบกับ p41-p42 ที่ใช้คำเดียวกันและบทบรรยายระบุชัดว่าเป็นชินจิ"
+          }
         }
       ]
     },
@@ -284,7 +327,15 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p28-1"
+            ],
+            "reason": "บทบรรยาย p28 ระบุว่าอากาเนะทำหน้างงหลังได้ยินคำถามของเรนกะ"
+          }
         }
       ]
     },
@@ -305,7 +356,14 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "บทบรรยาย p31 ระบุว่าเป็นการสารภาพอย่างตรงไปตรงมาของเรนกะ"
+          }
         }
       ]
     },
@@ -316,7 +374,15 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p33-1"
+            ],
+            "reason": "บทบรรยาย p33 ระบุว่าอากาเนะเองก็ตกใจ จึงเป็นเสียงอุทานของเธอหลังฟังคำสารภาพ"
+          }
         }
       ]
     },
@@ -357,7 +423,14 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "บทบรรยาย p37 ระบุว่าหลังเรนกะพูดจบความเงียบก็เข้าปกคลุม"
+          }
         }
       ]
     },
@@ -368,7 +441,15 @@
           "start": 0,
           "end": 126,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p36-1"
+            ],
+            "reason": "เป็นประโยคต่อเนื่องของการอธิบายของเรนกะที่จบใน p36"
+          }
         }
       ]
     },
@@ -379,7 +460,15 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p37-1"
+            ],
+            "reason": "เป็นประโยคปิดคำอธิบายของเรนกะก่อนบทบรรยาย p37 ว่าเธอพูดจบ"
+          }
         }
       ]
     },
@@ -410,7 +499,18 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1",
+              "p42-1",
+              "p44-1"
+            ],
+            "reason": "อากาเนะเป็นผู้ตอบรับข้อเสนอของเรนกะ โดย p40 เรนกะดีใจที่เธอยอมรับ p42-p43 ชินจิอ้าปากค้างและไม่เข้าใจสิ่งที่เกิดขึ้น และ p44 อากาเนะถามชินจิว่าทำไมทำหน้าแปลก"
+          }
         }
       ]
     },
@@ -421,7 +521,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p41-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบรับอย่างดีใจ ส่วนชินจิอุทาน \"หา?\" ใน p41"
+          }
         }
       ]
     },
@@ -432,7 +540,14 @@
           "start": 0,
           "end": 5,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "บทบรรยาย p42 ระบุว่าคราวนี้เป็นชินจิที่อ้าปากค้าง"
+          }
         }
       ]
     },
@@ -463,7 +578,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p45-1"
+            ],
+            "reason": "ผู้พูดเรียกชินจิว่า \"คุณชินจิ\" และลงท้ายด้วยคะ จึงเป็นอากาเนะ แล้วเรนกะตอบใน p45"
+          }
         }
       ]
     },
@@ -474,7 +597,14 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบอากาเนะและเรียกชินจิว่าชินจิ"
+          }
         }
       ]
     },
@@ -485,7 +615,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "บทบรรยาย p47 ระบุว่าชินจิทำได้แค่สงสัยในสติของตัวเองหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -506,7 +643,14 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "เรนกะเป็นผู้พูดว่าเรื่องนี้น่าอายแต่ก็เพื่ออากาเนะ"
+          }
         }
       ]
     },
@@ -517,7 +661,14 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ผู้พูดลงท้ายด้วยคะและเป็นผู้เสริมต่อใน p50 ว่าเธอสนใจเรื่องเซ็กส์ที่เต็มไปด้วยความรัก"
+          }
         }
       ]
     },
@@ -533,7 +684,14 @@
           "start": 27,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "บทบรรยาย p50 ระบุว่าเธอเสริมด้วยเสียงกระซิบต่อจากประโยคก่อนหน้า จึงเป็นอากาเนะ"
+          }
         }
       ]
     },
@@ -554,7 +712,15 @@
           "start": 0,
           "end": 118,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p53-1"
+            ],
+            "reason": "บทบรรยาย p53 ระบุว่าชินจิเป็นผู้บอกอากาเนะให้เก็บเรื่องนี้เป็นความลับ"
+          }
         }
       ]
     },
@@ -575,7 +741,15 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p55-1"
+            ],
+            "reason": "บทบรรยาย p51 ระบุว่าอากาเนะเพิ่งเข้าใจว่าชินจิกับเรนกะเป็นคนรักกัน เธอจึงบอกว่าตกใจและควรบอกกันก่อน แล้วเรนกะขอโทษใน p55"
+          }
         }
       ]
     },
@@ -586,7 +760,15 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p56-1"
+            ],
+            "reason": "เรนกะเป็นผู้ขอโทษต่อคำตำหนิของอากาเนะ ก่อนอากาเนะตัดสินใจเปลี่ยนเสื้อผ้าใน p56"
+          }
         }
       ]
     },
@@ -617,7 +799,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p59-1"
+            ],
+            "reason": "บทบรรยาย p57 ระบุว่าระหว่างทางชินจิก็บ่นกับเรนกะ และ p59 ระบุว่าเรนกะเงียบกับการตำหนิของชินจิ"
+          }
         }
       ]
     },
@@ -648,7 +838,15 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p62-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดหลังวางมือบนศีรษะเรนกะใน p60 และเรนกะตอบใน p62"
+          }
         }
       ]
     },
@@ -659,7 +857,14 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "บทบรรยาย p63 ระบุว่าเรนกะเป็นผู้พึมพำต่อจากประโยคนี้"
+          }
         }
       ]
     },
@@ -675,7 +880,14 @@
           "start": 32,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "บทบรรยาย p63 ระบุชัดว่าเป็นคำพึมพำของเรนกะที่ชินจิไม่ตอบ"
+          }
         }
       ]
     },
@@ -756,7 +968,14 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "บทบรรยาย p70 ระบุว่าชินจิดึงมือเรนกะก่อนเธอจะตอบ จึงเป็นชินจิที่ชวนไปต่อ"
+          }
         }
       ]
     },
@@ -767,7 +986,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p73-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบตามชินจิ แล้วบทบรรยาย p73 ว่าทั้งสองคนเดินไปโรงแรมม่านรูด"
+          }
         }
       ]
     },

@@ -48,7 +48,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกไอริสว่าจะทำให้ขาดและให้อดทน ก่อน p6-1 ระบุว่าไอริสพยักหน้าตอบรับคำของชินจิ"
+          }
         }
       ]
     },
@@ -99,7 +108,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามว่าไม่เป็นไรใช่ไหมหลังเข้าไปถึงส่วนลึกที่สุด และไอริสตอบใน p11-1"
+          }
         }
       ]
     },
@@ -110,7 +128,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบคำถามของชินจิว่าไม่เจ็บอย่างที่คิด"
+          }
         }
       ]
     },
@@ -121,7 +148,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะเริ่มขยับ และ p13-1 ระบุว่าเขาเริ่มขยับสะโพกช้าๆ"
+          }
         }
       ]
     },
@@ -142,7 +178,16 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p13-1 บรรยายเสียงครางของไอริส และ p15-1 เป็นชินจิขอโทษที่ถามเพราะเป็นห่วงเธอ"
+          }
         }
       ]
     },
@@ -153,7 +198,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอโทษและถามว่าเธอไม่เจ็บจริงใช่ไหม ก่อนไอริสตอบใน p16-1"
+          }
         }
       ]
     },
@@ -164,7 +218,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบชินจิและกล่าวขอโทษ ก่อน p17-1 บรรยายความรู้สึกผิดของเธอ"
+          }
         }
       ]
     },
@@ -205,7 +268,16 @@
           "start": 0,
           "end": 119,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ไอริสเป็นผู้ครางและเล่าความรู้สึกของตัวเอง ก่อนชินจิอธิบายเรื่องฤทธิ์ยาใน p21-1"
+          }
         }
       ]
     },
@@ -216,7 +288,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบไอริสว่าเป็นเพราะฤทธิ์ยา และ p22-1 บรรยายการกระทำของเขาต่อ"
+          }
         }
       ]
     },
@@ -287,7 +368,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ไอริสเป็นผู้ครางหลังถึงจุดสุดยอด และ p29-1 บรรยายใบหน้าของเธอขณะสัมผัสน้ำอสุจิ"
+          }
         }
       ]
     },
@@ -308,7 +398,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนไอริสดูก่อนป32-1 บรรยายการดึงอวัยวะเพศออกมา และไอริสตอบใน p31-1"
+          }
         }
       ]
     },
@@ -319,7 +418,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "ไอริสเป็นผู้ส่งเสียงตอบชินจิ ก่อน p32-1 บรรยายสภาพหลังการถอนออก"
+          }
         }
       ]
     },
@@ -370,7 +478,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ไอริสเป็นผู้บอกว่ายังไม่หายดี และชินจิถามเรื่องถุงยางใน p37-1"
+          }
         }
       ]
     },
@@ -381,7 +498,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามว่าไม่มีถุงยางแล้วไม่เป็นไรเหรอ และไอริสตอบใน p38-1"
+          }
         }
       ]
     },
@@ -392,7 +518,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตอบว่าเป็นวันปลอดภัยและขอให้รักษาต่อ ก่อน p39-1 ระบุว่าเป็นคำโกหกของเธอ"
+          }
         }
       ]
     },
@@ -443,7 +578,16 @@
           "start": 0,
           "end": 136,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ไอริสเป็นผู้บรรยายความรู้สึกหลังเชื่อมโยงแบบสด และชินจิตอบใน p44-1"
+          }
         }
       ]
     },
@@ -454,7 +598,16 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าช่องคลอดของไอริสก็รู้สึกดีเช่นกัน ก่อนไอริสครางต่อใน p45-1"
+          }
         }
       ]
     },
@@ -465,7 +618,16 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ไอริสเป็นผู้ครางตอบคำพูดของชินจิ และ p46-1 วิเคราะห์คำพูดของเธอ"
+          }
         }
       ]
     },
@@ -526,7 +688,16 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ไอริสเป็นผู้บอกว่าใกล้จะเสร็จ และชินจิตอบว่าจะหลั่งใน p52-1"
+          }
         }
       ]
     },
@@ -537,7 +708,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะหลั่งและเรียกชื่อไอริส ก่อนเธอกรีดร้องใน p53-1"
+          }
         }
       ]
     },
@@ -548,7 +728,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ไอริสเป็นผู้กรีดร้องตามการหลั่งของชินจิที่บรรยายใน p55-1"
+          }
         }
       ]
     },
@@ -643,8 +832,16 @@
         {
           "start": 9,
           "end": 26,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์จูบ \"จุ๊บ...จุ๊บ...♡\" ในประโยคบรรยายที่ขึ้นต้นด้วย \"เสียงจูบ\" ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 26,

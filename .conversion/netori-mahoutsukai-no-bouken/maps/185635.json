@@ -28,7 +28,16 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p4-1 ระบุว่าเป็นพนักงานต้อนรับของกิลด์ที่เชิญปาร์ตี้เข้าไปด้านใน ไม่มีชื่อใน roster จึงใช้เสียงรอบข้าง"
+          }
         }
       ]
     },
@@ -59,7 +68,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p8-1"
+            ],
+            "reason": "p8-1 ระบุว่าอัลวินที่รู้เรื่องนั้นตามเจ้าหน้าที่ไปอย่างดีใจ"
+          }
         }
       ]
     },
@@ -100,7 +118,16 @@
           "start": 0,
           "end": 201,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p9-1 ระบุว่าพนักงานต้อนรับยื่นใบคำร้องให้อัลวิน เธอจึงเป็นผู้อธิบายภารกิจจากวิหาร"
+          }
         }
       ]
     },
@@ -111,7 +138,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าอัลวินอ่านเอกสารแล้วส่งให้มีริส"
+          }
         }
       ]
     },
@@ -142,7 +178,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามความเห็นของมีริส เรนกะ และชินจิ ก่อน p15-1 อธิบายรายละเอียดในเอกสาร"
+          }
         }
       ]
     },
@@ -163,7 +208,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบก่อนโดยเรียกอัลวินว่า \"อัลคุง\" ก่อนเรนกะตอบใน p17-1"
+          }
         }
       ]
     },
@@ -174,7 +228,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบต่อว่าตนก็เหมือนกัน ก่อนชินจิพูดใน p18-1"
+          }
         }
       ]
     },
@@ -185,7 +248,16 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคนสุดท้ายว่าตนไม่มีปัญหาเช่นกัน และ p19-1 ระบุว่าอัลวินตัดสินใจหลังจากได้ยินคำพูดของเพื่อนๆ"
+          }
         }
       ]
     },
@@ -206,7 +278,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "p19-1 ระบุว่าอัลวินตัดสินใจหลังจากได้ยินคำพูดของเพื่อนๆ เขาจึงประกาศรับภารกิจ"
+          }
         }
       ]
     },
@@ -217,7 +298,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p22-1 ระบุว่าพนักงานต้อนรับรับใบคำร้องคืนจากอัลวิน จึงเป็นพนักงานต้อนรับที่ไม่มีชื่อใน roster"
+          }
         }
       ]
     },
@@ -238,7 +328,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "เป็นพนักงานต้อนรับคนเดิมที่ยื่นเหรียญทองและบอกให้เก็บหลักฐานการรับภารกิจ"
+          }
         }
       ]
     },
@@ -249,7 +348,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอบคุณและเรียกทุกคนให้ไป ก่อน p25-1 ระบุว่าทุกคนตอบรับ"
+          }
         }
       ]
     },
@@ -270,7 +378,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p27-1 ระบุว่าชินจินึกย้อนถึงสาเหตุที่เขามายืนอยู่หน้าห้องของมิโกะคนเดียว"
+          }
         }
       ]
     },
@@ -301,7 +418,16 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "p30-1 ระบุว่าเจ้าหน้าที่โค้งคำนับและบอกให้เขาเข้าใจ จึงเป็นเจ้าหน้าที่วิหารที่ไม่มีชื่อใน roster"
+          }
         }
       ]
     },
@@ -322,7 +448,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกลาเพื่อนร่วมปาร์ตีก่อนไปหามิโกะ ก่อนอัลวินตอบใน p32-1"
+          }
         }
       ]
     },
@@ -333,7 +468,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับคำลาของชินจิ ก่อนเรนกะพูดใน p33-1"
+          }
         }
       ]
     },
@@ -344,7 +488,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p34-1 ระบุว่าชินจิถูกเรนกะที่ดูเป็นห่วงมองส่งก่อนมีริสที่อิจฉา จึงเป็นเรนกะที่เรียกชื่อเขาด้วยความเป็นห่วง"
+          }
         }
       ]
     },
@@ -375,7 +528,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่าด้านในมีมิโกะอาริอานที่เป็นเจ้าของเสียงรออยู่"
+          }
         }
       ]
     },
@@ -386,7 +548,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขออนุญาตก่อนเปิดประตูเข้าไปตาม p38-1"
+          }
         }
       ]
     },
@@ -417,7 +588,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "มิโกะอาริอานเป็นผู้ห้ามไม่ให้ชินจิคุกเข่า ก่อน p41-1 บรรยายว่าเธอเดินเข้ามาหาเขา"
+          }
         }
       ]
     },
@@ -438,7 +618,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามกลับอย่างสุภาพ ก่อนอาริอานอธิบายใน p43-1"
+          }
         }
       ]
     },
@@ -449,7 +638,16 @@
           "start": 0,
           "end": 141,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "อาริอานเป็นผู้อธิบายสถานะเท่าเทียมและเหตุผลที่ไม่อยากให้ชินจิคุกเข่า ก่อน p44-1 เป็นความคิดของชินจิ"
+          }
         }
       ]
     },
@@ -474,8 +672,15 @@
         {
           "start": 144,
           "end": 163,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "เป็นคำที่ชินจิยกมาคิดในบรรยาย (\"คำพูดที่ว่า\") ไม่ได้มีใครเอ่ยขึ้นใหม่ในจังหวะนี้ จึงคงเป็น narration"
+          }
         },
         {
           "start": 163,
@@ -491,7 +696,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าชินจิพยายามทำตัวให้เป็นทางการเพื่อถามแค่ธุระ"
+          }
         }
       ]
     },
@@ -512,7 +726,16 @@
           "start": 0,
           "end": 116,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p49-1 เป็นความคิดของชินจิที่อุทานกับคำตอบว่าไม่มีธุระของอาริอาน"
+          }
         }
       ]
     },
@@ -543,7 +766,16 @@
           "start": 0,
           "end": 129,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "p50-1 ระบุว่าอาริอานก้มหน้าลงเหมือนกำลังอธิษฐาน ก่อนเธอภาวนาใน p51-1 และชินจิตอบใน p52-1"
+          }
         }
       ]
     },
@@ -554,7 +786,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำภาวนาของอาริอาน"
+          }
         }
       ]
     },
@@ -569,8 +810,16 @@
         {
           "start": 169,
           "end": 184,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "เป็นคำที่ยกมาเน้นในบรรยาย (\"คำว่า\") ไม่ได้เป็นบทสนทนาในจังหวะนี้"
+          }
         },
         {
           "start": 184,
@@ -606,7 +855,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิเป็นผู้ร้องห้ามเมื่อมือถูกกดลงบนหน้าอกของอาริอาน ก่อนอาริอานพูดใน p57-1"
+          }
         }
       ]
     },
@@ -617,7 +875,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "อาริอานเป็นผู้เอ่ยเสียงยั่วยวน และ p58-1 ระบุว่าเสียงของเธอชักนำชินจิ"
+          }
         }
       ]
     },
@@ -638,7 +905,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ชินจิเป็นผู้ดึงมือออกและบอกว่ามีภารกิจต้องทำ ก่อนอาริอานตอบใน p60-1"
+          }
         }
       ]
     },
@@ -649,7 +925,16 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-arian",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "อาริอานเป็นผู้ตอบรับและนัดให้มาเจอกันใหม่ ก่อน p61-1 บรรยายว่าเธอยิ้มและจัดชุด"
+          }
         }
       ]
     },
@@ -670,7 +955,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p63-1 ระบุว่าเมื่อออกจากห้อง ชินจิถอนหายใจเฮือกใหญ่"
+          }
         }
       ]
     },

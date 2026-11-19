@@ -135,6 +135,39 @@ function applyAssignments(ctx, source, assignments) {
   const errors = [];
   for (const token of textTokens) {
     const entry = byId.get(token.id);
+    const reshape = assignments[token.id]?.segments;
+    if (Array.isArray(reshape)) {
+      const rebuilt = [];
+      let cursor = 0;
+      for (const [i, spec] of reshape.entries()) {
+        const key = `${token.id}#${i + 1}`;
+        if (!Number.isInteger(spec.start) || spec.start !== cursor || !Number.isInteger(spec.end) || spec.end <= cursor || spec.end > token.text.length) {
+          errors.push(`${key}: invalid reshaped span`); break;
+        }
+        if (!['narration', 'dialogue'].includes(spec.type)) { errors.push(`${key}: invalid reshaped type`); break; }
+        const chunk = token.text.slice(spec.start, spec.end);
+        const segment = { start: spec.start, end: spec.end, type: spec.type };
+        if (spec.type === 'dialogue') {
+          if (!roster.has(spec.speakerId)) { errors.push(`${key}: unknown speaker in reshaped span`); break; }
+          segment.speakerId = spec.speakerId;
+        }
+        if (spec.type === 'dialogue' || needsReview(chunk)) {
+          const contextIds = Array.isArray(spec.context) && spec.context.length ? spec.context : [token.id];
+          for (const id of contextIds) if (!tokenIds.includes(id)) errors.push(`${key}: unknown context token ${id}`);
+          segment.review = {
+            confirmed: true,
+            context: contextIds,
+            reason: spec.reason?.trim() || `ตรวจบริบท ${contextIds.join(', ')} แล้ว จัดประเภทเป็น${spec.type === 'dialogue' ? `คำพูดของ${roster.get(spec.speakerId)}` : 'ข้อความบรรยาย'}`,
+          };
+        }
+        rebuilt.push(segment);
+        used.add(key);
+        cursor = spec.end;
+      }
+      if (cursor !== token.text.length) errors.push(`${token.id}: reshaped spans do not cover the token`);
+      entry.segments = rebuilt;
+      continue;
+    }
     const ordered = [...entry.segments].sort((a, b) => a.start - b.start);
     for (const [i, segment] of ordered.entries()) {
       const key = ordered.length === 1 ? token.id : `${token.id}#${i + 1}`;
@@ -217,7 +250,7 @@ function main() {
       file: { type: 'string' }, force: { type: 'boolean' }, all: { type: 'boolean' },
     },
   });
-  invariant(positionals.length === 1 && ['seed', 'cue', 'assign', 'status'].includes(positionals[0]), 'Use conversion-map-assist <seed|cue|assign|status>');
+  invariant(positionals.length === 1 && ['seed', 'cue', 'assign', 'status'].includes(positionals[0]), 'Use conversion-map-assist <seed|cue|review|assign|status>');
   invariant(values.novel, '--novel is required');
   const ctx = context(repoRoot, values.novel);
   const command = positionals[0];

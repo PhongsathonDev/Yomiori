@@ -1,0 +1,135 @@
+{
+  "p3-1": {
+    "speakerId": "netori-iris",
+    "context": ["p3-1", "p4-1"],
+    "reason": "เป็นคำสรุปของไอริสที่เดินเคียงเอมิลี่ และ p4-1 เป็นเอมิลี่ตอบกลับ"
+  },
+  "p4-1": {
+    "speakerId": "netori-emily",
+    "context": ["p3-1", "p4-1", "p7-1"],
+    "reason": "เป็นคำตอบให้กำลังใจของผู้เป็นอาจารย์ และ p7-1 ระบุว่าเอมิลี่คุยกับไอริส"
+  },
+  "p6-1": "netori-iris",
+  "p7-1": {
+    "speakerId": "netori-emily",
+    "context": ["p7-1", "p9-1"],
+    "reason": "p9-1 ระบุว่าเอมิลี่แยกจากไอริสแล้ววิ่งไปหาชินจิ ตรงกับคำพูดนี้"
+  },
+  "p8-1": "netori-iris",
+  "p13-1": {
+    "speakerId": "netori-miris",
+    "context": ["p13-1", "p14-1", "p16-1"],
+    "reason": "เป็นคำถามห่วงใยที่เรียก 'ไอริสจัง' และ p16-1 ระบุว่าไอริสคุยกับอัลวินและมีริส"
+  },
+  "p14-1": "netori-iris",
+  "p15-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p14-1", "p15-1", "p16-1"],
+    "reason": "p16-1 ระบุว่าบทสนทนานี้เป็นการพูดคุยของอัลวินและมีริส"
+  },
+  "p19-1": "netori-galeo",
+  "p20-1": "netori-iris",
+  "p22-1": {
+    "speakerId": "netori-miris",
+    "context": ["p22-1", "p23-1", "p24-1"],
+    "reason": "เป็นคำทักทายกาเลโออย่างสุภาพก่อนที่อัลวินจะทักใน p23-1 และกาเลโอตอบถึงมีริสใน p24-1"
+  },
+  "p23-1": "netori-alvin",
+  "p24-1": "netori-galeo",
+  "p26-1": "netori-galeo",
+  "p27-1": "netori-shinji",
+  "p28-1": "netori-emily",
+  "p30-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p30-1", "p31-1"],
+    "reason": "เป็นคำเชิญแขกเข้าไปในบ้านปาร์ตี้ที่ชินจิพักอยู่ และ p31-1 เป็นกาเลโอผู้มาเยือนตอบรับ"
+  },
+  "p31-1": "netori-galeo",
+  "p33-1": "netori-galeo",
+  "p35-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p35-1", "p36-1", "p37-1"],
+    "reason": "p37-1 ระบุว่ามีริสพยักหน้าเห็นด้วยกับคำพูดของอัลวินและเรนกะ จึงเป็นคำของอัลวินใน p35-1 และเรนกะใน p36-1"
+  },
+  "p36-1": {
+    "speakerId": "netori-renka",
+    "context": ["p35-1", "p36-1", "p37-1"],
+    "reason": "p37-1 ระบุว่ามีริสเห็นด้วยกับคำพูดของอัลวินและเรนกะ"
+  },
+  "p38-1": "netori-galeo",
+  "p39-1": {
+    "speakerId": "netori-party",
+    "context": ["p39-1", "p40-1"],
+    "reason": "เครื่องหมายคำพูดสามชั้นหมายถึงอัลวินและคนอื่นๆ ตอบพร้อมกัน; p40-1 ระบุว่าอัลวินและคนอื่นๆ ที่เคยได้รับการสอนจากกาเลโอดีใจ"
+  },
+  "p41-1": "netori-galeo",
+  "p42-1": "netori-iris",
+  "p43-1": "netori-galeo",
+  "p44-1": "netori-iris",
+  "p46-1": "netori-galeo",
+  "p47-1": "netori-iris",
+  "p48-1": "netori-galeo",
+  "p51-1": "netori-alvin",
+  "p52-1": "netori-galeo",
+  "p53-1": {
+    "speakerId": "netori-renka",
+    "context": ["p53-1", "p55-1"],
+    "reason": "p55-1 ระบุว่าแม้อัลวินและเรนกะจะเข้ามาไกล่เกลี่ย จึงเป็นคำของเรนกะต่อจากอัลวินใน p51-1"
+  },
+  "p54-1": "netori-iris",
+  "p56-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p56-1", "p57-1"],
+    "reason": "p57-1 ระบุว่าเมื่อได้ยินคำพูดของชินจิ กาเลโอก็สงบลง"
+  },
+  "p58-1": "netori-shinji",
+  "p60-1": "netori-shinji",
+  "p61-1": {
+    "speakerId": "netori-galeo",
+    "context": ["p61-1", "p62-1"],
+    "reason": "p62-1 ระบุว่ากาเลโอพยักหน้าช้าๆ"
+  },
+  "p64-1": "netori-shinji",
+  "p65-1": {
+    "speakerId": "netori-iris",
+    "context": ["p65-1", "p66-1"],
+    "reason": "p66-1 ระบุว่าไอริสพยักหน้าเห็นด้วยกับคำพูดของชินจิ"
+  },
+  "p67-1": "netori-shinji",
+  "p69-1": "netori-iris",
+  "p70-1": "netori-shinji",
+  "p71-1": "netori-iris",
+  "p74-1": "netori-galeo",
+  "p75-1": "netori-shinji",
+  "p76-1": "netori-galeo",
+  "p77-1#2": {
+    "type": "narration",
+    "context": ["p77-1"],
+    "reason": "“ฮ้าาาา...” เป็นเสียงถอนหายใจของกาเลโอ ไม่ใช่คำพูด"
+  },
+  "p78-1": "netori-galeo",
+  "p79-1": "netori-iris",
+  "p80-1": "netori-galeo",
+  "p81-1": "netori-iris",
+  "p83-1": {
+    "speakerId": "netori-emily",
+    "context": ["p83-1", "p84-1"],
+    "reason": "เป็นเสียงชื่นชมกระตือรือร้นแบบเอมิลี่ และชินจิเป็นผู้ตอบถ่อมตัวใน p84-1"
+  },
+  "p84-1": "netori-shinji",
+  "p85-1": {
+    "speakerId": "netori-miris",
+    "context": ["p85-1"],
+    "reason": "เป็นคำพูดเสียงเบาแบบสุภาพของผู้หญิงในปาร์ตี้และกล่าวถึงไอริสอย่างเอ็นดู"
+  },
+  "p87-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p87-1", "p88-1", "p89-1", "p90-1"],
+    "reason": "เป็นคำเชิญกินข้าวแบบเจ้าบ้าน และ p90-1 ระบุว่าอัลวินตอบรับเมื่อเห็นอากาเนะพยักหน้า"
+  },
+  "p88-1": "netori-galeo",
+  "p89-1": "netori-alvin",
+  "p92-1": "netori-iris",
+  "p93-1": "netori-shinji",
+  "p94-1": "netori-iris"
+}

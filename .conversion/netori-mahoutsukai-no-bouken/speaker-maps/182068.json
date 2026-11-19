@@ -1,0 +1,57 @@
+{
+  "p1-1#2": {
+    "type": "narration",
+    "context": ["p1-1"],
+    "reason": "วลีในเครื่องหมายคำพูดอ้างถึงการทดสอบเตียงในประโยคบรรยาย ไม่ได้พูดออกเสียง"
+  },
+  "p3-1": "netori-emily",
+  "p4-1": "netori-shinji",
+  "p7-1": {
+    "speakerId": "netori-party",
+    "context": ["p6-1", "p7-1", "p8-1"],
+    "reason": "เครื่องหมายคำพูดซ้อนสองชั้นแสดงว่าชินจิและเอมิลี่กล่าวพร้อมกัน จึงใช้เสียงหมู่ของสมาชิกปาร์ตี้และคนในฉาก"
+  },
+  "p10-1": "netori-shinji",
+  "p11-1": "netori-emily",
+  "p14-1": "netori-shinji",
+  "p15-1": "netori-emily",
+  "p20-1": "netori-emily",
+  "p24-1": "netori-shinji",
+  "p25-1": "netori-emily",
+  "p33-1#2": {
+    "type": "narration",
+    "context": ["p33-1"],
+    "reason": "เป็นเสียงกลืน (sound effect) ไม่ใช่คำพูด"
+  },
+  "p35-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p35-1", "p36-1", "p37-1"],
+    "reason": "p36-1 ระบุว่าชินจิถอนหายใจด้วยความพึงพอใจ และ p37-1 เอมิลี่ถามว่า 'รู้สึกดีไหม'"
+  },
+  "p37-1": "netori-emily",
+  "p38-1": "netori-shinji",
+  "p44-1": "netori-shinji",
+  "p45-1": "netori-emily",
+  "p48-1": "netori-emily",
+  "p52-1": "netori-shinji",
+  "p53-1": "netori-emily",
+  "p54-1": "netori-shinji",
+  "p55-1": "netori-emily",
+  "p57-1#2": {
+    "type": "narration",
+    "context": ["p57-1"],
+    "reason": "เป็นเสียงรัดของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p60-1": "netori-emily",
+  "p62-1#2": {
+    "type": "narration",
+    "context": ["p62-1"],
+    "reason": "เป็นเสียงหลั่งและบดอสุจิ (sound effect) ไม่ใช่คำพูด"
+  },
+  "p66-1#2": {
+    "type": "narration",
+    "context": ["p66-1"],
+    "reason": "เป็นเสียงจูบ (sound effect) ไม่ใช่คำพูด"
+  },
+  "p67-1": "netori-emily"
+}

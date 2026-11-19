@@ -1172,8 +1172,14 @@
         {
           "start": 116,
           "end": 122,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p117-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกคำสรรพนาม Boku ที่ลิลใช้แทนตัวเอง ไม่ใช่บทสนทนาที่พูดในฉาก"
+          }
         }
       ]
     },
@@ -1278,8 +1284,14 @@
         {
           "start": 47,
           "end": 65,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p127-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกถ้อยคำ ว่าอาริอานเป็นของชินจิโดยเฉพาะ ตามที่เทพธิดารับรอง ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 65,

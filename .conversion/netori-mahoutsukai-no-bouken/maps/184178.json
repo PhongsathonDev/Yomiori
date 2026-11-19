@@ -68,7 +68,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "เรนกะประท้วงว่ายังไม่ได้อาบน้ำ แล้ว p9 บรรยายว่าเธอตีหน้าอกชินจิเบาๆ พลางหัวเราะ"
+          }
         }
       ]
     },
@@ -79,7 +88,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิตอบว่าเขาชอบกลิ่นของเรนกะ และ p9 เรนกะหัวเราะตอบ"
+          }
         }
       ]
     },
@@ -110,7 +128,16 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p13-1"
+            ],
+            "reason": "เป็นเสียงครางของเรนกะขณะชินจินวดหน้าอกและจูบเธอตาม p10"
+          }
         }
       ]
     },
@@ -121,7 +148,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ชินจิครางเรียกชื่อเรนกะระหว่างเล้าโลม และ p13 บรรยายว่าเขาพอใจที่เธอสั่นสะท้าน"
+          }
         }
       ]
     },
@@ -146,8 +182,14 @@
         {
           "start": 49,
           "end": 58,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "เป็นเสียงดูดหัวนม ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -182,8 +224,14 @@
         {
           "start": 85,
           "end": 92,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "เป็นเสียงน้ำหล่อลื่นจากส่วนลับของเรนกะที่บรรยายไว้ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 92,
@@ -199,7 +247,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิแซวว่าเปียกชุ่มแล้วและถามว่าเรนกะรู้สึกดีไหม แล้ว p19 เธอครางตอบ"
+          }
         }
       ]
     },
@@ -210,7 +267,16 @@
           "start": 0,
           "end": 79,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เรนกะครางตอบคำถามของชินจิ และ p20 บรรยายว่านิ้วของเขาสอดใส่ต่อ"
+          }
         }
       ]
     },
@@ -311,7 +377,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "เรนกะครางประท้วงเรื่องยังไม่ได้อาบน้ำขณะชินจิเลีย และ p30 บรรยายการเลียของชินจิ"
+          }
         }
       ]
     },
@@ -326,8 +401,14 @@
         {
           "start": 205,
           "end": 212,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "เป็นเสียงเลียของชินจิที่ดังไปทั่วห้อง ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 212,
@@ -357,8 +438,14 @@
         {
           "start": 120,
           "end": 130,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "เป็นเสียงความชื้นจากการกดนิ้วผ่านชุดชั้นในของไอริส ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 130,
@@ -394,7 +481,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "เป็นเสียงคราง/เสียงปากของเรนกะขณะอมอวัยวะเพศของชินจิใน p34 และ p36"
+          }
         }
       ]
     },
@@ -445,7 +541,17 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เรนกะครางหลังชินจิหลั่งในปากและบอกว่าออกมามากเกินไป แล้ว p41 ชินจิขอโทษ"
+          }
         }
       ]
     },
@@ -456,7 +562,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิขอโทษเรื่องออรัลเซ็กส์รู้สึกดีเกินไป และ p42 บรรยายว่าเขาถอนอวัยวะออกจากปากเรนกะ"
+          }
         }
       ]
     },
@@ -517,7 +632,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ชินจิบอกเรนกะว่าเขาจะสอดใส่ แล้ว p48 เรนกะครางตอบ"
+          }
         }
       ]
     },
@@ -528,7 +652,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เป็นเสียงครางของเรนกะที่ได้ยินไปถึงไอริสตาม p49"
+          }
         }
       ]
     },
@@ -569,7 +702,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ไอริสที่แอบฟังอยู่หลังกำแพงครางเรียกชินจิว่า 'รุ่นพี่' และ p50 ระบุว่าเธออิจฉาเรนกะ"
+          }
         }
       ]
     },
@@ -584,8 +726,14 @@
         {
           "start": 129,
           "end": 140,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "เป็นเสียงกระแทกจากอีกด้านของกำแพง (sound effect) ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 140,
@@ -601,7 +749,16 @@
           "start": 0,
           "end": 101,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "เรนกะครางถึงจุดสุดยอดและเรียกชื่อชินจิ แล้ว p55 ไอริสผู้ฟังอยู่หลังกำแพงตอบว่าเธอก็รักเขา"
+          }
         }
       ]
     },
@@ -612,7 +769,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ไอริสเรียกชินจิว่า 'รุ่นพี่' และตอบรับคำสารภาพรักของเรนกะใน p54 จากอีกด้านของกำแพง"
+          }
         }
       ]
     },
@@ -633,7 +799,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ชินจิบอกว่าใกล้จะหลั่ง และ p58 เรนกะครางตอบว่าออกมาแล้ว"
+          }
         }
       ]
     },
@@ -644,7 +819,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p60-1"
+            ],
+            "reason": "เรนกะตอบรับการหลั่งของชินจิ และ p60 ระบุว่าเธอกำลังลิ้มรสน้ำอสุจิที่เติมเต็มมดลูก"
+          }
         }
       ]
     },
@@ -655,7 +839,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p59-1",
+              "p62-1"
+            ],
+            "reason": "p56 ระบุว่าจุดสุดยอดของทั้งสามคนเกิดขึ้นพร้อมกัน และ p62 ระบุว่าไอริสก็จมดิ่งในห้วงความสุขหลังถึงจุดสุดยอดเช่นกัน จึงเป็นเสียงของไอริสที่แอบฟังอยู่"
+          }
         }
       ]
     },
@@ -706,7 +899,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p66-1"
+            ],
+            "reason": "p66 ระบุว่าเรนกะเป็นผู้เรียกชื่อไอริส"
+          }
         }
       ]
     },
@@ -747,7 +949,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "p69 ระบุว่าเสียงของไอริสดังมาจากอีกด้านของกำแพง"
+          }
         }
       ]
     },
@@ -768,7 +979,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เรนกะเป็นผู้เรียกไอริสให้มาที่ห้องนี้ และ p71 ไอริสตอบรับ"
+          }
         }
       ]
     },
@@ -779,7 +999,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "ไอริสตอบรับคำสั่งของเรนกะอย่างยอมจำนนตาม p72"
+          }
         }
       ]
     },
@@ -804,8 +1033,14 @@
         {
           "start": 41,
           "end": 83,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "เป็นความคิดในใจของชินจิ ('และคิดว่า') ไม่ได้พูดออกเสียง"
+          }
         }
       ]
     }

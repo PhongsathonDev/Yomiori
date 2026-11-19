@@ -1,0 +1,73 @@
+{
+  "p3-1": "netori-shinji",
+  "p4-1": "netori-miris",
+  "p5-1": "netori-alvin",
+  "p7-1": "netori-miris",
+  "p8-1": "netori-alvin",
+  "p9-1": "netori-miris",
+  "p10-1": "netori-renka",
+  "p12-1": {
+    "speakerId": "netori-renka",
+    "context": ["p10-1", "p11-1", "p12-1", "p13-1"],
+    "reason": "เรนกะพูดกับชินจิแบบกันเองด้วยชื่อ 'ชินจิ' และใช้ ♡ ตามนิสัยของเธอ ขณะที่มีริสเรียก 'คุณชินจิ' และอัลวินไม่ใช้ ♡ เลย ส่วน p13-1 ชินจิแยกบอกลามีริสต่างหาก"
+  },
+  "p13-1": "netori-shinji",
+  "p14-1": "netori-miris",
+  "p16-1": "netori-shinji",
+  "p17-1": "netori-miris",
+  "p22-1": "netori-miris",
+  "p23-1": "netori-shinji",
+  "p25-1": "netori-miris",
+  "p28-1": "netori-shinji",
+  "p29-1": "netori-miris",
+  "p33-1": "netori-miris",
+  "p34-1#2": {
+    "type": "narration",
+    "context": ["p34-1"],
+    "reason": "วลีในเครื่องหมายคำพูดเป็นคำถามที่ชินจิจงใจไม่ถามตามที่ประโยคบรรยายระบุ จึงไม่ใช่คำพูดออกเสียง"
+  },
+  "p39-1": "netori-shinji",
+  "p40-1": "netori-miris",
+  "p45-1": "netori-miris",
+  "p47-1": "netori-miris",
+  "p53-1": "netori-shinji",
+  "p54-1": "netori-miris",
+  "p59-1": "netori-miris",
+  "p68-1": "netori-miris",
+  "p76-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p76-1", "p77-1"],
+    "reason": "p77-1 ระบุว่าเสียงของอัลวินดังมาจากนอกห้อง"
+  },
+  "p79-1": "netori-miris",
+  "p81-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p79-1", "p81-1", "p82-1"],
+    "reason": "มีริสตอบกลับอัลคุงใน p82-1 และ p77-1 ยืนยันว่าอัลวินอยู่นอกห้อง"
+  },
+  "p82-1": "netori-miris",
+  "p83-1#2": {
+    "type": "narration",
+    "context": ["p83-1"],
+    "reason": "เป็นเสียงรัดของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p84-1#2": {
+    "type": "narration",
+    "context": ["p84-1"],
+    "reason": "เป็นเสียงกายจากการกดกระแทก (sound effect) ไม่ใช่คำพูด"
+  },
+  "p86-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p86-1", "p87-1"],
+    "reason": "p87-1 ระบุว่ามีริสได้ยินเสียงอัลวินที่ดูรีบร้อน"
+  },
+  "p88-1#2": {
+    "type": "narration",
+    "context": ["p88-1"],
+    "reason": "เป็นเสียงน้ำอสุจิ (sound effect) ไม่ใช่คำพูด"
+  },
+  "p91-1": "netori-shinji",
+  "p92-1": "netori-miris",
+  "p94-1": "netori-shinji",
+  "p95-1": "netori-miris"
+}

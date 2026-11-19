@@ -18,7 +18,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p1-1 ระบุว่าชิซุกุที่ยังง่วงมองฮายาเตะด้วยสีหน้าไม่พอใจ และเธอเป็นผู้ขอให้ฮายาเตะรีบกลับมา ก่อนฮายาเตะตอบใน p3-1"
+          }
         }
       ]
     },
@@ -29,7 +38,16 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตอบรับและกำชับชิซุกุเรื่องพี่ชาย ก่อนชิซุกุตอบใน p4-1"
+          }
         }
       ]
     },
@@ -40,7 +58,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ชิซุกุเป็นผู้รับปากฮายาเตะ ก่อน p5-1 บรรยายว่าเธอกอดฮายาเตะ"
+          }
         }
       ]
     },
@@ -56,7 +83,15 @@
           "start": 35,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p5-1 ระบุว่า \"ชิซุกุกอดฮายาเตะที่หันกลับมาพูดว่า\" จึงเป็นคำพูดของฮายาเตะ"
+          }
         },
         {
           "start": 42,
@@ -72,7 +107,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้บอกว่าตัวเองไปแล้ว ก่อนชิซุกุตอบใน p7-1"
+          }
         }
       ]
     },
@@ -83,7 +127,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ชิซุกุเป็นผู้ส่งฮายาเตะและแซวว่าดูเหมือนคู่แต่งงานใหม่ ก่อนฮายาเตะหัวเราะตอบใน p8-1"
+          }
         }
       ]
     },
@@ -94,7 +147,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้หัวเราะตอบและจูบชิซุกุตาม p9-1"
+          }
         }
       ]
     },
@@ -115,7 +177,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้เรียกซิลฟี่และฝากฝังก่อนเคลื่อนย้าย ก่อน p11-1 เป็นข้อความจากซิลฟี่"
+          }
         }
       ]
     },
@@ -125,7 +196,16 @@
         {
           "start": 0,
           "end": 22,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "『』 เป็นข้อความของซิลฟี่ผ่านกระแสจิตว่าจะส่งไปที่หลังร้าน ไม่ได้ออกเสียง จึงคงเป็น narration ตามแนวเดียวกับกระแสจิตอื่นของเรื่อง"
+          }
         }
       ]
     },
@@ -156,7 +236,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าชิซุกุกระโดดลงไปนอนบนเตียงและบ่นพึมพำในห้องที่เหลือเธอคนเดียว"
+          }
         }
       ]
     },
@@ -187,7 +276,16 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ต่อเนื่องจาก p15-1 ที่ชิซุกุอยู่คนเดียวและบ่นพึมพำ เธอจึงเป็นผู้พูดว่าจะต้องทำอะไรสักอย่าง"
+          }
         }
       ]
     },
@@ -238,7 +336,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p24-1 ระบุว่าชิซุกุลุกขึ้นจากเตียงแล้วคุยกับมารี"
+          }
         }
       ]
     },
@@ -249,7 +356,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24-1 ระบุว่ามารีปรากฏตัวต่อหน้าชิซุกุ และเสียงลาก \"~?\" เป็นสไตล์ของมารี"
+          }
         }
       ]
     },
@@ -270,7 +386,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "ชิซุกุเป็นผู้ตอบเหตุผลว่าอยากอยู่กับฮายาเตะ ก่อนมารีตอบใน p26-1"
+          }
         }
       ]
     },
@@ -281,7 +406,16 @@
           "start": 0,
           "end": 145,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p27-1 ระบุว่าชิซุกุมองมารีที่ลอยวนอยู่รอบๆ ด้วยความสงสัย"
+          }
         }
       ]
     },
@@ -302,7 +436,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ชิซุกุเป็นผู้ถามกลับว่าถ้าไม่ใช่ตามวิธีที่ถูกต้องจะเร็วกว่าไหม ก่อนมารีตอบใน p29-1"
+          }
         }
       ]
     },
@@ -313,7 +456,16 @@
           "start": 0,
           "end": 120,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบเรื่องพิธีกรรมว่าเป็นวิธีที่เร็วที่สุด และเสียงลาก \"~\" ตรงกับสไตล์ของเธอ"
+          }
         }
       ]
     },
@@ -324,7 +476,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชิซุกุอุทานถามว่ามีวิธีดีๆ แบบนั้นด้วยหรือ ก่อน p31-1 เริ่มคำอธิบายเรื่องวิธีเรียนเวทมนตร์"
+          }
         }
       ]
     },
@@ -385,7 +546,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "มารีเป็นผู้เตือนว่าชิซุกุทำไม่ได้เพราะต้องมีเพศสัมพันธ์ และ p37-1 ชิซุกุอุทานถามกลับ"
+          }
         }
       ]
     },
@@ -396,7 +566,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชิซุกุอุทานถามมารีว่าทำไมต้องมีเพศสัมพันธ์ ก่อนมารีตอบใน p38-1"
+          }
         }
       ]
     },
@@ -407,7 +586,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบว่ามันมีเหตุผลอยู่ ก่อน p39-1 อธิบายรายละเอียดของพิธีกรรมเวทมนตร์"
+          }
         }
       ]
     },
@@ -428,7 +616,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "มารีเป็นผู้สรุปให้ฝึกตามวิธีธรรมดา ก่อนชิซุกุตอบใน p41-1"
+          }
         }
       ]
     },
@@ -439,7 +636,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชิซุกุเป็นผู้ยอมรับอย่างไม่เต็มใจ ก่อน p42-1 ระบุว่าเธอจ้องมารีที่หัวเราะคิกคัก"
+          }
         }
       ]
     },
@@ -480,7 +686,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p47-1 ระบุว่าฮายาเตะกำลังทำความสะอาดร้านเฮลิโอโทรปและคุยเล่นกับนานากะ"
+          }
         }
       ]
     },
@@ -491,7 +706,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "นานากะเป็นผู้ชมฮายาเตะเรื่องทำความสะอาด และ p47-1 ระบุว่าฮายาเตะทำตามที่นานากะที่อุ้มฮานะบอก"
+          }
         }
       ]
     },
@@ -512,7 +736,16 @@
           "start": 0,
           "end": 167,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p50-1 ระบุว่าฮายาเตะตอบกลับฮารุโตะที่นั่งอยู่หลังเคาน์เตอร์"
+          }
         }
       ]
     },
@@ -523,7 +756,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตอบรับคำสั่งของฮารุโตะ ก่อน p50-1 บรรยายการกลับเข้าไปในพื้นที่พักอาศัย"
+          }
         }
       ]
     },
@@ -544,7 +786,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "นานากะเป็นผู้เสนอเรื่องซื้อตำราเวทมนตร์ระหว่างสอน ก่อนฮายาเตะตอบใน p52-1"
+          }
         }
       ]
     },
@@ -555,7 +806,16 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ขอประหยัดเพราะไม่มีรายได้ ก่อนนานากะตอบใน p53-1"
+          }
         }
       ]
     },
@@ -566,7 +826,16 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "นานากะเป็นผู้บอกว่าจะจ่ายค่าจ้างให้ตามปกติแน่นอน ก่อนฮายาเตะอุทานใน p54-1"
+          }
         }
       ]
     },
@@ -577,7 +846,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าฮายาเตะรู้สึกดีใจมากกับความใจดีของนานากะ"
+          }
         }
       ]
     },
@@ -598,7 +876,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ฝากตัวด้วยความตั้งใจก่อนเริ่มเรียน ก่อนนานากะเริ่มสอนใน p57-1"
+          }
         }
       ]
     },
@@ -609,7 +896,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "นานากะเป็นผู้เริ่มสอนและประโยคต่อเนื่องไปจบที่ p58-1 ก่อน p59-1 บรรยายการร่ายเวทของเธอ"
+          }
         }
       ]
     },
@@ -620,7 +916,16 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "เป็นประโยคต่อเนื่องของนานากะจาก p57-1 ที่จบด้วยบทร่ายเวท ก่อน p59-1 บรรยายว่าเธอหันฝ่ามือและร่ายเวทให้ฮายาเตะดู"
+          }
         }
       ]
     },
@@ -641,7 +946,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "นานากะเป็นผู้บอกว่าจะทำให้ดูเป็นตัวอย่างหลายครั้ง ก่อนฮายาเตะลองร่ายตามใน p61-1"
+          }
         }
       ]
     },
@@ -652,7 +966,16 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ลองร่ายเวทตามแบบที่นานากะทำให้ดู ก่อน p62-1 บรรยายความพยายามของเธอ"
+          }
         }
       ]
     },
@@ -693,7 +1016,16 @@
           "start": 0,
           "end": 142,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "นานากะเป็นผู้บอกให้ไม่ต้องรีบร้อนและจะไปทำอาหารก่อน ก่อนฮายาเตะตอบใน p66-1"
+          }
         }
       ]
     },
@@ -704,7 +1036,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ขอบคุณและบอกว่าจะพยายามใหม่พรุ่งนี้ ก่อน p67-1 สรุปการฝึกของเธอ"
+          }
         }
       ]
     },

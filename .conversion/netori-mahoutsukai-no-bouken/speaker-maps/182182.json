@@ -1,0 +1,72 @@
+{
+  "p1-1": "netori-renka",
+  "p4-1": "netori-shinji",
+  "p5-1": {
+    "speakerId": "netori-emily",
+    "context": ["p4-1", "p5-1", "p6-1"],
+    "reason": "p6-1 ระบุว่าเสียงของเอมิลี่ดังมาจากหน้าต่างที่เปิดแง้ม ขณะชินจิกับเรนกะอยู่ในห้องน้ำ"
+  },
+  "p7-1": "netori-shinji",
+  "p8-1": "netori-renka",
+  "p12-1": "netori-renka",
+  "p13-1": "netori-shinji",
+  "p14-1": "netori-renka",
+  "p17-1": "netori-renka",
+  "p18-1": "netori-shinji",
+  "p19-1": "netori-renka",
+  "p23-1": "netori-renka",
+  "p24-1#2": {
+    "type": "narration",
+    "context": ["p24-1", "p25-1"],
+    "reason": "เครื่องหมายคำพูดใช้เลียนเสียงกาย 'คิวย์น♡' ตอนกดอวัยวะเพศ ไม่ใช่บทสนทนา"
+  },
+  "p26-1#2": {
+    "type": "narration",
+    "context": ["p26-1"],
+    "reason": "เป็นเสียงของช่องคลอด 'หนึบ~♡' ไม่ใช่คำพูด"
+  },
+  "p28-1": "netori-shinji",
+  "p29-1": "netori-renka",
+  "p32-1": "netori-shinji",
+  "p33-1": "netori-renka",
+  "p36-1": "netori-renka",
+  "p37-1": "netori-shinji",
+  "p38-1": "netori-renka",
+  "p39-1": "netori-shinji",
+  "p46-1": "netori-renka",
+  "p47-1": "netori-shinji",
+  "p48-1": "netori-renka",
+  "p53-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p53-1", "p55-1"],
+    "reason": "p55-1 ระบุว่าเสียงของอัลวินและมีริสดังขึ้น และคำถามนี้เรียกชื่อชินจิกับเรนกะ"
+  },
+  "p54-1": {
+    "speakerId": "netori-miris",
+    "context": ["p54-1", "p55-1"],
+    "reason": "p55-1 ระบุว่าเสียงของอัลวินและมีริสดังขึ้น ต่อจากคำถามของอัลวิน"
+  },
+  "p59-1": {
+    "speakerId": "netori-renka",
+    "context": ["p57-1", "p58-1", "p59-1"],
+    "reason": "เสียงครางอู้อี้ของเรนกะขณะชินจิจูบปิดปากใน p58-1"
+  },
+  "p62-1": {
+    "speakerId": "netori-miris",
+    "context": ["p61-1", "p62-1"],
+    "reason": "p61-1 ระบุว่าชินจิส่งกระแสความคิดไปยังมีริสให้พาอัลวินออกไป และคำพูดนี้เรียกอัลคุง"
+  },
+  "p63-1": "netori-alvin",
+  "p64-1#2": {
+    "type": "narration",
+    "context": ["p64-1"],
+    "reason": "เป็นแรงกดของมือที่กำแขน 'แน่น~' ไม่ใช่คำพูด"
+  },
+  "p66-1": "netori-shinji",
+  "p67-1": "netori-renka",
+  "p69-1": "netori-shinji",
+  "p70-1": "netori-renka",
+  "p71-1": "netori-shinji",
+  "p72-1": "netori-renka",
+  "p74-1#1": "netori-shinji"
+}

@@ -1,0 +1,93 @@
+{
+  "p2-1": {
+    "speakerId": "netori-arian",
+    "context": ["p1-1", "p2-1", "p3-1", "p27-1"],
+    "reason": "p3-1 ระบุว่าบรรยากาศอ่อนโยนของมิโกะเปลี่ยนไปทันทีหลังจากประโยคนี้ จึงเป็นเสียงของอาริอานก่อนเทพธิดาเข้าสิงร่างในฉากถัดมา (p27-1)"
+  },
+  "p6-1": "netori-goddess",
+  "p7-1": "netori-shinji",
+  "p9-1": "netori-goddess",
+  "p11-1": "netori-shinji",
+  "p12-1": "netori-goddess",
+  "p13-1": "netori-shinji",
+  "p15-1#2": {
+    "type": "narration",
+    "context": ["p15-1", "p16-1"],
+    "reason": "ข้อความในเครื่องหมายคำพูดคือแววตาไม่พอใจที่บรรยายว่า 'ราวกับจะบอกว่า' ไม่ได้พูดออกมา"
+  },
+  "p17-1": "netori-goddess",
+  "p18-1": "netori-flare",
+  "p20-1": "netori-goddess",
+  "p21-1": "netori-flare",
+  "p22-1": "netori-goddess",
+  "p23-1": "netori-flare",
+  "p24-1": "netori-goddess",
+  "p25-1#2": {
+    "type": "narration",
+    "context": ["p25-1"],
+    "reason": "เสียงแฟลร์ทรุดตัวลงกับพื้น 'แผละ' ไม่ใช่คำพูด"
+  },
+  "p26-1": "netori-shinji",
+  "p27-1": "netori-goddess",
+  "p29-1": "netori-shinji",
+  "p31-1": "netori-flare",
+  "p32-1": "netori-goddess",
+  "p34-1": "netori-flare",
+  "p35-1": "netori-goddess",
+  "p36-1": "netori-flare",
+  "p39-1": "netori-goddess",
+  "p40-1": "netori-shinji",
+  "p42-1": "netori-goddess",
+  "p44-1": "netori-goddess",
+  "p45-1": {
+    "speakerId": "netori-goddess",
+    "context": ["p44-1", "p45-1", "p46-1"],
+    "reason": "ประโยคต่อเนื่องในเครื่องหมายคำพูดที่เปิดใน p44-1 และปิดที่ p45-1"
+  },
+  "p47-1": "netori-goddess",
+  "p48-1": {
+    "speakerId": "netori-goddess",
+    "context": ["p47-1", "p48-1", "p49-1"],
+    "reason": "ประโยคต่อเนื่องของการอธิบายของเทพธิดา ก่อนปิดเครื่องหมายคำพูดที่ p49-1"
+  },
+  "p49-1": "netori-goddess",
+  "p51-1": "netori-goddess",
+  "p52-1#2": {
+    "speakerId": "netori-goddess",
+    "context": ["p52-1", "p53-1"],
+    "reason": "p52-1 ระบุว่าเธอพึมพำคำนี้ เป็นคำพูดของเทพธิดา"
+  },
+  "p53-1": "netori-goddess",
+  "p55-1#2": {
+    "type": "narration",
+    "context": ["p55-1"],
+    "reason": "เครื่องหมายคำพูดยกคำตอบ 'ครับ' ที่เขารู้สึกไม่อยากตอบในประโยคบรรยาย ไม่ใช่บทสนทนาที่เปล่งออกมา"
+  },
+  "p55-1#4": {
+    "speakerId": "netori-shinji",
+    "context": ["p55-1", "p56-1"],
+    "reason": "คำตอบ 'ครับ' ที่ชินจิต้องตอบเทพธิดา"
+  },
+  "p56-1": "netori-goddess",
+  "p57-1": "netori-flare",
+  "p59-1": "netori-goddess",
+  "p60-1": {
+    "type": "narration",
+    "context": ["p59-1", "p60-1", "p61-1"],
+    "reason": "จุดไข่ปลาแสดงความเงียบของแฟลร์ ไม่มีคำพูดที่เปล่งออกมา"
+  },
+  "p65-1": "netori-goddess",
+  "p66-1": "netori-shinji",
+  "p67-1": "netori-goddess",
+  "p70-1": {
+    "speakerId": "netori-arian",
+    "context": ["p68-1", "p70-1"],
+    "reason": "p68-1 ระบุว่าเทพธิดาจากไปและสติของมิโกะอาริอานกลับมา ประโยคนี้จึงเป็นของอาริอาน"
+  },
+  "p71-1#2": "netori-shinji",
+  "p73-1": {
+    "type": "narration",
+    "context": ["p73-1"],
+    "reason": "หมายเหตุผู้แปล (TL) ไม่ใช่บทสนทนาในฉาก"
+  }
+}

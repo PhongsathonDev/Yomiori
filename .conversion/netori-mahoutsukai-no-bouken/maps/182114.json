@@ -28,7 +28,14 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1"
+            ],
+            "reason": "ตรวจบริบท p3-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -39,7 +46,14 @@
           "start": 0,
           "end": 4,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "ตรวจบริบท p4-1 แล้ว จัดประเภทเป็นคำพูดของเฟรรี่"
+          }
         }
       ]
     },
@@ -75,7 +89,14 @@
           "start": 19,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "เป็นเสียงครางของเฟรรี่ขณะแลบลิ้นและหยดน้ำลายลงบนอวัยวะเพศของชินจิ"
+          }
         },
         {
           "start": 29,
@@ -91,7 +112,14 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "ตรวจบริบท p8-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -101,7 +129,15 @@
         {
           "start": 0,
           "end": 55,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าเฟรรี่กำลังส่งกระแสความคิด ข้อความใน 『』 จึงเป็นการสื่อสารทางใจที่ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -112,7 +148,14 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -122,7 +165,15 @@
         {
           "start": 0,
           "end": 53,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าเฟรรี่กำลังส่งกระแสความคิด ข้อความใน 『』 จึงเป็นการสื่อสารทางใจที่ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -203,7 +254,14 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "ตรวจบริบท p19-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -213,7 +271,15 @@
         {
           "start": 0,
           "end": 37,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -224,7 +290,14 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -285,7 +358,14 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -295,7 +375,15 @@
         {
           "start": 0,
           "end": 21,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -315,7 +403,15 @@
         {
           "start": 0,
           "end": 26,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -360,8 +456,14 @@
         {
           "start": 33,
           "end": 51,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "วลีในเครื่องหมายคำพูดอยู่หลัง 'ราวกับจะบอกว่า' เป็นการเปรียบเทียบอาการกระตุก ไม่ใช่คำพูดออกเสียง"
+          }
         },
         {
           "start": 51,
@@ -371,8 +473,14 @@
         {
           "start": 52,
           "end": 68,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "วลีในเครื่องหมายคำพูดอยู่หลัง 'ราวกับจะบอกว่า' เป็นการเปรียบเทียบอาการกระตุก ไม่ใช่คำพูดออกเสียง"
+          }
         },
         {
           "start": 68,
@@ -388,7 +496,14 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -398,7 +513,15 @@
         {
           "start": 0,
           "end": 44,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -419,7 +542,14 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -429,7 +559,15 @@
         {
           "start": 0,
           "end": 56,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -450,7 +588,14 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "ตรวจบริบท p41-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -460,7 +605,15 @@
         {
           "start": 0,
           "end": 164,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -520,7 +673,15 @@
         {
           "start": 0,
           "end": 30,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -590,7 +751,15 @@
         {
           "start": 0,
           "end": 26,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -621,7 +790,14 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "ตรวจบริบท p58-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -631,7 +807,15 @@
         {
           "start": 0,
           "end": 10,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },
@@ -656,8 +840,14 @@
         {
           "start": 163,
           "end": 171,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "เป็นเสียงกระแทก (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 171,
@@ -677,8 +867,14 @@
         {
           "start": 58,
           "end": 71,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1"
+            ],
+            "reason": "เป็นเสียงน้ำหวานพุ่ง (sound effect) ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 71,
@@ -694,7 +890,14 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "ตรวจบริบท p63-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -705,7 +908,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "p65-1 ระบุว่าคำพูดหลุดออกมาจากปากของเฟรรี่ จึงเป็นเสียงพูดจริง"
+          }
         }
       ]
     },
@@ -735,8 +946,14 @@
         {
           "start": 0,
           "end": 19,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "เป็นเสียงรัดของช่องคลอดที่ประโยคบรรยายต่อด้วย 'ช่องคลอดขยับตัว' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 19,
@@ -761,7 +978,15 @@
         {
           "start": 0,
           "end": 16,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p12-1"
+            ],
+            "reason": "เป็นการส่งกระแสความคิดของเฟรรี่ตามที่ p12-1 ระบุ ไม่ได้เปล่งเสียงออกมา"
+          }
         }
       ]
     },

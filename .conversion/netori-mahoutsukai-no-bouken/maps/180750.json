@@ -28,7 +28,15 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p4 ระบุว่าเป็นเสียงเรียกของชินจิที่ทำให้มีริสตอบรับนัดหมาย"
+          }
         }
       ]
     },
@@ -49,7 +57,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "มีริสตอบรับคำเรียกของชินจิและบอกว่ามีเรื่องอยากคุยด้วย"
+          }
         }
       ]
     },
@@ -70,7 +86,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p8 ระบุว่าชินจิพูดประโยคนี้แล้วหยิบกุญแจมาเปิดประตู"
+          }
         }
       ]
     },
@@ -101,7 +125,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p9 ระบุว่าชินจิเปิดประตูแล้วหันกลับมาชวนมีริสเข้ามา"
+          }
         }
       ]
     },
@@ -112,7 +144,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "มีริสถามกลับเรื่องสถานที่หลังชินจิให้เข้ามา"
+          }
         }
       ]
     },
@@ -123,7 +163,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ชินจิเป็นเจ้าของบ้านและตอบว่าเป็นฐานลับของเขา"
+          }
         }
       ]
     },
@@ -134,7 +182,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "มีริสถามยืนยันคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -205,7 +261,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ชินจิเสนอชงชาให้มีริส และ p21 บรรยายว่าเขาเริ่มต้มน้ำ"
+          }
         }
       ]
     },
@@ -226,7 +290,15 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p21 ระบุว่ามีริสรวบรวมความกล้าแล้วถามขึ้น"
+          }
         }
       ]
     },
@@ -237,7 +309,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24 ระบุว่าชินจิถามกลับเพราะคำถามของมีริสคลุมเครือ"
+          }
         }
       ]
     },
@@ -258,7 +339,15 @@
           "start": 0,
           "end": 182,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "มีริสอธิบายคำถามของเธอต่อ"
+          }
         }
       ]
     },
@@ -269,7 +358,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชินจิเร่งเร้าให้มีริสพูดต่อตาม p27"
+          }
         }
       ]
     },
@@ -290,7 +388,15 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "มีริสถามต่อว่าชินจิเป็นคนดีหรือคนไม่ดี"
+          }
         }
       ]
     },
@@ -301,7 +407,15 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ชินจิตอบว่าตัวเองเป็นได้ทั้งสองอย่าง"
+          }
         }
       ]
     },
@@ -322,7 +436,15 @@
           "start": 0,
           "end": 193,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชินจิอธิบายเรื่องการแยกงานกับเรื่องส่วนตัวหลังหันกลับมาหามีริส"
+          }
         }
       ]
     },
@@ -353,7 +475,15 @@
           "start": 0,
           "end": 157,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "ชินจิถามเรื่องเซ็กซ์ครั้งก่อนและขอให้มีริสเป็นคู่นอน"
+          }
         }
       ]
     },
@@ -364,7 +494,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p36 ระบุว่ามีริสหน้าแดงและตอบโต้ชินจิด้วยความกล้าหาญ"
+          }
         }
       ]
     },
@@ -385,7 +524,15 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชินจิถามกลับ และ p38 มีริสตกใจตอบ"
+          }
         }
       ]
     },
@@ -396,7 +543,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "มีริสตกใจตอบชินจิ และ p39 บรรยายว่าเธอหลบสายตาด้วยความอับอาย"
+          }
         }
       ]
     },
@@ -427,7 +583,15 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ชินจิพูดต่อเรื่องการนอกใจขณะกุมหน้าอกของมีริสตาม p40"
+          }
         }
       ]
     },
@@ -438,7 +602,15 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "มีริสปฏิเสธเสียงสั่นและห้ามชินจิแตะหัวนม"
+          }
         }
       ]
     },
@@ -453,8 +625,14 @@
         {
           "start": 102,
           "end": 109,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "กึ้บ♡ เป็นเสียงจากการบีบหัวนม ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 109,
@@ -470,7 +648,15 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิเปรียบเทียบนิสัยของมีริสกับตัวเอง และ p45 มีริสส่งเสียงตอบ"
+          }
         }
       ]
     },
@@ -481,7 +667,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "มีริสส่งเสียงครางและปฏิเสธไม่ได้ตาม p46"
+          }
         }
       ]
     },
@@ -512,7 +707,15 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ชินจิพูดต่อว่ามีริสยังไม่รู้ตัวและจะทำให้รู้ตัวมากขึ้น"
+          }
         }
       ]
     },
@@ -523,7 +726,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "มีริสปฏิเสธพร้อมเสียงครางว่าใกล้ถึงจุดสุดยอด"
+          }
         }
       ]
     },
@@ -538,8 +749,14 @@
         {
           "start": 22,
           "end": 29,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "กึ้บ♡ เป็นเสียงจากการบีบคลิตอริส ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 29,
@@ -579,8 +796,14 @@
         {
           "start": 111,
           "end": 128,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "คิวย์นเป็นเสียงภายในช่องคลอดที่เรียกร้อง ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 128,
@@ -606,7 +829,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชินจิสั่งให้มีริสมองไปด้านข้าง"
+          }
         }
       ]
     },
@@ -617,7 +848,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "มีริสหันตามที่ถูกบอกและเห็นตัวเองในกระจกตาม p57"
+          }
         }
       ]
     },
@@ -668,7 +908,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ชินจิประกาศว่าจะสอดใส่หลังมีริสยอมรับตาม p59-p60"
+          }
         }
       ]
     },
@@ -678,8 +926,15 @@
         {
           "start": 0,
           "end": 12,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "มีเพียงจุดไข่ปลาและหัวใจแสดงความเงียบ/การไม่ปฏิเสธ ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
         }
       ]
     },
@@ -710,7 +965,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "ชินจิพูดหลังสอดใส่และเห็นมีริสมองกระจกตาม p64"
+          }
         }
       ]
     },
@@ -721,7 +984,15 @@
           "start": 0,
           "end": 126,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "มีริสขอโทษอัลวินและสารภาพว่าเป็นเด็กสาวผู้ลามก"
+          }
         }
       ]
     },
@@ -742,7 +1013,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "ชินจิประกาศว่าจะสนุกกับมีริสให้เต็มที่หลังกระแทกซ้ำๆ"
+          }
         }
       ]
     },
@@ -753,7 +1032,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "มีริสตอบรับด้วยเสียงคราง และ p70 บรรยายว่าร่างกายเธอสั่นสะท้าน"
+          }
         }
       ]
     },

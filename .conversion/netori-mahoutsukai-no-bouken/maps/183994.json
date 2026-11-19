@@ -7,8 +7,15 @@
         {
           "start": 0,
           "end": 12,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1"
+            ],
+            "reason": "เป็นเสียงถอนหายใจของอัลวินก่อน p2 บรรยายว่าเขากลับมาที่ห้องแล้วนั่งลงบนเตียงด้วยความหดหู่ ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -123,8 +130,14 @@
         {
           "start": 86,
           "end": 95,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'แต่งงาน' ในประโยคบรรยายความคิดของอัลวิน ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 95,
@@ -170,7 +183,15 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17 ระบุว่ามีริสมาอยู่หน้าห้องและเคาะประตูอย่างสุภาพก่อนเรียกอัลวินว่า 'อัลคุง'"
+          }
         }
       ]
     },
@@ -191,7 +212,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p17 ระบุว่าอัลวินรีบไปเปิดประตูห้อง จึงเป็นเขาผู้ขอโทษที่ให้มีริสรอ"
+          }
         }
       ]
     },
@@ -202,7 +232,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "มีริสตอบรับคำขอโทษของอัลวินด้วยความสุภาพ แล้ว p20 เธอเดินเข้ามาในห้อง"
+          }
         }
       ]
     },
@@ -223,7 +262,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p20 ระบุว่ามีริสพยักหน้าพลางมองหน้าอัลวิน แล้วถามคำถามนี้ก่อน p22 อัลวินตอบ"
+          }
         }
       ]
     },
@@ -234,7 +282,16 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "อัลวินตอบคำถามของมีริสเรื่องทำใจได้หรือยัง และ p23 บรรยายว่าเขายิ้มเจื่อนๆ"
+          }
         }
       ]
     },
@@ -255,7 +312,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "อัลวินถามมีริสว่า 'มี่...ชอบชินจิไหม?' และ p25 มีริสอุทานตอบ"
+          }
         }
       ]
     },
@@ -266,7 +332,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "มีริสถามกลับอย่างสงสัยว่าอัลวินเป็นอะไรไป และ p26 เธอซบศีรษะลงบนไหล่เขา"
+          }
         }
       ]
     },
@@ -297,7 +372,16 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p27 ระบุว่าอัลวินโอบไหล่มีริสแล้วพูดติดตลกอย่างไม่มั่นใจ และ p29 มีริสปลอบ"
+          }
         }
       ]
     },
@@ -308,7 +392,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "มีริสปฏิเสธคำพูดของอัลวิน และ p30 บรรยายว่าเธอยิ้มอย่างอ่อนโยนแล้วกอดศีรษะเขา"
+          }
         }
       ]
     },
@@ -329,7 +422,16 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "มีริสสารภาพว่ารักอัลวิน และ p32 อัลวินตอบว่ารักเธอเช่นกัน"
+          }
         }
       ]
     },
@@ -340,7 +442,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "อัลวินตอบรับคำสารภาพของมีริส แล้ว p33 บรรยายว่าเขาซบหน้าเข้ากับหน้าอกเธอ"
+          }
         }
       ]
     },
@@ -361,7 +472,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "อัลวินขอโทษเรื่องที่ถามเหมือนสงสัยมีริส และ p35 มีริสให้อภัย"
+          }
         }
       ]
     },
@@ -372,7 +492,16 @@
           "start": 0,
           "end": 95,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "มีริสให้อภัยอัลวินอย่างอ่อนโยน แล้ว p36 ระบุว่าอัลวินพยักหน้าเห็นด้วยกับคำพูดของเธอ"
+          }
         }
       ]
     },
@@ -467,8 +596,15 @@
         {
           "start": 41,
           "end": 83,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "เป็นความคิดชั่วแวบในใจของมีริสที่ถูกยกมาอ้างในเครื่องหมายคำพูด ไม่ได้พูดออกเสียง"
+          }
         }
       ]
     },
@@ -489,7 +625,16 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "อัลวินเงยหน้าขึ้นยิ้มอย่างสดใสแล้วชวนไปอาบน้ำและถามมีริสว่าจะเอายังไง"
+          }
         }
       ]
     },
@@ -500,7 +645,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "มีริสพึมพำขอรออยู่ตรงนี้หลังอัลวินถามใน p46 และ p48 บรรยายว่าเธอก้มหน้าลง"
+          }
         }
       ]
     },

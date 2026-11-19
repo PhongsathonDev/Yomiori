@@ -28,7 +28,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p2 ระบุว่าเรนกะนั่งกอดอกอยู่บนเตียง ส่วนไอริสนั่งบนพื้น และ p4 บรรยายว่าแก้มของเรนกะแดงก่ำเพราะถูกแอบฟัง"
+          }
         }
       ]
     },
@@ -59,7 +68,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p5 ระบุว่าไอริสก้มหน้าด้วยสีหน้าสำนึกผิดและคิดจะก้มหัวขอโทษ จึงเป็นคำขอโทษของไอริส"
+          }
         }
       ]
     },
@@ -70,7 +88,16 @@
           "start": 0,
           "end": 108,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "เรนกะบอกว่าไม่เป็นไรและถามว่าไอริสจริงจังเรื่องภรรยาคนที่สองหรือไม่ แล้ว p8 บรรยายว่าไอริสเงยหน้าขึ้น"
+          }
         }
       ]
     },
@@ -95,8 +122,14 @@
         {
           "start": 47,
           "end": 92,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "เป็นสายตาของเรนกะที่ราวกับจะบอกคำนี้ ไม่ได้พูดออกเสียงจริง"
+          }
         },
         {
           "start": 92,
@@ -112,7 +145,16 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p11 ระบุว่าเรนกะคิดว่าถ้าไม่ได้ฟังเรื่องราวก็คงตัดสินใจไม่ได้ จึงเป็นเรนกะผู้ขอให้ไอริสอธิบาย"
+          }
         }
       ]
     },
@@ -243,7 +285,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24 ระบุว่าเรนกะพยายามรวบรวมความคิดขณะฟังเรื่องราว จึงเป็นคำอุทานของเธอหลังไอริสเล่าจบ"
+          }
         }
       ]
     },
@@ -268,8 +319,14 @@
         {
           "start": 11,
           "end": 16,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "เป็นคำว่า 'ไม่' ที่ถูกยกมาอ้างในความคิดของเรนกะ ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
         },
         {
           "start": 16,
@@ -305,7 +362,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "เรนกะเป็นผู้ถามความเห็นของชินจิ และ p29 เป็นความคิดของเธอเรื่องการยืนยันความรู้สึกแต่ละฝ่าย"
+          }
         }
       ]
     },
@@ -326,7 +392,16 @@
           "start": 0,
           "end": 154,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "p31 ระบุว่าชินจิพูดอย่างลำบากใจว่าเขาไม่มีความคิดจะมีภรรยาคนที่สอง"
+          }
         }
       ]
     },
@@ -347,7 +422,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "p31 ระบุว่าไอริสพยักหน้ารับด้วยสีหน้าเรียบเฉยก่อนตอบว่าเข้าใจและขอโอกาสในอนาคต"
+          }
         }
       ]
     },
@@ -388,7 +472,16 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ไอริสอ้อนวอนชินจิให้เธอเป็นอันดับสอง และ p37 ชินจิลังเลตอบ"
+          }
         }
       ]
     },
@@ -399,7 +492,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชินจิตอบอย่างหนักใจต่อคำอ้อนวอนของไอริส และ p38 บรรยายว่าเขาไม่มีทางหลบเลี่ยงเพราะเรนกะมองอยู่"
+          }
         }
       ]
     },
@@ -430,7 +532,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p39 ระบุว่าเรนกะเห็นชินจิอึดอัดกับคำตอบจึงเปิดปากพูด และ p41 ไอริสตอบ"
+          }
         }
       ]
     },
@@ -441,7 +552,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ไอริสตอบเรนกะว่าตัวเองก็ตกใจที่จริงจังขนาดนี้ และ p42 บรรยายว่าเรนกะรู้ว่าไอริสไม่ชอบยอมแพ้"
+          }
         }
       ]
     },
@@ -462,7 +582,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เรนกะเป็นผู้แสดงความเห็นชอบ แล้ว p44 ชินจิอุทานตกใจว่า 'เรนกะ!?'"
+          }
         }
       ]
     },
@@ -473,7 +602,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p46-1"
+            ],
+            "reason": "p46 ระบุว่าชินจิเบิกตากว้างเมื่อเรนกะยิ้มและแสดงความเห็นชอบ"
+          }
         }
       ]
     },
@@ -484,7 +622,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p45-1",
+              "p47-1"
+            ],
+            "reason": "ไอริสถามเรนกะอย่างไม่เชื่อว่าจะได้คำตอบเร็วกว่า และ p47 บรรยายว่าเธอไม่คิดว่าจะได้รับคำตอบเร็วขนาดนี้"
+          }
         }
       ]
     },
@@ -515,7 +662,16 @@
           "start": 0,
           "end": 172,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เรนกะพูดกับชินจิโดยเรียกเขาว่า 'นาย' และบอกให้ยอมรับไอริสเป็นคนรักคนที่สอง แล้ว p49 ชินจิพยักหน้าเงียบๆ"
+          }
         }
       ]
     },
@@ -530,8 +686,14 @@
         {
           "start": 57,
           "end": 129,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "เป็นคำถามในสายตา/ท่าทีของเรนกะที่เอียงคอราวกับจะถาม ไม่ได้พูดออกเสียง"
+          }
         }
       ]
     },
@@ -542,7 +704,16 @@
           "start": 0,
           "end": 143,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "เรนกะหันมาพูดกับไอริสให้ลองเป็นคนรักกันดูก่อนและย้ำว่าเธอเป็นที่หนึ่งของชินจิ แล้ว p51 ไอริสตอบ"
+          }
         }
       ]
     },
@@ -553,7 +724,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ไอริสตอบรับข้อเสนอของเรนกะ และ p52 บรรยายว่าเธอพยักหน้าอย่างยินดี"
+          }
         }
       ]
     },
@@ -588,8 +768,14 @@
         {
           "start": 64,
           "end": 85,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "เป็นวลีที่ชินจิคิดว่าเขาไม่มีทางพูดออกมาตรงหน้าเรนกะ จึงเป็นการยกมาอ้างในความคิด ไม่ใช่บทสนทนา"
+          }
         },
         {
           "start": 85,
@@ -605,7 +791,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ชินจิเป็นผู้รับปากฝากตัวกับไอริสหลังเรนกะวางบทสรุปไว้ใน p50 และ p56 ไอริสตอบอย่างดีใจ"
+          }
         }
       ]
     },
@@ -616,7 +811,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ไอริสตอบรับชินจิอย่างดีใจ และ p57 ระบุว่าเธอได้เป็นคนรักแล้ว"
+          }
         }
       ]
     },
@@ -647,7 +851,16 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "เรนกะยิ้มสดใสแล้วกำหนดเงื่อนไขว่าชินจิกับไอริสต้องมีเซ็กส์กัน แล้ว p60 ชินจิอุทาน 'หือ?'"
+          }
         }
       ]
     },
@@ -658,7 +871,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p62-1"
+            ],
+            "reason": "p62 ระบุว่าชินจิและไอริสเอียงคอพร้อมกันหลังได้ยินเงื่อนไขของเรนกะ"
+          }
         }
       ]
     },
@@ -669,7 +891,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p62 ระบุว่าไอริสเอียงคอพร้อมชินจิหลังได้ยินเงื่อนไขของเรนกะ จึงเป็นเสียงงุนงงของไอริส"
+          }
         }
       ]
     },
@@ -690,7 +921,16 @@
           "start": 0,
           "end": 114,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "เรนกะอธิบายว่าเธอถูกแอบฟังเสียงน่าอายคนเดียว จึงขอให้ไอริสเจอแบบเดียวกัน และ p64 บรรยายว่าชินจิยอมแพ้ต่อรอยยิ้มของเธอ"
+          }
         }
       ]
     },

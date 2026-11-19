@@ -15,21 +15,23 @@ only, verify, and report.
 
 ## Check every source
 
-1. Rebuild mentally from the cue: every `DIALOGUE?` span became a dialogue block
-   with a real roster speaker, and every `NARR-REVIEW?` span has a narration
-   decision with a reason. `NARR` may stay narration.
-2. For every dialogue block, open the surrounding cue paragraphs and confirm the
-   speaker from evidence: narration tags, who is addressed, who answers, the
-   scene's participants, gendered particles, nicknames. Report any line whose
-   speaker is not supported.
-3. Check quoted thoughts, titles, signs and sound effects were not turned into
-   spoken dialogue; check spoken lines were not buried as narration.
-4. Check group IDs are used only for genuinely unnamed/collective voices.
-5. Check no prose was changed: spans cover the token text exactly and no text
-   field exists.
-6. Check the roster contains every named speaker in the chapter. Report missing
-   names with the token ID instead of accepting a substitute.
-7. Compute `jsonHash` of the final map exactly as `conversion-core.mjs` does.
+Work chapter by chapter and write the report entry as soon as that chapter is
+decided, so partial progress is not lost.
+
+1. Read the cue's speaker totals and the chapter title/first paragraph to know
+   who is in the scene.
+2. Scan the map's dialogue decisions in order. For each line, the assigned
+   speaker must be plausible from the line itself, the address terms, and the
+   recorded `WHY`/context. Open the cue around that token only when the line or
+   the reason leaves real doubt. Do not re-read the whole narration for every
+   line.
+3. Confirm that quoted thoughts, titles, signs and sound effects were not turned
+   into spoken dialogue. Check the quoted-narration decisions in the map.
+4. Check group IDs are used only for genuinely unnamed/collective voices, and
+   that every named character in the scene has a roster entry.
+5. Check spans cover the token text exactly and no segment carries a `text`
+   field.
+6. Compute `jsonHash` of the final map exactly as `conversion-core.mjs` does.
 
 ## Report
 

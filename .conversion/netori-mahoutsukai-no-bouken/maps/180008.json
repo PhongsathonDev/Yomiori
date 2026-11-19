@@ -38,7 +38,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "บทบรรยาย p7 ระบุว่าเมื่อชินจิถามย้ำ เรนกะและอากาเนะไม่มีทีท่าจะเปลี่ยนใจ"
+          }
         }
       ]
     },
@@ -49,7 +56,15 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "เป็นคำตอบของเรนกะก่อนอากาเนะเสริมใน p6 และบทบรรยาย p7 ระบุว่าเธอไม่เปลี่ยนใจ"
+          }
         }
       ]
     },
@@ -60,7 +75,14 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ลงท้ายด้วยค่ะและบทบรรยาย p7 ระบุว่าอากาเนะดูตื่นเต้นเป็นพิเศษ"
+          }
         }
       ]
     },
@@ -81,7 +103,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนเริ่มและเอ่ยชื่อเรนกะตรง ๆ"
+          }
         }
       ]
     },
@@ -92,7 +121,14 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบรับคำชวนของชินจิและลงท้ายด้วยคะ"
+          }
         }
       ]
     },
@@ -152,8 +188,14 @@
         {
           "start": 0,
           "end": 37,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์จากการจูบ ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -184,7 +226,14 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "เรนกะเป็นผู้หันไปถามอากาเนะ แล้วอากาเนะตอบใน p19"
+          }
         }
       ]
     },
@@ -195,7 +244,14 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "อากาเนะเป็นผู้ตอบคำถามของเรนกะเรื่องการจูบ"
+          }
         }
       ]
     },
@@ -206,7 +262,14 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "บทบรรยาย p21 ระบุว่าขณะเรนกะกำลังสนใจอากาเนะ ชินจิก็เอื้อมมือไปแตะเธอ"
+          }
         }
       ]
     },
@@ -227,7 +290,15 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p24-1"
+            ],
+            "reason": "ชินจิเป็นผู้เสนอเปลี่ยนท่า แล้วบทบรรยาย p24 ระบุว่าเขาหมุนตัวเรนกะ"
+          }
         }
       ]
     },
@@ -238,7 +309,14 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบโต้ข้อเสนอของชินจิ"
+          }
         }
       ]
     },
@@ -283,8 +361,14 @@
         {
           "start": 148,
           "end": 158,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"จุ๊บ\" จากนิ้ว ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 158,
@@ -300,7 +384,14 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดหลังลูบไล้เรนกะใน p26-p27 แล้วเรนกะตอบใน p29"
+          }
         }
       ]
     },
@@ -311,7 +402,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบชินจิและมีเสียงครางจากการถูกสัมผัส"
+          }
         }
       ]
     },
@@ -322,7 +420,15 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p31-1"
+            ],
+            "reason": "เป็นเสียงครางต่อเนื่องจากเรนกะที่กำลังถูกชินจิลูบไล้ตามบทบรรยาย p31"
+          }
         }
       ]
     },
@@ -337,8 +443,14 @@
         {
           "start": 36,
           "end": 47,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"จุ๊บ ๆ\" ที่บทบรรยายระบุว่าดังขึ้น ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 47,
@@ -374,7 +486,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p35-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายให้อากาเนะดู และอากาเนะตอบด้วยเสียงครางใน p35"
+          }
         }
       ]
     },
@@ -385,7 +505,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p36-1"
+            ],
+            "reason": "บทบรรยาย p36 ระบุว่าเมื่อชินจิถูคลิตอริส ร่างกายของเรนกะก็สะตุก"
+          }
         }
       ]
     },
@@ -416,7 +544,15 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายต่อ แล้วเรนกะตอบใน p39"
+          }
         }
       ]
     },
@@ -427,7 +563,15 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p40-1"
+            ],
+            "reason": "เรนกะเรียกชื่อชินจิและลงท้ายด้วยค่ะ ก่อนบทบรรยาย p40 เรื่องนิ้วของชินจิ"
+          }
         }
       ]
     },
@@ -447,8 +591,14 @@
         {
           "start": 0,
           "end": 19,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"แจ๊ะ\" ที่เกิดจากการสอดใส่ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 19,
@@ -484,7 +634,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p45-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าพอแล้วและจะสอดใส่ แล้วเรนกะตอบใน p45"
+          }
         }
       ]
     },
@@ -495,7 +653,14 @@
           "start": 0,
           "end": 65,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "เรนกะเป็นผู้ตอบชินจิและหันไปบอกให้อากาเนะเตรียมดู"
+          }
         }
       ]
     },
@@ -506,7 +671,15 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p47-1"
+            ],
+            "reason": "เป็นเสียงกลั้นหายใจแบบประหม่าเป็นการตอบรับคำสั่งของเรนกะให้อากาเนะเตรียมดู และบทบรรยาย p47 ยังคงเล่าเรื่องเรนกะต่อ"
+          }
         }
       ]
     },
@@ -547,7 +720,15 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p51-1"
+            ],
+            "reason": "เรนกะเป็นผู้ประกาศว่าจะสอดใส่หลังเห็นอวัยวะเพศของชินจิใน p49"
+          }
         }
       ]
     },
@@ -558,7 +739,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p55-1"
+            ],
+            "reason": "บทบรรยาย p55 ระบุว่าเมื่ออากาเนะเห็นอวัยวะเพศของชินจิ ความทรงจำเรื่องก็อบลินก็ย้อนกลับมา จึงเป็นเสียงอุทานของเธอ"
+          }
         }
       ]
     },
@@ -629,7 +818,14 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "บทบรรยาย p59 ระบุว่าร่างกายของเรนกะที่ไม่ได้ถึงจุดสุดยอดกำลังเร่าร้อนและเธอขยับสะโพกเอง"
+          }
         }
       ]
     },
@@ -649,8 +845,14 @@
         {
           "start": 0,
           "end": 15,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"แจ๊ะ\" จากการสอดใส่ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 15,
@@ -676,7 +878,15 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p63-1"
+            ],
+            "reason": "บทบรรยาย p63 ระบุว่าเรนกะถึงจุดสุดยอดพร้อมเสียงกระทบ จึงเป็นเสียงของเธอ"
+          }
         }
       ]
     },
@@ -691,8 +901,14 @@
         {
           "start": 31,
           "end": 39,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"ปั๊ก\" ของบั้นท้ายกระทบสะโพก ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 39,
@@ -712,8 +928,14 @@
         {
           "start": 33,
           "end": 42,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"จี๊ด\" จากช่องคลอด ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 42,
@@ -749,7 +971,15 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "บทบรรยาย p69 ระบุว่าเรนกะหันกลับมามองชินจิพร้อมทำหน้าอย่างรู้สึกผิดหลังพูดประโยคนี้"
+          }
         }
       ]
     },
@@ -760,7 +990,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p71-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าไม่เป็นไรและจะทำต่อ แล้วบทบรรยาย p71 ระบุว่าเขายิ้มอย่างอ่อนโยน"
+          }
         }
       ]
     },
@@ -801,7 +1039,14 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1"
+            ],
+            "reason": "บทบรรยาย p71 ระบุว่าชินจิเริ่มขยับสะโพกกระแทกเข้าไปในช่องคลอดของเรนกะ จึงเป็นเสียงของเรนกะ"
+          }
         }
       ]
     },
@@ -811,8 +1056,14 @@
         {
           "start": 0,
           "end": 13,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"ตึง\" จากการกระแทก ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 13,
@@ -832,8 +1083,14 @@
         {
           "start": 110,
           "end": 125,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"ปั๊ก\" ของบั้นท้ายกระทบกัน ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 125,
@@ -849,7 +1106,14 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าใกล้จะเสร็จ แล้วเรนกะพูดต่อใน p76"
+          }
         }
       ]
     },
@@ -860,7 +1124,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p77-1"
+            ],
+            "reason": "เรนกะเป็นผู้พูดให้ปล่อยข้างในก่อนบทบรรยาย p77 ที่ชินจิหลั่ง"
+          }
         }
       ]
     },
@@ -870,8 +1142,14 @@
         {
           "start": 0,
           "end": 8,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1"
+            ],
+            "reason": "เป็นเสียงเอฟเฟกต์ \"ฮึ่บ\" ขณะหลั่ง ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 8,

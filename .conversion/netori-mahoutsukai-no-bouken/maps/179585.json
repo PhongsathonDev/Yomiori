@@ -529,14 +529,13 @@
         {
           "start": 57,
           "end": 74,
-          "type": "dialogue",
-          "speakerId": "netori-charlotte",
+          "type": "narration",
           "review": {
             "confirmed": true,
             "context": [
               "p35-1"
             ],
-            "reason": "เสียงครางของชาร์ลอตต้าในช่วงบรรยายการสอดใส่"
+            "reason": "เสียงรัดของช่องคลอดที่บรรยายว่า 'รัดแน่น' เป็นเสียงกาย ไม่ใช่คำพูดของชาร์ลอตต้า"
           }
         },
         {
@@ -659,14 +658,13 @@
         {
           "start": 37,
           "end": 45,
-          "type": "dialogue",
-          "speakerId": "netori-charlotte",
+          "type": "narration",
           "review": {
             "confirmed": true,
             "context": [
               "p43-1"
             ],
-            "reason": "เสียงครางของชาร์ลอตต้าขณะรัดช่องคลอดตามที่ประโยคบรรยายระบุว่าเธอเป็นผู้กระทำ"
+            "reason": "เสียงรัดช่องคลอดขณะบีบอสุจิหยดสุดท้าย เป็นเสียงกาย ไม่ใช่คำพูดของชาร์ลอตต้า"
           }
         },
         {

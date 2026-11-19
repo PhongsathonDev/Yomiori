@@ -1,0 +1,96 @@
+{
+  "p2-1#2": {
+    "speakerId": "netori-emily",
+    "context": ["p1-1", "p2-1", "p3-1"],
+    "reason": "คำอำลาของเอมิลี่ก่อนทุกคนออกเดินทางไปกิลด์"
+  },
+  "p6-1": "netori-gildeo",
+  "p8-1": "netori-gildeo",
+  "p9-1": {
+    "speakerId": "netori-party",
+    "context": ["p9-1", "p10-1"],
+    "reason": "ทั้งสี่คนก้มหัวตอบพร้อมกันตาม p10-1"
+  },
+  "p12-1": "netori-gildeo",
+  "p14-1": "netori-gildeo",
+  "p16-1": "netori-gildeo",
+  "p17-1": {
+    "speakerId": "netori-gildeo",
+    "context": ["p16-1", "p17-1", "p18-1"],
+    "reason": "ประโยคต่อเนื่องของกิลเดโอ และ p19-1 ระบุว่าชินจิถามเมื่อได้ยินคำพูดของกิลเดโอ"
+  },
+  "p18-1": "netori-shinji",
+  "p23-1": "netori-gildeo",
+  "p24-1": "netori-shinji",
+  "p26-1": "netori-gildeo",
+  "p27-1": {
+    "speakerId": "netori-party",
+    "context": ["p27-1", "p28-1"],
+    "reason": "อัลวินและเพื่อนๆ กล่าวคำอำลาพร้อมกันตาม p28-1"
+  },
+  "p31-1": "netori-miris",
+  "p32-1": {
+    "speakerId": "netori-renka",
+    "context": ["p31-1", "p32-1", "p35-1", "p37-1"],
+    "reason": "ต่อจากคำชมของมีริส และ p35-1 เป็นคำถามที่ p37-1 ระบุว่าเป็นของเรนกะ"
+  },
+  "p34-1": "netori-alvin",
+  "p35-1": {
+    "speakerId": "netori-renka",
+    "context": ["p35-1", "p36-1", "p37-1"],
+    "reason": "p37-1 ระบุว่าชินจิตอบคำถามของเรนกะ"
+  },
+  "p36-1": "netori-shinji",
+  "p42-1": "netori-alvin",
+  "p43-1": "netori-miris",
+  "p50-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p50-1", "p51-1"],
+    "reason": "นักบวชผู้นำทางในวิหารไม่มีชื่อใน roster จึงใช้เสียงของตัวละครประกอบที่ไม่มีชื่อ"
+  },
+  "p52-1": "netori-alvin",
+  "p53-1": "netori-miris",
+  "p55-1#2": {
+    "type": "narration",
+    "context": ["p55-1", "p56-1"],
+    "reason": "เสียงกลืนน้ำลาย 'อึก...' ไม่ใช่คำพูด"
+  },
+  "p56-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p56-1", "p58-1"],
+    "reason": "นักบวชผู้เฝ้าประตูรายงานต่อมิโกะ ไม่มีชื่อใน roster"
+  },
+  "p57-1": {
+    "speakerId": "netori-arian",
+    "context": ["p57-1", "p58-1"],
+    "reason": "p58-1 ระบุว่าเสียงผู้หญิงดังมาจากในห้องก่อนพวกเขาเข้าไป"
+  },
+  "p59-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p59-1", "p60-1"],
+    "reason": "p60-1 ระบุว่านักบวชเป็นผู้เชิญให้เข้าไป"
+  },
+  "p65-1": "netori-arian",
+  "p67-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p66-1", "p67-1", "p68-1"],
+    "reason": "หัวหน้าปาร์ตี้เป็นผู้แนะนำตัวและพูดด้วยคำลงท้าย ครับ"
+  },
+  "p68-1": "netori-arian",
+  "p69-1#2": {
+    "type": "narration",
+    "context": ["p68-1", "p69-1"],
+    "reason": "เครื่องหมายคำพูดใช้ยกคำว่า คำพยากรณ์ ในประโยคบรรยาย ไม่ใช่บทสนทนา"
+  },
+  "p75-1": "netori-arian",
+  "p76-1": {
+    "speakerId": "netori-party",
+    "context": ["p75-1", "p76-1", "p77-1"],
+    "reason": "ทั้งกลุ่มตอบรับพร้อมกันแล้วออกจากห้องตาม p77-1"
+  },
+  "p80-1#2": {
+    "type": "narration",
+    "context": ["p80-1"],
+    "reason": "เสียงประตูปิด 'ปัง' ไม่ใช่คำพูด"
+  }
+}

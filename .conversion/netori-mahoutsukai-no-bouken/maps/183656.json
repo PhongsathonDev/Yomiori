@@ -28,7 +28,14 @@
           "start": 0,
           "end": 121,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1"
+            ],
+            "reason": "ตรวจบริบท p3-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -39,7 +46,14 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "ตรวจบริบท p4-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -60,7 +74,14 @@
           "start": 0,
           "end": 175,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "ตรวจบริบท p6-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -71,7 +92,14 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ตรวจบริบท p7-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -92,7 +120,16 @@
           "start": 0,
           "end": 199,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p8-1 ระบุว่าไอริสเหลือบมองพวกลีร่า และ p10-1 ระบุว่าชินจิเป็นผู้พูดเล่าเรื่องนี้ต่อไป"
+          }
         }
       ]
     },
@@ -113,7 +150,14 @@
           "start": 0,
           "end": 179,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "ตรวจบริบท p11-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -144,7 +188,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p13-1 ระบุว่าลีร่าพยักหน้าแล้วชูนิ้วขึ้น จากนั้นชินจิเป็นผู้ตอบกลับใน p15-1"
+          }
         }
       ]
     },
@@ -155,7 +208,14 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "ตรวจบริบท p15-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -176,7 +236,17 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p16-1 ระบุว่าฝาแฝดเห็นด้วยกับพี่สาว และเรื่องไล่ชื่อลิลี่ก่อนลิลเมื่อฝาแฝดพูดต่อกัน จึงให้ลิลี่เป็นคนแรก"
+          }
         }
       ]
     },
@@ -187,7 +257,16 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "เป็นบทพูดต่อเนื่องจาก p17-1 ของฝาแฝดอีกคน ตามลำดับชื่อที่เรื่องใช้ (ลิลี่แล้วลิล)"
+          }
         }
       ]
     },
@@ -198,7 +277,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นหมายถึงลิลี่และลิลพูดพร้อมกัน; p20-1 ระบุว่าลิลี่และลิลยักไหล่"
+          }
         }
       ]
     },
@@ -239,7 +327,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p22-1 ระบุว่าไอริสถามชินจิด้วยความสงสัย"
+          }
         }
       ]
     },
@@ -250,7 +347,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ระบุว่าชินจิขัดจังหวะคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -281,7 +387,14 @@
           "start": 0,
           "end": 204,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -297,7 +410,15 @@
           "start": 28,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p28-1 บรรยายว่าชินจิยิ้มเจื่อนๆ พลางถาม และ p29-1 เป็นปฏิกิริยาของไอริส"
+          }
         }
       ]
     },
@@ -318,7 +439,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ตรวจบริบท p30-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -329,7 +457,16 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p32-1 ระบุว่าชินจิพยักหน้ายอมรับคำตำหนิของไอริส"
+          }
         }
       ]
     },
@@ -350,7 +487,14 @@
           "start": 0,
           "end": 159,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -361,7 +505,14 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -382,7 +533,16 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p35-1 ระบุว่าไอริสก้มศีรษะขอโทษพวกลีร่า และ p37-1 เป็นลีร่าตอบรับคำขอโทษ"
+          }
         }
       ]
     },
@@ -393,7 +553,16 @@
           "start": 0,
           "end": 125,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่าลีร่ายิ้มพลางรับคำขอโทษของไอริส"
+          }
         }
       ]
     },
@@ -444,7 +613,14 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -455,7 +631,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p45-1"
+            ],
+            "reason": "p45-1 ระบุว่าลีร่ายิ้มพลางโยนระเบิดคำถามนี้ใส่ไอริส"
+          }
         }
       ]
     },
@@ -466,7 +651,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นหมายถึงลิลี่และลิลอุทานพร้อมกัน; p45-1 ระบุว่าลิลี่และลิลตัวแข็งทื่อด้วยความประหลาดใจ"
+          }
         }
       ]
     },
@@ -497,7 +691,16 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "p46-1 ระบุว่าไอริสหลบสายตาแต่ตอบออกไปอย่างจริงจัง"
+          }
         }
       ]
     },
@@ -508,7 +711,14 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -519,7 +729,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นหมายถึงลิลี่และลิลพูดพร้อมกัน; p50-1 ระบุว่าลิลี่และลิลทำหน้าหน่ายๆ"
+          }
         }
       ]
     },
@@ -540,7 +759,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1"
+            ],
+            "reason": "ตรวจบริบท p51-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -551,7 +777,15 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p53-1 ระบุว่าลีร่ายิ้มให้ชินจิที่บ่นพึมพำ"
+          }
         }
       ]
     },
@@ -572,7 +806,14 @@
           "start": 0,
           "end": 110,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ตรวจบริบท p54-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -583,7 +824,14 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "ตรวจบริบท p55-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -594,7 +842,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุว่าไอริสที่ได้ยินบทสนทนาก็พึมพำอย่างเหม่อลอย"
+          }
         }
       ]
     },
@@ -655,7 +911,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "p64-1 ระบุว่าลีร่าพูดกับไอริสที่กำลังเหม่อลอย"
+          }
         }
       ]
     },
@@ -666,7 +931,14 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "ตรวจบริบท p63-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -687,7 +959,14 @@
           "start": 0,
           "end": 80,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "ตรวจบริบท p65-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -698,7 +977,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1"
+            ],
+            "reason": "ตรวจบริบท p66-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -719,7 +1005,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "p67-1 ระบุว่าลีร่าพยักหน้ากับคำพูดของไอริสแล้วจึงตอบ"
+          }
         }
       ]
     },
@@ -730,7 +1025,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "เป็นคำทวนคำพูดของลีร่าอย่างเหม่อลอย ก่อนชินจิออกปากเรียกคุณลีร่าใน p70-1"
+          }
         }
       ]
     },
@@ -741,7 +1045,14 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "ตรวจบริบท p70-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -752,7 +1063,15 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นหมายถึงลิลี่และลิลพูดพร้อมกัน; p72-1 ระบุว่าชินจิถูกลิลี่และลิลจับไว้"
+          }
         }
       ]
     },
@@ -783,7 +1102,14 @@
           "start": 0,
           "end": 146,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1"
+            ],
+            "reason": "ตรวจบริบท p74-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -794,7 +1120,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "p76-1 ระบุว่าไอริสนึกถึงความสุขจากการมีเซ็กส์ด้วยยาเสน่ห์และเห็นด้วยกับคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -814,7 +1149,15 @@
         {
           "start": 0,
           "end": 78,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p80-1"
+            ],
+            "reason": "ข้อความใน『』เป็นการแลกเปลี่ยนความคิด ไม่ได้เปล่งเสียงพูด; p80-1 ระบุว่าชินจิแลกเปลี่ยนความคิดกับฝาแฝด"
+          }
         }
       ]
     },
@@ -824,7 +1167,15 @@
         {
           "start": 0,
           "end": 39,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p80-1"
+            ],
+            "reason": "เป็นความคิดของฝาแฝดในกระแสความคิดเดียวกัน ไม่ได้เปล่งเสียงพูด; p80-1 ระบุว่าเป็นการแลกเปลี่ยนความคิด"
+          }
         }
       ]
     },
@@ -834,7 +1185,15 @@
         {
           "start": 0,
           "end": 46,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "เป็นความคิดของฝาแฝดในกระแสความคิดเดียวกัน ไม่ได้เปล่งเสียงพูด; p80-1 ระบุว่าเป็นการแลกเปลี่ยนความคิด"
+          }
         }
       ]
     },
@@ -855,7 +1214,14 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1"
+            ],
+            "reason": "ตรวจบริบท p81-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -866,7 +1232,14 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1"
+            ],
+            "reason": "ตรวจบริบท p82-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -887,7 +1260,16 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1",
+              "p84-1",
+              "p85-1"
+            ],
+            "reason": "p83-1 และ p85-1 ระบุว่าคำปฏิเสธและการประกาศขอเป็นภรรยาคนที่สองเป็นของไอริส"
+          }
         }
       ]
     },
@@ -918,7 +1300,14 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p87-1"
+            ],
+            "reason": "ตรวจบริบท p87-1 แล้ว จัดประเภทเป็นคำพูดของลีร่า"
+          }
         }
       ]
     },
@@ -929,7 +1318,14 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p88-1"
+            ],
+            "reason": "ตรวจบริบท p88-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -949,7 +1345,15 @@
         {
           "start": 0,
           "end": 28,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p90-1",
+              "p91-1"
+            ],
+            "reason": "ข้อความใน『』เป็นเสียงความคิดของสองแฝดตามที่ p91-1 ระบุ ไม่ได้เปล่งเสียงพูด"
+          }
         }
       ]
     },

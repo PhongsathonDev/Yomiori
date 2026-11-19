@@ -28,7 +28,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p6-1"
+            ],
+            "reason": "p6 ระบุว่าเป็นความคิดเห็นของอัลวินที่กำลังเช็ดเหงื่อ"
+          }
         }
       ]
     },
@@ -39,7 +47,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ผู้ตอบรับอัลวินแล้วสั่งเฟรรี่ ภูตของชินจิ ให้เฝ้าระวังรอบๆ"
+          }
         }
       ]
     },
@@ -50,7 +67,15 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "เสียงตอบรับของเฟรรี่ต่อคำสั่งใน p4"
+          }
         }
       ]
     },
@@ -81,7 +106,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p7 ระบุว่าชินจิเข้าใจความหมายของเฟรรี่แล้วเตือนอัลวินและเพื่อนๆ"
+          }
         }
       ]
     },
@@ -92,7 +125,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "อัลวินหัวหน้าปาร์ตี้เป็นผู้ตอบรับคำเตือนของชินจิ"
+          }
         }
       ]
     },
@@ -103,7 +144,15 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "คำพูดสุภาพลงท้าย 'ค่ะ' ของมีริส ก่อน p11 ระบุว่ามีริสลุกตาม"
+          }
         }
       ]
     },
@@ -174,7 +223,15 @@
           "start": 0,
           "end": 80,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p18 ระบุว่ามินาโตะพูดด้วยน้ำเสียงวางอำนาจเหมือนวันก่อน"
+          }
         }
       ]
     },
@@ -195,7 +252,15 @@
           "start": 0,
           "end": 127,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p18 ระบุว่าอัลวินหัวหน้าปาร์ตี้ก้าวออกมาตอบมินาโตะ"
+          }
         }
       ]
     },
@@ -206,7 +271,15 @@
           "start": 0,
           "end": 150,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "มินาโตะพูดต่อเนื่องด้วยเจตนาเป็นศัตรูตาม p21"
+          }
         }
       ]
     },
@@ -247,7 +320,15 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p23 ระบุว่าชินจิพูดอย่างเบื่อหน่ายเมื่อเห็นสิ่งที่มินาโตะจ้องมอง"
+          }
         }
       ]
     },
@@ -258,7 +339,15 @@
           "start": 0,
           "end": 118,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "มินาโตะตอบชินจิและขอเฟรรี่มาเป็นของตน"
+          }
         }
       ]
     },
@@ -273,8 +362,14 @@
         {
           "start": 72,
           "end": 94,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "สีหน้าของอัลวิน มีริสและเรนกะที่บรรยายว่า 'ราวกับจะพูดว่า' ไม่ใช่คำพูดจริง"
+          }
         },
         {
           "start": 94,
@@ -320,7 +415,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ชินจิย้ำคำเตือนเรื่องสายตาแปลกๆ หลังเอาแขนเสื้อบังสายตาเฟรรี่ใน p29"
+          }
         }
       ]
     },
@@ -351,7 +454,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "อัลวินพยักหน้าให้ชินจิใน p32 แล้วประกาศถอย และ p34 ระบุว่าอัลวินเดินออกไป"
+          }
         }
       ]
     },
@@ -372,7 +484,15 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p36 ระบุว่ามินาโตะส่งเสียงจิ๊หลังปาร์ตี้เดินจากไป"
+          }
         }
       ]
     },
@@ -393,7 +513,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lira",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38 ระบุว่าชินจิได้ยินเสียงที่ดูงงงวยของลีร่า"
+          }
         }
       ]
     },
@@ -474,7 +602,15 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิถอนหายใจขณะคิดเรื่องมินาโตะ ก่อนเรนกะเรียกใน p46"
+          }
         }
       ]
     },
@@ -485,7 +621,15 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47 ระบุว่าเรนกะเรียกชินจิและถามว่าคิดอะไรเสร็จแล้วหรือยัง"
+          }
         }
       ]
     },
@@ -516,7 +660,15 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของเรนกะและบอกว่าจะเตือนเอมิลี่เอง"
+          }
         }
       ]
     },
@@ -527,7 +679,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p52-1"
+            ],
+            "reason": "อัลวินแสดงความเหนื่อยหน่ายต่อคำพูดของมินาโตะหลังชินจิสรุปใน p49 (p52 ระบุว่าอัลวินทำหน้าเหนื่อยหน่าย)"
+          }
         }
       ]
     },
@@ -538,7 +699,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "p52 ระบุว่ามีริสตัวสั่นกับคำพูดที่ถูกดูถูกเกินไป"
+          }
         }
       ]
     },
@@ -559,7 +728,15 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "p54 ระบุว่าชินจิพูดว่า 'อย่างที่เรนกะว่านั่นแหละ'"
+          }
         }
       ]
     },
@@ -570,7 +747,15 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชินจิเป็นผู้กล่าวถึงเรนกะและเตือนเรื่องการสอบเลื่อนขั้น"
+          }
         }
       ]
     },
@@ -591,7 +776,15 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p58-1"
+            ],
+            "reason": "เสียงดักฟังจากห้องของมินาโตะ (p58) และเป็นคำพูดของมินาโตะเรื่องดวงตาของเขา"
+          }
         }
       ]
     },
@@ -602,7 +795,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ชินจิผู้ดักฟังแสดงความบันเทิงใจต่อเสียงอาละวาดของมินาโตะ"
+          }
         }
       ]
     },
@@ -623,7 +824,16 @@
           "start": 0,
           "end": 132,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "มินาโตะถามลิลี่และลิลว่าพวกเธอรักเขาหรือไม่"
+          }
         }
       ]
     },
@@ -634,7 +844,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "มินาโตะเอ่ยชื่อลิลี่ก่อนลิลใน p59 เสียงตอบแรกจึงเป็นของลิลี่"
+          }
         }
       ]
     },
@@ -645,7 +864,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "เสียงตอบที่สองเป็นการตอบของลิลตามลำดับชื่อใน p59"
+          }
         }
       ]
     },
@@ -660,8 +888,14 @@
         {
           "start": 20,
           "end": 26,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1"
+            ],
+            "reason": "เสียงกระทบ 'ตึ้ก' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 26,
@@ -671,8 +905,14 @@
         {
           "start": 39,
           "end": 52,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1"
+            ],
+            "reason": "เสียงจูบ 'จุ๊บ♡ จุ๊บ♡' ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 52,
@@ -688,7 +928,15 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-minato",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "มินาโตะพูดถึงเฟรรี่และเอมิลี่ต่อเนื่อง"
+          }
         }
       ]
     },
@@ -699,7 +947,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "ชินจิอุทานเมื่อได้ยินเป้าหมายหลักของมินาโตะ แล้ว p65 เป็นความคิดของเขา"
+          }
         }
       ]
     },
@@ -780,7 +1037,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "เอมิลี่ที่ถูกเสน่ห์พูดกับชินจิและพุ่งเข้าใส่ใน p73"
+          }
         }
       ]
     },
