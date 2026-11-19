@@ -1,7 +1,7 @@
 {
   "version": 1,
   "novelId": "netori-mahoutsukai-no-bouken",
-  "updatedAt": "2026-11-19T15:44:59.459Z",
+  "updatedAt": "2026-11-19T16:18:33.529Z",
   "sources": [
     {
       "sourceId": "179518",
@@ -11,7 +11,7 @@
       "status": "applied",
       "mapJsonHash": "2a30d7e8371736d520d7c5a84e445e24f040a34208134c266fa79ef7561ab0f0",
       "reviewJsonHash": "2a30d7e8371736d520d7c5a84e445e24f040a34208134c266fa79ef7561ab0f0",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -21,8 +21,8 @@
       "worker": "pilot",
       "status": "applied",
       "mapJsonHash": "8c0a081f20cd1f95dc5a90e31fa654ac295c24b383b7c7619ad5fdf61e945216",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "8c0a081f20cd1f95dc5a90e31fa654ac295c24b383b7c7619ad5fdf61e945216",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -33,7 +33,7 @@
       "status": "applied",
       "mapJsonHash": "3979e2fe753110ac8252dbcfc9672d9de4cc3fbfa3d3fc09c37f311764b46010",
       "reviewJsonHash": "3979e2fe753110ac8252dbcfc9672d9de4cc3fbfa3d3fc09c37f311764b46010",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -44,7 +44,7 @@
       "status": "applied",
       "mapJsonHash": "f95522814d526881e3e8ee0f9b0a0c3e0c085b4049635ce4a53e71bc9e7a4f94",
       "reviewJsonHash": "f95522814d526881e3e8ee0f9b0a0c3e0c085b4049635ce4a53e71bc9e7a4f94",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -55,7 +55,7 @@
       "status": "applied",
       "mapJsonHash": "2bbec9c5254c4589ace9fad96d531ba13c02dac7237551d4a3edb8ee47df7f94",
       "reviewJsonHash": "2bbec9c5254c4589ace9fad96d531ba13c02dac7237551d4a3edb8ee47df7f94",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -65,8 +65,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "5edf0c0d2837f9781ebad7b1058d3ed734acb2ee57e2e78a3178a1139c58dbfb",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "5edf0c0d2837f9781ebad7b1058d3ed734acb2ee57e2e78a3178a1139c58dbfb",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -77,7 +77,7 @@
       "status": "applied",
       "mapJsonHash": "e9d76b49d692f0bcf4384d545b308dc559c567e25c2210d41d4120b8cf6f91bf",
       "reviewJsonHash": "e9d76b49d692f0bcf4384d545b308dc559c567e25c2210d41d4120b8cf6f91bf",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -88,7 +88,7 @@
       "status": "applied",
       "mapJsonHash": "e73c2e57a162c8ac7f61f400cd402627efa36bd321d1a6770746008cf9652ffd",
       "reviewJsonHash": "e73c2e57a162c8ac7f61f400cd402627efa36bd321d1a6770746008cf9652ffd",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -99,7 +99,7 @@
       "status": "applied",
       "mapJsonHash": "07c0de40091cb3f90983b492d783a5e282c2e029ebf5373cdd81312e52ac29c5",
       "reviewJsonHash": "07c0de40091cb3f90983b492d783a5e282c2e029ebf5373cdd81312e52ac29c5",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -110,7 +110,7 @@
       "status": "applied",
       "mapJsonHash": "6d5687274e597d232e7488491910d381790dd388c18390c2e9d26d1dfe6cb4ab",
       "reviewJsonHash": "6d5687274e597d232e7488491910d381790dd388c18390c2e9d26d1dfe6cb4ab",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -121,7 +121,7 @@
       "status": "applied",
       "mapJsonHash": "4146e1851995bf18e6f21b0b7261c62d2de7b5793c2ed451b92357e03ed6b340",
       "reviewJsonHash": "4146e1851995bf18e6f21b0b7261c62d2de7b5793c2ed451b92357e03ed6b340",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -132,7 +132,7 @@
       "status": "applied",
       "mapJsonHash": "d9deaf25b81edb39de8d3bb44235da5923c771e844b213c6d80ce6cdb9703297",
       "reviewJsonHash": "d9deaf25b81edb39de8d3bb44235da5923c771e844b213c6d80ce6cdb9703297",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -143,7 +143,7 @@
       "status": "applied",
       "mapJsonHash": "1f951ef2a24691290149c4fa107db0991117d63424c18107d13bdc6e1d0180ea",
       "reviewJsonHash": "1f951ef2a24691290149c4fa107db0991117d63424c18107d13bdc6e1d0180ea",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -154,7 +154,7 @@
       "status": "applied",
       "mapJsonHash": "7b82bfa311336960c123fbf4d76bf88b5b8d5fa99d6ddef8c4ffa540adf80286",
       "reviewJsonHash": "7b82bfa311336960c123fbf4d76bf88b5b8d5fa99d6ddef8c4ffa540adf80286",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -165,7 +165,7 @@
       "status": "applied",
       "mapJsonHash": "ec2c888aff2e7db267a199130555d8e59c6cbc437c53bc74b979fb088c5fac48",
       "reviewJsonHash": "ec2c888aff2e7db267a199130555d8e59c6cbc437c53bc74b979fb088c5fac48",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -176,7 +176,7 @@
       "status": "applied",
       "mapJsonHash": "625720d8959b9096562a554786fc413f644d37ea54c62203b8b87c859ec280c2",
       "reviewJsonHash": "625720d8959b9096562a554786fc413f644d37ea54c62203b8b87c859ec280c2",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -187,7 +187,7 @@
       "status": "applied",
       "mapJsonHash": "6455ce111234b8f969b3805b5f17e73e6e63510b430ef71025a1f8c368afd339",
       "reviewJsonHash": "6455ce111234b8f969b3805b5f17e73e6e63510b430ef71025a1f8c368afd339",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -198,7 +198,7 @@
       "status": "applied",
       "mapJsonHash": "ad5eebb4a6659da68b10a14836287256aabdf52f171781f1df8977795dae5977",
       "reviewJsonHash": "ad5eebb4a6659da68b10a14836287256aabdf52f171781f1df8977795dae5977",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -209,7 +209,7 @@
       "status": "applied",
       "mapJsonHash": "049dd32e40f2e193b395a57756760404fc0d2b9a113049fe4f4f3e111a5ff1b5",
       "reviewJsonHash": "049dd32e40f2e193b395a57756760404fc0d2b9a113049fe4f4f3e111a5ff1b5",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -220,7 +220,7 @@
       "status": "applied",
       "mapJsonHash": "ef90aa0eb3de77fbf8739443c9b0334b227b10866429cf65bc10530c28d1a9a5",
       "reviewJsonHash": "ef90aa0eb3de77fbf8739443c9b0334b227b10866429cf65bc10530c28d1a9a5",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -231,7 +231,7 @@
       "status": "applied",
       "mapJsonHash": "3cdc854a05e6b8ad405e479652c5fa18660c8ac6272eaebd3da8639a8d960361",
       "reviewJsonHash": "3cdc854a05e6b8ad405e479652c5fa18660c8ac6272eaebd3da8639a8d960361",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -242,7 +242,7 @@
       "status": "applied",
       "mapJsonHash": "5c54c24ad9acfa69b9e9bbb6fc746787ed6339156c56cc886b997ed92dd57f44",
       "reviewJsonHash": "5c54c24ad9acfa69b9e9bbb6fc746787ed6339156c56cc886b997ed92dd57f44",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -253,7 +253,7 @@
       "status": "applied",
       "mapJsonHash": "ddeb0fd2714125fdfdd1c6d0bf826704534e525255074209f9c286a39e298453",
       "reviewJsonHash": "ddeb0fd2714125fdfdd1c6d0bf826704534e525255074209f9c286a39e298453",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -264,7 +264,7 @@
       "status": "applied",
       "mapJsonHash": "c96000a6f908da0a47c02e642fa5a3fe1ca6c0a377f2cb3a6d9a6db40982d593",
       "reviewJsonHash": "c96000a6f908da0a47c02e642fa5a3fe1ca6c0a377f2cb3a6d9a6db40982d593",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -275,7 +275,7 @@
       "status": "applied",
       "mapJsonHash": "068449eb7657cd1e4424587f0436eb6c96bf1d6386cf1397a545ab2a08bd84a2",
       "reviewJsonHash": "068449eb7657cd1e4424587f0436eb6c96bf1d6386cf1397a545ab2a08bd84a2",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -286,7 +286,7 @@
       "status": "applied",
       "mapJsonHash": "902f49a1a775c09064460d635412b017035cd4a6214dbb3e1ca473a0b2bd42dc",
       "reviewJsonHash": "902f49a1a775c09064460d635412b017035cd4a6214dbb3e1ca473a0b2bd42dc",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -297,7 +297,7 @@
       "status": "applied",
       "mapJsonHash": "86cdf567ede772a8e5bdf3689cbe74f22ecac49ae37653e9b01504bd4eb1bcf5",
       "reviewJsonHash": "86cdf567ede772a8e5bdf3689cbe74f22ecac49ae37653e9b01504bd4eb1bcf5",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -308,7 +308,7 @@
       "status": "applied",
       "mapJsonHash": "6a46a57420312c1d1ff3f803cad7f19f58a4c8cf24873c909f1cd2f8e6be02fc",
       "reviewJsonHash": "6a46a57420312c1d1ff3f803cad7f19f58a4c8cf24873c909f1cd2f8e6be02fc",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -319,7 +319,7 @@
       "status": "applied",
       "mapJsonHash": "233e8c3ce52ad4d2d68ed39e62157b535f4e2104a928b9f57704c940bef5242d",
       "reviewJsonHash": "233e8c3ce52ad4d2d68ed39e62157b535f4e2104a928b9f57704c940bef5242d",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -330,7 +330,7 @@
       "status": "applied",
       "mapJsonHash": "f2a277207291bd8e06e893252f1bbd0947c0f09fdf1a99e3b2bc9ff8d2092b27",
       "reviewJsonHash": "f2a277207291bd8e06e893252f1bbd0947c0f09fdf1a99e3b2bc9ff8d2092b27",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -341,7 +341,7 @@
       "status": "applied",
       "mapJsonHash": "457a986fb87d4b85187b4bff23c9bde9ac6ef228080308c55bad289fd233842d",
       "reviewJsonHash": "457a986fb87d4b85187b4bff23c9bde9ac6ef228080308c55bad289fd233842d",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -352,7 +352,7 @@
       "status": "applied",
       "mapJsonHash": "58b6efe3a3cce72bcb2b55578c86cc0fa6f003cb419656ca019ae630d01331d0",
       "reviewJsonHash": "58b6efe3a3cce72bcb2b55578c86cc0fa6f003cb419656ca019ae630d01331d0",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -363,7 +363,7 @@
       "status": "applied",
       "mapJsonHash": "2cb85168b0926965cc27514fffca27cfd60cb621a590479ceeb5573acbf2c1a6",
       "reviewJsonHash": "2cb85168b0926965cc27514fffca27cfd60cb621a590479ceeb5573acbf2c1a6",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -374,7 +374,7 @@
       "status": "applied",
       "mapJsonHash": "bd0b975fe5b29c2d07c287db54b83110eb4e9cc0fe6015b2bc53f75d3e745864",
       "reviewJsonHash": "bd0b975fe5b29c2d07c287db54b83110eb4e9cc0fe6015b2bc53f75d3e745864",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -385,7 +385,7 @@
       "status": "applied",
       "mapJsonHash": "a66d24a6cd7e28418235651a2bf7c7078198b0db5a6aceb9f03a32d3f47f6514",
       "reviewJsonHash": "a66d24a6cd7e28418235651a2bf7c7078198b0db5a6aceb9f03a32d3f47f6514",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -396,7 +396,7 @@
       "status": "applied",
       "mapJsonHash": "1c62b1464cf8120840442b223587cdfe909c98cce1da095c406a6d50e56c182c",
       "reviewJsonHash": "1c62b1464cf8120840442b223587cdfe909c98cce1da095c406a6d50e56c182c",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -407,7 +407,7 @@
       "status": "applied",
       "mapJsonHash": "1ea58ac7e4bc94749da21819b5c2344b1df7caa57fd0f1f7999b76da6ea92df3",
       "reviewJsonHash": "1ea58ac7e4bc94749da21819b5c2344b1df7caa57fd0f1f7999b76da6ea92df3",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -418,7 +418,7 @@
       "status": "applied",
       "mapJsonHash": "3a9192a26a8255a8b14a2c6fdc78712723aa19ba1877199d7c9daf5cb3ea8836",
       "reviewJsonHash": "3a9192a26a8255a8b14a2c6fdc78712723aa19ba1877199d7c9daf5cb3ea8836",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -429,7 +429,7 @@
       "status": "applied",
       "mapJsonHash": "d5b04b82bb1a4c60c898eea0d731c22110ab481281505b7feb40dff0bae1411b",
       "reviewJsonHash": "d5b04b82bb1a4c60c898eea0d731c22110ab481281505b7feb40dff0bae1411b",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -440,7 +440,7 @@
       "status": "applied",
       "mapJsonHash": "642cee14262c8d8c2e59b796640bd45ee3f805de94726ca147557a15d64ac4b7",
       "reviewJsonHash": "642cee14262c8d8c2e59b796640bd45ee3f805de94726ca147557a15d64ac4b7",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -451,7 +451,7 @@
       "status": "applied",
       "mapJsonHash": "d1b8ebd865abd4997df0816af9bd14c0c94658999b6a221efa1232d25a9f2ee7",
       "reviewJsonHash": "d1b8ebd865abd4997df0816af9bd14c0c94658999b6a221efa1232d25a9f2ee7",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -462,7 +462,7 @@
       "status": "applied",
       "mapJsonHash": "0576da62e8de4cba2391be975d564624d4a8ac3cad4b51c8e5403b9ab4de7a7f",
       "reviewJsonHash": "0576da62e8de4cba2391be975d564624d4a8ac3cad4b51c8e5403b9ab4de7a7f",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -473,7 +473,7 @@
       "status": "applied",
       "mapJsonHash": "09e2fac076b6127b5c14ac0f65afb1f09e0bdcb4d9f39654335daf560bc26c23",
       "reviewJsonHash": "09e2fac076b6127b5c14ac0f65afb1f09e0bdcb4d9f39654335daf560bc26c23",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -484,7 +484,7 @@
       "status": "applied",
       "mapJsonHash": "c952bfa78c1fc600417fe32e8a85b6a4e4bcbb4519d4e087bc39b36f5d991d78",
       "reviewJsonHash": "c952bfa78c1fc600417fe32e8a85b6a4e4bcbb4519d4e087bc39b36f5d991d78",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -494,8 +494,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "507d388e2546211c7127d224d39b3fd558529c0e14ca11ecebc560dcbb4b0d48",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "507d388e2546211c7127d224d39b3fd558529c0e14ca11ecebc560dcbb4b0d48",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -505,8 +505,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "16adb784c22d43b33abc65ba9f021104e3f82e74b1e53d0c7b5abde4ce94846e",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "16adb784c22d43b33abc65ba9f021104e3f82e74b1e53d0c7b5abde4ce94846e",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -517,7 +517,7 @@
       "status": "applied",
       "mapJsonHash": "2e34538e6f7c57392cdc5fca7527f7451e1fb0bc9b8f23c580eb233b04696574",
       "reviewJsonHash": "2e34538e6f7c57392cdc5fca7527f7451e1fb0bc9b8f23c580eb233b04696574",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -528,7 +528,7 @@
       "status": "applied",
       "mapJsonHash": "314067e26f2df275589f84e0023fb6e685cd1c32f77ec2d5e14bf38ea27d45dc",
       "reviewJsonHash": "314067e26f2df275589f84e0023fb6e685cd1c32f77ec2d5e14bf38ea27d45dc",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -539,7 +539,7 @@
       "status": "applied",
       "mapJsonHash": "8be299a96e4dc7adbcc95e0b203af5970a56a937ec3e3e2d7041c63ebd6a0a3b",
       "reviewJsonHash": "8be299a96e4dc7adbcc95e0b203af5970a56a937ec3e3e2d7041c63ebd6a0a3b",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -550,7 +550,7 @@
       "status": "applied",
       "mapJsonHash": "229d4a9312f48dd58f69718967d7f4cfa7e53e66c6f3ff1ca07623e3727c87f8",
       "reviewJsonHash": "229d4a9312f48dd58f69718967d7f4cfa7e53e66c6f3ff1ca07623e3727c87f8",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -561,7 +561,7 @@
       "status": "applied",
       "mapJsonHash": "22846fa94d60f70e686f7c289e707dd62aa75a95e944885abe266aa81f3dc56b",
       "reviewJsonHash": "22846fa94d60f70e686f7c289e707dd62aa75a95e944885abe266aa81f3dc56b",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -572,7 +572,7 @@
       "status": "applied",
       "mapJsonHash": "6dd6df8385e22b273fc44683756aad51d5ca65470ea9aab556afc717a38ac8e8",
       "reviewJsonHash": "6dd6df8385e22b273fc44683756aad51d5ca65470ea9aab556afc717a38ac8e8",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -583,7 +583,7 @@
       "status": "applied",
       "mapJsonHash": "b0ffd088d4a80d10de0b96ae763938485966fe00fcfec25a36f860c738ef8a41",
       "reviewJsonHash": "b0ffd088d4a80d10de0b96ae763938485966fe00fcfec25a36f860c738ef8a41",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -594,7 +594,7 @@
       "status": "applied",
       "mapJsonHash": "863c8d04855ee2ea59479beddef7bf052784240cd59e51fc613934fe793126db",
       "reviewJsonHash": "863c8d04855ee2ea59479beddef7bf052784240cd59e51fc613934fe793126db",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -605,7 +605,7 @@
       "status": "applied",
       "mapJsonHash": "2d680dcd8cbd85ac5a083c852b14d0df43e6a81ad987c0efbda54265cf0b4d86",
       "reviewJsonHash": "2d680dcd8cbd85ac5a083c852b14d0df43e6a81ad987c0efbda54265cf0b4d86",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -616,7 +616,7 @@
       "status": "applied",
       "mapJsonHash": "7b4b1b4322963ff32f449c1a1f268cdb525bafc055ee3d16189c79f7bb345302",
       "reviewJsonHash": "7b4b1b4322963ff32f449c1a1f268cdb525bafc055ee3d16189c79f7bb345302",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -627,7 +627,7 @@
       "status": "applied",
       "mapJsonHash": "17d9359f1ed4072ad11c0918cd86a412cef2a7f6a149e3b62d81de1366ccece7",
       "reviewJsonHash": "17d9359f1ed4072ad11c0918cd86a412cef2a7f6a149e3b62d81de1366ccece7",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -638,7 +638,7 @@
       "status": "applied",
       "mapJsonHash": "70f7007cde5030fae7b78610426dca72068ee4c61cbd00029fffc1677112bd94",
       "reviewJsonHash": "70f7007cde5030fae7b78610426dca72068ee4c61cbd00029fffc1677112bd94",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -649,7 +649,7 @@
       "status": "applied",
       "mapJsonHash": "545fdf3ba71bd30d97804316ddbd29165bdb3dcb5d3f1a0dd0c7bdbe84f54924",
       "reviewJsonHash": "545fdf3ba71bd30d97804316ddbd29165bdb3dcb5d3f1a0dd0c7bdbe84f54924",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -660,7 +660,7 @@
       "status": "applied",
       "mapJsonHash": "24b44179b09cea05773cf3bd6ad0da1cb20f84171254d3c6374caaba2f1877c6",
       "reviewJsonHash": "24b44179b09cea05773cf3bd6ad0da1cb20f84171254d3c6374caaba2f1877c6",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -671,7 +671,7 @@
       "status": "applied",
       "mapJsonHash": "62c672d5f2c94f1d7c494eb54301413cb2e1854c1d86f08dce2c69cf0d1f11fe",
       "reviewJsonHash": "62c672d5f2c94f1d7c494eb54301413cb2e1854c1d86f08dce2c69cf0d1f11fe",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -682,7 +682,7 @@
       "status": "applied",
       "mapJsonHash": "50bfcd4cc1d47b3ea744b289bcb7d75c3d087bb3fa755f19136bfeea59178894",
       "reviewJsonHash": "50bfcd4cc1d47b3ea744b289bcb7d75c3d087bb3fa755f19136bfeea59178894",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -693,7 +693,7 @@
       "status": "applied",
       "mapJsonHash": "de0e1a142866785f1cd81eae707c1afe90aecc245ff756d62b627a5e41eb1dcb",
       "reviewJsonHash": "de0e1a142866785f1cd81eae707c1afe90aecc245ff756d62b627a5e41eb1dcb",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -704,7 +704,7 @@
       "status": "applied",
       "mapJsonHash": "b38fc552cc39989cebb80210cfcea04d9de41bb0951007cf83484c08e4ebc66b",
       "reviewJsonHash": "b38fc552cc39989cebb80210cfcea04d9de41bb0951007cf83484c08e4ebc66b",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -715,7 +715,7 @@
       "status": "applied",
       "mapJsonHash": "5c3280b387fd68e2b42bd2ec043972d80fe616422a6c8ae28f9bd6161af29a4b",
       "reviewJsonHash": "5c3280b387fd68e2b42bd2ec043972d80fe616422a6c8ae28f9bd6161af29a4b",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -726,7 +726,7 @@
       "status": "applied",
       "mapJsonHash": "7777fd32392fe03babb2d246f6334ac6f80e86b1a670ffdc2621914155c2aad1",
       "reviewJsonHash": "7777fd32392fe03babb2d246f6334ac6f80e86b1a670ffdc2621914155c2aad1",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -737,7 +737,7 @@
       "status": "applied",
       "mapJsonHash": "7450f3671dc9a23ac2b5eb08fcb3968f0b4f623350e5d9276fcf956dc6f76f59",
       "reviewJsonHash": "7450f3671dc9a23ac2b5eb08fcb3968f0b4f623350e5d9276fcf956dc6f76f59",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -748,7 +748,7 @@
       "status": "applied",
       "mapJsonHash": "f37286fc89a9e7cdf29b68225699f78fdb9b60d79f21e95a72fdfd9c6dfd6dec",
       "reviewJsonHash": "f37286fc89a9e7cdf29b68225699f78fdb9b60d79f21e95a72fdfd9c6dfd6dec",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -759,7 +759,7 @@
       "status": "applied",
       "mapJsonHash": "649e610f829347729838117822dbfed0cde7018c5ff1fe4dc26865585328ac1e",
       "reviewJsonHash": "649e610f829347729838117822dbfed0cde7018c5ff1fe4dc26865585328ac1e",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -770,7 +770,7 @@
       "status": "applied",
       "mapJsonHash": "407e38451dcb22aa30edc2d41af684ff705a370728e665381be411b1073bcd3c",
       "reviewJsonHash": "407e38451dcb22aa30edc2d41af684ff705a370728e665381be411b1073bcd3c",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -781,7 +781,7 @@
       "status": "applied",
       "mapJsonHash": "512702e8511f88594db6036c7007f01be44444cf2477393cc1774e0b3a92f0c9",
       "reviewJsonHash": "512702e8511f88594db6036c7007f01be44444cf2477393cc1774e0b3a92f0c9",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -792,7 +792,7 @@
       "status": "applied",
       "mapJsonHash": "5bd20c4e4257e4efa14b16a28d62df350130705788165d29b504be7444b1431b",
       "reviewJsonHash": "5bd20c4e4257e4efa14b16a28d62df350130705788165d29b504be7444b1431b",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -803,7 +803,7 @@
       "status": "applied",
       "mapJsonHash": "77a3a2b2a4d86b138796f125c96e41afc3406379ed6aad5ba712532cdc0a1157",
       "reviewJsonHash": "77a3a2b2a4d86b138796f125c96e41afc3406379ed6aad5ba712532cdc0a1157",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -814,7 +814,7 @@
       "status": "applied",
       "mapJsonHash": "a4a00cb21e44c9df516e1ad9973a5efc396086589868cc31df3cff5c621d5d97",
       "reviewJsonHash": "a4a00cb21e44c9df516e1ad9973a5efc396086589868cc31df3cff5c621d5d97",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -825,7 +825,7 @@
       "status": "applied",
       "mapJsonHash": "f874c53db1efbc6f94cad05bbf03be16df90411aa303a1af886855a6fce7e589",
       "reviewJsonHash": "f874c53db1efbc6f94cad05bbf03be16df90411aa303a1af886855a6fce7e589",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -836,7 +836,7 @@
       "status": "applied",
       "mapJsonHash": "ddd50d8dba1a8e19550dd8c1efefa9570f8a04ff6c0f4e44855e8593bc6a07d8",
       "reviewJsonHash": "ddd50d8dba1a8e19550dd8c1efefa9570f8a04ff6c0f4e44855e8593bc6a07d8",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -847,7 +847,7 @@
       "status": "applied",
       "mapJsonHash": "122fa2aa47c1ba13e1f3690b9c90ec7b1956195f240ec117022437fed5dc3673",
       "reviewJsonHash": "122fa2aa47c1ba13e1f3690b9c90ec7b1956195f240ec117022437fed5dc3673",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -858,7 +858,7 @@
       "status": "applied",
       "mapJsonHash": "8abccaae0be77a8459fdd4032a0ccb70ce683829b3a5893ab06c428004eeac1d",
       "reviewJsonHash": "8abccaae0be77a8459fdd4032a0ccb70ce683829b3a5893ab06c428004eeac1d",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -869,7 +869,7 @@
       "status": "applied",
       "mapJsonHash": "120b30ca54f76c520689d21dd683c2245b805457ada823c2365ae228c9ff01b6",
       "reviewJsonHash": "120b30ca54f76c520689d21dd683c2245b805457ada823c2365ae228c9ff01b6",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -880,7 +880,7 @@
       "status": "applied",
       "mapJsonHash": "c3404e192e7e50160188b593a3e1ab272840b154b09cf6f6e975731fdec5abd2",
       "reviewJsonHash": "c3404e192e7e50160188b593a3e1ab272840b154b09cf6f6e975731fdec5abd2",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -891,7 +891,7 @@
       "status": "applied",
       "mapJsonHash": "f0edd5e0849b0192ad615594cd515a9912e229ea821ed3d3675446299b1bdf9c",
       "reviewJsonHash": "f0edd5e0849b0192ad615594cd515a9912e229ea821ed3d3675446299b1bdf9c",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -902,7 +902,7 @@
       "status": "applied",
       "mapJsonHash": "eb30007538100a5c8138f4e9ee5569951c2ce620d32aa7418363fee807d0567d",
       "reviewJsonHash": "eb30007538100a5c8138f4e9ee5569951c2ce620d32aa7418363fee807d0567d",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -913,7 +913,7 @@
       "status": "applied",
       "mapJsonHash": "9dbed4530d4646632e9deff90094ce4d068ecfba353653404727c356753163e4",
       "reviewJsonHash": "9dbed4530d4646632e9deff90094ce4d068ecfba353653404727c356753163e4",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -924,7 +924,7 @@
       "status": "applied",
       "mapJsonHash": "fe683dc3483a9e0d9f57fc00782aee44d0903f9627e5c096ba6a01f2d23cb2a8",
       "reviewJsonHash": "fe683dc3483a9e0d9f57fc00782aee44d0903f9627e5c096ba6a01f2d23cb2a8",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -935,7 +935,7 @@
       "status": "applied",
       "mapJsonHash": "b88e9cc54e1bb811994143a31fe76ae0c8d5956efa9db2bfdb4462b81d1eb7a9",
       "reviewJsonHash": "b88e9cc54e1bb811994143a31fe76ae0c8d5956efa9db2bfdb4462b81d1eb7a9",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -946,7 +946,7 @@
       "status": "applied",
       "mapJsonHash": "342c772a521470851e5d0fc9cd58fadf1e41cfd8e5ac79de981488aac9440d69",
       "reviewJsonHash": "342c772a521470851e5d0fc9cd58fadf1e41cfd8e5ac79de981488aac9440d69",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -957,7 +957,7 @@
       "status": "applied",
       "mapJsonHash": "9571b7c5f79491972b8739dfc1abf1d4d5b46a89d6808187b816cae5c5cd7e6c",
       "reviewJsonHash": "9571b7c5f79491972b8739dfc1abf1d4d5b46a89d6808187b816cae5c5cd7e6c",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -968,7 +968,7 @@
       "status": "applied",
       "mapJsonHash": "31ae2e8d74716f02bea53df23e3befef09daae5cd9f9f29bea3216894be2d09b",
       "reviewJsonHash": "31ae2e8d74716f02bea53df23e3befef09daae5cd9f9f29bea3216894be2d09b",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -979,7 +979,7 @@
       "status": "applied",
       "mapJsonHash": "51039c4d79ed0da090f90cd8a4718f13aa0259408d5b14e1b1b745f73e4950b7",
       "reviewJsonHash": "51039c4d79ed0da090f90cd8a4718f13aa0259408d5b14e1b1b745f73e4950b7",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -990,7 +990,7 @@
       "status": "applied",
       "mapJsonHash": "cce148b85698886edae18c7cd3f21b16ba3ea3e599d9e830e275d40810813aeb",
       "reviewJsonHash": "cce148b85698886edae18c7cd3f21b16ba3ea3e599d9e830e275d40810813aeb",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1001,7 +1001,7 @@
       "status": "applied",
       "mapJsonHash": "07506f25ffa0c7225bc99ed0877832a949107ba3954cf575dc77178827d1f66b",
       "reviewJsonHash": "07506f25ffa0c7225bc99ed0877832a949107ba3954cf575dc77178827d1f66b",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1012,7 +1012,7 @@
       "status": "applied",
       "mapJsonHash": "fc2e368897faa5dbaf00ab5de96dde0cb96f1ea36b8f39273aaf82398bc68f85",
       "reviewJsonHash": "fc2e368897faa5dbaf00ab5de96dde0cb96f1ea36b8f39273aaf82398bc68f85",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1023,7 +1023,7 @@
       "status": "applied",
       "mapJsonHash": "5c165242dc8831c93a2544e2f7d5a14cd85f3b3851d111b37e81b9a8ba7d92c4",
       "reviewJsonHash": "5c165242dc8831c93a2544e2f7d5a14cd85f3b3851d111b37e81b9a8ba7d92c4",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1033,8 +1033,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "83671823573e8cc4c6b39f9fa72e3b2f6b8ed41e335d76ed79f4b4ce2ba500a2",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "83671823573e8cc4c6b39f9fa72e3b2f6b8ed41e335d76ed79f4b4ce2ba500a2",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1044,8 +1044,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "9fb2b8bde822b93a09dd5badcf9d973c41058ba957e388f89ad077ff4ac4faf4",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "9fb2b8bde822b93a09dd5badcf9d973c41058ba957e388f89ad077ff4ac4faf4",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1055,8 +1055,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "ba6129ddecefaef58958e2e4fe1a7a55f2847c0ac7b2168825586503cc87ef1c",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "ba6129ddecefaef58958e2e4fe1a7a55f2847c0ac7b2168825586503cc87ef1c",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1066,8 +1066,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "ef19705dabdf81e0742ebfa414e1295b7534bdbe9783b38c42039f1f1f39d737",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "ef19705dabdf81e0742ebfa414e1295b7534bdbe9783b38c42039f1f1f39d737",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1077,8 +1077,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "fc2fd673fc829a0348b1216acb75c7251290660f08d6f8089b61e85fa8023605",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "fc2fd673fc829a0348b1216acb75c7251290660f08d6f8089b61e85fa8023605",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1088,8 +1088,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "54c834720a0a592a4de1cc7c2ef5dd84fe28bd0b34214c0a1ac8c7e5577cd800",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "54c834720a0a592a4de1cc7c2ef5dd84fe28bd0b34214c0a1ac8c7e5577cd800",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1099,8 +1099,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "c0d4fe0d539aa65a620f3fa11a1b117d489033dcef2f7a975c07ce69988d39ed",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "c0d4fe0d539aa65a620f3fa11a1b117d489033dcef2f7a975c07ce69988d39ed",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1110,8 +1110,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "cafde5dea4c26a902788f86fccfccd06301750a4daa02e762d5a196bb155985c",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "cafde5dea4c26a902788f86fccfccd06301750a4daa02e762d5a196bb155985c",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1121,8 +1121,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "2dd4332da1ba6c6f37c66895a88894105f9a5cb2a3383ce6df5af0794fc3e844",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "2dd4332da1ba6c6f37c66895a88894105f9a5cb2a3383ce6df5af0794fc3e844",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1132,8 +1132,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "e18d2e6c754915e16cb12d4b43f78fb201ae1158bcdeaa1a5efef4f009ca2a6b",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "e18d2e6c754915e16cb12d4b43f78fb201ae1158bcdeaa1a5efef4f009ca2a6b",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1143,8 +1143,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "0797284997e7995ca03b4feb131f8dc2d2c19c4b36648798264f622759ee7072",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "0797284997e7995ca03b4feb131f8dc2d2c19c4b36648798264f622759ee7072",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1154,8 +1154,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "32b505e2fe07d3f418fff79a54b7210ace7a40d526caf2d4756d7e9d8b0ef212",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "32b505e2fe07d3f418fff79a54b7210ace7a40d526caf2d4756d7e9d8b0ef212",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1165,8 +1165,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "11ad4928b31f38a5149609be1c204472d16ab302add587724959a153469cebc4",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "11ad4928b31f38a5149609be1c204472d16ab302add587724959a153469cebc4",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1176,8 +1176,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "898e864563e5b47fad5b440fb9f8dc263fd27b573e3f6a7eaac41815954b013e",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "898e864563e5b47fad5b440fb9f8dc263fd27b573e3f6a7eaac41815954b013e",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1187,8 +1187,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "405b361116ecd5c751a99a19e353c04a04359fc4065daba8cc8a73443898c5f1",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "405b361116ecd5c751a99a19e353c04a04359fc4065daba8cc8a73443898c5f1",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1198,8 +1198,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "7913d0af4ef205cb8c23369e8cf28ce2711c1a89a1b4e05f20a4933565df0211",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "7913d0af4ef205cb8c23369e8cf28ce2711c1a89a1b4e05f20a4933565df0211",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1209,8 +1209,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "98b5c52e8ce5b58af4e9158080a3cee7ce8748a566be0f2b30904978f606613f",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "98b5c52e8ce5b58af4e9158080a3cee7ce8748a566be0f2b30904978f606613f",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1220,8 +1220,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "8c20fe45e2c1bcc0fe164f1e79557e43ad85531fb841b94a4b4440d19ba557b9",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "8c20fe45e2c1bcc0fe164f1e79557e43ad85531fb841b94a4b4440d19ba557b9",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1231,8 +1231,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "ac52ec588ce0d73b3a5d48772ba675a5c193e2b6968d7e4f777225d401b0051c",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "ac52ec588ce0d73b3a5d48772ba675a5c193e2b6968d7e4f777225d401b0051c",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1242,8 +1242,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "3e0e70b67a98e74f00c844d4f72b085eeecd516f83d275128b915bcc465ed167",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "3e0e70b67a98e74f00c844d4f72b085eeecd516f83d275128b915bcc465ed167",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1254,7 +1254,7 @@
       "status": "applied",
       "mapJsonHash": "0f9bd9f273a5414ccf5629d0720960ac5d76ce83120e83cd33531374bacdcddb",
       "reviewJsonHash": "0f9bd9f273a5414ccf5629d0720960ac5d76ce83120e83cd33531374bacdcddb",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1265,7 +1265,7 @@
       "status": "applied",
       "mapJsonHash": "3e9a86d0f4a4be3b0c445e382b67c063fcfb4c442451d8b64fa91ff41e6d7713",
       "reviewJsonHash": "3e9a86d0f4a4be3b0c445e382b67c063fcfb4c442451d8b64fa91ff41e6d7713",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1276,7 +1276,7 @@
       "status": "applied",
       "mapJsonHash": "b60978e9593d3b05c1884c4bf5bb474c2199ab54f5930bd1195a790f1259f320",
       "reviewJsonHash": "b60978e9593d3b05c1884c4bf5bb474c2199ab54f5930bd1195a790f1259f320",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1287,7 +1287,7 @@
       "status": "applied",
       "mapJsonHash": "5ef683b4422520b927b612daf088c4b1a88a4d689a42421c09b4a2826f6ca800",
       "reviewJsonHash": "5ef683b4422520b927b612daf088c4b1a88a4d689a42421c09b4a2826f6ca800",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1298,7 +1298,7 @@
       "status": "applied",
       "mapJsonHash": "8a9bb28dbc9318cda315b9a525a62a801082962adb8e5f35e55c4086655a7a8c",
       "reviewJsonHash": "8a9bb28dbc9318cda315b9a525a62a801082962adb8e5f35e55c4086655a7a8c",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1309,7 +1309,7 @@
       "status": "applied",
       "mapJsonHash": "70c04fc8b8c7c8bac60a8739ea7341d13d40820adde92c9134da8d44c7f73b70",
       "reviewJsonHash": "70c04fc8b8c7c8bac60a8739ea7341d13d40820adde92c9134da8d44c7f73b70",
-      "reviewedBy": "independent",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1319,8 +1319,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "917db1caccadf3c96bb96c11110744910b94c4e6c3b93ac6505250e1d5313e8a",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "917db1caccadf3c96bb96c11110744910b94c4e6c3b93ac6505250e1d5313e8a",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1330,8 +1330,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "d9d5e71e140f2f957dc0f2090a4c957e692f1791a8ef719b6c7b44e696709f9a",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "d9d5e71e140f2f957dc0f2090a4c957e692f1791a8ef719b6c7b44e696709f9a",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1341,8 +1341,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "4d639bc3e9f27540bb71cca34161cb31c8d813403e42bd49db49711f2c1761d3",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "4d639bc3e9f27540bb71cca34161cb31c8d813403e42bd49db49711f2c1761d3",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1352,8 +1352,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "737fa2669e2f19a840ca6b8d10cc7202216f669a45a241b5759df141b110a016",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "737fa2669e2f19a840ca6b8d10cc7202216f669a45a241b5759df141b110a016",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1363,8 +1363,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "d4972361cb22f63e990369c00c178826d8bd417d7115385a7a841961140a2bf8",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "d4972361cb22f63e990369c00c178826d8bd417d7115385a7a841961140a2bf8",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1374,8 +1374,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "5c9735860b2e2a9c0c9dee9274c26701de9e2d5c396882917d4dd70ab33483ff",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "5c9735860b2e2a9c0c9dee9274c26701de9e2d5c396882917d4dd70ab33483ff",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1385,8 +1385,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "6fed9c1ddaab13655f4184ce46081e5da2ce179f0cd4c4b500a779ba883b7aba",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "6fed9c1ddaab13655f4184ce46081e5da2ce179f0cd4c4b500a779ba883b7aba",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1396,8 +1396,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "30154fd916fb4f9d5fae0b3b6a9eb2f565ead52fdc6050a4801cc5bc8eed7549",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "30154fd916fb4f9d5fae0b3b6a9eb2f565ead52fdc6050a4801cc5bc8eed7549",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1407,8 +1407,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "27e26dfbbc2691a7dbb35069572d095897a558af8280627ee5b97a733b975541",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "27e26dfbbc2691a7dbb35069572d095897a558af8280627ee5b97a733b975541",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1418,8 +1418,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "0d2de789a73d8cb9ab52091b01887e1c722c766a20854fa94efff1483ceabd3d",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "0d2de789a73d8cb9ab52091b01887e1c722c766a20854fa94efff1483ceabd3d",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1429,8 +1429,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "02a18004d1cc1988c195a90967bffacdaa5a5b9651afcc03f2335b77a8fcd845",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "02a18004d1cc1988c195a90967bffacdaa5a5b9651afcc03f2335b77a8fcd845",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1440,8 +1440,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "502f6f1b9752b524efa8186bd1bcb79a411e5301b8e3edd38a70758413a1b939",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "502f6f1b9752b524efa8186bd1bcb79a411e5301b8e3edd38a70758413a1b939",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1451,8 +1451,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "18fba498d5a4ba7761344db7f24bd88948241dec353778ec77f282e50a71f565",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "18fba498d5a4ba7761344db7f24bd88948241dec353778ec77f282e50a71f565",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1462,8 +1462,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "b28cc3c201dd681f0c9bac571f936759d7950841527f45245323d82a19b016ac",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "b28cc3c201dd681f0c9bac571f936759d7950841527f45245323d82a19b016ac",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1473,8 +1473,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "1a2138440021deca6561400d67cf486bdfe0deb2a62a4c8629692e853706d5a2",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "1a2138440021deca6561400d67cf486bdfe0deb2a62a4c8629692e853706d5a2",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1484,8 +1484,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "8585390ce827d641eee1dc89da8da9b9ec7a80592ba6ed8ba712b70831044076",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "8585390ce827d641eee1dc89da8da9b9ec7a80592ba6ed8ba712b70831044076",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1495,8 +1495,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "c2655832fbcac5633cdcfd59a3c7d96589b8ff194834902deadcf0ace32bbe96",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "c2655832fbcac5633cdcfd59a3c7d96589b8ff194834902deadcf0ace32bbe96",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1506,8 +1506,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "174ba088d8e0b58506c7811fad50c2e51b34f11bdac5a09c8559e2d8f9d9e87d",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "174ba088d8e0b58506c7811fad50c2e51b34f11bdac5a09c8559e2d8f9d9e87d",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1517,8 +1517,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "ab09be441195ba5fc34ea916697368f24df4e9b81a77e90eeef707cffc271ae5",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "ab09be441195ba5fc34ea916697368f24df4e9b81a77e90eeef707cffc271ae5",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1528,8 +1528,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "4aeb56564b341080f072a14f93a788fe9c636a2310a4e0a0a65042caee20acb9",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "4aeb56564b341080f072a14f93a788fe9c636a2310a4e0a0a65042caee20acb9",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1539,8 +1539,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "1695cd0c8e07d466d50d980244be4711d7865246ff65b4b07f47f4c229cd0237",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "1695cd0c8e07d466d50d980244be4711d7865246ff65b4b07f47f4c229cd0237",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1550,8 +1550,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "8e4cdf2f427a7df23db7894e72a881185dda69e9c8ef2b0f988e0b511250be87",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "8e4cdf2f427a7df23db7894e72a881185dda69e9c8ef2b0f988e0b511250be87",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1561,8 +1561,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "79b87bd9c05236b049a3c201a16832384ad591072d46611c9d80bcb20e0627c5",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "79b87bd9c05236b049a3c201a16832384ad591072d46611c9d80bcb20e0627c5",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1572,8 +1572,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "0cf60a80bd3ddaef2645795b2fb096a3d74afcc7345c801021efe60f2ed0adb0",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "0cf60a80bd3ddaef2645795b2fb096a3d74afcc7345c801021efe60f2ed0adb0",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1583,8 +1583,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "a6f2c40ecf69b845fcb4b69c73a4fae5f243c032f224de096dc3d40b915a175b",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "a6f2c40ecf69b845fcb4b69c73a4fae5f243c032f224de096dc3d40b915a175b",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1594,8 +1594,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "cdad82f896a52284e496b89eb5ae6fad82c43370ee1cdcf6bc0e01b8141fd2ca",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "cdad82f896a52284e496b89eb5ae6fad82c43370ee1cdcf6bc0e01b8141fd2ca",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1605,8 +1605,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "86e3cc918997312e9d2545fe3264d69b0dece8ce57d8e930e5bb28a284f6e08b",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "86e3cc918997312e9d2545fe3264d69b0dece8ce57d8e930e5bb28a284f6e08b",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1616,8 +1616,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "36eebaf9b5581ab07b5eb2931153590ffda1903b2723d4307f6415c804103f24",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "36eebaf9b5581ab07b5eb2931153590ffda1903b2723d4307f6415c804103f24",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1627,8 +1627,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "4b9b7e298bb7b4773dfd9de85f656f608456499af6905d0bb4bb2a5f99b11a65",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "4b9b7e298bb7b4773dfd9de85f656f608456499af6905d0bb4bb2a5f99b11a65",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1638,8 +1638,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "1e662abb2ec60adda94a630808395c5c06f61382c214862dc0b92849d2b93472",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "1e662abb2ec60adda94a630808395c5c06f61382c214862dc0b92849d2b93472",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1649,8 +1649,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "26d389bd84e24f4372e1c95d200e67f41d5bc4f0d0582c17f4c346038721852b",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "26d389bd84e24f4372e1c95d200e67f41d5bc4f0d0582c17f4c346038721852b",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1660,8 +1660,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "1a8903d0013f05607f3c06fd895061bb9c9f9e976834df77c999442a5d3fdb34",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "1a8903d0013f05607f3c06fd895061bb9c9f9e976834df77c999442a5d3fdb34",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1671,8 +1671,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "d8b41a88735134730a55dd59142b3e40a44aeae870407ba970e201868b39d3f4",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "d8b41a88735134730a55dd59142b3e40a44aeae870407ba970e201868b39d3f4",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1682,8 +1682,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "00a2e5570c0b79ad09d9ca126fac8728e3b670763ec37a19b018e03b2f3fc9ee",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "00a2e5570c0b79ad09d9ca126fac8728e3b670763ec37a19b018e03b2f3fc9ee",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1693,8 +1693,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "3290bb4d0abb75a2ea914ec4cc52c2a500201bb066b34d0ca6cef3e225585412",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "3290bb4d0abb75a2ea914ec4cc52c2a500201bb066b34d0ca6cef3e225585412",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1704,8 +1704,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "641ebe24183fca9b7de871cf34fb6c66dbefcea1e6aa3fbe12626c9609d51206",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "641ebe24183fca9b7de871cf34fb6c66dbefcea1e6aa3fbe12626c9609d51206",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1715,8 +1715,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "45c77b5bc1c00121b9186d3feeb76cd942656a88294cb759efe5cf51467aec47",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "45c77b5bc1c00121b9186d3feeb76cd942656a88294cb759efe5cf51467aec47",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1726,8 +1726,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "cad3191eefe81884c13c41d4f56a30c2582ae283a27e5e0a4ddf9f35a0589492",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "cad3191eefe81884c13c41d4f56a30c2582ae283a27e5e0a4ddf9f35a0589492",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1737,8 +1737,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "89cfbbb4ce281963859b350b007d1159f24e4d4f6f2f1cad0bb1f2b2caab57e2",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "89cfbbb4ce281963859b350b007d1159f24e4d4f6f2f1cad0bb1f2b2caab57e2",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1748,8 +1748,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "ff46b6697c69c5cb7b141ebe5f885432747d33c25a632aca4020c63a88989d94",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "ff46b6697c69c5cb7b141ebe5f885432747d33c25a632aca4020c63a88989d94",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1759,8 +1759,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "d6f75ee763174116369f1d422f3bbcca669a257464975936df6e5bc7637d02d8",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "d6f75ee763174116369f1d422f3bbcca669a257464975936df6e5bc7637d02d8",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1770,8 +1770,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "b86a5a424405cbb42849d49067a87d5ffeb02afdb8e26547bdfb0257fc6a4382",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "b86a5a424405cbb42849d49067a87d5ffeb02afdb8e26547bdfb0257fc6a4382",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1781,8 +1781,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "08d767469c6b487c4a617077e9039563245ad8c8f1ce029433c1463295c04d10",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "08d767469c6b487c4a617077e9039563245ad8c8f1ce029433c1463295c04d10",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1792,8 +1792,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "f41d34ee236ca88dbdecc5562c4be6b97eaf6b78b8721f8258c60bf4a60be0e5",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "f41d34ee236ca88dbdecc5562c4be6b97eaf6b78b8721f8258c60bf4a60be0e5",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1803,8 +1803,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "f1b4c002fed985cfac885ec386f09c2d486d5d7b9be621d76352c25e405dbcf5",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "f1b4c002fed985cfac885ec386f09c2d486d5d7b9be621d76352c25e405dbcf5",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1814,8 +1814,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "89f9749eb5ee6f608f2c3166517268e8f326a49fb0f51de72a1f55ad57b69227",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "89f9749eb5ee6f608f2c3166517268e8f326a49fb0f51de72a1f55ad57b69227",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1825,8 +1825,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "68bc1b485b56a63ca303e281745d65b3b572798f12f84e91adfe1a9bcba25edd",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "68bc1b485b56a63ca303e281745d65b3b572798f12f84e91adfe1a9bcba25edd",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1836,8 +1836,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "c6d471645c59871f760849504a0396f5082e5c6746ddab517c653c9ff35365d8",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "c6d471645c59871f760849504a0396f5082e5c6746ddab517c653c9ff35365d8",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1847,8 +1847,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "e301cfafe4defcab3de311f06dd229c20bb939dbb3cbe2a426b09b0e3597c049",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "e301cfafe4defcab3de311f06dd229c20bb939dbb3cbe2a426b09b0e3597c049",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1858,8 +1858,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "18964834ffe493b23bccb9dd7bda66d930d50ea901f424b3a7c5d20fac9bf5f4",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "18964834ffe493b23bccb9dd7bda66d930d50ea901f424b3a7c5d20fac9bf5f4",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1869,8 +1869,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "8578ae48b1b8b0f98ee573d2e23a318143978e03e5908b7a2e91e4214aaf50e3",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "8578ae48b1b8b0f98ee573d2e23a318143978e03e5908b7a2e91e4214aaf50e3",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1880,8 +1880,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "886c504a3e13c92a291955ab2dbc70f75b18da8544454cdac24734f25372def4",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "886c504a3e13c92a291955ab2dbc70f75b18da8544454cdac24734f25372def4",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1891,8 +1891,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "99dad93e486415dfdf1f17b60bf38245ac1f44076003c65087424766579c736d",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "99dad93e486415dfdf1f17b60bf38245ac1f44076003c65087424766579c736d",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1902,8 +1902,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "65770414f23b64a3d0256de10e5f08a754d3a727ecc01f1956881982d03a4751",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "65770414f23b64a3d0256de10e5f08a754d3a727ecc01f1956881982d03a4751",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1913,8 +1913,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "8d6e8329b1e3aa2c0e2c71369a5e6af30a3ed446034a1bf8cef243e606ee7bf0",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "8d6e8329b1e3aa2c0e2c71369a5e6af30a3ed446034a1bf8cef243e606ee7bf0",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1924,8 +1924,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "cd1c4c3619c55f5e92272afb09d5c81b23c7c8455ee18b7e7346e5c815bcc3ba",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "cd1c4c3619c55f5e92272afb09d5c81b23c7c8455ee18b7e7346e5c815bcc3ba",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1934,9 +1934,9 @@
       "batch": "b36",
       "worker": "w6",
       "status": "applied",
-      "mapJsonHash": "f5582271f7ce77dcdb42ee852eb3d6a6751e0bc7425e778632f867d883752b16",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "mapJsonHash": "135c610caf26a345b8b2e4738acea19b0fc5a2ba62b1f11a9b2ac6fdbc1a639a",
+      "reviewJsonHash": "135c610caf26a345b8b2e4738acea19b0fc5a2ba62b1f11a9b2ac6fdbc1a639a",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1946,8 +1946,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "5061952124d8a1b4a779b0d2526c73972ddadc36fc5198787c6c069dc4d54303",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "5061952124d8a1b4a779b0d2526c73972ddadc36fc5198787c6c069dc4d54303",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1957,8 +1957,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "e0c0a363993c7168bb712221529b9b8561a87233e22c4266d7347d50bd5e5708",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "e0c0a363993c7168bb712221529b9b8561a87233e22c4266d7347d50bd5e5708",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1968,8 +1968,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "61f503bbaeffa7168eb841c15559d5efa483bd9e3666f42aa12babffc679f2f7",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "61f503bbaeffa7168eb841c15559d5efa483bd9e3666f42aa12babffc679f2f7",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1979,8 +1979,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "5c6ecfb29252999e229fe9d85763ff873815cc20bba01fb2749dac73d7937c05",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "5c6ecfb29252999e229fe9d85763ff873815cc20bba01fb2749dac73d7937c05",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -1990,8 +1990,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "6280d5b9e5f25b3723b644e3865ebc466585230ec84f7c5f45d7ff309d749efb",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "6280d5b9e5f25b3723b644e3865ebc466585230ec84f7c5f45d7ff309d749efb",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2001,8 +2001,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "61b2f2fd5313d62b268df14abc7dd002ed3b01c526ecc7a3d92af784f2ac8d3d",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "61b2f2fd5313d62b268df14abc7dd002ed3b01c526ecc7a3d92af784f2ac8d3d",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2012,8 +2012,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "0141319e309de635db0ed12ad0172433dc6ac94be519ac12c9794285c34fef4f",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "0141319e309de635db0ed12ad0172433dc6ac94be519ac12c9794285c34fef4f",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2023,8 +2023,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "74fec3bcff696ca4241952c33006aba407dd40007645d235cd2f072e07a60851",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "74fec3bcff696ca4241952c33006aba407dd40007645d235cd2f072e07a60851",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2034,8 +2034,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "487b9d38068167ed20594731924cc103551b7f2f600ff9639d98c6a0e96408d6",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "487b9d38068167ed20594731924cc103551b7f2f600ff9639d98c6a0e96408d6",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2045,8 +2045,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "3d61a2baa3bbb856de4e9c6034e753f0847d199d22d3f98ce077ee4e22327592",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "3d61a2baa3bbb856de4e9c6034e753f0847d199d22d3f98ce077ee4e22327592",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2056,8 +2056,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "7b5520975409fff3276233001485d7d46d69edef05996633b77181bb29a2a76b",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "7b5520975409fff3276233001485d7d46d69edef05996633b77181bb29a2a76b",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2067,8 +2067,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "a5fadf4ba11dc29fbe3141800ebbe2af0a167ee12438264e8e745ec50817d25f",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "a5fadf4ba11dc29fbe3141800ebbe2af0a167ee12438264e8e745ec50817d25f",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2078,8 +2078,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "4de99f79b12e2c4b197b7666c567d877558c6bb3c7dca53fc0b612231ed00926",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "4de99f79b12e2c4b197b7666c567d877558c6bb3c7dca53fc0b612231ed00926",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2089,8 +2089,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "37cb8f8473213e740866ec4820ac0e22f3385b57c898a88720074ab49f4cf0f4",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "37cb8f8473213e740866ec4820ac0e22f3385b57c898a88720074ab49f4cf0f4",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2100,8 +2100,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "58b696a2b142cea89e87685bc36ffbaadf08c78f4f3a66ef1c285c356b90e30f",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "58b696a2b142cea89e87685bc36ffbaadf08c78f4f3a66ef1c285c356b90e30f",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2111,8 +2111,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "805f7c6e77c1715726d71bdb77804a512318b05c782f37f00f85e0a4fcd0eef9",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "805f7c6e77c1715726d71bdb77804a512318b05c782f37f00f85e0a4fcd0eef9",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2122,8 +2122,8 @@
       "worker": "w2",
       "status": "applied",
       "mapJsonHash": "72f0a896ed87f99f4476f7d36c79f0c23c08980a842198b7ee9ae961f5a31ced",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "72f0a896ed87f99f4476f7d36c79f0c23c08980a842198b7ee9ae961f5a31ced",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2133,8 +2133,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "3b78712fdea02a58a454319e8849c8e56a8f2e55517da3c01dc5a5591d009ee3",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "3b78712fdea02a58a454319e8849c8e56a8f2e55517da3c01dc5a5591d009ee3",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2144,8 +2144,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "fbe28d0c2b4018b4aba7194ff1026cba0dfe5eb3a7c83f056872f58a2b6ddfcb",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "fbe28d0c2b4018b4aba7194ff1026cba0dfe5eb3a7c83f056872f58a2b6ddfcb",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2155,8 +2155,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "e699b9c09f6b2e958a3bc5358025c98949c944ee52542180b0edb2ad32a3c1f9",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "e699b9c09f6b2e958a3bc5358025c98949c944ee52542180b0edb2ad32a3c1f9",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2166,8 +2166,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "70b4b465e4acecd247cc10613fd06c2c2693b173d4fb334a6baf3a80f4d20448",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "70b4b465e4acecd247cc10613fd06c2c2693b173d4fb334a6baf3a80f4d20448",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2177,8 +2177,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "6a060bae29ab50ffafd3780b8747489a371bf3f99deb492444ba69687d065eb8",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "6a060bae29ab50ffafd3780b8747489a371bf3f99deb492444ba69687d065eb8",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2188,8 +2188,8 @@
       "worker": "w3",
       "status": "applied",
       "mapJsonHash": "9ac973b046e47f569589d1d0645052cc56ccbdafab073e0c50acf10aec2b1c6d",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "9ac973b046e47f569589d1d0645052cc56ccbdafab073e0c50acf10aec2b1c6d",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2199,8 +2199,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "1eb3d7679f1c16576c233bd4c3d45015250f3e7df148e1e0b93e4ddaecec179d",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "1eb3d7679f1c16576c233bd4c3d45015250f3e7df148e1e0b93e4ddaecec179d",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2210,8 +2210,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "aa5feed6077bea5ee9b9e626f5a18bdf9bdae7288bb63d50b7dd8713b03a68b4",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "aa5feed6077bea5ee9b9e626f5a18bdf9bdae7288bb63d50b7dd8713b03a68b4",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2221,8 +2221,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "99d44b20c7b54030b1cfb5e9f4b5220872a618e12237bcd931cc0bd7c0f86685",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "99d44b20c7b54030b1cfb5e9f4b5220872a618e12237bcd931cc0bd7c0f86685",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2232,8 +2232,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "87bd23afc55e29363973578d46f0530a24b176fca775a089613d02f41ad64f86",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "87bd23afc55e29363973578d46f0530a24b176fca775a089613d02f41ad64f86",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2243,8 +2243,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "08df78de3357f700b987a31caed66771c64ee7479a895cb34a584a4e745a3ce5",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "08df78de3357f700b987a31caed66771c64ee7479a895cb34a584a4e745a3ce5",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2254,8 +2254,8 @@
       "worker": "w4",
       "status": "applied",
       "mapJsonHash": "d39ec111a1a2831b5d1fa330c46f6119b96511f9d87512399fca4ce1e34d4a71",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "d39ec111a1a2831b5d1fa330c46f6119b96511f9d87512399fca4ce1e34d4a71",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2265,8 +2265,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "8d915fbca0c1ea404f73e5263bafd0595eb07f99442824fc9868097ac9f91423",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "8d915fbca0c1ea404f73e5263bafd0595eb07f99442824fc9868097ac9f91423",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2276,8 +2276,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "4f4567a99d82d06427164f7b30e90e63696923a1f87b92aa6e65dbc2829d2950",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "4f4567a99d82d06427164f7b30e90e63696923a1f87b92aa6e65dbc2829d2950",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2287,8 +2287,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "2f72263c7f2a513372b5e8b5caaec088bdd6a19c3c27990328df247cae8b82ca",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "2f72263c7f2a513372b5e8b5caaec088bdd6a19c3c27990328df247cae8b82ca",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2298,8 +2298,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "67d88176b3bb8a8c16908cb462f2826f818f237cd2bf2e56ecb903935524ebe9",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "67d88176b3bb8a8c16908cb462f2826f818f237cd2bf2e56ecb903935524ebe9",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2309,8 +2309,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "23a68e99257cfc73ca56dcb43b231d8c02ff013a993b068771fc4ad4cd1b948d",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "23a68e99257cfc73ca56dcb43b231d8c02ff013a993b068771fc4ad4cd1b948d",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2320,8 +2320,8 @@
       "worker": "w5",
       "status": "applied",
       "mapJsonHash": "37e022c6ed06aba7cb48be6cf646987ff03a3ae7c424b0cbf38511f719023163",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "37e022c6ed06aba7cb48be6cf646987ff03a3ae7c424b0cbf38511f719023163",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2331,8 +2331,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "3ed62dadbc4ab8f5b33e9259752d5bef5546495f80044ff5ae9d907fa2064dd0",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "3ed62dadbc4ab8f5b33e9259752d5bef5546495f80044ff5ae9d907fa2064dd0",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2342,8 +2342,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "89953102ec3bf3d99e082fddc1264cc73f36fd0e865cf81235f5d0d6e306f7d3",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "89953102ec3bf3d99e082fddc1264cc73f36fd0e865cf81235f5d0d6e306f7d3",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2353,8 +2353,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "5a56c22c45f23239c83172d503d424df4061e7cf1ce530059fa7fbde1354ddd6",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "5a56c22c45f23239c83172d503d424df4061e7cf1ce530059fa7fbde1354ddd6",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2364,8 +2364,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "9e1e0b22b140ef733818861c0e5724638a19e3ce96b2479e5f65c000264f1100",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "9e1e0b22b140ef733818861c0e5724638a19e3ce96b2479e5f65c000264f1100",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2375,8 +2375,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "8510dd5809c10b705da149f7f1ade117d86da81435d78e90b69cd22a5f299cbc",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "8510dd5809c10b705da149f7f1ade117d86da81435d78e90b69cd22a5f299cbc",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2386,8 +2386,8 @@
       "worker": "w6",
       "status": "applied",
       "mapJsonHash": "33d13c44e42a99f2fec5884d4b76f3f1265bb7baa92fda1fe6ff04ca17f33002",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "33d13c44e42a99f2fec5884d4b76f3f1265bb7baa92fda1fe6ff04ca17f33002",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2396,9 +2396,9 @@
       "batch": "b43",
       "worker": "w1",
       "status": "applied",
-      "mapJsonHash": "18264b943549ffe4d96b462ba8568f5f7bdb2c6b43ce1894340abc499d5a0eb3",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "mapJsonHash": "48805d8c918cb4c6668866b477ac7f78c13c76a041ff1f8de2707bc1819db755",
+      "reviewJsonHash": "48805d8c918cb4c6668866b477ac7f78c13c76a041ff1f8de2707bc1819db755",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2408,8 +2408,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "db0a40f2980e3d9e42227b4764829dff271a267449da92821d71adb4df1f2529",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "db0a40f2980e3d9e42227b4764829dff271a267449da92821d71adb4df1f2529",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2419,8 +2419,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "9511f7f16d644ece6685eec541f02ecf2e1c5475afe5399b213be3a1dd40d93d",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "9511f7f16d644ece6685eec541f02ecf2e1c5475afe5399b213be3a1dd40d93d",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2430,8 +2430,8 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "deae42cc40667e1c06e91de36ffb950300fcab785dfdbb9f37af918f0863a5a9",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "deae42cc40667e1c06e91de36ffb950300fcab785dfdbb9f37af918f0863a5a9",
+      "reviewedBy": "independent-review",
       "reason": null
     },
     {
@@ -2441,9 +2441,13 @@
       "worker": "w1",
       "status": "applied",
       "mapJsonHash": "adc92695345c7852a062b42e2938acdd4d30b30c25f7638826e7628c8183427a",
-      "reviewJsonHash": null,
-      "reviewedBy": null,
+      "reviewJsonHash": "adc92695345c7852a062b42e2938acdd4d30b30c25f7638826e7628c8183427a",
+      "reviewedBy": "independent-review",
       "reason": null
     }
-  ]
+  ],
+  "reviewSummary": {
+    "reviewed": 222,
+    "missing": 0
+  }
 }
