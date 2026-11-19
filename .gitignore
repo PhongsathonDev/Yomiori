@@ -36,6 +36,7 @@ reader-web/scripts/check-cdn.mjs
 
 # Derived conversion cue sheets (rebuilt from source + maps)
 .conversion/*/cues/
+.conversion/*/ledgers/
 
 # Raw backups & text archives
 _txt_backup/
