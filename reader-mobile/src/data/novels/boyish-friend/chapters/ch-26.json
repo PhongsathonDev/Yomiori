@@ -8,27 +8,2380 @@
     {
       "id": "b1",
       "type": "narration",
-      "text": "ท่านใดสนใจสามารถกด Follow Page ผมไว้ได้นะครับ"
+      "text": "ฉันกับยูคาริเดินไปรอบๆ โรงเรียน"
     },
     {
       "id": "b2",
       "type": "narration",
-      "text": "บางเรื่องจะลงในเพจก่อนลงใน Neko นะครับ"
+      "text": "จากอาคารเรียนไปจนถึงประตูหลัก มีร้านค้าตั้งเรียงราย"
     },
     {
       "id": "b3",
       "type": "narration",
-      "text": "หนักแน่นดีมากโบยัน"
+      "text": "กลิ่นยากิโซบะและทาโกะยากิลอยมา"
     },
     {
       "id": "b4",
       "type": "narration",
-      "text": "หักธงสาวตึงๆ"
+      "text": "ยูคาริหันมามองฉันแวบหนึ่ง"
     },
     {
       "id": "b5",
+      "type": "dialogue",
+      "text": "\"โบยัน...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b6",
+      "type": "dialogue",
+      "text": "ไม่ใส่เสื้อยืดบ้านผีสิงเหรอ?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b7",
+      "type": "dialogue",
+      "text": "\"อ๋อ...",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b8",
+      "type": "dialogue",
+      "text": "ฉันไม่ได้ซื้อ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b9",
       "type": "narration",
-      "text": "โบยันผู้ไม่สั่นคลอน"
+      "text": "ยูคาริก็ไม่ได้ใส่เสื้อยืดเหมือนกัน"
+    },
+    {
+      "id": "b10",
+      "type": "dialogue",
+      "text": "\"ฉันเข้าใจนะ",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b11",
+      "type": "dialogue",
+      "text": "บางทีฉันก็ไม่ชอบ",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b12",
+      "type": "dialogue",
+      "text": "โบยันก็ไม่ชอบใช่ไหม?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b13",
+      "type": "dialogue",
+      "text": "\"เปล่าหรอก\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b14",
+      "type": "dialogue",
+      "text": "\"หืม...\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b15",
+      "type": "narration",
+      "text": "แล้วยูคาริก็หยุดเดิน"
+    },
+    {
+      "id": "b16",
+      "type": "narration",
+      "text": "และหันหน้ามาหาฉัน"
+    },
+    {
+      "id": "b17",
+      "type": "dialogue",
+      "text": "\"ฉันใส่เสื้อยืดไว้ข้างในนะ",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b18",
+      "type": "dialogue",
+      "text": "อยากดูไหม?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b19",
+      "type": "narration",
+      "text": "เธอพูด"
+    },
+    {
+      "id": "b20",
+      "type": "narration",
+      "text": "แล้วก็เอื้อมมือไปที่กระดุมเสื้อเชิ้ต"
+    },
+    {
+      "id": "b21",
+      "type": "dialogue",
+      "text": "\"...ไม่เป็นไร\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b22",
+      "type": "dialogue",
+      "text": "\"อืม\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b23",
+      "type": "narration",
+      "text": "ยูคาริหันหน้ากลับ"
+    },
+    {
+      "id": "b24",
+      "type": "narration",
+      "text": "แล้วก็เดินต่อ"
+    },
+    {
+      "id": "b25",
+      "type": "narration",
+      "text": "ฉันเดินตามเธอไป"
+    },
+    {
+      "id": "b26",
+      "type": "narration",
+      "text": "เมื่อเราเดินเข้าไปในโซนร้านค้า"
+    },
+    {
+      "id": "b27",
+      "type": "narration",
+      "text": "ก็มีเสียงตะโกนออกมาจากร้านยากิโซบะ"
+    },
+    {
+      "id": "b28",
+      "type": "dialogue",
+      "text": "\"ยูคาริ~",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b29",
+      "type": "dialogue",
+      "text": "แวะกินยากิโซบะสิ~!",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b30",
+      "type": "dialogue",
+      "text": "อ๊ะ... กำลังเดทกันอยู่เหรอ!?\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b31",
+      "type": "narration",
+      "text": "เมื่อฉันกับยูคาริเดินเข้าไปใกล้ร้านยากิโซบะ"
+    },
+    {
+      "id": "b32",
+      "type": "narration",
+      "text": "ผู้หญิงที่อยู่ในร้านก็มองมาที่ฉัน"
+    },
+    {
+      "id": "b33",
+      "type": "narration",
+      "text": "แล้วก็พูดว่า \"อ๋อ\""
+    },
+    {
+      "id": "b34",
+      "type": "dialogue",
+      "text": "\"นึกว่าใคร",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b35",
+      "type": "dialogue",
+      "text": "โบยันนี่เอง",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b36",
+      "type": "dialogue",
+      "text": "คงไม่ใช่เดทหรอก\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b37",
+      "type": "dialogue",
+      "text": "\"ดูเหมือนกำลังเดทกันเหรอ?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b38",
+      "type": "narration",
+      "text": "ยูคาริถามผู้หญิงคนนั้น"
+    },
+    {
+      "id": "b39",
+      "type": "narration",
+      "text": "ด้วยความสนใจ"
+    },
+    {
+      "id": "b40",
+      "type": "dialogue",
+      "text": "\"อืม...",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b41",
+      "type": "dialogue",
+      "text": "ดูไม่เหมือนเท่าไหร่\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b42",
+      "type": "narration",
+      "text": "ในที่สุดยูคาริก็ไม่ได้ซื้อยากิโซบะ"
+    },
+    {
+      "id": "b43",
+      "type": "narration",
+      "text": "แล้วก็เดินเล่นในโซนร้านค้าต่อ"
+    },
+    {
+      "id": "b44",
+      "type": "narration",
+      "text": "หลังจากนั้น"
+    },
+    {
+      "id": "b45",
+      "type": "narration",
+      "text": "ก็มีคนทักเราอยู่หลายครั้ง"
+    },
+    {
+      "id": "b46",
+      "type": "dialogue",
+      "text": "\"อ้าว",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b47",
+      "type": "dialogue",
+      "text": "ยูคาริกับโบยัน",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b48",
+      "type": "dialogue",
+      "text": "เป็นคู่ที่แปลกดีนะ~\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b49",
+      "type": "dialogue",
+      "text": "\"โอ้... ยูคาริ!",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b50",
+      "type": "dialogue",
+      "text": "สนิทกับโบยันด้วยเหรอ~\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b51",
+      "type": "dialogue",
+      "text": "\"ยูคาริ",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b52",
+      "type": "dialogue",
+      "text": "อย่าพาโบยันไปทั่วเลยนะ~\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b53",
+      "type": "narration",
+      "text": "ฉันยังคงเป็นคนน่าเชื่อถือ"
+    },
+    {
+      "id": "b54",
+      "type": "narration",
+      "text": "ทุกคนคงจะคิดว่า"
+    },
+    {
+      "id": "b55",
+      "type": "narration",
+      "text": "เราบังเอิญว่าง"
+    },
+    {
+      "id": "b56",
+      "type": "narration",
+      "text": "และบังเอิญเจอกัน"
+    },
+    {
+      "id": "b57",
+      "type": "narration",
+      "text": "เลยตัดสินใจเดินเล่นด้วยกัน"
+    },
+    {
+      "id": "b58",
+      "type": "narration",
+      "text": "เมื่อเดินชมร้านค้าเสร็จ"
+    },
+    {
+      "id": "b59",
+      "type": "narration",
+      "text": "เราก็เข้าไปในอาคารเรียน"
+    },
+    {
+      "id": "b60",
+      "type": "narration",
+      "text": "ยูคาริมากระซิบที่ฉัน"
+    },
+    {
+      "id": "b61",
+      "type": "narration",
+      "text": "ตรงหน้าตู้เก็บรองเท้า"
+    },
+    {
+      "id": "b62",
+      "type": "dialogue",
+      "text": "\"นี่...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b63",
+      "type": "dialogue",
+      "text": "สังเกตไหม?",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b64",
+      "type": "dialogue",
+      "text": "ตอนที่ทุกคนเห็นเรา",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b65",
+      "type": "dialogue",
+      "text": "พวกเขาทำหน้าตาประหลาดใจเล็กน้อย\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b66",
+      "type": "dialogue",
+      "text": "\"เหรอ?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b67",
+      "type": "dialogue",
+      "text": "\"ใช่แล้ว",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b68",
+      "type": "dialogue",
+      "text": "เมื่อก่อน",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b69",
+      "type": "dialogue",
+      "text": "ถ้าโบยันเดินกับผู้หญิง",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b70",
+      "type": "dialogue",
+      "text": "พวกเขาจะไม่ทำหน้าแบบนั้นหรอก\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b71",
+      "type": "dialogue",
+      "text": "\"งั้นเหรอ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b72",
+      "type": "dialogue",
+      "text": "\"ใช่แล้ว",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b73",
+      "type": "dialogue",
+      "text": "เพราะโบยันดูเปลี่ยนไป\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b74",
+      "type": "dialogue",
+      "text": "\"อืม\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b75",
+      "type": "narration",
+      "text": "ฉันเดินไปอย่างรวดเร็ว"
+    },
+    {
+      "id": "b76",
+      "type": "narration",
+      "text": "ยูคาริก็เดินตามมาข้างหลัง"
+    },
+    {
+      "id": "b77",
+      "type": "narration",
+      "text": "เราเดินไปตามทางเดินอย่างไม่มีจุดหมาย"
+    },
+    {
+      "id": "b78",
+      "type": "dialogue",
+      "text": "\"ถึงแม้ว่า",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b79",
+      "type": "dialogue",
+      "text": "เราจะยังไม่ถูกมองว่าเป็นคู่รักที่กำลังเดทกันก็เถอะ\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b80",
+      "type": "dialogue",
+      "text": "\"คงงั้น\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b81",
+      "type": "dialogue",
+      "text": "\"แต่ฉันอยากจะให้คนมองเราแบบนั้นนะ\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b82",
+      "type": "narration",
+      "text": "ฉันรู้สึกว่ายูคาริกำลังยิ้มอยู่ข้างๆ"
+    },
+    {
+      "id": "b83",
+      "type": "narration",
+      "text": "เธอน่าจะกำลังช้อนตาขึ้นมองฉัน"
+    },
+    {
+      "id": "b84",
+      "type": "narration",
+      "text": "เมื่อเราเดินไปเรื่อยๆ"
+    },
+    {
+      "id": "b85",
+      "type": "narration",
+      "text": "ฉันก็เห็นกล่องที่เขียนว่า"
+    },
+    {
+      "id": "b86",
+      "type": "narration",
+      "text": "'โหวตคู่รักยอดเยี่ยมที่นี่!'"
+    },
+    {
+      "id": "b87",
+      "type": "narration",
+      "text": "ตั้งอยู่สุดทางเดิน"
+    },
+    {
+      "id": "b88",
+      "type": "narration",
+      "text": "ฉันหยุดเดิน"
+    },
+    {
+      "id": "b89",
+      "type": "narration",
+      "text": "แล้วก็ชะโงกหน้าเข้าไปดู"
+    },
+    {
+      "id": "b90",
+      "type": "narration",
+      "text": "มีบัตรโหวตอยู่หลายสิบใบ"
+    },
+    {
+      "id": "b91",
+      "type": "narration",
+      "text": "ยูคาริก็ชะโงกหน้าเข้ามาดูด้วย"
+    },
+    {
+      "id": "b92",
+      "type": "dialogue",
+      "text": "\"นี่...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b93",
+      "type": "dialogue",
+      "text": "รู้ไหม?",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b94",
+      "type": "dialogue",
+      "text": "ถ้าได้รับเลือกเป็นคู่รักยอดเยี่ยม",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b95",
+      "type": "dialogue",
+      "text": "ตอนสุดท้าย",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b96",
+      "type": "dialogue",
+      "text": "พวกเขาจะจูบกันนะ\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b97",
+      "type": "dialogue",
+      "text": "\"จูบ?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b98",
+      "type": "dialogue",
+      "text": "\"ใช่",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b99",
+      "type": "dialogue",
+      "text": "ทุกคนจะตะโกนว่า",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b100",
+      "type": "dialogue",
+      "text": "'คิส คิส'",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b101",
+      "type": "dialogue",
+      "text": "ฉันได้ยินเพื่อนๆ ของอายะพูดกัน\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b102",
+      "type": "dialogue",
+      "text": "\"หืม\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b103",
+      "type": "dialogue",
+      "text": "\"...ไม่สนใจเหรอ?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b104",
+      "type": "dialogue",
+      "text": "\"ไม่ค่อยเท่าไหร่\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b105",
+      "type": "narration",
+      "text": "เพราะฉันจะไม่อยู่งานเลี้ยง"
+    },
+    {
+      "id": "b106",
+      "type": "narration",
+      "text": "ตอนกลางคืนกับอายะ"
+    },
+    {
+      "id": "b107",
+      "type": "dialogue",
+      "text": "\"งั้นเหรอ...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b108",
+      "type": "dialogue",
+      "text": "แต่ถ้าเป็นโบยัน",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b109",
+      "type": "dialogue",
+      "text": "ฉันอยากจะจูบต่อหน้าทุกคนนะ\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b110",
+      "type": "narration",
+      "text": "ยูคาริพูด"
+    },
+    {
+      "id": "b111",
+      "type": "narration",
+      "text": "ในขณะที่มองเข้าไปในกล่องโหวต"
+    },
+    {
+      "id": "b112",
+      "type": "narration",
+      "text": "ฉันเงียบไว้"
+    },
+    {
+      "id": "b113",
+      "type": "narration",
+      "text": "แล้วยูคาริก็หันมาหาฉัน"
+    },
+    {
+      "id": "b114",
+      "type": "dialogue",
+      "text": "\"นี่...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b115",
+      "type": "dialogue",
+      "text": "ขอจูบได้ไหม?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b116",
+      "type": "dialogue",
+      "text": "\"ไม่ได้หรอก\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b117",
+      "type": "dialogue",
+      "text": "\"แล้ว...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b118",
+      "type": "dialogue",
+      "text": "แบบลึกๆ ล่ะ?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b119",
+      "type": "dialogue",
+      "text": "\"ไม่ได้เหมือนกัน\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b120",
+      "type": "dialogue",
+      "text": "\"ไม่ได้เหรอ~\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b121",
+      "type": "narration",
+      "text": "ยูคาริพูดด้วยน้ำเสียงเบาๆ"
+    },
+    {
+      "id": "b122",
+      "type": "narration",
+      "text": "ฉันกับยูคาริเดินชมการจัดแสดง"
+    },
+    {
+      "id": "b123",
+      "type": "narration",
+      "text": "ที่ชั้นหนึ่ง"
+    },
+    {
+      "id": "b124",
+      "type": "narration",
+      "text": "แล้วก็ขึ้นไปที่ชั้นสอง"
+    },
+    {
+      "id": "b125",
+      "type": "narration",
+      "text": "ยูคาริเดินนำฉันไปหนึ่งก้าว"
+    },
+    {
+      "id": "b126",
+      "type": "narration",
+      "text": "เธอเดินตรงไปที่ตึกอื่น"
+    },
+    {
+      "id": "b127",
+      "type": "narration",
+      "text": "ซึ่งไม่ได้เป็นอาคารเรียน"
+    },
+    {
+      "id": "b128",
+      "type": "narration",
+      "text": "ที่มีร้านทำนายหรือร้านกาแฟ"
+    },
+    {
+      "id": "b129",
+      "type": "narration",
+      "text": "แต่เป็นอาคารศิลปะและห้องทดลองวิทยาศาสตร์"
+    },
+    {
+      "id": "b130",
+      "type": "narration",
+      "text": "เพราะอาคารนี้เน้นการจัดแสดง"
+    },
+    {
+      "id": "b131",
+      "type": "narration",
+      "text": "เลยไม่ค่อยมีคนเยอะเท่าอาคารเรียน"
+    },
+    {
+      "id": "b132",
+      "type": "narration",
+      "text": "แต่ก็ยังมีคนอยู่บ้าง"
+    },
+    {
+      "id": "b133",
+      "type": "narration",
+      "text": "เมื่อเราเดินไปตามทางเดิน"
+    },
+    {
+      "id": "b134",
+      "type": "narration",
+      "text": "ยูคาริก็หยุดเดินทันที"
+    },
+    {
+      "id": "b135",
+      "type": "narration",
+      "text": "เธอยิ้มแล้วหันมาหาฉัน"
+    },
+    {
+      "id": "b136",
+      "type": "dialogue",
+      "text": "\"ขอบคุณนะ...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b137",
+      "type": "dialogue",
+      "text": "ที่อยู่เป็นเพื่อนกันวันนี้\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b138",
+      "type": "dialogue",
+      "text": "\"อื้ม\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b139",
+      "type": "dialogue",
+      "text": "\"ไม่คิดเลยว่า...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b140",
+      "type": "dialogue",
+      "text": "จะยอมนอกใจด้วย\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b141",
+      "type": "dialogue",
+      "text": "\"ฉันไม่ได้นอกใจหรอก\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b142",
+      "type": "narration",
+      "text": "เมื่อฉันตอบอย่างเรียบเฉย"
+    },
+    {
+      "id": "b143",
+      "type": "narration",
+      "text": "ยูคาริก็หัวเราะว่า \"ล้อเล่นน่า\""
+    },
+    {
+      "id": "b144",
+      "type": "narration",
+      "text": "ฉันไม่เคย"
+    },
+    {
+      "id": "b145",
+      "type": "narration",
+      "text": "มองใครนอกจากอายะ"
+    },
+    {
+      "id": "b146",
+      "type": "narration",
+      "text": "และไม่เคยรู้สึกอะไร"
+    },
+    {
+      "id": "b147",
+      "type": "narration",
+      "text": "กับใครนอกจากอายะ"
+    },
+    {
+      "id": "b148",
+      "type": "narration",
+      "text": "บางทีอาจจะตลอดชีวิต"
+    },
+    {
+      "id": "b149",
+      "type": "narration",
+      "text": "อย่างไรก็ตาม"
+    },
+    {
+      "id": "b150",
+      "type": "narration",
+      "text": "วันนี้ที่ฉันทำตามคำขอของยูคาริ"
+    },
+    {
+      "id": "b151",
+      "type": "narration",
+      "text": "เป็นเพราะสัญชาตญาณของฉัน"
+    },
+    {
+      "id": "b152",
+      "type": "narration",
+      "text": "ไม่ได้พูดอะไร"
+    },
+    {
+      "id": "b153",
+      "type": "narration",
+      "text": "ดังนั้น"
+    },
+    {
+      "id": "b154",
+      "type": "narration",
+      "text": "การกระทำนี้คงไม่ผิด"
+    },
+    {
+      "id": "b155",
+      "type": "narration",
+      "text": "ที่จะทำให้อายะเป็นของฉัน"
+    },
+    {
+      "id": "b156",
+      "type": "narration",
+      "text": "และ..."
+    },
+    {
+      "id": "b157",
+      "type": "dialogue",
+      "text": "\"นี่...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b158",
+      "type": "dialogue",
+      "text": "ทำไมถึงยอมอยู่เป็นเพื่อนฉันวันนี้?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b159",
+      "type": "narration",
+      "text": "ยูคาริถาม"
+    },
+    {
+      "id": "b160",
+      "type": "dialogue",
+      "text": "\"เพราะเธอดูจริงจัง\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b161",
+      "type": "narration",
+      "text": "อย่างน้อยก็จริงจังมากพอ"
+    },
+    {
+      "id": "b162",
+      "type": "narration",
+      "text": "ที่คำขอของเธอจะไปถึงพระเจ้า"
+    },
+    {
+      "id": "b163",
+      "type": "narration",
+      "text": "น้ำหนักของความรู้สึกนั้น..."
+    },
+    {
+      "id": "b164",
+      "type": "narration",
+      "text": "ฉันรู้ดีที่สุด"
+    },
+    {
+      "id": "b165",
+      "type": "narration",
+      "text": "นิ้วที่กำลังจะปลดกระดุมเสื้อเพื่อแสดงเสื้อยืด"
+    },
+    {
+      "id": "b166",
+      "type": "narration",
+      "text": "สั่นอยู่"
+    },
+    {
+      "id": "b167",
+      "type": "narration",
+      "text": "ดวงตาที่ถามว่า \"ขอจูบได้ไหม?\""
+    },
+    {
+      "id": "b168",
+      "type": "narration",
+      "text": "ก็ดูสับสน"
+    },
+    {
+      "id": "b169",
+      "type": "narration",
+      "text": "เธอคงกำลังแสดงบทบาท"
+    },
+    {
+      "id": "b170",
+      "type": "narration",
+      "text": "ที่ไม่ใช่ตัวตนของเธอ"
+    },
+    {
+      "id": "b171",
+      "type": "narration",
+      "text": "ตามสัญชาตญาณของพระเจ้า"
+    },
+    {
+      "id": "b172",
+      "type": "narration",
+      "text": "ทันใดนั้น"
+    },
+    {
+      "id": "b173",
+      "type": "narration",
+      "text": "ทางเดินก็เงียบสงัด"
+    },
+    {
+      "id": "b174",
+      "type": "narration",
+      "text": "คนที่กำลังดูการจัดแสดง"
+    },
+    {
+      "id": "b175",
+      "type": "narration",
+      "text": "บนทางเดิน"
+    },
+    {
+      "id": "b176",
+      "type": "narration",
+      "text": "ก็หายไปแล้ว"
+    },
+    {
+      "id": "b177",
+      "type": "narration",
+      "text": "คนที่นั่งบนม้านั่ง"
+    },
+    {
+      "id": "b178",
+      "type": "narration",
+      "text": "ก็หายไปแล้ว"
+    },
+    {
+      "id": "b179",
+      "type": "narration",
+      "text": "ผู้คนหายไปจากทางเดิน"
+    },
+    {
+      "id": "b180",
+      "type": "narration",
+      "text": "นี่คงเป็นแผนของพระเจ้า..."
+    },
+    {
+      "id": "b181",
+      "type": "narration",
+      "text": "พระเจ้าของยูคาริ"
+    },
+    {
+      "id": "b182",
+      "type": "dialogue",
+      "text": "\"ฮ้า... สนุกจัง\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b183",
+      "type": "narration",
+      "text": "ยูคาริพูดด้วยสีหน้าโล่งใจ"
+    },
+    {
+      "id": "b184",
+      "type": "narration",
+      "text": "เธอคงจะสารภาพรักแล้ว"
+    },
+    {
+      "id": "b185",
+      "type": "dialogue",
+      "text": "\"ตอนนี้",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b186",
+      "type": "dialogue",
+      "text": "นายคิดว่าฉันกำลังจะสารภาพรักใช่ไหม?\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b187",
+      "type": "narration",
+      "text": "ยูคาริพูดด้วยน้ำเสียงหยอกล้อ"
+    },
+    {
+      "id": "b188",
+      "type": "dialogue",
+      "text": "\"อืม...",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b189",
+      "type": "dialogue",
+      "text": "คิดอย่างนั้น\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b190",
+      "type": "dialogue",
+      "text": "\"ฮึๆ",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b191",
+      "type": "dialogue",
+      "text": "โบยัน...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b192",
+      "type": "dialogue",
+      "text": "ดูง่ายดีนะ\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b193",
+      "type": "narration",
+      "text": "คงเป็นเพราะเธอคือยูคาริ"
+    },
+    {
+      "id": "b194",
+      "type": "narration",
+      "text": "ที่เฝ้ามองคนที่เธอชอบมาตลอด"
+    },
+    {
+      "id": "b195",
+      "type": "narration",
+      "text": "เหมือนกับฉัน"
+    },
+    {
+      "id": "b196",
+      "type": "narration",
+      "text": "ยูคาริยิ้มอย่างเงียบๆ"
+    },
+    {
+      "id": "b197",
+      "type": "narration",
+      "text": "นั่นคงเป็นใบหน้าที่แท้จริงของเธอ"
+    },
+    {
+      "id": "b198",
+      "type": "dialogue",
+      "text": "\"ขอบคุณนะ...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b199",
+      "type": "dialogue",
+      "text": "ที่วันนี้",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b200",
+      "type": "dialogue",
+      "text": "ไม่พูดถึงอายะเลย\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b201",
+      "type": "dialogue",
+      "text": "\"อืม\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b202",
+      "type": "dialogue",
+      "text": "\"ฉันชอบริวจิคุงนะ",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b203",
+      "type": "dialogue",
+      "text": "ฉันมองแค่ริวจิคุง",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b204",
+      "type": "dialogue",
+      "text": "มานานแล้ว\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b205",
+      "type": "narration",
+      "text": "เสียงของเธอดังก้องไปทั่วทางเดินที่เงียบสงบ"
+    },
+    {
+      "id": "b206",
+      "type": "narration",
+      "text": "ยูคาริมองมาที่ฉันตรงๆ"
+    },
+    {
+      "id": "b207",
+      "type": "narration",
+      "text": "ฉันก็มองกลับไปเช่นกัน"
+    },
+    {
+      "id": "b208",
+      "type": "dialogue",
+      "text": "\"ขอบคุณนะ",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b209",
+      "type": "dialogue",
+      "text": "แต่ขอโทษ",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b210",
+      "type": "dialogue",
+      "text": "ฉันมีคนที่ชอบมานานแล้ว\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b211",
+      "type": "dialogue",
+      "text": "\"อืม\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b212",
+      "type": "narration",
+      "text": "ริมฝีปากของยูคาริสั่น"
+    },
+    {
+      "id": "b213",
+      "type": "narration",
+      "text": "แล้วก็เปิดและปิดเล็กน้อย"
+    },
+    {
+      "id": "b214",
+      "type": "narration",
+      "text": "เธอคงอยากจะพูดอะไรเพิ่มเติม"
+    },
+    {
+      "id": "b215",
+      "type": "narration",
+      "text": "แต่ยูคาริก็กลืนมันลงไป"
+    },
+    {
+      "id": "b216",
+      "type": "narration",
+      "text": "หลังจากนั้นไม่นาน"
+    },
+    {
+      "id": "b217",
+      "type": "narration",
+      "text": "ยูคาริก็ใช้มือพัดหน้าตัวเอง"
+    },
+    {
+      "id": "b218",
+      "type": "dialogue",
+      "text": "\"ฮ้า...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b219",
+      "type": "dialogue",
+      "text": "โดนปฏิเสธแล้ว~\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b220",
+      "type": "narration",
+      "text": "ยูคาริยิ้มเพื่อกลบเกลื่อน"
+    },
+    {
+      "id": "b221",
+      "type": "narration",
+      "text": "แล้วก็กลับมาทำหน้าจริงจังอีกครั้ง"
+    },
+    {
+      "id": "b222",
+      "type": "dialogue",
+      "text": "\"ขอบคุณนะ...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b223",
+      "type": "dialogue",
+      "text": "ที่จริงจังกับฉัน\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b224",
+      "type": "dialogue",
+      "text": "\"อืม\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b225",
+      "type": "dialogue",
+      "text": "\"เอาล่ะ",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b226",
+      "type": "dialogue",
+      "text": "ใกล้ถึงช่วงกลางภาคแล้ว",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b227",
+      "type": "dialogue",
+      "text": "ฉันจะไปตั้งใจเรียนแล้วนะ!",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b228",
+      "type": "dialogue",
+      "text": "ช่วงนี้ฉันจะตั้งใจเรียนอย่างเดียว!\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b229",
+      "type": "narration",
+      "text": "ยูคาริพูด"
+    },
+    {
+      "id": "b230",
+      "type": "narration",
+      "text": "พร้อมกับยิ้มให้ฉัน"
+    },
+    {
+      "id": "b231",
+      "type": "narration",
+      "text": "แต่แล้ว"
+    },
+    {
+      "id": "b232",
+      "type": "narration",
+      "text": "ใบหน้าของเธอก็ดูหม่นลง"
+    },
+    {
+      "id": "b233",
+      "type": "narration",
+      "text": "แล้วเธอก็กัดริมฝีปากล่าง"
+    },
+    {
+      "id": "b234",
+      "type": "narration",
+      "text": "แล้วมองมาที่ฉัน"
+    },
+    {
+      "id": "b235",
+      "type": "dialogue",
+      "text": "\"...ไม่สิ",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b236",
+      "type": "dialogue",
+      "text": "ฉันจะพยายามหาคนใหม่ที่ชอบนะ\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b237",
+      "type": "dialogue",
+      "text": "\"อืม\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b238",
+      "type": "dialogue",
+      "text": "\"บางที...",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b239",
+      "type": "dialogue",
+      "text": "ฉันอาจจะไปขอพรจากพระเจ้าก็ได้นะ~\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b240",
+      "type": "dialogue",
+      "text": "\"อืม\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b241",
+      "type": "dialogue",
+      "text": "\"งั้น... ลาก่อนนะ",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b242",
+      "type": "dialogue",
+      "text": "โบยัน\"",
+      "speakerId": "yukari",
+      "speakerName": "ยูคาริ"
+    },
+    {
+      "id": "b243",
+      "type": "dialogue",
+      "text": "\"อืม\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b244",
+      "type": "narration",
+      "text": "ผู้คนเริ่มกลับมาบนทางเดิน"
+    },
+    {
+      "id": "b245",
+      "type": "narration",
+      "text": "ยูคาริเดินเข้าไปในฝูงชน"
+    },
+    {
+      "id": "b246",
+      "type": "narration",
+      "text": "ฉันก็หันหลังกลับ"
+    },
+    {
+      "id": "b247",
+      "type": "narration",
+      "text": "แล้วเดินไปอีกทางหนึ่ง"
+    },
+    {
+      "id": "b248",
+      "type": "narration",
+      "text": "เมื่อฉันไปถึงบ้านผีสิง"
+    },
+    {
+      "id": "b249",
+      "type": "narration",
+      "text": "ก็มีคนต่อคิวอยู่ยาวเหยียด"
+    },
+    {
+      "id": "b250",
+      "type": "narration",
+      "text": "ฉันได้ยินเสียงกรีดร้องของลูกค้า"
+    },
+    {
+      "id": "b251",
+      "type": "narration",
+      "text": "เช่น \"กรี๊ดดด\" หรือ \"อ๊าก!\""
+    },
+    {
+      "id": "b252",
+      "type": "narration",
+      "text": "ดูเหมือนจะได้รับความนิยมมาก"
+    },
+    {
+      "id": "b253",
+      "type": "narration",
+      "text": "ฉันจำได้ว่า"
+    },
+    {
+      "id": "b254",
+      "type": "narration",
+      "text": "ที่ของอายะอยู่ใกล้ๆ"
+    },
+    {
+      "id": "b255",
+      "type": "narration",
+      "text": "กับทางออก"
+    },
+    {
+      "id": "b256",
+      "type": "narration",
+      "text": "ฉันแหวกฝูงชน"
+    },
+    {
+      "id": "b257",
+      "type": "narration",
+      "text": "แล้วก็เข้าไปข้างในจากทางออก"
+    },
+    {
+      "id": "b258",
+      "type": "narration",
+      "text": "ไม่มีใครสนใจฉันเลย"
+    },
+    {
+      "id": "b259",
+      "type": "narration",
+      "text": "นี่คงเป็นพลังของพระเจ้า"
+    },
+    {
+      "id": "b260",
+      "type": "narration",
+      "text": "เมื่อฉันเข้าไปในบ้านผีสิงที่มืดสลัว"
+    },
+    {
+      "id": "b261",
+      "type": "narration",
+      "text": "ฉันก็ยืนอยู่หน้าม่านสีดำ"
+    },
+    {
+      "id": "b262",
+      "type": "narration",
+      "text": "ทางด้านขวามือ"
+    },
+    {
+      "id": "b263",
+      "type": "narration",
+      "text": "ฉันนั่งยองๆ"
+    },
+    {
+      "id": "b264",
+      "type": "narration",
+      "text": "แล้วก็แหวกม่านจากด้านล่าง"
+    },
+    {
+      "id": "b265",
+      "type": "dialogue",
+      "text": "\"อ๊าก!...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b266",
+      "type": "dialogue",
+      "text": "อ้าว...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b267",
+      "type": "dialogue",
+      "text": "โบยัน!?\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b268",
+      "type": "narration",
+      "text": "ใต้โต๊ะ"
+    },
+    {
+      "id": "b269",
+      "type": "narration",
+      "text": "ในพื้นที่เล็กๆ ที่เหมือนโพรง"
+    },
+    {
+      "id": "b270",
+      "type": "narration",
+      "text": "ฉันเห็นหน้าของอายะ"
+    },
+    {
+      "id": "b271",
+      "type": "narration",
+      "text": "เธอเหงื่อท่วมตัว"
+    },
+    {
+      "id": "b272",
+      "type": "narration",
+      "text": "และผมก็ติดอยู่ที่หน้าผาก"
+    },
+    {
+      "id": "b273",
+      "type": "dialogue",
+      "text": "\"ให้ฉันช่วยไหม?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b274",
+      "type": "dialogue",
+      "text": "\"หือ?\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b275",
+      "type": "narration",
+      "text": "ฉันเข้าไปในพื้นที่แคบๆ"
+    },
+    {
+      "id": "b276",
+      "type": "narration",
+      "text": "ใต้โต๊ะข้างๆ อายะ"
+    },
+    {
+      "id": "b277",
+      "type": "narration",
+      "text": "ฉันสอดเท้าเข้าไปก่อน"
+    },
+    {
+      "id": "b278",
+      "type": "narration",
+      "text": "มันค่อนข้างอัดแน่น"
+    },
+    {
+      "id": "b279",
+      "type": "narration",
+      "text": "เป็นตำแหน่งที่ลำบากจริงๆ"
+    },
+    {
+      "id": "b280",
+      "type": "dialogue",
+      "text": "\"นี่ โบยัน",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b281",
+      "type": "dialogue",
+      "text": "เป็นอะไรไป?\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b282",
+      "type": "narration",
+      "text": "ฉันได้ยินเสียงกระซิบของอายะ"
+    },
+    {
+      "id": "b283",
+      "type": "narration",
+      "text": "มาจากข้างๆ"
+    },
+    {
+      "id": "b284",
+      "type": "narration",
+      "text": "ในความมืด"
+    },
+    {
+      "id": "b285",
+      "type": "narration",
+      "text": "เรากำลังนอนหันหน้าเข้าหากัน"
+    },
+    {
+      "id": "b286",
+      "type": "narration",
+      "text": "ลมหายใจของอายะพัดมาโดนหน้าของฉัน"
+    },
+    {
+      "id": "b287",
+      "type": "narration",
+      "text": "กลิ่นหอมหวานของอายะ"
+    },
+    {
+      "id": "b288",
+      "type": "narration",
+      "text": "ที่คงจะเหงื่อท่วมตัวแล้ว"
+    },
+    {
+      "id": "b289",
+      "type": "narration",
+      "text": "อบอวลอยู่เต็มไปหมด"
+    },
+    {
+      "id": "b290",
+      "type": "dialogue",
+      "text": "\"ฉันคิดว่าอายะจะเหงา",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b291",
+      "type": "dialogue",
+      "text": "เธอไม่ชอบที่มืดๆ",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b292",
+      "type": "dialogue",
+      "text": "และที่แคบๆ ใช่ไหม?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b293",
+      "type": "dialogue",
+      "text": "\"...ก็ได้...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b294",
+      "type": "dialogue",
+      "text": "แต่ห้ามเกะกะนะ\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b295",
+      "type": "narration",
+      "text": "น้ำเสียงของเธอเหมือนกำลังตักเตือนเด็ก"
+    },
+    {
+      "id": "b296",
+      "type": "narration",
+      "text": "แต่ฉันรู้สึกได้ถึงความดีใจเล็กน้อย"
+    },
+    {
+      "id": "b297",
+      "type": "dialogue",
+      "text": "\"เธอขู่ยังไงเหรอ?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b298",
+      "type": "dialogue",
+      "text": "\"ก็...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b299",
+      "type": "dialogue",
+      "text": "อ๊ะ... เดี๋ยว...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b300",
+      "type": "dialogue",
+      "text": "ลูกค้ามาแล้ว...!\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b301",
+      "type": "narration",
+      "text": "อายะแง้มม่านสีดำเล็กน้อย"
+    },
+    {
+      "id": "b302",
+      "type": "narration",
+      "text": "แสงสีแดงจากภายนอก"
+    },
+    {
+      "id": "b303",
+      "type": "narration",
+      "text": "ก็ส่องเข้ามาในความมืด"
+    },
+    {
+      "id": "b304",
+      "type": "narration",
+      "text": "ฉันเห็นใบหน้าด้านข้างที่จริงจังของอายะ"
+    },
+    {
+      "id": "b305",
+      "type": "narration",
+      "text": "ที่กำลังมองลูกค้าในท่านอนคว่ำ"
+    },
+    {
+      "id": "b306",
+      "type": "narration",
+      "text": "มีเสียงฝีเท้าสองคู่กำลังเดินเข้ามา"
+    },
+    {
+      "id": "b307",
+      "type": "narration",
+      "text": "ดูเหมือนจะเป็นคู่รัก"
+    },
+    {
+      "id": "b308",
+      "type": "narration",
+      "text": "วันนี้เป็นวันธรรมดา"
+    },
+    {
+      "id": "b309",
+      "type": "narration",
+      "text": "คงจะเป็นนักศึกษามหาวิทยาลัย"
+    },
+    {
+      "id": "b310",
+      "type": "narration",
+      "text": "ผู้หญิงดูหวาดกลัว"
+    },
+    {
+      "id": "b311",
+      "type": "narration",
+      "text": "และพูดว่า \"น่ากลัวจัง... น่ากลัว...\""
+    },
+    {
+      "id": "b312",
+      "type": "narration",
+      "text": "ส่วนผู้ชายก็ปลอบใจเธอ"
+    },
+    {
+      "id": "b313",
+      "type": "narration",
+      "text": "ด้วยน้ำเสียงที่ดูน่าเชื่อถือว่า"
+    },
+    {
+      "id": "b314",
+      "type": "dialogue",
+      "text": "\"ใกล้ถึงทางออกแล้ว\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b315",
+      "type": "narration",
+      "text": "เมื่อเสียงของพวกเขาเข้ามาใกล้"
+    },
+    {
+      "id": "b316",
+      "type": "narration",
+      "text": "อายะก็ยื่นมือออกไปอย่างรวดเร็ว"
+    },
+    {
+      "id": "b317",
+      "type": "narration",
+      "text": "\"ว้ายยย!\""
+    },
+    {
+      "id": "b318",
+      "type": "narration",
+      "text": "\"กรี๊ดดดดดด!\""
+    },
+    {
+      "id": "b319",
+      "type": "narration",
+      "text": "อายะรีบดึงแขนกลับ"
+    },
+    {
+      "id": "b320",
+      "type": "narration",
+      "text": "แล้วก็ปิดม่าน"
+    },
+    {
+      "id": "b321",
+      "type": "narration",
+      "text": "คู่รักวิ่งหนีออกไปทางทางออก"
+    },
+    {
+      "id": "b322",
+      "type": "narration",
+      "text": "ฉันได้ยินเสียงพวกเขาพูดกันว่า"
+    },
+    {
+      "id": "b323",
+      "type": "dialogue",
+      "text": "\"จู่ๆ ก็มีคนมาจับข้อเท้า\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b324",
+      "type": "dialogue",
+      "text": "\"อะไรนะ น่ากลัวเกินไปแล้ว...\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b325",
+      "type": "narration",
+      "text": "ฉันเข้าใจแล้ว"
+    },
+    {
+      "id": "b326",
+      "type": "narration",
+      "text": "นี่น่ากลัวจริงๆ"
+    },
+    {
+      "id": "b327",
+      "type": "narration",
+      "text": "ฉันเองก็คงจะกระโดดได้เลย"
+    },
+    {
+      "id": "b328",
+      "type": "dialogue",
+      "text": "\"อายะ...",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b329",
+      "type": "dialogue",
+      "text": "ระวังมืออย่าให้ถูกเหยียบนะ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b330",
+      "type": "dialogue",
+      "text": "\"อื้ม",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b331",
+      "type": "dialogue",
+      "text": "ระวังอยู่แล้ว\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b332",
+      "type": "narration",
+      "text": "ลมหายใจของอายะ"
+    },
+    {
+      "id": "b333",
+      "type": "narration",
+      "text": "ที่พูดแบบนั้น"
+    },
+    {
+      "id": "b334",
+      "type": "narration",
+      "text": "อยู่ใกล้กว่าเมื่อกี้อีก"
+    },
+    {
+      "id": "b335",
+      "type": "narration",
+      "text": "เมื่อเธอดึงมือกลับ"
+    },
+    {
+      "id": "b336",
+      "type": "narration",
+      "text": "ใบหน้าของเธอก็คงจะเข้ามาใกล้ฉัน"
+    },
+    {
+      "id": "b337",
+      "type": "narration",
+      "text": "ฉันอยากจะแตะแก้มของอายะ"
+    },
+    {
+      "id": "b338",
+      "type": "narration",
+      "text": "แต่เสาของโต๊ะมันขวางอยู่"
+    },
+    {
+      "id": "b339",
+      "type": "narration",
+      "text": "ฉันไม่สามารถยื่นมือไปได้"
+    },
+    {
+      "id": "b340",
+      "type": "narration",
+      "text": "ฉันเลยต้อง..."
+    },
+    {
+      "id": "b341",
+      "type": "narration",
+      "text": "เอื้อมมือไปที่ท่อนล่างของอายะ"
+    },
+    {
+      "id": "b342",
+      "type": "narration",
+      "text": "กระโปรงของอายะที่นอนตะแคง"
+    },
+    {
+      "id": "b343",
+      "type": "narration",
+      "text": "หันหน้ามาหาฉัน"
+    },
+    {
+      "id": "b344",
+      "type": "narration",
+      "text": "ถูกเลิกขึ้นไปถึงโคนขาแล้ว"
+    },
+    {
+      "id": "b345",
+      "type": "narration",
+      "text": "ฉันลูบไปตามต้นขาด้านในของเธอ"
+    },
+    {
+      "id": "b346",
+      "type": "narration",
+      "text": "และคลำหาพื้นที่ที่เปียกชื้น"
+    },
+    {
+      "id": "b347",
+      "type": "narration",
+      "text": "ฉันแตะผ้าที่ชื้น"
+    },
+    {
+      "id": "b348",
+      "type": "narration",
+      "text": "ด้วยเหงื่อ..."
+    },
+    {
+      "id": "b349",
+      "type": "narration",
+      "text": "และคงไม่ใช่แค่เหงื่อ"
+    },
+    {
+      "id": "b350",
+      "type": "narration",
+      "text": "ความรู้สึกที่นุ่มนิ่มและเปียกชื้น"
+    },
+    {
+      "id": "b351",
+      "type": "dialogue",
+      "text": "\"อ๊ะ...\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b352",
+      "type": "narration",
+      "text": "อายะครางออกมา"
+    },
+    {
+      "id": "b353",
+      "type": "narration",
+      "text": "ด้วยเสียงที่แผ่วเบา"
+    },
+    {
+      "id": "b354",
+      "type": "narration",
+      "text": "ฉันลูบไปบนพื้นผิวของชุดชั้นในของอายะ"
+    },
+    {
+      "id": "b355",
+      "type": "narration",
+      "text": "แล้วก็สอดนิ้วเข้าไปในกางเกงในจากด้านล่าง"
+    },
+    {
+      "id": "b356",
+      "type": "narration",
+      "text": "แล้วก็สอดมือเข้าไปข้างในทันที"
+    },
+    {
+      "id": "b357",
+      "type": "dialogue",
+      "text": "\"อ๊ะ...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b358",
+      "type": "dialogue",
+      "text": "บะ... โบยัน...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b359",
+      "type": "dialogue",
+      "text": "อื้ม...!\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b360",
+      "type": "narration",
+      "text": "ฉันสัมผัสกับอวัยวะเพศของอายะ"
+    },
+    {
+      "id": "b361",
+      "type": "narration",
+      "text": "ด้วยมือของฉันทั้งหมด"
+    },
+    {
+      "id": "b362",
+      "type": "narration",
+      "text": "อ๋อ..."
+    },
+    {
+      "id": "b363",
+      "type": "narration",
+      "text": "นี่คือเหตุผลที่สัญชาตญาณของพระเจ้า"
+    },
+    {
+      "id": "b364",
+      "type": "narration",
+      "text": "ปลุกฉันให้ตื่นแต่เช้า"
+    },
+    {
+      "id": "b365",
+      "type": "narration",
+      "text": "ถ้าฉันไม่มา"
+    },
+    {
+      "id": "b366",
+      "type": "narration",
+      "text": "วันนี้อายะคงใส่กางเกงขาสั้น"
+    },
+    {
+      "id": "b367",
+      "type": "narration",
+      "text": "...แม้จะเล็กน้อย"
+    },
+    {
+      "id": "b368",
+      "type": "narration",
+      "text": "แต่ก็มีค่ามาก"
+    },
+    {
+      "id": "b369",
+      "type": "narration",
+      "text": "ฉันจะได้สัมผัสกับส่วนที่อ่อนไหวของอายะแบบนี้"
+    },
+    {
+      "id": "b370",
+      "type": "narration",
+      "text": "ฉันสอดนิ้วกลางของฉัน"
+    },
+    {
+      "id": "b371",
+      "type": "narration",
+      "text": "เข้าไปในรอยแยกที่นุ่มนวลของอายะ"
+    },
+    {
+      "id": "b372",
+      "type": "narration",
+      "text": "ปลายนิ้วของฉัน"
+    },
+    {
+      "id": "b373",
+      "type": "narration",
+      "text": "สัมผัสกับช่องที่ชุ่มฉ่ำไปด้วยน้ำรัก"
+    },
+    {
+      "id": "b374",
+      "type": "narration",
+      "text": "ที่ไหลไม่หยุด"
+    },
+    {
+      "id": "b375",
+      "type": "narration",
+      "text": "ฉันงอนิ้วกลาง"
+    },
+    {
+      "id": "b376",
+      "type": "narration",
+      "text": "แล้วสอดเข้าไปในช่องคลอดของเธอ"
+    },
+    {
+      "id": "b377",
+      "type": "dialogue",
+      "text": "\"อ๊ะ...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b378",
+      "type": "dialogue",
+      "text": "โบยัน...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b379",
+      "type": "dialogue",
+      "text": "อื้ม... อื้ม...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b380",
+      "type": "dialogue",
+      "text": "อื้ม... อ้า...\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b381",
+      "type": "narration",
+      "text": "อายะปล่อยเสียงครางที่น่ารักออกมา"
+    },
+    {
+      "id": "b382",
+      "type": "narration",
+      "text": "ฉันออกแรงกดนิ้วไปที่ริมฝีปากของอายะ"
+    },
+    {
+      "id": "b383",
+      "type": "narration",
+      "text": "เพื่อบอกให้เธอเงียบ"
+    },
+    {
+      "id": "b384",
+      "type": "narration",
+      "text": "อายะก็กดริมฝีปากของเธอกับนิ้วของฉัน"
+    },
+    {
+      "id": "b385",
+      "type": "narration",
+      "text": "เพื่อพยายามกลั้นเสียงไว้"
+    },
+    {
+      "id": "b386",
+      "type": "narration",
+      "text": "แต่เธอกลั้นไว้ไม่ได้"
+    },
+    {
+      "id": "b387",
+      "type": "narration",
+      "text": "เธอก็ค่อยๆ คาบและบีบนิ้วของฉันไว้"
+    },
+    {
+      "id": "b388",
+      "type": "narration",
+      "text": "ฉันรู้สึกเหมือนถูกลูบไล้ด้วยปากของอายะ"
+    },
+    {
+      "id": "b389",
+      "type": "narration",
+      "text": "มันจั๊กจี้"
+    },
+    {
+      "id": "b390",
+      "type": "narration",
+      "text": "และรู้สึกดี"
+    },
+    {
+      "id": "b391",
+      "type": "narration",
+      "text": "เพราะสายตาถูกบดบังในความมืด"
+    },
+    {
+      "id": "b392",
+      "type": "narration",
+      "text": "ความรู้สึกของอายะจึงยิ่งชัดเจนขึ้น"
+    },
+    {
+      "id": "b393",
+      "type": "narration",
+      "text": "นอกม่าน"
+    },
+    {
+      "id": "b394",
+      "type": "narration",
+      "text": "ฉันรู้สึกได้ว่า"
+    },
+    {
+      "id": "b395",
+      "type": "narration",
+      "text": "เสียงฝีเท้าของครอบครัวที่มีเด็กเล็ก"
+    },
+    {
+      "id": "b396",
+      "type": "narration",
+      "text": "หยุดอยู่"
+    },
+    {
+      "id": "b397",
+      "type": "dialogue",
+      "text": "\"พ่อ~",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b398",
+      "type": "dialogue",
+      "text": "ใกล้จะถึงทางออกหรือยัง?\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b399",
+      "type": "dialogue",
+      "text": "\"ใกล้แล้ว\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b400",
+      "type": "dialogue",
+      "text": "\"ไม่เห็นน่ากลัวเลยนะ\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b401",
+      "type": "dialogue",
+      "text": "\"ผีก็คงจะผ่อนปรนให้เราไง\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b402",
+      "type": "narration",
+      "text": "บรรยากาศของครอบครัวนั้น"
+    },
+    {
+      "id": "b403",
+      "type": "narration",
+      "text": "ค่อยๆ หายไปทางทางออก"
+    },
+    {
+      "id": "b404",
+      "type": "dialogue",
+      "text": "'อีก 30 นาที",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b405",
+      "type": "dialogue",
+      "text": "จะเปลี่ยนเป็นทีมช่วงบ่ายแล้ว!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b406",
+      "type": "dialogue",
+      "text": "สู้ๆ นะ!'",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b407",
+      "type": "narration",
+      "text": "ฉันรู้สึกว่า"
+    },
+    {
+      "id": "b408",
+      "type": "narration",
+      "text": "ได้ยินเสียงของโทกิตะ"
+    },
+    {
+      "id": "b409",
+      "type": "narration",
+      "text": "ดังก้องในห้องเรียน"
+    },
+    {
+      "id": "b410",
+      "type": "narration",
+      "text": "ในม่านสีดำ"
+    },
+    {
+      "id": "b411",
+      "type": "narration",
+      "text": "ในพื้นที่ที่คับแคบ"
+    },
+    {
+      "id": "b412",
+      "type": "narration",
+      "text": "เราต่างคนต่าง"
+    },
+    {
+      "id": "b413",
+      "type": "narration",
+      "text": "สัมผัสกันและกัน"
+    },
+    {
+      "id": "b414",
+      "type": "narration",
+      "text": "อย่างหิวโหย"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "sourceSha256": "8d77c782444820db03876f711c158ff0db5a60b8b9a2795abce677ec98b695e0",
+  "sourceSha256": "445867647cd31d0664d2fe73c1de80aaafac8aff9f5bb12458c8aeb3a71ad42e",
   "tokens": [
     {
       "id": "p1-1",
       "segments": [
         {
           "start": 0,
-          "end": 45,
+          "end": 33,
           "type": "narration"
         }
       ]
@@ -16,7 +16,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 38,
+          "end": 15,
           "type": "narration"
         }
       ]
@@ -26,7 +26,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 54,
+          "end": 12,
           "type": "narration"
         }
       ]
@@ -36,7 +36,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 45,
+          "end": 43,
           "type": "narration"
         }
       ]
@@ -46,8 +46,18 @@
       "segments": [
         {
           "start": 0,
-          "end": 44,
-          "type": "narration"
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "โบยันขออนุญาตพ่อของอายะที่เพิ่งออกมาจากห้องน้ำข้างประตูทางเข้า"
+          }
         }
       ]
     },
@@ -56,7 +66,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 42,
+          "end": 23,
           "type": "narration"
         }
       ]
@@ -66,7 +76,3789 @@
       "segments": [
         {
           "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya-father",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "พ่อของอายะเอ่ยชื่อโบยันหลังออกมาจากห้องน้ำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "โบยันขานรับคำเรียกของพ่ออายะด้วยเสียงลังเล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "aya-father",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "พ่อของอายะถามโบยันให้เลือกระหว่างซูชิสายพานกับร้านอาหารครอบครัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "โบยันเลือกคำตอบให้พ่อของอายะตามที่คิดว่าอายะอยากไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "aya-father",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "พ่อของอายะผิดหวังที่โบยันก็เลือกเหมือนคนอื่นในครอบครัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "โบยันเห็นเสื้อชั้นในสีขาวของอายะในเครื่องซักผ้าและเตือนตัวเองให้ใจเย็น ก่อนถอดเสื้อผ้าไปอาบน้ำเย็นในย่อหน้าถัดไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "aya-mother",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "แม่ของอายะมองออกไปนอกหน้าต่างแล้วพูดถึงร้านเสื้อผ้าที่ปิดไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "อายะโน้มตัวมาหาโบยันและตอบแม่เรื่องร้านเสื้อผ้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
           "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "คำว่า ไปแล้วนะ เป็นคำพูดของอายะที่โบยันยกมาคิดในประโยคบรรยาย ไม่ใช่บทสนทนาในฉาก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "hiroto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p87-1",
+              "p88-1",
+              "p89-1"
+            ],
+            "reason": "ฮิโรโตะสังเกตเห็นเหงื่อของโบยันแล้วทักขึ้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p90-1",
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "โบยันแก้ตัวเรื่องเหงื่อหลังฮิโรโตะทัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "aya-mother",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1"
+            ],
+            "reason": "แม่ของอายะมองผ่านกระจกมองหลังแล้วถามโบยันเรื่องหน้าแดง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "โบยันตอบเลี่ยงคำถามของแม่อายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "aya-father",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "พ่อของอายะมองผ่านกระจกมองหลังแล้วเสนอเปิดแอร์แรงขึ้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1",
+              "p97-1",
+              "p98-1"
+            ],
+            "reason": "โบยันรีบปฏิเสธข้อเสนอของพ่ออายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p110-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p111-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p112-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p113-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p114-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p115-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p116-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p117-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p118-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p119-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p120-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p121-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p122-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p123-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p124-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p125-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p126-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p127-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p128-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p129-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p130-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p131-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "aya-mother",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p130-1",
+              "p131-1",
+              "p132-1"
+            ],
+            "reason": "แม่ของอายะถามขึ้นเมื่อเห็นอายะกำลังดูโทรศัพท์"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p132-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p133-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p134-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p133-1",
+              "p134-1",
+              "p135-1"
+            ],
+            "reason": "อายะตอบแม่สั้นๆ ว่ากำลังดูโทรศัพท์อยู่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p135-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p136-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "hiroto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p135-1",
+              "p136-1",
+              "p137-1"
+            ],
+            "reason": "ฮิโรโตะเร่งให้อายะรับสาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p137-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p138-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p137-1",
+              "p138-1",
+              "p139-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดเป็นเสียงสั่นของโทรศัพท์ ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p139-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p140-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p141-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p140-1",
+              "p141-1",
+              "p142-1"
+            ],
+            "reason": "คำว่า รับสายสิ เป็นคำที่โบยันเคยคิดจะพูดในอดีตตามประโยคบรรยาย ไม่ใช่บทสนทนาปัจจุบัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p142-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p143-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p144-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p143-1",
+              "p144-1",
+              "p145-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดเป็นความเชื่อภายในใจของโบยันที่ถูกยกมาในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p145-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p146-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p147-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "aya-father",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p146-1",
+              "p147-1",
+              "p148-1"
+            ],
+            "reason": "พ่อของอายะบอกให้อายะออกไปคุยโทรศัพท์ข้างนอก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p148-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p147-1",
+              "p148-1",
+              "p149-1"
+            ],
+            "reason": "คำว่า อื้อ เป็นเสียงครางของอายะที่ถูกรายงานในประโยคบรรยาย ไม่ใช่บทสนทนาเต็มประโยค"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p149-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p150-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p149-1",
+              "p150-1",
+              "p151-1"
+            ],
+            "reason": "อายะรับคำพ่อก่อนลุกออกไปคุย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p151-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p152-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p153-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p154-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p155-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p156-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "aya-mother",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p155-1",
+              "p156-1",
+              "p157-1"
+            ],
+            "reason": "แม่ของอายะถามอายะเรื่องโทกิตะหลังเธอกลับมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p157-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p158-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p157-1",
+              "p158-1",
+              "p159-1"
+            ],
+            "reason": "อายะเล่าว่าโทกิตะชวนไปกินข้าวเที่ยงด้วยกันพรุ่งนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p159-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "aya-mother",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p158-1",
+              "p159-1",
+              "p160-1"
+            ],
+            "reason": "แม่ของอายะตอบรับข่าวของอายะอย่างไม่ใส่ใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p160-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p161-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p162-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p163-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p164-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p165-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p164-1",
+              "p165-1",
+              "p166-1"
+            ],
+            "reason": "โบยันอาสาไปที่บาร์น้ำและถามอายะกับฮิโรโตะว่าอยากได้อะไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p166-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p167-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p168-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "hiroto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p167-1",
+              "p168-1",
+              "p169-1"
+            ],
+            "reason": "ฮิโรโตะสั่งโค้กเพิ่มจากโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p169-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p170-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p171-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p172-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p171-1",
+              "p172-1",
+              "p173-1"
+            ],
+            "reason": "โบยันหันไปถามอายะว่าอยากได้อะไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p173-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p172-1",
+              "p173-1",
+              "p174-1"
+            ],
+            "reason": "คำว่า แล้วแต่เลย เป็นคำตอบที่โบยันคาดเดาไว้ในประโยคบรรยาย ยังไม่ได้พูดจริง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p174-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p175-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p176-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p177-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p178-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p177-1",
+              "p178-1",
+              "p179-1"
+            ],
+            "reason": "คำว่า แล้วแต่โบยันเลย เป็นคำพูดประจำที่อายะมักพูด ซึ่งถูกยกมาในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p179-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p178-1",
+              "p179-1",
+              "p180-1"
+            ],
+            "reason": "อายะลุกขึ้นบอกว่าจะไปบาร์น้ำด้วย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p180-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p181-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p182-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p183-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p184-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p185-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p186-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p187-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p186-1",
+              "p187-1",
+              "p188-1"
+            ],
+            "reason": "อายะเริ่มบทสนทนาที่บาร์น้ำเรื่องการไปโรงเรียนพรุ่งนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p188-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p189-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p190-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p189-1",
+              "p190-1",
+              "p191-1"
+            ],
+            "reason": "โบยันล้ออายะเรื่องสอบกลางภาค"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p191-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p192-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p191-1",
+              "p192-1",
+              "p193-1"
+            ],
+            "reason": "อายะเถียงว่าการสอบยังอีกตั้งนาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p193-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p192-1",
+              "p193-1",
+              "p194-1"
+            ],
+            "reason": "อายะพูดประโยคเดิมต่อจากย่อหน้าก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p194-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p195-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p196-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p195-1",
+              "p196-1",
+              "p197-1"
+            ],
+            "reason": "โบยันตอบอายะอย่างไม่ใส่ใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p197-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p198-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p197-1",
+              "p198-1",
+              "p199-1"
+            ],
+            "reason": "อายะเรียกโบยันด้วยน้ำเสียงอ้อนวอน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p199-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p198-1",
+              "p199-1",
+              "p200-1"
+            ],
+            "reason": "โบยันขานรับคำเรียกของอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p200-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p201-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p202-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p203-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p204-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p205-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p206-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p207-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p206-1",
+              "p207-1",
+              "p208-1"
+            ],
+            "reason": "ประโยคในเครื่องหมายคำพูดเป็นคำตอบที่โบยันคิดว่าจะพูดถ้าอายะพูดต่อ แต่ยังไม่ได้พูดจริง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p208-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p209-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p210-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p211-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "hiroto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p210-1",
+              "p211-1",
+              "p212-1"
+            ],
+            "reason": "ฮิโรโตะเดินมาถึงบาร์น้ำและบ่นว่าอายะเลือกนาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p212-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p213-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p214-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p215-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p216-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p215-1",
+              "p216-1",
+              "p217-1"
+            ],
+            "reason": "ฮิโรโตะเดินกลับโต๊ะก่อน โบยันจึงชวนอายะกลับโต๊ะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p217-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p216-1",
+              "p217-1",
+              "p218-1"
+            ],
+            "reason": "อายะตอบรับคำชวนของโบยันสั้นๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p218-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p217-1",
+              "p218-1",
+              "p219-1"
+            ],
+            "reason": "โบยันยังลองเสนอเครื่องดื่มให้อายะก่อนกลับโต๊ะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p219-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p220-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p219-1",
+              "p220-1",
+              "p221-1"
+            ],
+            "reason": "อายะปฏิเสธและบอกว่าจะเลือกเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p221-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p222-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p223-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p224-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "aya-father",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p223-1",
+              "p224-1",
+              "p225-1"
+            ],
+            "reason": "พ่อของอายะประกาศว่าได้เวลาคิดเงินและกลับบ้าน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p225-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p226-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p225-1",
+              "p226-1",
+              "p227-1"
+            ],
+            "reason": "อายะรีบบอกว่าจะไปส่งโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p227-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p228-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p229-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p230-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p231-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p232-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p233-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p234-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p235-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p236-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p237-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p236-1",
+              "p237-1",
+              "p238-1"
+            ],
+            "reason": "โบยันเอ่ยปฏิเสธก่อนที่พ่อแม่ของอายะจะพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p238-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p237-1",
+              "p238-1",
+              "p239-1"
+            ],
+            "reason": "โบยันขอให้พ่อของอายะไปส่งที่บ้านแทน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p239-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "dialogue",
+          "speakerId": "aya-father",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p238-1",
+              "p239-1",
+              "p240-1"
+            ],
+            "reason": "พ่อของอายะตอบตกลงและบอกว่าบ้านโบยันอยู่ใกล้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p240-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p241-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p242-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p243-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p244-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p245-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p246-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p247-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p248-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p249-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p248-1",
+              "p249-1",
+              "p250-1"
+            ],
+            "reason": "โบยันขอตัวไปเข้าห้องน้ำก่อนกลับ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p250-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p249-1",
+              "p250-1",
+              "p251-1"
+            ],
+            "reason": "โบยันบอกให้ทุกคนไปรอที่รถก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p251-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "aya-father",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p250-1",
+              "p251-1",
+              "p252-1"
+            ],
+            "reason": "พ่อของอายะตอบรับคำขอของโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p252-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p253-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p254-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p255-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p256-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p257-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p258-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p259-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p260-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p261-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p262-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p263-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p264-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p265-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p266-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p267-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p268-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p269-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p270-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p271-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p272-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p273-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p274-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p275-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p276-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p277-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p276-1",
+              "p277-1",
+              "p278-1"
+            ],
+            "reason": "อายะเรียกโบยันด้วยเสียงสั่นก่อนเล่าความรู้สึก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p278-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p279-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p280-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p281-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p282-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p283-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p284-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p285-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p286-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p287-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p286-1",
+              "p287-1",
+              "p288-1"
+            ],
+            "reason": "อายะส่งเสียงและเรียกชื่อโบยันระหว่างจูบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p288-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p289-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p290-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p291-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p292-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p293-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p292-1",
+              "p293-1",
+              "p294-1"
+            ],
+            "reason": "อายะครางและห่วงว่ามีคนเห็นระหว่างจูบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p294-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p295-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p296-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p297-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p298-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p297-1",
+              "p298-1",
+              "p299-1"
+            ],
+            "reason": "อายะส่งเสียงต่อเนื่องในจูบยาว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p299-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p300-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p301-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p302-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p303-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p304-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p305-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p306-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p307-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p308-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p309-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p310-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p311-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p310-1",
+              "p311-1",
+              "p312-1"
+            ],
+            "reason": "อายะส่งเสียงครางเบาๆ ขณะจูบกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p312-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p313-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p314-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p315-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p316-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p317-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p318-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p319-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p320-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p321-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p320-1",
+              "p321-1",
+              "p322-1"
+            ],
+            "reason": "คำว่า ไม่เป็นไรนะ เป็นคำที่โบยันอยากบอกอายะ แต่ถูกสัญชาตญาณหยุดไว้ก่อนพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p322-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p323-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p324-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p325-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p326-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
           "type": "narration"
         }
       ]

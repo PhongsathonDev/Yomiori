@@ -1,12 +1,12 @@
 {
-  "sourceSha256": "cefd95aea207f8b32bcfff5daba799f3d597ae06b9fb09217407d4c691f6fd85",
+  "sourceSha256": "4d10e085ac82346d769802c84e284ec1f12e4a41326762916d8b79ec93303ab7",
   "tokens": [
     {
       "id": "p1-1",
       "segments": [
         {
           "start": 0,
-          "end": 45,
+          "end": 63,
           "type": "narration"
         }
       ]
@@ -16,7 +16,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 38,
+          "end": 102,
           "type": "narration"
         }
       ]
@@ -26,13 +26,3574 @@
       "segments": [
         {
           "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "โบยันถามอายะว่ากลัวเหรอ ขณะจับมือกันในสระ ตาม p1-1 ถึง p2-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "อายะปฏิเสธว่ากลัว ต่อคำถามของโบยันใน p3-1 แม้ p5-1 จะบอกว่าเธอดูไม่สบาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "โบยันบอกอายะให้ค่อยๆ ตามมา หลัง p5-1 ที่เขายิ้มแห้งๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "อายะรับคำโบยัน ต่อคำบอกให้ตามมาใน p6-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 79,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "โบยันชมอายะว่าเร็วดีนี่ ตาม p10-1 ที่บอกว่าเขาชมเธอก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "อายะตอบอย่างภูมิใจว่าการตีขาเป็นเรื่องถนัดของเธอ ตาม p12-1 ที่เธอเชิดปาก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 124,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เป็นข้อความประกาศจากลำโพงของสระว่ายน้ำที่ถูกรายงานในเครื่องหมายคำพูด ไม่ใช่บทสนทนาของตัวละคร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "อายะตื่นเต้นเรียกโบยันเรื่องคลื่นยักษ์ ตาม p16-1 ถึง p18-1 ที่มีเสียงประกาศ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "โบยันบอกอายะให้รอว่ายน้ำเก่งขึ้นก่อน ต่อคำชวนของเธอใน p19-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "อายะเถียงว่าถ้ามีห่วงยางก็ไม่เป็นไร ต่อคำตอบของโบยันใน p20-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "โบยันเตือนอายะเรื่องเคยหลุดจากห่วงยางและจม ต่อคำเถียงของเธอใน p21-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "อายะยอมรับว่าจริงด้วย หลังโบยันเตือนใน p22-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "โบยันเสนอให้อายะลองว่ายคนเดียว หลังเธอยอมรับใน p23-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "อายะตกลงแต่ขออย่าอยู่ห่างเกินไป ต่อข้อเสนอของโบยันใน p24-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "โบยันรับปากว่าจะไม่ไปไหน ต่อคำขอของอายะใน p25-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 108,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "อายะไอและสำลักน้ำหลังพยายามว่าย ตาม p29-1 ที่โบยันรีบไปพยุง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "โบยันปลอบอายะว่าเกือบได้แล้วนะ ต่ออาการสำลักใน p30-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "อายะขอโทษโบยันหลังสำลักน้ำ ต่อคำปลอบใน p31-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 96,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 142,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "โบยันบอกอายะว่าจะร่ายเวทมนตร์เล็กน้อย ตาม p37-1 ที่เขาตัดสินใจฝึกเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "อายะทวนคำว่าเวทมนตร์ด้วยความสงสัย ต่อคำพูดของโบยันใน p38-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "โบยันยืนยันว่าอายะจะว่ายน้ำได้ในไม่ช้า ต่อคำทวนของเธอใน p39-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 185,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 124,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
           "end": 18,
           "type": "narration"
         }
       ]
     },
     {
-      "id": "p4-1",
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 142,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 110,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 110,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 109,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "โบยันขอให้อายะหันหลังให้ ตาม p55-1 ที่สัญชาตญาณบอกวิธีฝึก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "อายะตอบรับอย่างลังเล ต่อคำขอของโบยันใน p56-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 142,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 69,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "โบยันสอนให้อายะนอนหงายและลอยตัว หลัง p58-1 ที่เขาดึงไหล่ให้เอนพิง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "อายะรับคำโบยันขณะปล่อยตัวลอย ต่อคำสอนใน p59-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "โบยันชี้ให้อายะเห็นว่าถ้าทำแบบนี้จะไม่จม ตาม p61-1 ที่เธอลอยตัวได้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "อายะยอมรับว่าจริงด้วย ต่อคำชี้ของโบยันใน p62-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "โบยันถามอายะว่าตอนนี้ไม่กลัวแล้วใช่ไหม หลัง p64-1 ถึง p65-1 ที่เธอผ่อนคลาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 90,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "อายะบรรยายความรู้สึกลอยตัวเหมือนแมงกะพรุน ต่อคำถามของโบยันใน p66-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 90,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1",
+              "p84-1",
+              "p85-1"
+            ],
+            "reason": "โบยันบอกอายะว่าไม่เป็นไรแล้วนะ หลัง p83-1 ที่เขาเลือกพูดสิ่งที่ควรพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "อายะรับคำโบยันเบาๆ ต่อคำปลอบใน p84-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p86-1",
+              "p90-1",
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "โบยันบอกอายะว่าเธอต้องว่ายน้ำได้แล้วแน่ๆ หลัง p86-1 ถึง p90-1 ที่เขามั่นใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p91-1",
+              "p92-1",
+              "p93-1"
+            ],
+            "reason": "อายะถามยืนยันว่าจริงเหรอ ต่อคำพูดของโบยันใน p91-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1"
+            ],
+            "reason": "โบยันยืนยันว่าใช่แล้ว ต่อคำถามของอายะใน p92-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "อายะบอกว่าจะลองดู หลังโบยันยืนยันใน p93-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "อายะบอกโบยันว่าฉันจะไปแล้วนะ ตาม p95-1 ที่เธอยืนที่ก้นสระ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1",
+              "p97-1",
+              "p98-1"
+            ],
+            "reason": "โบยันตอบอายะว่าอืม มาเลย ต่อคำบอกของเธอใน p96-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1",
+              "p99-1",
+              "p100-1",
+              "p101-1"
+            ],
+            "reason": "อายะตะโกนดีใจว่าว่ายน้ำได้แล้ว หลัง p98-1 ถึง p99-1 ที่เธอว่ายมาถึงอ้อมกอดโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 84,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p100-1",
+              "p101-1",
+              "p102-1",
+              "p103-1"
+            ],
+            "reason": "โบยันกล่าวยินดีกับอายะ ต่อความดีใจของเธอใน p100-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p103-1",
+              "p104-1"
+            ],
+            "reason": "อายะขอบคุณโบยัน ต่อคำยินดีใน p102-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 108,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 106,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p104-1",
+              "p105-1",
+              "p106-1"
+            ],
+            "reason": "เสียงสูดจมูก กุส ของอายะเป็นเสียงประกอบฉากในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 79,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p110-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p109-1",
+              "p110-1",
+              "p111-1"
+            ],
+            "reason": "อายะกระซิบเรียกโบยัน หลัง p109-1 ที่เธอกอดเขาและหยุดร้องไห้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p111-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p112-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p110-1",
+              "p111-1",
+              "p112-1",
+              "p113-1"
+            ],
+            "reason": "โบยันตอบอายะว่าหืม ต่อคำเรียกของเธอใน p110-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p113-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p112-1",
+              "p113-1",
+              "p114-1"
+            ],
+            "reason": "อายะกระซิบว่าเราอยู่กันแค่สองคนแล้วนะ ต่อคำตอบของโบยันใน p112-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p114-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 144,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p115-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p113-1",
+              "p114-1",
+              "p115-1",
+              "p116-1"
+            ],
+            "reason": "โบยันตอบอายะว่าใช่แล้ว ต่อคำกระซิบของเธอใน p113-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p116-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p117-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 114,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p118-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p117-1",
+              "p118-1",
+              "p119-1"
+            ],
+            "reason": "อายะส่งเสียงในจูบ ตาม p117-1 ถึง p119-1 ที่เธอประกบริมฝีปากกับโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p119-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 99,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p120-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 151,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p121-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 168,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p122-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 117,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p123-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 92,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p124-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p123-1",
+              "p124-1",
+              "p125-1"
+            ],
+            "reason": "อายะสารภาพรักกับโบยัน หลัง p123-1 ที่เธอหน้าแดงเหมือนสารภาพครั้งแรก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p125-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p126-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p127-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 140,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p128-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p129-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p130-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p131-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p132-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 74,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p133-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p134-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p133-1",
+              "p134-1",
+              "p135-1"
+            ],
+            "reason": "อายะบอกโบยันว่าจะลองว่ายอีกครั้ง หลัง p133-1 ที่ผู้คนกลับเข้ามาในสระ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p135-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p136-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p137-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p136-1",
+              "p137-1",
+              "p138-1"
+            ],
+            "reason": "อายะตะโกนบอกว่าไปแล้วนะ ตาม p136-1 ที่เธอหันกลับมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p138-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 184,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p139-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p140-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p139-1",
+              "p140-1",
+              "p141-1"
+            ],
+            "reason": "อายะเรียกโบยันแล้วเริ่มพูดเรื่องชุดว่ายน้ำ ตาม p139-1 ที่เธอหยุดเคลื่อนไหว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p141-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p142-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p140-1",
+              "p141-1",
+              "p142-1",
+              "p143-1"
+            ],
+            "reason": "โบยันถามอายะว่ามีอะไรเหรอ ต่อคำเรียกของเธอใน p140-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p143-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p142-1",
+              "p143-1",
+              "p144-1"
+            ],
+            "reason": "อายะบอกโบยันเรื่องชุดว่ายน้ำ ต่อคำถามใน p142-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p144-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p143-1",
+              "p144-1",
+              "p145-1"
+            ],
+            "reason": "โบยันบอกอายะให้รอแป๊บหนึ่ง ต่อคำพูดของเธอใน p143-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p145-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 74,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p146-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 135,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p147-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p146-1",
+              "p147-1",
+              "p148-1"
+            ],
+            "reason": "อายะขอบคุณโบยันหลังเขาเอาห่วงยางมาสวมให้ ตาม p146-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p148-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p147-1",
+              "p148-1",
+              "p149-1"
+            ],
+            "reason": "โบยันถามอายะว่าเลื่อนอีกแล้วเหรอ ต่อคำขอบคุณของเธอใน p147-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p149-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p148-1",
+              "p149-1",
+              "p150-1"
+            ],
+            "reason": "อายะอธิบายว่าสายชุดว่ายน้ำน่ะ ต่อคำถามของโบยันใน p148-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p150-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p149-1",
+              "p150-1",
+              "p151-1"
+            ],
+            "reason": "โบยันทวนคำว่าสายเหรอ ต่อคำอธิบายของอายะใน p149-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p151-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p150-1",
+              "p151-1",
+              "p152-1"
+            ],
+            "reason": "อายะอธิบายว่าสายเหมือนจะหลุดออกไป ต่อคำทวนของโบยันใน p150-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p152-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 152,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p153-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p152-1",
+              "p153-1",
+              "p154-1"
+            ],
+            "reason": "อายะขอโทษและขอให้โบยันช่วยผูกสายชุดว่ายน้ำ ตาม p152-1 ที่เธอกอดชุดที่หลุดลุ่ยไว้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p154-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p153-1",
+              "p154-1",
+              "p155-1"
+            ],
+            "reason": "โบยันตอบอายะว่าได้สิ ต่อคำขอของเธอใน p153-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p155-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p156-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p157-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p156-1",
+              "p157-1",
+              "p158-1"
+            ],
+            "reason": "อายะขอให้โบยันช่วยหน่อย หลัง p156-1 ที่เขาวางมือบนไหล่เธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p158-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p157-1",
+              "p158-1",
+              "p159-1"
+            ],
+            "reason": "โบยันถามอายะว่าเดี๋ยวค่อยผูกได้ไหม ต่อคำขอของเธอใน p157-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p159-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p158-1",
+              "p159-1",
+              "p160-1"
+            ],
+            "reason": "อายะอุทานเหด้วยความสงสัย ต่อคำถามของโบยันใน p158-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p160-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p161-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p160-1",
+              "p161-1",
+              "p162-1"
+            ],
+            "reason": "อายะร้องถามว่าโบยันทำอะไรน่ะ หลัง p160-1 ที่เขาดึงสายชุดว่ายน้ำออก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p162-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p161-1",
+              "p162-1",
+              "p163-1"
+            ],
+            "reason": "โบยันกระซิบหยอกว่าอายะนั่นแหละที่ยั่วยุ ต่อคำร้องของเธอใน p161-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p163-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p164-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p165-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p164-1",
+              "p165-1",
+              "p166-1"
+            ],
+            "reason": "อายะร้องห้ามโบยันและเตือนว่านี่คือสระว่ายน้ำ ตาม p164-1 ที่สายชุดหลุด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p166-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p165-1",
+              "p166-1",
+              "p167-1"
+            ],
+            "reason": "โบยันบอกอายะให้อยู่นิ่งๆ ต่อคำร้องของเธอใน p165-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p167-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p168-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p167-1",
+              "p168-1",
+              "p169-1"
+            ],
+            "reason": "อายะส่งเสียงครางหลังโบยันจูบแผ่นหลัง ตาม p167-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p169-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 187,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p170-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p169-1",
+              "p170-1",
+              "p171-1"
+            ],
+            "reason": "อายะร้องห้ามโบยันว่าคนอื่นจะเห็น ตาม p169-1 ที่เขาดูดไหล่เธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p171-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p170-1",
+              "p171-1",
+              "p172-1"
+            ],
+            "reason": "โบยันปลอบอายะว่ามีห่วงยางบังอยู่และขอให้ลดเสียง ต่อคำร้องของเธอใน p170-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p172-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 122,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p173-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p172-1",
+              "p173-1",
+              "p174-1"
+            ],
+            "reason": "อายะส่งเสียงครางต่อการสัมผัสของโบยัน ตาม p172-1 ที่เขาแนบตัวกับแผ่นหลังเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p174-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 120,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p175-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p176-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 113,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p177-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 83,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p178-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p179-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p177-1",
+              "p178-1",
+              "p179-1",
+              "p180-1"
+            ],
+            "reason": "โบยันบอกอายะว่าถ้าไม่ชอบจริงๆ ก็บอกนะเขาจะหยุด ตาม p177-1 ถึง p178-1 ที่เขาคิดเรื่องนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p180-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 177,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p179-1",
+              "p180-1",
+              "p181-1"
+            ],
+            "reason": "เสียง อึ๋ง ของอายะที่ถูกรายงานในประโยคบรรยายเป็นเสียงประกอบฉาก ไม่ใช่บทพูดตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p181-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p182-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p179-1",
+              "p181-1",
+              "p182-1",
+              "p183-1"
+            ],
+            "reason": "อายะส่งเสียงครางตอบคำถามของโบยันใน p179-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p183-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p184-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p185-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p186-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p187-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 110,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p188-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p187-1",
+              "p188-1",
+              "p189-1"
+            ],
+            "reason": "อายะด่าโบยันว่าโง่เอ๊ย หลัง p187-1 ที่บอกว่าความรู้สึกร้อนผ่าวไหลผ่านมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p189-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p188-1",
+              "p189-1",
+              "p190-1"
+            ],
+            "reason": "โบยันบอกอายะให้เงียบๆ เพราะคนอื่นจะรู้ ต่อคำด่าของเธอใน p188-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p190-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p191-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p190-1",
+              "p191-1",
+              "p192-1"
+            ],
+            "reason": "อายะส่งเสียงครางหลังโบยันบีบนวดหน้าอก ตาม p190-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p192-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 115,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p193-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 143,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p194-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p193-1",
+              "p194-1",
+              "p195-1"
+            ],
+            "reason": "อายะส่งเสียงครางต่อการนวดของโบยัน ตาม p193-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p195-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p196-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p195-1",
+              "p196-1",
+              "p197-1"
+            ],
+            "reason": "อายะส่งเสียงครางต่อเนื่อง ตาม p195-1 ที่บอกว่าเธอพยายามกดเสียง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p197-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 152,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p198-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p199-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 116,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p200-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 93,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p199-1",
+              "p200-1",
+              "p201-1"
+            ],
+            "reason": "เสียง แพลชแพลช จากการแกว่งหน้าอกเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p201-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p199-1",
+              "p200-1",
+              "p201-1",
+              "p202-1"
+            ],
+            "reason": "อายะร้องขอให้พอแล้ว ตาม p199-1 ถึง p200-1 ที่โบยันแกว่งหน้าอกเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p202-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 145,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p203-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p204-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p203-1",
+              "p204-1",
+              "p205-1"
+            ],
+            "reason": "อายะร้องห้ามโบยันไม่ให้ทำตรงนั้น ตาม p203-1 ที่เธอส่งเสียงร้อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p205-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 74,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p206-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p204-1",
+              "p205-1",
+              "p206-1",
+              "p207-1"
+            ],
+            "reason": "โบยันถามอายะว่าตรงนี้ล่ะ ต่อคำห้ามของเธอใน p204-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p207-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 90,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p208-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p207-1",
+              "p208-1",
+              "p209-1"
+            ],
+            "reason": "อายะร้องให้เดี๋ยวสิ หลัง p207-1 ที่มือขวาของโบยันเลื่อนลงไปที่ท้องน้อย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p209-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 74,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p210-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 151,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p211-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p210-1",
+              "p211-1",
+              "p212-1"
+            ],
+            "reason": "อายะส่งเสียงครางเมื่อโบยันสอดนิ้ว ตาม p210-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p212-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 83,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p213-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 129,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p214-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p213-1",
+              "p214-1",
+              "p215-1"
+            ],
+            "reason": "อายะร้องห้ามและส่งเสียงครางต่อเนื่อง ตาม p213-1 ที่โบยันสอดนิ้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p215-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 168,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p216-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p215-1",
+              "p216-1",
+              "p217-1"
+            ],
+            "reason": "โบยันกระซิบว่าอายะตอนกำลังรู้สึกน่ารัก ตาม p215-1 ที่เสียงครางของเธออ่อนหวานขึ้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p217-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p218-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p216-1",
+              "p217-1",
+              "p218-1",
+              "p219-1"
+            ],
+            "reason": "อายะร้องว่าไม่นะและกลัวคนอื่นได้ยิน ต่อคำกระซิบของโบยันใน p216-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p219-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p218-1",
+              "p219-1",
+              "p220-1"
+            ],
+            "reason": "โบยันกระซิบว่าชุดว่ายน้ำดูเซ็กซี่ ต่อคำร้องของอายะใน p218-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p220-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p219-1",
+              "p220-1",
+              "p221-1"
+            ],
+            "reason": "อายะร้องห้ามไม่ให้โบยันพูดแบบนั้น ต่อคำพูดของเขาใน p219-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p221-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p222-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p223-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p224-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p225-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p226-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p227-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p228-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p229-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p230-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p231-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p230-1",
+              "p231-1",
+              "p232-1"
+            ],
+            "reason": "อายะส่งเสียงคราง ตาม p230-1 ที่ความปรารถนาของเธอไหลผ่านแผ่นหลัง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p232-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p233-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p234-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p233-1",
+              "p234-1",
+              "p235-1"
+            ],
+            "reason": "โบยันบอกอายะว่าถึงจุดสุดยอดได้แล้วนะ หลัง p233-1 ที่เขามีความสุขที่ได้มอบสิ่งนี้ให้เธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p235-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 158,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p236-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p235-1",
+              "p236-1",
+              "p237-1"
+            ],
+            "reason": "อายะร้องว่าไม่จริงนะ หลัง p235-1 ที่โบยันดึงสายกางเกงในบิกินี่ออก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p237-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 148,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p238-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 135,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p239-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p240-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p241-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p240-1",
+              "p241-1",
+              "p242-1"
+            ],
+            "reason": "อายะร้องห้ามและส่งเสียงคราง ตาม p240-1 ที่โบยันสอดนิ้วเข้าไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p242-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 98,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p243-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p242-1",
+              "p243-1",
+              "p244-1"
+            ],
+            "reason": "อายะส่งเสียงครางเมื่อโบยันกระตุ้นผนังช่องคลอด ตาม p242-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p244-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p245-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 145,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p246-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 117,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p247-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p246-1",
+              "p247-1",
+              "p248-1"
+            ],
+            "reason": "อายะส่งเสียงครางยาวเมื่อถึงจุดสุดยอด ตาม p246-1 ที่ร่างกายเธอกระตุก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p248-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 99,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p249-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p248-1",
+              "p249-1",
+              "p250-1"
+            ],
+            "reason": "อายะหอบหายใจหลังถึงจุดสุดยอด ตาม p248-1 ที่ร่างกายเธอเกร็งและหมดแรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p250-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p251-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p249-1",
+              "p250-1",
+              "p251-1",
+              "p252-1"
+            ],
+            "reason": "โบยันบอกอายะว่าตอนถึงจุดสุดยอดน่ารักมากและขอดูอีก ต่อเสียงหอบของเธอใน p249-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p252-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p251-1",
+              "p252-1",
+              "p253-1"
+            ],
+            "reason": "อายะส่งเสียงเอ๊ะและครางตอบคำขอของโบยันใน p251-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p253-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 97,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p254-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 75,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p253-1",
+              "p254-1",
+              "p255-1"
+            ],
+            "reason": "อายะร้องว่ากำลังถึงจุดสุดยอดอีกครั้ง ตาม p253-1 ที่โบยันขยับนิ้วอีกครั้ง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p255-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p256-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p257-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 104,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p258-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p259-1",
       "segments": [
         {
           "start": 0,
@@ -42,11 +3603,544 @@
       ]
     },
     {
-      "id": "p5-1",
+      "id": "p260-1",
       "segments": [
         {
           "start": 0,
-          "end": 20,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p261-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 105,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p260-1",
+              "p261-1",
+              "p262-1"
+            ],
+            "reason": "เป็นข้อความประกาศจากลำโพงของสระว่ายน้ำที่ถูกรายงานในเครื่องหมายคำพูด ไม่ใช่บทสนทนาของตัวละคร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p262-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p263-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 106,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p264-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p263-1",
+              "p264-1",
+              "p265-1"
+            ],
+            "reason": "โบยันถามอายะว่าไม่เป็นไรนะและขอโทษที่เพลินไปหน่อย หลัง p263-1 ที่เขารู้ว่าเวลาผ่านไปนาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p265-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p266-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p264-1",
+              "p265-1",
+              "p266-1",
+              "p267-1"
+            ],
+            "reason": "อายะหอบและด่าโบยันว่าโง่เอ๊ย ต่อคำขอโทษของเขาใน p264-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p267-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p268-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p269-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p270-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p271-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 65,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p272-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p273-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p272-1",
+              "p273-1",
+              "p274-1"
+            ],
+            "reason": "อายะพึมพำคำว่าคลื่น ตาม p272-1 ที่แก่นกายของโบยันแข็งตัวและ p274-1 ที่บอกว่าเธอพึมพำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p274-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p275-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p273-1",
+              "p274-1",
+              "p275-1",
+              "p276-1"
+            ],
+            "reason": "โบยันอุทานเอ๊ะ ต่อคำพึมพำของอายะใน p273-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p276-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p275-1",
+              "p276-1",
+              "p277-1"
+            ],
+            "reason": "อายะชวนโบยันไปดูคลื่น ต่อคำอุทานของเขาใน p275-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p277-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p278-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p277-1",
+              "p278-1",
+              "p279-1"
+            ],
+            "reason": "อายะขอให้โบยันผูกสายชุดว่ายน้ำให้ ตาม p277-1 ที่น้ำเสียงเธออ้อนวอน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p279-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 137,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p280-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p279-1",
+              "p280-1",
+              "p281-1"
+            ],
+            "reason": "อายะชวนโบยันไปดูคลื่นอีกครั้ง หลัง p279-1 ที่เธอกระโจนเข้ากอดเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p281-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p280-1",
+              "p281-1",
+              "p282-1"
+            ],
+            "reason": "โบยันบอกอายะว่าคงไปไม่ไหว ต่อคำชวนของเธอใน p280-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p282-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p283-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p282-1",
+              "p283-1",
+              "p284-1"
+            ],
+            "reason": "อายะส่งเสียงครางหลังโบยันกอดเธอไว้ ตาม p282-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p284-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p283-1",
+              "p284-1",
+              "p285-1"
+            ],
+            "reason": "โบยันบอกอายะว่าถ้าไม่กอดเธอเขาคงหยุดไม่ได้ ต่อเสียงครางของเธอใน p283-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p285-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p286-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p284-1",
+              "p285-1",
+              "p286-1",
+              "p287-1"
+            ],
+            "reason": "อายะร้องห้ามว่าที่นี่ไม่ได้นะ ต่อคำพูดของโบยันใน p284-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p287-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p286-1",
+              "p287-1",
+              "p288-1"
+            ],
+            "reason": "โบยันบอกอายะว่าไม่เป็นไรมาทางนี้ ต่อคำร้องของเธอใน p286-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p288-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p289-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p290-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p288-1",
+              "p289-1",
+              "p290-1",
+              "p291-1"
+            ],
+            "reason": "อายะร้องถามว่าจะไปไหน หลัง p288-1 ถึง p289-1 ที่โบยันพาเธอลอยไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p291-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p290-1",
+              "p291-1",
+              "p292-1"
+            ],
+            "reason": "โบยันตอบอายะว่าที่ที่ไม่มีคน ต่อคำถามของเธอใน p290-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p292-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p293-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p294-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 98,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p295-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p296-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p297-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p298-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
           "type": "narration"
         }
       ]

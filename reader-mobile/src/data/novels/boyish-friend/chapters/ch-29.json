@@ -8,61 +8,3535 @@
     {
       "id": "b1",
       "type": "narration",
-      "text": "ท่านใดสนใจสามารถกด Follow Page ผมไว้ได้นะครับ"
+      "text": "ฉันเดินไปตามทางเดินในอาคารเรียนอย่างไร้จุดหมาย"
     },
     {
       "id": "b2",
       "type": "narration",
-      "text": "บางเรื่องจะลงในเพจก่อนลงใน Neko นะครับ"
+      "text": "— กลับไป"
     },
     {
       "id": "b3",
       "type": "narration",
-      "text": "ลุ้นสุดๆ"
+      "text": "— กลับบ้านวันนี้"
     },
     {
       "id": "b4",
       "type": "narration",
-      "text": "ขอล่ะช่วยแก้เรื่องคำเรียกแทนตัวเองหน่อยเถอะ อ่านแล้วมันสับสน คือไม่แน่ใจว่าแปลเองมั้ยแต่อ่านแล้วมัน...\nเวลาที่คุยกันแล้วต่างเพศทำให้แยกไม่ออกทำให้เสียอรรถรสในการอ่านไปเลย"
+      "text": "ตามสัญชาตญาณของพระเจ้า วันนี้ถ้าฉันอยู่ที่โรงเรียน จะต้องเจอโทกิตะอย่างแน่นอน"
     },
     {
       "id": "b5",
       "type": "narration",
-      "text": "Film 1,\n งงตรงไหนมันอ่านแล้วก็เข้าใจง่ายดีนะอ่านได้ลื่นไหลดี"
+      "text": "— ไม่ควรเจอวันนี้"
     },
     {
       "id": "b6",
       "type": "narration",
-      "text": "Film 1,\nถ้ายังไงรบกวนช่วยระบุจุที่พบปัญหาได้ไหมครับ บางทีตอนผมอ่านเกลาผมอาจตกหล่นไป หรือเผลออ่านข้ามไปเลยไม่ทันแก้ครับ"
+      "text": "— หมุนตัวกลับแล้วกลับไป"
     },
     {
       "id": "b7",
       "type": "narration",
-      "text": "ขอบคุณครับ"
+      "text": "เข้าใจแล้ว"
     },
     {
       "id": "b8",
       "type": "narration",
-      "text": "มีเรื่องรบกวนครับอ่านตอนที่ 30 ไม่ได้ครับผม"
+      "text": "โทกิตะอยู่ที่ปลายทางเดินนี้สินะ"
     },
     {
       "id": "b9",
       "type": "narration",
-      "text": "สหรัฐ เจริญนาคเพิ่มพูน,\n แก้แล้วครับ ลืมกด Save = ="
+      "text": "ขณะที่เดิน ฉันก็คิด"
     },
     {
       "id": "b10",
+      "type": "narration",
+      "text": "ตามสัญชาตญาณ ถ้าเจอโทกิตะตอนนี้ จะยิ่งห่างไกลจากเป้าหมาย"
+    },
+    {
+      "id": "b11",
+      "type": "narration",
+      "text": "แต่ฉันกลับรู้สึกแปลกๆ"
+    },
+    {
+      "id": "b12",
+      "type": "narration",
+      "text": "แม้ว่าเป้าหมายของสัญชาตญาณและเป้าหมายที่ตั้งไว้จะเหมือนกัน แต่เส้นทางที่ผ่านไปนั้นดูไม่ค่อยดี"
+    },
+    {
+      "id": "b13",
+      "type": "narration",
+      "text": "เหมือนกับว่ากระดุมเม็ดผิด..."
+    },
+    {
+      "id": "b14",
+      "type": "narration",
+      "text": "อาจจะเป็นไปได้ว่า เหตุการณ์บนดาดฟ้าที่อายะก้าวกระโดดข้ามการคาดการณ์ของสัญชาตญาณไป เป็นจุดเริ่มต้น"
+    },
+    {
+      "id": "b15",
+      "type": "narration",
+      "text": "ฉันรู้สึกแบบนั้น"
+    },
+    {
+      "id": "b16",
+      "type": "narration",
+      "text": "...แต่ไม่ว่ายังไงก็ตาม"
+    },
+    {
+      "id": "b17",
+      "type": "narration",
+      "text": "เมื่อคำนึงถึงภาระทางจิตใจของอายะ"
+    },
+    {
+      "id": "b18",
+      "type": "narration",
+      "text": "ฉันคิดว่าฉันจำเป็นต้องเผชิญหน้ากับโทกิตะในตอนนี้"
+    },
+    {
+      "id": "b19",
+      "type": "narration",
+      "text": "แกร๊ก"
+    },
+    {
+      "id": "b20",
+      "type": "narration",
+      "text": "ประตูตรงหน้าเปิดออก และโทกิตะก็เดินออกมา"
+    },
+    {
+      "id": "b21",
+      "type": "narration",
+      "text": "เขาถูกล้อมรอบด้วยเด็กผู้หญิงจากห้องอื่น"
+    },
+    {
+      "id": "b22",
+      "type": "narration",
+      "text": "ดูเหมือนว่าเขาจะมีการประชุมของคณะกรรมการจัดงาน"
+    },
+    {
+      "id": "b23",
+      "type": "dialogue",
+      "text": "\"โอ๊ะ! โบยัน\"",
+      "speakerId": "crowd",
+      "speakerName": "ผู้คนรอบข้าง"
+    },
+    {
+      "id": "b24",
+      "type": "narration",
+      "text": "เด็กผู้หญิงคนหนึ่งทักฉัน"
+    },
+    {
+      "id": "b25",
+      "type": "narration",
+      "text": "ฉันไม่ได้ตอบเธอ แต่จ้องไปที่โทกิตะโดยตรง"
+    },
+    {
+      "id": "b26",
+      "type": "dialogue",
+      "text": "\"โทกิตะ วันนี้มีเวลาไหม? แค่นิดหน่อยก็พอ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b27",
+      "type": "dialogue",
+      "text": "\"อืม... ว่าไงนะ โบยัน?\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b28",
+      "type": "narration",
+      "text": "โทกิตะตอบด้วยสีหน้าที่ตึงเครียดเล็กน้อย"
+    },
+    {
+      "id": "b29",
+      "type": "narration",
+      "text": "ส่วนฉัน พยายามทำสีหน้าให้ดูอ่อนโยนที่สุด"
+    },
+    {
+      "id": "b30",
+      "type": "dialogue",
+      "text": "\"ฉันมีเรื่องสำคัญจะคุยกับเรื่องของอายะ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b31",
+      "type": "narration",
+      "text": "เด็กผู้หญิงรอบข้างเบิกตากว้าง"
+    },
+    {
+      "id": "b32",
+      "type": "narration",
+      "text": "โทกิตะเม้มปากแน่น แล้วก็จ้องมาที่ฉัน"
+    },
+    {
+      "id": "b33",
+      "type": "dialogue",
+      "text": "\"...ฉันก็มีเรื่องจะคุยกับโบยันเหมือนกันนะ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b34",
+      "type": "dialogue",
+      "text": "ต้องแวะไปที่บ้านผีสิงก่อนได้ไหม?",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b35",
+      "type": "dialogue",
+      "text": "เดี๋ยวส่งเมลไปนะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b36",
+      "type": "dialogue",
+      "text": "\"อืม งั้นไว้ทีหลัง\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b37",
+      "type": "narration",
+      "text": "โทกิตะหันหน้าหนีไป แล้วก็เดินจากไป"
+    },
+    {
+      "id": "b38",
+      "type": "narration",
+      "text": "ฉันก็หันหลังให้โทกิตะ แล้วเดินไปทางออกอาคารเรียน"
+    },
+    {
+      "id": "b39",
+      "type": "narration",
+      "text": "เสียง \"แคง\" ดังขึ้นอย่างสดชื่น"
+    },
+    {
+      "id": "b40",
+      "type": "narration",
+      "text": "ฉันรอโทกิตะอยู่ที่สนามเบสบอล"
+    },
+    {
+      "id": "b41",
+      "type": "narration",
+      "text": "ซึ่งอยู่ไม่ไกลจากโรงเรียน"
+    },
+    {
+      "id": "b42",
+      "type": "narration",
+      "text": "ฉันนั่งอยู่บนม้านั่ง มองดูคนที่กำลังตีลูกในเบ้าตี"
+    },
+    {
+      "id": "b43",
+      "type": "narration",
+      "text": "ตอนประถม"
+    },
+    {
+      "id": "b44",
+      "type": "narration",
+      "text": "อายะเคยพาฉันมาที่นี่หลายครั้ง"
+    },
+    {
+      "id": "b45",
+      "type": "narration",
+      "text": "อายะกำลังอินกับซอฟต์บอล"
+    },
+    {
+      "id": "b46",
+      "type": "narration",
+      "text": "เลยมักจะมาซ้อมที่นี่บ่อยๆ"
+    },
+    {
+      "id": "b47",
+      "type": "narration",
+      "text": "พอเข้ามัธยม"
+    },
+    {
+      "id": "b48",
+      "type": "narration",
+      "text": "อายะก็ไม่จับไม้เบสบอลอีกเลย"
+    },
+    {
+      "id": "b49",
+      "type": "narration",
+      "text": "— กลับไป"
+    },
+    {
+      "id": "b50",
+      "type": "narration",
+      "text": "สัญชาตญาณของฉันเตือนซ้ำๆ"
+    },
+    {
+      "id": "b51",
+      "type": "narration",
+      "text": "ฉันมองดูนาฬิกาในโทรศัพท์"
+    },
+    {
+      "id": "b52",
+      "type": "narration",
+      "text": "เลยเวลาสิบหกนาฬิกาแล้ว"
+    },
+    {
+      "id": "b53",
+      "type": "narration",
+      "text": "ตามปกติแล้ว โทกิตะที่เป็นคณะกรรมการจัดงาน คงจะยุ่งมาก"
+    },
+    {
+      "id": "b54",
+      "type": "narration",
+      "text": "คงจะยากที่จะปลีกตัวออกมาในเวลานี้"
+    },
+    {
+      "id": "b55",
+      "type": "narration",
+      "text": "ขณะที่คิดเรื่องนั้น ฉันก็มองไปที่ทางเข้าอย่างเหม่อลอย"
+    },
+    {
+      "id": "b56",
+      "type": "narration",
+      "text": "แล้วก็เห็นโทกิตะกำลังเดินมา"
+    },
+    {
+      "id": "b57",
+      "type": "dialogue",
+      "text": "\"โย่ว โบยัน\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b58",
+      "type": "dialogue",
+      "text": "\"ขอโทษนะที่รบกวนเวลาที่ยุ่งของนาย\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b59",
+      "type": "dialogue",
+      "text": "\"ไม่เป็นไรน่า",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b60",
+      "type": "dialogue",
+      "text": "มาตีลูกกันก่อนเถอะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b61",
+      "type": "dialogue",
+      "text": "\"ก็ดี\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b62",
+      "type": "narration",
+      "text": "โทกิตะซื้อเหรียญที่ตู้ขายน้ำอัตโนมัติใกล้ๆ"
+    },
+    {
+      "id": "b63",
+      "type": "narration",
+      "text": "ฉันก็ซื้อเหรียญเหมือนกัน แล้วเราก็ยืนเรียงกันที่เบ้าตี"
+    },
+    {
+      "id": "b64",
+      "type": "narration",
+      "text": "ภาพนักเบสบอลปรากฏบนจอทีวีที่อยู่ไกลๆ"
+    },
+    {
+      "id": "b65",
+      "type": "narration",
+      "text": "เขาเหวี่ยงไม้"
+    },
+    {
+      "id": "b66",
+      "type": "narration",
+      "text": "วินาทีต่อมา ลูกบอลก็ถูกยิงออกมาจากเครื่องยิงลูก"
+    },
+    {
+      "id": "b67",
+      "type": "dialogue",
+      "text": "\"โบยัน",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b68",
+      "type": "dialogue",
+      "text": "เคยเล่นเบสบอลมาก่อนเหรอ... แค่ก!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b69",
+      "type": "narration",
+      "text": "มีเสียง \"แคง\" ดังขึ้น"
+    },
+    {
+      "id": "b70",
+      "type": "narration",
+      "text": "ลูกบอลลอยไปข้างหน้าเฉียงๆ"
+    },
+    {
+      "id": "b71",
+      "type": "narration",
+      "text": "ถึงแม้จะไม่ได้เป็นนักเบสบอล"
+    },
+    {
+      "id": "b72",
+      "type": "narration",
+      "text": "แต่ก็เป็นวงสวิงที่น่าทึ่ง"
+    },
+    {
+      "id": "b73",
+      "type": "narration",
+      "text": "ฉันเข้าใจเลยว่าทำไมเด็กผู้หญิงหลายคนถึงหลงรักโทกิตะ"
+    },
+    {
+      "id": "b74",
+      "type": "dialogue",
+      "text": "\"เปล่า",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b75",
+      "type": "dialogue",
+      "text": "ไม่เคยเล่น\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b76",
+      "type": "narration",
+      "text": "ลูกบอลความเร็วสูงลอยผ่านหน้าฉันไป"
+    },
+    {
+      "id": "b77",
+      "type": "narration",
+      "text": "ฉันเป็นคนไม่ถนัดกีฬามาตั้งแต่ไหนแต่ไร"
+    },
+    {
+      "id": "b78",
+      "type": "narration",
+      "text": "ตอนที่มาที่นี่กับอายะเมื่อก่อน"
+    },
+    {
+      "id": "b79",
+      "type": "narration",
+      "text": "ฉันยังลำบากกับการตีลูกบอลให้โดนไม้เลย"
+    },
+    {
+      "id": "b80",
+      "type": "dialogue",
+      "text": "\"ก็คงงั้นแหละ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b81",
+      "type": "dialogue",
+      "text": "ฉันเองก็ห่างหายไปนานมาก",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b82",
+      "type": "dialogue",
+      "text": "อายะไม่ค่อยชอบมาที่แบบนี้... ว่าไหม!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b83",
+      "type": "narration",
+      "text": "มีเสียง \"แคง\" ดังขึ้น"
+    },
+    {
+      "id": "b84",
+      "type": "narration",
+      "text": "ลูกบอลลอยไปทางข้างๆ เฉียงๆ เป็นลูกฟาวล์"
+    },
+    {
+      "id": "b85",
+      "type": "dialogue",
+      "text": "\"เหรอ",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b86",
+      "type": "dialogue",
+      "text": "ไม่เคยมาเดทที่นี่เหรอ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b87",
+      "type": "narration",
+      "text": "ขณะที่พูด ฉันก็นึกถึง"
+    },
+    {
+      "id": "b88",
+      "type": "narration",
+      "text": "ตอนมัธยม"
+    },
+    {
+      "id": "b89",
+      "type": "narration",
+      "text": "อายะเคยบ่นอย่างไม่ค่อยจะบ่อยนัก"
+    },
+    {
+      "id": "b90",
+      "type": "narration",
+      "text": "ว่าโทกิตะปฏิเสธคำชวนไปสนามเบสบอล"
+    },
+    {
+      "id": "b91",
+      "type": "narration",
+      "text": "โดยบอกว่า \"ไปที่แบบนั้นก็ไม่สนุกหรอก\""
+    },
+    {
+      "id": "b92",
+      "type": "dialogue",
+      "text": "\"เรื่องเดทน่ะ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b93",
+      "type": "dialogue",
+      "text": "ปกติฉันจะพาไปที่ที่อายะอยากไปนะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b94",
+      "type": "dialogue",
+      "text": "\"งั้นเหรอ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b95",
+      "type": "dialogue",
+      "text": "\"แหม...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b96",
+      "type": "dialogue",
+      "text": "สุดสัปดาห์นี้ก็มีเดทนะ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b97",
+      "type": "dialogue",
+      "text": "คราวนี้ฉันตั้งใจจะให้อายะไปในที่ที่ฉันอยากไป",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b98",
+      "type": "dialogue",
+      "text": "ไปโรงแรมรักอะไรแบบนั้น... ล้อเล่นนะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b99",
+      "type": "dialogue",
+      "text": "\"งั้นเหรอ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b100",
+      "type": "narration",
+      "text": "เมื่อฉันตอบแบบไม่มีเยื่อใย"
+    },
+    {
+      "id": "b101",
+      "type": "narration",
+      "text": "โทกิตะก็ดูเหมือนจะหงุดหงิดเล็กน้อย"
+    },
+    {
+      "id": "b102",
+      "type": "dialogue",
+      "text": "\"โบยัน",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b103",
+      "type": "dialogue",
+      "text": "พรุ่งนี้...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b104",
+      "type": "dialogue",
+      "text": "ตอนงานเลี้ยงหลังงานโรงเรียน",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b105",
+      "type": "dialogue",
+      "text": "มีรางวัลคู่รักยอดเยี่ยมใช่ไหม?",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b106",
+      "type": "dialogue",
+      "text": "เห็นว่าฉันกับอายะจะได้รางวัลนั้น\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b107",
+      "type": "dialogue",
+      "text": "\"งั้นเหรอ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b108",
+      "type": "dialogue",
+      "text": "\"ช่วงนี้ไม่ค่อยมีเวลาให้เลย",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b109",
+      "type": "dialogue",
+      "text": "ก็เลยเป็นเซอร์ไพรส์เล็กๆ น้อยๆ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b110",
+      "type": "dialogue",
+      "text": "ก็...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b111",
+      "type": "dialogue",
+      "text": "คงทำให้อายะดีใจนะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b112",
+      "type": "narration",
+      "text": "นี่คงหมายถึงชุดคู่ของแม่มดแดงกับหมาป่าสินะ"
+    },
+    {
+      "id": "b113",
+      "type": "narration",
+      "text": "ถึงแม้เขาจะพูดเหมือนว่าถูกเลือกโดยไม่รู้ตัวแล้วลำบากใจ"
+    },
+    {
+      "id": "b114",
+      "type": "narration",
+      "text": "แต่จริงๆ แล้วโทกิตะก็มีส่วนร่วมในแผนการนี้ไม่น้อยเลยทีเดียว"
+    },
+    {
+      "id": "b115",
+      "type": "narration",
+      "text": "ยิ่งไปกว่านั้น"
+    },
+    {
+      "id": "b116",
+      "type": "narration",
+      "text": "ดูเหมือนว่าโทกิตะจะไม่รู้เรื่องที่ฉันกับอายะจูบกันบนดาดฟ้า"
+    },
+    {
+      "id": "b117",
+      "type": "narration",
+      "text": "เพราะมีคนเห็นเยอะแยะ"
+    },
+    {
+      "id": "b118",
+      "type": "narration",
+      "text": "ฉันคิดว่าโทกิตะคงจะได้ยินเรื่องนี้ด้วย"
+    },
+    {
+      "id": "b119",
+      "type": "narration",
+      "text": "นี่คงเป็นฝีมือของพระเจ้าอีกแล้วสินะ"
+    },
+    {
+      "id": "b120",
+      "type": "narration",
+      "text": "ขณะที่คิดเรื่องนั้นอย่างเหม่อลอย"
+    },
+    {
+      "id": "b121",
+      "type": "narration",
+      "text": "ลูกบอลความเร็วสูงก็ลอยผ่านหน้าฉันไปอีกครั้ง"
+    },
+    {
+      "id": "b122",
+      "type": "dialogue",
+      "text": "\"โบยัน",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b123",
+      "type": "dialogue",
+      "text": "ตีไม้หน่อยสิ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b124",
+      "type": "dialogue",
+      "text": "\"อืม ก็ดี\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b125",
+      "type": "dialogue",
+      "text": "\"...แล้ว",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b126",
+      "type": "dialogue",
+      "text": "เรื่องที่อยากคุยคืออะไร\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b127",
+      "type": "narration",
+      "text": "หลังจากที่เขาคงพอใจกับการเตือนฉันแล้ว"
+    },
+    {
+      "id": "b128",
+      "type": "narration",
+      "text": "โทกิตะก็ถามถึงเรื่องที่เขาอยากคุย"
+    },
+    {
+      "id": "b129",
+      "type": "narration",
+      "text": "ฉันเหวี่ยงไม้"
+    },
+    {
+      "id": "b130",
+      "type": "narration",
+      "text": "ลูกบอลลอยผ่านหน้าไป"
+    },
+    {
+      "id": "b131",
+      "type": "narration",
+      "text": "ถึงแม้จะดูไม่เท่"
+    },
+    {
+      "id": "b132",
+      "type": "narration",
+      "text": "แต่ฉันก็บอกออกไปอย่างเยือกเย็น"
+    },
+    {
+      "id": "b133",
+      "type": "dialogue",
+      "text": "\"ฉันสารภาพรักกับอายะแล้ว\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b134",
+      "type": "dialogue",
+      "text": "\"หา?\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b135",
+      "type": "narration",
+      "text": "โทกิตะเบิกตากว้าง"
+    },
+    {
+      "id": "b136",
+      "type": "narration",
+      "text": "มองมาที่ฉันจากเบ้าตีอีกฝั่ง"
+    },
+    {
+      "id": "b137",
+      "type": "dialogue",
+      "text": "\"ฉันจะคบกับอายะ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b138",
+      "type": "narration",
+      "text": "ลูกบอลลอยผ่านหน้าฉันไป"
+    },
+    {
+      "id": "b139",
+      "type": "narration",
+      "text": "ฉันเห็นลูกบอลลอยผ่านไปข้างหลังโทกิตะ"
+    },
+    {
+      "id": "b140",
+      "type": "narration",
+      "text": "ที่กำลังจ้องมาที่ฉัน"
+    },
+    {
+      "id": "b141",
+      "type": "dialogue",
+      "text": "\"ไม่ ไม่",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b142",
+      "type": "dialogue",
+      "text": "โบยัน",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b143",
+      "type": "dialogue",
+      "text": "ไม่มีทาง...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b144",
+      "type": "dialogue",
+      "text": "นั่นมันแฟนฉันนะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b145",
+      "type": "narration",
+      "text": "ใช่เลย"
+    },
+    {
+      "id": "b146",
+      "type": "narration",
+      "text": "ฉันคิดว่าถ้าเป็นฉันคงจะฆ่าแกงไปแล้ว"
+    },
+    {
+      "id": "b147",
+      "type": "narration",
+      "text": "แต่ฉันยังคงพูดต่ออย่างเยือกเย็น"
+    },
+    {
+      "id": "b148",
+      "type": "dialogue",
+      "text": "\"ฉันอยากให้อายะเลิกกับนาย\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b149",
+      "type": "dialogue",
+      "text": "\"หา?\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b150",
+      "type": "narration",
+      "text": "ความโกรธฉายชัดในแววตาของโทกิตะ"
+    },
+    {
+      "id": "b151",
+      "type": "dialogue",
+      "text": "\"ไม่มีทางเลิกได้หรอก",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b152",
+      "type": "dialogue",
+      "text": "คิดว่าจะคบกันมากี่ปีแล้ว!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b153",
+      "type": "dialogue",
+      "text": "อย่าคิดจะมายุ่งกับของของฉันนะ!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b154",
+      "type": "narration",
+      "text": "ท่าทางของเขารุนแรงมาก"
+    },
+    {
+      "id": "b155",
+      "type": "narration",
+      "text": "ก็ใช่น่ะสิ"
+    },
+    {
+      "id": "b156",
+      "type": "narration",
+      "text": "ถ้าเป็นฉัน"
+    },
+    {
+      "id": "b157",
+      "type": "narration",
+      "text": "ถ้ามีผู้ชายมาพยายามแย่งไป"
+    },
+    {
+      "id": "b158",
+      "type": "narration",
+      "text": "ฉันจะไม่มีวันให้อภัยเด็ดขาด"
+    },
+    {
+      "id": "b159",
+      "type": "narration",
+      "text": "ไม่ว่าจะพูดอะไร"
+    },
+    {
+      "id": "b160",
+      "type": "narration",
+      "text": "ฉันก็ไม่มีวันเลิกหรอก"
+    },
+    {
+      "id": "b161",
+      "type": "narration",
+      "text": "ถึงแม้ว่าอายะอาจจะหมดรักไปแล้วก็ตาม"
+    },
+    {
+      "id": "b162",
+      "type": "dialogue",
+      "text": "\"แล้ว",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b163",
+      "type": "dialogue",
+      "text": "ยุคาริเป็นไง?",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b164",
+      "type": "dialogue",
+      "text": "เธอสารภาพรักกับนายไม่ใช่เหรอ!?\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b165",
+      "type": "narration",
+      "text": "โทกิตะรู้เรื่องนั้นหรือเปล่า?"
+    },
+    {
+      "id": "b166",
+      "type": "narration",
+      "text": "ดูเหมือนว่ายุคาริกับโทกิตะจะทำงานร่วมกัน"
+    },
+    {
+      "id": "b167",
+      "type": "dialogue",
+      "text": "\"ฉันปฏิเสธไป\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b168",
+      "type": "narration",
+      "text": "ฉันเหวี่ยงไม้"
+    },
+    {
+      "id": "b169",
+      "type": "narration",
+      "text": "ลูกบอลลอยผ่านไป"
+    },
+    {
+      "id": "b170",
+      "type": "dialogue",
+      "text": "\"ไม่ ไม่",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b171",
+      "type": "dialogue",
+      "text": "ยุคาริก็ก็น่ารักนะ!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b172",
+      "type": "dialogue",
+      "text": "ฉันว่าเธอคงจะเอ็กซ์มากเลยล่ะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b173",
+      "type": "dialogue",
+      "text": "\"งั้นเหรอ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b174",
+      "type": "dialogue",
+      "text": "\"แล้วนาย",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b175",
+      "type": "dialogue",
+      "text": "สนใจผู้หญิงเหรอ?\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b176",
+      "type": "dialogue",
+      "text": "\"แค่อายะคนเดียว\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b177",
+      "type": "dialogue",
+      "text": "\"หา!?\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b178",
+      "type": "narration",
+      "text": "ลูกบอลหลายลูกลอยผ่านหลังโทกิตะไป"
+    },
+    {
+      "id": "b179",
+      "type": "dialogue",
+      "text": "\"ไม่ ไม่",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b180",
+      "type": "dialogue",
+      "text": "นายก็เป็นเพื่อนสมัยเด็กของอายะมาตลอด",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b181",
+      "type": "dialogue",
+      "text": "เหมือนผู้ปกครองของเธอนั่นแหละ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b182",
+      "type": "dialogue",
+      "text": "ก็เลยไว้ใจฝากอายะไว้กับนายได้!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b183",
+      "type": "dialogue",
+      "text": "แล้วนายเองก็เป็นคนผลักดันให้ฉันกับอายะคบกันไม่ใช่เหรอ!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b184",
+      "type": "dialogue",
+      "text": "\"ก็ใช่นะ",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b185",
+      "type": "dialogue",
+      "text": "แต่ฉันชอบมาตลอด",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b186",
+      "type": "dialogue",
+      "text": "แล้วฉันก็เพิ่งรู้ตัว\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b187",
+      "type": "narration",
+      "text": "ฉันไม่พูดขอโทษ"
+    },
+    {
+      "id": "b188",
+      "type": "narration",
+      "text": "ไม่แก้ตัว"
+    },
+    {
+      "id": "b189",
+      "type": "narration",
+      "text": "แค่มองไปที่ตาของโทกิตะตรงๆ แล้วบอกความจริง"
+    },
+    {
+      "id": "b190",
+      "type": "dialogue",
+      "text": "\"หา!?",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b191",
+      "type": "dialogue",
+      "text": "เมื่อไหร่?\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b192",
+      "type": "dialogue",
+      "text": "\"ตอนไปทัศนศึกษา\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b193",
+      "type": "dialogue",
+      "text": "\"ทัศนศึกษา...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b194",
+      "type": "dialogue",
+      "text": "เพิ่งสองสัปดาห์ที่แล้วเองนะ!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b195",
+      "type": "narration",
+      "text": "โทกิตะพยายามอย่างยิ่งที่จะหาทางทำให้ฉันยอมแพ้"
+    },
+    {
+      "id": "b196",
+      "type": "narration",
+      "text": "แต่"
+    },
+    {
+      "id": "b197",
+      "type": "narration",
+      "text": "ทำไมโทกิตะถึงไม่ถาม"
+    },
+    {
+      "id": "b198",
+      "type": "narration",
+      "text": "\"อายะตอบว่ายังไง\""
+    },
+    {
+      "id": "b199",
+      "type": "narration",
+      "text": "หลังจากที่ฉันบอกว่าฉันสารภาพรักไปแล้ว"
+    },
+    {
+      "id": "b200",
+      "type": "narration",
+      "text": "มันต้องเป็นอายะสินะที่จะตัดสินใจ"
+    },
+    {
+      "id": "b201",
+      "type": "narration",
+      "text": "โทกิตะตอนนี้"
+    },
+    {
+      "id": "b202",
+      "type": "narration",
+      "text": "คงไม่มีเวลาคิดถึงเรื่องนั้นแล้วสินะ"
+    },
+    {
+      "id": "b203",
+      "type": "narration",
+      "text": "โทกิตะเริ่มเหวี่ยงไม้เบสบอลอีกครั้ง"
+    },
+    {
+      "id": "b204",
+      "type": "narration",
+      "text": "มีเสียง \"แคง\" ดังขึ้น"
+    },
+    {
+      "id": "b205",
+      "type": "narration",
+      "text": "ลูกบอลลอยไปด้านข้าง เป็นลูกฟาวล์"
+    },
+    {
+      "id": "b206",
+      "type": "narration",
+      "text": "โทกิตะพูดกับฉันจากด้านหลัง"
+    },
+    {
+      "id": "b207",
+      "type": "dialogue",
+      "text": "\"ว่าแต่",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b208",
+      "type": "dialogue",
+      "text": "ชอบตรงไหน\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b209",
+      "type": "narration",
+      "text": "น้ำเสียงที่เหมือนกำลังทดสอบ"
+    },
+    {
+      "id": "b210",
+      "type": "narration",
+      "text": "เหมือนเวลาที่ผู้ชายพยายามจะเอาชนะ"
+    },
+    {
+      "id": "b211",
+      "type": "dialogue",
+      "text": "\"จะว่าไงดีนะ...",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b212",
       "type": "dialogue",
       "text": "\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b213",
+      "type": "narration",
+      "text": "พอถูกถามอีกครั้ง"
+    },
+    {
+      "id": "b214",
+      "type": "narration",
+      "text": "ฉันก็ลังเล"
+    },
+    {
+      "id": "b215",
+      "type": "dialogue",
+      "text": "\"…รอยยิ้มของเธอน่ารัก\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b216",
+      "type": "narration",
+      "text": "ฉันตอบไปก่อน"
+    },
+    {
+      "id": "b217",
+      "type": "dialogue",
+      "text": "\"ชิ!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b218",
+      "type": "dialogue",
+      "text": "สุดท้ายก็แค่หน้าตาเหรอ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b219",
+      "type": "dialogue",
+      "text": "ไม่สิ ถึงฉันจะชอบเธอมากเหมือนกัน...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b220",
+      "type": "dialogue",
+      "text": "แต่เธอไม่แต่งหน้าเลยไม่มีใครสังเกต",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b221",
+      "type": "dialogue",
+      "text": "แต่ถ้าแต่งหน้า",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b222",
+      "type": "dialogue",
+      "text": "อายะจะเปลี่ยนไปเยอะเลยนะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b223",
+      "type": "narration",
+      "text": "นั่นฉันก็รู้"
+    },
+    {
+      "id": "b224",
+      "type": "narration",
+      "text": "แล้วก็—"
+    },
+    {
+      "id": "b225",
+      "type": "dialogue",
+      "text": "\"เสียงหัวเราะก็ดังน่ารัก\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b226",
+      "type": "dialogue",
+      "text": "\"อ่า เข้าใจเลย...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b227",
+      "type": "dialogue",
+      "text": "อายะบางทีก็ส่งเสียงที่ยั่วยวนมากนะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b228",
+      "type": "narration",
+      "text": "โทกิตะพูดอย่างภาคภูมิใจ"
+    },
+    {
+      "id": "b229",
+      "type": "narration",
+      "text": "เหมือนจะบอกว่า เขารู้จักอายะดีกว่าฉัน"
+    },
+    {
+      "id": "b230",
+      "type": "narration",
+      "text": "และเขาไปไกลกว่าฉันกับอายะแล้ว"
+    },
+    {
+      "id": "b231",
+      "type": "narration",
+      "text": "เมื่อฉันเงียบไป"
+    },
+    {
+      "id": "b232",
+      "type": "narration",
+      "text": "โทกิตะก็พูดต่อ"
+    },
+    {
+      "id": "b233",
+      "type": "dialogue",
+      "text": "\"ร่างกายเธอก็...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b234",
+      "type": "dialogue",
+      "text": "นุ่มมากเลย\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b235",
+      "type": "narration",
+      "text": "นั่นฉันก็รู้"
+    },
+    {
+      "id": "b236",
+      "type": "dialogue",
+      "text": "\"อ๊ะ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b237",
+      "type": "dialogue",
+      "text": "ไม่ใช่ความหมายทางเพศนะ!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b238",
+      "type": "dialogue",
+      "text": "อย่ามองแบบนั้น",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b239",
+      "type": "dialogue",
+      "text": "อายะไม่ถนัดเรื่องแบบนั้น\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b240",
+      "type": "narration",
+      "text": "ฉันเข้าใจ"
+    },
+    {
+      "id": "b241",
+      "type": "narration",
+      "text": "แต่ตอนนี้ฉันมองอายะได้แค่แบบนั้นแล้ว"
+    },
+    {
+      "id": "b242",
+      "type": "dialogue",
+      "text": "\"เฮ้ย โบยัน",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b243",
+      "type": "dialogue",
+      "text": "ฉันกำลังพูดถึงเรื่องภายในนะ!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b244",
+      "type": "dialogue",
+      "text": "อย่ามองแค่รูปลักษณ์ด้วยสายตาแบบนั้นสิ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b245",
+      "type": "narration",
+      "text": "เรื่องภายในสินะ"
+    },
+    {
+      "id": "b246",
+      "type": "narration",
+      "text": "เรื่องพวกนั้นนับไม่ถ้วน"
+    },
+    {
+      "id": "b247",
+      "type": "narration",
+      "text": "ฉันลองยกตัวอย่างสักอย่าง"
+    },
+    {
+      "id": "b248",
+      "type": "dialogue",
+      "text": "\"เธอมักจะร่าเริงเสมอ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b249",
+      "type": "dialogue",
+      "text": "\"ก็ใช่น่ะสิ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b250",
+      "type": "dialogue",
+      "text": "อาจจะดูเหมือนอย่างนั้น",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b251",
+      "type": "dialogue",
+      "text": "แต่อายะ...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b252",
+      "type": "dialogue",
+      "text": "บางครั้งก็มีนิสัยที่น่ารำคาญนะ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b253",
+      "type": "dialogue",
+      "text": "เป็นคนขี้อายอย่างไม่คาดคิด",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b254",
+      "type": "dialogue",
+      "text": "แล้วก็ปฏิเสธคนไม่ค่อยได้",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b255",
+      "type": "dialogue",
+      "text": "ฉันเตือนเธอประจำว่าอย่ารับทุกอย่าง\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b256",
+      "type": "narration",
+      "text": "ใช่แล้ว"
+    },
+    {
+      "id": "b257",
+      "type": "narration",
+      "text": "นั่นเป็นหนึ่งในข้อเสียมากมายของอายะ"
+    },
+    {
+      "id": "b258",
+      "type": "narration",
+      "text": "เพื่อไม่ให้คนรอบข้างเจ็บปวด"
+    },
+    {
+      "id": "b259",
+      "type": "narration",
+      "text": "เพื่อไม่ให้ใครเกลียด"
+    },
+    {
+      "id": "b260",
+      "type": "narration",
+      "text": "เพื่อไม่ให้ตัวเองเจ็บปวด..."
+    },
+    {
+      "id": "b261",
+      "type": "narration",
+      "text": "เธอมักจะยิ้มอยู่เสมอ"
+    },
+    {
+      "id": "b262",
+      "type": "narration",
+      "text": "ถึงจะขี้อาย"
+    },
+    {
+      "id": "b263",
+      "type": "narration",
+      "text": "แต่ก็เป็นมิตร"
+    },
+    {
+      "id": "b264",
+      "type": "narration",
+      "text": "ถึงจะว่ายน้ำไม่เป็น"
+    },
+    {
+      "id": "b265",
+      "type": "narration",
+      "text": "แต่ถ้าถูกชวน"
+    },
+    {
+      "id": "b266",
+      "type": "narration",
+      "text": "ก็ยอมไปสระว่ายน้ำ แม่น้ำ หรือทะเลได้ง่ายๆ"
+    },
+    {
+      "id": "b267",
+      "type": "narration",
+      "text": "แทบไม่เคยโกรธเลย"
+    },
+    {
+      "id": "b268",
+      "type": "narration",
+      "text": "มีความกล้าพอที่จะทำหน้าตลกๆ ได้"
+    },
+    {
+      "id": "b269",
+      "type": "narration",
+      "text": "แต่ในขณะเดียวกัน"
+    },
+    {
+      "id": "b270",
+      "type": "narration",
+      "text": "เธอก็เป็นคนขี้แยที่สุด"
+    },
+    {
+      "id": "b271",
+      "type": "narration",
+      "text": "ในบางเรื่องก็ไม่มั่นใจในตัวเอง"
+    },
+    {
+      "id": "b272",
+      "type": "narration",
+      "text": "ถึงจะพูดว่ามีดีแค่ความร่าเริง"
+    },
+    {
+      "id": "b273",
+      "type": "narration",
+      "text": "แต่ที่บ้านก็บ่นพึมพำว่า \"เหนื่อยจัง~\" หรือ \"ขี้เกียจจัง~\" ตลอด"
+    },
+    {
+      "id": "b274",
+      "type": "narration",
+      "text": "ฉันรักอายะแบบนั้น"
+    },
+    {
+      "id": "b275",
+      "type": "narration",
+      "text": "โทกิตะคงจะหงุดหงิดที่ฉันเงียบไป"
+    },
+    {
+      "id": "b276",
+      "type": "narration",
+      "text": "จึงพูดด้วยน้ำเสียงที่แข็งกร้าว"
+    },
+    {
+      "id": "b277",
+      "type": "dialogue",
+      "text": "\"นี่ โบยัน...",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b278",
+      "type": "dialogue",
+      "text": "มาแข่งกัน\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b279",
+      "type": "dialogue",
+      "text": "\"แข่ง?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b280",
+      "type": "dialogue",
+      "text": "\"แข่งกันตี 3 ลูก",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b281",
+      "type": "dialogue",
+      "text": "ใครตีโดนมากกว่าชนะ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b282",
+      "type": "dialogue",
+      "text": "ถ้าฉันชนะ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b283",
+      "type": "dialogue",
+      "text": "นายต้องยอมแพ้อายะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b284",
+      "type": "dialogue",
+      "text": "\"หา?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b285",
+      "type": "dialogue",
+      "text": "\"งั้นฉันเริ่มก่อน... นะ!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b286",
+      "type": "narration",
+      "text": "มีเสียง \"แคง\" ที่ชัดเจนดังขึ้น"
+    },
+    {
+      "id": "b287",
+      "type": "narration",
+      "text": "ลูกบอลลอยไปถึงแถวเครื่องยิงลูก เป็นลูกฮิต"
+    },
+    {
+      "id": "b288",
+      "type": "narration",
+      "text": "ดูเหมือนว่าจะไม่มีเงื่อนไขสำหรับกรณีที่ฉันชนะ"
+    },
+    {
+      "id": "b289",
+      "type": "narration",
+      "text": "ฉันก็เลยเหวี่ยงไม้ไปก่อน"
+    },
+    {
+      "id": "b290",
+      "type": "narration",
+      "text": "ลูกบอลลอยผ่านหน้าไป"
+    },
+    {
+      "id": "b291",
+      "type": "narration",
+      "text": "มีเสียง \"ดัง\" ทึบๆ ดังขึ้นข้างๆ"
+    },
+    {
+      "id": "b292",
+      "type": "narration",
+      "text": "ลูกบอลกระดอนไปด้านหลังโทกิตะ เป็นลูกฟาวล์"
+    },
+    {
+      "id": "b293",
+      "type": "narration",
+      "text": "ฉันก็เหวี่ยงไม้"
+    },
+    {
+      "id": "b294",
+      "type": "narration",
+      "text": "อีกครั้ง"
+    },
+    {
+      "id": "b295",
+      "type": "narration",
+      "text": "ตีลมเปล่า"
+    },
+    {
+      "id": "b296",
+      "type": "narration",
+      "text": "มีเสียง \"แคง\" ดังขึ้นจากทางโทกิตะ"
+    },
+    {
+      "id": "b297",
+      "type": "narration",
+      "text": "ลูกบอลลอยไปด้านข้าง เป็นลูกฟาวล์"
+    },
+    {
+      "id": "b298",
+      "type": "narration",
+      "text": "ถ้าครั้งต่อไปที่ฉันตีไม่โดน"
+    },
+    {
+      "id": "b299",
+      "type": "narration",
+      "text": "ก็แสดงว่าฉันแพ้"
+    },
+    {
+      "id": "b300",
+      "type": "narration",
+      "text": "ให้ตายสิ"
+    },
+    {
+      "id": "b301",
+      "type": "narration",
+      "text": "คนที่ตัดสินใจคืออายะ"
+    },
+    {
+      "id": "b302",
+      "type": "narration",
+      "text": "การแข่งขันแบบนี้ไม่มีความหมายอะไรเลย"
+    },
+    {
+      "id": "b303",
+      "type": "narration",
+      "text": "แต่ถ้าเป็นไปได้"
+    },
+    {
+      "id": "b304",
+      "type": "narration",
+      "text": "ฉันก็ไม่อยากแพ้"
+    },
+    {
+      "id": "b305",
+      "type": "narration",
+      "text": "เพื่อที่จะเข้าใกล้"
+    },
+    {
+      "id": "b306",
+      "type": "narration",
+      "text": "อนาคตที่ฉันปรารถนา"
+    },
+    {
+      "id": "b307",
+      "type": "narration",
+      "text": "ให้มากที่สุด"
+    },
+    {
+      "id": "b308",
+      "type": "narration",
+      "text": "— ยอมแพ้ไปเถอะ"
+    },
+    {
+      "id": "b309",
+      "type": "narration",
+      "text": "สัญชาตญาณของพระเจ้ากระซิบ"
+    },
+    {
+      "id": "b310",
+      "type": "narration",
+      "text": "คำพูดที่ตรงกันข้ามกับเจตจำนงของฉัน"
+    },
+    {
+      "id": "b311",
+      "type": "narration",
+      "text": "— ปล่อยให้โทกิตะชนะ"
+    },
+    {
+      "id": "b312",
+      "type": "narration",
+      "text": "— ปล่อยให้เขาประมาท"
+    },
+    {
+      "id": "b313",
+      "type": "narration",
+      "text": "— จะได้สร้างความเสียหายได้มากขึ้น"
+    },
+    {
+      "id": "b314",
+      "type": "narration",
+      "text": "ความเสียหาย... มากมาย?"
+    },
+    {
+      "id": "b315",
+      "type": "dialogue",
+      "text": "\"โบยัน",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b316",
+      "type": "dialogue",
+      "text": "ลูกสุดท้ายของการแข่งขันแล้ว!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b317",
+      "type": "dialogue",
+      "text": "ยอมแพ้อย่างยุติธรรม!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b318",
+      "type": "narration",
+      "text": "โทกิตะพยายามกดดันฉัน"
+    },
+    {
+      "id": "b319",
+      "type": "narration",
+      "text": "ฉันจ้องมองลูกบอลที่พุ่งออกมาจากเครื่องยิงลูก"
+    },
+    {
+      "id": "b320",
+      "type": "narration",
+      "text": "— ก้าวไปข้างหน้าครึ่งก้าว"
+    },
+    {
+      "id": "b321",
+      "type": "narration",
+      "text": "พระเจ้ากระซิบให้ฉันแพ้"
+    },
+    {
+      "id": "b322",
+      "type": "narration",
+      "text": "ฉันไม่ก้าวไปไหน"
+    },
+    {
+      "id": "b323",
+      "type": "narration",
+      "text": "แต่ยังคงยืนอยู่ที่เดิม"
+    },
+    {
+      "id": "b324",
+      "type": "narration",
+      "text": "— เอาล่ะ เหวี่ยงเลย"
+    },
+    {
+      "id": "b325",
+      "type": "narration",
+      "text": "เข้าใจแล้ว"
+    },
+    {
+      "id": "b326",
+      "type": "narration",
+      "text": "ถ้างั้น... ลองเสี่ยงดู"
+    },
+    {
+      "id": "b327",
+      "type": "narration",
+      "text": "ฉันเหวี่ยงไม้"
+    },
+    {
+      "id": "b328",
+      "type": "narration",
+      "text": "โดยช้ากว่าสัญชาตญาณของพระเจ้าเล็กน้อย"
+    },
+    {
+      "id": "b329",
+      "type": "narration",
+      "text": "แคงงง—"
+    },
+    {
+      "id": "b330",
+      "type": "narration",
+      "text": "มีเสียงที่สดชื่นดังมาจากมือของฉัน"
+    },
+    {
+      "id": "b331",
+      "type": "narration",
+      "text": "ฉันไม่รู้สึกถึงการตี"
+    },
+    {
+      "id": "b332",
+      "type": "narration",
+      "text": "แต่ไม้เบสบอลของฉันก็จับลูกบอลได้อย่างแน่นอน"
+    },
+    {
+      "id": "b333",
+      "type": "narration",
+      "text": "แล้วลอยเป็นวงโค้งไปไกล"
+    },
+    {
+      "id": "b334",
+      "type": "dialogue",
+      "text": "\"ไม่น่าเชื่อ...\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b335",
+      "type": "narration",
+      "text": "ฉันเองก็ประหลาดใจ"
+    },
+    {
+      "id": "b336",
+      "type": "narration",
+      "text": "ลูกบอลที่ฉันตี"
+    },
+    {
+      "id": "b337",
+      "type": "narration",
+      "text": "ลอยหายเข้าไปในตาข่ายที่อยู่ไกลๆ"
+    },
+    {
+      "id": "b338",
+      "type": "narration",
+      "text": "ที่โทกิตะกำลังมองอยู่"
+    },
+    {
+      "id": "b339",
+      "type": "narration",
+      "text": "อาจจะเป็นโฮมรัน"
+    },
+    {
+      "id": "b340",
+      "type": "narration",
+      "text": "โทกิตะที่ตะลึงไปครู่หนึ่ง"
+    },
+    {
+      "id": "b341",
+      "type": "narration",
+      "text": "หันมามองฉัน"
+    },
+    {
+      "id": "b342",
+      "type": "narration",
+      "text": "โทกิตะพูดด้วยสีหน้าเหมือนยอมรับความจริง"
+    },
+    {
+      "id": "b343",
+      "type": "dialogue",
+      "text": "\"…แต่",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b344",
+      "type": "dialogue",
+      "text": "คนที่ตัดสินใจคืออายะ\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b345",
+      "type": "dialogue",
+      "text": "\"อืม ก็ใช่\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b346",
+      "type": "narration",
+      "text": "ฉันก็คิดแบบนั้นเหมือนกัน"
+    },
+    {
+      "id": "b347",
+      "type": "narration",
+      "text": "เมื่อออกจากสนามเบสบอล"
+    },
+    {
+      "id": "b348",
+      "type": "narration",
+      "text": "ฉันก็มองส่งหลังของโทกิตะที่เดินจากไป"
+    },
+    {
+      "id": "b349",
+      "type": "narration",
+      "text": "แบบนี้"
+    },
+    {
+      "id": "b350",
+      "type": "narration",
+      "text": "โทกิตะคงจะเตรียมใจได้บ้างแล้วนะ"
+    },
+    {
+      "id": "b351",
+      "type": "narration",
+      "text": "ถึงแม้อายะจะบอกเลิก"
+    },
+    {
+      "id": "b352",
+      "type": "narration",
+      "text": "เขาก็คงจะพอรับได้บ้าง"
+    },
+    {
+      "id": "b353",
+      "type": "narration",
+      "text": "――――"
+    },
+    {
+      "id": "b354",
+      "type": "narration",
+      "text": "ฉันรู้สึกได้ว่าสัญชาตญาณของพระเจ้ากำลังปรับเปลี่ยนเส้นทางอย่างรวดเร็ว"
+    },
+    {
+      "id": "b355",
+      "type": "narration",
+      "text": "ดูเหมือนว่าฉันจะเบี่ยงเบนไปจากผลลัพธ์ที่ดีที่สุดเล็กน้อย"
+    },
+    {
+      "id": "b356",
+      "type": "narration",
+      "text": "การกระทำของฉันในครั้งนี้"
+    },
+    {
+      "id": "b357",
+      "type": "narration",
+      "text": "คงจะเป็นสิ่งที่ไม่คาดฝันอีกอย่างหนึ่ง"
+    },
+    {
+      "id": "b358",
+      "type": "narration",
+      "text": "...นี่เป็นครั้งแรกเลยมั้ง"
+    },
+    {
+      "id": "b359",
+      "type": "narration",
+      "text": "ที่สัญชาตญาณไม่สอดคล้องกับฉันขนาดนี้"
+    },
+    {
+      "id": "b360",
+      "type": "narration",
+      "text": "พลังนี้"
+    },
+    {
+      "id": "b361",
+      "type": "narration",
+      "text": "มักจะแสดงผลลัพธ์ที่ดีที่สุดให้เสมอ"
+    },
+    {
+      "id": "b362",
+      "type": "narration",
+      "text": "เส้นทางที่สั้นที่สุด"
+    },
+    {
+      "id": "b363",
+      "type": "narration",
+      "text": "สู่เป้าหมายในการได้อายะมา"
+    },
+    {
+      "id": "b364",
+      "type": "narration",
+      "text": "ฉันรู้เรื่องนั้นดี"
+    },
+    {
+      "id": "b365",
+      "type": "narration",
+      "text": "แต่"
+    },
+    {
+      "id": "b366",
+      "type": "narration",
+      "text": "เส้นทางที่สัญชาตญาณกำลังนำทางในครั้งนี้"
+    },
+    {
+      "id": "b367",
+      "type": "narration",
+      "text": "ดูเหมือนจะไม่ได้คำนึงถึงจิตใจของอายะ"
+    },
+    {
+      "id": "b368",
+      "type": "narration",
+      "text": "ฉันรู้สึกแบบนั้น"
+    },
+    {
+      "id": "b369",
+      "type": "narration",
+      "text": "ฉัน"
+    },
+    {
+      "id": "b370",
+      "type": "narration",
+      "text": "ขอแค่เพียงเล็กน้อย"
+    },
+    {
+      "id": "b371",
+      "type": "narration",
+      "text": "ถ้าอายะไม่เจ็บปวด"
+    },
+    {
+      "id": "b372",
+      "type": "narration",
+      "text": "ฉันก็อยากจะเลือกเส้นทางที่อ้อมกว่า"
+    },
+    {
+      "id": "b373",
+      "type": "narration",
+      "text": "――――"
+    },
+    {
+      "id": "b374",
+      "type": "narration",
+      "text": "ไม่รู้ว่ารู้ถึงเจตจำนงของฉันหรือไม่"
+    },
+    {
+      "id": "b375",
+      "type": "narration",
+      "text": "สัญชาตญาณของพระเจ้า"
+    },
+    {
+      "id": "b376",
+      "type": "narration",
+      "text": "ก็ยังคงปรับเปลี่ยนเส้นทางต่อไป"
+    },
+    {
+      "id": "b377",
+      "type": "narration",
+      "text": "พลบค่ำ"
+    },
+    {
+      "id": "b378",
+      "type": "narration",
+      "text": "ฉันยืนเหม่ออยู่หน้าบ้านของอายะ"
+    },
+    {
+      "id": "b379",
+      "type": "narration",
+      "text": "จากอีกฝั่งของถนน"
+    },
+    {
+      "id": "b380",
+      "type": "narration",
+      "text": "ฉันเห็นร่างของอายะที่ถูกแสงอาทิตย์ยามเย็นส่อง"
+    },
+    {
+      "id": "b381",
+      "type": "narration",
+      "text": "เงาของเธอก็ใหญ่ขึ้นเรื่อยๆ"
+    },
+    {
+      "id": "b382",
+      "type": "dialogue",
+      "text": "\"อายะ ยินดีต้อนรับกลับ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b383",
+      "type": "narration",
+      "text": "อายะที่หยุดอยู่ตรงหน้าฉัน"
+    },
+    {
+      "id": "b384",
+      "type": "narration",
+      "text": "หน้าแดงกว่าพระอาทิตย์ยามเย็นเสียอีก"
+    },
+    {
+      "id": "b385",
+      "type": "dialogue",
+      "text": "\"…บอกว่าไม่ต้องรอแล้วไม่ใช่เหรอ……\"",
       "speakerId": "aya",
       "speakerName": "มินะโทริ อายะ"
     },
     {
-      "id": "b11",
+      "id": "b386",
       "type": "dialogue",
-      "text": "จากตอนก่อนๆ แต่งเป็นหนูน้อยหมวกแดงกับหมาป่า ตอนหลังๆเป็นแม่มดแดงกับหมาป่าซะแล้วครับ หนูน้อยหมวแดงแปลงเร็วจริง",
+      "text": "\"ฉันไม่ได้รอที่ประตูโรงเรียนนะ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b387",
+      "type": "dialogue",
+      "text": "\"ก็ใช่ แต่ว่า...\"",
       "speakerId": "aya",
       "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b388",
+      "type": "narration",
+      "text": "อายะพูดแล้วก็ก้มหน้าลง"
+    },
+    {
+      "id": "b389",
+      "type": "narration",
+      "text": "ดูเหมือนจะดีใจ"
+    },
+    {
+      "id": "b390",
+      "type": "dialogue",
+      "text": "\"…อายะ",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b391",
+      "type": "dialogue",
+      "text": "ไม่เป็นไรเหรอ?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b392",
+      "type": "dialogue",
+      "text": "\"...อื้ม",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b393",
+      "type": "dialogue",
+      "text": "ฉันคุยทุกเรื่อง",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b394",
+      "type": "dialogue",
+      "text": "ทุกคนทำหน้าเครียด แต่ก็เข้าใจฉัน... มั้ง\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b395",
+      "type": "narration",
+      "text": "ฉันดูจากสีหน้าของอายะก็รู้"
+    },
+    {
+      "id": "b396",
+      "type": "narration",
+      "text": "เธอคงไม่ได้รับการต้อนรับที่ดีจากเพื่อนผู้หญิง"
+    },
+    {
+      "id": "b397",
+      "type": "narration",
+      "text": "ถึงอย่างนั้น เธอก็คงพูดความรู้สึกของตัวเองอย่างตรงไปตรงมา"
+    },
+    {
+      "id": "b398",
+      "type": "narration",
+      "text": "ขณะที่ฉันกำลังจะโผเข้ากอดเธอ"
+    },
+    {
+      "id": "b399",
+      "type": "narration",
+      "text": "อายะก็พูดขึ้น"
+    },
+    {
+      "id": "b400",
+      "type": "dialogue",
+      "text": "\"นี่",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b401",
+      "type": "dialogue",
+      "text": "โบยัน\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b402",
+      "type": "dialogue",
+      "text": "\"อืม?\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b403",
+      "type": "dialogue",
+      "text": "\"พรุ่งนี้ฉัน...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b404",
+      "type": "dialogue",
+      "text": "จะไปงานเลี้ยงตอนกลางคืนนะ",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b405",
+      "type": "dialogue",
+      "text": "จะไป",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b406",
+      "type": "dialogue",
+      "text": "แล้วจะจบเรื่องตรงนั้น\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b407",
+      "type": "narration",
+      "text": "อายะมองมาที่ฉันตรงๆ"
+    },
+    {
+      "id": "b408",
+      "type": "narration",
+      "text": "ในตาของเธอมีความมุ่งมั่น"
+    },
+    {
+      "id": "b409",
+      "type": "narration",
+      "text": "— ในวินาทีนั้น"
+    },
+    {
+      "id": "b410",
+      "type": "narration",
+      "text": "หูของฉันก็มีเสียงดัง \"คีน\""
+    },
+    {
+      "id": "b411",
+      "type": "narration",
+      "text": "— อย่าปล่อยเธอไป"
+    },
+    {
+      "id": "b412",
+      "type": "narration",
+      "text": "สัญชาตญาณของพระเจ้า"
+    },
+    {
+      "id": "b413",
+      "type": "narration",
+      "text": "ส่งภาพเข้ามา"
+    },
+    {
+      "id": "b414",
+      "type": "narration",
+      "text": "นี่คือความทรงจำในอนาคต"
+    },
+    {
+      "id": "b415",
+      "type": "narration",
+      "text": "— ฉันกำลังมองอายะอยู่หลังเวที"
+    },
+    {
+      "id": "b416",
+      "type": "narration",
+      "text": "บนเวที"
+    },
+    {
+      "id": "b417",
+      "type": "narration",
+      "text": "อายะในชุดแม่มดแดง"
+    },
+    {
+      "id": "b418",
+      "type": "narration",
+      "text": "และโทกิตะที่สวมหูและจมูกหมาป่า"
+    },
+    {
+      "id": "b419",
+      "type": "narration",
+      "text": "จากผู้ชม"
+    },
+    {
+      "id": "b420",
+      "type": "narration",
+      "text": "มีเสียงเชียร์ \"คิสสิ คิสสิ\" ดังขึ้น"
+    },
+    {
+      "id": "b421",
+      "type": "narration",
+      "text": "เพื่อนผู้หญิงของอายะทุกคนเงียบไป"
+    },
+    {
+      "id": "b422",
+      "type": "narration",
+      "text": "คงเป็นเพราะอายะได้บอกเรื่องของฉันกับเธอไปก่อนแล้ว"
+    },
+    {
+      "id": "b423",
+      "type": "narration",
+      "text": "โทกิตะคว้าไหล่ของอายะ"
+    },
+    {
+      "id": "b424",
+      "type": "narration",
+      "text": "แต่อายะพูดว่า \"ขอโทษ\" แล้วก็ปฏิเสธจูบ"
+    },
+    {
+      "id": "b425",
+      "type": "dialogue",
+      "text": "\"เฮ้",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b426",
+      "type": "dialogue",
+      "text": "ทำไมล่ะ!?",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b427",
+      "type": "dialogue",
+      "text": "ถ้าไม่จูบตรงนี้ก็แปลกนะ!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b428",
+      "type": "dialogue",
+      "text": "\"ขอโทษนะ",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b429",
+      "type": "dialogue",
+      "text": "ฉัน...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b430",
+      "type": "dialogue",
+      "text": "คบต่อไม่ได้แล้ว\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b431",
+      "type": "dialogue",
+      "text": "\"หา?\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b432",
+      "type": "narration",
+      "text": "ใบหน้าของโทกิตะมืดลงอย่างเห็นได้ชัด"
+    },
+    {
+      "id": "b433",
+      "type": "dialogue",
+      "text": "\"คือ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b434",
+      "type": "dialogue",
+      "text": "ว่านะ—\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b435",
+      "type": "dialogue",
+      "text": "\"ไม่",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b436",
+      "type": "dialogue",
+      "text": "จูบกันไปก่อน\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b437",
+      "type": "narration",
+      "text": "จากนั้น"
+    },
+    {
+      "id": "b438",
+      "type": "narration",
+      "text": "นักเรียนที่ดำเนินรายการ"
+    },
+    {
+      "id": "b439",
+      "type": "narration",
+      "text": "ที่สัมผัสได้ถึงบรรยากาศที่แปลกประหลาด"
+    },
+    {
+      "id": "b440",
+      "type": "narration",
+      "text": "ก็หยิบไมโครโฟนขึ้นมา"
+    },
+    {
+      "id": "b441",
+      "type": "dialogue",
+      "text": "\"โอ้!",
+      "speakerId": "classmate",
+      "speakerName": "เพื่อนร่วมชั้น"
+    },
+    {
+      "id": "b442",
+      "type": "dialogue",
+      "text": "แม่มดแดงปฏิเสธเหรอ!?\"",
+      "speakerId": "classmate",
+      "speakerName": "เพื่อนร่วมชั้น"
+    },
+    {
+      "id": "b443",
+      "type": "narration",
+      "text": "ผู้ชมส่งเสียงฮือฮา"
+    },
+    {
+      "id": "b444",
+      "type": "narration",
+      "text": "โทกิตะเข้าใกล้ใบหน้าของอายะ"
+    },
+    {
+      "id": "b445",
+      "type": "narration",
+      "text": "นิ้วที่จับไหล่"
+    },
+    {
+      "id": "b446",
+      "type": "narration",
+      "text": "กดลงบนไหล่ของอายะ"
+    },
+    {
+      "id": "b447",
+      "type": "dialogue",
+      "text": "\"อย่า...!\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b448",
+      "type": "narration",
+      "text": "เสียงของอายะ"
+    },
+    {
+      "id": "b449",
+      "type": "narration",
+      "text": "ดังพอที่จะไม่ถูกเสียงเชียร์กลบ"
+    },
+    {
+      "id": "b450",
+      "type": "narration",
+      "text": "ผู้ชมแถวหน้าคงจะได้ยิน"
+    },
+    {
+      "id": "b451",
+      "type": "narration",
+      "text": "เริ่มทำหน้าสงสัย"
+    },
+    {
+      "id": "b452",
+      "type": "narration",
+      "text": "โทกิตะก็รีบปล่อยมือ"
+    },
+    {
+      "id": "b453",
+      "type": "narration",
+      "text": "อายะมองโทกิตะด้วยสีหน้าจริงจัง"
+    },
+    {
+      "id": "b454",
+      "type": "dialogue",
+      "text": "\"...ขอโทษนะ",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b455",
+      "type": "dialogue",
+      "text": "เราเลิกกันเถอะ\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b456",
+      "type": "dialogue",
+      "text": "\"บ้า...!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b457",
+      "type": "narration",
+      "text": "โทกิตะก็คงจะพอเดาได้"
+    },
+    {
+      "id": "b458",
+      "type": "narration",
+      "text": "เขาก็ทรุดตัวลงไปกับพื้น"
+    },
+    {
+      "id": "b459",
+      "type": "dialogue",
+      "text": "\"โอ้ โอ้ โอ้",
+      "speakerId": "classmate",
+      "speakerName": "เพื่อนร่วมชั้น"
+    },
+    {
+      "id": "b460",
+      "type": "dialogue",
+      "text": "อย่าบอกนะว่าถูกบอกเลิก!?\"",
+      "speakerId": "classmate",
+      "speakerName": "เพื่อนร่วมชั้น"
+    },
+    {
+      "id": "b461",
+      "type": "narration",
+      "text": "นักเรียนที่ดำเนินรายการ"
+    },
+    {
+      "id": "b462",
+      "type": "narration",
+      "text": "ใบหน้าแสดงความกังวล"
+    },
+    {
+      "id": "b463",
+      "type": "narration",
+      "text": "พยายามทำให้บรรยากาศสนุกสนาน"
+    },
+    {
+      "id": "b464",
+      "type": "narration",
+      "text": "ผู้ชมก็หัวเราะกันอีกครั้ง"
+    },
+    {
+      "id": "b465",
+      "type": "narration",
+      "text": "ยกเว้นคนแถวหน้า"
+    },
+    {
+      "id": "b466",
+      "type": "narration",
+      "text": "ที่สัมผัสได้ถึงบรรยากาศที่ไม่น่าไว้วางใจ"
+    },
+    {
+      "id": "b467",
+      "type": "narration",
+      "text": "โทกิตะพยายามลุกขึ้นยืน"
+    },
+    {
+      "id": "b468",
+      "type": "narration",
+      "text": "แล้วก็พูดกับอายะ"
+    },
+    {
+      "id": "b469",
+      "type": "dialogue",
+      "text": "\"...เดี๋ยวค่อยคุยกันนะ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b470",
+      "type": "dialogue",
+      "text": "กลับกันก่อน\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b471",
+      "type": "narration",
+      "text": "พูดจบเขาก็คว้ามืออายะ"
+    },
+    {
+      "id": "b472",
+      "type": "narration",
+      "text": "แล้วดึงเธอเข้าไปหลังเวที—"
+    },
+    {
+      "id": "b473",
+      "type": "narration",
+      "text": "ฉันรู้สึกคลื่นไส้เล็กน้อย"
+    },
+    {
+      "id": "b474",
+      "type": "narration",
+      "text": "กับภาพที่ไหลเข้ามา"
+    },
+    {
+      "id": "b475",
+      "type": "narration",
+      "text": "แต่สัญชาตญาณของพระเจ้า"
+    },
+    {
+      "id": "b476",
+      "type": "narration",
+      "text": "ก็ยังคงส่งความทรงจำในอนาคตเข้ามา"
+    },
+    {
+      "id": "b477",
+      "type": "narration",
+      "text": "— อายะกับโทกิตะที่เข้ามาหลังเวที"
+    },
+    {
+      "id": "b478",
+      "type": "narration",
+      "text": "ที่นั่น"
+    },
+    {
+      "id": "b479",
+      "type": "narration",
+      "text": "ฉันกำลังรออยู่"
+    },
+    {
+      "id": "b480",
+      "type": "dialogue",
+      "text": "\"…โบยัน\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b481",
+      "type": "narration",
+      "text": "โทกิตะทำหน้าตาบึ้งตึงมาก—"
+    },
+    {
+      "id": "b482",
+      "type": "narration",
+      "text": "ความทรงจำในอนาคต"
+    },
+    {
+      "id": "b483",
+      "type": "narration",
+      "text": "ยังคงดำเนินต่อไป"
+    },
+    {
+      "id": "b484",
+      "type": "narration",
+      "text": "— ที่หลังเวที"
+    },
+    {
+      "id": "b485",
+      "type": "narration",
+      "text": "ฉันเผชิญหน้ากับโทกิตะ"
+    },
+    {
+      "id": "b486",
+      "type": "dialogue",
+      "text": "\"โทกิตะ",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b487",
+      "type": "dialogue",
+      "text": "ฉัน...",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b488",
+      "type": "dialogue",
+      "text": "แย่งอายะมา\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b489",
+      "type": "narration",
+      "text": "ต่อหน้าอายะ"
+    },
+    {
+      "id": "b490",
+      "type": "narration",
+      "text": "ฉันไม่พูดขอโทษ"
+    },
+    {
+      "id": "b491",
+      "type": "narration",
+      "text": "เพราะไม่อยากให้อายะรู้สึกผิดอีก"
+    },
+    {
+      "id": "b492",
+      "type": "dialogue",
+      "text": "\"อย่ามาล้อเล่นนะ!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b493",
+      "type": "narration",
+      "text": "เสียงดัง \"ปัง\""
+    },
+    {
+      "id": "b494",
+      "type": "narration",
+      "text": "โทกิตะต่อยผนัง"
+    },
+    {
+      "id": "b495",
+      "type": "narration",
+      "text": "เขาจับฉัน แล้วพยายามจะต่อย"
+    },
+    {
+      "id": "b496",
+      "type": "dialogue",
+      "text": "\"นี่มันอะไรกัน!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b497",
+      "type": "dialogue",
+      "text": "โบยันเอ๊ย!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b498",
+      "type": "narration",
+      "text": "โทกิตะพยายามจะต่อยฉัน"
+    },
+    {
+      "id": "b499",
+      "type": "narration",
+      "text": "แต่ก็หยุดไว้"
+    },
+    {
+      "id": "b500",
+      "type": "narration",
+      "text": "เขาคงจะรู้ดีว่าทำไปก็ไร้ประโยชน์"
+    },
+    {
+      "id": "b501",
+      "type": "dialogue",
+      "text": "\"แล้วมันไม่ใช่เรื่องอะไรกัน!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b502",
+      "type": "dialogue",
+      "text": "ฉันไปทำอะไรให้!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b503",
+      "type": "dialogue",
+      "text": "ฮะ!?",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b504",
+      "type": "dialogue",
+      "text": "ทำไมต้องวันนี้!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b505",
+      "type": "dialogue",
+      "text": "นายรู้ไหมว่าฉันยุ่งแค่ไหนในฐานะคณะกรรมการจัดงาน!",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b506",
+      "type": "dialogue",
+      "text": "ฉันทำขนาดนี้เพื่ออายะแท้ๆ!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b507",
+      "type": "narration",
+      "text": "โทกิตะทุบหูและจมูกหมาป่าลงบนพื้น"
+    },
+    {
+      "id": "b508",
+      "type": "dialogue",
+      "text": "\"นี่มันบ้าบอที่สุด โบยัน!\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b509",
+      "type": "narration",
+      "text": "โทกิตะโกรธมาก"
+    },
+    {
+      "id": "b510",
+      "type": "narration",
+      "text": "เขาอาจจะรู้ตัวอยู่แล้วในใจ"
+    },
+    {
+      "id": "b511",
+      "type": "narration",
+      "text": "ว่าอายะจะบอกเลิก"
+    },
+    {
+      "id": "b512",
+      "type": "narration",
+      "text": "แต่โทกิตะตอนนี้"
+    },
+    {
+      "id": "b513",
+      "type": "narration",
+      "text": "ไม่ใช่แค่เพราะเรื่องนั้น"
+    },
+    {
+      "id": "b514",
+      "type": "narration",
+      "text": "เขาโกรธเพราะถูกทำให้ขายหน้าบนเวที"
+    },
+    {
+      "id": "b515",
+      "type": "narration",
+      "text": "แล้วก็เสียหน้า"
+    },
+    {
+      "id": "b516",
+      "type": "dialogue",
+      "text": "\"ให้ตายสิ",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b517",
+      "type": "dialogue",
+      "text": "ฉันจะไม่มีวันให้อภัย...\"",
+      "speakerId": "tokita",
+      "speakerName": "โทกิตะ"
+    },
+    {
+      "id": "b518",
+      "type": "narration",
+      "text": "อายะมองดูโทกิตะที่กำลังเสียสติ"
+    },
+    {
+      "id": "b519",
+      "type": "narration",
+      "text": "เงียบๆ"
+    },
+    {
+      "id": "b520",
+      "type": "narration",
+      "text": "อายะที่ขี้แย"
+    },
+    {
+      "id": "b521",
+      "type": "narration",
+      "text": "กลั้นน้ำตาไว้"
+    },
+    {
+      "id": "b522",
+      "type": "narration",
+      "text": "แล้วในที่สุด"
+    },
+    {
+      "id": "b523",
+      "type": "narration",
+      "text": "ก็พูดอย่างเงียบๆ"
+    },
+    {
+      "id": "b524",
+      "type": "dialogue",
+      "text": "\"ขอโทษนะโทกิตะ",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b525",
+      "type": "dialogue",
+      "text": "ฉัน...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b526",
+      "type": "dialogue",
+      "text": "ผิดเอง\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b527",
+      "type": "narration",
+      "text": "โทกิตะมองอายะที่กำลังตกใจ"
+    },
+    {
+      "id": "b528",
+      "type": "narration",
+      "text": "สายตาของเขา"
+    },
+    {
+      "id": "b529",
+      "type": "narration",
+      "text": "คล้ายกับชายโรคจิตที่เคยอยู่หน้า"
+    },
+    {
+      "id": "b530",
+      "type": "narration",
+      "text": "ร้านของเรียวจิ—"
+    },
+    {
+      "id": "b531",
+      "type": "narration",
+      "text": "— ณ จุดนั้น"
+    },
+    {
+      "id": "b532",
+      "type": "narration",
+      "text": "ฉันตัดภาพอนาคตทิ้งไป"
+    },
+    {
+      "id": "b533",
+      "type": "narration",
+      "text": "ฉันไม่ต้องการให้อายะเจอเรื่องแบบนี้"
+    },
+    {
+      "id": "b534",
+      "type": "narration",
+      "text": "ฉันจะไม่ยอมให้เธอพูดว่า \"ฉันผิดเอง\""
+    },
+    {
+      "id": "b535",
+      "type": "narration",
+      "text": "ใบหน้าของอายะที่มองโทกิตะที่กำลังโมโห"
+    },
+    {
+      "id": "b536",
+      "type": "narration",
+      "text": "ดูเจ็บปวด"
+    },
+    {
+      "id": "b537",
+      "type": "narration",
+      "text": "...ฉันจะไม่ยอมให้เธอมีสีหน้าแบบนั้นเด็ดขาด"
+    },
+    {
+      "id": "b538",
+      "type": "narration",
+      "text": "สัญชาตญาณของพระเจ้า"
+    },
+    {
+      "id": "b539",
+      "type": "narration",
+      "text": "ก็คงจะรู้ดีว่าฉันคิดแบบนั้น"
+    },
+    {
+      "id": "b540",
+      "type": "narration",
+      "text": "ดังนั้นในครั้งนี้"
+    },
+    {
+      "id": "b541",
+      "type": "narration",
+      "text": "มันจึงแสดงเป็นอนาคตที่ \"ควรหลีกเลี่ยง\" ให้ฉันเห็น"
+    },
+    {
+      "id": "b542",
+      "type": "narration",
+      "text": "เพื่อนำทางฉัน..."
+    },
+    {
+      "id": "b543",
+      "type": "narration",
+      "text": "ไปสู่ผลลัพธ์ที่ดีที่สุด"
+    },
+    {
+      "id": "b544",
+      "type": "dialogue",
+      "text": "\"— พรุ่งนี้ฉัน...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b545",
+      "type": "dialogue",
+      "text": "จะไปงานเลี้ยงตอนกลางคืนนะ",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b546",
+      "type": "dialogue",
+      "text": "จะไป",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b547",
+      "type": "dialogue",
+      "text": "แล้วจะจบเรื่องตรงนั้น\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b548",
+      "type": "narration",
+      "text": "อายะพูดประโยคเดิมซ้ำ"
+    },
+    {
+      "id": "b549",
+      "type": "narration",
+      "text": "ไม่สิ"
+    },
+    {
+      "id": "b550",
+      "type": "narration",
+      "text": "ดูเหมือนว่าจากตรงนี้ไป"
+    },
+    {
+      "id": "b551",
+      "type": "narration",
+      "text": "จะเป็นความทรงจำในอนาคตแล้ว"
+    },
+    {
+      "id": "b552",
+      "type": "narration",
+      "text": "ฉันยิ้มแล้วก็พยักหน้าให้อายะ"
+    },
+    {
+      "id": "b553",
+      "type": "dialogue",
+      "text": "\"อื้ม",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b554",
+      "type": "dialogue",
+      "text": "เข้าใจแล้ว\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b555",
+      "type": "narration",
+      "text": "ฉันตอบกลับไปแบบนั้น"
+    },
+    {
+      "id": "b556",
+      "type": "narration",
+      "text": "เพราะถ้าฉันบอกว่าไม่เป็นไรในตอนนี้"
+    },
+    {
+      "id": "b557",
+      "type": "narration",
+      "text": "อายะคงไม่ยอมรับ"
+    },
+    {
+      "id": "b558",
+      "type": "narration",
+      "text": "อายะถอนหายใจอย่างโล่งอกกับคำตอบของฉัน"
+    },
+    {
+      "id": "b559",
+      "type": "narration",
+      "text": "— อย่าปล่อยเธอไปงานเลี้ยงตอนกลางคืน"
+    },
+    {
+      "id": "b560",
+      "type": "narration",
+      "text": "— เด็ดขาด"
+    },
+    {
+      "id": "b561",
+      "type": "narration",
+      "text": "สัญชาตญาณของพระเจ้า"
+    },
+    {
+      "id": "b562",
+      "type": "narration",
+      "text": "เตือนฉัน"
+    },
+    {
+      "id": "b563",
+      "type": "narration",
+      "text": "ฉันรู้"
+    },
+    {
+      "id": "b564",
+      "type": "narration",
+      "text": "ฉันก็คิดแบบเดียวกัน"
+    },
+    {
+      "id": "b565",
+      "type": "narration",
+      "text": "ฉันจะไม่ยอมปล่อยให้อายะไปงานเลี้ยงตอนกลางคืนเด็ดขาด"
+    },
+    {
+      "id": "b566",
+      "type": "narration",
+      "text": "— นั่นแหละดีแล้ว"
+    },
+    {
+      "id": "b567",
+      "type": "narration",
+      "text": "มีเสียงหูอื้อ"
+    },
+    {
+      "id": "b568",
+      "type": "narration",
+      "text": "สัญชาตญาณส่งความทรงจำในอนาคตมาอีกครั้ง"
+    },
+    {
+      "id": "b569",
+      "type": "narration",
+      "text": "คราวนี้"
+    },
+    {
+      "id": "b570",
+      "type": "narration",
+      "text": "เป็นผลลัพธ์ที่ดีที่สุด"
+    },
+    {
+      "id": "b571",
+      "type": "narration",
+      "text": "— ในห้องเรียนยามพลบค่ำ"
+    },
+    {
+      "id": "b572",
+      "type": "narration",
+      "text": "ฉันอยู่ที่นั่น"
+    },
+    {
+      "id": "b573",
+      "type": "narration",
+      "text": "บ้านผีสิงถูกรื้อถอนไปครึ่งหนึ่งแล้ว"
+    },
+    {
+      "id": "b574",
+      "type": "narration",
+      "text": "นอกหน้าต่าง"
+    },
+    {
+      "id": "b575",
+      "type": "narration",
+      "text": "จากทางโรงยิม"
+    },
+    {
+      "id": "b576",
+      "type": "narration",
+      "text": "มีเสียงดนตรีเบาๆ และเสียงเชียร์ดังมา"
+    },
+    {
+      "id": "b577",
+      "type": "narration",
+      "text": "นักเรียนคนอื่น"
+    },
+    {
+      "id": "b578",
+      "type": "narration",
+      "text": "คงจะไปงานเลี้ยงตอนกลางคืนแล้ว"
+    },
+    {
+      "id": "b579",
+      "type": "narration",
+      "text": "ในห้องเรียนที่เหงาแบบนั้น"
+    },
+    {
+      "id": "b580",
+      "type": "narration",
+      "text": "ฉันกับอายะกำลังจูบกัน"
+    },
+    {
+      "id": "b581",
+      "type": "narration",
+      "text": "ลมหายใจของเราผสมผสานกัน"
+    },
+    {
+      "id": "b582",
+      "type": "narration",
+      "text": "ลิ้นของเราพันกัน"
+    },
+    {
+      "id": "b583",
+      "type": "narration",
+      "text": "หน้าอกของอายะสั่นขึ้นลง"
+    },
+    {
+      "id": "b584",
+      "type": "narration",
+      "text": "เสียงน้ำที่รุนแรงดังก้องไปทั่วห้องเรียน"
+    },
+    {
+      "id": "b585",
+      "type": "narration",
+      "text": "ฉันกับอายะ"
+    },
+    {
+      "id": "b586",
+      "type": "narration",
+      "text": "กำลังโหยหากันอย่างรุนแรง"
+    },
+    {
+      "id": "b587",
+      "type": "narration",
+      "text": "อายะกำลังยิ้มอย่างมีความสุข"
+    },
+    {
+      "id": "b588",
+      "type": "dialogue",
+      "text": "\"โบยัน",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b589",
+      "type": "dialogue",
+      "text": "งั้น...",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b590",
+      "type": "dialogue",
+      "text": "เจอกันพรุ่งนี้นะ\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b591",
+      "type": "narration",
+      "text": "ฉันถูกดึงกลับสู่ความเป็นจริง"
+    },
+    {
+      "id": "b592",
+      "type": "narration",
+      "text": "ด้วยเสียงของอายะ"
+    },
+    {
+      "id": "b593",
+      "type": "narration",
+      "text": "เป็นรอยยิ้มแดงก่ำเหมือนเมื่อกี้"
+    },
+    {
+      "id": "b594",
+      "type": "dialogue",
+      "text": "\"อื้ม เจอกันพรุ่งนี้\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b595",
+      "type": "dialogue",
+      "text": "\"ราตรีสวัสดิ์นะ โบยัน\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b596",
+      "type": "narration",
+      "text": "มันยังแค่ตอนเย็นนะ"
+    },
+    {
+      "id": "b597",
+      "type": "narration",
+      "text": "แต่ด้วยความรักในการนอนของอายะ"
+    },
+    {
+      "id": "b598",
+      "type": "narration",
+      "text": "มันก็เป็นคำอวยพรยามค่ำคืนที่สมเป็นเธอ"
+    },
+    {
+      "id": "b599",
+      "type": "narration",
+      "text": "ฉันยิ้มขมๆ แล้วก็ตอบกลับไป"
+    },
+    {
+      "id": "b600",
+      "type": "dialogue",
+      "text": "\"อืม ราตรีสวัสดิ์\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b601",
+      "type": "narration",
+      "text": "ฉันมองส่งอายะที่กำลังเดินเข้าบ้านอย่างอาลัยอาวรณ์"
+    },
+    {
+      "id": "b602",
+      "type": "narration",
+      "text": "แต่แล้ว"
+    },
+    {
+      "id": "b603",
+      "type": "narration",
+      "text": "อายะก็โผล่หน้าออกมาจากประตู"
+    },
+    {
+      "id": "b604",
+      "type": "dialogue",
+      "text": "\"โบยัน",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b605",
+      "type": "dialogue",
+      "text": "อย่าเป็นหวัดนะ\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b606",
+      "type": "dialogue",
+      "text": "\"อายะเองก็เหมือนกัน",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b607",
+      "type": "dialogue",
+      "text": "อย่าเผลอเปิดท้องนอนล่ะ\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b608",
+      "type": "dialogue",
+      "text": "\"ฉันไม่ได้เปิดท้องนอนซะหน่อย!\"",
+      "speakerId": "aya",
+      "speakerName": "มินะโทริ อายะ"
+    },
+    {
+      "id": "b609",
+      "type": "narration",
+      "text": "จะเปิดส่วนไหนอีก"
+    },
+    {
+      "id": "b610",
+      "type": "narration",
+      "text": "ฉันก็ยิ้มขมๆ อีกครั้ง"
+    },
+    {
+      "id": "b611",
+      "type": "narration",
+      "text": "— ครั้งนี้"
+    },
+    {
+      "id": "b612",
+      "type": "narration",
+      "text": "ประตูบ้านก็ปิดลง"
+    },
+    {
+      "id": "b613",
+      "type": "narration",
+      "text": "หลังจากนั้นไม่นาน"
+    },
+    {
+      "id": "b614",
+      "type": "narration",
+      "text": "ไฟในห้องของอายะชั้นสองก็สว่างขึ้น"
+    },
+    {
+      "id": "b615",
+      "type": "narration",
+      "text": "ฉันมองดูหน้าต่างบานนั้น"
+    },
+    {
+      "id": "b616",
+      "type": "narration",
+      "text": "อยู่ครู่หนึ่ง"
+    },
+    {
+      "id": "b617",
+      "type": "narration",
+      "text": "ที่หน้าต่าง"
+    },
+    {
+      "id": "b618",
+      "type": "narration",
+      "text": "มีตุ๊กตาลิงที่อายะวางไว้เมื่อเช้านี้"
+    },
+    {
+      "id": "b619",
+      "type": "dialogue",
+      "text": "\"…ไม่เป็นไรนะ",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b620",
+      "type": "dialogue",
+      "text": "เด็ดขาด\"",
+      "speakerId": "protagonist",
+      "speakerName": "โบยัน (ตัวเอก)"
+    },
+    {
+      "id": "b621",
+      "type": "narration",
+      "text": "ฉันพึมพำกับตุ๊กตา"
+    },
+    {
+      "id": "b622",
+      "type": "narration",
+      "text": "เหมือนกับจะบอกกับอายะ... กับตัวเอง"
+    },
+    {
+      "id": "b623",
+      "type": "narration",
+      "text": "ฉันกำหมัดแน่นในกระเป๋า"
+    },
+    {
+      "id": "b624",
+      "type": "narration",
+      "text": "ฉันถอนหายใจเบาๆ"
+    },
+    {
+      "id": "b625",
+      "type": "narration",
+      "text": "แล้วก็เดินกลับบ้าน"
     }
   ]
 }

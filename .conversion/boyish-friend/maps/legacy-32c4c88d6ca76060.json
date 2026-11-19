@@ -1,12 +1,12 @@
 {
-  "sourceSha256": "d5503af63cca82e14c916e40eb1279a01e7332e22203c8bacb4288132b9213ec",
+  "sourceSha256": "88253ab7e7eefab3d8fd592498f5a494b874f9cff4b2c1d27d7c16cc3d81fb56",
   "tokens": [
     {
       "id": "p1-1",
       "segments": [
         {
           "start": 0,
-          "end": 45,
+          "end": 16,
           "type": "narration"
         }
       ]
@@ -16,7 +16,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 38,
+          "end": 23,
           "type": "narration"
         }
       ]
@@ -26,7 +26,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 29,
+          "end": 53,
           "type": "narration"
         }
       ]
@@ -36,7 +36,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 140,
+          "end": 34,
           "type": "narration"
         }
       ]
@@ -46,7 +46,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 30,
+          "end": 27,
           "type": "narration"
         }
       ]
@@ -56,7 +56,6626 @@
       "segments": [
         {
           "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "คำว่า เฮ้อ เป็นเสียงถอนหายใจของโบยัน ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "คำในเครื่องหมายคำพูดเป็นคำพูดของอายะที่โบยันได้ยินระหว่างคุยโทรศัพท์ ถูกรายงานในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
           "end": 27,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "คำว่า คุณเรียวจิ เป็นชื่อที่แสดงบนหน้าจอโทรศัพท์ ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "คำว่า ริวจิ เป็นชื่อจริงของโบยันที่ถูกยกมาในประโยคบรรยาย ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "โบยันรับสายคุณเรียวจิและถามว่ามีอะไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "คุณเรียวจิขอโทษโบยันทางโทรศัพท์"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "คุณเรียวจิเล่าว่าพนักงานพาร์ทไทม์วันนี้มาไม่ได้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "คุณเรียวจิเล่าต่อว่าเขาเลยขอให้อายะมาช่วยกะทันหัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "คุณเรียวจิพูดต่อว่าเขารู้ว่าอายะยุ่งกับงานโรงเรียน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "คุณเรียวจิปิดประโยคว่าแขกที่จองวันนี้เยอะมาก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "โบยันถามยืนยันว่าจะให้ไปรับอายะหรือไม่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "คุณเรียวจิขอโทษโบยันอีกครั้ง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "คุณเรียวจิเสนอเลี้ยงข้าวเป็นการไถ่โทษ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "โบยันบอกว่าเป็นเรื่องเล็กน้อย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "โบยันขอข้าวเย็นเป็นการตอบรับ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "คุณเรียวจิขอบคุณโบยันเสียงดังก่อนวางสาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "ยูคาริเดินมาข้างโบยันและบอกว่ามีเศษติดผม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "โบยันอุทานงงกับคำของยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "ยูคาริบอกให้โบยันก้มลง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "ยูคาริบอกว่าเอาออกให้แล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "ยูคาริถามโบยันว่าว่างไหมหลังจากนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "โบยันตอบปฏิเสธอย่างไม่ใส่ใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p88-1",
+              "p89-1",
+              "p90-1"
+            ],
+            "reason": "ยูคาริบอกว่ามีเรื่องสำคัญเรื่องอายะอยากคุย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p89-1",
+              "p90-1",
+              "p91-1"
+            ],
+            "reason": "โบยันทวนคำว่ายูคาริจะพูดเรื่องอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p91-1",
+              "p92-1",
+              "p93-1"
+            ],
+            "reason": "ยูคาริบอกว่าใช้เวลาแค่แป๊บเดียว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1"
+            ],
+            "reason": "โบยันตกลงแต่ย้ำว่าแค่แป๊บเดียว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p99-1",
+              "p100-1",
+              "p101-1"
+            ],
+            "reason": "โบยันถามยูคาริเรื่องอายะทันทีที่ถึงร้านกาแฟ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p103-1",
+              "p104-1",
+              "p105-1"
+            ],
+            "reason": "ยูคาริถอนหายใจและทักว่าโบยันสนใจแต่อายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p104-1",
+              "p105-1",
+              "p106-1"
+            ],
+            "reason": "โบยันตอบรับสั้นๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p105-1",
+              "p106-1",
+              "p107-1"
+            ],
+            "reason": "ยูคาริถามว่าโบยันรู้ไหมว่าเธออยู่ห้องสอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p106-1",
+              "p107-1",
+              "p108-1"
+            ],
+            "reason": "โบยันตอบว่ารู้บ้าง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p110-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p111-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p112-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p111-1",
+              "p112-1",
+              "p113-1"
+            ],
+            "reason": "ยูคาริเรียกโบยันก่อนเข้าเรื่อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p113-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p112-1",
+              "p113-1",
+              "p114-1"
+            ],
+            "reason": "ยูคาริถามว่าโบยันได้รับพลังวิเศษจากพระเจ้าใช่ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p114-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p115-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p116-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p117-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p118-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p119-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p120-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p121-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p120-1",
+              "p121-1",
+              "p122-1"
+            ],
+            "reason": "ยูคาริเล่าเรื่องขากลับจากทัศนศึกษา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p122-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p121-1",
+              "p122-1",
+              "p123-1"
+            ],
+            "reason": "ยูคาริถามว่าโบยันหลับบนรถไฟชินคันเซ็นใช่ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p123-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p122-1",
+              "p123-1",
+              "p124-1"
+            ],
+            "reason": "ยูคาริบอกว่าเธอเป็นคนปลุกโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p124-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p123-1",
+              "p124-1",
+              "p125-1"
+            ],
+            "reason": "โบยันตอบรับเรื่องที่ยูคาริเล่า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p125-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p126-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p127-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p128-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p129-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p128-1",
+              "p129-1",
+              "p130-1"
+            ],
+            "reason": "ยูคาริบอกว่าเธอขอพรตอนนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p130-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p129-1",
+              "p130-1",
+              "p131-1"
+            ],
+            "reason": "โบยันถามว่าขออะไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p131-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p130-1",
+              "p131-1",
+              "p132-1"
+            ],
+            "reason": "ยูคาริสารภาพว่าเธอขอโบยันให้กับเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p132-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p131-1",
+              "p132-1",
+              "p133-1"
+            ],
+            "reason": "ยูคาริเล่าต่อว่าได้ยินเสียงบอกว่าให้แล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p133-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p132-1",
+              "p133-1",
+              "p134-1"
+            ],
+            "reason": "ยูคาริบอกว่าเธอจึงรู้ว่าโบยันได้รับพลังเดียวกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p134-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p133-1",
+              "p134-1",
+              "p135-1"
+            ],
+            "reason": "โบยันตอบรับข้อมูลสั้นๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p135-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p136-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p137-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p136-1",
+              "p137-1",
+              "p138-1"
+            ],
+            "reason": "ยูคาริเรียกโบยันแล้วเปลี่ยนไปเรียกชื่อจริงว่าริวจิคุง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p138-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p137-1",
+              "p138-1",
+              "p139-1"
+            ],
+            "reason": "ยูคาริเรียกชื่อจริงของโบยันต่อจากย่อหน้าก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p139-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p138-1",
+              "p139-1",
+              "p140-1"
+            ],
+            "reason": "โบยันถามว่าอะไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p140-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p139-1",
+              "p140-1",
+              "p141-1"
+            ],
+            "reason": "ยูคาริสารภาพว่าอยากมีอะไรกับโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p141-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p140-1",
+              "p141-1",
+              "p142-1"
+            ],
+            "reason": "ยูคาริชวนโบยันทำเรื่องนั้นกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p142-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p143-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p144-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p145-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p146-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p147-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p148-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p149-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p150-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p149-1",
+              "p150-1",
+              "p151-1"
+            ],
+            "reason": "โบยันปฏิเสธคำชวนของยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p151-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p150-1",
+              "p151-1",
+              "p152-1"
+            ],
+            "reason": "คำว่า ทำไม และ หมายความว่าไง เป็นคำถามที่ยูคาริไม่ได้ถามจริง จึงเป็นคำยกมาในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p152-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p153-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p152-1",
+              "p153-1",
+              "p154-1"
+            ],
+            "reason": "ยูคาริขอไปเดตกับโบยันแทน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p154-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p153-1",
+              "p154-1",
+              "p155-1"
+            ],
+            "reason": "โบยันปฏิเสธคำขอเดต"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p155-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p154-1",
+              "p155-1",
+              "p156-1"
+            ],
+            "reason": "ยูคาริขอแค่จับมือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p156-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p157-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p158-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p157-1",
+              "p158-1",
+              "p159-1"
+            ],
+            "reason": "โบยันปฏิเสธคำขอจับมือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p159-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p160-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p161-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p162-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p163-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p164-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p163-1",
+              "p164-1",
+              "p165-1"
+            ],
+            "reason": "ยูคาริถามว่าเธอจะบอกอายะเรื่องพลังพระเจ้าได้ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p165-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p164-1",
+              "p165-1",
+              "p166-1"
+            ],
+            "reason": "ยูคาริพูดประโยคเดิมต่อจากย่อหน้าก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p166-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p167-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p166-1",
+              "p167-1",
+              "p168-1"
+            ],
+            "reason": "โบยันอนุญาตแต่เตือนว่าอายะอาจไม่สนใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p168-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p167-1",
+              "p168-1",
+              "p169-1"
+            ],
+            "reason": "โบยันพูดประโยคเดิมต่อว่าคงลงเอยด้วยคำว่าแล้วไง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p169-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p168-1",
+              "p169-1",
+              "p170-1"
+            ],
+            "reason": "ยูคาริตอบรับอย่างยอมแพ้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p170-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p171-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p172-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p173-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p174-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p175-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p174-1",
+              "p175-1",
+              "p176-1"
+            ],
+            "reason": "คำว่า ยูคาริเป็นอะไรไป เป็นคำที่อายะอาจพูด ซึ่งโบยันคาดเดาในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p176-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p177-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p178-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p179-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p180-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p181-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p182-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p181-1",
+              "p182-1",
+              "p183-1"
+            ],
+            "reason": "ยูคาริเริ่มถามว่าใครคือพระเจ้าที่ให้พลังนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p183-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p182-1",
+              "p183-1",
+              "p184-1"
+            ],
+            "reason": "ยูคาริถามต่อว่าไม่น่ากลัวหรือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p184-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p183-1",
+              "p184-1",
+              "p185-1"
+            ],
+            "reason": "โบยันตอบยูคาริว่าไม่กลัวพระเจ้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p185-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p186-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p185-1",
+              "p186-1",
+              "p187-1"
+            ],
+            "reason": "ยูคาริบอกว่าเธอกลัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p187-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p186-1",
+              "p187-1",
+              "p188-1"
+            ],
+            "reason": "ยูคาริเดาว่าพระเจ้าอาจเป็นปีศาจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p188-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p187-1",
+              "p188-1",
+              "p189-1"
+            ],
+            "reason": "ยูคาริห่วงว่าอาจส่งผลเสียกับอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p189-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p188-1",
+              "p189-1",
+              "p190-1"
+            ],
+            "reason": "ยูคาริเสนอให้หาคำตอบด้วยกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p190-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p189-1",
+              "p190-1",
+              "p191-1"
+            ],
+            "reason": "ยูคาริบอกว่าเธอกับโบยันเป็นผู้สมรู้ร่วมคิดกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p191-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p192-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p193-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p194-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p195-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p196-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p197-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p198-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p199-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p200-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p201-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p202-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p201-1",
+              "p202-1",
+              "p203-1"
+            ],
+            "reason": "โบยันตอบสั้นๆ ว่าไม่ค่อยสนใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p203-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p202-1",
+              "p203-1",
+              "p204-1"
+            ],
+            "reason": "ยูคาริร้องโวยวายแล้วฟุบหน้าลงโต๊ะหลังโบยันตอบว่าไม่สนใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p204-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p203-1",
+              "p204-1",
+              "p205-1"
+            ],
+            "reason": "คำว่า โครม เป็นเสียงหัวของยูคาริฟุบลงโต๊ะ ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p205-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p206-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p207-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p208-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p209-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p208-1",
+              "p209-1",
+              "p210-1"
+            ],
+            "reason": "โบยันถามว่าพอแล้วใช่ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p210-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p211-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p210-1",
+              "p211-1",
+              "p212-1"
+            ],
+            "reason": "ยูคาริรีบร้องห้ามก่อนโบยันกลับ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p212-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p211-1",
+              "p212-1",
+              "p213-1"
+            ],
+            "reason": "ยูคาริชวนไปเดินเที่ยวงานโรงเรียน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p213-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p212-1",
+              "p213-1",
+              "p214-1"
+            ],
+            "reason": "ยูคาริขอแค่วันแรกและแค่แป๊บเดียว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p214-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p213-1",
+              "p214-1",
+              "p215-1"
+            ],
+            "reason": "ยูคาริสัญญาจะไม่ยุ่งกับโบยันอีก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p215-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p216-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p217-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p216-1",
+              "p217-1",
+              "p218-1"
+            ],
+            "reason": "โบยันกำลังจะปฏิเสธคำขอของยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p218-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p217-1",
+              "p218-1",
+              "p219-1"
+            ],
+            "reason": "คำว่า ไม่ได้ เป็นคำที่โบยันกำลังจะพูด ซึ่งถูกยกมาในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p219-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p220-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p221-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p222-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p223-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p224-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p223-1",
+              "p224-1",
+              "p225-1"
+            ],
+            "reason": "โบยันตอบตกลงว่าจะให้เวลาตอนเช้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p225-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p224-1",
+              "p225-1",
+              "p226-1"
+            ],
+            "reason": "ยูคาริตกใจไม่เชื่อว่าโบยันตกลง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p226-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p227-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p228-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p229-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p230-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p231-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p232-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p233-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p234-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p235-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p236-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p237-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p238-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p237-1",
+              "p238-1",
+              "p239-1"
+            ],
+            "reason": "หลังบทสนทนาจบ โบยันประกาศว่าจะไปก่อนแล้วลุกขึ้น ยูคาริจึงถามว่าจะไปไหน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p239-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p240-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p241-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p240-1",
+              "p241-1",
+              "p242-1"
+            ],
+            "reason": "ยูคาริถามโบยันว่าจะไปไหน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p242-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p241-1",
+              "p242-1",
+              "p243-1"
+            ],
+            "reason": "โบยันตอบว่าจะไปร้านพาร์ทไทม์ของอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p243-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p242-1",
+              "p243-1",
+              "p244-1"
+            ],
+            "reason": "ยูคาริพึมพำรับรู้อย่างยอมแพ้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p244-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p245-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p246-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p247-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p248-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p249-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p250-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p251-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p252-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p253-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p254-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p255-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p256-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p257-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p258-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p259-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p260-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p261-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p262-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p263-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p264-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p265-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p266-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p267-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p268-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p269-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p270-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p271-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p270-1",
+              "p271-1",
+              "p272-1"
+            ],
+            "reason": "อายะทักทายโบยันเมื่อเขาเข้าร้าน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p272-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p273-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p274-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p275-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p276-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p277-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p278-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p277-1",
+              "p278-1",
+              "p279-1"
+            ],
+            "reason": "อายะถามว่าโบยันนั่งที่เคาน์เตอร์ได้ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p279-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p280-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p281-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p282-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p283-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p284-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p285-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p286-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p287-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p286-1",
+              "p287-1",
+              "p288-1"
+            ],
+            "reason": "อายะประกาศว่าราเมนหมูชาชูมาแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p288-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p289-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p290-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p289-1",
+              "p290-1",
+              "p291-1"
+            ],
+            "reason": "คำว่า โต๊ะจอง เป็นข้อความบนป้ายที่โบยันแกะออก ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p291-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p292-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p293-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p294-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p295-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p296-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p297-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p298-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p299-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p300-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p301-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p302-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p303-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p304-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p305-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p306-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p307-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p308-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p309-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p308-1",
+              "p309-1",
+              "p310-1"
+            ],
+            "reason": "ในความทรงจำกิจวัตรที่ร้าน คุณเรียวจิชอบแซวเรื่องแต่งงานแล้วโบยันกับอายะยิ้มแหย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p310-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p311-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p312-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p313-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p314-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p315-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p316-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p317-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p318-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p319-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p320-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p321-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p320-1",
+              "p321-1",
+              "p322-1"
+            ],
+            "reason": "อายะถามโบยันว่าจะรับอะไรดี"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p322-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p323-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p324-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p325-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p326-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p327-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p328-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p329-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p330-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p331-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p332-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p333-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p334-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p335-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p336-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p337-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p338-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p339-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p340-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p339-1",
+              "p340-1",
+              "p341-1"
+            ],
+            "reason": "โบยันสั่งเกี๊ยวซ่าสองจาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p341-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p340-1",
+              "p341-1",
+              "p342-1"
+            ],
+            "reason": "โบยันสั่งราเมนทันทันต่อจากย่อหน้าก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p342-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p343-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p342-1",
+              "p343-1",
+              "p344-1"
+            ],
+            "reason": "อายะรับออเดอร์ของโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p344-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p343-1",
+              "p344-1",
+              "p345-1"
+            ],
+            "reason": "อายะตะโกนบอกออเดอร์ให้ครัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p345-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p344-1",
+              "p345-1",
+              "p346-1"
+            ],
+            "reason": "อายะบอกครัวว่าเอาแบบเดิม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p346-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p347-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p348-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p347-1",
+              "p348-1",
+              "p349-1"
+            ],
+            "reason": "คุณเรียวจิตะโกนรับออเดอร์จากครัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p349-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p350-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p351-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p352-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p353-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p354-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p355-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p356-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p357-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p358-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p359-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p360-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p361-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p360-1",
+              "p361-1",
+              "p362-1"
+            ],
+            "reason": "คุณเรียวจิขอบคุณลูกค้าที่เคาน์เตอร์"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p362-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p363-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p364-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p365-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p366-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p367-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p368-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p367-1",
+              "p368-1",
+              "p369-1"
+            ],
+            "reason": "คุณเรียวจิกระซิบถามอายะว่าเป็นอะไรไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p369-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p368-1",
+              "p369-1",
+              "p370-1"
+            ],
+            "reason": "อายะเล่าว่าลูกค้าถามว่าจะมาทำงานอีกเมื่อไหร่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p370-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p369-1",
+              "p370-1",
+              "p371-1"
+            ],
+            "reason": "คุณเรียวจิรับฟังคำตอบของอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p371-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p372-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p373-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p372-1",
+              "p373-1",
+              "p374-1"
+            ],
+            "reason": "คุณเรียวจิแจ้งอายะว่าข้าวผัดหมูจานที่สี่เสร็จแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p374-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p373-1",
+              "p374-1",
+              "p375-1"
+            ],
+            "reason": "คำว่า ค่า เป็นคำตอบของอายะที่ถูกรายงานในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p375-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p376-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p377-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p376-1",
+              "p377-1",
+              "p378-1"
+            ],
+            "reason": "ลูกค้าอีกคนเรียกพนักงานหลังชายผมทองเดินออกจากร้านไปแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p378-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p377-1",
+              "p378-1",
+              "p379-1"
+            ],
+            "reason": "คำว่า ค่า เป็นคำตอบของอายะที่ถูกรายงานในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p379-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p380-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p381-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p382-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p383-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p384-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p385-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p386-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p387-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p388-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p389-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p390-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p391-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p392-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p393-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p394-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p393-1",
+              "p394-1",
+              "p395-1"
+            ],
+            "reason": "คุณเรียวจิเรียกโบยันให้ไปช่วยในครัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p395-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p394-1",
+              "p395-1",
+              "p396-1"
+            ],
+            "reason": "โบยันตอบรับคำเรียกของคุณเรียวจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p396-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p397-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p398-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p399-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p400-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p401-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p402-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p403-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p404-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p403-1",
+              "p404-1",
+              "p405-1"
+            ],
+            "reason": "คุณเรียวจิเรียกโบยันที่หลังร้าน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p405-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p404-1",
+              "p405-1",
+              "p406-1"
+            ],
+            "reason": "คุณเรียวจิถามต่อว่าโบยันรู้จักผู้ชายคนนั้นไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p406-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p407-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p408-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p409-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p410-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p411-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p412-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p411-1",
+              "p412-1",
+              "p413-1"
+            ],
+            "reason": "โบยันตอบว่าไม่รู้จักผู้ชายผมสีทอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p413-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p412-1",
+              "p413-1",
+              "p414-1"
+            ],
+            "reason": "โบยันพูดต่อว่าอายะก็น่าจะไม่รู้จัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p414-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p413-1",
+              "p414-1",
+              "p415-1"
+            ],
+            "reason": "คุณเรียวจิรับฟังคำตอบด้วยเสียงต่ำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p415-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p416-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p417-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p418-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p419-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p420-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p419-1",
+              "p420-1",
+              "p421-1"
+            ],
+            "reason": "โบยันถามยืนยันว่าผู้ชายคนนั้นเป็นสตอล์กเกอร์ของอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p421-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p420-1",
+              "p421-1",
+              "p422-1"
+            ],
+            "reason": "คุณเรียวจิบอกว่าเขายังไม่แน่ใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p422-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p421-1",
+              "p422-1",
+              "p423-1"
+            ],
+            "reason": "คุณเรียวจิเล่าว่าผู้ชายคนนั้นมาทุกวัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p423-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p422-1",
+              "p423-1",
+              "p424-1"
+            ],
+            "reason": "คุณเรียวจิบอกว่ามาตั้งแต่วันที่อายะเริ่มทำงาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p424-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p423-1",
+              "p424-1",
+              "p425-1"
+            ],
+            "reason": "โบยันถามว่าเป็นลูกค้าประจำหรือไม่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p425-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p424-1",
+              "p425-1",
+              "p426-1"
+            ],
+            "reason": "คุณเรียวจิคิดแบบนั้นเหมือนกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p426-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p425-1",
+              "p426-1",
+              "p427-1"
+            ],
+            "reason": "คุณเรียวจิเล่าว่าผู้ชายถามอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p427-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p426-1",
+              "p427-1",
+              "p428-1"
+            ],
+            "reason": "คุณเรียวจิเล่าต่อว่าถามว่าอายะจะมาทำงานอีกเมื่อไหร่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p428-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p427-1",
+              "p428-1",
+              "p429-1"
+            ],
+            "reason": "คุณเรียวจิอุทานอย่างหงุดหงิด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p429-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p428-1",
+              "p429-1",
+              "p430-1"
+            ],
+            "reason": "คุณเรียวจิเป็นห่วงว่าอายะเพิ่งเริ่มคุ้นเคยกับลูกค้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p430-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p429-1",
+              "p430-1",
+              "p431-1"
+            ],
+            "reason": "โบยันตอบรับความกังวลของคุณเรียวจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p431-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p432-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p433-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p434-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p435-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p436-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p437-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p438-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p439-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p440-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p441-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p442-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p443-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p444-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p445-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p446-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p447-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p448-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p449-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p450-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p451-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p452-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p453-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p454-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p455-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p454-1",
+              "p455-1",
+              "p456-1"
+            ],
+            "reason": "คุณเรียวจิอธิบายว่าถ้าเรื่องใหญ่ขึ้นอายะจะกลัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p456-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p455-1",
+              "p456-1",
+              "p457-1"
+            ],
+            "reason": "คุณเรียวจิพูดประโยคเดิมต่อจากย่อหน้าก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p457-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p458-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p459-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p460-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p461-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p462-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p461-1",
+              "p462-1",
+              "p463-1"
+            ],
+            "reason": "โบยันขออนุญาตไปคุยกับผู้ชายคนนั้นแทน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p463-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p462-1",
+              "p463-1",
+              "p464-1"
+            ],
+            "reason": "คุณเรียวจิห้ามโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p464-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p463-1",
+              "p464-1",
+              "p465-1"
+            ],
+            "reason": "คุณเรียวจิบอกให้โบยันรออายะที่ร้าน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p465-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p464-1",
+              "p465-1",
+              "p466-1"
+            ],
+            "reason": "คุณเรียวจิอธิบายว่านี่คือเหตุผลที่เรียกโบยันออกมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p466-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p465-1",
+              "p466-1",
+              "p467-1"
+            ],
+            "reason": "คุณเรียวจิบอกว่าเขาจะไปคุยเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p467-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p466-1",
+              "p467-1",
+              "p468-1"
+            ],
+            "reason": "โบยันแย้งว่าถ้าคุณเรียวจิไปคุยที่หน้าร้าน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p468-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p467-1",
+              "p468-1",
+              "p469-1"
+            ],
+            "reason": "โบยันพูดต่อว่าจะโดดเด่นเกินไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p469-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p468-1",
+              "p469-1",
+              "p470-1"
+            ],
+            "reason": "โบยันสรุปว่าอายะจะกังวล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p470-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p469-1",
+              "p470-1",
+              "p471-1"
+            ],
+            "reason": "คุณเรียวจิยอมรับว่าโบยันพูดถูก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p471-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p472-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p473-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p474-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p475-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p474-1",
+              "p475-1",
+              "p476-1"
+            ],
+            "reason": "โบยันบอกว่าไม่เป็นไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p476-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p475-1",
+              "p476-1",
+              "p477-1"
+            ],
+            "reason": "โบยันขอให้คุณเรียวจิให้เขาจัดการ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p477-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p476-1",
+              "p477-1",
+              "p478-1"
+            ],
+            "reason": "โบยันบอกว่าถ้าไม่โอเค"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p478-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p477-1",
+              "p478-1",
+              "p479-1"
+            ],
+            "reason": "โบยันบอกว่าจะเรียกคุณเรียวจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p479-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p480-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p481-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p482-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p483-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p484-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p485-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p486-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p485-1",
+              "p486-1",
+              "p487-1"
+            ],
+            "reason": "คุณเรียวจิยอมตกลงอย่างลังเล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p487-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p486-1",
+              "p487-1",
+              "p488-1"
+            ],
+            "reason": "คุณเรียวจิถามว่าเขาฝากโบยันได้ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p488-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p487-1",
+              "p488-1",
+              "p489-1"
+            ],
+            "reason": "คุณเรียวจิบอกว่าถ้าผู้ชายคุยไม่รู้เรื่อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p489-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p488-1",
+              "p489-1",
+              "p490-1"
+            ],
+            "reason": "คุณเรียวจิบอกให้พยายามคุยไปเรื่อยๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p490-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p489-1",
+              "p490-1",
+              "p491-1"
+            ],
+            "reason": "คุณเรียวจิบอกให้โบยันแอบโทรหาเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p491-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p492-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p493-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p494-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p495-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p496-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p495-1",
+              "p496-1",
+              "p497-1"
+            ],
+            "reason": "โบยันตอบรับคำฝากของคุณเรียวจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p497-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p496-1",
+              "p497-1",
+              "p498-1"
+            ],
+            "reason": "โบยันถามว่าจะบอกอายะว่ารอด้านนอกได้ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p498-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p497-1",
+              "p498-1",
+              "p499-1"
+            ],
+            "reason": "คุณเรียวจิเตือนให้โบยันระวังตัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p499-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p498-1",
+              "p499-1",
+              "p500-1"
+            ],
+            "reason": "คุณเรียวจิห้ามไม่ให้ยั่วโมโหผู้ชายคนนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p500-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p499-1",
+              "p500-1",
+              "p501-1"
+            ],
+            "reason": "คุณเรียวจิห้ามขู่ว่าจะเรียกตำรวจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p501-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p500-1",
+              "p501-1",
+              "p502-1"
+            ],
+            "reason": "คุณเรียวจิห้ามต่อยเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p502-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p501-1",
+              "p502-1",
+              "p503-1"
+            ],
+            "reason": "คุณเรียวจิบอกว่าไม่งั้นเขาอาจโกรธ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p503-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p502-1",
+              "p503-1",
+              "p504-1"
+            ],
+            "reason": "คุณเรียวจิบอกให้ถอยอย่างนุ่มนวล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p504-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p503-1",
+              "p504-1",
+              "p505-1"
+            ],
+            "reason": "คุณเรียวจิถามว่าโบยันเข้าใจไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p505-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p504-1",
+              "p505-1",
+              "p506-1"
+            ],
+            "reason": "โบยันรับปากว่าจะทำตาม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p506-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p507-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p506-1",
+              "p507-1",
+              "p508-1"
+            ],
+            "reason": "คุณเรียวจิทิ้งท้ายเรื่องขนาดตัวของโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p508-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "riuji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p507-1",
+              "p508-1",
+              "p509-1"
+            ],
+            "reason": "คุณเรียวจิพูดต่อว่าผู้ชายคงไม่ทำร้ายโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p509-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p510-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p511-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p512-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p513-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p514-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p515-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
           "type": "narration"
         }
       ]

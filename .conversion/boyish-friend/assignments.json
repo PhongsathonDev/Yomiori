@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "novelId": "boyish-friend",
+  "scope": "repair nine truncated chapters",
+  "workers": [
+    "mapper-a",
+    "mapper-b",
+    "mapper-c"
+  ],
+  "reviewer": "reviewer-1",
+  "sources": [
+    {
+      "sourceId": "legacy-c98c805e673c9c10",
+      "file": "Ch_14.md",
+      "chapterNo": "14",
+      "outputId": "ch-14",
+      "worker": "mapper-a",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "21016b368adbda9c00e5c0e8ec8c4aedd64392f0e925f02d4cf5bd506d36c22d",
+      "reviewerResult": "PASS"
+    },
+    {
+      "sourceId": "legacy-efee08edde80d26d",
+      "file": "Ch_18.md",
+      "chapterNo": "18",
+      "outputId": "ch-18",
+      "worker": "mapper-a",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "fbbfe3da3b804daf189984ce440d8e33120d2378e0a31b7a60647ca26e3a47ef",
+      "reviewerResult": "PASS"
+    },
+    {
+      "sourceId": "legacy-32c4c88d6ca76060",
+      "file": "Ch_21.md",
+      "chapterNo": "21",
+      "outputId": "ch-21",
+      "worker": "mapper-a",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "e1b70193f3bb909ed65bd54d06018a66a2c87c87260c3a2f69a0e9777a68adbd",
+      "reviewerResult": "PASS"
+    },
+    {
+      "sourceId": "legacy-e2f987ce36962166",
+      "file": "Ch_22.md",
+      "chapterNo": "22",
+      "outputId": "ch-22",
+      "worker": "mapper-b",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "e1e0d2188c0e98c06e87ceed566f47ffd8bc3c42c03f2d9f54cf8975fc582f04",
+      "reviewerResult": "PASS"
+    },
+    {
+      "sourceId": "legacy-8b983e22f80affac",
+      "file": "Ch_26.md",
+      "chapterNo": "26",
+      "outputId": "ch-26",
+      "worker": "mapper-b",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "58084a84fc731d8c3b5f51ba91bee061607f5af06d3fcd188a90b1335ab20f65",
+      "reviewerResult": "PASS"
+    },
+    {
+      "sourceId": "legacy-373c8b0f48eaa949",
+      "file": "Ch_27.md",
+      "chapterNo": "27",
+      "outputId": "ch-27",
+      "worker": "mapper-b",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "5387da59c4bbf2f7a06847a5d2e3fbee77cf09601db61473a6304b67fa4d5de6",
+      "reviewerResult": "PASS"
+    },
+    {
+      "sourceId": "legacy-c03efe471251cb6e",
+      "file": "Ch_29.md",
+      "chapterNo": "29",
+      "outputId": "ch-29",
+      "worker": "mapper-c",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "3a63938295204b56157614797dfc85bec9a7870209cdb6503fadcf1390fe9b60",
+      "reviewerResult": "PASS"
+    },
+    {
+      "sourceId": "legacy-075288c60b9a7d9b",
+      "file": "Ch_54.md",
+      "chapterNo": "54",
+      "outputId": "ch-54",
+      "worker": "mapper-c",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "8b4ad035c77493d8e40c27b4e8d8c7a9d026c4e936a80e0cffa10c6c619acdfe",
+      "reviewerResult": "PASS"
+    },
+    {
+      "sourceId": "legacy-a175f086d7580d90",
+      "file": "Ch_87.md",
+      "chapterNo": "87",
+      "outputId": "ch-87",
+      "worker": "mapper-c",
+      "reviewer": "reviewer-1",
+      "status": "reviewed",
+      "mapSha256": "1978018eef279090761873ddceb18578628fc68cb50f1f059e608eec4ba65fe7",
+      "reviewerResult": "PASS"
+    }
+  ]
+}

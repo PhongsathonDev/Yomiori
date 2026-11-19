@@ -1,12 +1,12 @@
 {
-  "sourceSha256": "a82dee945eb895f1869a8a703dde04fd3ade31a1b84a4d178c33c56c9dae92f2",
+  "sourceSha256": "3a764706ae0fc1856044a7c1b42d74817a2d9bc613801c5c3cf924b2961b943f",
   "tokens": [
     {
       "id": "p1-1",
       "segments": [
         {
           "start": 0,
-          "end": 45,
+          "end": 63,
           "type": "narration"
         }
       ]
@@ -16,8 +16,18 @@
       "segments": [
         {
           "start": 0,
-          "end": 38,
-          "type": "narration"
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "อายะรายงานชิบาซากิว่าส่งแขกเสร็จแล้ว ตาม p1-1 และ p3-1 ที่ระบุว่าเธอคือคนที่เรียกจากด้านหลัง"
+          }
         }
       ]
     },
@@ -26,7 +36,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 76,
+          "end": 126,
           "type": "narration"
         }
       ]
@@ -36,8 +46,18 @@
       "segments": [
         {
           "start": 0,
-          "end": 90,
-          "type": "narration"
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ชิบาซากิเป็นผู้เล่าและเป็นคนพูดกับอายะ ตาม p5-1 ที่อายะเรียกเขาว่าชิบาซากิซัง"
+          }
         }
       ]
     },
@@ -46,8 +66,18 @@
       "segments": [
         {
           "start": 0,
-          "end": 34,
-          "type": "narration"
+          "end": 67,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "อายะตอบชิบาซากิว่าไม่เป็นไรและถามกลับ ต่อคำเสนอให้ไปพักใน p4-1"
+          }
         }
       ]
     },
@@ -56,7 +86,2715 @@
       "segments": [
         {
           "start": 0,
+          "end": 111,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ชิบาซากิอธิบายว่าเขาต้องเตรียมงานปาร์ตี้รอบต่อไป ต่อคำถามของอายะใน p5-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "อายะขอตัวไปพัก ต่อคำอธิบายของชิบาซากิใน p6-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 102,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 78,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 147,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 74,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "รุ่นน้องชายชวนชิบาซากิคุยเรื่องพนักงานพาร์ทไทม์คนใหม่ ตาม p13-1 ที่ระบุว่าชิบาซากิไปดื่มกับพนักงาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ชิบาซากิตอบรุ่นน้องเรื่องพนักงานใหม่ ต่อคำชวนใน p14-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "รุ่นน้องชายแก้คำว่าตนหมายถึงสเปกของตัวเอง ต่อคำตอบของชิบาซากิใน p15-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 101,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "รุ่นน้องชายพูดตรงๆ เรื่องหน้าอกของอายะ หลัง p17-1 ที่บรรยายว่าเด็กหนุ่มมหาวิทยาลัยสนใจเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ชิบาซากิถามยืนยันทวนคำเรื่องหน้าอก ต่อคำพูดของรุ่นน้องใน p18-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 154,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "รุ่นน้องชายอธิบายว่าชิบาซากิชอบหุ่นเพรียวจึงไม่ทันสังเกต ต่อคำถามใน p19-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 119,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "รุ่นน้องชายบรรยายความน่ารักของอายะต่อ ตาม p20-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 110,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "รุ่นน้องชายเสนอวิธีเริ่มจีบอายะ ต่อคำพูดใน p21-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ชิบาซากิพูดเรียบๆ ว่าอายะมีแฟนแล้ว หลัง p22-1 ที่รุ่นน้องวางแผนจีบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "รุ่นน้องชายถามว่าชิบาซากิรู้ได้อย่างไร ตาม p24-1 ที่บอกว่าพวกรุ่นน้องตกใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชิบาซากิตอบว่าเป็นแค่ความรู้สึก ต่อคำถามของรุ่นน้องใน p25-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "รุ่นน้องชายบ่นว่ามิน่าล่ะชิบาซากิถึงไม่สนใจอายะจัง ต่อคำตอบใน p26-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 78,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 145,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ชิบาซากิพูดถึงสเปกผู้หญิงอายุมากกว่า หลัง p28-1 ที่เขารำคาญรุ่นน้อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "รุ่นน้องชายสรุปว่าชิบาซากิไม่มีแฟนจริงจัง ต่อคำพูดใน p29-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "รุ่นน้องชายแซวว่าชิบาซากิเป็นเพลย์บอย ต่อคำพูดใน p30-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ชิบาซากิอุทานเฮ้ยต่อคำแซวของรุ่นน้องใน p31-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 83,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 216,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ชิบาซากิย้ำว่าชอบผู้หญิงที่ดูเป็นผู้ใหญ่และเซ็กซี่แบบพี่สาว หลัง p33-1 ถึง p34-1 ที่เขานึกถึงอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "รุ่นน้องชายแซวว่าชิบาซากิกำลังงอน ต่อคำพูดใน p35-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชิบาซากิอุทานเฮ้ยต่อคำแซวใน p36-1 ก่อน p38-1 ที่เขาสับมือลงหัวรุ่นน้อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "รุ่นน้องชายประกาศว่าจะไม่ยอมแพ้ หลัง p38-1 ที่ชิบาซากิสับหัวเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ชิบาซากิถามว่ารุ่นน้องหมายถึงมินะโทริซังหรือและเตือนว่าไม่รู้จักนิสัยเธอดี ต่อคำประกาศใน p39-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "รุ่นน้องชายยืนยันจะเกาะติดอายะจังต่อไปจนกว่าจะรู้ว่าเธอมีแฟน ต่อคำเตือนของชิบาซากิใน p40-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 163,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 162,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "คำว่า ใช่ค่ะ มีแล้วค่ะ เป็นคำตอบของอายะที่ถูกรายงานผ่านว่า ในประโยคบรรยาย ไม่ใช่บทพูดตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 143,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 112,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ชิบาซากิถามชายที่มาช่วยงานว่าเป็นแฟนมินะโทริซังหรือเปล่า ตาม p44-1 ถึง p46-1 ที่อายะพาเขา มา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "โบยันตอบรับสั้นๆ ว่าครับ ต่อคำถามของชิบาซากิใน p47-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 147,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 110,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 236,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 78,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "รุ่นน้องชายถามชิบาซากิยืนยันว่าชายคนนั้นเป็นแฟนมินะโทริซัง ตาม p51-1 ถึง p52-1 ที่บรรยายคู่รัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชิบาซากิยืนยันว่าใช่แล้ว ต่อคำถามของรุ่นน้องใน p53-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 90,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "รุ่นน้องชายพูดจาลามกเรื่องอายะกับแฟน ต่อคำยืนยันของชิบาซากิใน p54-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชิบาซากิตอบอย่างไม่แน่ใจว่าคงไม่หรอก ต่อคำพูดของรุ่นน้องใน p55-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "รุ่นน้องชายเถียงว่าอายะใส่แหวน ต่อคำตอบของชิบาซากิใน p56-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ชิบาซากิว่าทั้งคู่ดูเป็นพวกสงวนท่าที ต่อคำเถียงเรื่องแหวนใน p57-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "รุ่นน้องชายพูดต่อว่าถ้าอายะทำเรื่องแบบนั้นจริงเขาคงช็อก ต่อคำพูดของชิบาซากิใน p58-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 91,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ชิบาซากิเตือนรุ่นน้องที่เรียกอายะจังลับหลังว่าคล้ายสตอล์กเกอร์ ต่อคำพูดใน p59-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 143,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 139,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "part-time-girl",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "พนักงานพาร์ทไทม์หญิงวิ่งมาเรียกชิบาซากิถามหามินะโทริซัง ตาม p61-1 ถึง p62-1 ที่ชิบาซากิออกตามหาอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "ชิบาซากิตอบพนักงานหญิงว่าเพิ่งบอกให้อายะไปพัก ต่อคำถามใน p63-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "part-time-girl",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "พนักงานหญิงแจ้งว่ามีแขกมาถึงก่อนเวลา ต่อคำตอบของชิบาซากิใน p65-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "ชิบาซากิบอกว่าจะไปเรียกอายะให้เอง ต่อคำแจ้งของพนักงานหญิงใน p66-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 85,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 207,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "ชิบาซากิเรียกอายะให้ตื่นเพราะถึงเวลาแล้ว ตาม p68-1 ถึง p69-1 ที่เขาเดินมาถึงห้องพัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "อายะส่งเสียงงัวเงียตอบชิบาซากิที่ปลุก ตาม p70-1 ถึง p71-1 ที่เขาเรียกเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 210,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "อายะพึมพำคำว่าคุณแฟนในขณะหลับ ตาม p75-1 ที่ริมฝีปากเธอคลี่ยิ้ม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "เสียงกลืนน้ำลาย อึ่ก ของชิบาซากิเป็นเสียงประกอบฉากในประโยคบรรยาย ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 98,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "ชื่อ ริวจิคุง บนหน้าจอโทรศัพท์เป็นข้อความที่ปรากฏบนจอ ไม่ใช่คำพูดของตัวละคร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p83-1",
+              "p84-1"
+            ],
+            "reason": "อายะส่งเสียงงัวเงียเมื่อเริ่มรู้สึกตัว ตาม p81-1 ถึง p82-1 ที่โทรศัพท์ดัง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 112,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "อายะรับโทรศัพท์เรียกชื่อโบยันอย่างสับสน ตาม p84-1 ที่ชิบาซากิออกจากห้องและได้ยินเสียงเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 95,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 96,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1",
+              "p88-1"
+            ],
+            "reason": "อายะคุยโทรศัพท์กับโบยันต่อ ตาม p85-1 ที่เธอเรียกชื่อเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 74,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p87-1",
+              "p88-1",
+              "p89-1",
+              "p90-1"
+            ],
+            "reason": "อายะคุยโทรศัพท์ต่อและบอกว่าอยู่คนเดียว ตาม p87-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p90-1",
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "อายะอุทานหาเมื่อได้ยินบางอย่างทางโทรศัพท์ ตาม p92-1 ที่บอกว่าเธอเปล่งเสียงออกมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "อายะกระซิบสารภาพรักทางโทรศัพท์ หลัง p92-1 ถึง p93-1 ที่เงียบไปชั่วขณะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p97-1",
+              "p98-1",
+              "p99-1"
+            ],
+            "reason": "ชิบาซากิอุทานว่าอุ๊ยแย่แล้ว หลัง p95-1 ถึง p97-1 ที่เขาฟังอายะสารภาพรัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "part-time-girl",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1",
+              "p99-1",
+              "p100-1"
+            ],
+            "reason": "พนักงานหญิงเรียกชิบาซากิถามหามินะโทริซังอีกครั้ง ตาม p100-1 ที่ระบุว่าเธอถูกเรียก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 150,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p99-1",
+              "p100-1",
+              "p101-1",
+              "p102-1"
+            ],
+            "reason": "ชิบาซากิบอกให้เงียบและบอกว่าห้องพักยังไม่ว่าง ต่อคำถามของพนักงานหญิงใน p99-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "part-time-girl",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p101-1",
+              "p102-1",
+              "p103-1"
+            ],
+            "reason": "พนักงานหญิงถามว่าห้องพักเป็นอะไร ต่อคำตอบของชิบาซากิใน p101-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 72,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p103-1",
+              "p104-1",
+              "p105-1"
+            ],
+            "reason": "อายะโผล่ออกมาจากห้องและขอบคุณชิบาซากิ ตาม p103-1 ถึง p105-1 ที่เธอเดินออกมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 181,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p105-1",
+              "p106-1",
+              "p107-1"
+            ],
+            "reason": "คำว่า อ้อ เข้าใจแล้วค่ะ เป็นคำพูดของเด็กผู้หญิงคนนั้นที่ถูกรายงานผ่านว่า ในประโยคบรรยาย ไม่ใช่บทพูดตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "dialogue",
+          "speakerId": "part-time-girl",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p106-1",
+              "p107-1",
+              "p108-1"
+            ],
+            "reason": "พนักงานหญิงทักอายะว่าหน้าแดงและถามว่าไม่เป็นไรไหม ตาม p106-1 ที่เธอคุยกับอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p107-1",
+              "p108-1",
+              "p109-1",
+              "p110-1"
+            ],
+            "reason": "อายะตอบพนักงานหญิงว่าคงไม่แดง ต่อคำทักใน p107-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p110-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "part-time-girl",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p109-1",
+              "p110-1",
+              "p111-1"
+            ],
+            "reason": "พนักงานหญิงแซวว่าอายะน่ารักเหมือนแอปเปิลแก้มแดง ต่อคำตอบของอายะใน p109-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p111-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p110-1",
+              "p111-1",
+              "p112-1"
+            ],
+            "reason": "อายะแก้ตัวว่าเพิ่งตื่นนอน ต่อคำแซวของพนักงานหญิงใน p110-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p112-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p113-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 101,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p114-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p113-1",
+              "p114-1",
+              "p115-1"
+            ],
+            "reason": "อายะถามชิบาซากิว่ากำลังจะกลับบ้านแล้วเหรอ ตาม p113-1 ที่ทั้งคู่เดินออกไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p115-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 223,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p116-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p114-1",
+              "p115-1",
+              "p116-1",
+              "p117-1"
+            ],
+            "reason": "ชิบาซากิตอบอายะว่าวันนี้เลิกงานเร็ว ต่อคำถามใน p114-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p117-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p118-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 191,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p119-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 239,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p120-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p121-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p122-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p121-1",
+              "p122-1",
+              "p123-1"
+            ],
+            "reason": "อายะถามชิบาซากิเรื่องจักรยานและบอกว่าตัวเองนั่งรถบัส ตาม p121-1 ที่ทั้งคู่ออกมาข้างนอก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p123-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p122-1",
+              "p123-1",
+              "p124-1"
+            ],
+            "reason": "ชิบาซากิรับคำและเริ่มพูดกับอายะ ต่อคำบอกของเธอใน p122-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p124-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p123-1",
+              "p124-1",
+              "p125-1"
+            ],
+            "reason": "อายะเรียกโบยันเมื่อเห็นเขา ตาม p125-1 ที่บอกว่าเธอมองไปทางอื่น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p125-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 149,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p126-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 133,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p127-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p126-1",
+              "p127-1",
+              "p128-1"
+            ],
+            "reason": "อายะถามโบยันเรื่องงาน หลัง p126-1 ที่เธอวิ่งไปหาเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p128-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p129-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p127-1",
+              "p128-1",
+              "p129-1",
+              "p130-1"
+            ],
+            "reason": "โบยันตอบอายะว่าเสร็จงานเร็วและมารับเธอ ต่อคำถามใน p127-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p130-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p129-1",
+              "p130-1",
+              "p131-1"
+            ],
+            "reason": "อายะถามโบยันว่ารออยู่ตรงนี้ตลอดเลยเหรอ ต่อคำตอบของเขาใน p129-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p131-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p132-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p130-1",
+              "p131-1",
+              "p132-1",
+              "p133-1"
+            ],
+            "reason": "โบยันตอบอายะเรื่องถุงทรายร้อน ต่อคำถามของเธอใน p130-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p133-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 117,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p132-1",
+              "p133-1",
+              "p134-1"
+            ],
+            "reason": "เสียง อืม ที่อายะส่งออกมาถูกรายงานในประโยคบรรยาย ไม่ใช่บทพูดตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p134-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p135-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p136-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p134-1",
+              "p135-1",
+              "p136-1",
+              "p137-1"
+            ],
+            "reason": "โบยันขอบคุณชิบาซากิที่ดูแลอายะ หลัง p134-1 ถึง p135-1 ที่เขาหันมามองชิบาซากิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p137-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p138-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 147,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p139-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p136-1",
+              "p138-1",
+              "p139-1",
+              "p140-1"
+            ],
+            "reason": "โบยันถามชิบาซากิว่าเป็นเพื่อนร่วมงานของอายะใช่ไหมและขอบคุณ ต่อคำทักใน p136-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p140-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p139-1",
+              "p140-1",
+              "p141-1"
+            ],
+            "reason": "ชิบาซากิตอบโบยันว่าช่วยตอนมาทำแทนเฉยๆ ต่อคำถามของเขาใน p139-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p141-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 127,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p142-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p141-1",
+              "p142-1",
+              "p143-1"
+            ],
+            "reason": "ชิบาซากิถามโบยันว่าอายุน้อยกว่าใช่ไหม หลัง p141-1 ที่บรรยายรอยยิ้มกดดันของโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p143-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p142-1",
+              "p143-1",
+              "p144-1"
+            ],
+            "reason": "โบยันตอบว่าใช่และเรียนปีเดียวกับอายะ ต่อคำถามของชิบาซากิใน p142-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p144-1",
+      "segments": [
+        {
+          "start": 0,
           "end": 17,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p143-1",
+              "p144-1",
+              "p145-1"
+            ],
+            "reason": "ชิบาซากิรับคำอย่างครุ่นคิด ต่อคำตอบของโบยันใน p143-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p145-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p146-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p145-1",
+              "p146-1",
+              "p147-1"
+            ],
+            "reason": "โบยันยื่นของฝากให้ชิบาซากิ ตาม p145-1 ที่ชิบาซากิสงสัยในรังสีข่มขู่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p147-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p146-1",
+              "p147-1",
+              "p148-1"
+            ],
+            "reason": "อายะโผล่มาข้างโบยันและอุทานลังเดอชา ตาม p148-1 ที่บอกว่าเธอโผล่มาข้างแฟน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p148-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 82,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p149-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 153,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p150-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p147-1",
+              "p149-1",
+              "p150-1",
+              "p151-1"
+            ],
+            "reason": "ชิบาซากิทวนคำว่าลังเดอชาอย่างสงสัย ต่อคำอุทานของอายะใน p147-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p151-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p150-1",
+              "p151-1",
+              "p152-1"
+            ],
+            "reason": "โบยันอธิบายว่าได้มาจากที่ทำงาน ต่อคำทวนของชิบาซากิใน p150-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p152-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p151-1",
+              "p152-1",
+              "p153-1"
+            ],
+            "reason": "ชิบาซากิบอกว่าทุกคนชอบของหวานคงไม่มีปัญหา ต่อคำอธิบายของโบยันใน p151-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p153-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p152-1",
+              "p153-1",
+              "p154-1"
+            ],
+            "reason": "โบยันบอกว่าดีใจที่ได้ยินแบบนั้น ต่อคำตอบของชิบาซากิใน p152-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p154-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 194,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p155-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p156-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p154-1",
+              "p155-1",
+              "p156-1",
+              "p157-1"
+            ],
+            "reason": "ชิบาซากิลาทั้งสองคนก่อนกลับ หลัง p154-1 ถึง p155-1 ที่เขารู้สึกเอ็นดูและหวาดกลัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p157-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p158-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p159-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p158-1",
+              "p159-1",
+              "p160-1"
+            ],
+            "reason": "รุ่นน้องชายถามชิบาซากิว่าผู้ชายที่อยู่กับมินะโทริซังคือแฟนเธอหรือคนอื่น ตาม p158-1 ที่เขายืนรอในโถง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p160-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p159-1",
+              "p160-1",
+              "p161-1"
+            ],
+            "reason": "ชิบาซากิตอบรุ่นน้องว่าใช่และบอกว่าได้ของฝากมาด้วย ต่อคำถามใน p159-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p161-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p162-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p161-1",
+              "p162-1",
+              "p163-1"
+            ],
+            "reason": "รุ่นน้องชายถามต่อว่าชิบาซากิคุยอะไรกับแฟนเธอ ตาม p161-1 ที่ชิบาซากิยื่นคุกกี้ให้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p163-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p162-1",
+              "p163-1",
+              "p164-1"
+            ],
+            "reason": "ชิบาซากิตอบว่าแค่ทักทายกันเฉยๆ ต่อคำถามของรุ่นน้องใน p162-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p164-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p163-1",
+              "p164-1",
+              "p165-1"
+            ],
+            "reason": "รุ่นน้องชายสังเกตว่าชิบาซากิดูเหนื่อยมากสำหรับคนที่แค่ทักทาย ต่อคำตอบใน p163-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p165-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p164-1",
+              "p165-1",
+              "p166-1"
+            ],
+            "reason": "ชิบาซากิอ้อมแอ้มตอบอ่า ต่อคำทักของรุ่นน้องใน p164-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p166-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 152,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p167-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p166-1",
+              "p167-1",
+              "p168-1"
+            ],
+            "reason": "ชิบาซากิเตือนรุ่นน้องว่าอย่าไปยุ่งกับมินะโทริซัง ตาม p166-1 ที่เขาตัดสินใจบอกเรื่องนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p168-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p167-1",
+              "p168-1",
+              "p169-1"
+            ],
+            "reason": "รุ่นน้องชายถามว่าทำไมจู่ๆ ถึงพูดแบบนั้น ต่อคำเตือนของชิบาซากิใน p167-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p169-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p168-1",
+              "p169-1",
+              "p170-1"
+            ],
+            "reason": "ชิบาซากิย้ำให้อยู่ห่างจากอายะและเริ่มเล่าว่าจะเกิดอะไรขึ้น ต่อคำถามของรุ่นน้องใน p168-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p170-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p171-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p172-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p170-1",
+              "p171-1",
+              "p172-1",
+              "p173-1"
+            ],
+            "reason": "ชิบาซากิสรุปว่าจะกลายเป็นเรื่องยุ่งยาก ต่อจาก p170-1 ถึง p171-1 ที่เขานึกถึงแฟนของอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p173-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 65,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p174-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 134,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p175-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p173-1",
+              "p174-1",
+              "p175-1",
+              "p176-1"
+            ],
+            "reason": "ชิบาซากิพึมพำว่าบางทีเขาก็ควรหาแฟนบ้าง หลัง p173-1 ถึง p174-1 ที่เขานึกภาพคู่รัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p176-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "part-time-junior",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p175-1",
+              "p176-1",
+              "p177-1"
+            ],
+            "reason": "รุ่นน้องชายถามว่ากลับบ้านได้หรือยัง ต่อคำพึมพำของชิบาซากิใน p175-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p177-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "shibazaki",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p176-1",
+              "p177-1",
+              "p178-1"
+            ],
+            "reason": "ชิบาซากิบอกให้รอและอย่าเพิ่งกวน ต่อคำถามของรุ่นน้องใน p176-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p178-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 117,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p179-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
           "type": "narration"
         }
       ]

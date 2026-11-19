@@ -1,12 +1,12 @@
 {
-  "sourceSha256": "586d55cf3f88ba5f72886696f9207de72a5007571ec1dc326bfe173811ad4c2e",
+  "sourceSha256": "7ad71e95dc9e8d428ccddeac2c3bb1e271fa883e4902ab1d8fe89fa2f771a503",
   "tokens": [
     {
       "id": "p1-1",
       "segments": [
         {
           "start": 0,
-          "end": 45,
+          "end": 31,
           "type": "narration"
         }
       ]
@@ -16,7 +16,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 38,
+          "end": 51,
           "type": "narration"
         }
       ]
@@ -26,7 +26,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 18,
+          "end": 30,
           "type": "narration"
         }
       ]
@@ -36,7 +36,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 12,
+          "end": 25,
           "type": "narration"
         }
       ]
@@ -46,7 +46,5709 @@
       "segments": [
         {
           "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ยูคาริเอ่ยถามโบยันเรื่องเสื้อยืดบ้านผีสิง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p5-1 ที่ยูคาริถามว่าโบยันไม่ใส่เสื้อยืดหรือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "โบยันตอบว่าอ๋อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p7-1 ที่โบยันบอกว่าตัวเองไม่ได้ซื้อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ยูคาริบอกว่าเธอเข้าใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p10-1 ที่ยูคาริเปรียบเทียบความรู้สึกของตัวเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p11-1 ที่ยูคาริถามว่าโบยันก็ไม่ชอบเหมือนกันใช่ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "โบยันตอบว่าปล่าวหรอก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ยูคาริอุทานหืมเมื่อโบยันตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "ยูคาริบอกว่าเธอใส่เสื้อยืดไว้ข้างใน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p17-1 ที่ยูคาริถามว่าอยากดูไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "โบยันปฏิเสธอย่างเบา ๆ ว่าไม่เป็นไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ยูคาริรับคำสั้น ๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "หญิงร้านยากิโซบะตะโกนเรียกยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p28-1 ที่หญิงร้านชวนแวะกินยากิโซบะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p29-1 ที่หญิงร้านถามว่ากำลังเดทกันอยู่หรือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "คำว่า \"อ๋อ\" เป็นคำพูดสั้น ๆ ของหญิงร้านยากิโซบะที่ถูกยกมาหลังคำว่าพูดว่า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "หญิงร้านทักโบยันว่าเป็นใคร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p34-1 ที่หญิงร้านรู้จักโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p35-1 ที่หญิงร้านบอกว่าคงไม่ใช่เดท"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ยูคาริถามหญิงร้านว่าดูเหมือนกำลังเดทกันหรือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "หญิงร้านตอบว่าอืม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p40-1 ที่หญิงร้านบอกว่าดูไม่เหมือนเท่าไหร่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "เพื่อนนักเรียนคนหนึ่งทักโบยันกับยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p46-1 ที่เพื่อนคนนั้นเอ่ยชื่อยูคาริกับโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p47-1 ที่เพื่อนคนนั้นบอกว่าเป็นคู่ที่แปลกดี"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เพื่อนอีกคนทักยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p49-1 ที่เพื่อนคนนั้นถามว่าสนิทกับโบยันด้วยเหรอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "เพื่อนอีกคนเตือนยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p51-1 ที่เพื่อนคนนั้นบอกอย่าพาโบยันไปทั่ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "ยูคาริกระซิบชวนโบยันสังเกตปฏิกิริยาของคนอื่น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p62-1 ที่ยูคาริถามว่าสังเกตไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p63-1 ที่ยูคาริพูดถึงตอนที่ทุกคนเห็นเรา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p64-1 ที่ยูคาริบอกว่าทุกคนทำหน้าประหลาดใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "โบยันตอบรับว่าเหรอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "ยูคาริยืนยันว่าใช่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p67-1 ที่ยูคาริพูดถึงเมื่อก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p68-1 ที่ยูคาริบอกว่าถ้าโบยันเดินกับผู้หญิง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p69-1 ที่ยูคาริบอกว่าพวกเขาจะไม่ทำหน้าแบบนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "โบยันตอบว่างั้นเหรอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "ยูคาริยืนยันอีกครั้งว่าใช่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1",
+              "p74-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p72-1 ที่ยูคาริบอกว่าเพราะโบยันดูเปลี่ยนไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "โบยันตอบรับสั้น ๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1",
+              "p79-1"
+            ],
+            "reason": "ยูคาริเริ่มเปรียบเทียบว่าถึงแม้จะยังไม่ถูกมองเป็นคู่รัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p78-1 ที่ยูคาริยอมรับว่ายังไม่ถูกมองว่าเดทกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1",
+              "p80-1",
+              "p81-1"
+            ],
+            "reason": "โบยันตอบว่าคงงั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1",
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "ยูคาริบอกว่าอยากให้คนมองเราแบบนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "ข้อความ 'โหวตคู่รักยอดเยี่ยมที่นี่!' เป็นข้อความบนกล่องโหวต ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p91-1",
+              "p92-1",
+              "p93-1"
+            ],
+            "reason": "ยูคาริชี้ชวนโบยันดูกล่องโหวต"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p92-1 ที่ยูคาริถามว่ารู้ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p93-1 ที่ยูคาริอธิบายเรื่องคู่รักยอดเยี่ยม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p94-1",
+              "p95-1",
+              "p96-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p94-1 ที่ยูคาริพูดถึงตอนสุดท้าย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p95-1 ที่ยูคาริบอกว่าพวกเขาจะจูบกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1",
+              "p97-1",
+              "p98-1"
+            ],
+            "reason": "โบยันถามกลับว่าจูบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p97-1",
+              "p98-1",
+              "p99-1"
+            ],
+            "reason": "ยูคาริยืนยันว่าใช่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1",
+              "p99-1",
+              "p100-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p98-1 ที่ยูคาริบอกว่าทุกคนจะตะโกน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p99-1",
+              "p100-1",
+              "p101-1"
+            ],
+            "reason": "ยูคาริยกคำตะโกน 'คิส คิส' ขึ้นมาในคำพูดของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p100-1",
+              "p101-1",
+              "p102-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p100-1 ที่ยูคาริบอกว่าได้ยินเพื่อน ๆ ของอายะพูดกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p101-1",
+              "p102-1",
+              "p103-1"
+            ],
+            "reason": "โบยันตอบรับว่าหืม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p103-1",
+              "p104-1"
+            ],
+            "reason": "ยูคาริถามว่าไม่สนใจเหรอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p103-1",
+              "p104-1",
+              "p105-1"
+            ],
+            "reason": "โบยันตอบว่าไม่ค่อยเท่าไหร่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p106-1",
+              "p107-1",
+              "p108-1"
+            ],
+            "reason": "ยูคาริพูดต่อว่าถ้าเป็นโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p107-1",
+              "p108-1",
+              "p109-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p107-1 ที่ยูคาริยืนยันความรู้สึก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p108-1",
+              "p109-1",
+              "p110-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p108-1 ที่ยูคาริบอกว่าอยากจูบต่อหน้าทุกคน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p110-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p111-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p112-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p113-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p114-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p113-1",
+              "p114-1",
+              "p115-1"
+            ],
+            "reason": "ยูคาริเรียกโบยันก่อนขอจูบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p115-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p114-1",
+              "p115-1",
+              "p116-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p114-1 ที่ยูคาริถามว่าขอจูบได้ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p116-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p115-1",
+              "p116-1",
+              "p117-1"
+            ],
+            "reason": "โบยันปฏิเสธว่าหรอก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p117-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p116-1",
+              "p117-1",
+              "p118-1"
+            ],
+            "reason": "ยูคาริถามต่อว่าแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p118-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p117-1",
+              "p118-1",
+              "p119-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p117-1 ที่ยูคาริถามถึงแบบลึก ๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p119-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p118-1",
+              "p119-1",
+              "p120-1"
+            ],
+            "reason": "โบยันปฏิเสธอีกครั้งว่าไม่ได้เหมือนกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p120-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p119-1",
+              "p120-1",
+              "p121-1"
+            ],
+            "reason": "ยูคาริครวญว่าไม่ได้เหรอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p121-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p122-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p123-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p124-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p125-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p126-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p127-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p128-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p129-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p130-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p131-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p132-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p133-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p134-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p135-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p136-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p135-1",
+              "p136-1",
+              "p137-1"
+            ],
+            "reason": "ยูคาริขอบคุณโบยันที่อยู่เป็นเพื่อนในวันนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p137-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p136-1",
+              "p137-1",
+              "p138-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p136-1 ที่ยูคาริขอบคุณที่อยู่เป็นเพื่อนกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p138-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p137-1",
+              "p138-1",
+              "p139-1"
+            ],
+            "reason": "โบยันตอบรับว่าอื้ม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p139-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p138-1",
+              "p139-1",
+              "p140-1"
+            ],
+            "reason": "ยูคาริพูดหยอกว่าไม่คิดว่าจะยอมนอกใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p140-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p139-1",
+              "p140-1",
+              "p141-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p139-1 ที่ยูคาริพูดว่ายอมนอกใจด้วย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p141-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p140-1",
+              "p141-1",
+              "p142-1"
+            ],
+            "reason": "โบยันตอบว่าตัวเองไม่ได้นอกใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p142-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p143-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p142-1",
+              "p143-1",
+              "p144-1"
+            ],
+            "reason": "คำว่า \"ล้อเล่นน่า\" ถูกยกมาหลังคำว่าหัวเราะว่าในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p144-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p145-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p146-1",
+      "segments": [
+        {
+          "start": 0,
           "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p147-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p148-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p149-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p150-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p151-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p152-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p153-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p154-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p155-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p156-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p157-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p156-1",
+              "p157-1",
+              "p158-1"
+            ],
+            "reason": "ยูคาริถามโบยันว่าทำไมถึงยอมอยู่เป็นเพื่อนวันนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p158-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p157-1",
+              "p158-1",
+              "p159-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p157-1 ที่ยูคาริถามเหตุผล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p159-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p160-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p159-1",
+              "p160-1",
+              "p161-1"
+            ],
+            "reason": "โบยันตอบว่าเพราะเธอดูจริงจัง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p161-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p162-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p163-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p164-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p165-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p166-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p167-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p166-1",
+              "p167-1",
+              "p168-1"
+            ],
+            "reason": "คำถาม \"ขอจูบได้ไหม?\" เป็นคำที่ยกมาอธิบายแววตาของยูคาริ ไม่ใช่บทสนทนาสด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p168-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p169-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p170-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p171-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p172-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p173-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p174-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p175-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p176-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p177-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p178-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p179-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p180-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p181-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p182-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p181-1",
+              "p182-1",
+              "p183-1"
+            ],
+            "reason": "ยูคาริเอ่ยว่าสนุกจังด้วยสีหน้าโล่งใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p183-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p184-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p185-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p184-1",
+              "p185-1",
+              "p186-1"
+            ],
+            "reason": "ยูคาริถามโบยันว่าคิดว่าเธอกำลังจะสารภาพรักใช่ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p186-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p185-1",
+              "p186-1",
+              "p187-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p185-1 ที่ยูคาริถามย้ำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p187-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p188-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p187-1",
+              "p188-1",
+              "p189-1"
+            ],
+            "reason": "โบยันตอบว่าอืม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p189-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p188-1",
+              "p189-1",
+              "p190-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p188-1 ที่โบยันบอกว่าคิดอย่างนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p190-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p189-1",
+              "p190-1",
+              "p191-1"
+            ],
+            "reason": "ยูคาริหัวเราะเบา ๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p191-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p190-1",
+              "p191-1",
+              "p192-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p190-1 ที่ยูคาริเรียกชื่อโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p192-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p191-1",
+              "p192-1",
+              "p193-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p191-1 ที่ยูคาริบอกว่าโบยันดูง่ายดีนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p193-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p194-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p195-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p196-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p197-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p198-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p197-1",
+              "p198-1",
+              "p199-1"
+            ],
+            "reason": "ยูคาริขอบคุณโบยันที่ไม่พูดถึงอายะเลยในวันนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p199-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p198-1",
+              "p199-1",
+              "p200-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p198-1 ที่ยูคาริขอบคุณเรื่องวันนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p200-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p199-1",
+              "p200-1",
+              "p201-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p199-1 ที่ยูคาริบอกว่าไม่พูดถึงอายะเลย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p201-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p200-1",
+              "p201-1",
+              "p202-1"
+            ],
+            "reason": "โบยันตอบรับว่าอื้ม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p202-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p201-1",
+              "p202-1",
+              "p203-1"
+            ],
+            "reason": "ยูคาริสารภาพว่าเธอชอบริวจิคุง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p203-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p202-1",
+              "p203-1",
+              "p204-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p202-1 ที่ยูคาริบอกว่าเธอมองแค่ริวจิคุง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p204-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p203-1",
+              "p204-1",
+              "p205-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p203-1 ที่ยูคาริบอกว่ามานานแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p205-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p206-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p207-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p208-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p207-1",
+              "p208-1",
+              "p209-1"
+            ],
+            "reason": "โบยันขอบคุณยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p209-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p208-1",
+              "p209-1",
+              "p210-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p208-1 ที่โบยันขอโทษ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p210-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p209-1",
+              "p210-1",
+              "p211-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p209-1 ที่โบยันบอกว่ามีคนที่ชอบมานานแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p211-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p210-1",
+              "p211-1",
+              "p212-1"
+            ],
+            "reason": "ยูคาริตอบรับว่าอืม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p212-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p213-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p214-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p215-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p216-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p217-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p218-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p217-1",
+              "p218-1",
+              "p219-1"
+            ],
+            "reason": "ยูคาริกลบเกลื่อนว่าฮ้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p219-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p218-1",
+              "p219-1",
+              "p220-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p218-1 ที่ยูคาริบอกว่าโดนปฏิเสธแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p220-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p221-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p222-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p221-1",
+              "p222-1",
+              "p223-1"
+            ],
+            "reason": "ยูคาริขอบคุณโบยันที่จริงจังกับเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p223-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p222-1",
+              "p223-1",
+              "p224-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p222-1 ที่ยูคาริขอบคุณที่จริงจัง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p224-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p223-1",
+              "p224-1",
+              "p225-1"
+            ],
+            "reason": "โบยันตอบรับว่าอืม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p225-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p224-1",
+              "p225-1",
+              "p226-1"
+            ],
+            "reason": "ยูคาริเริ่มบอกว่าเอาล่ะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p226-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p225-1",
+              "p226-1",
+              "p227-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p225-1 ที่ยูคาริพูดถึงช่วงกลางภาค"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p227-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p226-1",
+              "p227-1",
+              "p228-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p226-1 ที่ยูคาริบอกว่าจะไปตั้งใจเรียน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p228-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p227-1",
+              "p228-1",
+              "p229-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p227-1 ที่ยูคาริย้ำว่าจะตั้งใจเรียนอย่างเดียว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p229-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p230-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p231-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p232-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p233-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p234-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p235-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p234-1",
+              "p235-1",
+              "p236-1"
+            ],
+            "reason": "ยูคาริเปลี่ยนใจว่าไม่สิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p236-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p235-1",
+              "p236-1",
+              "p237-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p235-1 ที่ยูคาริบอกว่าจะพยายามหาคนใหม่ที่ชอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p237-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p236-1",
+              "p237-1",
+              "p238-1"
+            ],
+            "reason": "โบยันตอบรับว่าอืม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p238-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p237-1",
+              "p238-1",
+              "p239-1"
+            ],
+            "reason": "ยูคาริพูดว่าบางที"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p239-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p238-1",
+              "p239-1",
+              "p240-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p238-1 ที่ยูคาริบอกว่าอาจจะไปขอพรจากพระเจ้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p240-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p239-1",
+              "p240-1",
+              "p241-1"
+            ],
+            "reason": "โบยันตอบรับว่าอืม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p241-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p240-1",
+              "p241-1",
+              "p242-1"
+            ],
+            "reason": "ยูคาริบอกลาว่างั้นลาก่อนนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p242-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "yukari",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p241-1",
+              "p242-1",
+              "p243-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p241-1 ที่ยูคาริเรียกชื่อโบยันเป็นการอำลา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p243-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p242-1",
+              "p243-1",
+              "p244-1"
+            ],
+            "reason": "โบยันตอบรับว่าอืม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p244-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p245-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p246-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p247-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p248-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p249-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p250-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p251-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p250-1",
+              "p251-1",
+              "p252-1"
+            ],
+            "reason": "คำว่า \"กรี๊ดดด\" และ \"อ๊าก!\" เป็นเสียงกรีดร้องของลูกค้า ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p252-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p253-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p254-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p255-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p256-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p257-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p258-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p259-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p260-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p261-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p262-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p263-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p264-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p265-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p265-1",
+              "p267-1",
+              "p270-1"
+            ],
+            "reason": "อายะร้องตกใจเมื่อเห็นโบยันโผล่มาที่บ้านผีสิง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p266-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p265-1",
+              "p266-1",
+              "p267-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p265-1 ที่อายะอุทานว่าอ้าว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p267-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p266-1",
+              "p267-1",
+              "p268-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p266-1 ที่อายะเรียกชื่อโบยันอย่างตกใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p268-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p269-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p270-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p271-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p272-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p273-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p272-1",
+              "p273-1",
+              "p274-1"
+            ],
+            "reason": "โบยันถามอายะว่าให้ช่วยไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p274-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p273-1",
+              "p274-1",
+              "p275-1"
+            ],
+            "reason": "อายะอุทานหือด้วยความสงสัย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p275-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p276-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p277-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p278-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p279-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p280-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p279-1",
+              "p280-1",
+              "p281-1"
+            ],
+            "reason": "อายะกระซิบเรียกโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p281-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p280-1",
+              "p281-1",
+              "p282-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p280-1 ที่อายะถามว่าเป็นอะไรไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p282-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p283-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p284-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p285-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p286-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p287-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p288-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p289-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p290-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p289-1",
+              "p290-1",
+              "p291-1"
+            ],
+            "reason": "โบยันบอกอายะว่าเขาคิดว่าเธอจะเหงา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p291-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p290-1",
+              "p291-1",
+              "p292-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p290-1 ที่โบยันพูดว่าเธอไม่ชอบที่มืด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p292-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p291-1",
+              "p292-1",
+              "p293-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p291-1 ที่โบยันถามว่าและที่แคบ ๆ ใช่ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p293-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p292-1",
+              "p293-1",
+              "p294-1"
+            ],
+            "reason": "อายะตอบตกลงอย่างเสียไม่ได้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p294-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p293-1",
+              "p294-1",
+              "p295-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p293-1 ที่อายะเตือนห้ามเกะกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p295-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p296-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p297-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p296-1",
+              "p297-1",
+              "p298-1"
+            ],
+            "reason": "โบยันถามอายะว่าเธอขู่ลูกค้ายังไง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p298-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p297-1",
+              "p298-1",
+              "p299-1"
+            ],
+            "reason": "อายะเริ่มตอบว่าก็"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p299-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p298-1",
+              "p299-1",
+              "p300-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p298-1 ที่อายะชะงักเมื่อเห็นลูกค้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p300-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p299-1",
+              "p300-1",
+              "p301-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p299-1 ที่อายะบอกว่าลูกค้ามาแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p301-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p302-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p303-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p304-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p305-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p306-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p307-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p308-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p309-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p310-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p311-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p310-1",
+              "p311-1",
+              "p312-1"
+            ],
+            "reason": "คำพูด \"น่ากลัวจัง... น่ากลัว...\" ถูกยกมาหลังคำว่าพูดว่าในประโยคบรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p312-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p313-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p314-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p313-1",
+              "p314-1",
+              "p315-1"
+            ],
+            "reason": "ชายในคู่รักลูกค้าปลอบแฟนของเขาว่าใกล้ถึงทางออกแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p315-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p316-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p317-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p316-1",
+              "p317-1",
+              "p318-1"
+            ],
+            "reason": "เสียง \"ว้ายยย!\" เป็นเสียงกรีดร้องของลูกค้าหญิงในบ้านผีสิง ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p318-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p317-1",
+              "p318-1",
+              "p319-1"
+            ],
+            "reason": "เสียง \"กรี๊ดดดดดด!\" เป็นเสียงกรีดร้องของคู่รักลูกค้า ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p319-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p320-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p321-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p322-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p323-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p322-1",
+              "p323-1",
+              "p324-1"
+            ],
+            "reason": "ชายในคู่รักลูกค้าเล่าให้อีกฝ่ายฟังว่ามีคนมาจับข้อเท้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p324-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p323-1",
+              "p324-1",
+              "p325-1"
+            ],
+            "reason": "หญิงในคู่รักลูกค้าอุทานว่าอะไรนะน่ากลัวเกินไปแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p325-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p326-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p327-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p328-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p327-1",
+              "p328-1",
+              "p329-1"
+            ],
+            "reason": "โบยันเตือนอายะให้ระวังมือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p329-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p328-1",
+              "p329-1",
+              "p330-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p328-1 ที่โบยันบอกให้ระวังมือไม่ให้ถูกเหยียบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p330-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p329-1",
+              "p330-1",
+              "p331-1"
+            ],
+            "reason": "อายะตอบรับว่าอื้ม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p331-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p330-1",
+              "p331-1",
+              "p332-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p330-1 ที่อายะบอกว่าระวังอยู่แล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p332-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p333-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p334-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p335-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p336-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p337-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p338-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p339-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p340-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p341-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p342-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p343-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p344-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p345-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p346-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p347-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p348-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p349-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p350-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p351-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p350-1",
+              "p351-1",
+              "p352-1"
+            ],
+            "reason": "อายะครางเบา ๆ เมื่อถูกสัมผัส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p352-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p353-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p354-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p355-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p356-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p357-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p356-1",
+              "p357-1",
+              "p358-1"
+            ],
+            "reason": "อายะครางเรียกชื่อโบยันเมื่อถูกสัมผัส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p358-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p357-1",
+              "p358-1",
+              "p359-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p357-1 ที่อายะครางเรียกโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p359-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p358-1",
+              "p359-1",
+              "p360-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p358-1 ที่อายะครางด้วยความเสียว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p360-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p361-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p362-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p363-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p364-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p365-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p366-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p367-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p368-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p369-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p370-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p371-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p372-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p373-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p374-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p375-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p376-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p377-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p376-1",
+              "p377-1",
+              "p378-1"
+            ],
+            "reason": "อายะครางเมื่อโบยันสอดนิ้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p378-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p377-1",
+              "p378-1",
+              "p379-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p377-1 ที่อายะเรียกชื่อโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p379-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p378-1",
+              "p379-1",
+              "p380-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p378-1 ที่อายะครางต่อเนื่อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p380-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p379-1",
+              "p380-1",
+              "p381-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p379-1 ที่อายะครางเสียงสูง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p381-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p382-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p383-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p384-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p385-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p386-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p387-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p388-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p389-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p390-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p391-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p392-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p393-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p394-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p395-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p396-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p397-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p395-1",
+              "p397-1",
+              "p398-1"
+            ],
+            "reason": "เด็กในครอบครัวลูกค้าถามพ่อว่าใกล้ถึงทางออกหรือยัง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p398-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p397-1",
+              "p398-1",
+              "p399-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p397-1 ที่เด็กถามพ่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p399-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p398-1",
+              "p399-1",
+              "p400-1"
+            ],
+            "reason": "พ่อของเด็กตอบว่าใกล้แล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p400-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p399-1",
+              "p400-1",
+              "p401-1"
+            ],
+            "reason": "เด็กในครอบครัวลูกค้าบอกว่าไม่เห็นน่ากลัวเลย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p401-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p400-1",
+              "p401-1",
+              "p402-1"
+            ],
+            "reason": "พ่อของเด็กตอบว่าผีคงจะผ่อนปรนให้เรา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p402-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p403-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p404-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p404-1",
+              "p406-1",
+              "p408-1"
+            ],
+            "reason": "เสียงประกาศของโทกิตะที่โบยันได้ยิน ขึ้นต้นข้อความเรื่องเวลาทีม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p405-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p404-1",
+              "p405-1",
+              "p408-1"
+            ],
+            "reason": "ประโยคต่อเนื่อง p404-1 ในเสียงประกาศของโทกิตะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p406-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p406-1",
+              "p407-1",
+              "p408-1"
+            ],
+            "reason": "ประโยคต่อเนื่องและปิดท้ายข้อความประกาศของโทกิตะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p407-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p408-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p409-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p410-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p411-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p412-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p413-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p414-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
           "type": "narration"
         }
       ]

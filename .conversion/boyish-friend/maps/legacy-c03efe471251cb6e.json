@@ -1,12 +1,12 @@
 {
-  "sourceSha256": "de0ec62d680ff8d4808167c31adb5e8584cc8ece2e475f2c35bb4d338fcbebe9",
+  "sourceSha256": "af227cde46c8c28ae9e3a764dcacd4480b51c6509f54452885f85a35ce456690",
   "tokens": [
     {
       "id": "p1-1",
       "segments": [
         {
           "start": 0,
-          "end": 45,
+          "end": 46,
           "type": "narration"
         }
       ]
@@ -16,7 +16,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 38,
+          "end": 8,
           "type": "narration"
         }
       ]
@@ -26,7 +26,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 8,
+          "end": 16,
           "type": "narration"
         }
       ]
@@ -36,7 +36,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 170,
+          "end": 77,
           "type": "narration"
         }
       ]
@@ -46,7 +46,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 60,
+          "end": 17,
           "type": "narration"
         }
       ]
@@ -56,7 +56,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 118,
+          "end": 23,
           "type": "narration"
         }
       ]
@@ -76,7 +76,7 @@
       "segments": [
         {
           "start": 0,
-          "end": 43,
+          "end": 31,
           "type": "narration"
         }
       ]
@@ -86,23 +86,8 @@
       "segments": [
         {
           "start": 0,
-          "end": 51,
+          "end": 19,
           "type": "narration"
-        },
-        {
-          "start": 51,
-          "end": 52,
-          "type": "dialogue",
-          "speakerId": "aya",
-          "review": {
-            "confirmed": true,
-            "context": [
-              "p8-1",
-              "p9-1",
-              "p10-1"
-            ],
-            "reason": "บริบทแวดล้อมและลำดับบทสนทนาของ p9-1"
-          }
         }
       ]
     },
@@ -111,17 +96,8409 @@
       "segments": [
         {
           "start": 0,
-          "end": 109,
+          "end": 56,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 93,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 97,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "เด็กผู้หญิงคนหนึ่งจากห้องอื่นที่ล้อมรอบโทกิตะทักโบยัน ตาม p21-1 และ p24-1; เป็นนักเรียนประกอบฉากที่ไม่มีชื่อใน roster จึงใช้ crowd"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "โบยันเปิดบทสนทนากับโทกิตะหน้าห้องคณะกรรมการ หลัง p25-1 บอกว่าเขาจ้องโทกิตะโดยตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "โทกิตะตอบโบยันด้วยสีหน้าตึงเครียด ตาม p28-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "โบยันบอกโทกิตะว่ามีเรื่องของอายะจะคุย ตามที่ p29-1 ว่าเขาทำสีหน้าอ่อนโยน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "โทกิตะเริ่มตอบรับข้อเสนอของโบยัน หลัง p32-1 บอกว่าเขาเม้มปากและจ้องโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p33-1 ของโทกิตะ เรื่องแวะบ้านผีสิงก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ปิดคำพูดชุดเดียวกับ p33-1 ถึง p34-1 ของโทกิตะ เรื่องส่งเมล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "โบยันรับนัดกับโทกิตะหลังอีกฝ่ายขอเลื่อนไปคุยทีหลัง (p33-1 ถึง p35-1) ก่อน p37-1 โทกิตะเดินจากไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "เสียงกระทบ แคง ของลูกบอลกับไม้เป็นเสียงประกอบฉาก ไม่มีผู้พูด จึงเป็น narration"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "โทกิตะเดินมาถึงสนามเบสบอลและทักโบยัน ตาม p56-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "โบยันขอโทษโทกิตะที่รบกวนเวลาที่ยุ่ง ต่อจากคำทักของโทกิตะใน p57-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "โทกิตะตอบว่าไม่เป็นไร หลังโบยันขอโทษใน p58-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p59-1 ของโทกิตะ ชวนโบยันตีลูกก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "โบยันตอบรับคำชวนตีลูกของโทกิตะใน p59-1 ถึง p60-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "โทกิตะถามโบยันขณะเหวี่ยงไม้ ตาม p65-1 ถึง p66-1 ที่บรรยายการเหวี่ยงไม้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p67-1 ของโทกิตะ จบด้วยเสียงไอ แค่ก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "เสียงกระทบ แคง จากการตีลูกเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "โบยันตอบคำถามเรื่องเคยเล่นเบสบอลของโทกิตะ (p67-1 ถึง p68-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p74-1 ของโบยัน ว่าไม่เคยเล่น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1",
+              "p81-1"
+            ],
+            "reason": "โทกิตะตอบหลังเหวี่ยงไม้และลูกบอลลอยไป ตาม p78-1 ถึง p79-1 ที่โบยันเล่าถึงอดีต"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1",
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p80-1 ของโทกิตะ ว่าเขาห่างหายไปนาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1",
+              "p81-1",
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p80-1 ถึง p81-1 ของโทกิตะ ถามเรื่องอายะไม่ชอบสนามเบสบอล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1",
+              "p83-1",
+              "p84-1"
+            ],
+            "reason": "เสียงกระทบ แคง จากการตีลูกเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1",
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "โบยันตอบรับคำถามของโทกิตะเรื่องอายะไม่ชอบมาที่แบบนี้ (p82-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p85-1 ของโบยัน ถามว่าอีกฝ่ายไม่เคยพาอายะมาเดทที่นี่หรือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p89-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p90-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p91-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p90-1",
+              "p91-1",
+              "p92-1"
+            ],
+            "reason": "เป็นคำพูดของโทกิตะที่ถูกรายงานผ่าน โดยบอกว่า ในประโยคบรรยาย ไม่ใช่บทพูดตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p92-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p87-1",
+              "p91-1",
+              "p92-1",
+              "p93-1"
+            ],
+            "reason": "โทกิตะตอบคำถามเรื่องเดท หลัง p87-1 ถึง p91-1 ที่โบยันนึกถึงคำบ่นของอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p93-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p92-1 ของโทกิตะ ว่าเขาพาอายะไปที่ที่เธออยากไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p94-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p92-1",
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "โบยันตอบรับคำอธิบายของโทกิตะเรื่องการพาอายะไปเดท (p92-1 ถึง p93-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p95-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p94-1",
+              "p95-1",
+              "p96-1",
+              "p98-1"
+            ],
+            "reason": "โทกิตะเอ่ยต่อหลังโบยันตอบรับใน p94-1 ตาม p96-1 ถึง p98-1 ที่เขาพูดเรื่องเดทสุดสัปดาห์"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p96-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p96-1",
+              "p97-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p95-1 ของโทกิตะ เรื่องเดทสุดสัปดาห์นี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p97-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1",
+              "p97-1",
+              "p98-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p96-1 ของโทกิตะ ว่าเขาจะพาอายะไปในที่ที่เขาอยากไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p98-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p97-1",
+              "p98-1",
+              "p99-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p97-1 ของโทกิตะ เรื่องโรงแรมรักแล้วปิดท้ายว่าล้อเล่น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p99-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p95-1",
+              "p98-1",
+              "p99-1",
+              "p100-1"
+            ],
+            "reason": "โบยันตอบเสียงเฉยๆ ต่อคำพูดของโทกิตะ (p95-1 ถึง p98-1) ก่อน p100-1 ยืนยันว่าเขาตอบแบบไม่มีเยื่อใย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p100-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p101-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p102-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p101-1",
+              "p102-1",
+              "p103-1"
+            ],
+            "reason": "โทกิตะเรียกโบยันหลังเห็นเขาตอบเฉยๆ ตาม p101-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p103-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p103-1",
+              "p104-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p102-1 ของโทกิตะ เรื่องพรุ่งนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p104-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p103-1",
+              "p104-1",
+              "p105-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p103-1 ของโทกิตะ เรื่องงานเลี้ยงหลังงานโรงเรียน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p105-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p104-1",
+              "p105-1",
+              "p106-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p104-1 ของโทกิตะ ถามถึงรางวัลคู่รักยอดเยี่ยม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p106-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p105-1",
+              "p106-1",
+              "p107-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p105-1 ของโทกิตะ ว่าเขากับอายะจะได้รางวัลนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p107-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p102-1",
+              "p106-1",
+              "p107-1",
+              "p108-1"
+            ],
+            "reason": "โบยันตอบรับเรื่องรางวัลคู่รักที่โทกิตะเพิ่งเล่า (p102-1 ถึง p106-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p108-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p107-1",
+              "p108-1",
+              "p109-1"
+            ],
+            "reason": "โทกิตะพูดต่อเรื่องรางวัล หลังโบยันตอบใน p107-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p109-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p108-1",
+              "p109-1",
+              "p110-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p108-1 ของโทกิตะ เรื่องเซอร์ไพรส์เล็กๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p110-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p109-1",
+              "p110-1",
+              "p111-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p109-1 ของโทกิตะ ขึ้นต้นด้วย ก็"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p111-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p110-1",
+              "p111-1",
+              "p112-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p110-1 ของโทกิตะ ว่าคงทำให้อายะดีใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p112-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p113-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p114-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p115-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p116-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p117-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p118-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p119-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p120-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p121-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p122-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p121-1",
+              "p122-1",
+              "p123-1"
+            ],
+            "reason": "โทกิตะเรียกโบยันให้ตีไม้ หลัง p121-1 บรรยายลูกบอลลอยผ่านหน้าโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p123-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p122-1",
+              "p123-1",
+              "p124-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p122-1 ของโทกิตะ ขอให้โบยันตีไม้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p124-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p122-1",
+              "p123-1",
+              "p124-1",
+              "p125-1"
+            ],
+            "reason": "โบยันตอบรับคำขอของโทกิตะใน p122-1 ถึง p123-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p125-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p123-1",
+              "p124-1",
+              "p125-1",
+              "p126-1"
+            ],
+            "reason": "โบยันเริ่มถามเรื่องที่โทกิตะอยากคุย ตาม p123-1 ที่โทกิตะเพิ่งขอให้ตีไม้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p126-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p125-1",
+              "p126-1",
+              "p127-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p125-1 ของโบยัน ถามว่าเรื่องที่อยากคุยคืออะไร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p127-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p128-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p129-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p130-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p131-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p132-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p133-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p132-1",
+              "p133-1",
+              "p134-1"
+            ],
+            "reason": "โบยันสารภาพกับโทกิตะว่าสารภาพรักกับอายะแล้ว ตาม p132-1 ที่เขาตั้งใจบอกออกไปอย่างเยือกเย็น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p134-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p133-1",
+              "p134-1",
+              "p135-1"
+            ],
+            "reason": "โทกิตะอุทานตกใจหลังได้ยินคำสารภาพ ตาม p135-1 ที่บอกว่าเขาเบิกตากว้าง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p135-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p136-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p137-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p134-1",
+              "p136-1",
+              "p137-1",
+              "p138-1"
+            ],
+            "reason": "โบยันประกาศชัดว่าฉันจะคบกับอายะ ต่อจากปฏิกิริยาตกใจของโทกิตะใน p134-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p138-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p139-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p140-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p141-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p140-1",
+              "p141-1",
+              "p142-1"
+            ],
+            "reason": "โทกิตะปฏิเสธคำประกาศของโบยัน หลัง p140-1 บอกว่าเขาจ้องมาที่โบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p142-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p141-1",
+              "p142-1",
+              "p143-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p141-1 ของโทกิตะ เรียกชื่อโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p143-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p142-1",
+              "p143-1",
+              "p144-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p142-1 ของโทกิตะ ว่าไม่มีทาง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p144-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p143-1",
+              "p144-1",
+              "p145-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p143-1 ของโทกิตะ ว่าอายะเป็นแฟนของเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p145-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p146-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p147-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p148-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p146-1",
+              "p147-1",
+              "p148-1",
+              "p149-1"
+            ],
+            "reason": "โบยันพูดต่ออย่างเยือกเย็น ตาม p146-1 ถึง p147-1 ที่เขาคิดว่าคงฆ่าแกงไปแล้วแต่ยังพูดต่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p149-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p148-1",
+              "p149-1",
+              "p150-1"
+            ],
+            "reason": "โทกิตะอุทานตกใจต่อคำขอให้เลิกกับอายะใน p148-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p150-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p151-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p150-1",
+              "p151-1",
+              "p152-1"
+            ],
+            "reason": "โทกิตะปฏิเสธเสียงแข็ง หลัง p150-1 บอกว่าความโกรธฉายในแววตา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p152-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p151-1",
+              "p152-1",
+              "p153-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p151-1 ของโทกิตะ ว่าคบกันมากี่ปีแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p153-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p152-1",
+              "p153-1",
+              "p154-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p152-1 ของโทกิตะ ห้ามโบยันยุ่งกับของของเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p154-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p155-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p156-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p157-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p158-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p159-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p160-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p161-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p162-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p161-1",
+              "p162-1",
+              "p163-1"
+            ],
+            "reason": "โทกิตะเริ่มถามเรื่องยูคาริ หลัง p161-1 ที่เขาพูดถึงการเลิก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p163-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p162-1",
+              "p163-1",
+              "p164-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p162-1 ของโทกิตะ ถามถึงยูคาริ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p164-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p163-1",
+              "p164-1",
+              "p165-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p163-1 ของโทกิตะ ว่ายูคาริสารภาพรักกับโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p165-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p166-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p167-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p162-1",
+              "p164-1",
+              "p166-1",
+              "p167-1",
+              "p168-1"
+            ],
+            "reason": "โบยันตอบคำถามเรื่องยูคาริของโทกิตะ (p162-1 ถึง p164-1) ก่อน p168-1 บรรยายว่าเขาเหวี่ยงไม้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p168-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p169-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p170-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p167-1",
+              "p169-1",
+              "p170-1",
+              "p171-1"
+            ],
+            "reason": "โทกิตะพูดต่อเรื่องยูคาริ หลังโบยันบอกว่าปฏิเสธไปใน p167-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p171-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p170-1",
+              "p171-1",
+              "p172-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p170-1 ของโทกิตะ ว่ายูคาริก็น่ารัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p172-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p171-1",
+              "p172-1",
+              "p173-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p171-1 ของโทกิตะ ว่าเธอคงจะเอ็กซ์มาก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p173-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p170-1",
+              "p172-1",
+              "p173-1",
+              "p174-1"
+            ],
+            "reason": "โบยันตอบรับคำพูดของโทกิตะเรื่องยูคาริ (p170-1 ถึง p172-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p174-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p173-1",
+              "p174-1",
+              "p175-1"
+            ],
+            "reason": "โทกิตะถามต่อว่าแล้วโบยันสนใจผู้หญิงหรือเปล่า หลังโบยันตอบใน p173-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p175-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p174-1",
+              "p175-1",
+              "p176-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p174-1 ของโทกิตะ ถามว่าสนใจผู้หญิงเหรอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p176-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p174-1",
+              "p175-1",
+              "p176-1",
+              "p177-1"
+            ],
+            "reason": "โบยันตอบโทกิตะว่าแค่อายะคนเดียว (p174-1 ถึง p175-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p177-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p176-1",
+              "p177-1",
+              "p178-1"
+            ],
+            "reason": "โทกิตะอุทานตกใจต่อคำตอบของโบยันใน p176-1 ตาม p178-1 ที่ลูกบอลลอยผ่าน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p178-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p179-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p177-1",
+              "p178-1",
+              "p179-1",
+              "p180-1"
+            ],
+            "reason": "โทกิตะพูดต่อหลังตกใจ ตาม p177-1 และ p178-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p180-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p179-1",
+              "p180-1",
+              "p181-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p179-1 ของโทกิตะ ว่าโบยันเป็นเพื่อนสมัยเด็กของอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p181-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p180-1",
+              "p181-1",
+              "p182-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p180-1 ของโทกิตะ เปรียบโบยันเป็นผู้ปกครองของอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p182-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p181-1",
+              "p182-1",
+              "p183-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p181-1 ของโทกิตะ ว่าไว้ใจฝากอายะไว้ได้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p183-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p182-1",
+              "p183-1",
+              "p184-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p182-1 ของโทกิตะ ว่าโบยันเองเป็นคนผลักดันให้เขากับอายะคบกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p184-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p183-1",
+              "p184-1",
+              "p185-1"
+            ],
+            "reason": "โบยันยอมรับว่าก็ใช่นะ ต่อคำกล่าวหาของโทกิตะใน p183-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p185-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p184-1",
+              "p185-1",
+              "p186-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p184-1 ของโบยัน ว่าเขาชอบอายะมาตลอด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p186-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p185-1",
+              "p186-1",
+              "p187-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p185-1 ของโบยัน ว่าเพิ่งรู้ตัว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p187-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p188-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p189-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p190-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p184-1",
+              "p186-1",
+              "p189-1",
+              "p190-1",
+              "p191-1"
+            ],
+            "reason": "โทกิตะอุทานถามว่าเมื่อไหร่ หลังโบยันสารภาพใน p184-1 ถึง p186-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p191-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p190-1",
+              "p191-1",
+              "p192-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p190-1 ของโทกิตะ ถามว่าเมื่อไหร่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p192-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p190-1",
+              "p191-1",
+              "p192-1",
+              "p193-1"
+            ],
+            "reason": "โบยันตอบว่า ตอนไปทัศนศึกษา (p190-1 ถึง p191-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p193-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p192-1",
+              "p193-1",
+              "p194-1"
+            ],
+            "reason": "โทกิตะทวนคำว่า ทัศนศึกษา ต่อจากคำตอบของโบยันใน p192-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p194-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p193-1",
+              "p194-1",
+              "p195-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p193-1 ของโทกิตะ ว่าเพิ่งสองสัปดาห์ที่แล้วเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p195-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p196-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p197-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p198-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p197-1",
+              "p198-1",
+              "p199-1"
+            ],
+            "reason": "โบยันคิดในใจถามตัวเองว่าอายะตอบอย่างไร ตาม p197-1 ที่บอกว่าเขาสงสัยว่าทำไมโทกิตะไม่ถาม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p199-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p200-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p201-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p202-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p203-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p204-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p203-1",
+              "p204-1",
+              "p205-1"
+            ],
+            "reason": "เสียงกระทบ แคง จากการตีลูกเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p205-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p206-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p207-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p206-1",
+              "p207-1",
+              "p208-1"
+            ],
+            "reason": "โทกิตะพูดกับโบยันจากด้านหลัง ตาม p206-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p208-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p207-1",
+              "p208-1",
+              "p209-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p207-1 ของโทกิตะ ถามว่าโบยันชอบตรงไหน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p209-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p210-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p211-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p207-1",
+              "p208-1",
+              "p210-1",
+              "p211-1",
+              "p212-1",
+              "p213-1"
+            ],
+            "reason": "โบยันเริ่มตอบคำถามของโทกิตะเรื่องชอบตรงไหน (p207-1 ถึง p208-1) ตาม p213-1 ที่บอกว่าถูกถามอีกครั้ง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p212-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 1,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p211-1",
+              "p212-1",
+              "p213-1"
+            ],
+            "reason": "เครื่องหมายปิดคำพูดชุดเดียวกับ p211-1 ของโบยัน ก่อน p213-1 ขึ้นย่อหน้าใหม่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p213-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p214-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p215-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p213-1",
+              "p214-1",
+              "p215-1",
+              "p216-1"
+            ],
+            "reason": "โบยันตอบรอยยิ้มของอายะ หลัง p213-1 ถึง p214-1 บอกว่าเขาลังเลเมื่อถูกถามอีกครั้ง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p216-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p217-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p215-1",
+              "p216-1",
+              "p217-1",
+              "p218-1"
+            ],
+            "reason": "โทกิตะตอบเสียงชิ ต่อคำตอบของโบยันใน p215-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p218-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p217-1",
+              "p218-1",
+              "p219-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p217-1 ของโทกิตะ ว่าสุดท้ายก็แค่หน้าตา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p219-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p218-1",
+              "p219-1",
+              "p220-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p218-1 ของโทกิตะ ว่าไม่สิ เขาก็ชอบอายะมาก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p220-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p219-1",
+              "p220-1",
+              "p221-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p219-1 ของโทกิตะ ว่าอายะไม่แต่งหน้าเลยไม่มีใครสังเกต"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p221-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p220-1",
+              "p221-1",
+              "p222-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p220-1 ของโทกิตะ ขึ้นต้นว่าแต่ถ้าแต่งหน้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p222-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p221-1",
+              "p222-1",
+              "p223-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p221-1 ของโทกิตะ ว่าอายะจะเปลี่ยนไปเยอะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p223-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p224-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p225-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p223-1",
+              "p224-1",
+              "p225-1",
+              "p226-1"
+            ],
+            "reason": "โบยันยกตัวอย่างเสียงหัวเราะของอายะ หลัง p223-1 ถึง p224-1 ที่เขาคิดว่านั่นก็รู้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p226-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p225-1",
+              "p226-1",
+              "p227-1"
+            ],
+            "reason": "โทกิตะตอบรับคำพูดของโบยันเรื่องเสียงหัวเราะ (p225-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p227-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p226-1",
+              "p227-1",
+              "p228-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p226-1 ของโทกิตะ ว่าอายะมีเสียงที่ยั่วยวน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p228-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p229-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p230-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p231-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p232-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p233-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p231-1",
+              "p232-1",
+              "p233-1",
+              "p234-1"
+            ],
+            "reason": "โทกิตะพูดต่อเรื่องร่างกายอายะ หลัง p231-1 ถึง p232-1 ที่โบยันเงียบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p234-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p233-1",
+              "p234-1",
+              "p235-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p233-1 ของโทกิตะ ว่านุ่มมาก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p235-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p236-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p235-1",
+              "p236-1",
+              "p237-1"
+            ],
+            "reason": "โทกิตะรีบแก้คำพูด หลัง p235-1 ที่โบยันคิดว่านั่นก็รู้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p237-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p236-1",
+              "p237-1",
+              "p238-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p236-1 ของโทกิตะ ว่าไม่ใช่ความหมายทางเพศ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p238-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p237-1",
+              "p238-1",
+              "p239-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p237-1 ของโทกิตะ ขอให้โบยันอย่ามองแบบนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p239-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p238-1",
+              "p239-1",
+              "p240-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p238-1 ของโทกิตะ ว่าอายะไม่ถนัดเรื่องแบบนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p240-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p241-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p242-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p240-1",
+              "p241-1",
+              "p242-1",
+              "p243-1"
+            ],
+            "reason": "โทกิตะเรียกโบยัน หลัง p240-1 ถึง p241-1 ที่โบยันคิดว่าเขามองอายะได้แค่แบบนั้นแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p243-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p242-1",
+              "p243-1",
+              "p244-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p242-1 ของโทกิตะ ว่าเขากำลังพูดถึงเรื่องภายใน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p244-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p243-1",
+              "p244-1",
+              "p245-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p243-1 ของโทกิตะ ห้ามโบยันมองแค่รูปลักษณ์"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p245-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p246-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p247-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p248-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p245-1",
+              "p247-1",
+              "p248-1",
+              "p249-1"
+            ],
+            "reason": "โบยันยกตัวอย่างว่าอายะร่าเริงเสมอ หลัง p245-1 ถึง p247-1 ที่เขาลองยกตัวอย่างเรื่องภายใน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p249-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p248-1",
+              "p249-1",
+              "p250-1"
+            ],
+            "reason": "โทกิตะตอบรับคำพูดของโบยันเรื่องความร่าเริง (p248-1)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p250-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p249-1",
+              "p250-1",
+              "p251-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p249-1 ของโทกิตะ ว่าอาจจะดูเหมือนอย่างนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p251-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p250-1",
+              "p251-1",
+              "p252-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p250-1 ของโทกิตะ ขึ้นต้นว่าแต่อายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p252-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p251-1",
+              "p252-1",
+              "p253-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p251-1 ของโทกิตะ ว่าบางครั้งก็มีนิสัยน่ารำคาญ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p253-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p252-1",
+              "p253-1",
+              "p254-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p252-1 ของโทกิตะ ว่าเป็นคนขี้อายอย่างไม่คาดคิด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p254-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p253-1",
+              "p254-1",
+              "p255-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p253-1 ของโทกิตะ ว่าปฏิเสธคนไม่ค่อยได้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p255-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p254-1",
+              "p255-1",
+              "p256-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p254-1 ของโทกิตะ ว่าเขาคอยเตือนอายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p256-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p257-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p258-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p259-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p260-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p261-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p262-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p263-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p264-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p265-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p266-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p267-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p268-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p269-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p270-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p271-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p272-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p273-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p272-1",
+              "p273-1",
+              "p274-1"
+            ],
+            "reason": "เป็นคำบ่นของอายะที่ถูกรายงานผ่าน บ่นพึมพำว่า ในประโยคบรรยาย ไม่ใช่บทพูดตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p274-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p275-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p276-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p277-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p275-1",
+              "p276-1",
+              "p277-1",
+              "p278-1"
+            ],
+            "reason": "โทกิตะเรียกโบยันด้วยน้ำเสียงแข็งกร้าว ตาม p275-1 ถึง p276-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p278-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p277-1",
+              "p278-1",
+              "p279-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p277-1 ของโทกิตะ ชวนแข่ง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p279-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p277-1",
+              "p278-1",
+              "p279-1",
+              "p280-1"
+            ],
+            "reason": "โบยันทวนคำว่าแข่ง ต่อคำชวนของโทกิตะใน p277-1 ถึง p278-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p280-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p279-1",
+              "p280-1",
+              "p281-1"
+            ],
+            "reason": "โทกิตะอธิบายกติกาการแข่ง หลังโบยันทวนคำใน p279-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p281-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p280-1",
+              "p281-1",
+              "p282-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p280-1 ของโทกิตะ ว่าใครตีโดนมากกว่าชนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p282-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p281-1",
+              "p282-1",
+              "p283-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p281-1 ของโทกิตะ ขึ้นต้นว่าถ้าฉันชนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p283-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p282-1",
+              "p283-1",
+              "p284-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p282-1 ของโทกิตะ ว่าโบยันต้องยอมแพ้อายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p284-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p283-1",
+              "p284-1",
+              "p285-1"
+            ],
+            "reason": "โบยันอุทานหา ต่อเงื่อนไขของโทกิตะใน p283-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p285-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p284-1",
+              "p285-1",
+              "p286-1"
+            ],
+            "reason": "โทกิตะบอกว่าเขาจะเริ่มก่อน หลังโบยันอุทานใน p284-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p286-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p285-1",
+              "p286-1",
+              "p287-1"
+            ],
+            "reason": "เสียงกระทบ แคง จากการตีลูกเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p287-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p288-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p289-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p290-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p291-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p290-1",
+              "p291-1",
+              "p292-1"
+            ],
+            "reason": "เสียงทึบ ดัง จากการตีลูกเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p292-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p293-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p294-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p295-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p296-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p295-1",
+              "p296-1",
+              "p297-1"
+            ],
+            "reason": "เสียงกระทบ แคง จากทางโทกิตะเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p297-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p298-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p299-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p300-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p301-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p302-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p303-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p304-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p305-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p306-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p307-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p308-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p309-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p310-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p311-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p312-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p313-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p314-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p315-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p314-1",
+              "p315-1",
+              "p316-1"
+            ],
+            "reason": "โทกิตะเรียกโบยันก่อนลูกสุดท้าย ตาม p314-1 ที่โบยันได้ยินเสียงสัญชาตญาณ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p316-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p315-1",
+              "p316-1",
+              "p317-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p315-1 ของโทกิตะ ว่าลูกสุดท้ายของการแข่งขัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p317-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p316-1",
+              "p317-1",
+              "p318-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p316-1 ของโทกิตะ ให้โบยันยอมแพ้อย่างยุติธรรม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p318-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p319-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p320-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p321-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p322-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p323-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p324-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p325-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p326-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p327-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p328-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p329-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p330-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p331-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p332-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p333-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p334-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p332-1",
+              "p333-1",
+              "p334-1",
+              "p335-1"
+            ],
+            "reason": "โทกิตะอุทานไม่น่าเชื่อหลังโบยันตีลูกได้ ตาม p332-1 ถึง p333-1 และ p335-1 ที่โบยันเองก็ประหลาดใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p335-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p336-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p337-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p338-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p339-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p340-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p341-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p342-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p343-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p342-1",
+              "p343-1",
+              "p344-1"
+            ],
+            "reason": "โทกิตะพูดด้วยสีหน้ายอมรับความจริง ตาม p342-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p344-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p343-1",
+              "p344-1",
+              "p345-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p343-1 ของโทกิตะ ว่าคนที่ตัดสินใจคืออายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p345-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p343-1",
+              "p344-1",
+              "p345-1",
+              "p346-1"
+            ],
+            "reason": "โบยันเห็นด้วยกับโทกิตะ หลัง p343-1 ถึง p344-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p346-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p347-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p348-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p349-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p350-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p351-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p352-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p353-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p354-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 69,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p355-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p356-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p357-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p358-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p359-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p360-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p361-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p362-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p363-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p364-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p365-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p366-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p367-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p368-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p369-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p370-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p371-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p372-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p373-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p374-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p375-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p376-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p377-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p378-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p379-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p380-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p381-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p382-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p378-1",
+              "p381-1",
+              "p382-1",
+              "p383-1"
+            ],
+            "reason": "โบยันทักอายะที่หน้าบ้าน ตาม p378-1 ถึง p381-1 ที่เขายืนรออยู่"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p383-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p384-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p385-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
           "type": "dialogue",
           "speakerId": "aya",
           "review": {
             "confirmed": true,
             "context": [
-              "p9-1",
-              "p10-1"
+              "p384-1",
+              "p385-1",
+              "p386-1"
             ],
-            "reason": "บริบทแวดล้อมและลำดับบทสนทนาของ p9-1"
+            "reason": "อายะตอบโบยันเรื่องไม่ต้องรอ ตาม p384-1 ที่หน้าแดง"
           }
+        }
+      ]
+    },
+    {
+      "id": "p386-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p385-1",
+              "p386-1",
+              "p387-1"
+            ],
+            "reason": "โบยันตอบว่าฉันไม่ได้รอที่ประตูโรงเรียน ต่อคำพูดของอายะใน p385-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p387-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p386-1",
+              "p387-1",
+              "p388-1"
+            ],
+            "reason": "อายะรับคำแล้วเริ่มพูดต่อ ตาม p388-1 ที่บอกว่าเธอพูดแล้วก้มหน้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p388-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p389-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p390-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p389-1",
+              "p390-1",
+              "p391-1"
+            ],
+            "reason": "โบยันเรียกอายะก่อนถาม หลัง p389-1 ที่บอกว่าเธอดูดีใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p391-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p390-1",
+              "p391-1",
+              "p392-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p390-1 ของโบยัน ถามว่าไม่เป็นไรเหรอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p392-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p390-1",
+              "p391-1",
+              "p392-1",
+              "p393-1"
+            ],
+            "reason": "อายะตอบรับคำถามของโบยันใน p390-1 ถึง p391-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p393-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p392-1",
+              "p393-1",
+              "p394-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p392-1 ของอายะ ว่าคุยทุกเรื่อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p394-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p393-1",
+              "p394-1",
+              "p395-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p393-1 ของอายะ ว่าทุกคนทำหน้าเครียดแต่ก็เข้าใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p395-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p396-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p397-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p398-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p399-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p400-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p398-1",
+              "p399-1",
+              "p400-1",
+              "p401-1"
+            ],
+            "reason": "อายะเรียกโบยัน หลัง p398-1 ถึง p399-1 ที่บอกว่าเธอพูดขึ้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p401-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p400-1",
+              "p401-1",
+              "p402-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p400-1 ของอายะ เรียกชื่อโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p402-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p400-1",
+              "p401-1",
+              "p402-1",
+              "p403-1"
+            ],
+            "reason": "โบยันตอบอายะว่าอืม ต่อคำเรียกใน p400-1 ถึง p401-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p403-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p402-1",
+              "p403-1",
+              "p404-1"
+            ],
+            "reason": "อายะบอกโบยันเรื่องพรุ่งนี้ หลังโบยันตอบใน p402-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p404-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p403-1",
+              "p404-1",
+              "p405-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p403-1 ของอายะ ว่าจะไปงานเลี้ยงตอนกลางคืน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p405-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p404-1",
+              "p405-1",
+              "p406-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p404-1 ของอายะ ว่าจะไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p406-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p405-1",
+              "p406-1",
+              "p407-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p405-1 ของอายะ ว่าจะจบเรื่องตรงนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p407-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p408-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p409-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p410-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p409-1",
+              "p410-1",
+              "p411-1"
+            ],
+            "reason": "เสียง คีน ในหูของโบยันเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p411-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p412-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p413-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p414-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p415-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p416-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p417-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p418-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p419-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p420-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p419-1",
+              "p420-1",
+              "p421-1"
+            ],
+            "reason": "เสียงเชียร์ คิสสิ คิสสิ ของผู้ชมเป็นเสียงฝูงชน ไม่มีผู้พูดเฉพาะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p421-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p422-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p423-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p424-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p423-1",
+              "p424-1",
+              "p425-1"
+            ],
+            "reason": "คำว่า ขอโทษ ของอายะถูกรายงานผ่าน อายะพูดว่า ในประโยคบรรยาย ไม่ใช่บทพูดตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p425-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p423-1",
+              "p424-1",
+              "p425-1",
+              "p426-1"
+            ],
+            "reason": "โทกิตะเรียกอายะบนเวทีในความทรงจำอนาคต ตาม p423-1 ถึง p424-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p426-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p425-1",
+              "p426-1",
+              "p427-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p425-1 ของโทกิตะ ถามว่าทำไม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p427-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p426-1",
+              "p427-1",
+              "p428-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p426-1 ของโทกิตะ ว่าถ้าไม่จูบตรงนี้ก็แปลก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p428-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p424-1",
+              "p427-1",
+              "p428-1",
+              "p429-1"
+            ],
+            "reason": "อายะขอโทษโทกิตะ หลัง p424-1 ที่เธอปฏิเสธจูบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p429-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p428-1",
+              "p429-1",
+              "p430-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p428-1 ของอายะ ขึ้นต้นว่าฉัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p430-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p429-1",
+              "p430-1",
+              "p431-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p429-1 ของอายะ ว่าคบต่อไม่ได้แล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p431-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p428-1",
+              "p430-1",
+              "p431-1",
+              "p432-1"
+            ],
+            "reason": "โทกิตะอุทานหา ต่อคำบอกเลิกของอายะใน p428-1 ถึง p430-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p432-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p433-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p432-1",
+              "p433-1",
+              "p434-1"
+            ],
+            "reason": "โทกิตะเริ่มพูดต่อ หลัง p432-1 ที่ใบหน้ามืดลง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p434-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p433-1",
+              "p434-1",
+              "p435-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p433-1 ของโทกิตะ ว่าว่านะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p435-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p433-1",
+              "p434-1",
+              "p435-1",
+              "p436-1"
+            ],
+            "reason": "โทกิตะขัดขึ้นว่าห้าม ต่อคำพูดค้างของเขาใน p433-1 ถึง p434-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p436-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p435-1",
+              "p436-1",
+              "p437-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p435-1 ของโทกิตะ ว่าให้จูบกันไปก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p437-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p438-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p439-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p440-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p441-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "classmate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p438-1",
+              "p440-1",
+              "p441-1",
+              "p442-1"
+            ],
+            "reason": "นักเรียนที่ดำเนินรายการอุทาน ตาม p438-1 ถึง p440-1 ที่เขาหยิบไมโครโฟน; เป็นนักเรียนไม่มีชื่อจึงใช้ classmate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p442-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "classmate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p441-1",
+              "p442-1",
+              "p443-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p441-1 ของนักเรียนที่ดำเนินรายการ ถามว่าแม่มดแดงปฏิเสธเหรอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p443-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p444-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p445-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p446-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p447-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p444-1",
+              "p446-1",
+              "p447-1",
+              "p448-1"
+            ],
+            "reason": "อายะร้องห้าม หลัง p444-1 ถึง p446-1 ที่โทกิตะกดไหล่เธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p448-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p449-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p450-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p451-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p452-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p453-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p454-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p452-1",
+              "p453-1",
+              "p454-1",
+              "p455-1"
+            ],
+            "reason": "อายะขอโทษโทกิตะ หลัง p452-1 ถึง p453-1 ที่โทกิตะปล่อยมือและเธอมองด้วยสีหน้าจริงจัง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p455-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p454-1",
+              "p455-1",
+              "p456-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p454-1 ของอายะ ว่าเราเลิกกันเถอะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p456-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p454-1",
+              "p455-1",
+              "p456-1",
+              "p457-1"
+            ],
+            "reason": "โทกิตะอุทานบ้า ต่อคำบอกเลิกของอายะใน p454-1 ถึง p455-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p457-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p458-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p459-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "classmate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p457-1",
+              "p458-1",
+              "p459-1",
+              "p460-1"
+            ],
+            "reason": "นักเรียนที่ดำเนินรายการอุทาน ตาม p457-1 ถึง p458-1 ที่โทกิตะทรุดลง; เป็นนักเรียนไม่มีชื่อจึงใช้ classmate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p460-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "classmate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p459-1",
+              "p460-1",
+              "p461-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p459-1 ของนักเรียนที่ดำเนินรายการ ถามว่าถูกบอกเลิกหรือ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p461-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p462-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p463-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p464-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p465-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p466-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p467-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p468-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p469-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p467-1",
+              "p468-1",
+              "p469-1",
+              "p470-1"
+            ],
+            "reason": "โทกิตะพูดกับอายะหลังพยายามลุกขึ้น ตาม p467-1 ถึง p468-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p470-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p469-1",
+              "p470-1",
+              "p471-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p469-1 ของโทกิตะ ว่ากลับกันก่อน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p471-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p472-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p473-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p474-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p475-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p476-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p477-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p478-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p479-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p480-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p477-1",
+              "p479-1",
+              "p480-1",
+              "p481-1"
+            ],
+            "reason": "อายะเอ่ยชื่อโบยันเมื่อมาถึงหลังเวที ตาม p477-1 ที่อายะกับโทกิตะเข้ามา และ p479-1 ที่โบยันรออยู่ โดย p481-1 เป็นปฏิกิริยาของโทกิตะที่ทำหน้าตาบึ้งตึง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p481-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p482-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p483-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p484-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p485-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p486-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p484-1",
+              "p485-1",
+              "p486-1",
+              "p487-1"
+            ],
+            "reason": "โบยันเผชิญหน้ากับโทกิตะหลังเวที ตาม p484-1 ถึง p485-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p487-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p486-1",
+              "p487-1",
+              "p488-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p486-1 ของโบยัน ขึ้นต้นว่าฉัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p488-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p487-1",
+              "p488-1",
+              "p489-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p487-1 ของโบยัน ว่าแย่งอายะมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p489-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p490-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p491-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p492-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p486-1",
+              "p488-1",
+              "p491-1",
+              "p492-1",
+              "p493-1"
+            ],
+            "reason": "โทกิตะตะโกนห้ามล้อเล่น หลังโบยันประกาศแย่งอายะใน p486-1 ถึง p488-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p493-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p492-1",
+              "p493-1",
+              "p494-1"
+            ],
+            "reason": "เสียง ปัง จากการต่อยผนังเป็นเสียงประกอบฉาก ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p494-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p495-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p496-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p494-1",
+              "p495-1",
+              "p496-1",
+              "p497-1"
+            ],
+            "reason": "โทกิตะตะโกนถามว่านี่มันอะไรกัน หลัง p494-1 ถึง p495-1 ที่เขาต่อยผนังและจับโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p497-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p496-1",
+              "p497-1",
+              "p498-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p496-1 ของโทกิตะ เรียกโบยัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p498-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p499-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p500-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p501-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p499-1",
+              "p500-1",
+              "p501-1",
+              "p502-1"
+            ],
+            "reason": "โทกิตะตะโกนต่อว่าแล้วมันไม่ใช่เรื่องอะไรกัน หลัง p499-1 ถึง p500-1 ที่เขาหยุดหมัด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p502-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p501-1",
+              "p502-1",
+              "p503-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p501-1 ของโทกิตะ ว่าฉันไปทำอะไรให้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p503-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p502-1",
+              "p503-1",
+              "p504-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p502-1 ของโทกิตะ อุทานฮะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p504-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p503-1",
+              "p504-1",
+              "p505-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p503-1 ของโทกิตะ ถามว่าทำไมต้องวันนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p505-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p504-1",
+              "p505-1",
+              "p506-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p504-1 ของโทกิตะ ว่าเขายุ่งในฐานะคณะกรรมการจัดงาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p506-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p505-1",
+              "p506-1",
+              "p507-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p505-1 ของโทกิตะ ว่าทำเพื่ออายะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p507-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p508-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p507-1",
+              "p508-1",
+              "p509-1"
+            ],
+            "reason": "โทกิตะตะโกนว่านี่มันบ้าบอที่สุด หลัง p507-1 ที่เขาทุบหูและจมูกหมาป่าลงพื้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p509-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p510-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p511-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p512-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p513-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p514-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p515-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p516-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p514-1",
+              "p515-1",
+              "p516-1",
+              "p517-1"
+            ],
+            "reason": "โทกิตะพูดให้ตายสิ หลัง p514-1 ถึง p515-1 ที่บอกว่าเขาโกรธเพราะเสียหน้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p517-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "tokita",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p516-1",
+              "p517-1",
+              "p518-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p516-1 ของโทกิตะ ว่าจะไม่มีวันให้อภัย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p518-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p519-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p520-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p521-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p522-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p523-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p524-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p522-1",
+              "p523-1",
+              "p524-1",
+              "p525-1"
+            ],
+            "reason": "อายะขอโทษโทกิตะ หลัง p522-1 ถึง p523-1 ที่เธอพูดอย่างเงียบๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p525-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p524-1",
+              "p525-1",
+              "p526-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p524-1 ของอายะ ขึ้นต้นว่าฉัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p526-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p525-1",
+              "p526-1",
+              "p527-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p525-1 ของอายะ ว่าผิดเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p527-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p528-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p529-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p530-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p531-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p532-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p533-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p534-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p533-1",
+              "p534-1",
+              "p535-1"
+            ],
+            "reason": "เป็นคำพูดที่โบยันยกมาอ้างในประโยคบรรยายว่าไม่ยอมให้อายะพูดคำนั้น ไม่ใช่บทพูดตรง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p535-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p536-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p537-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p538-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p539-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p540-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p541-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p540-1",
+              "p541-1",
+              "p542-1"
+            ],
+            "reason": "เป็นวลีที่บรรยายภาพอนาคตที่ควรหลีกเลี่ยง ไม่ใช่คำพูดของตัวละคร"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p542-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p543-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p544-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p543-1",
+              "p544-1",
+              "p545-1",
+              "p548-1"
+            ],
+            "reason": "อายะพูดประโยคเดิมซ้ำในปัจจุบัน ตาม p548-1 ที่ยืนยันว่าเธอพูดซ้ำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p545-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p544-1",
+              "p545-1",
+              "p546-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p544-1 ของอายะ ว่าจะไปงานเลี้ยงตอนกลางคืน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p546-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p545-1",
+              "p546-1",
+              "p547-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p545-1 ของอายะ ว่าจะไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p547-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p546-1",
+              "p547-1",
+              "p548-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p546-1 ของอายะ ว่าจะจบเรื่องตรงนั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p548-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p549-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p550-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p551-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p552-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p553-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p552-1",
+              "p553-1",
+              "p554-1"
+            ],
+            "reason": "โบยันตอบอายะว่าอืม หลัง p552-1 ที่เขายิ้มและพยักหน้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p554-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p553-1",
+              "p554-1",
+              "p555-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p553-1 ของโบยัน ว่าเข้าใจแล้ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p555-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p556-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p557-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p558-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p559-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p560-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p561-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p562-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p563-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p564-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p565-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p566-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p567-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p568-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p569-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p570-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p571-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p572-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p573-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p574-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p575-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p576-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p577-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p578-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p579-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p580-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p581-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p582-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p583-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p584-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p585-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p586-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p587-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p588-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p587-1",
+              "p588-1",
+              "p589-1"
+            ],
+            "reason": "อายะเรียกโบยันในความทรงจำอนาคต หลัง p587-1 ที่เธอยิ้มอย่างมีความสุข"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p589-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p588-1",
+              "p589-1",
+              "p590-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p588-1 ของอายะ ขึ้นต้นว่างั้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p590-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p589-1",
+              "p590-1",
+              "p591-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p589-1 ของอายะ ว่าเจอกันพรุ่งนี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p591-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p592-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p593-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p594-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p591-1",
+              "p593-1",
+              "p594-1",
+              "p595-1"
+            ],
+            "reason": "โบยันตอบอายะว่าเจอกันพรุ่งนี้ หลัง p591-1 ถึง p593-1 ที่เขากลับสู่ความเป็นจริง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p595-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p594-1",
+              "p595-1",
+              "p596-1"
+            ],
+            "reason": "อายะกล่าวราตรีสวัสดิ์ ต่อคำตอบของโบยันใน p594-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p596-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p597-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p598-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p599-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p600-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p599-1",
+              "p600-1",
+              "p601-1"
+            ],
+            "reason": "โบยันตอบราตรีสวัสดิ์ หลัง p599-1 ที่เขายิ้มขมๆ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p601-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p602-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p603-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p604-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p603-1",
+              "p604-1",
+              "p605-1"
+            ],
+            "reason": "อายะโผล่หน้าออกมาจากประตูและเรียกโบยัน ตาม p603-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p605-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p604-1",
+              "p605-1",
+              "p606-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p604-1 ของอายะ บอกอย่าเป็นหวัด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p606-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p604-1",
+              "p605-1",
+              "p606-1",
+              "p607-1"
+            ],
+            "reason": "โบยันตอบอายะว่าอายะเองก็เหมือนกัน ต่อคำเตือนใน p604-1 ถึง p605-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p607-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p606-1",
+              "p607-1",
+              "p608-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p606-1 ของโบยัน ว่าอย่าเผลอเปิดท้องนอน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p608-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "aya",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p607-1",
+              "p608-1",
+              "p609-1"
+            ],
+            "reason": "อายะปฏิเสธเสียงสูงต่อคำแซวของโบยันใน p607-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p609-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p610-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p611-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p612-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p613-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p614-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p615-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p616-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p617-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p618-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p619-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p618-1",
+              "p619-1",
+              "p620-1",
+              "p621-1"
+            ],
+            "reason": "โบยันพึมพำกับตุ๊กตาลิง ตาม p621-1 ที่ระบุว่าเขาพึมพำกับตุ๊กตา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p620-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "protagonist",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p619-1",
+              "p620-1",
+              "p621-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p619-1 ของโบยัน ว่าเด็ดขาด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p621-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p622-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p623-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p624-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p625-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
         }
       ]
     }
