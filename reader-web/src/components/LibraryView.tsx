@@ -123,6 +123,12 @@ export const LibraryView: React.FC<LibraryViewProps> = ({
     if (currentNovel.id === 'kokou-na-kanojo') {
       return ['kokou-takumi', 'kokou-kotori', 'kokou-akira'].includes(c.id);
     }
+    if (currentNovel.id === 'netori-mahoutsukai-no-bouken') {
+      return [
+        'netori-shinji', 'netori-alvin', 'netori-miris', 'netori-renka',
+        'netori-charlotte', 'netori-agane', 'netori-ferry',
+      ].includes(c.id);
+    }
     return true;
   });
 

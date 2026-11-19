@@ -108,7 +108,13 @@ test('novel detail shows converted chapters and only this novel roster', () => {
     assert.ok(character);
     assert.ok(markup.includes(character.name), `Missing main character: ${character.name}`);
   }
+  const mainNames = new Set(mainCharacterIds.map(characterId => characters(web).find(c => c.id === characterId)?.name));
   for (const character of data.allCharacters.filter(c => !c.id.startsWith('shinpai-'))) {
-    assert.ok(!markup.includes(character.name), `Unrelated character leaked: ${character.name}`);
+    // Names are not unique across novels; match the rendered portrait when available.
+    if (character.avatarUrl) {
+      assert.ok(!markup.includes(character.avatarUrl), `Unrelated character leaked: ${character.name}`);
+    } else if (!mainNames.has(character.name)) {
+      assert.ok(!markup.includes(character.name), `Unrelated character leaked: ${character.name}`);
+    }
   }
 });

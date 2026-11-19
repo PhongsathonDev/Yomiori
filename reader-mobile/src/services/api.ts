@@ -16,6 +16,7 @@ import bundledRenaiCharacters from '../data/novels/renai-soudan/characters.json'
 import bundledShinpaiCharacters from '../data/novels/shinpai-kanojo/characters.json';
 import bundledKokouCharacters from '../data/novels/kokou-na-kanojo/characters.json';
 import bundledNazekaCharacters from '../data/novels/nazeka-natsukareta-rashii/characters.json';
+import bundledNetoriCharacters from '../data/novels/netori-mahoutsukai-no-bouken/characters.json';
 import { blackCatChapters } from '../data/novels/black-cat-hangout/chapters';
 import bundledKyudoComments from '../data/novels/kyudo-senpai/comments.json';
 import bundledBoyishComments from '../data/novels/boyish-friend/comments.json';
@@ -71,6 +72,7 @@ export async function fetchCharacters(novelId: string, preferCache = false): Pro
   if (novelId === 'shinpai-kanojo') return bundledShinpaiCharacters as Character[];
   if (novelId === 'renai-soudan') return bundledRenaiCharacters as Character[];
   if (novelId === 'tonari-no-seijo-sama') return bundledSeijoCharacters as Character[];
+  if (novelId === 'netori-mahoutsukai-no-bouken') return bundledNetoriCharacters as Character[];
   return [];
 }
 
