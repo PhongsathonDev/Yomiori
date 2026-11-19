@@ -26,17 +26,19 @@ The cover is copied byte-for-byte from the registered chapter 0 illustration.
 | --- | --- | --- | --- |
 | `netori_cover.jpg` | `illust_02.jpg` | full, unchanged | 1061×1500 |
 | `netori_banner.jpg` | `illust_02.jpg` | `(0, 0, 1061, 597)` | 1280×720 |
-| `char_netori_shinji.jpg` | `illust_01.png` | `(430, 340, 690, 600)` | 512×512 |
-| `char_netori_alvin.jpg` | `illust_01.png` | `(180, 30, 420, 270)` | 512×512 |
-| `char_netori_renka.jpg` | `illust_02.jpg` | `(30, 320, 550, 840)` | 512×512 |
-| `char_netori_charlotte.jpg` | `illust_02.jpg` | `(600, 30, 960, 390)` | 512×512 |
-| `char_netori_miris.jpg` | `illust_03.jpg` | `(650, 230, 980, 560)` | 512×512 |
-| `char_netori_agane.jpg` | `illust_03.jpg` | `(230, 100, 560, 430)` | 512×512 |
-| `char_netori_ferry.jpg` | `illust_04.jpg` | `(230, 0, 530, 300)` | 512×512 |
+| `char_netori_shinji.jpg` | `illust_01.png` | `(440, 290, 648, 498)` | 512×512 |
+| `char_netori_alvin.jpg` | `illust_01.png` | `(180, 20, 460, 300)` | 512×512 |
+| `char_netori_renka.jpg` | `illust_02.jpg` | `(30, 260, 590, 820)` | 512×512 |
+| `char_netori_charlotte.jpg` | `illust_02.jpg` | `(450, 0, 900, 450)` | 512×512 |
+| `char_netori_miris.jpg` | `illust_03.jpg` | `(541, 165, 1061, 685)` | 512×512 |
+| `char_netori_agane.jpg` | `illust_03.jpg` | `(185, 0, 635, 450)` | 512×512 |
+| `char_netori_ferry.jpg` | `illust_04.jpg` | `(150, 0, 590, 440)` | 512×512 |
 
 `illust_01.png` is a black-and-white manga character page; the two portraits keep that
 original monochrome treatment. `illust_02.jpg`–`illust_04.jpg` are the official colour
-volume covers used as chapter 0 character plates.
+volume covers used as chapter 0 character plates. Crops frame each head and shoulders
+and exclude publisher logos, author credits, page numbers and neighbouring characters
+where the source layout allows it.
 
 ## Original-image SHA-256
 
