@@ -38,7 +38,15 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-carlo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p5-1 ระบุว่าเวทมนตร์ของคาร์โลถูกปล่อยใส่〈พาราไดซ์〉หลังประโยคนี้"
+          }
         }
       ]
     },
@@ -69,7 +77,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p9-1"
+            ],
+            "reason": "p6-1 ระบุว่าผู้คนและคนที่ทำงานในย่านเริงรมย์วิ่งหนีออกมาแล้วพูดกับคาร์โล ประโยคนี้จึงเป็นเสียงชาวเมืองที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -80,7 +97,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "เป็นเสียงชาวเมืองอีกคนที่ถามถึงอาการบาดเจ็บของคาร์โลหลังอาคารถล่ม"
+          }
         }
       ]
     },
@@ -111,7 +137,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-carlo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p14-1"
+            ],
+            "reason": "p14-1 ระบุว่าเปลวไฟที่คาร์โลปล่อยออกมาเผาไหม้ชาวเมืองหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -122,7 +156,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p14-1"
+            ],
+            "reason": "เป็นเสียงชาวเมืองที่ถูกเปลวไฟของคาร์โลโจมตี ก่อน p14-1 ระบุว่าเขาปล่อยเปลวไฟใส่คนที่กรีดร้อง"
+          }
         }
       ]
     },
@@ -133,7 +176,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เป็นเสียงชาวเมืองอีกคนที่กรีดร้องด้วยความตกใจต่อเปลวไฟของคาร์โล"
+          }
         }
       ]
     },
@@ -154,7 +206,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p17-1"
+            ],
+            "reason": "p17-1 ระบุว่าชาวเมืองที่มองดูอยู่ห่างๆ พากันกรีดร้องและวิ่งหนีหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -165,7 +226,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "เป็นเสียงชาวเมืองที่ร้องด่าคาร์โลพร้อมกับเสียงกรีดร้องของฝูงชนใน p17-1"
+          }
         }
       ]
     },
@@ -196,7 +266,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-carlo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p18-1 ระบุว่าคาร์โลหัวเราะอย่างบ้าคลั่งและเริ่มวิ่งไล่ตามชาวเมือง"
+          }
         }
       ]
     },
@@ -237,7 +316,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p26-1"
+            ],
+            "reason": "p26-1 ระบุว่าอีฟยิ้มกว้างขึ้นเมื่อได้ยินเสียงกรีดร้องจากข้างนอก ประโยคนี้จึงเป็นคำชื่นชมของอีฟ"
+          }
         }
       ]
     },
@@ -248,7 +335,16 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p27-1"
+            ],
+            "reason": "p27-1 ระบุว่าคลาร่ากำลังคร่อมผู้ชายคนหนึ่งอยู่ข้างหลังอีฟ และ p67-1 ระบุว่าอีฟจับยามมาใช้มนต์เสน่ห์ ประโยคครางนี้จึงเป็นเสียงยามที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -259,7 +355,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p27-1"
+            ],
+            "reason": "p27-1 ระบุว่าคลาร่ากำลังคร่อมผู้ชายคนนั้นและดูดซับพลังชีวิต ประโยคนี้จึงเป็นคำพูดของคลาร่าที่เรียกเขาว่าคุณลุง"
+          }
         }
       ]
     },
@@ -390,7 +495,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p37-1 ระบุว่าคลาร่าคร่อมผู้ชายคนนั้นและกลืนกินองคชาตของเขา ประโยคครางนี้จึงเป็นเสียงของยามที่ถูกเสน่ห์"
+          }
         }
       ]
     },
@@ -401,7 +515,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "เป็นคำพูดของคลาร่าที่เรียกชายคนนั้นว่าคุณลุงและบอกว่าเขาเสร็จเร็ว ก่อน p40-1 บรรยายการดูดซับพลังชีวิต"
+          }
         }
       ]
     },
@@ -432,7 +555,15 @@
           "start": 0,
           "end": 95,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ในประโยคระบุชื่อคลาร่าว่าจะกินชีวิตของคุณลุงให้หมด จึงเป็นคำพูดของคลาร่าเอง"
+          }
         }
       ]
     },
@@ -443,7 +574,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เป็นเสียงครางของชายที่ถูกคลาร่าดูดพลังชีวิตก่อน p44-1 บรรยายว่าคลาร่ายังขยับเอวอยู่บนตัวเขา"
+          }
         }
       ]
     },
@@ -504,7 +644,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p49-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่าอีฟเข้ามากอดคลาร่าที่ถอยออกจากตัวชายคนนั้นด้วยความพึงพอใจหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -515,7 +664,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "อีฟเป็นผู้ชวนคลาร่าไปรับเพื่อนคนอื่นๆ และ p51-1 ระบุว่าอีฟเข้ามากอดคลาร่า"
+          }
         }
       ]
     },
@@ -536,7 +694,15 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p53-1 ระบุว่าคลาร่ากอดอีฟตอบและยิ้มอย่างเย้ายวนหลังประโยคนี้"
+          }
         }
       ]
     },

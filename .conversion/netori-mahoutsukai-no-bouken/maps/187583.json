@@ -68,7 +68,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p6-1 ระบุว่ามีริสเห็นอัลวินคนแรกและโบกมือให้ คำขอโทษที่มาช้าจึงเป็นของอัลวินที่เพิ่งมาถึง"
+          }
         }
       ]
     },
@@ -79,7 +88,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้รับคำขอโทษและชวนเริ่มยืดกล้ามเนื้อ ก่อน p9-1 เป็นเสียงตอบรับพร้อมกันของมีริสและเรนกะ"
+          }
         }
       ]
     },
@@ -90,7 +108,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p10-1 ระบุชัดว่ามีริสและเรนกะตอบรับคำของชินจิ และเครื่องหมายคำพูดซ้อนแสดงเสียงตอบรับพร้อมกัน"
+          }
         }
       ]
     },
@@ -131,7 +158,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p12-1 ระบุว่าอัลวินมองหน้าชินจิขณะยืดแขน คำถามเรื่องวิธีการแทรกซึมจึงเป็นของอัลวิน"
+          }
         }
       ]
     },
@@ -142,7 +178,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าชินจิพูดอย่างเป็นธรรมชาติและอัลวินไม่เคยไปซ่องมาก่อน คำอธิบายเรื่องเข้าไปในฐานะลูกค้าจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -163,7 +208,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p15-1 ระบุว่าเรนกะเปิดปากพูดพร้อมกับมองอัลวินที่ทำหน้าสับสน คำท้วงว่าตนกับมีริสจะเข้าไปไม่ได้จึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -174,7 +228,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าวางแผนไว้แล้วและอยากให้ทั้งสองคนรับบทเป็นสาวใช้ ก่อน p18-1 เรนกะถามความหมาย"
+          }
         }
       ]
     },
@@ -185,7 +248,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่าเรนกะทำหน้าสงสัยกับคำพูดของชินจิ คำถามว่าหมายความว่าอย่างไรจึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -206,7 +278,16 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ชินจิเป็นผู้ธิบายแผนการสวมบทลูกชายขุนนางและลากอัลวินไปสอนเรื่องสนุกๆ"
+          }
         }
       ]
     },
@@ -227,7 +308,16 @@
           "start": 0,
           "end": 251,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "เป็นคำอธิบายบทบาทของเรนกะ มีริสและอัลวินต่อเนื่องจากแผนของชินจิใน p20-1"
+          }
         }
       ]
     },
@@ -238,7 +328,17 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ระบุว่าอัลวินพึมพำและมีริสพยักหน้าอย่างมั่นใจ คำชมว่าเข้าท่าดีจึงเป็นของอัลวิน"
+          }
         }
       ]
     },
@@ -249,7 +349,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ระบุว่ามีริสพยักหน้าอย่างมั่นใจหลังคำรับ 'เข้าใจแล้วค่ะ'"
+          }
         }
       ]
     },
@@ -270,7 +379,16 @@
           "start": 0,
           "end": 191,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p27-1 ระบุว่าชินจินำขวดยานอนหลับออกมาและยื่นให้อัลวิน คำอธิบายเรื่องการระบุตัวโสเภณีและยานอนหลับจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -291,7 +409,16 @@
           "start": 0,
           "end": 196,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายแผนให้เฟรรี่เก็บอุปกรณ์และปีนกำแพงมาสมทบต่อจาก p27-1"
+          }
         }
       ]
     },
@@ -302,7 +429,17 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "p31-1 ระบุว่าชินจิพยักหน้ากับคำพูดของอัลวิน คำสรุปเรื่องการรวมตัวหลังทำให้ผู้หญิงหลับจึงเป็นของอัลวิน"
+          }
         }
       ]
     },
@@ -313,7 +450,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "p31-1 ระบุว่าชินจิพยักหน้ากับคำพูดของอัลวิน คำตอบว่าน่าจะไม่ยากเพราะอยู่ชั้นบนสุดจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -344,7 +490,16 @@
           "start": 0,
           "end": 126,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p32-1 ระบุว่าชินจิยิ้มเมื่อเห็นสองสาวไม่คัดค้าน คำยืนยันให้ทั้งสองฝึกทำตัวเป็นสาวใช้จึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -355,7 +510,17 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "คำถอนหายใจ 'เฮ้อ...ช่วยไม่ได้นะ' เป็นน้ำเสียงของเรนกะ และ p36-1 ระบุว่าเรนกะกับมีริสจ้องชินจิด้วยสายตาจับผิด"
+          }
         }
       ]
     },
@@ -366,7 +531,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "คำลงท้าย 'คะ' และการเรียก 'คุณชินจิ' เป็นสำนวนของมีริส และ p36-1 ระบุว่าทั้งสองคนจ้องชินจิ"
+          }
         }
       ]
     },
@@ -387,7 +561,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p36-1 ระบุว่าสายตาของสองสาวหันมามองอัลวิน คำหยอกว่าอัลต้องฝึกเป็นลูกคุณหนูด้วยใช้คำว่า 'อัล' ซึ่งเป็นสรรพนามที่เรนกะใช้เรียกอัลวิน"
+          }
         }
       ]
     },
@@ -398,7 +581,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "คำว่า 'อัลคุง' และคำลงท้าย 'คะ' เป็นสำนวนการเรียกอัลวินของมีริส และเป็นคำถามต่อเนื่องจากคำหยอกใน p37-1"
+          }
         }
       ]
     },
@@ -409,7 +601,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "คำอุทาน 'ดะ, เดี๋ยวสิ!!' เป็นเสียงทักท้วงของอัลวิน ก่อน p40-1 บรรยายว่าชินจิยิ้มให้อัลวินที่กำลังสับสนพร้อมแว็กซ์จัดแต่งทรงผม"
+          }
         }
       ]
     },
@@ -430,7 +631,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถือแว็กซ์และบอกว่าอัลวินต้องเปลี่ยนเสื้อผ้าและทำทรงผมคุณหนู"
+          }
         }
       ]
     },
@@ -441,7 +651,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "เป็นเสียงอุทานของอัลวินที่ตกใจต่อคำสั่งเรื่องทรงผมใน p41-1"
+          }
         }
       ]
     },
@@ -452,7 +671,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p44-1 ระบุว่ามีริสและเรนกะพยายามกลั้นหัวเราะเมื่อจินตนาการถึงอัลวินทรงผมหวีเสย และเครื่องหมายคำพูดซ้อนแสดงเสียงกลั้นหัวเราะพร้อมกัน"
+          }
         }
       ]
     },
@@ -483,7 +711,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุชัดว่าเสียงร้องของอัลวินดังก้องไปทั่วสวนหลังวิหาร"
+          }
         }
       ]
     },
@@ -594,7 +831,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p58-1 ระบุว่าเป็นพนักงานหนุ่มในร้านที่ทักชินจิ ตัวละครประกอบที่ไม่มีชื่อจึงใช้กลุ่ม netori-crowd"
+          }
         }
       ]
     },
@@ -625,7 +871,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p61-1 ระบุว่าชินจิยิ้มอย่างกะล่อน ชี้ไปที่อัลวินและหัวเราะ คำขอให้แนะนำผู้หญิงที่ดีที่สุดจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -666,7 +921,16 @@
           "start": 0,
           "end": 136,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "p63-1 ระบุว่าพนักงานหนุ่มตัดสินใจแนะนำโสเภณีอันดับหนึ่ง คำเสนอราคาสิบเหรียญทองจึงเป็นของพนักงานหนุ่มที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -677,7 +941,16 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "p66-1 ระบุว่าชินจิยิ้มและแสดงเหรียญทองยี่สิบเหรียญ คำตอบรับแบบเล่นบทขุนนางจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -708,7 +981,16 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "p67-1 ระบุว่าพนักงานหนุ่มพยักหน้ากับการที่ชินจิมีเงินมาก คำบอกทางขึ้นชั้นสี่จึงเป็นของพนักงานหนุ่มที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -719,7 +1001,16 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "คำว่า 'เห้ย อัล!' เป็นการเรียกอัลวินของชินจิ และ p71-1 ระบุว่าอัลวินประท้วงชินจิที่ตบไหล่และยิ้มเยาะ"
+          }
         }
       ]
     },
@@ -730,7 +1021,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "p71-1 ระบุชัดว่าอัลวินประท้วงชินจิ คำขอให้อย่าพูดเสียงดังจึงเป็นของอัลวิน"
+          }
         }
       ]
     },

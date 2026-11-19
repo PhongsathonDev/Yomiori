@@ -1,0 +1,55 @@
+{
+  "p1-1": "netori-alvin",
+  "p2-1": "netori-miris",
+  "p6-1": "netori-shinji",
+  "p7-1": "netori-alvin",
+  "p10-1": "netori-shinji",
+  "p11-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p10-1", "p11-1", "p12-1"],
+    "reason": "ชินจิเสนอเข้าร้านใน p10-1 และอัลวินในฐานะหัวหน้าปาร์ตี้ตอบแทนทุกคนว่าไม่มีของที่ต้องการ ส่วน p12-1 สรุปว่าไม่มีใครอยากเข้าไป"
+  },
+  "p15-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p13-1", "p14-1", "p15-1"],
+    "reason": "หลังย้ายมาถนนสายรอง อัลวินผู้มีพื้นเพธรรมดาเปรียบเทียบบรรยากาศที่ผ่อนคลายกว่าถนนสายหลักใน p13-1 ถึง p14-1"
+  },
+  "p16-1": {
+    "speakerId": "netori-miris",
+    "context": ["p15-1", "p16-1", "p17-1"],
+    "reason": "มีริสเป็นคู่สนทนาที่เสริมคำพูดของอัลวินต่อเนื่อง และ p17-1 ระบุว่าทุกคนสบายใจขึ้นหลังบทสนทนานี้"
+  },
+  "p18-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p17-1", "p18-1", "p19-1"],
+    "reason": "ชินจิเดินนำกลุ่มตาม p17-1 และเป็นผู้ถามเปิดวงก่อนอัลวินเสนอแผนเดินเล่นใน p19-1"
+  },
+  "p19-1": "netori-alvin",
+  "p20-1": "netori-renka",
+  "p22-1": "netori-alvin",
+  "p23-1": "netori-renka",
+  "p24-1": "netori-miris",
+  "p27-1": "netori-shinji",
+  "p28-1": "netori-alvin",
+  "p29-1": "netori-shinji",
+  "p33-1": "netori-shinji",
+  "p34-1": "netori-emily",
+  "p35-1": "netori-shinji",
+  "p55-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p54-1", "p55-1", "p56-1"],
+    "reason": "พนักงานโรงแรมที่ออกมาต้อนรับใน p54-1 ไม่มีชื่อใน roster จึงใช้กลุ่มตัวละครประกอบที่ไม่มีชื่อ"
+  },
+  "p56-1": "netori-alvin",
+  "p60-1": "netori-shinji",
+  "p63-1": "netori-alvin",
+  "p64-1": "netori-shinji",
+  "p69-1": "netori-alvin",
+  "p70-1": "netori-shinji",
+  "p75-1": "netori-shinji",
+  "p76-1": "netori-alvin",
+  "p77-1": "netori-miris",
+  "p80-1": "netori-shinji",
+  "p81-1": "netori-alvin",
+  "p85-1": "netori-shinji"
+}

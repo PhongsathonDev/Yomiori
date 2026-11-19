@@ -38,7 +38,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p6-1"
+            ],
+            "reason": "p3-1 บรรยายว่าแฟลร์แสดงอาการร้อนรน และ p6-1 ระบุว่าชินจิเป็นผู้พูดประโยคก่อนหน้าแฟลร์ตอบใน p7-1"
+          }
         }
       ]
     },
@@ -49,7 +58,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p4-1 ของแฟลร์ ก่อน p6-1 เปลี่ยนเป็นชินจิพูด"
+          }
         }
       ]
     },
@@ -70,7 +88,16 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p6-1 ชินจิพูดพร้อมมองมิโกะอาริอาน แฟลร์จึงรีบตอบให้กลับห้อง และ p8-1 ชินจิตอบกลับ"
+          }
         }
       ]
     },
@@ -81,7 +108,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p6-1 ระบุชินจิเป็นผู้พูด และ p8-1 เป็นคำตอบของเขาต่อคำพูดของแฟลร์ใน p7-1"
+          }
         }
       ]
     },
@@ -112,7 +148,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าแฟลร์กุมขมับอยู่คนเดียวหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -163,7 +207,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "ชินจิกลับถึงห้องแล้วพบว่าแฟลร์ไม่อยู่ จึงพูดประโยคนี้ก่อนเฟรรี่ต้อนรับใน p17-1 และ p18-1"
+          }
         }
       ]
     },
@@ -173,7 +226,16 @@
         {
           "start": 0,
           "end": 24,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p18-1 ระบุว่าชินจิได้รับการต้อนรับจากเฟรรี่ที่เฝ้าห้อง 『』 จึงเป็นคำทักทายของเฟรรี่"
+          }
         }
       ]
     },
@@ -194,7 +256,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p18-1 บรรยายว่าชินจิออกจากห้องไปหาอัลวิน และ p20-1 เป็นคำถามตอบกลับของอัลวิน"
+          }
         }
       ]
     },
@@ -205,7 +276,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถูกบอกและถามกลับ ก่อนชินจิอธิบายต่อใน p21-1"
+          }
         }
       ]
     },
@@ -216,7 +296,16 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของอัลวินและอธิบายเรื่องร้านเครื่องประดับ"
+          }
         }
       ]
     },
@@ -227,7 +316,16 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p23-1 บรรยายว่าชินจิกระพริบตาเมื่อได้ยินคำพูดที่ไม่คาดคิดจากอัลวิน"
+          }
         }
       ]
     },
@@ -248,7 +346,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำขอของอัลวินและถามเหตุผลต่อ"
+          }
         }
       ]
     },
@@ -259,7 +366,16 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบและเกริ่นเรื่องผลตอบแทนภารกิจ ก่อนชินจิเห็นด้วยใน p26-1"
+          }
         }
       ]
     },
@@ -270,7 +386,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p27-1 ระบุว่าชินจิเห็นด้วยกับคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -301,7 +426,16 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "p28-1 บรรยายว่าอัลวินก้มหน้ามองแหวนคู่ของเขา แล้วพูดถึงแผนมอบแหวนวงใหม่ให้มี่"
+          }
         }
       ]
     },
@@ -312,7 +446,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชินจิเป็นผู้ทวนคำว่าแหวนแต่งงาน และอัลวินตอบใน p31-1"
+          }
         }
       ]
     },
@@ -323,7 +466,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "อัลวินเป็นผู้พูดถึงชินจิและถูกชินจิตอบกลับใน p32-1"
+          }
         }
       ]
     },
@@ -334,7 +486,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ชินจิยอมรับคำพูดของอัลวิน แล้ว p33-1 บรรยายแผนแต่งงานของชินจิต่อ"
+          }
         }
       ]
     },
@@ -355,7 +516,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชวนไปและเตือนเรื่องเวลาอาหารเย็น ก่อนอัลวินตอบรับใน p35-1"
+          }
         }
       ]
     },
@@ -366,7 +536,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับคำชวนของชินจิ"
+          }
         }
       ]
     },
@@ -387,7 +566,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p39-1 ระบุว่าฮายาเตะเป็นคนต้อนรับชินจิที่ร้าน และ p40-1 บรรยายเสียงของฮายาเตะเปลี่ยนไป"
+          }
         }
       ]
     },
@@ -398,7 +586,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามหาฮารุโตะหลังถูกทักทายใน p37-1"
+          }
         }
       ]
     },
@@ -429,7 +626,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p41-1",
+              "p44-1"
+            ],
+            "reason": "p38-1 ชินจิถามหาฮารุโตะ และ p44-1 ระบุว่าเสียงของฮายาเตะที่กำลังตอบคำถามของชินจิหยุดลง"
+          }
         }
       ]
     },
@@ -440,7 +646,15 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขออนุญาตดูของ ก่อนชินจิตอบรับใน p43-1"
+          }
         }
       ]
     },
@@ -451,7 +665,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิตอบรับอัลวินและ p49-1 บรรยายว่าชินจิกลับมาพร้อมฮารุโตะตามที่รับปาก"
+          }
         }
       ]
     },
@@ -522,7 +745,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p49-1 ระบุว่าชินจิกลับมาพร้อมฮารุโตะ แล้วชินจิบอกอัลวินใน p50-1"
+          }
         }
       ]
     },
@@ -533,7 +765,16 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "อัลวินแนะนำตัวว่าเป็นหัวหน้าปาร์ตี้ของชินจิ และ p52-1 ฮารุโตะจับมือกับอัลวิน"
+          }
         }
       ]
     },
@@ -554,7 +795,16 @@
           "start": 0,
           "end": 114,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ฮารุโตะแนะนำตัวตอบอัลวินหลังจับมือกันใน p52-1"
+          }
         }
       ]
     },
@@ -565,7 +815,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชินจิตอบโต้คำพูดของฮารุโตะเรื่องการแต่งงานของเขา"
+          }
         }
       ]
     },
@@ -576,7 +835,16 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ฮารุโตะเป็นผู้ตอบและเดาว่าเจ้าสาวคือเอมิลี่ ก่อน p56-1 บรรยายว่าเขานึกถึงเอมิลี่เป็นคนแรก"
+          }
         }
       ]
     },
@@ -607,7 +875,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p57-1 ระบุว่าชินจิยิ้มเจื่อนและส่ายหน้าให้กับคำถามของฮารุโตะ"
+          }
         }
       ]
     },
@@ -618,7 +895,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ประโยคต่อเนื่องของชินจิที่อธิบายว่าเจ้าสาวเป็นเพื่อนสมัยเด็กของเขา"
+          }
         }
       ]
     },
@@ -629,7 +915,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ฮารุโตะเป็นผู้ตอบรับและกล่าวแสดงความยินดีกับชินจิ"
+          }
         }
       ]
     },
@@ -645,7 +940,16 @@
           "start": 17,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "narration ใน p61-1 ระบุชัดว่า 'ชินจิ ตอบกลับว่า' จึงเป็นคำพูดของชินจิ"
+          }
         },
         {
           "start": 26,
@@ -681,7 +985,16 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "p63-1 ระบุว่าชินจิและเรนกะจะแต่งงานกัน และอัลวินบอกว่าตนก็กำลังจะแต่งงานเหมือนชินจิ"
+          }
         }
       ]
     },
@@ -692,7 +1005,16 @@
           "start": 0,
           "end": 122,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "ฮารุโตะเป็นเจ้าของร้านที่ตอบรับและเรียกฮายาเตะให้ดูแลหน้าร้าน ก่อนฮายาเตะตอบใน p66-1"
+          }
         }
       ]
     },
@@ -703,7 +1025,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "p67-1 ระบุว่าฮายาเตะตอบกลับไปอย่างร้อนรนหลังถูกฮารุโตะเรียก"
+          }
         }
       ]
     },
@@ -754,7 +1085,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "p69-1 บรรยายว่าฮายาเตะจ้องชินจิกลับไปอย่างแข็งกร้าว และ p72-1 ชินจิทำตามที่ฮายาเตะต้องการ"
+          }
         }
       ]
     },

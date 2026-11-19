@@ -1,0 +1,53 @@
+{
+  "batch": "b36",
+  "sources": [
+    {
+      "sourceId": "189023",
+      "chapterNo": "169",
+      "mapJsonHash": "f5582271f7ce77dcdb42ee852eb3d6a6751e0bc7425e778632f867d883752b16",
+      "status": "ready",
+      "dialogue": 38
+    },
+    {
+      "sourceId": "189024",
+      "chapterNo": "170",
+      "mapJsonHash": "5061952124d8a1b4a779b0d2526c73972ddadc36fc5198787c6c069dc4d54303",
+      "status": "ready",
+      "dialogue": 24
+    },
+    {
+      "sourceId": "189026",
+      "chapterNo": "171",
+      "mapJsonHash": "e0c0a363993c7168bb712221529b9b8561a87233e22c4266d7347d50bd5e5708",
+      "status": "ready",
+      "dialogue": 14
+    },
+    {
+      "sourceId": "189324",
+      "chapterNo": "172",
+      "mapJsonHash": "61f503bbaeffa7168eb841c15559d5efa483bd9e3666f42aa12babffc679f2f7",
+      "status": "ready",
+      "dialogue": 26
+    },
+    {
+      "sourceId": "189325",
+      "chapterNo": "173",
+      "mapJsonHash": "5c6ecfb29252999e229fe9d85763ff873815cc20bba01fb2749dac73d7937c05",
+      "status": "ready",
+      "dialogue": 34
+    },
+    {
+      "sourceId": "189326",
+      "chapterNo": "174",
+      "mapJsonHash": "6280d5b9e5f25b3723b644e3865ebc466585230ec84f7c5f45d7ff309d749efb",
+      "status": "ready",
+      "dialogue": 27
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "บทรำพึงในเครื่องหมายคำพูดของฮายาเตะ (189324 p23-1#2, p36-1#2) และแฟลร์ (189326 p58-1#2) จัดเป็น narration เพราะ narration ระบุว่าเป็นความคิดในใจ",
+    "189324 p13-1 ใช้ netori-party เพราะเครื่องหมายคำพูดซ้อนแสดงว่าอัลวินและฮารุโตะพูดพร้อมกัน",
+    "『』 ที่เป็นการสื่อสารระหว่างชินจิกับภูต (189023 p17-1, 189325 p6-1/p7-1/p11-1/p12-1/p15-1/p16-1, 189326 p9-1/p10-1/p12-1/p13-1/p16-1/p17-1/p18-1/p26-1) จัดเป็น dialogue ตามผู้ส่งและผู้รับที่ narration ระบุ"
+  ]
+}

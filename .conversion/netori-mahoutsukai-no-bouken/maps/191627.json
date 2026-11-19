@@ -338,7 +338,15 @@
           "start": 0,
           "end": 79,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "มีริสเป็นผู้เริ่มปรึกษาเรื่องคริสติน่าตาม p35-1 ที่ระบุว่าเธอกำลังปรึกษาเรนกะและชินจิ และ p59-1 ยืนยันเสียงของมีริส"
+          }
         },
         {
           "start": 79,
@@ -349,7 +357,15 @@
           "start": 80,
           "end": 199,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ผู้พูดอ้างถึง 'เรนกะกับฉัน' จึงเป็นชินจิคู่สนทนาของมีริสใน p35-1"
+          }
         },
         {
           "start": 199,
@@ -360,7 +376,16 @@
           "start": 200,
           "end": 282,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p58-1"
+            ],
+            "reason": "ผู้พูดเอ่ยถึงแผนแต่งงานของตัวเองคู่กับชินจิและเรียกอัลวินว่า 'อัล' ตามคำเรียกของเรนกะ และ p58-1 พูดยืนยันเรื่องเดียวกัน"
+          }
         }
       ]
     },
@@ -381,7 +406,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p35-1"
+            ],
+            "reason": "มีริสเป็นผู้ยกประเด็นฐานะชนชั้นสูงของคริสติน่าต่อเนื่องจากการปรึกษาใน p34-1 และ p35-1"
+          }
         },
         {
           "start": 33,
@@ -392,7 +425,14 @@
           "start": 34,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ผู้พูดใช้ 'เรา' กล่าวว่าไม่มีทางบังคับได้ ต่อจากคำของมีริสใน p36-1#1"
+          }
         },
         {
           "start": 56,
@@ -402,8 +442,15 @@
         {
           "start": 57,
           "end": 62,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p62-1"
+            ],
+            "reason": "เครื่องหมายคำพูดครอบความเงียบ '...' ไม่มีคำพูดที่ออกเสียง จึงคงเป็น narration"
+          }
         }
       ]
     },
@@ -603,7 +650,17 @@
         {
           "start": 0,
           "end": 78,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p59-1"
+            ],
+            "reason": "p55-1 บรรยายว่าอัลวินได้ยินเสียงคนคุยกัน และ p59-1 ระบุว่าเป็นเสียงมีริสกำลังปรึกษาเรนกะและชินจิ จึงเป็นคำพูดที่อัลวินได้ยิน"
+          }
         }
       ]
     },
@@ -613,7 +670,18 @@
         {
           "start": 0,
           "end": 113,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ผู้พูดอ้างถึง 'เรนกะกับฉัน' และ p59-1 ระบุว่าชินจิอยู่ในบทสนทนาที่อัลวินได้ยิน"
+          }
         }
       ]
     },
@@ -623,7 +691,17 @@
         {
           "start": 0,
           "end": 69,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ผู้พูดบอกว่าตัวเองจะแต่งงานกับชินจิและเรียกมีริสาว่า 'มี่' จึงเป็นเรนกะ"
+          }
         }
       ]
     },
@@ -643,7 +721,17 @@
         {
           "start": 0,
           "end": 38,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "มีริสยกเรื่องฐานะชนชั้นสูงของคริสติน่าต่อจาก p59-1 และชินจิตอบใน p61-1"
+          }
         }
       ]
     },
@@ -653,7 +741,17 @@
         {
           "start": 0,
           "end": 28,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าไม่มีทางบังคับได้ต่อจากคำของมีริสใน p60-1 และเหลือเพียงความเงียบใน p62-1"
+          }
         }
       ]
     },
@@ -663,7 +761,15 @@
         {
           "start": 0,
           "end": 4,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "เป็นความเงียบ '……' ในบทสนทนา ไม่มีคำพูดที่ออกเสียง"
+          }
         }
       ]
     },

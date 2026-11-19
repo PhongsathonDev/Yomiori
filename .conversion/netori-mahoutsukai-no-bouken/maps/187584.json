@@ -28,7 +28,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p1-1 ระบุว่าทั้งกลุ่มเดินตามพนักงานหนุ่มขึ้นชั้นสี่ และ p5-1 ระบุว่าพนักงานหนุ่มแจ้งให้พวกอัลวินทราบก่อนเปิดประตู คำขอให้รอจึงเป็นของพนักงานหนุ่มที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -39,7 +48,17 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ชินจิเดินนำหน้าตาม p49 ของตอนที่แล้วและเป็นผู้ตอบแทนกลุ่ม ส่วน p6-1 เริ่มบรรยายว่าชินจิหันกลับไปมองเรนกะและคนอื่นหลังจากนั้น"
+          }
         }
       ]
     },
@@ -80,7 +99,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p7-1 ระบุว่าชินจิหัวเราะและตบไหล่อัลวิน คำปลอบให้ผ่อนคลายจึงเป็นของชินจิ และ p9-1 เป็นคำตอบของอัลวิน"
+          }
         }
       ]
     },
@@ -91,7 +119,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "คำตอบว่าตนเตรียมใจมาแล้วเป็นของอัลวินที่ถูกปลอบใน p8-1 และ p10-1 ระบุว่าคำนี้เป็นส่วนหนึ่งของการสนทนาปกติ"
+          }
         }
       ]
     },
@@ -132,7 +169,16 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p14-1 ระบุว่าด้านหลังพนักงานหนุ่มมีหญิงสาวสองคนปรากฏตัว คำแนะนำโสเภณีอันดับหนึ่งและสองจึงเป็นของพนักงานหนุ่มที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -153,7 +199,17 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "คำแนะนำตัวว่าชื่ออีฟและการบรรยายรูปลักษณ์ของอีฟใน p17-1 ยืนยันผู้พูด"
+          }
         }
       ]
     },
@@ -164,7 +220,17 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "คำแนะนำตัวว่าชื่อคลาร่าและ p18-1 บรรยายคลาร่าที่แนะนำตัวเป็นคนถัดมา"
+          }
         }
       ]
     },
@@ -195,7 +261,17 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "p21-1 ระบุว่าชินจิพยักหน้าให้กับคำพูดของพนักงานหนุ่ม แต่อัลวินกลับไม่มีปฏิกิริยาใดๆ คำอุทานชื่นชมจึงเป็นของชินจิ ไม่ใช่อัลวินที่กำลังตะลึง"
+          }
         }
       ]
     },
@@ -206,7 +282,16 @@
           "start": 0,
           "end": 128,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "p21-1 ระบุว่าคำพูดนี้เป็นของพนักงานหนุ่ม และเป็นผู้จัดห้องให้ลูกค้าทั้งสอง"
+          }
         }
       ]
     },
@@ -237,7 +322,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p22-1 ระบุว่าชินจิหันกลับไปตบหัวอัลวินเบาๆ คำปลุกให้ตั้งสติจึงเป็นของชินจิ และ p24-1 เป็นคำตอบของอัลวิน"
+          }
         }
       ]
     },
@@ -248,7 +342,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "คำตอบว่าตนไม่เป็นไรเป็นการตอบคำถามของชินจิใน p23-1 และ p25-1 บรรยายว่าชินจิไม่สบายใจที่เห็นอัลวินหน้าเคลิบเคลิ้ม"
+          }
         }
       ]
     },
@@ -309,7 +412,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "p29-1 ระบุว่าชินจิหันไปหาพนักงานหนุ่มและยิ้ม คำขอโทษแทนอัลวินจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -320,7 +432,16 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p32-1 ระบุว่าพนักงานหนุ่มตอบด้วยสีหน้าเรียบเฉยและโค้งคำนับ คำอวยพรให้สนุกจึงเป็นของพนักงานหนุ่มที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -361,7 +482,17 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p34-1 ระบุว่าอีฟคล้องแขนอัลวิน และ p37-1 ระบุว่าอัลวินถูกอีฟดึงแขนไปที่ประตู คำขออนุญาตนำทางจึงเป็นของอีฟ"
+          }
         }
       ]
     },
@@ -372,7 +503,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "คำตอบรับติดขัด 'อ๊ะ...อื้ม ฝากด้วยนะ' เป็นของอัลวินที่ถูกอีฟดึงแขนตาม p37-1"
+          }
         }
       ]
     },
@@ -403,7 +543,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p38-1 ระบุว่าคลาร่าไม่ขยับและยิ้มให้ชินจิ คำบอกว่าจะพาไปทีละคนจึงเป็นของคลาร่า"
+          }
         }
       ]
     },
@@ -414,7 +563,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นคำตอบรับของชินจิต่อคลาร่า ก่อน p41-1 คลาร่าถามว่าเขารอไม่ไหวแล้วใช่ไหม"
+          }
         }
       ]
     },
@@ -425,7 +583,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "คำหยอกว่าอีกฝ่ายรอไม่ไหวแล้วเป็นการพูดของคลาร่า ก่อน p42-1 บรรยายว่าเธอกดหน้าอกเข้ากับข้อศอกชินจิ"
+          }
         }
       ]
     },
@@ -456,7 +623,16 @@
           "start": 0,
           "end": 65,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "คำเรียก 'พี่ชาย' และการพูดถึงหน้าอกของคลาร่าเองเป็นการพูดของคลาร่าหลังดึงแขนชินจิใน p43-1"
+          }
         }
       ]
     },
@@ -467,7 +643,16 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าเป็นหน้าอกที่ดีแต่ขยำตรงนี้ไม่ได้ ก่อน p46-1 คลาร่าหัวเราะและตอบกลับ"
+          }
         }
       ]
     },
@@ -478,7 +663,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าคลาร่าหัวเราะพลางถูหน้าอกกับชินจิ คำพูดว่าทำให้คลาร่าต้องรอจึงเป็นของคลาร่า"
+          }
         }
       ]
     },
@@ -509,7 +703,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "คลาร่าเป็นผู้ชวนไปและรับว่าจะทำให้ชินจิสนุก ก่อน p50-1 ชินจิตอบกลับ"
+          }
         }
       ]
     },
@@ -520,7 +723,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "เป็นคำตอบหยอกของชินจิต่อคำชวนของคลาร่า และ p51-1 บรรยายว่าคลาร่าดึงแขนเขาไปที่ห้อง"
+          }
         }
       ]
     },
@@ -651,7 +863,16 @@
           "start": 0,
           "end": 95,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "คำพูดเรียกตัวเองว่าอีฟว่าปล่อยให้อีฟจัดการเป็นของอีฟ และ p64-1 ระบุว่าเธอพูดด้วยเสียงหวานเพื่อกระตุ้นอัลวิน"
+          }
         }
       ]
     },
@@ -672,7 +893,17 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "p67-1 ระบุว่าอัลวินตอบรับในทันทีแม้มีมีริสอยู่ข้างหลัง คำตอบติดขัดจึงเป็นของอัลวิน"
+          }
         }
       ]
     },
@@ -683,7 +914,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "คำรับสั้นๆ 'ค่า...♡' เป็นเสียงตอบรับของอีฟต่อคำตอบของอัลวิน และ p67-1 ยืนยันว่าอัลวินเป็นฝ่ายตอบรับ"
+          }
         }
       ]
     },
@@ -714,7 +954,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "p70-1 ระบุว่าอีฟนำอัลวินไปที่ห้องในสุด คำบอกทางจึงเป็นของอีฟ"
+          }
         }
       ]
     },

@@ -48,7 +48,17 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p8-1",
+              "p18-1"
+            ],
+            "reason": "ชินจิเป็นนักเวทที่กำลังประเมินพรสวรรค์ของไอริส (p18 ระบุว่าเขารู้สึกทึ่ง) และ p8 ไอริสถามเขาเรื่องเวทมนตร์ต่อทันที"
+          }
         }
       ]
     },
@@ -79,7 +89,14 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "ตรวจบริบท p8-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -90,7 +107,14 @@
           "start": 0,
           "end": 181,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "ตรวจบริบท p9-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -171,7 +195,14 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -202,7 +233,14 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -213,7 +251,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -253,7 +298,17 @@
         {
           "start": 0,
           "end": 27,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p24 ระบุว่าชินจิส่งความคิดไปหามารี ประโยคใน 『』 จึงเป็นคำถามทางความคิดของชินจิ"
+          }
         }
       ]
     },
@@ -263,7 +318,17 @@
         {
           "start": 0,
           "end": 175,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบผ่านการสื่อสารทางความคิด และ p27 ระบุว่าชินจิยิ้มขมขื่นกับความคิดที่สบายๆ ของมารี"
+          }
         }
       ]
     },
@@ -323,7 +388,17 @@
         {
           "start": 0,
           "end": 103,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้มารีไปถามชิซูกุ และ p33 เป็นคำตอบของมารี"
+          }
         }
       ]
     },
@@ -333,7 +408,17 @@
         {
           "start": 0,
           "end": 65,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบรับคำสั่งและรายงานคำตอบของชิซูกุ แล้ว p34 ชินจิพูดต่อ"
+          }
         }
       ]
     },
@@ -343,7 +428,17 @@
         {
           "start": 0,
           "end": 108,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้แจ้งชิซูกุเตรียมตัว และ p35 มารีตอบรับ"
+          }
         }
       ]
     },
@@ -353,7 +448,17 @@
         {
           "start": 0,
           "end": 17,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "มารีตอบรับคำสั่งของชินจิ และ p36 ระบุว่าชินจิรอชิซูกุหลังจบการสื่อสาร"
+          }
         }
       ]
     },
@@ -373,7 +478,16 @@
         {
           "start": 0,
           "end": 33,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38 ระบุว่ามารีส่งความคิดไปยังชิซูกุ ประโยคใน 『』 จึงเป็นคำพูดของมารี"
+          }
         }
       ]
     },
@@ -394,7 +508,14 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ตรวจบริบท p39-1 แล้ว จัดประเภทเป็นคำพูดของฮายาเตะ"
+          }
         }
       ]
     },
@@ -405,7 +526,14 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -416,7 +544,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้กอดและปลอบชิซูกุตาม p42 หลังชิซูกุพูดแก้ตัวใน p40"
+          }
         }
       ]
     },
@@ -436,7 +573,17 @@
         {
           "start": 0,
           "end": 39,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p42 ระบุว่าชิซูกุส่งความคิดกลับไปให้มารี ประโยคใน 『』 จึงเป็นคำพูดของชิซูกุ และ p44 เป็นคำตอบของมารี"
+          }
         }
       ]
     },
@@ -446,7 +593,16 @@
         {
           "start": 0,
           "end": 64,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบรับและบอกว่าจะไปแจ้งชินจิ"
+          }
         }
       ]
     },
@@ -527,7 +683,14 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -538,7 +701,14 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของฮายาเตะ"
+          }
         }
       ]
     },
@@ -549,7 +719,14 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ตรวจบริบท p54-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -589,7 +766,17 @@
         {
           "start": 0,
           "end": 19,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p60-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้เรียกมารีก่อนหายตัวตาม p60 ประโยคใน 『』 จึงเป็นคำพูดของเธอ"
+          }
         }
       ]
     },
@@ -599,7 +786,17 @@
         {
           "start": 0,
           "end": 10,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบรับคำเรียกของชิซูกุ และ p60 เป็นผลของการเทเลพอร์ต"
+          }
         }
       ]
     },

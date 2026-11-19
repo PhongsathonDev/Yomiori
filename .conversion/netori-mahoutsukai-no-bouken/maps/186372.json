@@ -28,7 +28,16 @@
           "start": 0,
           "end": 199,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p2-1 ระบุว่าชินจิเปิดปากพูดเพื่อยืนยันอีกครั้ง และชิซูกุตอบใน p4-1"
+          }
         }
       ]
     },
@@ -39,7 +48,16 @@
           "start": 0,
           "end": 5,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบรับคำอธิบาย และ p5-1 บรรยายมุมมองของเธอที่มองขึ้นไป"
+          }
         }
       ]
     },
@@ -60,7 +78,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามต่อว่าเธอยังบริสุทธิ์หรือไม่ และชิซูกุตอบใน p7-1"
+          }
         }
       ]
     },
@@ -71,7 +98,16 @@
           "start": 0,
           "end": 119,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบว่าได้แลกความบริสุทธิ์กับฮายาเตะแล้ว และชินจิตอบใน p8-1"
+          }
         }
       ]
     },
@@ -82,7 +118,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้สรุปว่าสอดใส่ได้ และ p9-1 บรรยายเขาใช้เวทมนตร์เพิ่มความไวต่อความรู้สึก"
+          }
         }
       ]
     },
@@ -103,7 +148,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกจะเริ่มแตะและต้องทำให้เปียกก่อน;ชิซูกุตอบใน p11-1"
+          }
         }
       ]
     },
@@ -114,7 +168,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้บอกว่าไม่อยากเจ็บและขอฝากตัว;p12-1 บรรยายมือของชินจิที่สัมผัสเธอ"
+          }
         }
       ]
     },
@@ -165,7 +228,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามว่าไวต่อความรู้สึกขนาดนี้เลยหรือ และ p17-1 เป็นเสียงของชิซูกุ"
+          }
         }
       ]
     },
@@ -176,7 +248,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เสียงครางของชิซูกุหลังคำถามของชินจิ และ p18-1 บรรยายหน้าแดงของเธอ"
+          }
         }
       ]
     },
@@ -207,7 +288,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้บอกว่าเปียกพอแล้ว ก่อน p21-1 บรรยายชินจิแอบบีบหัวนมของเธอ"
+          }
         }
       ]
     },
@@ -258,7 +348,16 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "ชินจิเป็นผู้เตือนว่าของเขาใหญ่และชิซูกุจะเจ็บ;ชิซูกุตอบใน p26-1"
+          }
         }
       ]
     },
@@ -269,7 +368,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ถามอย่างตกใจว่าใหญ่ขนาดนั้นเลยหรือ และ p27-1 บรรยายเธอมองตามคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -300,7 +408,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ชินจิเป็นผู้ปลอบว่าจะทำให้พร้อมก่อนและอ้างว่าแฟลร์บอกว่ารู้สึกดี;p30-1 เป็นเสียงของชิซูกุ"
+          }
         }
       ]
     },
@@ -311,7 +428,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "เสียงครางของชิซูกุเมื่อชินจิหยอกหัวนมตาม p31-1"
+          }
         }
       ]
     },
@@ -352,7 +478,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ขอให้รอเดี๋ยวเมื่อนิ้วของชินจิสัมผัส และ p35-1 บรรยายเธอพยายามหุบขา"
+          }
         }
       ]
     },
@@ -433,7 +568,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ครางว่าจะเสร็จแล้ว และ p43-1 ระบุว่านิ้วชินจิสัมผัสจุดอ่อนของเธอ"
+          }
         }
       ]
     },
@@ -464,7 +608,16 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้วิจารณ์ว่าชิซูกุถึงจุดสุดยอดง่ายเกินไป และชิซูกุตอบใน p46-1"
+          }
         }
       ]
     },
@@ -475,7 +628,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ยืนยันว่าทำได้และครางต่อ;p47-1 บรรยายความคิดของเธอ"
+          }
         }
       ]
     },
@@ -496,7 +658,16 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้ลองรวบรวมพลังเวทและบอกว่าจะลูบไล้ไปเรื่อยๆ;ชิซูกุตอบใน p49-1"
+          }
         }
       ]
     },
@@ -507,7 +678,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบว่าเข้าใจแล้ว;p50-1 ระบุว่าเธอเริ่มรวบรวมพลังเวทตามที่ชินจิบอก"
+          }
         }
       ]
     },
@@ -528,7 +708,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ครางว่าตรงนั้นไม่ได้เมื่อชินจิสัมผัสจุดอ่อนใน p50-1;p52-1 ระบุพลังเวทสลาย"
+          }
         }
       ]
     },
@@ -549,7 +738,16 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตำหนิว่าอย่าให้พลังเวทสลาย และชิซูกุตอบใน p54-1"
+          }
         }
       ]
     },
@@ -560,7 +758,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้พูดว่าโกหกไม่จริงทำไมฉันถึง;p55-1 บรรยายความคิดของเธอ"
+          }
         }
       ]
     },
@@ -581,7 +788,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "เสียงครางของชิซูกุเมื่อชินจิเริ่มลูบไล้อีกครั้งตาม p55-1;ชินจิพูดใน p57-1"
+          }
         }
       ]
     },
@@ -592,7 +808,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามว่าเมื่อไหร่จะพร้อมเริ่มของจริง และ p58-1 บรรยายเขาลูบไล้ต่อ"
+          }
         }
       ]
     },

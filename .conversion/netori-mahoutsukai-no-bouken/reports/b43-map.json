@@ -1,0 +1,46 @@
+{
+  "batch": "b43",
+  "sources": [
+    {
+      "sourceId": "193135",
+      "chapterNo": "210",
+      "mapJsonHash": "18264b943549ffe4d96b462ba8568f5f7bdb2c6b43ce1894340abc499d5a0eb3",
+      "status": "ready",
+      "dialogue": 23
+    },
+    {
+      "sourceId": "193468",
+      "chapterNo": "211",
+      "mapJsonHash": "db0a40f2980e3d9e42227b4764829dff271a267449da92821d71adb4df1f2529",
+      "status": "ready",
+      "dialogue": 26
+    },
+    {
+      "sourceId": "193469",
+      "chapterNo": "212",
+      "mapJsonHash": "9511f7f16d644ece6685eec541f02ecf2e1c5475afe5399b213be3a1dd40d93d",
+      "status": "ready",
+      "dialogue": 24
+    },
+    {
+      "sourceId": "193470",
+      "chapterNo": "213",
+      "mapJsonHash": "deae42cc40667e1c06e91de36ffb950300fcab785dfdbb9f37af918f0863a5a9",
+      "status": "ready",
+      "dialogue": 42
+    },
+    {
+      "sourceId": "193471",
+      "chapterNo": "213.5",
+      "mapJsonHash": "adc92695345c7852a062b42e2938acdd4d30b30c25f7638826e7628c8183427a",
+      "status": "ready",
+      "dialogue": 0
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "193135 p56-1/p57-1: ต้นฉบับไม่ระบุผู้พูดรายบรรทัดนอกจาก p58-1 ที่เอ่ยชื่ออีฟและคลาร่าตามลำดับ จึงจับคู่ป56=อีฟ ป57=คลาร่า",
+    "193469 p9-1: ประโยค 'พวกเรา' ของอีฟและคลาร่าไม่มีบทระบุผู้พูดรายบรรทัด; p11-1 ระบุทั้งคู่เตรียมตัวมา และ p13-1 เป็นคำตอบพร้อมกัน จึงกำหนดให้อีฟเป็นเสียงนำ",
+    "193470 p30-1/p40-1/p44-1: บทสนทนาในมื้อเช้าไม่มีบทระบุผู้พูดตรงๆ; ใช้บริบท p33-1 (อัลวิน), p39-1 ถึง p41-1 (เรนกะเป็นคนรักที่รู้ผลการนวดของชินจิ) และ p34-1 (เรนกะเพิ่งขอให้นวด)"
+  ]
+}

@@ -18,7 +18,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p1-1 ระบุว่าชินจิและคลาร่าเปลือยกายเข้าไปในห้องน้ำด้วยกัน และ p3-1 บรรยายว่าคลาร่าเห็นองคชาตของชินจิว่ามีขนาดใหญ่ที่สุดเท่าที่เคยเห็น"
+          }
         }
       ]
     },
@@ -49,7 +58,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ผู้พูดเรียกคู่สนทนาว่าคลาร่าจังและกล่าวถึงผิวของเธอ จึงเป็นชินจิ และ p6-1 คลาร่าตอบรับ"
+          }
         }
       ]
     },
@@ -60,7 +78,16 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "เป็นคำตอบของคลาร่าเรื่องผิวสีน้ำผึ้งของตัวเองต่อคำถามของชินจิ และ p7-1 ระบุว่าเธอหมุนตัวโชว์เรือนร่าง"
+          }
         }
       ]
     },
@@ -81,7 +108,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ผู้พูดเรียกตัวเองว่าคลาร่าและบอกว่าจะอาบน้ำให้พี่ชายเอง ก่อน p9-1 บรรยายว่าคลาร่ายิ้มและทาโลชั่น"
+          }
         }
       ]
     },
@@ -112,7 +148,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p11-1",
+              "p13-1"
+            ],
+            "reason": "p13-1 ระบุว่าคลาร่ากำลังถูร่างกายกับชินจิ คำถามว่าพี่ชายรู้สึกดีไหมจึงเป็นของคลาร่า"
+          }
         }
       ]
     },
@@ -123,7 +168,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "เป็นเสียงครางตอบรับของชินจิต่อคำถามของคลาร่าใน p11-1"
+          }
         }
       ]
     },
@@ -154,7 +208,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "p14-1 ระบุว่าคลาร่ากำลังทำความสะอาดหน้าอกของชินจิ คำชมเรื่องกล้ามเนื้อจึงเป็นของคลาร่า"
+          }
         }
       ]
     },
@@ -165,7 +228,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "เป็นคำตอบของชินจิว่าถึงเป็นนักเวทก็ต้องเคลื่อนไหวตลอด ก่อนคลาร่าพูดต่อใน p17-1"
+          }
         }
       ]
     },
@@ -176,7 +248,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เป็นคำหยอกต่อเนื่องของคลาร่า และ p18-1 ระบุว่าเธอจูบแก้มชินจิแล้วเลื่อนตัวลงไป"
+          }
         }
       ]
     },
@@ -217,7 +298,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p22-1 ระบุว่าการถูไพซุริพร้อมเงยหน้าอ้อนออดทำให้ชินจิอยากหลั่ง คำถามว่าอยากเสร็จตรงนี้ไหมจึงเป็นของคลาร่า"
+          }
         }
       ]
     },
@@ -248,7 +338,16 @@
           "start": 0,
           "end": 65,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p22-1 ระบุว่าชินจิส่ายหน้าเพื่อปฏิเสธคำถามของคลาร่า คำตอบว่าไม่ล่ะและชวนสอดใส่จึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -259,7 +358,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "เป็นคำตอบรับของคลาร่าต่อคำชวนของชินจิ ก่อน p26-1 ระบุว่าเธอรู้สึกกระหาย"
+          }
         }
       ]
     },
@@ -300,7 +408,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "p28-1 ระบุว่าคลาร่าคร่อมลงบนตัวชินจิหลังล้างฟองออก คำบอกว่าจะไปแล้วจึงเป็นของคลาร่า และ p30-1 บรรยายการสอดใส่ทันที"
+          }
         }
       ]
     },
@@ -331,7 +448,17 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1",
+              "p34-1"
+            ],
+            "reason": "p31-1 ระบุว่าชินจิไม่ใจดีพอจะปล่อยให้คลาร่าหยุดนิ่ง คำท้าถามว่าหยุดไม่ได้นะจึงเป็นของชินจิ และ p34-1 บรรยายว่าเขาดึงเอวเธอเข้าหาตัว"
+          }
         }
       ]
     },
@@ -342,7 +469,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p35-1"
+            ],
+            "reason": "เป็นเสียงครางของคลาร่าตอบคำท้าของชินจิ และ p35-1 บรรยายว่าเธอถึงจุดสุดยอดทันทีเมื่อองคชาตถึงส่วนลึก"
+          }
         }
       ]
     },
@@ -373,7 +509,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "เป็นคำบอกของชินจิก่อนเขาเริ่มขยับ และ p38-1 ระบุว่าคลาร่าที่คร่อมอยู่กอดเขาไว้แน่น"
+          }
         }
       ]
     },
@@ -384,7 +529,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p39-1"
+            ],
+            "reason": "เป็นเสียงครางของคลาร่าต่อคำบอกของชินจิ และ p39-1 ระบุว่าเสียงครางของคลาร่าดังขึ้นเรื่อยๆ"
+          }
         }
       ]
     },
@@ -415,7 +569,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 ระบุว่าคลาร่าแอ่นหลังโดยไม่สามารถควบคุมเสียงครางได้หลังคำนี้"
+          }
         }
       ]
     },
@@ -496,7 +659,17 @@
           "start": 0,
           "end": 185,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p47-1",
+              "p48-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่าคลาร่าถึงจุดสุดยอดอย่างต่อเนื่องจนน้ำตาไหลและกรีดร้องหลังเสียงครางชุดนี้"
+          }
         }
       ]
     },
@@ -537,7 +710,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p52-1",
+              "p54-1"
+            ],
+            "reason": "p54-1 ระบุว่าชินจิหลั่งน้ำอสุจิเข้าไปในปากมดลูกของคลาร่าหลังคำนี้"
+          }
         }
       ]
     },
@@ -548,7 +730,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "เป็นเสียงครางตอบรับของคลาร่าต่อคำบอกของชินจิใน p52-1 ก่อน p54-1 บรรยายการหลั่ง"
+          }
         }
       ]
     },
@@ -619,7 +810,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p62-1"
+            ],
+            "reason": "p62-1 ระบุว่าชินจิเช็ดเหงื่อแล้วออกจากห้องอาบน้ำหลังคำนี้"
+          }
         }
       ]
     },
@@ -630,7 +830,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "เป็นเสียงตอบรับของคลาร่าที่หมดแรงต่อคำบอกของชินจิ ก่อน p62-1 บรรยายว่าเขาออกไปโดยเหลือภาพของเธอไว้"
+          }
         }
       ]
     },

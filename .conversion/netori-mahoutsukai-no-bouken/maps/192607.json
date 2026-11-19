@@ -97,7 +97,17 @@
         {
           "start": 0,
           "end": 17,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เป็นบทสนทนาทางกระแสจิต: เฟรรี่ถามชินจิวพร้อมหรือยัง และ p11-1 เป็นคำตอบของชินจิ ก่อน p12-1 ระบุว่าเมื่อชินจิตอบรับ ทั้งเฟรรี่ อีฟและคลาร่าก็ปรากฏตัว"
+          }
         }
       ]
     },
@@ -107,7 +117,17 @@
         {
           "start": 0,
           "end": 21,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เป็นคำตอบของชินจิต่อกระแสจิตของเฟรรี่ใน p10-1 และ p12-1 ระบุว่าเมื่อชินจิตอบรับ ทั้งสามก็ปรากฏตัว"
+          }
         }
       ]
     },
@@ -157,7 +177,18 @@
         {
           "start": 0,
           "end": 49,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1",
+              "p20-1"
+            ],
+            "reason": "เป็นคำอธิบายของเฟรรี่เรื่องชุดพื้นฐานซัคคิวบัสต่อเนื่องจากบทสนทนากระแสจิต และ p20-1 ระบุว่าชินจิกำลังสื่อสารทางกระแสจิตกับเฟรรี่"
+          }
         }
       ]
     },
@@ -167,7 +198,17 @@
         {
           "start": 0,
           "end": 38,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เป็นคำถามของชินจิต่อคำอธิบายชุดของเฟรรี่ใน p16-1 และ p18-1 เป็นคำตอบของเฟรรี่"
+          }
         }
       ]
     },
@@ -177,7 +218,17 @@
         {
           "start": 0,
           "end": 49,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "เป็นคำตอบของเฟรรี่เรื่องเวทมนตร์เสริมบนบิกินี่ต่อคำถามของชินจิใน p17-1"
+          }
         }
       ]
     },
@@ -187,7 +238,17 @@
         {
           "start": 0,
           "end": 52,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เป็นคำบ่นของชินจิต่อคำตอบของเฟรรี่ และ p20-1 ระบุว่าชินจิกำลังสื่อสารทางกระแสจิตกับเฟรรี่"
+          }
         }
       ]
     },
@@ -218,7 +279,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p21-1 ระบุว่าคลาร่าจำใบหน้าชินจิได้ และคำพูดนี้เรียกชินจิว่าพี่ชายพร้อมทักว่าเป็นคนที่ทำให้ตนหลับไป"
+          }
         }
       ]
     },
@@ -229,7 +299,16 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "เป็นคำแนะนำตัวของชินจิที่บอกชื่อและบทบาทอัครสาวก ก่อน p24-1 บรรยายว่าเขายื่นมือขอจับมือ"
+          }
         }
       ]
     },
@@ -290,7 +369,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "เป็นคำพูดของชินจิต่อสีหน้าผิดหวังของทั้งสองใน p28-1 และ p30-1 คลาร่าตอบขอโทษโดยเรียกเขาว่าพี่ชาย"
+          }
         }
       ]
     },
@@ -301,7 +389,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ผู้พูดขอโทษและเล่าว่าอีฟจังเป็นคนบอกว่าคนที่ออกมาควรดูน่าเกรงขามกว่านี้ จึงเป็นคลาร่าผู้พูดถึงอีฟในฐานะบุคคลที่สาม"
+          }
         }
       ]
     },
@@ -312,7 +409,16 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p42-1"
+            ],
+            "reason": "p30-1 คลาร่าเป็นผู้ขอโทษไปแล้ว คำขอโทษอีกคำจึงเป็นของอีฟ และ p42-1 ระบุว่าอีฟเป็นผู้เปลี่ยนวิธีการพูดแบบร้านค้าตามที่ชินจิกล่าวถึง"
+          }
         }
       ]
     },
@@ -343,7 +449,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p33-1 ระบุว่าชินจิพูดต่อหลังคำขอโทษของทั้งสอง และ p35-1 คลาร่าตอบคำถามของเขาเรื่องการแบ่งพลังชีวิต"
+          }
         }
       ]
     },
@@ -354,7 +469,16 @@
           "start": 0,
           "end": 99,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p36-1 ระบุว่าคลาร่ามองชินจิด้วยความเป็นห่วงหลังคำถามนี้"
+          }
         }
       ]
     },
@@ -415,7 +539,16 @@
           "start": 0,
           "end": 107,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิเป็นผู้กล่าวถึงวิธีการพูดที่เปลี่ยนไปของทั้งสอง และ p42-1 อีฟเป็นผู้ตอบเรื่องวิธีการพูดแบบร้านค้า"
+          }
         }
       ]
     },
@@ -426,7 +559,16 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p43-1 ระบุว่าอีฟเป็นผู้เปลี่ยนวิธีการพูดเป็นแบบที่ใช้ในร้านหลังชินจิกล่าวถึง"
+          }
         }
       ]
     },
@@ -477,7 +619,17 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เป็นคำชวนของชินจิให้เปลี่ยนวิธีการพูดเพราะอยากสนุกด้วย และ p49-1 ระบุว่าคลาร่าเปลี่ยนตามอีฟหลังคำนี้"
+          }
         }
       ]
     },
@@ -488,7 +640,17 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "p49-1 ระบุว่าคลาร่าเปลี่ยนวิธีการพูดต่อจากอีฟ และ p50-1 บรรยายว่าคลาร่าหัวเราะคิกคักและเข้าใกล้ชินจิ"
+          }
         }
       ]
     },
@@ -538,7 +700,18 @@
         {
           "start": 0,
           "end": 240,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p54-1 เป็นคำสวนกลับของชินจิต่อคำพูดนี้ และ p55-1 ระบุว่าชินจิอดไม่ได้ที่จะสวนกลับเฟรรี่ที่บอกว่าเขาเปลี่ยนไป"
+          }
         }
       ]
     },
@@ -549,7 +722,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าเป็นคำสวนกลับของชินจิต่อคำพูดของเฟรรี่"
+          }
         }
       ]
     },
@@ -580,7 +762,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "เป็นเสียงแสดงความเห็นของผู้หญิงคนหนึ่งในบทสนทนาสามคน: p58-1 คลาร่าตอบรับและจัดคิวให้อีฟรอที่เตียงต่อจากตน ส่วน p59-1 อีฟตอบรับแผนนั้น จึงเป็นคำพูดของอีฟ"
+          }
         }
       ]
     },
@@ -591,7 +782,17 @@
           "start": 0,
           "end": 157,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ผู้พูดเรียกตัวเองว่าฉันและบอกว่าจะอาบน้ำให้พี่ชายเอง พร้อมเรียกอีฟว่า 'อีฟจัง' จึงเป็นคลาร่า และ p60-1 ระบุว่าคลาร่ากอดแขนชินจิ"
+          }
         }
       ]
     },
@@ -602,7 +803,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p61-1"
+            ],
+            "reason": "เป็นคำตอบรับของอีฟต่อแผนของคลาร่า และ p61-1 ระบุว่าชินจิเดินตามคลาร่าเข้าไปในห้องอาบน้ำหลังทั้งสองพูดจบ"
+          }
         }
       ]
     },

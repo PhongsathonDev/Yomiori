@@ -28,7 +28,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "มีริสเป็นผู้ทักทายอัลวินในห้องอาหาร และ p4-1 บรรยายว่าเธอยิ้มให้เขา"
+          }
         }
       ]
     },
@@ -49,7 +58,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "อัลวินเป็นผู้ทักทายกลับและเรียกมีริสว่า 'มี่'"
+          }
         }
       ]
     },
@@ -60,7 +78,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "มีริสเป็นผู้ถามด้วยความเป็นห่วง และ p7-1 บรรยายว่าเธอสังเกตเห็นความผิดปกติ"
+          }
         }
       ]
     },
@@ -91,7 +118,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "อัลวินเป็นผู้เลี่ยงคำตอบเรื่องความฝันตาม p8-1"
+          }
         }
       ]
     },
@@ -102,7 +138,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "มีริสเป็นผู้บอกให้ไปล้างหน้า และอัลวินตอบรับใน p11-1"
+          }
         }
       ]
     },
@@ -113,7 +158,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับก่อนเดินออกจากห้องอาหารตาม p12-1"
+          }
         }
       ]
     },
@@ -134,7 +188,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าในห้องน้ำมีชินจิกำลังกอดเอวเรนกะ และคำอุทานนี้เป็นของเรนกะที่ตกใจ"
+          }
         }
       ]
     },
@@ -145,7 +208,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ชินจิเป็นผู้ทักทายอัลวินในห้องน้ำตาม p15-1"
+          }
         }
       ]
     },
@@ -176,7 +248,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอโทษที่เปิดประตูโดยไม่เคาะ และชินจิตอบใน p18-1"
+          }
         }
       ]
     },
@@ -187,7 +268,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าไม่เป็นไรและหันไปพูดกับเรนกะ ซึ่งเธอตอบใน p19-1"
+          }
         }
       ]
     },
@@ -198,7 +288,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เรนกะเป็นผู้ขอโทษอัลวินตามที่ p20-1 อธิบายเหตุการณ์"
+          }
         }
       ]
     },
@@ -229,7 +328,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามว่าทั้งสองกินอาหารเช้าหรือยัง และชินจิตอบใน p23-1"
+          }
         }
       ]
     },
@@ -240,7 +348,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบและชวนไปห้องอาหารก่อน"
+          }
         }
       ]
     },
@@ -261,7 +378,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "อัลวินเป็นผู้บอกว่าจะตามไป และเรนกะบอกลาใน p26-1"
+          }
         }
       ]
     },
@@ -272,7 +398,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "เรนกะเป็นผู้โบกมือบอกลาตาม p27-1"
+          }
         }
       ]
     },
@@ -313,7 +448,17 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1",
+              "p33-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่ชอบอาหารของอากาเนะ และ p33-1 บรรยายว่าอัลวินกลับมามีท่าทีปกติระหว่างมื้อ"
+          }
         }
       ]
     },
@@ -324,7 +469,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "อากาเนะเป็นผู้ตอบรับคำขอบคุณและเก็บกวาดอาหารตาม p32-1"
+          }
         }
       ]
     },
@@ -355,7 +509,17 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p36-1 ระบุว่าเรนกะเป็นผู้พูดขึ้นมาและชินจิพยักหน้ารับ"
+          }
         }
       ]
     },
@@ -366,7 +530,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำขอของเรนกะ"
+          }
         }
       ]
     },
@@ -387,7 +560,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "มีริสเป็นผู้เรียกอัลวินว่า 'อัลคุง' และถามเขา"
+          }
         }
       ]
     },
@@ -398,7 +580,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบเรื่องการนวดเป็นครั้งคราวตาม p39-1"
+          }
         }
       ]
     },
@@ -419,7 +610,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เรนกะเป็นคนรักของชินจิที่รู้ผลของการนวด และชินจิอธิบายใน p41-1"
+          }
         }
       ]
     },
@@ -430,7 +630,16 @@
           "start": 0,
           "end": 114,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายเทคนิคการนวดของตน"
+          }
         }
       ]
     },
@@ -451,7 +660,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "มีริสเป็นผู้พูดด้วยคำลงท้าย ค่ะ ว่าฟังแล้วสบาย"
+          }
         }
       ]
     },
@@ -462,7 +680,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "เรนกะเป็นผู้พูดต่อว่าจากนี้ไม่อยากนวดเอง หลังเพิ่งขอให้ชินจิช่วยนวดใน p34-1"
+          }
         }
       ]
     },
@@ -473,7 +700,17 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p46-1 ระบุว่าอัลวินพูดแทรกคำพูดของมีริสที่สนใจร้านนวด"
+          }
         }
       ]
     },
@@ -494,7 +731,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "อัลวินเป็นผู้เสนอให้มีริสลองให้ชินจินวดตอนนี้"
+          }
         }
       ]
     },
@@ -545,7 +791,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "มีริสเป็นผู้ถามชินจิหลังอัลวินเสนอ และ p53-1 ระบุว่าเธอตัดสินใจทำตาม"
+          }
         }
       ]
     },
@@ -576,7 +831,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับและเริ่มนวดมีริส"
+          }
         }
       ]
     },
@@ -587,7 +851,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับคำแนะนำของชินจิ"
+          }
         }
       ]
     },
@@ -608,7 +881,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "มีริสเป็นผู้ชมการนวด และชินจิตอบใน p59-1"
+          }
         }
       ]
     },
@@ -619,7 +901,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำชมของมีริส"
+          }
         }
       ]
     },
@@ -650,7 +941,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "เป็นเสียงครางของมีริสระหว่างถูกนวด ก่อนชินจิสรุปใน p63-1"
+          }
         }
       ]
     },
@@ -661,7 +961,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าการนวดเสร็จแล้ว"
+          }
         }
       ]
     },
@@ -672,7 +981,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "มีริสเป็นผู้พูดต่อว่าอยากให้ช่วยอีก"
+          }
         }
       ]
     },
@@ -683,7 +1001,17 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "p67-1 ระบุว่าเรนกะขอให้ชินจิช่วยนวดด้วย"
+          }
         }
       ]
     },
@@ -714,7 +1042,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำขอของเรนกะ"
+          }
         }
       ]
     },
@@ -725,7 +1062,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "เรนกะเป็นผู้ชวนไปและบอกลาอีกสองคน ก่อน p70-1 บรรยายว่าเธอคว้าแขนชินจิ"
+          }
         }
       ]
     },
@@ -756,7 +1102,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "มีริสเป็นผู้เรียกอัลวินหลังมองส่งสองคนตาม p71-1"
+          }
         }
       ]
     },
@@ -767,7 +1122,16 @@
           "start": 0,
           "end": 104,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1",
+              "p74-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบอย่างไม่ทันตั้งตัวตาม p74-1"
+          }
         }
       ]
     },
@@ -788,7 +1152,16 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "มีริสเป็นผู้บอกว่าอยากให้อัลวินนวดให้มากกว่า"
+          }
         }
       ]
     },
@@ -799,7 +1172,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอบคุณและชวนไปที่ห้อง"
+          }
         }
       ]
     },

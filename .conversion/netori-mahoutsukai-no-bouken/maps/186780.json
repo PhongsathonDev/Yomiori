@@ -58,7 +58,15 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7 ระบุว่าเป็นพนักงานต้อนรับหญิงที่เคาน์เตอร์ซึ่งไม่มีชื่อในเรื่อง จึงใช้กลุ่มเสียงตัวละครประกอบที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -99,7 +107,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p11 ระบุว่าอัลวินวางจดหมายจากวิหารบนเคาน์เตอร์หลังพูดประโยคนี้"
+          }
         }
       ]
     },
@@ -120,7 +136,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "พนักงานต้อนรับหญิงคนเดิมเป็นผู้ชี้ทางและกล่าวเชิญตาม p11 แล้วอัลวินตอบรับใน p13"
+          }
         }
       ]
     },
@@ -131,7 +156,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่ตอบรับและพาทุกคนไปตาม p14"
+          }
         }
       ]
     },
@@ -192,7 +226,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p21-1"
+            ],
+            "reason": "พนักงานต้อนรับหญิงเป็นผู้นำทางและเชิญให้รอในห้องรับแขก ก่อนโค้งคำนับออกไปตาม p21"
+          }
         }
       ]
     },
@@ -203,7 +245,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p22-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับคำเชิญและเริ่มบทสนทนากับเพื่อนร่วมปาร์ตีใน p22"
+          }
         }
       ]
     },
@@ -224,7 +275,14 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "ตรวจบริบท p22-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -235,7 +293,14 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -256,7 +321,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p17 ระบุว่ามีริสโล่งใจที่แผนใส่แหวนปลอมได้ผล เธอจึงเป็นผู้พูดประโยคนี้ ส่วน p26 ที่เรียกอัลวินว่า 'อัล' เป็นเรนกะ"
+          }
         }
       ]
     },
@@ -267,7 +341,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "คำเรียกอัลวินว่า 'อัล' เป็นของเรนกะ (เทียบ Ch.147 ที่เรนกะพูดว่า 'อัล!') และ p27 ชินจิเป็นผู้ตอบเรื่องลูกสาวขุนนาง"
+          }
         }
       ]
     },
@@ -278,7 +361,14 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -299,7 +389,14 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -310,7 +407,14 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ตรวจบริบท p30-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -341,7 +445,14 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของพิโน่ มัซโซล่า"
+          }
         }
       ]
     },
@@ -352,7 +463,14 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -373,7 +491,14 @@
           "start": 0,
           "end": 162,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของพิโน่ มัซโซล่า"
+          }
         }
       ]
     },
@@ -384,7 +509,15 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38 ระบุว่าอัลวินยื่นอัญมณีให้พิโน่"
+          }
         }
       ]
     },
@@ -415,7 +548,14 @@
           "start": 0,
           "end": 65,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของพิโน่ มัซโซล่า"
+          }
         }
       ]
     },
@@ -426,7 +566,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p42 ระบุว่าอัลวินรู้สึกประหลาดใจเมื่อเห็นพิโน่ทำหน้าเหมือนเข้าใจอะไรบางอย่าง"
+          }
         }
       ]
     },
@@ -457,7 +606,16 @@
           "start": 0,
           "end": 130,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "p43 ระบุว่าสายตาของพิโน่หันไปมองชินจิ ชินจิจึงพูดขึ้น"
+          }
         }
       ]
     },
@@ -468,7 +626,14 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1"
+            ],
+            "reason": "ตรวจบริบท p45-1 แล้ว จัดประเภทเป็นคำพูดของพิโน่ มัซโซล่า"
+          }
         }
       ]
     },
@@ -479,7 +644,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ผู้ตอบขอโทษแทนพวกตนหลังพิโน่รับปากดูแลเรื่องนี้"
+          }
         }
       ]
     },
@@ -550,7 +724,14 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของพิโน่ มัซโซล่า"
+          }
         }
       ]
     },
@@ -561,7 +742,14 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ตรวจบริบท p54-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -572,7 +760,14 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "ตรวจบริบท p55-1 แล้ว จัดประเภทเป็นคำพูดของพิโน่ มัซโซล่า"
+          }
         }
       ]
     },
@@ -603,7 +798,14 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "ตรวจบริบท p58-1 แล้ว จัดประเภทเป็นคำพูดของพิโน่ มัซโซล่า"
+          }
         }
       ]
     },
@@ -614,7 +816,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "ตรวจบริบท p59-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -625,7 +834,14 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "ตรวจบริบท p60-1 แล้ว จัดประเภทเป็นคำพูดของพิโน่ มัซโซล่า"
+          }
         }
       ]
     },

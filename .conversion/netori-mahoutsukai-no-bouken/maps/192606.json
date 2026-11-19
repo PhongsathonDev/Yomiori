@@ -88,7 +88,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p10-1 ระบุว่าลิลเป็นผู้ยื่นจดหมายลาตายให้อัลวินหลังคำนี้"
+          }
         }
       ]
     },
@@ -119,7 +128,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p13-1 ระบุว่าอัลวินมองดูศพด้วยใบหน้าเศร้าสร้อยหลังคำพูดนี้"
+          }
         }
       ]
     },
@@ -150,7 +168,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ผู้พูดเสนอให้จัดพิธีไว้อาลัยแบบมนุษย์ และ p16-1 มีริสตอบรับโดยเรียกผู้พูดว่าชินจิซัง"
+          }
         }
       ]
     },
@@ -161,7 +188,17 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เป็นคำตอบรับของผู้หญิงที่เรียกชินจิว่าชินจิซัง และ p18-1 เป็นคำร่ายของมีริสผู้ทำพิธีเผาศพ"
+          }
         }
       ]
     },
@@ -182,7 +219,17 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p16-1 มีริสรับหน้าที่จัดพิธี และ p17-1 เปรียบเทียบเวทแสงของมีริสกับการเผาแบบมนุษย์ คำร่าย〈เพลิงพิธีศพ〉จึงเป็นของมีริส"
+          }
         }
       ]
     },
@@ -213,7 +260,17 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p22-1 และ p23-1 อธิบายว่าศพที่เผาเป็นศพปลอมและอีฟกับคลาร่าจากไปกับแฟลร์แล้ว คำยืนยันว่าการปลอมแปลงสำเร็จจึงเป็นของชินจิผู้วางแผน"
+          }
         }
       ]
     },
@@ -244,7 +301,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p26-1 ระบุว่าอัลวินกล่าวคำนี้หลังจากไว้อาลัยเสร็จสิ้น"
+          }
         }
       ]
     },
@@ -255,7 +321,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p27-1"
+            ],
+            "reason": "p27-1 ระบุว่าเรนกะกล่าวอย่างฮึกเหิมและเดินออกจากซากปรักหักพังหลังคำนี้"
+          }
         }
       ]
     },
@@ -296,7 +371,17 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-lil",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ผู้พูดบอกว่าจะกลับไปที่คฤหาสน์ของเฮลซัง และ p31-1 ระบุว่าชินจิกล่าวอำลาลิลหลังคำตอบใน p30-1"
+          }
         }
       ]
     },
@@ -307,7 +392,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "p31-1 ระบุว่าชินจิกล่าวอำลาลิลและรีบตามเรนกะไปหลังบทสนทนานี้"
+          }
         }
       ]
     },
@@ -398,7 +492,17 @@
           "start": 0,
           "end": 163,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1",
+              "p42-1"
+            ],
+            "reason": "p38-1 ระบุว่าพิโน่หันไปมองทหารยามข้างๆ ก่อนออกคำสั่ง และ p42-1 เป็นคำสั่งชุดเดียวกันที่พิโน่กล่าวต่อ"
+          }
         }
       ]
     },
@@ -409,7 +513,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นและ p41-1 ระบุว่าเหล่าทหารยามทำความเคารพและเริ่มปฏิบัติการตามคำสั่ง เป็นเสียงตอบรับพร้อมกันของทหารยาม"
+          }
         }
       ]
     },
@@ -430,7 +543,16 @@
           "start": 0,
           "end": 297,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p44-1"
+            ],
+            "reason": "เป็นคำสั่งและการแจ้งกำหนดการของพิโน่ต่อปาร์ตี้ต่อเนื่องจาก p39-1 และ p44-1 ระบุว่าพิโน่เดินออกไปหลังให้คำสั่งเสร็จ"
+          }
         }
       ]
     },
@@ -441,7 +563,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p45-1"
+            ],
+            "reason": "เป็นคำตอบรับอย่างสุภาพของหัวหน้าปาร์ตี้ต่อข้อเสนอของพิโน่ และ p45-1 ระบุว่าอัลวินกับคนอื่นพอใจข้อเสนอนี้"
+          }
         }
       ]
     },

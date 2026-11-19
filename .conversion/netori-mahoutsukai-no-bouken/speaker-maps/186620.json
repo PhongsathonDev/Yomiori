@@ -1,0 +1,45 @@
+{
+  "p3-1": "netori-shinji",
+  "p4-1": "netori-shizuku",
+  "p6-1": "netori-shinji",
+  "p7-1": "netori-shizuku",
+  "p9-1": "netori-shinji",
+  "p10-1": "netori-shizuku",
+  "p12-1": "netori-shinji",
+  "p13-1": "netori-shizuku",
+  "p18-1": "netori-shinji",
+  "p20-1": "netori-shinji",
+  "p21-1": "netori-shizuku",
+  "p22-1": "netori-shinji",
+  "p26-1": "netori-shizuku",
+  "p27-1": "netori-shinji",
+  "p31-1": "netori-shinji",
+  "p32-1": "netori-shizuku",
+  "p33-1": "netori-shinji",
+  "p36-1": "netori-shinji",
+  "p38-1": {
+    "speakerId": "netori-shizuku",
+    "context": ["p37-1", "p38-1", "p39-1"],
+    "reason": "ชิซูกุเป็นผู้ยอมทำตามที่ชินจิต้องการใน p37 และ p39 เป็นคำตอบรับของชินจิ"
+  },
+  "p39-1": "netori-shinji",
+  "p45-1": "netori-shinji",
+  "p46-1": "netori-shizuku",
+  "p49-1": "netori-shinji",
+  "p50-1": {
+    "speakerId": "netori-shizuku",
+    "context": ["p49-1", "p50-1", "p51-1"],
+    "reason": "เสียงอู้อี้ตอบรับคำสั่งของชินจิใน p49 ในขณะที่ p51 ระบุว่าเธอกำลังอมอวัยวะเพศอยู่ จึงเป็นเสียงของชิซูกุ"
+  },
+  "p57-1": {
+    "type": "narration",
+    "context": ["p57-1", "p58-1"],
+    "reason": "เป็นเสียงเอฟเฟกต์การดูด/จูบในฉาก ไม่ใช่คำพูด และ p58 บรรยายว่าชิซูกุทำเฟลลาชิโอต่อ"
+  },
+  "p61-1": "netori-shinji",
+  "p62-1": {
+    "speakerId": "netori-shizuku",
+    "context": ["p61-1", "p62-1", "p63-1"],
+    "reason": "เป็นเสียงอุทานของชิซูกุขณะชินจิหลั่งตามที่ p63 ระบุ"
+  }
+}

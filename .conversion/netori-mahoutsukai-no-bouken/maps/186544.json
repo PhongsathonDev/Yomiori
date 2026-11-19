@@ -28,7 +28,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p6-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้และ p6 ระบุว่าอัลวินกับคนอื่นๆ เดินเข้าไปในห้องอาหาร จึงเป็นผู้ประกาศว่ากลับมาแล้ว ก่อนอากาเนะตอบรับใน p4"
+          }
         }
       ]
     },
@@ -39,7 +48,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p6-1"
+            ],
+            "reason": "อากาเนะพักอยู่ที่บ้านปาร์ตี้และกำลังกินอาหารกลางวันในห้องอาหารตาม p6 เธอจึงเป็นเจ้าบ้านที่ต้อนรับทุกคน"
+          }
         }
       ]
     },
@@ -50,7 +68,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p7-1"
+            ],
+            "reason": "ไอริสเป็นแขกที่แวะมาบ้านปาร์ตี้เป็นครั้งคราวตาม p7 ถ้อยคำสุภาพนี้จึงเป็นการขออนุญาตรบกวนเจ้าบ้าน"
+          }
         }
       ]
     },
@@ -91,7 +118,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p12-1"
+            ],
+            "reason": "อากาเนะเป็นผู้เสนอทำอาหารกลางวันให้ชินจิ ก่อนถูกเรนกะกับมีริสห้ามใน p12"
+          }
         }
       ]
     },
@@ -102,7 +138,17 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "มีริสห้ามอากาเนะที่กำลังจะลุกไปทำอาหาร แล้ว p11 อากาเนะหันไปขอช่วยเรนกะต่อ สอดคล้องกับ p12 ที่เรนกะและมีริสเป็นคนห้าม"
+          }
         }
       ]
     },
@@ -113,7 +159,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "อากาเนะขอตามไปช่วยเรนกะในครัว และ p12 ระบุว่าเธอตามทั้งสองคนไปทีหลัง"
+          }
         }
       ]
     },
@@ -134,7 +189,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ไอริสเป็นผู้ตบเก้าอี้ข้างตัวตาม p15 เพื่อเชิญชินจิมานั่ง"
+          }
         }
       ]
     },
@@ -145,7 +209,14 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "ตรวจบริบท p14-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -186,7 +257,14 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "ตรวจบริบท p18-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -197,7 +275,16 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามไอริสและเรียกอัลวินให้ร่วมยืนยันในตอนท้าย"
+          }
         }
       ]
     },
@@ -208,7 +295,14 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -259,7 +353,14 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "ตรวจบริบท p25-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -280,7 +381,14 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -291,7 +399,14 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "ตรวจบริบท p28-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -312,7 +427,14 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ตรวจบริบท p30-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -323,7 +445,17 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p31-1",
+              "p32-1",
+              "p60-1"
+            ],
+            "reason": "เรนกะ มีริส และอากาเนะอยู่ในครัวตั้งแต่ p12 จนกลับมาที่ p60 จึงเหลืออัลวินเป็นคู่สนทนาในห้อง; ไอริสตอบรับแล้วหันไปถาม 'รุ่นพี่' ซึ่งคือชินจิใน p32 และคำว่า 'ตั้งแต่เด็ก' ตรงกับอัลวินที่รู้จักไอริสมาหลายปี"
+          }
         }
       ]
     },
@@ -334,7 +466,14 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "ตรวจบริบท p32-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -415,7 +554,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -426,7 +572,14 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "ตรวจบริบท p41-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -467,7 +620,16 @@
           "start": 0,
           "end": 134,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามชินจิเรื่องความฝันและ p46 ระบุว่าเขาพยายามเปลี่ยนเรื่อง"
+          }
         }
       ]
     },
@@ -498,7 +660,14 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -519,7 +688,14 @@
           "start": 0,
           "end": 112,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ตรวจบริบท p50-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -540,7 +716,15 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p53 ระบุว่าอัลวินรู้สึกประทับใจกับความฝันที่ยิ่งใหญ่เกินไป"
+          }
         }
       ]
     },
@@ -581,7 +765,14 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "ตรวจบริบท p56-1 แล้ว จัดประเภทเป็นคำพูดของไอริส"
+          }
         }
       ]
     },
@@ -612,7 +803,15 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60 ระบุว่าชินจิยักไหล่หลังพูดประโยคนี้"
+          }
         }
       ]
     },
@@ -633,7 +832,17 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p60 ระบุว่าเรนกะกับมีริสกลับมาจากครัว และ p63 ระบุว่า 'ทั้งสองคน' วางจานอาหาร; p62 เป็นมีริสเพราะใช้คำเรียก 'อัลคุง' จึงให้ p61 เป็นเรนกะ"
+          }
         }
       ]
     },
@@ -644,7 +853,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "มีริสเป็นคนเรียกอัลวินว่า 'อัลคุง' และ p63 ระบุว่าทั้งสองคนวางจานอาหารลงโต๊ะ"
+          }
         }
       ]
     },

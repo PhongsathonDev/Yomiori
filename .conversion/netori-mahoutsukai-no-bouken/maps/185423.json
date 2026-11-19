@@ -7,7 +7,14 @@
         {
           "start": 0,
           "end": 65,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1"
+            ],
+            "reason": "เป็นหมายเหตุของผู้แปล (TL) ไม่ใช่คำพูดหรือบทสนทนาในเนื้อเรื่อง"
+          }
         }
       ]
     },
@@ -28,7 +35,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p3-1 ระบุว่าทั้งสองกอดกันและชิซุกุเริ่มร้องไห้ ประโยคนี้จึงเป็นของชิซุกุ และ p5-1 เป็นฮายาเตะตอบ"
+          }
         }
       ]
     },
@@ -39,7 +55,16 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p6-1 ระบุว่าฮายาเตะโกรธเมื่อนึกถึงท่าทางข่มขู่ของชินจิ"
+          }
         }
       ]
     },
@@ -70,7 +95,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "เป็นคำปลอบที่ลงท้าย 'ค่ะ' ต่อจากชิซุกุซบตัวเข้าหาฮายาเตะ และ p9-1 เป็นฮายาเตะตอบ"
+          }
         }
       ]
     },
@@ -81,7 +115,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "เป็นคำตอบรับแบบสบายๆ ของฮายาเตะ ก่อน p10-1 ที่ชิซุกุตอบ 'ค่ะ...♡'"
+          }
         }
       ]
     },
@@ -92,7 +135,14 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -173,7 +223,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p17-1 ระบุว่าฮายาเตะรู้สึกผิดปกติเรื่องเวทมนตร์เสริมกำลัง จึงเป็นผู้เรียกซิลฟี่"
+          }
         }
       ]
     },
@@ -184,7 +243,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เป็นเสียงเรียกมารีของผู้ที่ใช้เวทมนตร์ไม่ได้เช่นกัน และ p20-1 ระบุว่าชิซุกุก็เรียกภูตของตน"
+          }
         }
       ]
     },
@@ -225,7 +292,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ลงท้ายด้วย 'คะ' แบบคำถามของชิซุกุ ส่วน p24-1 เป็นเสียงเรียกภูตแบบห้วนของฮายาเตะ"
+          }
         }
       ]
     },
@@ -236,7 +312,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เป็นเสียงเรียกให้ภูตออกมาแบบห้วน ซึ่งตรงกับฮายาเตะ และ p25-1 ระบุว่าทั้งสองโวยวาย"
+          }
         }
       ]
     },
@@ -257,7 +342,15 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goblins",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p27-1 ระบุว่าฝูงก็อบลินปรากฏตัวหลังได้ยินเสียง"
+          }
         }
       ]
     },
@@ -288,7 +381,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p31-1"
+            ],
+            "reason": "p31-1 ระบุว่าฮายาเตะดึงดาบออกจากฝักเพื่อจัดการก็อบลิน"
+          }
         }
       ]
     },
@@ -299,7 +401,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "เป็นเสียงเรียก 'ฮายาเตะจัง!!' ของชิซุกุ"
+          }
         }
       ]
     },
@@ -330,7 +441,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p35-1"
+            ],
+            "reason": "p32-1 ระบุว่าฮายาเตะคิดจะจัดการก็อบลิน และ p35-1 ระบุว่าเธอฟันดาบใส่ก็อบลิน"
+          }
         }
       ]
     },
@@ -341,7 +461,15 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goblins",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "เป็นเสียงร้องของก็อบลินที่ถูกฟันใน p35-1"
+          }
         }
       ]
     },
@@ -372,7 +500,15 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goblins",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p39-1"
+            ],
+            "reason": "เป็นเสียงร้องของก็อบลินตัวที่สองก่อนฟาดกระบองใส่ฮายาเตะใน p39-1"
+          }
         }
       ]
     },
@@ -383,7 +519,15 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p39-1 ระบุว่ากระบองของก็อบลินฟาดถูกฮายาเตะหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -404,7 +548,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นเสียงร้องของฮายาเตะที่ถูกกระบองรุม และ p41-1 เป็นชิซุกุร้องตอบ"
+          }
         }
       ]
     },
@@ -415,7 +568,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "เป็นเสียงร้องตกใจของชิซุกุเมื่อเห็นฮายาเตะถูกทำร้าย"
+          }
         }
       ]
     },
@@ -465,7 +627,15 @@
         {
           "start": 0,
           "end": 30,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ข้อความใน 『』 เป็นความคิดของมารีระหว่างเฝ้าดู ไม่ได้เปล่งเสียงพูด"
+          }
         }
       ]
     },
@@ -475,7 +645,16 @@
         {
           "start": 0,
           "end": 79,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "เป็นความคิดของซิลฟี่ต่อเนื่องจากความคิดของมารีเรื่องคำสั่งของชินจิ จึงเป็นการบรรยาย"
+          }
         }
       ]
     },
@@ -506,7 +685,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "เป็นเสียงร้อง 'หยุดนะ' ต่อเนื่องของฮายาเตะที่ถูกก็อบลินรุม และ p51-1 เป็นเสียงของชิซุกุ"
+          }
         }
       ]
     },
@@ -517,7 +705,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "เป็นเสียงสั่นกลัวแบบขาดคำของชิซุกุ"
+          }
         }
       ]
     },
@@ -538,7 +735,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "เป็นเสียงเรียกชิซุกุของฮายาเตะ และ p54-1 เป็นชิซุกุเรียกกลับ"
+          }
         }
       ]
     },
@@ -549,7 +755,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "เป็นเสียงเรียกฮายาเตะจังของชิซุกุ"
+          }
         }
       ]
     },
@@ -580,7 +795,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p56-1 ระบุว่ามารีและซิลฟี่พูดกับทั้งสอง และน้ำเสียงเนิบๆ กับ ~♪ ตรงกับมารี"
+          }
         }
       ]
     },
@@ -591,7 +815,16 @@
           "start": 0,
           "end": 81,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-sylphy",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "เป็นคำอธิบายเหตุผลที่ไม่มีใครให้ยืมพลัง ต่อจากมารี และ p59-1 ระบุว่าทั้งสองหายตัวไป"
+          }
         }
       ]
     },
@@ -622,7 +855,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p63-1"
+            ],
+            "reason": "p60-1 ระบุว่าฮายาเตะได้สติก่อน และ p63-1 ระบุว่าชิซุกุเปิดโพชั่นให้เธอดื่ม"
+          }
         }
       ]
     },
@@ -633,7 +875,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "เป็นคำขอโทษของชิซุกุที่ถูกเรียกชื่อ ก่อน p63-1 ที่เธอเปิดโพชั่นให้ฮายาเตะ"
+          }
         }
       ]
     },
@@ -664,7 +915,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "เป็นประโยคต่อเนื่องจากชิซุกุที่ดื่มโพชั่นและตรวจแผลของตน ก่อน p66-1 บรรยายการเปลี่ยนเสื้อผ้า"
+          }
         }
       ]
     },
@@ -685,7 +945,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "p66-1 ระบุว่าฮายาเตะเป็นผู้พึมพำออกมา และ p68-1 เป็นชิซุกุเรียกชื่อเธอ"
+          }
         }
       ]
     },
@@ -696,7 +965,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "เป็นเสียงเรียกฮายาเตะอย่างกังวลของชิซุกุ และ p69-1 ระบุว่าชิซุกุลุกขึ้นมองฮายาเตะ"
+          }
         }
       ]
     },
@@ -717,7 +995,16 @@
           "start": 0,
           "end": 169,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เป็นคำอธิบายของผู้ที่กำลังพูดเรื่องคำพูดสุดท้ายของชินจิ และ p71-1 เป็นชิซุกุตอบ"
+          }
         }
       ]
     },
@@ -728,7 +1015,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "ลงท้าย 'ค่ะ' แบบชิซุกุ และ p72-1 เป็นฮายาเตะตอบต่อ"
+          }
         }
       ]
     },
@@ -739,7 +1035,16 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "เป็นคำตอบที่ใช้ 'ฉัน' และวางแผนจะไปถามชินจิเอง ตรงกับฮายาเตะ"
+          }
         }
       ]
     },
@@ -755,7 +1060,14 @@
           "start": 36,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "p73-1 ระบุว่าฮายาเตะยกมือขึ้นสองข้างพลางส่งเสียงอุทานนี้"
+          }
         }
       ]
     },
@@ -776,7 +1088,16 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "เป็นคำชวนไปซื้อเสื้อผ้าที่มีชีวิตชีวาของฮายาเตะ และ p76-1 เป็นชิซุกุเห็นด้วย"
+          }
         }
       ]
     },
@@ -787,7 +1108,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "เป็นคำตอบที่ลงท้าย 'นะคะ' ของชิซุกุ และ p77-1 ระบุว่าชิซุกุเดินตามฮายาเตะ"
+          }
         }
       ]
     },

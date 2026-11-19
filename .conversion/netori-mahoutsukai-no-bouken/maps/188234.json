@@ -68,7 +68,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "มีริสเป็นผู้ถามอัลวินเรื่องในซ่อง และอัลวินตอบใน p8-1"
+          }
         }
       ]
     },
@@ -79,7 +88,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบว่าเป็นเพราะ <เสน่ห์> และมีริสถามต่อใน p9-1"
+          }
         }
       ]
     },
@@ -90,7 +108,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "มีริสเป็นผู้ถามย้ำ และอัลวินตอบรับใน p10-1"
+          }
         }
       ]
     },
@@ -101,7 +128,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p11-1 ระบุว่าอัลวินไม่สามารถโต้แย้งได้และทำได้แค่พยักหน้ารับ"
+          }
         }
       ]
     },
@@ -122,7 +158,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "มีริสเป็นผู้ถามต่อ และอัลวินตอบใน p13-1"
+          }
         }
       ]
     },
@@ -133,7 +178,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เป็นคำตอบของอัลวินที่เรียกมีริสว่ามี่ และมีริสตอบใน p14-1"
+          }
         }
       ]
     },
@@ -144,7 +198,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เป็นคำตอบของมีริสที่เรียกอัลวินว่าอัลคุง ก่อน p15-1 ระบุว่าเธอคลายเสื้อผ้าตัวเอง"
+          }
         }
       ]
     },
@@ -175,7 +238,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "มีริสเป็นผู้ประกาศว่าจะเป็นฝ่ายนำ และอัลวินตอบใน p18-1"
+          }
         }
       ]
     },
@@ -186,7 +258,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่ามีริสเข้าโจมตีอัลวินหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -287,7 +368,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p27-1 ระบุว่าเรนกะจูบชินจิ และ p29-1 เป็นคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -298,7 +388,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำเรียกชื่อของเรนกะ และเรนกะพูดต่อใน p30-1"
+          }
         }
       ]
     },
@@ -309,7 +408,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "p31-1 ระบุว่าเรนกะถอดเสื้อผ้าและเริ่มปรนนิบัติชินจิหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -350,7 +458,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p33-1 ระบุว่าเรนกะใช้ร่องอกถูจนชินจิถอนหายใจ และชินจิตอบใน p35-1"
+          }
         }
       ]
     },
@@ -361,7 +478,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "เป็นคำตอบของชินจิที่ขอให้เรนกะอมให้ และเรนกะตอบรับใน p36-1"
+          }
         }
       ]
     },
@@ -372,7 +498,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p37-1 ระบุว่าเรนกะเอาอวัยวะเพศของชินจิเข้าไปในปากหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -463,7 +598,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p44-1 ระบุว่าชินจิเริ่มสั่นและกำลังจะถึงจุดสุดยอด"
+          }
         }
       ]
     },
@@ -474,7 +618,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าเรนกะอมส่วนปลายอวัยวะเพศอยู่และได้รับน้ำอสุจิ"
+          }
         }
       ]
     },
@@ -505,7 +658,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่าเรนกะตอบคำถามของชินจิ"
+          }
         }
       ]
     },
@@ -516,7 +678,16 @@
           "start": 0,
           "end": 111,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่าเรนกะตอบคำถามของชินจิอย่างตรงไปตรงมา"
+          }
         }
       ]
     },
@@ -557,7 +728,16 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p53-1 ระบุว่าสีหน้าของชินจิดูเจ้าเล่ห์ และเรนกะตอบใน p55-1"
+          }
         }
       ]
     },
@@ -568,7 +748,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "เป็นคำตอบของเรนกะที่บอกว่ารักชินจิ และชินจิตอบใน p56-1"
+          }
         }
       ]
     },
@@ -579,7 +768,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุว่าชินจิสอดอวัยวะเพศเข้าไปหลังประโยคนี้"
+          }
         }
       ]
     },

@@ -78,7 +78,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p10-1 ระบุว่าปาร์ตี้ของอัลวินเข้าสู่ย่านเริงรมย์เป็นกลุ่มสุดท้ายหลังเสียงเรียกให้ไป และอัลวินเป็นหัวหน้าปาร์ตี้ที่นำคำสั่ง"
+          }
         }
       ]
     },
@@ -89,7 +99,17 @@
           "start": 0,
           "end": 118,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1",
+              "p34-1"
+            ],
+            "reason": "p34-1 ระบุว่าชินจิเป็นผู้เสนอให้ปล่อยคาร์โลให้อัศวินตระกูลออซบอร์นจัดการแล้วมุ่งเป้าซัคคิวบัส"
+          }
         }
       ]
     },
@@ -120,7 +140,17 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เป็นคำสั่งเดินหน้าของหัวหน้าปาร์ตี้ต่อจากข้อสรุปของชินจิ และ p14-1 ระบุว่าอัลวินกับคนอื่นเริ่มออกเดินทางโดยมีเรนกะนำหน้า"
+          }
         }
       ]
     },
@@ -131,7 +161,17 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p15-1",
+              "p17-1"
+            ],
+            "reason": "คำตอบรับลงท้ายด้วย 'ค่ะ' และเป็นห่วงเรื่องพิธีไว้อาลัย ตรงกับมีริสนักบวชหญิงผู้รับผิดชอบการชำระล้างศพใน p17-1 ถึง p18-1"
+          }
         }
       ]
     },
@@ -172,7 +212,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p18-1 ระบุว่ามีริสเป็นผู้ปล่อยเวทมนตร์ชำระล้างหลังคำร่ายนี้"
+          }
         }
       ]
     },
@@ -203,7 +252,17 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ผู้พูดเรียกมีริสว่า 'มี่' แบบคนสนิท และ p21-1 มีริสตอบกลับว่าอัลคุง"
+          }
         }
       ]
     },
@@ -214,7 +273,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบรับคำขอบคุณของอัลวินและเรียกเขาว่าอัลคุง ก่อน p22-1 บรรยายอาการเหนื่อยของเธอ"
+          }
         }
       ]
     },
@@ -255,7 +323,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "เป็นคำขอบคุณต่อการแบ่งพลังเวทด้วย〈มานาลิงค์〉ใน p24-1 และผู้พูดเรียกชินจิว่านายชินจิ"
+          }
         }
       ]
     },
@@ -266,7 +343,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ผู้พูดตอบรับคำขอบคุณของมีริสและเรียกเรนกะให้บอกทางต่อ จึงเป็นชินจิ"
+          }
         }
       ]
     },
@@ -277,7 +363,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p28-1 ระบุว่าเรนกะใช้〈ตาเหยี่ยว〉ค้นหากลุ่มศพหลังคำพูดนี้"
+          }
         }
       ]
     },
@@ -318,7 +413,17 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1",
+              "p35-1"
+            ],
+            "reason": "เรนกะเป็นหน่วยลาดตระเวนที่เฝ้าสังเกตสถานการณ์จากมุมสูงตาม p35-1 คำรายงานการต่อสู้จึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -329,7 +434,17 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p34-1 ระบุว่าชินจิเป็นผู้กล่าวว่าการปล่อยคาร์โลให้อัศวินออซบอร์นจัดการเป็นวิธีที่ดีกว่า"
+          }
         }
       ]
     },
@@ -360,7 +475,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "คำรายงานว่ามองจากด้านบนแล้วหาไม่เจอเป็นการใช้〈ตาเหยี่ยว〉ของเรนกะตาม p28-1"
+          }
         }
       ]
     },
@@ -371,7 +495,16 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "เป็นคำปลอบและให้กำลังใจต่อเนื่องด้วยภาษาสุภาพลงท้าย 'ค่ะ' ต่างจากคำพูดสั้นๆ ของเรนกะใน p35-1 จึงเป็นมีริส"
+          }
         }
       ]
     },
@@ -382,7 +515,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p38-1 ระบุว่าอัลวินพูดพร้อมกับตั้งดาบใหญ่หลังคำนี้"
+          }
         }
       ]
     },
@@ -403,7 +545,17 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ผู้พูดเรียกอีฟว่า 'อีฟจัง' และ p41-1 ระบุว่าอีฟกับคลาร่ากำลังจนปัญญาอยู่ด้วยกัน"
+          }
         }
       ]
     },
@@ -414,7 +566,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นคำตอบของอีฟที่เรียกคลาร่าว่า 'คลาร่าจัง' ตามคู่สนทนาใน p39-1"
+          }
         }
       ]
     },
@@ -485,7 +646,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "p48-1 ระบุว่าอีฟเป็นผู้ที่ทำให้คลาร่าตื่นขึ้นเป็นซัคคิวบัส คำขอโทษที่ทำให้อีกฝ่ายต้องพัวพันจึงเป็นของอีฟ"
+          }
         }
       ]
     },
@@ -556,7 +726,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าคลาร่ายิ้มและให้อภัยอีฟหลังคำพูดนี้"
+          }
         }
       ]
     },
@@ -577,7 +756,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "เป็นคำขอบคุณของอีฟที่เรียกคลาร่าว่า 'คลาร่าจัง' ต่อจากคำให้อภัยใน p55-1"
+          }
         }
       ]
     },
@@ -588,7 +776,16 @@
           "start": 0,
           "end": 188,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p58-1 ระบุว่าคลาร่าหัวเราะอย่างสดใสเกินจริงหลังข้อเสนอให้ด่าตระกูลออซบอร์นเป็นคำสุดท้าย"
+          }
         }
       ]
     },
@@ -609,7 +806,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p58-1 ระบุว่าอีฟที่ดูเศร้าหัวเราะตามคลาร่า คำตอบรับจึงเป็นของอีฟ"
+          }
         }
       ]
     },

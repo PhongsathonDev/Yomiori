@@ -68,7 +68,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p6-1 ระบุว่าคลาร่ายังกอดแขนชินจิไว้ คำชวนให้ขยำหน้าอกจึงเป็นของคลาร่า และ p8-1 ชินจิตอบกลับ"
+          }
         }
       ]
     },
@@ -79,7 +88,16 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอไปอาบน้ำก่อน และ p9-1 ระบุว่าเขาหลีกเลี่ยงคำเชิญของคลาร่าโดยยกแขนเสื้อขึ้นมาดม"
+          }
         }
       ]
     },
@@ -100,7 +118,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p9-1 ระบุว่าคลาร่ายื่นหน้าเข้าใกล้คอชินจิและสูดดมกลิ่น คำพูดว่าอาจชอบกลิ่นจึงเป็นของคลาร่า"
+          }
         }
       ]
     },
@@ -111,7 +138,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เป็นคำถามสั้นๆ ของชินจิต่อคำพูดของคลาร่า และ p12-1 คลาร่ากล่าวต่อ"
+          }
         }
       ]
     },
@@ -122,7 +158,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "คำว่า 'คลาร่ากับพี่ชายอาจจะเข้ากันได้ดี' เป็นคำพูดของคลาร่า และ p13-1 บรรยายรอยยิ้มของเธอเปลี่ยนเป็นเย้ายวน"
+          }
         }
       ]
     },
@@ -153,7 +198,17 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17-1 ระบุว่าชินจิแกล้งทำเป็นยอมรับคำเชิญ คำชวนให้ลองดูจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -164,7 +219,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "คำว่าพี่ชายใจกล้าเป็นการชมของคลาร่าต่อคำชวนใน p15-1 และ p17-1 บรรยายชินจิจับหน้าอกเธอ"
+          }
         }
       ]
     },
@@ -255,7 +319,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "คำว่า 'พี่ชาย♡ มาจูบกันนะ' เป็นคำชวนของคลาร่า และ p26-1 ระบุว่าริมฝีปากของเธอกำลังเข้าใกล้ชินจิ"
+          }
         }
       ]
     },
@@ -286,7 +359,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "เป็นเสียงอุทานของคลาร่าเมื่อชินจิดันเธอลงบนเตียงตาม p29-1"
+          }
         }
       ]
     },
@@ -357,7 +439,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p34-1 ระบุว่าชินจิราดยานอนหลับใส่หน้าคลาร่าที่ทำหน้าไม่พอใจ คำอุทานจึงเป็นของคลาร่า และ p36-1 ระบุว่ายานอนหลับออกฤทธิ์ทันที"
+          }
         }
       ]
     },
@@ -398,7 +490,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p38-1 ระบุว่าเรนกะรีบวิ่งเข้ามาหาชินจิที่เซถอยหลัง คำถามว่าชินจิเป็นอะไรหรือเปล่าจึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -409,7 +510,16 @@
           "start": 0,
           "end": 129,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าเขาพอไหวและอธิบายว่าถูกใช้ <เสน่ห์> และ p41-1 ระบุว่าคำพูดของเขาทำให้เรนกะเข้าใจ"
+          }
         }
       ]
     },
@@ -430,7 +540,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p41-1 ระบุว่าเรนกะเข้าใจการแสดงของชินจิ คำสรุปว่าผลของ <เสน่ห์> ยังอยู่จึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -441,7 +560,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เป็นประโยคต่อเนื่องของเรนกะที่ว่าแม้เพิ่งทำกันตอนกลางวัน และ p44-1 บรรยายว่าเธอหน้าแดงเมื่อเห็นอวัยวะของชินจิ"
+          }
         }
       ]
     },
@@ -472,7 +600,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p48-1 ระบุว่าเรนกะมองไปรอบๆ แล้วถามชินจิเรื่องซัคคิวบัส คำถามว่าฆ่าไม่ได้ใช่ไหมจึงเป็นของเรนกะ และ p47-1 เป็นคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -483,7 +620,16 @@
           "start": 0,
           "end": 167,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าใช่และอธิบายเหตุผลที่ทำให้คลาร่าหลับ และ p48-1 ระบุว่าเขาส่ายหัวประกอบคำตอบ"
+          }
         }
       ]
     },
@@ -534,7 +680,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "คำว่า 'อัลและมี่' เป็นการเรียกอัลวินและมีริสของเรนกะ และ p53-1 ชินจิเป็นผู้ตอบรับ"
+          }
         }
       ]
     },
@@ -545,7 +700,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าจะไปและบอกตำแหน่งหน้าต่าง ก่อน p54-1 ทั้งคู่เดินไปห้องน้ำ"
+          }
         }
       ]
     },
@@ -575,7 +739,17 @@
         {
           "start": 0,
           "end": 18,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ข้อความกระแสจิตเรียกเฟรรี่และฝากงานเป็นของชินจิ และ p57-1 เป็นคำตอบของเฟรรี่ที่ระบุว่าเธอตอบสนองต่อกระแสจิตของชินจิ"
+          }
         }
       ]
     },
@@ -585,7 +759,18 @@
         {
           "start": 0,
           "end": 42,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p59-1 ระบุว่าเฟรรี่ตอบสนองต่อกระแสจิตของชินจิและเถาวัลย์ก็ยื่นขึ้นมา คำตอบรับจึงเป็นของเฟรรี่"
+          }
         }
       ]
     },
@@ -595,7 +780,18 @@
         {
           "start": 0,
           "end": 16,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1",
+              "p61-1"
+            ],
+            "reason": "คำว่า 'ข้า' เป็นสรรพนามของแฟลร์ และ p61-1 ระบุว่าแฟลร์จับเถาวัลย์และถูกดึงขึ้นมาทางหน้าต่างตามหลังเฟรรี่"
+          }
         }
       ]
     },
@@ -645,7 +841,17 @@
         {
           "start": 0,
           "end": 11,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "เป็นคำทักของเฟรรี่ที่เพิ่งปีนขึ้นมาถึงหน้าต่างตาม p60-1 และ p64-1 บรรยายว่าเธอเก็บเถาวัลย์และปิดหน้าต่าง"
+          }
         }
       ]
     },
@@ -666,7 +872,17 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1",
+              "p68-1"
+            ],
+            "reason": "คำชมว่าสมแล้วที่เป็นเฟรรี่เป็นคำพูดของชินจิ และ p68-1 ระบุว่าเฟรรี่ที่ได้รับคำชมเชิดหน้าขึ้น"
+          }
         }
       ]
     },
@@ -677,7 +893,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "คำสั่ง 'พวกเจ้าสองคน' ให้ใส่ชุดเกราะเป็นของแฟลร์ และ p68-1 ระบุว่าแฟลร์เป็นผู้ยื่นอุปกรณ์ให้ชินจิและเรนกะ"
+          }
         }
       ]
     },
@@ -688,7 +914,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "เป็นคำตอบรับและขอบคุณต่อคำสั่งของแฟลร์ใน p66-1 ก่อน p68-1 เธอยื่นอุปกรณ์ให้ทั้งสองคน"
+          }
         }
       ]
     },
@@ -718,7 +953,17 @@
         {
           "start": 0,
           "end": 55,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "คำถามว่าอาการเป็นเพราะ <เสน่ห์> และถูกซัคคิวบัสตัวอื่นทำมาหรือไม่เป็นการถามด้วยความเป็นห่วงของเฟรรี่ ก่อน p71-1 แฟลร์จะแซวชินจิ"
+          }
         }
       ]
     },
@@ -729,7 +974,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "คำว่า 'เจ้าทำพลาด' เป็นสรรพนามแบบแฟลร์ และ p72-1 ระบุว่าแฟลร์หัวเราะอย่างสนุกสนานขณะเฟรรี่จ้องชินจิด้วยความหงุดหงิด"
+          }
         }
       ]
     },
@@ -760,7 +1014,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "p73-1 ระบุว่าทั้งสองคนพยักหน้าให้กัน คำชวนไปรวมตัวกับพวกอัลวินจึงเป็นของชินจิ และ p75-1 เรนกะตอบรับ"
+          }
         }
       ]
     },
@@ -771,7 +1034,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "เป็นคำตอบรับของเรนกะต่อคำชวนของชินจิ และ p76-1 ระบุว่าทั้งคู่ออกจากห้องได้ตามแผน"
+          }
         }
       ]
     },

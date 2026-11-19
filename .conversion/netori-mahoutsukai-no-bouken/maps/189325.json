@@ -57,7 +57,17 @@
         {
           "start": 0,
           "end": 32,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p8-1 ระบุว่าชินจิส่งความคิดไปหาแฟลร์และได้รับคำตอบในทันที ประโยคนี้จึงเป็นคำขอของชินจิ"
+          }
         }
       ]
     },
@@ -67,7 +77,17 @@
         {
           "start": 0,
           "end": 9,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p8-1 ระบุว่าเป็นคำตอบที่ชินจิได้รับจากแฟลร์ในทันที"
+          }
         }
       ]
     },
@@ -107,7 +127,17 @@
         {
           "start": 0,
           "end": 32,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p13-1 ระบุว่าชินจิส่งความคิดไปหามารีเพื่อเรียกชิซูกุมา ประโยคนี้จึงเป็นคำขอของชินจิ"
+          }
         }
       ]
     },
@@ -117,7 +147,17 @@
         {
           "start": 0,
           "end": 64,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p13-1 ระบุว่ามารีเป็นผู้ตอบกลับมาด้วยความกังวล"
+          }
         }
       ]
     },
@@ -147,7 +187,17 @@
         {
           "start": 0,
           "end": 29,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบความกังวลของมารีเรื่องสภาพจิตใจของชิซูกุ ก่อนมารีตอบรับใน p16-1"
+          }
         }
       ]
     },
@@ -157,7 +207,17 @@
         {
           "start": 0,
           "end": 9,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17-1 ระบุว่าชิซูกุปรากฏตัวทันทีที่มารีตอบกลับ"
+          }
         }
       ]
     },
@@ -188,7 +248,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p20-1 ระบุว่าชิซูกุพูดด้วยน้ำเสียงที่เย็นชามาก"
+          }
         }
       ]
     },
@@ -209,7 +278,16 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของชิซูกุเรื่องอัลวิน"
+          }
         }
       ]
     },
@@ -220,7 +298,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ถามกลับอย่างไม่เชื่อ"
+          }
         }
       ]
     },
@@ -231,7 +318,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบแล้วยักไหล่ตามที่ p24-1 บรรยาย"
+          }
         }
       ]
     },
@@ -262,7 +358,16 @@
           "start": 0,
           "end": 126,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "ชินจิเป็นผู้จับแขนชิซูกุไว้และพูดเรื่องความผูกพันของชิซูกุกับฮายาเตะ"
+          }
         }
       ]
     },
@@ -273,7 +378,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบกลับอย่างแรงตามที่ p28-1 บรรยายว่าจ้องชินจิ"
+          }
         }
       ]
     },
@@ -294,7 +408,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดต่อเรื่องชิซูกุที่รู้เรื่องของคนรักกันดี"
+          }
         }
       ]
     },
@@ -305,7 +428,16 @@
           "start": 0,
           "end": 162,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ยืนยันว่ารู้จักฮายาเตะดีที่สุด"
+          }
         }
       ]
     },
@@ -336,7 +468,16 @@
           "start": 0,
           "end": 119,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "ชินจิเป็นผู้เล่าว่าได้ลองพูดเรื่องภรรยาคนที่สองกับฮายาเตะแล้ว"
+          }
         }
       ]
     },
@@ -347,7 +488,16 @@
           "start": 0,
           "end": 143,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้แย้งจากท่าทีของฮายาเตะที่เล่าให้ฟังเมื่อกลับถึงบ้าน"
+          }
         }
       ]
     },
@@ -388,7 +538,16 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกให้ชิซูกุทำให้ฮายาเตะสนใจตัวเองต่อไป"
+          }
         }
       ]
     },
@@ -399,7 +558,16 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบว่าไม่มีเหตุผลจะทำงานต่อถ้าต้องเลิกกับฮายาเตะ"
+          }
         }
       ]
     },
@@ -420,7 +588,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าตนจะลำบากและขอให้รักษาตำแหน่งคนรักไว้"
+          }
         }
       ]
     },
@@ -431,7 +608,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ขอความช่วยเหลือและบอกให้ชินจิรับผิดชอบ"
+          }
         }
       ]
     },
@@ -462,7 +648,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอให้ชิซูกุเจาะจงว่าต้องการให้ช่วยอะไร"
+          }
         }
       ]
     },
@@ -473,7 +668,16 @@
           "start": 0,
           "end": 78,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบว่าตนก็ไม่รู้เหมือนกันแต่ให้ชินจิขัดขวางทั้งสองคน"
+          }
         }
       ]
     },
@@ -484,7 +688,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "ชินจิเป็นผู้แย้งว่าการขัดขวางจะยิ่งทำให้รักกันมากขึ้น"
+          }
         }
       ]
     },
@@ -505,7 +718,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิเป็นผู้ยกเรื่องที่ชิซูกุมีเซ็กซ์กับเขาขึ้นมาโต้แย้ง"
+          }
         }
       ]
     },
@@ -516,7 +738,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบตะกุกตะกักเรื่องที่ชินจิมากเกินไป"
+          }
         }
       ]
     },
@@ -527,7 +758,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ชินจิเป็นผู้ย้ำว่าชิซูกุเป็นคนเสนอพิธีกรรมเวทมนตร์ก่อน"
+          }
         }
       ]
     },
@@ -578,7 +818,16 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดกับชิซูกุที่เงียบไปเรื่องความปรารถนาของเทพธิดา"
+          }
         }
       ]
     },
@@ -589,7 +838,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้เงยหน้าขึ้นและถามอย่างไม่แน่ใจ"
+          }
         }
       ]
     },
@@ -610,7 +868,16 @@
           "start": 0,
           "end": 120,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ชินจิเป็นผู้เสนอให้ฮายาเตะมาเป็นเซ็กซ์เฟรนเหมือนชิซูกุ"
+          }
         }
       ]
     },
@@ -621,7 +888,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ปฏิเสธข้อเสนอของชินจิ"
+          }
         }
       ]
     },
@@ -632,7 +908,16 @@
           "start": 0,
           "end": 159,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบและอธิบายข้อดีของข้อเสนอต่อเนื่องถึง p62-1"
+          }
         }
       ]
     },
@@ -643,7 +928,16 @@
           "start": 0,
           "end": 200,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "ประโยคต่อเนื่องของชินจิที่ปิดเครื่องหมายคำพูดใน p62-1 และ p63-1 บรรยายว่าชิซูกุไม่สามารถปฏิเสธคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -724,7 +1018,16 @@
           "start": 0,
           "end": 151,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าตนไม่ได้ให้ตัดสินใจทันที ก่อนชิซูกุตอบรับใน p71-1"
+          }
         }
       ]
     },
@@ -735,7 +1038,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบรับคำพูดของชินจิและ p72-1 บรรยายว่าเธอรู้สึกโล่งใจ"
+          }
         }
       ]
     },

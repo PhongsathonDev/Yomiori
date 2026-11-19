@@ -88,7 +88,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p11-1–p12-1 ระบุว่าอัลวินนำคนอื่นมาสมทบและวิ่งเข้าไปหาชินจิ"
+          }
         }
       ]
     },
@@ -99,7 +108,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าอัลวินวิ่งเข้าไปหาชินจิที่พิงต้นไม้ก่อนไฮไฟฟ์กับเขา"
+          }
         }
       ]
     },
@@ -130,7 +148,17 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p13-1",
+              "p14-1",
+              "p16-1"
+            ],
+            "reason": "เป็นคำตอบของอัลวินที่ชื่นชมเรนกะด้วย และ p14-1 เรนกะตอบกลับโดยเรียกเขาว่าอัล"
+          }
         }
       ]
     },
@@ -141,7 +169,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p16-1"
+            ],
+            "reason": "p16-1 ระบุว่าอัลวินไฮไฟฟ์กับเรนกะต่อจากชินจิ"
+          }
         }
       ]
     },
@@ -152,7 +189,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "p16-1 ระบุว่ามีริสไฮไฟฟ์กับเรนกะในลำดับถัดมา"
+          }
         }
       ]
     },
@@ -173,7 +219,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p20-1",
+              "p22-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอบคุณภูตทั้งสอง และ p22-1 ระบุว่าเขาพยักหน้าให้กับคำพูดของแฟลร์"
+          }
         }
       ]
     },
@@ -184,7 +239,16 @@
           "start": 0,
           "end": 181,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p22-1"
+            ],
+            "reason": "p22-1 ระบุว่าชินจิพยักหน้าให้กับคำพูดของแฟลร์ และ p18-1 ใช้สรรพนามข้าแบบภูต"
+          }
         }
       ]
     },
@@ -194,7 +258,16 @@
         {
           "start": 0,
           "end": 35,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "『...』 เป็นความคิดในใจของเฟรรี่เรื่องรางวัล; p20-1–p21-1 บรรยายเพียงสีหน้าของเธอ และไม่มีผู้ใดตอบหรือระบุว่าเธอเอ่ยออกเสียง"
+          }
         }
       ]
     },
@@ -245,7 +318,16 @@
           "start": 0,
           "end": 80,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p26-1"
+            ],
+            "reason": "ชินจิเป็นผู้วางแผนและรู้ว่าพวกที่หน้าร้านกำลังถ่วงเวลา และ p23-1 ระบุว่าเขาคิดจบเรื่องราวแค่นี้"
+          }
         }
       ]
     },
@@ -256,7 +338,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p26-1 ระบุว่าอัลวินเริ่มเดินนำหน้าไปหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -277,7 +368,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p29-1 ระบุว่าพวกทหารวิหารแสดงสีหน้าโล่งใจและออกมาต้อนรับพวกเขาหลังกลับมา"
+          }
         }
       ]
     },
@@ -318,7 +418,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p30-1 ระบุว่าอัลวินที่กำลังสับสนเป็นผู้ถามทหารวิหาร"
+          }
         }
       ]
     },
@@ -329,7 +438,16 @@
           "start": 0,
           "end": 161,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "เป็นคำตอบของทหารวิหารที่อัลวินถามใน p31-1"
+          }
         }
       ]
     },
@@ -340,7 +458,15 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p34-1 ระบุว่าคำพึมพำของชินจิดึงดูดความสนใจของอัลวินและทหาร"
+          }
         }
       ]
     },
@@ -361,7 +487,16 @@
           "start": 0,
           "end": 183,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "เป็นคำอธิบายของชินจิต่อจาก p34-1 และ p37-1 ระบุว่าทหารพยักหน้ากับคำอธิบายของชินจิ"
+          }
         }
       ]
     },
@@ -372,7 +507,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "เป็นเสียงของทหารวิหารที่ตอบคำอธิบายของชินจิใน p35-1"
+          }
         }
       ]
     },
@@ -393,7 +537,17 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p37-1 ระบุว่ามีนักบวช พิโน่และหญิงชราเดินเข้ามา; ประโยคนี้เป็นการชมของนักบวชก่อนพิโน่ขอบคุณใน p39-1 และ p40-1 ระบุว่าอัลวินรับคำชมจากพิโน่"
+          }
         }
       ]
     },
@@ -404,7 +558,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "พิโน่เป็นผู้กล่าวขอบคุณตัวแทนปาร์ตี้ และ p40-1 ระบุว่าอัลวินก้มหัวรับคำชมจากพิโน่"
+          }
         }
       ]
     },
@@ -425,7 +588,16 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่รายงานผลการต่อสู้ต่อหน้าพิโน่และนักบวช"
+          }
         }
       ]
     },
@@ -436,7 +608,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p44-1"
+            ],
+            "reason": "พิโน่เป็นผู้กล่าวชมหลังรายงานของอัลวิน และ p44-1 ระบุว่าพิโน่ยิ้มอย่างพึงพอใจ"
+          }
         }
       ]
     },
@@ -447,7 +628,16 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "พิโน่เป็นผู้เอ่ยขอรับตัวด้วยสรรพนามครับ/ผมแบบเดียวกับ p39-1 และ p44-1 ระบุว่าเขายิ้มอย่างพึงพอใจหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -478,7 +668,16 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p45-1 ระบุว่าแฟลร์เป็นผู้แบกนักบวชแห่งลัทธิชั่วร้ายและส่ายหน้าปฏิเสธคำขอ"
+          }
         }
       ]
     },
@@ -489,7 +688,16 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p49-1"
+            ],
+            "reason": "พิโน่เป็นผู้รับคำของแฟลร์และเสนอจัดม้าเพกาซัสด้วยสรรพนามผม/ครับ"
+          }
         }
       ]
     },
@@ -520,7 +728,15 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่าเป็นหญิงชราที่ดูแลซ่องบ่นกับตัวเอง ซึ่งเป็นตัวละครประกอบที่ไม่มีชื่อใน roster"
+          }
         }
       ]
     },
@@ -551,7 +767,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าหญิงชราพยักหน้าให้กับคำพูดของนักบวช"
+          }
         }
       ]
     },
@@ -562,7 +787,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าหญิงชราพยักหน้ารับและฝากลูกสาวไว้กับนักบวช"
+          }
         }
       ]
     },
@@ -613,7 +847,16 @@
           "start": 0,
           "end": 154,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p61-1"
+            ],
+            "reason": "p61-1 ระบุว่าอัลวินพยักหน้าให้กับคำพูดของพิโน่"
+          }
         }
       ]
     },
@@ -624,7 +867,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "เป็นคำตอบรับของอัลวินต่อพิโน่ และ p61-1 ระบุว่าอัลวินพยักหน้า"
+          }
         }
       ]
     },

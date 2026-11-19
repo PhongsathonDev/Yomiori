@@ -38,7 +38,16 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p2-1 บรรยายว่าชินจิลูบไล้นานากะจากด้านหลัง แล้วเอ่ยถึงร่างกายของเธอ ก่อนนานากะตอบใน p5-1"
+          }
         }
       ]
     },
@@ -49,7 +58,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p12-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบคำถามของชินจิ และ p12-1 ชินจิรับคำว่าเป็นคนที่ทำให้ร่างกายเธอเป็นแบบนี้"
+          }
         }
       ]
     },
@@ -120,7 +138,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามใน p5-1 ของนานากะ"
+          }
         }
       ]
     },
@@ -131,7 +158,16 @@
           "start": 0,
           "end": 136,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบรับและครางต่อเนื่อง ก่อน p14-1 บรรยายว่าทั้งสองกระซิบกัน"
+          }
         }
       ]
     },
@@ -282,7 +318,16 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ชินจิเป็นผู้ย้อนเล่าเรื่องที่นานากะแอบมีเซ็กซ์กับเขาหลังคบกับฮารุโตะ"
+          }
         }
       ]
     },
@@ -293,7 +338,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "นานากะเป็นผู้ครางตอบรับคำพูดของชินจิ ก่อน p30-1 บรรยายการกระทำของชินจิ"
+          }
         }
       ]
     },
@@ -354,7 +408,16 @@
           "start": 0,
           "end": 79,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามนานากะเรื่องการกลับมามีเซ็กซ์กันอีก"
+          }
         }
       ]
     },
@@ -365,7 +428,16 @@
           "start": 0,
           "end": 135,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบคำถามของชินจิเรื่องฮารุโตะและความพึงพอใจ"
+          }
         }
       ]
     },
@@ -436,7 +508,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าจะทำให้นานากะท้อง ก่อนนานากะอุทานตอบใน p44-1"
+          }
         }
       ]
     },
@@ -447,7 +528,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "นานากะเป็นผู้ตกใจและเอ่ยถึงเวทมนตร์คุมกำเนิด"
+          }
         }
       ]
     },
@@ -458,7 +548,16 @@
           "start": 0,
           "end": 106,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบและถามต่อว่าเธอจะให้กำเนิดลูกของเขาใช่ไหม"
+          }
         }
       ]
     },
@@ -519,7 +618,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "p52-1 ระบุว่านานากะถึงจุดสุดยอดหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -570,7 +678,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกให้นานากะตั้งใจเลี้ยงดูลูกคนที่สอง"
+          }
         }
       ]
     },
@@ -581,7 +698,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบรับคำขอของชินจิ"
+          }
         }
       ]
     },

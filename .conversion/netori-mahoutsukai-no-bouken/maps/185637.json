@@ -17,7 +17,17 @@
         {
           "start": 0,
           "end": 37,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p1-1 ระบุว่าชินจิส่งกระแสจิตไปหามารีทันทีหลังกลับถึงบ้าน"
+          }
         }
       ]
     },
@@ -27,7 +37,17 @@
         {
           "start": 0,
           "end": 6,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "เป็นคำรับสั้นๆ ค่า~ ของมารีผู้รับกระแสจิต ก่อน p4-1 บรรยายว่าชินจิรอและเรียกชิซุกุ"
+          }
         }
       ]
     },
@@ -48,7 +68,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p4-1 ระบุว่าชิซุกุเพิ่งปรากฏตัวตรงหน้าชินจิ และ p6-1 เป็นคำตอบของชิซุกุ"
+          }
         }
       ]
     },
@@ -59,7 +88,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่าชิซุกุตอบกลับชินจิ"
+          }
         }
       ]
     },
@@ -80,7 +118,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p10-1 ระบุว่าชินจิไม่สนใจคำพูดประชดและพูดต่อไป ซึ่งต่อจากคำถามนี้"
+          }
         }
       ]
     },
@@ -91,7 +138,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p10-1 เรียกถ้อยคำนี้ว่าคำพูดประชดของชิซุกุที่หันหน้าหนีชินจิ"
+          }
         }
       ]
     },
@@ -112,7 +168,16 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เป็นคำตอบของชินจิต่อชิซุกุ และ p12-1 ชิซุกุตอบรับ"
+          }
         }
       ]
     },
@@ -123,7 +188,16 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p12-1 ลงท้ายด้วยค่ะ และตอบคำสั่งของชินจิใน p11-1"
+          }
         }
       ]
     },
@@ -138,8 +212,14 @@
         {
           "start": 53,
           "end": 72,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1"
+            ],
+            "reason": "คำในเครื่องหมายคำพูดเป็นคำอธิบายท่าทางของชิซุกุที่ดูเหมือนจะบอกให้เริ่ม ไม่ได้ออกเสียงพูด"
+          }
         },
         {
           "start": 72,
@@ -155,7 +235,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p13-1 บรรยายว่าทั้งสองสบตากันก่อนชิซุกุเอ่ยประโยคฝากตัวด้วยค่ะ"
+          }
         }
       ]
     },
@@ -166,7 +255,16 @@
           "start": 0,
           "end": 132,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p17-1"
+            ],
+            "reason": "p16-1 ระบุว่าชิซุกุยอมแพ้และก้มหัวให้ชินจิหลังชินจิพูด"
+          }
         }
       ]
     },
@@ -187,7 +285,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p17-1 ถามกลับถึงคำสอนของชินจิใน p15-1 และ p18-1 ชินจิเป็นผู้ตอบ"
+          }
         }
       ]
     },
@@ -198,7 +305,16 @@
           "start": 0,
           "end": 163,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่าชิซุกุรู้สึกว่าคำพูดของเขามีเหตุผล ซึ่งหมายถึงชินจิ"
+          }
         }
       ]
     },
@@ -229,7 +345,16 @@
           "start": 0,
           "end": 81,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p20-1 บรรยายว่าชิซุกุเปลี่ยนความคิดและพยายามนึกถึงครูที่โรงเรียน ก่อนเธอขอให้สอนเวทมนตร์"
+          }
         }
       ]
     },
@@ -250,7 +375,16 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "เป็นคำตอบรับของชินจิต่อคำขอใน p21-1 และ p24-1 ชิซุกุตอบรับ"
+          }
         }
       ]
     },
@@ -261,7 +395,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p24-1 ลงท้ายด้วยค่ะ และเป็นคำรับของชิซุกุ"
+          }
         }
       ]
     },
@@ -282,7 +425,17 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p27-1 ระบุว่าการฝึกผ่านไปหนึ่งชั่วโมงหลังเสียงบ่นนี้ และ p28-1 ระบุว่าชิซุกุยังใช้เวทไม่ได้"
+          }
         }
       ]
     },
@@ -353,7 +506,16 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "เป็นคำสั่งสอนของชินจิ และ p34-1 ชิซุกุตอบรับสั้นๆ"
+          }
         }
       ]
     },
@@ -364,7 +526,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p35-1 ระบุว่าชินจิถอนหายใจเมื่อเห็นชิซุกุที่ดูหมดแรงหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -415,7 +586,16 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "เป็นข้อเสนอพักของชินจิ และ p40-1 ชิซุกุตอบรับ"
+          }
         }
       ]
     },
@@ -426,7 +606,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 ระบุว่าชินจิชงชาให้ชิซุกุหลังเธอตอบรับ"
+          }
         }
       ]
     },
@@ -447,7 +636,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p42-1 ถามถึงตัวเองว่าทำไมทำไม่ได้ และ p43-1 ชินจิเป็นผู้ตอบ"
+          }
         }
       ]
     },
@@ -458,7 +656,16 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เป็นคำตอบปลอบของชินจิ และ p44-1 ชิซุกุอุทานตอบ"
+          }
         }
       ]
     },
@@ -469,7 +676,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "p45-1 ระบุว่าชิซุกุตกใจกับความเป็นจริงเรื่องเวลาสามวันหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -610,7 +826,16 @@
           "start": 0,
           "end": 118,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p58-1 พูดถึงงานอัครทูตของตัวเอง และ p59-1 ชิซุกุถามถึงภารกิจจากเทพธิดา"
+          }
         }
       ]
     },
@@ -621,7 +846,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุว่าชิซุกุได้ยินคำว่าภารกิจของอัครทูตในประโยคนี้"
+          }
         }
       ]
     },
@@ -636,8 +870,14 @@
         {
           "start": 29,
           "end": 47,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "คำในเครื่องหมายคำพูดคือคำว่าภารกิจของอัครทูตที่ชิซุกุได้ยิน ไม่ใช่บทพูด"
+          }
         }
       ]
     },
@@ -652,8 +892,14 @@
         {
           "start": 79,
           "end": 85,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "คำว่าท่านในเครื่องหมายคำพูดเป็นคำที่ชิซุกุเลือกใช้ในคำพูดของเธอ ไม่ใช่บทสนทนาที่แยกออกมา"
+          }
         }
       ]
     },
@@ -664,7 +910,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "เป็นคำบอกเมืองที่ชินจิอยู่ และ p63-1 ชิซุกุตอบว่าจะแกล้งทำเป็นไม่รู้จัก"
+          }
         }
       ]
     },
@@ -675,7 +930,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "p64-1 ระบุว่าชิซุกุยิ้มและชินจิหัวเราะพยักหน้าตอบ"
+          }
         }
       ]
     },

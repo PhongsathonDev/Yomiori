@@ -48,7 +48,17 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ชินจิเป็นผู้เรียกอัลวินด้วยความเบื่อหน่ายขณะช่วยสวมเกราะตาม p4-1 และ p7-1 ระบุว่าเขาพูดด้วยเสียงกระซิบ"
+          }
         }
       ]
     },
@@ -59,7 +69,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบขอโทษและให้เหตุผลว่าการฝึกเป็นโอกาสดี และ p7-1 ระบุว่าสิ่งที่อัลวินพูดนั้นไม่ผิด"
+          }
         }
       ]
     },
@@ -90,7 +109,17 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "คริสติน่าเป็นเจ้าบ้านที่ตื่นเต้นกับการฝึก และมีริสถามเธอใน p10-1 ก่อน p11-1 ระบุว่าหญิงทั้งสามนั่งชม"
+          }
         }
       ]
     },
@@ -101,7 +130,17 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "มีริสเป็นผู้ถามคริสติน่าว่าไม่เป็นอะไรหรือที่ต้องดูการต่อสู้ และคริสติน่าตอบใน p12-1"
+          }
         }
       ]
     },
@@ -122,7 +161,16 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "คริสติน่าตอบว่าตัวเองเป็นคนของตระกูลเบลซ์และขอให้มีริสเรียกชื่อเธอ ก่อน p13-1 บรรยายความประหม่าของมีริส"
+          }
         }
       ]
     },
@@ -153,7 +201,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "มีริสถามคริสติน่าเรื่อง〈ทลายขีดจำกัด〉หลัง p14-1 ที่คริสติน่ายิ้มให้ และคริสติน่าตอบใน p16-1"
+          }
         }
       ]
     },
@@ -164,7 +221,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "คริสติน่าตอบว่าตัวเองสู้ไม่เป็นและแค่ชินกับการดูคนในตระกูลฝึกซ้อม"
+          }
         }
       ]
     },
@@ -175,7 +241,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "มีริสเอ่ยสรุปว่าตระกูลเบลซ์เป็นสายบู้หลังฟังคำตอบของคริสติน่าใน p16-1 และคริสติน่าตอบรับใน p18-1"
+          }
         }
       ]
     },
@@ -186,7 +261,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "คริสติน่าตอบมีริสและ p19-1 ระบุว่าเธอพูดต่อไปอย่างร่าเริงภาคภูมิใจ"
+          }
         }
       ]
     },
@@ -207,7 +291,17 @@
           "start": 0,
           "end": 193,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "คริสติน่าอธิบายต่อเนื่องจาก p19-1 ว่าการเสี่ยงตัวเป็นหน้าที่ของขุนนางและ〈ทลายขีดจำกัด〉เป็นสัญลักษณ์ของเรื่องนั้น"
+          }
         }
       ]
     },
@@ -238,7 +332,16 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้ถามตรงๆ เรื่องคนรักของอัลวินหลังหน้าแดงใน p22-1 และมีริสตอบใน p24-1"
+          }
         }
       ]
     },
@@ -249,7 +352,16 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p26-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบว่าตัวเองคือคนรักของอัลวินและเรนกะเป็นคนรักของชินจิ ตาม p26-1 ที่ระบุว่าเธอตอบอย่างไม่ปิดบัง"
+          }
         }
       ]
     },
@@ -310,7 +422,17 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-noah",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p29-1 ระบุว่าโนอาห์ยืนเฝ้าดูการต่อสู้ และ p32-1 ระบุว่าอัลวินทำตามคำพูดของโนอาห์"
+          }
         }
       ]
     },
@@ -321,7 +443,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับแล้วร่าย〈ทลายขีดจำกัด〉ตาม p32-1 ที่ระบุว่าทันทีที่อัลวินใช้เวทมนตร์"
+          }
         }
       ]
     },
@@ -352,7 +483,17 @@
           "start": 0,
           "end": 151,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-noah",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "โนอาห์เป็นผู้อธิบายกลไกของ〈ทลายขีดจำกัด〉ต่อจากคำสั่งใน p30-1 และอัลวินสรุปใน p35-1"
+          }
         }
       ]
     },
@@ -363,7 +504,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "อัลวินสรุปว่าต้องใช้ในสถานการณ์จำเป็นหลังฟังคำอธิบายของโนอาห์ใน p34-1 และ p36-1 ระบุว่าเขาหยุดใช้เวทมนตร์ทันที"
+          }
         }
       ]
     },
@@ -394,7 +544,17 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-noah",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1",
+              "p41-1"
+            ],
+            "reason": "โนอาห์เป็นเจ้าบ้านที่เสนอให้ลองประลอง และ p41-1 ระบุว่าอัศวินตอบรับคำพูดของโนอาห์ก่อนอัลวินโค้งคำนับ"
+          }
         }
       ]
     },
@@ -405,7 +565,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 ระบุว่าอัศวินตอบรับคำพูดของโนอาห์ก่อนอัลวินโค้งคำนับ อัศวินตระกูลเบลซ์ผู้นี้ไม่มีชื่อใน roster จึงใช้เสียงหมู่ของทหารและยาม"
+          }
         }
       ]
     },
@@ -416,7 +585,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "อัลวินเป็นผู้โค้งคำนับให้อัศวินและกล่าวฝากตัวก่อนเริ่มประลองตาม p41-1"
+          }
         }
       ]
     },
@@ -627,7 +805,16 @@
           "start": 0,
           "end": 116,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p60-1 ระบุว่าชินจิเปิดปากพูดก่อนคำแนะนำนี้ และโนอาห์ยืนยันใน p62-1"
+          }
         }
       ]
     },
@@ -638,7 +825,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-noah",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p63-1 ระบุว่าโนอาห์ยืนยันคำแนะนำของชินจิ"
+          }
         }
       ]
     },
@@ -669,7 +865,17 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบว่าเข้าใจหลังฟังคำอธิบายใน p64-1 และ p67-1 ระบุว่าเขาเพิ่งเรียนรู้การเปิดปิดเวทมนตร์"
+          }
         }
       ]
     },
@@ -680,7 +886,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "เป็นเสียงอึกของอัลวินขณะพยายามคุม〈ทลายขีดจำกัด〉ต่อจาก p65-1 และ p67-1 ขยายว่าเขายังเปิดปิดเวทมนตร์ไม่ชำนาญ"
+          }
         }
       ]
     },
@@ -721,7 +936,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นและ p71-1 ระบุว่าเสียงของชินจิและโนอาห์ดังพร้อมกัน จึงเป็นเสียงหมู่ของปาร์ตี้และคนรอบข้างในฉาก"
+          }
         }
       ]
     },

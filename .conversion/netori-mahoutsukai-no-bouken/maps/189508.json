@@ -52,8 +52,14 @@
         {
           "start": 51,
           "end": 60,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "คำว่า 'แย่งชิง' อยู่ในเครื่องหมายคำพูดเพื่อเน้นความหมายในบทบรรยาย ไม่มีใครพูดออกมา"
+          }
         },
         {
           "start": 60,
@@ -99,7 +105,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ใช้คำเรียกชินจิ 'ชินจิซัง' และลงท้าย 'คะ' ตามแบบมารี ส่วน p10-1 ที่ใช้ 'ข้า' เป็นของแฟลร์"
+          }
         }
       ]
     },
@@ -110,7 +125,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ใช้สรรพนาม 'ข้า' และเรียกชินจิด้วยชื่อเปล่าแบบแฟลร์"
+          }
         }
       ]
     },
@@ -211,7 +234,17 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p21-1 ขึ้นต้นด้วย 'ข้าด้วย' ซึ่งเป็นเสียงของแฟลร์ ดังนั้น p20-1 ที่กำลังจะถึงจุดสุดยอดจึงเป็นมารี และ p22-1 ระบุมารีถึงจุดสุดยอดต่อมา"
+          }
         }
       ]
     },
@@ -222,7 +255,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ใช้สรรพนาม 'ข้า' และเป็นเสียงที่สองต่อจากมารี"
+          }
         }
       ]
     },
@@ -303,7 +345,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ใช้คำเรียกชินจิ 'ชินจิซัง'; p28-1 ระบุว่าชินจิดึงออกจากมารีแล้วขึ้นคร่อมแฟลร์"
+          }
         }
       ]
     },
@@ -314,7 +365,17 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "เป็นเสียงของผู้ที่ถูกสอดใส่ใหม่ๆ หลังเพิ่งเสร็จ และ p32-1 ระบุว่าแฟลร์ถึงจุดสุดยอดจากการสอดใส่"
+          }
         }
       ]
     },
@@ -325,7 +386,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "เป็นคำถามของชินจิผู้กำลังกระแทก ก่อน p32-1 บรรยายปฏิกิริยาของแฟลร์"
+          }
         }
       ]
     },
@@ -376,7 +446,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่ามารียิ้มกริ่มขณะชะโงกหน้ามองแฟลร์"
+          }
         }
       ]
     },
@@ -387,7 +466,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "เป็นเสียงตอบโต้ของแฟลร์ที่ถูกแซวเรื่องสีหน้า และ p38-1 ระบุมารีเป็นผู้มอง"
+          }
         }
       ]
     },
@@ -438,7 +526,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ใช้สรรพนาม 'ข้า' และมีเสียงอุทาน 'โอ๊ะ โฮะ' แบบเดียวกับ p30-1 ของแฟลร์"
+          }
         }
       ]
     },
@@ -499,7 +596,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p49-1 ระบุว่าแฟลร์ถึงจุดสุดยอดอย่างลึกซึ้งพร้อมน้ำตา"
+          }
         }
       ]
     },
@@ -530,7 +636,16 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ใช้คำเรียกชินจิ 'ชินจิซัง' ใช้สรรพนาม 'ฉัน' และ p54-1 ระบุมารีนอนคว่ำข้างแฟลร์"
+          }
         }
       ]
     },
@@ -541,7 +656,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p55-1"
+            ],
+            "reason": "เป็นคำตอบรับคำขอของมารี และ p55-1 ระบุว่าชินจิยอมทำตามคำเชิญชวน"
+          }
         }
       ]
     },
@@ -552,7 +676,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "เป็นเสียงของมารีระหว่างถูกสอดใส่ ก่อน p54-1 บรรยายท่าทางของเธอ"
+          }
         }
       ]
     },
@@ -613,7 +746,18 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "พูดถึงชินจิเป็นบุคคลที่สามและชมว่าไปได้ทั้งคืน; p60-1 ลงท้าย 'ค่ะ' เป็นของมารี และ p62-1 ระบุว่าแฟลร์เป็นผู้พูดกับมารี"
+          }
         }
       ]
     },
@@ -624,7 +768,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ลงท้ายด้วย 'ค่ะ' และเป็นเสียงตอบรับคำชมของแฟลร์"
+          }
         }
       ]
     },
@@ -635,7 +788,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ใช้สรรพนาม 'เจ้า' และ p62-1 ระบุว่าแฟลร์ที่เพิ่งฟื้นตัวหันมาพูดกับมารีด้วยสายตาจริงจัง"
+          }
         }
       ]
     },
@@ -696,7 +858,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "p66-1 ระบุว่ามารีถึงจุดสุดยอดทันทีหลังสะโพกกดเข้าหาชินจิ"
+          }
         }
       ]
     },
@@ -707,7 +878,15 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "เป็นเสียงของชินจิที่กำลังจะหลั่ง และ p69-1 ระบุว่าชินจิหลั่งตามทันที"
+          }
         }
       ]
     },
@@ -738,7 +917,15 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "เป็นคำพูดที่เรียกชื่อมารีและกล่าวถึงความรู้สึกหลังเสร็จ"
+          }
         }
       ]
     },
@@ -749,7 +936,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "ใช้สรรพนาม 'ฉัน' และลงท้าย 'ค่ะ' ตอบรับคำของชินจิ"
+          }
         }
       ]
     },
@@ -804,8 +999,14 @@
         {
           "start": 64,
           "end": 80,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1"
+            ],
+            "reason": "คำว่า 'ไม่ไหวแล้ว...♡' เป็นคำพูดในอนาคตที่ผู้บรรยายยกมาว่าเป็นเงื่อนไข ไม่ได้เกิดขึ้นในฉาก"
+          }
         }
       ]
     }

@@ -58,7 +58,16 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p2-1 ระบุว่าอัลวินและฮารุโตะย้ายไปดูแหวนของจริงที่หน้าร้าน และ p7-1 บรรยายสีหน้าครุ่นคิดของอัลวิน"
+          }
         }
       ]
     },
@@ -89,7 +98,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p8-1 ระบุว่าฮายาเตะเดินเข้ามาหาฮารุโตะ แล้วเรียกเขาว่าคุณฮารุโตะ"
+          }
         }
       ]
     },
@@ -100,7 +118,16 @@
           "start": 0,
           "end": 162,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ฮารุโตะเป็นผู้ตอบคำถามของฮายาเตะเรื่องการดูแหวนจริง"
+          }
         }
       ]
     },
@@ -131,7 +158,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p16-1"
+            ],
+            "reason": "p14-1 ระบุว่าอัลวินเป็นผู้พูดขึ้นขณะมองดูอัญมณี"
+          }
         }
       ]
     },
@@ -152,7 +188,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอโทษที่แทรกบทสนทนาของฮารุโตะและฮายาเตะตามที่ p14-1 บรรยาย"
+          }
         }
       ]
     },
@@ -163,7 +208,16 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ฮารุโตะเป็นผู้ตอบอัลวินและอธิบายเรื่องการสั่งทำแหวน"
+          }
         }
       ]
     },
@@ -174,7 +228,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับคำอธิบายและบ่นว่าตัดสินใจยากขึ้น"
+          }
         }
       ]
     },
@@ -239,8 +302,14 @@
         {
           "start": 292,
           "end": 317,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "narration ระบุว่า 'เธอก็เริ่มคิดว่า' ข้อความในเครื่องหมายคำพูดจึงเป็นความคิดในใจของฮายาเตะ ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -281,7 +350,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p26-1 ระบุว่าชินจิเดินมายืนข้างฮายาเตะ แล้วถามเธอเรื่องการมองอัลวิน"
+          }
         }
       ]
     },
@@ -292,7 +370,16 @@
           "start": 0,
           "end": 117,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตอบชินจิและเรียกเขาว่าพี่ชาย"
+          }
         }
       ]
     },
@@ -323,7 +410,16 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดต่อเรื่องหน้าตาของอัลวิน และ p32-1 เป็นคำตอบของฮายาเตะ"
+          }
         }
       ]
     },
@@ -334,7 +430,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตอบรับเรื่องที่อัลวินกำลังจะแต่งงาน"
+          }
         }
       ]
     },
@@ -345,7 +450,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p35-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชมนิสัยของอัลวิน และ p35-1 บรรยายว่าคำพูดของชินจิทำให้ฮายาเตะหวั่นไหว"
+          }
         }
       ]
     },
@@ -380,8 +494,14 @@
         {
           "start": 135,
           "end": 171,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "narration ระบุว่า 'เธอจึงมีความรู้สึกเพียงแค่ว่า' ข้อความในเครื่องหมายคำพูดจึงเป็นความคิดในใจของฮายาเตะ"
+          }
         }
       ]
     },
@@ -402,7 +522,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p37-1 ระบุว่าคำพูดต่อมาของชินจิทำให้ความคิดของฮายาเตะหยุดชะงัก"
+          }
         }
       ]
     },
@@ -413,7 +542,16 @@
           "start": 0,
           "end": 67,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตกใจและเผลอพูดเสียงดังเรื่องภรรยาคนที่สองตามที่ p40-1 บรรยาย"
+          }
         }
       ]
     },
@@ -434,7 +572,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p40-1 ระบุว่าฮายาเตะเผลอพูดเสียงดัง แล้วแก้ตัวว่าตนไม่มีอะไร"
+          }
         }
       ]
     },
@@ -445,7 +592,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชินจิช่วยกลบเกลื่อนบอกให้อัลวินและฮารุโตะไม่ต้องสนใจ"
+          }
         }
       ]
     },
@@ -476,7 +632,16 @@
           "start": 0,
           "end": 150,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามฮายาเตะเรื่องโลกของเธอที่ไม่มีเรื่องฮาเร็ม"
+          }
         }
       ]
     },
@@ -487,7 +652,16 @@
           "start": 0,
           "end": 177,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตอบเรื่องระบบผัวเดียวเมียเดียวและสูตรโกงในโลกของเธอ"
+          }
         }
       ]
     },
@@ -518,7 +692,16 @@
           "start": 0,
           "end": 195,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายกติกาการมีภรรยาสองคนในโลกนี้ให้ฮายาเตะฟัง"
+          }
         }
       ]
     },
@@ -529,7 +712,16 @@
           "start": 0,
           "end": 101,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตอบอย่างตกใจ ก่อน p51-1 บรรยายว่าเธอเริ่มครุ่นคิด"
+          }
         }
       ]
     },
@@ -560,7 +752,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ชินจิเป็นผู้เตือนอัลวินเรื่องเวลาอาหารเย็น และ p54-1 อัลวินตอบรับ"
+          }
         }
       ]
     },
@@ -571,7 +772,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตกใจเรื่องเวลาและถามฮารุโตะว่ามาอีกได้ไหม"
+          }
         }
       ]
     },
@@ -582,7 +792,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "ฮารุโตะเป็นเจ้าของร้านที่ตอบว่ามาได้ทุกเมื่อ"
+          }
         }
       ]
     },
@@ -603,7 +822,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p56-1 ระบุว่าอัลวินนึกถึงอาหารเย็นและเช็กเวลา แล้วบอกว่าจะกลับไปปรึกษาคู่หมั้น"
+          }
         }
       ]
     },
@@ -614,7 +842,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ชินจิเป็นผู้แซวว่าการปรึกษาคู่หมั้นจะทำให้ไม่เป็นการเซอร์ไพรส์"
+          }
         }
       ]
     },
@@ -625,7 +862,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุว่าฮารุโตะหัวเราะให้กับชินจิและอัลวินหลังประโยคนี้"
+          }
         }
       ]
     },

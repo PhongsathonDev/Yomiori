@@ -242,8 +242,14 @@
         {
           "start": 99,
           "end": 138,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกวลีที่ตัวละครเคยพูดในอดีตภายในบทสรุปตัวละคร ไม่ใช่บทสนทนาในฉาก"
+          }
         }
       ]
     },
@@ -1368,8 +1374,14 @@
         {
           "start": 118,
           "end": 124,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p136-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกคำสรรพนาม 'Boku' ในบทบรรยายลักษณะตัวละคร ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -1484,8 +1496,14 @@
         {
           "start": 129,
           "end": 146,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p147-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกชื่อกิจกรรม 'การเยียวยารักษา' ในบทสรุปตัวละคร ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -1500,8 +1518,14 @@
         {
           "start": 65,
           "end": 88,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p148-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกคำสั่งที่ตัวละครได้รับในอดีตภายในบทสรุป ไม่ใช่บทสนทนาในฉาก"
+          }
         }
       ]
     },
@@ -2181,7 +2205,14 @@
         {
           "start": 0,
           "end": 72,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p217-1"
+            ],
+            "reason": "เป็นหัวข้อเปรียบเทียบขนาดหน้าอกในหน้าข้อมูลตัวละคร ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2321,7 +2352,14 @@
         {
           "start": 0,
           "end": 80,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p232-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2331,7 +2369,14 @@
         {
           "start": 0,
           "end": 41,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p233-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2341,7 +2386,14 @@
         {
           "start": 0,
           "end": 28,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p234-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2361,7 +2413,14 @@
         {
           "start": 0,
           "end": 111,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p236-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2371,7 +2430,14 @@
         {
           "start": 0,
           "end": 49,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p237-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2381,7 +2447,14 @@
         {
           "start": 0,
           "end": 28,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p238-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2401,7 +2474,14 @@
         {
           "start": 0,
           "end": 67,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p240-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2411,7 +2491,14 @@
         {
           "start": 0,
           "end": 40,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p241-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2421,7 +2508,14 @@
         {
           "start": 0,
           "end": 28,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p242-1"
+            ],
+            "reason": "เป็นรายชื่อกลุ่มตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2441,7 +2535,14 @@
         {
           "start": 0,
           "end": 92,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p244-1"
+            ],
+            "reason": "เป็นรายชื่อตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -2451,7 +2552,14 @@
         {
           "start": 0,
           "end": 68,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p245-1"
+            ],
+            "reason": "เป็นรายชื่อตัวละครในหน้าสรุปข้อมูล ไม่ใช่บทสนทนา"
+          }
         }
       ]
     }

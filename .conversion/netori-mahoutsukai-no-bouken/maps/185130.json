@@ -38,7 +38,16 @@
           "start": 0,
           "end": 116,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p3-1 ระบุว่าชินจินั่งลงก่อนเริ่มถาม และ p5-1 ระบุว่าทั้งสองตกใจกับท่าทางสบายๆ ของชินจิ"
+          }
         }
       ]
     },
@@ -69,7 +78,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p6-1 ระบุว่าฮายาเตะเปิดปากพูด และ p8-1 เป็นชินจิขู่ตอบ"
+          }
         }
       ]
     },
@@ -80,7 +98,14 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "ตรวจบริบท p8-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -91,7 +116,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "เป็นเสียงรีบรับปากของฮายาเตะก่อน p10-1 ที่ชินจิพยักหน้าให้ปล่อยตัว"
+          }
         }
       ]
     },
@@ -122,7 +156,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p14-1 ระบุว่าฮายาเตะเป็นคนพูดคำนั้นออกมาเบาๆ"
+          }
         }
       ]
     },
@@ -133,7 +176,14 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1"
+            ],
+            "reason": "ตรวจบริบท p13-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -154,7 +204,14 @@
           "start": 0,
           "end": 203,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "ตรวจบริบท p15-1 แล้ว จัดประเภทเป็นคำพูดของฮายาเตะ"
+          }
         }
       ]
     },
@@ -175,7 +232,14 @@
           "start": 0,
           "end": 228,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของฮายาเตะ"
+          }
         }
       ]
     },
@@ -191,7 +255,15 @@
           "start": 24,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p22-1"
+            ],
+            "reason": "p18-1 ระบุว่าชิซุกุเองก็พูดขึ้นมา และประโยคของชิซุกุใน p22-1 ยืนยันว่าเธอเป็นฝ่ายเล่าเรื่องของตน"
+          }
         }
       ]
     },
@@ -202,7 +274,14 @@
           "start": 0,
           "end": 119,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "ตรวจบริบท p19-1 แล้ว จัดประเภทเป็นคำพูดของฮายาเตะ"
+          }
         }
       ]
     },
@@ -213,7 +292,16 @@
           "start": 0,
           "end": 161,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "เป็นความต่อเนื่องจากประโยคของฮายาเตะที่ยังไม่ปิดเครื่องหมายคำพูด"
+          }
         }
       ]
     },
@@ -224,7 +312,14 @@
           "start": 0,
           "end": 179,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของฮายาเตะ"
+          }
         }
       ]
     },
@@ -235,7 +330,16 @@
           "start": 0,
           "end": 191,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "เป็นประโยคของชิซุกุที่พูดถึงฮายาเตะจัง และ p23-1 ระบุว่าชิซุกุตบไหล่ฮายาเตะ"
+          }
         }
       ]
     },
@@ -276,7 +380,14 @@
           "start": 0,
           "end": 443,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "ตรวจบริบท p26-1 แล้ว จัดประเภทเป็นคำพูดของฮายาเตะ"
+          }
         }
       ]
     },
@@ -307,7 +418,14 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -318,7 +436,14 @@
           "start": 0,
           "end": 223,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ตรวจบริบท p30-1 แล้ว จัดประเภทเป็นคำพูดของฮายาเตะ"
+          }
         }
       ]
     },
@@ -369,7 +494,14 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -380,7 +512,14 @@
           "start": 0,
           "end": 211,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -391,7 +530,14 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "ตรวจบริบท p37-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -412,7 +558,14 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ตรวจบริบท p39-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -443,7 +596,16 @@
           "start": 0,
           "end": 164,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p43-1 ระบุว่าชินจิพูดกับฮายาเตะที่พูดด้วยเสียงออดอ้อน"
+          }
         }
       ]
     },
@@ -464,7 +626,14 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "ตรวจบริบท p44-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -505,7 +674,14 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -520,8 +696,14 @@
         {
           "start": 28,
           "end": 42,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "p49-1 ระบุว่าเหล่าภูต 'ทำท่าเหมือนจะบอกว่า' จึงเป็นการบรรยายท่าทาง ไม่ได้เปล่งเสียงพูด"
+          }
         }
       ]
     },
@@ -532,7 +714,14 @@
           "start": 0,
           "end": 240,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ตรวจบริบท p50-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -543,7 +732,14 @@
           "start": 0,
           "end": 146,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1"
+            ],
+            "reason": "ตรวจบริบท p51-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -554,7 +750,14 @@
           "start": 0,
           "end": 186,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -565,7 +768,15 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "p54-1 ระบุว่าฮายาเตะตะโกนใส่ชินจิ"
+          }
         }
       ]
     },
@@ -586,7 +797,14 @@
           "start": 0,
           "end": 90,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "ตรวจบริบท p55-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -597,7 +815,15 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุว่าชิซุกุถามด้วยความหวาดกลัว"
+          }
         }
       ]
     },
@@ -628,7 +854,14 @@
           "start": 0,
           "end": 107,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "ตรวจบริบท p59-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -639,7 +872,14 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "ตรวจบริบท p60-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -670,7 +910,14 @@
           "start": 0,
           "end": 119,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "ตรวจบริบท p63-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -681,7 +928,16 @@
           "start": 0,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "เป็นคำอุทธรณ์ซ้ำถ้อยคำเดียวกับที่ฮายาเตะเคยพูดใน p42-1"
+          }
         }
       ]
     },
@@ -722,7 +978,14 @@
           "start": 0,
           "end": 119,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "ตรวจบริบท p68-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -733,7 +996,15 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "เป็นคำรับที่สุภาพต่อจากคำสั่งของชินจิ และ p70-1 เป็นชิซุกุเรียกฮายาเตะ"
+          }
         }
       ]
     },
@@ -744,7 +1015,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เป็นเสียงเรียกฮายาเตะจัง และ p71-1 ระบุว่าฮายาเตะลูบหัวชิซุกุ"
+          }
         }
       ]
     },
@@ -775,7 +1054,14 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "ตรวจบริบท p73-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -786,7 +1072,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "เป็นเสียงทักท้วงก่อนถูกส่งกลับ และตรงกับถ้อยคำที่ฮายาเตะอ้างถึงในตอนถัดไป"
+          }
         }
       ]
     },
@@ -796,8 +1091,14 @@
         {
           "start": 0,
           "end": 13,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1"
+            ],
+            "reason": "'กริ๊งกริ๊ง♪' เป็นเสียงกระดิ่ง ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 13,
@@ -813,7 +1114,15 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p80-1"
+            ],
+            "reason": "เป็นคำชมที่ใช้สรรพนาม 'ข้า' และ p80-1 ระบุถึงอารมณ์ของแฟลร์เป็นหลัก"
+          }
         }
       ]
     },
@@ -824,7 +1133,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1",
+              "p81-1"
+            ],
+            "reason": "เป็นเสียงผ่อนคลายแบบเนิบๆ ของมารี ก่อนที่ p81-1 จะระบุชื่อมารีผู้พูดด้วยน้ำเสียงเนิบ"
+          }
         }
       ]
     },
@@ -835,7 +1153,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-sylphy",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p78-1",
+              "p84-1"
+            ],
+            "reason": "เป็นคำบ่นแทนภูตทั้งสองเรื่องอัครทูต และ p84-1 ให้ซิลฟี่เป็นผู้พูดถึง 'พวกเรา' ที่ได้รับผลกระทบ"
+          }
         }
       ]
     },
@@ -846,7 +1173,14 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1"
+            ],
+            "reason": "ตรวจบริบท p79-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -867,7 +1201,15 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "p82-1 ระบุว่ามารีเป็นผู้พูดด้วยน้ำเสียงเนิบๆ"
+          }
         }
       ]
     },
@@ -888,7 +1230,15 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "เป็นคำคุยโวของผู้ใช้สรรพนาม 'ข้า' ต่อจากที่แฟลร์ยืดอกใน p82-1"
+          }
         }
       ]
     },
@@ -899,7 +1249,16 @@
           "start": 0,
           "end": 87,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-sylphy",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1",
+              "p84-1",
+              "p87-1"
+            ],
+            "reason": "เป็นคำของภูตอีกตนที่ไม่ได้สังหารสิ่งมีชีวิตพิเศษ และ p87-1 ระบุว่าซิลฟี่เป็นผู้บีบแก้มแฟลร์"
+          }
         }
       ]
     },
@@ -910,7 +1269,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p87-1"
+            ],
+            "reason": "เป็นคำแสดงความสงสารที่ทำให้ p87-1 ระบุว่าแฟลร์ทำหน้าสงสารอย่างสุดซึ้ง"
+          }
         }
       ]
     },
@@ -921,7 +1289,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-sylphy",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "เป็นคำหยอกให้เปลี่ยนที่กัน ก่อน p87-1 ที่ซิลฟี่บีบแก้มแฟลร์"
+          }
         }
       ]
     },
@@ -952,7 +1329,14 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p89-1"
+            ],
+            "reason": "ตรวจบริบท p89-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -973,7 +1357,14 @@
           "start": 0,
           "end": 166,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p91-1"
+            ],
+            "reason": "ตรวจบริบท p91-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -994,7 +1385,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "เป็นเสียงเนิบๆ ของมารี และ p95-1 ระบุว่ามารีและซิลฟี่ยิ้มอย่างชั่วร้าย"
+          }
         }
       ]
     },
@@ -1005,7 +1405,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-sylphy",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "เป็นคำต่อจากมารี และ p95-1 ระบุว่ามารีและซิลฟี่เป็นคู่ที่ยิ้มอย่างชั่วร้าย"
+          }
         }
       ]
     },
@@ -1026,7 +1435,14 @@
           "start": 0,
           "end": 154,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1"
+            ],
+            "reason": "ตรวจบริบท p96-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -1037,7 +1453,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p96-1",
+              "p97-1",
+              "p98-1"
+            ],
+            "reason": "เป็นคำตอบรับสั้นๆ ของมารีผู้พูดน้ำเสียงเนิบ และ p98-1 เป็นคำหยอกต่อของซิลฟี่"
+          }
         }
       ]
     },
@@ -1048,7 +1473,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-sylphy",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p97-1",
+              "p98-1",
+              "p100-1"
+            ],
+            "reason": "เป็นคำหยอกเชิงคาดการณ์ของซิลฟี่ ก่อน p100-1 ที่ระบุว่ามารีและซิลฟี่หัวเราะเสียงดัง"
+          }
         }
       ]
     },
@@ -1059,7 +1493,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p98-1",
+              "p99-1",
+              "p100-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นแสดงว่ามารีและซิลฟี่หัวเราะพร้อมกัน จึงใช้เสียงหมู่ตามแนวทางเดิมของเรื่อง"
+          }
         }
       ]
     },
@@ -1080,7 +1523,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p101-1",
+              "p102-1"
+            ],
+            "reason": "p102-1 ระบุว่าแฟลร์มองดูทั้งสองคนที่ยังหัวเราะอยู่"
+          }
         }
       ]
     },

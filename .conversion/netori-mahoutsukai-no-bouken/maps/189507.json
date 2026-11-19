@@ -28,7 +28,15 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "ผู้พูดเรียกอีกฝ่ายว่า 'แฟลร์จัง' และแฟลร์ตอบใน p4-1 ว่าเป็นมารีที่ทำเรื่องลามกก่อน"
+          }
         }
       ]
     },
@@ -39,7 +47,15 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "ตอบกลับคำแซวของมารีโดยระบุว่ามารีเป็นคนเริ่ม"
+          }
         }
       ]
     },
@@ -110,7 +126,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p13-1 ระบุว่าชินจิห้ามการทะเลาะแล้วตบก้นแฟลร์ และ p12-1 แฟลร์อุทานเรียกชินจิ"
+          }
         }
       ]
     },
@@ -121,7 +146,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p13-1 ระบุว่าแฟลร์กระโดดด้วยความตกใจหลังถูกชินจิตบก้น"
+          }
         }
       ]
     },
@@ -162,7 +196,17 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "ชินจิเป็นผู้ยื่นอวัยวะและออกคำสั่งให้สองภูตปรนนิบัติ; p17-1 และ p18-1 เป็นเสียงตอบรับ"
+          }
         }
       ]
     },
@@ -173,7 +217,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p18-1 มารีเป็นผู้เอ่ยชวน 'แฟลร์จัง' ให้มาทำด้วยกัน คำตอบสั้นใน p17-1 จึงเป็นของแฟลร์"
+          }
         }
       ]
     },
@@ -184,7 +237,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เสียงตอบรับที่เรียกแฟลร์ว่า 'แฟลร์จัง' และชวนทำด้วยกัน"
+          }
         }
       ]
     },
@@ -245,7 +306,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ใช้สรรพนาม 'ฉัน' ซึ่งเป็นรูปแบบของมารีในบทนี้ (p51-1) คำถามใน p24-1 จึงเป็นของแฟลร์"
+          }
         }
       ]
     },
@@ -256,7 +326,15 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ใช้สรรพนาม 'ฉัน' และเป็นเสียงที่สองหลังคำถามของแฟลร์"
+          }
         }
       ]
     },
@@ -297,7 +375,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "น้ำเสียงเร่งเร้า 'เร็วเข้า' เข้ากับแฟลร์ ส่วน p30-1 ลงท้าย 'ค่ะ' เป็นของมารี"
+          }
         }
       ]
     },
@@ -308,7 +395,15 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ลงท้ายด้วย 'ค่ะ' และต่อจากคำเร่งของแฟลร์"
+          }
         }
       ]
     },
@@ -359,7 +454,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "คำชมสั้นหลังการหลั่ง; p36-1 ที่ลงท้าย 'ค่ะ' เป็นเสียงของมารี"
+          }
         }
       ]
     },
@@ -370,7 +474,15 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ลงท้ายด้วย 'ค่ะ' และเป็นเสียงที่สองถัดจากแฟลร์"
+          }
         }
       ]
     },
@@ -395,8 +507,14 @@
         {
           "start": 79,
           "end": 104,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "คำว่า 'เพิ่งจะเริ่มต้นเท่านั้น' เป็นคำเปรียบในบทบรรยายถึงอาการของชินจิ ไม่มีใครพูดออกมา"
+          }
         }
       ]
     },
@@ -407,7 +525,16 @@
           "start": 0,
           "end": 65,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ผู้พูดประกาศว่าจะเริ่มกับมารีก่อน; p40-1 มารีตอบรับ และ p41-1 แฟลร์บ่นว่าไม่ใช่ข้าหรอกหรือ"
+          }
         }
       ]
     },
@@ -418,7 +545,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "คำตอบรับของผู้ที่ถูกเลือกเป็นคนแรก"
+          }
         }
       ]
     },
@@ -429,7 +565,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p42-1 ระบุว่าแฟลร์เบะปากด้วยความไม่พอใจ"
+          }
         }
       ]
     },
@@ -460,7 +604,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "p43-1 ระบุว่าชินจิกวักมือเรียกแฟลร์เข้ามา แล้วออกคำสั่งใน p44-1"
+          }
         }
       ]
     },
@@ -471,7 +624,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ใช้คำเรียก 'ชินจิซัง' และลงท้าย 'คะ' ตามแบบมารี ส่วน p46-1 ที่ใช้ 'ข้า' เป็นของแฟลร์"
+          }
         }
       ]
     },
@@ -482,7 +644,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ใช้สรรพนาม 'ข้า' และ p47-1 ระบุว่าชินจิผลักมารีลงเตียงแล้วให้แฟลร์นอนข้างๆ"
+          }
         }
       ]
     },
@@ -533,7 +704,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "ใช้สรรพนาม 'ฉัน' และลงท้าย 'คะ'; p50-1 ระบุมารีกางขาเพื่อรับชินจิ"
+          }
         }
       ]
     },
@@ -564,7 +744,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p56-1"
+            ],
+            "reason": "ใช้ 'ข้า/เจ้า' และ p56-1 ระบุชัดว่าเป็นคำขอของแฟลร์"
+          }
         }
       ]
     },
@@ -575,7 +764,15 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ใช้คำเรียก 'ชินจิซัง' และเป็นเสียงต่อจากคำขอของแฟลร์"
+          }
         }
       ]
     },

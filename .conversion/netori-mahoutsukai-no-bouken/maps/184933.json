@@ -28,7 +28,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p2-1 ระบุว่าชินจิตัดสินใจจัดการเองแล้วเรียกชื่อแฟลร์ และ p4-1 เป็นเสียงตอบรับของภูต"
+          }
         }
       ]
     },
@@ -39,7 +48,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p5-1 ระบุว่ากำแพงเพลิงผุดขึ้นขวางประตูหลังชินจิเรียกแฟลร์ จึงเป็นคำรับคำสั่งของแฟลร์"
+          }
         }
       ]
     },
@@ -70,7 +88,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p6-1 ระบุว่าชิซุกุชูฝ่ามือไปทางเปลวเพลิงแล้วไม่มีอะไรเกิดขึ้น คำว่า 'น้ำเอ๋ย' จึงเป็นของชิซุกุ"
+          }
         }
       ]
     },
@@ -81,7 +107,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p9-1 ระบุว่าฮายาเตะพยายามใช้เวทมนตร์เช่นกัน คำว่า 'ลมเอ๋ย' จึงเป็นของฮายาเตะ"
+          }
         }
       ]
     },
@@ -112,7 +147,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "ผู้พูดตำหนิอย่างสุภาพและเรียกชินจิว่า 'อัครทูตชินจิ' ตรงกับเทพธิดาอาริอานที่ยังอยู่ในฉาก"
+          }
         }
       ]
     },
@@ -123,7 +167,14 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -134,7 +185,16 @@
           "start": 0,
           "end": 111,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p15-1"
+            ],
+            "reason": "เป็นคำสั่งให้มารีและซิลฟี่จัดการอัครทูตทั้งสอง และ p15-1 ระบุว่าภูตสองตนปรากฏตัวตามคำสั่งนั้น"
+          }
         }
       ]
     },
@@ -145,7 +205,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นแสดงว่ามารีและซิลฟี่ตอบรับพร้อมกัน จึงใช้เสียงหมู่ตามแนวทางเดิมของเรื่อง"
+          }
         }
       ]
     },
@@ -206,7 +275,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p22-1"
+            ],
+            "reason": "เป็นเสียงเรียกมารีผู้ตรึงชิซุกุไว้ และ p22-1 ระบุว่ามารีทำให้ชิซุกุคุกเข่า"
+          }
         }
       ]
     },
@@ -217,7 +295,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "เป็นเสียงเรียกซิลฟี่ผู้ตรึงฮายาเตะไว้ และ p22-1 ระบุว่าซิลฟี่ทำให้ฮายาเตะคุกเข่า"
+          }
         }
       ]
     },
@@ -248,7 +335,16 @@
           "start": 0,
           "end": 122,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เป็นคำถามต่ออัครทูตทั้งสองในฐานะผู้ให้สัญญาเกิดใหม่ และ p25-1 ระบุว่าเทพธิดาอาริอานปล่อยแรงกดดัน"
+          }
         }
       ]
     },
@@ -269,7 +365,15 @@
           "start": 0,
           "end": 124,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "เป็นคำถามที่ปิดท้ายด้วยการถาม 'ว่าไหมชิซุกุ' และ p27-1 เป็นชิซุกุตอบรับ"
+          }
         }
       ]
     },
@@ -280,7 +384,14 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -331,7 +442,17 @@
           "start": 0,
           "end": 278,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "p30-1 ระบุว่าแฟลร์ทำหน้าบึ้ง และ p31-1 อธิบายความโกรธของภูตต่อคำดูถูกพลัง จากนั้น p33-1 เป็นชิซุกุโต้กลับ"
+          }
         }
       ]
     },
@@ -342,7 +463,14 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -353,7 +481,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "เป็นเสียงโต้แบบกวนๆ ต่อจากชิซุกุ และ p35-1 ระบุว่าทั้งสองยังไม่รู้สึกผิด"
+          }
         }
       ]
     },
@@ -374,7 +511,14 @@
           "start": 0,
           "end": 116,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -390,7 +534,16 @@
           "start": 42,
           "end": 62,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p37-1 ระบุว่าชินจิพูดด้วยท่าทางเบื่อหน่าย และ p38-1 เป็นเทพธิดาตอบกลับ"
+          }
         },
         {
           "start": 62,
@@ -406,7 +559,16 @@
           "start": 0,
           "end": 143,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "เป็นคำตอบเรื่องศักยภาพของอัครทูตทั้งสอง และ p39-1 ชินจิเรียกผู้พูดว่าท่านเทพธิดา"
+          }
         }
       ]
     },
@@ -417,7 +579,14 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ตรวจบริบท p39-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -458,7 +627,16 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p42-1 ระบุว่าชินจิพูดต่อด้วยน้ำเสียงเย็นชา และ p44-1 เป็นเทพธิดาตอบเรื่องห้ามฆ่า"
+          }
         }
       ]
     },
@@ -469,7 +647,16 @@
           "start": 0,
           "end": 111,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "เป็นคำสั่งห้ามฆ่าและคำอำลาของเทพธิดาก่อนหายตัวใน p47-1"
+          }
         }
       ]
     },
@@ -480,7 +667,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "เป็นเสียงร้องห้ามแบบตะกุกตะกักของชิซุกุ ส่วน p46-1 เป็นเสียงโต้แบบห้วนของฮายาเตะ"
+          }
         }
       ]
     },
@@ -491,7 +687,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "เป็นเสียงโต้ที่ห้วนและหยาบ ตรงกับฮายาเตะ ขณะที่ p45-1 เป็นเสียงตะกุกตะกักของชิซุกุ"
+          }
         }
       ]
     },
@@ -521,7 +726,16 @@
         {
           "start": 0,
           "end": 155,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่าเสียงของเทพธิดาอาริอานดังขึ้นในหัวของชินจิ ข้อความใน 『』 จึงเป็นคำพูดของเทพธิดาที่สื่อสารทางใจ"
+          }
         }
       ]
     },
@@ -562,7 +776,14 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -573,7 +794,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p53-1 ชินจิเรียกแฟลร์ และ p54-1 เป็นผู้รับคำขอเคลื่อนย้ายพร้อมสั่งมารีกับซิลฟี่"
+          }
         }
       ]
     },
@@ -584,7 +814,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "เป็นเสียงตอบรับคำสั่งของแฟลร์ที่เรียกมารีและซิลฟี่ โดยมารีเป็นภูตน้ำที่พูดนำ"
+          }
         }
       ]
     },
@@ -595,7 +834,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "เป็นคำเร่งให้เริ่มเคลื่อนย้ายจากผู้ที่รับหน้าที่เคลื่อนย้ายทั้งกลุ่ม และ p57-1 ระบุว่าทุกคนถูกแสงห่อหุ้ม"
+          }
         }
       ]
     },
@@ -616,7 +864,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุว่าเสียงท้อแท้ของชิซุกุและฮายาเตะดังขึ้นตามลำดับ ชิซุกุจึงเป็นผู้พูดบรรทัดแรก"
+          }
         }
       ]
     },
@@ -627,7 +884,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุเสียงท้อแท้ของชิซุกุและฮายาเตะตามลำดับ ฮายาเตะจึงเป็นผู้พูดบรรทัดที่สอง"
+          }
         }
       ]
     },

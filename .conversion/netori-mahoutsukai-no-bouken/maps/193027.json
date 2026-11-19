@@ -48,7 +48,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p7-1"
+            ],
+            "reason": "p4-1 ระบุว่าชินจิและคนอื่นเตรียมสัมภาระขึ้นรถม้าและรออัลวิน และ p7-1 บรรยายว่าชินจิพยักหน้ารับคำตอบ"
+          }
         }
       ]
     },
@@ -59,7 +68,16 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่าการตรวจห้องถูกฝากให้เอมิลี่ และทุกคนตรวจห้องตัวเองเพิ่มเติม; p6-1 คือผู้ที่ตอบว่าตรวจห้องของทุกคนแล้ว"
+          }
         }
       ]
     },
@@ -79,7 +97,16 @@
         {
           "start": 0,
           "end": 59,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "เครื่องหมายคำพูดเดี่ยวใช้ยกความคิดร่วมของทุกคนในโรงแรม ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
         }
       ]
     },
@@ -100,7 +127,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p9-1 บรรยายว่าคริสติน่ายิ้มและโค้งคำนับก่อนกล่าวทักทาย"
+          }
         }
       ]
     },
@@ -111,7 +147,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าชินจิก้มศีรษะลงเพื่อขอบคุณคริสติน่าต่อจากคำขอบคุณนี้"
+          }
         }
       ]
     },
@@ -182,7 +227,16 @@
           "start": 0,
           "end": 126,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p17-1 ระบุว่าอัลวินตัดสินใจประกาศข่าวดีออกมาเสียงดังก่อนคำพูดนี้"
+          }
         }
       ]
     },
@@ -193,7 +247,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p21-1"
+            ],
+            "reason": "คำลงท้ายเรียกอัลวินว่า 'อัล' เป็นแบบที่เรนกะใช้ และ p21-1 ระบุว่ามีริสกับเรนกะส่งเสียงแสดงความยินดี"
+          }
         }
       ]
     },
@@ -204,7 +267,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "คำเรียก 'อัลคุง' เป็นแบบที่มีริสใช้กับอัลวินตาม p21-1 ที่ระบุว่าทั้งมีริสและเรนกะส่งเสียงยินดี"
+          }
         }
       ]
     },
@@ -235,7 +307,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24-1 ระบุว่าอัลวินขอบคุณคริสติน่าผู้กล่าวคำแสดงความยินดีนี้"
+          }
         }
       ]
     },
@@ -246,7 +327,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ระบุว่าอัลวินเป็นผู้ขอบคุณคริสติน่า"
+          }
         }
       ]
     },
@@ -317,7 +407,16 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p34-1"
+            ],
+            "reason": "p34-1 ระบุว่าชินจิตัดสินใจแจ้งอัลวินว่าพร้อมออกเดินทางได้ทุกเมื่อ"
+          }
         }
       ]
     },
@@ -328,7 +427,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p35-1"
+            ],
+            "reason": "p35-1 ระบุว่าอัลวินให้ความสำคัญกับกำหนดการเดินทางก่อน จึงเป็นผู้ตอบรับและขอโทษคริสติน่า"
+          }
         }
       ]
     },
@@ -339,7 +447,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้ถามกลับว่าทั้งกลุ่มกำลังจะออกจากเมืองตามบริบทของบทสนทนา"
+          }
         }
       ]
     },
@@ -370,7 +487,16 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p35-1 ระบุถึงการที่อัลวินให้ความสำคัญกับกำหนดการเดินทางก่อนคำตอบนี้"
+          }
         }
       ]
     },
@@ -381,7 +507,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่าอัลวินกะพริบตาเพราะไม่เข้าใจคำพูดของคริสติน่า"
+          }
         }
       ]
     },
@@ -402,7 +537,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p38-1 ระบุว่าอัลวินไม่เข้าใจคำพูดของคริสติน่า จึงเป็นผู้ถามกลับ"
+          }
         }
       ]
     },
@@ -413,7 +557,16 @@
           "start": 0,
           "end": 145,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 บรรยายว่าคริสติน่ามองอัลวินด้วยแก้มแดงหลังอธิบายแผนการเดินทาง"
+          }
         }
       ]
     },
@@ -444,7 +597,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p42-1 ระบุว่าอัลวินเพียงพยักหน้าพร้อมกล่าวคำนี้"
+          }
         }
       ]
     },
@@ -455,7 +617,16 @@
           "start": 0,
           "end": 106,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้เชื้อเชิญมีริสและเรนกะให้ดื่มชาด้วยกัน และ p45-1 ถึง p46-1 เป็นคำตอบของทั้งสอง"
+          }
         }
       ]
     },
@@ -466,7 +637,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p44-1 เอ่ยชื่อคุณมีริสก่อนคุณเรนกะ จึงเป็นคำตอบของมีริส"
+          }
         }
       ]
     },
@@ -477,7 +657,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p44-1 เอ่ยถึงคุณเรนกะต่อจากมีริส และ p46-1 เป็นคำตอบที่เหลือของเรนกะ"
+          }
         }
       ]
     },
@@ -498,7 +687,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่าคำพูดของชินจิทำให้ทุกคนเริ่มเคลื่อนไหว"
+          }
         }
       ]
     },
@@ -509,7 +707,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "คำเรียก 'อัล' และน้ำเสียงเร่งเร้าให้อัลวินลุกเป็นแบบที่เรนกะใช้กับอัลวิน"
+          }
         }
       ]
     },
@@ -520,7 +727,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถูกเรียกให้ลุกใน p49-1 และตอบรับติดขัดก่อนทุกคนเริ่มเคลื่อนไหวใน p51-1"
+          }
         }
       ]
     },
@@ -540,7 +756,16 @@
         {
           "start": 0,
           "end": 21,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตของเฟรรี่ตาม p53-1 ที่ระบุว่ากระแสจิตของเธอส่งมาถึงชินจิ ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -560,7 +785,16 @@
         {
           "start": 0,
           "end": 20,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p56-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตที่ชินจิถามเฟรรี่กลับ และ p56-1 ระบุว่าชินจิตอบกลับด้วยกระแสจิต"
+          }
         }
       ]
     },
@@ -570,7 +804,16 @@
         {
           "start": 0,
           "end": 66,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "『』 เป็นคำตอบของเฟรรี่ทางกระแสจิตตาม p56-1 ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -590,7 +833,16 @@
         {
           "start": 0,
           "end": 28,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "เครื่องหมายคำพูดเดี่ยวใช้ยกชื่อหัวข้อ 'การฝึกอบรมซัคคิวบัสมือใหม่' ในความคิดของชินจิ ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -611,7 +863,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p61-1"
+            ],
+            "reason": "p61-1 ระบุว่าเรนกะที่นั่งอยู่ข้างๆ เอียงคอถามชินจิ"
+          }
         }
       ]
     },
@@ -622,7 +883,16 @@
           "start": 0,
           "end": 116,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p61-1 ระบุว่าชินจิยิ้มตอบพร้อมจับมือเรนกะหลังตอบคำถามของเธอ"
+          }
         }
       ]
     },

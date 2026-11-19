@@ -48,7 +48,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p5-1",
+              "p8-1"
+            ],
+            "reason": "p1-1 ระบุว่าแฟลร์พุ่งเข้าไปก่อน และ p8-1 ระบุว่าแฟลร์ได้เปรียบในการต่อสู้"
+          }
         }
       ]
     },
@@ -59,7 +68,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p9-1"
+            ],
+            "reason": "p9-1 ระบุว่าซัคคิวบัสที่ตกเป็นเป้าหมายของแฟลร์เป็นผู้ถูกโจมตี"
+          }
         }
       ]
     },
@@ -70,7 +88,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p9-1"
+            ],
+            "reason": "เป็นเสียงต่อเนื่องของซัคคิวบัสที่ถูกแฟลร์โจมตีใน p6-1 และ p9-1 ระบุว่าพวกมันรวมตัวสู้แฟลร์"
+          }
         }
       ]
     },
@@ -101,7 +128,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าอัลวินพุ่งเข้าไปเป็นคนต่อไปหลังเรียกมีริสและเฟรรี่"
+          }
         }
       ]
     },
@@ -112,7 +148,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p24-1"
+            ],
+            "reason": "เป็นคำตอบรับเรียกอัลวินว่าอัลคุง และ p24-1 ระบุว่าเวทป้องกันจิตของมีริสกำลังปกป้องอัลวิน"
+          }
         }
       ]
     },
@@ -163,7 +208,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p18-1 ระบุว่าเหล่าซัคคิวบัสเปิดเผยเรือนร่างเพื่อล่อลวงอัลวิน"
+          }
         }
       ]
     },
@@ -174,7 +228,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เป็นเสียงล่อลวงต่อเนื่องของเหล่าซัคคิวบัสตาม p18-1"
+          }
         }
       ]
     },
@@ -275,7 +338,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p30-1"
+            ],
+            "reason": "เป็นเสียงของซัคคิวบัสที่ยังใช้ <เสน่ห์> ต่ออัลวินตาม p30-1–p31-1"
+          }
         }
       ]
     },
@@ -286,7 +358,15 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p30-1"
+            ],
+            "reason": "p30-1 ระบุว่าซัคคิวบัสหกตัวต้องช่วยกันรุมเพื่อหยุดอัลวิน"
+          }
         }
       ]
     },
@@ -297,7 +377,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p32-1"
+            ],
+            "reason": "p32-1 ระบุว่าหอกที่สร้างจากความมืดถูกปล่อยออกมาจากมือของซัคคิวบัสตัวหนึ่ง"
+          }
         }
       ]
     },
@@ -358,7 +447,15 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p36-1 ระบุว่าพลังเวทสีน้ำเงินห่อหุ้มดาบใหญ่ของอัลวินหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -389,7 +486,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "เป็นเสียงกรี๊ดของซัคคิวบัสที่ถูกคมมีดของอัลวินผ่าตาม p37-1"
+          }
         }
       ]
     },
@@ -420,7 +526,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p41-1",
+              "p44-1"
+            ],
+            "reason": "p39-1–p40-1 ระบุว่าแฟลร์เป็นผู้เผาซัคคิวบัส และ p44-1 ระบุว่าแฟลร์ยิ้มเยาะ"
+          }
         }
       ]
     },
@@ -431,7 +546,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "เป็นเสียงของซัคคิวบัสที่ถูกแฟลร์โจมตีและเรียกแฟลร์ว่ายัยผู้หญิงคนนี้"
+          }
         }
       ]
     },
@@ -442,7 +566,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p44-1 ระบุว่าแฟลร์ยิ้มเยาะและแกว่งเปลวไฟในมือหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -463,7 +596,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p46-1 ระบุว่านักบวชแห่งลัทธิชั่วร้ายถอนหายใจก่อนเสกบาเรียใน p47-1"
+          }
         }
       ]
     },
@@ -504,7 +646,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เป็นเสียงของอัลวินที่ตกตะลึงเมื่อคมมีดของเขายังผ่าบาเรียไม่ได้ใน p48-1"
+          }
         }
       ]
     },
@@ -515,7 +666,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่านักบวชแห่งลัทธิชั่วร้ายไม่พอใจที่ซัคคิวบัสของเธอถูกกำจัด"
+          }
         }
       ]
     },
@@ -686,7 +846,16 @@
           "start": 0,
           "end": 140,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "p68-1 ระบุว่าพลังชีวิตจากอัญมณีถูกดูดเข้าสู่ร่างนักบวชแห่งลัทธิชั่วร้ายหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -767,7 +936,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "p76-1 ระบุว่าเป็นเสียงกรีดร้องของนักบวชแห่งลัทธิชั่วร้าย"
+          }
         }
       ]
     },
@@ -798,7 +976,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1",
+              "p81-1"
+            ],
+            "reason": "อัลวินเป็นผู้ใช้ <คมมีดเวทมนตร์> ตาม p36-1 และเป็นผู้โจมตีหลัก"
+          }
         }
       ]
     },
@@ -809,7 +996,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p81-1"
+            ],
+            "reason": "<ดาบศักดิ์สิทธิ์> เป็นเวทมนตร์ของมีริสตามยุคก่อนของเรื่อง และลำดับการโจมตีของอัลวิน–มีริสใน p78-1–p80-1"
+          }
         }
       ]
     },
@@ -820,7 +1016,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1",
+              "p80-1",
+              "p81-1"
+            ],
+            "reason": "หลังคมมีดของอัลวินและดาบของมีริส ผู้โจมตีคนที่สามในฉากนี้คือแฟลร์"
+          }
         }
       ]
     },
@@ -851,7 +1056,15 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1",
+              "p84-1"
+            ],
+            "reason": "p84-1 ระบุว่าเถาวัลย์ของเฟรรี่รัดนักบวชแห่งลัทธิชั่วร้ายที่กำลังสับสนหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -872,7 +1085,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p87-1"
+            ],
+            "reason": "p87-1 ระบุว่าอัลวินและมีริสจับมือกันแสดงความดีใจ และอัลวินเป็นผู้เรียกมีริสว่ามี่"
+          }
         }
       ]
     },
@@ -883,7 +1105,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "เป็นคำตอบของมีริสที่จับมือกับอัลวินใน p87-1"
+          }
         }
       ]
     },
@@ -954,7 +1185,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p91-1",
+              "p93-1",
+              "p95-1"
+            ],
+            "reason": "p91-1 ระบุว่าเรนกะถือคันธนูอยู่ข้างชินจิ และ p95-1 ระบุว่าเรนกะพุ่งเข้ามากอดชินจิ"
+          }
         }
       ]
     },
@@ -965,7 +1205,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p93-1",
+              "p94-1",
+              "p95-1"
+            ],
+            "reason": "p95-1 ระบุว่าเรนกะพุ่งเข้ามากอดชินจิจนเขาล้มลงหลังเสียงนี้"
+          }
         }
       ]
     },

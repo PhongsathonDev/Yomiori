@@ -1,0 +1,57 @@
+{
+  "p3-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p3-1", "p4-1", "p16-1"],
+    "reason": "อัลวินเป็นคนตื่นเต้นเรื่องตำราเวทมนตร์ ส่วน p4-1 เป็นความเห็นสุขุมของเรนกะตาม p16-1"
+  },
+  "p4-1": "netori-renka",
+  "p6-1": "netori-miris",
+  "p7-1": "netori-shinji",
+  "p9-1": "netori-shinji",
+  "p12-1": "netori-shinji",
+  "p13-1": "netori-shinji",
+  "p14-1": "netori-renka",
+  "p15-1": "netori-alvin",
+  "p17-1": "netori-shinji",
+  "p18-1": "netori-miris",
+  "p21-1": "netori-alvin",
+  "p23-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p22-1", "p23-1"],
+    "reason": "ชายที่แต่งตัวดูดีซึ่งถูกอัลวินถามใน p22-1 ไม่มีชื่อใน roster จึงใช้กลุ่มตัวละครประกอบที่ไม่มีชื่อ"
+  },
+  "p24-1": "netori-alvin",
+  "p25-1": "netori-shinji",
+  "p28-1": "netori-alvin",
+  "p29-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p23-1", "p29-1"],
+    "reason": "เป็นคำตอบของคนมุงดูคนเดิมจาก p23-1 ซึ่งไม่มีชื่อใน roster"
+  },
+  "p32-1": "netori-alvin",
+  "p33-1": "netori-shinji",
+  "p34-1": {
+    "speakerId": "netori-miris",
+    "context": ["p33-1", "p34-1", "p35-1"],
+    "reason": "มีริสและเรนกะเป็นฝ่ายที่อยากช่วยตาม p36-1 และคำลงท้าย ค่ะ ใน p34-1 เป็นเสียงของผู้หญิงในปาร์ตี้"
+  },
+  "p39-1": "netori-carlo",
+  "p40-1": "netori-lira",
+  "p66-1": {
+    "speakerId": "netori-guards",
+    "context": ["p65-1", "p66-1", "p68-1"],
+    "reason": "เสียงแหลมคมที่ตะโกนเรียกคาร์โลมาจากกลุ่มคนติดอาวุธที่วิ่งเข้ามาใน p68-1 และหัวหน้ากลุ่มคนนี้ไม่มีชื่อ"
+  },
+  "p67-1": "netori-carlo",
+  "p70-1": {
+    "speakerId": "netori-lily",
+    "context": ["p70-1", "p71-1", "p73-1"],
+    "reason": "p73-1 ระบุว่าลีร่ายิ้มให้ไอริสและน้องสาวทั้งสอง ลิลี่เป็นพี่คนรองที่เอ่ยถามก่อน แล้วลิลผู้ตกใจจึงตอบใน p71-1"
+  },
+  "p71-1": {
+    "speakerId": "netori-lil",
+    "context": ["p70-1", "p71-1", "p73-1"],
+    "reason": "เป็นเสียงของน้องคนเล็กที่ใช้คำแทนตัวเองว่า 'หนู' และยังสั่นจากเหตุการณ์ หลังลิลี่ถามใน p70-1"
+  },
+  "p72-1": "netori-lira"
+}

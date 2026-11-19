@@ -47,8 +47,14 @@
         {
           "start": 0,
           "end": 13,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "'กริ๊งกริ๊ง♪' เป็นเสียงกระดิ่งสีทอง ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 13,
@@ -74,7 +80,16 @@
           "start": 0,
           "end": 81,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p5-1 ระบุว่าฮายาเตะปรากฏตัว และ p6-1 ระบุว่าเธอกำลังโกรธ"
+          }
         }
       ]
     },
@@ -105,7 +120,16 @@
           "start": 0,
           "end": 133,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p9-1 ระบุว่าชินจิตอบกลับด้วยความเบื่อหน่าย และ p11-1 เป็นฮายาเตะโวยตอบ"
+          }
         }
       ]
     },
@@ -116,7 +140,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เป็นเสียงโวยของฮายาเตะต่อคำอธิบายของชินจิ"
+          }
         }
       ]
     },
@@ -127,7 +160,16 @@
           "start": 0,
           "end": 165,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "เป็นคำย้อนถามของชินจิ และ p13-1 ระบุว่าฮายาเตะหน้าแดงเมื่อถูกชินจิจ้อง"
+          }
         }
       ]
     },
@@ -148,7 +190,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เป็นคำเถียงของฮายาเตะ และ p15-1 เป็นชินจิตอบด้วยความแปลกใจ"
+          }
         }
       ]
     },
@@ -159,7 +210,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "เป็นคำย้อนถามของชินจิ และ p16-1 เป็นฮายาเตะเถียงกลับ"
+          }
         }
       ]
     },
@@ -170,7 +230,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17-1 ระบุว่าชินจิพูดไม่ออกกับคำตอบของฮายาเตะ"
+          }
         }
       ]
     },
@@ -211,7 +280,16 @@
           "start": 0,
           "end": 199,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "เป็นคำแนะนำของชินจิต่อเนื่องจากการครุ่นคิดใน p19-1"
+          }
         }
       ]
     },
@@ -222,7 +300,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "เป็นคำขอสั้นๆ ของฮายาเตะที่ยังยึดติดกับซิลฟี่ ก่อนชินจิขึ้นเสียงใน p22-1"
+          }
         }
       ]
     },
@@ -233,7 +320,16 @@
           "start": 0,
           "end": 191,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p23-1 ระบุว่าชินจิเผลอขึ้นเสียงทำให้ฮายาเตะสะดุ้ง"
+          }
         }
       ]
     },
@@ -284,7 +380,16 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p26-1 ระบุว่าชินจิพูดต่อด้วยสีหน้าบึ้งตึง และ p28-1 เป็นฮายาเตะร้องห้าม"
+          }
         }
       ]
     },
@@ -295,7 +400,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "เป็นเสียงร้องห้ามของฮายาเตะก่อนชินจิสั่นกระดิ่งใน p29-1"
+          }
         }
       ]
     },
@@ -326,7 +440,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p30-1 ระบุว่าชิซุกุปรากฏตัวแทนฮายาเตะ และ p32-1 ระบุว่าชิซุกุทักทาย"
+          }
         }
       ]
     },
@@ -347,7 +470,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p32-1 ระบุว่าชินจิพยักหน้า ก่อนเสนอคุยตัวต่อตัวใน p33-1 และ p34-1 เป็นชิซุกุตอบ"
+          }
         }
       ]
     },
@@ -358,7 +490,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "ลงท้าย 'คะ' และเรียกฮายาเตะจัง ตรงกับชิซุกุ"
+          }
         }
       ]
     },
@@ -379,7 +520,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p35-1 ระบุว่าชินจิเริ่มบทสนทนา และ p37-1 เป็นชิซุกุตอบ"
+          }
         }
       ]
     },
@@ -390,7 +540,16 @@
           "start": 0,
           "end": 83,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "เป็นคำตอบที่ลงท้าย 'ค่ะ' ของชิซุกุ และ p38-1 เป็นชินจิชม"
+          }
         }
       ]
     },
@@ -401,7 +560,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p39-1 ระบุว่าชินจิเปลี่ยนการประเมินชิซุกุในใจหลังได้ยินคำตอบ"
+          }
         }
       ]
     },
@@ -422,7 +590,16 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นคำถามของชินจิ และ p41-1 เป็นชิซุกุตอบยาว"
+          }
         }
       ]
     },
@@ -433,7 +610,16 @@
           "start": 0,
           "end": 186,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p42-1 ระบุว่าชิซุกุพูดอย่างนั้นพร้อมหน้าแดงเมื่อนึกถึงฮายาเตะ"
+          }
         }
       ]
     },
@@ -474,7 +660,16 @@
           "start": 0,
           "end": 185,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "เป็นคำอธิบายแผนของชินจิต่อชิซุกุ และ p46-1 เป็นชิซุกุตอบสั้นๆ"
+          }
         }
       ]
     },
@@ -485,7 +680,14 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "ตรวจบริบท p46-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -506,7 +708,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เป็นคำถามของชินจิ และ p49-1 เป็นชิซุกุตอบ"
+          }
         }
       ]
     },
@@ -517,7 +728,16 @@
           "start": 0,
           "end": 121,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เป็นคำตอบของชิซุกุที่ปล่อยให้ฮายาเตะจัดการ และ p50-1 ระบุสายตาเย็นชาของชิซุกุ"
+          }
         }
       ]
     },
@@ -578,7 +798,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "เป็นคำปิดท้ายของชินจิ และ p56-1 เป็นชิซุกุตอบ"
+          }
         }
       ]
     },
@@ -589,7 +818,14 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "ตรวจบริบท p56-1 แล้ว จัดประเภทเป็นคำพูดของชิซุกุ"
+          }
         }
       ]
     },
@@ -620,7 +856,16 @@
           "start": 0,
           "end": 215,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p61-1"
+            ],
+            "reason": "p58-1 ระบุว่าแฟลร์ปรากฏตัวขึ้น และ p61-1 ระบุว่าแฟลร์เป็นผู้พูดต่อ"
+          }
         }
       ]
     },
@@ -631,7 +876,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "เป็นคำตอบของชินจิต่อคำประเมินของแฟลร์ และ p62-1 ระบุว่าชินจิยิ้มให้แฟลร์"
+          }
         }
       ]
     },
@@ -642,7 +896,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p62-1 ระบุว่าแฟลร์หัวเราะเมื่อนึกถึงเอมิลี่"
+          }
         }
       ]
     },
@@ -663,7 +926,16 @@
           "start": 0,
           "end": 171,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "เป็นคำสั่งและแผนของชินจิ และ p65-1 ระบุว่าได้ยินคำตอบของภูต"
+          }
         }
       ]
     },
@@ -673,7 +945,17 @@
         {
           "start": 0,
           "end": 15,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "เครื่องหมาย 『』 ซ้อนสองชั้นแสดงว่ามารีและซิลฟี่ตอบพร้อมกัน และ p65-1 ระบุว่าชินจิได้ยินคำตอบของภูต จึงเป็นคำพูดที่เปล่งเสียง"
+          }
         }
       ]
     },

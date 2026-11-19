@@ -38,7 +38,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p6-1"
+            ],
+            "reason": "อีฟเรียกตัวเองว่าอีฟและเรียกอัลวินว่าพี่ชาย ขณะนั่งอยู่บนตัวเขา (p6-1)"
+          }
         }
       ]
     },
@@ -49,7 +57,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เป็นเสียงครางตอบคำถามของอีฟใน p4-1 และ p6-1 ระบุว่าอีฟกำลังนั่งอยู่บนตัวอัลวิน"
+          }
         }
       ]
     },
@@ -210,7 +227,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "เป็นเสียงของอีฟที่ถูกอัลวินถอดชุดออกอย่างรุนแรงตาม p20-1"
+          }
         }
       ]
     },
@@ -281,7 +307,16 @@
           "start": 0,
           "end": 81,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "อีฟเรียกมีริสว่าคุณสาวใช้และเรียกอัลวินว่าพี่ชาย ก่อนมีริสตอบรับใน p29-1"
+          }
         }
       ]
     },
@@ -292,7 +327,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p32-1"
+            ],
+            "reason": "มีริสเป็นสาวใช้ที่ถูกเรียกและเดินเข้าไปหาทั้งสองคนใน p32-1"
+          }
         }
       ]
     },
@@ -363,7 +407,17 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "มีริสสาดยานอนหลับใส่ทั้งคู่ใน p35-1; คำประท้วงว่าทำอะไรของเธอน่ะเป็นการตอบมีริส ส่วน p38-1 ระบุว่าอัลวินกำลังหมกมุ่นอยู่กับการโลมเล้า"
+          }
         }
       ]
     },
@@ -374,7 +428,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "เป็นเสียงครางของอัลวินที่ยังถูก <เสน่ห์> และกำลังหมกมุ่นอยู่กับการโลมเล้าตาม p38-1"
+          }
         }
       ]
     },
@@ -415,7 +478,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p40-1 ระบุว่ามีริสถอนหายใจอย่างโล่งอกแล้ว p42-1 ระบุว่าเธอทรุดตัวลงนั่ง"
+          }
         }
       ]
     },
@@ -476,7 +548,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "มีริสเป็นผู้ต้อนรับชินจิและเรนกะที่เพิ่งเข้ามาในห้อง และมีริสเป็นคนเฝ้าห้องนี้"
+          }
         }
       ]
     },
@@ -487,7 +568,16 @@
           "start": 0,
           "end": 81,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิเปรียบเทียบอีฟกับซัคคิวบัสที่เคยดูแลตัวเอง (คลาร่า) และเป็นผู้พูดกับมีริส"
+          }
         }
       ]
     },
@@ -498,7 +588,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "p50-1 ระบุว่าชินจิและเรนกะเข้าใจสถานการณ์ทันทีเมื่อเห็นอัลวินกับอีฟนอนซ้อนกัน; ชินจิพูดไปแล้วใน p48-1 จึงเป็นเสียงอุทานของเรนกะ"
+          }
         }
       ]
     },
@@ -519,7 +618,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "มีริสเป็นผู้เล่าว่าอัลคุงโดน <เสน่ห์> และตัวเองเกือบแย่ตาม p54-1"
+          }
         }
       ]
     },
@@ -530,7 +638,17 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "ชินจิเป็นผู้ให้ขวดยานอนหลับแก่มีริสเพื่อความปลอดภัยตาม p43-1"
+          }
         }
       ]
     },
@@ -541,7 +659,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p55-1"
+            ],
+            "reason": "เป็นคำสั่งให้เฟรรี่ปลุกอัลวิน และ p55-1 ระบุว่าเฟรรี่เดินเข้าไปหาอัลวินและยัดดอกไม้เข้าปากเขา"
+          }
         }
       ]
     },
@@ -572,7 +699,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุว่าอัลวินลืมตาโพลงและกระโดดลุกขึ้นอย่างรวดเร็วหลังเสียงนี้"
+          }
         }
       ]
     },
@@ -593,7 +729,16 @@
           "start": 0,
           "end": 144,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ชินจิเป็นผู้ให้กลีบดอกไม้และอธิบายสรรพคุณ ก่อนมีริสขอบคุณคุณชินจิใน p59-1"
+          }
         }
       ]
     },
@@ -604,7 +749,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ผู้พูดเรียกผู้ตอบว่าคุณชินจิ และ p60-1 ระบุว่าชินจิยื่นกลีบดอกไม้ให้มีริส"
+          }
         }
       ]
     },
@@ -645,7 +799,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p66-1"
+            ],
+            "reason": "อัลวินเป็นผู้ได้สติกลับมาและก้มหัวขอโทษมีริสใน p66-1"
+          }
         }
       ]
     },
@@ -656,7 +819,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "ชินจิเป็นผู้ปลอบว่าไม่เป็นไรและสั่งให้อัลวินขอโทษมีริสใน p65-1"
+          }
         }
       ]
     },
@@ -667,7 +839,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p67-1"
+            ],
+            "reason": "เป็นคำสั่งให้อัลวินขอโทษมี่ ซึ่งอัลวินทำตามใน p67-1"
+          }
         }
       ]
     },
@@ -688,7 +869,16 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "อัลวินขอโทษมี่ตามคำสั่งใน p65-1 และมีริสตอบกลับว่าไม่เป็นไรใน p68-1"
+          }
         }
       ]
     },
@@ -699,7 +889,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "ผู้พูดเรียกอัลวินว่าอัลคุงและตอบรับคำขอโทษของเขา"
+          }
         }
       ]
     },
@@ -710,7 +909,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p71-1"
+            ],
+            "reason": "เป็นคำตอบรับของอัลวิน ก่อน p71-1 ระบุว่าอัลวินและมีริสยิ้มให้กัน"
+          }
         }
       ]
     },
@@ -721,7 +929,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เป็นเสียงตอบรับสั้นๆ ของมีริสคู่กับอัลวิน ก่อน p71-1 ระบุว่าทั้งสองยิ้มให้กัน"
+          }
         }
       ]
     },
@@ -782,7 +999,16 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "p75-1 ระบุว่าชินจิเป็นผู้พูดขึ้น และ p77-1 ระบุว่าทุกคนพยักหน้าตามคำพูดของชินจิ"
+          }
         }
       ]
     },

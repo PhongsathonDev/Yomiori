@@ -8,7 +8,15 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1"
+            ],
+            "reason": "ชินจิเป็นผู้ทวนคำว่าพิธีกรรมเวทมนตร์ด้วยความประหลาดใจ และมารีอธิบายเหตุผลใน p2-1"
+          }
         }
       ]
     },
@@ -19,7 +27,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบว่าฮายาเตะใช้เวทมนตร์ได้แล้ว ชิซูกุจึงร้อนใจ"
+          }
         }
       ]
     },
@@ -30,7 +47,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p6-1"
+            ],
+            "reason": "แฟลร์เป็นผู้บ่นว่าทั้งสองคุยกันปกติได้อย่างไรในสภาพนี้;p6-1 ระบุว่าแฟลร์มองพวกเขาด้วยสายตาบึ้งตึง"
+          }
         }
       ]
     },
@@ -71,7 +97,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "มารีเป็นผู้ขอให้เลิกพูดถึงเรื่องน่าอายเพื่อจะได้ลืม และชินจิพูดต่อใน p8-1"
+          }
         }
       ]
     },
@@ -82,7 +117,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p9-1 ระบุว่าชินจิพูดต่อขณะแฟลร์ห่อตัวในผ้าห่มของเขา"
+          }
         }
       ]
     },
@@ -103,7 +147,16 @@
           "start": 0,
           "end": 111,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิเป็นผู้สรุปว่าเข้าใจเหตุผลและชมพรสวรรค์ของฮายาเตะ;มารีเสริมใน p11-1"
+          }
         }
       ]
     },
@@ -114,7 +167,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "มารีเป็นผู้เห็นด้วยว่าเธอเรียนรู้เร็ว และ p12-1 บรรยายสภาพแวดล้อมการฝึกของฮายาเตะ"
+          }
         }
       ]
     },
@@ -145,7 +207,16 @@
           "start": 0,
           "end": 90,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ชินจิเป็นผู้วิเคราะห์ว่าชิซูกุร้อนใจเพราะช่องว่างจะกว้างขึ้น และมารีตอบใน p15-1"
+          }
         }
       ]
     },
@@ -156,7 +227,16 @@
           "start": 0,
           "end": 165,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบว่าสภาพแวดล้อมของฮายาเตะดีกว่าและเธอไม่เข้าใจความรู้สึกมนุษย์"
+          }
         }
       ]
     },
@@ -167,7 +247,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำอธิบายของมารี และ p17-1 บรรยายความคิดของเขา"
+          }
         }
       ]
     },
@@ -188,7 +277,16 @@
           "start": 0,
           "end": 119,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตัดบทและบอกว่าจะเรียกชิซูกุมา;แฟลร์รีบห้ามใน p19-1"
+          }
         }
       ]
     },
@@ -199,7 +297,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ขอไปเปลี่ยนชุดก่อน และ p20-1 บรรยายเธอพยายามลงจากเตียง"
+          }
         }
       ]
     },
@@ -230,7 +337,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "แฟลร์เป็นผู้บอกชินจิว่าจะไปเปลี่ยนชุด และชินจิตอบใน p23-1"
+          }
         }
       ]
     },
@@ -241,7 +357,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกให้แฟลร์อยู่ข้างๆ ในสภาพนี้ และ p24-1 บรรยายเขาดึงผ้าห่มออก"
+          }
         }
       ]
     },
@@ -262,7 +387,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "แฟลร์เป็นผู้เตือนว่าถ้าชิซูกุเห็นจะไม่ดี และชินจิตอบใน p26-1"
+          }
         }
       ]
     },
@@ -273,7 +407,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่ามีแผนอยู่ในใจและถามว่าเข้าใจไหม;แฟลร์ตอบใน p27-1"
+          }
         }
       ]
     },
@@ -284,7 +427,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ตอบรับพร้อมเสียง♡ และ p28-1 เป็นความคิดของมารีที่มองแฟลร์"
+          }
         }
       ]
     },
@@ -415,7 +567,16 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดกับชิซูกุว่าไม่ต้องรีบและลองอีกวัน;p41-1 บรรยายท่าทีไม่เต็มใจของเขา"
+          }
         }
       ]
     },
@@ -436,7 +597,16 @@
           "start": 0,
           "end": 124,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ยืนยันว่าอยากหลุดพ้นจากการพึ่งฮายาเตะและจะทำพิธีกรรม"
+          }
         }
       ]
     },
@@ -447,7 +617,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p44-1 ระบุว่าชินจิจงใจพูดถึงฮายาเตะเพื่อถามความเห็นของชิซูกุ"
+          }
         }
       ]
     },
@@ -468,7 +647,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบว่าจะเก็บเป็นความลับจนวันตาย;ชินจิเสนอทางเลือกอื่นใน p46-1"
+          }
         }
       ]
     },
@@ -479,7 +667,16 @@
           "start": 0,
           "end": 191,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าไม่มีประโยชน์และไม่ขาดแคลนผู้หญิง;p47-1 ระบุว่าเขายังไม่ตกลง"
+          }
         }
       ]
     },
@@ -540,7 +737,16 @@
           "start": 0,
           "end": 128,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ขอโทษและขอให้สอนเวทมนตร์;p53-1 บรรยายเธอก้มหัว"
+          }
         }
       ]
     },
@@ -561,7 +767,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ขอร้องซ้ำพร้อมเรียกชื่อคุณชินจิ และ p55-1 บรรยายความรู้สึกอัปยศของเธอ"
+          }
         }
       ]
     },
@@ -592,7 +807,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "เสียงถอนหายใจ 'เฮ้อ...' เป็นของชินจิ เพราะข้อความบรรยายใน p57-1 ระบุว่าชินจิถอนหายใจอย่างแรง และเขาตอบตกลงใน p58-1"
+          }
         },
         {
           "start": 9,
@@ -608,7 +832,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบตกลงให้ทำพิธีกรรม และชิซูกุขอบคุณใน p59-1"
+          }
         }
       ]
     },
@@ -619,7 +852,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้กล่าวขอบคุณ และ p60-1 บรรยายว่าเธอพูดขอบคุณขณะก้มหัว"
+          }
         }
       ]
     },
@@ -640,7 +882,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้แฟลร์กับมารีออกไปก่อน และแฟลร์ตอบใน p62-1"
+          }
         }
       ]
     },
@@ -651,7 +902,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ตอบรับและบอกไว้เจอกัน;มารีตอบใน p63-1"
+          }
         }
       ]
     },
@@ -662,7 +922,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบรับด้วยเสียงสดใส และ p64-1 ระบุว่าแฟลร์กับมารีหายตัวไป"
+          }
         }
       ]
     },
@@ -693,7 +962,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "ชินจิเป็นผู้เรียกชิซูกุมานี่ และชิซูกุตอบใน p67-1"
+          }
         }
       ]
     },
@@ -704,7 +982,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ตอบรับ และ p68-1 ระบุว่าชินจิตบที่เตียง"
+          }
         }
       ]
     },

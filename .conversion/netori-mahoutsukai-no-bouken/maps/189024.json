@@ -28,7 +28,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p2-1 ระบุฮารุโตะเป็นผู้อธิบายแหวน และ p4-1 เป็นคำอธิบายต่อจากคำอุทานของอัลวิน"
+          }
         }
       ]
     },
@@ -39,7 +48,16 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p2-1 ระบุว่าฮารุโตะให้ความรู้เรื่องแหวน และคำตอบนี้เป็นคำอธิบายของเจ้าของร้าน"
+          }
         }
       ]
     },
@@ -60,7 +78,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p6-1",
+              "p8-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจากคำอธิบายของฮารุโตะใน p4-1 ก่อน p8-1 ชินจิตอบเรื่องเรนกะ"
+          }
         }
       ]
     },
@@ -71,7 +98,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "คำเตือนต่อเนื่องจาก p6-1 ของฮารุโตะ และ p8-1 เป็นคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -82,7 +118,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p10-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบเรื่องนิสัยของเรนกะ และ p10-1 ระบุว่าฮารุโตะพูดแซวเขา"
+          }
         }
       ]
     },
@@ -113,7 +158,16 @@
           "start": 0,
           "end": 81,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p10-1 ระบุว่าฮารุโตะพูดแซวชินจิเรื่องการเลือกแหวน และ p12-1 เป็นคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -124,7 +178,16 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ชินจิเป็นผู้โต้แย้งเรื่องการใช้เงิน ก่อน p13-1 ที่อัลวินและฮารุโตะพูดพร้อมกัน"
+          }
         }
       ]
     },
@@ -135,7 +198,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนแสดงว่าอัลวินและฮารุโตะพูดพร้อมกัน และ p14-1 ระบุว่าทั้งสองมองชินจิด้วยสายตาสงสาร ใช้เสียงหมู่ของคนในฉาก"
+          }
         }
       ]
     },
@@ -176,7 +248,16 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p16-1 ระบุว่านานากะอุ้มฮานะยกชาเข้ามาเสิร์ฟ แล้วทักทายฮารุโตะและชินจิ"
+          }
         }
       ]
     },
@@ -187,7 +268,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ฮารุโตะเป็นผู้ตอบนานากะ และ p19-1 ระบุว่าเขารับถาดจากนานากะ"
+          }
         }
       ]
     },
@@ -218,7 +308,16 @@
           "start": 0,
           "end": 82,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "p20-1 ระบุว่านานากะยิ้มให้อัลวินที่เพิ่งเจอกันครั้งแรก แล้วแนะนำตัว"
+          }
         }
       ]
     },
@@ -229,7 +328,16 @@
           "start": 0,
           "end": 80,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "อัลวินแนะนำตัวตอบนานากะ และ p23-1 เป็นคำตอบรับของนานากะ"
+          }
         }
       ]
     },
@@ -240,7 +348,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบรับคำขอโทษของอัลวินก่อนเดินออกไปใน p24-1"
+          }
         }
       ]
     },
@@ -271,7 +388,16 @@
           "start": 0,
           "end": 132,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p25-1 ระบุว่าชินจิเดินตามนานากะไป แล้วบอกแผนกับอัลวินและฮารุโตะ"
+          }
         }
       ]
     },
@@ -282,7 +408,16 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p29-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามเรื่องฮายาเตะ และ p29-1 เป็นคำพูดต่อของฮารุโตะ"
+          }
         }
       ]
     },
@@ -303,7 +438,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-haruto",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "p28-1 ระบุว่าฮารุโตะก็สงสัยเช่นกันจึงพูดต่อ"
+          }
         }
       ]
     },
@@ -314,7 +458,16 @@
           "start": 0,
           "end": 156,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของฮารุโตะเรื่องที่มาของฮายาเตะ"
+          }
         }
       ]
     },
@@ -325,7 +478,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p32-1 ระบุว่าอัลวินเข้าใจเรื่องราวของชินจิแล้วจึงกลับไปดูแคตตาล็อก"
+          }
         }
       ]
     },
@@ -396,7 +558,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p36-1 ระบุว่าชินจิกำลังลูบก้นนานากะ แล้วถามเรื่องฮานะ ก่อนนานากะตอบใน p39-1"
+          }
         }
       ]
     },
@@ -407,7 +578,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบคำถามของชินจิเรื่องเวลานอนของฮานะ"
+          }
         }
       ]
     },
@@ -468,7 +648,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p41-1 ระบุว่าชินจิถามเกี่ยวกับฮายาเตะ และ p46-1 เป็นคำตอบของนานากะ"
+          }
         }
       ]
     },
@@ -479,7 +668,16 @@
           "start": 0,
           "end": 132,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบเรื่องการทำงานของฮายาเตะด้วยน้ำเสียงพอใจ"
+          }
         }
       ]
     },
@@ -580,7 +778,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิเป็นผู้ฝากให้นานากะดูแลฮายาเตะต่อ ก่อนนานากะตอบรับใน p57-1"
+          }
         }
       ]
     },
@@ -591,7 +798,16 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบรับและให้สัญญากับชินจิ"
+          }
         }
       ]
     },

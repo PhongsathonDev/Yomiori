@@ -1,0 +1,65 @@
+{
+  "p1-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p3-1", "p1-1"],
+    "reason": "p3-1 ระบุว่าหลังเหตุการณ์สงบ ชินจิเข้าไปทักพวกลีร่า บทนี้จึงเป็นคำปลอบของชินจิถึงลีร่า"
+  },
+  "p2-1": "netori-lira",
+  "p5-1": "netori-alvin",
+  "p6-1": "netori-lira",
+  "p8-1": "netori-lira",
+  "p11-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p9-1", "p10-1", "p11-1"],
+    "reason": "ชินจิเป็นผู้พูดต่อจากท่าทีเข้าใจของเขาใน p9-1 และกล่าวถึงอัลวินโดยตรงใน p11-1"
+  },
+  "p12-1": "netori-miris",
+  "p13-1": "netori-alvin",
+  "p15-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p15-1", "p16-1"],
+    "reason": "ชินจิเป็นคู่สนทนาของลีร่าในวงนี้ตาม p18-1 และเป็นผู้ถามถึงเหตุผลที่ไปร้านหนังสือเวทมนตร์"
+  },
+  "p16-1": "netori-lira",
+  "p17-1": "netori-iris",
+  "p20-1": "netori-alvin",
+  "p21-1": "netori-iris",
+  "p24-1": "netori-iris",
+  "p25-1": "netori-alvin",
+  "p28-1": {
+    "type": "narration",
+    "context": ["p27-1", "p28-1", "p30-1"],
+    "reason": "เป็นตัวอย่างคำตอบที่อัลวินหวังจะได้ยินในความคิด และ p30-1 ระบุว่าบรรยากาศไม่เป็นอย่างที่คิด"
+  },
+  "p29-1": {
+    "type": "narration",
+    "context": ["p27-1", "p29-1", "p30-1"],
+    "reason": "เป็นตัวอย่างคำตอบในจินตนาการของอัลวินต่อจาก p28-1 ไม่มีใครพูดออกมา"
+  },
+  "p31-1": "netori-miris",
+  "p32-1": {
+    "speakerId": "netori-lira",
+    "context": ["p16-1", "p18-1", "p32-1"],
+    "reason": "ลีร่าเป็นหัวหน้าปาร์ตี้หญิงล้วนที่มีไอริสอยู่ด้วยตาม p16-1 และกำลังคุยกับชินจิใน p18-1 จึงเป็นผู้เสริมคำพูดของมีริสเรื่องนิสัยของไอริส"
+  },
+  "p36-1": "netori-iris",
+  "p39-1": "netori-shinji",
+  "p40-1": "netori-iris",
+  "p43-1": "netori-shinji",
+  "p44-1": "netori-iris",
+  "p46-1": {
+    "speakerId": "netori-renka",
+    "context": ["p45-1", "p46-1", "p47-1"],
+    "reason": "p45-1 ระบุว่าเรนกะกับมีริสเพิ่งเข้าร่วมวง และเรนกะเป็นผู้ถามสรรพคุณของ〈ทลายขีดจำกัด〉ก่อนชินจิอธิบายใน p47-1"
+  },
+  "p47-1": "netori-shinji",
+  "p50-1": "netori-shinji",
+  "p51-1": "netori-miris",
+  "p52-1": "netori-renka",
+  "p55-1": "netori-miris",
+  "p56-1": "netori-alvin",
+  "p57-1": "netori-shinji",
+  "p60-1": "netori-iris",
+  "p61-1": "netori-shinji",
+  "p62-1": "netori-iris"
+}

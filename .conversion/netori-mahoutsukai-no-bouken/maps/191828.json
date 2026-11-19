@@ -28,7 +28,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p3-1",
+              "p6-1"
+            ],
+            "reason": "p6-1 ระบุว่าพิโน่ตอบเสียงเคาะประตูของอัลวิน ประโยคนี้จึงเป็นการประกาศตัวของอัลวินหัวหน้าปาร์ตี้ที่หน้าห้อง"
+          }
         }
       ]
     },
@@ -39,7 +48,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p6-1"
+            ],
+            "reason": "p6-1 ระบุว่าพิโน่ตอบกลับเสียงเคาะประตูของอัลวิน จึงเป็นเสียงเชิญจากพิโน่"
+          }
         }
       ]
     },
@@ -50,7 +68,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เป็นคำตอบรับของอัลวินหลังพิโน่อนุญาตให้เข้า และตรงกับคำลงท้าย ครับ ของอัลวิน"
+          }
         }
       ]
     },
@@ -101,7 +128,16 @@
           "start": 0,
           "end": 118,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "พิโน่เป็นเจ้าของห้องและเป็นผู้สั่งให้ทุกคนนั่งและให้เจ้าหน้าที่ออกไปพัก"
+          }
         }
       ]
     },
@@ -112,7 +148,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p10-1 สั่งให้ทุกคนออกจากห้องพัก และ p12-1 ระบุว่าเจ้าหน้าที่ทั้งหมดออกจากห้องไป เครื่องหมายคำพูดซ้อนและคำลงท้ายทั้ง ครับ/ค่ะ จึงเป็นเสียงตอบรับของเจ้าหน้าที่ที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -143,7 +188,16 @@
           "start": 0,
           "end": 124,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p13-1 ระบุว่าพิโน่ลุกมานั่งตรงหน้าพวกอัลวินแล้วเริ่มบทสนทนานี้"
+          }
         }
       ]
     },
@@ -154,7 +208,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่ตอบคำถามเรื่องชีวิตในเมืองด้วยคำลงท้าย ครับ"
+          }
         }
       ]
     },
@@ -165,7 +228,16 @@
           "start": 0,
           "end": 161,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p18-1"
+            ],
+            "reason": "พิโน่เป็นผู้เปลี่ยนเรื่องมาที่ภารกิจและเป็นผู้มอบใบรับรองให้"
+          }
         }
       ]
     },
@@ -186,7 +258,15 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่าพิโน่หยิบกล่องแหวนออกมาหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -217,7 +297,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามเมื่อเห็นแหวนในกล่อง และพิโน่ตอบยืนยันใน p22-1"
+          }
         }
       ]
     },
@@ -228,7 +317,16 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p24-1"
+            ],
+            "reason": "พิโน่เป็นผู้ตอบคำถามของอัลวินและอธิบายจุดหมายในการส่งแหวน"
+          }
         }
       ]
     },
@@ -249,7 +347,16 @@
           "start": 0,
           "end": 268,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "พิโน่อธิบายรายละเอียดอัญมณีและเหตุผลที่มอบภารกิจต่อจาการปิดกล่องใน p23-1"
+          }
         }
       ]
     },
@@ -260,7 +367,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p26-1 ระบุว่าคำพูดของพิโน่ทำให้อัลวินดีใจมาก และอัลวินเป็นผู้รับปากนำส่ง"
+          }
         }
       ]
     },
@@ -331,7 +447,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "พิโน่เป็นผู้ถามกำหนดการออกจากเมืองหลังอัลวินเก็บกล่อง"
+          }
         }
       ]
     },
@@ -342,7 +467,16 @@
           "start": 0,
           "end": 126,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "อัลวินตอบกำหนดการเดินทางและ p34-1 ระบุว่าสายตาของพิโน่จับจ้องที่อัลวิน"
+          }
         }
       ]
     },
@@ -363,7 +497,16 @@
           "start": 0,
           "end": 148,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "พิโน่เป็นผู้ถามหยอกเรื่องตระกูลเบลซ์หลังจ้องมองอัลวิน และอัลวินรีบปฏิเสธใน p36-1"
+          }
         }
       ]
     },
@@ -374,7 +517,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p37-1 ระบุว่าอัลวินรีบปฏิเสธความสัมพันธ์กับคริสติน่าอย่างลนลานพร้อมชำเลืองมองมีริส"
+          }
         }
       ]
     },
@@ -425,7 +577,16 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p41-1",
+              "p44-1"
+            ],
+            "reason": "พิโน่เป็นผู้ให้คำแนะนำเรื่องผู้หญิงชนชั้นสูงหลังคิดถึงประสบการณ์ของตัวเองใน p42-1"
+          }
         }
       ]
     },
@@ -456,7 +617,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "p45-1 ระบุว่าพิโน่พยักหน้าให้อัลวินที่ก้มศีรษะลงอย่างนอบน้อมหลังคำขอบคุณนี้"
+          }
         }
       ]
     },
@@ -497,7 +667,16 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-pino",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "พิโน่เป็นผู้บอกว่าถึงเวลากลับไปทำงานและฝากงานไว้กับปาร์ตี้"
+          }
         }
       ]
     },
@@ -508,7 +687,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ที่ตอบรับและขอตัวก่อนทุกคนโค้งคำนับออกจากห้อง"
+          }
         }
       ]
     },
@@ -539,7 +727,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p55-1"
+            ],
+            "reason": "p55-1 ระบุว่าอัลวินพูดคุยด้วยความตื่นเต้นอย่างเห็นได้ชัดหลังออกจากกิลด์เวทมนตร์"
+          }
         }
       ]
     },
@@ -580,7 +777,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "เป็นประโยคต่อเนื่องของอัลวินที่ยังตื่นเต้นเรื่องความไว้วางใจของพิโน่ ก่อนเรนกะตอบใน p57-1"
+          }
         }
       ]
     },
@@ -591,7 +797,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "คำเรียกอัลแบบไม่มีคำนำหน้าเป็นลักษณะการพูดของเรนกะ และเธอเป็นผู้ตอบอัลวินก่อนมีริสใน p58-1"
+          }
         }
       ]
     },
@@ -602,7 +817,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "คำลงท้าย ค่ะ และ p59-1 ระบุว่ามีริสมองแผ่นหลังอัลวินด้วยสายตาอ่อนโยนหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -623,7 +847,16 @@
           "start": 0,
           "end": 90,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p59-1 ระบุว่าอัลวินหันกลับมาแล้วถามเรื่องปรึกษาท่านมัซโซล่าแทนการเป็นอัศวินกิตติมศักดิ์"
+          }
         }
       ]
     },
@@ -634,7 +867,16 @@
           "start": 0,
           "end": 185,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบและวิเคราะห์ค่าตอบแทนในการขอความช่วยเหลือจากตระกูลมัซโซล่า และ p62-1 ระบุความคิดของชินจิต่อ"
+          }
         }
       ]
     },
@@ -655,7 +897,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "มีคำลงท้าย คะ และ p65-1 ระบุว่าชินจิยิ้มขมขื่นต่อคำถามของมีริส"
+          }
         }
       ]
     },
@@ -666,7 +917,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "p65-1 ระบุว่าชินจิยิ้มขมขื่นต่อคำถามของมีริสและกำลังจะเปิดปากพูดต่อ"
+          }
         }
       ]
     },
@@ -707,7 +967,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p70-1"
+            ],
+            "reason": "p70-1 ระบุว่าอัลวินและเรนกะมีปฏิกิริยาตอบสนองอย่างรวดเร็วต่อเสียงดัง ประโยคอุทานแรกจึงเป็นของอัลวิน"
+          }
         }
       ]
     },
@@ -718,7 +987,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "p70-1 ระบุว่าอัลวินและเรนกะเป็นผู้มีปฏิกิริยาตอบสนองต่อเสียงดัง ประโยคที่สองจึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -749,7 +1027,15 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p74-1"
+            ],
+            "reason": "p74-1 ระบุว่าชินจิเป็นคนแรกที่ฟื้นตัวจากความสับสนและพึมพำประโยคนี้"
+          }
         }
       ]
     },
@@ -760,7 +1046,15 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p75-1"
+            ],
+            "reason": "p75-1 ระบุว่ามีริสร้องอุทานด้วยความประหลาดใจเมื่ออาคาร〈พาราไดซ์〉หายไป"
+          }
         }
       ]
     },
@@ -791,7 +1085,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "p77-1 ระบุว่าสิ่งที่เรนกะเห็นเมื่อใช้เวทมนตร์〈ตาเหยี่ยว〉คือภาพบริเวณรอบ〈พาราไดซ์〉"
+          }
         }
       ]
     },

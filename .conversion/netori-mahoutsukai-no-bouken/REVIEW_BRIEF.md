@@ -8,7 +8,10 @@ only, verify, and report.
 
 ## Inputs
 
-- Cue with numbered spans: `.conversion/netori-mahoutsukai-no-bouken/cues/<sourceId>.md`
+- Decision ledger (one line per dialogue/quoted-narration decision):
+  `.conversion/netori-mahoutsukai-no-bouken/ledgers/<sourceId>.md`
+- Cue with numbered spans (open only for disputed lines):
+  `.conversion/netori-mahoutsukai-no-bouken/cues/<sourceId>.md`
 - Final mapping: `.conversion/netori-mahoutsukai-no-bouken/maps/<sourceId>.json`
 - Source chapter: shown in the cue header, under `novels_source/netori-mahoutsukai-no-bouken/`
 - Roster: `reader-web/src/data/novels/netori-mahoutsukai-no-bouken/characters.json`

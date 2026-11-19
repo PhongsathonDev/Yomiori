@@ -222,8 +222,14 @@
         {
           "start": 99,
           "end": 138,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "เป็นคำพูดในอนาคตที่บทบรรยายยกมาว่ามีริสพูดถึง ไม่ได้พูดออกมาในหน้านี้"
+          }
         }
       ]
     },
@@ -1318,8 +1324,14 @@
         {
           "start": 118,
           "end": 124,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p131-1"
+            ],
+            "reason": "คำว่า 'Boku' เป็นการยกสรรพนามที่ลิลใช้ ไม่ใช่บทสนทนา"
+          }
         }
       ]
     },
@@ -1434,8 +1446,14 @@
         {
           "start": 129,
           "end": 146,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p142-1"
+            ],
+            "reason": "คำว่า 'การเยียวยารักษา' เป็นชื่อเรียกเชิงเปรียบของความสัมพันธ์ ไม่ใช่คำพูด"
+          }
         }
       ]
     },
@@ -1450,8 +1468,14 @@
         {
           "start": 65,
           "end": 88,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p143-1"
+            ],
+            "reason": "คำว่า 'รุกเข้าไปอย่างเต็มที่' เป็นคำสั่งของเทพธิดาที่บทบรรยายยกมาเล่า ไม่ได้พูดในฉาก"
+          }
         }
       ]
     },
@@ -2011,7 +2035,14 @@
         {
           "start": 0,
           "end": 72,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p200-1"
+            ],
+            "reason": "เป็นหัวข้อสรุปการเปรียบเทียบขนาดหน้าอกของตัวละคร ไม่ใช่บทพูด"
+          }
         }
       ]
     },

@@ -28,7 +28,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "p2-1 ระบุว่าชินจิไปหาเรนกะที่ห้องและทั้งคู่กำลังจะเริ่มเมื่อมีเสียงเคาะประตู จากนั้น p4-1 ระบุว่าเรนกะเดินไปเปิดประตู คำพูดให้รอจึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -49,7 +58,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p4-1 ระบุว่าเรนกะเชิญอีกฝ่ายเข้ามา และ p6-1 ชินจิทักชื่อมีริสทันทีหลังคำขอรบกวน"
+          }
         }
       ]
     },
@@ -60,7 +79,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่ามีริสยืนข้างเรนกะต่อหน้าชินจิ และชินจิรู้ว่าเธอต้องการมีเซ็กส์ คำถามจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -81,7 +109,16 @@
           "start": 0,
           "end": 95,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p7-1 ระบุว่ามีริสเป็นผู้ยืนต่อหน้าชินจิด้วยความคาดหวัง คำสารภาพเรื่องโกหกอัลคุงจึงเป็นของมีริส"
+          }
         }
       ]
     },
@@ -92,7 +129,16 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำสารภาพของมีริสและเป็นหัวหน้าปาร์ตี้ที่วางแผนเผชิญหน้ากับซัคคิวบัส"
+          }
         }
       ]
     },
@@ -103,7 +149,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p11-1 ระบุว่าเรนกะดูไม่พอใจกับการปรากฏตัวของมีริส คำถอนหายใจและข้อสรุปว่าวันนี้เป็นสามคนจึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -133,7 +188,17 @@
         {
           "start": 0,
           "end": 44,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p12-1 ระบุว่าเฟรรี่ส่งกระแสจิตมาหาชินจิ และข้อความนี้เป็นการเสนอจะถ่ายทอดสดให้อัลวินดู จึงเป็นการสื่อสารของเฟรรี่ ไม่ใช่คำบรรยาย"
+          }
         }
       ]
     },
@@ -143,7 +208,17 @@
         {
           "start": 0,
           "end": 45,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าชินจิกำลังคุยกับเฟรรี่ด้วยกระแสจิต คำตอบที่ทักท้วงข้อเสนอจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -173,7 +248,17 @@
         {
           "start": 0,
           "end": 56,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "เป็นคำตอบรับต่อความกังวลของชินจิใน p14-1 ว่าเฟรรี่จะทำอะไร และ p18-1 ชินจิเอ่ยชื่อเฟรรี่เพื่อถามถึงเหตุผลที่เธอริเริ่มเรื่องนี้เอง"
+          }
         }
       ]
     },
@@ -183,7 +268,17 @@
         {
           "start": 0,
           "end": 101,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ข้อความเรียกชื่อเฟรรี่และคาดเดาผลของการเติบโตแบบซัคคิวบัสเป็นคำถามของชินจิ ก่อน p19-1 บรรยายความรู้สึกของเขาเกี่ยวกับการเติบโตของเฟรรี่"
+          }
         }
       ]
     },
@@ -203,7 +298,17 @@
         {
           "start": 0,
           "end": 56,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "เป็นคำตอบรับคำคาดเดาของชินจิว่า 'อาจจะนะ' และพูดถึงความพึงพอใจของตัวเองสอดคล้องกับ p19-1 ที่บรรยายว่าเฟรรี่กำลังเติบโต"
+          }
         }
       ]
     },
@@ -213,7 +318,17 @@
         {
           "start": 0,
           "end": 113,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "ชินจิเป็นผู้เตือนเฟรรี่เรื่องภาพลักษณ์ภายนอกและบอกว่าจะสั่งให้หยุดหากแย่เกินไป ซึ่งเป็นสิทธิ์สั่งการของเขา"
+          }
         }
       ]
     },
@@ -223,7 +338,17 @@
         {
           "start": 0,
           "end": 12,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "เป็นคำตอบรับคำสั่งของชินจิด้วยกระแสจิตต่อเนื่องจากบทสนทนาก่อนหน้า"
+          }
         }
       ]
     },
@@ -274,7 +399,17 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "คำพูดเรียก 'มี่' และแย่งจะเริ่มก่อนตรงกับ p29-1 ที่เรนกะคุกเข่าลงข้างมีริสเพื่อไม่ให้เสียเปรียบ"
+          }
         }
       ]
     },
@@ -285,7 +420,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบว่าเธอต้องทำให้ชินจิพอใจก่อน และ p29-1 ระบุว่าเธอดูกระตือรือร้น"
+          }
         }
       ]
     },
@@ -316,7 +460,16 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p30-1 ระบุว่าชินจิวางมือบนศีรษะทั้งสองคนและออกคำสั่ง คำสั่งให้หนีบพร้อมกันจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -327,7 +480,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "คำตอบรับ 'เข้าใจแล้วค่ะ คุณชินจิ' เป็นคำพูดของมีริส และ p33-1 เป็นเสียงถอนหายใจของเรนกะที่ตามมา"
+          }
         }
       ]
     },
@@ -338,7 +500,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "น้ำเสียงถอนหายใจ 'เฮ้อ...ช่วยไม่ได้สินะ' เป็นของเรนกะ ซึ่ง p34-1 ระบุว่าทั้งสองคนลงมือตามคำสั่ง"
+          }
         }
       ]
     },
@@ -369,7 +540,17 @@
           "start": 0,
           "end": 69,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "คำลงท้าย 'ค่ะ' และคำชมจู๋ของชินจิเป็นสำนวนของมีริส และ p38-1 ระบุว่าลิ้นของมีริสเป็นผู้เลียส่วนหัว"
+          }
         }
       ]
     },
@@ -380,7 +561,17 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "คำว่า 'ชินจิเป็นของฉันนะ' เป็นการประกาศความเป็นเจ้าของของเรนกะ และ p39-1 ระบุว่าเรนกะไม่ยอมแพ้มีริสจึงยื่นลิ้นออกมาเลียเช่นกัน"
+          }
         }
       ]
     },
@@ -431,7 +622,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "เป็นคำขอของชินจิให้ทั้งสองคนทำให้แรงขึ้น ก่อน p43-1 และ p44-1 เป็นคำตอบรับของมีริสและเรนกะ"
+          }
         }
       ]
     },
@@ -442,7 +642,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "คำตอบรับสั้นๆ ด้วย 'ค่ะ' เป็นของมีริส ส่วน p44-1 เป็นคำตอบของเรนกะที่เรียกชื่อชินจิ"
+          }
         }
       ]
     },
@@ -453,7 +662,17 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "คำว่า 'หลั่งออกมาเลยนะ...ชินจิ' เรียกชื่อชินจิแบบที่เรนกะใช้ และ p45-1 ระบุว่าทั้งสองคนตอบรับคำขอของชินจิ"
+          }
         }
       ]
     },
@@ -484,7 +703,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "p46-1 บรรยายว่าชินจิทนไม่ไหวต่อการทำดับเบิ้ลไพซูริ คำประกาศว่าจะหลั่งจึงเป็นของชินจิ"
+          }
         }
       ]
     },
@@ -495,7 +723,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "คำลงท้าย 'ค่ะ' และการบอกว่าออกมาเยอะเป็นของมีริส ส่วน p49-1 เป็นเสียงของเรนกะ"
+          }
         }
       ]
     },
@@ -506,7 +743,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "คำอุทานสั้นๆ 'รุนแรงจัง' เป็นเสียงของเรนกะที่ตามหลังคำของมีริสในลำดับคู่เดิมของฉาก"
+          }
         }
       ]
     },
@@ -587,7 +833,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "คำว่า 'เรนกะจัง ขอโทษนะ ฉันขอก่อนนะ' เป็นการขอทางเรนกะของมีริส และ p58-1 เป็นเสียงทักของเรนกะ"
+          }
         }
       ]
     },
@@ -598,7 +853,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "คำว่า 'เดี๋ยวสิ มี่!?' เป็นเสียงทักมีริสของเรนกะ ก่อน p59-1 บรรยายว่ามีริสขึ้นคร่อมชินจิ"
+          }
         }
       ]
     },
@@ -629,7 +893,16 @@
           "start": 0,
           "end": 105,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p60-1 ระบุว่ามีริสหน้าเคลิบเคลิ้มด้วยความสุขจากส่วนลึก คำบรรยายความรู้สึกและการชมจู๋ของชินจิจึงเป็นคำพูดของมีริส"
+          }
         }
       ]
     },
@@ -640,7 +913,16 @@
           "start": 0,
           "end": 92,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชมช่องคลอดของมีริสและเรียกเรนกะให้ขึ้นมาคร่อมบนหน้า ก่อน p63-1 เรนกะตอบรับ"
+          }
         }
       ]
     },
@@ -651,7 +933,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "คำตอบรับ 'อืม...ก็ได้...อ๊า' เป็นของเรนกะ และ p64-1 บรรยายว่าเธอทำตามคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -682,7 +973,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "p65-1 ระบุว่าเรนกะส่งเสียงครางเมื่อชินจิเลียส่วนลับ คำร้องเรียกชื่อชินจิจึงเป็นของเรนกะ"
+          }
         }
       ]
     },
@@ -693,7 +993,16 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "คำร้องเรื่องจู๋ของชินจิและการกระแทกเป็นการพูดของมีริสที่กำลังถูกสอดใส่ตาม p69-1 ส่วน p68-1 ระบุว่าชินจิจับเอวเรนกะไว้"
+          }
         }
       ]
     },

@@ -28,7 +28,16 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "กิลเดโอเป็นหัวหน้ากิลด์ที่กำลังคุยกับปาร์ตี้ และอัลวินตอบใน p4-1"
+          }
         }
       ]
     },
@@ -39,7 +48,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "อัลวินเป็นผู้ประกาศเป้าหมายของปาร์ตี้ และ p5-1 ระบุว่าเขามองกิลเดโอ"
+          }
         }
       ]
     },
@@ -70,7 +88,16 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "กิลเดโอเป็นผู้ตอบปฏิเสธ และ p8-1 บรรยายน้ำเสียงหนักแน่นของเขาที่ทำให้อัลวินก้มหน้า"
+          }
         }
       ]
     },
@@ -111,7 +138,16 @@
           "start": 0,
           "end": 169,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เป็นคำอธิบายต่อเนื่องของกิลเดโอในฐานะหัวหน้าสาขา ก่อนอัลวินตอบใน p12-1"
+          }
         }
       ]
     },
@@ -122,7 +158,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับและ p13-1 ระบุว่าเขาพยักหน้ามองตากิลเดโอ"
+          }
         }
       ]
     },
@@ -143,7 +188,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-gildeo",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "กิลเดโอเป็นผู้ให้กำลังใจปาร์ตี้ ก่อน p15-1 บรรยายว่าอัลวินและคนอื่นคุยกับเขาต่อ"
+          }
         }
       ]
     },
@@ -194,7 +248,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p18-1 ระบุว่าอัลวินทิ้งตัวลงบนโต๊ะและคร่ำครวญ"
+          }
         }
       ]
     },
@@ -205,7 +268,17 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1",
+              "p28-1"
+            ],
+            "reason": "เรนกะเป็นผู้ใช้คำเรียก 'นาย' กับอัลวินแบบตรงๆ และ p28-1 ระบุว่าเธอเป็นผู้เปลี่ยนเรื่อง; p21-1 อัลวินตอบรับ"
+          }
         }
       ]
     },
@@ -216,7 +289,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบว่าเผื่อมีโอกาสสัก 1%"
+          }
         }
       ]
     },
@@ -227,7 +309,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p23-1 ระบุตรงว่าชินจิปฏิเสธอย่างชัดเจน"
+          }
         }
       ]
     },
@@ -258,7 +349,17 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอโทษ ก่อนมีริสปลอบใน p26-1 และ p27-1"
+          }
         }
       ]
     },
@@ -269,7 +370,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "มีริสเป็นผู้ปลอบอัลวินตามที่ p27-1 ระบุ"
+          }
         }
       ]
     },
@@ -300,7 +410,16 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "p28-1 ระบุว่าเรนกะเปลี่ยนเรื่อง และ p30-1 มีริสตอบคำถามนี้"
+          }
         }
       ]
     },
@@ -311,7 +430,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "มีริสเป็นผู้ตอบว่าลังเลเช่นกันและถามอัลวิน ก่อนเขาตอบใน p31-1"
+          }
         }
       ]
     },
@@ -322,7 +450,16 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบว่ายังไม่ได้คิด"
+          }
         }
       ]
     },
@@ -383,7 +520,17 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p39-1 ระบุว่าชินจิลุกขึ้นและเอมิลี่กระโดดเข้ากอดแขน"
+          }
         }
       ]
     },
@@ -394,7 +541,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "เอมิลี่เป็นผู้ตามไปด้วยตาม p39-1"
+          }
         }
       ]
     },
@@ -425,7 +581,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับเอมิลี่และบอกลา ก่อนมีริสกล่าวคำอำลาใน p42-1"
+          }
         }
       ]
     },
@@ -436,7 +601,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "มีริสเป็นผู้กล่าวคำอำลาด้วยคำลงท้าย คะ และ p43-1 บรรยายทั้งสองออกจากบ้าน"
+          }
         }
       ]
     },
@@ -467,7 +641,17 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าหลังชินจิจากไปอัลวินรู้สึกผิดในตัวเอง"
+          }
         }
       ]
     },
@@ -478,7 +662,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าเรนกะผู้รู้จักชินจิดีเป็นผู้รับรองว่าเขาไม่โกรธ"
+          }
         }
       ]
     },
@@ -499,7 +692,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "อัลวินเป็นผู้สารภาพว่าใจร้อนเกินไป และมีริสตอบใน p49-1"
+          }
         }
       ]
     },
@@ -510,7 +712,16 @@
           "start": 0,
           "end": 101,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "มีริสเป็นผู้เรียกคู่สนทนาว่า 'อัลคุง' และเข้าใจความรู้สึกของเขา"
+          }
         }
       ]
     },
@@ -581,7 +792,16 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "อัลวินเป็นผู้นำที่พูดถึงอาจารย์ของตนและตั้งใจไปขอโทษ"
+          }
         }
       ]
     },
@@ -592,7 +812,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "มีริสเป็นผู้ชมว่า 'อัลคุง' เก่งมาก"
+          }
         }
       ]
     },
@@ -603,7 +832,16 @@
           "start": 0,
           "end": 77,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "เรนกะเป็นผู้เรียกอัลวินว่า 'อัล' และให้กำลังใจ ก่อน p59-1 บรรยายทั้งสองยิ้ม"
+          }
         }
       ]
     },

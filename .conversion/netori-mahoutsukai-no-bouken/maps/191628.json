@@ -8,7 +8,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p2-1 ระบุว่าอัลวินเริ่มพูดคุยกับทุกคนหลังอาหารเช้า และ p3-1 เป็นประโยคต่อเนื่องเรื่องเดิม ชื่อตอนก็เป็นความคิดของอัลวิน"
+          }
         }
       ]
     },
@@ -29,7 +38,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p3-1",
+              "p6-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจาก p1-1 ของอัลวิน ก่อน p6-1 ระบุว่าอัลวินพยักหน้าและพูดต่อ"
+          }
         }
       ]
     },
@@ -40,7 +58,16 @@
           "start": 0,
           "end": 37,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "p5-1 ระบุว่าเอมิลี่และอากาเนะเพิ่งได้รับข้อมูลนี้ และน้ำเสียงถามแบบกันเองตรงกับบทพูดของเอมิลี่ใน p22-1"
+          }
         }
       ]
     },
@@ -71,7 +98,16 @@
           "start": 0,
           "end": 76,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p9-1"
+            ],
+            "reason": "p6-1 ระบุว่าอัลวินพยักหน้าและพูดต่อ และ p9-1 สรุปว่าชินจิเห็นด้วยกับความคิดของอัลวิน"
+          }
         }
       ]
     },
@@ -82,7 +118,16 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p9-1 ระบุว่าชินจิเห็นด้วยกับความคิดของอัลวินหลังประโยคนี้ จึงเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -103,7 +148,16 @@
           "start": 0,
           "end": 135,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "เป็นคำอธิบายขยายเหตุผลต่อจากคำเห็นด้วยของชินจิใน p8-1 ก่อนอัลวินตอบรับใน p11-1"
+          }
         }
       ]
     },
@@ -114,7 +168,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p14-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับคำอธิบายของชินจิ และ p14-1 ต่อด้วยข้อสรุปของฝ่ายที่คิดว่าจะออกจากเมือง"
+          }
         }
       ]
     },
@@ -145,7 +208,15 @@
           "start": 0,
           "end": 165,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าอัลวินดูเหมือนคิดว่าออกจากโอเอสเต้แล้วทุกอย่างจะเรียบร้อย ตรงกับประโยคนี้"
+          }
         }
       ]
     },
@@ -176,7 +247,16 @@
           "start": 0,
           "end": 139,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p16-1 ระบุว่าชินจิคิดว่าเธออาจตามมาโดยคำนึงถึงเข็มกลัด ประโยคนี้จึงเป็นคำอธิบายของชินจิ"
+          }
         }
       ]
     },
@@ -187,7 +267,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "คำลงท้าย ค่ะ และคำเรียก อัลคุง เป็นลักษณะการพูดของมีริส"
+          }
         }
       ]
     },
@@ -198,7 +287,16 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p20-1 ระบุว่าอัลวินถูกทั้งสามคนปฏิเสธ หลังมีริสเห็นด้วยใน p18-1 จึงเป็นเสียงคัดค้านของเรนกะซึ่งเป็นคนที่สามในวงสนทนากับคริสติน่าเมื่อวาน"
+          }
         }
       ]
     },
@@ -229,7 +327,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p21-1 ระบุว่าเอมิลี่เอียงคอด้วยความสงสัยแล้วถามประโยคนี้"
+          }
         }
       ]
     },
@@ -240,7 +347,16 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "มีคำลงท้าย ค่ะ และคำเรียก อัลคุง ซึ่งเป็นลักษณะการพูดของมีริส"
+          }
         }
       ]
     },
@@ -251,7 +367,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เป็นเสียงที่สามที่คัดค้านต่อจากมีริส และ p25-1 ระบุว่ามีริสกับเรนกะเป็นผู้ที่รู้สึกผิดไม่ได้ต่อคริสติน่าหลังการพูดคุยเมื่อวาน"
+          }
         }
       ]
     },
@@ -282,7 +407,15 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "อัลวินเป็นผู้ประกาศว่าอยากแต่งงานกับมี่และให้มี่เป็นภรรยาเอก"
+          }
         }
       ]
     },
@@ -293,7 +426,16 @@
           "start": 0,
           "end": 90,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p30-1"
+            ],
+            "reason": "เป็นคำอธิบายกฎชนชั้นเรื่องภรรยาเอกซึ่งตรงกับบทบาทให้ความรู้เรื่องขุนนางของชินจิใน p17-1"
+          }
         }
       ]
     },
@@ -314,7 +456,16 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p33-1"
+            ],
+            "reason": "p33-1 ระบุชัดว่าเป็นคำถามของอากาเนะที่อัลวินตอบไม่ได้"
+          }
         }
       ]
     },
@@ -325,7 +476,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p33-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบคำถามของอากาเนะและยอมรับว่าคิดได้เพียงเท่านั้นแต่ทำไม่ได้"
+          }
         }
       ]
     },
@@ -336,7 +496,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p32-1",
+              "p34-1"
+            ],
+            "reason": "p34-1 ระบุว่า 'อย่างที่ชินจิพูด' แล้วอธิบายว่าการทำให้คริสติน่าละทิ้งฐานะไม่ต่างจากการหาเรื่องทะเลาะกับตระกูลเบลซ์ ตรงกับประโยคนี้"
+          }
         }
       ]
     },
@@ -377,7 +546,15 @@
           "start": 0,
           "end": 114,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่ามีริสยิ้มให้อัลวินที่กำหมัดประกาศ ซึ่งก็คือประโยคนี้"
+          }
         }
       ]
     },
@@ -388,7 +565,15 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่ามีริสยิ้มให้อัลวินหลังประโยคนี้ และมีคำเรียก อัลคุง"
+          }
         }
       ]
     },
@@ -439,7 +624,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p44-1"
+            ],
+            "reason": "p41-1 ระบุว่าชินจิยิ้มขมขื่นอยู่คนเดียว และ p44-1 ระบุว่าชินจิพยักหน้าตอนทุกคนจ้องมองเขา"
+          }
         }
       ]
     },
@@ -450,7 +644,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p45-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถามกลับด้วยความสนใจก่อนชินจิอธิบายวิธีใน p45-1"
+          }
         }
       ]
     },
@@ -471,7 +674,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p47-1"
+            ],
+            "reason": "p44-1 ระบุว่าชินจิพยักหน้าแล้วเสนอวิธีแก้ปัญหา และ p47-1 ระบุว่าเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -482,7 +694,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าอัลวินเบิกตากว้างกับคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -513,7 +734,16 @@
           "start": 0,
           "end": 367,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิเป็นผู้อธิบายเรื่องอัศวินกิตติมศักดิ์ต่อจากข้อเสนอของเขา และ p50-1 เป็นเสียงตอบของอัลวิน"
+          }
         }
       ]
     },
@@ -524,7 +754,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่าอัลวินพึมพำและเงียบไปหลังประโยคนี้"
+          }
         }
       ]
     },

@@ -127,7 +127,16 @@
         {
           "start": 0,
           "end": 8,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เป็นการเรียกชื่อเฟรรี่ผ่านกระแสจิตตาม p15-1 ที่บรรยายว่าชินจิเรียกแล้วเฟรรี่ตอบรับ ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -137,7 +146,16 @@
         {
           "start": 0,
           "end": 5,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "เป็นคำตอบรับของเฟรรี่ผ่านกระแสจิตต่อการเรียกใน p13-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -178,7 +196,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิถามเฟรรี่เรื่องอารมณ์ที่เต็มที่หลัง p17-1 บรรยายร่างของเธอแนบแขน และเฟรรี่ตอบใน p19-1"
+          }
         }
       ]
     },
@@ -188,7 +215,16 @@
         {
           "start": 0,
           "end": 43,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เป็นคำตอบของเฟรรี่ผ่านกระแสจิตต่อคำถามใน p18-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -239,7 +275,16 @@
           "start": 0,
           "end": 84,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ชินจิเอ่ยขอคุยเรื่องเก่าๆ ต่อจาก p23-1 ที่เขาตัดสินใจทำตามที่เฟรรี่ต้องการ และเฟรรี่ตอบใน p25-1"
+          }
         }
       ]
     },
@@ -249,7 +294,16 @@
         {
           "start": 0,
           "end": 58,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "เป็นคำตอบของเฟรรี่ผ่านกระแสจิตต่อคำถามใน p24-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -260,7 +314,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "ชินจิขอให้เลิกนึกถึงเรื่องนั้นหลังเฟรรี่ตอบใน p25-1 และเฟรรี่ปฏิเสธใน p27-1"
+          }
         }
       ]
     },
@@ -270,7 +333,16 @@
         {
           "start": 0,
           "end": 6,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "เป็นคำปฏิเสธของเฟรรี่ผ่านกระแสจิตต่อคำขอใน p26-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -340,7 +412,16 @@
         {
           "start": 0,
           "end": 41,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "เป็นคำหยอกของเฟรรี่ผ่านกระแสจิตระหว่างที่เธอสัมผัสอบคชาตตาม p33-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -351,7 +432,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ชินจิขอให้เฟรรี่เลิกพูดซ้ำหลัง p34-1 และเฟรรี่ตอบต่อใน p36-1"
+          }
         }
       ]
     },
@@ -361,7 +451,16 @@
         {
           "start": 0,
           "end": 97,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "เป็นคำตอบของเฟรรี่ผ่านกระแสจิตต่อคำขอใน p35-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -432,7 +531,16 @@
           "start": 0,
           "end": 93,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิเอ่ยขึ้นหลังใช้เวทมนตร์〈เสริมความสามารถ〉ใน p42-1 และเฟรรี่ตอบใน p44-1"
+          }
         }
       ]
     },
@@ -442,7 +550,16 @@
         {
           "start": 0,
           "end": 50,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "เป็นคำตอบของเฟรรี่ผ่านกระแสจิตต่อคำพูดใน p43-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -493,7 +610,17 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิตอบรับคำชมเรื่องพ่อแม่บุญธรรมใน p44-1 ระหว่างที่ p48-1 บรรยายการขยับของเฟรรี่"
+          }
         }
       ]
     },
@@ -554,7 +681,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1"
+            ],
+            "reason": "p56-1 ระบุว่าเสียงครวญครางนี้ออกมาจากปากของเฟรรี่ จึงเป็นคำพูดที่เธอเปล่งเสียงจริง"
+          }
         }
       ]
     },
@@ -605,7 +741,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p62-1"
+            ],
+            "reason": "p62-1 ระบุว่าเฟรรี่ถึงจุดสุดยอดหลังเสียงนี้ จึงเป็นเสียงของเฟรรี่"
+          }
         }
       ]
     },
@@ -616,7 +761,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p63-1"
+            ],
+            "reason": "ชินจิเป็นผู้ประกาศว่าจะแตกแล้วต่อจากเสียงของเฟรรี่ใน p60-1 และ p63-1 บรรยายว่าเขาหลั่ง"
+          }
         }
       ]
     },
@@ -676,7 +830,16 @@
         {
           "start": 0,
           "end": 34,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "เป็นคำชมของเฟรรี่ผ่านกระแสจิตหลังถึงจุดสุดยอดใน p66-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -687,7 +850,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "ชินจิพูดหลังเฟรรี่เอ่ยชมผ่านกระแสจิตใน p67-1 และ p69-1 บรรยายว่าเฟรรี่พึงพอใจ"
+          }
         }
       ]
     },

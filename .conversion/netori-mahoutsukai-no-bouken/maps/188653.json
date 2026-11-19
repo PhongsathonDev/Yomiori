@@ -28,7 +28,15 @@
           "start": 0,
           "end": 35,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "นักบวชแห่งลัทธิตอบด้วยความโกรธใน p4-1 และ p5-1 บรรยายว่าชินจิบีบหัวนมของเธอ"
+          }
         }
       ]
     },
@@ -39,7 +47,15 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p5-1 บรรยายว่านักบวชแห่งลัทธิตอบโต้ด้วยเสียงดังขึ้นแล้วชินจิบีบหัวนมของเธอ"
+          }
         }
       ]
     },
@@ -60,7 +76,15 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 เป็นความคิดของนักบวชแห่งลัทธิที่จับได้ว่าชินจิเกือบพูดว่า 'ทดลอง'"
+          }
         }
       ]
     },
@@ -101,7 +125,16 @@
           "start": 0,
           "end": 154,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p9-1 บรรยายว่าชินจิจับหน้าอกเธอ และนักบวชแห่งลัทธิครางตอบใน p11-1"
+          }
         }
       ]
     },
@@ -112,7 +145,15 @@
           "start": 0,
           "end": 88,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เทพธิดาตอบคำพูดของนักบวชแห่งลัทธิใน p12-1"
+          }
         }
       ]
     },
@@ -123,7 +164,15 @@
           "start": 0,
           "end": 144,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p13-1 ระบุว่าเทพธิดาอาริอานอ่านใจนักบวชแห่งลัทธิและเอ่ยประโยคนี้"
+          }
         }
       ]
     },
@@ -184,7 +233,16 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p17-1 บรรยายว่าน้ำนมพุ่งออกมาจากหัวนมของเธอ แล้วชินจิกล่าวใน p19-1"
+          }
         }
       ]
     },
@@ -195,7 +253,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p20-1 บรรยายว่าชินจิพึมพำราวกับมันเป็นเรื่องธรรมดา"
+          }
         }
       ]
     },
@@ -266,7 +332,15 @@
           "start": 0,
           "end": 133,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "เทพธิดากล่าวถึงเวทมนตร์ของอัครสาวกชินจิต่อจากคำร้องของนักบวชแห่งลัทธิ"
+          }
         }
       ]
     },
@@ -277,7 +351,15 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอบคุณเทพธิดาใน p28-1"
+          }
         }
       ]
     },
@@ -288,7 +370,15 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "ชินจิตอบรับคำชื่นชมของเทพธิดา"
+          }
         }
       ]
     },
@@ -329,7 +419,16 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "เทพธิดาตอบความคิดที่ร้องขอความช่วยเหลือใน p31-1 และ p33-1 ชินจิเรียกเธอ"
+          }
         }
       ]
     },
@@ -340,7 +439,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "เทพธิดาตอบกลับคำพูดของชินจิใน p34-1"
+          }
         }
       ]
     },
@@ -351,7 +458,15 @@
           "start": 0,
           "end": 57,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "เทพธิดาอธิบายเรื่องความเครียดจากการป้องกันของนักบวชแห่งลัทธิต่อ"
+          }
         }
       ]
     },
@@ -402,7 +517,15 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "เทพธิดากล่าวถึงการดูดซับพลังชีวิตของนักบวชแห่งลัทธิต่อจากคำพูดของเธอ"
+          }
         }
       ]
     },
@@ -413,7 +536,15 @@
           "start": 0,
           "end": 120,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "p41-1 บรรยายว่าเทพธิดาอาริอานพูดถึงเหตุผลของความแข็งกร้าวของนักบวชแห่งลัทธิ"
+          }
         }
       ]
     },
@@ -454,7 +585,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่ามีแผนรับมืออยู่แล้วตาม p42-1"
+          }
         }
       ]
     },
@@ -465,7 +604,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p46-1 บรรยายว่านักบวชแห่งลัทธิหน้าซีดด้วยความตกใจเมื่อเห็นอวัยวะเพศของชินจิ"
+          }
         }
       ]
     },
@@ -526,7 +673,15 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "p52-1 บรรยายว่าชินจิสอดใส่โดยไม่สนใจคำขอของนักบวชแห่งลัทธิ"
+          }
         }
       ]
     },
@@ -587,7 +742,15 @@
           "start": 0,
           "end": 72,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "นักบวชแห่งลัทธิครางตอบใน p58-1 และชินจิเป็นผู้ขยับสะโพกตาม p64-1"
+          }
         }
       ]
     },
@@ -598,7 +761,15 @@
           "start": 0,
           "end": 98,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "เทพธิดากล่าวต่อว่านักบวชแห่งลัทธิไม่มีเวลาดูดพลังชีวิตใน p59-1"
+          }
         }
       ]
     },
@@ -609,7 +780,15 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-goddess",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p58-1"
+            ],
+            "reason": "เทพธิดาเป็นผู้กล่าวด้วยน้ำเสียงสนุกต่อเนื่องจาก p34-1 และ p40-1"
+          }
         }
       ]
     },
@@ -680,7 +859,15 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p69-1"
+            ],
+            "reason": "เสียงครางของนักบวชแห่งลัทธิระหว่างถูกกระแทกตาม p69-1"
+          }
         }
       ]
     },
@@ -781,7 +968,15 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "ชินจิเป็นผู้ใช้เวทสะกดจิตสั่งให้ตอบคำถาม แล้วนักบวชแห่งลัทธิตอบใน p77-1"
+          }
         }
       ]
     },
@@ -792,7 +987,15 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "p78-1 บรรยายว่าจิตสำนึกของนักบวชแห่งลัทธิหลับใหลหลังเธอตอบ"
+          }
         }
       ]
     },

@@ -67,7 +67,16 @@
         {
           "start": 0,
           "end": 51,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตของเฟรรี่ที่สั่งชินจิก่อนการฝึกในความฝัน ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -77,7 +86,16 @@
         {
           "start": 0,
           "end": 50,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตตอบรับของชินจิต่อเฟรรี่ ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -97,7 +115,16 @@
         {
           "start": 0,
           "end": 245,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "『』 เป็นคำอธิบายของเฟรรี่ผ่านกระแสจิตเรื่องทักษะการควบคุมความฝัน ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -107,7 +134,16 @@
         {
           "start": 0,
           "end": 31,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "『『』』 ซ้อนสองชั้นเป็นการตอบรับของอีฟและคลาร่าผ่านกระแสจิตถึงอาจารย์เฟรรี่ ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -127,7 +163,16 @@
         {
           "start": 0,
           "end": 206,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "『』 เป็นคำอธิบายแผนของเฟรรี่ผ่านกระแสจิต และ p14-1 ระบุว่าเป็นโลกเสมือนที่สร้างด้วยเวทมนตร์ความฝันของสี่คน"
+          }
         }
       ]
     },
@@ -228,7 +273,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p24-1 ระบุว่าคริสติน่าตื่นขึ้นมาด้วยเสียงของผู้ชายที่เรียกชื่อเธอ และ p25-1 ระบุว่าชินจิอยู่ตรงหน้าเธอ"
+          }
         }
       ]
     },
@@ -319,7 +373,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "p31-1 ระบุว่านี่คือคืนแรกหลังพิธีแต่งงาน และชินจิเป็นสามีที่เอ่ยถามเรื่องอัลวินก่อนคริสติน่าตอบใน p33-1"
+          }
         }
       ]
     },
@@ -330,7 +393,16 @@
           "start": 0,
           "end": 123,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้ตอบคำถามของชินจิเรื่องคืนแรกและทายาท"
+          }
         }
       ]
     },
@@ -351,7 +423,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "คำบ่นเรื่องความเหนื่อยของชนชั้นสูงเป็นของชินจิ และ p36-1 คริสติน่าเรียกเขาว่าคุณชินจิพร้อมตอบกลับ"
+          }
         }
       ]
     },
@@ -362,7 +443,16 @@
           "start": 0,
           "end": 108,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้ตอบคำบ่นของชินจิและเรียกชื่อเขาโดยตรง"
+          }
         }
       ]
     },
@@ -383,7 +473,16 @@
           "start": 0,
           "end": 122,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p37-1 ระบุว่าคริสติน่าคิดว่าจะสร้างความรักที่เกื้อกูลกันได้ ก่อนเธอเอ่ยวาจาแต่งงานในคืนแรก"
+          }
         }
       ]
     },
@@ -394,7 +493,16 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำขอของคริสติน่า และ p40-1 บรรยายว่าคริสติน่าปิดกั้นความรู้สึกแล้วประกบริมฝีปากกับเขา"
+          }
         }
       ]
     },
@@ -425,7 +533,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p43-1 ระบุว่ามือของชินจิที่กำลังจะเปิดเสื้อคลุมนอนของคริสติน่าหยุดลงเพราะคำถามนี้"
+          }
         }
       ]
     },
@@ -456,7 +573,16 @@
           "start": 0,
           "end": 109,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p44-1 ระบุว่าคริสติน่าพูดต่อด้วยความเขินอายเรื่องโลชั่น"
+          }
         }
       ]
     },
@@ -487,7 +613,16 @@
           "start": 0,
           "end": 86,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p47-1 ระบุว่าชินจิยิ้มเยาะในใจหลังฟังคำพูดของคริสติน่า ก่อนเขาเอ่ยคำนี้"
+          }
         }
       ]
     },
@@ -498,7 +633,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "p50-1 ระบุว่าคริสติน่าพยักหน้าเมื่อถูกจ้องมองด้วยสายตาที่แข็งกร้าว"
+          }
         }
       ]
     },
@@ -563,8 +707,14 @@
         {
           "start": 56,
           "end": 63,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "“กรึบ♡” เป็นเสียงหัวนมที่แข็งตัวถูกับฝ่ามือของชินจิ ไม่ใช่คำพูด"
+          }
         },
         {
           "start": 63,
@@ -580,7 +730,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามคริสติน่าเรื่องความรู้สึกหลังนวดหน้าอก และ p57-1 เธอตอบเขา"
+          }
         }
       ]
     },
@@ -591,7 +750,16 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้ตอบคำถามของชินจิด้วยเสียงสั่นเครือ"
+          }
         }
       ]
     },
@@ -612,7 +780,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดชมคริสติน่าหลังบรรยายการกระทำของนิ้วเขาใน p58-1"
+          }
         }
       ]
     },
@@ -623,7 +800,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p61-1 ระบุว่าคริสติน่าถูกชินจิผลักให้นอนลงบนเตียงต่อจากเสียงนี้"
+          }
         }
       ]
     },
@@ -734,7 +920,16 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "ชินจิเป็นผู้เอ่ยถึงความเปียกของคริสติน่าและถามว่าเธอเข้าใจเรื่องโลชั่นหรือยัง"
+          }
         }
       ]
     },
@@ -745,7 +940,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "p73-1 ระบุว่าชินจิยิ้มให้คริสติน่าที่กำลังสับสนกับความสุข จึงเป็นเสียงตอบของเธอ"
+          }
         }
       ]
     },

@@ -1,0 +1,27 @@
+{
+  "batch": "b10",
+  "reviewer": "independent-review-1",
+  "sources": [
+    {
+      "sourceId": "180752",
+      "chapterNo": "39",
+      "mapJsonHash": "0576da62e8de4cba2391be975d564624d4a8ac3cad4b51c8e5403b9ab4de7a7f",
+      "result": "pass",
+      "issues": []
+    },
+    {
+      "sourceId": "180915",
+      "chapterNo": "40",
+      "mapJsonHash": "09e2fac076b6127b5c14ac0f65afb1f09e0bdcb4d9f39654335daf560bc26c23",
+      "result": "pass",
+      "issues": []
+    },
+    {
+      "sourceId": "180916",
+      "chapterNo": "41",
+      "mapJsonHash": "c952bfa78c1fc600417fe32e8a85b6a4e4bcbb4519d4e087bc39b36f5d991d78",
+      "result": "pass",
+      "issues": []
+    }
+  ]
+}

@@ -17,7 +17,17 @@
         {
           "start": 0,
           "end": 142,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p1-1",
+              "p2-1",
+              "p3-1",
+              "p6-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตของเฟรรี่ที่อธิบายสถานการณ์ฝึกให้ชินจิฟัง ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -28,7 +38,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1"
+            ],
+            "reason": "ชินจิเป็นผู้แสดงความกังวลต่อสถานการณ์ที่เฟรรี่ตั้ง และ p4-1 บรรยายรอยยิ้มเจื่อนของเขา"
+          }
         }
       ]
     },
@@ -48,7 +67,16 @@
         {
           "start": 0,
           "end": 42,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "『』 เป็นคำตอบของเฟรรี่ผ่านกระแสจิต และ p6-1 บรรยายสีหน้ากังขาของชินจิ"
+          }
         }
       ]
     },
@@ -79,7 +107,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับคำขอของเฟรรี่ และ p9-1 เป็นเสียงตอบรับของอีกฝ่าย"
+          }
         }
       ]
     },
@@ -90,7 +127,17 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p11-1",
+              "p13-1"
+            ],
+            "reason": "p11-1 ระบุว่าอีฟและคลาร่าเตรียมตัวเรื่องการเลียนแบบการพูดมาแล้ว; ประโยค 'พวกเรา' เป็นเสียงนำของอีฟก่อนทั้งคู่ตอบพร้อมกันใน p13-1"
+          }
         }
       ]
     },
@@ -120,7 +167,16 @@
         {
           "start": 0,
           "end": 98,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "『』 เป็นคำสั่งของเฟรรี่ผ่านกระแสจิตถึงอีฟและคลาร่า ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -131,7 +187,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนสองชั้นแสดงว่าอีฟและคลาร่าตอบพร้อมกัน จึงใช้เสียงหมู่ของคนในฉาก"
+          }
         }
       ]
     },
@@ -142,7 +207,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ชินจิเป็นผู้พูดกับเฟรรี่ และ p15-1 บรรยายรอยยิ้มของเขา"
+          }
         }
       ]
     },
@@ -173,7 +247,17 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่าเสียงนี้เป็นของอีฟที่เลียนเสียงมีริส"
+          }
         }
       ]
     },
@@ -184,7 +268,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่าเสียงของเรนกะที่อัลวินได้ยินคือเสียงของคลาร่า"
+          }
         }
       ]
     },
@@ -205,7 +298,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามอัลวินว่ายอมรับได้ไหม และ p21-1 ระบุว่าอัลวินพยักหน้าต่อเสียงของชินจิ"
+          }
         }
       ]
     },
@@ -266,7 +368,19 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p25-1",
+              "p26-1",
+              "p27-1",
+              "p30-1"
+            ],
+            "reason": "ชินจิเป็นผู้เสนอเงื่อนไขหลังอัลวินพยักหน้าตอบคำถามใน p20-1 ถึง p21-1 และ p30-1 ระบุว่าชินจิเห็นอัลวินพยักหน้าอีกครั้งก่อนพามีริสไปที่เตียง"
+          }
         }
       ]
     },
@@ -337,7 +451,17 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่ามีริสในฉากนี้คืออีฟ"
+          }
         }
       ]
     },
@@ -368,7 +492,17 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p43-1",
+              "p49-1"
+            ],
+            "reason": "p43-1 และ p49-1 ระบุว่าเรนกะในฉากนี้คือคลาร่า"
+          }
         }
       ]
     },
@@ -379,7 +513,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบรับคำหยอกของเรนกะ"
+          }
         }
       ]
     },
@@ -390,7 +533,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p40-1"
+            ],
+            "reason": "เป็นเสียงของมีริส (อีฟ) หลังชินจิหยิกหัวนมตาม p40-1"
+          }
         }
       ]
     },
@@ -421,7 +573,17 @@
           "start": 0,
           "end": 99,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p43-1 ระบุว่าเรนกะ (คลาร่า) เข้ามากอดอัลวินจากด้านหลังและพูดประโยคนี้"
+          }
         }
       ]
     },
@@ -432,7 +594,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบเสียงเรียกของเรนกะ"
+          }
         }
       ]
     },
@@ -453,7 +624,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "p45-1 บรรยายว่าเป็นเสียงของมีริส (อีฟ) ที่หลุดออกมาจากการเล้าโลมของชินจิ"
+          }
         }
       ]
     },
@@ -484,7 +664,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "เรนกะ (คลาร่า) เป็นผู้หยอกอัลวินเรื่องใช้มือ"
+          }
         }
       ]
     },
@@ -495,7 +684,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "อัลวินเป็นผู้ร้องห้ามเรนกะ"
+          }
         }
       ]
     },
@@ -516,7 +714,16 @@
           "start": 0,
           "end": 90,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "p51-1 ระบุว่ามีริส (อีฟ) กำลังถูกชินจิเล้าโลมและส่งเสียงนี้"
+          }
         }
       ]
     },
@@ -567,7 +774,17 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1",
+              "p56-1",
+              "p58-1"
+            ],
+            "reason": "เป็นเสียงของมีริส (อีฟ) ที่ถึงจุดสุดยอดตาม p58-1"
+          }
         }
       ]
     },
@@ -578,7 +795,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "เรนกะ (คลาร่า) เป็นผู้บอกให้อัลวินเสร็จตาม"
+          }
         }
       ]
     },
@@ -589,7 +815,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p58-1 ระบุว่าอัลวินหลั่งออกมาในมือของเรนกะ"
+          }
         }
       ]
     },
@@ -640,7 +875,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p63-1 ระบุว่าอัลวินเด้งตัวลุกขึ้นจากเตียง"
+          }
         }
       ]
     },
@@ -661,7 +905,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "อัลวินเป็นผู้พึมพำกับตัวเองหลังตื่นจากความฝัน"
+          }
         }
       ]
     },
@@ -721,7 +974,17 @@
         {
           "start": 0,
           "end": 53,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1",
+              "p73-1"
+            ],
+            "reason": "『』 เป็นเสียงบ่นของเฟรรี่ผ่านกระแสจิตหลังการสอดใส่ถูกจิตใต้สำนึกปฏิเสธ"
+          }
         }
       ]
     },
@@ -731,7 +994,17 @@
         {
           "start": 0,
           "end": 40,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "『』 เป็นเสียงของอีฟผ่านกระแสจิตในความฝัน ไม่ได้เปล่งเสียงในฉากจริง"
+          }
         }
       ]
     },
@@ -741,7 +1014,16 @@
         {
           "start": 0,
           "end": 16,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "『』 เป็นเสียงของคลาร่าผ่านกระแสจิตในความฝัน ไม่ได้เปล่งเสียงในฉากจริง"
+          }
         }
       ]
     },

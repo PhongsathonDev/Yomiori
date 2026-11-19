@@ -87,7 +87,17 @@
         {
           "start": 0,
           "end": 46,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "p8-1 ระบุว่ามารีส่งกระแสจิตมาถึงชินจิ ประโยคนี้จึงเป็นคำถามของมารี"
+          }
         }
       ]
     },
@@ -97,7 +107,17 @@
         {
           "start": 0,
           "end": 26,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของมารีว่าตนไม่มีอารมณ์"
+          }
         }
       ]
     },
@@ -117,7 +137,17 @@
         {
           "start": 0,
           "end": 60,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "p11-1 ระบุว่าชินจิส่งกระแสจิตถึงมารี แล้วชวนเธอมาร่วม"
+          }
         }
       ]
     },
@@ -127,7 +157,17 @@
         {
           "start": 0,
           "end": 55,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบรับคำชวนของชินจิและกังวลเรื่องแฟลร์"
+          }
         }
       ]
     },
@@ -157,7 +197,17 @@
         {
           "start": 0,
           "end": 51,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบความกังวลของมารีว่าแฟลร์ยังติดค้างเขาอยู่"
+          }
         }
       ]
     },
@@ -167,7 +217,17 @@
         {
           "start": 0,
           "end": 20,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "มารีเป็นผู้ทวนคำอย่างไม่แน่ใจ ก่อนชินจิอธิบายต่อใน p18-1"
+          }
         }
       ]
     },
@@ -177,7 +237,17 @@
         {
           "start": 0,
           "end": 34,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าอยากแกล้งแฟลร์สักหน่อย และ p19-1 บรรยายสีหน้าสนุกสนานของเขา"
+          }
         }
       ]
     },
@@ -198,7 +268,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "p21-1 ระบุว่าแฟลร์บ่นพึมพำกับตัวเองหลังส่งชินจิกลับบ้านไปได้พักใหญ่"
+          }
         }
       ]
     },
@@ -239,7 +317,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ระบุว่าแฟลร์บ่นพึมพำกับตัวเองเพื่อทำใจก่อนส่งกระแสจิตไปหาชินจิ"
+          }
         }
       ]
     },
@@ -259,7 +346,17 @@
         {
           "start": 0,
           "end": 28,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p25-1 ระบุว่าแฟลร์ตัดสินใจส่งกระแสจิตไปหาชินจิ และ p27-1 ระบุว่าไม่มีการตอบกลับ"
+          }
         }
       ]
     },
@@ -320,7 +417,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p34-1"
+            ],
+            "reason": "p31-1 ระบุว่าแฟลร์เคลื่อนย้ายไปยังบ้านของชินจิ แล้วเอ่ยขอร่วมด้วย"
+          }
         }
       ]
     },
@@ -331,7 +437,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "มารีเป็นผู้ทักทายแฟลร์ และ p34-1 แฟลร์อุทานชื่อมารี"
+          }
         }
       ]
     },
@@ -342,7 +457,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ตกใจเมื่อเห็นมารีอยู่กับชินจิ"
+          }
         }
       ]
     },
@@ -363,7 +487,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p35-1 ระบุว่าชินจิกำลังนั่งบนเตียงและมารีกำลังใช้ลิ้น จากนั้นชินจิทักทายแฟลร์"
+          }
         }
       ]
     },
@@ -374,7 +507,16 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบชินจิพร้อมเสียงเลียและคำถามว่าตรงนี้รู้สึกดีไหม"
+          }
         }
       ]
     },
@@ -425,7 +567,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "แฟลร์เป็นผู้ถามชินจิว่าทำไมถึงทำกับมารี"
+          }
         }
       ]
     },
@@ -436,7 +587,16 @@
           "start": 0,
           "end": 74,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบว่าเป็นการผ่อนคลายเพราะมารีช่วยเรื่องชิซูกุ"
+          }
         }
       ]
     },
@@ -447,7 +607,16 @@
           "start": 0,
           "end": 107,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "มารีเป็นผู้พูดต่อเรื่องที่เธอทำหน้าที่ดูแลมาตลอด"
+          }
         }
       ]
     },
@@ -508,7 +677,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามมารีว่าเคยมีแฟนหรือไม่"
+          }
         }
       ]
     },
@@ -519,7 +697,16 @@
           "start": 0,
           "end": 156,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบเรื่องผู้ทำสัญญาคนสุดท้ายเมื่อสามสิบปีก่อน"
+          }
         }
       ]
     },
@@ -594,8 +781,14 @@
         {
           "start": 96,
           "end": 112,
-          "type": "dialogue",
-          "speakerId": ""
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "narration ระบุว่า 'ความคิดที่ว่า' ข้อความในเครื่องหมายคำพูดจึงเป็นความคิดในใจของแฟลร์ ไม่ได้เปล่งเสียง"
+          }
         },
         {
           "start": 112,
@@ -621,7 +814,16 @@
           "start": 0,
           "end": 103,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p59-1 ระบุว่าน้ำอสุจิของชินจิเปรอะเปื้อนฝ่ามือมารี แล้วมารีครางด้วยความพอใจ"
+          }
         }
       ]
     },
@@ -632,7 +834,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "ชินจิเป็นผู้ชมแฮนด์จ็อบของมารี และ p62-1 บรรยายผลที่เขารู้สึกพึงพอใจ"
+          }
         }
       ]
     },
@@ -663,7 +874,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p65-1"
+            ],
+            "reason": "มารีเป็นผู้ขอให้ถึงตาของเธอบ้าง"
+          }
         }
       ]
     },
@@ -674,7 +894,16 @@
           "start": 0,
           "end": 44,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบรับว่าจะตอบแทนมารีอย่างเต็มที่"
+          }
         }
       ]
     },
@@ -705,7 +934,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p71-1"
+            ],
+            "reason": "p67-1 ระบุว่าแฟลร์เข้ามาแทรกเพื่อเข้าร่วม แล้วขอให้ชินจิอย่าทิ้งเธอไว้คนเดียว"
+          }
         }
       ]
     },
@@ -716,7 +954,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p71-1"
+            ],
+            "reason": "p71-1 ระบุว่าแฟลร์จู่โจมมารีจากด้านหลัง เสียงอุทานนี้จึงเป็นของมารีที่ถูกจู่โจม"
+          }
         }
       ]
     },
@@ -727,7 +974,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "เสียงร้องต่อเนื่องของมารีหลังถูกแฟลร์จู่โจมตามที่ p71-1 บรรยาย"
+          }
         }
       ]
     },

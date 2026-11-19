@@ -18,9 +18,9 @@
     {
       "sourceId": "180367",
       "chapterNo": "31",
-      "mapJsonHash": "4b843cfb53bc7890da8c11a5b35ff798417d32343a317720fc584b851276865e",
+      "mapJsonHash": "2cb85168b0926965cc27514fffca27cfd60cb621a590479ceeb5573acbf2c1a6",
       "status": "ready",
-      "dialogue": 25
+      "dialogue": 26
     }
   ],
   "rosterGaps": [],
@@ -29,6 +29,6 @@
     "180253: p58-1#2 \"มาอีกแล้วเหรอ\" is only Renka's facial expression (ทำหน้าเหมือนจะพูดว่า), not spoken aloud, so it is kept as narration.",
     "180253: lines p18/p19, p29, p34, p61, p64, p92, p93 have no explicit narration tag; speakers were assigned from the surrounding exchange (who answers whom, address terms and established speech style: Renka says อัล, Miris says อัลคุง/ค่ะ).",
     "180366: bodily and impact sounds (คิวย์น, กรุ๊บๆ, ♡, ปุ๊ก, ปัง, บิ๊กคุน, ตุ้บ, กึ๊ก, โด๊ะปิ้ว, ปิ้ง, กุกกัก, กึ้บ) are kept as narration, consistent with earlier chapters. p67-1 \"「...♡」\" is not a spoken answer per p68-1.",
-    "180367: source p9-1 closes the quoted term “คู่นอน“ with a left double quote, so the seed carried an open quote and marked every token from p9-1 to the chapter end as dialogue. All 34 affected spans were reclassified to narration in the decision file; the 25 genuinely quoted lines keep real speakers."
+    "180367: source p9-1 closes the quoted term “คู่นอน“ with a left double quote, so the seed carried an open quote and marked every token from p9-1 to the chapter end as dialogue. 33 of the affected spans were reclassified to narration; p30-1 was split at offset 24 so only Alvin's quoted line \"กลับไปเราจะฝึกกันทุกคนเลย!\" is dialogue, and the 26 genuinely quoted lines keep real speakers."
   ]
 }

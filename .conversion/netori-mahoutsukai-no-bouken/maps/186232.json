@@ -38,7 +38,16 @@
           "start": 0,
           "end": 46,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ฝึกจนใช้เวทมนตร์สำเร็จตาม p3-1 และนานากะตอบยืนยันใน p5-1"
+          }
         }
       ]
     },
@@ -49,7 +58,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบยืนยันว่าสำเร็จ และ p6-1 บรรยายมุมมองของนานากะที่มองฮายาเตะ"
+          }
         }
       ]
     },
@@ -70,7 +88,16 @@
           "start": 0,
           "end": 122,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "นานากะเป็นผู้สั่งให้ฝึกซ้ำจนร่ายได้แน่นอน และฮายาเตะตอบรับใน p8-1"
+          }
         }
       ]
     },
@@ -81,7 +108,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตอบรับคำสั่งของนานากะ และ p9-1 บรรยายว่านานากะตัดสินใจชมเธอ"
+          }
         }
       ]
     },
@@ -122,7 +158,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "นานากะเป็นผู้ถามเมื่อเห็นฮายาเตะสงสัย และฮายาเตะถามกลับใน p13-1"
+          }
         }
       ]
     },
@@ -133,7 +178,16 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ถามว่าทำไมไม่แข็งแกร่งขึ้น และนานากะอธิบายใน p14-1"
+          }
         }
       ]
     },
@@ -144,7 +198,16 @@
           "start": 0,
           "end": 170,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-nanaka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "นานากะเป็นผู้ตอบว่าเพราะฮายาเตะเพิ่งใช้เวทมนตร์ได้;p16-1 ระบุว่าฮายาเตะได้ยินคำพูดของนานากะ"
+          }
         }
       ]
     },
@@ -155,7 +218,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-hayate",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ฮายาเตะเป็นผู้ตอบรับคำอธิบาย และ p16-1 บรรยายสีหน้าหม่นหมองของเธอ"
+          }
         }
       ]
     },
@@ -276,7 +348,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "มารีเป็นผู้เสนอให้ดูวงเวทอีกครั้ง และ p28-1 ระบุว่าชิซูกุขอให้มารีแสดงวงเวท"
+          }
         }
       ]
     },
@@ -297,7 +378,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ขอร้องมารี และมารีตอบรับใน p30-1"
+          }
         }
       ]
     },
@@ -308,7 +398,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบรับคำขอของชิซูกุ"
+          }
         }
       ]
     },
@@ -379,7 +478,16 @@
           "start": 0,
           "end": 18,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ถามเมื่อเห็นสีหน้ามารีเปลี่ยน และมารีตอบใน p38-1"
+          }
         }
       ]
     },
@@ -390,7 +498,16 @@
           "start": 0,
           "end": 68,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "มารีเป็นผู้แจ้งข่าวว่าฮายาเตะฝึกเวทมนตร์ได้แล้ว และชิซูกุตอบใน p39-1"
+          }
         }
       ]
     },
@@ -401,7 +518,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ทวนคำอย่างตกใจ และมารีเสริมใน p40-1"
+          }
         }
       ]
     },
@@ -412,7 +538,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "มารีเป็นผู้บอกว่าใช้เวลาแค่สองวัน และ p41-1 บรรยายน้ำเสียงหม่นของชิซูกุ"
+          }
         }
       ]
     },
@@ -473,7 +608,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้เรียกมารีหลังนิ่งเงียบ และมารีถามกลับใน p47-1"
+          }
         }
       ]
     },
@@ -484,7 +628,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "มารีเป็นผู้ถามว่ามีอะไร และ p48-1 ระบุว่าชิซูกุเงยหน้าขึ้นมองมารี"
+          }
         }
       ]
     },
@@ -505,7 +658,16 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ขอรายละเอียดพิธีกรรมและขอให้เก็บเป็นความลับ;มารีตอบใน p50-1"
+          }
         }
       ]
     },
@@ -516,7 +678,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบรับพร้อมหัวเราะ และ p51-1 บรรยายเธอพยักหน้า"
+          }
         }
       ]
     },
@@ -537,7 +708,16 @@
           "start": 0,
           "end": 155,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "มารีเป็นผู้เริ่มอธิบายพิธีกรรมเวทมนตร์ และ p53-1 เป็นข้อความต่อเนื่องเดียวกัน"
+          }
         }
       ]
     },
@@ -548,7 +728,16 @@
           "start": 0,
           "end": 446,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ประโยคต่อเนื่องจากคำอธิบายของมารีใน p52-1;p54-1 บรรยายชิซูกุฟังคำอธิบายของมารี"
+          }
         }
       ]
     },
@@ -619,7 +808,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shizuku",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "ชิซูกุเป็นผู้ขอให้มารีติดต่อชินจิ และมารีตอบใน p61-1"
+          }
         }
       ]
     },
@@ -630,7 +828,16 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-marie",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "มารีเป็นผู้ตอบรับและพบว่าไม่มีการตอบกลับ;p62-1 บรรยายความพยายามของเธอ"
+          }
         }
       ]
     },

@@ -114,6 +114,28 @@ function cueText(ctx, source) {
   return lines.join('\n') + '\n';
 }
 
+function ledger(ctx, source) {
+  const markdown = fs.readFileSync(source.sourcePath, 'utf8');
+  const parsed = parseSource(markdown);
+  const mapping = readJson(path.join(ctx.stateDir, 'maps', `${source.sourceId}.json`));
+  const byId = new Map(parsed.tokens.map(token => [token.id, token]));
+  const roster = new Map(ctx.characters.map(c => [c.id, c.name]));
+  const lines = [`# ${source.sourceId} — Ch.${source.chapterNo} — ${parsed.title}`, `file: ${source.file}`, ''];
+  for (const token of mapping.tokens) {
+    const segments = [...token.segments].sort((a, b) => a.start - b.start);
+    for (const [i, segment] of segments.entries()) {
+      const key = segments.length === 1 ? token.id : `${token.id}#${i + 1}`;
+      const text = byId.get(token.id).text.slice(segment.start, segment.end).replace(/\s+/g, ' ');
+      if (segment.type === 'dialogue') {
+        lines.push(`${key} | ${roster.get(segment.speakerId) ?? '??'} | ${text.length > 140 ? `${text.slice(0, 140)}…` : text}`);
+      } else if (segment.review) {
+        lines.push(`${key} | NARR | ${text.length > 100 ? `${text.slice(0, 100)}…` : text}`);
+      }
+    }
+  }
+  return lines.join('\n') + '\n';
+}
+
 function renderCues(ctx, source) {
   const file = path.join(ctx.stateDir, 'cues', `${source.sourceId}.md`);
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -250,7 +272,7 @@ function main() {
       file: { type: 'string' }, force: { type: 'boolean' }, all: { type: 'boolean' },
     },
   });
-  invariant(positionals.length === 1 && ['seed', 'cue', 'assign', 'status'].includes(positionals[0]), 'Use conversion-map-assist <seed|cue|review|assign|status>');
+  invariant(positionals.length === 1 && ['seed', 'cue', 'ledger', 'assign', 'status'].includes(positionals[0]), 'Use conversion-map-assist <seed|cue|review|assign|status>');
   invariant(values.novel, '--novel is required');
   const ctx = context(repoRoot, values.novel);
   const command = positionals[0];
@@ -265,6 +287,13 @@ function main() {
     console.log(`seeded ${seeded}, skipped ${skipped}`);
   } else if (command === 'cue') {
     for (const source of sources) console.log(renderCues(ctx, source));
+  } else if (command === 'ledger') {
+    for (const source of sources) {
+      const file = path.join(ctx.stateDir, 'ledgers', `${source.sourceId}.md`);
+      fs.mkdirSync(path.dirname(file), { recursive: true });
+      fs.writeFileSync(file, ledger(ctx, source));
+      console.log(file);
+    }
   } else if (command === 'assign') {
     invariant(values['source-id'] && values.file, 'assign needs --source-id and --file');
     const assignments = readJson(path.resolve(values.file));

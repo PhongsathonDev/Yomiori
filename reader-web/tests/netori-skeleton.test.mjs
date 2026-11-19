@@ -12,6 +12,10 @@ const mobile = new URL('../../reader-mobile/', import.meta.url);
 const readJson = (base, path) => JSON.parse(readFileSync(new URL(path, base), 'utf8'));
 const novel = (base) => readJson(base, 'src/data/novels.json').find(novel => novel.id === id);
 const characters = (base) => readJson(base, `src/data/novels/${id}/characters.json`);
+const mainIds = [
+  'netori-shinji', 'netori-alvin', 'netori-miris', 'netori-renka',
+  'netori-charlotte', 'netori-agane', 'netori-ferry',
+];
 let vite;
 let data;
 let LibraryView;
@@ -28,7 +32,7 @@ before(async () => {
 
 after(async () => { await vite?.close(); });
 
-test('Netori skeleton metadata and main-character roster are synchronized', () => {
+test('Netori metadata and character roster are synchronized', () => {
   assert.ok(novel(web));
   assert.deepEqual(novel(web), novel(mobile));
   assert.deepEqual(characters(web), characters(mobile));
@@ -36,15 +40,16 @@ test('Netori skeleton metadata and main-character roster are synchronized', () =
   assert.equal(novel(web).synopsis, source.synopsis);
   assert.equal(novel(web).totalOriginalChapters, source.totalChapters);
   assert.equal(novel(web).translationSource.url, 'https://www.nekopost.net/novel/15549');
-  assert.deepEqual(characters(web).map(c => c.id), [
-    'netori-shinji', 'netori-alvin', 'netori-miris', 'netori-renka',
-    'netori-charlotte', 'netori-agane', 'netori-ferry',
-  ]);
+  const roster = characters(web);
+  assert.equal(new Set(roster.map(c => c.id)).size, roster.length);
+  assert.equal(new Set(roster.map(c => c.name)).size, roster.length);
+  for (const characterId of mainIds) assert.ok(roster.some(c => c.id === characterId));
+  assert.deepEqual(roster.filter(c => c.avatarUrl).map(c => c.id), mainIds);
 });
 
-test('cover, banner and individual portraits contain real local artwork', () => {
+test('cover, banner and main-character portraits contain real local artwork', () => {
   const { coverUrl, bannerUrl } = novel(web);
-  const avatars = characters(web).map(c => c.avatarUrl);
+  const avatars = characters(web).filter(c => c.avatarUrl).map(c => c.avatarUrl);
   assert.equal(new Set([coverUrl, bannerUrl, ...avatars]).size, 9);
   for (const asset of [bannerUrl, ...avatars]) {
     const bytes = readFileSync(new URL(`public/${asset}`, web));
@@ -57,21 +62,21 @@ test('cover, banner and individual portraits contain real local artwork', () => 
   assert.deepEqual([...cover.subarray(0, 3)], [0xff, 0xd8, 0xff]);
 });
 
-test('registered skeleton has its own normalized portraits and no invented chapters', () => {
-  const roster = data.getCharactersByNovelId(id);
-  assert.equal(roster.length, 7);
-  assert.ok(roster.every(c => c.avatarUrl.endsWith(`illustrations/char_${c.id.replace('netori-', 'netori_')}.jpg`)));
-  const ids = roster.map(c => c.id);
-  for (const characterId of ids) {
-    assert.equal(data.allCharacters.filter(c => c.id === characterId).length, 1);
-  }
-  assert.deepEqual(data.getChaptersByNovelId(id), []);
-  for (const base of [web, mobile]) {
-    assert.deepEqual(readdirSync(new URL(`src/data/novels/${id}/chapters/`, base)), ['index.ts']);
-  }
+test('converted chapters are synchronized between web and mobile', () => {
+  const files = base => readdirSync(new URL(`src/data/novels/${id}/chapters/`, base))
+    .filter(file => file.endsWith('.json')).sort();
+  const webFiles = files(web);
+  assert.deepEqual(webFiles, files(mobile));
+  assert.equal(webFiles.length, 222);
+  const chapters = data.getChaptersByNovelId(id);
+  assert.equal(chapters.length, 222);
+  assert.equal(new Set(chapters.map(c => c.id)).size, 222);
+  assert.equal(new Set(chapters.map(c => c.chapterNumber)).size, 222);
+  assert.equal(chapters[0].chapterNumber, 0);
+  assert.equal(chapters.at(-1).chapterNumber, 213.5);
 });
 
-test('novel detail shows only this roster and the existing waiting-for-conversion state', () => {
+test('novel detail opens the first converted chapter and shows the roster', () => {
   const noop = () => {};
   const markup = renderToStaticMarkup(React.createElement(LibraryView, {
     novels: data.allNovels,
@@ -83,8 +88,8 @@ test('novel detail shows only this roster and the existing waiting-for-conversio
     onSelectNovel: noop, onSelectChapter: noop, onToggleTheme: noop,
     onOpenSettings: noop, onOpenRoster: noop,
   }));
-  assert.ok(markup.includes('กำลังรอแปลงตอนเข้าสู่ระบบ'));
-  assert.ok(!markup.includes('เริ่มอ่านตอนที่ 1'));
+  assert.ok(markup.includes('เริ่มอ่านตอนที่ 1'));
+  assert.ok(!markup.includes('กำลังรอแปลงตอนเข้าสู่ระบบ'));
   for (const character of characters(web)) assert.ok(markup.includes(character.name));
   const rosterNames = new Set(characters(web).map(c => c.name));
   for (const character of data.allCharacters.filter(c => !c.id.startsWith('netori-'))) {

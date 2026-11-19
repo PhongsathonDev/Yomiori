@@ -28,7 +28,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "ชินจิเป็นผู้ขอให้เรนกะใช้เวท <ตาเหยี่ยว> ซึ่ง p5-1 อธิบายว่าเป็นเวทของเรนกะ"
+          }
         }
       ]
     },
@@ -39,7 +48,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "เรนกะเป็นผู้ร่าย <ตาเหยี่ยว> ตาม p5-1–p6-1"
+          }
         }
       ]
     },
@@ -130,7 +148,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p12-1 ระบุว่าเรนกะหยุดใช้ <ตาเหยี่ยว> ด้วยความรู้สึกหนาวสั่น และ p14-1 ชินจิถามว่าเธอเป็นอะไรหรือเปล่า"
+          }
         }
       ]
     },
@@ -141,7 +168,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าชินจิลูบหลังเรนกะที่หน้าซีด"
+          }
         }
       ]
     },
@@ -162,7 +198,16 @@
           "start": 0,
           "end": 193,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p15-1 ระบุว่าเรนกะพยายามอธิบายสิ่งที่เห็น"
+          }
         }
       ]
     },
@@ -183,7 +228,16 @@
           "start": 0,
           "end": 233,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p20-1 ระบุว่าแฟลร์ยืนยันสมมติฐานของชินจิ"
+          }
         }
       ]
     },
@@ -194,7 +248,16 @@
           "start": 0,
           "end": 80,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p20-1 ระบุว่าแฟลร์เป็นผู้ยืนยันสมมติฐานของชินจิ"
+          }
         }
       ]
     },
@@ -214,7 +277,17 @@
         {
           "start": 0,
           "end": 254,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "เครื่องหมาย 『』 ใช้แทนคำพูดของเฟรรี่ และ p22-1 ระบุว่าเรื่องที่เฟรรี่พูดเป็นการยืนยันสมมติฐานของแฟลร์"
+          }
         }
       ]
     },
@@ -245,7 +318,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ชินจิเป็นผู้ถามเรนกะเรื่องจำนวนชาวบ้าน และ p25-1 เป็นคำตอบของเรนกะ"
+          }
         }
       ]
     },
@@ -256,7 +338,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "เรนกะเป็นผู้สำรวจและรายงานจำนวนชาวบ้านในรัศมีที่มองเห็น"
+          }
         }
       ]
     },
@@ -267,7 +358,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "เป็นเสียงผู้หญิงที่สรุปจำนวนซัคคิวบัสต่อจากรายงานของเรนกะ ก่อนที่อัลวินและชินจิจะพูดใน p28-1–p33-1"
+          }
         }
       ]
     },
@@ -288,7 +388,17 @@
           "start": 0,
           "end": 137,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p27-1",
+              "p28-1",
+              "p33-1"
+            ],
+            "reason": "เป็นการวิเคราะห์กลไกพลังชีวิตในอัญมณีต่อเนื่องจากคำอธิบายของชินจิใน p18-1 และ p33-1 เป็นแผนที่อัลวินสรุปต่อ"
+          }
         }
       ]
     },
@@ -299,7 +409,16 @@
           "start": 0,
           "end": 188,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "เป็นการประเมินกำแพงและการแอบซุ่มของหน่วยสอดแนม ซึ่งอัลวินสรุปต่อใน p30-1"
+          }
         }
       ]
     },
@@ -310,7 +429,16 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p32-1"
+            ],
+            "reason": "p31-1–p32-1 ระบุว่าอัลวินคิดและตัดสินใจเดินหน้าต่อหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -341,7 +469,16 @@
           "start": 0,
           "end": 243,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p32-1 ระบุว่าอัลวินในฐานะหัวหน้าต้องแสดงแนวทาง และ p34-1 มีริสหันมาถามคุณชินจิต่อจากแผนนี้"
+          }
         }
       ]
     },
@@ -352,7 +489,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p35-1 ระบุว่ามีริสพยักหน้ากับความคิดของอัลวิน"
+          }
         }
       ]
     },
@@ -383,7 +529,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่าสิ่งที่ออกมาจากปากของชินจิเป็นสิ่งที่อัลวินและมีริสไม่เคยคิดมาก่อน"
+          }
         }
       ]
     },
@@ -424,7 +579,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p45-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าผู้ออกคำสั่งในฉากบุก และ p45-1 ระบุว่าแฟลร์เผาประตูตามการโจมตีที่เริ่มขึ้น"
+          }
         }
       ]
     },
@@ -435,7 +599,17 @@
           "start": 0,
           "end": 10,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เป็นเสียงตะโกนของทั้งสี่คนที่กระโดดออกจากป่าพร้อมกันตาม p43-1–p44-1"
+          }
         }
       ]
     },
@@ -486,7 +660,15 @@
           "start": 0,
           "end": 29,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p50-1"
+            ],
+            "reason": "p50-1 ระบุว่าอัลวินเป็นผู้ตะโกนสั่ง"
+          }
         }
       ]
     },
@@ -497,7 +679,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เป็นคำตอบรับของผู้หญิงในกลุ่มบุก และมีริสเป็นหัวหน้าฝ่ายสนับสนุน"
+          }
         }
       ]
     },
@@ -508,7 +699,17 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เป็นเสียงตอบรับที่สามถัดจากมีริสใน p48-1; กลุ่มบุกมีอัลวิน มีริส เฟรรี่และแฟลร์ (p43-1) และเฟรรี่แทบไม่พูด"
+          }
         }
       ]
     },
@@ -659,7 +860,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "p66-1 ระบุว่าอัลวินและแฟลร์เป็นผู้มุ่งเข้าใส่อัญมณี และอัลวินเป็นหัวหน้าผู้ออกคำสั่ง"
+          }
         }
       ]
     },
@@ -670,7 +880,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-flare",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "เป็นคำตอบอย่างมั่นใจของแฟลร์คู่กับอัลวินตาม p66-1"
+          }
         }
       ]
     },
@@ -711,7 +930,15 @@
           "start": 0,
           "end": 19,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "p70-1 ระบุว่านักบวชแห่งลัทธิชั่วร้ายชูไม้เท้าและสร้างบาเรียพลังชีวิต"
+          }
         }
       ]
     },
@@ -732,7 +959,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "อัลวินเป็นผู้ถือดาบใหญ่เตรียมสู้ตาม p73-1 และเป็นฝ่ายที่บุกเข้ามาโจมตี"
+          }
         }
       ]
     },
@@ -743,7 +979,16 @@
           "start": 0,
           "end": 58,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1",
+              "p74-1"
+            ],
+            "reason": "p73-1–p74-1 ระบุว่าเสียงนี้เป็นเสียงของนักบวชแห่งลัทธิชั่วร้ายที่ยืนอยู่บนแท่นบูชา"
+          }
         }
       ]
     },
@@ -794,7 +1039,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1",
+              "p77-1",
+              "p79-1"
+            ],
+            "reason": "p79-1 ระบุว่าอัลวินประกาศด้วยเสียงอันหนักแน่น"
+          }
         }
       ]
     },
@@ -805,7 +1059,16 @@
           "start": 0,
           "end": 45,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1",
+              "p79-1"
+            ],
+            "reason": "p79-1 ระบุว่าอัลวินประกาศด้วยเสียงอันหนักแน่นต่อจากประโยคนี้ ก่อนแฟลร์เตรียมสู้ข้างเขาใน p80-1"
+          }
         }
       ]
     },
@@ -836,7 +1099,16 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-demonpriest",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1",
+              "p81-1",
+              "p83-1"
+            ],
+            "reason": "p83-1 ระบุว่าสายตาของนักบวชแห่งลัทธิชั่วร้ายที่มองอัลวินเป็นสายตามองเหยื่อ"
+          }
         }
       ]
     },
@@ -847,7 +1119,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p84-1"
+            ],
+            "reason": "เครื่องหมายคำพูดซ้อนแสดงเสียงตอบพร้อมกันของเหล่าซัคคิวบัส และ p84-1 ระบุว่ามีซัคคิวบัส 10 ตัว"
+          }
         }
       ]
     },

@@ -178,7 +178,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p17-1 บรรยายว่าชินจินำองคชาตไปจ่อที่ริมฝีปากของอีฟแล้วเอ่ยขอให้ทำความสะอาด"
+          }
         }
       ]
     },
@@ -189,7 +198,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p20-1 ระบุว่าอีฟอ้าปากรับองคชาตของชินจิทันที จึงเป็นเสียงตอบรับของอีฟ"
+          }
         }
       ]
     },
@@ -220,7 +238,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "p21-1 บรรยายว่าอีฟโผเข้ากอดชินจิอย่างหมดความอดทนก่อนเธอเอ่ยเร่ง"
+          }
         }
       ]
     },
@@ -261,7 +288,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p26-1 เป็นเสียงครางของอีฟหลังถูกสอดใส่ในฉากที่ p28-1 ระบุว่าเธอถูกชินจิคร่อมจากด้านหลัง"
+          }
         }
       ]
     },
@@ -332,7 +368,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "p32-1 ระบุว่าอีฟทำท่าออดอ้อนต่อหน้าชินจิ และ p34-1 บรรยายว่าเธอร้องครางออกมาโดยไม่เจ็บปวด"
+          }
         }
       ]
     },
@@ -352,7 +397,16 @@
         {
           "start": 0,
           "end": 30,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตที่ชินจิถามเฟรรี่ระหว่างมีเซ็กซ์ และ p38-1 ระบุว่าทั้งสองสื่อสารกันผ่านความคิด ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -362,7 +416,16 @@
         {
           "start": 0,
           "end": 132,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "『』 เป็นคำตอบของเฟรรี่ทางกระแสจิตตาม p38-1 ที่ระบุว่าชินจิสามารถสื่อสารกับเฟรรี่ผ่านความคิด"
+          }
         }
       ]
     },
@@ -392,7 +455,16 @@
         {
           "start": 0,
           "end": 81,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตของเฟรรี่ที่กล่าวต่อจาก p36-1 ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -402,7 +474,16 @@
         {
           "start": 0,
           "end": 50,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตตอบรับของชินจิต่อเฟรรี่ตาม p38-1 ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -423,7 +504,16 @@
           "start": 0,
           "end": 96,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "p41-1 ระบุว่าอีฟถึงจุดสุดยอดแล้ว และ p43-1 บรรยายว่าเธอหันมามองชินจิด้วยตาที่น้ำตาคลอพร้อมขอความเมตตา"
+          }
         }
       ]
     },
@@ -484,7 +574,16 @@
           "start": 0,
           "end": 184,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p48-1",
+              "p50-1"
+            ],
+            "reason": "p46-1 ถึง p47-1 บรรยายว่าอีฟส่งเสียงครางหยาบคายจากการกระแทก และ p48-1 คือเสียงครางต่อเนื่องของเธอ"
+          }
         }
       ]
     },
@@ -525,7 +624,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p51-1 ระบุว่าชินจิหลั่งน้ำอสุจิเข้าไปในมดลูกของอีฟ p52-1 จึงเป็นคำของชินจิขณะหลั่ง"
+          }
         }
       ]
     },
@@ -536,7 +644,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "p54-1 ระบุว่าอีฟแอ่นหลังและถึงจุดสุดยอดอย่างลึกซึ้งต่อจากเสียงนี้"
+          }
         }
       ]
     },
@@ -596,7 +713,16 @@
         {
           "start": 0,
           "end": 38,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "『』 เป็นกระแสจิตของเฟรรี่ที่ขอมามีเซ็กซ์ด้วยหลังกอดชินจิจากด้านหลังตาม p58-1 ไม่ได้เปล่งเสียง"
+          }
         }
       ]
     },
@@ -607,7 +733,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1"
+            ],
+            "reason": "p61-1 ระบุว่าชินจิหันกลับไปโอบไหล่ของเฟรรี่ ตอบรับคำขอของเธอใน p59-1 เป็นคำพูดที่เปล่งออกมา"
+          }
         }
       ]
     },

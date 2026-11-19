@@ -363,14 +363,22 @@
       "segments": [
         {
           "start": 0,
+          "end": 24,
+          "type": "narration"
+        },
+        {
+          "start": 24,
           "end": 52,
-          "type": "narration",
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
           "review": {
             "confirmed": true,
             "context": [
-              "p30-1"
+              "p29-1",
+              "p30-1",
+              "p31-1"
             ],
-            "reason": "ทั้งย่อหน้าเป็น narration ที่ยกคำพูดของอัลวินมาอ้าง; สแปนครอบ narration ด้วย จึงคงเป็น narration"
+            "reason": "narration ในย่อหน้าระบุว่า 'อัลวินดีใจมากแล้วบอกว่า' ดังนั้นข้อความในเครื่องหมายคำพูดจึงเป็นคำพูดออกเสียงของอัลวิน และ p31-1 บรรยายความรู้สึกของเขาต่อจากคำพูดนั้น"
           }
         }
       ]

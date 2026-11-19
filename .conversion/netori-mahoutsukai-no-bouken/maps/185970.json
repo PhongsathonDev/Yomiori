@@ -28,7 +28,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p4-1 ระบุว่าอัลวินหันไปพูดกับชินจิหลังสถานการณ์สงบ"
+          }
         }
       ]
     },
@@ -49,7 +58,16 @@
           "start": 0,
           "end": 110,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เป็นคำตอบของชินจิต่อคำถามของอัลวิน และ p6-1 เรนกะถามต่อ"
+          }
         }
       ]
     },
@@ -60,7 +78,16 @@
           "start": 0,
           "end": 127,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่าสีหน้าของเรนกะหม่นหมองลงเมื่อนึกถึงทหารที่สู้กันเอง ต่อจากประโยคนี้"
+          }
         }
       ]
     },
@@ -81,7 +108,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "อัลวินเป็นหัวหน้าปาร์ตี้ผู้เปิดบทสนทนาใน p3-1 และ p9-1 ชินจิเป็นผู้ตอบต่อ"
+          }
         }
       ]
     },
@@ -92,7 +128,17 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p10-1 ระบุว่าชินจิทำสีหน้าลำบากใจต่อจากคำพูดที่ค้างไว้ และ p11-1 เขาพูดเรื่องจำเป็นต่อ"
+          }
         }
       ]
     },
@@ -113,7 +159,16 @@
           "start": 0,
           "end": 223,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าทุกคนยกเว้นชินจิหน้าแดงขึ้นทันทีเมื่อได้ยินคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -144,7 +199,16 @@
           "start": 0,
           "end": 100,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "p15-1 ระบุว่าทุกคนตอบรับคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -165,7 +229,16 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17-1 ระบุว่ามีริสตอบรับคำเรียก มี่ ของอัลวิน"
+          }
         }
       ]
     },
@@ -176,7 +249,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p17-1 เรียกอัลวินว่าอัลคุงและเป็นคำตอบรับคำเรียกของเขา"
+          }
         }
       ]
     },
@@ -207,7 +289,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เครื่องหมายคำพูดเดียวครอบเสียงจูบของทั้งอัลวินและมีริสในฉากที่ทั้งสองกอดกัน โดยไม่มีบทบรรยายระบุฝ่ายเดียว"
+          }
         }
       ]
     },
@@ -238,7 +328,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24-1 ระบุว่าเรนกะถามกลับว่าทำไม ต่อจากคำขอให้รอของชินจิ"
+          }
         }
       ]
     },
@@ -249,7 +348,16 @@
           "start": 0,
           "end": 17,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ระบุว่าเรนกะที่รู้สึกเหมือนถูกขัดใจมองชินจิหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -270,7 +378,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "เป็นผู้ชวนไปที่เตียงหลังเรนกะทำตามคำขอให้รอ และ p27-1 เรนกะตอบรับ"
+          }
         }
       ]
     },
@@ -281,7 +398,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "เป็นคำรับของเรนกะผู้เกาะชินจิอยู่ก่อน p28-1 บรรยายถึงผลของเวทเสน่ห์"
+          }
         }
       ]
     },
@@ -332,7 +458,18 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1",
+              "p33-1",
+              "p35-1"
+            ],
+            "reason": "p33-1 ระบุว่าเรนกะกำลังใช้ปากปรนนิบัติชินจิ และ p35-1 ชินจิเป็นผู้พูดต่อว่าเสียว"
+          }
         }
       ]
     },
@@ -363,7 +500,16 @@
           "start": 0,
           "end": 24,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "p36-1 ระบุว่าเมื่อเห็นชินจิที่มีความสุขจากการกระทำของเธอ เธอก็ยิ่งตั้งใจปรนนิบัติ"
+          }
         }
       ]
     },
@@ -394,7 +540,16 @@
           "start": 0,
           "end": 41,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p39-1 ระบุว่าเรนกะถอนปากออกและขึ้นคร่อมหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -425,7 +580,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p42-1 ระบุว่าเรนกะเรียกชื่อชินจิและครางตอบหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -436,7 +600,16 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "เป็นเสียงของเรนกะขณะนั่งบนตัวชินจิตาม p43-1"
+          }
         }
       ]
     },
@@ -467,7 +640,16 @@
           "start": 0,
           "end": 75,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "p46-1 ระบุว่าเรนกะเริ่มขยับสะโพกหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -528,7 +710,16 @@
           "start": 0,
           "end": 91,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "p52-1 ระบุว่าเรนกะถึงจุดสุดยอดอย่างเต็มที่หลังประโยคนี้"
+          }
         }
       ]
     },
@@ -599,7 +790,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "p59-1 ระบุว่าเรนกะสติหลุดและส่งเสียงที่ไม่มีความหมาย"
+          }
         }
       ]
     },
@@ -630,7 +830,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "p62-1 ระบุว่าชินจิเป็นผู้ตอบว่าคงทำให้เธอท้อง"
+          }
         }
       ]
     },
@@ -641,7 +850,16 @@
           "start": 0,
           "end": 63,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p63-1 ระบุว่าเรนกะเอนตัวลงหาชินจิและทั้งสองหัวเราะจูบกัน"
+          }
         }
       ]
     },
@@ -682,7 +900,16 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "p67-1 ระบุว่าชินจิตอบรับคำชวนให้เขาขยับบ้าง"
+          }
         }
       ]
     },
@@ -693,7 +920,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1",
+              "p68-1"
+            ],
+            "reason": "p69-1 ระบุว่าชินจิและเรนกะพลิกตัวสลับตำแหน่งหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -704,7 +940,16 @@
           "start": 0,
           "end": 9,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "เป็นเสียงของเรนกะก่อนทั้งสองพลิกตัวสลับตำแหน่งใน p69-1"
+          }
         }
       ]
     },

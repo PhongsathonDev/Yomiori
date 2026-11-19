@@ -28,7 +28,17 @@
           "start": 0,
           "end": 381,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p5-1 ระบุว่าหัวหน้าทหารของวิหารเป็นผู้พูดอย่างกระตือรือร้น แล้วอัลวินตอบกลับ"
+          }
         }
       ]
     },
@@ -39,7 +49,16 @@
           "start": 0,
           "end": 11,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "p5-1 ระบุชัดว่าอัลวินตอบกลับหัวหน้าทหารของวิหาร"
+          }
         }
       ]
     },
@@ -60,7 +79,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่าด้วยคำสั่งของหัวหน้าทหารของวิหาร พวกเขาจึงออกเดินทาง"
+          }
         }
       ]
     },
@@ -101,7 +129,17 @@
           "start": 0,
           "end": 55,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าหัวหน้าทหารของวิหารพูดกระซิบกับอัลวินก่อนพาทหารวิ่งไปทางเข้า"
+          }
         }
       ]
     },
@@ -112,7 +150,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "p12-1 ระบุว่าหัวหน้าทหารพูดกับอัลวิน แล้วพาทหารไป ซึ่งต่อจากคำรับของอัลวิน"
+          }
         }
       ]
     },
@@ -143,7 +190,18 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p16-1 เป็นคำสั่งให้ตามไป และ p17-1 ระบุว่าอัลวินวิ่งไปที่บันไดก่อนคนอื่น"
+          }
         }
       ]
     },
@@ -154,7 +212,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "เป็นคำตอบรับคำของอัลวิน และ p16-1 อัลวินเป็นผู้สั่งให้ตามไปต่อ"
+          }
         }
       ]
     },
@@ -165,7 +232,16 @@
           "start": 0,
           "end": 13,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "p17-1 ระบุว่าอัลวินวิ่งไปที่บันไดหลังประโยคนี้ มีริส เรนกะและชินจิตามไป"
+          }
         }
       ]
     },
@@ -196,7 +272,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "p18-1 ระบุว่าเรนกะกับชินจิชะโงกดูด้านล่าง และ p20-1 เป็นคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -207,7 +292,16 @@
           "start": 0,
           "end": 51,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1",
+              "p20-1",
+              "p21-1"
+            ],
+            "reason": "p21-1 ระบุว่าชินจิมองเห็นว่ามันทำงานอยู่ตลอดเวลา ต่อจากคำพูดนี้"
+          }
         }
       ]
     },
@@ -227,7 +321,17 @@
         {
           "start": 0,
           "end": 141,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p25-1"
+            ],
+            "reason": "p25-1 ระบุว่าเป็นการสื่อสารทางจิตกับเฟรรี่ และประโยคอธิบายเกตอย่างผู้รู้"
+          }
         }
       ]
     },
@@ -237,7 +341,17 @@
         {
           "start": 0,
           "end": 57,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1",
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "เป็นคำถามของชินจิต่อคำอธิบายของเฟรรี่ และ p24-1 เป็นคำตอบ"
+          }
         }
       ]
     },
@@ -247,7 +361,17 @@
         {
           "start": 0,
           "end": 42,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "p24-1 ตอบคำถามของชินจิเรื่องปลายทาง ก่อน p25-1 สรุปว่าเป็นการสื่อสารทางจิตกับเฟรรี่"
+          }
         }
       ]
     },
@@ -268,7 +392,16 @@
           "start": 0,
           "end": 152,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "p25-1 ระบุว่าชินจิเปิดปากพูดในสิ่งที่เขาเข้าใจหลังคุยกับเฟรรี่"
+          }
         }
       ]
     },
@@ -279,7 +412,17 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "p29-1 ระบุว่าเรนกะรั้งมีริสที่กำลังกระตือรือร้นไว้"
+          }
         }
       ]
     },
@@ -290,7 +433,17 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "p29-1 บรรยายว่าเรนกะจ้องมองความมืดและมองไม่เห็นอะไรเลย ต่อจากประโยคนี้ และ p30-1 อัลวินถามเรนกะเรื่องเวทตรวจจับต่อ"
+          }
         }
       ]
     },
@@ -311,7 +464,17 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1",
+              "p33-1"
+            ],
+            "reason": "p33-1 ระบุว่าเรนกะลองใช้เวทมนตร์ตรวจจับตามคำพูดของอัลวิน"
+          }
         }
       ]
     },
@@ -322,7 +485,17 @@
           "start": 0,
           "end": 71,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "p33-1 ระบุว่าเรนกะเป็นผู้ลองเวทตรวจจับและผลลัพธ์ไม่ดีนัก"
+          }
         }
       ]
     },
@@ -333,7 +506,17 @@
           "start": 0,
           "end": 56,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p34-1 ระบุว่าหลังจากนั้นชินจิจึงลองเวทมนตร์ต่อ และ p35-1 ระบุว่า <ดวงตาเวท> เป็นเวทมนตร์ของชินจิ"
+          }
         }
       ]
     },
@@ -394,7 +577,16 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "p39-1 ระบุว่าเมื่อได้ยินคำพูดของชินจิ ดวงตาที่ลอยอยู่ก็มุดเข้าไปในเกต"
+          }
         }
       ]
     },
@@ -425,7 +617,16 @@
           "start": 0,
           "end": 38,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "p40-1 ระบุว่าวิสัยทัศน์ของชินจิเชื่อมกับดวงตาเวท และ p42-1 บรรยายสิ่งที่เขาเห็นต่อจากประโยคนี้"
+          }
         }
       ]
     },
@@ -506,7 +707,17 @@
           "start": 0,
           "end": 126,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ชินจิเป็นผู้เห็นภาพผ่านดวงตาเวทและเรียกเฟรรี่ตามที่ p42-1 และ p53-1 ระบุ"
+          }
         }
       ]
     },
@@ -517,7 +728,17 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1",
+              "p53-1"
+            ],
+            "reason": "p53-1 ระบุว่าเมื่อรู้สึกถึงความวุ่นวาย อัลวินก็สั่งให้ปาร์ตี้พุ่งเข้าเกต"
+          }
         }
       ]
     },
@@ -528,7 +749,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "p53-1 ระบุว่าเรนกะตะโกนบอกทหารของวิหารที่เฝ้าทางเข้า"
+          }
         }
       ]
     },
@@ -539,7 +769,16 @@
           "start": 0,
           "end": 25,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-guards",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "เป็นเสียงตอบรับของทหารวิหารที่เฝ้าทางเข้าต่อคำของเรนกะ ก่อน p53-1 บรรยายคำสั่งของอัลวิน"
+          }
         }
       ]
     },
@@ -579,7 +818,18 @@
         {
           "start": 0,
           "end": 112,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1",
+              "p74-1"
+            ],
+            "reason": "p74-1 ระบุว่าชินจิได้รับการเตือนจากเฟรรี่เรื่องภูตระดับสูง"
+          }
         }
       ]
     },
@@ -589,7 +839,17 @@
         {
           "start": 0,
           "end": 30,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "เป็นคำทวนคำเตือนของเฟรรี่ต่อเรื่องซัคคิวบัสจากโลกภายนอก"
+          }
         }
       ]
     },
@@ -610,7 +870,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุว่าผู้ชายคนหนึ่งตัวสั่นและส่งเสียงที่น่าสังเวช เป็นชายนิรนามที่ถูกดูดพลังชีวิต"
+          }
         }
       ]
     },
@@ -631,7 +900,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-monsters",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p64-1"
+            ],
+            "reason": "p62-1 ระบุว่าผู้ชายที่นอนอยู่บนพื้นเหมือนมัมมี่ลุกขึ้นทีละคน และ p64-1 เรียกพวกนี้ว่าปีศาจ"
+          }
         }
       ]
     },
@@ -651,7 +929,17 @@
         {
           "start": 0,
           "end": 61,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "เป็นข้อมูลศัตรูจากภูตคู่สัญญาก่อนชินจิสรุปใน p64-1"
+          }
         }
       ]
     },
@@ -662,7 +950,16 @@
           "start": 0,
           "end": 64,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p64-1",
+              "p66-1"
+            ],
+            "reason": "p66-1 ระบุว่าชินจิระบุศัตรูอย่างกระชับ"
+          }
         }
       ]
     },
@@ -673,7 +970,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "p66-1 ระบุว่ามีริสร่ายเวทมนตร์ให้เพื่อนๆ เพื่อป้องกันเวทเสน่ห์"
+          }
         }
       ]
     },
@@ -714,7 +1020,16 @@
           "start": 0,
           "end": 102,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "p70-1 ระบุว่าซัคคิวบัสตนหนึ่งปรากฏตัวออกมาหลังประโยคนี้"
+          }
         }
       ]
     },
@@ -754,7 +1069,17 @@
         {
           "start": 0,
           "end": 29,
-          "type": "narration"
+          "type": "dialogue",
+          "speakerId": "netori-ferry",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1",
+              "p73-1",
+              "p74-1"
+            ],
+            "reason": "p74-1 ระบุว่าชินจิได้รับการเตือนจากเฟรรี่ว่ามันเป็นภูตระดับสูง"
+          }
         }
       ]
     },
@@ -775,7 +1100,17 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-succubus",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "p77-1 ระบุว่าซัคคิวบัสขยิบตาให้ก่อนชินจิตะโกนตอบ"
+          }
         }
       ]
     },
@@ -786,7 +1121,16 @@
           "start": 0,
           "end": 15,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1",
+              "p76-1",
+              "p77-1"
+            ],
+            "reason": "p77-1 ระบุว่าชินจิเป็นผู้ตะโกนขึ้นหลังซัคคิวบัสขยิบตา"
+          }
         }
       ]
     },

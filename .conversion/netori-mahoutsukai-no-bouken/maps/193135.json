@@ -18,7 +18,15 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p3-1 ระบุว่าคริสติน่าได้สติด้วยเสียงของชินจิที่เรียกชื่อเธอ"
+          }
         }
       ]
     },
@@ -39,7 +47,16 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1",
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "เป็นคำขอโทษของคริสติน่าที่ถูกบรรยายใน p3-1 และชินจิตอบใน p5-1"
+          }
         }
       ]
     },
@@ -50,7 +67,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำขอโทษและเสนอให้พักผ่อน ก่อนคริสติน่ารั้งแขนเขาใน p6-1"
+          }
         }
       ]
     },
@@ -81,7 +107,17 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "p9-1 ระบุตรงว่าคริสติน่าเป็นผู้บอกประโยคนี้ด้วยแก้มแดงก่ำ"
+          }
         }
       ]
     },
@@ -152,7 +188,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "คริสติน่าเอ่ยขอตัวก่อนกลับไปทำงานสาวใช้ตาม p16-1 และ p44-1"
+          }
         }
       ]
     },
@@ -243,7 +288,16 @@
           "start": 0,
           "end": 54,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "ชินจิเป็นผู้สั่งให้คริสติน่าขยับ และเธอตอบรับใน p25-1"
+          }
         }
       ]
     },
@@ -254,7 +308,16 @@
           "start": 0,
           "end": 42,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "เป็นเสียงตอบรับของคริสติน่าต่อคำสั่งใน p24-1 และ p26-1 บรรยายการขยับเอวของเธอ"
+          }
         }
       ]
     },
@@ -305,7 +368,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ชินจิเป็นผู้กล่าวต่อคริสติน่า แล้วเธอตอบใน p31-1"
+          }
         }
       ]
     },
@@ -316,7 +388,16 @@
           "start": 0,
           "end": 66,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้ตอบว่าชินจิทำให้เธอเป็นแบบนี้ และชินจิกล่าวต่อใน p32-1"
+          }
         }
       ]
     },
@@ -327,7 +408,16 @@
           "start": 0,
           "end": 125,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ชินจิเป็นผู้กล่าวต่อว่านิสัยของคริสติน่าเป็นเช่นนั้นแต่แรก และเธอตอบใน p33-1"
+          }
         }
       ]
     },
@@ -338,7 +428,16 @@
           "start": 0,
           "end": 85,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1",
+              "p33-1",
+              "p34-1"
+            ],
+            "reason": "เป็นคำตอบของคริสติน่าต่อคำกล่าวของชินจิ ก่อน p34-1 บรรยายความเชื่อที่ชินจิปลูกฝัง"
+          }
         }
       ]
     },
@@ -369,7 +468,16 @@
           "start": 0,
           "end": 47,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "ชินจิเป็นผู้บอกว่าใกล้จะหลั่งและสั่งให้คริสติน่าบีบช่องคลอด เธอตอบใน p37-1"
+          }
         }
       ]
     },
@@ -380,7 +488,16 @@
           "start": 0,
           "end": 32,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "เป็นเสียงตอบรับของคริสติน่าต่อคำสั่งใน p36-1 ก่อน p38-1 บรรยายการหลั่งของชินจิ"
+          }
         }
       ]
     },
@@ -411,7 +528,16 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้ขอบคุณนายท่าน และชินจิตอบใน p41-1"
+          }
         }
       ]
     },
@@ -422,7 +548,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำขอบคุณของคริสติน่า ก่อน p42-1 บรรยายรอยยิ้มของเธอ"
+          }
         }
       ]
     },
@@ -473,7 +608,16 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p45-1 ระบุว่าคริสติน่าพบอัลวินที่โถงทางเดิน และเธอเป็นผู้ทักทายก่อนอัลวินตอบใน p47-1"
+          }
         }
       ]
     },
@@ -484,7 +628,16 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบคำทักทายของคริสติน่า และ p48-1 บรรยายสีหน้าของเขา"
+          }
         }
       ]
     },
@@ -505,7 +658,16 @@
           "start": 0,
           "end": 60,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "อัลวินเป็นผู้เสนอจะบอกชินจิให้ปล่อยตัวคริสติน่า และเธอปฏิเสธใน p50-1"
+          }
         }
       ]
     },
@@ -516,7 +678,16 @@
           "start": 0,
           "end": 97,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-christina",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "คริสติน่าเป็นผู้ปฏิเสธข้อเสนอของอัลวิน แล้ว p51-1 บรรยายว่าเธอโค้งคำนับและเดินจากไป"
+          }
         }
       ]
     },
@@ -577,7 +748,16 @@
           "start": 0,
           "end": 49,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-eve",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "p58-1 ระบุว่าอีฟและคลาร่าเป็นผู้มองดูและพูดถึงคริสติน่า; ต้นฉบับไม่ระบุผู้พูดรายบรรทัด จึงให้อีฟพูดประโยคแรกตามลำดับชื่อใน p58-1"
+          }
         }
       ]
     },
@@ -588,7 +768,16 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-clara",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "เป็นประโยคต่อเนื่องของอีฟและคลาร่าใน p56-1 ถึง p58-1; ต้นฉบับไม่ระบุผู้พูดรายบรรทัด จึงให้คลาร่าพูดประโยคที่สองตามลำดับชื่อใน p58-1"
+          }
         }
       ]
     },
@@ -619,7 +808,17 @@
           "start": 0,
           "end": 136,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1",
+              "p61-1",
+              "p64-1"
+            ],
+            "reason": "p64-1 ระบุว่าชินจิที่ออกมาจากความฝันเป็นผู้พูดกับอีฟและคลาร่า"
+          }
         }
       ]
     },
@@ -650,7 +849,16 @@
           "start": 0,
           "end": 200,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "เป็นคำสั่งต่อเนื่องของชินจิที่ p64-1 ยืนยันว่าเขาพูดกับอีฟและคลาร่า"
+          }
         }
       ]
     },

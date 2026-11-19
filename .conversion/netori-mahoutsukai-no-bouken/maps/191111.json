@@ -57,7 +57,16 @@
         {
           "start": 0,
           "end": 24,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "เฟรรี่ถามชินจิผ่านกระแสจิตหลัง p5-1 ที่ชินจิปล่อยให้เธอทำตามใจ ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -68,7 +77,16 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ชินจิเป็นผู้ตอบคำถามของเฟรรี่ใน p6-1 และเฟรรี่ตอบกลับใน p8-1"
+          }
         }
       ]
     },
@@ -78,7 +96,16 @@
         {
           "start": 0,
           "end": 42,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "เป็นคำตอบของเฟรรี่ผ่านกระแสจิตต่อคำอธิบายของชินจิใน p7-1 และ p9-1 ระบุว่าชินจิพยักหน้าให้เธอ"
+          }
         }
       ]
     },
@@ -99,7 +126,16 @@
           "start": 0,
           "end": 122,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "ชินจิกล่าวต่อหลังพยักหน้าใน p9-1 และเฟรรี่ตอบใน p11-1"
+          }
         }
       ]
     },
@@ -109,7 +145,16 @@
         {
           "start": 0,
           "end": 136,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เป็นคำตอบของเฟรรี่ผ่านกระแสจิตต่อ p10-1 และชินจิเห็นด้วยใน p12-1"
+          }
         }
       ]
     },
@@ -120,7 +165,16 @@
           "start": 0,
           "end": 70,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "ชินจิกล่าวเสริมต่อจากคำตอบของเฟรรี่ใน p11-1 และเฟรรี่หัวเราะใน p13-1"
+          }
         }
       ]
     },
@@ -130,7 +184,16 @@
         {
           "start": 0,
           "end": 22,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "เป็นเสียงหัวเราะของเฟรรี่ผ่านกระแสจิตตอบคำสารภาพของชินจิใน p12-1 ไม่ได้ออกเสียง"
+          }
         }
       ]
     },
@@ -151,7 +214,16 @@
           "start": 0,
           "end": 129,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ชินจิเอ่ยต่อหลังเฟรรี่แตะแก้มใน p14-1 และ p16-1 ระบุว่าเขาคิดถึงประโยชน์ของเวทมนตร์นี้"
+          }
         }
       ]
     },
@@ -211,7 +283,16 @@
         {
           "start": 0,
           "end": 50,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1",
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "เฟรรี่บอกลาผ่านกระแสจิตหลังบทสนทนาขาดช่วงใน p20-1 และชินจิอุทานตอบใน p22-1"
+          }
         }
       ]
     },
@@ -222,7 +303,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "ชินจิอุทานตอบคำบอกลาของเฟรรี่ใน p21-1 และ p23-1 บรรยายสีหน้าของเขา"
+          }
         }
       ]
     },
@@ -242,7 +332,16 @@
         {
           "start": 0,
           "end": 128,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "เฟรรี่อธิบายผ่านกระแสจิตต่อจาก p23-1 ที่หน้าเธอภูมิใจ และ p25-1 บรรยายรอยยิ้มของเธอ"
+          }
         }
       ]
     },
@@ -273,7 +372,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "ชินจิยิ้มแหย่แล้วเอ่ยต่อหลัง p26-1 และเฟรรี่ตอบใน p28-1"
+          }
         }
       ]
     },
@@ -283,7 +391,16 @@
         {
           "start": 0,
           "end": 108,
-          "type": "narration"
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "เฟรรี่ตอบผ่านกระแสจิตเรื่องรสนิยมของอัลวินต่อจาก p27-1 และ p29-1 ขยายความเรื่องมีริส"
+          }
         }
       ]
     },
@@ -314,7 +431,16 @@
           "start": 0,
           "end": 31,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "ชินจิพึมพำหลัง p30-1 และ p32-1 ระบุว่าเฟรรี่ยิ้มตอบเสียงพึมพำนั้น"
+          }
         }
       ]
     },
@@ -355,7 +481,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "มีริสเรียกอัลวินขณะกอดกันบนเตียงตาม p34-1 และอัลวินจูบเธอใน p36-1"
+          }
         }
       ]
     },
@@ -416,7 +551,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "เป็นเสียงครวญครางของมีริสที่ปิดปากตาม p40-1 ก่อนอัลวินสอดใส่ใน p42-1"
+          }
         }
       ]
     },
@@ -517,7 +661,16 @@
           "start": 0,
           "end": 12,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "มีริสเอ่ยเรียกอัลวินเมื่อรู้สึกถึงความผิดปกติหลัง p50-1 และอัลวินพึมพำใน p52-1"
+          }
         }
       ]
     },
@@ -528,7 +681,16 @@
           "start": 0,
           "end": 23,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "อัลวินพึมพำด้วยความสับสนหลังมีริสเรียกใน p51-1 ก่อน p53-1 บรรยายว่าองคชาตของเขาอ่อนตัวลง"
+          }
         }
       ]
     },
@@ -569,7 +731,16 @@
           "start": 0,
           "end": 26,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "มีริสถามอัลวินด้วยความเป็นห่วงหลัง p55-1 บรรยายสีหน้าของเขา และอัลวินตอบใน p57-1"
+          }
         }
       ]
     },
@@ -580,7 +751,16 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1",
+              "p58-1"
+            ],
+            "reason": "อัลวินตอบขอโทษมีริสและเรียกเธอว่ามี่ ก่อน p58-1 บรรยายว่าเขานั่งลงบนเตียง"
+          }
         }
       ]
     },
@@ -621,7 +801,16 @@
           "start": 0,
           "end": 39,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1",
+              "p61-1",
+              "p62-1"
+            ],
+            "reason": "มีริสชวนอัลวินนอนพักหลังกอดเขาใน p60-1 และอัลวินเรียกเธอใน p62-1"
+          }
         }
       ]
     },
@@ -632,7 +821,16 @@
           "start": 0,
           "end": 8,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "อัลวินเอ่ยเรียกมีริสตอบคำชวนใน p61-1 และมีริสพูดต่อใน p63-1"
+          }
         }
       ]
     },
@@ -643,7 +841,16 @@
           "start": 0,
           "end": 52,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p65-1"
+            ],
+            "reason": "มีริสปลอบอัลวินต่อจาก p62-1 และอัลวินตอบใน p65-1"
+          }
         }
       ]
     },
@@ -664,7 +871,16 @@
           "start": 0,
           "end": 40,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "อัลวินตอบขอโทษและขอบคุณมีริสหลัง p63-1 และมีริสรับคำใน p66-1"
+          }
         }
       ]
     },
@@ -675,7 +891,16 @@
           "start": 0,
           "end": 6,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "มีริสตอบรับคำขอบคุณของอัลวินใน p65-1 ก่อน p67-1 บรรยายว่าทั้งสองเข้านอน"
+          }
         }
       ]
     },

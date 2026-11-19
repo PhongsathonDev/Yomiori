@@ -48,7 +48,16 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p8-1"
+            ],
+            "reason": "p4-1 ระบุว่าไอริสและพวกลีร่าเดินเข้ามาหา แล้ว p8-1 ระบุว่าไอริสยิ้มเมื่อชินจิชม"
+          }
         }
       ]
     },
@@ -59,7 +68,15 @@
           "start": 0,
           "end": 59,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p8-1"
+            ],
+            "reason": "p8-1 ระบุชัดว่าเป็นคำชมของชินจิ"
+          }
         }
       ]
     },
@@ -70,7 +87,15 @@
           "start": 0,
           "end": 14,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "p8-1 ระบุว่าไอริสยิ้มอย่างดีใจหลังได้ยินคำชม"
+          }
         }
       ]
     },
@@ -91,7 +116,15 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p11-1"
+            ],
+            "reason": "p11-1 ระบุว่าเรนกะตอบคำถามของไอริส"
+          }
         }
       ]
     },
@@ -102,7 +135,15 @@
           "start": 0,
           "end": 73,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1"
+            ],
+            "reason": "p11-1 ระบุชัดว่าเรนกะเป็นผู้ตอบ"
+          }
         }
       ]
     },
@@ -153,7 +194,15 @@
           "start": 0,
           "end": 21,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ลงท้ายด้วย 'ค่ะ' และเป็นผู้ตอบรับคำอธิบายของเรนกะก่อนถูกถามต่อใน p16-1"
+          }
         }
       ]
     },
@@ -164,7 +213,17 @@
           "start": 0,
           "end": 34,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p16-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p14-1 ระบุว่าอัลวินและคนอื่นๆ เดินมารวมกลุ่ม แล้ว p19-1 ระบุว่าคำชวนใน p18-1 เป็นของอัลวิน คำถามที่นำไปสู่คำชวนจึงเป็นของอัลวิน"
+          }
         }
       ]
     },
@@ -175,7 +234,15 @@
           "start": 0,
           "end": 48,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-iris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ลงท้ายด้วย 'ค่ะ' และเป็นผู้ตอบคำถามเรื่องแผนของกลุ่มตัวเอง"
+          }
         }
       ]
     },
@@ -186,7 +253,15 @@
           "start": 0,
           "end": 33,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุชัดว่าเป็นคำชวนของอัลวิน"
+          }
         }
       ]
     },
@@ -267,7 +342,15 @@
           "start": 0,
           "end": 36,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1",
+              "p28-1"
+            ],
+            "reason": "p28-1 ระบุว่าอัลวินเป็นหัวหน้ากลุ่มที่ยื่นบัตรนักผจญภัยและพูดที่เคาน์เตอร์"
+          }
         }
       ]
     },
@@ -278,7 +361,15 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "พนักงานต้อนรับหญิงของกิลด์ไม่มีชื่อใน roster จึงใช้เสียงของตัวละครประกอบที่ไม่มีชื่อ"
+          }
         }
       ]
     },
@@ -309,7 +400,15 @@
           "start": 0,
           "end": 89,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "เป็นคำอธิบายของพนักงานต้อนรับคนเดิมที่เชิญพวกอัลวินเข้าไปในห้องส่วนตัวตาม p29-1"
+          }
         }
       ]
     },
@@ -320,7 +419,16 @@
           "start": 0,
           "end": 27,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p32-1 ระบุว่าอัลวินรับบัตรคืนและเดินตามพนักงานต้อนรับ"
+          }
         }
       ]
     },
@@ -361,7 +469,15 @@
           "start": 0,
           "end": 90,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "เป็นคำอธิบายของพนักงานต้อนรับที่ยื่นกระดาษรายละเอียดรางวัลตาม p34-1"
+          }
         }
       ]
     },
@@ -372,7 +488,15 @@
           "start": 0,
           "end": 7,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "p37-1 ระบุว่าอัลวินรับกระดาษมาและตรวจสอบ"
+          }
         }
       ]
     },
@@ -413,7 +537,15 @@
           "start": 0,
           "end": 266,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "เป็นคำอธิบายของพนักงานต้อนรับหญิงที่ไม่มีชื่อใน roster"
+          }
         }
       ]
     },
@@ -424,7 +556,15 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นคำขอบคุณของผู้รับรางวัลแทนปาร์ตี้ คืออัลวินหัวหน้ากลุ่ม"
+          }
         }
       ]
     },
@@ -455,7 +595,15 @@
           "start": 0,
           "end": 210,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "เป็นคำอธิบายเพิ่มเติมของพนักงานต้อนรับหญิงที่ไม่มีชื่อใน roster"
+          }
         }
       ]
     },
@@ -466,7 +614,18 @@
           "start": 0,
           "end": 94,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "เป็นคำสรุปของผู้ชายที่ใช้ 'ครับ' และ p49-1 ที่เสริมต่อเรื่องหัวหน้ากิลด์ได้รับการยืนยันใน p50-1 ว่าเป็นคำพูดของชินจิ"
+          }
         }
       ]
     },
@@ -477,7 +636,16 @@
           "start": 0,
           "end": 30,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "p47-1 ระบุว่าพนักงานต้อนรับสาวพยักหน้าตอบด้วยสีหน้าจริงจัง"
+          }
         }
       ]
     },
@@ -498,7 +666,16 @@
           "start": 0,
           "end": 134,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "เป็นคำอธิบายเหตุผลของพนักงานต้อนรับคนเดิมที่กำลังพูดต่อ"
+          }
         }
       ]
     },
@@ -509,7 +686,16 @@
           "start": 0,
           "end": 130,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "p50-1 ระบุชัดว่าเป็นคำเสริมของชินจิ"
+          }
         }
       ]
     },
@@ -540,7 +726,15 @@
           "start": 0,
           "end": 241,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1"
+            ],
+            "reason": "เป็นประกาศของพนักงานต้อนรับหญิงที่ไม่มีชื่อใน roster"
+          }
         }
       ]
     },
@@ -551,7 +745,16 @@
           "start": 0,
           "end": 16,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "เป็นคำตอบรับของผู้เป็นหัวหน้ากลุ่มที่รับเรื่องรางวัลตั้งแต่ p26-1 และ p41-1"
+          }
         }
       ]
     },
@@ -572,7 +775,15 @@
           "start": 0,
           "end": 113,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "p54-1 ระบุว่าพนักงานต้อนรับหยิบจดหมายแนะนำที่พักออกมาวางบนโต๊ะ"
+          }
         }
       ]
     },
@@ -583,7 +794,15 @@
           "start": 0,
           "end": 50,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุชัดว่าชินจิพึมพำเมื่อเห็นชื่อโรงแรม"
+          }
         }
       ]
     },
@@ -604,7 +823,16 @@
           "start": 0,
           "end": 22,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุว่าชินจิตอบคำถามของเรนกะ"
+          }
         }
       ]
     },
@@ -615,7 +843,16 @@
           "start": 0,
           "end": 43,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1",
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุชัดว่าเป็นคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -636,7 +873,15 @@
           "start": 0,
           "end": 53,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p63-1"
+            ],
+            "reason": "p63-1 ระบุชัดว่ามีริสเป็นผู้แจ้งว่ามีเพื่อนร่วมเดินทางมาด้วย"
+          }
         }
       ]
     },
@@ -647,7 +892,15 @@
           "start": 0,
           "end": 61,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "p63-1 ระบุว่าพนักงานต้อนรับยิ้มและพยักหน้าตอบคำของมีริส"
+          }
         }
       ]
     },
@@ -678,7 +931,16 @@
           "start": 0,
           "end": 115,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "p64-1 ระบุว่าชินจิหยิบจดหมายแนะนำขึ้นมาแทนอัลวิน แล้วกล่าวคำนี้"
+          }
         }
       ]
     },
@@ -689,7 +951,16 @@
           "start": 0,
           "end": 20,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p70-1"
+            ],
+            "reason": "เป็นเสียงของพนักงานต้อนรับหญิงที่ไม่มีชื่อใน roster และ p70-1 เป็นคำตอบของชินจิ"
+          }
         }
       ]
     },
@@ -730,7 +1001,15 @@
           "start": 0,
           "end": 28,
           "type": "dialogue",
-          "speakerId": ""
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1"
+            ],
+            "reason": "p71-1 ระบุชัดว่าชินจิเป็นผู้ตอบพร้อมรอยยิ้ม"
+          }
         }
       ]
     },
