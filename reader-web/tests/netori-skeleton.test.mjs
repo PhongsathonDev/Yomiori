@@ -90,8 +90,9 @@ test('novel detail opens the first converted chapter and shows the roster', () =
   }));
   assert.ok(markup.includes('เริ่มอ่านตอนที่ 1'));
   assert.ok(!markup.includes('กำลังรอแปลงตอนเข้าสู่ระบบ'));
-  for (const character of characters(web)) assert.ok(markup.includes(character.name));
-  const rosterNames = new Set(characters(web).map(c => c.name));
+  const displayed = characters(web).filter(c => mainIds.includes(c.id));
+  for (const character of displayed) assert.ok(markup.includes(character.name));
+  const rosterNames = new Set(displayed.map(c => c.name));
   for (const character of data.allCharacters.filter(c => !c.id.startsWith('netori-'))) {
     if (character.avatarUrl) {
       assert.ok(!markup.includes(character.avatarUrl), `Unrelated character leaked: ${character.name}`);

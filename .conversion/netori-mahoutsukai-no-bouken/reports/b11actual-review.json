@@ -1,0 +1,20 @@
+{
+  "batch": "b11actual",
+  "reviewer": "independent-review-1",
+  "sources": [
+    {
+      "sourceId": "180918",
+      "chapterNo": "42",
+      "mapJsonHash": "507d388e2546211c7127d224d39b3fd558529c0e14ca11ecebc560dcbb4b0d48",
+      "result": "pass",
+      "issues": []
+    },
+    {
+      "sourceId": "180919",
+      "chapterNo": "43",
+      "mapJsonHash": "16adb784c22d43b33abc65ba9f021104e3f82e74b1e53d0c7b5abde4ce94846e",
+      "result": "pass",
+      "issues": []
+    }
+  ]
+}
