@@ -1,0 +1,131 @@
+{
+  "p6-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p5-1", "p6-1", "p7-1"],
+    "reason": "ชินจิเป็นผู้แจ้งเจ้าของโรงแรมว่าจะออกจากเมืองและขอให้เก็บห้องไว้ โดย p7-1 เป็นคำตอบของภรรยาเจ้าของโรงแรม"
+  },
+  "p7-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p6-1", "p7-1", "p8-1"],
+    "reason": "เป็นคำตอบของภรรยาเจ้าของโรงแรมซึ่งไม่มีชื่อใน roster จึงใช้กลุ่มตัวละครประกอบที่ไม่มีชื่อ"
+  },
+  "p8-1": "netori-shinji",
+  "p10-1": "netori-charlotte",
+  "p11-1": "netori-shinji",
+  "p12-1": "netori-charlotte",
+  "p13-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p13-1", "p14-1"],
+    "reason": "p14-1 ระบุว่าเป็นเสียงของแม่ของชาร์ลอตต้าดังจากในครัว ซึ่งไม่มีชื่อใน roster"
+  },
+  "p15-1": "netori-charlotte",
+  "p19-1": "netori-charlotte",
+  "p21-1": "netori-charlotte",
+  "p23-1": "netori-charlotte",
+  "p26-1": "netori-charlotte",
+  "p29-1": "netori-charlotte",
+  "p32-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p29-1", "p32-1", "p33-1"],
+    "reason": "ตอบคำถามของชาร์ลอตต้าใน p29-1 ว่า 'เข้ากันไหมคะ' แล้วชาร์ลอตต้าตอบรับใน p33-1"
+  },
+  "p33-1": "netori-charlotte",
+  "p35-1": "netori-charlotte",
+  "p37-1#2": {
+    "type": "narration",
+    "context": ["p37-1"],
+    "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'การฝึกฝน' ไม่ใช่บทสนทนา"
+  },
+  "p39-1#2": {
+    "type": "narration",
+    "context": ["p39-1"],
+    "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'ปิดฉาก' ไม่ใช่บทสนทนา"
+  },
+  "p40-1#2": {
+    "type": "narration",
+    "context": ["p40-1"],
+    "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p42-1": "netori-charlotte",
+  "p45-1": "netori-charlotte",
+  "p46-1": "netori-shinji",
+  "p47-1": "netori-charlotte",
+  "p49-1": "netori-shinji",
+  "p50-1": "netori-charlotte",
+  "p53-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p50-1", "p53-1", "p54-1"],
+    "reason": "ตอบรับคำพูดของชาร์ลอตต้าใน p50-1 ด้วย 'ใช่สิ' แล้วชาร์ลอตต้าตอบใน p54-1"
+  },
+  "p54-1": "netori-charlotte",
+  "p55-1#2": {
+    "type": "narration",
+    "context": ["p55-1"],
+    "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p56-1": "netori-shinji",
+  "p57-1#2": {
+    "type": "narration",
+    "context": ["p57-1"],
+    "reason": "เป็นเสียงกระทบของร่างกาย (sound effect) ไม่ใช่คำพูด"
+  },
+  "p58-1#2": {
+    "type": "narration",
+    "context": ["p58-1"],
+    "reason": "เป็นคำที่ถูกยกมาอ้างถึง ไม่ใช่คำพูดในฉาก"
+  },
+  "p59-1#2": {
+    "type": "narration",
+    "context": ["p59-1"],
+    "reason": "เป็นคำที่ถูกยกมาอ้างถึงเพื่อเปรียบเทียบ ไม่ใช่คำพูดในฉาก"
+  },
+  "p60-1": "netori-charlotte",
+  "p61-1#2": {
+    "type": "narration",
+    "context": ["p61-1"],
+    "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'การฝึกฝน' ไม่ใช่บทสนทนา"
+  },
+  "p62-1": "netori-shinji",
+  "p63-1": "netori-charlotte",
+  "p64-1#1": {
+    "type": "narration",
+    "context": ["p64-1"],
+    "reason": "เป็นเสียงกระทบ (sound effect) ไม่ใช่บทสนทนา"
+  },
+  "p65-1#2": {
+    "type": "narration",
+    "context": ["p65-1"],
+    "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p68-1": "netori-charlotte",
+  "p69-1#2": {
+    "type": "narration",
+    "context": ["p69-1"],
+    "reason": "เป็นเสียงกระทบของสะโพก (sound effect) ไม่ใช่คำพูด"
+  },
+  "p70-1": "netori-charlotte",
+  "p73-1": "netori-charlotte",
+  "p75-1#2": {
+    "type": "narration",
+    "context": ["p75-1"],
+    "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'ประทับตรา' ไม่ใช่บทสนทนา"
+  },
+  "p76-1": "netori-charlotte",
+  "p77-1#2": {
+    "type": "narration",
+    "context": ["p77-1"],
+    "reason": "เป็นเสียงกระทบ (sound effect) ไม่ใช่บทสนทนา"
+  },
+  "p78-1#2": {
+    "type": "narration",
+    "context": ["p78-1"],
+    "reason": "เป็นเสียงของเหลว (sound effect) ไม่ใช่บทสนทนา"
+  },
+  "p81-1": "netori-shinji",
+  "p82-1": "netori-charlotte",
+  "p83-1#2": {
+    "type": "narration",
+    "context": ["p83-1"],
+    "reason": "เป็นเสียงจูบ (sound effect) ไม่ใช่บทสนทนา"
+  }
+}

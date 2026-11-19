@@ -1,0 +1,762 @@
+{
+  "sourceSha256": "ff6bd45bb16a776c1796f3ceff6a55e8249aec39e9ee06656dfe5a9f3b251443",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 136,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 309,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 186,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 112,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 186,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 144,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 153,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 151,
+          "type": "narration"
+        },
+        {
+          "start": 151,
+          "end": 158,
+          "type": "dialogue",
+          "speakerId": ""
+        },
+        {
+          "start": 158,
+          "end": 204,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 199,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 101,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 93,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "narration"
+        },
+        {
+          "start": 55,
+          "end": 71,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 117,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 116,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 127,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 96,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 84,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 137,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 157,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 101,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 183,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 112,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 116,
+          "type": "dialogue",
+          "speakerId": ""
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 198,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 109,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 129,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 138,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 114,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 135,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 122,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 129,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 90,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 124,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "dialogue",
+          "speakerId": ""
+        },
+        {
+          "start": 55,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 84,
+          "type": "dialogue",
+          "speakerId": ""
+        },
+        {
+          "start": 84,
+          "end": 91,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

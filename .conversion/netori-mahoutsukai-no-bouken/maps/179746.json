@@ -1,0 +1,1356 @@
+{
+  "sourceSha256": "0e82997c63b8b0eadece70b7677254f0f9b995b00b4e7fc0d1c2c93f5151f9bd",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 332,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 140,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 140,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ชินจิเป็นผู้แจ้งเจ้าของโรงแรมว่าจะออกจากเมืองและขอให้เก็บห้องไว้ โดย p7-1 เป็นคำตอบของภรรยาเจ้าของโรงแรม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "dialogue",
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "เป็นคำตอบของภรรยาเจ้าของโรงแรมซึ่งไม่มีชื่อใน roster จึงใช้กลุ่มตัวละครประกอบที่ไม่มีชื่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 109,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "ตรวจบริบท p8-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 162,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "ตรวจบริบท p11-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "p14-1 ระบุว่าเป็นเสียงของแม่ของชาร์ลอตต้าดังจากในครัว ซึ่งไม่มีชื่อใน roster"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 325,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1"
+            ],
+            "reason": "ตรวจบริบท p15-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 83,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 162,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "ตรวจบริบท p19-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 95,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 210,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "ตรวจบริบท p26-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 117,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 85,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 94,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 192,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 163,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "ตอบคำถามของชาร์ลอตต้าใน p29-1 ว่า 'เข้ากันไหมคะ' แล้วชาร์ลอตต้าตอบรับใน p33-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 174,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 102,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        },
+        {
+          "start": 37,
+          "end": 47,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'การฝึกฝน' ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 47,
+          "end": 68,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 125,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        },
+        {
+          "start": 54,
+          "end": 62,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'ปิดฉาก' ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 62,
+          "end": 178,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 146,
+          "type": "narration"
+        },
+        {
+          "start": 146,
+          "end": 156,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 156,
+          "end": 176,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 272,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 128,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1"
+            ],
+            "reason": "ตรวจบริบท p45-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "ตรวจบริบท p46-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "ตรวจบริบท p47-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 83,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ตรวจบริบท p50-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 148,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "ตอบรับคำพูดของชาร์ลอตต้าใน p50-1 ด้วย 'ใช่สิ' แล้วชาร์ลอตต้าตอบใน p54-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 83,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ตรวจบริบท p54-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 129,
+          "type": "narration"
+        },
+        {
+          "start": 129,
+          "end": 139,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 139,
+          "end": 155,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "ตรวจบริบท p56-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        },
+        {
+          "start": 60,
+          "end": 75,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "เป็นเสียงกระทบของร่างกาย (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 75,
+          "end": 182,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "narration"
+        },
+        {
+          "start": 6,
+          "end": 13,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "เป็นคำที่ถูกยกมาอ้างถึง ไม่ใช่คำพูดในฉาก"
+          }
+        },
+        {
+          "start": 13,
+          "end": 39,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 78,
+          "type": "narration"
+        },
+        {
+          "start": 78,
+          "end": 83,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "เป็นคำที่ถูกยกมาอ้างถึงเพื่อเปรียบเทียบ ไม่ใช่คำพูดในฉาก"
+          }
+        },
+        {
+          "start": 83,
+          "end": 130,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p60-1"
+            ],
+            "reason": "ตรวจบริบท p60-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        },
+        {
+          "start": 43,
+          "end": 53,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'การฝึกฝน' ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 53,
+          "end": 198,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1"
+            ],
+            "reason": "ตรวจบริบท p62-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p63-1"
+            ],
+            "reason": "ตรวจบริบท p63-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1"
+            ],
+            "reason": "เป็นเสียงกระทบ (sound effect) ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 9,
+          "end": 189,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "narration"
+        },
+        {
+          "start": 51,
+          "end": 61,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 61,
+          "end": 105,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 149,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "ตรวจบริบท p68-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "narration"
+        },
+        {
+          "start": 77,
+          "end": 106,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1"
+            ],
+            "reason": "เป็นเสียงกระทบของสะโพก (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 106,
+          "end": 239,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "ตรวจบริบท p70-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 115,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "ตรวจบริบท p73-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 113,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "narration"
+        },
+        {
+          "start": 89,
+          "end": 100,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'ประทับตรา' ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1"
+            ],
+            "reason": "ตรวจบริบท p76-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "narration"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1"
+            ],
+            "reason": "เป็นเสียงกระทบ (sound effect) ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 28,
+          "end": 132,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        },
+        {
+          "start": 24,
+          "end": 35,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1"
+            ],
+            "reason": "เป็นเสียงของเหลว (sound effect) ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 35,
+          "end": 109,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 149,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 90,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1"
+            ],
+            "reason": "ตรวจบริบท p81-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1"
+            ],
+            "reason": "ตรวจบริบท p82-1 แล้ว จัดประเภทเป็นคำพูดของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        },
+        {
+          "start": 43,
+          "end": 53,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1"
+            ],
+            "reason": "เป็นเสียงจูบ (sound effect) ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    }
+  ]
+}

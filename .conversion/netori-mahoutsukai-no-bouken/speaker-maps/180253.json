@@ -1,0 +1,112 @@
+{
+  "p9-1": "netori-alvin",
+  "p11-1": {
+    "speakerId": "netori-renka",
+    "context": ["p11-1", "p12-1", "p13-1"],
+    "reason": "มีริสเรียกอัลวินว่า 'อัลคุง' (p50-1, p91-1) ส่วนคำว่า 'อัล' ตรงกับคำที่เรนกะใช้ และ p13-1 ระบุว่าเรนกะกับมีริสแสดงความยินดีกับอัลวินพร้อมกัน"
+  },
+  "p12-1": "netori-miris",
+  "p15-1": "netori-shinji",
+  "p16-1": "netori-alvin",
+  "p18-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p14-1", "p18-1", "p19-1"],
+    "reason": "ชินจิเพิ่งชนกำปั้นกับอัลวิน (p14-1 ถึง p17-1) และเป็นสมาชิกอาวุโสที่เปรียบเทียบเกณฑ์เลื่อนขั้นจากประสบการณ์ของตน"
+  },
+  "p19-1": {
+    "speakerId": "netori-alvin",
+    "context": ["p18-1", "p19-1"],
+    "reason": "อัลวินเป็นผู้ตอบแทนการประเมินคะแนนของกิลด์จากเควสต์ที่เขาเพิ่งทำเสร็จ"
+  },
+  "p20-1": "netori-miris",
+  "p23-1": "netori-alvin",
+  "p24-1": "netori-shinji",
+  "p27-1": "netori-shinji",
+  "p28-1": "netori-miris",
+  "p29-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p27-1", "p28-1", "p29-1"],
+    "reason": "ชินจิเป็นผู้อธิบายเรื่องเวทมนตร์พิเศษตาม p24-1 และ p27-1 จึงเสริมประวัติการควบคุมต่อจากคำตอบของมีริสใน p28-1"
+  },
+  "p30-1": "netori-alvin",
+  "p31-1": "netori-shinji",
+  "p32-1#2": {
+    "speakerId": "netori-shinji",
+    "context": ["p32-1"],
+    "reason": "narration ในย่อหน้าเดียวกันระบุว่า 'ชินจิพลิกบัตรนักผจญภัยพลางเสริมว่า'"
+  },
+  "p33-1": "netori-shinji",
+  "p34-1": {
+    "speakerId": "netori-renka",
+    "context": ["p33-1", "p34-1", "p35-1"],
+    "reason": "เรนกะเป็นคนถามยืนยันจำนวนสล็อตตามระดับต่อจากคำอธิบายของชินจิ ก่อนมีริสพูดถึงห้องดูเวทมนตร์ใน p35-1"
+  },
+  "p35-1": "netori-miris",
+  "p38-1": "netori-renka",
+  "p39-1": "netori-shinji",
+  "p40-1#2": {
+    "speakerId": "netori-shinji",
+    "context": ["p40-1"],
+    "reason": "narration ระบุว่า 'ชินจิหัวเราะแห้งๆ พลางบอกว่า'"
+  },
+  "p41-1": "netori-shinji",
+  "p42-1": "netori-alvin",
+  "p44-1": "netori-shinji",
+  "p45-1": "netori-alvin",
+  "p48-1": {
+    "speakerId": "netori-renka",
+    "context": ["p47-1", "p48-1", "p49-1"],
+    "reason": "เรนกะเป็นคนที่ไปบอกลาอากาเนะตาม p3-1 ของบทที่ 30 และใช้สรรพนาม 'ฉัน'"
+  },
+  "p49-1": "netori-alvin",
+  "p50-1": "netori-miris",
+  "p51-1": "netori-shinji",
+  "p52-1": "netori-emily",
+  "p54-1": "netori-shinji",
+  "p55-1": "netori-miris",
+  "p56-1": "netori-emily",
+  "p58-1#2": {
+    "type": "narration",
+    "context": ["p58-1"],
+    "reason": "เรนกะเพียงทำหน้าเหมือนจะพูด ไม่ได้เปล่งเสียงจริง และ narration ในย่อหน้าเดียวกันระบุว่าเธอทักทายอย่างดี"
+  },
+  "p60-1": "netori-emily",
+  "p61-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p60-1", "p61-1", "p62-1"],
+    "reason": "ชินจิเป็นผู้เริ่มคุยเรื่องกำหนดออกจากเมือง (p44-1 ถึง p49-1) จึงเป็นผู้ตอบคำถามของเอมิลี่"
+  },
+  "p62-1": "netori-emily",
+  "p63-1": "netori-miris",
+  "p64-1": {
+    "speakerId": "netori-renka",
+    "context": ["p63-1", "p64-1", "p65-1"],
+    "reason": "เรนกะเป็นคนค้านงานเลี้ยงต่อจากมีริส ก่อนชินจิจะเริ่มเทศนาเอมิลี่ใน p65-1 ถึง p67-1"
+  },
+  "p65-1": "netori-shinji",
+  "p72-1": "netori-shinji",
+  "p73-1": "netori-emily",
+  "p74-1": "netori-miris",
+  "p75-1": "netori-alvin",
+  "p79-1": "netori-alvin",
+  "p81-1": {
+    "speakerId": "netori-party",
+    "context": ["p78-1", "p81-1", "p84-1"],
+    "reason": "p78-1 และ p84-1 ระบุว่ามีริสกับเรนกะส่งเสียงตกใจพร้อมกัน จึงใช้เสียงหมู่ของปาร์ตี้"
+  },
+  "p86-1": "netori-emily",
+  "p87-1": "netori-alvin",
+  "p88-1": "netori-emily",
+  "p90-1": "netori-alvin",
+  "p91-1": "netori-miris",
+  "p92-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p39-1", "p83-1", "p92-1"],
+    "reason": "ชินจิเคยร่วมปาร์ตี้กับเอมิลี่และเพิ่งอธิบายฝีมือของเธอใน p39-1 ถึง p41-1 ก่อนถอนหายใจเรื่องสถานการณ์ใน p83-1"
+  },
+  "p93-1": {
+    "speakerId": "netori-renka",
+    "context": ["p92-1", "p93-1", "p94-1"],
+    "reason": "เรนกะเป็นสมาชิกที่คอยดูแลปาร์ตี้และกังวลเรื่องอนาคตหลังเอมิลี่จะร่วมเดินทางด้วย; p94-1 ระบุว่าปฏิกิริยาแตกต่างกัน"
+  }
+}

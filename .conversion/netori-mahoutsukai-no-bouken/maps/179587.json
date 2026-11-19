@@ -1,0 +1,1254 @@
+{
+  "sourceSha256": "175ff958a2f76f795c84be32af5114663002ce86353ff125549a075268202b75",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 65,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 175,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "ตรวจบริบท p6-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ตรวจบริบท p7-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 197,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1"
+            ],
+            "reason": "ตรวจบริบท p9-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 104,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 263,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 91,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1"
+            ],
+            "reason": "ตรวจบริบท p12-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1"
+            ],
+            "reason": "ตรวจบริบท p13-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1"
+            ],
+            "reason": "ตรวจบริบท p14-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1"
+            ],
+            "reason": "ตรวจบริบท p16-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 132,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p17 ให้ข้อมูลว่าเป็นวันว่างของเรนกะ แล้ว p18 เป็นการขอให้ช่วยเลือกของขวัญ ซึ่ง p19 ตอบรับเรื่องมื้อกลางวันโดยเรียกผู้พูดว่าชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "ตรวจบริบท p19-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p20-1"
+            ],
+            "reason": "ตรวจบริบท p20-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 169,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 163,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 115,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ตรวจบริบท p24-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1"
+            ],
+            "reason": "ตรวจบริบท p25-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 113,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 99,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "ตรวจบริบท p28-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 104,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ตรวจบริบท p30-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 186,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "ตรวจบริบท p32-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "ตรวจบริบท p33-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "ตรวจบริบท p34-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 119,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "ตรวจบริบท p37-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        },
+        {
+          "start": 42,
+          "end": 61,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดคือแววตาตำหนิของเรนกะที่บรรยายว่า 'เหมือนจะตำหนิว่า' ไม่ได้พูดออกมา"
+          }
+        },
+        {
+          "start": 61,
+          "end": 93,
+          "type": "narration"
+        },
+        {
+          "start": 93,
+          "end": 115,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดคือสีหน้าประหลาดใจของชินจิที่บรรยายว่า 'ราวกับว่า' ไม่ได้พูดออกมา"
+          }
+        },
+        {
+          "start": 115,
+          "end": 302,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 207,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 147,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 78,
+          "type": "dialogue",
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชายสองคนที่เข้ามาจีบเรนกะโดยไม่ระบุชื่อ ใช้ ID เสียงของผู้คนและตัวละครประกอบที่ไม่มีชื่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "netori-crowd",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ชายคนที่สองในกลุ่มชายสองคนที่เข้ามาจีบเรนกะตามที่ p45 บรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 231,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 121,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "ตรวจบริบท p47-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 141,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 90,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 155,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1"
+            ],
+            "reason": "ตรวจบริบท p51-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 128,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 116,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p54-1"
+            ],
+            "reason": "ตรวจบริบท p54-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 206,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "ตรวจบริบท p58-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "ตรวจบริบท p59-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 191,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 274,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 345,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1"
+            ],
+            "reason": "ตรวจบริบท p66-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "ตรวจบริบท p68-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p69-1"
+            ],
+            "reason": "ตรวจบริบท p69-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        },
+        {
+          "start": 28,
+          "end": 62,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1"
+            ],
+            "reason": "เป็นความคิดในใจของเรนกะ ('เธอก็คิดขึ้นมาว่า') ไม่ได้พูดออกมา"
+          }
+        },
+        {
+          "start": 62,
+          "end": 136,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "p73 บรรยายว่าเป็นคำที่หลุดออกมาจากปากเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        },
+        {
+          "start": 53,
+          "end": 62,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1"
+            ],
+            "reason": "เป็นความคิดอุทานในใจของเรนกะ ('เธอคิด') ไม่ได้พูดออกมา"
+          }
+        },
+        {
+          "start": 62,
+          "end": 115,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1"
+            ],
+            "reason": "ตรวจบริบท p74-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p75-1"
+            ],
+            "reason": "ข้อความในเครื่องหมายคำพูดตามด้วย 'เรนกะคิด' เป็นความคิดในใจ ไม่ได้พูดออกมา"
+          }
+        },
+        {
+          "start": 9,
+          "end": 18,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p76-1",
+              "p77-1",
+              "p78-1"
+            ],
+            "reason": "p74 ชินจิเป็นผู้ขอบคุณ แล้ว p76 กล่าวลาก่อน p78 บรรยายว่าชินจิเดินจากไป ส่วน p77 เป็นคำตอบรับของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1"
+            ],
+            "reason": "ตรวจบริบท p77-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 101,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        },
+        {
+          "start": 49,
+          "end": 97,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1"
+            ],
+            "reason": "เป็นคำถามที่เรนกะฉุกคิดขึ้นมาในใจ ('เธอก็ฉุกคิดขึ้นมาว่า') ไม่ได้พูดออกมา"
+          }
+        },
+        {
+          "start": 97,
+          "end": 231,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 120,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

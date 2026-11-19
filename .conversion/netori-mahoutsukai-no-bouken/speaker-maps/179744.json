@@ -1,0 +1,121 @@
+{
+  "p3-1#2": "netori-alvin",
+  "p3-1#4": "netori-renka",
+  "p4-1": "netori-shinji",
+  "p5-1#2": {
+    "type": "narration",
+    "context": ["p5-1"],
+    "reason": "เครื่องหมายคำพูดใช้ยกหัวข้อ \"เรื่องอาการผิดปกติของเรนกะ\" ในประโยคบรรยาย ไม่ใช่บทสนทนา"
+  },
+  "p7-1": "netori-alvin",
+  "p8-1": "netori-shinji",
+  "p10-1": "netori-alvin",
+  "p11-1": "netori-shinji",
+  "p16-1#2": {
+    "type": "narration",
+    "context": ["p16-1"],
+    "reason": "เครื่องหมายคำพูดใช้ยกคำว่า \"มังกร\" ในประโยคบรรยาย ไม่ใช่บทสนทนา"
+  },
+  "p16-1#4": {
+    "type": "narration",
+    "context": ["p16-1"],
+    "reason": "เครื่องหมายคำพูดใช้ยกคำอธิบายความหมายของ〈มังกรชั้นต่ำ〉 ไม่ใช่บทสนทนา"
+  },
+  "p17-1": "netori-shinji",
+  "p18-1": "netori-alvin",
+  "p19-1": "netori-shinji",
+  "p21-1": "netori-shinji",
+  "p22-1": "netori-alvin",
+  "p23-1": "netori-miris",
+  "p24-1": "netori-renka",
+  "p25-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p24-1", "p25-1", "p26-1"],
+    "reason": "คำสรุปหยอก ๆ เรื่องนิสัยอัลวินหลังจากมีริสและเรนกะตอบไปแล้ว ก่อนที่ทั้งสามจะมองอัลวินใน p26 จึงเป็นเสียงของชินจิ"
+  },
+  "p26-1#2": {
+    "type": "narration",
+    "context": ["p26-1"],
+    "reason": "เครื่องหมายคำพูดอธิบายสายตาของทั้งสามที่มองอัลวิน ไม่ใช่คำพูดที่เปล่งออกมา"
+  },
+  "p27-1": "netori-shinji",
+  "p29-1": "netori-shinji",
+  "p30-1": "netori-renka",
+  "p31-1": "netori-alvin",
+  "p32-1": "netori-miris",
+  "p36-1": "netori-shinji",
+  "p37-1": "netori-renka",
+  "p38-1": "netori-shinji",
+  "p40-1": "netori-shinji",
+  "p43-1": "netori-renka",
+  "p45-1": "netori-renka",
+  "p46-1#2": {
+    "type": "narration",
+    "context": ["p46-1"],
+    "reason": "เสียงในปาก/น้ำลาย ไม่ใช่คำพูด"
+  },
+  "p48-1#2": {
+    "type": "narration",
+    "context": ["p48-1"],
+    "reason": "เสียงจูบ/ดูด ไม่ใช่คำพูด"
+  },
+  "p49-1": "netori-shinji",
+  "p50-1": "netori-renka",
+  "p52-1": "netori-shinji",
+  "p53-1": "netori-renka",
+  "p55-1#2": {
+    "type": "narration",
+    "context": ["p55-1"],
+    "reason": "เสียงจูบ/ดูด ไม่ใช่คำพูด"
+  },
+  "p57-1": "netori-renka",
+  "p58-1#2": {
+    "type": "narration",
+    "context": ["p58-1"],
+    "reason": "เสียงเสียดสีจากการกระแทก ไม่ใช่คำพูด"
+  },
+  "p58-1#4": {
+    "type": "narration",
+    "context": ["p58-1"],
+    "reason": "เสียงกระทบจากการหลั่ง ไม่ใช่คำพูด"
+  },
+  "p59-1": "netori-renka",
+  "p61-1#2": {
+    "type": "narration",
+    "context": ["p61-1"],
+    "reason": "เสียงของเหลวหยด ไม่ใช่คำพูด"
+  },
+  "p68-1": "netori-renka",
+  "p72-1#2": {
+    "type": "narration",
+    "context": ["p72-1"],
+    "reason": "เครื่องหมายคำพูดยกคำว่า \"ชอบ\" ที่ชินจิไม่เคยพูดออกมา ไม่ใช่บทสนทนา"
+  },
+  "p72-1#4": {
+    "type": "narration",
+    "context": ["p72-1"],
+    "reason": "เครื่องหมายคำพูดยกคำว่า \"รัก\" ที่ชินจิไม่เคยพูดออกมา ไม่ใช่บทสนทนา"
+  },
+  "p76-1": "netori-miris",
+  "p78-1": "netori-alvin",
+  "p79-1": "netori-miris",
+  "p80-1": "netori-renka",
+  "p81-1": {
+    "type": "narration",
+    "context": ["p80-1", "p81-1", "p82-1"],
+    "reason": "ย่อหน้านี้เป็นบทบรรยายล้วน เครื่องหมายคำพูดที่ค้างจากย่อหน้าก่อนทำให้ seed ตั้งเป็น dialogue"
+  },
+  "p82-1": "netori-alvin",
+  "p83-1": "netori-miris",
+  "p84-1": "netori-renka",
+  "p85-1": {
+    "type": "narration",
+    "context": ["p85-1"],
+    "reason": "บทบรรยายพร้อมเสียงของเหลว \"ทรอ...♡\" ไม่ใช่บทสนทนา"
+  },
+  "p86-1": {
+    "type": "narration",
+    "context": ["p85-1", "p86-1"],
+    "reason": "ย่อหน้านี้เป็นบทบรรยายล้วน เครื่องหมายคำพูดที่ค้างจากย่อหน้าก่อนทำให้ seed ตั้งเป็น dialogue"
+  }
+}

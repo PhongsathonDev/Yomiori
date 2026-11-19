@@ -1,0 +1,36 @@
+{
+  "batch": "b03",
+  "sources": [
+    {
+      "sourceId": "179742",
+      "chapterNo": "12",
+      "mapJsonHash": "1f951ef2a24691290149c4fa107db0991117d63424c18107d13bdc6e1d0180ea",
+      "status": "ready",
+      "dialogue": 44
+    },
+    {
+      "sourceId": "179743",
+      "chapterNo": "13",
+      "mapJsonHash": "4054324eb8922686dbedf1e0f9915b97a9baec5ac5d637279286697ae7c32531",
+      "status": "ready",
+      "dialogue": 52
+    },
+    {
+      "sourceId": "179744",
+      "chapterNo": "14",
+      "mapJsonHash": "ec2c888aff2e7db267a199130555d8e59c6cbc437c53bc74b979fb088c5fac48",
+      "status": "ready",
+      "dialogue": 40
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "179742: p63/p81 quoted \"นายท่าน\" kept narration (address term inside narration); thrust/drip/suck sounds kept narration.",
+    "179742: p34-1 attributed to Haruto and p35-1 to Nanaka from the dinner arrangement around p30-p35; no explicit narration tag.",
+    "179743: p10 quote is Shinji's whisper to Alvin and Miris per the same token's narration; p33-p36 Shinji's whispered lines remain narration because the seed did not mark them DIALOGUE? and assign cannot reclassify unflagged spans.",
+    "179743: \"กึก\" (p49), \"คิวย์น\" (p66/p88/p96/p105), \"กึ้บ\" (p79) and \"ปิ๊บ\" (p96) kept narration as bodily/impact sounds.",
+    "179744: p5/p16/p26/p72 quoted titles, definitions and unspoken words kept narration.",
+    "179744: p78-p80 end with a stray straight quote instead of a closing corner bracket in the source; p78 assigned to Alvin, p79 to Miris, newly speaking p80 to Renka. p81, p85 and p86 are pure narration that the seed treated as dialogue due to the carried quote.",
+    "179744: p25-1 attributed to Shinji by elimination after Miris (p23) and Renka (p24) answered and before the three look at Alvin (p26); no explicit narration tag."
+  ]
+}

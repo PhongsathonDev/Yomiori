@@ -1,0 +1,1398 @@
+{
+  "sourceSha256": "131e56f6e25f905fc6182d24a00f2249f4e6c06f6e780216bc11f64584d72adb",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 158,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        },
+        {
+          "start": 59,
+          "end": 99,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1"
+            ],
+            "reason": "ตรวจบริบท p3-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        },
+        {
+          "start": 99,
+          "end": 141,
+          "type": "narration"
+        },
+        {
+          "start": 141,
+          "end": 178,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p3-1"
+            ],
+            "reason": "ตรวจบริบท p3-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        },
+        {
+          "start": 178,
+          "end": 187,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "ตรวจบริบท p4-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        },
+        {
+          "start": 73,
+          "end": 101,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกหัวข้อ \"เรื่องอาการผิดปกติของเรนกะ\" ในประโยคบรรยาย ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 101,
+          "end": 121,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 92,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1"
+            ],
+            "reason": "ตรวจบริบท p7-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1"
+            ],
+            "reason": "ตรวจบริบท p8-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 122,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 72,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1"
+            ],
+            "reason": "ตรวจบริบท p10-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "ตรวจบริบท p11-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 82,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 108,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 184,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "narration"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกคำว่า \"มังกร\" ในประโยคบรรยาย ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 20,
+          "end": 107,
+          "type": "narration"
+        },
+        {
+          "start": 107,
+          "end": 152,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้ยกคำอธิบายความหมายของ〈มังกรชั้นต่ำ〉 ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "ตรวจบริบท p18-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p19-1"
+            ],
+            "reason": "ตรวจบริบท p19-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p22-1"
+            ],
+            "reason": "ตรวจบริบท p22-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ตรวจบริบท p24-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "คำสรุปหยอก ๆ เรื่องนิสัยอัลวินหลังจากมีริสและเรนกะตอบไปแล้ว ก่อนที่ทั้งสามจะมองอัลวินใน p26 จึงเป็นเสียงของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        },
+        {
+          "start": 59,
+          "end": 73,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p26-1"
+            ],
+            "reason": "เครื่องหมายคำพูดอธิบายสายตาของทั้งสามที่มองอัลวิน ไม่ใช่คำพูดที่เปล่งออกมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 165,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1"
+            ],
+            "reason": "ตรวจบริบท p27-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1"
+            ],
+            "reason": "ตรวจบริบท p29-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 128,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "ตรวจบริบท p30-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "ตรวจบริบท p31-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p32-1"
+            ],
+            "reason": "ตรวจบริบท p32-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 139,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 181,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "ตรวจบริบท p36-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "ตรวจบริบท p37-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 101,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 79,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "ตรวจบริบท p43-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 159,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1"
+            ],
+            "reason": "ตรวจบริบท p45-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 182,
+          "type": "narration"
+        },
+        {
+          "start": 182,
+          "end": 201,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "เสียงในปาก/น้ำลาย ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 201,
+          "end": 211,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 79,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 293,
+          "type": "narration"
+        },
+        {
+          "start": 293,
+          "end": 301,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "เสียงจูบ/ดูด ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "ตรวจบริบท p50-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 212,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 148,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1"
+            ],
+            "reason": "เสียงจูบ/ดูด ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 32,
+          "end": 96,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 228,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "ตรวจบริบท p57-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "narration"
+        },
+        {
+          "start": 68,
+          "end": 79,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "เสียงเสียดสีจากการกระแทก ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 79,
+          "end": 249,
+          "type": "narration"
+        },
+        {
+          "start": 249,
+          "end": 260,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "เสียงกระทบจากการหลั่ง ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 260,
+          "end": 342,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1"
+            ],
+            "reason": "ตรวจบริบท p59-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 165,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 123,
+          "type": "narration"
+        },
+        {
+          "start": 123,
+          "end": 134,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "เสียงของเหลวหยด ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 167,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 108,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 125,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 148,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "ตรวจบริบท p68-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 116,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        },
+        {
+          "start": 59,
+          "end": 64,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1"
+            ],
+            "reason": "เครื่องหมายคำพูดยกคำว่า \"ชอบ\" ที่ชินจิไม่เคยพูดออกมา ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 64,
+          "end": 70,
+          "type": "narration"
+        },
+        {
+          "start": 70,
+          "end": 75,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1"
+            ],
+            "reason": "เครื่องหมายคำพูดยกคำว่า \"รัก\" ที่ชินจิไม่เคยพูดออกมา ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 75,
+          "end": 108,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 125,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1"
+            ],
+            "reason": "ตรวจบริบท p76-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 114,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1"
+            ],
+            "reason": "ตรวจบริบท p78-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p79-1"
+            ],
+            "reason": "ตรวจบริบท p79-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 72,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1"
+            ],
+            "reason": "ตรวจบริบท p80-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 148,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p82-1"
+            ],
+            "reason": "ตรวจบริบท p82-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p83-1"
+            ],
+            "reason": "ตรวจบริบท p83-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1"
+            ],
+            "reason": "ตรวจบริบท p84-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 139,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1"
+            ],
+            "reason": "บทบรรยายพร้อมเสียงของเหลว \"ทรอ...♡\" ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

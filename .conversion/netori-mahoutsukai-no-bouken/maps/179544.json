@@ -1,0 +1,801 @@
+{
+  "sourceSha256": "5e2e873da128f7b42aa99e22918e8ae623ed6f5bda8e980854be8fd69c3fc3a2",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 126,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1"
+            ],
+            "reason": "narration ระบุว่าเสียงทักทายมาจากชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 222,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "ผู้พูดเรียกชาร์ลอตต้าว่า 'เธอ' และถามถึงการไปเดทกับคุณมอร์ส จากนั้นชาร์ลอตต้าตอบรับใน p7-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 81,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "ตอบคำถามของชินจิเรื่องเดทกับคุณมอร์ส และ p8-1 ระบุว่า 'เธอกล่าว' ถึงชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 184,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 144,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 164,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 103,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 131,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "narration ระบุว่าชาร์ลอตต้าเริ่มพูดต่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 162,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ชินจิถามถึงคุณมอร์ส แล้วชาร์ลอตต้าตอบใน p15-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 120,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "ตอบคำถามของชินจิด้วยคำลงท้าย 'ค่ะ' และเล่าถึงคุณมอร์ส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p15-1",
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ชินจิพูดถึง 'เธอ' ที่ยังไม่พอใจ แล้วชาร์ลอตต้าตอบใน p17-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "ตอบรับคำพูดของชินจิและเรียกเขาว่า 'คุณชินจิ'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        },
+        {
+          "start": 61,
+          "end": 68,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'ฝึกฝน' ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 68,
+          "end": 221,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 199,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 186,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "narration"
+        },
+        {
+          "start": 34,
+          "end": 41,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'ฝึกฝน' ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 285,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 183,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 150,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 446,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "narration ระบุว่าชินจิเป็นผู้ถาม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "p32-1 ระบุว่าเป็นเสียงของชาร์ลอตต้าที่คร่อมอยู่บนตัวชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 176,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "เป็นความคิดในใจของชินจิ ('ชินจิแน่ใจแล้ว...หัวเราะอยู่ในใจ') ไม่ได้พูดออกเสียง"
+          }
+        },
+        {
+          "start": 30,
+          "end": 86,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 514,
+          "type": "narration"
+        },
+        {
+          "start": 514,
+          "end": 521,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1"
+            ],
+            "reason": "เครื่องหมายคำพูดใช้เน้นคำว่า 'ฝึกฝน' ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 521,
+          "end": 709,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 76,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p36-1",
+              "p37-1"
+            ],
+            "reason": "คำว่า 'เหมือนกัน' ตอบรับคำว่า 'ดีจัง' ของชาร์ลอตต้าใน p31-1 และ p37-1 เป็นเสียงตอบรับของชาร์ลอตต้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 97,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "'ดีใจจัง' เป็นคำตอบรับคำพูดของชินจิใน p36-1 และ p38-1 เป็นคำพูดของชินจิต่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "ชินจิเป็นผู้กระทำใน p39-1 และเป็นฝ่ายบอกให้ชาร์ลอตต้าเสร็จได้ตามต้องการ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 186,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นเสียงร้องของชาร์ลอตต้าตามที่ p41-1 บรรยายการถึงจุดสุดยอดของเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 241,
+          "type": "narration"
+        },
+        {
+          "start": 241,
+          "end": 260,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "เป็นเสียงจูบ ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 260,
+          "end": 297,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "ชาร์ลอตต้าพูดถึง 'จู๋ของคุณชินจิ' ด้วยคำลงท้าย 'ค่ะ' และชินจิถามต่อใน p43-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "ชินจิถามว่าคนที่ชาร์ลอตต้าชอบคือคุณมอร์สหรือไม่ แล้วเธอตอบใน p44-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 75,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ตอบคำถามของชินจิโดยเรียกเขาว่า 'คุณชินจิ' และใช้คำลงท้าย 'ค่ะ'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "ชินจิพูดถึงตัวเองว่าเป็น 'คู่ฝึกซ้อมของเธอ' แล้วชาร์ลอตต้าร้องตอบใน p46-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "เป็นเสียงร้องของชาร์ลอตต้าเมื่อชินจิยกตัวเธอขึ้นตามที่ p47-1 บรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 148,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "ชินจิถามชาร์ลอตต้าว่าทำต่อได้ไหม แล้วเธอตอบใน p49-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "netori-charlotte",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "ตอบรับคำถามของชินจิด้วย 'ค่ะ' และเรียกเขาว่า 'คุณชินจิ'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        },
+        {
+          "start": 60,
+          "end": 76,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p50-1"
+            ],
+            "reason": "เป็นเสียงกระทบของสะโพก (sound effect) ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 76,
+          "end": 152,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

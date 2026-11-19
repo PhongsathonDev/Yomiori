@@ -1,0 +1,95 @@
+{
+  "p4-1": "netori-shinji",
+  "p5-1": "netori-charlotte",
+  "p7-1": "netori-morse",
+  "p8-1": "netori-charlotte",
+  "p9-1": "netori-morse",
+  "p11-1": "netori-shinji",
+  "p12-1": "netori-morse",
+  "p14-1": {
+    "speakerId": "netori-charlotte",
+    "context": ["p14-1", "p15-1"],
+    "reason": "บริบท p15 เป็นคำตอบของชินจิที่อ้างถึงการกลับไปกินข้าว แสดงว่าผู้พูด p14 คือชาร์ลอตต้าที่กำลังบอกลา"
+  },
+  "p15-1": "netori-shinji",
+  "p16-1": "netori-charlotte",
+  "p17-1": "netori-shinji",
+  "p18-1": "netori-morse",
+  "p21-1": {
+    "speakerId": "netori-charlotte",
+    "context": ["p21-1", "p23-1"],
+    "reason": "p23 บรรยายว่าชาร์ลอตต้ากระซิบข้างหูมอร์ส"
+  },
+  "p22-1": {
+    "speakerId": "netori-morse",
+    "context": ["p21-1", "p22-1", "p23-1"],
+    "reason": "เสียงอุทานของมอร์สผู้ฟังคำกระซิบของชาร์ลอตต้า"
+  },
+  "p24-1": {
+    "speakerId": "netori-morse",
+    "context": ["p24-1", "p25-1"],
+    "reason": "p25 บรรยายว่ามอร์สกอดและจูบชาร์ลอตต้าเมื่อเข้ามาในห้อง"
+  },
+  "p27-1": "netori-morse",
+  "p28-1": "netori-charlotte",
+  "p30-1": {
+    "speakerId": "netori-morse",
+    "context": ["p29-1", "p30-1", "p31-1"],
+    "reason": "p29-1 บรรยายการลูบไล้ของมอร์ส และ p31 เป็นเสียงตอบรับของชาร์ลอตต้า"
+  },
+  "p31-1": "netori-charlotte",
+  "p33-1": {
+    "speakerId": "netori-morse",
+    "context": ["p32-1", "p33-1", "p34-1"],
+    "reason": "p32 บรรยายว่ามอร์สสอดใส่ และ p34 เป็นเสียงตอบรับของชาร์ลอตต้า"
+  },
+  "p34-1": "netori-charlotte",
+  "p35-1#2": {
+    "speakerId": "netori-charlotte",
+    "context": ["p35-1"],
+    "reason": "เสียงครางของชาร์ลอตต้าในช่วงบรรยายการสอดใส่"
+  },
+  "p37-1": "netori-morse",
+  "p38-1": "netori-charlotte",
+  "p40-1": "netori-morse",
+  "p41-1": "netori-charlotte",
+  "p43-1#2": {
+    "speakerId": "netori-charlotte",
+    "context": ["p43-1"],
+    "reason": "เสียงครางของชาร์ลอตต้าขณะรัดช่องคลอดตามที่ประโยคบรรยายระบุว่าเธอเป็นผู้กระทำ"
+  },
+  "p44-1": "netori-morse",
+  "p45-1": "netori-charlotte",
+  "p49-1#2": {
+    "speakerId": "netori-charlotte",
+    "context": ["p49-1"],
+    "reason": "ประโยคบรรยายระบุว่าเป็นคำที่ชาร์ลอตต้าพูดออกมาในอดีต"
+  },
+  "p54-1": "netori-morse",
+  "p55-1": "netori-charlotte",
+  "p56-1": "netori-morse",
+  "p59-1": "netori-morse",
+  "p60-1": "netori-charlotte",
+  "p62-1": "netori-charlotte",
+  "p63-1": "netori-morse",
+  "p68-1": {
+    "speakerId": "netori-charlotte",
+    "context": ["p67-1", "p68-1", "p69-1", "p70-1"],
+    "reason": "ฉากฝึกซ้อมหลังเดท เป็นเสียงครางของชาร์ลอตต้าผู้ถูกฝึก"
+  },
+  "p69-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p4-1", "p67-1", "p68-1", "p69-1", "p70-1"],
+    "reason": "ผู้พูดเรียกชาร์ลอตต้าว่า 'ชาร์ลอตต้าจัง' เหมือนที่ชินจิใช้ใน p4 และ p67 ระบุว่าเทคนิคถูกสอนโดยผู้ชายคนอื่นซึ่งในฉากนี้คือผู้ฝึกที่กำลังสอนชาร์ลอตต้า"
+  },
+  "p70-1": {
+    "speakerId": "netori-charlotte",
+    "context": ["p69-1", "p70-1"],
+    "reason": "คำตอบของชาร์ลอตต้าต่อคำพูดของผู้ฝึกใน p69"
+  },
+  "p73-1": {
+    "type": "narration",
+    "context": ["p73-1"],
+    "reason": "หมายเหตุของผู้เขียนอธิบายความหมายคำศัพท์ ไม่ใช่บทสนทนา"
+  }
+}

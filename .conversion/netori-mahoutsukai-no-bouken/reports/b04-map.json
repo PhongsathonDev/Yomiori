@@ -1,0 +1,46 @@
+{
+  "batch": "b04",
+  "sources": [
+    {
+      "sourceId": "179746",
+      "chapterNo": "15",
+      "mapJsonHash": "625720d8959b9096562a554786fc413f644d37ea54c62203b8b87c859ec280c2",
+      "status": "ready",
+      "dialogue": 34
+    },
+    {
+      "sourceId": "179865",
+      "chapterNo": "16",
+      "mapJsonHash": "57b2d2f66e1c35a958f6a027238e9393483a7bc6fffaa38d657270b80104b772",
+      "status": "ready",
+      "dialogue": 37
+    },
+    {
+      "sourceId": "179866",
+      "chapterNo": "17",
+      "mapJsonHash": "ad5eebb4a6659da68b10a14836287256aabdf52f171781f1df8977795dae5977",
+      "status": "ready",
+      "dialogue": 25
+    },
+    {
+      "sourceId": "179867",
+      "chapterNo": "18",
+      "mapJsonHash": "049dd32e40f2e193b395a57756760404fc0d2b9a113049fe4f4f3e111a5ff1b5",
+      "status": "ready",
+      "dialogue": 25
+    },
+    {
+      "sourceId": "179870",
+      "chapterNo": "19",
+      "mapJsonHash": "ef90aa0eb3de77fbf8739443c9b0334b227b10866429cf65bc10530c28d1a9a5",
+      "status": "ready",
+      "dialogue": 43
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "179746: ภรรยาเจ้าของโรงแรม (p7-1) และแม่ของชาร์ลอตต้า (p13-1) ไม่มีชื่อใน roster จึงใช้ netori-crowd ตามคำอธิบายกลุ่มตัวละครประกอบที่ไม่มีชื่อ",
+    "179866: ต้นฉบับ p63-1 มีเครื่องหมายปิด 」 แต่ขาดเครื่องหมายเปิดหน้าประโยค ('ไม่นะ♡♡ ...♡♡♡」') จึงจัดเป็นคำพูดของมีริสตามบริบทฉาก ไม่ได้แก้ข้อความต้นฉบับ",
+    "reader-web/scripts/conversion-map-assist.mjs มีการประกาศ const byId ซ้ำสองครั้งในฟังก์ชัน cueText (บรรทัด ~92 และ ~94) ทำให้คำสั่ง assign ล้มด้วย SyntaxError; งานนี้รัน assign ผ่านสำเนาชั่วคราวที่ตัดบรรทัดซ้ำออกแล้วและลบสำเนาทิ้ง ไม่ได้แก้ไฟล์สคริปต์จริง"
+  ]
+}

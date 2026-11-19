@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "sourceId": "179743",
+  "sourceSha256": "517796476e7715ed3103e4e0374664561d2c9c602b89c933c8a0fe67f5b74962",
+  "reference": "https://www.nekopost.net/novel/15549/13",
+  "reviewedBy": "OpenCode conversion session (canonical scraper re-fetch)",
+  "note": "ดึงตอนนี้ซ้ำจาก nekopost reader API ด้วย scripts/scrape-nekopost.js --force แล้ว Markdown ที่สร้างตรงกับไฟล์ต้นฉบับเดิมทุกไบต์ (git diff ว่าง)"
+}

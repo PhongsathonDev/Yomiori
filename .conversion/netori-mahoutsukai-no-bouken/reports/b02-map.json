@@ -1,0 +1,33 @@
+{
+  "batch": "b02",
+  "sources": [
+    {
+      "sourceId": "179601",
+      "chapterNo": "9",
+      "mapJsonHash": "6d5687274e597d232e7488491910d381790dd388c18390c2e9d26d1dfe6cb4ab",
+      "status": "ready",
+      "dialogue": 47
+    },
+    {
+      "sourceId": "179603",
+      "chapterNo": "10",
+      "mapJsonHash": "4146e1851995bf18e6f21b0b7261c62d2de7b5793c2ed451b92357e03ed6b340",
+      "status": "ready",
+      "dialogue": 43
+    },
+    {
+      "sourceId": "179740",
+      "chapterNo": "11",
+      "mapJsonHash": "d9deaf25b81edb39de8d3bb44235da5923c771e844b213c6d80ce6cdb9703297",
+      "status": "ready",
+      "dialogue": 50
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "ทั้งสามตอน assign สำเร็จและ status ready (unresolved=0, reviewPending=0)",
+    "179740: เพิ่ม netori-meril ใน speaker-map สำหรับ p6-1, p9-1 และ p11-1 แล้ว assign ผ่านครบ 56 reviewed segments",
+    "179601 p8-1 ยังเป็น netori-crowd เพราะบทที่ 9 ไม่เอ่ยชื่อสาวน้อยเจ้าของโรงแรม; ตอนนี้ roster มี netori-meril แล้วจึง reassign ได้หากต้องการความสม่ำเสมอ",
+    "179740 p75-1 ตีความเป็นเสียงตอบรับของอัลวินจาก permission ใน p74-1 และการขยับสะโพกของอัลวินใน p76-1 เป็นบรรทัดที่มั่นใจน้อยที่สุด"
+  ]
+}

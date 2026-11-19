@@ -1,0 +1,94 @@
+{
+  "p9-1": "netori-shinji",
+  "p11-1": "netori-haruto",
+  "p12-1": "netori-shinji",
+  "p15-1": "netori-haruto",
+  "p16-1": "netori-shinji",
+  "p18-1": "netori-haruto",
+  "p19-1": "netori-shinji",
+  "p20-1": "netori-haruto",
+  "p23-1": "netori-shinji",
+  "p24-1": "netori-nanaka",
+  "p26-1": "netori-shinji",
+  "p27-1": "netori-haruto",
+  "p28-1": "netori-nanaka",
+  "p30-1": "netori-nanaka",
+  "p31-1": "netori-haruto",
+  "p33-1": "netori-shinji",
+  "p34-1": {
+    "speakerId": "netori-haruto",
+    "context": ["p33-1", "p34-1", "p35-1"],
+    "reason": "ปิดท้ายนัดหมายหลังชินจิบอกว่าจะเอาเหล้ามา ต่อด้วยนานากะรับว่าจะเตรียมเนื้อวัว ผู้ที่เอ่ยปากนัดคือฮารุโตะเจ้าของบ้าน"
+  },
+  "p35-1": {
+    "speakerId": "netori-nanaka",
+    "context": ["p34-1", "p35-1"],
+    "reason": "ประโยครับว่าจะเตรียมเนื้อวัวเป็นฝ่ายจัดอาหาร ต่อจากฮารุโตะที่ปิดนัดหมาย"
+  },
+  "p37-1": "netori-haruto",
+  "p38-1": "netori-nanaka",
+  "p42-1": "netori-nanaka",
+  "p43-1": "netori-shinji",
+  "p44-1": "netori-nanaka",
+  "p46-1": "netori-nanaka",
+  "p47-1": "netori-shinji",
+  "p49-1": "netori-nanaka",
+  "p50-1": "netori-shinji",
+  "p52-1": "netori-nanaka",
+  "p54-1": "netori-nanaka",
+  "p55-1": "netori-shinji",
+  "p63-1#2": {
+    "type": "narration",
+    "context": ["p63-1"],
+    "reason": "คำว่า \"นายท่าน\" ในเครื่องหมายคำพูดเป็นคำเรียกตัวชินจิในประโยคบรรยาย ไม่ใช่คำพูดที่เปล่งออกมา"
+  },
+  "p64-1": "netori-nanaka",
+  "p65-1": "netori-shinji",
+  "p67-1": "netori-shinji",
+  "p68-1": "netori-nanaka",
+  "p69-1#2": {
+    "type": "narration",
+    "context": ["p69-1"],
+    "reason": "เสียงเอฟเฟกต์การหลั่ง ไม่ใช่คำพูด"
+  },
+  "p72-1": "netori-shinji",
+  "p73-1": "netori-nanaka",
+  "p75-1": "netori-shinji",
+  "p76-1": "netori-nanaka",
+  "p78-1": "netori-nanaka",
+  "p80-1#2": {
+    "type": "narration",
+    "context": ["p80-1"],
+    "reason": "เสียงกระทบจากการกระแทก ไม่ใช่คำพูด"
+  },
+  "p81-1#2": {
+    "type": "narration",
+    "context": ["p81-1"],
+    "reason": "คำว่า \"นายท่าน\" ในเครื่องหมายคำพูดเป็นคำเรียกตัวชินจิในประโยคบรรยาย ไม่ใช่คำพูดที่เปล่งออกมา"
+  },
+  "p81-1#4": {
+    "type": "narration",
+    "context": ["p81-1"],
+    "reason": "เสียงจูบ/ดูด ไม่ใช่คำพูด"
+  },
+  "p82-1": "netori-shinji",
+  "p83-1": "netori-nanaka",
+  "p85-1#2": {
+    "type": "narration",
+    "context": ["p85-1"],
+    "reason": "เสียงกระทบของร่างกาย ไม่ใช่คำพูด"
+  },
+  "p85-1#4": {
+    "type": "narration",
+    "context": ["p85-1"],
+    "reason": "เสียงเสียดสี/ของเหลว ไม่ใช่คำพูด"
+  },
+  "p87-1": "netori-nanaka",
+  "p88-1#2": {
+    "type": "narration",
+    "context": ["p88-1"],
+    "reason": "เสียงจูบทำความสะอาด ไม่ใช่คำพูด"
+  },
+  "p89-1": "netori-shinji",
+  "p90-1": "netori-nanaka"
+}

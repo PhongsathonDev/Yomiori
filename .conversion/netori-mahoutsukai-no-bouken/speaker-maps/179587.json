@@ -1,0 +1,92 @@
+{
+  "p6-1": "netori-renka",
+  "p7-1": "netori-shinji",
+  "p9-1": "netori-renka",
+  "p10-1": "netori-shinji",
+  "p12-1": "netori-renka",
+  "p13-1": "netori-shinji",
+  "p14-1": "netori-renka",
+  "p16-1": "netori-shinji",
+  "p17-1": "netori-renka",
+  "p18-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p17-1", "p18-1", "p19-1"],
+    "reason": "p17 ให้ข้อมูลว่าเป็นวันว่างของเรนกะ แล้ว p18 เป็นการขอให้ช่วยเลือกของขวัญ ซึ่ง p19 ตอบรับเรื่องมื้อกลางวันโดยเรียกผู้พูดว่าชินจิ"
+  },
+  "p19-1": "netori-renka",
+  "p20-1": "netori-shinji",
+  "p23-1": "netori-renka",
+  "p24-1": "netori-shinji",
+  "p25-1": "netori-renka",
+  "p28-1": "netori-shinji",
+  "p29-1": "netori-renka",
+  "p30-1": "netori-shinji",
+  "p32-1": "netori-shinji",
+  "p33-1": "netori-renka",
+  "p34-1": "netori-shinji",
+  "p36-1": "netori-renka",
+  "p37-1": "netori-shinji",
+  "p38-1": "netori-renka",
+  "p39-1#2": {
+    "type": "narration",
+    "context": ["p39-1"],
+    "reason": "ข้อความในเครื่องหมายคำพูดคือแววตาตำหนิของเรนกะที่บรรยายว่า 'เหมือนจะตำหนิว่า' ไม่ได้พูดออกมา"
+  },
+  "p39-1#4": {
+    "type": "narration",
+    "context": ["p39-1"],
+    "reason": "ข้อความในเครื่องหมายคำพูดคือสีหน้าประหลาดใจของชินจิที่บรรยายว่า 'ราวกับว่า' ไม่ได้พูดออกมา"
+  },
+  "p42-1": "netori-renka",
+  "p43-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p41-1", "p42-1", "p43-1", "p44-1"],
+    "reason": "ชายสองคนที่เข้ามาจีบเรนกะโดยไม่ระบุชื่อ ใช้ ID เสียงของผู้คนและตัวละครประกอบที่ไม่มีชื่อ"
+  },
+  "p44-1": {
+    "speakerId": "netori-crowd",
+    "context": ["p43-1", "p44-1", "p45-1"],
+    "reason": "ชายคนที่สองในกลุ่มชายสองคนที่เข้ามาจีบเรนกะตามที่ p45 บรรยาย"
+  },
+  "p47-1": "netori-shinji",
+  "p51-1": "netori-shinji",
+  "p52-1": "netori-renka",
+  "p54-1": "netori-shinji",
+  "p58-1": "netori-renka",
+  "p59-1": "netori-shinji",
+  "p66-1": "netori-shinji",
+  "p68-1": "netori-renka",
+  "p69-1": "netori-shinji",
+  "p71-1#2": {
+    "type": "narration",
+    "context": ["p71-1"],
+    "reason": "เป็นความคิดในใจของเรนกะ ('เธอก็คิดขึ้นมาว่า') ไม่ได้พูดออกมา"
+  },
+  "p72-1": {
+    "speakerId": "netori-renka",
+    "context": ["p71-1", "p72-1", "p73-1"],
+    "reason": "p73 บรรยายว่าเป็นคำที่หลุดออกมาจากปากเรนกะ"
+  },
+  "p73-1#2": {
+    "type": "narration",
+    "context": ["p73-1"],
+    "reason": "เป็นความคิดอุทานในใจของเรนกะ ('เธอคิด') ไม่ได้พูดออกมา"
+  },
+  "p74-1": "netori-shinji",
+  "p75-1#1": {
+    "type": "narration",
+    "context": ["p75-1"],
+    "reason": "ข้อความในเครื่องหมายคำพูดตามด้วย 'เรนกะคิด' เป็นความคิดในใจ ไม่ได้พูดออกมา"
+  },
+  "p76-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p74-1", "p76-1", "p77-1", "p78-1"],
+    "reason": "p74 ชินจิเป็นผู้ขอบคุณ แล้ว p76 กล่าวลาก่อน p78 บรรยายว่าชินจิเดินจากไป ส่วน p77 เป็นคำตอบรับของเรนกะ"
+  },
+  "p77-1": "netori-renka",
+  "p79-1#2": {
+    "type": "narration",
+    "context": ["p79-1"],
+    "reason": "เป็นคำถามที่เรนกะฉุกคิดขึ้นมาในใจ ('เธอก็ฉุกคิดขึ้นมาว่า') ไม่ได้พูดออกมา"
+  }
+}

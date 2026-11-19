@@ -1,0 +1,1486 @@
+{
+  "sourceSha256": "713ce4a041c91fa6bf926e3d5b7a0fa34709a9e09eef77eef7d4ebcc03e10cd8",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 143,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p7-1"
+            ],
+            "reason": "มีริสเป็นผู้ทักทายเมริล เจ้าของโรงแรมตาม p7-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "dialogue",
+          "speakerId": "netori-meril",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1",
+              "p7-1"
+            ],
+            "reason": "p7-1 ระบุว่าเมริลเป็นผู้ตอบรับคำทักทายและถามด้วยความเป็นห่วง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1",
+              "p9-1"
+            ],
+            "reason": "มีริสถามเมริลต่อเรื่องคนที่พากลับห้อง และ p9-1 เมริลตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 94,
+          "type": "dialogue",
+          "speakerId": "netori-meril",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "เมริลตอบคำถามของมีริสเรื่องคนที่พาเธอและเรนกะกลับห้อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 161,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 78,
+          "type": "dialogue",
+          "speakerId": "netori-meril",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p11-1",
+              "p12-1"
+            ],
+            "reason": "เมริลแจ้งข้อความที่เรนกะฝากไว้ และ p12-1 มีริสกล่าวขอบคุณ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "มีริสกล่าวขอบคุณเมริลตาม p13-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "มีริสเรียกอัลวินที่หน้าห้อง และ p15-1 อัลวินตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p14-1",
+              "p15-1",
+              "p16-1"
+            ],
+            "reason": "อัลวินตอบจากในห้อง และ p16-1 มีริสขออนุญาตเข้าไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1"
+            ],
+            "reason": "มีริสขออนุญาตเข้าไปก่อน p17-1 บรรยายว่าเธอเข้าไปในห้อง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 173,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "มีริสขอโทษและขอบคุณอัลวินเรื่องเมื่อคืน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "อัลวินตอบรับและขอโทษกลับ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1"
+            ],
+            "reason": "มีริสถามข่าวเรนกะจากอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p23-1"
+            ],
+            "reason": "อัลวินตอบว่าไม่ได้ยินอะไร และ p23-1 ระบุว่าเขาไม่กังวล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 133,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1",
+              "p25-1"
+            ],
+            "reason": "มีริสสรุปตามอัลวินและเอ่ยถึงข้อความที่เรนกะฝากไว้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1",
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "อัลวินเปลี่ยนเรื่องถึงการที่เรนกะไม่อยู่ และ p26-1 มีริสเรียกเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1",
+              "p27-1"
+            ],
+            "reason": "มีริสเรียกอัลวินด้วยความสงสัยก่อน p27-1 เขากอดเธอ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 131,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p29-1"
+            ],
+            "reason": "อัลวินกอดมีริสแล้วพูดว่า 'มี่' และ p29-1 มีริสตกใจ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1",
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "มีริสอุทานตกใจหลังได้ยินคำขอของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "narration"
+        },
+        {
+          "start": 21,
+          "end": 28,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "เป็นเสียง/อาการประกอบ (sound effect) ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 28,
+          "end": 149,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 102,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1",
+              "p31-1",
+              "p32-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอแต่งงานและชวนมีเซ็กส์ และ p32-1 มีริสตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 56,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "มีริสตอบรับคำขอแต่งงานของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "narration"
+        },
+        {
+          "start": 30,
+          "end": 81,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "narration ระบุว่ามีริสเป็นผู้บ่นพึมพำ"
+          }
+        },
+        {
+          "start": 81,
+          "end": 139,
+          "type": "narration"
+        },
+        {
+          "start": 139,
+          "end": 148,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "narration ระบุว่าอัลวินทำหน้าลำบากใจและเอ่ย 'เอ๋~'"
+          }
+        },
+        {
+          "start": 148,
+          "end": 189,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 88,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 85,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 102,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "อัลวินเป็นผู้เริ่มก่อนจูบ และ p38-1 มีริสตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1",
+              "p39-1"
+            ],
+            "reason": "มีริสตอบรับการจูบของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 84,
+          "type": "narration"
+        },
+        {
+          "start": 84,
+          "end": 91,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1"
+            ],
+            "reason": "เป็นเสียงกอด/สัมผัส (sound effect) ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 91,
+          "end": 181,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1"
+            ],
+            "reason": "เป็นเสียงจูบ ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 94,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1",
+              "p42-1",
+              "p43-1"
+            ],
+            "reason": "อัลวินเป็นผู้ขอถอดเสื้อผ้า และ p43-1 มีริสอนุญาต"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "มีริสตอบอนุญาตอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 140,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1",
+              "p45-1",
+              "p46-1"
+            ],
+            "reason": "มีริสบอกว่าอายเมื่ออัลวินมองหน้าอก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 153,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "อัลวินปลอบมีริสว่าสวยงาม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        },
+        {
+          "start": 80,
+          "end": 93,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "เป็นเสียงสัมผัสหน้าอก (sound effect) ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 93,
+          "end": 236,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1",
+              "p49-1",
+              "p50-1"
+            ],
+            "reason": "มีริสพูดถึงมือของอัลวิน และ p50-1 อัลวินตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1",
+              "p50-1",
+              "p51-1"
+            ],
+            "reason": "อัลวินชมหน้าอกมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 196,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p51-1",
+              "p52-1",
+              "p53-1"
+            ],
+            "reason": "มีริสบอกว่าหน้าอกรู้สึกดี และ p53-1 ระบุว่าเสียงออดอ้อนของเธอทำให้อัลวินตื่นเต้น"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 146,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1",
+              "p54-1",
+              "p55-1"
+            ],
+            "reason": "อัลวินถามถึงช่องส่วนลับของมีริส และ p55-1 เขาสัมผัส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 173,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "มีริสตอบความรู้สึกเมื่อถูกสัมผัส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 190,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 133,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 92,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 129,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1",
+              "p62-1",
+              "p63-1"
+            ],
+            "reason": "อัลวินบอกว่ารักมีริสก่อนสอดใส่ และ p63-1 เธอตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "มีริสตอบว่ารักอัลคุง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 164,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p64-1",
+              "p65-1",
+              "p66-1"
+            ],
+            "reason": "มีริสร้องว่าเจ็บเมื่อถูกสอดใส่ และ p66-1 อัลวินขอโทษ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1",
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "อัลวินขอโทษและถามว่าไม่เป็นไรใช่ไหม"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 216,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1",
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "มีริสบอกให้ทำจนสุด และ p69-1 อัลวินตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1",
+              "p70-1"
+            ],
+            "reason": "อัลวินตอบรับและขอโทษก่อนกระแทก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 119,
+          "type": "narration"
+        },
+        {
+          "start": 119,
+          "end": 125,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "เป็นเสียงกระแทก (sound effect) ไม่ใช่บทสนทนา"
+          }
+        },
+        {
+          "start": 125,
+          "end": 222,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1",
+              "p71-1",
+              "p72-1"
+            ],
+            "reason": "อัลวินอุทานว่าเข้าไปแล้วหลังทำลายเยื่อพรหมจารี"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1",
+              "p72-1",
+              "p73-1"
+            ],
+            "reason": "มีริสอุทานถามตามอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 170,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "มีริสบอกอัลวินว่าขยับได้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1",
+              "p76-1"
+            ],
+            "reason": "p74-1 มีริสอนุญาตให้ขยับ และ p76-1 ระบุว่าอัลวินเป็นผู้เริ่มขยับสะโพก เสียงตอบรับสั้นนี้จึงเป็นการตอบรับของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p76-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 149,
+          "type": "narration"
+        },
+        {
+          "start": 149,
+          "end": 169,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p76-1"
+            ],
+            "reason": "narration ระบุว่าเป็นเสียงของอัลวินขณะขยับสะโพก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p77-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 216,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p78-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p77-1",
+              "p78-1",
+              "p79-1"
+            ],
+            "reason": "อัลวินร้องว่าจะหลั่ง และ p79-1 มีริสตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p79-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p78-1",
+              "p79-1",
+              "p80-1"
+            ],
+            "reason": "มีริสพูดถึงของอัลคุงที่ออกมา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p80-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 164,
+          "type": "narration"
+        },
+        {
+          "start": 164,
+          "end": 177,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1"
+            ],
+            "reason": "เป็นเสียงหลั่ง (sound effect) ไม่ใช่บทสนทนา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p81-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p80-1",
+              "p81-1",
+              "p82-1"
+            ],
+            "reason": "อัลวินขอโทษที่รู้สึกดีคนเดียว และ p82-1 มีริสตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p82-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p81-1",
+              "p82-1",
+              "p83-1"
+            ],
+            "reason": "มีริสตอบว่าช่วงท้ายเธอก็รู้สึกดี"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p83-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 109,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p84-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 119,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p85-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p84-1",
+              "p85-1",
+              "p86-1"
+            ],
+            "reason": "อัลวินบอกว่ารักมีริส และ p86-1 เธอตอบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p86-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p85-1",
+              "p86-1",
+              "p87-1"
+            ],
+            "reason": "มีริสตอบว่ารักอัลคุง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p87-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p88-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

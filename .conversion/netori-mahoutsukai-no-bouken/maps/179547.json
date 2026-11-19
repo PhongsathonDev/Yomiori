@@ -1,0 +1,791 @@
+{
+  "sourceSha256": "5d5b7845257d7431b2d10cb731135317377ab759fe0425dc96251e764d77afa0",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 55,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 143,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p6-1"
+            ],
+            "reason": "ผู้พูดกำหนดลำดับการเดินและ p6-1 ระบุว่าเรนกะเริ่มเดินนำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1",
+              "p5-1",
+              "p6-1"
+            ],
+            "reason": "เครื่องหมายคำพูดสามชั้นแสดงว่าสมาชิกทั้งสามตอบพร้อมกัน ใช้เสียงหมู่ของปาร์ตี้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 141,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 401,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "เป็นคำถามห่วงใยเรื่องให้ชินจิถือถุง ถามถึงชินจิเป็นบุคคลที่สามและถามเรนกะผู้ดูแลถุง ส่วนอัลวินพูดกับเรนกะแบบกันเองใน p13-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 75,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ตอบคำถามใน p8-1 โดยให้เหตุผลว่าควรให้เรนเจอร์เคลื่อนไหวคล่องตัว แล้ว p10-1 ระบุว่าชินจิเป็นผู้หยุดเรนกะและอธิบายเหตุผล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 111,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 162,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 52,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p12-1",
+              "p13-1"
+            ],
+            "reason": "เป็นเรนกะที่พูดถึงประโยชน์ของการไม่ต้องถือถุงตอนยิงธนู และ p13-1 อัลวินตอบกลับโดยเรียกชื่อเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p15-1"
+            ],
+            "reason": "อัลวินตอบเรนกะว่า 'ถ้าเธอบอกฉันก็ถือให้ได้นะ' และ p15-1 ตอบกลับว่า 'นายน่ะเป็นแนวหน้านี่นา'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 50,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ผู้พูดเรียกเรนกะว่า 'เรนกะจัง' และ p15-1 ตอบกลับถึง 'มี่'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 111,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p15-1"
+            ],
+            "reason": "ตอบอัลวินและมีริสโดยเรียกตัวเองว่า 'ฉันเอง' และอธิบายว่าเป็นคนไม่ยอมให้มีริสถือถุง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 195,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 104,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1",
+              "p17-1",
+              "p18-1"
+            ],
+            "reason": "p18-1 ระบุว่า 'เมื่อชินจิพูดด้วยน้ำเสียงสบายๆ' และเรนกะเป็นผู้ฟัง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 144,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 72,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p19-1",
+              "p20-1"
+            ],
+            "reason": "เรนกะตอบรับคำพูดของชินจิ และ p20-1 ระบุว่า 'พูดจบเธอ...เดินต่อ'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 64,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p24-1"
+            ],
+            "reason": "p24-1 ระบุว่าอัลวินกับมีริสกำลังกระซิบกระซาบกัน และอัลวินเป็นคนแกล้งเรนกะ ส่วน p22-1 เป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p24-1"
+            ],
+            "reason": "อยู่ในบทกระซิบของอัลวินและมีริสตาม p24-1 โดยคำว่า 'เรนกะจัง' เป็นสรรพนามของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1",
+              "p24-1"
+            ],
+            "reason": "p24-1 ระบุว่าชินจิเป็นผู้เร่งอัลวินและมีริสที่กำลังกระซิบกัน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 205,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "narration ระบุว่าอัลวินเป็นผู้พูดชวนพัก"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 92,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1",
+              "p31-1"
+            ],
+            "reason": "ใช้ 'ครับ' และเรียก 'คุณชินจิ' ตามแบบอัลวิน ชินจิขอให้ตรวจถุงอีกครั้งใน p28-1 แล้ว p31-1 ระบุว่าอัลวินเป็นผู้ตรวจของในถุง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 122,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "ตอบคำถามของอัลวินเรื่องจำนวนหินเวทมนตร์ที่เก็บได้"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p31-1"
+            ],
+            "reason": "p31-1 ระบุว่ามีริสเป็นผู้เตรียมน้ำและเสบียงให้ทุกคน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1",
+              "p31-1"
+            ],
+            "reason": "ผู้พูดขอบคุณ 'มี่' และ p31-1 ระบุว่าอัลวินรับน้ำและอาหารไปอย่างรวดเร็ว"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 241,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1",
+              "p32-1",
+              "p33-1"
+            ],
+            "reason": "p31-1 ลงท้ายด้วยการกระทำของชินจิ และ p33-1 ระบุว่า 'เขาอาสาที่จะเฝ้ายาม'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p35-1"
+            ],
+            "reason": "p33-1 ระบุว่าเรนกะแย้งทันที แล้วชินจิตอบใน p35-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 49,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p34-1",
+              "p35-1",
+              "p36-1"
+            ],
+            "reason": "ชินจิตอบข้อแย้งของเรนกะและ p36-1 ระบุว่าเรนกะตัดสินใจตอบกลับ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 199,
+          "type": "narration"
+        },
+        {
+          "start": 199,
+          "end": 217,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1"
+            ],
+            "reason": "narration ระบุตรงๆ ว่า 'เรนกะก็ตอบว่า'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่าชินจิเป็นผู้เดินแยกออกไปหลังพูดจบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 72,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "p40-1 ระบุว่ามีริสหันไปขอโทษเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1",
+              "p41-1",
+              "p42-1"
+            ],
+            "reason": "เรนกะตอบมีริสว่าไม่เป็นไรและเรียกเธอว่า 'มี่'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 126,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 92,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1",
+              "p43-1",
+              "p44-1"
+            ],
+            "reason": "p42-1 ระบุว่าอัลวินทำหน้าเสียใจ แล้ว p44-1 เรนกะพูดว่า 'แม้แต่อัล...'"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1",
+              "p44-1",
+              "p45-1"
+            ],
+            "reason": "ผู้พูดเรียกอัลวินว่า 'อัล' และ p45-1 ระบุว่าทั้งสองพยักหน้ารับคำพูดที่หลุดจากเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1",
+              "p46-1",
+              "p47-1"
+            ],
+            "reason": "อัลวินเป็นผู้ตอบแทนทั้งสองคนว่าพวกเขาจะทำเท่าที่ทำได้ หลังทั้งสองพยักหน้าใน p45-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 125,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1",
+              "p47-1",
+              "p48-1"
+            ],
+            "reason": "มีริสชื่นชมความเป็นผู้ใหญ่ของชินจิ และ p48-1 เรนกะตอบกลับ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1",
+              "p48-1",
+              "p49-1"
+            ],
+            "reason": "p49-1 ระบุว่าเรนกะหันหน้าหนีและพ่นลมหายใจหลังพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 103,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

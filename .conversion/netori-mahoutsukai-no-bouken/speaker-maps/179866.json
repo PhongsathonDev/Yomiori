@@ -1,0 +1,128 @@
+{
+  "p4-1#2": {
+    "speakerId": "netori-emily",
+    "context": ["p4-1"],
+    "reason": "narration ยกคำทักทายของเอมิลี่ที่มาถึงงานเลี้ยงมาใส่เครื่องหมายคำพูด"
+  },
+  "p5-1#2": {
+    "speakerId": "netori-shinji",
+    "context": ["p5-1"],
+    "reason": "narration ระบุว่าชินจิพยายามโน้มน้าวว่า 'จะรบกวนทางโรงแรม!'"
+  },
+  "p6-1#1": {
+    "speakerId": "netori-party",
+    "context": ["p6-1"],
+    "reason": "เป็นเสียงประสานของการเริ่มงานเลี้ยงที่ทุกคนพูดพร้อมกัน"
+  },
+  "p12-1": {
+    "speakerId": "netori-miris",
+    "context": ["p10-1", "p12-1", "p14-1"],
+    "reason": "มีริสเรียกอัลวินว่า 'อัลคุง' และ p14-1 ระบุว่าเธอเข้าใจผิดว่าคนที่กอดคืออัลวิน"
+  },
+  "p16-1#2": {
+    "type": "narration",
+    "context": ["p16-1"],
+    "reason": "เป็นเสียงของร่างกาย (sound effect) ไม่ใช่คำพูด"
+  },
+  "p17-1": "netori-miris",
+  "p21-1": "netori-miris",
+  "p24-1": "netori-miris",
+  "p28-1": "netori-shinji",
+  "p29-1": {
+    "speakerId": "netori-miris",
+    "context": ["p29-1", "p30-1"],
+    "reason": "p30-1 ระบุว่ามีริสรู้ตัวว่ามือที่ทำให้เธอรู้สึกดีไม่ใช่ของอัลวิน แต่เป็นของชินจิ"
+  },
+  "p30-1#2": {
+    "type": "narration",
+    "context": ["p30-1"],
+    "reason": "เป็นเสียงของการสอดใส่ (sound effect) ไม่ใช่คำพูด"
+  },
+  "p31-1#1": {
+    "type": "narration",
+    "context": ["p31-1"],
+    "reason": "เป็นเสียงของการสอดใส่ (sound effect) ไม่ใช่เสียงพูดของตัวละคร"
+  },
+  "p33-1#2": {
+    "type": "narration",
+    "context": ["p33-1"],
+    "reason": "เป็นเสียงสัมผัสของปากมดลูกกับปลายอวัยวะเพศ (sound effect) ไม่ใช่คำพูด"
+  },
+  "p35-1": {
+    "speakerId": "netori-miris",
+    "context": ["p35-1", "p36-1", "p38-1"],
+    "reason": "เป็นคำถามของมีริสที่กำลังเหม่อลอย และ p38-1 ระบุว่าชินจิกระซิบตอบมีริส"
+  },
+  "p36-1": {
+    "speakerId": "netori-shinji",
+    "context": ["p36-1", "p38-1"],
+    "reason": "p38-1 ระบุว่าชินจิกระซิบกับมีริสว่าเธอเป็นคนชวนเอง"
+  },
+  "p37-1": "netori-miris",
+  "p40-1": "netori-miris",
+  "p41-1#2": {
+    "type": "narration",
+    "context": ["p41-1"],
+    "reason": "เป็นเสียงบีบ (sound effect) ไม่ใช่คำพูด"
+  },
+  "p41-1#4": {
+    "type": "narration",
+    "context": ["p41-1"],
+    "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p41-1#6": {
+    "type": "narration",
+    "context": ["p41-1"],
+    "reason": "เป็นเสียงกระทบของสะโพก (sound effect) ไม่ใช่คำพูด"
+  },
+  "p42-1": "netori-shinji",
+  "p43-1": "netori-miris",
+  "p44-1": "netori-shinji",
+  "p45-1": "netori-miris",
+  "p46-1#2": {
+    "type": "narration",
+    "context": ["p46-1"],
+    "reason": "เป็นเสียงของการดันอวัยวะเพศเข้าไป (sound effect) ไม่ใช่คำพูด"
+  },
+  "p49-1": "netori-miris",
+  "p52-1#2": {
+    "type": "narration",
+    "context": ["p52-1"],
+    "reason": "เป็นเสียงกระทบของสะโพก (sound effect) ไม่ใช่คำพูด"
+  },
+  "p53-1": {
+    "speakerId": "netori-miris",
+    "context": ["p52-1", "p53-1", "p54-1"],
+    "reason": "เป็นเสียงครางของมีริสเมื่อถึงจุดสุดยอดตามที่ p54-1 บรรยาย"
+  },
+  "p56-1#2": {
+    "type": "narration",
+    "context": ["p56-1"],
+    "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p56-1#4": {
+    "type": "narration",
+    "context": ["p56-1"],
+    "reason": "เป็นเสียงของน้ำอสุจิที่ไหลออกมา (sound effect) ไม่ใช่คำพูด"
+  },
+  "p57-1": "netori-shinji",
+  "p58-1": "netori-miris",
+  "p61-1": "netori-miris",
+  "p62-1": "netori-shinji",
+  "p63-1": {
+    "type": "dialogue",
+    "speakerId": "netori-miris",
+    "context": ["p62-1", "p63-1", "p64-1"],
+    "reason": "มีเครื่องหมายปิดคำพูด 」 แต่ต้นฉบับขาดเครื่องหมายเปิด เป็นเสียงครางและคำพูดของมีริสต่อเนื่องจากฉาก และ p64-1 บรรยายการกระทำกับมีริสต่อ"
+  },
+  "p67-1#2": {
+    "type": "narration",
+    "context": ["p67-1"],
+    "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+  },
+  "p68-1": {
+    "speakerId": "netori-miris",
+    "context": ["p68-1", "p69-1"],
+    "reason": "เป็นเสียงครางของมีริสเมื่อหลั่งครั้งที่สองตามที่ p69-1 บรรยาย"
+  }
+}

@@ -1,0 +1,1159 @@
+{
+  "sourceSha256": "ca5e08b3be9ce44fb2a9066e46a4a6fd9177ee53ae2d22d6aeb1df98fec2889e",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p2-1",
+              "p3-1"
+            ],
+            "reason": "p3-1 ระบุว่าอัลวินหน้าซีดเผือดด้วยอาการเมาค้างและค่อยๆ ดื่มน้ำ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "ตรวจบริบท p5-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1",
+              "p6-1",
+              "p8-1"
+            ],
+            "reason": "ตอบคำถามของมีริสใน p5-1 เรื่องอาการของอัลคุง และ p8-1 กล่าวถึงเรนกะแยกจากอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p7-1",
+              "p8-1"
+            ],
+            "reason": "มีริสเรียกเรนกะว่า 'เรนกะจัง' และ p8-1 บรรยายว่าเรนกะก็มีหน้าตาไม่สู้ดี"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p8-1",
+              "p9-1",
+              "p10-1"
+            ],
+            "reason": "ต่อจาก p8-1 ที่บรรยายอาการของเรนกะ เป็นคำตำหนิเอมิลี่ว่าได้ห้ามไว้แล้ว ก่อน p10-1 บรรยายว่าชินจิรินน้ำให้ทั้งสองอย่างสำนึกผิด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 71,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 59,
+          "type": "narration"
+        },
+        {
+          "start": 59,
+          "end": 88,
+          "type": "dialogue",
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p11-1"
+            ],
+            "reason": "narration ยกคำพูดลาของเอมิลี่ที่บอกว่ามีเควสต์ต้องไปทำ"
+          }
+        },
+        {
+          "start": 88,
+          "end": 128,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 40,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p9-1",
+              "p12-1"
+            ],
+            "reason": "เป็นคำตอบรับคำตำหนิเรื่องเหล้าของเรนกะใน p9-1 แล้วยังชมว่าเหล้าอร่อย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 105,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p12-1",
+              "p13-1",
+              "p14-1"
+            ],
+            "reason": "พูดต่อเนื่องจาก p12-1 เรื่องรสชาติเหล้า โดยระบุราคาและว่าตนซื้อมาเก็บไว้เพราะชอบมานาน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p13-1",
+              "p14-1",
+              "p17-1"
+            ],
+            "reason": "เป็นคำรับเรื่องราคาเหล้า ก่อนมีริสถามชินจิเรื่องค่าใช้จ่ายใน p17-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 73,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 80,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่ามีริสถามชินจิด้วยความกังวล"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p18-1",
+              "p19-1"
+            ],
+            "reason": "p19-1 ระบุว่าชินจิส่ายหน้าและตอบเรื่องค่าเหล้า"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 45,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 116,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 47,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p24-1"
+            ],
+            "reason": "เป็นคนที่เมาค้างหนักที่สุดและขอลาไปพักเงียบๆ ในห้อง ก่อน p24-1 บรรยายว่าทั้งสองคนลุกขึ้นอย่างโซซัดโซเซ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1",
+              "p22-1",
+              "p24-1"
+            ],
+            "reason": "เป็นคำตอบสั้นๆ ของเรนกะที่เมาค้างเช่นกัน ต่อจากอัลวินใน p21-1 และ p24-1 ระบุว่าทั้งสองคนเดินไปยังห้องของตัวเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 35,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p23-1"
+            ],
+            "reason": "ตรวจบริบท p23-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 126,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p25-1",
+              "p26-1"
+            ],
+            "reason": "p26-1 ระบุว่าชินจิพูดกับแผ่นหลังของทั้งสามคนแล้วเดินออกไปในเมือง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 54,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p27-1",
+              "p28-1"
+            ],
+            "reason": "p28-1 ระบุว่าชินจิออกมาในเมืองแล้วไม่มีอะไรจะทำ จึงว่างเกินไป"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 139,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 61,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 69,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 93,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1",
+              "p34-1",
+              "p36-1"
+            ],
+            "reason": "p36-1 ระบุว่าชินจิเก็บผักขึ้นมาแล้วเรียกอากาเนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1"
+            ],
+            "reason": "ตรวจบริบท p35-1 แล้ว จัดประเภทเป็นคำพูดของอากาเนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 213,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 104,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1"
+            ],
+            "reason": "ตรวจบริบท p38-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "type": "dialogue",
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p38-1",
+              "p39-1",
+              "p40-1"
+            ],
+            "reason": "อากาเนะทวนชื่อ 'เรนกะ' หลังจากชินจิเอ่ยชื่อปาร์ตี้ของเขา"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "ตรวจบริบท p41-1 แล้ว จัดประเภทเป็นคำพูดของอากาเนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 318,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 84,
+          "type": "dialogue",
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "ตรวจบริบท p43-1 แล้ว จัดประเภทเป็นคำพูดของอากาเนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "ตรวจบริบท p44-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 156,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "ตรวจบริบท p46-1 แล้ว จัดประเภทเป็นคำพูดของอากาเนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 135,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p47-1"
+            ],
+            "reason": "ตรวจบริบท p47-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "dialogue",
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p48-1"
+            ],
+            "reason": "ตรวจบริบท p48-1 แล้ว จัดประเภทเป็นคำพูดของอากาเนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "dialogue",
+          "speakerId": "netori-agane",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "ตรวจบริบท p52-1 แล้ว จัดประเภทเป็นคำพูดของอากาเนะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p53-1"
+            ],
+            "reason": "ตรวจบริบท p53-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 58,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 34,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p55-1",
+              "p56-1",
+              "p57-1"
+            ],
+            "reason": "p57-1 ระบุว่าคนที่ตกใจที่สุดเมื่อได้ยินเรื่องอากาเนะคือเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "ตรวจบริบท p56-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 182,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 41,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1",
+              "p58-1",
+              "p59-1"
+            ],
+            "reason": "เป็นคำถามต่อจากอาการตกใจของเรนกะ และ p59-1 เป็นคำอธิบายสถานการณ์ของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 191,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p60-1"
+            ],
+            "reason": "p60-1 ระบุว่าเรนกะอธิบายสถานการณ์พร้อมแฝงความโกรธ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 60,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 260,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p59-1",
+              "p64-1",
+              "p66-1"
+            ],
+            "reason": "เป็นคำถามถึงเรนกะโดยเรียก 'เรนกะจัง' ซึ่งเป็นสรรพนามที่มีริสใช้เรียกเรนกะ แล้วเรนกะตอบใน p66-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p65-1"
+            ],
+            "reason": "ตรวจบริบท p65-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 67,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p66-1",
+              "p67-1"
+            ],
+            "reason": "เป็นคำตอบของเรนกะที่เรียกอัลวินว่า 'อัล' และขอหยุดอีกวัน ซึ่งอัลวินตอบรับใน p67-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "ตรวจบริบท p67-1 แล้ว จัดประเภทเป็นคำพูดของอัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "netori-renka",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1"
+            ],
+            "reason": "ตรวจบริบท p68-1 แล้ว จัดประเภทเป็นคำพูดของเรนกะ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 68,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p70-1"
+            ],
+            "reason": "ตรวจบริบท p70-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p71-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 144,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p71-1"
+            ],
+            "reason": "ตรวจบริบท p71-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p72-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        },
+        {
+          "start": 18,
+          "end": 30,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p72-1"
+            ],
+            "reason": "เป็นคำที่ถูกยกมาอ้างถึงอาการของอากาเนะ ไม่ใช่คำพูดในฉาก"
+          }
+        },
+        {
+          "start": 30,
+          "end": 161,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p73-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "type": "dialogue",
+          "speakerId": "netori-alvin",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p73-1",
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "เป็นคำสรุปของหัวหน้าปาร์ตี้ก่อนมีริสตอบอย่างร่าเริงใน p74-1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p74-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 51,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p74-1",
+              "p75-1"
+            ],
+            "reason": "p75-1 ระบุว่าทั้งสามคนพยักหน้าให้มีริสที่พยายามทำเสียงร่าเริง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p75-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 99,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1130 @@
+{
+  "sourceSha256": "a01fc20861e80d052458a12ecd4fe84bc7d0f1cf08ba05337b7e87c50b0ed763",
+  "tokens": [
+    {
+      "id": "p1-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p2-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 43,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p3-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 70,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p4-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 39,
+          "type": "narration"
+        },
+        {
+          "start": 39,
+          "end": 53,
+          "type": "dialogue",
+          "speakerId": "netori-emily",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p4-1"
+            ],
+            "reason": "narration ยกคำทักทายของเอมิลี่ที่มาถึงงานเลี้ยงมาใส่เครื่องหมายคำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p5-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 216,
+          "type": "narration"
+        },
+        {
+          "start": 216,
+          "end": 235,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p5-1"
+            ],
+            "reason": "narration ระบุว่าชินจิพยายามโน้มน้าวว่า 'จะรบกวนทางโรงแรม!'"
+          }
+        },
+        {
+          "start": 235,
+          "end": 288,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p6-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "type": "dialogue",
+          "speakerId": "netori-party",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p6-1"
+            ],
+            "reason": "เป็นเสียงประสานของการเริ่มงานเลี้ยงที่ทุกคนพูดพร้อมกัน"
+          }
+        },
+        {
+          "start": 9,
+          "end": 48,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p7-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 376,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p8-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 57,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p9-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 234,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p10-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 133,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p11-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 338,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p12-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p10-1",
+              "p12-1",
+              "p14-1"
+            ],
+            "reason": "มีริสเรียกอัลวินว่า 'อัลคุง' และ p14-1 ระบุว่าเธอเข้าใจผิดว่าคนที่กอดคืออัลวิน"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 82,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p14-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 77,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p15-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 119,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p16-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 289,
+          "type": "narration"
+        },
+        {
+          "start": 289,
+          "end": 296,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p16-1"
+            ],
+            "reason": "เป็นเสียงของร่างกาย (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 296,
+          "end": 346,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p17-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p17-1"
+            ],
+            "reason": "ตรวจบริบท p17-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p18-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 66,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p19-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 99,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p20-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 172,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p21-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p21-1"
+            ],
+            "reason": "ตรวจบริบท p21-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p22-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 137,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p23-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 99,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p24-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p24-1"
+            ],
+            "reason": "ตรวจบริบท p24-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p25-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 181,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p26-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 106,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p27-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 180,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p28-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p28-1"
+            ],
+            "reason": "ตรวจบริบท p28-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p29-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p29-1",
+              "p30-1"
+            ],
+            "reason": "p30-1 ระบุว่ามีริสรู้ตัวว่ามือที่ทำให้เธอรู้สึกดีไม่ใช่ของอัลวิน แต่เป็นของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p30-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 203,
+          "type": "narration"
+        },
+        {
+          "start": 203,
+          "end": 209,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p30-1"
+            ],
+            "reason": "เป็นเสียงของการสอดใส่ (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 209,
+          "end": 239,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p31-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p31-1"
+            ],
+            "reason": "เป็นเสียงของการสอดใส่ (sound effect) ไม่ใช่เสียงพูดของตัวละคร"
+          }
+        },
+        {
+          "start": 12,
+          "end": 81,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p32-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 79,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p33-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 106,
+          "type": "narration"
+        },
+        {
+          "start": 106,
+          "end": 114,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p33-1"
+            ],
+            "reason": "เป็นเสียงสัมผัสของปากมดลูกกับปลายอวัยวะเพศ (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 114,
+          "end": 118,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p34-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 163,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p35-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p35-1",
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "เป็นคำถามของมีริสที่กำลังเหม่อลอย และ p38-1 ระบุว่าชินจิกระซิบตอบมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p36-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p36-1",
+              "p38-1"
+            ],
+            "reason": "p38-1 ระบุว่าชินจิกระซิบกับมีริสว่าเธอเป็นคนชวนเอง"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p37-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 32,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p37-1"
+            ],
+            "reason": "ตรวจบริบท p37-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p38-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 163,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p39-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 122,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p40-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p40-1"
+            ],
+            "reason": "ตรวจบริบท p40-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p41-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "narration"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "เป็นเสียงบีบ (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 25,
+          "end": 52,
+          "type": "narration"
+        },
+        {
+          "start": 52,
+          "end": 62,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 62,
+          "end": 108,
+          "type": "narration"
+        },
+        {
+          "start": 108,
+          "end": 119,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p41-1"
+            ],
+            "reason": "เป็นเสียงกระทบของสะโพก (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 119,
+          "end": 145,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p42-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p42-1"
+            ],
+            "reason": "ตรวจบริบท p42-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p43-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p43-1"
+            ],
+            "reason": "ตรวจบริบท p43-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p44-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p44-1"
+            ],
+            "reason": "ตรวจบริบท p44-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p45-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p45-1"
+            ],
+            "reason": "ตรวจบริบท p45-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p46-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 72,
+          "type": "narration"
+        },
+        {
+          "start": 72,
+          "end": 83,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p46-1"
+            ],
+            "reason": "เป็นเสียงของการดันอวัยวะเพศเข้าไป (sound effect) ไม่ใช่คำพูด"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p47-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 223,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p48-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 62,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p49-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 46,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p49-1"
+            ],
+            "reason": "ตรวจบริบท p49-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p50-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 176,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p51-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 126,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p52-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 146,
+          "type": "narration"
+        },
+        {
+          "start": 146,
+          "end": 153,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1"
+            ],
+            "reason": "เป็นเสียงกระทบของสะโพก (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 153,
+          "end": 302,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p53-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p52-1",
+              "p53-1",
+              "p54-1"
+            ],
+            "reason": "เป็นเสียงครางของมีริสเมื่อถึงจุดสุดยอดตามที่ p54-1 บรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p54-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 53,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p55-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 87,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p56-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 86,
+          "type": "narration"
+        },
+        {
+          "start": 86,
+          "end": 99,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 99,
+          "end": 194,
+          "type": "narration"
+        },
+        {
+          "start": 194,
+          "end": 205,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p56-1"
+            ],
+            "reason": "เป็นเสียงของน้ำอสุจิที่ไหลออกมา (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 205,
+          "end": 258,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p57-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p57-1"
+            ],
+            "reason": "ตรวจบริบท p57-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p58-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p58-1"
+            ],
+            "reason": "ตรวจบริบท p58-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p59-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 116,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p60-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 146,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p61-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 42,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p61-1"
+            ],
+            "reason": "ตรวจบริบท p61-1 แล้ว จัดประเภทเป็นคำพูดของมีริส"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p62-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "type": "dialogue",
+          "speakerId": "netori-shinji",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1"
+            ],
+            "reason": "ตรวจบริบท p62-1 แล้ว จัดประเภทเป็นคำพูดของชินจิ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p63-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 48,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p62-1",
+              "p63-1",
+              "p64-1"
+            ],
+            "reason": "มีเครื่องหมายปิดคำพูด 」 แต่ต้นฉบับขาดเครื่องหมายเปิด เป็นเสียงครางและคำพูดของมีริสต่อเนื่องจากฉาก และ p64-1 บรรยายการกระทำกับมีริสต่อ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p64-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 132,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p65-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 175,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p66-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 63,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p67-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 101,
+          "type": "narration"
+        },
+        {
+          "start": 101,
+          "end": 117,
+          "type": "narration",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p67-1"
+            ],
+            "reason": "เป็นเสียงของช่องคลอด (sound effect) ไม่ใช่คำพูด"
+          }
+        },
+        {
+          "start": 117,
+          "end": 165,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p68-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "type": "dialogue",
+          "speakerId": "netori-miris",
+          "review": {
+            "confirmed": true,
+            "context": [
+              "p68-1",
+              "p69-1"
+            ],
+            "reason": "เป็นเสียงครางของมีริสเมื่อหลั่งครั้งที่สองตามที่ p69-1 บรรยาย"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p69-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 89,
+          "type": "narration"
+        }
+      ]
+    },
+    {
+      "id": "p70-1",
+      "segments": [
+        {
+          "start": 0,
+          "end": 112,
+          "type": "narration"
+        }
+      ]
+    }
+  ]
+}

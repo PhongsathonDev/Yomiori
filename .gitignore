@@ -34,6 +34,9 @@ reader-web/scripts/run-ai-*.mjs
 reader-mobile/scratch/
 reader-web/scripts/check-cdn.mjs
 
+# Derived conversion cue sheets (rebuilt from source + maps)
+.conversion/*/cues/
+
 # Raw backups & text archives
 _txt_backup/
 *_backup/

@@ -1,0 +1,48 @@
+{
+  "batch": "b01",
+  "sources": [
+    {
+      "sourceId": "179518",
+      "chapterNo": "0",
+      "mapJsonHash": "2a30d7e8371736d520d7c5a84e445e24f040a34208134c266fa79ef7561ab0f0",
+      "status": "ready",
+      "dialogue": 0
+    },
+    {
+      "sourceId": "179585",
+      "chapterNo": "5",
+      "mapJsonHash": "bc31076c81d7ee0107e10e996c7f855af2ef4e236fa58ea181ec789beb24bd3c",
+      "status": "ready",
+      "dialogue": 40
+    },
+    {
+      "sourceId": "179587",
+      "chapterNo": "6",
+      "mapJsonHash": "e9d76b49d692f0bcf4384d545b308dc559c567e25c2210d41d4120b8cf6f91bf",
+      "status": "ready",
+      "dialogue": 40
+    },
+    {
+      "sourceId": "179593",
+      "chapterNo": "7",
+      "mapJsonHash": "5e7b58064bfe136f71451d8e25b730a27f1cc73cd38e5fb8c3bdf08a3ae38fd0",
+      "status": "ready",
+      "dialogue": 50
+    },
+    {
+      "sourceId": "179596",
+      "chapterNo": "8",
+      "mapJsonHash": "07c0de40091cb3f90983b492d783a5e282c2e029ebf5373cdd81312e52ac29c5",
+      "status": "ready",
+      "dialogue": 41
+    }
+  ],
+  "rosterGaps": [],
+  "notes": [
+    "179518: image-caption chapter; all tokens narration, no dialogue.",
+    "179585: p69 teacher of Charlotte attributed to netori-shinji from p4 nickname use and p67 'taught by another man' plus later training scenes.",
+    "179587: p43/p44 two unnamed men mapped to netori-crowd; quoted looks/thoughts (p39, p71, p73, p75, p79) kept narration.",
+    "179593: p6 embedded mutter kept narration because the seed has no separate span; p49 'แป๊ะ!' sound effect narration.",
+    "179596: Charlotte's unnamed mother at p44 mapped to netori-crowd; p18/p43 quoted thoughts kept narration."
+  ]
+}
