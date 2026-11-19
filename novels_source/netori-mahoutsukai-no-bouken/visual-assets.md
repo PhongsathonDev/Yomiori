@@ -26,19 +26,21 @@ The cover is copied byte-for-byte from the registered chapter 0 illustration.
 | --- | --- | --- | --- |
 | `netori_cover.jpg` | `illust_02.jpg` | full, unchanged | 1061×1500 |
 | `netori_banner.jpg` | `illust_02.jpg` | `(0, 0, 1061, 597)` | 1280×720 |
-| `char_netori_shinji.jpg` | `illust_01.png` | `(440, 290, 648, 498)` | 512×512 |
-| `char_netori_alvin.jpg` | `illust_01.png` | `(180, 20, 460, 300)` | 512×512 |
-| `char_netori_renka.jpg` | `illust_02.jpg` | `(30, 260, 590, 820)` | 512×512 |
-| `char_netori_charlotte.jpg` | `illust_02.jpg` | `(450, 0, 900, 450)` | 512×512 |
-| `char_netori_miris.jpg` | `illust_03.jpg` | `(541, 165, 1061, 685)` | 512×512 |
-| `char_netori_agane.jpg` | `illust_03.jpg` | `(185, 0, 635, 450)` | 512×512 |
-| `char_netori_ferry.jpg` | `illust_04.jpg` | `(150, 0, 590, 440)` | 512×512 |
+| `char_netori_shinji.jpg` | `illust_01.png` | `(420, 326, 646, 552)` | 512×512 |
+| `char_netori_alvin.jpg` | `illust_01.png` | `(222, 0, 492, 270)` | 512×512 |
+| `char_netori_renka.jpg` | `illust_02.jpg` | `(10, 280, 560, 830)` | 512×512 |
+| `char_netori_charlotte.jpg` | `illust_02.jpg` | `(583, 24, 923, 364)` | 512×512 |
+| `char_netori_miris.jpg` | `illust_03.jpg` | `(525, 203, 1045, 723)` | 512×512 |
+| `char_netori_agane.jpg` | `illust_03.jpg` | `(110, 0, 610, 500)` | 512×512 |
+| `char_netori_ferry.jpg` | `illust_04.jpg` | `(258, 0, 718, 460)` | 512×512 |
 
 `illust_01.png` is a black-and-white manga character page; the two portraits keep that
 original monochrome treatment. `illust_02.jpg`–`illust_04.jpg` are the official colour
 volume covers used as chapter 0 character plates. Crops frame each head and shoulders
 and exclude publisher logos, author credits, page numbers and neighbouring characters
-where the source layout allows it.
+where the source layout allows it. The portraits were checked as squares and
+circles at reader sizes. Some panel lines remain in the monochrome portraits:
+cropping them out completely would cut into the characters' hair.
 
 ## Original-image SHA-256
 
