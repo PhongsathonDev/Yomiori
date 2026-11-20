@@ -16,7 +16,7 @@ jest.mock('react-native/Libraries/Components/RefreshControl/RefreshControl', () 
   return { __esModule: true, default: function RefreshControl(props: object) { return React.createElement('RCTRefreshControl', props); } };
 });
 jest.mock('lucide-react-native', () => Object.fromEntries(
-  ['BookOpen', 'Play', 'Sun', 'Moon', 'Coffee', 'Search', 'X', 'MoreHorizontal', 'ArrowDownUp', 'Check', 'ArchiveRestore', 'Palette'].map(name => [name, () => null]),
+  ['BookOpen', 'Play', 'Sun', 'Moon', 'Coffee', 'Search', 'X', 'MoreHorizontal', 'ArrowDownUp', 'Check', 'ArchiveRestore'].map(name => [name, () => null]),
 ));
 jest.mock('../src/services/api', () => ({ fetchNovels: jest.fn(), getAvailableChapterList: jest.fn() }));
 jest.mock('../src/services/storage', () => ({ getSavedTheme: async () => 'light', saveTheme: jest.fn(), getReadingProgress: jest.fn() }));
@@ -62,7 +62,7 @@ test('recovered book with missing cover remains usable during stalled remote ref
   await view.unmount();
 });
 
-test('compact two-column grid shows Thai titles and actual counts, and opens details', async () => {
+test('compact three-column grid shows Thai titles and actual counts, and opens details', async () => {
   const view = await render(<BookshelfScreen {...props} />);
   await screen.findByText(a.title);
   await waitFor(() => expect(screen.getAllByText('3 ตอน')).toHaveLength(2));

@@ -10,7 +10,6 @@ jest.mock('@react-navigation/native-stack', () => ({ createNativeStackNavigator:
   Screen: ({ component }: { component: () => React.ReactNode }) => component(),
 }) }));
 jest.mock('../src/screens/BookshelfScreen', () => ({ BookshelfScreen: () => require('react').createElement(require('react-native').Text, null, 'ชั้นหนังสือพร้อมใช้') }));
-jest.mock('../src/screens/DesignLabScreen', () => ({ DesignLabScreen: () => null }));
 jest.mock('../src/screens/NovelDetailScreen', () => ({ NovelDetailScreen: () => null }));
 jest.mock('../src/screens/ReaderScreen', () => ({ ReaderScreen: () => null }));
 

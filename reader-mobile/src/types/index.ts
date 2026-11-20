@@ -143,7 +143,6 @@ export interface ChapterCommentsData {
 }
 
 export type RootStackParamList = {
-  DesignLab: undefined;
   Bookshelf: undefined;
   NovelDetail: { novelId: string };
   Reader: { novelId: string; chapterId: string };
