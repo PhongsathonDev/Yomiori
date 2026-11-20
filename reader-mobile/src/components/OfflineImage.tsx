@@ -9,11 +9,12 @@ interface Props {
   resizeMode?: ImageProps['resizeMode'];
   accessibilityLabel?: string;
   onOpen?: (uri: string) => void;
+  onLoad?: ImageProps['onLoad'];
   color?: string;
 }
 
 /** Both the thumbnail and its lightbox open the same resolved local URI. */
-export const OfflineImage = React.memo(function OfflineImage({ novelId, src, style, resizeMode = 'cover', accessibilityLabel, onOpen, color = '#b84a5f' }: Props) {
+export const OfflineImage = React.memo(function OfflineImage({ novelId, src, style, resizeMode = 'cover', accessibilityLabel, onOpen, onLoad, color = '#b84a5f' }: Props) {
   const [attempt, setAttempt] = useState(0);
   const [result, setResult] = useState<{ key: string; uri: string; failed: boolean } | null>(null);
   const key = `${novelId ?? ''}:${src}:${attempt}`;
@@ -35,7 +36,7 @@ export const OfflineImage = React.memo(function OfflineImage({ novelId, src, sty
       <Text style={{ color }}>โหลดภาพไม่ได้ แตะเพื่อลองอีกครั้ง</Text>
     </Pressable>
   );
-  const image = <Image source={{ uri: current.uri }} accessibilityLabel={accessibilityLabel} style={style} resizeMode={resizeMode}
+  const image = <Image source={{ uri: current.uri }} accessibilityLabel={accessibilityLabel} style={style} resizeMode={resizeMode} onLoad={onLoad}
     onError={() => setResult(previous => previous?.key === key ? { ...previous, failed: true } : previous)} />;
   return onOpen ? <Pressable accessibilityRole="button" accessibilityLabel={accessibilityLabel ?? 'ขยายภาพประกอบ'} onPress={() => onOpen(current.uri)}>{image}</Pressable> : image;
 });

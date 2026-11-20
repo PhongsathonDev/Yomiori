@@ -49,7 +49,7 @@ import {
   getIllustrationUrl,
 } from '../services/storage';
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
-import { themes } from '../theme/colors';
+import { themes, ThemeColors } from '../theme/colors';
 import { getReadChapterIds } from '../services/chapterReadHistory';
 import { chapterDisplayTitle } from '../utils/chapterTitle';
 import { isNovelList } from '../services/validation';
@@ -69,6 +69,63 @@ interface Props {
 export const NovelDetailScreen: React.FC<Props> = props => (
   <NovelDetailContent key={props.route.params.novelId} {...props} />
 );
+
+const IllustrationCard: React.FC<{
+  novelId: string;
+  item: IllustrationItem;
+  colors: ThemeColors;
+  onOpen: () => void;
+}> = ({ novelId, item, colors, onOpen }) => {
+  const [aspectRatio, setAspectRatio] = useState(0);
+  const typeBadge = item.type === 'color_spread'
+    ? 'ภาพสีเปิดเล่ม'
+    : item.type === 'cover'
+      ? 'ภาพปก'
+      : 'ภาพประกอบ';
+
+  return (
+    <TouchableOpacity
+      style={[styles.illustrationGridItem, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}
+      activeOpacity={0.85}
+      onPress={onOpen}
+    >
+      <View
+        style={[
+          styles.illustrationImageFrame,
+          aspectRatio > 0 ? { aspectRatio } : styles.illustrationImageFallback,
+          { backgroundColor: colors.card },
+        ]}
+      >
+        <OfflineImage
+          novelId={novelId}
+          src={item.filename}
+          style={StyleSheet.absoluteFill}
+          resizeMode="contain"
+          color={colors.primary}
+          onLoad={event => {
+            const { width, height } = event.nativeEvent.source;
+            if (width > 0 && height > 0) setAspectRatio(width / height);
+          }}
+        />
+        <View style={styles.gridItemOverlay}>
+          <View style={[styles.gridTypeBadge, { backgroundColor: 'rgba(0,0,0,0.68)' }]}>
+            <Text style={styles.gridTypeBadgeText}>{typeBadge}</Text>
+          </View>
+        </View>
+      </View>
+      <View style={styles.gridItemBody}>
+        <Text style={[styles.gridItemTitle, { color: colors.text }]} numberOfLines={1}>
+          {item.title}
+        </Text>
+        {item.caption ? (
+          <Text style={[styles.gridItemCaption, { color: colors.textMuted }]} numberOfLines={2}>
+            {item.caption}
+          </Text>
+        ) : null}
+      </View>
+    </TouchableOpacity>
+  );
+};
 
 const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
   const { novelId } = route.params;
@@ -591,47 +648,15 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
 
                 {illustrations.length === 0 && <Text style={{ color: themeColors.textMuted }}>ยังไม่มีภาพประกอบที่แสดงได้</Text>}
                 <View style={styles.illustrationsGrid}>
-                  {illustrations.map((item) => {
-                    const imgUrl = getIllustrationUrl(novelId, item.filename);
-                    const typeBadge =
-                      item.type === 'color_spread'
-                        ? 'ภาพสีเปิดเล่ม'
-                        : item.type === 'cover'
-                        ? 'ภาพปก'
-                        : 'ภาพประกอบ';
-
-                    return (
-                      <TouchableOpacity
-                        key={item.id}
-                        style={[
-                          styles.illustrationGridItem,
-                          { backgroundColor: themeColors.card, borderColor: themeColors.cardBorder },
-                        ]}
-                        activeOpacity={0.85}
-                        onPress={() => openLightbox(imgUrl, item.title, item.caption)}
-                      >
-                        <OfflineImage novelId={novelId} src={item.filename} style={styles.gridImage} color={themeColors.primary} />
-                        <View style={styles.gridItemOverlay}>
-                          <View style={[styles.gridTypeBadge, { backgroundColor: 'rgba(0,0,0,0.68)' }]}>
-                            <Text style={styles.gridTypeBadgeText}>{typeBadge}</Text>
-                          </View>
-                        </View>
-                        <View style={styles.gridItemBody}>
-                          <Text style={[styles.gridItemTitle, { color: themeColors.text }]} numberOfLines={1}>
-                            {item.title}
-                          </Text>
-                          {item.caption ? (
-                            <Text
-                              style={[styles.gridItemCaption, { color: themeColors.textMuted }]}
-                              numberOfLines={2}
-                            >
-                              {item.caption}
-                            </Text>
-                          ) : null}
-                        </View>
-                      </TouchableOpacity>
-                    );
-                  })}
+                  {illustrations.map((item) => (
+                    <IllustrationCard
+                      key={item.id}
+                      novelId={novelId}
+                      item={item}
+                      colors={themeColors}
+                      onOpen={() => openLightbox(getIllustrationUrl(novelId, item.filename), item.title, item.caption)}
+                    />
+                  ))}
                 </View>
               </View>
             </View>
@@ -1116,15 +1141,18 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   illustrationGridItem: {
-    width: '48%',
+    width: '100%',
     borderRadius: 12,
     borderWidth: 1,
     overflow: 'hidden',
   },
-  gridImage: {
+  illustrationImageFrame: {
     width: '100%',
-    height: 135,
-    backgroundColor: '#eee',
+    overflow: 'hidden',
+  },
+  illustrationImageFallback: {
+    width: '100%',
+    height: 220,
   },
   gridItemOverlay: {
     position: 'absolute',
