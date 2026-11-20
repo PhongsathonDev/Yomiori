@@ -238,11 +238,11 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
               <ArrowDownUp size={16} color={colors.primary} /><Text style={[styles.small, { color: colors.primary }]}>{sort === 'recent' ? 'อ่านล่าสุดก่อน' : 'ชื่อเรื่อง'}</Text>
             </Pressable>
           </View>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.tags} keyboardShouldPersistTaps="handled">
+          <View style={styles.tagWrap}>
             {['all', ...allTags].map(value => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: tag === value }} onPress={() => setTag(value)} style={[styles.tag, { backgroundColor: tag === value ? colors.primary : colors.card, borderColor: tag === value ? colors.primary : colors.border }]}>
               <Text style={[styles.small, { color: tag === value ? '#ffffff' : colors.textMuted }]}>{value === 'all' ? 'ทุกแนว' : value}</Text>
             </Pressable>)}
-          </ScrollView>
+          </View>
           {personalError && <ScreenState colors={colors} message="โหลดสถานะชั้นหนังสือไม่ได้" onRetry={() => { void refresh(); }} />}
           {catalogError && <ScreenState colors={colors} message="รีเฟรชข้อมูลบางส่วนไม่ได้ ยังเปิดเรื่องที่มีในเครื่องได้" onRetry={() => { void refresh(); }} />}
         </View>}
@@ -250,18 +250,18 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
           message={query.trim() || tag !== 'all' ? 'ไม่พบเรื่องที่ตรงกับตัวกรอง' : tab === 'completed' ? 'ยังไม่มีเรื่องที่ทำเครื่องหมายว่าอ่านจบแล้ว' : tab === 'active' && completedCount > 0 ? 'อ่านจบทุกเรื่องแล้ว เลือกดูเรื่องเก่าได้ที่แท็บอ่านจบแล้ว' : 'ยังไม่มีนิยายในชั้นหนังสือ'}
           onBack={query.trim() || tag !== 'all' ? clearFilters : tab === 'active' && completedCount > 0 ? () => chooseTab('completed') : undefined}
           backLabel={query.trim() || tag !== 'all' ? 'ล้างตัวกรอง' : 'ดูเรื่องที่อ่านจบแล้ว'} />}
-        renderItem={({ item: novel }) => <View style={[styles.book, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
+        renderItem={({ item: novel }) => <View style={[styles.book, { backgroundColor: colors.card, borderColor: colors.border, shadowColor: colors.text }]}>
           <Pressable accessibilityRole="button" accessibilityLabel={`รายละเอียด ${novel.title}`} accessibilityHint={novel.tags?.length ? `แท็กหลัก: ${novel.tags.slice(0, 2).join(', ')} ดูแท็กทั้งหมดในรายละเอียด` : undefined} onPress={() => navigation.navigate('NovelDetail', { novelId: novel.id })}>
             <BookCover uri={novel.coverUrl} style={styles.cover} />
             <View style={styles.bookInfo}>
-              <Text numberOfLines={3} style={[styles.bookTitle, { color: colors.text }]}>{novel.title}</Text>
+              <Text numberOfLines={2} style={[styles.bookTitle, { color: colors.text }]}>{novel.title}</Text>
               {!!novel.tags?.length && <View style={styles.bookTags}>
                 {novel.tags.slice(0, 2).map((novelTag, index) => <View key={`${novelTag}-${index}`} style={[styles.bookTag, { backgroundColor: colors.primaryBg }]}>
-                  <Text style={[styles.bookTagText, { color: colors.primary }]}>{novelTag}</Text>
+                  <Text numberOfLines={1} style={[styles.bookTagText, { color: colors.primary }]}>{novelTag}</Text>
                 </View>)}
               </View>}
-              <Text style={[styles.small, { color: colors.textMuted }]}>{chapters[novel.id] === undefined ? 'กำลังโหลดจำนวนตอน' : `${chapters[novel.id].length} ตอน`}</Text>
-              <Text style={[styles.small, { color: statuses[novel.id] === 'completed' ? colors.primary : colors.textMuted }]}>{readLabel(novel)}</Text>
+              <Text numberOfLines={1} style={[styles.small, { color: colors.textMuted }]}>{chapters[novel.id] === undefined ? 'กำลังโหลดจำนวนตอน' : `${chapters[novel.id].length} ตอน`}</Text>
+              <Text numberOfLines={1} style={[styles.small, { color: statuses[novel.id] === 'completed' ? colors.primary : colors.textMuted }]}>{readLabel(novel)}</Text>
             </View>
           </Pressable>
           <Pressable accessibilityRole="button" accessibilityLabel={`จัดการ ${novel.title}`} onPress={() => setMenuNovel(novel)} style={[styles.bookMenu, styles.iconButton, { backgroundColor: colors.card, borderColor: colors.border }]}>
@@ -306,7 +306,7 @@ const styles = StyleSheet.create({
   iconButton: { minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center', borderRadius: 22 },
   list: { width: '100%', maxWidth: 720, alignSelf: 'center', padding: 16, paddingBottom: 32 },
   listHeader: { gap: 14, paddingBottom: 16 },
-  row: { justifyContent: 'space-between', marginBottom: 16 },
+  row: { justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16, paddingHorizontal: 4 },
   continueCard: { flexDirection: 'row', alignItems: 'center', gap: 12, borderRadius: 16, borderWidth: 1, padding: 12 },
   continueCover: { width: 46, height: 66, borderRadius: 6 },
   continueInfo: { flex: 1, gap: 4 },
@@ -322,13 +322,13 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   filterRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   sortButton: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 44, paddingHorizontal: 4, flexShrink: 1 },
-  tags: { gap: 8 },
+  tagWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   tag: { borderRadius: 24, borderWidth: 1, paddingHorizontal: 14, paddingVertical: 10, minHeight: 44, justifyContent: 'center' },
-  book: { width: '31.5%', borderRadius: 14, borderWidth: 1, overflow: 'hidden' },
-  cover: { width: '100%', aspectRatio: 2 / 3 },
-  bookInfo: { padding: 10, gap: 6 },
-  bookTitle: { fontSize: 14, lineHeight: 21, fontWeight: '700' },
-  bookTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
+  book: { width: '31.5%', borderRadius: 14, borderWidth: 1, overflow: 'hidden', shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.04, shadowRadius: 6, elevation: 1 },
+  cover: { width: '100%', aspectRatio: 2 / 3, borderTopLeftRadius: 14, borderTopRightRadius: 14 },
+  bookInfo: { padding: 10, gap: 6, height: 142, overflow: 'hidden' },
+  bookTitle: { fontSize: 14, lineHeight: 21, height: 42, fontWeight: '700' },
+  bookTags: { flexDirection: 'row', flexWrap: 'nowrap', gap: 4, height: 24, overflow: 'hidden' },
   bookTag: { maxWidth: '100%', borderRadius: 6, paddingHorizontal: 6, paddingVertical: 3 },
   bookTagText: { fontSize: 11, lineHeight: 16 },
   bookMenu: { position: 'absolute', top: 6, right: 6, borderWidth: 1 },
