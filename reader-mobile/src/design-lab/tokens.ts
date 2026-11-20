@@ -1,4 +1,4 @@
-export type DesignConcept = 'washi' | 'zine' | 'nocturne';
+export type DesignConcept = 'ma' | 'swiss' | 'calm' | 'washi' | 'zine' | 'nocturne';
 export type LabMode = 'light' | 'dark';
 export type LabScreen = 'shelf' | 'detail' | 'reader';
 
@@ -23,6 +23,138 @@ export interface LabPalette {
   shadow: string;
   gold: string;
 }
+
+const maLight: LabPalette = {
+  id: 'ma',
+  mode: 'light',
+  isDark: false,
+  bg: '#F7F6F1',
+  surface: '#FFFFFF',
+  surfaceAlt: '#EFEEE7',
+  text: '#1D1D1A',
+  muted: '#74736B',
+  accent: '#5C6A57',
+  accentInk: '#FFFFFF',
+  accentSoft: '#E8ECE4',
+  secondary: '#8A8A82',
+  secondaryInk: '#FFFFFF',
+  tagBg: '#EFEEE7',
+  line: '#E3E1D8',
+  border: '#E8E6DE',
+  overlay: 'rgba(10, 10, 8, 0.55)',
+  shadow: '#5C5E57',
+  gold: '#6E7A66',
+};
+
+const maDark: LabPalette = {
+  id: 'ma',
+  mode: 'dark',
+  isDark: true,
+  bg: '#101110',
+  surface: '#171816',
+  surfaceAlt: '#1E201D',
+  text: '#EDEBE4',
+  muted: '#9B998F',
+  accent: '#A9B5A2',
+  accentInk: '#151A12',
+  accentSoft: 'rgba(169, 181, 162, 0.14)',
+  secondary: '#888D85',
+  secondaryInk: '#10110F',
+  tagBg: '#1E201D',
+  line: '#2A2B27',
+  border: '#2E302B',
+  overlay: 'rgba(0, 0, 0, 0.6)',
+  shadow: '#000000',
+  gold: '#A9B5A2',
+};
+
+const swissLight: LabPalette = {
+  id: 'swiss',
+  mode: 'light',
+  isDark: false,
+  bg: '#FFFFFF',
+  surface: '#F7F7F7',
+  surfaceAlt: '#EFEFEF',
+  text: '#0A0A0A',
+  muted: '#666666',
+  accent: '#1F4BFF',
+  accentInk: '#FFFFFF',
+  accentSoft: '#E8EDFF',
+  secondary: '#666666',
+  secondaryInk: '#FFFFFF',
+  tagBg: '#F0F0F0',
+  line: '#E3E3E3',
+  border: '#DADADA',
+  overlay: 'rgba(0, 0, 0, 0.6)',
+  shadow: '#000000',
+  gold: '#1F4BFF',
+};
+
+const swissDark: LabPalette = {
+  id: 'swiss',
+  mode: 'dark',
+  isDark: true,
+  bg: '#0A0A0A',
+  surface: '#141414',
+  surfaceAlt: '#1C1C1C',
+  text: '#F5F5F5',
+  muted: '#9A9A9A',
+  accent: '#6E8BFF',
+  accentInk: '#0A0A0A',
+  accentSoft: '#1A2440',
+  secondary: '#C8C8C8',
+  secondaryInk: '#0A0A0A',
+  tagBg: '#1C1C1C',
+  line: '#262626',
+  border: '#2E2E2E',
+  overlay: 'rgba(0, 0, 0, 0.65)',
+  shadow: '#000000',
+  gold: '#6E8BFF',
+};
+
+const calmLight: LabPalette = {
+  id: 'calm',
+  mode: 'light',
+  isDark: false,
+  bg: '#F2F1EC',
+  surface: '#FFFFFF',
+  surfaceAlt: '#E7E7DF',
+  text: '#2A302A',
+  muted: '#737B72',
+  accent: '#5C705A',
+  accentInk: '#FFFFFF',
+  accentSoft: '#E3EAE1',
+  secondary: '#8A7F9A',
+  secondaryInk: '#FFFFFF',
+  tagBg: '#E9EDE6',
+  line: '#E2E1D9',
+  border: '#E6E5DD',
+  overlay: 'rgba(30, 35, 30, 0.45)',
+  shadow: '#6E756D',
+  gold: '#7C8F7A',
+};
+
+const calmDark: LabPalette = {
+  id: 'calm',
+  mode: 'dark',
+  isDark: true,
+  bg: '#111512',
+  surface: '#1A1F1B',
+  surfaceAlt: '#232A24',
+  text: '#EBEFEA',
+  muted: '#9BA59B',
+  accent: '#A9C0A4',
+  accentInk: '#141A13',
+  accentSoft: '#243025',
+  secondary: '#B0A6C0',
+  secondaryInk: '#141A13',
+  tagBg: '#232A24',
+  line: '#2D352E',
+  border: '#303A31',
+  overlay: 'rgba(0, 0, 0, 0.55)',
+  shadow: '#000000',
+  gold: '#A9C0A4',
+};
 
 const washiLight: LabPalette = {
   id: 'washi',
@@ -157,6 +289,9 @@ const nocturneDark: LabPalette = {
 };
 
 export const PALETTES: Record<DesignConcept, Record<LabMode, LabPalette>> = {
+  ma: { light: maLight, dark: maDark },
+  swiss: { light: swissLight, dark: swissDark },
+  calm: { light: calmLight, dark: calmDark },
   washi: { light: washiLight, dark: washiDark },
   zine: { light: zineLight, dark: zineDark },
   nocturne: { light: nocturneLight, dark: nocturneDark },
@@ -183,6 +318,27 @@ export const CONCEPTS: {
   tagline: string;
   swatches: string[];
 }[] = [
+  {
+    id: 'ma',
+    name: 'โปร่ง',
+    english: 'Ma',
+    tagline: 'มินิมอล เงียบ เว้นที่ว่าง',
+    swatches: ['#F7F6F1', '#1D1D1A', '#5C6A57'],
+  },
+  {
+    id: 'swiss',
+    name: 'กริด',
+    english: 'Swiss',
+    tagline: 'มินิมอล ตาราง ตัวอักษร',
+    swatches: ['#FFFFFF', '#0A0A0A', '#1F4BFF'],
+  },
+  {
+    id: 'calm',
+    name: 'นุ่ม',
+    english: 'Calm',
+    tagline: 'มินิมอล นุ่ม สงบ',
+    swatches: ['#F2F1EC', '#2A302A', '#5C705A'],
+  },
   {
     id: 'washi',
     name: 'วะชิ',

@@ -21,6 +21,7 @@ import {
 } from 'lucide-react-native';
 import {
   PREVIEW_BOOKS,
+  READING_COUNT,
   PREVIEW_CHAPTERS,
   PREVIEW_TAGS,
   READER_SAMPLE,
@@ -95,7 +96,7 @@ function WashiShelf({ palette, onOpenBook, onOpenReader }: ConceptProps) {
       <View style={washiStyles.titleBlock}>
         <Text style={[washiStyles.pageTitle, { color: palette.text }]}>ชั้นหนังสือ</Text>
         <Text style={[washiStyles.pageSub, { color: palette.muted }]}>
-          {PREVIEW_BOOKS.length} เรื่องในชั้น · อ่านต่อ 4 เรื่อง
+          {PREVIEW_BOOKS.length} เรื่องในชั้น · อ่านต่อ {READING_COUNT} เรื่อง
         </Text>
       </View>
 

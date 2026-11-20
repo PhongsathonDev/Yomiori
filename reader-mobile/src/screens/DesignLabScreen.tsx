@@ -14,7 +14,10 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Moon, Sun, X } from 'lucide-react-native';
 import type { RootStackParamList } from '../types';
 import { PREVIEW_BOOKS, type PreviewBook } from '../design-lab/data';
+import { CalmConcept } from '../design-lab/CalmConcept';
+import { MaConcept } from '../design-lab/MaConcept';
 import { NocturneConcept } from '../design-lab/NocturneConcept';
+import { SwissConcept } from '../design-lab/SwissConcept';
 import { WashiConcept } from '../design-lab/WashiConcept';
 import { ZineConcept } from '../design-lab/ZineConcept';
 import {
@@ -36,6 +39,9 @@ const SCREEN_TABS: { id: LabScreen; label: string }[] = [
 ];
 
 const CONCEPT_VIEWS = {
+  ma: MaConcept,
+  swiss: SwissConcept,
+  calm: CalmConcept,
   washi: WashiConcept,
   zine: ZineConcept,
   nocturne: NocturneConcept,
@@ -44,7 +50,7 @@ const CONCEPT_VIEWS = {
 export function DesignLabScreen({ navigation }: Props) {
   const { width } = useWindowDimensions();
   const framed = width >= 560;
-  const [concept, setConcept] = useState<DesignConcept>('washi');
+  const [concept, setConcept] = useState<DesignConcept>('ma');
   const [mode, setMode] = useState<LabMode>('light');
   const [screen, setScreen] = useState<LabScreen>('shelf');
   const [book, setBook] = useState<PreviewBook>(PREVIEW_BOOKS[0]);
@@ -83,7 +89,7 @@ export function DesignLabScreen({ navigation }: Props) {
         <View style={styles.topRow}>
           <View style={styles.titleRow}>
             <Text style={styles.labTitle}>Yomiori</Text>
-            <Text style={styles.labSub}>design lab</Text>
+            <Text style={styles.labSub}>design lab · 6 แบบ</Text>
           </View>
           <View style={styles.topActions}>
             <Pressable

@@ -24,6 +24,7 @@ import {
 import {
   PREVIEW_BOOKS,
   PREVIEW_CHAPTERS,
+  FRESH_BOOKS,
   READER_SAMPLE,
   type PreviewBook,
 } from './data';
@@ -103,7 +104,7 @@ function NocturneShelf({ palette, onOpenBook, onOpenReader }: ConceptProps) {
   const heroCoverWidth = compact ? 104 : 146;
   const heroCoverHeight = Math.round(heroCoverWidth * 1.5);
   const continueBook = PREVIEW_BOOKS[0];
-  const fresh = PREVIEW_BOOKS.slice(1, 4);
+  const fresh = FRESH_BOOKS;
 
   return (
     <ScrollView
