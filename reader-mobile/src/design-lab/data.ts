@@ -95,6 +95,7 @@ export const PREVIEW_BOOKS: PreviewBook[] = PICKS.map(id => catalog.find(novel =
 
 export const CONTINUE_BOOK = PREVIEW_BOOKS[0];
 export const READING_COUNT = PREVIEW_BOOKS.filter(book => book.status === 'reading').length;
+export const DONE_COUNT = PREVIEW_BOOKS.filter(book => book.status === 'done').length;
 export const FRESH_BOOKS = PREVIEW_BOOKS.filter(book => book.status === 'reading').slice(1, 4);
 
 export const PREVIEW_TAGS = [

@@ -50,7 +50,7 @@ const CONCEPT_VIEWS = {
 export function DesignLabScreen({ navigation }: Props) {
   const { width } = useWindowDimensions();
   const framed = width >= 560;
-  const [concept, setConcept] = useState<DesignConcept>('ma');
+  const [concept, setConcept] = useState<DesignConcept>('washi');
   const [mode, setMode] = useState<LabMode>('light');
   const [screen, setScreen] = useState<LabScreen>('shelf');
   const [book, setBook] = useState<PreviewBook>(PREVIEW_BOOKS[0]);

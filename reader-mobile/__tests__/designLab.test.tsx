@@ -6,7 +6,7 @@ jest.mock('react-native-safe-area-context', () => require('react-native-safe-are
 jest.mock('expo-status-bar', () => ({ StatusBar: () => null }));
 jest.mock('lucide-react-native', () => Object.fromEntries(
   [
-    'ArrowLeft', 'Check', 'ChevronRight', 'Coffee', 'Download', 'List', 'Moon',
+    'ArrowDownUp', 'ArrowLeft', 'Check', 'ChevronRight', 'Coffee', 'Download', 'List', 'Moon',
     'Play', 'Search', 'Settings2', 'SlidersHorizontal', 'Sparkles', 'Sun', 'Type', 'X',
   ].map(name => [name, () => null]),
 ));
@@ -19,7 +19,7 @@ test.each([
   ['โปร่ง', 'เรื่องทั้งหมด'],
   ['กริด', 'รายการหนังสือ'],
   ['นุ่ม', 'คืนนี้จะอ่านอะไรดี'],
-  ['วะชิ', 'เรื่องที่กำลังอ่าน'],
+  ['วะชิ', 'ชั้นหนังสือของฉัน'],
   ['ซีน', 'YOMIORI'],
   ['ราตรี', 'คืนนี้มีตอนใหม่'],
 ])('renders the %s direction and its shelf', async (direction, shelfText) => {
