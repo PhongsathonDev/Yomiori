@@ -7,7 +7,7 @@ import { NavigationBar } from 'expo-navigation-bar';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { Play, Sun, Moon, Coffee, Search, X, MoreHorizontal, ArrowDownUp, Check, ArchiveRestore } from 'lucide-react-native';
+import { Play, Sun, Moon, Coffee, Search, X, MoreHorizontal, ArrowDownUp, Check, ArchiveRestore, Palette } from 'lucide-react-native';
 import { Novel, RootStackParamList, ReaderTheme, ReadingProgress, ChapterListItem } from '../types';
 import { fetchNovels, getAvailableChapterList } from '../services/api';
 import { getSavedTheme, saveTheme, getReadingProgress } from '../services/storage';
@@ -189,9 +189,14 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
       <View style={[styles.header, { borderBottomColor: colors.border }]}>
         <View style={styles.headerInner}>
           <View style={styles.brand}><Text style={[styles.appTitle, { color: colors.primary }]}>Yomiori</Text><Text style={{ color: colors.textMuted }}>読織</Text></View>
-          <Pressable accessibilityRole="button" accessibilityLabel="เปลี่ยนธีม" onPress={() => { void toggleTheme(); }} style={[styles.iconButton, { backgroundColor: colors.primaryBg }]}>
-            {currentTheme === 'light' ? <Sun size={19} color={colors.primary} /> : currentTheme === 'sepia' ? <Coffee size={19} color={colors.primary} /> : <Moon size={19} color={colors.primary} />}
-          </Pressable>
+          <View style={styles.headerActions}>
+            {__DEV__ && <Pressable accessibilityRole="button" accessibilityLabel="ดูแบบดีไซน์" onPress={() => navigation.navigate('DesignLab')} style={[styles.iconButton, { backgroundColor: colors.primaryBg }]}>
+              <Palette size={19} color={colors.primary} />
+            </Pressable>}
+            <Pressable accessibilityRole="button" accessibilityLabel="เปลี่ยนธีม" onPress={() => { void toggleTheme(); }} style={[styles.iconButton, { backgroundColor: colors.primaryBg }]}>
+              {currentTheme === 'light' ? <Sun size={19} color={colors.primary} /> : currentTheme === 'sepia' ? <Coffee size={19} color={colors.primary} /> : <Moon size={19} color={colors.primary} />}
+            </Pressable>
+          </View>
         </View>
       </View>
       <FlatList
@@ -302,6 +307,7 @@ const styles = StyleSheet.create({
   header: { borderBottomWidth: 1, paddingHorizontal: 16, paddingVertical: 8 },
   headerInner: { width: '100%', maxWidth: 688, alignSelf: 'center', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   brand: { flexDirection: 'row', alignItems: 'baseline', gap: 6 },
+  headerActions: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   appTitle: { fontSize: 23, fontWeight: '800' },
   iconButton: { minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center', borderRadius: 22 },
   list: { width: '100%', maxWidth: 720, alignSelf: 'center', padding: 16, paddingBottom: 32 },

@@ -4,6 +4,7 @@
   "main": "index.ts",
   "dependencies": {
     "@expo-google-fonts/kanit": "^0.4.1",
+    "@expo-google-fonts/noto-serif-thai": "^0.4.2",
     "@expo-google-fonts/prompt": "^0.4.1",
     "@expo-google-fonts/sarabun": "^0.4.1",
     "@react-native-async-storage/async-storage": "2.2.0",
@@ -37,7 +38,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "node --stack-size=8192 ./node_modules/typescript/bin/tsc --noEmit",
     "lint": "expo lint",
     "test": "jest --runInBand",
     "benchmark:scan": "jest --config jest.benchmark.config.js --runInBand"
