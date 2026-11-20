@@ -1,0 +1,32 @@
+# Keep the EAS archive limited to the mobile app and its assets.
+node_modules/
+**/node_modules/
+.expo/
+**/.expo/
+dist/
+**/dist/
+coverage/
+**/coverage/
+
+# Repository material that is not part of the Android build.
+novels_source/
+reader-web/
+.conversion/
+docs/
+.wayfinder/
+.github/
+prototype/
+scratch/
+tasks.html
+*.log
+*.tmp
+*.bak
+
+# Local environment and editor state.
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+.idea/
+.vscode/
