@@ -56,6 +56,30 @@ beforeEach(() => {
 });
 afterEach(() => { jest.restoreAllMocks(); jest.useRealTimers(); });
 
+test('character avatars add a refresh version only when requested', () => {
+  expect(characterModal.getAvatarSource('/illustrations/remote_toya.png', 2)).toEqual({
+    uri: 'https://phongsathondev.github.io/Yomiori/illustrations/remote_toya.png?v=2',
+  });
+});
+
+test('pulling down refreshes characters and reloads their avatars', async () => {
+  const character: Character = {
+    id: 'toya', name: 'อาเมโมโตะ โทยะ', role: 'ตัวละคร', color: '#c00',
+    avatarUrl: '/illustrations/remote_toya.png',
+  };
+  jest.mocked(fetchCharacters).mockResolvedValueOnce([]).mockResolvedValueOnce([character]);
+  const avatarLookup = jest.spyOn(characterModal, 'getAvatarSource');
+  const view = await render(<ReaderScreen {...props} />);
+  await screen.findAllByText(displayTitle);
+  expect(fetchCharacters).toHaveBeenCalledWith(chapter.novelId, true);
+
+  const refreshControl = screen.getByTestId('reader-scroll').props.refreshControl;
+  await act(async () => { refreshControl.props.onRefresh(); });
+  await waitFor(() => expect(fetchCharacters).toHaveBeenCalledWith(chapter.novelId, false));
+  await waitFor(() => expect(avatarLookup).toHaveBeenCalledWith(character.avatarUrl, 1));
+  await view.unmount();
+});
+
 test('load failure exits the spinner, offers retry and does not overwrite progress', async () => {
   loaded.mockResolvedValueOnce({ chapter: null, cacheWarning: false });
   const view = await render(<ReaderScreen {...props} />);

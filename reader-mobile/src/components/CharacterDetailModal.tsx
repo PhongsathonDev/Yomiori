@@ -17,6 +17,7 @@ interface Props {
   visible: boolean;
   character: Character | null;
   theme: ReaderTheme;
+  avatarVersion?: number;
   onClose: () => void;
 }
 
@@ -29,24 +30,29 @@ const LOCAL_AVATARS: Record<string, any> = {
   '/illustrations/char_ayamori.png': require('../../assets/illustrations/char_ayamori.png'),
 };
 
-export function getAvatarSource(avatarUrl?: string) {
+export function getAvatarSource(avatarUrl?: string, version = 0) {
   if (!avatarUrl) return null;
   if (LOCAL_AVATARS[avatarUrl]) return LOCAL_AVATARS[avatarUrl];
-  if (avatarUrl.startsWith('http')) return { uri: avatarUrl };
-  return { uri: `https://phongsathondev.github.io/Yomiori/${avatarUrl.replace(/^\//, '')}` };
+  const uri = avatarUrl.startsWith('http')
+    ? avatarUrl
+    : `https://phongsathondev.github.io/Yomiori/${avatarUrl.replace(/^\//, '')}`;
+  // The avatar filename is stable on the CDN; a version query makes a pull-to-refresh
+  // bypass React Native's image cache when the underlying picture changes.
+  return { uri: version > 0 ? `${uri}${uri.includes('?') ? '&' : '?'}v=${version}` : uri };
 }
 
 export const CharacterDetailModal: React.FC<Props> = ({
   visible,
   character,
   theme,
+  avatarVersion,
   onClose,
 }) => {
   if (!character) return null;
 
   const themeColors = themes[theme];
   const charColor = character.color || themeColors.primary;
-  const avatarSource = getAvatarSource(character.avatarUrl);
+  const avatarSource = getAvatarSource(character.avatarUrl, avatarVersion);
 
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>

@@ -99,6 +99,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
   // Gallery & Cast State
   const [illustrations, setIllustrations] = useState<IllustrationItem[]>([]);
   const [characters, setCharacters] = useState<Character[]>([]);
+  const [characterVersion, setCharacterVersion] = useState(0);
   const [activeTab, setActiveTab] = useState<'chapters' | 'gallery'>('chapters');
 
   // Lightbox Modal State
@@ -183,7 +184,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
     try {
       await Promise.all([
         loadData(isActive, false),
-        fetchCharacters(novelId).then(data => { if (isActive()) setCharacters(data); }),
+        fetchCharacters(novelId).then(data => { if (isActive()) { setCharacters(data); setCharacterVersion(version => version + 1); } }),
         fetchIllustrations(novelId).then(data => { if (isActive()) setIllustrations(data); }),
       ]);
     } finally {
@@ -528,9 +529,12 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                     contentContainerStyle={styles.charactersScroll}
                   >
                     {characters.map((char) => {
-                      const avatarUri = char.avatarUrl
+                      const avatarBase = char.avatarUrl
                         ? `https://phongsathondev.github.io/Yomiori/${char.avatarUrl.replace(/^\//, '')}`
                         : null;
+                      const avatarUri = avatarBase && characterVersion > 0
+                        ? `${avatarBase}${avatarBase.includes('?') ? '&' : '?'}v=${characterVersion}`
+                        : avatarBase;
                       return (
                         <TouchableOpacity
                           key={char.id}

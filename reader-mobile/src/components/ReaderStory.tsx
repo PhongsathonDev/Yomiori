@@ -14,6 +14,7 @@ interface Props {
   characterMap: Map<string, Character>;
   colors: ThemeColors;
   fontSize: number;
+  avatarVersion?: number;
   fontFamily: ReaderFont;
   lineHeightRatio: ReaderLineHeight;
   onToggleControls: () => void;
@@ -49,7 +50,7 @@ function formatDialogueText(rawText: string): string {
   return `“${cleaned}”`;
 }
 
-export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characterMap, colors, fontSize, fontFamily, lineHeightRatio, onToggleControls, onSelectCharacter, onOpenIllustration, onStoryLayout, onBlockLayout }: Props) {
+export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characterMap, colors, fontSize, avatarVersion, fontFamily, lineHeightRatio, onToggleControls, onSelectCharacter, onOpenIllustration, onStoryLayout, onBlockLayout }: Props) {
   const fonts = useReaderFonts();
   const font = FONT_MAP[fonts === 'ready' ? fontFamily : 'System'];
   return <View onLayout={onStoryLayout} testID="reader-story">{blocks.map((block, index) => <View key={block.id} testID={`story-block-${index}`} onLayout={event => { if (block.type === 'narration' || block.type === 'dialogue') onBlockLayout?.(block.id, index, event.nativeEvent.layout.y, event.nativeEvent.layout.height); }}>{(() => {
@@ -63,7 +64,7 @@ export const ReaderStory = memo(function ReaderStory({ novelId, blocks, characte
     if (block.type === 'dialogue') {
       const character = characterMap.get(block.speakerId);
       const color = character?.color || colors.primary;
-      const avatar = getAvatarSource(character?.avatarUrl);
+      const avatar = getAvatarSource(character?.avatarUrl, avatarVersion);
       return <View key={block.id} style={[styles.dialogueNovelCard, { backgroundColor: `${color}0a`, borderLeftColor: color }]}>
         <Pressable accessibilityRole="button" accessibilityLabel={`ดูข้อมูล ${block.speakerName}`} style={styles.speakerRow}
           onPress={() => onSelectCharacter(character ?? { id: block.speakerId, name: block.speakerName, role: 'ตัวละครประกอบ', color })}>

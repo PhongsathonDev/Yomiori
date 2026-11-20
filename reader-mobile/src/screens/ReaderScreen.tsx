@@ -3,6 +3,7 @@ import {
   View,
   Text,
   ScrollView,
+  RefreshControl,
   type ScrollViewInstance,
   type LayoutChangeEvent,
   TouchableOpacity,
@@ -75,6 +76,8 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
 
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [characters, setCharacters] = useState<Character[]>([]);
+  const [avatarVersion, setAvatarVersion] = useState(0);
+  const [refreshingCharacters, setRefreshingCharacters] = useState(false);
   const [chapterList, setChapterList] = useState<ChapterListItem[]>([]);
   const [chapterListStatus, setChapterListStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   const [chapterListRetry, setChapterListRetry] = useState(0);
@@ -219,6 +222,18 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
   }, [novelId, chapterListRetry]);
 
   const retryChapter = () => { setLoadState('loading'); setRetryKey(key => key + 1); };
+
+  const refreshCharacters = async () => {
+    if (refreshingCharacters) return;
+    setRefreshingCharacters(true);
+    try {
+      const latest = await fetchCharacters(novelId, false);
+      if (latest.length > 0) setCharacters(latest);
+      // A new version re-requests remote avatars without touching local assets.
+      setAvatarVersion(version => version + 1);
+    } catch { /* Keep the readable chapter and existing avatars. */ }
+    finally { setRefreshingCharacters(false); }
+  };
   const restoreScroll = () => {
     if (dragging.current || !viewportHeight.current || !contentHeight.current) return;
     if (!currentAnchor.current && (hasRestoredScroll.current || userStartedReading.current)) return;
@@ -361,6 +376,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
             { paddingTop: insets.top + headerHeight + 16, paddingBottom: Math.max(110, dockHeight + 24), paddingHorizontal: 22 },
           ]}
           onScroll={handleScroll}
+          refreshControl={<RefreshControl refreshing={refreshingCharacters} onRefresh={() => { void refreshCharacters(); }} tintColor={themeColors.primary} colors={[themeColors.primary]} progressViewOffset={insets.top + headerHeight} />}
           scrollEventThrottle={32}
           showsVerticalScrollIndicator={false}
           onLayout={event => { viewportHeight.current = event.nativeEvent.layout.height; restoreScroll(); }}
@@ -398,7 +414,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
               <Text style={{ color: themeColors.primary }}>ลองบันทึกออฟไลน์อีกครั้ง</Text>
             </Pressable>}
             <ReaderStory novelId={novelId} blocks={chapter.blocks} characterMap={characterMap} colors={themeColors}
-              fontSize={fontSize} fontFamily={fontFamily} lineHeightRatio={lineHeightRatio}
+              fontSize={fontSize} avatarVersion={avatarVersion} fontFamily={fontFamily} lineHeightRatio={lineHeightRatio}
               onStoryLayout={onStoryLayout} onBlockLayout={onBlockLayout}
               onToggleControls={toggleControls} onSelectCharacter={setSelectedCharacter} onOpenIllustration={openIllustration} />
 
@@ -476,6 +492,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
         visible={!!selectedCharacter}
         character={selectedCharacter}
         theme={currentTheme}
+        avatarVersion={avatarVersion}
         onClose={() => setSelectedCharacter(null)}
       />
 
