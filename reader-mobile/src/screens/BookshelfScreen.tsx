@@ -7,7 +7,7 @@ import { NavigationBar } from 'expo-navigation-bar';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { Play, Sun, Moon, Coffee, Search, X, MoreHorizontal, ArrowDownUp, Check, ArchiveRestore } from 'lucide-react-native';
+import { Play, Sun, Moon, Coffee, Search, X, MoreHorizontal, ArrowDownUp, Check, ArchiveRestore, SlidersHorizontal } from 'lucide-react-native';
 import { Novel, RootStackParamList, ReaderTheme, ReadingProgress, ChapterListItem } from '../types';
 import { fetchNovels, getAvailableChapterList } from '../services/api';
 import { getSavedTheme, saveTheme, getReadingProgress } from '../services/storage';
@@ -42,6 +42,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
   const [sort, setSort] = useState<ShelfSort>('recent');
   const [menuNovel, setMenuNovel] = useState<Novel | null>(null);
   const [showSort, setShowSort] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
   const [saving, setSaving] = useState(false);
   const mounted = useRef(false);
   const request = useRef(0);
@@ -180,7 +181,7 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
     const chapter = chapters[novel.id]?.find(item => item.id === last.chapterId);
     return chapter ? `อ่านถึงตอนที่ ${chapter.chapterNumber}` : 'อ่านค้างไว้';
   };
-  const closeSheet = () => { if (!writing.current) { setMenuNovel(null); setShowSort(false); } };
+  const closeSheet = () => { if (!writing.current) { setMenuNovel(null); setShowSort(false); setShowFilters(false); } };
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: colors.background }]}>
@@ -227,21 +228,31 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
             {!!query && <Pressable accessibilityRole="button" accessibilityLabel="ล้างคำค้น" onPress={() => setQuery('')} style={styles.iconButton}><X size={18} color={colors.textMuted} /></Pressable>}
           </View>
           <View style={[styles.tabs, { borderBottomColor: colors.border }]}>
-            {tabs.map(item => <Pressable key={item.value} accessibilityRole="tab" accessibilityState={{ selected: tab === item.value }} onPress={() => chooseTab(item.value)} style={[styles.tab, { borderBottomColor: tab === item.value ? colors.primary : 'transparent' }]}>
-              <Text style={[styles.tabText, { color: tab === item.value ? colors.primary : colors.textMuted }]}>{item.label}</Text>
-              <Text style={[styles.small, { color: colors.textMuted }]}>{personalReady ? counts[item.value] : '…'}</Text>
-            </Pressable>)}
+            {tabs.map(item => {
+              const active = tab === item.value;
+              return (
+                <Pressable key={item.value} accessibilityRole="tab" accessibilityState={{ selected: active }} onPress={() => chooseTab(item.value)} style={[styles.tab, { borderBottomColor: active ? colors.primary : 'transparent' }]}>
+                  <View style={styles.tabLabelRow}>
+                    <Text style={[styles.tabText, { color: active ? colors.primary : colors.textMuted }]}>{item.label}</Text>
+                    <View style={[styles.tabCount, { backgroundColor: active ? colors.primaryBg : colors.card }]}>
+                      <Text style={[styles.tabCountText, { color: active ? colors.primary : colors.textMuted }]}>{personalReady ? counts[item.value] : '…'}</Text>
+                    </View>
+                  </View>
+                </Pressable>
+              );
+            })}
           </View>
           <View style={styles.filterRow}>
             <Text style={[styles.small, styles.flex, { color: colors.textMuted }]}>{personalReady ? `${visible.length} เรื่อง` : 'กำลังโหลดสถานะการอ่าน'}</Text>
-            <Pressable accessibilityRole="button" accessibilityLabel="เลือกการเรียงเรื่อง" disabled={!personalReady} onPress={() => setShowSort(true)} style={styles.sortButton}>
-              <ArrowDownUp size={16} color={colors.primary} /><Text style={[styles.small, { color: colors.primary }]}>{sort === 'recent' ? 'อ่านล่าสุดก่อน' : 'ชื่อเรื่อง'}</Text>
-            </Pressable>
-          </View>
-          <View style={styles.tagWrap}>
-            {['all', ...allTags].map(value => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: tag === value }} onPress={() => setTag(value)} style={[styles.tag, { backgroundColor: tag === value ? colors.primary : colors.card, borderColor: tag === value ? colors.primary : colors.border }]}>
-              <Text style={[styles.small, { color: tag === value ? '#ffffff' : colors.textMuted }]}>{value === 'all' ? 'ทุกแนว' : value}</Text>
-            </Pressable>)}
+            <View style={styles.toolbarActions}>
+              <Pressable accessibilityRole="button" accessibilityLabel="กรองตามแนว" disabled={!personalReady} onPress={() => setShowFilters(true)} style={[styles.filterButton, { backgroundColor: tag === 'all' ? colors.card : colors.primaryBg, borderColor: tag === 'all' ? colors.border : colors.primary }]}>
+                <SlidersHorizontal size={15} color={tag === 'all' ? colors.textMuted : colors.primary} />
+                <Text numberOfLines={1} style={[styles.filterLabel, { color: tag === 'all' ? colors.textMuted : colors.primary }]}>{tag === 'all' ? 'ทุกแนว' : tag}</Text>
+              </Pressable>
+              <Pressable accessibilityRole="button" accessibilityLabel="เลือกการเรียงเรื่อง" disabled={!personalReady} onPress={() => setShowSort(true)} style={styles.sortButton}>
+                <ArrowDownUp size={16} color={colors.primary} /><Text numberOfLines={1} style={[styles.small, { color: colors.primary, flexShrink: 1 }]}>{sort === 'recent' ? 'อ่านล่าสุดก่อน' : 'ชื่อเรื่อง'}</Text>
+              </Pressable>
+            </View>
           </View>
           {personalError && <ScreenState colors={colors} message="โหลดสถานะชั้นหนังสือไม่ได้" onRetry={() => { void refresh(); }} />}
           {catalogError && <ScreenState colors={colors} message="รีเฟรชข้อมูลบางส่วนไม่ได้ ยังเปิดเรื่องที่มีในเครื่องได้" onRetry={() => { void refresh(); }} />}
@@ -269,16 +280,16 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
           </Pressable>
         </View>}
       />
-      <Modal visible={!!menuNovel || showSort} transparent animationType="fade" onRequestClose={closeSheet}>
+      <Modal visible={!!menuNovel || showSort || showFilters} transparent animationType="fade" onRequestClose={closeSheet}>
         <View style={styles.modalRoot}>
           <Pressable accessible={false} onPress={closeSheet} style={styles.backdrop} />
           <SafeAreaView edges={['bottom']} accessibilityViewIsModal style={[styles.sheet, { backgroundColor: colors.card, borderColor: colors.border }]}>
             <ScrollView contentContainerStyle={styles.sheetContent}>
-              <Text accessibilityRole="header" style={[styles.sheetTitle, { color: colors.text }]}>{menuNovel?.title ?? 'เรียงเรื่อง'}</Text>
+              <Text accessibilityRole="header" style={[styles.sheetTitle, { color: colors.text }]}>{menuNovel?.title ?? (showSort ? 'เรียงเรื่อง' : 'กรองตามแนว')}</Text>
               {menuNovel ? <Pressable accessibilityRole="button" disabled={saving} onPress={() => { void changeStatus(); }} style={[styles.sheetAction, { backgroundColor: colors.primaryBg }]}>
                 {saving ? <ActivityIndicator color={colors.primary} /> : statuses[menuNovel.id] === 'completed' ? <ArchiveRestore size={20} color={colors.primary} /> : <Check size={20} color={colors.primary} />}
                 <Text style={[styles.actionText, { color: colors.primary }]}>{statuses[menuNovel.id] === 'completed' ? 'ย้ายกลับชั้นหนังสือ' : 'ทำเครื่องหมายว่าอ่านจบแล้ว'}</Text>
-              </Pressable> : <>
+              </Pressable> : showSort ? <>
                 <Pressable accessibilityRole="radio" accessibilityState={{ checked: sort === 'recent' }} disabled={saving} onPress={() => { void changeSort('recent'); }} style={[styles.sheetAction, { backgroundColor: sort === 'recent' ? colors.primaryBg : colors.card }]}>
                   <Text style={[styles.actionText, styles.flex, { color: colors.text }]}>อ่านล่าสุดก่อน</Text>
                   {sort === 'recent' && <Check size={20} color={colors.primary} />}
@@ -287,7 +298,26 @@ export const BookshelfScreen: React.FC<Props> = ({ navigation }) => {
                   <Text style={[styles.actionText, styles.flex, { color: colors.text }]}>ชื่อเรื่อง</Text>
                   {sort === 'title' && <Check size={20} color={colors.primary} />}
                 </Pressable>
-              </>}
+              </> : (
+                <View style={styles.sheetTags}>
+                  {['all', ...allTags].map(value => {
+                    const active = tag === value;
+                    return (
+                      <Pressable
+                        key={value}
+                        accessibilityRole="button"
+                        accessibilityState={{ selected: active }}
+                        onPress={() => { setTag(value); setShowFilters(false); }}
+                        style={[styles.sheetTag, { backgroundColor: active ? colors.primary : colors.card, borderColor: active ? colors.primary : colors.border }]}
+                      >
+                        <Text style={[styles.sheetTagText, { color: active ? '#ffffff' : colors.textMuted }]}>
+                          {value === 'all' ? 'ทุกแนว' : value}
+                        </Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+              )}
               <Pressable accessibilityRole="button" disabled={saving} onPress={closeSheet} style={styles.sheetAction}><Text style={[styles.actionText, { color: colors.textMuted }]}>ยกเลิก</Text></Pressable>
             </ScrollView>
           </SafeAreaView>
@@ -316,14 +346,18 @@ const styles = StyleSheet.create({
   search: { flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderRadius: 12, paddingLeft: 12, gap: 8, minHeight: 48 },
   searchInput: { flex: 1, minWidth: 0, paddingVertical: 12, fontSize: 14 },
   tabs: { flexDirection: 'row', borderBottomWidth: 1 },
-  tab: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 4, paddingVertical: 10, paddingHorizontal: 2, borderBottomWidth: 2, minHeight: 56 },
+  tab: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingVertical: 8, paddingHorizontal: 2, borderBottomWidth: 2, minHeight: 50 },
+  tabLabelRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },
   tabText: { fontSize: 13, fontWeight: '700', textAlign: 'center' },
+  tabCount: { minWidth: 20, height: 20, borderRadius: 10, paddingHorizontal: 5, alignItems: 'center', justifyContent: 'center' },
+  tabCountText: { fontSize: 10, fontWeight: '600' },
   small: { fontSize: 12, lineHeight: 19 },
   flex: { flex: 1 },
   filterRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  sortButton: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 44, paddingHorizontal: 4, flexShrink: 1 },
-  tagWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  tag: { borderRadius: 24, borderWidth: 1, paddingHorizontal: 14, paddingVertical: 10, minHeight: 44, justifyContent: 'center' },
+  toolbarActions: { flexDirection: 'row', alignItems: 'center', gap: 8, flexShrink: 1 },
+  filterButton: { minHeight: 44, borderWidth: 1, borderRadius: 20, flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 11, flexShrink: 1 },
+  filterLabel: { fontSize: 12, flexShrink: 1 },
+  sortButton: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 44, paddingHorizontal: 2, flexShrink: 1 },
   book: { width: '31.5%', borderRadius: 14, borderWidth: 1, overflow: 'hidden', shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.04, shadowRadius: 6, elevation: 1 },
   cover: { width: '100%', aspectRatio: 2 / 3, borderTopLeftRadius: 14, borderTopRightRadius: 14 },
   bookInfo: { padding: 10, gap: 6, height: 142, overflow: 'hidden' },
@@ -336,6 +370,9 @@ const styles = StyleSheet.create({
   backdrop: { position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, backgroundColor: 'rgba(0,0,0,0.5)' },
   sheet: { maxHeight: '80%', width: '100%', maxWidth: 720, alignSelf: 'center', borderTopLeftRadius: 24, borderTopRightRadius: 24, borderWidth: 1 },
   sheetContent: { padding: 20, gap: 12 },
+  sheetTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, paddingVertical: 4 },
+  sheetTag: { minHeight: 44, borderWidth: 1, borderRadius: 22, paddingHorizontal: 14, justifyContent: 'center' },
+  sheetTagText: { fontSize: 12 },
   sheetTitle: { fontSize: 18, fontWeight: '700', marginBottom: 8 },
   sheetAction: { flexDirection: 'row', alignItems: 'center', gap: 12, minHeight: 52, borderRadius: 12, padding: 14 },
   actionText: { fontSize: 15, flexShrink: 1 },

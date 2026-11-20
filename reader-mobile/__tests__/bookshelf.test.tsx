@@ -16,7 +16,7 @@ jest.mock('react-native/Libraries/Components/RefreshControl/RefreshControl', () 
   return { __esModule: true, default: function RefreshControl(props: object) { return React.createElement('RCTRefreshControl', props); } };
 });
 jest.mock('lucide-react-native', () => Object.fromEntries(
-  ['BookOpen', 'Play', 'Sun', 'Moon', 'Coffee', 'Search', 'X', 'MoreHorizontal', 'ArrowDownUp', 'Check', 'ArchiveRestore'].map(name => [name, () => null]),
+  ['BookOpen', 'Play', 'Sun', 'Moon', 'Coffee', 'Search', 'X', 'MoreHorizontal', 'ArrowDownUp', 'Check', 'ArchiveRestore', 'SlidersHorizontal'].map(name => [name, () => null]),
 ));
 jest.mock('../src/services/api', () => ({ fetchNovels: jest.fn(), getAvailableChapterList: jest.fn() }));
 jest.mock('../src/services/storage', () => ({ getSavedTheme: async () => 'light', saveTheme: jest.fn(), getReadingProgress: jest.fn() }));
@@ -122,6 +122,7 @@ test('search combines with tabs and tags; clearing filters restores books', asyn
   expect(screen.getByText('ไม่พบเรื่องที่ตรงกับตัวกรอง')).toBeTruthy();
   await fireEvent.press(screen.getByRole('tab', { name: /ทั้งหมด/ }));
   expect(screen.getByLabelText(`รายละเอียด ${b.title}`)).toBeTruthy();
+  await fireEvent.press(screen.getByLabelText('กรองตามแนว'));
   await fireEvent.press(screen.getByRole('button', { name: 'รัก' }));
   expect(screen.queryByLabelText(`รายละเอียด ${b.title}`)).toBeNull();
   await fireEvent.press(screen.getByRole('button', { name: 'ล้างตัวกรอง' }));
