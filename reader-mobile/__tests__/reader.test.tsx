@@ -7,6 +7,7 @@ import { getChapterForReading, fetchCharacters, getAvailableChapterList } from '
 import { getReadingProgress, saveReadingProgress, saveTheme, saveFontSize } from '../src/services/storage';
 import * as characterModal from '../src/components/CharacterDetailModal';
 import { ReaderStory } from '../src/components/ReaderStory';
+import { chapterDisplayTitle } from '../src/utils/chapterTitle';
 import { themes } from '../src/theme/colors';
 import { Chapter, Character } from '../src/types';
 import longChapter from '../src/data/novels/kyudo-senpai/chapters/ch-69.json';
@@ -32,6 +33,7 @@ jest.mock('../src/services/storage', () => ({
 }));
 
 const chapter = longChapter as Chapter;
+const displayTitle = chapterDisplayTitle(chapter.title);
 const loaded = jest.mocked(getChapterForReading);
 const saved = jest.mocked(saveReadingProgress);
 const navigation = {
@@ -61,7 +63,7 @@ test('load failure exits the spinner, offers retry and does not overwrite progre
   expect(screen.queryByText('กำลังเตรียมเนื้อหา...')).toBeNull();
   expect(saved).not.toHaveBeenCalled();
   await fireEvent.press(screen.getByRole('button', { name: 'ลองอีกครั้ง' }));
-  expect((await screen.findAllByText(chapter.title)).length).toBeGreaterThan(0);
+  expect((await screen.findAllByText(displayTitle)).length).toBeGreaterThan(0);
   await view.unmount();
 });
 
@@ -76,7 +78,7 @@ test('late resolution from a different chapter cannot replace current content', 
   await screen.findAllByText('Next chapter');
   await act(async () => { resolve({ chapter, cacheWarning: false }); });
   expect(screen.getAllByText('Next chapter').length).toBeGreaterThan(0);
-  expect(screen.queryByText(chapter.title)).toBeNull();
+  expect(screen.queryByText(displayTitle)).toBeNull();
   await view.unmount();
 });
 
@@ -89,7 +91,7 @@ test('scrolling a real 147-block chapter skips story rendering and flushes on ba
     return { remove: jest.fn() };
   });
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   const beforeScroll = avatarLookup.mock.calls.length;
   expect(beforeScroll).toBeGreaterThan(0);
   const scroll = screen.getByTestId('reader-scroll');
@@ -173,10 +175,10 @@ test('header opens a chapter overlay and selection flushes progress without visi
     { id: 'ch-00', novelId: chapter.novelId, chapterNumber: 0, title: 'ภาพประกอบ' },
   ]);
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
   expect(screen.getByRole('header', { name: 'เลือกตอน' })).toBeTruthy();
-  expect(screen.getByRole('button', { name: `เลือกตอน ${chapter.title}` }).props.accessibilityState.selected).toBe(true);
+  expect(screen.getByRole('button', { name: `เลือกตอน ${displayTitle}` }).props.accessibilityState.selected).toBe(true);
   await fireEvent.press(screen.getByRole('button', { name: 'เลือกตอน ภาพประกอบ' }));
   expect(navigation.navigate).not.toHaveBeenCalled();
   expect(navigation.replace).toHaveBeenCalledWith('Reader', { novelId: chapter.novelId, chapterId: 'ch-00' });
@@ -189,13 +191,13 @@ test('closing the chapter overlay or selecting the current chapter keeps the rea
     { id: chapter.id, novelId: chapter.novelId, chapterNumber: chapter.chapterNumber, title: chapter.title },
   ]);
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   const before = StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
   await fireEvent.press(screen.getByRole('button', { name: 'ปิดสารบัญ' }));
   expect(screen.queryByRole('header', { name: 'เลือกตอน' })).toBeNull();
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
-  await fireEvent.press(screen.getByRole('button', { name: `เลือกตอน ${chapter.title}` }));
+  await fireEvent.press(screen.getByRole('button', { name: `เลือกตอน ${displayTitle}` }));
   expect(navigation.replace).not.toHaveBeenCalled();
   expect(StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle)).toEqual(before);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
@@ -207,7 +209,7 @@ test('closing the chapter overlay or selecting the current chapter keeps the rea
 test('chapter list failures can be retried without reloading the reading content', async () => {
   jest.mocked(getAvailableChapterList).mockRejectedValueOnce(new Error('Unavailable'));
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
   expect(await screen.findByText('โหลดรายชื่อตอนไม่ได้')).toBeTruthy();
   jest.mocked(getAvailableChapterList).mockResolvedValue([
@@ -224,7 +226,7 @@ test('a pending chapter list never blocks reading and an empty list offers retry
   let finish!: (chapters: []) => void;
   jest.mocked(getAvailableChapterList).mockReturnValueOnce(new Promise(resolve => { finish = resolve; }));
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
   expect(screen.getByText('กำลังโหลดรายชื่อตอน...')).toBeTruthy();
   await act(async () => { finish([]); });
@@ -235,7 +237,7 @@ test('a pending chapter list never blocks reading and an empty list offers retry
 
 test('hiding and revealing chrome leaves the story viewport and insets unchanged', async () => {
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   const before = StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle);
   await fireEvent.press(screen.getByRole('button', { name: 'ซ่อนเครื่องมืออ่าน' }));
   expect(StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle)).toEqual(before);
@@ -253,7 +255,7 @@ test('historical end-of-chapter navigation still flushes progress before changin
     { id: 'ch-next', novelId: chapter.novelId, chapterNumber: chapter.chapterNumber + 1, title: 'Next' },
   ]);
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   await fireEvent.press(screen.getByRole('button', { name: 'อ่านตอนถัดไป' }));
   expect(navigation.replace).toHaveBeenCalledWith('Reader', { novelId: chapter.novelId, chapterId: 'ch-next' });
   expect(saved).toHaveBeenCalledWith(chapter.novelId, chapter.id, 50);
@@ -265,7 +267,7 @@ test('restores the 1.0.0 chapter heading, paragraph indent and compact chrome', 
   loaded.mockResolvedValue({ chapter: { ...chapter, blocks: [{ id: 'original-paragraph', type: 'narration', text }] }, cacheWarning: false });
   const view = await render(<ReaderScreen {...props} />);
   await screen.findByText(`CHAPTER ${chapter.chapterNumber}`);
-  const heading = screen.getAllByText(chapter.title).find(node => node.props.accessibilityRole === 'header');
+  const heading = screen.getAllByText(displayTitle).find(node => node.props.accessibilityRole === 'header');
   expect(StyleSheet.flatten(heading?.props.style)).toMatchObject({ fontSize: 18, lineHeight: 25, textAlign: 'center' });
   expect(screen.getByText(text).props.children.join('')).toBe(`\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${text}`);
   expect(StyleSheet.flatten(screen.getByTestId('reader-scroll').props.contentContainerStyle).paddingHorizontal).toBe(22);
@@ -279,7 +281,7 @@ test('restores the 1.0.0 chapter heading, paragraph indent and compact chrome', 
 
 test('the reading sheet preserves direct theme and font-size controls', async () => {
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   await fireEvent.press(screen.getByRole('button', { name: 'ตั้งค่าการอ่าน' }));
   await fireEvent.press(screen.getByRole('radio', { name: 'ธีมมืด' }));
   expect(saveTheme).toHaveBeenCalledWith('dark');
@@ -292,7 +294,7 @@ test('the reading sheet preserves direct theme and font-size controls', async ()
 
 test('floating font chip opens settings and quick theme buttons persist selection', async () => {
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   expect(screen.getByText('Sarabun · 17')).toBeTruthy();
   await fireEvent.press(screen.getByRole('radio', { name: 'ธีมโทนอุ่น' }));
   expect(saveTheme).toHaveBeenCalledWith('sepia');
@@ -320,7 +322,7 @@ test('marks only the reached chapter at the story end, before comments and the p
     { id: chapter.id, novelId: chapter.novelId, chapterNumber: chapter.chapterNumber, title: chapter.title },
   ]);
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   const scroll = await setCompletionGeometry();
   // A restored or programmatic position alone is not evidence of reading.
   await scrollCompletion(scroll, 2600);
@@ -332,7 +334,7 @@ test('marks only the reached chapter at the story end, before comments and the p
   await waitFor(() => expect(markChapterRead).toHaveBeenCalledWith(chapter.novelId, chapter.id));
   expect(saved).toHaveBeenLastCalledWith(chapter.novelId, chapter.id, 660 / 2600 * 100);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
-  expect(screen.getByRole('button', { name: `เลือกตอน ${chapter.title}` }).props.accessibilityHint).toBe('กำลังอ่าน · อ่านแล้ว');
+  expect(screen.getByRole('button', { name: `เลือกตอน ${displayTitle}` }).props.accessibilityHint).toBe('กำลังอ่าน · อ่านแล้ว');
   expect(screen.getByRole('button', { name: 'เลือกตอน ตอนก่อนหน้า' }).props.accessibilityHint).toBeUndefined();
   await fireEvent.press(screen.getByRole('button', { name: 'ปิดสารบัญ' }));
   await fireEvent(scroll, 'scrollBeginDrag');
@@ -346,7 +348,7 @@ test('completion write failure warns without claiming success and retries on the
   jest.mocked(markChapterRead).mockRejectedValueOnce(new Error('full'));
   jest.mocked(getAvailableChapterList).mockResolvedValue([{ id: chapter.id, novelId: chapter.novelId, chapterNumber: 69, title: chapter.title }]);
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   const scroll = await setCompletionGeometry();
   await fireEvent(scroll, 'scrollBeginDrag');
   await scrollCompletion(scroll, 660);
@@ -368,10 +370,10 @@ test('previous completions load independently and opening the reader never marks
     { id: chapter.id, novelId: chapter.novelId, chapterNumber: 69, title: chapter.title },
   ]);
   const view = await render(<ReaderScreen {...props} />);
-  await screen.findAllByText(chapter.title);
+  await screen.findAllByText(displayTitle);
   await fireEvent.press(screen.getByRole('button', { name: 'เปิดสารบัญ' }));
   expect(screen.getByRole('button', { name: 'เลือกตอน อ่านไว้แล้ว' }).props.accessibilityHint).toBe('อ่านแล้ว');
-  expect(screen.getByRole('button', { name: `เลือกตอน ${chapter.title}` }).props.accessibilityHint).toBe('กำลังอ่าน');
+  expect(screen.getByRole('button', { name: `เลือกตอน ${displayTitle}` }).props.accessibilityHint).toBe('กำลังอ่าน');
   expect(markChapterRead).not.toHaveBeenCalled();
   await view.unmount();
 });

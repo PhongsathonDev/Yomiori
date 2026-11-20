@@ -27,7 +27,7 @@ export const ReaderHeader = memo(function ReaderHeader({ visible, colors, novelT
           <ArrowLeft size={22} color={colors.text} />
         </Pressable>
         <View style={styles.titles}>
-          <Text accessibilityLabel={`${novelTitle}, ${chapterTitle}`} numberOfLines={1} style={[styles.chapterTitle, { color: colors.text, fontFamily }]}>{chapterTitle}</Text>
+          <Text accessibilityLabel={`${novelTitle}, ${chapterTitle}`} numberOfLines={1} style={[styles.chapterTitle, { color: colors.text, fontFamily }]}>{novelTitle}</Text>
         </View>
         <Pressable accessibilityRole="button" accessibilityLabel="เปิดสารบัญ" onPress={onContents} style={styles.contentsButton}>
           <List size={20} color={colors.primary} />

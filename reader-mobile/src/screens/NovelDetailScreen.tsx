@@ -51,6 +51,7 @@ import {
 import { ImageLightboxModal } from '../components/ImageLightboxModal';
 import { themes } from '../theme/colors';
 import { getReadChapterIds } from '../services/chapterReadHistory';
+import { chapterDisplayTitle } from '../utils/chapterTitle';
 import { isNovelList } from '../services/validation';
 import bundledNovels from '../data/novels.json';
 import { BookCover } from '../components/BookCover';
@@ -292,7 +293,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
           </TouchableOpacity>
 
           <Text style={[styles.headerTitle, { color: themeColors.text }]} numberOfLines={1}>
-            {novel?.title || 'รายละเอียดนิยาย'}
+            รายละเอียด
           </Text>
 
           <TouchableOpacity
@@ -476,7 +477,7 @@ const NovelDetailContent: React.FC<Props> = ({ route, navigation }) => {
                           ]}
                           numberOfLines={2}
                         >
-                          {ch.title || `ตอนที่ ${ch.chapterNumber}`}
+                          {chapterDisplayTitle(ch.title) || `ตอนที่ ${ch.chapterNumber}`}
                         </Text>
                         {readChapterIds.includes(ch.id) && <View style={styles.readBadge}>
                           <Check size={13} color={themeColors.primary} />

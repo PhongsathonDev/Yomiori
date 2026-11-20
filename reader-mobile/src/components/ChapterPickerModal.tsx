@@ -3,6 +3,7 @@ import { Modal, View, Text, Pressable, FlatList, StyleSheet, ActivityIndicator, 
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { X, Check } from 'lucide-react-native';
 import { ChapterListItem } from '../types';
+import { chapterDisplayTitle } from '../utils/chapterTitle';
 import { ThemeColors } from '../theme/colors';
 
 interface Props {
@@ -80,13 +81,13 @@ export const ChapterPickerModal = memo(function ChapterPickerModal({ visible, ch
   const renderItem = useCallback(({ item, index }: ListRenderItemInfo<ChapterListItem>) => {
     const selected = item.id === currentChapterId;
     const read = readIds.has(item.id);
-    return <Pressable accessibilityRole="button" accessibilityLabel={`เลือกตอน ${item.title}`}
+    return <Pressable accessibilityRole="button" accessibilityLabel={`เลือกตอน ${chapterDisplayTitle(item.title)}`}
       accessibilityHint={selected && read ? 'กำลังอ่าน · อ่านแล้ว' : read ? 'อ่านแล้ว' : selected ? 'กำลังอ่าน' : undefined}
       accessibilityState={{ selected }} onPress={() => onSelect(index)}
       style={[styles.row, { backgroundColor: selected ? colors.primaryBg : colors.card, borderBottomColor: colors.border }]}>
       <Text style={[styles.number, { color: colors.primary }]}>{item.chapterNumber}</Text>
       <View style={styles.titleGroup}>
-        <Text style={[styles.chapterTitle, { color: selected ? colors.primary : read ? colors.textMuted : colors.text }]}>{item.title}</Text>
+        <Text style={[styles.chapterTitle, { color: selected ? colors.primary : read ? colors.textMuted : colors.text }]}>{chapterDisplayTitle(item.title)}</Text>
         {selected && <Text style={[styles.current, { color: colors.primary }]}>กำลังอ่าน</Text>}
         {read && <Text style={[styles.current, { color: colors.textMuted }]}>อ่านแล้ว</Text>}
       </View>

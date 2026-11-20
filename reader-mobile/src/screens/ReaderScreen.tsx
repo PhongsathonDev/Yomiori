@@ -36,6 +36,7 @@ import {
   getReadingProgress,
 } from '../services/storage';
 import { themes } from '../theme/colors';
+import { chapterDisplayTitle } from '../utils/chapterTitle';
 import { getReadChapterIds, markChapterRead } from '../services/chapterReadHistory';
 import { readerStyles as styles } from '../theme/readerStyles';
 import { ReaderStory } from '../components/ReaderStory';
@@ -385,7 +386,7 @@ const ReaderContent: React.FC<Props> = ({ route, navigation }) => {
                     { color: themeColors.text, fontFamily: activeFont.bold || activeFont.regular },
                   ]}
                 >
-                  {chapter.title}
+                  {chapterDisplayTitle(chapter.title)}
                 </Text>
               </View>
             </Pressable>
