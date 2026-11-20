@@ -252,7 +252,7 @@ function WashiShelf({ palette, onOpenBook, onOpenReader }: ConceptProps) {
               <View style={washiStyles.bookTags}>
                 {book.tags.slice(0, 2).map((bookTag, index) => (
                   <View key={`${bookTag}-${index}`} style={[washiStyles.bookTag, { backgroundColor: palette.tagBg }]}>
-                    <Text style={[washiStyles.bookTagText, { color: palette.muted }]}>{bookTag}</Text>
+                    <Text numberOfLines={1} style={[washiStyles.bookTagText, { color: palette.muted }]}>{bookTag}</Text>
                   </View>
                 ))}
               </View>
@@ -269,11 +269,14 @@ function WashiShelf({ palette, onOpenBook, onOpenReader }: ConceptProps) {
                     ? 'อ่านจบแล้ว'
                     : 'ยังไม่เริ่ม'}
               </Text>
-              {book.status === 'reading' ? (
-                <View style={washiStyles.gridProgress}>
-                  <ProgressLine value={book.progress} color={palette.accent} track={palette.line} height={2} />
-                </View>
-              ) : null}
+              <View style={washiStyles.gridProgress}>
+                <ProgressLine
+                  value={book.status === 'done' ? 1 : book.progress}
+                  color={book.status === 'new' ? palette.line : palette.accent}
+                  track={palette.line}
+                  height={2}
+                />
+              </View>
             </View>
           </Pressable>
         ))}
@@ -614,14 +617,14 @@ const washiStyles = StyleSheet.create({
     elevation: 1,
   },
   gridCover: { width: '100%', aspectRatio: 2 / 3 },
-  bookBody: { padding: 10, gap: 5 },
-  gridTitle: { fontFamily: FONT.serifSemi, fontSize: 14.5, lineHeight: 21 },
-  bookTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 4 },
-  bookTag: { borderRadius: 10, paddingHorizontal: 6, paddingVertical: 2 },
+  bookBody: { padding: 10, gap: 5, height: 136, overflow: 'hidden' },
+  gridTitle: { fontFamily: FONT.serifSemi, fontSize: 14.5, lineHeight: 21, height: 42 },
+  bookTags: { flexDirection: 'row', flexWrap: 'nowrap', gap: 4, height: 18, overflow: 'hidden' },
+  bookTag: { borderRadius: 10, paddingHorizontal: 6, paddingVertical: 2, flexShrink: 0 },
   bookTagText: { fontFamily: FONT.ui, fontSize: 9 },
-  gridMeta: { fontFamily: FONT.ui, fontSize: 10.5, marginTop: 1 },
-  bookRead: { fontFamily: FONT.uiSemi, fontSize: 10.5 },
-  gridProgress: { marginTop: 2 },
+  gridMeta: { fontFamily: FONT.ui, fontSize: 10.5, lineHeight: 15, marginTop: 1 },
+  bookRead: { fontFamily: FONT.uiSemi, fontSize: 10.5, lineHeight: 15 },
+  gridProgress: { height: 2, marginTop: 2 },
   empty: { fontFamily: FONT.ui, fontSize: 13, textAlign: 'center', paddingVertical: 40 },
   footerRule: { height: 1, width: 56, alignSelf: 'center', marginTop: 26, marginBottom: 12 },
   footerNote: { fontFamily: FONT.ui, fontSize: 11, textAlign: 'center', letterSpacing: 1 },
